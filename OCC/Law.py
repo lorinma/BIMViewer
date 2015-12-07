@@ -124,7 +124,7 @@ import OCC.math
 class law(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MixBnd(*args):
+    def MixBnd(*args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * This algorithm searches the knot values corresponding to the splitting of a given B-spline law into several arcs with the same continuity. The continuity order is given at the construction time. Builds a 1d bspline that is near from Lin with null derivatives at the extremities.
 
@@ -148,7 +148,7 @@ class law(object):
         return _Law.law_MixBnd(*args)
 
     MixBnd = staticmethod(MixBnd)
-    def MixTgt(*args):
+    def MixTgt(*args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * Builds the poles of the 1d bspline that is null on the rigth side of Knots(Index) (on the left if NulOnTheRight is false) and that is like a t*(1-t)(1-t) curve on the left side of Knots(Index) (on the rigth if NulOnTheRight is false). The result curve is C1 with a derivative equal to 1. at first parameter (-1 at last parameter if NulOnTheRight is false). Warning: Mults(Index) must greater or equal to degree-1.
 
@@ -168,7 +168,7 @@ class law(object):
         return _Law.law_MixTgt(*args)
 
     MixTgt = staticmethod(MixTgt)
-    def Reparametrize(*args):
+    def Reparametrize(*args) -> "Handle_Law_BSpline" :
         """
         * Computes a 1 d curve to reparametrize a curve. Its an interpolation of NbPoints points calculated at quasi constant abscissa.
 
@@ -196,7 +196,7 @@ class law(object):
         return _Law.law_Reparametrize(*args)
 
     Reparametrize = staticmethod(Reparametrize)
-    def Scale(*args):
+    def Scale(*args) -> "Handle_Law_BSpline" :
         """
         * Computes a 1 d curve to scale a field of tangency. Value is 1. for t = (First+Last)/2 . If HasFirst value for t = First is VFirst (null derivative). If HasLast value for t = Last is VLast (null derivative).  1.  _  _/ \_  __/ \__  /  VFirst ____/ VLast \____  First  Last
 
@@ -218,7 +218,7 @@ class law(object):
         return _Law.law_Scale(*args)
 
     Scale = staticmethod(Scale)
-    def ScaleCub(*args):
+    def ScaleCub(*args) -> "Handle_Law_BSpline" :
         """
         :param First:
         :type First: float
@@ -252,7 +252,7 @@ law._kill_pointed = new_instancemethod(_Law.law__kill_pointed,None,law)
 law_swigregister = _Law.law_swigregister
 law_swigregister(law)
 
-def law_MixBnd(*args):
+def law_MixBnd(*args) -> "Handle_TColStd_HArray1OfReal" :
   """
     * This algorithm searches the knot values corresponding to the splitting of a given B-spline law into several arcs with the same continuity. The continuity order is given at the construction time. Builds a 1d bspline that is near from Lin with null derivatives at the extremities.
 
@@ -275,7 +275,7 @@ def law_MixBnd(*args):
     """
   return _Law.law_MixBnd(*args)
 
-def law_MixTgt(*args):
+def law_MixTgt(*args) -> "Handle_TColStd_HArray1OfReal" :
   """
     * Builds the poles of the 1d bspline that is null on the rigth side of Knots(Index) (on the left if NulOnTheRight is false) and that is like a t*(1-t)(1-t) curve on the left side of Knots(Index) (on the rigth if NulOnTheRight is false). The result curve is C1 with a derivative equal to 1. at first parameter (-1 at last parameter if NulOnTheRight is false). Warning: Mults(Index) must greater or equal to degree-1.
 
@@ -294,7 +294,7 @@ def law_MixTgt(*args):
     """
   return _Law.law_MixTgt(*args)
 
-def law_Reparametrize(*args):
+def law_Reparametrize(*args) -> "Handle_Law_BSpline" :
   """
     * Computes a 1 d curve to reparametrize a curve. Its an interpolation of NbPoints points calculated at quasi constant abscissa.
 
@@ -321,7 +321,7 @@ def law_Reparametrize(*args):
     """
   return _Law.law_Reparametrize(*args)
 
-def law_Scale(*args):
+def law_Scale(*args) -> "Handle_Law_BSpline" :
   """
     * Computes a 1 d curve to scale a field of tangency. Value is 1. for t = (First+Last)/2 . If HasFirst value for t = First is VFirst (null derivative). If HasLast value for t = Last is VLast (null derivative).  1.  _  _/ \_  __/ \__  /  VFirst ____/ VLast \____  First  Last
 
@@ -342,7 +342,7 @@ def law_Scale(*args):
     """
   return _Law.law_Scale(*args)
 
-def law_ScaleCub(*args):
+def law_ScaleCub(*args) -> "Handle_Law_BSpline" :
   """
     :param First:
     :type First: float
@@ -398,7 +398,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
 
         """
         _Law.Law_BSpline_swiginit(self,_Law.new_Law_BSpline(*args))
-    def IncreaseDegree(self, *args):
+    def IncreaseDegree(self, *args) -> "void" :
         """
         * Increase the degree to <Degree>. Nothing is done if <Degree> is lower or equal to the current degree.
 
@@ -409,7 +409,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IncreaseDegree(self, *args)
 
-    def IncreaseMultiplicity(self, *args):
+    def IncreaseMultiplicity(self, *args) -> "void" :
         """
         * //!Increases the multiplicity of the knot <Index> to  <M>. If <M> is lower or equal to the current  multiplicity nothing is done. If <M> is higher than  the degree the degree is used. If <Index> is not in [FirstUKnotIndex, LastUKnotIndex]
 
@@ -432,7 +432,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IncreaseMultiplicity(self, *args)
 
-    def IncrementMultiplicity(self, *args):
+    def IncrementMultiplicity(self, *args) -> "void" :
         """
         * //!Increment the multiplicities of the knots in  [I1,I2] by <M>. If <M> is not positive nithing is done. For each knot the resulting multiplicity is  limited to the Degree. If <I1,I2> are not in [FirstUKnotIndex, LastUKnotIndex]
 
@@ -447,7 +447,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IncrementMultiplicity(self, *args)
 
-    def InsertKnot(self, *args):
+    def InsertKnot(self, *args) -> "void" :
         """
         * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
 
@@ -464,7 +464,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_InsertKnot(self, *args)
 
-    def InsertKnots(self, *args):
+    def InsertKnots(self, *args) -> "void" :
         """
         * Inserts a set of knots values in the sequence of knots.  For each U = Knots(i), M = Mults(i)  If <U> is an existing knot the multiplicity is increased by <M> if <Add> is True, increased to <M> if <Add> is False.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
 
@@ -481,7 +481,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_InsertKnots(self, *args)
 
-    def RemoveKnot(self, *args):
+    def RemoveKnot(self, *args) -> "Standard_Boolean" :
         """
         * Decrement the knots multiplicity to <M>. If M is  0 the knot is removed. The Poles sequence is  modified. As there are two ways to compute the new poles the  average is computed if the distance is lower than  the <Tolerance>, else False is returned. A low tolerance is used to prevent the modification  of the curve. A high tolerance is used to 'smooth' the curve. Raised if Index is not in the range [FirstUKnotIndex, LastUKnotIndex] pole insertion and pole removing this operation is limited to the Uniform or QuasiUniform BSplineCurve. The knot values are modified . If the BSpline is NonUniform or Piecewise Bezier an exception Construction error is raised.
 
@@ -496,7 +496,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_RemoveKnot(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         * Changes the direction of parametrization of <self>. The Knot sequence is modified, the FirstParameter and the LastParameter are not modified. The StartPoint of the initial curve becomes the EndPoint of the reversed curve and the EndPoint of the initial curve becomes the StartPoint of the reversed curve.
 
@@ -505,7 +505,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Reverse(self, *args)
 
-    def ReversedParameter(self, *args):
+    def ReversedParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the reversed curve for the point of parameter U on <self>.  returns UFirst + ULast - U
 
@@ -516,7 +516,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_ReversedParameter(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "void" :
         """
         * Segments the curve between U1 and U2. The control points are modified, the first and the last point are not the same. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the curve <self> or if the curve makes loop. After the segmentation the length of a curve can be null. raises if U2 < U1.
 
@@ -529,7 +529,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Segment(self, *args)
 
-    def SetKnots(self, *args):
+    def SetKnots(self, *args) -> "void" :
         """
         * Changes all the knots of the curve The multiplicity of the knots are not modified. Raised if there is an index such that K (Index+1) <= K (Index). Raised if K.Lower() < 1 or K.Upper() > NbKnots
 
@@ -540,7 +540,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetKnots(self, *args)
 
-    def SetKnot(self, *args):
+    def SetKnot(self, *args) -> "void" :
         """
         * Changes the knot of range Index. The multiplicity of the knot is not modified. Raised if K >= Knots(Index+1) or K <= Knots(Index-1). Raised if Index < 1 || Index > NbKnots
 
@@ -563,7 +563,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetKnot(self, *args)
 
-    def PeriodicNormalization(self, *args):
+    def PeriodicNormalization(self, *args) -> "void" :
         """
         * returns the parameter normalized within  the period if the curve is periodic : otherwise  does not do anything
 
@@ -574,7 +574,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_PeriodicNormalization(self, *args)
 
-    def SetPeriodic(self, *args):
+    def SetPeriodic(self, *args) -> "void" :
         """
         * Makes a closed B-spline into a periodic curve. The curve is periodic if the knot sequence is periodic and if the curve is closed (The tolerance criterion is Resolution from gp). The period T is equal to Knot(LastUKnotIndex) - Knot(FirstUKnotIndex). A periodic B-spline can be uniform or not. Raised if the curve is not closed.
 
@@ -583,7 +583,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetPeriodic(self, *args)
 
-    def SetOrigin(self, *args):
+    def SetOrigin(self, *args) -> "void" :
         """
         * Set the origin of a periodic curve at Knot(index) KnotVector and poles are modified. Raised if the curve is not periodic Raised if index not in the range [FirstUKnotIndex , LastUKnotIndex]
 
@@ -594,7 +594,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetOrigin(self, *args)
 
-    def SetNotPeriodic(self, *args):
+    def SetNotPeriodic(self, *args) -> "void" :
         """
         * Makes a non periodic curve. If the curve was non periodic the curve is not modified.
 
@@ -603,7 +603,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetNotPeriodic(self, *args)
 
-    def SetPole(self, *args):
+    def SetPole(self, *args) -> "void" :
         """
         * Substitutes the Pole of range Index with P. Raised if Index < 1 || Index > NbPoles
 
@@ -626,7 +626,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetPole(self, *args)
 
-    def SetWeight(self, *args):
+    def SetWeight(self, *args) -> "void" :
         """
         * Changes the weight for the pole of range Index. If the curve was non rational it can become rational. If the curve was rational it can become non rational. Raised if Index < 1 || Index > NbPoles Raised if Weight <= 0.0
 
@@ -639,7 +639,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_SetWeight(self, *args)
 
-    def IsCN(self, *args):
+    def IsCN(self, *args) -> "Standard_Boolean" :
         """
         * Returns the continuity of the curve, the curve is at least C0. Raised if N < 0.
 
@@ -650,7 +650,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IsCN(self, *args)
 
-    def IsClosed(self, *args):
+    def IsClosed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the distance between the first point and the last point of the curve is lower or equal to Resolution from package gp. Warnings : The first and the last point can be different from the first pole and the last pole of the curve.
 
@@ -659,7 +659,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IsClosed(self, *args)
 
-    def IsPeriodic(self, *args):
+    def IsPeriodic(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the curve is periodic.
 
@@ -668,7 +668,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IsPeriodic(self, *args)
 
-    def IsRational(self, *args):
+    def IsRational(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the weights are not identical. The tolerance criterion is Epsilon of the class Real.
 
@@ -677,7 +677,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_IsRational(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "GeomAbs_Shape" :
         """
         * Returns the global continuity of the curve : C0 : only geometric continuity, C1 : continuity of the first derivative all along the Curve, C2 : continuity of the second derivative all along the Curve, C3 : continuity of the third derivative all along the Curve, CN : the order of continuity is infinite. For a B-spline curve of degree d if a knot Ui has a multiplicity p the B-spline curve is only Cd-p continuous at Ui. So the global continuity of the curve can't be greater than Cd-p where p is the maximum multiplicity of the interior Knots. In the interior of a knot span the curve is infinitely continuously differentiable.
 
@@ -686,7 +686,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Continuity(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         * Computation of value and derivatives
 
@@ -695,7 +695,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Degree(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         :param U:
         :type U: float
@@ -704,7 +704,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Value(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -715,7 +715,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -728,7 +728,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -743,7 +743,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_D2(self, *args)
 
-    def D3(self, *args):
+    def D3(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -760,7 +760,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_D3(self, *args)
 
-    def DN(self, *args):
+    def DN(self, *args) -> "Standard_Real" :
         """
         * The following functions computes the point of parameter U and the derivatives at this point on the B-spline curve arc defined between the knot FromK1 and the knot ToK2. U can be out of bounds [Knot (FromK1), Knot (ToK2)] but for the computation we only use the definition of the curve between these two knots. This method is useful to compute local derivative, if the order of continuity of the whole curve is not greater enough. Inside the parametric domain Knot (FromK1), Knot (ToK2) the evaluations are the same as if we consider the whole definition of the curve. Of course the evaluations are different outside this parametric domain.
 
@@ -773,7 +773,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_DN(self, *args)
 
-    def LocalValue(self, *args):
+    def LocalValue(self, *args) -> "Standard_Real" :
         """
         :param U:
         :type U: float
@@ -786,7 +786,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalValue(self, *args)
 
-    def LocalD0(self, *args):
+    def LocalD0(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -801,7 +801,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalD0(self, *args)
 
-    def LocalD1(self, *args):
+    def LocalD1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -818,7 +818,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalD1(self, *args)
 
-    def LocalD2(self, *args):
+    def LocalD2(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -837,7 +837,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalD2(self, *args)
 
-    def LocalD3(self, *args):
+    def LocalD3(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -858,7 +858,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalD3(self, *args)
 
-    def LocalDN(self, *args):
+    def LocalDN(self, *args) -> "Standard_Real" :
         """
         :param U:
         :type U: float
@@ -873,7 +873,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocalDN(self, *args)
 
-    def EndPoint(self, *args):
+    def EndPoint(self, *args) -> "Standard_Real" :
         """
         * Returns the last point of the curve. Warnings : The last point of the curve is different from the last pole of the curve if the multiplicity of the last knot is lower than Degree.
 
@@ -882,7 +882,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_EndPoint(self, *args)
 
-    def FirstUKnotIndex(self, *args):
+    def FirstUKnotIndex(self, *args) -> "Standard_Integer" :
         """
         * For a B-spline curve the first parameter (which gives the start point of the curve) is a knot value but if the multiplicity of the first knot index is lower than Degree + 1 it is not the first knot of the curve. This method computes the index of the knot corresponding to the first parameter.
 
@@ -891,7 +891,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_FirstUKnotIndex(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * Computes the parametric value of the start point of the curve. It is a knot value.
 
@@ -900,7 +900,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_FirstParameter(self, *args)
 
-    def Knot(self, *args):
+    def Knot(self, *args) -> "Standard_Real" :
         """
         * Returns the knot of range Index. When there is a knot with a multiplicity greater than 1 the knot is not repeated. The method Multiplicity can be used to get the multiplicity of the Knot. Raised if Index < 1 or Index > NbKnots
 
@@ -911,7 +911,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Knot(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "void" :
         """
         * returns the knot values of the B-spline curve; Raised if the length of K is not equal to the number of knots.
 
@@ -922,7 +922,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Knots(self, *args)
 
-    def KnotSequence(self, *args):
+    def KnotSequence(self, *args) -> "void" :
         """
         * Returns the knots sequence. In this sequence the knots with a multiplicity greater than 1 are repeated. Example : K = {k1, k1, k1, k2, k3, k3, k4, k4, k4} Raised if the length of K is not equal to NbPoles + Degree + 1
 
@@ -933,7 +933,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_KnotSequence(self, *args)
 
-    def KnotDistribution(self, *args):
+    def KnotDistribution(self, *args) -> "GeomAbs_BSplKnotDistribution" :
         """
         * Returns NonUniform or Uniform or QuasiUniform or PiecewiseBezier. If all the knots differ by a positive constant from the preceding knot the BSpline Curve can be : - Uniform if all the knots are of multiplicity 1, - QuasiUniform if all the knots are of multiplicity 1 except for the first and last knot which are of multiplicity Degree + 1, - PiecewiseBezier if the first and last knots have multiplicity Degree + 1 and if interior knots have multiplicity Degree A piecewise Bezier with only two knots is a BezierCurve. else the curve is non uniform. The tolerance criterion is Epsilon from class Real.
 
@@ -942,7 +942,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_KnotDistribution(self, *args)
 
-    def LastUKnotIndex(self, *args):
+    def LastUKnotIndex(self, *args) -> "Standard_Integer" :
         """
         * For a BSpline curve the last parameter (which gives the end point of the curve) is a knot value but if the multiplicity of the last knot index is lower than Degree + 1 it is not the last knot of the curve. This method computes the index of the knot corresponding to the last parameter.
 
@@ -951,7 +951,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LastUKnotIndex(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * Computes the parametric value of the end point of the curve. It is a knot value.
 
@@ -960,7 +960,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LastParameter(self, *args)
 
-    def LocateU(self, *args):
+    def LocateU(self, *args) -> "void" :
         """
         * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. Knots (I1) <= U <= Knots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < Knots (1) - Abs(ParametricTolerance) . if I2 > NbKnots => U > Knots (NbKnots) + Abs(ParametricTolerance)
 
@@ -979,7 +979,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_LocateU(self, *args)
 
-    def Multiplicity(self, *args):
+    def Multiplicity(self, *args) -> "Standard_Integer" :
         """
         * Returns the multiplicity of the knots of range Index. Raised if Index < 1 or Index > NbKnots
 
@@ -990,7 +990,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Multiplicity(self, *args)
 
-    def Multiplicities(self, *args):
+    def Multiplicities(self, *args) -> "void" :
         """
         * Returns the multiplicity of the knots of the curve. Raised if the length of M is not equal to NbKnots.
 
@@ -1001,7 +1001,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Multiplicities(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots. This method returns the number of knot without repetition of multiple knots.
 
@@ -1010,7 +1010,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_NbKnots(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of poles
 
@@ -1019,7 +1019,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_NbPoles(self, *args)
 
-    def Pole(self, *args):
+    def Pole(self, *args) -> "Standard_Real" :
         """
         * Returns the pole of range Index. Raised if Index < 1 or Index > NbPoles.
 
@@ -1030,7 +1030,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Pole(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         * Returns the poles of the B-spline curve; Raised if the length of P is not equal to the number of poles.
 
@@ -1041,7 +1041,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Poles(self, *args)
 
-    def StartPoint(self, *args):
+    def StartPoint(self, *args) -> "Standard_Real" :
         """
         * Returns the start point of the curve. Warnings : This point is different from the first pole of the curve if the multiplicity of the first knot is lower than Degree.
 
@@ -1050,7 +1050,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_StartPoint(self, *args)
 
-    def Weight(self, *args):
+    def Weight(self, *args) -> "Standard_Real" :
         """
         * Returns the weight of the pole of range Index . Raised if Index < 1 or Index > NbPoles.
 
@@ -1061,7 +1061,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Weight(self, *args)
 
-    def Weights(self, *args):
+    def Weights(self, *args) -> "void" :
         """
         * Returns the weights of the B-spline curve; Raised if the length of W is not equal to NbPoles.
 
@@ -1072,7 +1072,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Weights(self, *args)
 
-    def MaxDegree(*args):
+    def MaxDegree(*args) -> "Standard_Integer" :
         """
         * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
@@ -1082,7 +1082,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         return _Law.Law_BSpline_MaxDegree(*args)
 
     MaxDegree = staticmethod(MaxDegree)
-    def MovePointAndTangent(self, *args):
+    def MovePointAndTangent(self, *args) -> "void" :
         """
         * Changes the value of the Law at parameter U to NewValue. and makes its derivative at U be derivative. StartingCondition = -1 means first can move EndingCondition = -1 means last point can move StartingCondition = 0 means the first point cannot move EndingCondition = 0 means the last point cannot move StartingCondition = 1 means the first point and tangent cannot move EndingCondition = 1 means the last point and tangent cannot move and so forth ErrorStatus != 0 means that there are not enought degree of freedom with the constrain to deform the curve accordingly
 
@@ -1105,7 +1105,7 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_MovePointAndTangent(self, *args)
 
-    def Resolution(self, *args):
+    def Resolution(self, *args) -> "void" :
         """
         * given Tolerance3D returns UTolerance such that if f(t) is the curve we have | t1 - t0| < Utolerance ===> |f(t1) - f(t0)| < Tolerance3D
 
@@ -1118,18 +1118,18 @@ class Law_BSpline(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_BSpline_Resolution(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Law_BSpline" :
         """
         :rtype: Handle_Law_BSpline
 
         """
         return _Law.Law_BSpline_Copy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_BSpline self)"""
         return _Law.Law_BSpline__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_BSpline" :
         """GetHandle(Law_BSpline self) -> Handle_Law_BSpline"""
         return _Law.Law_BSpline_GetHandle(self)
 
@@ -1203,7 +1203,7 @@ Law_BSpline.GetHandle = new_instancemethod(_Law.Law_BSpline_GetHandle,None,Law_B
 Law_BSpline_swigregister = _Law.Law_BSpline_swigregister
 Law_BSpline_swigregister(Law_BSpline)
 
-def Law_BSpline_MaxDegree(*args):
+def Law_BSpline_MaxDegree(*args) -> "Standard_Integer" :
   """
     * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
@@ -1233,7 +1233,7 @@ Handle_Law_BSpline._kill_pointed = new_instancemethod(_Law.Handle_Law_BSpline__k
 Handle_Law_BSpline_swigregister = _Law.Handle_Law_BSpline_swigregister
 Handle_Law_BSpline_swigregister(Handle_Law_BSpline)
 
-def Handle_Law_BSpline_DownCast(*args):
+def Handle_Law_BSpline_DownCast(*args) -> "Handle_Law_BSpline const" :
   return _Law.Handle_Law_BSpline_DownCast(*args)
 Handle_Law_BSpline_DownCast = _Law.Handle_Law_BSpline_DownCast
 
@@ -1252,7 +1252,7 @@ class Law_BSplineKnotSplitting(object):
 
         """
         _Law.Law_BSplineKnotSplitting_swiginit(self,_Law.new_Law_BSplineKnotSplitting(*args))
-    def NbSplits(self, *args):
+    def NbSplits(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots corresponding to the splitting.
 
@@ -1261,7 +1261,7 @@ class Law_BSplineKnotSplitting(object):
         """
         return _Law.Law_BSplineKnotSplitting_NbSplits(self, *args)
 
-    def Splitting(self, *args):
+    def Splitting(self, *args) -> "void" :
         """
         * Returns the indexes of the BSpline curve knots corresponding to the splitting. Raised if the length of SplitValues is not equal to NbSPlit.
 
@@ -1272,7 +1272,7 @@ class Law_BSplineKnotSplitting(object):
         """
         return _Law.Law_BSplineKnotSplitting_Splitting(self, *args)
 
-    def SplitValue(self, *args):
+    def SplitValue(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the knot corresponding to the splitting of range Index. Raised if Index < 1 or Index > NbSplits
 
@@ -1302,14 +1302,14 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "GeomAbs_Shape" :
         """
         :rtype: GeomAbs_Shape
 
         """
         return _Law.Law_Function_Continuity(self, *args)
 
-    def NbIntervals(self, *args):
+    def NbIntervals(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -1320,7 +1320,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_NbIntervals(self, *args)
 
-    def Intervals(self, *args):
+    def Intervals(self, *args) -> "void" :
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -1333,7 +1333,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_Intervals(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the function at the point of parameter X.
 
@@ -1344,7 +1344,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         * Returns the value F and the first derivative D of the function at the point of parameter X.
 
@@ -1359,7 +1359,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         * Returns the value, first and seconde derivatives at parameter X.
 
@@ -1376,7 +1376,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_D2(self, *args)
 
-    def Trim(self, *args):
+    def Trim(self, *args) -> "Handle_Law_Function" :
         """
         * Returns a law equivalent of <self> between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. It is usfule to determines the derivatives in these values <First> and <Last> if the Law is not Cn.
 
@@ -1391,7 +1391,7 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_Trim(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         * Returns the parametric bounds of the function.
 
@@ -1404,11 +1404,11 @@ class Law_Function(OCC.MMgt.MMgt_TShared):
         """
         return _Law.Law_Function_Bounds(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_Function self)"""
         return _Law.Law_Function__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_Function" :
         """GetHandle(Law_Function self) -> Handle_Law_Function"""
         return _Law.Law_Function_GetHandle(self)
 
@@ -1454,7 +1454,7 @@ Handle_Law_Function._kill_pointed = new_instancemethod(_Law.Handle_Law_Function_
 Handle_Law_Function_swigregister = _Law.Handle_Law_Function_swigregister
 Handle_Law_Function_swigregister(Handle_Law_Function)
 
-def Handle_Law_Function_DownCast(*args):
+def Handle_Law_Function_DownCast(*args) -> "Handle_Law_Function const" :
   return _Law.Handle_Law_Function_DownCast(*args)
 Handle_Law_Function_DownCast = _Law.Handle_Law_Function_DownCast
 
@@ -1487,7 +1487,7 @@ class Law_Interpolate(object):
 
         """
         _Law.Law_Interpolate_swiginit(self,_Law.new_Law_Interpolate(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * loads initial and final tangents if any.
 
@@ -1508,7 +1508,7 @@ class Law_Interpolate(object):
         """
         return _Law.Law_Interpolate_Load(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Makes the interpolation
 
@@ -1517,14 +1517,14 @@ class Law_Interpolate(object):
         """
         return _Law.Law_Interpolate_Perform(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Law_BSpline const &" :
         """
         :rtype: Handle_Law_BSpline
 
         """
         return _Law.Law_Interpolate_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -1556,7 +1556,7 @@ class Law_Laws(object):
 
         """
         _Law.Law_Laws_swiginit(self,_Law.new_Law_Laws(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Law_Laws &
@@ -1565,7 +1565,7 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Law_Laws &
@@ -1574,28 +1574,28 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Law.Law_Laws_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Law.Law_Laws_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Law.Law_Laws_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Law_Function &
@@ -1614,7 +1614,7 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Law_Function &
@@ -1633,28 +1633,28 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Law_Function &" :
         """
         :rtype: Handle_Law_Function
 
         """
         return _Law.Law_Laws_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Law_Function &" :
         """
         :rtype: Handle_Law_Function
 
         """
         return _Law.Law_Laws_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Law.Law_Laws_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: Law_ListIteratorOfLaws &
@@ -1663,7 +1663,7 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Law_Function &
@@ -1680,7 +1680,7 @@ class Law_Laws(object):
         """
         return _Law.Law_Laws_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Law_Function &
@@ -1735,7 +1735,7 @@ class Law_ListIteratorOfLaws(object):
 
         """
         _Law.Law_ListIteratorOfLaws_swiginit(self,_Law.new_Law_ListIteratorOfLaws(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: Law_Laws &
@@ -1744,21 +1744,21 @@ class Law_ListIteratorOfLaws(object):
         """
         return _Law.Law_ListIteratorOfLaws_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Law.Law_ListIteratorOfLaws_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Law.Law_ListIteratorOfLaws_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Law_Function &" :
         """
         :rtype: Handle_Law_Function
 
@@ -1794,18 +1794,18 @@ class Law_ListNodeOfLaws(OCC.TCollection.TCollection_MapNode):
 
         """
         _Law.Law_ListNodeOfLaws_swiginit(self,_Law.new_Law_ListNodeOfLaws(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Law_Function &" :
         """
         :rtype: Handle_Law_Function
 
         """
         return _Law.Law_ListNodeOfLaws_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_ListNodeOfLaws self)"""
         return _Law.Law_ListNodeOfLaws__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_ListNodeOfLaws" :
         """GetHandle(Law_ListNodeOfLaws self) -> Handle_Law_ListNodeOfLaws"""
         return _Law.Law_ListNodeOfLaws_GetHandle(self)
 
@@ -1844,7 +1844,7 @@ Handle_Law_ListNodeOfLaws._kill_pointed = new_instancemethod(_Law.Handle_Law_Lis
 Handle_Law_ListNodeOfLaws_swigregister = _Law.Handle_Law_ListNodeOfLaws_swigregister
 Handle_Law_ListNodeOfLaws_swigregister(Handle_Law_ListNodeOfLaws)
 
-def Handle_Law_ListNodeOfLaws_DownCast(*args):
+def Handle_Law_ListNodeOfLaws_DownCast(*args) -> "Handle_Law_ListNodeOfLaws const" :
   return _Law.Handle_Law_ListNodeOfLaws_DownCast(*args)
 Handle_Law_ListNodeOfLaws_DownCast = _Law.Handle_Law_ListNodeOfLaws_DownCast
 
@@ -1865,14 +1865,14 @@ class Law_BSpFunc(Law_Function):
 
         """
         _Law.Law_BSpFunc_swiginit(self,_Law.new_Law_BSpFunc(*args))
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Law_BSpline" :
         """
         :rtype: Handle_Law_BSpline
 
         """
         return _Law.Law_BSpFunc_Curve(self, *args)
 
-    def SetCurve(self, *args):
+    def SetCurve(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Law_BSpline &
@@ -1881,11 +1881,11 @@ class Law_BSpFunc(Law_Function):
         """
         return _Law.Law_BSpFunc_SetCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_BSpFunc self)"""
         return _Law.Law_BSpFunc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_BSpFunc" :
         """GetHandle(Law_BSpFunc self) -> Handle_Law_BSpFunc"""
         return _Law.Law_BSpFunc_GetHandle(self)
 
@@ -1925,7 +1925,7 @@ Handle_Law_BSpFunc._kill_pointed = new_instancemethod(_Law.Handle_Law_BSpFunc__k
 Handle_Law_BSpFunc_swigregister = _Law.Handle_Law_BSpFunc_swigregister
 Handle_Law_BSpFunc_swigregister(Handle_Law_BSpFunc)
 
-def Handle_Law_BSpFunc_DownCast(*args):
+def Handle_Law_BSpFunc_DownCast(*args) -> "Handle_Law_BSpFunc const" :
   return _Law.Handle_Law_BSpFunc_DownCast(*args)
 Handle_Law_BSpFunc_DownCast = _Law.Handle_Law_BSpFunc_DownCast
 
@@ -1950,7 +1950,7 @@ class Law_Composite(Law_Function):
 
         """
         _Law.Law_Composite_swiginit(self,_Law.new_Law_Composite(*args))
-    def ChangeElementaryLaw(self, *args):
+    def ChangeElementaryLaw(self, *args) -> "Handle_Law_Function &" :
         """
         * Returns the elementary function of the composite used to compute at parameter W.
 
@@ -1961,32 +1961,32 @@ class Law_Composite(Law_Function):
         """
         return _Law.Law_Composite_ChangeElementaryLaw(self, *args)
 
-    def ChangeLaws(self, *args):
+    def ChangeLaws(self, *args) -> "Law_Laws &" :
         """
         :rtype: Law_Laws
 
         """
         return _Law.Law_Composite_ChangeLaws(self, *args)
 
-    def IsPeriodic(self, *args):
+    def IsPeriodic(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Law.Law_Composite_IsPeriodic(self, *args)
 
-    def SetPeriodic(self, *args):
+    def SetPeriodic(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Law.Law_Composite_SetPeriodic(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_Composite self)"""
         return _Law.Law_Composite__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_Composite" :
         """GetHandle(Law_Composite self) -> Handle_Law_Composite"""
         return _Law.Law_Composite_GetHandle(self)
 
@@ -2028,7 +2028,7 @@ Handle_Law_Composite._kill_pointed = new_instancemethod(_Law.Handle_Law_Composit
 Handle_Law_Composite_swigregister = _Law.Handle_Law_Composite_swigregister
 Handle_Law_Composite_swigregister(Handle_Law_Composite)
 
-def Handle_Law_Composite_DownCast(*args):
+def Handle_Law_Composite_DownCast(*args) -> "Handle_Law_Composite const" :
   return _Law.Handle_Law_Composite_DownCast(*args)
 Handle_Law_Composite_DownCast = _Law.Handle_Law_Composite_DownCast
 
@@ -2041,7 +2041,7 @@ class Law_Constant(Law_Function):
 
         """
         _Law.Law_Constant_swiginit(self,_Law.new_Law_Constant(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Set the radius and the range of the constant Law.
 
@@ -2056,11 +2056,11 @@ class Law_Constant(Law_Function):
         """
         return _Law.Law_Constant_Set(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_Constant self)"""
         return _Law.Law_Constant__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_Constant" :
         """GetHandle(Law_Constant self) -> Handle_Law_Constant"""
         return _Law.Law_Constant_GetHandle(self)
 
@@ -2099,7 +2099,7 @@ Handle_Law_Constant._kill_pointed = new_instancemethod(_Law.Handle_Law_Constant_
 Handle_Law_Constant_swigregister = _Law.Handle_Law_Constant_swigregister
 Handle_Law_Constant_swigregister(Handle_Law_Constant)
 
-def Handle_Law_Constant_DownCast(*args):
+def Handle_Law_Constant_DownCast(*args) -> "Handle_Law_Constant const" :
   return _Law.Handle_Law_Constant_DownCast(*args)
 Handle_Law_Constant_DownCast = _Law.Handle_Law_Constant_DownCast
 
@@ -2114,7 +2114,7 @@ class Law_Linear(Law_Function):
 
         """
         _Law.Law_Linear_swiginit(self,_Law.new_Law_Linear(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Defines this linear evolution law by assigning both: - the bounds Pdeb and Pfin of the parameter, and - the values Valdeb and Valfin of the function at these two parametric bounds.
 
@@ -2131,11 +2131,11 @@ class Law_Linear(Law_Function):
         """
         return _Law.Law_Linear_Set(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_Linear self)"""
         return _Law.Law_Linear__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_Linear" :
         """GetHandle(Law_Linear self) -> Handle_Law_Linear"""
         return _Law.Law_Linear_GetHandle(self)
 
@@ -2174,7 +2174,7 @@ Handle_Law_Linear._kill_pointed = new_instancemethod(_Law.Handle_Law_Linear__kil
 Handle_Law_Linear_swigregister = _Law.Handle_Law_Linear_swigregister
 Handle_Law_Linear_swigregister(Handle_Law_Linear)
 
-def Handle_Law_Linear_DownCast(*args):
+def Handle_Law_Linear_DownCast(*args) -> "Handle_Law_Linear const" :
   return _Law.Handle_Law_Linear_DownCast(*args)
 Handle_Law_Linear_DownCast = _Law.Handle_Law_Linear_DownCast
 
@@ -2189,7 +2189,7 @@ class Law_Interpol(Law_BSpFunc):
 
         """
         _Law.Law_Interpol_swiginit(self,_Law.new_Law_Interpol(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Defines this evolution law by interpolating the set of 2D points ParAndRad. The Y coordinate of a point of ParAndRad is the value of the function at the parameter point given by its X coordinate. If Periodic is true, this function is assumed to be periodic. Warning - The X coordinates of points in the table ParAndRad must be given in ascendant order. - If Periodic is true, the first and last Y coordinates of points in the table ParAndRad are assumed to be equal. In addition, with the second syntax, Dd and Df are also assumed to be equal. If this is not the case, Set uses the first value(s) as last value(s).
 
@@ -2214,7 +2214,7 @@ class Law_Interpol(Law_BSpFunc):
         """
         return _Law.Law_Interpol_Set(self, *args)
 
-    def SetInRelative(self, *args):
+    def SetInRelative(self, *args) -> "void" :
         """
         :param ParAndRad:
         :type ParAndRad: TColgp_Array1OfPnt2d
@@ -2243,11 +2243,11 @@ class Law_Interpol(Law_BSpFunc):
         """
         return _Law.Law_Interpol_SetInRelative(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_Interpol self)"""
         return _Law.Law_Interpol__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_Interpol" :
         """GetHandle(Law_Interpol self) -> Handle_Law_Interpol"""
         return _Law.Law_Interpol_GetHandle(self)
 
@@ -2287,7 +2287,7 @@ Handle_Law_Interpol._kill_pointed = new_instancemethod(_Law.Handle_Law_Interpol_
 Handle_Law_Interpol_swigregister = _Law.Handle_Law_Interpol_swigregister
 Handle_Law_Interpol_swigregister(Handle_Law_Interpol)
 
-def Handle_Law_Interpol_DownCast(*args):
+def Handle_Law_Interpol_DownCast(*args) -> "Handle_Law_Interpol const" :
   return _Law.Handle_Law_Interpol_DownCast(*args)
 Handle_Law_Interpol_DownCast = _Law.Handle_Law_Interpol_DownCast
 
@@ -2302,7 +2302,7 @@ class Law_S(Law_BSpFunc):
 
         """
         _Law.Law_S_swiginit(self,_Law.new_Law_S(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Defines this S evolution law by assigning both: - the bounds Pdeb and Pfin of the parameter, and - the values Valdeb and Valfin of the function at these two parametric bounds. The function is assumed to have the first derivatives equal to 0 at the two parameter points Pdeb and Pfin.
 
@@ -2335,11 +2335,11 @@ class Law_S(Law_BSpFunc):
         """
         return _Law.Law_S_Set(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Law_S self)"""
         return _Law.Law_S__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Law_S" :
         """GetHandle(Law_S self) -> Handle_Law_S"""
         return _Law.Law_S_GetHandle(self)
 
@@ -2378,7 +2378,7 @@ Handle_Law_S._kill_pointed = new_instancemethod(_Law.Handle_Law_S__kill_pointed,
 Handle_Law_S_swigregister = _Law.Handle_Law_S_swigregister
 Handle_Law_S_swigregister(Handle_Law_S)
 
-def Handle_Law_S_DownCast(*args):
+def Handle_Law_S_DownCast(*args) -> "Handle_Law_S const" :
   return _Law.Handle_Law_S_DownCast(*args)
 Handle_Law_S_DownCast = _Law.Handle_Law_S_DownCast
 

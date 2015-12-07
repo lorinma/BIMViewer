@@ -164,7 +164,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _BOPDS.BOPDS_CommonBlock_swiginit(self,_BOPDS.new_BOPDS_CommonBlock(*args))
-    def AddPaveBlock(self, *args):
+    def AddPaveBlock(self, *args) -> "void" :
         """
         * Modifier Adds the pave block <aPB> to the list of pave blocks of the common block
 
@@ -175,7 +175,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddPaveBlock(self, *args)
 
-    def AddPaveBlocks(self, *args):
+    def AddPaveBlocks(self, *args) -> "void" :
         """
         * Modifier Adds the list of pave blocks <aLPB> to the list of pave blocks of the common block
 
@@ -186,7 +186,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddPaveBlocks(self, *args)
 
-    def AddFace(self, *args):
+    def AddFace(self, *args) -> "void" :
         """
         * Modifier Adds the index of the face <aF> to the list of indices of faces of the common block
 
@@ -197,7 +197,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddFace(self, *args)
 
-    def AddFaces(self, *args):
+    def AddFaces(self, *args) -> "void" :
         """
         * Modifier Adds the list of indices of faces <aLF> to the list of indices of faces of the common block
 
@@ -208,7 +208,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddFaces(self, *args)
 
-    def PaveBlocks(self, *args):
+    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
         """
         * Selector Returns the list of pave blocks of the common block
 
@@ -217,7 +217,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_PaveBlocks(self, *args)
 
-    def Faces(self, *args):
+    def Faces(self, *args) -> "BOPCol_ListOfInteger const &" :
         """
         * Selector Returns the list of indices of faces of the common block
 
@@ -226,7 +226,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_Faces(self, *args)
 
-    def PaveBlock1(self, *args):
+    def PaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
         """
         * Selector Returns the first pave block of the common block
 
@@ -235,7 +235,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_PaveBlock1(self, *args)
 
-    def PaveBlockOnEdge(self, *args):
+    def PaveBlockOnEdge(self, *args) -> "Handle_BOPDS_PaveBlock &" :
         """
         * Selector Returns the pave block that belongs to the edge with index <theIx>
 
@@ -246,7 +246,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_PaveBlockOnEdge(self, *args)
 
-    def IsPaveBlockOnFace(self, *args):
+    def IsPaveBlockOnFace(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the common block contains a pave block that belongs to the face with index <theIx>
 
@@ -257,7 +257,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_IsPaveBlockOnFace(self, *args)
 
-    def IsPaveBlockOnEdge(self, *args):
+    def IsPaveBlockOnEdge(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the common block contains a pave block that belongs to the edge with index <theIx>
 
@@ -268,7 +268,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_IsPaveBlockOnEdge(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the common block contains a pave block that is equal to <thePB>
 
@@ -285,7 +285,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_Contains(self, *args)
 
-    def SetEdge(self, *args):
+    def SetEdge(self, *args) -> "void" :
         """
         * Modifier Assign the index <theEdge> as the edge index to all pave blocks of the common block
 
@@ -296,7 +296,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_SetEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of the edge of all pave blocks of the common block
 
@@ -305,18 +305,18 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_Edge(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPDS.BOPDS_CommonBlock_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BOPDS_CommonBlock self)"""
         return _BOPDS.BOPDS_CommonBlock__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BOPDS_CommonBlock" :
         """GetHandle(BOPDS_CommonBlock self) -> Handle_BOPDS_CommonBlock"""
         return _BOPDS.BOPDS_CommonBlock_GetHandle(self)
 
@@ -368,7 +368,7 @@ Handle_BOPDS_CommonBlock._kill_pointed = new_instancemethod(_BOPDS.Handle_BOPDS_
 Handle_BOPDS_CommonBlock_swigregister = _BOPDS.Handle_BOPDS_CommonBlock_swigregister
 Handle_BOPDS_CommonBlock_swigregister(Handle_BOPDS_CommonBlock)
 
-def Handle_BOPDS_CommonBlock_DownCast(*args):
+def Handle_BOPDS_CommonBlock_DownCast(*args) -> "Handle_BOPDS_CommonBlock const" :
   return _BOPDS.Handle_BOPDS_CommonBlock_DownCast(*args)
 Handle_BOPDS_CommonBlock_DownCast = _BOPDS.Handle_BOPDS_CommonBlock_DownCast
 
@@ -391,7 +391,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
 
         """
         _BOPDS.BOPDS_CoupleOfPaveBlocks_swiginit(self,_BOPDS.new_BOPDS_CoupleOfPaveBlocks(*args))
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * /** * Sets an index * @param theIndex * index */
 
@@ -402,7 +402,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * /** * Returns the index * returns * index */
 
@@ -411,7 +411,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_Index(self, *args)
 
-    def SetIndexInterf(self, *args):
+    def SetIndexInterf(self, *args) -> "void" :
         """
         * /** * Sets an index of an interference * @param theIndex * index of an interference */
 
@@ -422,7 +422,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetIndexInterf(self, *args)
 
-    def IndexInterf(self, *args):
+    def IndexInterf(self, *args) -> "Standard_Integer" :
         """
         * /** * Returns the index of an interference * returns * index of an interference */
 
@@ -431,7 +431,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_IndexInterf(self, *args)
 
-    def SetPaveBlocks(self, *args):
+    def SetPaveBlocks(self, *args) -> "void" :
         """
         * /** * Sets pave blocks * @param thePB1 * first pave block * @param thePB2 * secondt pave block */
 
@@ -444,7 +444,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args):
+    def PaveBlocks(self, *args) -> "void" :
         """
         * /** * Returns pave blocks * @param thePB1 * the first pave block * @param thePB2 * the second pave block */
 
@@ -457,7 +457,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlocks(self, *args)
 
-    def SetPaveBlock1(self, *args):
+    def SetPaveBlock1(self, *args) -> "void" :
         """
         * /** * Sets the first pave block * @param thePB * the first pave block */
 
@@ -468,7 +468,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlock1(self, *args)
 
-    def PaveBlock1(self, *args):
+    def PaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
         """
         * /** * Returns the first pave block * returns * the first pave block */
 
@@ -477,7 +477,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlock1(self, *args)
 
-    def SetPaveBlock2(self, *args):
+    def SetPaveBlock2(self, *args) -> "void" :
         """
         * /** * Sets the second pave block * @param thePB * the second pave block */
 
@@ -488,7 +488,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlock2(self, *args)
 
-    def PaveBlock2(self, *args):
+    def PaveBlock2(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
         """
         * /** * Returns the second pave block * returns * the second pave block */
 
@@ -536,7 +536,7 @@ class BOPDS_Curve(object):
 
         """
         _BOPDS.BOPDS_Curve_swiginit(self,_BOPDS.new_BOPDS_Curve(*args))
-    def SetCurve(self, *args):
+    def SetCurve(self, *args) -> "void" :
         """
         * Modifier Sets the curve <theC>
 
@@ -547,7 +547,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetCurve(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "IntTools_Curve const &" :
         """
         * Selector Returns the curve
 
@@ -556,7 +556,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_Curve(self, *args)
 
-    def SetBox(self, *args):
+    def SetBox(self, *args) -> "void" :
         """
         * Modifier Sets the bounding box <theBox> of the curve
 
@@ -567,7 +567,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetBox(self, *args)
 
-    def Box(self, *args):
+    def Box(self, *args) -> "Bnd_Box const &" :
         """
         * Selector Returns the bounding box of the curve
 
@@ -576,7 +576,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_Box(self, *args)
 
-    def ChangeBox(self, *args):
+    def ChangeBox(self, *args) -> "Bnd_Box &" :
         """
         * Selector/Modifier Returns the bounding box of the curve
 
@@ -585,7 +585,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_ChangeBox(self, *args)
 
-    def SetPaveBlocks(self, *args):
+    def SetPaveBlocks(self, *args) -> "void" :
         """
         :param theLPB:
         :type theLPB: BOPDS_ListOfPaveBlock &
@@ -594,7 +594,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args):
+    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
         """
         * Selector Returns the list of pave blocks of the curve
 
@@ -603,7 +603,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_PaveBlocks(self, *args)
 
-    def ChangePaveBlocks(self, *args):
+    def ChangePaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock &" :
         """
         * Selector/Modifier Returns the list of pave blocks of the curve
 
@@ -612,7 +612,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_ChangePaveBlocks(self, *args)
 
-    def InitPaveBlock1(self, *args):
+    def InitPaveBlock1(self, *args) -> "void" :
         """
         * Creates initial pave block of the curve
 
@@ -621,7 +621,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_InitPaveBlock1(self, *args)
 
-    def ChangePaveBlock1(self, *args):
+    def ChangePaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock &" :
         """
         * Selector/Modifier Returns initial pave block of the curve
 
@@ -630,7 +630,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_ChangePaveBlock1(self, *args)
 
-    def TechnoVertices(self, *args):
+    def TechnoVertices(self, *args) -> "BOPCol_ListOfInteger const &" :
         """
         * Selector Returns list of indices of technologic vertices of the curve
 
@@ -639,7 +639,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_TechnoVertices(self, *args)
 
-    def ChangeTechnoVertices(self, *args):
+    def ChangeTechnoVertices(self, *args) -> "BOPCol_ListOfInteger &" :
         """
         * Selector/Modifier Returns list of indices of technologic vertices of the curve
 
@@ -648,7 +648,7 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_ChangeTechnoVertices(self, *args)
 
-    def HasEdge(self, *args):
+    def HasEdge(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if at least one pave block of the curve has edge
 
@@ -699,7 +699,7 @@ class BOPDS_DS(object):
 
         """
         _BOPDS.BOPDS_DS_swiginit(self,_BOPDS.new_BOPDS_DS(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the contents
 
@@ -708,7 +708,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Clear(self, *args)
 
-    def Allocator(self, *args):
+    def Allocator(self, *args) -> "BOPCol_BaseAllocator const &" :
         """
         * Selector
 
@@ -717,7 +717,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Allocator(self, *args)
 
-    def SetArguments(self, *args):
+    def SetArguments(self, *args) -> "void" :
         """
         * Modifier Sets the arguments [theLS] of an operation
 
@@ -728,7 +728,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SetArguments(self, *args)
 
-    def Arguments(self, *args):
+    def Arguments(self, *args) -> "BOPCol_ListOfShape const &" :
         """
         * Selector Returns the arguments of an operation
 
@@ -737,7 +737,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Arguments(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the data structure for the arguments
 
@@ -746,7 +746,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Init(self, *args)
 
-    def NbShapes(self, *args):
+    def NbShapes(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the total number of shapes stored
 
@@ -755,7 +755,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_NbShapes(self, *args)
 
-    def NbSourceShapes(self, *args):
+    def NbSourceShapes(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the total number of source shapes stored
 
@@ -764,7 +764,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_NbSourceShapes(self, *args)
 
-    def NbRanges(self, *args):
+    def NbRanges(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the number of index ranges
 
@@ -773,7 +773,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_NbRanges(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "BOPDS_IndexRange const &" :
         """
         * Selector Returns the index range 'i'
 
@@ -784,7 +784,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Range(self, *args)
 
-    def Rank(self, *args):
+    def Rank(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the rank of the shape of index 'i'
 
@@ -795,7 +795,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Rank(self, *args)
 
-    def IsNewShape(self, *args):
+    def IsNewShape(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the shape of index 'i' is not the source shape/sub-shape
 
@@ -806,7 +806,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsNewShape(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "Standard_Integer" :
         """
         * Modifier Appends the information about the shape [theSI] to the data structure Returns the index of theSI in the data structure
 
@@ -823,7 +823,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Append(self, *args)
 
-    def ShapeInfo(self, *args):
+    def ShapeInfo(self, *args) -> "BOPDS_ShapeInfo const &" :
         """
         * Selector Returns the information about the shape with index theIndex
 
@@ -834,7 +834,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ShapeInfo(self, *args)
 
-    def ChangeShapeInfo(self, *args):
+    def ChangeShapeInfo(self, *args) -> "BOPDS_ShapeInfo &" :
         """
         * Selector/Modifier Returns the information about the shape with index theIndex
 
@@ -845,7 +845,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ChangeShapeInfo(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Selector Returns the shape with index theIndex
 
@@ -856,7 +856,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Shape(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of the shape theS
 
@@ -867,7 +867,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Index(self, *args)
 
-    def PaveBlocksPool(self, *args):
+    def PaveBlocksPool(self, *args) -> "BOPDS_VectorOfListOfPaveBlock const &" :
         """
         * Selector Returns the information about pave blocks on source edges
 
@@ -876,7 +876,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_PaveBlocksPool(self, *args)
 
-    def ChangePaveBlocksPool(self, *args):
+    def ChangePaveBlocksPool(self, *args) -> "BOPDS_VectorOfListOfPaveBlock &" :
         """
         * Selector/Modifier Returns the information about pave blocks on source edges
 
@@ -885,7 +885,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ChangePaveBlocksPool(self, *args)
 
-    def HasPaveBlocks(self, *args):
+    def HasPaveBlocks(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape with index theIndex has the information about pave blocks
 
@@ -896,7 +896,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args):
+    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
         """
         * Selector Returns the pave blocks for the shape with index theIndex
 
@@ -907,7 +907,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_PaveBlocks(self, *args)
 
-    def ChangePaveBlocks(self, *args):
+    def ChangePaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock &" :
         """
         * Selector/Modifier Returns the pave blocks for the shape with index theIndex
 
@@ -918,7 +918,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ChangePaveBlocks(self, *args)
 
-    def UpdatePaveBlocks(self, *args):
+    def UpdatePaveBlocks(self, *args) -> "void" :
         """
         * Update the pave blocks for the all shapes in data structure
 
@@ -927,7 +927,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdatePaveBlocks(self, *args)
 
-    def UpdatePaveBlock(self, *args):
+    def UpdatePaveBlock(self, *args) -> "void" :
         """
         * Update the pave block thePB
 
@@ -938,7 +938,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdatePaveBlock(self, *args)
 
-    def UpdateCommonBlock(self, *args):
+    def UpdateCommonBlock(self, *args) -> "void" :
         """
         * Update the common block theCB
 
@@ -949,7 +949,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdateCommonBlock(self, *args)
 
-    def IsCommonBlock(self, *args):
+    def IsCommonBlock(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the pave block is common block
 
@@ -960,7 +960,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsCommonBlock(self, *args)
 
-    def CommonBlock(self, *args):
+    def CommonBlock(self, *args) -> "Handle_BOPDS_CommonBlock" :
         """
         * Selector Returns the common block
 
@@ -971,7 +971,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_CommonBlock(self, *args)
 
-    def SetCommonBlock(self, *args):
+    def SetCommonBlock(self, *args) -> "void" :
         """
         * Modifier Sets the common block <theCB>
 
@@ -984,7 +984,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SetCommonBlock(self, *args)
 
-    def RealPaveBlock(self, *args):
+    def RealPaveBlock(self, *args) -> "Handle_BOPDS_PaveBlock" :
         """
         * Selector Returns the real first pave block
 
@@ -995,7 +995,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_RealPaveBlock(self, *args)
 
-    def IsCommonBlockOnEdge(self, *args):
+    def IsCommonBlockOnEdge(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if common block contains more then one pave block
 
@@ -1006,7 +1006,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsCommonBlockOnEdge(self, *args)
 
-    def FaceInfoPool(self, *args):
+    def FaceInfoPool(self, *args) -> "BOPDS_VectorOfFaceInfo const &" :
         """
         * Selector Returns the information about state of faces
 
@@ -1015,7 +1015,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfoPool(self, *args)
 
-    def HasFaceInfo(self, *args):
+    def HasFaceInfo(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape with index theIndex has the information about state of face
 
@@ -1026,7 +1026,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasFaceInfo(self, *args)
 
-    def FaceInfo(self, *args):
+    def FaceInfo(self, *args) -> "BOPDS_FaceInfo const &" :
         """
         * Selector Returns the state of face with index theIndex
 
@@ -1037,7 +1037,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfo(self, *args)
 
-    def ChangeFaceInfo(self, *args):
+    def ChangeFaceInfo(self, *args) -> "BOPDS_FaceInfo &" :
         """
         * Selector/Modifier Returns the state of face with index theIndex
 
@@ -1048,7 +1048,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ChangeFaceInfo(self, *args)
 
-    def UpdateFaceInfoIn(self, *args):
+    def UpdateFaceInfoIn(self, *args) -> "void" :
         """
         * Update the state In of face with index theIndex
 
@@ -1059,7 +1059,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdateFaceInfoIn(self, *args)
 
-    def UpdateFaceInfoOn(self, *args):
+    def UpdateFaceInfoOn(self, *args) -> "void" :
         """
         * Update the state On of face with index theIndex
 
@@ -1070,7 +1070,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdateFaceInfoOn(self, *args)
 
-    def FaceInfoOn(self, *args):
+    def FaceInfoOn(self, *args) -> "void" :
         """
         * Selector Returns the state On [theMPB,theMVP] of face with index theIndex
 
@@ -1085,7 +1085,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfoOn(self, *args)
 
-    def FaceInfoIn(self, *args):
+    def FaceInfoIn(self, *args) -> "void" :
         """
         * Selector Returns the state In [theMPB,theMVP] of face with index theIndex
 
@@ -1100,7 +1100,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfoIn(self, *args)
 
-    def AloneVertices(self, *args):
+    def AloneVertices(self, *args) -> "void" :
         """
         * Selector Returns the indices of alone vertices for the face with index theIndex
 
@@ -1113,7 +1113,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_AloneVertices(self, *args)
 
-    def RefineFaceInfoOn(self, *args):
+    def RefineFaceInfoOn(self, *args) -> "void" :
         """
         * Refine the state On for the all faces having state information ++
 
@@ -1122,7 +1122,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_RefineFaceInfoOn(self, *args)
 
-    def VerticesOnIn(self, *args):
+    def VerticesOnIn(self, *args) -> "void" :
         """
         * Returns the indices of vertices and pave blocks that are On/In for the faces with indices theF1, theF2
 
@@ -1139,7 +1139,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_VerticesOnIn(self, *args)
 
-    def SharedEdges(self, *args):
+    def SharedEdges(self, *args) -> "void" :
         """
         * Returns the indices of edges that are shared for the faces with indices theF1, theF2 same domain shapes
 
@@ -1156,7 +1156,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SharedEdges(self, *args)
 
-    def ShapesSD(self, *args):
+    def ShapesSD(self, *args) -> "BOPCol_DataMapOfIntegerInteger &" :
         """
         * Selector Returns the collection same domain shapes
 
@@ -1165,7 +1165,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_ShapesSD(self, *args)
 
-    def AddShapeSD(self, *args):
+    def AddShapeSD(self, *args) -> "void" :
         """
         * Modifier Adds the information about same domain shapes with indices theIndex, theIndexSD
 
@@ -1178,7 +1178,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_AddShapeSD(self, *args)
 
-    def HasShapeSD(self, *args):
+    def HasShapeSD(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape with index theIndex has the same domain shape. In this case theIndexSD will contain the index of same domain shape found interferences
 
@@ -1191,7 +1191,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasShapeSD(self, *args)
 
-    def InterfVV(self, *args):
+    def InterfVV(self, *args) -> "BOPDS_VectorOfInterfVV &" :
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Vertex
 
@@ -1200,7 +1200,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfVV(self, *args)
 
-    def InterfVE(self, *args):
+    def InterfVE(self, *args) -> "BOPDS_VectorOfInterfVE &" :
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Edge
 
@@ -1209,7 +1209,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfVE(self, *args)
 
-    def InterfVF(self, *args):
+    def InterfVF(self, *args) -> "BOPDS_VectorOfInterfVF &" :
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Face
 
@@ -1218,7 +1218,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfVF(self, *args)
 
-    def InterfEE(self, *args):
+    def InterfEE(self, *args) -> "BOPDS_VectorOfInterfEE &" :
         """
         * Selector/Modifier Returns the collection of interferences Edge/Edge
 
@@ -1227,7 +1227,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfEE(self, *args)
 
-    def InterfEF(self, *args):
+    def InterfEF(self, *args) -> "BOPDS_VectorOfInterfEF &" :
         """
         * Selector/Modifier Returns the collection of interferences Edge/Face
 
@@ -1236,7 +1236,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfEF(self, *args)
 
-    def InterfFF(self, *args):
+    def InterfFF(self, *args) -> "BOPDS_VectorOfInterfFF &" :
         """
         * Selector/Modifier Returns the collection of interferences Face/Face
 
@@ -1245,7 +1245,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfFF(self, *args)
 
-    def InterfVZ(self, *args):
+    def InterfVZ(self, *args) -> "BOPDS_VectorOfInterfVZ &" :
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Solid
 
@@ -1254,7 +1254,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfVZ(self, *args)
 
-    def InterfEZ(self, *args):
+    def InterfEZ(self, *args) -> "BOPDS_VectorOfInterfEZ &" :
         """
         * Selector/Modifier Returns the collection of interferences Edge/Solid
 
@@ -1263,7 +1263,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfEZ(self, *args)
 
-    def InterfFZ(self, *args):
+    def InterfFZ(self, *args) -> "BOPDS_VectorOfInterfFZ &" :
         """
         * Selector/Modifier Returns the collection of interferences Face/Solid
 
@@ -1272,7 +1272,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfFZ(self, *args)
 
-    def InterfZZ(self, *args):
+    def InterfZZ(self, *args) -> "BOPDS_VectorOfInterfZZ &" :
         """
         * Selector/Modifier Returns the collection of interferences Solid/Solid
 
@@ -1281,7 +1281,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_InterfZZ(self, *args)
 
-    def NbInterfTypes(*args):
+    def NbInterfTypes(*args) -> "Standard_Integer" :
         """
         * Returns the number of types of the interferences
 
@@ -1291,7 +1291,7 @@ class BOPDS_DS(object):
         return _BOPDS.BOPDS_DS_NbInterfTypes(*args)
 
     NbInterfTypes = staticmethod(NbInterfTypes)
-    def AddInterf(self, *args):
+    def AddInterf(self, *args) -> "void" :
         """
         * Modifier Adds the information about an interference between shapes with indices theI1, theI2 to the summary table of interferences
 
@@ -1304,7 +1304,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_AddInterf(self, *args)
 
-    def HasInterf(self, *args):
+    def HasInterf(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape with index theI is interferred
 
@@ -1323,7 +1323,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasInterf(self, *args)
 
-    def HasInterfShapeSubShapes(self, *args):
+    def HasInterfShapeSubShapes(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape with index theI1 is interfered with any sub-shape of the shape with index theI2 (theFlag=true) all sub-shapes of the shape with index theI2 (theFlag=false)
 
@@ -1338,7 +1338,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasInterfShapeSubShapes(self, *args)
 
-    def HasInterfSubShapes(self, *args):
+    def HasInterfSubShapes(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shapes with indices theI1, theI2 have interferred sub-shapes
 
@@ -1351,7 +1351,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasInterfSubShapes(self, *args)
 
-    def Interferences(self, *args):
+    def Interferences(self, *args) -> "BOPDS_MapOfPassKey const &" :
         """
         * Selector Returns the table of interferences debug
 
@@ -1360,14 +1360,14 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Interferences(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPDS.BOPDS_DS_Dump(self, *args)
 
-    def SortPaveBlocks(self, *args):
+    def SortPaveBlocks(self, *args) -> "void" :
         """
         :param theCB:
         :type theCB: Handle_BOPDS_CommonBlock &
@@ -1376,7 +1376,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SortPaveBlocks(self, *args)
 
-    def IsToSort(self, *args):
+    def IsToSort(self, *args) -> "Standard_Boolean" :
         """
         :param theCB:
         :type theCB: Handle_BOPDS_CommonBlock &
@@ -1387,7 +1387,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsToSort(self, *args)
 
-    def IsSubShape(self, *args):
+    def IsSubShape(self, *args) -> "Standard_Boolean" :
         """
         :param theI1:
         :type theI1: int
@@ -1398,7 +1398,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsSubShape(self, *args)
 
-    def Paves(self, *args):
+    def Paves(self, *args) -> "void" :
         """
         * Fills theLP with sorted paves of the shape with index theIndex
 
@@ -1411,7 +1411,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Paves(self, *args)
 
-    def UpdateEdgeTolerance(self, *args):
+    def UpdateEdgeTolerance(self, *args) -> "void" :
         """
         * Updates tolerance of the sub-shapes of the shape with index <theIndex>.
 
@@ -1501,7 +1501,7 @@ BOPDS_DS._kill_pointed = new_instancemethod(_BOPDS.BOPDS_DS__kill_pointed,None,B
 BOPDS_DS_swigregister = _BOPDS.BOPDS_DS_swigregister
 BOPDS_DS_swigregister(BOPDS_DS)
 
-def BOPDS_DS_NbInterfTypes(*args):
+def BOPDS_DS_NbInterfTypes(*args) -> "Standard_Integer" :
   """
     * Returns the number of types of the interferences
 
@@ -1527,7 +1527,7 @@ class BOPDS_FaceInfo(object):
 
         """
         _BOPDS.BOPDS_FaceInfo_swiginit(self,_BOPDS.new_BOPDS_FaceInfo(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the contents
 
@@ -1536,7 +1536,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_Clear(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * Modifier Sets the index of the face <theI>
 
@@ -1547,7 +1547,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_SetIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of the face In
 
@@ -1556,7 +1556,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_Index(self, *args)
 
-    def PaveBlocksIn(self, *args):
+    def PaveBlocksIn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
         """
         * Selector Returns the pave blocks of the face that have state In
 
@@ -1565,7 +1565,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_PaveBlocksIn(self, *args)
 
-    def ChangePaveBlocksIn(self, *args):
+    def ChangePaveBlocksIn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
         """
         * Selector/Modifier Returns the pave blocks of the face that have state In
 
@@ -1574,7 +1574,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksIn(self, *args)
 
-    def VerticesIn(self, *args):
+    def VerticesIn(self, *args) -> "BOPCol_MapOfInteger const &" :
         """
         * Selector Returns the list of indices for vertices of the face that have state In
 
@@ -1583,7 +1583,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_VerticesIn(self, *args)
 
-    def ChangeVerticesIn(self, *args):
+    def ChangeVerticesIn(self, *args) -> "BOPCol_MapOfInteger &" :
         """
         * Selector/Modifier Returns the list of indices for vertices of the face that have state In On
 
@@ -1592,7 +1592,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_ChangeVerticesIn(self, *args)
 
-    def PaveBlocksOn(self, *args):
+    def PaveBlocksOn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
         """
         * Selector Returns the pave blocks of the face that have state On
 
@@ -1601,7 +1601,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_PaveBlocksOn(self, *args)
 
-    def ChangePaveBlocksOn(self, *args):
+    def ChangePaveBlocksOn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
         """
         * Selector/Modifier Returns the pave blocks of the face that have state On
 
@@ -1610,7 +1610,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksOn(self, *args)
 
-    def VerticesOn(self, *args):
+    def VerticesOn(self, *args) -> "BOPCol_MapOfInteger const &" :
         """
         * Selector Returns the list of indices for vertices of the face that have state On
 
@@ -1619,7 +1619,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_VerticesOn(self, *args)
 
-    def ChangeVerticesOn(self, *args):
+    def ChangeVerticesOn(self, *args) -> "BOPCol_MapOfInteger &" :
         """
         * Selector/Modifier Returns the list of indices for vertices of the face that have state On Sections
 
@@ -1628,7 +1628,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_ChangeVerticesOn(self, *args)
 
-    def PaveBlocksSc(self, *args):
+    def PaveBlocksSc(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
         """
         * Selector Returns the pave blocks of the face that are pave blocks of section edges
 
@@ -1637,14 +1637,14 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_PaveBlocksSc(self, *args)
 
-    def ChangePaveBlocksSc(self, *args):
+    def ChangePaveBlocksSc(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
         """
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
         return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksSc(self, *args)
 
-    def VerticesSc(self, *args):
+    def VerticesSc(self, *args) -> "BOPCol_MapOfInteger const &" :
         """
         * Selector Returns the list of indices for section vertices of the face
 
@@ -1653,7 +1653,7 @@ class BOPDS_FaceInfo(object):
         """
         return _BOPDS.BOPDS_FaceInfo_VerticesSc(self, *args)
 
-    def ChangeVerticesSc(self, *args):
+    def ChangeVerticesSc(self, *args) -> "BOPCol_MapOfInteger &" :
         """
         * Selector/Modifier Returns the list of indices for section vertices of the face Others
 
@@ -1700,7 +1700,7 @@ class BOPDS_IndexRange(object):
 
         """
         _BOPDS.BOPDS_IndexRange_swiginit(self,_BOPDS.new_BOPDS_IndexRange(*args))
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """
         * Modifier Sets the first index <theI1> of the range
 
@@ -1711,7 +1711,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_SetFirst(self, *args)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """
         * Modifier Sets the second index <theI2> of the range
 
@@ -1722,7 +1722,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_SetLast(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the first index of the range
 
@@ -1731,7 +1731,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the second index of the range
 
@@ -1740,7 +1740,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_Last(self, *args)
 
-    def SetIndices(self, *args):
+    def SetIndices(self, *args) -> "void" :
         """
         * Modifier Sets the first index of the range <theI1> Sets the second index of the range <theI2>
 
@@ -1753,7 +1753,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_SetIndices(self, *args)
 
-    def Indices(self, *args):
+    def Indices(self, *args) -> "void" :
         """
         * Selector Returns the first index of the range <theI1> Returns the second index of the range <theI2>
 
@@ -1766,7 +1766,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_Indices(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the range contains <theIndex>
 
@@ -1777,7 +1777,7 @@ class BOPDS_IndexRange(object):
         """
         return _BOPDS.BOPDS_IndexRange_Contains(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1821,7 +1821,7 @@ class BOPDS_Iterator(object):
 
         """
         _BOPDS.BOPDS_Iterator_swiginit(self,_BOPDS.new_BOPDS_Iterator(*args))
-    def SetDS(self, *args):
+    def SetDS(self, *args) -> "void" :
         """
         * Modifier Sets the data structure <pDS> to process
 
@@ -1832,7 +1832,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_SetDS(self, *args)
 
-    def DS(self, *args):
+    def DS(self, *args) -> "BOPDS_DS const &" :
         """
         * Selector Returns the data structure
 
@@ -1841,7 +1841,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_DS(self, *args)
 
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes the iterator theType1 - the first type of shape theType2 - the second type of shape
 
@@ -1854,7 +1854,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if still there are pairs of intersected shapes
 
@@ -1863,7 +1863,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Moves iterations ahead
 
@@ -1872,7 +1872,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         * Returns indices (DS) of intersected shapes theIndex1 - the index of the first shape theIndex2 - the index of the second shape theWithSubShape - flag. True if the sub-shapes of shapes are intersected
 
@@ -1887,7 +1887,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Value(self, *args)
 
-    def Prepare(self, *args):
+    def Prepare(self, *args) -> "void" :
         """
         * Perform the intersection algorithm and prepare the results to be used
 
@@ -1896,7 +1896,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Prepare(self, *args)
 
-    def ExpectedLength(self, *args):
+    def ExpectedLength(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersections founded
 
@@ -1905,7 +1905,7 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_ExpectedLength(self, *args)
 
-    def BlockLength(self, *args):
+    def BlockLength(self, *args) -> "Standard_Integer" :
         """
         * Returns the block length
 
@@ -1958,7 +1958,7 @@ class BOPDS_PassKey(object):
 
         """
         _BOPDS.BOPDS_PassKey_swiginit(self,_BOPDS.new_BOPDS_PassKey(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "BOPDS_PassKey &" :
         """
         :param Other:
         :type Other: BOPDS_PassKey &
@@ -1967,7 +1967,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_Set(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear the contents
 
@@ -1976,7 +1976,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_Clear(self, *args)
 
-    def SetIds(self, *args):
+    def SetIds(self, *args) -> "void" :
         """
         * Modifier Sets one Id <theI1>
 
@@ -2023,7 +2023,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_SetIds(self, *args)
 
-    def NbIds(self, *args):
+    def NbIds(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the number of Ids>
 
@@ -2032,7 +2032,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_NbIds(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the PassKey is equal to <the theOther>
 
@@ -2043,7 +2043,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_IsEqual(self, *args)
 
-    def HashCode(self, *args):
+    def HashCode(self, *args) -> "Standard_Integer" :
         """
         * Query Returns hash code
 
@@ -2054,7 +2054,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_HashCode(self, *args)
 
-    def Id(self, *args):
+    def Id(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns Id of index <theIndex>
 
@@ -2065,7 +2065,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_Id(self, *args)
 
-    def Ids(self, *args):
+    def Ids(self, *args) -> "void" :
         """
         * Selector Returns the first two Ids <theI1>,<theI2>
 
@@ -2078,7 +2078,7 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_Ids(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param aHex: default value is 0
         :type aHex: int
@@ -2112,7 +2112,7 @@ BOPDS_PassKey_swigregister(BOPDS_PassKey)
 class BOPDS_PassKeyMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param aPKey:
         :type aPKey: BOPDS_PassKey &
@@ -2124,7 +2124,7 @@ class BOPDS_PassKeyMapHasher(object):
         return _BOPDS.BOPDS_PassKeyMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param aPKey1:
         :type aPKey1: BOPDS_PassKey &
@@ -2150,7 +2150,7 @@ BOPDS_PassKeyMapHasher._kill_pointed = new_instancemethod(_BOPDS.BOPDS_PassKeyMa
 BOPDS_PassKeyMapHasher_swigregister = _BOPDS.BOPDS_PassKeyMapHasher_swigregister
 BOPDS_PassKeyMapHasher_swigregister(BOPDS_PassKeyMapHasher)
 
-def BOPDS_PassKeyMapHasher_HashCode(*args):
+def BOPDS_PassKeyMapHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param aPKey:
     :type aPKey: BOPDS_PassKey &
@@ -2161,7 +2161,7 @@ def BOPDS_PassKeyMapHasher_HashCode(*args):
     """
   return _BOPDS.BOPDS_PassKeyMapHasher_HashCode(*args)
 
-def BOPDS_PassKeyMapHasher_IsEqual(*args):
+def BOPDS_PassKeyMapHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param aPKey1:
     :type aPKey1: BOPDS_PassKey &
@@ -2183,7 +2183,7 @@ class BOPDS_Pave(object):
 
         """
         _BOPDS.BOPDS_Pave_swiginit(self,_BOPDS.new_BOPDS_Pave(*args))
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * Modifier Sets the index of vertex <theIndex>
 
@@ -2194,7 +2194,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_SetIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of vertex
 
@@ -2203,7 +2203,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_Index(self, *args)
 
-    def SetParameter(self, *args):
+    def SetParameter(self, *args) -> "void" :
         """
         * Modifier Sets the parameter of vertex <theParameter>
 
@@ -2214,7 +2214,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_SetParameter(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Selector Returns the parameter of vertex
 
@@ -2223,7 +2223,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_Parameter(self, *args)
 
-    def Contents(self, *args):
+    def Contents(self, *args) -> "void" :
         """
         * Selector Returns the index of vertex <theIndex> Returns the parameter of vertex <theParameter>
 
@@ -2236,7 +2236,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_Contents(self, *args)
 
-    def IsLess(self, *args):
+    def IsLess(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if thr parameter od this is less than the parameter of <theOther>
 
@@ -2247,7 +2247,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_IsLess(self, *args)
 
-    def __lt__(self, *args):
+    def __lt__(self, *args) -> "Standard_Boolean" :
         """
         :param theOther:
         :type theOther: BOPDS_Pave &
@@ -2256,7 +2256,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave___lt__(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if thr parameter od this is equal to the parameter of <theOther>
 
@@ -2273,7 +2273,7 @@ class BOPDS_Pave(object):
         except:
             return False
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -2319,7 +2319,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _BOPDS.BOPDS_PaveBlock_swiginit(self,_BOPDS.new_BOPDS_PaveBlock(*args))
-    def SetPave1(self, *args):
+    def SetPave1(self, *args) -> "void" :
         """
         * Modifier Sets the first pave <thePave>
 
@@ -2330,7 +2330,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetPave1(self, *args)
 
-    def Pave1(self, *args):
+    def Pave1(self, *args) -> "BOPDS_Pave const &" :
         """
         * Selector Returns the first pave
 
@@ -2339,7 +2339,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Pave1(self, *args)
 
-    def SetPave2(self, *args):
+    def SetPave2(self, *args) -> "void" :
         """
         * Modifier Sets the second pave <thePave>
 
@@ -2350,7 +2350,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetPave2(self, *args)
 
-    def Pave2(self, *args):
+    def Pave2(self, *args) -> "BOPDS_Pave const &" :
         """
         * Selector Returns the second pave
 
@@ -2359,7 +2359,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Pave2(self, *args)
 
-    def SetEdge(self, *args):
+    def SetEdge(self, *args) -> "void" :
         """
         * Modifier Sets the index of edge of pave block <theEdge>
 
@@ -2370,7 +2370,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of edge of pave block
 
@@ -2379,7 +2379,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Edge(self, *args)
 
-    def HasEdge(self, *args):
+    def HasEdge(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the pave block has edge
 
@@ -2394,7 +2394,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_HasEdge(self, *args)
 
-    def SetOriginalEdge(self, *args):
+    def SetOriginalEdge(self, *args) -> "void" :
         """
         * Modifier Sets the index of original edge of the pave block <theEdge>
 
@@ -2405,7 +2405,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetOriginalEdge(self, *args)
 
-    def OriginalEdge(self, *args):
+    def OriginalEdge(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of original edge of pave block
 
@@ -2414,7 +2414,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_OriginalEdge(self, *args)
 
-    def IsSplitEdge(self, *args):
+    def IsSplitEdge(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the edge is equal to the original edge of the pave block
 
@@ -2423,7 +2423,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_IsSplitEdge(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "void" :
         """
         * Selector Returns the parametric range <theT1,theT2> of the pave block
 
@@ -2436,7 +2436,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Range(self, *args)
 
-    def HasSameBounds(self, *args):
+    def HasSameBounds(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the pave block has pave indices that equal to the pave indices of the pave block <theOther>
 
@@ -2447,7 +2447,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_HasSameBounds(self, *args)
 
-    def Indices(self, *args):
+    def Indices(self, *args) -> "void" :
         """
         * Selector Returns the pave indices <theIndex1,theIndex2> of the pave block
 
@@ -2460,7 +2460,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Indices(self, *args)
 
-    def IsToUpdate(self, *args):
+    def IsToUpdate(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the pave block contains extra paves
 
@@ -2469,7 +2469,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_IsToUpdate(self, *args)
 
-    def AppendExtPave(self, *args):
+    def AppendExtPave(self, *args) -> "void" :
         """
         * Modifier Appends extra paves <theLP>
 
@@ -2480,7 +2480,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_AppendExtPave(self, *args)
 
-    def AppendExtPave1(self, *args):
+    def AppendExtPave1(self, *args) -> "void" :
         """
         * Modifier Appends extra pave <thePave>
 
@@ -2491,7 +2491,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_AppendExtPave1(self, *args)
 
-    def ExtPaves(self, *args):
+    def ExtPaves(self, *args) -> "BOPDS_ListOfPave const &" :
         """
         * Selector Returns the extra paves
 
@@ -2500,7 +2500,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ExtPaves(self, *args)
 
-    def ChangeExtPaves(self, *args):
+    def ChangeExtPaves(self, *args) -> "BOPDS_ListOfPave &" :
         """
         * Selector / Modifier Returns the extra paves
 
@@ -2509,7 +2509,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ChangeExtPaves(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Modifier Updates the pave block. The extra paves are used to create new pave blocks <theLPB>. <theFlag> - if true, the first pave and the second pave are used to produce new pave blocks.
 
@@ -2522,7 +2522,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Update(self, *args)
 
-    def ContainsParameter(self, *args):
+    def ContainsParameter(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the extra paves contain the pave with given value of the parameter <thePrm> <theTol> - the value of the tolerance to compare
 
@@ -2535,7 +2535,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ContainsParameter(self, *args)
 
-    def SetShrunkData(self, *args):
+    def SetShrunkData(self, *args) -> "void" :
         """
         * Modifier Sets the shrunk data for the pave block <theTS1>, <theTS2> - shrunk range <theBox> - the bounding box
 
@@ -2550,7 +2550,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetShrunkData(self, *args)
 
-    def ShrunkData(self, *args):
+    def ShrunkData(self, *args) -> "void" :
         """
         * Selector Returns the shrunk data for the pave block <theTS1>, <theTS2> - shrunk range <theBox> - the bounding box
 
@@ -2565,7 +2565,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ShrunkData(self, *args)
 
-    def HasShrunkData(self, *args):
+    def HasShrunkData(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the pave block contains the shrunk data
 
@@ -2574,18 +2574,18 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_HasShrunkData(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPDS.BOPDS_PaveBlock_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BOPDS_PaveBlock self)"""
         return _BOPDS.BOPDS_PaveBlock__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BOPDS_PaveBlock" :
         """GetHandle(BOPDS_PaveBlock self) -> Handle_BOPDS_PaveBlock"""
         return _BOPDS.BOPDS_PaveBlock_GetHandle(self)
 
@@ -2647,14 +2647,14 @@ Handle_BOPDS_PaveBlock._kill_pointed = new_instancemethod(_BOPDS.Handle_BOPDS_Pa
 Handle_BOPDS_PaveBlock_swigregister = _BOPDS.Handle_BOPDS_PaveBlock_swigregister
 Handle_BOPDS_PaveBlock_swigregister(Handle_BOPDS_PaveBlock)
 
-def Handle_BOPDS_PaveBlock_DownCast(*args):
+def Handle_BOPDS_PaveBlock_DownCast(*args) -> "Handle_BOPDS_PaveBlock const" :
   return _BOPDS.Handle_BOPDS_PaveBlock_DownCast(*args)
 Handle_BOPDS_PaveBlock_DownCast = _BOPDS.Handle_BOPDS_PaveBlock_DownCast
 
 class BOPDS_PaveMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param aPave:
         :type aPave: BOPDS_Pave &
@@ -2666,7 +2666,7 @@ class BOPDS_PaveMapHasher(object):
         return _BOPDS.BOPDS_PaveMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param aPave1:
         :type aPave1: BOPDS_Pave &
@@ -2692,7 +2692,7 @@ BOPDS_PaveMapHasher._kill_pointed = new_instancemethod(_BOPDS.BOPDS_PaveMapHashe
 BOPDS_PaveMapHasher_swigregister = _BOPDS.BOPDS_PaveMapHasher_swigregister
 BOPDS_PaveMapHasher_swigregister(BOPDS_PaveMapHasher)
 
-def BOPDS_PaveMapHasher_HashCode(*args):
+def BOPDS_PaveMapHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param aPave:
     :type aPave: BOPDS_Pave &
@@ -2703,7 +2703,7 @@ def BOPDS_PaveMapHasher_HashCode(*args):
     """
   return _BOPDS.BOPDS_PaveMapHasher_HashCode(*args)
 
-def BOPDS_PaveMapHasher_IsEqual(*args):
+def BOPDS_PaveMapHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param aPave1:
     :type aPave1: BOPDS_Pave &
@@ -2725,7 +2725,7 @@ class BOPDS_Point(object):
 
         """
         _BOPDS.BOPDS_Point_swiginit(self,_BOPDS.new_BOPDS_Point(*args))
-    def SetPnt(self, *args):
+    def SetPnt(self, *args) -> "void" :
         """
         * Modifier Sets 3D point <thePnt>
 
@@ -2736,7 +2736,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Selector Returns 3D point
 
@@ -2745,7 +2745,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_Pnt(self, *args)
 
-    def SetPnt2D1(self, *args):
+    def SetPnt2D1(self, *args) -> "void" :
         """
         * Modifier Sets 2D point on the first face <thePnt>
 
@@ -2756,7 +2756,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt2D1(self, *args)
 
-    def Pnt2D1(self, *args):
+    def Pnt2D1(self, *args) -> "gp_Pnt2d const" :
         """
         * Selector Returns 2D point on the first face <thePnt>
 
@@ -2765,7 +2765,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_Pnt2D1(self, *args)
 
-    def SetPnt2D2(self, *args):
+    def SetPnt2D2(self, *args) -> "void" :
         """
         * Modifier Sets 2D point on the second face <thePnt>
 
@@ -2776,7 +2776,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt2D2(self, *args)
 
-    def Pnt2D2(self, *args):
+    def Pnt2D2(self, *args) -> "gp_Pnt2d const" :
         """
         * Selector Returns 2D point on the second face <thePnt>
 
@@ -2785,7 +2785,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_Pnt2D2(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * Modifier Sets the index of the vertex <theIndex>
 
@@ -2796,7 +2796,7 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns index of the vertex
 
@@ -2842,7 +2842,7 @@ class BOPDS_ShapeInfo(object):
 
         """
         _BOPDS.BOPDS_ShapeInfo_swiginit(self,_BOPDS.new_BOPDS_ShapeInfo(*args))
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         * Modifier Sets the shape <theS>
 
@@ -2853,7 +2853,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Selector Returns the shape
 
@@ -2862,7 +2862,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_Shape(self, *args)
 
-    def SetShapeType(self, *args):
+    def SetShapeType(self, *args) -> "void" :
         """
         * Modifier Sets the type of shape theType
 
@@ -2873,7 +2873,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetShapeType(self, *args)
 
-    def ShapeType(self, *args):
+    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * Selector Returns the type of shape
 
@@ -2882,7 +2882,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_ShapeType(self, *args)
 
-    def SetBox(self, *args):
+    def SetBox(self, *args) -> "void" :
         """
         * Modifier Sets the boundung box of the shape theBox
 
@@ -2893,7 +2893,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetBox(self, *args)
 
-    def Box(self, *args):
+    def Box(self, *args) -> "Bnd_Box const &" :
         """
         * Selector Returns the boundung box of the shape
 
@@ -2902,7 +2902,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_Box(self, *args)
 
-    def ChangeBox(self, *args):
+    def ChangeBox(self, *args) -> "Bnd_Box &" :
         """
         * Selector/Modifier Returns the boundung box of the shape
 
@@ -2911,7 +2911,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_ChangeBox(self, *args)
 
-    def SubShapes(self, *args):
+    def SubShapes(self, *args) -> "BOPCol_ListOfInteger const &" :
         """
         * Selector Returns the list of indices of sub-shapes
 
@@ -2920,7 +2920,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SubShapes(self, *args)
 
-    def ChangeSubShapes(self, *args):
+    def ChangeSubShapes(self, *args) -> "BOPCol_ListOfInteger &" :
         """
         * Selector/ Modifier Returns the list of indices of sub-shapes
 
@@ -2929,7 +2929,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_ChangeSubShapes(self, *args)
 
-    def HasSubShape(self, *args):
+    def HasSubShape(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape has sub-shape with index theI
 
@@ -2940,14 +2940,14 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_HasSubShape(self, *args)
 
-    def HasReference(self, *args):
+    def HasReference(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_ShapeInfo_HasReference(self, *args)
 
-    def SetReference(self, *args):
+    def SetReference(self, *args) -> "void" :
         """
         * Modifier Sets the index of a reference information
 
@@ -2958,7 +2958,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetReference(self, *args)
 
-    def Reference(self, *args):
+    def Reference(self, *args) -> "Standard_Integer" :
         """
         * Selector Returns the index of a reference information
 
@@ -2967,7 +2967,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_Reference(self, *args)
 
-    def HasBRep(self, *args):
+    def HasBRep(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if the shape has boundary representation
 
@@ -2976,7 +2976,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_HasBRep(self, *args)
 
-    def IsInterfering(self, *args):
+    def IsInterfering(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the shape can be participant of an interference Flag
 
@@ -2985,7 +2985,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_IsInterfering(self, *args)
 
-    def HasFlag(self, *args):
+    def HasFlag(self, *args) -> "Standard_Boolean" :
         """
         * Query Returns true if there is flag.
 
@@ -3000,7 +3000,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_HasFlag(self, *args)
 
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         * Modifier Sets the flag
 
@@ -3011,7 +3011,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetFlag(self, *args)
 
-    def Flag(self, *args):
+    def Flag(self, *args) -> "Standard_Integer" :
         """
         * Returns the flag
 
@@ -3020,7 +3020,7 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_Flag(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -3075,7 +3075,7 @@ class BOPDS_SubIterator(object):
 
         """
         _BOPDS.BOPDS_SubIterator_swiginit(self,_BOPDS.new_BOPDS_SubIterator(*args))
-    def SetDS(self, *args):
+    def SetDS(self, *args) -> "void" :
         """
         * Modifier Sets the data structure <pDS> to process
 
@@ -3086,7 +3086,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetDS(self, *args)
 
-    def DS(self, *args):
+    def DS(self, *args) -> "BOPDS_DS const &" :
         """
         * Selector Returns the data structure
 
@@ -3095,7 +3095,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_DS(self, *args)
 
-    def SetSubSet1(self, *args):
+    def SetSubSet1(self, *args) -> "void" :
         """
         * Modifier Sets the first set of indices <theLI> to process
 
@@ -3106,7 +3106,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetSubSet1(self, *args)
 
-    def SubSet1(self, *args):
+    def SubSet1(self, *args) -> "BOPCol_ListOfInteger const &" :
         """
         * Selector Returns the first set of indices to process
 
@@ -3115,7 +3115,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SubSet1(self, *args)
 
-    def SetSubSet2(self, *args):
+    def SetSubSet2(self, *args) -> "void" :
         """
         * Modifier Sets the second set of indices <theLI> to process
 
@@ -3126,7 +3126,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetSubSet2(self, *args)
 
-    def SubSet2(self, *args):
+    def SubSet2(self, *args) -> "BOPCol_ListOfInteger const &" :
         """
         * Selector Returns the second set of indices to process
 
@@ -3135,7 +3135,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SubSet2(self, *args)
 
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes the iterator
 
@@ -3144,7 +3144,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if still there are pairs of intersected shapes
 
@@ -3153,7 +3153,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Moves iterations ahead
 
@@ -3162,7 +3162,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         * Returns indices (DS) of intersected shapes theIndex1 - the index of the first shape theIndex2 - the index of the second shape
 
@@ -3175,7 +3175,7 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_Value(self, *args)
 
-    def Prepare(self, *args):
+    def Prepare(self, *args) -> "void" :
         """
         * Perform the intersection algorithm and prepare the results to be used
 
@@ -3210,7 +3210,7 @@ BOPDS_SubIterator_swigregister(BOPDS_SubIterator)
 class BOPDS_Tools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def TypeToInteger(*args):
+    def TypeToInteger(*args) -> "Standard_Integer" :
         """
         * Converts the conmbination of two types of shape <theT1>,<theT2> to the one integer value, that is returned
 
@@ -3230,7 +3230,7 @@ class BOPDS_Tools(object):
         return _BOPDS.BOPDS_Tools_TypeToInteger(*args)
 
     TypeToInteger = staticmethod(TypeToInteger)
-    def HasBRep(*args):
+    def HasBRep(*args) -> "Standard_Boolean" :
         """
         * Returns true if the type <theT> correspond to a shape having boundary representation
 
@@ -3242,7 +3242,7 @@ class BOPDS_Tools(object):
         return _BOPDS.BOPDS_Tools_HasBRep(*args)
 
     HasBRep = staticmethod(HasBRep)
-    def IsInterfering(*args):
+    def IsInterfering(*args) -> "Standard_Boolean" :
         """
         * Returns true if the type <theT> can be participant of an interference
 
@@ -3268,7 +3268,7 @@ BOPDS_Tools._kill_pointed = new_instancemethod(_BOPDS.BOPDS_Tools__kill_pointed,
 BOPDS_Tools_swigregister = _BOPDS.BOPDS_Tools_swigregister
 BOPDS_Tools_swigregister(BOPDS_Tools)
 
-def BOPDS_Tools_TypeToInteger(*args):
+def BOPDS_Tools_TypeToInteger(*args) -> "Standard_Integer" :
   """
     * Converts the conmbination of two types of shape <theT1>,<theT2> to the one integer value, that is returned
 
@@ -3287,7 +3287,7 @@ def BOPDS_Tools_TypeToInteger(*args):
     """
   return _BOPDS.BOPDS_Tools_TypeToInteger(*args)
 
-def BOPDS_Tools_HasBRep(*args):
+def BOPDS_Tools_HasBRep(*args) -> "Standard_Boolean" :
   """
     * Returns true if the type <theT> correspond to a shape having boundary representation
 
@@ -3298,7 +3298,7 @@ def BOPDS_Tools_HasBRep(*args):
     """
   return _BOPDS.BOPDS_Tools_HasBRep(*args)
 
-def BOPDS_Tools_IsInterfering(*args):
+def BOPDS_Tools_IsInterfering(*args) -> "Standard_Boolean" :
   """
     * Returns true if the type <theT> can be participant of an interference
 
@@ -3326,7 +3326,7 @@ class BOPDS_InterfEE(object):
 
         """
         _BOPDS.BOPDS_InterfEE_swiginit(self,_BOPDS.new_BOPDS_InterfEE(*args))
-    def SetCommonPart(self, *args):
+    def SetCommonPart(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the info of common part * @param theCP * common part */
 
@@ -3337,7 +3337,7 @@ class BOPDS_InterfEE(object):
         """
         return _BOPDS.BOPDS_InterfEE_SetCommonPart(self, *args)
 
-    def CommonPart(self, *args):
+    def CommonPart(self, *args) -> "IntTools_CommonPrt const &" :
         """
         * /** * Selector * Returns the info of common part * returns * common part */
 
@@ -3377,7 +3377,7 @@ class BOPDS_InterfEF(object):
 
         """
         _BOPDS.BOPDS_InterfEF_swiginit(self,_BOPDS.new_BOPDS_InterfEF(*args))
-    def SetCommonPart(self, *args):
+    def SetCommonPart(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the info of common part * @param theCP * common part */
 
@@ -3388,7 +3388,7 @@ class BOPDS_InterfEF(object):
         """
         return _BOPDS.BOPDS_InterfEF_SetCommonPart(self, *args)
 
-    def CommonPart(self, *args):
+    def CommonPart(self, *args) -> "IntTools_CommonPrt const &" :
         """
         * /** * Selector * Returns the info of common part * returns * common part */
 
@@ -3451,7 +3451,7 @@ class BOPDS_InterfFF(object):
 
         """
         _BOPDS.BOPDS_InterfFF_swiginit(self,_BOPDS.new_BOPDS_InterfFF(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * /** * Initializer * @param theNbCurves * number of intersection curves * @param theNbPoints * number of intersection points */
 
@@ -3464,7 +3464,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_Init(self, *args)
 
-    def SetTangentFaces(self, *args):
+    def SetTangentFaces(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the flag of whether the faces are tangent * @param theFlag * the flag */
 
@@ -3475,7 +3475,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTangentFaces(self, *args)
 
-    def TangentFaces(self, *args):
+    def TangentFaces(self, *args) -> "Standard_Boolean" :
         """
         * /** * Selector * Returns the flag whether the faces are tangent * returns * the flag */
 
@@ -3484,7 +3484,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_TangentFaces(self, *args)
 
-    def SetTolR3D(self, *args):
+    def SetTolR3D(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the value of 3D tolerance * @param theTol * 3D tolerance */
 
@@ -3495,7 +3495,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTolR3D(self, *args)
 
-    def TolR3D(self, *args):
+    def TolR3D(self, *args) -> "Standard_Real" :
         """
         * /** * Selector * Returns the value of 3D tolerance * returns * 3D tolerance */
 
@@ -3504,7 +3504,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_TolR3D(self, *args)
 
-    def SetTolR2D(self, *args):
+    def SetTolR2D(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the value of 2D tolerance * @param theTol * 2D tolerance */
 
@@ -3515,7 +3515,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTolR2D(self, *args)
 
-    def TolR2D(self, *args):
+    def TolR2D(self, *args) -> "Standard_Real" :
         """
         * /** * Selector * Returns the value of 2D tolerance * returns * 2D tolerance */
 
@@ -3524,7 +3524,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_TolR2D(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "BOPDS_VectorOfCurve const &" :
         """
         * /** * Selector * Returns the intersection curves * returns * intersection curves */
 
@@ -3533,7 +3533,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_Curves(self, *args)
 
-    def ChangeCurves(self, *args):
+    def ChangeCurves(self, *args) -> "BOPDS_VectorOfCurve &" :
         """
         * /** * Selector/Modifier * Returns the intersection curves * returns * intersection curves */
 
@@ -3542,7 +3542,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_ChangeCurves(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "BOPDS_VectorOfPoint const &" :
         """
         * /** * Selector * Returns the intersection points * returns * intersection points */
 
@@ -3551,7 +3551,7 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_Points(self, *args)
 
-    def ChangePoints(self, *args):
+    def ChangePoints(self, *args) -> "BOPDS_VectorOfPoint &" :
         """
         * /** * Selector/Modifier * Returns the intersection points * returns * intersection points */
 
@@ -3629,7 +3629,7 @@ class BOPDS_InterfVE(object):
 
         """
         _BOPDS.BOPDS_InterfVE_swiginit(self,_BOPDS.new_BOPDS_InterfVE(*args))
-    def SetParameter(self, *args):
+    def SetParameter(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the value of parameter * of the point of the vertex * on the curve of the edge * @param theT * value of parameter */
 
@@ -3640,7 +3640,7 @@ class BOPDS_InterfVE(object):
         """
         return _BOPDS.BOPDS_InterfVE_SetParameter(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * /** * Selector * Returrns the value of parameter * of the point of the vertex * on the curve of the edge * returns * value of parameter */
 
@@ -3680,7 +3680,7 @@ class BOPDS_InterfVF(object):
 
         """
         _BOPDS.BOPDS_InterfVF_swiginit(self,_BOPDS.new_BOPDS_InterfVF(*args))
-    def SetUV(self, *args):
+    def SetUV(self, *args) -> "void" :
         """
         * /** * Modifier * Sets the value of parameters * of the point of the vertex * on the surface of of the face * @param theU * value of U parameter * @param theV * value of U parameter */
 
@@ -3693,7 +3693,7 @@ class BOPDS_InterfVF(object):
         """
         return _BOPDS.BOPDS_InterfVF_SetUV(self, *args)
 
-    def UV(self, *args):
+    def UV(self, *args) -> "void" :
         """
         * /** * Selector * Returns the value of parameters * of the point of the vertex * on the surface of of the face * @param theU * value of U parameter * @param theV * value of U parameter */
 
@@ -3824,7 +3824,7 @@ class BOPDS_IteratorSI(BOPDS_Iterator):
 
         """
         _BOPDS.BOPDS_IteratorSI_swiginit(self,_BOPDS.new_BOPDS_IteratorSI(*args))
-    def UpdateByLevelOfCheck(self, *args):
+    def UpdateByLevelOfCheck(self, *args) -> "void" :
         """
         * Updates the lists of possible intersections according to the value of <theLevel>. It defines which interferferences will be checked: 0 - only V/V; 1 - V/V and V/E; 2 - V/V, V/E and E/E; 3 - V/V, V/E, E/E and V/F; 4 - V/V, V/E, E/E, V/F and E/F; other - all interferences.
 
@@ -3865,7 +3865,7 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
 
         """
         _BOPDS.BOPDS_PassKeyBoolean_swiginit(self,_BOPDS.new_BOPDS_PassKeyBoolean(*args))
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         :param theFlag:
         :type theFlag: bool
@@ -3874,7 +3874,7 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
         """
         return _BOPDS.BOPDS_PassKeyBoolean_SetFlag(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BOPDS_PassKeyBoolean &" :
         """
         :param &:
         :type &: BOPDS_PassKeyBoolean
@@ -3883,7 +3883,7 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
         """
         return _BOPDS.BOPDS_PassKeyBoolean_Set(self, *args)
 
-    def Flag(self, *args):
+    def Flag(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 

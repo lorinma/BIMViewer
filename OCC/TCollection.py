@@ -115,7 +115,7 @@ TCollection_Right = _TCollection.TCollection_Right
 class tcollection(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NextPrimeForMap(*args):
+    def NextPrimeForMap(*args) -> "Standard_Integer" :
         """
         * Returns a prime number greater than <I> suitable to dimension a Map. When <I> becomes great there is a limit on the result (today the limit is around 1 000 000). This is not a limit of the number of items but a limit in the number of buckets. i.e. there will be more collisions in the map.
 
@@ -141,7 +141,7 @@ tcollection._kill_pointed = new_instancemethod(_TCollection.tcollection__kill_po
 tcollection_swigregister = _TCollection.tcollection_swigregister
 tcollection_swigregister(tcollection)
 
-def tcollection_NextPrimeForMap(*args):
+def tcollection_NextPrimeForMap(*args) -> "Standard_Integer" :
   """
     * Returns a prime number greater than <I> suitable to dimension a Map. When <I> becomes great there is a limit on the result (today the limit is around 1 000 000). This is not a limit of the number of items but a limit in the number of buckets. i.e. there will be more collisions in the map.
 
@@ -165,7 +165,7 @@ class TCollection_AVLBaseNode(OCC.MMgt.MMgt_TShared):
 
         """
         _TCollection.TCollection_AVLBaseNode_swiginit(self,_TCollection.new_TCollection_AVLBaseNode(*args))
-    def SetChild(self, *args):
+    def SetChild(self, *args) -> "void" :
         """
         :param theNode:
         :type theNode: TCollection_AVLBaseNodePtr &
@@ -176,7 +176,7 @@ class TCollection_AVLBaseNode(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_AVLBaseNode_SetChild(self, *args)
 
-    def Height(*args):
+    def Height(*args) -> "Standard_Integer" :
         """
         :param ANode:
         :type ANode: TCollection_AVLBaseNodePtr &
@@ -186,7 +186,7 @@ class TCollection_AVLBaseNode(OCC.MMgt.MMgt_TShared):
         return _TCollection.TCollection_AVLBaseNode_Height(*args)
 
     Height = staticmethod(Height)
-    def RecursiveExtent(*args):
+    def RecursiveExtent(*args) -> "Standard_Integer" :
         """
         :param ANode:
         :type ANode: TCollection_AVLBaseNodePtr &
@@ -196,7 +196,7 @@ class TCollection_AVLBaseNode(OCC.MMgt.MMgt_TShared):
         return _TCollection.TCollection_AVLBaseNode_RecursiveExtent(*args)
 
     RecursiveExtent = staticmethod(RecursiveExtent)
-    def RecursiveTotalExtent(*args):
+    def RecursiveTotalExtent(*args) -> "Standard_Integer" :
         """
         :param ANode:
         :type ANode: TCollection_AVLBaseNodePtr &
@@ -206,33 +206,33 @@ class TCollection_AVLBaseNode(OCC.MMgt.MMgt_TShared):
         return _TCollection.TCollection_AVLBaseNode_RecursiveTotalExtent(*args)
 
     RecursiveTotalExtent = staticmethod(RecursiveTotalExtent)
-    def Right(self, *args):
+    def Right(self, *args) -> "TCollection_AVLBaseNodePtr &" :
         """
         :rtype: TCollection_AVLBaseNodePtr
 
         """
         return _TCollection.TCollection_AVLBaseNode_Right(self, *args)
 
-    def Left(self, *args):
+    def Left(self, *args) -> "TCollection_AVLBaseNodePtr &" :
         """
         :rtype: TCollection_AVLBaseNodePtr
 
         """
         return _TCollection.TCollection_AVLBaseNode_Left(self, *args)
 
-    def GetCount(self):
+    def GetCount(self) -> "Standard_Integer" :
         """GetCount(TCollection_AVLBaseNode self) -> Standard_Integer"""
         return _TCollection.TCollection_AVLBaseNode_GetCount(self)
 
-    def SetCount(self, *args):
+    def SetCount(self, *args) -> "void" :
         """SetCount(TCollection_AVLBaseNode self, Standard_Integer value)"""
         return _TCollection.TCollection_AVLBaseNode_SetCount(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_AVLBaseNode self)"""
         return _TCollection.TCollection_AVLBaseNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TCollection_AVLBaseNode" :
         """GetHandle(TCollection_AVLBaseNode self) -> Handle_TCollection_AVLBaseNode"""
         return _TCollection.TCollection_AVLBaseNode_GetHandle(self)
 
@@ -254,7 +254,7 @@ TCollection_AVLBaseNode.GetHandle = new_instancemethod(_TCollection.TCollection_
 TCollection_AVLBaseNode_swigregister = _TCollection.TCollection_AVLBaseNode_swigregister
 TCollection_AVLBaseNode_swigregister(TCollection_AVLBaseNode)
 
-def TCollection_AVLBaseNode_Height(*args):
+def TCollection_AVLBaseNode_Height(*args) -> "Standard_Integer" :
   """
     :param ANode:
     :type ANode: TCollection_AVLBaseNodePtr &
@@ -263,7 +263,7 @@ def TCollection_AVLBaseNode_Height(*args):
     """
   return _TCollection.TCollection_AVLBaseNode_Height(*args)
 
-def TCollection_AVLBaseNode_RecursiveExtent(*args):
+def TCollection_AVLBaseNode_RecursiveExtent(*args) -> "Standard_Integer" :
   """
     :param ANode:
     :type ANode: TCollection_AVLBaseNodePtr &
@@ -272,7 +272,7 @@ def TCollection_AVLBaseNode_RecursiveExtent(*args):
     """
   return _TCollection.TCollection_AVLBaseNode_RecursiveExtent(*args)
 
-def TCollection_AVLBaseNode_RecursiveTotalExtent(*args):
+def TCollection_AVLBaseNode_RecursiveTotalExtent(*args) -> "Standard_Integer" :
   """
     :param ANode:
     :type ANode: TCollection_AVLBaseNodePtr &
@@ -302,7 +302,7 @@ Handle_TCollection_AVLBaseNode._kill_pointed = new_instancemethod(_TCollection.H
 Handle_TCollection_AVLBaseNode_swigregister = _TCollection.Handle_TCollection_AVLBaseNode_swigregister
 Handle_TCollection_AVLBaseNode_swigregister(Handle_TCollection_AVLBaseNode)
 
-def Handle_TCollection_AVLBaseNode_DownCast(*args):
+def Handle_TCollection_AVLBaseNode_DownCast(*args) -> "Handle_TCollection_AVLBaseNode const" :
   return _TCollection.Handle_TCollection_AVLBaseNode_DownCast(*args)
 Handle_TCollection_AVLBaseNode_DownCast = _TCollection.Handle_TCollection_AVLBaseNode_DownCast
 
@@ -310,21 +310,21 @@ class TCollection_Array1Descriptor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array1Descriptor_Upper(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array1Descriptor_Lower(self, *args)
 
-    def Address(self, *args):
+    def Address(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -350,35 +350,35 @@ class TCollection_Array2Descriptor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array2Descriptor_UpperRow(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array2Descriptor_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array2Descriptor_UpperCol(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TCollection.TCollection_Array2Descriptor_LowerCol(self, *args)
 
-    def Address(self, *args):
+    def Address(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -491,7 +491,7 @@ class TCollection_AsciiString(object):
 
         """
         _TCollection.TCollection_AsciiString_swiginit(self,_TCollection.new_TCollection_AsciiString(*args))
-    def AssignCat(self, *args):
+    def AssignCat(self, *args) -> "void" :
         """
         * Appends <other> to me. This is an unary operator.
 
@@ -526,7 +526,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_AssignCat(self, *args)
 
-    def __iadd__(self, *args):
+    def __iadd__(self, *args) -> "void" :
         """
         :param other:
         :type other: Standard_Character
@@ -551,7 +551,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString___iadd__(self, *args)
 
-    def Capitalize(self, *args):
+    def Capitalize(self, *args) -> "void" :
         """
         * Converts the first character into its corresponding upper-case character and the other characters into lowercase Example: before me = 'hellO ' after me = 'Hello '
 
@@ -560,7 +560,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Capitalize(self, *args)
 
-    def Cat(self, *args):
+    def Cat(self, *args) -> "TCollection_AsciiString" :
         """
         * Appends <other> to me. Syntax: aString = aString + 'Dummy' Example: aString contains 'I say ' aString = aString + 'Hello ' + 'Dolly' gives 'I say Hello Dolly' To catenate more than one CString, you must put a String before. So the following example is WRONG ! aString = 'Hello ' + 'Dolly' THIS IS NOT ALLOWED This rule is applicable to AssignCat (operator +=) too.
 
@@ -595,7 +595,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Cat(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "TCollection_AsciiString" :
         """
         :param other:
         :type other: Standard_Character
@@ -620,7 +620,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString___add__(self, *args)
 
-    def Center(self, *args):
+    def Center(self, *args) -> "void" :
         """
         * Modifies this ASCII string so that its length becomes equal to Width and the new characters are equal to Filler. New characters are added both at the beginning and at the end of this string. If Width is less than the length of this ASCII string, nothing happens. Example TCollection_AsciiString myAlphabet('abcdef'); myAlphabet.Center(9,' '); assert ( myAlphabet == ' abcdef ' );
 
@@ -633,7 +633,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Center(self, *args)
 
-    def ChangeAll(self, *args):
+    def ChangeAll(self, *args) -> "void" :
         """
         * Substitutes all the characters equal to aChar by NewChar in the AsciiString <self>. The substitution can be case sensitive. If you don't use default case sensitive, no matter wether aChar is uppercase or not. Example: me = 'Histake' -> ChangeAll('H','M',Standard_True) gives me = 'Mistake'
 
@@ -648,7 +648,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_ChangeAll(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all characters contained in <self>. This produces an empty AsciiString.
 
@@ -657,7 +657,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * Copy <fromwhere> to <self>. Used as operator = Example: aString = anotherCString;
 
@@ -674,7 +674,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Copy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param fromwhere:
         :type fromwhere: char *
@@ -687,7 +687,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Set(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Frees memory allocated by AsciiString.
 
@@ -696,7 +696,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Destroy(self, *args)
 
-    def FirstLocationInSet(self, *args):
+    def FirstLocationInSet(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the first character of <self> that is present in <Set>. The search begins to the index FromIndex and ends to the the index ToIndex. Returns zero if failure. Raises an exception if FromIndex or ToIndex is out of range. Example: before me = 'aabAcAa', S = 'Aa', FromIndex = 1, Toindex = 7 after me = 'aabAcAa' returns 1
 
@@ -711,7 +711,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_FirstLocationInSet(self, *args)
 
-    def FirstLocationNotInSet(self, *args):
+    def FirstLocationNotInSet(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the first character of <self> that is not present in the set <Set>. The search begins to the index FromIndex and ends to the the index ToIndex in <self>. Returns zero if failure. Raises an exception if FromIndex or ToIndex is out of range. Example: before me = 'aabAcAa', S = 'Aa', FromIndex = 1, Toindex = 7 after me = 'aabAcAa' returns 3
 
@@ -726,7 +726,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_FirstLocationNotInSet(self, *args)
 
-    def Insert(self, *args):
+    def Insert(self, *args) -> "void" :
         """
         * Inserts a Character at position <where>. Example: aString contains 'hy not ?' aString.Insert(1,'W'); gives 'Why not ?' aString contains 'Wh' aString.Insert(3,'y'); gives 'Why' aString contains 'Way' aString.Insert(2,'h'); gives 'Why'
 
@@ -755,7 +755,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Insert(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         * Pushing a string after a specific index in the string <self>. Raises an exception if Index is out of bounds. - less than 0 (InsertAfter), or less than 1 (InsertBefore), or - greater than the number of characters in this ASCII string. Example: before me = 'cde' , Index = 0 , other = 'ab' after me = 'abcde' , other = 'ab'
 
@@ -768,7 +768,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_InsertAfter(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         * Pushing a string before a specific index in the string <self>. Raises an exception if Index is out of bounds. - less than 0 (InsertAfter), or less than 1 (InsertBefore), or - greater than the number of characters in this ASCII string. Example: before me = 'cde' , Index = 1 , other = 'ab' after me = 'abcde' , other = 'ab'
 
@@ -781,7 +781,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_InsertBefore(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string <self> contains zero character.
 
@@ -808,7 +808,7 @@ class TCollection_AsciiString(object):
         except:
             return True
 
-    def IsDifferent(self, *args):
+    def IsDifferent(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are differences between the characters in this ASCII string and ASCII string other. Note that this method is an alias of operator !=
 
@@ -831,7 +831,7 @@ class TCollection_AsciiString(object):
         except:
             return True
 
-    def IsLess(self, *args):
+    def IsLess(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is 'ASCII' less than <other>.
 
@@ -848,7 +848,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IsLess(self, *args)
 
-    def __lt__(self, *args):
+    def __lt__(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: char *
@@ -861,7 +861,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString___lt__(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is 'ASCII' greater than <other>.
 
@@ -878,7 +878,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IsGreater(self, *args)
 
-    def __gt__(self, *args):
+    def __gt__(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: char *
@@ -891,7 +891,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString___gt__(self, *args)
 
-    def IntegerValue(self, *args):
+    def IntegerValue(self, *args) -> "Standard_Integer" :
         """
         * Converts a AsciiString containing a numeric expression to an Integer. Example: '215' returns 215.
 
@@ -900,7 +900,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IntegerValue(self, *args)
 
-    def IsIntegerValue(self, *args):
+    def IsIntegerValue(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the AsciiString contains an integer value. Note: an integer value is considered to be a real value as well.
 
@@ -909,7 +909,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IsIntegerValue(self, *args)
 
-    def IsRealValue(self, *args):
+    def IsRealValue(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the AsciiString contains a real value. Note: an integer value is considered to be a real value as well.
 
@@ -918,7 +918,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IsRealValue(self, *args)
 
-    def IsAscii(self, *args):
+    def IsAscii(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the AsciiString contains only ASCII characters between ' ' and '~'. This means no control character and no extended ASCII code.
 
@@ -927,7 +927,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_IsAscii(self, *args)
 
-    def LeftAdjust(self, *args):
+    def LeftAdjust(self, *args) -> "void" :
         """
         * Removes all space characters in the begining of the string.
 
@@ -936,7 +936,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_LeftAdjust(self, *args)
 
-    def LeftJustify(self, *args):
+    def LeftJustify(self, *args) -> "void" :
         """
         * left justify Length becomes equal to Width and the new characters are equal to Filler. If Width < Length nothing happens. Raises an exception if Width is less than zero. Example: before me = 'abcdef' , Width = 9 , Filler = ' ' after me = 'abcdef '
 
@@ -949,7 +949,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_LeftJustify(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns number of characters in <self>. This is the same functionality as 'strlen' in C. Example TCollection_AsciiString myAlphabet('abcdef'); assert ( myAlphabet.Length() == 6 ); - 1 is the position of the first character in this string. - The length of this string gives the position of its last character. - Positions less than or equal to zero, or greater than the length of this string are invalid in functions which identify a character of this string by its position.
 
@@ -958,7 +958,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Length(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "Standard_Integer" :
         """
         * Returns an index in the string <self> of the first occurence of the string S in the string <self> from the starting index FromIndex to the ending index ToIndex returns zero if failure Raises an exception if FromIndex or ToIndex is out of range. Example: before me = 'aabAaAa', S = 'Aa', FromIndex = 1, ToIndex = 7 after me = 'aabAaAa' returns 4
 
@@ -985,7 +985,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Location(self, *args)
 
-    def LowerCase(self, *args):
+    def LowerCase(self, *args) -> "void" :
         """
         * Converts <self> to its lower-case equivalent. Example TCollection_AsciiString myString('Hello Dolly'); myString.UpperCase(); assert ( myString == 'HELLO DOLLY' ); myString.LowerCase(); assert ( myString == 'hello dolly' );
 
@@ -994,7 +994,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_LowerCase(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         * Inserts the string other at the beginning of this ASCII string. Example TCollection_AsciiString myAlphabet('cde'); TCollection_AsciiString myBegin('ab'); myAlphabet.Prepend(myBegin); assert ( myAlphabet == 'abcde' );
 
@@ -1005,15 +1005,15 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Prepend(self, *args)
 
-    def PrintToString(self):
+    def PrintToString(self) -> "std::string" :
         """PrintToString(TCollection_AsciiString self) -> std::string"""
         return _TCollection.TCollection_AsciiString_PrintToString(self)
 
-    def ReadFromString(self, *args):
+    def ReadFromString(self, *args) -> "void" :
         """ReadFromString(TCollection_AsciiString self, std::string src)"""
         return _TCollection.TCollection_AsciiString_ReadFromString(self, *args)
 
-    def RealValue(self, *args):
+    def RealValue(self, *args) -> "Standard_Real" :
         """
         * Converts an AsciiString containing a numeric expression. to a Real. Example: ex: '215' returns 215.0. ex: '3.14159267' returns 3.14159267.
 
@@ -1022,7 +1022,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_RealValue(self, *args)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         * Remove all the occurences of the character C in the string. Example: before me = 'HellLLo', C = 'L' , CaseSensitive = True after me = 'Hello'
 
@@ -1041,7 +1041,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_RemoveAll(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Erases <ahowmany> characters from position <where>, <where> included. Example: aString contains 'Hello' aString.Remove(2,2) erases 2 characters from position 2 This gives 'Hlo'.
 
@@ -1054,7 +1054,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Remove(self, *args)
 
-    def RightAdjust(self, *args):
+    def RightAdjust(self, *args) -> "void" :
         """
         * Removes all space characters at the end of the string.
 
@@ -1063,7 +1063,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_RightAdjust(self, *args)
 
-    def RightJustify(self, *args):
+    def RightJustify(self, *args) -> "void" :
         """
         * Right justify. Length becomes equal to Width and the new characters are equal to Filler. if Width < Length nothing happens. Raises an exception if Width is less than zero. Example: before me = 'abcdef' , Width = 9 , Filler = ' ' after me = ' abcdef'
 
@@ -1076,7 +1076,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_RightJustify(self, *args)
 
-    def Search(self, *args):
+    def Search(self, *args) -> "Standard_Integer" :
         """
         * Searches a CString in <self> from the beginning and returns position of first item <what> matching. it returns -1 if not found. Example: aString contains 'Sample single test' aString.Search('le') returns 5
 
@@ -1093,7 +1093,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Search(self, *args)
 
-    def SearchFromEnd(self, *args):
+    def SearchFromEnd(self, *args) -> "Standard_Integer" :
         """
         * Searches a CString in a AsciiString from the end and returns position of first item <what> matching. It returns -1 if not found. Example: aString contains 'Sample single test' aString.SearchFromEnd('le') returns 12
 
@@ -1110,7 +1110,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_SearchFromEnd(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Replaces one character in the AsciiString at position <where>. If <where> is less than zero or greater than the length of <self> an exception is raised. Example: aString contains 'Garbake' astring.Replace(6,'g') gives <self> = 'Garbage'
 
@@ -1139,7 +1139,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_SetValue(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "TCollection_AsciiString" :
         """
         * Splits a AsciiString into two sub-strings. Example: aString contains 'abcdefg' aString.Split(3) gives <self> = 'abc' and returns 'defg'
 
@@ -1150,7 +1150,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Split(self, *args)
 
-    def SubString(self, *args):
+    def SubString(self, *args) -> "TCollection_AsciiString" :
         """
         * Creation of a sub-string of the string <self>. The sub-string starts to the index Fromindex and ends to the index ToIndex. Raises an exception if ToIndex or FromIndex is out of bounds Example: before me = 'abcdefg', ToIndex=3, FromIndex=6 after me = 'abcdefg' returns 'cdef'
 
@@ -1163,7 +1163,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_SubString(self, *args)
 
-    def ToCString(self, *args):
+    def ToCString(self, *args) -> "char *" :
         """
         * Returns pointer to AsciiString (char *). This is useful for some casual manipulations. Warning: Because this 'char *' is 'const', you can't modify its contents.
 
@@ -1172,7 +1172,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_ToCString(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "TCollection_AsciiString" :
         """
         * Extracts <whichone> token from <self>. By default, the <separators> is set to space and tabulation. By default, the token extracted is the first one (whichone = 1). <separators> contains all separators you need. If no token indexed by <whichone> is found, it returns empty AsciiString. Example: aString contains 'This is a message' aString.Token() returns 'This' aString.Token(' ',4) returns 'message' aString.Token(' ',2) returns 'is' aString.Token(' ',9) returns '' Other separators than space character and tabulation are allowed : aString contains '1234; test:message , value' aString.Token('; :,',4) returns 'value' aString.Token('; :,',2) returns 'test'
 
@@ -1185,7 +1185,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Token(self, *args)
 
-    def Trunc(self, *args):
+    def Trunc(self, *args) -> "void" :
         """
         * Truncates <self> to <ahowmany> characters. Example: me = 'Hello Dolly' -> Trunc(3) -> me = 'Hel'
 
@@ -1196,7 +1196,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Trunc(self, *args)
 
-    def UpperCase(self, *args):
+    def UpperCase(self, *args) -> "void" :
         """
         * Converts <self> to its upper-case equivalent.
 
@@ -1205,7 +1205,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_UpperCase(self, *args)
 
-    def UsefullLength(self, *args):
+    def UsefullLength(self, *args) -> "Standard_Integer" :
         """
         * Length of the string ignoring all spaces (' ') and the control character at the end.
 
@@ -1214,7 +1214,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_UsefullLength(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character" :
         """
         * Returns character at position <where> in <self>. If <where> is less than zero or greater than the lenght of <self>, an exception is raised. Example: aString contains 'Hello' aString.Value(2) returns 'e'
 
@@ -1225,7 +1225,7 @@ class TCollection_AsciiString(object):
         """
         return _TCollection.TCollection_AsciiString_Value(self, *args)
 
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         * Hash function for AsciiString (returns the same Integer value that the hash function for ExtendedString)
 
@@ -1239,7 +1239,7 @@ class TCollection_AsciiString(object):
         return _TCollection.TCollection_AsciiString_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         * Returns true if the characters in this ASCII string are identical to the characters in ASCII string other. Note that this method is an alias of operator ==.
 
@@ -1273,7 +1273,7 @@ class TCollection_AsciiString(object):
         return _TCollection.TCollection_AsciiString_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_AsciiString self)"""
         return _TCollection.TCollection_AsciiString__kill_pointed(self)
 
@@ -1341,7 +1341,7 @@ TCollection_AsciiString._kill_pointed = new_instancemethod(_TCollection.TCollect
 TCollection_AsciiString_swigregister = _TCollection.TCollection_AsciiString_swigregister
 TCollection_AsciiString_swigregister(TCollection_AsciiString)
 
-def TCollection_AsciiString_HashCode(*args):
+def TCollection_AsciiString_HashCode(*args) -> "Standard_Integer" :
   """
     * Hash function for AsciiString (returns the same Integer value that the hash function for ExtendedString)
 
@@ -1354,7 +1354,7 @@ def TCollection_AsciiString_HashCode(*args):
     """
   return _TCollection.TCollection_AsciiString_HashCode(*args)
 
-def TCollection_AsciiString_IsEqual(*args):
+def TCollection_AsciiString_IsEqual(*args) -> "Standard_Boolean" :
   """
     * Returns true if the characters in this ASCII string are identical to the characters in ASCII string other. Note that this method is an alias of operator ==.
 
@@ -1391,7 +1391,7 @@ class TCollection_BaseSequence(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the sequence <self> contains no elements.
 
@@ -1400,7 +1400,7 @@ class TCollection_BaseSequence(object):
         """
         return _TCollection.TCollection_BaseSequence_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of element(s) in the sequence. Returns zero if the sequence is empty.
 
@@ -1409,7 +1409,7 @@ class TCollection_BaseSequence(object):
         """
         return _TCollection.TCollection_BaseSequence_Length(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         * Reverses the order of items on <self>. Example: before me = (A B C) after me = (C B A)
 
@@ -1418,7 +1418,7 @@ class TCollection_BaseSequence(object):
         """
         return _TCollection.TCollection_BaseSequence_Reverse(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         * Swaps elements which are located at positions <I> and <J> in <self>. Raises an exception if I or J is out of bound. Example: before me = (A B C), I = 1, J = 3 after me = (C B A)
 
@@ -1451,7 +1451,7 @@ class TCollection_BasicMap(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbBuckets(self, *args):
+    def NbBuckets(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of buckets in <self>.
 
@@ -1460,7 +1460,7 @@ class TCollection_BasicMap(object):
         """
         return _TCollection.TCollection_BasicMap_NbBuckets(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of keys already stored in <self>.
 
@@ -1469,7 +1469,7 @@ class TCollection_BasicMap(object):
         """
         return _TCollection.TCollection_BasicMap_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when the map contains no keys. This is exactly Extent() == 0.
 
@@ -1478,11 +1478,11 @@ class TCollection_BasicMap(object):
         """
         return _TCollection.TCollection_BasicMap_IsEmpty(self, *args)
 
-    def StatisticsToString(self):
+    def StatisticsToString(self) -> "std::string" :
         """StatisticsToString(TCollection_BasicMap self) -> std::string"""
         return _TCollection.TCollection_BasicMap_StatisticsToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_BasicMap self)"""
         return _TCollection.TCollection_BasicMap__kill_pointed(self)
 
@@ -1506,7 +1506,7 @@ class TCollection_BasicMapIterator(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Resets the iterator to the first node.
 
@@ -1515,7 +1515,7 @@ class TCollection_BasicMapIterator(object):
         """
         return _TCollection.TCollection_BasicMapIterator_Reset(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a current entry for this iterator in the map. Use the function Next to set this iterator to the position of the next entry, if it exists.
 
@@ -1524,7 +1524,7 @@ class TCollection_BasicMapIterator(object):
         """
         return _TCollection.TCollection_BasicMapIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Sets this iterator to the position of the next entry of the map. Nothing is changed if there is no more entry to explore in the map: this iterator is always positioned on the last entry of the map but the function More returns false.
 
@@ -1617,7 +1617,7 @@ class TCollection_ExtendedString(object):
 
         """
         _TCollection.TCollection_ExtendedString_swiginit(self,_TCollection.new_TCollection_ExtendedString(*args))
-    def AssignCat(self, *args):
+    def AssignCat(self, *args) -> "void" :
         """
         * Appends the other extended string to this extended string. Note that this method is an alias of operator +=. Example: aString += anotherString
 
@@ -1628,7 +1628,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_AssignCat(self, *args)
 
-    def __iadd__(self, *args):
+    def __iadd__(self, *args) -> "void" :
         """
         :param other:
         :type other: TCollection_ExtendedString &
@@ -1637,7 +1637,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString___iadd__(self, *args)
 
-    def Cat(self, *args):
+    def Cat(self, *args) -> "TCollection_ExtendedString" :
         """
         * Appends <other> to me.
 
@@ -1648,7 +1648,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Cat(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "TCollection_ExtendedString" :
         """
         :param other:
         :type other: TCollection_ExtendedString &
@@ -1657,7 +1657,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString___add__(self, *args)
 
-    def ChangeAll(self, *args):
+    def ChangeAll(self, *args) -> "void" :
         """
         * Substitutes all the characters equal to aChar by NewChar in the ExtendedString <self>. The substitution can be case sensitive. If you don't use default case sensitive, no matter wether aChar is uppercase or not.
 
@@ -1670,7 +1670,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_ChangeAll(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all characters contained in <self>. This produces an empty ExtendedString.
 
@@ -1679,7 +1679,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * Copy <fromwhere> to <self>. Used as operator =
 
@@ -1690,7 +1690,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Copy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param fromwhere:
         :type fromwhere: TCollection_ExtendedString &
@@ -1699,7 +1699,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Set(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Frees memory allocated by ExtendedString.
 
@@ -1708,7 +1708,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Destroy(self, *args)
 
-    def Insert(self, *args):
+    def Insert(self, *args) -> "void" :
         """
         * Insert a Character at position <where>.
 
@@ -1747,7 +1747,7 @@ class TCollection_ExtendedString(object):
         except:
             return True
 
-    def IsDifferent(self, *args):
+    def IsDifferent(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are differences between the characters in this extended string and the other extended string. Note that this method is an alias of operator !=.
 
@@ -1770,7 +1770,7 @@ class TCollection_ExtendedString(object):
         except:
             return True
 
-    def IsLess(self, *args):
+    def IsLess(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is less than <other>.
 
@@ -1787,7 +1787,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_IsLess(self, *args)
 
-    def __lt__(self, *args):
+    def __lt__(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: Standard_ExtString
@@ -1800,7 +1800,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString___lt__(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is greater than <other>.
 
@@ -1817,7 +1817,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_IsGreater(self, *args)
 
-    def __gt__(self, *args):
+    def __gt__(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: Standard_ExtString
@@ -1830,7 +1830,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString___gt__(self, *args)
 
-    def IsAscii(self, *args):
+    def IsAscii(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the ExtendedString contains only 'Ascii Range' characters .
 
@@ -1839,7 +1839,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_IsAscii(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns number of characters in <self>. This is the same functionality as 'strlen' in C.
 
@@ -1848,11 +1848,11 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Length(self, *args)
 
-    def PrintToString(self):
+    def PrintToString(self) -> "std::string" :
         """PrintToString(TCollection_ExtendedString self) -> std::string"""
         return _TCollection.TCollection_ExtendedString_PrintToString(self)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         * Removes every <what> characters from <self>.
 
@@ -1863,7 +1863,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_RemoveAll(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Erases <ahowmany> characters from position <where>,<where> included.
 
@@ -1876,7 +1876,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Remove(self, *args)
 
-    def Search(self, *args):
+    def Search(self, *args) -> "Standard_Integer" :
         """
         * Searches a ExtendedString in <self> from the beginning and returns position of first item <what> matching. it returns -1 if not found.
 
@@ -1887,7 +1887,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Search(self, *args)
 
-    def SearchFromEnd(self, *args):
+    def SearchFromEnd(self, *args) -> "Standard_Integer" :
         """
         * Searches a ExtendedString in another ExtendedString from the end and returns position of first item <what> matching. it returns -1 if not found.
 
@@ -1898,7 +1898,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_SearchFromEnd(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Replaces one character in the ExtendedString at position <where>. If <where> is less than zero or greater than the length of <self> an exception is raised.
 
@@ -1919,7 +1919,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_SetValue(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "TCollection_ExtendedString" :
         """
         * Splits this extended string into two sub-strings at position where. - The second sub-string (from position where + 1 of this string to the end) is returned in a new extended string. - this extended string is modified: its last characters are removed, it becomes equal to the first sub-string (from the first character to position where). Example: aString contains 'abcdefg' aString.Split(3) gives <self> = 'abc' and returns 'defg'
 
@@ -1930,7 +1930,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Split(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "TCollection_ExtendedString" :
         """
         * Extracts <whichone> token from <self>. By default, the <separators> is set to space and tabulation. By default, the token extracted is the first one (whichone = 1). <separators> contains all separators you need. If no token indexed by <whichone> is found, it returns an empty AsciiString. Example: aString contains 'This is a message' aString.Token() returns 'This' aString.Token(' ',4) returns 'message' aString.Token(' ',2) returns 'is' aString.Token(' ',9) returns '' Other separators than space character and tabulation are allowed : aString contains '1234; test:message , value' aString.Token('; :,',4) returns 'value' aString.Token('; :,',2) returns 'test'
 
@@ -1943,7 +1943,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Token(self, *args)
 
-    def ToExtString(self, *args):
+    def ToExtString(self, *args) -> "Standard_ExtString" :
         """
         * Returns pointer to ExtString
 
@@ -1952,7 +1952,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_ToExtString(self, *args)
 
-    def Trunc(self, *args):
+    def Trunc(self, *args) -> "void" :
         """
         * Truncates <self> to <ahowmany> characters. Example: me = 'Hello Dolly' -> Trunc(3) -> me = 'Hel' Exceptions Standard_OutOfRange if ahowmany is greater than the length of this string.
 
@@ -1963,7 +1963,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Trunc(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_ExtCharacter" :
         """
         * Returns character at position <where> in <self>. If <where> is less than zero or greater than the lenght of <self>, an exception is raised. Example: aString contains 'Hello' aString.Value(2) returns 'e' Exceptions Standard_OutOfRange if where lies outside the bounds of this extended string.
 
@@ -1974,7 +1974,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_Value(self, *args)
 
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         * Returns a hashed value for the extended string astring within the range 1..Upper. Note: if astring is ASCII, the computed value is the same as the value computed with the HashCode function on a TCollection_AsciiString string composed with equivalent ASCII characters
 
@@ -1988,7 +1988,7 @@ class TCollection_ExtendedString(object):
         return _TCollection.TCollection_ExtendedString_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         * Returns true if the characters in this extended string are identical to the characters in the other extended string. Note that this method is an alias of operator ==
 
@@ -2014,7 +2014,7 @@ class TCollection_ExtendedString(object):
         return _TCollection.TCollection_ExtendedString_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def ToUTF8CString(self, *args):
+    def ToUTF8CString(self, *args) -> "Standard_Integer" :
         """
         * Converts the internal <mystring> to UTF8 coding and returns length of the out CString. A memory for the <theCString> should be allocated before call!
 
@@ -2025,7 +2025,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_ToUTF8CString(self, *args)
 
-    def LengthOfCString(self, *args):
+    def LengthOfCString(self, *args) -> "Standard_Integer" :
         """
         * Returns expected CString length in UTF8 coding. It can be used for memory calculation before converting to CString containing symbols in UTF8 coding.
 
@@ -2034,7 +2034,7 @@ class TCollection_ExtendedString(object):
         """
         return _TCollection.TCollection_ExtendedString_LengthOfCString(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_ExtendedString self)"""
         return _TCollection.TCollection_ExtendedString__kill_pointed(self)
 
@@ -2082,7 +2082,7 @@ TCollection_ExtendedString._kill_pointed = new_instancemethod(_TCollection.TColl
 TCollection_ExtendedString_swigregister = _TCollection.TCollection_ExtendedString_swigregister
 TCollection_ExtendedString_swigregister(TCollection_ExtendedString)
 
-def TCollection_ExtendedString_HashCode(*args):
+def TCollection_ExtendedString_HashCode(*args) -> "Standard_Integer" :
   """
     * Returns a hashed value for the extended string astring within the range 1..Upper. Note: if astring is ASCII, the computed value is the same as the value computed with the HashCode function on a TCollection_AsciiString string composed with equivalent ASCII characters
 
@@ -2095,7 +2095,7 @@ def TCollection_ExtendedString_HashCode(*args):
     """
   return _TCollection.TCollection_ExtendedString_HashCode(*args)
 
-def TCollection_ExtendedString_IsEqual(*args):
+def TCollection_ExtendedString_IsEqual(*args) -> "Standard_Boolean" :
   """
     * Returns true if the characters in this extended string are identical to the characters in the other extended string. Note that this method is an alias of operator ==
 
@@ -2183,7 +2183,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
 
         """
         _TCollection.TCollection_HAsciiString_swiginit(self,_TCollection.new_TCollection_HAsciiString(*args))
-    def AssignCat(self, *args):
+    def AssignCat(self, *args) -> "void" :
         """
         * Appends <other> to me.
 
@@ -2200,7 +2200,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_AssignCat(self, *args)
 
-    def Capitalize(self, *args):
+    def Capitalize(self, *args) -> "void" :
         """
         * Converts the first character into its corresponding upper-case character and the other characters into lowercase. Example: before me = 'hellO ' after me = 'Hello '
 
@@ -2209,7 +2209,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Capitalize(self, *args)
 
-    def Cat(self, *args):
+    def Cat(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Creates a new string by concatenation of this ASCII string and the other ASCII string. Example: aString = aString + anotherString aString = aString + 'Dummy' aString contains 'I say ' aString = aString + 'Hello ' + 'Dolly' gives 'I say Hello Dolly' Warning: To catenate more than one CString, you must put a String before. So the following example is WRONG ! aString = 'Hello ' + 'Dolly' THIS IS NOT ALLOWED This rule is applicable to AssignCat (operator +=) too.
 
@@ -2226,7 +2226,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Cat(self, *args)
 
-    def Center(self, *args):
+    def Center(self, *args) -> "void" :
         """
         * Modifies this ASCII string so that its length becomes equal to Width and the new characters are equal to Filler. New characters are added both at the beginning and at the end of this string. If Width is less than the length of this ASCII string, nothing happens. Example Handle_TCollection_HAsciiString myAlphabet = new TCollection_HAsciiString ('abcdef'); myAlphabet->Center(9,' '); assert ( !strcmp( myAlphabet->ToCString(), ' abcdef ') );
 
@@ -2239,7 +2239,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Center(self, *args)
 
-    def ChangeAll(self, *args):
+    def ChangeAll(self, *args) -> "void" :
         """
         * Replaces all characters equal to aChar by NewChar in this ASCII string. The substitution is case sensitive if CaseSensitive is true (default value). If you do not use the default case sensitive option, it does not matter whether aChar is upper-case or not. Example Handle_TCollection_HAsciiString myMistake = new TCollection_HAsciiString ('Hather'); myMistake->ChangeAll('H','F'); assert ( !strcmp( myMistake->ToCString(), 'Father') );
 
@@ -2254,7 +2254,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_ChangeAll(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all characters contained in <self>. This produces an empty HAsciiString.
 
@@ -2263,7 +2263,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Clear(self, *args)
 
-    def FirstLocationInSet(self, *args):
+    def FirstLocationInSet(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the first character of <self> that is present in <Set>. The search begins to the index FromIndex and ends to the the index ToIndex. Returns zero if failure. Raises an exception if FromIndex or ToIndex is out of range Example: before me = 'aabAcAa', S = 'Aa', FromIndex = 1, Toindex = 7 after me = 'aabAcAa' returns 1
 
@@ -2278,7 +2278,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_FirstLocationInSet(self, *args)
 
-    def FirstLocationNotInSet(self, *args):
+    def FirstLocationNotInSet(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the first character of <self> that is not present in the set <Set>. The search begins to the index FromIndex and ends to the the index ToIndex in <self>. Returns zero if failure. Raises an exception if FromIndex or ToIndex is out of range. Example: before me = 'aabAcAa', S = 'Aa', FromIndex = 1, Toindex = 7 after me = 'aabAcAa' returns 3
 
@@ -2293,7 +2293,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_FirstLocationNotInSet(self, *args)
 
-    def Insert(self, *args):
+    def Insert(self, *args) -> "void" :
         """
         * Insert a Character at position <where>. Example: aString contains 'hy not ?' aString.Insert(1,'W'); gives 'Why not ?' aString contains 'Wh' aString.Insert(3,'y'); gives 'Why' aString contains 'Way' aString.Insert(2,'h'); gives 'Why'
 
@@ -2322,7 +2322,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Insert(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         * Inserts the other ASCII string a after a specific index in the string <self> Example: before me = 'cde' , Index = 0 , other = 'ab' after me = 'abcde' , other = 'ab'
 
@@ -2335,7 +2335,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_InsertAfter(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         * Inserts the other ASCII string a before a specific index in the string <self> Raises an exception if Index is out of bounds Example: before me = 'cde' , Index = 1 , other = 'ab' after me = 'abcde' , other = 'ab'
 
@@ -2348,7 +2348,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_InsertBefore(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string <self> contains zero character
 
@@ -2357,7 +2357,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsEmpty(self, *args)
 
-    def IsLess(self, *args):
+    def IsLess(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is 'ASCII' less than <other>.
 
@@ -2368,7 +2368,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsLess(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is 'ASCII' greater than <other>.
 
@@ -2379,7 +2379,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsGreater(self, *args)
 
-    def IntegerValue(self, *args):
+    def IntegerValue(self, *args) -> "Standard_Integer" :
         """
         * Converts a HAsciiString containing a numeric expression to an Integer. Example: '215' returns 215.
 
@@ -2388,7 +2388,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IntegerValue(self, *args)
 
-    def IsIntegerValue(self, *args):
+    def IsIntegerValue(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string contains an integer value.
 
@@ -2397,7 +2397,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsIntegerValue(self, *args)
 
-    def IsRealValue(self, *args):
+    def IsRealValue(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string contains a real value.
 
@@ -2406,7 +2406,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsRealValue(self, *args)
 
-    def IsAscii(self, *args):
+    def IsAscii(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string contains only ASCII characters between ' ' and '~'. This means no control character and no extended ASCII code.
 
@@ -2415,7 +2415,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsAscii(self, *args)
 
-    def IsDifferent(self, *args):
+    def IsDifferent(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string S not contains same characters than the string <self>.
 
@@ -2426,7 +2426,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsDifferent(self, *args)
 
-    def IsSameString(self, *args):
+    def IsSameString(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string S contains same characters than the string <self>.
 
@@ -2445,7 +2445,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsSameString(self, *args)
 
-    def LeftAdjust(self, *args):
+    def LeftAdjust(self, *args) -> "void" :
         """
         * Removes all space characters in the begining of the string
 
@@ -2454,7 +2454,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_LeftAdjust(self, *args)
 
-    def LeftJustify(self, *args):
+    def LeftJustify(self, *args) -> "void" :
         """
         * Left justify. Length becomes equal to Width and the new characters are equal to Filler if Width < Length nothing happens Raises an exception if Width is less than zero Example: before me = 'abcdef' , Width = 9 , Filler = ' ' after me = 'abcdef '
 
@@ -2467,7 +2467,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_LeftJustify(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns number of characters in <self>. This is the same functionality as 'strlen' in C.
 
@@ -2476,7 +2476,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Length(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "Standard_Integer" :
         """
         * returns an index in the string <self> of the first occurence of the string S in the string <self> from the starting index FromIndex to the ending index ToIndex returns zero if failure Raises an exception if FromIndex or ToIndex is out of range. Example: before me = 'aabAaAa', S = 'Aa', FromIndex = 1, ToIndex = 7 after me = 'aabAaAa' returns 4
 
@@ -2503,7 +2503,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Location(self, *args)
 
-    def LowerCase(self, *args):
+    def LowerCase(self, *args) -> "void" :
         """
         * Converts <self> to its lower-case equivalent.
 
@@ -2512,7 +2512,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_LowerCase(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         * Inserts the other string at the begining of the string <self> Example: before me = 'cde' , S = 'ab' after me = 'abcde' , S = 'ab'
 
@@ -2523,11 +2523,11 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Prepend(self, *args)
 
-    def PrintToString(self):
+    def PrintToString(self) -> "std::string" :
         """PrintToString(TCollection_HAsciiString self) -> std::string"""
         return _TCollection.TCollection_HAsciiString_PrintToString(self)
 
-    def RealValue(self, *args):
+    def RealValue(self, *args) -> "Standard_Real" :
         """
         * Converts a string containing a numeric expression to a Real. Example: '215' returns 215.0. '3.14159267' returns 3.14159267.
 
@@ -2536,7 +2536,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_RealValue(self, *args)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         * Remove all the occurences of the character C in the string Example: before me = 'HellLLo', C = 'L' , CaseSensitive = True after me = 'Hello'
 
@@ -2555,7 +2555,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_RemoveAll(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Erases <ahowmany> characters from position <where>, <where> included. Example: aString contains 'Hello' aString.Erase(2,2) erases 2 characters from position 1 This gives 'Hlo'.
 
@@ -2568,7 +2568,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Remove(self, *args)
 
-    def RightAdjust(self, *args):
+    def RightAdjust(self, *args) -> "void" :
         """
         * Removes all space characters at the end of the string.
 
@@ -2577,7 +2577,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_RightAdjust(self, *args)
 
-    def RightJustify(self, *args):
+    def RightJustify(self, *args) -> "void" :
         """
         * Right justify. Length becomes equal to Width and the new characters are equal to Filler if Width < Length nothing happens Raises an exception if Width is less than zero Example: before me = 'abcdef' , Width = 9 , Filler = ' ' after me = ' abcdef'
 
@@ -2590,7 +2590,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_RightJustify(self, *args)
 
-    def Search(self, *args):
+    def Search(self, *args) -> "Standard_Integer" :
         """
         * Searches a CString in <self> from the beginning and returns position of first item <what> matching. It returns -1 if not found. Example: aString contains 'Sample single test' aString.Search('le') returns 5
 
@@ -2607,7 +2607,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Search(self, *args)
 
-    def SearchFromEnd(self, *args):
+    def SearchFromEnd(self, *args) -> "Standard_Integer" :
         """
         * Searches a CString in a String from the end and returns position of first item <what> matching. It returns -1 if not found. Example: aString contains 'Sample single test' aString.SearchFromEnd('le') returns 12
 
@@ -2624,7 +2624,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_SearchFromEnd(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Replaces one character in the string at position <where>. If <where> is less than zero or greater than the length of <self> an exception is raised. Example: aString contains 'Garbake' astring.Replace(6,'g') gives <self> = 'Garbage'
 
@@ -2653,7 +2653,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_SetValue(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Splits a HAsciiString into two sub-strings. Example: aString contains 'abcdefg' aString.Split(3) gives <self> = 'abc' and returns 'defg'
 
@@ -2664,7 +2664,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Split(self, *args)
 
-    def SubString(self, *args):
+    def SubString(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Creation of a sub-string of the string <self>. The sub-string starts to the index Fromindex and ends to the index ToIndex. Raises an exception if ToIndex or FromIndex is out of bounds Example: before me = 'abcdefg', ToIndex=3, FromIndex=6 after me = 'abcdefg' returns 'cdef'
 
@@ -2677,7 +2677,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_SubString(self, *args)
 
-    def ToCString(self, *args):
+    def ToCString(self, *args) -> "char *" :
         """
         * Returns pointer to string (char *) This is useful for some casual manipulations Because this 'char *' is 'const', you can't modify its contents.
 
@@ -2686,7 +2686,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_ToCString(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Extracts <whichone> token from <self>. By default, the <separators> is set to space and tabulation. By default, the token extracted is the first one (whichone = 1). <separators> contains all separators you need. If no token indexed by <whichone> is found, it returns an empty String. Example: aString contains 'This is a message' aString.Token() returns 'This' aString.Token(' ',4) returns 'message' aString.Token(' ',2) returns 'is' aString.Token(' ',9) returns '' Other separators than space character and tabulation are allowed aString contains '1234; test:message , value' aString.Token('; :,',4) returns 'value' aString.Token('; :,',2) returns 'test'
 
@@ -2699,7 +2699,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Token(self, *args)
 
-    def Trunc(self, *args):
+    def Trunc(self, *args) -> "void" :
         """
         * Truncates <self> to <ahowmany> characters. Example: me = 'Hello Dolly' -> Trunc(3) -> me = 'Hel'
 
@@ -2710,7 +2710,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Trunc(self, *args)
 
-    def UpperCase(self, *args):
+    def UpperCase(self, *args) -> "void" :
         """
         * Converts <self> to its upper-case equivalent.
 
@@ -2719,7 +2719,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_UpperCase(self, *args)
 
-    def UsefullLength(self, *args):
+    def UsefullLength(self, *args) -> "Standard_Integer" :
         """
         * Length of the string ignoring all spaces (' ') and the control character at the end.
 
@@ -2728,7 +2728,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_UsefullLength(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character" :
         """
         * Returns character at position <where> in <self>. If <where> is less than zero or greater than the lenght of <self>, an exception is raised. Example: aString contains 'Hello' aString.Value(2) returns 'e'
 
@@ -2739,7 +2739,7 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_Value(self, *args)
 
-    def String(self, *args):
+    def String(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns the field myString.
 
@@ -2748,18 +2748,18 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_String(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _TCollection.TCollection_HAsciiString_ShallowCopy(self, *args)
 
-    def ShallowDumpToString(self):
+    def ShallowDumpToString(self) -> "std::string" :
         """ShallowDumpToString(TCollection_HAsciiString self) -> std::string"""
         return _TCollection.TCollection_HAsciiString_ShallowDumpToString(self)
 
-    def IsSameState(self, *args):
+    def IsSameState(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: Handle_TCollection_HAsciiString &
@@ -2768,11 +2768,11 @@ class TCollection_HAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HAsciiString_IsSameState(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_HAsciiString self)"""
         return _TCollection.TCollection_HAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TCollection_HAsciiString" :
         """GetHandle(TCollection_HAsciiString self) -> Handle_TCollection_HAsciiString"""
         return _TCollection.TCollection_HAsciiString_GetHandle(self)
 
@@ -2857,7 +2857,7 @@ Handle_TCollection_HAsciiString._kill_pointed = new_instancemethod(_TCollection.
 Handle_TCollection_HAsciiString_swigregister = _TCollection.Handle_TCollection_HAsciiString_swigregister
 Handle_TCollection_HAsciiString_swigregister(Handle_TCollection_HAsciiString)
 
-def Handle_TCollection_HAsciiString_DownCast(*args):
+def Handle_TCollection_HAsciiString_DownCast(*args) -> "Handle_TCollection_HAsciiString const" :
   return _TCollection.Handle_TCollection_HAsciiString_DownCast(*args)
 Handle_TCollection_HAsciiString_DownCast = _TCollection.Handle_TCollection_HAsciiString_DownCast
 
@@ -2916,7 +2916,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
 
         """
         _TCollection.TCollection_HExtendedString_swiginit(self,_TCollection.new_TCollection_HExtendedString(*args))
-    def AssignCat(self, *args):
+    def AssignCat(self, *args) -> "void" :
         """
         * Appends <other> to me.
 
@@ -2927,7 +2927,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_AssignCat(self, *args)
 
-    def Cat(self, *args):
+    def Cat(self, *args) -> "Handle_TCollection_HExtendedString" :
         """
         * Returns a string appending <other> to me.
 
@@ -2938,7 +2938,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Cat(self, *args)
 
-    def ChangeAll(self, *args):
+    def ChangeAll(self, *args) -> "void" :
         """
         * Substitutes all the characters equal to aChar by NewChar in the string <self>.
 
@@ -2951,7 +2951,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_ChangeAll(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all characters contained in <self>. This produces an empty ExtendedString.
 
@@ -2960,7 +2960,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string <self> contains zero character
 
@@ -2969,7 +2969,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_IsEmpty(self, *args)
 
-    def Insert(self, *args):
+    def Insert(self, *args) -> "void" :
         """
         * Insert a ExtCharacter at position <where>. Example: aString contains 'hy not ?' aString.Insert(1,'W'); gives 'Why not ?' aString contains 'Wh' aString.Insert(3,'y'); gives 'Why' aString contains 'Way' aString.Insert(2,'h'); gives 'Why'
 
@@ -2990,7 +2990,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Insert(self, *args)
 
-    def IsLess(self, *args):
+    def IsLess(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is less than <other>.
 
@@ -3001,7 +3001,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_IsLess(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is greater than <other>.
 
@@ -3012,7 +3012,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_IsGreater(self, *args)
 
-    def IsAscii(self, *args):
+    def IsAscii(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the string contains only 'Ascii Range' characters
 
@@ -3021,7 +3021,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_IsAscii(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns number of characters in <self>. This is the same functionality as 'strlen' in C.
 
@@ -3030,7 +3030,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Length(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Erases <ahowmany> characters from position <where>, <where> included. Example: aString contains 'Hello' aString.Erase(2,2) erases 2 characters from position 1 This gives 'Hlo'.
 
@@ -3043,7 +3043,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Remove(self, *args)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         * Removes every <what> characters from <self>.
 
@@ -3054,7 +3054,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_RemoveAll(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Replaces one character in the string at position <where>. If <where> is less than zero or greater than the length of <self> an exception is raised. Example: aString contains 'Garbake' astring.Replace(6,'g') gives <self> = 'Garbage'
 
@@ -3075,7 +3075,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_SetValue(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TCollection_HExtendedString" :
         """
         * Splits a ExtendedString into two sub-strings. Example: aString contains 'abcdefg' aString.Split(3) gives <self> = 'abc' and returns 'defg'
 
@@ -3086,7 +3086,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Split(self, *args)
 
-    def Search(self, *args):
+    def Search(self, *args) -> "Standard_Integer" :
         """
         * Searches a String in <self> from the beginning and returns position of first item <what> matching. It returns -1 if not found.
 
@@ -3097,7 +3097,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Search(self, *args)
 
-    def SearchFromEnd(self, *args):
+    def SearchFromEnd(self, *args) -> "Standard_Integer" :
         """
         * Searches a ExtendedString in another ExtendedString from the end and returns position of first item <what> matching. It returns -1 if not found.
 
@@ -3108,7 +3108,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_SearchFromEnd(self, *args)
 
-    def ToExtString(self, *args):
+    def ToExtString(self, *args) -> "Standard_ExtString" :
         """
         * Returns pointer to ExtString
 
@@ -3117,7 +3117,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_ToExtString(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "Handle_TCollection_HExtendedString" :
         """
         * Extracts <whichone> token from <self>. By default, the <separators> is set to space and tabulation. By default, the token extracted is the first one (whichone = 1). <separators> contains all separators you need. If no token indexed by <whichone> is found, it returns an empty String. Example: aString contains 'This is a message' aString.Token() returns 'This' aString.Token(' ',4) returns 'message' aString.Token(' ',2) returns 'is' aString.Token(' ',9) returns '' Other separators than space character and tabulation are allowed aString contains '1234; test:message , value' aString.Token('; :,',4) returns 'value' aString.Token('; :,',2) returns 'test'
 
@@ -3130,7 +3130,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Token(self, *args)
 
-    def Trunc(self, *args):
+    def Trunc(self, *args) -> "void" :
         """
         * Truncates <self> to <ahowmany> characters. Example: me = 'Hello Dolly' -> Trunc(3) -> me = 'Hel'
 
@@ -3141,7 +3141,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Trunc(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_ExtCharacter" :
         """
         * Returns ExtCharacter at position <where> in <self>. If <where> is less than zero or greater than the length of <self>, an exception is raised. Example: aString contains 'Hello' aString.Value(2) returns 'e'
 
@@ -3152,7 +3152,7 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_Value(self, *args)
 
-    def String(self, *args):
+    def String(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns the field myString
 
@@ -3161,22 +3161,22 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_String(self, *args)
 
-    def PrintToString(self):
+    def PrintToString(self) -> "std::string" :
         """PrintToString(TCollection_HExtendedString self) -> std::string"""
         return _TCollection.TCollection_HExtendedString_PrintToString(self)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TCollection_HExtendedString" :
         """
         :rtype: Handle_TCollection_HExtendedString
 
         """
         return _TCollection.TCollection_HExtendedString_ShallowCopy(self, *args)
 
-    def ShallowDumpToString(self):
+    def ShallowDumpToString(self) -> "std::string" :
         """ShallowDumpToString(TCollection_HExtendedString self) -> std::string"""
         return _TCollection.TCollection_HExtendedString_ShallowDumpToString(self)
 
-    def IsSameState(self, *args):
+    def IsSameState(self, *args) -> "Standard_Boolean" :
         """
         :param other:
         :type other: Handle_TCollection_HExtendedString &
@@ -3185,11 +3185,11 @@ class TCollection_HExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TCollection.TCollection_HExtendedString_IsSameState(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_HExtendedString self)"""
         return _TCollection.TCollection_HExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TCollection_HExtendedString" :
         """GetHandle(TCollection_HExtendedString self) -> Handle_TCollection_HExtendedString"""
         return _TCollection.TCollection_HExtendedString_GetHandle(self)
 
@@ -3252,7 +3252,7 @@ Handle_TCollection_HExtendedString._kill_pointed = new_instancemethod(_TCollecti
 Handle_TCollection_HExtendedString_swigregister = _TCollection.Handle_TCollection_HExtendedString_swigregister
 Handle_TCollection_HExtendedString_swigregister(Handle_TCollection_HExtendedString)
 
-def Handle_TCollection_HExtendedString_DownCast(*args):
+def Handle_TCollection_HExtendedString_DownCast(*args) -> "Handle_TCollection_HExtendedString const" :
   return _TCollection.Handle_TCollection_HExtendedString_DownCast(*args)
 Handle_TCollection_HExtendedString_DownCast = _TCollection.Handle_TCollection_HExtendedString_DownCast
 
@@ -3267,18 +3267,18 @@ class TCollection_MapNode(OCC.MMgt.MMgt_TShared):
 
         """
         _TCollection.TCollection_MapNode_swiginit(self,_TCollection.new_TCollection_MapNode(*args))
-    def Next(self, *args):
+    def Next(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TCollection.TCollection_MapNode_Next(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_MapNode self)"""
         return _TCollection.TCollection_MapNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TCollection_MapNode" :
         """GetHandle(TCollection_MapNode self) -> Handle_TCollection_MapNode"""
         return _TCollection.TCollection_MapNode_GetHandle(self)
 
@@ -3317,14 +3317,14 @@ Handle_TCollection_MapNode._kill_pointed = new_instancemethod(_TCollection.Handl
 Handle_TCollection_MapNode_swigregister = _TCollection.Handle_TCollection_MapNode_swigregister
 Handle_TCollection_MapNode_swigregister(Handle_TCollection_MapNode)
 
-def Handle_TCollection_MapNode_DownCast(*args):
+def Handle_TCollection_MapNode_DownCast(*args) -> "Handle_TCollection_MapNode const" :
   return _TCollection.Handle_TCollection_MapNode_DownCast(*args)
 Handle_TCollection_MapNode_DownCast = _TCollection.Handle_TCollection_MapNode_DownCast
 
 class TCollection_PrivCompareOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: int &
@@ -3335,7 +3335,7 @@ class TCollection_PrivCompareOfInteger(object):
         """
         return _TCollection.TCollection_PrivCompareOfInteger_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: int &
@@ -3346,7 +3346,7 @@ class TCollection_PrivCompareOfInteger(object):
         """
         return _TCollection.TCollection_PrivCompareOfInteger_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: int &
@@ -3377,7 +3377,7 @@ TCollection_PrivCompareOfInteger_swigregister(TCollection_PrivCompareOfInteger)
 class TCollection_PrivCompareOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: float &
@@ -3388,7 +3388,7 @@ class TCollection_PrivCompareOfReal(object):
         """
         return _TCollection.TCollection_PrivCompareOfReal_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: float &
@@ -3399,7 +3399,7 @@ class TCollection_PrivCompareOfReal(object):
         """
         return _TCollection.TCollection_PrivCompareOfReal_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Left:
         :type Left: float &
@@ -3440,25 +3440,25 @@ class TCollection_SeqNode(OCC.MMgt.MMgt_TShared):
 
         """
         _TCollection.TCollection_SeqNode_swiginit(self,_TCollection.new_TCollection_SeqNode(*args))
-    def Next(self, *args):
+    def Next(self, *args) -> "TCollection_SeqNodePtr &" :
         """
         :rtype: TCollection_SeqNodePtr
 
         """
         return _TCollection.TCollection_SeqNode_Next(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "TCollection_SeqNodePtr &" :
         """
         :rtype: TCollection_SeqNodePtr
 
         """
         return _TCollection.TCollection_SeqNode_Previous(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TCollection_SeqNode self)"""
         return _TCollection.TCollection_SeqNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TCollection_SeqNode" :
         """GetHandle(TCollection_SeqNode self) -> Handle_TCollection_SeqNode"""
         return _TCollection.TCollection_SeqNode_GetHandle(self)
 
@@ -3498,7 +3498,7 @@ Handle_TCollection_SeqNode._kill_pointed = new_instancemethod(_TCollection.Handl
 Handle_TCollection_SeqNode_swigregister = _TCollection.Handle_TCollection_SeqNode_swigregister
 Handle_TCollection_SeqNode_swigregister(Handle_TCollection_SeqNode)
 
-def Handle_TCollection_SeqNode_DownCast(*args):
+def Handle_TCollection_SeqNode_DownCast(*args) -> "Handle_TCollection_SeqNode const" :
   return _TCollection.Handle_TCollection_SeqNode_DownCast(*args)
 Handle_TCollection_SeqNode_DownCast = _TCollection.Handle_TCollection_SeqNode_DownCast
 

@@ -114,14 +114,14 @@ class ApproxInt_SvSurfaces(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _ApproxInt.ApproxInt_SvSurfaces_Delete(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "Standard_Boolean" :
         """
         * returns True if Tg,Tguv1 Tguv2 can be computed.
 
@@ -146,7 +146,7 @@ class ApproxInt_SvSurfaces(object):
         """
         return _ApproxInt.ApproxInt_SvSurfaces_Compute(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "void" :
         """
         :param u1:
         :type u1: float
@@ -163,7 +163,7 @@ class ApproxInt_SvSurfaces(object):
         """
         return _ApproxInt.ApproxInt_SvSurfaces_Pnt(self, *args)
 
-    def Tangency(self, *args):
+    def Tangency(self, *args) -> "Standard_Boolean" :
         """
         :param u1:
         :type u1: float
@@ -180,7 +180,7 @@ class ApproxInt_SvSurfaces(object):
         """
         return _ApproxInt.ApproxInt_SvSurfaces_Tangency(self, *args)
 
-    def TangencyOnSurf1(self, *args):
+    def TangencyOnSurf1(self, *args) -> "Standard_Boolean" :
         """
         :param u1:
         :type u1: float
@@ -197,7 +197,7 @@ class ApproxInt_SvSurfaces(object):
         """
         return _ApproxInt.ApproxInt_SvSurfaces_TangencyOnSurf1(self, *args)
 
-    def TangencyOnSurf2(self, *args):
+    def TangencyOnSurf2(self, *args) -> "Standard_Boolean" :
         """
         :param u1:
         :type u1: float

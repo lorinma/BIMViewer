@@ -119,7 +119,7 @@ import OCC.TColStd
 class selectbasics(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MaxOwnerPriority(*args):
+    def MaxOwnerPriority(*args) -> "Standard_Integer" :
         """
         * Structure to provide all-in-one information on picking arguments for 'Matches' method of SelectBasics_SensitiveEntity.
 
@@ -129,7 +129,7 @@ class selectbasics(object):
         return _SelectBasics.selectbasics_MaxOwnerPriority(*args)
 
     MaxOwnerPriority = staticmethod(MaxOwnerPriority)
-    def MinOwnerPriority(*args):
+    def MinOwnerPriority(*args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -151,7 +151,7 @@ selectbasics._kill_pointed = new_instancemethod(_SelectBasics.selectbasics__kill
 selectbasics_swigregister = _SelectBasics.selectbasics_swigregister
 selectbasics_swigregister(selectbasics)
 
-def selectbasics_MaxOwnerPriority(*args):
+def selectbasics_MaxOwnerPriority(*args) -> "Standard_Integer" :
   """
     * Structure to provide all-in-one information on picking arguments for 'Matches' method of SelectBasics_SensitiveEntity.
 
@@ -160,7 +160,7 @@ def selectbasics_MaxOwnerPriority(*args):
     """
   return _SelectBasics.selectbasics_MaxOwnerPriority(*args)
 
-def selectbasics_MinOwnerPriority(*args):
+def selectbasics_MinOwnerPriority(*args) -> "Standard_Integer" :
   """
     :rtype: int
 
@@ -170,7 +170,7 @@ def selectbasics_MinOwnerPriority(*args):
 class SelectBasics_BasicTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MatchSegments(*args):
+    def MatchSegments(*args) -> "Standard_Boolean" :
         """
         * returns True if The Segment {P1P2} is intersected by the segment {P3P4}
 
@@ -188,7 +188,7 @@ class SelectBasics_BasicTool(object):
         return _SelectBasics.SelectBasics_BasicTool_MatchSegments(*args)
 
     MatchSegments = staticmethod(MatchSegments)
-    def MatchSegment(*args):
+    def MatchSegment(*args) -> "Standard_Real &" :
         """
         * return True if Segment(pBegin, pEnd) is Selected
 
@@ -210,7 +210,7 @@ class SelectBasics_BasicTool(object):
         return _SelectBasics.SelectBasics_BasicTool_MatchSegment(*args)
 
     MatchSegment = staticmethod(MatchSegment)
-    def AutoInter(*args):
+    def AutoInter(*args) -> "Standard_Boolean" :
         """
         :param aPolyg2d:
         :type aPolyg2d: TColgp_Array1OfPnt2d
@@ -220,7 +220,7 @@ class SelectBasics_BasicTool(object):
         return _SelectBasics.SelectBasics_BasicTool_AutoInter(*args)
 
     AutoInter = staticmethod(AutoInter)
-    def MatchPolyg2d(*args):
+    def MatchPolyg2d(*args) -> "Standard_Real &, Standard_Integer &" :
         """
         * package method used to find if a point is close enough to a polygon of 2D points to be Used by Primitives like curves or faces... Rank gives the index of the touched segment
 
@@ -256,7 +256,7 @@ SelectBasics_BasicTool._kill_pointed = new_instancemethod(_SelectBasics.SelectBa
 SelectBasics_BasicTool_swigregister = _SelectBasics.SelectBasics_BasicTool_swigregister
 SelectBasics_BasicTool_swigregister(SelectBasics_BasicTool)
 
-def SelectBasics_BasicTool_MatchSegments(*args):
+def SelectBasics_BasicTool_MatchSegments(*args) -> "Standard_Boolean" :
   """
     * returns True if The Segment {P1P2} is intersected by the segment {P3P4}
 
@@ -273,7 +273,7 @@ def SelectBasics_BasicTool_MatchSegments(*args):
     """
   return _SelectBasics.SelectBasics_BasicTool_MatchSegments(*args)
 
-def SelectBasics_BasicTool_MatchSegment(*args):
+def SelectBasics_BasicTool_MatchSegment(*args) -> "Standard_Real &" :
   """
     * return True if Segment(pBegin, pEnd) is Selected
 
@@ -294,7 +294,7 @@ def SelectBasics_BasicTool_MatchSegment(*args):
     """
   return _SelectBasics.SelectBasics_BasicTool_MatchSegment(*args)
 
-def SelectBasics_BasicTool_AutoInter(*args):
+def SelectBasics_BasicTool_AutoInter(*args) -> "Standard_Boolean" :
   """
     :param aPolyg2d:
     :type aPolyg2d: TColgp_Array1OfPnt2d
@@ -303,7 +303,7 @@ def SelectBasics_BasicTool_AutoInter(*args):
     """
   return _SelectBasics.SelectBasics_BasicTool_AutoInter(*args)
 
-def SelectBasics_BasicTool_MatchPolyg2d(*args):
+def SelectBasics_BasicTool_MatchPolyg2d(*args) -> "Standard_Real &, Standard_Integer &" :
   """
     * package method used to find if a point is close enough to a polygon of 2D points to be Used by Primitives like curves or faces... Rank gives the index of the touched segment
 
@@ -328,7 +328,7 @@ class SelectBasics_EntityOwner(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * sets the selectable priority of the owner
 
@@ -339,21 +339,21 @@ class SelectBasics_EntityOwner(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_EntityOwner_Set(self, *args)
 
-    def Priority(self, *args):
+    def Priority(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _SelectBasics.SelectBasics_EntityOwner_Priority(self, *args)
 
-    def HasLocation(self, *args):
+    def HasLocation(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_EntityOwner_HasLocation(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param aLoc:
         :type aLoc: TopLoc_Location &
@@ -362,25 +362,25 @@ class SelectBasics_EntityOwner(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_EntityOwner_SetLocation(self, *args)
 
-    def ResetLocation(self, *args):
+    def ResetLocation(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _SelectBasics.SelectBasics_EntityOwner_ResetLocation(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "TopLoc_Location const &" :
         """
         :rtype: TopLoc_Location
 
         """
         return _SelectBasics.SelectBasics_EntityOwner_Location(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(SelectBasics_EntityOwner self)"""
         return _SelectBasics.SelectBasics_EntityOwner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_SelectBasics_EntityOwner" :
         """GetHandle(SelectBasics_EntityOwner self) -> Handle_SelectBasics_EntityOwner"""
         return _SelectBasics.SelectBasics_EntityOwner_GetHandle(self)
 
@@ -424,7 +424,7 @@ Handle_SelectBasics_EntityOwner._kill_pointed = new_instancemethod(_SelectBasics
 Handle_SelectBasics_EntityOwner_swigregister = _SelectBasics.Handle_SelectBasics_EntityOwner_swigregister
 Handle_SelectBasics_EntityOwner_swigregister(Handle_SelectBasics_EntityOwner)
 
-def Handle_SelectBasics_EntityOwner_DownCast(*args):
+def Handle_SelectBasics_EntityOwner_DownCast(*args) -> "Handle_SelectBasics_EntityOwner const" :
   return _SelectBasics.Handle_SelectBasics_EntityOwner_DownCast(*args)
 Handle_SelectBasics_EntityOwner_DownCast = _SelectBasics.Handle_SelectBasics_EntityOwner_DownCast
 
@@ -441,7 +441,7 @@ class SelectBasics_ListIteratorOfListOfBox2d(object):
 
         """
         _SelectBasics.SelectBasics_ListIteratorOfListOfBox2d_swiginit(self,_SelectBasics.new_SelectBasics_ListIteratorOfListOfBox2d(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: SelectBasics_ListOfBox2d &
@@ -450,21 +450,21 @@ class SelectBasics_ListIteratorOfListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfBox2d_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfBox2d_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfBox2d_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box2d &" :
         """
         :rtype: Bnd_Box2d
 
@@ -500,7 +500,7 @@ class SelectBasics_ListIteratorOfListOfSensitive(object):
 
         """
         _SelectBasics.SelectBasics_ListIteratorOfListOfSensitive_swiginit(self,_SelectBasics.new_SelectBasics_ListIteratorOfListOfSensitive(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: SelectBasics_ListOfSensitive &
@@ -509,21 +509,21 @@ class SelectBasics_ListIteratorOfListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfSensitive_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfSensitive_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListIteratorOfListOfSensitive_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectBasics_SensitiveEntity &" :
         """
         :rtype: Handle_SelectBasics_SensitiveEntity
 
@@ -559,18 +559,18 @@ class SelectBasics_ListNodeOfListOfBox2d(OCC.TCollection.TCollection_MapNode):
 
         """
         _SelectBasics.SelectBasics_ListNodeOfListOfBox2d_swiginit(self,_SelectBasics.new_SelectBasics_ListNodeOfListOfBox2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box2d &" :
         """
         :rtype: Bnd_Box2d
 
         """
         return _SelectBasics.SelectBasics_ListNodeOfListOfBox2d_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(SelectBasics_ListNodeOfListOfBox2d self)"""
         return _SelectBasics.SelectBasics_ListNodeOfListOfBox2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_SelectBasics_ListNodeOfListOfBox2d" :
         """GetHandle(SelectBasics_ListNodeOfListOfBox2d self) -> Handle_SelectBasics_ListNodeOfListOfBox2d"""
         return _SelectBasics.SelectBasics_ListNodeOfListOfBox2d_GetHandle(self)
 
@@ -609,7 +609,7 @@ Handle_SelectBasics_ListNodeOfListOfBox2d._kill_pointed = new_instancemethod(_Se
 Handle_SelectBasics_ListNodeOfListOfBox2d_swigregister = _SelectBasics.Handle_SelectBasics_ListNodeOfListOfBox2d_swigregister
 Handle_SelectBasics_ListNodeOfListOfBox2d_swigregister(Handle_SelectBasics_ListNodeOfListOfBox2d)
 
-def Handle_SelectBasics_ListNodeOfListOfBox2d_DownCast(*args):
+def Handle_SelectBasics_ListNodeOfListOfBox2d_DownCast(*args) -> "Handle_SelectBasics_ListNodeOfListOfBox2d const" :
   return _SelectBasics.Handle_SelectBasics_ListNodeOfListOfBox2d_DownCast(*args)
 Handle_SelectBasics_ListNodeOfListOfBox2d_DownCast = _SelectBasics.Handle_SelectBasics_ListNodeOfListOfBox2d_DownCast
 
@@ -626,18 +626,18 @@ class SelectBasics_ListNodeOfListOfSensitive(OCC.TCollection.TCollection_MapNode
 
         """
         _SelectBasics.SelectBasics_ListNodeOfListOfSensitive_swiginit(self,_SelectBasics.new_SelectBasics_ListNodeOfListOfSensitive(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectBasics_SensitiveEntity &" :
         """
         :rtype: Handle_SelectBasics_SensitiveEntity
 
         """
         return _SelectBasics.SelectBasics_ListNodeOfListOfSensitive_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(SelectBasics_ListNodeOfListOfSensitive self)"""
         return _SelectBasics.SelectBasics_ListNodeOfListOfSensitive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_SelectBasics_ListNodeOfListOfSensitive" :
         """GetHandle(SelectBasics_ListNodeOfListOfSensitive self) -> Handle_SelectBasics_ListNodeOfListOfSensitive"""
         return _SelectBasics.SelectBasics_ListNodeOfListOfSensitive_GetHandle(self)
 
@@ -676,7 +676,7 @@ Handle_SelectBasics_ListNodeOfListOfSensitive._kill_pointed = new_instancemethod
 Handle_SelectBasics_ListNodeOfListOfSensitive_swigregister = _SelectBasics.Handle_SelectBasics_ListNodeOfListOfSensitive_swigregister
 Handle_SelectBasics_ListNodeOfListOfSensitive_swigregister(Handle_SelectBasics_ListNodeOfListOfSensitive)
 
-def Handle_SelectBasics_ListNodeOfListOfSensitive_DownCast(*args):
+def Handle_SelectBasics_ListNodeOfListOfSensitive_DownCast(*args) -> "Handle_SelectBasics_ListNodeOfListOfSensitive const" :
   return _SelectBasics.Handle_SelectBasics_ListNodeOfListOfSensitive_DownCast(*args)
 Handle_SelectBasics_ListNodeOfListOfSensitive_DownCast = _SelectBasics.Handle_SelectBasics_ListNodeOfListOfSensitive_DownCast
 
@@ -689,7 +689,7 @@ class SelectBasics_ListOfBox2d(object):
 
         """
         _SelectBasics.SelectBasics_ListOfBox2d_swiginit(self,_SelectBasics.new_SelectBasics_ListOfBox2d(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: SelectBasics_ListOfBox2d &
@@ -698,7 +698,7 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: SelectBasics_ListOfBox2d &
@@ -707,28 +707,28 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box2d &
@@ -747,7 +747,7 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box2d &
@@ -766,28 +766,28 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Bnd_Box2d &" :
         """
         :rtype: Bnd_Box2d
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Bnd_Box2d &" :
         """
         :rtype: Bnd_Box2d
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: SelectBasics_ListIteratorOfListOfBox2d &
@@ -796,7 +796,7 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box2d &
@@ -813,7 +813,7 @@ class SelectBasics_ListOfBox2d(object):
         """
         return _SelectBasics.SelectBasics_ListOfBox2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box2d &
@@ -864,7 +864,7 @@ class SelectBasics_ListOfSensitive(object):
 
         """
         _SelectBasics.SelectBasics_ListOfSensitive_swiginit(self,_SelectBasics.new_SelectBasics_ListOfSensitive(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: SelectBasics_ListOfSensitive &
@@ -873,7 +873,7 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: SelectBasics_ListOfSensitive &
@@ -882,28 +882,28 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_SelectBasics_SensitiveEntity &
@@ -922,7 +922,7 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_SelectBasics_SensitiveEntity &
@@ -941,28 +941,28 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_SelectBasics_SensitiveEntity &" :
         """
         :rtype: Handle_SelectBasics_SensitiveEntity
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_SelectBasics_SensitiveEntity &" :
         """
         :rtype: Handle_SelectBasics_SensitiveEntity
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: SelectBasics_ListIteratorOfListOfSensitive &
@@ -971,7 +971,7 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_SelectBasics_SensitiveEntity &
@@ -988,7 +988,7 @@ class SelectBasics_ListOfSensitive(object):
         """
         return _SelectBasics.SelectBasics_ListOfSensitive_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_SelectBasics_SensitiveEntity &
@@ -1053,49 +1053,49 @@ class SelectBasics_PickArgs(object):
 
         """
         _SelectBasics.SelectBasics_PickArgs_swiginit(self,_SelectBasics.new_SelectBasics_PickArgs(*args))
-    def X(self, *args):
+    def X(self, *args) -> "Standard_Real" :
         """
         :rtype: inline float
 
         """
         return _SelectBasics.SelectBasics_PickArgs_X(self, *args)
 
-    def Y(self, *args):
+    def Y(self, *args) -> "Standard_Real" :
         """
         :rtype: inline float
 
         """
         return _SelectBasics.SelectBasics_PickArgs_Y(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: inline float
 
         """
         return _SelectBasics.SelectBasics_PickArgs_Tolerance(self, *args)
 
-    def DepthMin(self, *args):
+    def DepthMin(self, *args) -> "Standard_Real" :
         """
         :rtype: inline float
 
         """
         return _SelectBasics.SelectBasics_PickArgs_DepthMin(self, *args)
 
-    def DepthMax(self, *args):
+    def DepthMax(self, *args) -> "Standard_Real" :
         """
         :rtype: inline float
 
         """
         return _SelectBasics.SelectBasics_PickArgs_DepthMax(self, *args)
 
-    def PickLine(self, *args):
+    def PickLine(self, *args) -> "gp_Lin const" :
         """
         :rtype: inline  gp_Lin
 
         """
         return _SelectBasics.SelectBasics_PickArgs_PickLine(self, *args)
 
-    def IsClipped(self, *args):
+    def IsClipped(self, *args) -> "Standard_Boolean" :
         """
         * returns True if passed depth lies outside valid depth range.
 
@@ -1129,7 +1129,7 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param TheOwnerId:
         :type TheOwnerId: Handle_SelectBasics_EntityOwner &
@@ -1138,14 +1138,14 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_Set(self, *args)
 
-    def OwnerId(self, *args):
+    def OwnerId(self, *args) -> "Handle_SelectBasics_EntityOwner const &" :
         """
         :rtype: Handle_SelectBasics_EntityOwner
 
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_OwnerId(self, *args)
 
-    def Areas(self, *args):
+    def Areas(self, *args) -> "void" :
         """
         * to be implemented specifically by each type of sensitive primitive .
 
@@ -1156,7 +1156,7 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_Areas(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). This method takes into account depth limits produced by abstract view: far/near planes, clippings. Please port existing implementations of your picking detection, which were done at Matches (X, Y, Tol, DMin) method to this one, introducing the depth checks. Please note that the previous method is suppressed and the virtual implementations are not used by OCC selection framework. The porting procedure for simple sensitives (or if you are not interested in implementing full scale depth checks) can be simplified to writing the following code snippet: @code { // example code for porting descendants of Select3D_SensitiveEntity // invoke implementation of obsolete matches method (if implemented)... if (!Matches (thePickArgs.X(), thePickArgs.Y(), thePickArgs.Tolerance(), theMatchDMin)) return Standard_False; // invoke your implementation of computing depth (if implemented)... Standard_Real aDetectDepth = ComputeDepth (thePickArgs.PickLine()); return !thePickArgs.IsClipped(aDetectDepth); } @endcode @param thePickArgs [in] the picking arguments. @param theMatchDMin [out] the minimum distance on xy plane from point of picking to center of gravity of the detected sub-part of sensitive entity or the whole sensitive (e.g. used for resolving selection of coinciding circles, selection will be set to the one whose center is closest to the picking point). @param theMatchDepth [out] the minimum detected depth: depth of the closest detected sub-part of sensitive entity (or the whole sensitive). returns True if the sensitive matches the detection area. This method is an entry point for picking detection framework. The method is triggered when it is required to compose list of detected sensitive entities. The sensitives are filtered out from detection result if returned value is False. The passed entities are then can be sorted by 'theDetectDist', 'theDetectDepth' parameters.
 
@@ -1195,14 +1195,14 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_Matches(self, *args)
 
-    def NeedsConversion(self, *args):
+    def NeedsConversion(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_NeedsConversion(self, *args)
 
-    def Is3D(self, *args):
+    def Is3D(self, *args) -> "Standard_Boolean" :
         """
         * returns True if able to give 3D information (Depth,...). See Select3D
 
@@ -1211,7 +1211,7 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_Is3D(self, *args)
 
-    def MaxBoxes(self, *args):
+    def MaxBoxes(self, *args) -> "Standard_Integer" :
         """
         * returns the max number of boxes the entity is able to give at a time
 
@@ -1220,7 +1220,7 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_MaxBoxes(self, *args)
 
-    def SetSensitivityFactor(self, *args):
+    def SetSensitivityFactor(self, *args) -> "void" :
         """
         :param aFactor:
         :type aFactor: Standard_ShortReal
@@ -1229,7 +1229,7 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_SetSensitivityFactor(self, *args)
 
-    def SensitivityFactor(self, *args):
+    def SensitivityFactor(self, *args) -> "Standard_ShortReal" :
         """
         * allows a better sensitivity for a specific entity in selection algorithms useful for small sized entities.
 
@@ -1238,11 +1238,11 @@ class SelectBasics_SensitiveEntity(OCC.MMgt.MMgt_TShared):
         """
         return _SelectBasics.SelectBasics_SensitiveEntity_SensitivityFactor(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(SelectBasics_SensitiveEntity self)"""
         return _SelectBasics.SelectBasics_SensitiveEntity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_SelectBasics_SensitiveEntity" :
         """GetHandle(SelectBasics_SensitiveEntity self) -> Handle_SelectBasics_SensitiveEntity"""
         return _SelectBasics.SelectBasics_SensitiveEntity_GetHandle(self)
 
@@ -1289,7 +1289,7 @@ Handle_SelectBasics_SensitiveEntity._kill_pointed = new_instancemethod(_SelectBa
 Handle_SelectBasics_SensitiveEntity_swigregister = _SelectBasics.Handle_SelectBasics_SensitiveEntity_swigregister
 Handle_SelectBasics_SensitiveEntity_swigregister(Handle_SelectBasics_SensitiveEntity)
 
-def Handle_SelectBasics_SensitiveEntity_DownCast(*args):
+def Handle_SelectBasics_SensitiveEntity_DownCast(*args) -> "Handle_SelectBasics_SensitiveEntity const" :
   return _SelectBasics.Handle_SelectBasics_SensitiveEntity_DownCast(*args)
 Handle_SelectBasics_SensitiveEntity_DownCast = _SelectBasics.Handle_SelectBasics_SensitiveEntity_DownCast
 
@@ -1308,18 +1308,18 @@ class SelectBasics_SequenceNodeOfSequenceOfOwner(OCC.TCollection.TCollection_Seq
 
         """
         _SelectBasics.SelectBasics_SequenceNodeOfSequenceOfOwner_swiginit(self,_SelectBasics.new_SelectBasics_SequenceNodeOfSequenceOfOwner(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectBasics_EntityOwner &" :
         """
         :rtype: Handle_SelectBasics_EntityOwner
 
         """
         return _SelectBasics.SelectBasics_SequenceNodeOfSequenceOfOwner_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(SelectBasics_SequenceNodeOfSequenceOfOwner self)"""
         return _SelectBasics.SelectBasics_SequenceNodeOfSequenceOfOwner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_SelectBasics_SequenceNodeOfSequenceOfOwner" :
         """GetHandle(SelectBasics_SequenceNodeOfSequenceOfOwner self) -> Handle_SelectBasics_SequenceNodeOfSequenceOfOwner"""
         return _SelectBasics.SelectBasics_SequenceNodeOfSequenceOfOwner_GetHandle(self)
 
@@ -1358,7 +1358,7 @@ Handle_SelectBasics_SequenceNodeOfSequenceOfOwner._kill_pointed = new_instanceme
 Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_swigregister = _SelectBasics.Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_swigregister
 Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_swigregister(Handle_SelectBasics_SequenceNodeOfSequenceOfOwner)
 
-def Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_DownCast(*args):
+def Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_DownCast(*args) -> "Handle_SelectBasics_SequenceNodeOfSequenceOfOwner const" :
   return _SelectBasics.Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_DownCast(*args)
 Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_DownCast = _SelectBasics.Handle_SelectBasics_SequenceNodeOfSequenceOfOwner_DownCast
 
@@ -1371,14 +1371,14 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _SelectBasics.SelectBasics_SequenceOfOwner_swiginit(self,_SelectBasics.new_SelectBasics_SequenceOfOwner(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "SelectBasics_SequenceOfOwner const &" :
         """
         :param Other:
         :type Other: SelectBasics_SequenceOfOwner &
@@ -1387,7 +1387,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "SelectBasics_SequenceOfOwner const &" :
         """
         :param Other:
         :type Other: SelectBasics_SequenceOfOwner &
@@ -1396,7 +1396,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_SelectBasics_EntityOwner &
@@ -1409,7 +1409,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_SelectBasics_EntityOwner &
@@ -1422,7 +1422,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1439,7 +1439,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1456,21 +1456,21 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_SelectBasics_EntityOwner const &" :
         """
         :rtype: Handle_SelectBasics_EntityOwner
 
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_SelectBasics_EntityOwner const &" :
         """
         :rtype: Handle_SelectBasics_EntityOwner
 
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1481,7 +1481,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectBasics_EntityOwner const &" :
         """
         :param Index:
         :type Index: int
@@ -1490,7 +1490,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1501,7 +1501,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_SelectBasics_EntityOwner &" :
         """
         :param Index:
         :type Index: int
@@ -1510,7 +1510,7 @@ class SelectBasics_SequenceOfOwner(OCC.TCollection.TCollection_BaseSequence):
         """
         return _SelectBasics.SelectBasics_SequenceOfOwner_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1572,7 +1572,7 @@ class SelectBasics_SortAlgo(object):
 
         """
         _SelectBasics.SelectBasics_SortAlgo_swiginit(self,_SelectBasics.new_SelectBasics_SortAlgo(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Clears and initializes the selector.
 
@@ -1587,7 +1587,7 @@ class SelectBasics_SortAlgo(object):
         """
         return _SelectBasics.SelectBasics_SortAlgo_Initialize(self, *args)
 
-    def InitSelect(self, *args):
+    def InitSelect(self, *args) -> "void" :
         """
         * Searchs the items on this position.
 
@@ -1606,7 +1606,7 @@ class SelectBasics_SortAlgo(object):
         """
         return _SelectBasics.SelectBasics_SortAlgo_InitSelect(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is something selected.
 
@@ -1615,7 +1615,7 @@ class SelectBasics_SortAlgo(object):
         """
         return _SelectBasics.SelectBasics_SortAlgo_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Sets value on the next selected item.
 
@@ -1624,7 +1624,7 @@ class SelectBasics_SortAlgo(object):
         """
         return _SelectBasics.SelectBasics_SortAlgo_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the selected rectangle.
 

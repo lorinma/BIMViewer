@@ -133,7 +133,7 @@ import OCC.IntRes2d
 class shapeanalysis(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def OuterWire(*args):
+    def OuterWire(*args) -> "TopoDS_Wire" :
         """
         * Returns the outer wire on the face <Face>. This is replacement of the method BRepTools::OuterWire until it works badly. Returns the first wire oriented as outer according to FClass2d_Classifier. If none, last wire is returned.
 
@@ -145,7 +145,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_OuterWire(*args)
 
     OuterWire = staticmethod(OuterWire)
-    def TotCross2D(*args):
+    def TotCross2D(*args) -> "Standard_Real" :
         """
         * Returns a total area of 2d wire
 
@@ -159,7 +159,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_TotCross2D(*args)
 
     TotCross2D = staticmethod(TotCross2D)
-    def ContourArea(*args):
+    def ContourArea(*args) -> "Standard_Real" :
         """
         * Returns a total area of 3d wire
 
@@ -171,7 +171,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_ContourArea(*args)
 
     ContourArea = staticmethod(ContourArea)
-    def IsOuterBound(*args):
+    def IsOuterBound(*args) -> "Standard_Boolean" :
         """
         * Returns True if <F> has outer bound.
 
@@ -183,7 +183,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_IsOuterBound(*args)
 
     IsOuterBound = staticmethod(IsOuterBound)
-    def AdjustByPeriod(*args):
+    def AdjustByPeriod(*args) -> "Standard_Real" :
         """
         * Returns a shift required to move point <Val> to the range [ToVal-Period/2,ToVal+Period/2]. This shift will be the divisible by Period. Intended for adjusting parameters on periodic surfaces.
 
@@ -199,7 +199,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_AdjustByPeriod(*args)
 
     AdjustByPeriod = staticmethod(AdjustByPeriod)
-    def AdjustToPeriod(*args):
+    def AdjustToPeriod(*args) -> "Standard_Real" :
         """
         * Returns a shift required to move point <Val> to the range [ValMin,ValMax]. This shift will be the divisible by Period with Period = ValMax - ValMin. Intended for adjusting parameters on periodic surfaces.
 
@@ -215,7 +215,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_AdjustToPeriod(*args)
 
     AdjustToPeriod = staticmethod(AdjustToPeriod)
-    def FindBounds(*args):
+    def FindBounds(*args) -> "void" :
         """
         * Finds the start and end vertices of the shape Shape can be of the following type: vertex: V1 and V2 are the same and equal to <shape>, edge : V1 is start and V2 is end vertex (see ShapeAnalysis_Edge  methods FirstVertex and LastVertex), wire : V1 is start vertex of the first edge, V2 is end vertex  of the last edge (also see ShapeAnalysis_Edge).  If wire contains no edges V1 and V2 are nullified If none of the above V1 and V2 are nullified
 
@@ -231,7 +231,7 @@ class shapeanalysis(object):
         return _ShapeAnalysis.shapeanalysis_FindBounds(*args)
 
     FindBounds = staticmethod(FindBounds)
-    def GetFaceUVBounds(*args):
+    def GetFaceUVBounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Computes exact UV bounds of all wires on the face
 
@@ -265,7 +265,7 @@ shapeanalysis._kill_pointed = new_instancemethod(_ShapeAnalysis.shapeanalysis__k
 shapeanalysis_swigregister = _ShapeAnalysis.shapeanalysis_swigregister
 shapeanalysis_swigregister(shapeanalysis)
 
-def shapeanalysis_OuterWire(*args):
+def shapeanalysis_OuterWire(*args) -> "TopoDS_Wire" :
   """
     * Returns the outer wire on the face <Face>. This is replacement of the method BRepTools::OuterWire until it works badly. Returns the first wire oriented as outer according to FClass2d_Classifier. If none, last wire is returned.
 
@@ -276,7 +276,7 @@ def shapeanalysis_OuterWire(*args):
     """
   return _ShapeAnalysis.shapeanalysis_OuterWire(*args)
 
-def shapeanalysis_TotCross2D(*args):
+def shapeanalysis_TotCross2D(*args) -> "Standard_Real" :
   """
     * Returns a total area of 2d wire
 
@@ -289,7 +289,7 @@ def shapeanalysis_TotCross2D(*args):
     """
   return _ShapeAnalysis.shapeanalysis_TotCross2D(*args)
 
-def shapeanalysis_ContourArea(*args):
+def shapeanalysis_ContourArea(*args) -> "Standard_Real" :
   """
     * Returns a total area of 3d wire
 
@@ -300,7 +300,7 @@ def shapeanalysis_ContourArea(*args):
     """
   return _ShapeAnalysis.shapeanalysis_ContourArea(*args)
 
-def shapeanalysis_IsOuterBound(*args):
+def shapeanalysis_IsOuterBound(*args) -> "Standard_Boolean" :
   """
     * Returns True if <F> has outer bound.
 
@@ -311,7 +311,7 @@ def shapeanalysis_IsOuterBound(*args):
     """
   return _ShapeAnalysis.shapeanalysis_IsOuterBound(*args)
 
-def shapeanalysis_AdjustByPeriod(*args):
+def shapeanalysis_AdjustByPeriod(*args) -> "Standard_Real" :
   """
     * Returns a shift required to move point <Val> to the range [ToVal-Period/2,ToVal+Period/2]. This shift will be the divisible by Period. Intended for adjusting parameters on periodic surfaces.
 
@@ -326,7 +326,7 @@ def shapeanalysis_AdjustByPeriod(*args):
     """
   return _ShapeAnalysis.shapeanalysis_AdjustByPeriod(*args)
 
-def shapeanalysis_AdjustToPeriod(*args):
+def shapeanalysis_AdjustToPeriod(*args) -> "Standard_Real" :
   """
     * Returns a shift required to move point <Val> to the range [ValMin,ValMax]. This shift will be the divisible by Period with Period = ValMax - ValMin. Intended for adjusting parameters on periodic surfaces.
 
@@ -341,7 +341,7 @@ def shapeanalysis_AdjustToPeriod(*args):
     """
   return _ShapeAnalysis.shapeanalysis_AdjustToPeriod(*args)
 
-def shapeanalysis_FindBounds(*args):
+def shapeanalysis_FindBounds(*args) -> "void" :
   """
     * Finds the start and end vertices of the shape Shape can be of the following type: vertex: V1 and V2 are the same and equal to <shape>, edge : V1 is start and V2 is end vertex (see ShapeAnalysis_Edge  methods FirstVertex and LastVertex), wire : V1 is start vertex of the first edge, V2 is end vertex  of the last edge (also see ShapeAnalysis_Edge).  If wire contains no edges V1 and V2 are nullified If none of the above V1 and V2 are nullified
 
@@ -356,7 +356,7 @@ def shapeanalysis_FindBounds(*args):
     """
   return _ShapeAnalysis.shapeanalysis_FindBounds(*args)
 
-def shapeanalysis_GetFaceUVBounds(*args):
+def shapeanalysis_GetFaceUVBounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Computes exact UV bounds of all wires on the face
 
@@ -386,7 +386,7 @@ class ShapeAnalysis_CheckSmallFace(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_CheckSmallFace(*args))
-    def IsSpotFace(self, *args):
+    def IsSpotFace(self, *args) -> "Standard_Integer" :
         """
         * Checks if a Face is as a Spot Returns 0 if not, 1 if yes, 2 if yes and all vertices are the same By default, considers the tolerance zone of its vertices A given value <tol> may be given to check a spot of this size If a Face is a Spot, its location is returned in <spot>, and <spotol> returns an equivalent tolerance, which is computed as half of max dimension of min-max box of the face
 
@@ -403,7 +403,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_IsSpotFace(self, *args)
 
-    def CheckSpotFace(self, *args):
+    def CheckSpotFace(self, *args) -> "Standard_Boolean" :
         """
         * Acts as IsSpotFace, but records in <infos> a diagnostic 'SpotFace' with the Pnt as value (data 'Location')
 
@@ -416,7 +416,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckSpotFace(self, *args)
 
-    def IsStripSupport(self, *args):
+    def IsStripSupport(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a Face lies on a Surface which is a strip So the Face is a strip. But a Face may be a strip elsewhere .. A given value <tol> may be given to check max width By default, considers the tolerance zone of its edges Returns 0 if not a strip support, 1 strip in U, 2 strip in V
 
@@ -429,7 +429,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_IsStripSupport(self, *args)
 
-    def CheckStripEdges(self, *args):
+    def CheckStripEdges(self, *args) -> "Standard_Boolean" :
         """
         * Checks if two edges define a strip, i.e. distance maxi below tolerance, given or some of those of E1 and E2
 
@@ -446,7 +446,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckStripEdges(self, *args)
 
-    def FindStripEdges(self, *args):
+    def FindStripEdges(self, *args) -> "Standard_Boolean" :
         """
         * Searchs for two and only two edges up tolerance Returns True if OK, false if not 2 edges If True, returns the two edges and their maximum distance
 
@@ -465,7 +465,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_FindStripEdges(self, *args)
 
-    def CheckSingleStrip(self, *args):
+    def CheckSingleStrip(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a Face is a single strip, i.e. brings two great edges which are confused on their whole length, possible other edges are small or null length Returns 0 if not a strip support, 1 strip in U, 2 strip in V Records diagnostic in info if it is a single strip
 
@@ -482,7 +482,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckSingleStrip(self, *args)
 
-    def CheckStripFace(self, *args):
+    def CheckStripFace(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a Face is as a Strip Returns 0 if not or non determined, 1 if in U, 2 if in V By default, considers the tolerance zone of its edges A given value <tol> may be given to check a strip of max this width If a Face is determined as a Strip, it is delinited by two lists of edges. These lists are recorded in diagnostic Diagnostic 'StripFace' brings data 'Direction' (U or V), 'List1' , 'List2' (if they could be computed)
 
@@ -499,7 +499,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckStripFace(self, *args)
 
-    def CheckSplittingVertices(self, *args):
+    def CheckSplittingVertices(self, *args) -> "Standard_Integer" :
         """
         * Checks if a Face brings vertices which split it, either confused with non adjacent vertices, or confused with their projection on non adjacent edges Returns the count of found splitting vertices Each vertex then brings a diagnostic 'SplittingVertex', with data : 'Face' for the face, 'Edge' for the split edge
 
@@ -516,7 +516,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckSplittingVertices(self, *args)
 
-    def CheckPin(self, *args):
+    def CheckPin(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a Face has a pin, which can be edited No singularity : no pin, returns 0 If there is a pin, checked topics, with returned value : - 0 : nothing to do more - 1 : 'smooth', i.e. not a really sharp pin -> diagnostic 'SmoothPin' - 2 : stretched pin, i.e. is possible to relimit the face by another vertex, so that this vertex still gives a pin -> diagnostic 'StretchedPin' with location of vertex (Pnt)
 
@@ -531,7 +531,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckPin(self, *args)
 
-    def CheckTwisted(self, *args):
+    def CheckTwisted(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a Face is twisted (apart from checking Pin, i.e. it does not give information on pin, only 'it is twisted')
 
@@ -546,7 +546,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckTwisted(self, *args)
 
-    def CheckPinFace(self, *args):
+    def CheckPinFace(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -559,7 +559,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckPinFace(self, *args)
 
-    def CheckPinEdges(self, *args):
+    def CheckPinEdges(self, *args) -> "Standard_Boolean" :
         """
         :param theFirstEdge:
         :type theFirstEdge: TopoDS_Edge &
@@ -576,7 +576,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_CheckPinEdges(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of last call to Perform() ShapeExtend_OK : face was OK, nothing done ShapeExtend_DONE1: some wires are fixed ShapeExtend_DONE2: orientation of wires fixed ShapeExtend_DONE3: missing seam added ShapeExtend_DONE4: small area wire removed ShapeExtend_DONE5: natural bounds added ShapeExtend_FAIL1: some fails during fixing wires ShapeExtend_FAIL2: cannot fix orientation of wires ShapeExtend_FAIL3: cannot add missing seam ShapeExtend_FAIL4: cannot remove small area wire
 
@@ -587,7 +587,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_Status(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets a fixed Tolerance to check small face By default, local tolerance zone is considered Sets a fixed MaxTolerance to check small face Sets a fixed Tolerance to check small face By default, local tolerance zone is considered Unset fixed tolerance, comes back to local tolerance zones Unset fixed tolerance, comes back to local tolerance zones
 
@@ -598,7 +598,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_SetTolerance(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the tolerance to check small faces, negative value if local tolerances zones are to be considered
 
@@ -607,7 +607,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_Tolerance(self, *args)
 
-    def StatusSpot(self, *args):
+    def StatusSpot(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -616,7 +616,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusSpot(self, *args)
 
-    def StatusStrip(self, *args):
+    def StatusStrip(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -625,7 +625,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusStrip(self, *args)
 
-    def StatusPin(self, *args):
+    def StatusPin(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -634,7 +634,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusPin(self, *args)
 
-    def StatusTwisted(self, *args):
+    def StatusTwisted(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -643,7 +643,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusTwisted(self, *args)
 
-    def StatusSplitVert(self, *args):
+    def StatusSplitVert(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -652,7 +652,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusSplitVert(self, *args)
 
-    def StatusPinFace(self, *args):
+    def StatusPinFace(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -661,7 +661,7 @@ class ShapeAnalysis_CheckSmallFace(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_CheckSmallFace_StatusPinFace(self, *args)
 
-    def StatusPinEdges(self, *args):
+    def StatusPinEdges(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -707,7 +707,7 @@ ShapeAnalysis_CheckSmallFace_swigregister(ShapeAnalysis_CheckSmallFace)
 class ShapeAnalysis_Curve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Project(self, *args):
+    def Project(self, *args) -> "Standard_Real" :
         """
         * Projects a Point on a Curve. Computes the projected point and its parameter on the curve. <preci> is used as 3d precision (hence, 0 will produce reject unless exact confusion). The number of iterations is limited. If AdjustToEnds is True, point will be adjusted to the end of the curve if distance is less than <preci> Returned value is the distance between the given point and computed one.
 
@@ -764,7 +764,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_Project(self, *args)
 
-    def ProjectAct(self, *args):
+    def ProjectAct(self, *args) -> "Standard_Real" :
         """
         :param C3D:
         :type C3D: Adaptor3d_Curve &
@@ -781,7 +781,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_ProjectAct(self, *args)
 
-    def NextProject(self, *args):
+    def NextProject(self, *args) -> "Standard_Real" :
         """
         * Projects a Point on a Curve using Newton method. <paramPrev> is taken as the first approximation of solution. If Newton algorithm fails the method Project() is used. If AdjustToEnds is True, point will be adjusted to the end of the curve if distance is less than <preci>
 
@@ -824,7 +824,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_NextProject(self, *args)
 
-    def ValidateRange(self, *args):
+    def ValidateRange(self, *args) -> "Standard_Boolean" :
         """
         * Validate parameters First and Last for the given curve in order to make them valid for creation of edge. This includes: - limiting range [First,Last] by range of curve - adjusting range [First,Last] for periodic (or closed)  curve if Last < First Returns True if parameters are OK or are successfully corrected, or False if parameters cannot be corrected. In the latter case, parameters are reset to range of curve.
 
@@ -841,7 +841,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_ValidateRange(self, *args)
 
-    def FillBndBox(self, *args):
+    def FillBndBox(self, *args) -> "void" :
         """
         * Computes a boundary box on segment of curve C2d from First to Last. This is done by taking NPoints points from the curve and, if Exact is True, by searching for exact extrema. All these points are added to Box.
 
@@ -862,7 +862,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_FillBndBox(self, *args)
 
-    def SelectForwardSeam(self, *args):
+    def SelectForwardSeam(self, *args) -> "Standard_Integer" :
         """
         * Defines which pcurve (C1 or C2) should be chosen for FORWARD seam edge.
 
@@ -875,7 +875,7 @@ class ShapeAnalysis_Curve(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Curve_SelectForwardSeam(self, *args)
 
-    def IsPlanar(*args):
+    def IsPlanar(*args) -> "Standard_Boolean" :
         """
         * Checks if points are planar with given preci. If Normal has not zero modulus, checks with given normal
 
@@ -901,7 +901,7 @@ class ShapeAnalysis_Curve(object):
         return _ShapeAnalysis.ShapeAnalysis_Curve_IsPlanar(*args)
 
     IsPlanar = staticmethod(IsPlanar)
-    def GetSamplePoints(*args):
+    def GetSamplePoints(*args) -> "Standard_Boolean" :
         """
         * Returns sample points which will serve as linearisation of the2d curve in range (first, last) The distribution of sample points is consystent with what is used by BRepTopAdaptor_FClass2d
 
@@ -931,7 +931,7 @@ class ShapeAnalysis_Curve(object):
         return _ShapeAnalysis.ShapeAnalysis_Curve_GetSamplePoints(*args)
 
     GetSamplePoints = staticmethod(GetSamplePoints)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         * Tells if the Curve is closed with given precision. If <preci> < 0 then Precision::Confusion is used.
 
@@ -945,7 +945,7 @@ class ShapeAnalysis_Curve(object):
         return _ShapeAnalysis.ShapeAnalysis_Curve_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args):
+    def IsPeriodic(*args) -> "Standard_Boolean" :
         """
         * This method was implemented as fix for changes in trimmed curve behaviour. For the moment trimmed curve returns false anyway. So it is necessary to adapt all Data exchange tools for this behaviour. Current implementation takes into account that curve may be offset.
 
@@ -983,7 +983,7 @@ ShapeAnalysis_Curve._kill_pointed = new_instancemethod(_ShapeAnalysis.ShapeAnaly
 ShapeAnalysis_Curve_swigregister = _ShapeAnalysis.ShapeAnalysis_Curve_swigregister
 ShapeAnalysis_Curve_swigregister(ShapeAnalysis_Curve)
 
-def ShapeAnalysis_Curve_IsPlanar(*args):
+def ShapeAnalysis_Curve_IsPlanar(*args) -> "Standard_Boolean" :
   """
     * Checks if points are planar with given preci. If Normal has not zero modulus, checks with given normal
 
@@ -1008,7 +1008,7 @@ def ShapeAnalysis_Curve_IsPlanar(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_Curve_IsPlanar(*args)
 
-def ShapeAnalysis_Curve_GetSamplePoints(*args):
+def ShapeAnalysis_Curve_GetSamplePoints(*args) -> "Standard_Boolean" :
   """
     * Returns sample points which will serve as linearisation of the2d curve in range (first, last) The distribution of sample points is consystent with what is used by BRepTopAdaptor_FClass2d
 
@@ -1037,7 +1037,7 @@ def ShapeAnalysis_Curve_GetSamplePoints(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_Curve_GetSamplePoints(*args)
 
-def ShapeAnalysis_Curve_IsClosed(*args):
+def ShapeAnalysis_Curve_IsClosed(*args) -> "Standard_Boolean" :
   """
     * Tells if the Curve is closed with given precision. If <preci> < 0 then Precision::Confusion is used.
 
@@ -1050,7 +1050,7 @@ def ShapeAnalysis_Curve_IsClosed(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_Curve_IsClosed(*args)
 
-def ShapeAnalysis_Curve_IsPeriodic(*args):
+def ShapeAnalysis_Curve_IsPeriodic(*args) -> "Standard_Boolean" :
   """
     * This method was implemented as fix for changes in trimmed curve behaviour. For the moment trimmed curve returns false anyway. So it is necessary to adapt all Data exchange tools for this behaviour. Current implementation takes into account that curve may be offset.
 
@@ -1080,7 +1080,7 @@ class ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal(OCC.TCollection.TC
 
         """
         _ShapeAnalysis.ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: ShapeAnalysis_DataMapOfShapeListOfReal &
@@ -1089,14 +1089,14 @@ class ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal(OCC.TCollection.TC
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapIteratorOfDataMapOfShapeListOfReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfReal const &" :
         """
         :rtype: TColStd_ListOfReal
 
@@ -1133,25 +1133,25 @@ class ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal(OCC.TCollection.TColle
 
         """
         _ShapeAnalysis.ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfReal &" :
         """
         :rtype: TColStd_ListOfReal
 
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal self)"""
         return _ShapeAnalysis.ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal" :
         """GetHandle(ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal self) -> Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal"""
         return _ShapeAnalysis.ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_GetHandle(self)
 
@@ -1191,7 +1191,7 @@ Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal._kill_pointed = new_i
 Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_swigregister
 Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_swigregister(Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal)
 
-def Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_DownCast(*args):
+def Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_DownCast(*args) -> "Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_DownCast(*args)
 Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_DataMapNodeOfDataMapOfShapeListOfReal_DownCast
 
@@ -1206,7 +1206,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
 
         """
         _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_DataMapOfShapeListOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ShapeAnalysis_DataMapOfShapeListOfReal &" :
         """
         :param Other:
         :type Other: ShapeAnalysis_DataMapOfShapeListOfReal &
@@ -1215,7 +1215,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ShapeAnalysis_DataMapOfShapeListOfReal &" :
         """
         :param Other:
         :type Other: ShapeAnalysis_DataMapOfShapeListOfReal &
@@ -1224,7 +1224,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1233,14 +1233,14 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1251,7 +1251,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1260,7 +1260,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1269,7 +1269,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColStd_ListOfReal const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1278,7 +1278,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColStd_ListOfReal &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1287,7 +1287,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1296,7 +1296,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1305,7 +1305,7 @@ class ShapeAnalysis_DataMapOfShapeListOfReal(OCC.TCollection.TCollection_BasicMa
         """
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_DataMapOfShapeListOfReal self)"""
         return _ShapeAnalysis.ShapeAnalysis_DataMapOfShapeListOfReal__kill_pointed(self)
 
@@ -1343,7 +1343,7 @@ class ShapeAnalysis_Edge(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_Edge_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_Edge(*args))
-    def HasCurve3d(self, *args):
+    def HasCurve3d(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the edge has a 3d curve
 
@@ -1354,7 +1354,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_HasCurve3d(self, *args)
 
-    def Curve3d(self, *args):
+    def Curve3d(self, *args) -> "Standard_Boolean" :
         """
         * Returns the 3d curve and bounding parameteres for the edge Returns False if no 3d curve. If <orient> is True (default), takes orientation into account: if the edge is reversed, cf and cl are toggled
 
@@ -1373,7 +1373,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_Curve3d(self, *args)
 
-    def IsClosed3d(self, *args):
+    def IsClosed3d(self, *args) -> "Standard_Boolean" :
         """
         * Gives True if the edge has a 3d curve, this curve is closed, and the edge has the same vertex at start and end
 
@@ -1384,7 +1384,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_IsClosed3d(self, *args)
 
-    def HasPCurve(self, *args):
+    def HasPCurve(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the Edge has a pcurve on the face.
 
@@ -1407,7 +1407,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_HasPCurve(self, *args)
 
-    def PCurve(self, *args):
+    def PCurve(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1444,7 +1444,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_PCurve(self, *args)
 
-    def BoundUV(self, *args):
+    def BoundUV(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1473,7 +1473,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_BoundUV(self, *args)
 
-    def IsSeam(self, *args):
+    def IsSeam(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1494,7 +1494,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_IsSeam(self, *args)
 
-    def FirstVertex(self, *args):
+    def FirstVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * Returns start vertex of the edge (taking edge orientation into account).
 
@@ -1505,7 +1505,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_FirstVertex(self, *args)
 
-    def LastVertex(self, *args):
+    def LastVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * Returns end vertex of the edge (taking edge orientation into account).
 
@@ -1516,7 +1516,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_LastVertex(self, *args)
 
-    def GetEndTangent2d(self, *args):
+    def GetEndTangent2d(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1553,7 +1553,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_GetEndTangent2d(self, *args)
 
-    def CheckVerticesWithCurve3d(self, *args):
+    def CheckVerticesWithCurve3d(self, *args) -> "Standard_Boolean" :
         """
         * Checks the start and/or end vertex of the edge for matching with 3d curve with the given precision. <vtx> = 1 : start vertex only <vtx> = 2 : end vertex only <vtx> = 0 : both (default) If preci < 0 the vertices are considered with their own tolerances, else with the given <preci>.
 
@@ -1568,7 +1568,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_CheckVerticesWithCurve3d(self, *args)
 
-    def CheckVerticesWithPCurve(self, *args):
+    def CheckVerticesWithPCurve(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1597,7 +1597,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_CheckVerticesWithPCurve(self, *args)
 
-    def CheckVertexTolerance(self, *args):
+    def CheckVertexTolerance(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1622,7 +1622,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_CheckVertexTolerance(self, *args)
 
-    def CheckCurve3dWithPCurve(self, *args):
+    def CheckCurve3dWithPCurve(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -1643,7 +1643,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_CheckCurve3dWithPCurve(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status (in the form of True/False) of last Check
 
@@ -1654,7 +1654,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_Status(self, *args)
 
-    def CheckSameParameter(self, *args):
+    def CheckSameParameter(self, *args) -> "Standard_Boolean" :
         """
         * Checks the edge to be SameParameter. Calculates the maximal deviation between 3d curve and each pcurve of the edge on <NbControl> equidistant points (the same algorithm as in BRepCheck; default value is 23 as in BRepCheck). This deviation is returned in <maxdev> parameter. If deviation is greater than tolerance of the edge (i.e. incorrect flag) returns False, else returns True.
 
@@ -1669,7 +1669,7 @@ class ShapeAnalysis_Edge(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Edge_CheckSameParameter(self, *args)
 
-    def CheckOverlapping(self, *args):
+    def CheckOverlapping(self, *args) -> "Standard_Boolean" :
         """
         * Checks the first edge is overlapped with second edge. If distance between two edges is less then theTolOverlap edges is overlapped. theDomainDis - length of part of edges on wich edges is overlapped.
 
@@ -1732,7 +1732,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAnalysis.ShapeAnalysis_FreeBoundData_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_FreeBoundData(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears all properties of the contour. Contour bound itself is not cleared.
 
@@ -1741,7 +1741,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Clear(self, *args)
 
-    def SetFreeBound(self, *args):
+    def SetFreeBound(self, *args) -> "void" :
         """
         * Sets contour
 
@@ -1752,7 +1752,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_SetFreeBound(self, *args)
 
-    def SetArea(self, *args):
+    def SetArea(self, *args) -> "void" :
         """
         * Sets area of the contour
 
@@ -1763,7 +1763,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_SetArea(self, *args)
 
-    def SetPerimeter(self, *args):
+    def SetPerimeter(self, *args) -> "void" :
         """
         * Sets perimeter of the contour
 
@@ -1774,7 +1774,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_SetPerimeter(self, *args)
 
-    def SetRatio(self, *args):
+    def SetRatio(self, *args) -> "void" :
         """
         * Sets ratio of average length to average width of the contour
 
@@ -1785,7 +1785,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_SetRatio(self, *args)
 
-    def SetWidth(self, *args):
+    def SetWidth(self, *args) -> "void" :
         """
         * Sets average width of the contour
 
@@ -1796,7 +1796,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_SetWidth(self, *args)
 
-    def AddNotch(self, *args):
+    def AddNotch(self, *args) -> "void" :
         """
         * Adds notch on the contour with its maximum width
 
@@ -1809,7 +1809,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_AddNotch(self, *args)
 
-    def FreeBound(self, *args):
+    def FreeBound(self, *args) -> "TopoDS_Wire" :
         """
         * Returns contour
 
@@ -1818,7 +1818,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_FreeBound(self, *args)
 
-    def Area(self, *args):
+    def Area(self, *args) -> "Standard_Real" :
         """
         * Returns area of the contour
 
@@ -1827,7 +1827,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Area(self, *args)
 
-    def Perimeter(self, *args):
+    def Perimeter(self, *args) -> "Standard_Real" :
         """
         * Returns perimeter of the contour
 
@@ -1836,7 +1836,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Perimeter(self, *args)
 
-    def Ratio(self, *args):
+    def Ratio(self, *args) -> "Standard_Real" :
         """
         * Returns ratio of average length to average width of the contour
 
@@ -1845,7 +1845,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Ratio(self, *args)
 
-    def Width(self, *args):
+    def Width(self, *args) -> "Standard_Real" :
         """
         * Returns average width of the contour
 
@@ -1854,7 +1854,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Width(self, *args)
 
-    def NbNotches(self, *args):
+    def NbNotches(self, *args) -> "Standard_Integer" :
         """
         * Returns number of notches on the contour
 
@@ -1863,7 +1863,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_NbNotches(self, *args)
 
-    def Notches(self, *args):
+    def Notches(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         * Returns sequence of notches on the contour
 
@@ -1872,7 +1872,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Notches(self, *args)
 
-    def Notch(self, *args):
+    def Notch(self, *args) -> "TopoDS_Wire" :
         """
         * Returns notch on the contour
 
@@ -1883,7 +1883,7 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_Notch(self, *args)
 
-    def NotchWidth(self, *args):
+    def NotchWidth(self, *args) -> "Standard_Real" :
         """
         * Returns maximum width of notch specified by its rank number on the contour
 
@@ -1900,11 +1900,11 @@ class ShapeAnalysis_FreeBoundData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_NotchWidth(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_FreeBoundData self)"""
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_FreeBoundData" :
         """GetHandle(ShapeAnalysis_FreeBoundData self) -> Handle_ShapeAnalysis_FreeBoundData"""
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundData_GetHandle(self)
 
@@ -1958,7 +1958,7 @@ Handle_ShapeAnalysis_FreeBoundData._kill_pointed = new_instancemethod(_ShapeAnal
 Handle_ShapeAnalysis_FreeBoundData_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_FreeBoundData_swigregister
 Handle_ShapeAnalysis_FreeBoundData_swigregister(Handle_ShapeAnalysis_FreeBoundData)
 
-def Handle_ShapeAnalysis_FreeBoundData_DownCast(*args):
+def Handle_ShapeAnalysis_FreeBoundData_DownCast(*args) -> "Handle_ShapeAnalysis_FreeBoundData const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_FreeBoundData_DownCast(*args)
 Handle_ShapeAnalysis_FreeBoundData_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_FreeBoundData_DownCast
 
@@ -1997,7 +1997,7 @@ class ShapeAnalysis_FreeBounds(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_FreeBounds_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_FreeBounds(*args))
-    def GetClosedWires(self, *args):
+    def GetClosedWires(self, *args) -> "TopoDS_Compound const" :
         """
         * Returns compound of closed wires out of free edges.
 
@@ -2006,7 +2006,7 @@ class ShapeAnalysis_FreeBounds(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBounds_GetClosedWires(self, *args)
 
-    def GetOpenWires(self, *args):
+    def GetOpenWires(self, *args) -> "TopoDS_Compound const" :
         """
         * Returns compound of open wires out of free edges.
 
@@ -2015,7 +2015,7 @@ class ShapeAnalysis_FreeBounds(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBounds_GetOpenWires(self, *args)
 
-    def ConnectEdgesToWires(*args):
+    def ConnectEdgesToWires(*args) -> "void" :
         """
         * Builds sequnce of <wires> out of sequence of not sorted <edges>. Tries to build wires of maximum length. Building a wire is stopped when no edges can be connected to it at its head or at its tail.  Orientation of the edge can change when connecting. If <shared> is True connection is performed only when adjacent edges share the same vertex. If <shared> is False connection is performed only when ends of adjacent edges are at distance less than <toler>.
 
@@ -2033,7 +2033,7 @@ class ShapeAnalysis_FreeBounds(object):
         return _ShapeAnalysis.ShapeAnalysis_FreeBounds_ConnectEdgesToWires(*args)
 
     ConnectEdgesToWires = staticmethod(ConnectEdgesToWires)
-    def ConnectWiresToWires(*args):
+    def ConnectWiresToWires(*args) -> "void" :
         """
         :param iwires:
         :type iwires: Handle_TopTools_HSequenceOfShape &
@@ -2063,7 +2063,7 @@ class ShapeAnalysis_FreeBounds(object):
         return _ShapeAnalysis.ShapeAnalysis_FreeBounds_ConnectWiresToWires(*args)
 
     ConnectWiresToWires = staticmethod(ConnectWiresToWires)
-    def SplitWires(*args):
+    def SplitWires(*args) -> "void" :
         """
         * Extracts closed sub-wires out of <wires> and adds them to <closed>, open wires remained after extraction are put into <open>. If <shared> is True extraction is performed only when edges share the same vertex. If <shared> is False connection is performed only when ends of the edges are at distance less than <toler>.
 
@@ -2083,7 +2083,7 @@ class ShapeAnalysis_FreeBounds(object):
         return _ShapeAnalysis.ShapeAnalysis_FreeBounds_SplitWires(*args)
 
     SplitWires = staticmethod(SplitWires)
-    def DispatchWires(*args):
+    def DispatchWires(*args) -> "void" :
         """
         * Dispatches sequence of <wires> into two compounds <closed> for closed wires and <open> for open wires. If a compound is not empty wires are added into it.
 
@@ -2113,7 +2113,7 @@ ShapeAnalysis_FreeBounds._kill_pointed = new_instancemethod(_ShapeAnalysis.Shape
 ShapeAnalysis_FreeBounds_swigregister = _ShapeAnalysis.ShapeAnalysis_FreeBounds_swigregister
 ShapeAnalysis_FreeBounds_swigregister(ShapeAnalysis_FreeBounds)
 
-def ShapeAnalysis_FreeBounds_ConnectEdgesToWires(*args):
+def ShapeAnalysis_FreeBounds_ConnectEdgesToWires(*args) -> "void" :
   """
     * Builds sequnce of <wires> out of sequence of not sorted <edges>. Tries to build wires of maximum length. Building a wire is stopped when no edges can be connected to it at its head or at its tail.  Orientation of the edge can change when connecting. If <shared> is True connection is performed only when adjacent edges share the same vertex. If <shared> is False connection is performed only when ends of adjacent edges are at distance less than <toler>.
 
@@ -2130,7 +2130,7 @@ def ShapeAnalysis_FreeBounds_ConnectEdgesToWires(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_FreeBounds_ConnectEdgesToWires(*args)
 
-def ShapeAnalysis_FreeBounds_ConnectWiresToWires(*args):
+def ShapeAnalysis_FreeBounds_ConnectWiresToWires(*args) -> "void" :
   """
     :param iwires:
     :type iwires: Handle_TopTools_HSequenceOfShape &
@@ -2159,7 +2159,7 @@ def ShapeAnalysis_FreeBounds_ConnectWiresToWires(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_FreeBounds_ConnectWiresToWires(*args)
 
-def ShapeAnalysis_FreeBounds_SplitWires(*args):
+def ShapeAnalysis_FreeBounds_SplitWires(*args) -> "void" :
   """
     * Extracts closed sub-wires out of <wires> and adds them to <closed>, open wires remained after extraction are put into <open>. If <shared> is True extraction is performed only when edges share the same vertex. If <shared> is False connection is performed only when ends of the edges are at distance less than <toler>.
 
@@ -2178,7 +2178,7 @@ def ShapeAnalysis_FreeBounds_SplitWires(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_FreeBounds_SplitWires(*args)
 
-def ShapeAnalysis_FreeBounds_DispatchWires(*args):
+def ShapeAnalysis_FreeBounds_DispatchWires(*args) -> "void" :
   """
     * Dispatches sequence of <wires> into two compounds <closed> for closed wires and <open> for open wires. If a compound is not empty wires are added into it.
 
@@ -2226,7 +2226,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_FreeBoundsProperties(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the object with given parameters. <shape> should be a compound of faces.
 
@@ -2253,7 +2253,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Builds and analyzes free bounds of the shape. First calls ShapeAnalysis_FreeBounds for building free bounds. Then on each free bound computes its properties: - area of the contour, - perimeter of the contour, - ratio of average length to average width of the contour, - average width of contour, - notches on the contour and for each notch  - maximum width of the notch.
 
@@ -2262,7 +2262,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_Perform(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if shape is loaded
 
@@ -2271,7 +2271,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_IsLoaded(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns shape
 
@@ -2280,7 +2280,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_Shape(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance
 
@@ -2289,7 +2289,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_Tolerance(self, *args)
 
-    def NbFreeBounds(self, *args):
+    def NbFreeBounds(self, *args) -> "Standard_Integer" :
         """
         * Returns number of free bounds
 
@@ -2298,7 +2298,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_NbFreeBounds(self, *args)
 
-    def NbClosedFreeBounds(self, *args):
+    def NbClosedFreeBounds(self, *args) -> "Standard_Integer" :
         """
         * Returns number of closed free bounds
 
@@ -2307,7 +2307,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_NbClosedFreeBounds(self, *args)
 
-    def NbOpenFreeBounds(self, *args):
+    def NbOpenFreeBounds(self, *args) -> "Standard_Integer" :
         """
         * Returns number of open free bounds
 
@@ -2316,7 +2316,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_NbOpenFreeBounds(self, *args)
 
-    def ClosedFreeBounds(self, *args):
+    def ClosedFreeBounds(self, *args) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds" :
         """
         * Returns all closed free bounds
 
@@ -2325,7 +2325,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_ClosedFreeBounds(self, *args)
 
-    def OpenFreeBounds(self, *args):
+    def OpenFreeBounds(self, *args) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds" :
         """
         * Returns all open free bounds
 
@@ -2334,7 +2334,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_OpenFreeBounds(self, *args)
 
-    def ClosedFreeBound(self, *args):
+    def ClosedFreeBound(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData" :
         """
         * Returns properties of closed free bound specified by its rank number
 
@@ -2345,7 +2345,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_ClosedFreeBound(self, *args)
 
-    def OpenFreeBound(self, *args):
+    def OpenFreeBound(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData" :
         """
         * Returns properties of open free bound specified by its rank number
 
@@ -2356,14 +2356,14 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_OpenFreeBound(self, *args)
 
-    def DispatchBounds(self, *args):
+    def DispatchBounds(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_DispatchBounds(self, *args)
 
-    def CheckContours(self, *args):
+    def CheckContours(self, *args) -> "Standard_Boolean" :
         """
         :param prec: default value is 0.0
         :type prec: float
@@ -2372,7 +2372,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_CheckContours(self, *args)
 
-    def CheckNotches(self, *args):
+    def CheckNotches(self, *args) -> "Standard_Boolean" :
         """
         :param prec: default value is 0.0
         :type prec: float
@@ -2399,7 +2399,7 @@ class ShapeAnalysis_FreeBoundsProperties(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_FreeBoundsProperties_CheckNotches(self, *args)
 
-    def FillProperties(self, *args):
+    def FillProperties(self, *args) -> "Standard_Boolean" :
         """
         :param fbData:
         :type fbData: Handle_ShapeAnalysis_FreeBoundData &
@@ -2441,7 +2441,7 @@ ShapeAnalysis_FreeBoundsProperties_swigregister(ShapeAnalysis_FreeBoundsProperti
 class ShapeAnalysis_Geom(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NearestPlane(*args):
+    def NearestPlane(*args) -> "Standard_Real &" :
         """
         * Builds a plane out of a set of points in array Returns in <dmax> the maximal distance between the produced plane and given points
 
@@ -2457,7 +2457,7 @@ class ShapeAnalysis_Geom(object):
         return _ShapeAnalysis.ShapeAnalysis_Geom_NearestPlane(*args)
 
     NearestPlane = staticmethod(NearestPlane)
-    def PositionTrsf(*args):
+    def PositionTrsf(*args) -> "Standard_Boolean" :
         """
         * Builds transfromation object out of matrix. Matrix must be 3 x 4. Unit is used as multiplier.
 
@@ -2489,7 +2489,7 @@ ShapeAnalysis_Geom._kill_pointed = new_instancemethod(_ShapeAnalysis.ShapeAnalys
 ShapeAnalysis_Geom_swigregister = _ShapeAnalysis.ShapeAnalysis_Geom_swigregister
 ShapeAnalysis_Geom_swigregister(ShapeAnalysis_Geom)
 
-def ShapeAnalysis_Geom_NearestPlane(*args):
+def ShapeAnalysis_Geom_NearestPlane(*args) -> "Standard_Real &" :
   """
     * Builds a plane out of a set of points in array Returns in <dmax> the maximal distance between the produced plane and given points
 
@@ -2504,7 +2504,7 @@ def ShapeAnalysis_Geom_NearestPlane(*args):
     """
   return _ShapeAnalysis.ShapeAnalysis_Geom_NearestPlane(*args)
 
-def ShapeAnalysis_Geom_PositionTrsf(*args):
+def ShapeAnalysis_Geom_PositionTrsf(*args) -> "Standard_Boolean" :
   """
     * Builds transfromation object out of matrix. Matrix must be 3 x 4. Unit is used as multiplier.
 
@@ -2530,28 +2530,28 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_HSequenceOfFreeBounds(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_ShapeAnalysis_FreeBoundData &
@@ -2564,7 +2564,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_ShapeAnalysis_FreeBoundData &
@@ -2577,14 +2577,14 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2601,7 +2601,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2618,7 +2618,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2629,7 +2629,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2638,7 +2638,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2649,7 +2649,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2658,7 +2658,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2667,7 +2667,7 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2682,32 +2682,32 @@ class ShapeAnalysis_HSequenceOfFreeBounds(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "ShapeAnalysis_SequenceOfFreeBounds const &" :
         """
         :rtype: ShapeAnalysis_SequenceOfFreeBounds
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "ShapeAnalysis_SequenceOfFreeBounds &" :
         """
         :rtype: ShapeAnalysis_SequenceOfFreeBounds
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds" :
         """
         :rtype: Handle_ShapeAnalysis_HSequenceOfFreeBounds
 
         """
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_HSequenceOfFreeBounds self)"""
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds" :
         """GetHandle(ShapeAnalysis_HSequenceOfFreeBounds self) -> Handle_ShapeAnalysis_HSequenceOfFreeBounds"""
         return _ShapeAnalysis.ShapeAnalysis_HSequenceOfFreeBounds_GetHandle(self)
 
@@ -2762,7 +2762,7 @@ Handle_ShapeAnalysis_HSequenceOfFreeBounds._kill_pointed = new_instancemethod(_S
 Handle_ShapeAnalysis_HSequenceOfFreeBounds_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_HSequenceOfFreeBounds_swigregister
 Handle_ShapeAnalysis_HSequenceOfFreeBounds_swigregister(Handle_ShapeAnalysis_HSequenceOfFreeBounds)
 
-def Handle_ShapeAnalysis_HSequenceOfFreeBounds_DownCast(*args):
+def Handle_ShapeAnalysis_HSequenceOfFreeBounds_DownCast(*args) -> "Handle_ShapeAnalysis_HSequenceOfFreeBounds const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_HSequenceOfFreeBounds_DownCast(*args)
 Handle_ShapeAnalysis_HSequenceOfFreeBounds_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_HSequenceOfFreeBounds_DownCast
 
@@ -2781,18 +2781,18 @@ class ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds(OCC.TCollection.TCollecti
 
         """
         _ShapeAnalysis.ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData &" :
         """
         :rtype: Handle_ShapeAnalysis_FreeBoundData
 
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds self)"""
         return _ShapeAnalysis.ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds" :
         """GetHandle(ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds self) -> Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds"""
         return _ShapeAnalysis.ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_GetHandle(self)
 
@@ -2831,7 +2831,7 @@ Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds._kill_pointed = new_inst
 Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_swigregister
 Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_swigregister(Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds)
 
-def Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_DownCast(*args):
+def Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_DownCast(*args) -> "Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_DownCast(*args)
 Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_SequenceNodeOfSequenceOfFreeBounds_DownCast
 
@@ -2844,14 +2844,14 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_SequenceOfFreeBounds(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ShapeAnalysis_SequenceOfFreeBounds const &" :
         """
         :param Other:
         :type Other: ShapeAnalysis_SequenceOfFreeBounds &
@@ -2860,7 +2860,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ShapeAnalysis_SequenceOfFreeBounds const &" :
         """
         :param Other:
         :type Other: ShapeAnalysis_SequenceOfFreeBounds &
@@ -2869,7 +2869,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_ShapeAnalysis_FreeBoundData &
@@ -2882,7 +2882,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_ShapeAnalysis_FreeBoundData &
@@ -2895,7 +2895,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2912,7 +2912,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2929,21 +2929,21 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData const &" :
         """
         :rtype: Handle_ShapeAnalysis_FreeBoundData
 
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData const &" :
         """
         :rtype: Handle_ShapeAnalysis_FreeBoundData
 
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2954,7 +2954,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData const &" :
         """
         :param Index:
         :type Index: int
@@ -2963,7 +2963,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2974,7 +2974,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_ShapeAnalysis_FreeBoundData &" :
         """
         :param Index:
         :type Index: int
@@ -2983,7 +2983,7 @@ class ShapeAnalysis_SequenceOfFreeBounds(OCC.TCollection.TCollection_BaseSequenc
         """
         return _ShapeAnalysis.ShapeAnalysis_SequenceOfFreeBounds_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3035,7 +3035,7 @@ class ShapeAnalysis_ShapeContents(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_ShapeContents_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_ShapeContents(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears all accumulated statictics
 
@@ -3044,7 +3044,7 @@ class ShapeAnalysis_ShapeContents(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_Clear(self, *args)
 
-    def ClearFlags(self, *args):
+    def ClearFlags(self, *args) -> "void" :
         """
         * Clears all flags
 
@@ -3053,7 +3053,7 @@ class ShapeAnalysis_ShapeContents(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_ClearFlags(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Counts quantities of sun-shapes in shape and stores sub-shapes according to flags
 
@@ -3064,328 +3064,328 @@ class ShapeAnalysis_ShapeContents(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_Perform(self, *args)
 
-    def GetModifyBigSplineMode(self):
+    def GetModifyBigSplineMode(self) -> "Standard_Boolean" :
         """GetModifyBigSplineMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyBigSplineMode(self)
 
-    def SetModifyBigSplineMode(self, *args):
+    def SetModifyBigSplineMode(self, *args) -> "void" :
         """SetModifyBigSplineMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyBigSplineMode(self, *args)
 
-    def GetModifyIndirectMode(self):
+    def GetModifyIndirectMode(self) -> "Standard_Boolean" :
         """GetModifyIndirectMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyIndirectMode(self)
 
-    def SetModifyIndirectMode(self, *args):
+    def SetModifyIndirectMode(self, *args) -> "void" :
         """SetModifyIndirectMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyIndirectMode(self, *args)
 
-    def GetModifyOffestSurfaceMode(self):
+    def GetModifyOffestSurfaceMode(self) -> "Standard_Boolean" :
         """GetModifyOffestSurfaceMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyOffestSurfaceMode(self)
 
-    def SetModifyOffestSurfaceMode(self, *args):
+    def SetModifyOffestSurfaceMode(self, *args) -> "void" :
         """SetModifyOffestSurfaceMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyOffestSurfaceMode(self, *args)
 
-    def GetModifyTrimmed3dMode(self):
+    def GetModifyTrimmed3dMode(self) -> "Standard_Boolean" :
         """GetModifyTrimmed3dMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyTrimmed3dMode(self)
 
-    def SetModifyTrimmed3dMode(self, *args):
+    def SetModifyTrimmed3dMode(self, *args) -> "void" :
         """SetModifyTrimmed3dMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyTrimmed3dMode(self, *args)
 
-    def GetModifyOffsetCurveMode(self):
+    def GetModifyOffsetCurveMode(self) -> "Standard_Boolean" :
         """GetModifyOffsetCurveMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyOffsetCurveMode(self)
 
-    def SetModifyOffsetCurveMode(self, *args):
+    def SetModifyOffsetCurveMode(self, *args) -> "void" :
         """SetModifyOffsetCurveMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyOffsetCurveMode(self, *args)
 
-    def GetModifyTrimmed2dMode(self):
+    def GetModifyTrimmed2dMode(self) -> "Standard_Boolean" :
         """GetModifyTrimmed2dMode(ShapeAnalysis_ShapeContents self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_GetModifyTrimmed2dMode(self)
 
-    def SetModifyTrimmed2dMode(self, *args):
+    def SetModifyTrimmed2dMode(self, *args) -> "void" :
         """SetModifyTrimmed2dMode(ShapeAnalysis_ShapeContents self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_SetModifyTrimmed2dMode(self, *args)
 
-    def NbSolids(self, *args):
+    def NbSolids(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSolids(self, *args)
 
-    def NbShells(self, *args):
+    def NbShells(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbShells(self, *args)
 
-    def NbFaces(self, *args):
+    def NbFaces(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbFaces(self, *args)
 
-    def NbWires(self, *args):
+    def NbWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbWires(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbEdges(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbVertices(self, *args)
 
-    def NbSolidsWithVoids(self, *args):
+    def NbSolidsWithVoids(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSolidsWithVoids(self, *args)
 
-    def NbBigSplines(self, *args):
+    def NbBigSplines(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbBigSplines(self, *args)
 
-    def NbC0Surfaces(self, *args):
+    def NbC0Surfaces(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbC0Surfaces(self, *args)
 
-    def NbC0Curves(self, *args):
+    def NbC0Curves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbC0Curves(self, *args)
 
-    def NbOffsetSurf(self, *args):
+    def NbOffsetSurf(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbOffsetSurf(self, *args)
 
-    def NbIndirectSurf(self, *args):
+    def NbIndirectSurf(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbIndirectSurf(self, *args)
 
-    def NbOffsetCurves(self, *args):
+    def NbOffsetCurves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbOffsetCurves(self, *args)
 
-    def NbTrimmedCurve2d(self, *args):
+    def NbTrimmedCurve2d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbTrimmedCurve2d(self, *args)
 
-    def NbTrimmedCurve3d(self, *args):
+    def NbTrimmedCurve3d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbTrimmedCurve3d(self, *args)
 
-    def NbBSplibeSurf(self, *args):
+    def NbBSplibeSurf(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbBSplibeSurf(self, *args)
 
-    def NbBezierSurf(self, *args):
+    def NbBezierSurf(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbBezierSurf(self, *args)
 
-    def NbTrimSurf(self, *args):
+    def NbTrimSurf(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbTrimSurf(self, *args)
 
-    def NbWireWitnSeam(self, *args):
+    def NbWireWitnSeam(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbWireWitnSeam(self, *args)
 
-    def NbWireWithSevSeams(self, *args):
+    def NbWireWithSevSeams(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbWireWithSevSeams(self, *args)
 
-    def NbFaceWithSevWires(self, *args):
+    def NbFaceWithSevWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbFaceWithSevWires(self, *args)
 
-    def NbNoPCurve(self, *args):
+    def NbNoPCurve(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbNoPCurve(self, *args)
 
-    def NbFreeFaces(self, *args):
+    def NbFreeFaces(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbFreeFaces(self, *args)
 
-    def NbFreeWires(self, *args):
+    def NbFreeWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbFreeWires(self, *args)
 
-    def NbFreeEdges(self, *args):
+    def NbFreeEdges(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbFreeEdges(self, *args)
 
-    def NbSharedSolids(self, *args):
+    def NbSharedSolids(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedSolids(self, *args)
 
-    def NbSharedShells(self, *args):
+    def NbSharedShells(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedShells(self, *args)
 
-    def NbSharedFaces(self, *args):
+    def NbSharedFaces(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedFaces(self, *args)
 
-    def NbSharedWires(self, *args):
+    def NbSharedWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedWires(self, *args)
 
-    def NbSharedFreeWires(self, *args):
+    def NbSharedFreeWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedFreeWires(self, *args)
 
-    def NbSharedFreeEdges(self, *args):
+    def NbSharedFreeEdges(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedFreeEdges(self, *args)
 
-    def NbSharedEdges(self, *args):
+    def NbSharedEdges(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedEdges(self, *args)
 
-    def NbSharedVertices(self, *args):
+    def NbSharedVertices(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_NbSharedVertices(self, *args)
 
-    def BigSplineSec(self, *args):
+    def BigSplineSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_BigSplineSec(self, *args)
 
-    def IndirectSec(self, *args):
+    def IndirectSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_IndirectSec(self, *args)
 
-    def OffsetSurfaceSec(self, *args):
+    def OffsetSurfaceSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_OffsetSurfaceSec(self, *args)
 
-    def Trimmed3dSec(self, *args):
+    def Trimmed3dSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_Trimmed3dSec(self, *args)
 
-    def OffsetCurveSec(self, *args):
+    def OffsetCurveSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_OffsetCurveSec(self, *args)
 
-    def Trimmed2dSec(self, *args):
+    def Trimmed2dSec(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents_Trimmed2dSec(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_ShapeContents self)"""
         return _ShapeAnalysis.ShapeAnalysis_ShapeContents__kill_pointed(self)
 
@@ -3466,7 +3466,7 @@ class ShapeAnalysis_ShapeTolerance(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_ShapeTolerance(*args))
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         * Determines a tolerance from the ones stored in a shape Remark : calls InitTolerance and AddTolerance, hence, can be used to start a series for cumulating tolerance <mode> = 0 : returns the average value between sub-shapes, <mode> > 0 : returns the maximal found, <mode> < 0 : returns the minimal found. <type> defines what kinds of sub-shapes to consider: SHAPE (default) : all : VERTEX, EDGE, FACE, VERTEX : only vertices, EDGE : only edges, FACE : only faces, SHELL : combined SHELL + FACE, for each face (and containing shell), also checks EDGE and VERTEX
 
@@ -3481,7 +3481,7 @@ class ShapeAnalysis_ShapeTolerance(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_Tolerance(self, *args)
 
-    def OverTolerance(self, *args):
+    def OverTolerance(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         * Determines which shapes have a tolerance over the given value <type> is interpreted as in the method Tolerance
 
@@ -3496,7 +3496,7 @@ class ShapeAnalysis_ShapeTolerance(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_OverTolerance(self, *args)
 
-    def InTolerance(self, *args):
+    def InTolerance(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         * Determines which shapes have a tolerance within a given interval <type> is interpreted as in the method Tolerance
 
@@ -3513,7 +3513,7 @@ class ShapeAnalysis_ShapeTolerance(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_InTolerance(self, *args)
 
-    def InitTolerance(self, *args):
+    def InitTolerance(self, *args) -> "void" :
         """
         * Initializes computation of cumulated tolerance
 
@@ -3522,7 +3522,7 @@ class ShapeAnalysis_ShapeTolerance(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_InitTolerance(self, *args)
 
-    def AddTolerance(self, *args):
+    def AddTolerance(self, *args) -> "void" :
         """
         * Adds data on new Shape to compute Cumulated Tolerance (prepares three computations : maximal, average, minimal)
 
@@ -3535,7 +3535,7 @@ class ShapeAnalysis_ShapeTolerance(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_ShapeTolerance_AddTolerance(self, *args)
 
-    def GlobalTolerance(self, *args):
+    def GlobalTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the computed tolerance according to the <mode> <mode> = 0 : average <mode> > 0 : maximal <mode> < 0 : minimal
 
@@ -3567,7 +3567,7 @@ ShapeAnalysis_ShapeTolerance_swigregister(ShapeAnalysis_ShapeTolerance)
 class ShapeAnalysis_Shell(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears data about loaded shells and performed checks
 
@@ -3576,7 +3576,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_Clear(self, *args)
 
-    def LoadShells(self, *args):
+    def LoadShells(self, *args) -> "void" :
         """
         * Adds shells contained in the <shape> to the list of loaded shells
 
@@ -3587,7 +3587,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_LoadShells(self, *args)
 
-    def CheckOrientedShells(self, *args):
+    def CheckOrientedShells(self, *args) -> "Standard_Boolean" :
         """
         * Checks if shells fulfill orientation condition, i.e. if each edge is, either present once (free edge) or twice (connected edge) but with different orientations (FORWARD/REVERSED) Edges which do not fulfill these conditions are bad  If <alsofree> is True free edges are considered. Free edges can be queried but are not bad
 
@@ -3602,7 +3602,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_CheckOrientedShells(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a shape is loaded (only shells are checked)
 
@@ -3613,7 +3613,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_IsLoaded(self, *args)
 
-    def NbLoaded(self, *args):
+    def NbLoaded(self, *args) -> "Standard_Integer" :
         """
         * Returns the actual number of loaded shapes (i.e. shells)
 
@@ -3622,7 +3622,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_NbLoaded(self, *args)
 
-    def Loaded(self, *args):
+    def Loaded(self, *args) -> "TopoDS_Shape" :
         """
         * Returns a loaded shape specified by its rank number. Returns null shape if <num> is out of range
 
@@ -3633,7 +3633,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_Loaded(self, *args)
 
-    def HasBadEdges(self, *args):
+    def HasBadEdges(self, *args) -> "Standard_Boolean" :
         """
         * Tells if at least one edge is recorded as bad
 
@@ -3642,7 +3642,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_HasBadEdges(self, *args)
 
-    def BadEdges(self, *args):
+    def BadEdges(self, *args) -> "TopoDS_Compound" :
         """
         * Returns the list of bad edges as a Compound It is empty (not null) if no edge are recorded as bad
 
@@ -3651,7 +3651,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_BadEdges(self, *args)
 
-    def HasFreeEdges(self, *args):
+    def HasFreeEdges(self, *args) -> "Standard_Boolean" :
         """
         * Tells if at least one edge is recorded as free (not connected)
 
@@ -3660,7 +3660,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_HasFreeEdges(self, *args)
 
-    def FreeEdges(self, *args):
+    def FreeEdges(self, *args) -> "TopoDS_Compound" :
         """
         * Returns the list of free (not connected) edges as a Compound It is empty (not null) if no edge are recorded as free
 
@@ -3669,7 +3669,7 @@ class ShapeAnalysis_Shell(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_Shell_FreeEdges(self, *args)
 
-    def HasConnectedEdges(self, *args):
+    def HasConnectedEdges(self, *args) -> "Standard_Boolean" :
         """
         * Tells if at least one edge is connected (shared twice or more)
 
@@ -3716,7 +3716,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAnalysis.ShapeAnalysis_Surface_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_Surface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Loads existing surface
 
@@ -3733,7 +3733,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Init(self, *args)
 
-    def SetDomain(self, *args):
+    def SetDomain(self, *args) -> "void" :
         """
         :param U1:
         :type U1: float
@@ -3748,7 +3748,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_SetDomain(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
         """
         * Returns a surface being analyzed
 
@@ -3757,7 +3757,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Surface(self, *args)
 
-    def Adaptor3d(self, *args):
+    def Adaptor3d(self, *args) -> "Handle_GeomAdaptor_HSurface const &" :
         """
         * Returns the Adaptor. Creates it if not yet done.
 
@@ -3766,7 +3766,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Adaptor3d(self, *args)
 
-    def TrueAdaptor3d(self, *args):
+    def TrueAdaptor3d(self, *args) -> "Handle_GeomAdaptor_HSurface const &" :
         """
         * Returns the Adaptor (may be Null if method Adaptor() was not called)
 
@@ -3775,7 +3775,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_TrueAdaptor3d(self, *args)
 
-    def Gap(self, *args):
+    def Gap(self, *args) -> "Standard_Real" :
         """
         * Returns 3D distance found by one of the following methods. IsDegenerated, DegeneratedValues, ProjectDegenerated (distance between 3D point and found or last (if not found) singularity), IsUClosed, IsVClosed (minimum value of precision to consider the surface to be closed), ValueOfUV (distance between 3D point and found solution).
 
@@ -3784,7 +3784,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Gap(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         * Returns a 3D point specified by parameters in surface parametrical space
 
@@ -3803,7 +3803,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Value(self, *args)
 
-    def HasSingularities(self, *args):
+    def HasSingularities(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the surface has singularities for the given precision (i.e. if there are surface singularities with sizes not greater than precision).
 
@@ -3814,7 +3814,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_HasSingularities(self, *args)
 
-    def NbSingularities(self, *args):
+    def NbSingularities(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of singularities for the given precision (i.e. number of surface singularities with sizes not greater than precision).
 
@@ -3825,7 +3825,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_NbSingularities(self, *args)
 
-    def Singularity(self, *args):
+    def Singularity(self, *args) -> "Standard_Boolean" :
         """
         * Returns the characteristics of the singularity specified by its rank number <num>. That means, that it is not neccessary for <num> to be in the range [1, NbSingularities] but must be not greater than possible (see ComputeSingularities). The returned characteristics are: preci: the smallest precision with which the iso-line is  considered as degenerated, P3d: 3D point of singularity (middle point of the surface  iso-line), firstP2d and lastP2d: first and last 2D points of the  iso-line in parametrical surface, firstpar and lastpar: first and last parameters of the  iso-line in parametrical surface, uisodeg: if the degenerated iso-line is U-iso (True) or V-iso (False). Returns False if <num> is out of range, else returns True.
 
@@ -3850,7 +3850,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Singularity(self, *args)
 
-    def DegeneratedValues(self, *args):
+    def DegeneratedValues(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is at least one surface iso-line which is considered as degenerated with <preci> and distance between P3d and corresponding singular point is less than <preci> (like IsDegenerated). Returns characteristics of the first found boundary matching those criteria.
 
@@ -3873,7 +3873,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_DegeneratedValues(self, *args)
 
-    def ProjectDegenerated(self, *args):
+    def ProjectDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Projects a point <P3d> on a singularity by computing one of the coordinates of preliminary computed <result>.  Finds the iso-line which is considered as degenerated with <preci> and a. distance between P3d and corresponding singular point is less than <preci> (like IsDegenerated) or b. difference between already computed <result>'s coordinate and iso-coordinate of the boundary is less than 2D resolution (computed from <preci> by Geom_Adaptor). Then sets not yet computed <result>'s coordinate taking it from <neighbour> and returns True.
 
@@ -3904,7 +3904,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_ProjectDegenerated(self, *args)
 
-    def IsDegenerated(self, *args):
+    def IsDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is at least one surface boundary which is considered as degenerated with <preci> and distance between P3d and corresponding singular point is less than <preci>
 
@@ -3929,7 +3929,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_IsDegenerated(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         * Returns the bounds of the surface (from Bounds from Surface, but buffered)
 
@@ -3946,7 +3946,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_Bounds(self, *args)
 
-    def ComputeBoundIsos(self, *args):
+    def ComputeBoundIsos(self, *args) -> "void" :
         """
         * Computes bound isos (protected against exceptions)
 
@@ -3955,7 +3955,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_ComputeBoundIsos(self, *args)
 
-    def UIso(self, *args):
+    def UIso(self, *args) -> "Handle_Geom_Curve" :
         """
         * Returns a U-Iso. Null if not possible or failed Remark : bound isos are buffered
 
@@ -3966,7 +3966,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_UIso(self, *args)
 
-    def VIso(self, *args):
+    def VIso(self, *args) -> "Handle_Geom_Curve" :
         """
         * Returns a V-Iso. Null if not possible or failed Remark : bound isos are buffered
 
@@ -3977,7 +3977,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_VIso(self, *args)
 
-    def IsUClosed(self, *args):
+    def IsUClosed(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the Surface is spatially closed in U with given precision. If <preci> < 0 then Precision::Confusion is used. If Geom_Surface says that the surface is U-closed, this method also says this. Otherwise additional analysis is performed, comparing given precision with the following distances: - periodic B-Splines are closed, - polinomial B-Spline with boundary multiplicities degree+1  and Bezier - maximum distance between poles, - rational B-Spline or one with boundary multiplicities not  degree+1 - maximum distance computed at knots and their  middles, - surface of extrusion - distance between ends of basis  curve, - other (RectangularTrimmed and Offset) - maximum distance  computed at 100 equi-distanted points.
 
@@ -3988,7 +3988,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_IsUClosed(self, *args)
 
-    def IsVClosed(self, *args):
+    def IsVClosed(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the Surface is spatially closed in V with given precision. If <preci> < 0 then Precision::Confusion is used. If Geom_Surface says that the surface is V-closed, this method also says this. Otherwise additional analysis is performed, comparing given precision with the following distances: - periodic B-Splines are closed, - polinomial B-Spline with boundary multiplicities degree+1  and Bezier - maximum distance between poles, - rational B-Spline or one with boundary multiplicities not  degree+1 - maximum distance computed at knots and their  middles, - surface of revolution - distance between ends of basis  curve, - other (RectangularTrimmed and Offset) - maximum distance  computed at 100 equi-distanted points.
 
@@ -3999,7 +3999,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_IsVClosed(self, *args)
 
-    def ValueOfUV(self, *args):
+    def ValueOfUV(self, *args) -> "gp_Pnt2d" :
         """
         * Computes the parameters in the surface parametrical space of 3D point. The result is parameters of the point projected onto the surface. This method enhances functionality provided by the standard tool GeomAPI_ProjectPointOnSurface by treatment of cases when the projected point is near to the surface boundaries and when this standard tool fails.
 
@@ -4012,7 +4012,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_ValueOfUV(self, *args)
 
-    def NextValueOfUV(self, *args):
+    def NextValueOfUV(self, *args) -> "gp_Pnt2d" :
         """
         * Projects a point P3D on the surface. Does the same thing as ValueOfUV but tries to optimize computations by taking into account previous point <p2dPrev>: makes a step by UV and tries Newton algorithm. If <maxpreci> >0. and distance between solution and P3D is greater than <maxpreci>, that solution is considered as bad, and ValueOfUV() is used. If not succeded, calls ValueOfUV()
 
@@ -4029,7 +4029,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_NextValueOfUV(self, *args)
 
-    def UVFromIso(self, *args):
+    def UVFromIso(self, *args) -> "Standard_Real" :
         """
         * Tries a refinement of an already computed couple (U,V) by using projecting 3D point on iso-lines: 1. boundaries of the surface, 2. iso-lines passing through (U,V) 3. iteratively received iso-lines passing through new U and new V (number of iterations is limited by 5 in each direction) Returns the best resulting distance between P3D and Value(U,V) in the case of success. Else, returns a very great value
 
@@ -4046,7 +4046,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_UVFromIso(self, *args)
 
-    def UCloseVal(self, *args):
+    def UCloseVal(self, *args) -> "Standard_Real" :
         """
         * Returns minimum value to consider the surface as U-closed
 
@@ -4055,7 +4055,7 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_UCloseVal(self, *args)
 
-    def VCloseVal(self, *args):
+    def VCloseVal(self, *args) -> "Standard_Real" :
         """
         * Returns minimum value to consider the surface as V-closed
 
@@ -4064,39 +4064,39 @@ class ShapeAnalysis_Surface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_VCloseVal(self, *args)
 
-    def GetBoxUF(self, *args):
+    def GetBoxUF(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_GetBoxUF(self, *args)
 
-    def GetBoxUL(self, *args):
+    def GetBoxUL(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_GetBoxUL(self, *args)
 
-    def GetBoxVF(self, *args):
+    def GetBoxVF(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_GetBoxVF(self, *args)
 
-    def GetBoxVL(self, *args):
+    def GetBoxVL(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Surface_GetBoxVL(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_Surface self)"""
         return _ShapeAnalysis.ShapeAnalysis_Surface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_Surface" :
         """GetHandle(ShapeAnalysis_Surface self) -> Handle_ShapeAnalysis_Surface"""
         return _ShapeAnalysis.ShapeAnalysis_Surface_GetHandle(self)
 
@@ -4162,7 +4162,7 @@ Handle_ShapeAnalysis_Surface._kill_pointed = new_instancemethod(_ShapeAnalysis.H
 Handle_ShapeAnalysis_Surface_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_Surface_swigregister
 Handle_ShapeAnalysis_Surface_swigregister(Handle_ShapeAnalysis_Surface)
 
-def Handle_ShapeAnalysis_Surface_DownCast(*args):
+def Handle_ShapeAnalysis_Surface_DownCast(*args) -> "Handle_ShapeAnalysis_Surface const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_Surface_DownCast(*args)
 Handle_ShapeAnalysis_Surface_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_Surface_DownCast
 
@@ -4185,7 +4185,7 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAnalysis.ShapeAnalysis_TransferParameters_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_TransferParameters(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize a tool with edge and face
 
@@ -4198,7 +4198,7 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_Init(self, *args)
 
-    def SetMaxTolerance(self, *args):
+    def SetMaxTolerance(self, *args) -> "void" :
         """
         * Sets maximal tolerance to use linear recomputation of parameters.
 
@@ -4209,7 +4209,7 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_SetMaxTolerance(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Real" :
         """
         * Transfers parameters given by sequence Params from 3d curve to pcurve (if To2d is True) or back (if To2d is False)
 
@@ -4230,7 +4230,7 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_Perform(self, *args)
 
-    def TransferRange(self, *args):
+    def TransferRange(self, *args) -> "void" :
         """
         * //!Recomputes range of curves from NewEdge. //!	 If Is2d equals True parameters are recomputed by curve2d else by curve3d.
 
@@ -4247,7 +4247,7 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_TransferRange(self, *args)
 
-    def IsSameRange(self, *args):
+    def IsSameRange(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if 3d curve of edge and pcurve are SameRange (in default implementation, if myScale == 1 and myShift == 0)
 
@@ -4256,11 +4256,11 @@ class ShapeAnalysis_TransferParameters(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_IsSameRange(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_TransferParameters self)"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_TransferParameters" :
         """GetHandle(ShapeAnalysis_TransferParameters self) -> Handle_ShapeAnalysis_TransferParameters"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParameters_GetHandle(self)
 
@@ -4303,7 +4303,7 @@ Handle_ShapeAnalysis_TransferParameters._kill_pointed = new_instancemethod(_Shap
 Handle_ShapeAnalysis_TransferParameters_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_TransferParameters_swigregister
 Handle_ShapeAnalysis_TransferParameters_swigregister(Handle_ShapeAnalysis_TransferParameters)
 
-def Handle_ShapeAnalysis_TransferParameters_DownCast(*args):
+def Handle_ShapeAnalysis_TransferParameters_DownCast(*args) -> "Handle_ShapeAnalysis_TransferParameters const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_TransferParameters_DownCast(*args)
 Handle_ShapeAnalysis_TransferParameters_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_TransferParameters_DownCast
 
@@ -4338,7 +4338,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAnalysis.ShapeAnalysis_Wire_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_Wire(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the object with standard TopoDS_Wire, face and precision
 
@@ -4363,7 +4363,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Init(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Loads the object with standard TopoDS_Wire
 
@@ -4380,7 +4380,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Load(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Loads the face the wire lies on
 
@@ -4391,7 +4391,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_SetFace(self, *args)
 
-    def SetSurface(self, *args):
+    def SetSurface(self, *args) -> "void" :
         """
         * Loads the surface the wire lies on
 
@@ -4410,7 +4410,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_SetSurface(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         :param precision:
         :type precision: float
@@ -4419,7 +4419,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_SetPrecision(self, *args)
 
-    def ClearStatuses(self, *args):
+    def ClearStatuses(self, *args) -> "void" :
         """
         * Unsets all the status and distance fields wire, face and precision are not cleared
 
@@ -4428,7 +4428,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_ClearStatuses(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if wire is loaded and has number of edges >0
 
@@ -4437,7 +4437,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_IsLoaded(self, *args)
 
-    def IsReady(self, *args):
+    def IsReady(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if IsLoaded and underlying face is not null
 
@@ -4446,7 +4446,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_IsReady(self, *args)
 
-    def Precision(self, *args):
+    def Precision(self, *args) -> "Standard_Real" :
         """
         * Returns the value of precision
 
@@ -4455,7 +4455,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Precision(self, *args)
 
-    def WireData(self, *args):
+    def WireData(self, *args) -> "Handle_ShapeExtend_WireData const &" :
         """
         * Returns wire object being analyzed
 
@@ -4464,7 +4464,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_WireData(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of edges in the wire, or 0 if it is not loaded
 
@@ -4473,7 +4473,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_NbEdges(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Returns the working face
 
@@ -4482,7 +4482,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Face(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_ShapeAnalysis_Surface const &" :
         """
         * Returns the working surface
 
@@ -4491,7 +4491,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Surface(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs all the checks in the following order : //!	 CheckOrder, CheckSmall, CheckConected, CheckEdgeCurves, CheckDegenerated, CheckSelfIntersection, CheckLacking, CheckClosed Returns: True if at least one method returned True; For deeper analysis use Status...(status) methods
 
@@ -4500,7 +4500,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_Perform(self, *args)
 
-    def CheckEdgeCurves(self, *args):
+    def CheckEdgeCurves(self, *args) -> "Standard_Boolean" :
         """
         * Checks edges geometry (consitency of 2d and 3d senses, adjasment //!	 of curves to the vertices, etc.). //!	 The order of the checks : Call ShapeAnalysis_Wire to check: //!	 ShapeAnalysis_Edge::CheckCurve3dWithPCurve (1), ShapeAnalysis_Edge::CheckVertcesWithPCurve (2), //!	 ShapeAnalysis_Edge::CheckVertcesWithCurve3d (3), CheckSeam   (4) Additional: CheckGap3d  (5), CheckGap2d  (6), ShapeAnalysis_Edge::CheckSameParameter (7) Returns: True if at least one check returned True Remark: The numbers in brackets show with what DONEi or FAILi the status can be queried
 
@@ -4509,7 +4509,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckEdgeCurves(self, *args)
 
-    def CheckClosed(self, *args):
+    def CheckClosed(self, *args) -> "Standard_Boolean" :
         """
         * Checks if wire is closed, performs CheckConnected, CheckDegenerated and CheckLacking for the first and the last edges Returns: True if at least one check returned True Status: FAIL1 or DONE1: see CheckConnected FAIL2 or DONE2: see CheckDegenerated
 
@@ -4520,7 +4520,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckClosed(self, *args)
 
-    def CheckSelfIntersection(self, *args):
+    def CheckSelfIntersection(self, *args) -> "Standard_Boolean" :
         """
         * Checks self-intersection of the wire (considering pcurves) Looks for self-intersecting edges and each pair of intersecting edges. Warning: It does not check each edge with any other one (only each two adjacent edges) The order of the checks : CheckSelfIntersectingEdge, CheckIntersectingEdges Returns: True if at least one check returned True Status: FAIL1 or DONE1 - see CheckSelfIntersectingEdge FAIL2 or DONE2 - see CheckIntersectingEdges
 
@@ -4529,28 +4529,28 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckSelfIntersection(self, *args)
 
-    def CheckGaps3d(self, *args):
+    def CheckGaps3d(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckGaps3d(self, *args)
 
-    def CheckGaps2d(self, *args):
+    def CheckGaps2d(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckGaps2d(self, *args)
 
-    def CheckCurveGaps(self, *args):
+    def CheckCurveGaps(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckCurveGaps(self, *args)
 
-    def CheckOrder(self, *args):
+    def CheckOrder(self, *args) -> "Standard_Boolean" :
         """
         * Calls CheckOrder and returns False if wire is already ordered (tail-to-head), True otherwise Flag <isClosed> defines if the wire is closed or not Flag <mode3d> defines which mode is used (3d or 2d)
 
@@ -4573,7 +4573,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckOrder(self, *args)
 
-    def CheckConnected(self, *args):
+    def CheckConnected(self, *args) -> "Standard_Boolean" :
         """
         * Calls to CheckConnected for each edge Returns: True if at least one pair of disconnected edges (not sharing the 	 same vertex) was detected
 
@@ -4592,7 +4592,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckConnected(self, *args)
 
-    def CheckSmall(self, *args):
+    def CheckSmall(self, *args) -> "Standard_Boolean" :
         """
         * Calls to CheckSmall for each edge Returns: True if at least one small edge was detected
 
@@ -4611,7 +4611,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckSmall(self, *args)
 
-    def CheckSeam(self, *args):
+    def CheckSeam(self, *args) -> "Standard_Boolean" :
         """
         * Checks if a seam pcurves are correct oriented Returns: False (status OK) if given edge is not a seam or if it is OK C1 - current pcurve for FORWARD edge, C2 - current pcurve for REVERSED edge (if returns True they should be swapped for the seam), cf, cl - first and last parameters on curves Status: OK : Pcurves are correct or edge is not seam DONE : Seam pcurves should be swapped
 
@@ -4636,7 +4636,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckSeam(self, *args)
 
-    def CheckDegenerated(self, *args):
+    def CheckDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Calls to CheckDegenerated for each edge Returns: True if at least one incorrect degenerated edge was detected
 
@@ -4661,7 +4661,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckDegenerated(self, *args)
 
-    def CheckGap3d(self, *args):
+    def CheckGap3d(self, *args) -> "Standard_Boolean" :
         """
         * Checks gap between edges in 3D (3d curves). Checks the distance between ends of 3d curves of the num-th and preceeding edge. //!	 The distance can be queried by MinDistance3d. Returns: True if status is DONE Status: //!	 OK : Gap is less than myPrecision DONE : Gap is greater than myPrecision FAIL : No 3d curve(s) on the edge(s)
 
@@ -4672,7 +4672,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckGap3d(self, *args)
 
-    def CheckGap2d(self, *args):
+    def CheckGap2d(self, *args) -> "Standard_Boolean" :
         """
         * Checks gap between edges in 2D (pcurves). Checks the distance between ends of pcurves of the num-th and preceeding edge. //!	 The distance can be queried by MinDistance2d. Returns: True if status is DONE Status: OK : Gap is less than parametric precision out of myPrecision DONE : Gap is greater than parametric precision out of myPrecision FAIL : No pcurve(s) on the edge(s)
 
@@ -4683,7 +4683,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckGap2d(self, *args)
 
-    def CheckCurveGap(self, *args):
+    def CheckCurveGap(self, *args) -> "Standard_Boolean" :
         """
         * Checks gap between points on 3D curve and points on surface generated by pcurve of the num-th edge. //!	 The distance can be queried by MinDistance3d. Returns: True if status is DONE Status: //!	 OK : Gap is less than myPrecision DONE : Gap is greater than myPrecision FAIL : No 3d curve(s) on the edge(s)
 
@@ -4694,7 +4694,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckCurveGap(self, *args)
 
-    def CheckSelfIntersectingEdge(self, *args):
+    def CheckSelfIntersectingEdge(self, *args) -> "Standard_Boolean" :
         """
         * Checks if num-th edge is self-intersecting. Self-intersection is reported only if intersection point lies outside of both end vertices of the edge. Returns: True if edge is self-intersecting. //!	 If returns True it also fills the sequences of intersection points and corresponding 3d points (only that are not enclosed by a vertices) Status: FAIL1 : No pcurve FAIL2 : No vertices DONE1 : Self-intersection found
 
@@ -4713,7 +4713,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckSelfIntersectingEdge(self, *args)
 
-    def CheckIntersectingEdges(self, *args):
+    def CheckIntersectingEdges(self, *args) -> "Standard_Boolean" :
         """
         * Checks two adjacent edges for intersecting. Intersection is reported only if intersection point is not enclosed by the common end vertex of the edges. Returns: True if intersection is found. //!	 If returns True it also fills the sequences of intersection points, corresponding 3d points, and errors for them (half-distances between intersection points in 3d calculated from one and from another edge) Status: FAIL1 : No pcurve FAIL2 : No vertices DONE1 : Self-intersection found
 
@@ -4758,7 +4758,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckIntersectingEdges(self, *args)
 
-    def CheckLacking(self, *args):
+    def CheckLacking(self, *args) -> "Standard_Boolean" :
         """
         * Calls to CheckLacking for each edge Returns: True if at least one lacking edge was detected
 
@@ -4787,7 +4787,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckLacking(self, *args)
 
-    def CheckOuterBound(self, *args):
+    def CheckOuterBound(self, *args) -> "Standard_Boolean" :
         """
         * Checks if wire defines an outer bound on the face Uses ShapeAnalysis::IsOuterBound for analysis If <APIMake> is True uses BRepAPI_MakeWire to build the wire, if False (to be used only when edges share common vertices) uses BRep_Builder to build the wire
 
@@ -4798,7 +4798,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckOuterBound(self, *args)
 
-    def CheckNotchedEdges(self, *args):
+    def CheckNotchedEdges(self, *args) -> "Standard_Boolean" :
         """
         * Detects a notch
 
@@ -4815,7 +4815,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckNotchedEdges(self, *args)
 
-    def CheckSmallArea(self, *args):
+    def CheckSmallArea(self, *args) -> "Standard_Boolean" :
         """
         * Checks if wire has parametric area less than prec2d.
 
@@ -4826,7 +4826,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckSmallArea(self, *args)
 
-    def CheckShapeConnect(self, *args):
+    def CheckShapeConnect(self, *args) -> "Standard_Boolean" :
         """
         * Checks with what orientation <shape> (wire or edge) can be connected to the wire. Tests distances with starting <preci> from <SBWD> (close confusion), //!	 but if given <prec> is greater, tests with <prec> (coarse confusion). The smallest found distance can be returned by MinDistance3d Returns: False if status is FAIL (see below) Status: //!	 DONE1 : If <shape> follows <SBWD>, direct sense (normal) DONE2 : If <shape> follows <SBWD>, but if reversed DONE3 : If <shape> preceeds <SBWD>, direct sense DONE4 : If <shape> preceeds <SBWD>, but if reversed FAIL1 : If <shape> is neither an edge nor a wire FAIL2 : If <shape> cannot be connected to <SBWD> DONE5 : To the tail of <SBWD> the <shape> is closer with direct sense DONE6 : To the head of <SBWD> the <shape> is closer with direct sense Remark: Statuses DONE1 - DONE4, FAIL1 - FAIL2 are basic and describe the nearest connection of the <shape> to <SBWD>. Statuses DONE5 and DONE6 are advanced and are to be used when analyzing with what sense (direct or reversed) the <shape> should be connected to <SBWD>: For tail of <SBWD> if DONE4 is True <shape> should be direct, otherwise reversed. For head of <SBWD> if DONE5 is True <shape> should be direct, otherwise reversed.
 
@@ -4855,7 +4855,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckShapeConnect(self, *args)
 
-    def CheckLoop(self, *args):
+    def CheckLoop(self, *args) -> "Standard_Boolean" :
         """
         * Checks existance of loop on wire and return vertices wich are loop vertices (vertices belonging to a few pairs of edges)
 
@@ -4872,7 +4872,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_CheckLoop(self, *args)
 
-    def StatusOrder(self, *args):
+    def StatusOrder(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4881,7 +4881,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusOrder(self, *args)
 
-    def StatusConnected(self, *args):
+    def StatusConnected(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4890,7 +4890,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusConnected(self, *args)
 
-    def StatusEdgeCurves(self, *args):
+    def StatusEdgeCurves(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4899,7 +4899,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusEdgeCurves(self, *args)
 
-    def StatusDegenerated(self, *args):
+    def StatusDegenerated(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4908,7 +4908,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusDegenerated(self, *args)
 
-    def StatusClosed(self, *args):
+    def StatusClosed(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4917,7 +4917,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusClosed(self, *args)
 
-    def StatusSmall(self, *args):
+    def StatusSmall(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4926,7 +4926,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusSmall(self, *args)
 
-    def StatusSelfIntersection(self, *args):
+    def StatusSelfIntersection(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4935,7 +4935,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusSelfIntersection(self, *args)
 
-    def StatusLacking(self, *args):
+    def StatusLacking(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4944,7 +4944,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusLacking(self, *args)
 
-    def StatusGaps3d(self, *args):
+    def StatusGaps3d(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4953,7 +4953,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusGaps3d(self, *args)
 
-    def StatusGaps2d(self, *args):
+    def StatusGaps2d(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4962,7 +4962,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusGaps2d(self, *args)
 
-    def StatusCurveGaps(self, *args):
+    def StatusCurveGaps(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4971,7 +4971,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusCurveGaps(self, *args)
 
-    def StatusLoop(self, *args):
+    def StatusLoop(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -4980,7 +4980,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_StatusLoop(self, *args)
 
-    def LastCheckStatus(self, *args):
+    def LastCheckStatus(self, *args) -> "Standard_Boolean" :
         """
         * Querying the status of the LAST perfomed 'Advanced' checking procedure
 
@@ -4991,7 +4991,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_LastCheckStatus(self, *args)
 
-    def MinDistance3d(self, *args):
+    def MinDistance3d(self, *args) -> "Standard_Real" :
         """
         * Returns the last lowest distance in 3D computed by CheckOrientation, CheckConnected, CheckContinuity3d, //!	 CheckVertex, CheckNewVertex
 
@@ -5000,7 +5000,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_MinDistance3d(self, *args)
 
-    def MinDistance2d(self, *args):
+    def MinDistance2d(self, *args) -> "Standard_Real" :
         """
         * Returns the last lowest distance in 2D-UV computed by CheckContinuity2d
 
@@ -5009,7 +5009,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_MinDistance2d(self, *args)
 
-    def MaxDistance3d(self, *args):
+    def MaxDistance3d(self, *args) -> "Standard_Real" :
         """
         * Returns the last maximal distance in 3D computed by CheckOrientation, CheckConnected, CheckContinuity3d, //!	 CheckVertex, CheckNewVertex, CheckSameParameter
 
@@ -5018,7 +5018,7 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_MaxDistance3d(self, *args)
 
-    def MaxDistance2d(self, *args):
+    def MaxDistance2d(self, *args) -> "Standard_Real" :
         """
         * Returns the last maximal distance in 2D-UV computed by CheckContinuity2d
 
@@ -5027,11 +5027,11 @@ class ShapeAnalysis_Wire(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAnalysis.ShapeAnalysis_Wire_MaxDistance2d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_Wire self)"""
         return _ShapeAnalysis.ShapeAnalysis_Wire__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_Wire" :
         """GetHandle(ShapeAnalysis_Wire self) -> Handle_ShapeAnalysis_Wire"""
         return _ShapeAnalysis.ShapeAnalysis_Wire_GetHandle(self)
 
@@ -5122,7 +5122,7 @@ Handle_ShapeAnalysis_Wire._kill_pointed = new_instancemethod(_ShapeAnalysis.Hand
 Handle_ShapeAnalysis_Wire_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_Wire_swigregister
 Handle_ShapeAnalysis_Wire_swigregister(Handle_ShapeAnalysis_Wire)
 
-def Handle_ShapeAnalysis_Wire_DownCast(*args):
+def Handle_ShapeAnalysis_Wire_DownCast(*args) -> "Handle_ShapeAnalysis_Wire const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_Wire_DownCast(*args)
 Handle_ShapeAnalysis_Wire_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_Wire_DownCast
 
@@ -5145,7 +5145,7 @@ class ShapeAnalysis_WireOrder(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_WireOrder_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_WireOrder(*args))
-    def SetMode(self, *args):
+    def SetMode(self, *args) -> "void" :
         """
         * Sets new values. Clears the connexion list If <mode3d> changes, also clears the edge list (else, doesnt)
 
@@ -5158,7 +5158,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_SetMode(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the working tolerance
 
@@ -5167,7 +5167,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Tolerance(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the list of edges, but not mode and tol
 
@@ -5176,7 +5176,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds a couple of points 3D (start,end)
 
@@ -5197,7 +5197,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Add(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of added couples of points (one per edges)
 
@@ -5206,15 +5206,15 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_NbEdges(self, *args)
 
-    def GetKeepLoopsMode(self):
+    def GetKeepLoopsMode(self) -> "Standard_Boolean" :
         """GetKeepLoopsMode(ShapeAnalysis_WireOrder self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_GetKeepLoopsMode(self)
 
-    def SetKeepLoopsMode(self, *args):
+    def SetKeepLoopsMode(self, *args) -> "void" :
         """SetKeepLoopsMode(ShapeAnalysis_WireOrder self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_SetKeepLoopsMode(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the better order If <closed> is True (D) considers also closure Optimised if the couples were already in order The criterium is : two couples in order if distance between end-prec and start-cur is less then starting tolerance <tol> Else, the smallest distance is reached Gap corresponds to a smallest distance greater than <tol>
 
@@ -5225,7 +5225,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Tells if Perform has been done Else, the following methods returns original values
 
@@ -5234,7 +5234,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_IsDone(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Integer" :
         """
         * Returns the status of the order (0 if not done) :  0 : all edges are direct and in sequence  1 : all edges are direct but some are not in sequence  2 : in addition, unresolved gaps remain -1 : some edges are reversed, but no gap remain -2 : some edges are reversed and some gaps remain -10 : COULD NOT BE RESOLVED, Failure on Reorder gap : regarding starting <tol>
 
@@ -5243,7 +5243,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Status(self, *args)
 
-    def Ordered(self, *args):
+    def Ordered(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of original edge which correspond to the newly ordered number <n> Warning : the returned value is NEGATIVE if edge should be reversed
 
@@ -5254,7 +5254,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Ordered(self, *args)
 
-    def XYZ(self, *args):
+    def XYZ(self, *args) -> "void" :
         """
         * Returns the values of the couple <num>, as 3D values
 
@@ -5269,7 +5269,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_XYZ(self, *args)
 
-    def XY(self, *args):
+    def XY(self, *args) -> "void" :
         """
         * Returns the values of the couple <num>, as 2D values
 
@@ -5284,7 +5284,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_XY(self, *args)
 
-    def Gap(self, *args):
+    def Gap(self, *args) -> "Standard_Real" :
         """
         * Returns the gap between a couple and its preceeding <num> is considered ordered If <num> = 0 (D), returns the greatest gap found
 
@@ -5295,7 +5295,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Gap(self, *args)
 
-    def SetChains(self, *args):
+    def SetChains(self, *args) -> "void" :
         """
         * Determines the chains inside which successive edges have a gap less than a given value. Queried by NbChains and Chain
 
@@ -5306,7 +5306,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_SetChains(self, *args)
 
-    def NbChains(self, *args):
+    def NbChains(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of computed chains
 
@@ -5315,7 +5315,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_NbChains(self, *args)
 
-    def Chain(self, *args):
+    def Chain(self, *args) -> "void" :
         """
         * Returns, for the chain n0 num, starting and ending numbers of edges. In the list of ordered edges (see Ordered for originals)
 
@@ -5330,7 +5330,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Chain(self, *args)
 
-    def SetCouples(self, *args):
+    def SetCouples(self, *args) -> "void" :
         """
         * Determines the couples of edges for which end and start fit inside a given gap. Queried by NbCouples and Couple
 
@@ -5341,7 +5341,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_SetCouples(self, *args)
 
-    def NbCouples(self, *args):
+    def NbCouples(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of computed couples
 
@@ -5350,7 +5350,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_NbCouples(self, *args)
 
-    def Couple(self, *args):
+    def Couple(self, *args) -> "void" :
         """
         * Returns, for the couple n0 num, the two implied edges In the list of ordered edges
 
@@ -5365,7 +5365,7 @@ class ShapeAnalysis_WireOrder(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireOrder_Couple(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_WireOrder self)"""
         return _ShapeAnalysis.ShapeAnalysis_WireOrder__kill_pointed(self)
 
@@ -5412,7 +5412,7 @@ class ShapeAnalysis_WireVertex(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_WireVertex_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_WireVertex(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param wire:
         :type wire: TopoDS_Wire &
@@ -5429,7 +5429,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Init(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         :param wire:
         :type wire: TopoDS_Wire &
@@ -5442,7 +5442,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Load(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         * Sets the precision for work Analysing: for each Vertex, comparison between the end of the preceeding edge and the start of the following edge Each Vertex rank corresponds to the End Vertex of the Edge of same rank, in the ShapeExtend_WireData. I.E. for Vertex <num>, Edge <num> is the preceeding one, <num+1> is the following one
 
@@ -5453,14 +5453,14 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetPrecision(self, *args)
 
-    def Analyze(self, *args):
+    def Analyze(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Analyze(self, *args)
 
-    def SetSameVertex(self, *args):
+    def SetSameVertex(self, *args) -> "void" :
         """
         * Records status 'Same Vertex' (logically) on Vertex <num>
 
@@ -5471,7 +5471,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetSameVertex(self, *args)
 
-    def SetSameCoords(self, *args):
+    def SetSameCoords(self, *args) -> "void" :
         """
         * Records status 'Same Coords' (at the Vertices Tolerances)
 
@@ -5482,7 +5482,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetSameCoords(self, *args)
 
-    def SetClose(self, *args):
+    def SetClose(self, *args) -> "void" :
         """
         * Records status 'Close Coords' (at the Precision of <self>)
 
@@ -5493,7 +5493,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetClose(self, *args)
 
-    def SetEnd(self, *args):
+    def SetEnd(self, *args) -> "void" :
         """
         * <num> is the End of preceeding Edge, and its projection on the following one lies on it at the Precision of <self> <ufol> gives the parameter on the following edge
 
@@ -5508,7 +5508,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetEnd(self, *args)
 
-    def SetStart(self, *args):
+    def SetStart(self, *args) -> "void" :
         """
         * <num> is the Start of following Edge, its projection on the preceeding one lies on it at the Precision of <self> <upre> gives the parameter on the preceeding edge
 
@@ -5523,7 +5523,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetStart(self, *args)
 
-    def SetInters(self, *args):
+    def SetInters(self, *args) -> "void" :
         """
         * <num> is the Intersection of both Edges <upre> is the parameter on preceeding edge, <ufol> on following edge
 
@@ -5540,7 +5540,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetInters(self, *args)
 
-    def SetDisjoined(self, *args):
+    def SetDisjoined(self, *args) -> "void" :
         """
         * <num> cannot be said as same vertex
 
@@ -5551,7 +5551,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_SetDisjoined(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if analysis was performed, else returns False
 
@@ -5560,7 +5560,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_IsDone(self, *args)
 
-    def Precision(self, *args):
+    def Precision(self, *args) -> "Standard_Real" :
         """
         * Returns precision value used in analysis
 
@@ -5569,7 +5569,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Precision(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of edges in analyzed wire (i.e. the length of all arrays)
 
@@ -5578,7 +5578,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_NbEdges(self, *args)
 
-    def WireData(self, *args):
+    def WireData(self, *args) -> "Handle_ShapeExtend_WireData const &" :
         """
         * Returns analyzed wire
 
@@ -5587,7 +5587,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_WireData(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Integer" :
         """
         * Returns the recorded status for a vertex More detail by method Data
 
@@ -5598,7 +5598,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Status(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "gp_XYZ" :
         """
         :param num:
         :type num: int
@@ -5607,7 +5607,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Position(self, *args)
 
-    def UPrevious(self, *args):
+    def UPrevious(self, *args) -> "Standard_Real" :
         """
         :param num:
         :type num: int
@@ -5616,7 +5616,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_UPrevious(self, *args)
 
-    def UFollowing(self, *args):
+    def UFollowing(self, *args) -> "Standard_Real" :
         """
         :param num:
         :type num: int
@@ -5625,7 +5625,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_UFollowing(self, *args)
 
-    def Data(self, *args):
+    def Data(self, *args) -> "Standard_Integer" :
         """
         * Returns the recorded status for a vertex With its recorded position and parameters on both edges These values are relevant regarding the status: Status Meaning Position Preceeding Following 0 Same no no no 1 SameCoord no no no 2 Close no no no 3 End yes no yes 4 Start yes yes no 5 Inters yes yes yes  -1 Disjoined no no no
 
@@ -5642,7 +5642,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_Data(self, *args)
 
-    def NextStatus(self, *args):
+    def NextStatus(self, *args) -> "Standard_Integer" :
         """
         * For a given status, returns the rank of the vertex which follows <num> and has the same status. 0 if no more Acts as an iterator, starts on the first one
 
@@ -5655,7 +5655,7 @@ class ShapeAnalysis_WireVertex(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_WireVertex_NextStatus(self, *args)
 
-    def NextCriter(self, *args):
+    def NextCriter(self, *args) -> "Standard_Integer" :
         """
         * For a given criter, returns the rank of the vertex which follows <num> and has the same status. 0 if no more Acts as an iterator, starts on the first one Criters are: 0: same vertex (status 0) 1: a solution exists (status >= 0) 2: same coords (i.e. same params) (status 0 1 2) 3: same coods but not same vertex (status 1 2) 4: redefined coords (status 3 4 5) -1: no solution (status -1)
 
@@ -5715,7 +5715,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
 
         """
         _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_BoxBndTreeSelector(*args))
-    def DefineBoxes(self, *args):
+    def DefineBoxes(self, *args) -> "void" :
         """
         :param theFBox:
         :type theFBox: Bnd_Box &
@@ -5726,7 +5726,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_DefineBoxes(self, *args)
 
-    def DefineVertexes(self, *args):
+    def DefineVertexes(self, *args) -> "void" :
         """
         :param theVf:
         :type theVf: TopoDS_Vertex
@@ -5737,7 +5737,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_DefineVertexes(self, *args)
 
-    def DefinePnt(self, *args):
+    def DefinePnt(self, *args) -> "void" :
         """
         :param theFPnt:
         :type theFPnt: gp_Pnt
@@ -5748,14 +5748,14 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_DefinePnt(self, *args)
 
-    def GetNb(self, *args):
+    def GetNb(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_GetNb(self, *args)
 
-    def SetNb(self, *args):
+    def SetNb(self, *args) -> "void" :
         """
         :param theNb:
         :type theNb: int
@@ -5764,7 +5764,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_SetNb(self, *args)
 
-    def LoadList(self, *args):
+    def LoadList(self, *args) -> "void" :
         """
         :param elem:
         :type elem: int
@@ -5773,14 +5773,14 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_LoadList(self, *args)
 
-    def SetStop(self, *args):
+    def SetStop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_SetStop(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         :param theTol:
         :type theTol: float
@@ -5789,7 +5789,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_SetTolerance(self, *args)
 
-    def ContWire(self, *args):
+    def ContWire(self, *args) -> "Standard_Boolean" :
         """
         :param nbWire:
         :type nbWire: int
@@ -5798,7 +5798,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_ContWire(self, *args)
 
-    def LastCheckStatus(self, *args):
+    def LastCheckStatus(self, *args) -> "Standard_Boolean" :
         """
         :param Status:
         :type Status: ShapeExtend_Status
@@ -5807,7 +5807,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_LastCheckStatus(self, *args)
 
-    def Reject(self, *args):
+    def Reject(self, *args) -> "Standard_Boolean" :
         """
         :param theBnd:
         :type theBnd: Bnd_Box &
@@ -5816,7 +5816,7 @@ class ShapeAnalysis_BoxBndTreeSelector(object):
         """
         return _ShapeAnalysis.ShapeAnalysis_BoxBndTreeSelector_Reject(self, *args)
 
-    def Accept(self, *args):
+    def Accept(self, *args) -> "Standard_Boolean" :
         """
         :param &:
         :type &: int
@@ -5866,7 +5866,7 @@ class ShapeAnalysis_TransferParametersProj(ShapeAnalysis_TransferParameters):
 
         """
         _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_swiginit(self,_ShapeAnalysis.new_ShapeAnalysis_TransferParametersProj(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Real" :
         """
         * Transfers parameters given by sequence Params from 3d curve to pcurve (if To2d is True) or back (if To2d is False)
 
@@ -5887,15 +5887,15 @@ class ShapeAnalysis_TransferParametersProj(ShapeAnalysis_TransferParameters):
         """
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_Perform(self, *args)
 
-    def GetForceProjection(self):
+    def GetForceProjection(self) -> "Standard_Boolean" :
         """GetForceProjection(ShapeAnalysis_TransferParametersProj self) -> Standard_Boolean"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_GetForceProjection(self)
 
-    def SetForceProjection(self, *args):
+    def SetForceProjection(self, *args) -> "void" :
         """SetForceProjection(ShapeAnalysis_TransferParametersProj self, Standard_Boolean value)"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_SetForceProjection(self, *args)
 
-    def CopyNMVertex(*args):
+    def CopyNMVertex(*args) -> "TopoDS_Vertex" :
         """
         * Make a copy of non-manifold vertex theVert (i.e. create new TVertex and replace PointRepresentations for this vertex from fromedge to toedge. Other representations were copied)
 
@@ -5921,11 +5921,11 @@ class ShapeAnalysis_TransferParametersProj(ShapeAnalysis_TransferParameters):
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_CopyNMVertex(*args)
 
     CopyNMVertex = staticmethod(CopyNMVertex)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAnalysis_TransferParametersProj self)"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAnalysis_TransferParametersProj" :
         """GetHandle(ShapeAnalysis_TransferParametersProj self) -> Handle_ShapeAnalysis_TransferParametersProj"""
         return _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_GetHandle(self)
 
@@ -5945,7 +5945,7 @@ ShapeAnalysis_TransferParametersProj.GetHandle = new_instancemethod(_ShapeAnalys
 ShapeAnalysis_TransferParametersProj_swigregister = _ShapeAnalysis.ShapeAnalysis_TransferParametersProj_swigregister
 ShapeAnalysis_TransferParametersProj_swigregister(ShapeAnalysis_TransferParametersProj)
 
-def ShapeAnalysis_TransferParametersProj_CopyNMVertex(*args):
+def ShapeAnalysis_TransferParametersProj_CopyNMVertex(*args) -> "TopoDS_Vertex" :
   """
     * Make a copy of non-manifold vertex theVert (i.e. create new TVertex and replace PointRepresentations for this vertex from fromedge to toedge. Other representations were copied)
 
@@ -5991,7 +5991,7 @@ Handle_ShapeAnalysis_TransferParametersProj._kill_pointed = new_instancemethod(_
 Handle_ShapeAnalysis_TransferParametersProj_swigregister = _ShapeAnalysis.Handle_ShapeAnalysis_TransferParametersProj_swigregister
 Handle_ShapeAnalysis_TransferParametersProj_swigregister(Handle_ShapeAnalysis_TransferParametersProj)
 
-def Handle_ShapeAnalysis_TransferParametersProj_DownCast(*args):
+def Handle_ShapeAnalysis_TransferParametersProj_DownCast(*args) -> "Handle_ShapeAnalysis_TransferParametersProj const" :
   return _ShapeAnalysis.Handle_ShapeAnalysis_TransferParametersProj_DownCast(*args)
 Handle_ShapeAnalysis_TransferParametersProj_DownCast = _ShapeAnalysis.Handle_ShapeAnalysis_TransferParametersProj_DownCast
 

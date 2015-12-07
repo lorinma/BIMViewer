@@ -118,7 +118,7 @@ import OCC.gp
 class hlralgo(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def UpdateMinMax(*args):
+    def UpdateMinMax(*args) -> "void" :
         """
         * Iterator on the visible or hidden parts of an EdgeStatus.
 
@@ -138,7 +138,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_UpdateMinMax(*args)
 
     UpdateMinMax = staticmethod(UpdateMinMax)
-    def EnlargeMinMax(*args):
+    def EnlargeMinMax(*args) -> "void" :
         """
         :param tol:
         :type tol: float
@@ -152,7 +152,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_EnlargeMinMax(*args)
 
     EnlargeMinMax = staticmethod(EnlargeMinMax)
-    def InitMinMax(*args):
+    def InitMinMax(*args) -> "void" :
         """
         :param Big:
         :type Big: float
@@ -166,7 +166,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_InitMinMax(*args)
 
     InitMinMax = staticmethod(InitMinMax)
-    def EncodeMinMax(*args):
+    def EncodeMinMax(*args) -> "void" :
         """
         :param Min:
         :type Min: Standard_Address
@@ -180,7 +180,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_EncodeMinMax(*args)
 
     EncodeMinMax = staticmethod(EncodeMinMax)
-    def SizeBox(*args):
+    def SizeBox(*args) -> "Standard_Real" :
         """
         :param Min:
         :type Min: Standard_Address
@@ -192,7 +192,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_SizeBox(*args)
 
     SizeBox = staticmethod(SizeBox)
-    def DecodeMinMax(*args):
+    def DecodeMinMax(*args) -> "void" :
         """
         :param MinMax:
         :type MinMax: Standard_Address
@@ -206,7 +206,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_DecodeMinMax(*args)
 
     DecodeMinMax = staticmethod(DecodeMinMax)
-    def CopyMinMax(*args):
+    def CopyMinMax(*args) -> "void" :
         """
         :param IMin:
         :type IMin: Standard_Address
@@ -222,7 +222,7 @@ class hlralgo(object):
         return _HLRAlgo.hlralgo_CopyMinMax(*args)
 
     CopyMinMax = staticmethod(CopyMinMax)
-    def AddMinMax(*args):
+    def AddMinMax(*args) -> "void" :
         """
         :param IMin:
         :type IMin: Standard_Address
@@ -252,7 +252,7 @@ hlralgo._kill_pointed = new_instancemethod(_HLRAlgo.hlralgo__kill_pointed,None,h
 hlralgo_swigregister = _HLRAlgo.hlralgo_swigregister
 hlralgo_swigregister(hlralgo)
 
-def hlralgo_UpdateMinMax(*args):
+def hlralgo_UpdateMinMax(*args) -> "void" :
   """
     * Iterator on the visible or hidden parts of an EdgeStatus.
 
@@ -271,7 +271,7 @@ def hlralgo_UpdateMinMax(*args):
     """
   return _HLRAlgo.hlralgo_UpdateMinMax(*args)
 
-def hlralgo_EnlargeMinMax(*args):
+def hlralgo_EnlargeMinMax(*args) -> "void" :
   """
     :param tol:
     :type tol: float
@@ -284,7 +284,7 @@ def hlralgo_EnlargeMinMax(*args):
     """
   return _HLRAlgo.hlralgo_EnlargeMinMax(*args)
 
-def hlralgo_InitMinMax(*args):
+def hlralgo_InitMinMax(*args) -> "void" :
   """
     :param Big:
     :type Big: float
@@ -297,7 +297,7 @@ def hlralgo_InitMinMax(*args):
     """
   return _HLRAlgo.hlralgo_InitMinMax(*args)
 
-def hlralgo_EncodeMinMax(*args):
+def hlralgo_EncodeMinMax(*args) -> "void" :
   """
     :param Min:
     :type Min: Standard_Address
@@ -310,7 +310,7 @@ def hlralgo_EncodeMinMax(*args):
     """
   return _HLRAlgo.hlralgo_EncodeMinMax(*args)
 
-def hlralgo_SizeBox(*args):
+def hlralgo_SizeBox(*args) -> "Standard_Real" :
   """
     :param Min:
     :type Min: Standard_Address
@@ -321,7 +321,7 @@ def hlralgo_SizeBox(*args):
     """
   return _HLRAlgo.hlralgo_SizeBox(*args)
 
-def hlralgo_DecodeMinMax(*args):
+def hlralgo_DecodeMinMax(*args) -> "void" :
   """
     :param MinMax:
     :type MinMax: Standard_Address
@@ -334,7 +334,7 @@ def hlralgo_DecodeMinMax(*args):
     """
   return _HLRAlgo.hlralgo_DecodeMinMax(*args)
 
-def hlralgo_CopyMinMax(*args):
+def hlralgo_CopyMinMax(*args) -> "void" :
   """
     :param IMin:
     :type IMin: Standard_Address
@@ -349,7 +349,7 @@ def hlralgo_CopyMinMax(*args):
     """
   return _HLRAlgo.hlralgo_CopyMinMax(*args)
 
-def hlralgo_AddMinMax(*args):
+def hlralgo_AddMinMax(*args) -> "void" :
   """
     :param IMin:
     :type IMin: Standard_Address
@@ -385,7 +385,7 @@ class HLRAlgo_Array1OfPHDat(object):
 
         """
         _HLRAlgo.HLRAlgo_Array1OfPHDat_swiginit(self,_HLRAlgo.new_HLRAlgo_Array1OfPHDat(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_PolyHidingData &
@@ -394,21 +394,21 @@ class HLRAlgo_Array1OfPHDat(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRAlgo_Array1OfPHDat const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPHDat &
@@ -417,7 +417,7 @@ class HLRAlgo_Array1OfPHDat(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRAlgo_Array1OfPHDat const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPHDat &
@@ -426,28 +426,28 @@ class HLRAlgo_Array1OfPHDat(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -458,7 +458,7 @@ class HLRAlgo_Array1OfPHDat(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_PolyHidingData const &" :
         """
         :param Index:
         :type Index: int
@@ -467,7 +467,7 @@ class HLRAlgo_Array1OfPHDat(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPHDat_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_PolyHidingData &" :
         """
         :param Index:
         :type Index: int
@@ -520,7 +520,7 @@ class HLRAlgo_Array1OfPINod(object):
 
         """
         _HLRAlgo.HLRAlgo_Array1OfPINod_swiginit(self,_HLRAlgo.new_HLRAlgo_Array1OfPINod(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_HLRAlgo_PolyInternalNode &
@@ -529,21 +529,21 @@ class HLRAlgo_Array1OfPINod(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRAlgo_Array1OfPINod const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPINod &
@@ -552,7 +552,7 @@ class HLRAlgo_Array1OfPINod(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRAlgo_Array1OfPINod const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPINod &
@@ -561,28 +561,28 @@ class HLRAlgo_Array1OfPINod(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -593,7 +593,7 @@ class HLRAlgo_Array1OfPINod(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_HLRAlgo_PolyInternalNode const &" :
         """
         :param Index:
         :type Index: int
@@ -602,7 +602,7 @@ class HLRAlgo_Array1OfPINod(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPINod_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_HLRAlgo_PolyInternalNode &" :
         """
         :param Index:
         :type Index: int
@@ -655,7 +655,7 @@ class HLRAlgo_Array1OfPISeg(object):
 
         """
         _HLRAlgo.HLRAlgo_Array1OfPISeg_swiginit(self,_HLRAlgo.new_HLRAlgo_Array1OfPISeg(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_PolyInternalSegment &
@@ -664,21 +664,21 @@ class HLRAlgo_Array1OfPISeg(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRAlgo_Array1OfPISeg const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPISeg &
@@ -687,7 +687,7 @@ class HLRAlgo_Array1OfPISeg(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRAlgo_Array1OfPISeg const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfPISeg &
@@ -696,28 +696,28 @@ class HLRAlgo_Array1OfPISeg(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -728,7 +728,7 @@ class HLRAlgo_Array1OfPISeg(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_PolyInternalSegment const &" :
         """
         :param Index:
         :type Index: int
@@ -737,7 +737,7 @@ class HLRAlgo_Array1OfPISeg(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfPISeg_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_PolyInternalSegment &" :
         """
         :param Index:
         :type Index: int
@@ -790,7 +790,7 @@ class HLRAlgo_Array1OfTData(object):
 
         """
         _HLRAlgo.HLRAlgo_Array1OfTData_swiginit(self,_HLRAlgo.new_HLRAlgo_Array1OfTData(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_TriangleData &
@@ -799,21 +799,21 @@ class HLRAlgo_Array1OfTData(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRAlgo_Array1OfTData const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfTData &
@@ -822,7 +822,7 @@ class HLRAlgo_Array1OfTData(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRAlgo_Array1OfTData const &" :
         """
         :param Other:
         :type Other: HLRAlgo_Array1OfTData &
@@ -831,28 +831,28 @@ class HLRAlgo_Array1OfTData(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -863,7 +863,7 @@ class HLRAlgo_Array1OfTData(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_TriangleData const &" :
         """
         :param Index:
         :type Index: int
@@ -872,7 +872,7 @@ class HLRAlgo_Array1OfTData(object):
         """
         return _HLRAlgo.HLRAlgo_Array1OfTData_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_TriangleData &" :
         """
         :param Index:
         :type Index: int
@@ -1147,7 +1147,7 @@ class HLRAlgo_BiPoint(object):
 
         """
         _HLRAlgo.HLRAlgo_BiPoint_swiginit(self,_HLRAlgo.new_HLRAlgo_BiPoint(*args))
-    def Rg1Line(self, *args):
+    def Rg1Line(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1158,7 +1158,7 @@ class HLRAlgo_BiPoint(object):
         """
         return _HLRAlgo.HLRAlgo_BiPoint_Rg1Line(self, *args)
 
-    def RgNLine(self, *args):
+    def RgNLine(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1169,7 +1169,7 @@ class HLRAlgo_BiPoint(object):
         """
         return _HLRAlgo.HLRAlgo_BiPoint_RgNLine(self, *args)
 
-    def OutLine(self, *args):
+    def OutLine(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1180,7 +1180,7 @@ class HLRAlgo_BiPoint(object):
         """
         return _HLRAlgo.HLRAlgo_BiPoint_OutLine(self, *args)
 
-    def IntLine(self, *args):
+    def IntLine(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1191,7 +1191,7 @@ class HLRAlgo_BiPoint(object):
         """
         return _HLRAlgo.HLRAlgo_BiPoint_IntLine(self, *args)
 
-    def Hidden(self, *args):
+    def Hidden(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1202,14 +1202,14 @@ class HLRAlgo_BiPoint(object):
         """
         return _HLRAlgo.HLRAlgo_BiPoint_Hidden(self, *args)
 
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_BiPoint_Indices(self, *args)
 
-    def Coordinates(self, *args):
+    def Coordinates(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -1244,7 +1244,7 @@ class HLRAlgo_Coincidence(object):
 
         """
         _HLRAlgo.HLRAlgo_Coincidence_swiginit(self,_HLRAlgo.new_HLRAlgo_Coincidence(*args))
-    def Set2D(self, *args):
+    def Set2D(self, *args) -> "void" :
         """
         :param FE:
         :type FE: int
@@ -1255,7 +1255,7 @@ class HLRAlgo_Coincidence(object):
         """
         return _HLRAlgo.HLRAlgo_Coincidence_Set2D(self, *args)
 
-    def SetState3D(self, *args):
+    def SetState3D(self, *args) -> "void" :
         """
         :param stbef:
         :type stbef: TopAbs_State
@@ -1266,7 +1266,7 @@ class HLRAlgo_Coincidence(object):
         """
         return _HLRAlgo.HLRAlgo_Coincidence_SetState3D(self, *args)
 
-    def Value2D(self, *args):
+    def Value2D(self, *args) -> "void" :
         """
         :param FE:
         :type FE: int &
@@ -1277,7 +1277,7 @@ class HLRAlgo_Coincidence(object):
         """
         return _HLRAlgo.HLRAlgo_Coincidence_Value2D(self, *args)
 
-    def State3D(self, *args):
+    def State3D(self, *args) -> "void" :
         """
         :param stbef:
         :type stbef: TopAbs_State &
@@ -1315,7 +1315,7 @@ class HLRAlgo_EdgeIterator(object):
 
         """
         _HLRAlgo.HLRAlgo_EdgeIterator_swiginit(self,_HLRAlgo.new_HLRAlgo_EdgeIterator(*args))
-    def InitHidden(self, *args):
+    def InitHidden(self, *args) -> "void" :
         """
         :param status:
         :type status: HLRAlgo_EdgeStatus &
@@ -1324,21 +1324,21 @@ class HLRAlgo_EdgeIterator(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_InitHidden(self, *args)
 
-    def MoreHidden(self, *args):
+    def MoreHidden(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_MoreHidden(self, *args)
 
-    def NextHidden(self, *args):
+    def NextHidden(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_NextHidden(self, *args)
 
-    def Hidden(self, *args):
+    def Hidden(self, *args) -> "void" :
         """
         * Returns the bounds and the tolerances of the current Hidden Interval
 
@@ -1355,7 +1355,7 @@ class HLRAlgo_EdgeIterator(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_Hidden(self, *args)
 
-    def InitVisible(self, *args):
+    def InitVisible(self, *args) -> "void" :
         """
         :param status:
         :type status: HLRAlgo_EdgeStatus &
@@ -1364,21 +1364,21 @@ class HLRAlgo_EdgeIterator(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_InitVisible(self, *args)
 
-    def MoreVisible(self, *args):
+    def MoreVisible(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_MoreVisible(self, *args)
 
-    def NextVisible(self, *args):
+    def NextVisible(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_EdgeIterator_NextVisible(self, *args)
 
-    def Visible(self, *args):
+    def Visible(self, *args) -> "void" :
         """
         * Returns the bounds and the tolerances of the current Visible Interval
 
@@ -1436,7 +1436,7 @@ class HLRAlgo_EdgeStatus(object):
 
         """
         _HLRAlgo.HLRAlgo_EdgeStatus_swiginit(self,_HLRAlgo.new_HLRAlgo_EdgeStatus(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initialize an EdgeStatus. Default visible. The Edge is bounded by the interval <Start>, <End> with the tolerances <TolStart>, <TolEnd>.
 
@@ -1453,7 +1453,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_Initialize(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         :param Start:
         :type Start: float &
@@ -1468,14 +1468,14 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_Bounds(self, *args)
 
-    def NbVisiblePart(self, *args):
+    def NbVisiblePart(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_NbVisiblePart(self, *args)
 
-    def VisiblePart(self, *args):
+    def VisiblePart(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1492,7 +1492,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_VisiblePart(self, *args)
 
-    def Hide(self, *args):
+    def Hide(self, *args) -> "void" :
         """
         * Hides the interval <Start>, <End> with the tolerances <TolStart>, <TolEnd>. This interval is subtracted from the visible parts. If the hidden part is on ( or under ) the face the flag <OnFace> is True ( or False ). If the hidden part is on ( or inside ) the boundary of the face the flag <OnBoundary> is True ( or False ).
 
@@ -1513,7 +1513,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_Hide(self, *args)
 
-    def HideAll(self, *args):
+    def HideAll(self, *args) -> "void" :
         """
         * Hide the whole Edge.
 
@@ -1522,7 +1522,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_HideAll(self, *args)
 
-    def ShowAll(self, *args):
+    def ShowAll(self, *args) -> "void" :
         """
         * Show the whole Edge.
 
@@ -1531,7 +1531,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_ShowAll(self, *args)
 
-    def AllHidden(self, *args):
+    def AllHidden(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1542,7 +1542,7 @@ class HLRAlgo_EdgeStatus(object):
         """
         return _HLRAlgo.HLRAlgo_EdgeStatus_AllHidden(self, *args)
 
-    def AllVisible(self, *args):
+    def AllVisible(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1587,14 +1587,14 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_EdgesBlock_swiginit(self,_HLRAlgo.new_HLRAlgo_EdgesBlock(*args))
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_NbEdges(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "Standard_Integer" :
         """
         :param I:
         :type I: int
@@ -1609,7 +1609,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_Edge(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :param I:
         :type I: int
@@ -1624,7 +1624,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_Orientation(self, *args)
 
-    def OutLine(self, *args):
+    def OutLine(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1639,7 +1639,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_OutLine(self, *args)
 
-    def Internal(self, *args):
+    def Internal(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1654,7 +1654,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_Internal(self, *args)
 
-    def Double(self, *args):
+    def Double(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1669,7 +1669,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_Double(self, *args)
 
-    def IsoLine(self, *args):
+    def IsoLine(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1684,7 +1684,7 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_IsoLine(self, *args)
 
-    def UpdateMinMax(self, *args):
+    def UpdateMinMax(self, *args) -> "void" :
         """
         :param TotMinMax:
         :type TotMinMax: Standard_Address
@@ -1693,18 +1693,18 @@ class HLRAlgo_EdgesBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_UpdateMinMax(self, *args)
 
-    def MinMax(self, *args):
+    def MinMax(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_EdgesBlock_MinMax(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_EdgesBlock self)"""
         return _HLRAlgo.HLRAlgo_EdgesBlock__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_EdgesBlock" :
         """GetHandle(HLRAlgo_EdgesBlock self) -> Handle_HLRAlgo_EdgesBlock"""
         return _HLRAlgo.HLRAlgo_EdgesBlock_GetHandle(self)
 
@@ -1751,7 +1751,7 @@ Handle_HLRAlgo_EdgesBlock._kill_pointed = new_instancemethod(_HLRAlgo.Handle_HLR
 Handle_HLRAlgo_EdgesBlock_swigregister = _HLRAlgo.Handle_HLRAlgo_EdgesBlock_swigregister
 Handle_HLRAlgo_EdgesBlock_swigregister(Handle_HLRAlgo_EdgesBlock)
 
-def Handle_HLRAlgo_EdgesBlock_DownCast(*args):
+def Handle_HLRAlgo_EdgesBlock_DownCast(*args) -> "Handle_HLRAlgo_EdgesBlock const" :
   return _HLRAlgo.Handle_HLRAlgo_EdgesBlock_DownCast(*args)
 Handle_HLRAlgo_EdgesBlock_DownCast = _HLRAlgo.Handle_HLRAlgo_EdgesBlock_DownCast
 
@@ -1776,7 +1776,7 @@ class HLRAlgo_HArray1OfPHDat(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_HArray1OfPHDat_swiginit(self,_HLRAlgo.new_HLRAlgo_HArray1OfPHDat(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_PolyHidingData &
@@ -1785,28 +1785,28 @@ class HLRAlgo_HArray1OfPHDat(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1817,7 +1817,7 @@ class HLRAlgo_HArray1OfPHDat(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_PolyHidingData const &" :
         """
         :param Index:
         :type Index: int
@@ -1826,7 +1826,7 @@ class HLRAlgo_HArray1OfPHDat(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_PolyHidingData &" :
         """
         :param Index:
         :type Index: int
@@ -1835,25 +1835,25 @@ class HLRAlgo_HArray1OfPHDat(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "HLRAlgo_Array1OfPHDat const &" :
         """
         :rtype: HLRAlgo_Array1OfPHDat
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "HLRAlgo_Array1OfPHDat &" :
         """
         :rtype: HLRAlgo_Array1OfPHDat
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_HArray1OfPHDat self)"""
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_HArray1OfPHDat" :
         """GetHandle(HLRAlgo_HArray1OfPHDat self) -> Handle_HLRAlgo_HArray1OfPHDat"""
         return _HLRAlgo.HLRAlgo_HArray1OfPHDat_GetHandle(self)
 
@@ -1900,7 +1900,7 @@ Handle_HLRAlgo_HArray1OfPHDat._kill_pointed = new_instancemethod(_HLRAlgo.Handle
 Handle_HLRAlgo_HArray1OfPHDat_swigregister = _HLRAlgo.Handle_HLRAlgo_HArray1OfPHDat_swigregister
 Handle_HLRAlgo_HArray1OfPHDat_swigregister(Handle_HLRAlgo_HArray1OfPHDat)
 
-def Handle_HLRAlgo_HArray1OfPHDat_DownCast(*args):
+def Handle_HLRAlgo_HArray1OfPHDat_DownCast(*args) -> "Handle_HLRAlgo_HArray1OfPHDat const" :
   return _HLRAlgo.Handle_HLRAlgo_HArray1OfPHDat_DownCast(*args)
 Handle_HLRAlgo_HArray1OfPHDat_DownCast = _HLRAlgo.Handle_HLRAlgo_HArray1OfPHDat_DownCast
 
@@ -1925,7 +1925,7 @@ class HLRAlgo_HArray1OfPINod(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_HArray1OfPINod_swiginit(self,_HLRAlgo.new_HLRAlgo_HArray1OfPINod(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_HLRAlgo_PolyInternalNode &
@@ -1934,28 +1934,28 @@ class HLRAlgo_HArray1OfPINod(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1966,7 +1966,7 @@ class HLRAlgo_HArray1OfPINod(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_HLRAlgo_PolyInternalNode const &" :
         """
         :param Index:
         :type Index: int
@@ -1975,7 +1975,7 @@ class HLRAlgo_HArray1OfPINod(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_HLRAlgo_PolyInternalNode &" :
         """
         :param Index:
         :type Index: int
@@ -1984,25 +1984,25 @@ class HLRAlgo_HArray1OfPINod(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "HLRAlgo_Array1OfPINod const &" :
         """
         :rtype: HLRAlgo_Array1OfPINod
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "HLRAlgo_Array1OfPINod &" :
         """
         :rtype: HLRAlgo_Array1OfPINod
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_HArray1OfPINod self)"""
         return _HLRAlgo.HLRAlgo_HArray1OfPINod__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_HArray1OfPINod" :
         """GetHandle(HLRAlgo_HArray1OfPINod self) -> Handle_HLRAlgo_HArray1OfPINod"""
         return _HLRAlgo.HLRAlgo_HArray1OfPINod_GetHandle(self)
 
@@ -2049,7 +2049,7 @@ Handle_HLRAlgo_HArray1OfPINod._kill_pointed = new_instancemethod(_HLRAlgo.Handle
 Handle_HLRAlgo_HArray1OfPINod_swigregister = _HLRAlgo.Handle_HLRAlgo_HArray1OfPINod_swigregister
 Handle_HLRAlgo_HArray1OfPINod_swigregister(Handle_HLRAlgo_HArray1OfPINod)
 
-def Handle_HLRAlgo_HArray1OfPINod_DownCast(*args):
+def Handle_HLRAlgo_HArray1OfPINod_DownCast(*args) -> "Handle_HLRAlgo_HArray1OfPINod const" :
   return _HLRAlgo.Handle_HLRAlgo_HArray1OfPINod_DownCast(*args)
 Handle_HLRAlgo_HArray1OfPINod_DownCast = _HLRAlgo.Handle_HLRAlgo_HArray1OfPINod_DownCast
 
@@ -2074,7 +2074,7 @@ class HLRAlgo_HArray1OfPISeg(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_HArray1OfPISeg_swiginit(self,_HLRAlgo.new_HLRAlgo_HArray1OfPISeg(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_PolyInternalSegment &
@@ -2083,28 +2083,28 @@ class HLRAlgo_HArray1OfPISeg(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2115,7 +2115,7 @@ class HLRAlgo_HArray1OfPISeg(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_PolyInternalSegment const &" :
         """
         :param Index:
         :type Index: int
@@ -2124,7 +2124,7 @@ class HLRAlgo_HArray1OfPISeg(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_PolyInternalSegment &" :
         """
         :param Index:
         :type Index: int
@@ -2133,25 +2133,25 @@ class HLRAlgo_HArray1OfPISeg(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "HLRAlgo_Array1OfPISeg const &" :
         """
         :rtype: HLRAlgo_Array1OfPISeg
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "HLRAlgo_Array1OfPISeg &" :
         """
         :rtype: HLRAlgo_Array1OfPISeg
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_HArray1OfPISeg self)"""
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_HArray1OfPISeg" :
         """GetHandle(HLRAlgo_HArray1OfPISeg self) -> Handle_HLRAlgo_HArray1OfPISeg"""
         return _HLRAlgo.HLRAlgo_HArray1OfPISeg_GetHandle(self)
 
@@ -2198,7 +2198,7 @@ Handle_HLRAlgo_HArray1OfPISeg._kill_pointed = new_instancemethod(_HLRAlgo.Handle
 Handle_HLRAlgo_HArray1OfPISeg_swigregister = _HLRAlgo.Handle_HLRAlgo_HArray1OfPISeg_swigregister
 Handle_HLRAlgo_HArray1OfPISeg_swigregister(Handle_HLRAlgo_HArray1OfPISeg)
 
-def Handle_HLRAlgo_HArray1OfPISeg_DownCast(*args):
+def Handle_HLRAlgo_HArray1OfPISeg_DownCast(*args) -> "Handle_HLRAlgo_HArray1OfPISeg const" :
   return _HLRAlgo.Handle_HLRAlgo_HArray1OfPISeg_DownCast(*args)
 Handle_HLRAlgo_HArray1OfPISeg_DownCast = _HLRAlgo.Handle_HLRAlgo_HArray1OfPISeg_DownCast
 
@@ -2223,7 +2223,7 @@ class HLRAlgo_HArray1OfTData(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_HArray1OfTData_swiginit(self,_HLRAlgo.new_HLRAlgo_HArray1OfTData(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: HLRAlgo_TriangleData &
@@ -2232,28 +2232,28 @@ class HLRAlgo_HArray1OfTData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2264,7 +2264,7 @@ class HLRAlgo_HArray1OfTData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_TriangleData const &" :
         """
         :param Index:
         :type Index: int
@@ -2273,7 +2273,7 @@ class HLRAlgo_HArray1OfTData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "HLRAlgo_TriangleData &" :
         """
         :param Index:
         :type Index: int
@@ -2282,25 +2282,25 @@ class HLRAlgo_HArray1OfTData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "HLRAlgo_Array1OfTData const &" :
         """
         :rtype: HLRAlgo_Array1OfTData
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "HLRAlgo_Array1OfTData &" :
         """
         :rtype: HLRAlgo_Array1OfTData
 
         """
         return _HLRAlgo.HLRAlgo_HArray1OfTData_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_HArray1OfTData self)"""
         return _HLRAlgo.HLRAlgo_HArray1OfTData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_HArray1OfTData" :
         """GetHandle(HLRAlgo_HArray1OfTData self) -> Handle_HLRAlgo_HArray1OfTData"""
         return _HLRAlgo.HLRAlgo_HArray1OfTData_GetHandle(self)
 
@@ -2347,7 +2347,7 @@ Handle_HLRAlgo_HArray1OfTData._kill_pointed = new_instancemethod(_HLRAlgo.Handle
 Handle_HLRAlgo_HArray1OfTData_swigregister = _HLRAlgo.Handle_HLRAlgo_HArray1OfTData_swigregister
 Handle_HLRAlgo_HArray1OfTData_swigregister(Handle_HLRAlgo_HArray1OfTData)
 
-def Handle_HLRAlgo_HArray1OfTData_DownCast(*args):
+def Handle_HLRAlgo_HArray1OfTData_DownCast(*args) -> "Handle_HLRAlgo_HArray1OfTData const" :
   return _HLRAlgo.Handle_HLRAlgo_HArray1OfTData_DownCast(*args)
 Handle_HLRAlgo_HArray1OfTData_DownCast = _HLRAlgo.Handle_HLRAlgo_HArray1OfTData_DownCast
 
@@ -2372,7 +2372,7 @@ class HLRAlgo_Interference(object):
 
         """
         _HLRAlgo.HLRAlgo_Interference_swiginit(self,_HLRAlgo.new_HLRAlgo_Interference(*args))
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "HLRAlgo_Intersection const &" :
         """
         :param I:
         :type I: HLRAlgo_Intersection &
@@ -2383,14 +2383,14 @@ class HLRAlgo_Interference(object):
         """
         return _HLRAlgo.HLRAlgo_Interference_Intersection(self, *args)
 
-    def ChangeIntersection(self, *args):
+    def ChangeIntersection(self, *args) -> "HLRAlgo_Intersection &" :
         """
         :rtype: HLRAlgo_Intersection
 
         """
         return _HLRAlgo.HLRAlgo_Interference_ChangeIntersection(self, *args)
 
-    def Boundary(self, *args):
+    def Boundary(self, *args) -> "HLRAlgo_Coincidence const &" :
         """
         :param B:
         :type B: HLRAlgo_Coincidence &
@@ -2401,14 +2401,14 @@ class HLRAlgo_Interference(object):
         """
         return _HLRAlgo.HLRAlgo_Interference_Boundary(self, *args)
 
-    def ChangeBoundary(self, *args):
+    def ChangeBoundary(self, *args) -> "HLRAlgo_Coincidence &" :
         """
         :rtype: HLRAlgo_Coincidence
 
         """
         return _HLRAlgo.HLRAlgo_Interference_ChangeBoundary(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :param O:
         :type O: TopAbs_Orientation
@@ -2419,7 +2419,7 @@ class HLRAlgo_Interference(object):
         """
         return _HLRAlgo.HLRAlgo_Interference_Orientation(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "TopAbs_Orientation" :
         """
         :param Tr:
         :type Tr: TopAbs_Orientation
@@ -2430,7 +2430,7 @@ class HLRAlgo_Interference(object):
         """
         return _HLRAlgo.HLRAlgo_Interference_Transition(self, *args)
 
-    def BoundaryTransition(self, *args):
+    def BoundaryTransition(self, *args) -> "TopAbs_Orientation" :
         """
         :param BTr:
         :type BTr: TopAbs_Orientation
@@ -2469,7 +2469,7 @@ class HLRAlgo_InterferenceList(object):
 
         """
         _HLRAlgo.HLRAlgo_InterferenceList_swiginit(self,_HLRAlgo.new_HLRAlgo_InterferenceList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRAlgo_InterferenceList &
@@ -2478,7 +2478,7 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRAlgo_InterferenceList &
@@ -2487,28 +2487,28 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_Interference &
@@ -2527,7 +2527,7 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_Interference &
@@ -2546,28 +2546,28 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "HLRAlgo_Interference &" :
         """
         :rtype: HLRAlgo_Interference
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "HLRAlgo_Interference &" :
         """
         :rtype: HLRAlgo_Interference
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: HLRAlgo_ListIteratorOfInterferenceList &
@@ -2576,7 +2576,7 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_Interference &
@@ -2593,7 +2593,7 @@ class HLRAlgo_InterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_InterferenceList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_Interference &
@@ -2660,7 +2660,7 @@ class HLRAlgo_Intersection(object):
 
         """
         _HLRAlgo.HLRAlgo_Intersection_swiginit(self,_HLRAlgo.new_HLRAlgo_Intersection(*args))
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :param Ori:
         :type Ori: TopAbs_Orientation
@@ -2671,7 +2671,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_Orientation(self, *args)
 
-    def Level(self, *args):
+    def Level(self, *args) -> "Standard_Integer" :
         """
         :param Lev:
         :type Lev: int
@@ -2682,7 +2682,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_Level(self, *args)
 
-    def SegIndex(self, *args):
+    def SegIndex(self, *args) -> "Standard_Integer" :
         """
         :param SegInd:
         :type SegInd: int
@@ -2693,7 +2693,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_SegIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         :param Ind:
         :type Ind: int
@@ -2704,7 +2704,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_Index(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :param P:
         :type P: float
@@ -2715,7 +2715,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_Parameter(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_ShortReal" :
         """
         :param T:
         :type T: Standard_ShortReal
@@ -2726,7 +2726,7 @@ class HLRAlgo_Intersection(object):
         """
         return _HLRAlgo.HLRAlgo_Intersection_Tolerance(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         :param S:
         :type S: TopAbs_State
@@ -2769,7 +2769,7 @@ class HLRAlgo_ListIteratorOfInterferenceList(object):
 
         """
         _HLRAlgo.HLRAlgo_ListIteratorOfInterferenceList_swiginit(self,_HLRAlgo.new_HLRAlgo_ListIteratorOfInterferenceList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: HLRAlgo_InterferenceList &
@@ -2778,21 +2778,21 @@ class HLRAlgo_ListIteratorOfInterferenceList(object):
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfInterferenceList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfInterferenceList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfInterferenceList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_Interference &" :
         """
         :rtype: HLRAlgo_Interference
 
@@ -2828,7 +2828,7 @@ class HLRAlgo_ListIteratorOfListOfBPoint(object):
 
         """
         _HLRAlgo.HLRAlgo_ListIteratorOfListOfBPoint_swiginit(self,_HLRAlgo.new_HLRAlgo_ListIteratorOfListOfBPoint(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: HLRAlgo_ListOfBPoint &
@@ -2837,21 +2837,21 @@ class HLRAlgo_ListIteratorOfListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfListOfBPoint_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfListOfBPoint_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_ListIteratorOfListOfBPoint_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_BiPoint &" :
         """
         :rtype: HLRAlgo_BiPoint
 
@@ -2887,18 +2887,18 @@ class HLRAlgo_ListNodeOfInterferenceList(OCC.TCollection.TCollection_MapNode):
 
         """
         _HLRAlgo.HLRAlgo_ListNodeOfInterferenceList_swiginit(self,_HLRAlgo.new_HLRAlgo_ListNodeOfInterferenceList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_Interference &" :
         """
         :rtype: HLRAlgo_Interference
 
         """
         return _HLRAlgo.HLRAlgo_ListNodeOfInterferenceList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_ListNodeOfInterferenceList self)"""
         return _HLRAlgo.HLRAlgo_ListNodeOfInterferenceList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_ListNodeOfInterferenceList" :
         """GetHandle(HLRAlgo_ListNodeOfInterferenceList self) -> Handle_HLRAlgo_ListNodeOfInterferenceList"""
         return _HLRAlgo.HLRAlgo_ListNodeOfInterferenceList_GetHandle(self)
 
@@ -2937,7 +2937,7 @@ Handle_HLRAlgo_ListNodeOfInterferenceList._kill_pointed = new_instancemethod(_HL
 Handle_HLRAlgo_ListNodeOfInterferenceList_swigregister = _HLRAlgo.Handle_HLRAlgo_ListNodeOfInterferenceList_swigregister
 Handle_HLRAlgo_ListNodeOfInterferenceList_swigregister(Handle_HLRAlgo_ListNodeOfInterferenceList)
 
-def Handle_HLRAlgo_ListNodeOfInterferenceList_DownCast(*args):
+def Handle_HLRAlgo_ListNodeOfInterferenceList_DownCast(*args) -> "Handle_HLRAlgo_ListNodeOfInterferenceList const" :
   return _HLRAlgo.Handle_HLRAlgo_ListNodeOfInterferenceList_DownCast(*args)
 Handle_HLRAlgo_ListNodeOfInterferenceList_DownCast = _HLRAlgo.Handle_HLRAlgo_ListNodeOfInterferenceList_DownCast
 
@@ -2954,18 +2954,18 @@ class HLRAlgo_ListNodeOfListOfBPoint(OCC.TCollection.TCollection_MapNode):
 
         """
         _HLRAlgo.HLRAlgo_ListNodeOfListOfBPoint_swiginit(self,_HLRAlgo.new_HLRAlgo_ListNodeOfListOfBPoint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRAlgo_BiPoint &" :
         """
         :rtype: HLRAlgo_BiPoint
 
         """
         return _HLRAlgo.HLRAlgo_ListNodeOfListOfBPoint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_ListNodeOfListOfBPoint self)"""
         return _HLRAlgo.HLRAlgo_ListNodeOfListOfBPoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_ListNodeOfListOfBPoint" :
         """GetHandle(HLRAlgo_ListNodeOfListOfBPoint self) -> Handle_HLRAlgo_ListNodeOfListOfBPoint"""
         return _HLRAlgo.HLRAlgo_ListNodeOfListOfBPoint_GetHandle(self)
 
@@ -3004,7 +3004,7 @@ Handle_HLRAlgo_ListNodeOfListOfBPoint._kill_pointed = new_instancemethod(_HLRAlg
 Handle_HLRAlgo_ListNodeOfListOfBPoint_swigregister = _HLRAlgo.Handle_HLRAlgo_ListNodeOfListOfBPoint_swigregister
 Handle_HLRAlgo_ListNodeOfListOfBPoint_swigregister(Handle_HLRAlgo_ListNodeOfListOfBPoint)
 
-def Handle_HLRAlgo_ListNodeOfListOfBPoint_DownCast(*args):
+def Handle_HLRAlgo_ListNodeOfListOfBPoint_DownCast(*args) -> "Handle_HLRAlgo_ListNodeOfListOfBPoint const" :
   return _HLRAlgo.Handle_HLRAlgo_ListNodeOfListOfBPoint_DownCast(*args)
 Handle_HLRAlgo_ListNodeOfListOfBPoint_DownCast = _HLRAlgo.Handle_HLRAlgo_ListNodeOfListOfBPoint_DownCast
 
@@ -3017,7 +3017,7 @@ class HLRAlgo_ListOfBPoint(object):
 
         """
         _HLRAlgo.HLRAlgo_ListOfBPoint_swiginit(self,_HLRAlgo.new_HLRAlgo_ListOfBPoint(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRAlgo_ListOfBPoint &
@@ -3026,7 +3026,7 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRAlgo_ListOfBPoint &
@@ -3035,28 +3035,28 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_BiPoint &
@@ -3075,7 +3075,7 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_BiPoint &
@@ -3094,28 +3094,28 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "HLRAlgo_BiPoint &" :
         """
         :rtype: HLRAlgo_BiPoint
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "HLRAlgo_BiPoint &" :
         """
         :rtype: HLRAlgo_BiPoint
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: HLRAlgo_ListIteratorOfListOfBPoint &
@@ -3124,7 +3124,7 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_BiPoint &
@@ -3141,7 +3141,7 @@ class HLRAlgo_ListOfBPoint(object):
         """
         return _HLRAlgo.HLRAlgo_ListOfBPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRAlgo_BiPoint &
@@ -3192,7 +3192,7 @@ class HLRAlgo_PolyAlgo(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_PolyAlgo_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyAlgo(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param HShell:
         :type HShell: Handle_TColStd_HArray1OfTransient &
@@ -3201,21 +3201,21 @@ class HLRAlgo_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_Init(self, *args)
 
-    def PolyShell(self, *args):
+    def PolyShell(self, *args) -> "TColStd_Array1OfTransient &" :
         """
         :rtype: TColStd_Array1OfTransient
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_PolyShell(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_Clear(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Prepare all the data to process the algo.
 
@@ -3224,28 +3224,28 @@ class HLRAlgo_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_Update(self, *args)
 
-    def InitHide(self, *args):
+    def InitHide(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_InitHide(self, *args)
 
-    def MoreHide(self, *args):
+    def MoreHide(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_MoreHide(self, *args)
 
-    def NextHide(self, *args):
+    def NextHide(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_NextHide(self, *args)
 
-    def Hide(self, *args):
+    def Hide(self, *args) -> "void" :
         """
         * process hiding between <Pt1> and <Pt2>.
 
@@ -3268,28 +3268,28 @@ class HLRAlgo_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_Hide(self, *args)
 
-    def InitShow(self, *args):
+    def InitShow(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_InitShow(self, *args)
 
-    def MoreShow(self, *args):
+    def MoreShow(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_MoreShow(self, *args)
 
-    def NextShow(self, *args):
+    def NextShow(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_NextShow(self, *args)
 
-    def Show(self, *args):
+    def Show(self, *args) -> "void" :
         """
         * process hiding between <Pt1> and <Pt2>.
 
@@ -3310,11 +3310,11 @@ class HLRAlgo_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyAlgo_Show(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_PolyAlgo self)"""
         return _HLRAlgo.HLRAlgo_PolyAlgo__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_PolyAlgo" :
         """GetHandle(HLRAlgo_PolyAlgo self) -> Handle_HLRAlgo_PolyAlgo"""
         return _HLRAlgo.HLRAlgo_PolyAlgo_GetHandle(self)
 
@@ -3364,7 +3364,7 @@ Handle_HLRAlgo_PolyAlgo._kill_pointed = new_instancemethod(_HLRAlgo.Handle_HLRAl
 Handle_HLRAlgo_PolyAlgo_swigregister = _HLRAlgo.Handle_HLRAlgo_PolyAlgo_swigregister
 Handle_HLRAlgo_PolyAlgo_swigregister(Handle_HLRAlgo_PolyAlgo)
 
-def Handle_HLRAlgo_PolyAlgo_DownCast(*args):
+def Handle_HLRAlgo_PolyAlgo_DownCast(*args) -> "Handle_HLRAlgo_PolyAlgo const" :
   return _HLRAlgo.Handle_HLRAlgo_PolyAlgo_DownCast(*args)
 Handle_HLRAlgo_PolyAlgo_DownCast = _HLRAlgo.Handle_HLRAlgo_PolyAlgo_DownCast
 
@@ -3377,7 +3377,7 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_PolyData_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyData(*args))
-    def HNodes(self, *args):
+    def HNodes(self, *args) -> "void" :
         """
         :param HNodes:
         :type HNodes: Handle_TColgp_HArray1OfXYZ
@@ -3386,7 +3386,7 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_HNodes(self, *args)
 
-    def HTData(self, *args):
+    def HTData(self, *args) -> "void" :
         """
         :param HTData:
         :type HTData: Handle_HLRAlgo_HArray1OfTData &
@@ -3395,7 +3395,7 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_HTData(self, *args)
 
-    def HPHDat(self, *args):
+    def HPHDat(self, *args) -> "void" :
         """
         :param HPHDat:
         :type HPHDat: Handle_HLRAlgo_HArray1OfPHDat &
@@ -3404,7 +3404,7 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_HPHDat(self, *args)
 
-    def FaceIndex(self, *args):
+    def FaceIndex(self, *args) -> "Standard_Integer" :
         """
         :param I:
         :type I: int
@@ -3415,28 +3415,28 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_FaceIndex(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "TColgp_Array1OfXYZ &" :
         """
         :rtype: TColgp_Array1OfXYZ
 
         """
         return _HLRAlgo.HLRAlgo_PolyData_Nodes(self, *args)
 
-    def TData(self, *args):
+    def TData(self, *args) -> "HLRAlgo_Array1OfTData &" :
         """
         :rtype: HLRAlgo_Array1OfTData
 
         """
         return _HLRAlgo.HLRAlgo_PolyData_TData(self, *args)
 
-    def PHDat(self, *args):
+    def PHDat(self, *args) -> "HLRAlgo_Array1OfPHDat &" :
         """
         :rtype: HLRAlgo_Array1OfPHDat
 
         """
         return _HLRAlgo.HLRAlgo_PolyData_PHDat(self, *args)
 
-    def UpdateGlobalMinMax(self, *args):
+    def UpdateGlobalMinMax(self, *args) -> "void" :
         """
         :param ToTMinMax:
         :type ToTMinMax: Standard_Address
@@ -3445,14 +3445,14 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_UpdateGlobalMinMax(self, *args)
 
-    def Hiding(self, *args):
+    def Hiding(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_PolyData_Hiding(self, *args)
 
-    def HideByPolyData(self, *args):
+    def HideByPolyData(self, *args) -> "void" :
         """
         * process hiding between <Pt1> and <Pt2>.
 
@@ -3471,18 +3471,18 @@ class HLRAlgo_PolyData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyData_HideByPolyData(self, *args)
 
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_PolyData_Indices(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_PolyData self)"""
         return _HLRAlgo.HLRAlgo_PolyData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_PolyData" :
         """GetHandle(HLRAlgo_PolyData self) -> Handle_HLRAlgo_PolyData"""
         return _HLRAlgo.HLRAlgo_PolyData_GetHandle(self)
 
@@ -3531,7 +3531,7 @@ Handle_HLRAlgo_PolyData._kill_pointed = new_instancemethod(_HLRAlgo.Handle_HLRAl
 Handle_HLRAlgo_PolyData_swigregister = _HLRAlgo.Handle_HLRAlgo_PolyData_swigregister
 Handle_HLRAlgo_PolyData_swigregister(Handle_HLRAlgo_PolyData)
 
-def Handle_HLRAlgo_PolyData_DownCast(*args):
+def Handle_HLRAlgo_PolyData_DownCast(*args) -> "Handle_HLRAlgo_PolyData const" :
   return _HLRAlgo.Handle_HLRAlgo_PolyData_DownCast(*args)
 Handle_HLRAlgo_PolyData_DownCast = _HLRAlgo.Handle_HLRAlgo_PolyData_DownCast
 
@@ -3544,7 +3544,7 @@ class HLRAlgo_PolyHidingData(object):
 
         """
         _HLRAlgo.HLRAlgo_PolyHidingData_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyHidingData(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3565,14 +3565,14 @@ class HLRAlgo_PolyHidingData(object):
         """
         return _HLRAlgo.HLRAlgo_PolyHidingData_Set(self, *args)
 
-    def IndexAndMinMax(self, *args):
+    def IndexAndMinMax(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_PolyHidingData_IndexAndMinMax(self, *args)
 
-    def Plan(self, *args):
+    def Plan(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -3607,7 +3607,7 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_PolyInternalData_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyInternalData(*args))
-    def AddNode(self, *args):
+    def AddNode(self, *args) -> "Standard_Integer" :
         """
         :param Nod1RValues:
         :type Nod1RValues: Standard_Address
@@ -3630,7 +3630,7 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_AddNode(self, *args)
 
-    def UpdateLinks(self, *args):
+    def UpdateLinks(self, *args) -> "void" :
         """
         :param TData:
         :type TData: Standard_Address &
@@ -3663,14 +3663,14 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_UpdateLinks(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_Dump(self, *args)
 
-    def IncTData(self, *args):
+    def IncTData(self, *args) -> "void" :
         """
         :param TData1:
         :type TData1: Standard_Address &
@@ -3681,7 +3681,7 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_IncTData(self, *args)
 
-    def IncPISeg(self, *args):
+    def IncPISeg(self, *args) -> "void" :
         """
         :param PISeg1:
         :type PISeg1: Standard_Address &
@@ -3692,7 +3692,7 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_IncPISeg(self, *args)
 
-    def IncPINod(self, *args):
+    def IncPINod(self, *args) -> "void" :
         """
         :param PINod1:
         :type PINod1: Standard_Address &
@@ -3703,49 +3703,49 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_IncPINod(self, *args)
 
-    def DecTData(self, *args):
+    def DecTData(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_DecTData(self, *args)
 
-    def DecPISeg(self, *args):
+    def DecPISeg(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_DecPISeg(self, *args)
 
-    def DecPINod(self, *args):
+    def DecPINod(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_DecPINod(self, *args)
 
-    def NbTData(self, *args):
+    def NbTData(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_NbTData(self, *args)
 
-    def NbPISeg(self, *args):
+    def NbPISeg(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_NbPISeg(self, *args)
 
-    def NbPINod(self, *args):
+    def NbPINod(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_NbPINod(self, *args)
 
-    def Planar(self, *args):
+    def Planar(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -3756,7 +3756,7 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_Planar(self, *args)
 
-    def IntOutL(self, *args):
+    def IntOutL(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -3767,32 +3767,32 @@ class HLRAlgo_PolyInternalData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_IntOutL(self, *args)
 
-    def TData(self, *args):
+    def TData(self, *args) -> "HLRAlgo_Array1OfTData &" :
         """
         :rtype: HLRAlgo_Array1OfTData
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_TData(self, *args)
 
-    def PISeg(self, *args):
+    def PISeg(self, *args) -> "HLRAlgo_Array1OfPISeg &" :
         """
         :rtype: HLRAlgo_Array1OfPISeg
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_PISeg(self, *args)
 
-    def PINod(self, *args):
+    def PINod(self, *args) -> "HLRAlgo_Array1OfPINod &" :
         """
         :rtype: HLRAlgo_Array1OfPINod
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalData_PINod(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_PolyInternalData self)"""
         return _HLRAlgo.HLRAlgo_PolyInternalData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_PolyInternalData" :
         """GetHandle(HLRAlgo_PolyInternalData self) -> Handle_HLRAlgo_PolyInternalData"""
         return _HLRAlgo.HLRAlgo_PolyInternalData_GetHandle(self)
 
@@ -3847,7 +3847,7 @@ Handle_HLRAlgo_PolyInternalData._kill_pointed = new_instancemethod(_HLRAlgo.Hand
 Handle_HLRAlgo_PolyInternalData_swigregister = _HLRAlgo.Handle_HLRAlgo_PolyInternalData_swigregister
 Handle_HLRAlgo_PolyInternalData_swigregister(Handle_HLRAlgo_PolyInternalData)
 
-def Handle_HLRAlgo_PolyInternalData_DownCast(*args):
+def Handle_HLRAlgo_PolyInternalData_DownCast(*args) -> "Handle_HLRAlgo_PolyInternalData const" :
   return _HLRAlgo.Handle_HLRAlgo_PolyInternalData_DownCast(*args)
 Handle_HLRAlgo_PolyInternalData_DownCast = _HLRAlgo.Handle_HLRAlgo_PolyInternalData_DownCast
 
@@ -3860,25 +3860,25 @@ class HLRAlgo_PolyInternalNode(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_PolyInternalNode_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyInternalNode(*args))
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalNode_Indices(self, *args)
 
-    def RValues(self, *args):
+    def RValues(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_PolyInternalNode_RValues(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_PolyInternalNode self)"""
         return _HLRAlgo.HLRAlgo_PolyInternalNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_PolyInternalNode" :
         """GetHandle(HLRAlgo_PolyInternalNode self) -> Handle_HLRAlgo_PolyInternalNode"""
         return _HLRAlgo.HLRAlgo_PolyInternalNode_GetHandle(self)
 
@@ -3918,7 +3918,7 @@ Handle_HLRAlgo_PolyInternalNode._kill_pointed = new_instancemethod(_HLRAlgo.Hand
 Handle_HLRAlgo_PolyInternalNode_swigregister = _HLRAlgo.Handle_HLRAlgo_PolyInternalNode_swigregister
 Handle_HLRAlgo_PolyInternalNode_swigregister(Handle_HLRAlgo_PolyInternalNode)
 
-def Handle_HLRAlgo_PolyInternalNode_DownCast(*args):
+def Handle_HLRAlgo_PolyInternalNode_DownCast(*args) -> "Handle_HLRAlgo_PolyInternalNode const" :
   return _HLRAlgo.Handle_HLRAlgo_PolyInternalNode_DownCast(*args)
 Handle_HLRAlgo_PolyInternalNode_DownCast = _HLRAlgo.Handle_HLRAlgo_PolyInternalNode_DownCast
 
@@ -3931,7 +3931,7 @@ class HLRAlgo_PolyInternalSegment(object):
 
         """
         _HLRAlgo.HLRAlgo_PolyInternalSegment_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyInternalSegment(*args))
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -3962,7 +3962,7 @@ class HLRAlgo_PolyShellData(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_PolyShellData_swiginit(self,_HLRAlgo.new_HLRAlgo_PolyShellData(*args))
-    def UpdateGlobalMinMax(self, *args):
+    def UpdateGlobalMinMax(self, *args) -> "void" :
         """
         :param TotMinMax:
         :type TotMinMax: Standard_Address
@@ -3971,7 +3971,7 @@ class HLRAlgo_PolyShellData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_UpdateGlobalMinMax(self, *args)
 
-    def UpdateHiding(self, *args):
+    def UpdateHiding(self, *args) -> "void" :
         """
         :param nbHiding:
         :type nbHiding: int
@@ -3980,46 +3980,46 @@ class HLRAlgo_PolyShellData(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_UpdateHiding(self, *args)
 
-    def Hiding(self, *args):
+    def Hiding(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_Hiding(self, *args)
 
-    def PolyData(self, *args):
+    def PolyData(self, *args) -> "TColStd_Array1OfTransient &" :
         """
         :rtype: TColStd_Array1OfTransient
 
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_PolyData(self, *args)
 
-    def HidingPolyData(self, *args):
+    def HidingPolyData(self, *args) -> "TColStd_Array1OfTransient &" :
         """
         :rtype: TColStd_Array1OfTransient
 
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_HidingPolyData(self, *args)
 
-    def Edges(self, *args):
+    def Edges(self, *args) -> "HLRAlgo_ListOfBPoint &" :
         """
         :rtype: HLRAlgo_ListOfBPoint
 
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_Edges(self, *args)
 
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_PolyShellData_Indices(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_PolyShellData self)"""
         return _HLRAlgo.HLRAlgo_PolyShellData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_PolyShellData" :
         """GetHandle(HLRAlgo_PolyShellData self) -> Handle_HLRAlgo_PolyShellData"""
         return _HLRAlgo.HLRAlgo_PolyShellData_GetHandle(self)
 
@@ -4064,7 +4064,7 @@ Handle_HLRAlgo_PolyShellData._kill_pointed = new_instancemethod(_HLRAlgo.Handle_
 Handle_HLRAlgo_PolyShellData_swigregister = _HLRAlgo.Handle_HLRAlgo_PolyShellData_swigregister
 Handle_HLRAlgo_PolyShellData_swigregister(Handle_HLRAlgo_PolyShellData)
 
-def Handle_HLRAlgo_PolyShellData_DownCast(*args):
+def Handle_HLRAlgo_PolyShellData_DownCast(*args) -> "Handle_HLRAlgo_PolyShellData const" :
   return _HLRAlgo.Handle_HLRAlgo_PolyShellData_DownCast(*args)
 Handle_HLRAlgo_PolyShellData_DownCast = _HLRAlgo.Handle_HLRAlgo_PolyShellData_DownCast
 
@@ -4117,7 +4117,7 @@ class HLRAlgo_Projector(object):
 
         """
         _HLRAlgo.HLRAlgo_Projector_swiginit(self,_HLRAlgo.new_HLRAlgo_Projector(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Trsf
@@ -4130,7 +4130,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Set(self, *args)
 
-    def Directions(self, *args):
+    def Directions(self, *args) -> "void" :
         """
         :param D1:
         :type D1: gp_Vec2d
@@ -4143,7 +4143,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Directions(self, *args)
 
-    def Scaled(self, *args):
+    def Scaled(self, *args) -> "void" :
         """
         * to compute with the given scale and translation.
 
@@ -4154,7 +4154,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Scaled(self, *args)
 
-    def Perspective(self, *args):
+    def Perspective(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a perspective transformation.
 
@@ -4163,7 +4163,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Perspective(self, *args)
 
-    def Transformation(self, *args):
+    def Transformation(self, *args) -> "gp_Trsf const" :
         """
         * Returns the active transformation.
 
@@ -4172,7 +4172,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Transformation(self, *args)
 
-    def InvertedTransformation(self, *args):
+    def InvertedTransformation(self, *args) -> "gp_Trsf const" :
         """
         * Returns the active inverted transformation.
 
@@ -4181,7 +4181,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_InvertedTransformation(self, *args)
 
-    def FullTransformation(self, *args):
+    def FullTransformation(self, *args) -> "gp_Trsf const" :
         """
         * Returns the original transformation.
 
@@ -4190,7 +4190,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_FullTransformation(self, *args)
 
-    def Focus(self, *args):
+    def Focus(self, *args) -> "Standard_Real" :
         """
         * Returns the focal length.
 
@@ -4199,7 +4199,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Focus(self, *args)
 
-    def Transform(self, *args):
+    def Transform(self, *args) -> "void" :
         """
         :param D:
         :type D: gp_Vec
@@ -4212,7 +4212,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Transform(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         * Transform and apply perspective if needed.
 
@@ -4249,7 +4249,7 @@ class HLRAlgo_Projector(object):
         """
         return _HLRAlgo.HLRAlgo_Projector_Project(self, *args)
 
-    def Shoot(self, *args):
+    def Shoot(self, *args) -> "gp_Lin" :
         """
         * return a line going through the eye towards the 2d point <X,Y>.
 
@@ -4294,7 +4294,7 @@ class HLRAlgo_TriangleData(object):
 
         """
         _HLRAlgo.HLRAlgo_TriangleData_swiginit(self,_HLRAlgo.new_HLRAlgo_TriangleData(*args))
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -4327,14 +4327,14 @@ class HLRAlgo_WiresBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRAlgo.HLRAlgo_WiresBlock_swiginit(self,_HLRAlgo.new_HLRAlgo_WiresBlock(*args))
-    def NbWires(self, *args):
+    def NbWires(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRAlgo.HLRAlgo_WiresBlock_NbWires(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -4345,7 +4345,7 @@ class HLRAlgo_WiresBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_WiresBlock_Set(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "Handle_HLRAlgo_EdgesBlock &" :
         """
         :param I:
         :type I: int
@@ -4354,7 +4354,7 @@ class HLRAlgo_WiresBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_WiresBlock_Wire(self, *args)
 
-    def UpdateMinMax(self, *args):
+    def UpdateMinMax(self, *args) -> "void" :
         """
         :param TotMinMax:
         :type TotMinMax: Standard_Address
@@ -4363,18 +4363,18 @@ class HLRAlgo_WiresBlock(OCC.MMgt.MMgt_TShared):
         """
         return _HLRAlgo.HLRAlgo_WiresBlock_UpdateMinMax(self, *args)
 
-    def MinMax(self, *args):
+    def MinMax(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _HLRAlgo.HLRAlgo_WiresBlock_MinMax(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRAlgo_WiresBlock self)"""
         return _HLRAlgo.HLRAlgo_WiresBlock__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRAlgo_WiresBlock" :
         """GetHandle(HLRAlgo_WiresBlock self) -> Handle_HLRAlgo_WiresBlock"""
         return _HLRAlgo.HLRAlgo_WiresBlock_GetHandle(self)
 
@@ -4417,7 +4417,7 @@ Handle_HLRAlgo_WiresBlock._kill_pointed = new_instancemethod(_HLRAlgo.Handle_HLR
 Handle_HLRAlgo_WiresBlock_swigregister = _HLRAlgo.Handle_HLRAlgo_WiresBlock_swigregister
 Handle_HLRAlgo_WiresBlock_swigregister(Handle_HLRAlgo_WiresBlock)
 
-def Handle_HLRAlgo_WiresBlock_DownCast(*args):
+def Handle_HLRAlgo_WiresBlock_DownCast(*args) -> "Handle_HLRAlgo_WiresBlock const" :
   return _HLRAlgo.Handle_HLRAlgo_WiresBlock_DownCast(*args)
 Handle_HLRAlgo_WiresBlock_DownCast = _HLRAlgo.Handle_HLRAlgo_WiresBlock_DownCast
 

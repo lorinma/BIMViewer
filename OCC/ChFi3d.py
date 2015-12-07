@@ -156,7 +156,7 @@ ChFi3d_Polynomial = _ChFi3d.ChFi3d_Polynomial
 class chfi3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ConcaveSide(*args):
+    def ConcaveSide(*args) -> "Standard_Integer" :
         """
         * Returns Reversed in Or1 and(or) Or2 if the concave edge defined by the interior of faces F1 and F2, in the neighbourhood of their boundary E is of the edge opposite to the normal of their surface support. The orientation of faces is not taken into consideration in the calculation. The function returns 0 if the calculation fails (tangence), if not, it returns the number of choice of the fillet or chamfer corresponding to the orientations calculated and to the tangent to the guide line read in E.
 
@@ -176,7 +176,7 @@ class chfi3d(object):
         return _ChFi3d.chfi3d_ConcaveSide(*args)
 
     ConcaveSide = staticmethod(ConcaveSide)
-    def NextSide(*args):
+    def NextSide(*args) -> "void" :
         """
         * Same as ConcaveSide, but the orientations are logically deduced from the result of the call of ConcaveSide on the first pair of faces of the fillet or chamnfer.
 
@@ -206,7 +206,7 @@ class chfi3d(object):
         return _ChFi3d.chfi3d_NextSide(*args)
 
     NextSide = staticmethod(NextSide)
-    def SameSide(*args):
+    def SameSide(*args) -> "Standard_Boolean" :
         """
         * Enables to determine while processing an angle, if two fillets or chamfers constituting a face have identic or opposed concave edges.
 
@@ -240,7 +240,7 @@ chfi3d._kill_pointed = new_instancemethod(_ChFi3d.chfi3d__kill_pointed,None,chfi
 chfi3d_swigregister = _ChFi3d.chfi3d_swigregister
 chfi3d_swigregister(chfi3d)
 
-def chfi3d_ConcaveSide(*args):
+def chfi3d_ConcaveSide(*args) -> "Standard_Integer" :
   """
     * Returns Reversed in Or1 and(or) Or2 if the concave edge defined by the interior of faces F1 and F2, in the neighbourhood of their boundary E is of the edge opposite to the normal of their surface support. The orientation of faces is not taken into consideration in the calculation. The function returns 0 if the calculation fails (tangence), if not, it returns the number of choice of the fillet or chamfer corresponding to the orientations calculated and to the tangent to the guide line read in E.
 
@@ -259,7 +259,7 @@ def chfi3d_ConcaveSide(*args):
     """
   return _ChFi3d.chfi3d_ConcaveSide(*args)
 
-def chfi3d_NextSide(*args):
+def chfi3d_NextSide(*args) -> "void" :
   """
     * Same as ConcaveSide, but the orientations are logically deduced from the result of the call of ConcaveSide on the first pair of faces of the fillet or chamnfer.
 
@@ -288,7 +288,7 @@ def chfi3d_NextSide(*args):
     """
   return _ChFi3d.chfi3d_NextSide(*args)
 
-def chfi3d_SameSide(*args):
+def chfi3d_SameSide(*args) -> "Standard_Boolean" :
   """
     * Enables to determine while processing an angle, if two fillets or chamfers constituting a face have identic or opposed concave edges.
 
@@ -311,14 +311,14 @@ class ChFi3d_Builder(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _ChFi3d.ChFi3d_Builder_Delete(self, *args)
 
-    def SetParams(self, *args):
+    def SetParams(self, *args) -> "void" :
         """
         :param Tang:
         :type Tang: float
@@ -337,7 +337,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_SetParams(self, *args)
 
-    def SetContinuity(self, *args):
+    def SetContinuity(self, *args) -> "void" :
         """
         :param InternalContinuity:
         :type InternalContinuity: GeomAbs_Shape
@@ -348,7 +348,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_SetContinuity(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * extracts from the list the contour containing edge E.
 
@@ -359,7 +359,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Remove(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Integer" :
         """
         * gives the number of the contour containing E or 0 if E does not belong to any contour.
 
@@ -378,7 +378,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Contains(self, *args)
 
-    def NbElements(self, *args):
+    def NbElements(self, *args) -> "Standard_Integer" :
         """
         * gives the number of disjoint contours on which the fillets are calculated
 
@@ -387,7 +387,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_NbElements(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ChFiDS_Spine" :
         """
         * gives the n'th set of edges (contour) if I >NbElements()
 
@@ -398,7 +398,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Value(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Real" :
         """
         * returns the length of the contour of index IC.
 
@@ -409,7 +409,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Length(self, *args)
 
-    def FirstVertex(self, *args):
+    def FirstVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * returns the First vertex V of the contour of index IC.
 
@@ -420,7 +420,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_FirstVertex(self, *args)
 
-    def LastVertex(self, *args):
+    def LastVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * returns the Last vertex V of the contour of index IC.
 
@@ -431,7 +431,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_LastVertex(self, *args)
 
-    def Abscissa(self, *args):
+    def Abscissa(self, *args) -> "Standard_Real" :
         """
         * returns the abscissa of the vertex V on the contour of index IC.
 
@@ -444,7 +444,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Abscissa(self, *args)
 
-    def RelativeAbscissa(self, *args):
+    def RelativeAbscissa(self, *args) -> "Standard_Real" :
         """
         * returns the relative abscissa([0.,1.]) of the vertex V on the contour of index IC.
 
@@ -457,7 +457,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_RelativeAbscissa(self, *args)
 
-    def ClosedAndTangent(self, *args):
+    def ClosedAndTangent(self, *args) -> "Standard_Boolean" :
         """
         * returns true if the contour of index IC is closed an tangent.
 
@@ -468,7 +468,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_ClosedAndTangent(self, *args)
 
-    def Closed(self, *args):
+    def Closed(self, *args) -> "Standard_Boolean" :
         """
         * returns true if the contour of index IC is closed
 
@@ -479,7 +479,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Closed(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * general calculation of geometry on all edges, topologic reconstruction.
 
@@ -488,7 +488,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Compute(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the computation is success
 
@@ -497,7 +497,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_IsDone(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * if (Isdone()) makes the result. if (!Isdone())
 
@@ -506,7 +506,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Shape(self, *args)
 
-    def Generated(self, *args):
+    def Generated(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Advanced function for the history
 
@@ -517,7 +517,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Generated(self, *args)
 
-    def NbFaultyContours(self, *args):
+    def NbFaultyContours(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of contours on which the calculation has failed.
 
@@ -526,7 +526,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_NbFaultyContours(self, *args)
 
-    def FaultyContour(self, *args):
+    def FaultyContour(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of I'th contour on which the calculation has failed.
 
@@ -537,7 +537,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_FaultyContour(self, *args)
 
-    def NbComputedSurfaces(self, *args):
+    def NbComputedSurfaces(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of surfaces calculated on the contour IC.
 
@@ -548,7 +548,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_NbComputedSurfaces(self, *args)
 
-    def ComputedSurface(self, *args):
+    def ComputedSurface(self, *args) -> "Handle_Geom_Surface" :
         """
         * Returns the IS'th surface calculated on the contour IC.
 
@@ -561,7 +561,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_ComputedSurface(self, *args)
 
-    def NbFaultyVertices(self, *args):
+    def NbFaultyVertices(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of vertices on which the calculation has failed.
 
@@ -570,7 +570,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_NbFaultyVertices(self, *args)
 
-    def FaultyVertex(self, *args):
+    def FaultyVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * Returns the IV'th vertex on which the calculation has failed.
 
@@ -581,7 +581,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_FaultyVertex(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         * returns True if a partial result has been calculated
 
@@ -590,7 +590,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_HasResult(self, *args)
 
-    def BadShape(self, *args):
+    def BadShape(self, *args) -> "TopoDS_Shape" :
         """
         * if (HasResult()) returns partial result if (!HasResult())
 
@@ -599,7 +599,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_BadShape(self, *args)
 
-    def StripeStatus(self, *args):
+    def StripeStatus(self, *args) -> "ChFiDS_ErrorStatus" :
         """
         * for the stripe IC ,indication on the cause of failure WalkingFailure,TwistedSurface,Error, Ok
 
@@ -610,7 +610,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_StripeStatus(self, *args)
 
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Reset all results of compute and returns the algorythm in the state of the last acquisition to enable modification of contours or areas.
 
@@ -619,7 +619,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Reset(self, *args)
 
-    def Builder(self, *args):
+    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder" :
         """
         * Returns the Builder of topologic operations.
 
@@ -628,7 +628,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_Builder(self, *args)
 
-    def SplitKPart(self, *args):
+    def SplitKPart(self, *args) -> "Standard_Boolean" :
         """
         * Method, implemented in the inheritants, calculates the elements of construction of the surface (fillet or chamfer).
 
@@ -657,7 +657,7 @@ class ChFi3d_Builder(object):
         """
         return _ChFi3d.ChFi3d_Builder_SplitKPart(self, *args)
 
-    def PerformTwoCornerbyInter(self, *args):
+    def PerformTwoCornerbyInter(self, *args) -> "Standard_Boolean" :
         """
         :param Index:
         :type Index: int
@@ -722,7 +722,7 @@ class ChFi3d_SearchSing(object):
 
         """
         _ChFi3d.ChFi3d_SearchSing_swiginit(self,_ChFi3d.new_ChFi3d_SearchSing(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the value of the function <F> for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -735,7 +735,7 @@ class ChFi3d_SearchSing(object):
         """
         return _ChFi3d.ChFi3d_SearchSing_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         * computes the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -748,7 +748,7 @@ class ChFi3d_SearchSing(object):
         """
         return _ChFi3d.ChFi3d_SearchSing_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * computes the value <F> and the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -793,7 +793,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
 
         """
         _ChFi3d.ChFi3d_ChBuilder_swiginit(self,_ChFi3d.new_ChFi3d_ChBuilder(*args))
-    def SetDist(self, *args):
+    def SetDist(self, *args) -> "void" :
         """
         * set the distance <Dis> of the fillet contour of index <IC> in the DS with <Dis> on <F>. if the face <F> is not one of common faces of an edge of the contour <IC>
 
@@ -808,7 +808,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_SetDist(self, *args)
 
-    def GetDist(self, *args):
+    def GetDist(self, *args) -> "void" :
         """
         * gives the distances <Dis> of the fillet contour of index <IC> in the DS
 
@@ -821,7 +821,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_GetDist(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * initializes a contour with the edge <E> as first (the next are found by propagation ). The two distances (parameters of the chamfer) must be set after. if the edge <E> has more than 2 adjacent faces
 
@@ -854,7 +854,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_Add(self, *args)
 
-    def SetDists(self, *args):
+    def SetDists(self, *args) -> "void" :
         """
         * set the distances <Dis1> and <Dis2> of the fillet contour of index <IC> in the DS with <Dis1> on <F>. if the face <F> is not one of common faces of an edge of the contour <IC>
 
@@ -871,7 +871,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_SetDists(self, *args)
 
-    def Dists(self, *args):
+    def Dists(self, *args) -> "void" :
         """
         * gives the distances <Dis1> and <Dis2> of the fillet contour of index <IC> in the DS
 
@@ -886,7 +886,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_Dists(self, *args)
 
-    def AddDA(self, *args):
+    def AddDA(self, *args) -> "void" :
         """
         * initializes a new contour with the edge <E> as first (the next are found by propagation ), and the distance <Dis1> and <Angle> if the edge <E> has more than 2 adjacent faces
 
@@ -903,7 +903,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_AddDA(self, *args)
 
-    def SetDistAngle(self, *args):
+    def SetDistAngle(self, *args) -> "void" :
         """
         * set the distance <Dis> and <Angle> of the fillet contour of index <IC> in the DS with <Dis> on <F>. if the face <F> is not one of common faces of an edge of the contour <IC>
 
@@ -920,7 +920,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_SetDistAngle(self, *args)
 
-    def GetDistAngle(self, *args):
+    def GetDistAngle(self, *args) -> "void" :
         """
         * gives the distances <Dis> and <Angle> of the fillet contour of index <IC> in the DS
 
@@ -937,7 +937,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_GetDistAngle(self, *args)
 
-    def IsChamfer(self, *args):
+    def IsChamfer(self, *args) -> "ChFiDS_ChamfMethod" :
         """
         * renvoi la methode des chanfreins utilisee
 
@@ -948,7 +948,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_IsChamfer(self, *args)
 
-    def ResetContour(self, *args):
+    def ResetContour(self, *args) -> "void" :
         """
         * Reset tous rayons du contour IC.
 
@@ -959,7 +959,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_ResetContour(self, *args)
 
-    def Simulate(self, *args):
+    def Simulate(self, *args) -> "void" :
         """
         :param IC:
         :type IC: int
@@ -968,7 +968,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_Simulate(self, *args)
 
-    def NbSurf(self, *args):
+    def NbSurf(self, *args) -> "Standard_Integer" :
         """
         :param IC:
         :type IC: int
@@ -977,7 +977,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_NbSurf(self, *args)
 
-    def Sect(self, *args):
+    def Sect(self, *args) -> "Handle_ChFiDS_SecHArray1" :
         """
         :param IC:
         :type IC: int
@@ -988,7 +988,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_Sect(self, *args)
 
-    def SimulSurf(self, *args):
+    def SimulSurf(self, *args) -> "void" :
         """
         :param Data:
         :type Data: Handle_ChFiDS_SurfData &
@@ -1155,7 +1155,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_SimulSurf(self, *args)
 
-    def PerformSurf(self, *args):
+    def PerformSurf(self, *args) -> "void" :
         """
         * Methode, implemented in inheritants, calculates the elements of construction of the surface (fillet or chamfer).
 
@@ -1380,7 +1380,7 @@ class ChFi3d_ChBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_ChBuilder_PerformSurf(self, *args)
 
-    def FindChoiceDistAngle(self, *args):
+    def FindChoiceDistAngle(self, *args) -> "Standard_Integer" :
         """
         :param Choice:
         :type Choice: int
@@ -1434,7 +1434,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
 
         """
         _ChFi3d.ChFi3d_FilBuilder_swiginit(self,_ChFi3d.new_ChFi3d_FilBuilder(*args))
-    def SetFilletShape(self, *args):
+    def SetFilletShape(self, *args) -> "void" :
         """
         * Sets the type of fillet surface.
 
@@ -1445,7 +1445,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_SetFilletShape(self, *args)
 
-    def GetFilletShape(self, *args):
+    def GetFilletShape(self, *args) -> "ChFi3d_FilletShape" :
         """
         * Returns the type of fillet surface.
 
@@ -1454,7 +1454,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_GetFilletShape(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * initialisation of a contour with the first edge (the following are found by propagation). Attention, you need to start with SetRadius.
 
@@ -1473,7 +1473,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_Add(self, *args)
 
-    def ResetContour(self, *args):
+    def ResetContour(self, *args) -> "void" :
         """
         * Reset all vectors of contour IC.
 
@@ -1484,7 +1484,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_ResetContour(self, *args)
 
-    def UnSet(self, *args):
+    def UnSet(self, *args) -> "void" :
         """
         * Extracts the flag constant and the vector of edge E.
 
@@ -1505,7 +1505,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_UnSet(self, *args)
 
-    def SetRadius(self, *args):
+    def SetRadius(self, *args) -> "void" :
         """
         * Set the radius of the contour of index IC.
 
@@ -1550,7 +1550,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_SetRadius(self, *args)
 
-    def IsConstant(self, *args):
+    def IsConstant(self, *args) -> "Standard_Boolean" :
         """
         * Returns true the contour is flaged as edge constant.
 
@@ -1569,7 +1569,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_IsConstant(self, *args)
 
-    def Radius(self, *args):
+    def Radius(self, *args) -> "Standard_Real" :
         """
         * Returns the vector if the contour is flagged as edge constant.
 
@@ -1588,7 +1588,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_Radius(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "Standard_Boolean" :
         """
         * Returns in First and Last les extremities of the part of variable vector framing E, returns False if E is flagged as edge constant.
 
@@ -1605,7 +1605,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_GetBounds(self, *args)
 
-    def GetLaw(self, *args):
+    def GetLaw(self, *args) -> "Handle_Law_Function" :
         """
         * Returns the rule of elementary evolution of the part to variable vector framing E, returns a rule zero if E is flagged as edge constant.
 
@@ -1618,7 +1618,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_GetLaw(self, *args)
 
-    def SetLaw(self, *args):
+    def SetLaw(self, *args) -> "void" :
         """
         * Sets the rule of elementary evolution of the part to variable vector framing E.
 
@@ -1633,7 +1633,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_SetLaw(self, *args)
 
-    def Simulate(self, *args):
+    def Simulate(self, *args) -> "void" :
         """
         :param IC:
         :type IC: int
@@ -1642,7 +1642,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_Simulate(self, *args)
 
-    def NbSurf(self, *args):
+    def NbSurf(self, *args) -> "Standard_Integer" :
         """
         :param IC:
         :type IC: int
@@ -1651,7 +1651,7 @@ class ChFi3d_FilBuilder(ChFi3d_Builder):
         """
         return _ChFi3d.ChFi3d_FilBuilder_NbSurf(self, *args)
 
-    def Sect(self, *args):
+    def Sect(self, *args) -> "Handle_ChFiDS_SecHArray1" :
         """
         :param IC:
         :type IC: int

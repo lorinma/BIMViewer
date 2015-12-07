@@ -138,21 +138,21 @@ class AppCont_FitFunction(object):
 
         """
         _AppCont.AppCont_FitFunction_swiginit(self,_AppCont.new_AppCont_FitFunction(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AppCont.AppCont_FitFunction_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _AppCont.AppCont_FitFunction_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -203,21 +203,21 @@ class AppCont_FitFunction2d(object):
 
         """
         _AppCont.AppCont_FitFunction2d_swiginit(self,_AppCont.new_AppCont_FitFunction2d(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AppCont.AppCont_FitFunction2d_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _AppCont.AppCont_FitFunction2d_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -249,14 +249,14 @@ class AppCont_Function(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AppCont.AppCont_Function_Delete(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * returns the first parameter of the function.
 
@@ -265,7 +265,7 @@ class AppCont_Function(object):
         """
         return _AppCont.AppCont_Function_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * returns the last parameter of the function.
 
@@ -274,7 +274,7 @@ class AppCont_Function(object):
         """
         return _AppCont.AppCont_Function_LastParameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         * returns the point at parameter <U>.
 
@@ -285,7 +285,7 @@ class AppCont_Function(object):
         """
         return _AppCont.AppCont_Function_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "Standard_Boolean" :
         """
         * returns the point and the derivative values at the parameter <U>.
 
@@ -321,14 +321,14 @@ class AppCont_Function2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AppCont.AppCont_Function2d_Delete(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * returns the first parameter of the function.
 
@@ -337,7 +337,7 @@ class AppCont_Function2d(object):
         """
         return _AppCont.AppCont_Function2d_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * returns the last parameter of the function.
 
@@ -346,7 +346,7 @@ class AppCont_Function2d(object):
         """
         return _AppCont.AppCont_Function2d_LastParameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d" :
         """
         * returns the point at parameter <U>.
 
@@ -357,7 +357,7 @@ class AppCont_Function2d(object):
         """
         return _AppCont.AppCont_Function2d_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "Standard_Boolean" :
         """
         * returns the point and the derivative values at the parameter <U>.
 
@@ -392,7 +392,7 @@ AppCont_Function2d_swigregister(AppCont_Function2d)
 class AppCont_FunctionTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         * returns the first parameter of the Function.
 
@@ -404,7 +404,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         * returns the last parameter of the Function.
 
@@ -416,7 +416,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def NbP2d(*args):
+    def NbP2d(*args) -> "Standard_Integer" :
         """
         * Returns 0.
 
@@ -428,7 +428,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args):
+    def NbP3d(*args) -> "Standard_Integer" :
         """
         * Returns 1. (the approximation will be done only for one function.
 
@@ -440,7 +440,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args):
+    def Value(*args) -> "void" :
         """
         * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -474,7 +474,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args):
+    def D1(*args) -> "Standard_Boolean" :
         """
         * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -522,7 +522,7 @@ AppCont_FunctionTool._kill_pointed = new_instancemethod(_AppCont.AppCont_Functio
 AppCont_FunctionTool_swigregister = _AppCont.AppCont_FunctionTool_swigregister
 AppCont_FunctionTool_swigregister(AppCont_FunctionTool)
 
-def AppCont_FunctionTool_FirstParameter(*args):
+def AppCont_FunctionTool_FirstParameter(*args) -> "Standard_Real" :
   """
     * returns the first parameter of the Function.
 
@@ -533,7 +533,7 @@ def AppCont_FunctionTool_FirstParameter(*args):
     """
   return _AppCont.AppCont_FunctionTool_FirstParameter(*args)
 
-def AppCont_FunctionTool_LastParameter(*args):
+def AppCont_FunctionTool_LastParameter(*args) -> "Standard_Real" :
   """
     * returns the last parameter of the Function.
 
@@ -544,7 +544,7 @@ def AppCont_FunctionTool_LastParameter(*args):
     """
   return _AppCont.AppCont_FunctionTool_LastParameter(*args)
 
-def AppCont_FunctionTool_NbP2d(*args):
+def AppCont_FunctionTool_NbP2d(*args) -> "Standard_Integer" :
   """
     * Returns 0.
 
@@ -555,7 +555,7 @@ def AppCont_FunctionTool_NbP2d(*args):
     """
   return _AppCont.AppCont_FunctionTool_NbP2d(*args)
 
-def AppCont_FunctionTool_NbP3d(*args):
+def AppCont_FunctionTool_NbP3d(*args) -> "Standard_Integer" :
   """
     * Returns 1. (the approximation will be done only for one function.
 
@@ -566,7 +566,7 @@ def AppCont_FunctionTool_NbP3d(*args):
     """
   return _AppCont.AppCont_FunctionTool_NbP3d(*args)
 
-def AppCont_FunctionTool_Value(*args):
+def AppCont_FunctionTool_Value(*args) -> "void" :
   """
     * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -599,7 +599,7 @@ def AppCont_FunctionTool_Value(*args):
     """
   return _AppCont.AppCont_FunctionTool_Value(*args)
 
-def AppCont_FunctionTool_D1(*args):
+def AppCont_FunctionTool_D1(*args) -> "Standard_Boolean" :
   """
     * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -635,7 +635,7 @@ def AppCont_FunctionTool_D1(*args):
 class AppCont_FunctionTool2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         * returns the first parameter of the Function.
 
@@ -647,7 +647,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         * returns the last parameter of the Function.
 
@@ -659,7 +659,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def NbP2d(*args):
+    def NbP2d(*args) -> "Standard_Integer" :
         """
         * Returns 1. (the approximation will be done only for one function.
 
@@ -671,7 +671,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args):
+    def NbP3d(*args) -> "Standard_Integer" :
         """
         * Returns 0.
 
@@ -683,7 +683,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args):
+    def Value(*args) -> "void" :
         """
         * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -717,7 +717,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args):
+    def D1(*args) -> "Standard_Boolean" :
         """
         * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -765,7 +765,7 @@ AppCont_FunctionTool2d._kill_pointed = new_instancemethod(_AppCont.AppCont_Funct
 AppCont_FunctionTool2d_swigregister = _AppCont.AppCont_FunctionTool2d_swigregister
 AppCont_FunctionTool2d_swigregister(AppCont_FunctionTool2d)
 
-def AppCont_FunctionTool2d_FirstParameter(*args):
+def AppCont_FunctionTool2d_FirstParameter(*args) -> "Standard_Real" :
   """
     * returns the first parameter of the Function.
 
@@ -776,7 +776,7 @@ def AppCont_FunctionTool2d_FirstParameter(*args):
     """
   return _AppCont.AppCont_FunctionTool2d_FirstParameter(*args)
 
-def AppCont_FunctionTool2d_LastParameter(*args):
+def AppCont_FunctionTool2d_LastParameter(*args) -> "Standard_Real" :
   """
     * returns the last parameter of the Function.
 
@@ -787,7 +787,7 @@ def AppCont_FunctionTool2d_LastParameter(*args):
     """
   return _AppCont.AppCont_FunctionTool2d_LastParameter(*args)
 
-def AppCont_FunctionTool2d_NbP2d(*args):
+def AppCont_FunctionTool2d_NbP2d(*args) -> "Standard_Integer" :
   """
     * Returns 1. (the approximation will be done only for one function.
 
@@ -798,7 +798,7 @@ def AppCont_FunctionTool2d_NbP2d(*args):
     """
   return _AppCont.AppCont_FunctionTool2d_NbP2d(*args)
 
-def AppCont_FunctionTool2d_NbP3d(*args):
+def AppCont_FunctionTool2d_NbP3d(*args) -> "Standard_Integer" :
   """
     * Returns 0.
 
@@ -809,7 +809,7 @@ def AppCont_FunctionTool2d_NbP3d(*args):
     """
   return _AppCont.AppCont_FunctionTool2d_NbP3d(*args)
 
-def AppCont_FunctionTool2d_Value(*args):
+def AppCont_FunctionTool2d_Value(*args) -> "void" :
   """
     * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -842,7 +842,7 @@ def AppCont_FunctionTool2d_Value(*args):
     """
   return _AppCont.AppCont_FunctionTool2d_Value(*args)
 
-def AppCont_FunctionTool2d_D1(*args):
+def AppCont_FunctionTool2d_D1(*args) -> "Standard_Boolean" :
   """
     * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 

@@ -183,7 +183,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeBox_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeBox(*args))
-    def Wedge(self, *args):
+    def Wedge(self, *args) -> "BRepPrim_Wedge &" :
         """
         * Returns the internal algorithm.
 
@@ -192,7 +192,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_Wedge(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         * Returns the constructed box as a shell.
 
@@ -201,7 +201,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_Shell(self, *args)
 
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         * Returns the constructed box as a solid.
 
@@ -210,7 +210,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_Solid(self, *args)
 
-    def BottomFace(self, *args):
+    def BottomFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns ZMin face
 
@@ -219,7 +219,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_BottomFace(self, *args)
 
-    def BackFace(self, *args):
+    def BackFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns XMin face
 
@@ -228,7 +228,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_BackFace(self, *args)
 
-    def FrontFace(self, *args):
+    def FrontFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns XMax face
 
@@ -237,7 +237,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_FrontFace(self, *args)
 
-    def LeftFace(self, *args):
+    def LeftFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns YMin face
 
@@ -246,7 +246,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_LeftFace(self, *args)
 
-    def RightFace(self, *args):
+    def RightFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns YMax face
 
@@ -255,7 +255,7 @@ class BRepPrimAPI_MakeBox(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeBox_RightFace(self, *args)
 
-    def TopFace(self, *args):
+    def TopFace(self, *args) -> "TopoDS_Face const" :
         """
         * Returns ZMax face
 
@@ -308,7 +308,7 @@ class BRepPrimAPI_MakeHalfSpace(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeHalfSpace_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeHalfSpace(*args))
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         * Returns the constructed half-space as a solid.
 
@@ -334,7 +334,7 @@ class BRepPrimAPI_MakeOneAxis(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def OneAxis(self, *args):
+    def OneAxis(self, *args) -> "Standard_Address" :
         """
         * The inherited commands should provide the algorithm. Returned as a pointer.
 
@@ -343,7 +343,7 @@ class BRepPrimAPI_MakeOneAxis(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeOneAxis_OneAxis(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Returns the lateral face of the rotational primitive.
 
@@ -352,7 +352,7 @@ class BRepPrimAPI_MakeOneAxis(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeOneAxis_Face(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         * Returns the constructed rotational primitive as a shell.
 
@@ -361,7 +361,7 @@ class BRepPrimAPI_MakeOneAxis(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeOneAxis_Shell(self, *args)
 
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         * Returns the constructed rotational primitive as a solid.
 
@@ -390,7 +390,7 @@ class BRepPrimAPI_MakeSweep(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the bottom of the sweep.
 
@@ -399,7 +399,7 @@ class BRepPrimAPI_MakeSweep(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeSweep_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the top of the sweep.
 
@@ -493,7 +493,7 @@ class BRepPrimAPI_MakeWedge(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeWedge_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeWedge(*args))
-    def Wedge(self, *args):
+    def Wedge(self, *args) -> "BRepPrim_Wedge &" :
         """
         * Returns the internal algorithm.
 
@@ -502,7 +502,7 @@ class BRepPrimAPI_MakeWedge(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeWedge_Wedge(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         * Returns the constructed box in the form of a shell.
 
@@ -511,7 +511,7 @@ class BRepPrimAPI_MakeWedge(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeWedge_Shell(self, *args)
 
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         * Returns the constructed box in the form of a solid.
 
@@ -590,7 +590,7 @@ class BRepPrimAPI_MakeCone(BRepPrimAPI_MakeOneAxis):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeCone_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeCone(*args))
-    def Cone(self, *args):
+    def Cone(self, *args) -> "BRepPrim_Cone &" :
         """
         * Missing detailed docstring.
 
@@ -659,7 +659,7 @@ class BRepPrimAPI_MakeCylinder(BRepPrimAPI_MakeOneAxis):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeCylinder_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeCylinder(*args))
-    def Cylinder(self, *args):
+    def Cylinder(self, *args) -> "BRepPrim_Cylinder &" :
         """
         * Missing detailed docstring.
 
@@ -714,7 +714,7 @@ class BRepPrimAPI_MakePrism(BRepPrimAPI_MakeSweep):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakePrism_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakePrism(*args))
-    def Prism(self, *args):
+    def Prism(self, *args) -> "BRepSweep_Prism const &" :
         """
         * Returns the internal sweeping algorithm.
 
@@ -723,7 +723,7 @@ class BRepPrimAPI_MakePrism(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakePrism_Prism(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the bottom of the prism.
 
@@ -738,7 +738,7 @@ class BRepPrimAPI_MakePrism(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakePrism_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the top of the prism. In the case of a finite prism, FirstShape returns the basis of the prism, in other words, S if Copy is false; otherwise, the copy of S belonging to the prism. LastShape returns the copy of S translated by V at the time of construction.
 
@@ -797,7 +797,7 @@ class BRepPrimAPI_MakeRevol(BRepPrimAPI_MakeSweep):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeRevol_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeRevol(*args))
-    def Revol(self, *args):
+    def Revol(self, *args) -> "BRepSweep_Revol const &" :
         """
         * Returns the internal sweeping algorithm.
 
@@ -806,7 +806,7 @@ class BRepPrimAPI_MakeRevol(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeRevol_Revol(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the first shape of the revol (coinciding with the generating shape).
 
@@ -821,7 +821,7 @@ class BRepPrimAPI_MakeRevol(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeRevol_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the end of the revol.
 
@@ -836,7 +836,7 @@ class BRepPrimAPI_MakeRevol(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeRevol_LastShape(self, *args)
 
-    def HasDegenerated(self, *args):
+    def HasDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Check if there are degenerated edges in the result.
 
@@ -845,7 +845,7 @@ class BRepPrimAPI_MakeRevol(BRepPrimAPI_MakeSweep):
         """
         return _BRepPrimAPI.BRepPrimAPI_MakeRevol_HasDegenerated(self, *args)
 
-    def Degenerated(self, *args):
+    def Degenerated(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
@@ -956,7 +956,7 @@ class BRepPrimAPI_MakeRevolution(BRepPrimAPI_MakeOneAxis):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeRevolution_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeRevolution(*args))
-    def Revolution(self, *args):
+    def Revolution(self, *args) -> "BRepPrim_Revolution &" :
         """
         * Missing detailed docstring.
 
@@ -1109,7 +1109,7 @@ class BRepPrimAPI_MakeSphere(BRepPrimAPI_MakeOneAxis):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeSphere_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeSphere(*args))
-    def Sphere(self, *args):
+    def Sphere(self, *args) -> "BRepPrim_Sphere &" :
         """
         * Missing detailed docstring.
 
@@ -1234,7 +1234,7 @@ class BRepPrimAPI_MakeTorus(BRepPrimAPI_MakeOneAxis):
 
         """
         _BRepPrimAPI.BRepPrimAPI_MakeTorus_swiginit(self,_BRepPrimAPI.new_BRepPrimAPI_MakeTorus(*args))
-    def Torus(self, *args):
+    def Torus(self, *args) -> "BRepPrim_Torus &" :
         """
         * Missing detailed docstring.
 

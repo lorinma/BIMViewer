@@ -124,7 +124,7 @@ import OCC.math
 class projlib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Project(*args):
+    def Project(*args) -> "gp_Lin2d" :
         """
         * Projection on a torus.
 
@@ -242,7 +242,7 @@ projlib._kill_pointed = new_instancemethod(_ProjLib.projlib__kill_pointed,None,p
 projlib_swigregister = _ProjLib.projlib_swigregister
 projlib_swigregister(projlib)
 
-def projlib_Project(*args):
+def projlib_Project(*args) -> "gp_Lin2d" :
   """
     * Projection on a torus.
 
@@ -380,7 +380,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
 
         """
         _ProjLib.ProjLib_CompProjectedCurve_swiginit(self,_ProjLib.new_ProjLib_CompProjectedCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * computes a set of projected point and determine the continuous parts of the projected curves. The points corresponding to a projection on the bounds of the surface are included in this set of points.
 
@@ -389,7 +389,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_Init(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Changes the surface.
 
@@ -406,21 +406,21 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_Load(self, *args)
 
-    def GetSurface(self, *args):
+    def GetSurface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
         return _ProjLib.ProjLib_CompProjectedCurve_GetSurface(self, *args)
 
-    def GetCurve(self, *args):
+    def GetCurve(self, *args) -> "Handle_Adaptor3d_HCurve const &" :
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
         return _ProjLib.ProjLib_CompProjectedCurve_GetCurve(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         :param TolU:
         :type TolU: float &
@@ -431,7 +431,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_GetTolerance(self, *args)
 
-    def NbCurves(self, *args):
+    def NbCurves(self, *args) -> "Standard_Integer" :
         """
         * returns the number of continuous part of the projected curve
 
@@ -440,7 +440,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_NbCurves(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         * returns the bounds of the continuous part corresponding to Index
 
@@ -455,7 +455,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_Bounds(self, *args)
 
-    def IsSinglePnt(self, *args):
+    def IsSinglePnt(self, *args) -> "Standard_Boolean" :
         """
         * returns True if part of projection with number Index is a single point and writes its coordinats in P
 
@@ -468,7 +468,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_IsSinglePnt(self, *args)
 
-    def IsUIso(self, *args):
+    def IsUIso(self, *args) -> "Standard_Boolean" :
         """
         * returns True if part of projection with number Index is an u-isoparametric curve of input surface
 
@@ -481,7 +481,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_IsUIso(self, *args)
 
-    def IsVIso(self, *args):
+    def IsVIso(self, *args) -> "Standard_Boolean" :
         """
         * returns True if part of projection with number Index is an v-isoparametric curve of input surface
 
@@ -494,7 +494,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_IsVIso(self, *args)
 
-    def MaxDistance(self, *args):
+    def MaxDistance(self, *args) -> "Standard_Real" :
         """
         * returns the maximum distance between curve to project and surface
 
@@ -505,7 +505,7 @@ class ProjLib_CompProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _ProjLib.ProjLib_CompProjectedCurve_MaxDistance(self, *args)
 
-    def GetSequence(self, *args):
+    def GetSequence(self, *args) -> "Handle_ProjLib_HSequenceOfHSequenceOfPnt const &" :
         """
         :rtype: Handle_ProjLib_HSequenceOfHSequenceOfPnt
 
@@ -553,21 +553,21 @@ class ProjLib_ComputeApprox(object):
 
         """
         _ProjLib.ProjLib_ComputeApprox_swiginit(self,_ProjLib.new_ProjLib_ComputeApprox(*args))
-    def BSpline(self, *args):
+    def BSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _ProjLib.ProjLib_ComputeApprox_BSpline(self, *args)
 
-    def Bezier(self, *args):
+    def Bezier(self, *args) -> "Handle_Geom2d_BezierCurve" :
         """
         :rtype: Handle_Geom2d_BezierCurve
 
         """
         return _ProjLib.ProjLib_ComputeApprox_Bezier(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         * returns the reached Tolerance.
 
@@ -630,7 +630,7 @@ class ProjLib_ComputeApproxOnPolarSurface(object):
 
         """
         _ProjLib.ProjLib_ComputeApproxOnPolarSurface_swiginit(self,_ProjLib.new_ProjLib_ComputeApproxOnPolarSurface(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :param InitCurve2d:
         :type InitCurve2d: Handle_Adaptor2d_HCurve2d &
@@ -643,7 +643,7 @@ class ProjLib_ComputeApproxOnPolarSurface(object):
         """
         return _ProjLib.ProjLib_ComputeApproxOnPolarSurface_Perform(self, *args)
 
-    def BuildInitialCurve2d(self, *args):
+    def BuildInitialCurve2d(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
         """
         :param Curve:
         :type Curve: Handle_Adaptor3d_HCurve &
@@ -654,7 +654,7 @@ class ProjLib_ComputeApproxOnPolarSurface(object):
         """
         return _ProjLib.ProjLib_ComputeApproxOnPolarSurface_BuildInitialCurve2d(self, *args)
 
-    def ProjectUsingInitialCurve2d(self, *args):
+    def ProjectUsingInitialCurve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :param Curve:
         :type Curve: Handle_Adaptor3d_HCurve &
@@ -667,21 +667,21 @@ class ProjLib_ComputeApproxOnPolarSurface(object):
         """
         return _ProjLib.ProjLib_ComputeApproxOnPolarSurface_ProjectUsingInitialCurve2d(self, *args)
 
-    def BSpline(self, *args):
+    def BSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _ProjLib.ProjLib_ComputeApproxOnPolarSurface_BSpline(self, *args)
 
-    def Curve2d(self, *args):
+    def Curve2d(self, *args) -> "Handle_Geom2d_Curve" :
         """
         :rtype: Handle_Geom2d_Curve
 
         """
         return _ProjLib.ProjLib_ComputeApproxOnPolarSurface_Curve2d(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -719,7 +719,7 @@ class ProjLib_HCompProjectedCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
 
         """
         _ProjLib.ProjLib_HCompProjectedCurve_swiginit(self,_ProjLib.new_ProjLib_HCompProjectedCurve(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param C:
         :type C: ProjLib_CompProjectedCurve &
@@ -728,18 +728,18 @@ class ProjLib_HCompProjectedCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
         """
         return _ProjLib.ProjLib_HCompProjectedCurve_Set(self, *args)
 
-    def ChangeCurve2d(self, *args):
+    def ChangeCurve2d(self, *args) -> "ProjLib_CompProjectedCurve &" :
         """
         :rtype: ProjLib_CompProjectedCurve
 
         """
         return _ProjLib.ProjLib_HCompProjectedCurve_ChangeCurve2d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ProjLib_HCompProjectedCurve self)"""
         return _ProjLib.ProjLib_HCompProjectedCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ProjLib_HCompProjectedCurve" :
         """GetHandle(ProjLib_HCompProjectedCurve self) -> Handle_ProjLib_HCompProjectedCurve"""
         return _ProjLib.ProjLib_HCompProjectedCurve_GetHandle(self)
 
@@ -779,7 +779,7 @@ Handle_ProjLib_HCompProjectedCurve._kill_pointed = new_instancemethod(_ProjLib.H
 Handle_ProjLib_HCompProjectedCurve_swigregister = _ProjLib.Handle_ProjLib_HCompProjectedCurve_swigregister
 Handle_ProjLib_HCompProjectedCurve_swigregister(Handle_ProjLib_HCompProjectedCurve)
 
-def Handle_ProjLib_HCompProjectedCurve_DownCast(*args):
+def Handle_ProjLib_HCompProjectedCurve_DownCast(*args) -> "Handle_ProjLib_HCompProjectedCurve const" :
   return _ProjLib.Handle_ProjLib_HCompProjectedCurve_DownCast(*args)
 Handle_ProjLib_HCompProjectedCurve_DownCast = _ProjLib.Handle_ProjLib_HCompProjectedCurve_DownCast
 
@@ -796,7 +796,7 @@ class ProjLib_HProjectedCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
 
         """
         _ProjLib.ProjLib_HProjectedCurve_swiginit(self,_ProjLib.new_ProjLib_HProjectedCurve(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param C:
         :type C: ProjLib_ProjectedCurve &
@@ -805,18 +805,18 @@ class ProjLib_HProjectedCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
         """
         return _ProjLib.ProjLib_HProjectedCurve_Set(self, *args)
 
-    def ChangeCurve2d(self, *args):
+    def ChangeCurve2d(self, *args) -> "ProjLib_ProjectedCurve &" :
         """
         :rtype: ProjLib_ProjectedCurve
 
         """
         return _ProjLib.ProjLib_HProjectedCurve_ChangeCurve2d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ProjLib_HProjectedCurve self)"""
         return _ProjLib.ProjLib_HProjectedCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ProjLib_HProjectedCurve" :
         """GetHandle(ProjLib_HProjectedCurve self) -> Handle_ProjLib_HProjectedCurve"""
         return _ProjLib.ProjLib_HProjectedCurve_GetHandle(self)
 
@@ -856,7 +856,7 @@ Handle_ProjLib_HProjectedCurve._kill_pointed = new_instancemethod(_ProjLib.Handl
 Handle_ProjLib_HProjectedCurve_swigregister = _ProjLib.Handle_ProjLib_HProjectedCurve_swigregister
 Handle_ProjLib_HProjectedCurve_swigregister(Handle_ProjLib_HProjectedCurve)
 
-def Handle_ProjLib_HProjectedCurve_DownCast(*args):
+def Handle_ProjLib_HProjectedCurve_DownCast(*args) -> "Handle_ProjLib_HProjectedCurve const" :
   return _ProjLib.Handle_ProjLib_HProjectedCurve_DownCast(*args)
 Handle_ProjLib_HProjectedCurve_DownCast = _ProjLib.Handle_ProjLib_HProjectedCurve_DownCast
 
@@ -869,28 +869,28 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
 
         """
         _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_swiginit(self,_ProjLib.new_ProjLib_HSequenceOfHSequenceOfPnt(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TColgp_HSequenceOfPnt
@@ -903,7 +903,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TColgp_HSequenceOfPnt
@@ -916,14 +916,14 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -940,7 +940,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -957,7 +957,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -968,7 +968,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_ProjLib_HSequenceOfHSequenceOfPnt" :
         """
         :param anIndex:
         :type anIndex: int
@@ -977,7 +977,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -988,7 +988,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColgp_HSequenceOfPnt const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -997,7 +997,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColgp_HSequenceOfPnt &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1006,7 +1006,7 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1021,32 +1021,32 @@ class ProjLib_HSequenceOfHSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "ProjLib_SequenceOfHSequenceOfPnt const &" :
         """
         :rtype: ProjLib_SequenceOfHSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "ProjLib_SequenceOfHSequenceOfPnt &" :
         """
         :rtype: ProjLib_SequenceOfHSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_ProjLib_HSequenceOfHSequenceOfPnt" :
         """
         :rtype: Handle_ProjLib_HSequenceOfHSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ProjLib_HSequenceOfHSequenceOfPnt self)"""
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ProjLib_HSequenceOfHSequenceOfPnt" :
         """GetHandle(ProjLib_HSequenceOfHSequenceOfPnt self) -> Handle_ProjLib_HSequenceOfHSequenceOfPnt"""
         return _ProjLib.ProjLib_HSequenceOfHSequenceOfPnt_GetHandle(self)
 
@@ -1101,7 +1101,7 @@ Handle_ProjLib_HSequenceOfHSequenceOfPnt._kill_pointed = new_instancemethod(_Pro
 Handle_ProjLib_HSequenceOfHSequenceOfPnt_swigregister = _ProjLib.Handle_ProjLib_HSequenceOfHSequenceOfPnt_swigregister
 Handle_ProjLib_HSequenceOfHSequenceOfPnt_swigregister(Handle_ProjLib_HSequenceOfHSequenceOfPnt)
 
-def Handle_ProjLib_HSequenceOfHSequenceOfPnt_DownCast(*args):
+def Handle_ProjLib_HSequenceOfHSequenceOfPnt_DownCast(*args) -> "Handle_ProjLib_HSequenceOfHSequenceOfPnt const" :
   return _ProjLib.Handle_ProjLib_HSequenceOfHSequenceOfPnt_DownCast(*args)
 Handle_ProjLib_HSequenceOfHSequenceOfPnt_DownCast = _ProjLib.Handle_ProjLib_HSequenceOfHSequenceOfPnt_DownCast
 
@@ -1122,7 +1122,7 @@ class ProjLib_PrjFunc(object):
 
         """
         _ProjLib.ProjLib_PrjFunc_swiginit(self,_ProjLib.new_ProjLib_PrjFunc(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * returns the number of variables of the function.
 
@@ -1131,7 +1131,7 @@ class ProjLib_PrjFunc(object):
         """
         return _ProjLib.ProjLib_PrjFunc_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -1140,7 +1140,7 @@ class ProjLib_PrjFunc(object):
         """
         return _ProjLib.ProjLib_PrjFunc_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1153,7 +1153,7 @@ class ProjLib_PrjFunc(object):
         """
         return _ProjLib.ProjLib_PrjFunc_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1166,7 +1166,7 @@ class ProjLib_PrjFunc(object):
         """
         return _ProjLib.ProjLib_PrjFunc_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1181,7 +1181,7 @@ class ProjLib_PrjFunc(object):
         """
         return _ProjLib.ProjLib_PrjFunc_Values(self, *args)
 
-    def Solution(self, *args):
+    def Solution(self, *args) -> "gp_Pnt2d" :
         """
         * returns point on surface
 
@@ -1223,7 +1223,7 @@ class ProjLib_PrjResolve(object):
 
         """
         _ProjLib.ProjLib_PrjResolve_swiginit(self,_ProjLib.new_ProjLib_PrjResolve(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Calculates the ort from C(t) to S with a close point. The close point is defined by the parameter values U0 and V0. The function F(u,v)=distance(S(u,v),C(t)) has an extremum when gradient(F)=0. The algorithm searchs a zero near the close point.
 
@@ -1248,7 +1248,7 @@ class ProjLib_PrjResolve(object):
         """
         return _ProjLib.ProjLib_PrjResolve_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the distance is found.
 
@@ -1257,7 +1257,7 @@ class ProjLib_PrjResolve(object):
         """
         return _ProjLib.ProjLib_PrjResolve_IsDone(self, *args)
 
-    def Solution(self, *args):
+    def Solution(self, *args) -> "gp_Pnt2d" :
         """
         * Returns the point of the extremum distance.
 
@@ -1306,7 +1306,7 @@ class ProjLib_ProjectOnPlane(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _ProjLib.ProjLib_ProjectOnPlane_swiginit(self,_ProjLib.new_ProjLib_ProjectOnPlane(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Sets the Curve and perform the projection. if <KeepParametrization> is true, the parametrization of the Projected Curve <PC> will be the same as the parametrization of the initial curve <C>. It meens: proj(C(u)) = PC(u) for each u. Otherwize, the parametrization may change.
 
@@ -1321,21 +1321,21 @@ class ProjLib_ProjectOnPlane(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ProjLib.ProjLib_ProjectOnPlane_Load(self, *args)
 
-    def GetPlane(self, *args):
+    def GetPlane(self, *args) -> "gp_Ax3 const" :
         """
         :rtype: gp_Ax3
 
         """
         return _ProjLib.ProjLib_ProjectOnPlane_GetPlane(self, *args)
 
-    def GetDirection(self, *args):
+    def GetDirection(self, *args) -> "gp_Dir const" :
         """
         :rtype: gp_Dir
 
         """
         return _ProjLib.ProjLib_ProjectOnPlane_GetDirection(self, *args)
 
-    def GetCurve(self, *args):
+    def GetCurve(self, *args) -> "Handle_Adaptor3d_HCurve const &" :
         """
         :rtype: Handle_Adaptor3d_HCurve
 
@@ -1375,21 +1375,21 @@ class ProjLib_ProjectOnSurface(object):
 
         """
         _ProjLib.ProjLib_ProjectOnSurface_swiginit(self,_ProjLib.new_ProjLib_ProjectOnSurface(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _ProjLib.ProjLib_ProjectOnSurface_Delete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ProjLib.ProjLib_ProjectOnSurface_IsDone(self, *args)
 
-    def BSpline(self, *args):
+    def BSpline(self, *args) -> "Handle_Geom_BSplineCurve" :
         """
         :rtype: Handle_Geom_BSplineCurve
 
@@ -1438,21 +1438,21 @@ class ProjLib_ProjectedCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
 
         """
         _ProjLib.ProjLib_ProjectedCurve_swiginit(self,_ProjLib.new_ProjLib_ProjectedCurve(*args))
-    def GetSurface(self, *args):
+    def GetSurface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
         return _ProjLib.ProjLib_ProjectedCurve_GetSurface(self, *args)
 
-    def GetCurve(self, *args):
+    def GetCurve(self, *args) -> "Handle_Adaptor3d_HCurve const &" :
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
         return _ProjLib.ProjLib_ProjectedCurve_GetCurve(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "Standard_Real" :
         """
         * returns the tolerance reached if an approximation is Done.
 
@@ -1487,21 +1487,21 @@ class ProjLib_Projector(object):
 
         """
         _ProjLib.ProjLib_Projector_swiginit(self,_ProjLib.new_ProjLib_Projector(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _ProjLib.ProjLib_Projector_Delete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ProjLib.ProjLib_Projector_IsDone(self, *args)
 
-    def Done(self, *args):
+    def Done(self, *args) -> "void" :
         """
         * Set isDone = Standard_True;
 
@@ -1510,14 +1510,14 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_Done(self, *args)
 
-    def GetType(self, *args):
+    def GetType(self, *args) -> "GeomAbs_CurveType" :
         """
         :rtype: GeomAbs_CurveType
 
         """
         return _ProjLib.ProjLib_Projector_GetType(self, *args)
 
-    def SetBSpline(self, *args):
+    def SetBSpline(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_BSplineCurve &
@@ -1526,7 +1526,7 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_SetBSpline(self, *args)
 
-    def SetBezier(self, *args):
+    def SetBezier(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_BezierCurve &
@@ -1535,7 +1535,7 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_SetBezier(self, *args)
 
-    def SetType(self, *args):
+    def SetType(self, *args) -> "void" :
         """
         :param Type:
         :type Type: GeomAbs_CurveType
@@ -1544,70 +1544,70 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_SetType(self, *args)
 
-    def IsPeriodic(self, *args):
+    def IsPeriodic(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ProjLib.ProjLib_Projector_IsPeriodic(self, *args)
 
-    def SetPeriodic(self, *args):
+    def SetPeriodic(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ProjLib.ProjLib_Projector_SetPeriodic(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "gp_Lin2d const" :
         """
         :rtype: gp_Lin2d
 
         """
         return _ProjLib.ProjLib_Projector_Line(self, *args)
 
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ2d const" :
         """
         :rtype: gp_Circ2d
 
         """
         return _ProjLib.ProjLib_Projector_Circle(self, *args)
 
-    def Ellipse(self, *args):
+    def Ellipse(self, *args) -> "gp_Elips2d const" :
         """
         :rtype: gp_Elips2d
 
         """
         return _ProjLib.ProjLib_Projector_Ellipse(self, *args)
 
-    def Hyperbola(self, *args):
+    def Hyperbola(self, *args) -> "gp_Hypr2d const" :
         """
         :rtype: gp_Hypr2d
 
         """
         return _ProjLib.ProjLib_Projector_Hyperbola(self, *args)
 
-    def Parabola(self, *args):
+    def Parabola(self, *args) -> "gp_Parab2d const" :
         """
         :rtype: gp_Parab2d
 
         """
         return _ProjLib.ProjLib_Projector_Parabola(self, *args)
 
-    def Bezier(self, *args):
+    def Bezier(self, *args) -> "Handle_Geom2d_BezierCurve" :
         """
         :rtype: Handle_Geom2d_BezierCurve
 
         """
         return _ProjLib.ProjLib_Projector_Bezier(self, *args)
 
-    def BSpline(self, *args):
+    def BSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _ProjLib.ProjLib_Projector_BSpline(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -1632,7 +1632,7 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_Project(self, *args)
 
-    def UFrame(self, *args):
+    def UFrame(self, *args) -> "void" :
         """
         * Translates the 2d curve to set the part of the curve [CFirst, CLast] in the range [ UFirst, UFirst + Period [
 
@@ -1649,7 +1649,7 @@ class ProjLib_Projector(object):
         """
         return _ProjLib.ProjLib_Projector_UFrame(self, *args)
 
-    def VFrame(self, *args):
+    def VFrame(self, *args) -> "void" :
         """
         * Translates the 2d curve to set the part of the curve [CFirst, CLast] in the range [ VFirst, VFirst + Period [
 
@@ -1712,18 +1712,18 @@ class ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt(OCC.TCollection.TCollection
 
         """
         _ProjLib.ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_swiginit(self,_ProjLib.new_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColgp_HSequenceOfPnt &" :
         """
         :rtype: Handle_TColgp_HSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt self)"""
         return _ProjLib.ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt" :
         """GetHandle(ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt self) -> Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt"""
         return _ProjLib.ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_GetHandle(self)
 
@@ -1762,7 +1762,7 @@ Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt._kill_pointed = new_instan
 Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_swigregister = _ProjLib.Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_swigregister
 Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_swigregister(Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt)
 
-def Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_DownCast(*args):
+def Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_DownCast(*args) -> "Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt const" :
   return _ProjLib.Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_DownCast(*args)
 Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_DownCast = _ProjLib.Handle_ProjLib_SequenceNodeOfSequenceOfHSequenceOfPnt_DownCast
 
@@ -1775,14 +1775,14 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
 
         """
         _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_swiginit(self,_ProjLib.new_ProjLib_SequenceOfHSequenceOfPnt(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ProjLib_SequenceOfHSequenceOfPnt const &" :
         """
         :param Other:
         :type Other: ProjLib_SequenceOfHSequenceOfPnt &
@@ -1791,7 +1791,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ProjLib_SequenceOfHSequenceOfPnt const &" :
         """
         :param Other:
         :type Other: ProjLib_SequenceOfHSequenceOfPnt &
@@ -1800,7 +1800,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColgp_HSequenceOfPnt
@@ -1813,7 +1813,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColgp_HSequenceOfPnt
@@ -1826,7 +1826,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1843,7 +1843,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1860,21 +1860,21 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TColgp_HSequenceOfPnt const &" :
         """
         :rtype: Handle_TColgp_HSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TColgp_HSequenceOfPnt const &" :
         """
         :rtype: Handle_TColgp_HSequenceOfPnt
 
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1885,7 +1885,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColgp_HSequenceOfPnt const &" :
         """
         :param Index:
         :type Index: int
@@ -1894,7 +1894,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1905,7 +1905,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColgp_HSequenceOfPnt &" :
         """
         :param Index:
         :type Index: int
@@ -1914,7 +1914,7 @@ class ProjLib_SequenceOfHSequenceOfPnt(OCC.TCollection.TCollection_BaseSequence)
         """
         return _ProjLib.ProjLib_SequenceOfHSequenceOfPnt_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1988,7 +1988,7 @@ class ProjLib_Cone(ProjLib_Projector):
 
         """
         _ProjLib.ProjLib_Cone_swiginit(self,_ProjLib.new_ProjLib_Cone(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Co:
         :type Co: gp_Cone
@@ -1997,7 +1997,7 @@ class ProjLib_Cone(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Cone_Init(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -2077,7 +2077,7 @@ class ProjLib_Cylinder(ProjLib_Projector):
 
         """
         _ProjLib.ProjLib_Cylinder_swiginit(self,_ProjLib.new_ProjLib_Cylinder(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Cyl:
         :type Cyl: gp_Cylinder
@@ -2086,7 +2086,7 @@ class ProjLib_Cylinder(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Cylinder_Init(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -2182,7 +2182,7 @@ class ProjLib_Plane(ProjLib_Projector):
 
         """
         _ProjLib.ProjLib_Plane_swiginit(self,_ProjLib.new_ProjLib_Plane(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Pl:
         :type Pl: gp_Pln
@@ -2191,7 +2191,7 @@ class ProjLib_Plane(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Plane_Init(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -2255,7 +2255,7 @@ class ProjLib_Sphere(ProjLib_Projector):
 
         """
         _ProjLib.ProjLib_Sphere_swiginit(self,_ProjLib.new_ProjLib_Sphere(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Sp:
         :type Sp: gp_Sphere
@@ -2264,7 +2264,7 @@ class ProjLib_Sphere(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Sphere_Init(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -2289,7 +2289,7 @@ class ProjLib_Sphere(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Sphere_Project(self, *args)
 
-    def SetInBounds(self, *args):
+    def SetInBounds(self, *args) -> "void" :
         """
         * Set the point of parameter U on C in the natural restrictions of the sphere.
 
@@ -2340,7 +2340,7 @@ class ProjLib_Torus(ProjLib_Projector):
 
         """
         _ProjLib.ProjLib_Torus_swiginit(self,_ProjLib.new_ProjLib_Torus(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param To:
         :type To: gp_Torus
@@ -2349,7 +2349,7 @@ class ProjLib_Torus(ProjLib_Projector):
         """
         return _ProjLib.ProjLib_Torus_Init(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin

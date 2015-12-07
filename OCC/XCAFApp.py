@@ -119,7 +119,7 @@ class XCAFApp_Application(OCC.TDocStd.TDocStd_Application):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetApplication(*args):
+    def GetApplication(*args) -> "Handle_XCAFApp_Application" :
         """
         * Initializes (for the first time) and returns the static object (XCAFApp_Application) This is the only valid method to get XCAFApp_Application object, and it should be called at least once before any actions with documents in order to init application
 
@@ -142,7 +142,7 @@ XCAFApp_Application.GetHandle = new_instancemethod(_XCAFApp.XCAFApp_Application_
 XCAFApp_Application_swigregister = _XCAFApp.XCAFApp_Application_swigregister
 XCAFApp_Application_swigregister(XCAFApp_Application)
 
-def XCAFApp_Application_GetApplication(*args):
+def XCAFApp_Application_GetApplication(*args) -> "Handle_XCAFApp_Application" :
   """
     * Initializes (for the first time) and returns the static object (XCAFApp_Application) This is the only valid method to get XCAFApp_Application object, and it should be called at least once before any actions with documents in order to init application
 
@@ -172,7 +172,7 @@ Handle_XCAFApp_Application._kill_pointed = new_instancemethod(_XCAFApp.Handle_XC
 Handle_XCAFApp_Application_swigregister = _XCAFApp.Handle_XCAFApp_Application_swigregister
 Handle_XCAFApp_Application_swigregister(Handle_XCAFApp_Application)
 
-def Handle_XCAFApp_Application_DownCast(*args):
+def Handle_XCAFApp_Application_DownCast(*args) -> "Handle_XCAFApp_Application const" :
   return _XCAFApp.Handle_XCAFApp_Application_DownCast(*args)
 Handle_XCAFApp_Application_DownCast = _XCAFApp.Handle_XCAFApp_Application_DownCast
 

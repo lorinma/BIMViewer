@@ -155,7 +155,7 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
 
         """
         _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_swiginit(self,_BRepSweep.new_BRepSweep_Array2OfShapesOfNumLinearRegularSweep(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -164,14 +164,14 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepSweep_Array2OfShapesOfNumLinearRegularSweep const &" :
         """
         :param Other:
         :type Other: BRepSweep_Array2OfShapesOfNumLinearRegularSweep &
@@ -180,7 +180,7 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepSweep_Array2OfShapesOfNumLinearRegularSweep const &" :
         """
         :param Other:
         :type Other: BRepSweep_Array2OfShapesOfNumLinearRegularSweep &
@@ -189,49 +189,49 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -244,7 +244,7 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         :param Row:
         :type Row: int
@@ -255,7 +255,7 @@ class BRepSweep_Array2OfShapesOfNumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_Array2OfShapesOfNumLinearRegularSweep_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TopoDS_Shape" :
         """
         :param Row:
         :type Row: int
@@ -304,14 +304,14 @@ class BRepSweep_Builder(object):
 
         """
         _BRepSweep.BRepSweep_Builder_swiginit(self,_BRepSweep.new_BRepSweep_Builder(*args))
-    def Builder(self, *args):
+    def Builder(self, *args) -> "BRep_Builder const &" :
         """
         :rtype: BRep_Builder
 
         """
         return _BRepSweep.BRepSweep_Builder_Builder(self, *args)
 
-    def MakeCompound(self, *args):
+    def MakeCompound(self, *args) -> "void" :
         """
         * Returns an empty Compound.
 
@@ -322,7 +322,7 @@ class BRepSweep_Builder(object):
         """
         return _BRepSweep.BRepSweep_Builder_MakeCompound(self, *args)
 
-    def MakeCompSolid(self, *args):
+    def MakeCompSolid(self, *args) -> "void" :
         """
         * Returns an empty CompSolid.
 
@@ -333,7 +333,7 @@ class BRepSweep_Builder(object):
         """
         return _BRepSweep.BRepSweep_Builder_MakeCompSolid(self, *args)
 
-    def MakeSolid(self, *args):
+    def MakeSolid(self, *args) -> "void" :
         """
         * Returns an empty Solid.
 
@@ -344,7 +344,7 @@ class BRepSweep_Builder(object):
         """
         return _BRepSweep.BRepSweep_Builder_MakeSolid(self, *args)
 
-    def MakeShell(self, *args):
+    def MakeShell(self, *args) -> "void" :
         """
         * Returns an empty Shell.
 
@@ -355,7 +355,7 @@ class BRepSweep_Builder(object):
         """
         return _BRepSweep.BRepSweep_Builder_MakeShell(self, *args)
 
-    def MakeWire(self, *args):
+    def MakeWire(self, *args) -> "void" :
         """
         * Returns an empty Wire.
 
@@ -366,7 +366,7 @@ class BRepSweep_Builder(object):
         """
         return _BRepSweep.BRepSweep_Builder_MakeWire(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the Shape 1 in the Shape 2, set to <Orient> orientation.
 
@@ -417,7 +417,7 @@ class BRepSweep_Iterator(object):
 
         """
         _BRepSweep.BRepSweep_Iterator_swiginit(self,_BRepSweep.new_BRepSweep_Iterator(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Resest the Iterator on sub-shapes of <aShape>.
 
@@ -428,7 +428,7 @@ class BRepSweep_Iterator(object):
         """
         return _BRepSweep.BRepSweep_Iterator_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current sub-shape.
 
@@ -437,7 +437,7 @@ class BRepSweep_Iterator(object):
         """
         return _BRepSweep.BRepSweep_Iterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Moves to the next sub-shape.
 
@@ -446,7 +446,7 @@ class BRepSweep_Iterator(object):
         """
         return _BRepSweep.BRepSweep_Iterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the current sub-shape.
 
@@ -455,7 +455,7 @@ class BRepSweep_Iterator(object):
         """
         return _BRepSweep.BRepSweep_Iterator_Value(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the orientation of the current sub-shape.
 
@@ -485,14 +485,14 @@ class BRepSweep_NumLinearRegularSweep(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_Delete(self, *args)
 
-    def MakeEmptyVertex(self, *args):
+    def MakeEmptyVertex(self, *args) -> "TopoDS_Shape" :
         """
         :param aGenV:
         :type aGenV: TopoDS_Shape &
@@ -503,7 +503,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_MakeEmptyVertex(self, *args)
 
-    def MakeEmptyDirectingEdge(self, *args):
+    def MakeEmptyDirectingEdge(self, *args) -> "TopoDS_Shape" :
         """
         :param aGenV:
         :type aGenV: TopoDS_Shape &
@@ -514,7 +514,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_MakeEmptyDirectingEdge(self, *args)
 
-    def MakeEmptyGeneratingEdge(self, *args):
+    def MakeEmptyGeneratingEdge(self, *args) -> "TopoDS_Shape" :
         """
         :param aGenE:
         :type aGenE: TopoDS_Shape &
@@ -525,7 +525,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_MakeEmptyGeneratingEdge(self, *args)
 
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         :param aNewFace:
         :type aNewFace: TopoDS_Shape &
@@ -542,7 +542,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetParameters(self, *args)
 
-    def SetDirectingParameter(self, *args):
+    def SetDirectingParameter(self, *args) -> "void" :
         """
         :param aNewEdge:
         :type aNewEdge: TopoDS_Shape &
@@ -559,7 +559,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetDirectingParameter(self, *args)
 
-    def SetGeneratingParameter(self, *args):
+    def SetGeneratingParameter(self, *args) -> "void" :
         """
         :param aNewEdge:
         :type aNewEdge: TopoDS_Shape &
@@ -576,7 +576,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetGeneratingParameter(self, *args)
 
-    def MakeEmptyFace(self, *args):
+    def MakeEmptyFace(self, *args) -> "TopoDS_Shape" :
         """
         :param aGenS:
         :type aGenS: TopoDS_Shape &
@@ -587,7 +587,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_MakeEmptyFace(self, *args)
 
-    def SetPCurve(self, *args):
+    def SetPCurve(self, *args) -> "void" :
         """
         :param aNewFace:
         :type aNewFace: TopoDS_Shape &
@@ -606,7 +606,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetPCurve(self, *args)
 
-    def SetGeneratingPCurve(self, *args):
+    def SetGeneratingPCurve(self, *args) -> "void" :
         """
         :param aNewFace:
         :type aNewFace: TopoDS_Shape &
@@ -625,7 +625,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetGeneratingPCurve(self, *args)
 
-    def SetDirectingPCurve(self, *args):
+    def SetDirectingPCurve(self, *args) -> "void" :
         """
         :param aNewFace:
         :type aNewFace: TopoDS_Shape &
@@ -644,7 +644,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetDirectingPCurve(self, *args)
 
-    def DirectSolid(self, *args):
+    def DirectSolid(self, *args) -> "TopAbs_Orientation" :
         """
         :param aGenS:
         :type aGenS: TopoDS_Shape &
@@ -655,7 +655,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_DirectSolid(self, *args)
 
-    def GGDShapeIsToAdd(self, *args):
+    def GGDShapeIsToAdd(self, *args) -> "Standard_Boolean" :
         """
         :param aNewShape:
         :type aNewShape: TopoDS_Shape &
@@ -672,7 +672,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_GGDShapeIsToAdd(self, *args)
 
-    def GDDShapeIsToAdd(self, *args):
+    def GDDShapeIsToAdd(self, *args) -> "Standard_Boolean" :
         """
         :param aNewShape:
         :type aNewShape: TopoDS_Shape &
@@ -689,7 +689,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_GDDShapeIsToAdd(self, *args)
 
-    def SeparatedWires(self, *args):
+    def SeparatedWires(self, *args) -> "Standard_Boolean" :
         """
         :param aNewShape:
         :type aNewShape: TopoDS_Shape &
@@ -706,7 +706,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SeparatedWires(self, *args)
 
-    def SplitShell(self, *args):
+    def SplitShell(self, *args) -> "TopoDS_Shape" :
         """
         :param aNewShape:
         :type aNewShape: TopoDS_Shape &
@@ -715,7 +715,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SplitShell(self, *args)
 
-    def SetContinuity(self, *args):
+    def SetContinuity(self, *args) -> "void" :
         """
         :param aGenS:
         :type aGenS: TopoDS_Shape &
@@ -726,7 +726,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_SetContinuity(self, *args)
 
-    def HasShape(self, *args):
+    def HasShape(self, *args) -> "Standard_Boolean" :
         """
         :param aGenS:
         :type aGenS: TopoDS_Shape &
@@ -737,7 +737,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_HasShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         :param aGenS:
         :type aGenS: TopoDS_Shape &
@@ -754,7 +754,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_Shape(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
@@ -765,7 +765,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
@@ -776,7 +776,7 @@ class BRepSweep_NumLinearRegularSweep(object):
         """
         return _BRepSweep.BRepSweep_NumLinearRegularSweep_LastShape(self, *args)
 
-    def Closed(self, *args):
+    def Closed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -850,7 +850,7 @@ class BRepSweep_Prism(object):
 
         """
         _BRepSweep.BRepSweep_Prism_swiginit(self,_BRepSweep.new_BRepSweep_Prism(*args))
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape attached to the prism.
 
@@ -865,7 +865,7 @@ class BRepSweep_Prism(object):
         """
         return _BRepSweep.BRepSweep_Prism_Shape(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the bottom of the prism.
 
@@ -880,7 +880,7 @@ class BRepSweep_Prism(object):
         """
         return _BRepSweep.BRepSweep_Prism_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the top of the prism.
 
@@ -895,7 +895,7 @@ class BRepSweep_Prism(object):
         """
         return _BRepSweep.BRepSweep_Prism_LastShape(self, *args)
 
-    def Vec(self, *args):
+    def Vec(self, *args) -> "gp_Vec" :
         """
         * Returns the Vector of the Prism, if it is an infinite prism the Vec is unitar.
 
@@ -949,7 +949,7 @@ class BRepSweep_Revol(object):
 
         """
         _BRepSweep.BRepSweep_Revol_swiginit(self,_BRepSweep.new_BRepSweep_Revol(*args))
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape attached to the Revol.
 
@@ -964,7 +964,7 @@ class BRepSweep_Revol(object):
         """
         return _BRepSweep.BRepSweep_Revol_Shape(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the first shape of the revol (coinciding with the generating shape).
 
@@ -979,7 +979,7 @@ class BRepSweep_Revol(object):
         """
         return _BRepSweep.BRepSweep_Revol_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the TopoDS Shape of the top of the prism.
 
@@ -994,7 +994,7 @@ class BRepSweep_Revol(object):
         """
         return _BRepSweep.BRepSweep_Revol_LastShape(self, *args)
 
-    def Axe(self, *args):
+    def Axe(self, *args) -> "gp_Ax1" :
         """
         * returns the axis
 
@@ -1003,7 +1003,7 @@ class BRepSweep_Revol(object):
         """
         return _BRepSweep.BRepSweep_Revol_Axe(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * returns the angle.
 
@@ -1044,18 +1044,18 @@ class BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep(OCC.TColle
 
         """
         _BRepSweep.BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_swiginit(self,_BRepSweep.new_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepSweep.BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep self)"""
         return _BRepSweep.BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep" :
         """GetHandle(BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep self) -> Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep"""
         return _BRepSweep.BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_GetHandle(self)
 
@@ -1094,7 +1094,7 @@ Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep._kill_poi
 Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_swigregister = _BRepSweep.Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_swigregister
 Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_swigregister(Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep)
 
-def Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_DownCast(*args):
+def Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_DownCast(*args) -> "Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep const" :
   return _BRepSweep.Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_DownCast(*args)
 Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_DownCast = _BRepSweep.Handle_BRepSweep_SequenceNodeOfSequenceOfShapesOfNumLinearRegularSweep_DownCast
 
@@ -1107,14 +1107,14 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
 
         """
         _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_swiginit(self,_BRepSweep.new_BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepSweep_SequenceOfShapesOfNumLinearRegularSweep const &" :
         """
         :param Other:
         :type Other: BRepSweep_SequenceOfShapesOfNumLinearRegularSweep &
@@ -1123,7 +1123,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepSweep_SequenceOfShapesOfNumLinearRegularSweep const &" :
         """
         :param Other:
         :type Other: BRepSweep_SequenceOfShapesOfNumLinearRegularSweep &
@@ -1132,7 +1132,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TopoDS_Shape &
@@ -1145,7 +1145,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TopoDS_Shape &
@@ -1158,7 +1158,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1175,7 +1175,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1192,21 +1192,21 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1217,7 +1217,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         :param Index:
         :type Index: int
@@ -1226,7 +1226,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1237,7 +1237,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TopoDS_Shape" :
         """
         :param Index:
         :type Index: int
@@ -1246,7 +1246,7 @@ class BRepSweep_SequenceOfShapesOfNumLinearRegularSweep(OCC.TCollection.TCollect
         """
         return _BRepSweep.BRepSweep_SequenceOfShapesOfNumLinearRegularSweep_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1300,7 +1300,7 @@ class BRepSweep_Tool(object):
 
         """
         _BRepSweep.BRepSweep_Tool_swiginit(self,_BRepSweep.new_BRepSweep_Tool(*args))
-    def NbShapes(self, *args):
+    def NbShapes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of subshapes in the shape.
 
@@ -1309,7 +1309,7 @@ class BRepSweep_Tool(object):
         """
         return _BRepSweep.BRepSweep_Tool_NbShapes(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of <aShape>.
 
@@ -1320,7 +1320,7 @@ class BRepSweep_Tool(object):
         """
         return _BRepSweep.BRepSweep_Tool_Index(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the Shape at Index anIdex.
 
@@ -1331,7 +1331,7 @@ class BRepSweep_Tool(object):
         """
         return _BRepSweep.BRepSweep_Tool_Shape(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * Returns the type of <aShape>.
 
@@ -1342,7 +1342,7 @@ class BRepSweep_Tool(object):
         """
         return _BRepSweep.BRepSweep_Tool_Type(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the Orientation of <aShape>.
 
@@ -1353,7 +1353,7 @@ class BRepSweep_Tool(object):
         """
         return _BRepSweep.BRepSweep_Tool_Orientation(self, *args)
 
-    def SetOrientation(self, *args):
+    def SetOrientation(self, *args) -> "void" :
         """
         * Set the Orientation of <aShape> with Or.
 
@@ -1388,7 +1388,7 @@ class BRepSweep_Trsf(BRepSweep_NumLinearRegularSweep):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * ends the construction of the swept primitive calling the virtual geometric functions that can't be called in the initialize.
 
@@ -1397,7 +1397,7 @@ class BRepSweep_Trsf(BRepSweep_NumLinearRegularSweep):
         """
         return _BRepSweep.BRepSweep_Trsf_Init(self, *args)
 
-    def Process(self, *args):
+    def Process(self, *args) -> "Standard_Boolean" :
         """
         * function called to analize the way of construction of the shapes generated by aGenS and aDirV.
 
@@ -1410,7 +1410,7 @@ class BRepSweep_Trsf(BRepSweep_NumLinearRegularSweep):
         """
         return _BRepSweep.BRepSweep_Trsf_Process(self, *args)
 
-    def IsInvariant(self, *args):
+    def IsInvariant(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the geometry of aGenS is not modified by the trsf of the BRepSweep Trsf.
 
@@ -1459,7 +1459,7 @@ class BRepSweep_Rotation(BRepSweep_Trsf):
 
         """
         _BRepSweep.BRepSweep_Rotation_swiginit(self,_BRepSweep.new_BRepSweep_Rotation(*args))
-    def Axe(self, *args):
+    def Axe(self, *args) -> "gp_Ax1" :
         """
         * returns the axis
 
@@ -1468,7 +1468,7 @@ class BRepSweep_Rotation(BRepSweep_Trsf):
         """
         return _BRepSweep.BRepSweep_Rotation_Axe(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * returns the angle.
 
@@ -1514,7 +1514,7 @@ class BRepSweep_Translation(BRepSweep_Trsf):
 
         """
         _BRepSweep.BRepSweep_Translation_swiginit(self,_BRepSweep.new_BRepSweep_Translation(*args))
-    def Vec(self, *args):
+    def Vec(self, *args) -> "gp_Vec" :
         """
         * Returns the Vector of the Prism, if it is an infinite prism the Vec is unitar.
 

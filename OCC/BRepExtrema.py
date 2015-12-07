@@ -165,7 +165,7 @@ class BRepExtrema_DistShapeShape(object):
 
         """
         _BRepExtrema.BRepExtrema_DistShapeShape_swiginit(self,_BRepExtrema.new_BRepExtrema_DistShapeShape(*args))
-    def SetDeflection(self, *args):
+    def SetDeflection(self, *args) -> "void" :
         """
         :param theDeflection:
         :type theDeflection: float
@@ -174,7 +174,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetDeflection(self, *args)
 
-    def LoadS1(self, *args):
+    def LoadS1(self, *args) -> "void" :
         """
         * load first shape into extrema
 
@@ -185,7 +185,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_LoadS1(self, *args)
 
-    def LoadS2(self, *args):
+    def LoadS2(self, *args) -> "void" :
         """
         * load second shape into extrema
 
@@ -196,7 +196,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_LoadS2(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * computation of the minimum distance (value and couple of points). Parameter theDeflection is used to specify a maximum deviation of extreme distances from the minimum one. Returns IsDone status.
 
@@ -205,7 +205,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the minimum distance is found.
 
@@ -214,7 +214,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_IsDone(self, *args)
 
-    def NbSolution(self, *args):
+    def NbSolution(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of solutions satisfying the minimum distance.
 
@@ -223,7 +223,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_NbSolution(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the minimum distance.
 
@@ -232,7 +232,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_Value(self, *args)
 
-    def InnerSolution(self, *args):
+    def InnerSolution(self, *args) -> "Standard_Boolean" :
         """
         * True if one of the shapes is a solid and the other shape is completely or partially inside the solid.
 
@@ -241,7 +241,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_InnerSolution(self, *args)
 
-    def PointOnShape1(self, *args):
+    def PointOnShape1(self, *args) -> "gp_Pnt const" :
         """
         * Returns the Point corresponding to the <N>th solution on the first Shape
 
@@ -252,7 +252,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_PointOnShape1(self, *args)
 
-    def PointOnShape2(self, *args):
+    def PointOnShape2(self, *args) -> "gp_Pnt const" :
         """
         * Returns the Point corresponding to the <N>th solution on the second Shape
 
@@ -263,7 +263,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_PointOnShape2(self, *args)
 
-    def SupportTypeShape1(self, *args):
+    def SupportTypeShape1(self, *args) -> "BRepExtrema_SupportType" :
         """
         * gives the type of the support where the Nth solution on the first shape is situated: IsVertex => the Nth solution on the first shape is a Vertex IsOnEdge => the Nth soluion on the first shape is on a Edge IsInFace => the Nth solution on the first shape is inside a face the corresponding support is obtained by the method SupportOnShape1
 
@@ -274,7 +274,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportTypeShape1(self, *args)
 
-    def SupportTypeShape2(self, *args):
+    def SupportTypeShape2(self, *args) -> "BRepExtrema_SupportType" :
         """
         * gives the type of the support where the Nth solution on the second shape is situated: IsVertex => the Nth solution on the second shape is a Vertex IsOnEdge => the Nth soluion on the secondt shape is on a Edge IsInFace => the Nth solution on the second shape is inside a face the corresponding support is obtained by the method SupportOnShape2
 
@@ -285,7 +285,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportTypeShape2(self, *args)
 
-    def SupportOnShape1(self, *args):
+    def SupportOnShape1(self, *args) -> "TopoDS_Shape" :
         """
         * gives the support where the Nth solution on the first shape is situated. This support can be a Vertex, an Edge or a Face.
 
@@ -296,7 +296,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportOnShape1(self, *args)
 
-    def SupportOnShape2(self, *args):
+    def SupportOnShape2(self, *args) -> "TopoDS_Shape" :
         """
         * gives the support where the Nth solution on the second shape is situated. This support can be a Vertex, an Edge or a Face.
 
@@ -307,7 +307,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportOnShape2(self, *args)
 
-    def ParOnEdgeS1(self, *args):
+    def ParOnEdgeS1(self, *args) -> "void" :
         """
         * gives the corresponding parameter t if the Nth solution is situated on an Egde of the first shape
 
@@ -320,7 +320,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnEdgeS1(self, *args)
 
-    def ParOnEdgeS2(self, *args):
+    def ParOnEdgeS2(self, *args) -> "void" :
         """
         * gives the corresponding parameter t if the Nth solution is situated on an Egde of the first shape
 
@@ -333,7 +333,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnEdgeS2(self, *args)
 
-    def ParOnFaceS1(self, *args):
+    def ParOnFaceS1(self, *args) -> "void" :
         """
         * gives the corresponding parameters (U,V) if the Nth solution is situated on an face of the first shape
 
@@ -348,7 +348,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnFaceS1(self, *args)
 
-    def ParOnFaceS2(self, *args):
+    def ParOnFaceS2(self, *args) -> "void" :
         """
         * gives the corresponding parameters (U,V) if the Nth solution is situated on an Face of the second shape
 
@@ -363,11 +363,11 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnFaceS2(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(BRepExtrema_DistShapeShape self) -> std::string"""
         return _BRepExtrema.BRepExtrema_DistShapeShape_DumpToString(self)
 
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -376,7 +376,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetFlag(self, *args)
 
-    def SetAlgo(self, *args):
+    def SetAlgo(self, *args) -> "void" :
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -385,7 +385,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetAlgo(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepExtrema_DistShapeShape self)"""
         return _BRepExtrema.BRepExtrema_DistShapeShape__kill_pointed(self)
 
@@ -467,7 +467,7 @@ class BRepExtrema_DistanceSS(object):
 
         """
         _BRepExtrema.BRepExtrema_DistanceSS_swiginit(self,_BRepExtrema.new_BRepExtrema_DistanceSS(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distance has been computed
 
@@ -476,7 +476,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_IsDone(self, *args)
 
-    def DistValue(self, *args):
+    def DistValue(self, *args) -> "Standard_Real" :
         """
         * returns the distance value
 
@@ -485,7 +485,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_DistValue(self, *args)
 
-    def Seq1Value(self, *args):
+    def Seq1Value(self, *args) -> "BRepExtrema_SeqOfSolution const &" :
         """
         * returns the list of solutions on the first shape
 
@@ -494,7 +494,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_Seq1Value(self, *args)
 
-    def Seq2Value(self, *args):
+    def Seq2Value(self, *args) -> "BRepExtrema_SeqOfSolution const &" :
         """
         * returns the list of solutions on the second shape
 
@@ -503,7 +503,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_Seq2Value(self, *args)
 
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         * sets the flag controlling minimum and maximum search
 
@@ -514,7 +514,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_SetFlag(self, *args)
 
-    def SetAlgo(self, *args):
+    def SetAlgo(self, *args) -> "void" :
         """
         * sets the flag controlling ...
 
@@ -560,7 +560,7 @@ class BRepExtrema_ExtCC(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtCC_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtCC(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param E2:
         :type E2: TopoDS_Edge &
@@ -569,7 +569,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * An exception is raised if the fields have not been initialized.
 
@@ -580,7 +580,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distances are found.
 
@@ -589,7 +589,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_IsDone(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extremum distances.
 
@@ -598,7 +598,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_NbExt(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if E1 and E2 are parallel.
 
@@ -607,7 +607,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_IsParallel(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the <N>th extremum square distance.
 
@@ -618,7 +618,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_SquareDistance(self, *args)
 
-    def ParameterOnE1(self, *args):
+    def ParameterOnE1(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the first edge of the <N>th extremum distance.
 
@@ -629,7 +629,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_ParameterOnE1(self, *args)
 
-    def PointOnE1(self, *args):
+    def PointOnE1(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance on the edge E1.
 
@@ -640,7 +640,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_PointOnE1(self, *args)
 
-    def ParameterOnE2(self, *args):
+    def ParameterOnE2(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the second edge of the <N>th extremum distance.
 
@@ -651,7 +651,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_ParameterOnE2(self, *args)
 
-    def PointOnE2(self, *args):
+    def PointOnE2(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance on the edge E2.
 
@@ -662,7 +662,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_PointOnE2(self, *args)
 
-    def TrimmedSquareDistances(self, *args):
+    def TrimmedSquareDistances(self, *args) -> "void" :
         """
         * if the edges is a trimmed curve, dist11 is a square distance between the point on E1 of parameter FirstParameter and the point of parameter FirstParameter on E2.
 
@@ -727,7 +727,7 @@ class BRepExtrema_ExtCF(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtCF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtCF(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -738,7 +738,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face only for classify not for the fields.
 
@@ -751,7 +751,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distances are found.
 
@@ -760,7 +760,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_IsDone(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extremum distances.
 
@@ -769,7 +769,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_NbExt(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the <N>th extremum square distance.
 
@@ -780,7 +780,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_SquareDistance(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the curve is on a parallel surface.
 
@@ -789,7 +789,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_IsParallel(self, *args)
 
-    def ParameterOnEdge(self, *args):
+    def ParameterOnEdge(self, *args) -> "Standard_Real" :
         """
         * Returns the parameters on the Edge of the <N>th extremum distance.
 
@@ -800,7 +800,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_ParameterOnEdge(self, *args)
 
-    def ParameterOnFace(self, *args):
+    def ParameterOnFace(self, *args) -> "void" :
         """
         * Returns the parameters on the Face of the <N>th extremum distance.
 
@@ -815,7 +815,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_ParameterOnFace(self, *args)
 
-    def PointOnEdge(self, *args):
+    def PointOnEdge(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -826,7 +826,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_PointOnEdge(self, *args)
 
-    def PointOnFace(self, *args):
+    def PointOnFace(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -876,7 +876,7 @@ class BRepExtrema_ExtFF(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtFF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtFF(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param F2:
         :type F2: TopoDS_Face &
@@ -885,7 +885,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face F2 only for classify, not for the fields.
 
@@ -898,7 +898,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distances are found.
 
@@ -907,7 +907,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_IsDone(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the surfaces are parallel.
 
@@ -916,7 +916,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_IsParallel(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extremum distances.
 
@@ -925,7 +925,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_NbExt(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the <N>th extremum square distance.
 
@@ -936,7 +936,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_SquareDistance(self, *args)
 
-    def ParameterOnFace1(self, *args):
+    def ParameterOnFace1(self, *args) -> "void" :
         """
         * Returns the parameters on the Face F1 of the <N>th extremum distance.
 
@@ -951,7 +951,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_ParameterOnFace1(self, *args)
 
-    def ParameterOnFace2(self, *args):
+    def ParameterOnFace2(self, *args) -> "void" :
         """
         * Returns the parameters on the Face F2 of the <N>th extremum distance.
 
@@ -966,7 +966,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_ParameterOnFace2(self, *args)
 
-    def PointOnFace1(self, *args):
+    def PointOnFace1(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -977,7 +977,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_PointOnFace1(self, *args)
 
-    def PointOnFace2(self, *args):
+    def PointOnFace2(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -1027,7 +1027,7 @@ class BRepExtrema_ExtPC(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtPC_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtPC(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1036,7 +1036,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * An exception is raised if the fields have not been initialized.
 
@@ -1047,7 +1047,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distances are found.
 
@@ -1056,7 +1056,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_IsDone(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extremum distances.
 
@@ -1065,7 +1065,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_NbExt(self, *args)
 
-    def IsMin(self, *args):
+    def IsMin(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the <N>th extremum distance is a minimum.
 
@@ -1076,7 +1076,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_IsMin(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the <N>th extremum square distance.
 
@@ -1087,7 +1087,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_SquareDistance(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the edge of the <N>th extremum distance.
 
@@ -1098,7 +1098,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Parameter(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -1109,7 +1109,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args):
+    def TrimmedSquareDistances(self, *args) -> "void" :
         """
         * if the curve is a trimmed curve, dist1 is a square distance between <P> and the point of parameter FirstParameter <pnt1> and dist2 is a square distance between <P> and the point of parameter LastParameter <pnt2>.
 
@@ -1168,7 +1168,7 @@ class BRepExtrema_ExtPF(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtPF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtPF(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param TheFace:
         :type TheFace: TopoDS_Face &
@@ -1181,7 +1181,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face only for classify not for the fields.
 
@@ -1194,7 +1194,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the distances are found.
 
@@ -1203,7 +1203,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_IsDone(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extremum distances.
 
@@ -1212,7 +1212,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_NbExt(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the <N>th extremum square distance.
 
@@ -1223,7 +1223,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_SquareDistance(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         * Returns the parameters on the Face of the <N>th extremum distance.
 
@@ -1238,7 +1238,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Parameter(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the Point of the <N>th extremum distance.
 
@@ -1249,7 +1249,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Point(self, *args)
 
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -1258,7 +1258,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_SetFlag(self, *args)
 
-    def SetAlgo(self, *args):
+    def SetAlgo(self, *args) -> "void" :
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -1292,7 +1292,7 @@ class BRepExtrema_Poly(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Distance(*args):
+    def Distance(*args) -> "Standard_Real &" :
         """
         * returns Standard_True if OK.
 
@@ -1324,7 +1324,7 @@ BRepExtrema_Poly._kill_pointed = new_instancemethod(_BRepExtrema.BRepExtrema_Pol
 BRepExtrema_Poly_swigregister = _BRepExtrema.BRepExtrema_Poly_swigregister
 BRepExtrema_Poly_swigregister(BRepExtrema_Poly)
 
-def BRepExtrema_Poly_Distance(*args):
+def BRepExtrema_Poly_Distance(*args) -> "Standard_Real &" :
   """
     * returns Standard_True if OK.
 
@@ -1394,7 +1394,7 @@ class BRepExtrema_SolutionElem(object):
 
         """
         _BRepExtrema.BRepExtrema_SolutionElem_swiginit(self,_BRepExtrema.new_BRepExtrema_SolutionElem(*args))
-    def Dist(self, *args):
+    def Dist(self, *args) -> "Standard_Real" :
         """
         * returns the value of the minimum distance.
 
@@ -1403,7 +1403,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_Dist(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         * returns the solution point.
 
@@ -1412,7 +1412,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_Point(self, *args)
 
-    def SupportKind(self, *args):
+    def SupportKind(self, *args) -> "BRepExtrema_SupportType" :
         """
         * returns the Support type : //!	 IsVertex => The solution is a vertex. 	 IsOnEdge => The solution belongs to an Edge. 	 IsInFace => The solution is inside a Face.
 
@@ -1421,7 +1421,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_SupportKind(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         * returns the vertex if the solution is a Vertex.
 
@@ -1430,7 +1430,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_Vertex(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         * returns the vertex if the solution is an Edge.
 
@@ -1439,7 +1439,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_Edge(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * returns the vertex if the solution is an Face.
 
@@ -1448,7 +1448,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_Face(self, *args)
 
-    def EdgeParameter(self, *args):
+    def EdgeParameter(self, *args) -> "void" :
         """
         * returns the parameter t if the solution is on Edge.
 
@@ -1459,7 +1459,7 @@ class BRepExtrema_SolutionElem(object):
         """
         return _BRepExtrema.BRepExtrema_SolutionElem_EdgeParameter(self, *args)
 
-    def FaceParameter(self, *args):
+    def FaceParameter(self, *args) -> "void" :
         """
         * returns the parameters u et v if the solution is in a Face.
 

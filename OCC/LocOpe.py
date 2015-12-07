@@ -145,7 +145,7 @@ LocOpe_INVALID = _LocOpe.LocOpe_INVALID
 class locope(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Closed(*args):
+    def Closed(*args) -> "Standard_Boolean" :
         """
         * Returns Standard_True when the wire <W> is closed on the face <OnF>.
 
@@ -167,7 +167,7 @@ class locope(object):
         return _LocOpe.locope_Closed(*args)
 
     Closed = staticmethod(Closed)
-    def TgtFaces(*args):
+    def TgtFaces(*args) -> "Standard_Boolean" :
         """
         * Returns Standard_True when the faces are tangent
 
@@ -183,7 +183,7 @@ class locope(object):
         return _LocOpe.locope_TgtFaces(*args)
 
     TgtFaces = staticmethod(TgtFaces)
-    def SampleEdges(*args):
+    def SampleEdges(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -209,7 +209,7 @@ locope._kill_pointed = new_instancemethod(_LocOpe.locope__kill_pointed,None,loco
 locope_swigregister = _LocOpe.locope_swigregister
 locope_swigregister(locope)
 
-def locope_Closed(*args):
+def locope_Closed(*args) -> "Standard_Boolean" :
   """
     * Returns Standard_True when the wire <W> is closed on the face <OnF>.
 
@@ -230,7 +230,7 @@ def locope_Closed(*args):
     """
   return _LocOpe.locope_Closed(*args)
 
-def locope_TgtFaces(*args):
+def locope_TgtFaces(*args) -> "Standard_Boolean" :
   """
     * Returns Standard_True when the faces are tangent
 
@@ -245,7 +245,7 @@ def locope_TgtFaces(*args):
     """
   return _LocOpe.locope_TgtFaces(*args)
 
-def locope_SampleEdges(*args):
+def locope_SampleEdges(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -271,7 +271,7 @@ class LocOpe_BuildShape(object):
 
         """
         _LocOpe.LocOpe_BuildShape_swiginit(self,_LocOpe.new_LocOpe_BuildShape(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Builds shape(s) from the list <L>. Uses only the faces of <L>.
 
@@ -282,7 +282,7 @@ class LocOpe_BuildShape(object):
         """
         return _LocOpe.LocOpe_BuildShape_Perform(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
@@ -318,7 +318,7 @@ class LocOpe_BuildWires(object):
 
         """
         _LocOpe.LocOpe_BuildWires_swiginit(self,_LocOpe.new_LocOpe_BuildWires(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Ledges:
         :type Ledges: TopTools_ListOfShape &
@@ -329,14 +329,14 @@ class LocOpe_BuildWires(object):
         """
         return _LocOpe.LocOpe_BuildWires_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_BuildWires_IsDone(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
@@ -375,7 +375,7 @@ class LocOpe_CSIntersector(object):
 
         """
         _LocOpe.LocOpe_CSIntersector_swiginit(self,_LocOpe.new_LocOpe_CSIntersector(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Performs the intersection between <Ax1 and <S>.
 
@@ -386,7 +386,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Slin:
         :type Slin: LocOpe_SequenceOfLin &
@@ -403,7 +403,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns <Standard_True> if the intersection has been done.
 
@@ -412,7 +412,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersection point on the element of range <I>.
 
@@ -423,7 +423,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "LocOpe_PntFace const &" :
         """
         * Returns the intersection point of range <Index> on element of range <I>. The points are sorted in increasing order of parameter along the axis.
 
@@ -436,7 +436,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_Point(self, *args)
 
-    def LocalizeAfter(self, *args):
+    def LocalizeAfter(self, *args) -> "Standard_Boolean" :
         """
         * On the element of range <I>, searches the first intersection point located after the parameter <From>, wich orientation is not TopAbs_EXTERNAL. If found, returns <Standard_True>. <Or> contains the orientation of the point, <IndFrom> and <IndTo> represents the interval of index in the sequence of intersection point corresponding to the point. (IndFrom <= IndTo). <Tol> is used to determine if 2 parameters are equal.  Otherwise, returns <Standard_False>.
 
@@ -473,7 +473,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_LocalizeAfter(self, *args)
 
-    def LocalizeBefore(self, *args):
+    def LocalizeBefore(self, *args) -> "Standard_Boolean" :
         """
         * On the element of range <I>, searches the first intersection point located before the parameter <From>, wich orientation is not TopAbs_EXTERNAL. If found, returns <Standard_True>. <Or> contains the orientation of the point, <IndFrom> and <IndTo> represents the interval of index in the sequence of intersection point corresponding to the point (IndFrom <= IndTo). <Tol> is used to determine if 2 parameters are equal.  Otherwise, returns <Standard_False>.
 
@@ -510,7 +510,7 @@ class LocOpe_CSIntersector(object):
         """
         return _LocOpe.LocOpe_CSIntersector_LocalizeBefore(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -564,7 +564,7 @@ class LocOpe_CurveShapeIntersector(object):
 
         """
         _LocOpe.LocOpe_CurveShapeIntersector_swiginit(self,_LocOpe.new_LocOpe_CurveShapeIntersector(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Performs the intersection between <Ax1 and <S>.
 
@@ -585,7 +585,7 @@ class LocOpe_CurveShapeIntersector(object):
         """
         return _LocOpe.LocOpe_CurveShapeIntersector_Init(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns <Standard_True> if the intersection has been done.
 
@@ -594,7 +594,7 @@ class LocOpe_CurveShapeIntersector(object):
         """
         return _LocOpe.LocOpe_CurveShapeIntersector_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersection point.
 
@@ -603,7 +603,7 @@ class LocOpe_CurveShapeIntersector(object):
         """
         return _LocOpe.LocOpe_CurveShapeIntersector_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "LocOpe_PntFace const &" :
         """
         * Returns the intersection point of range <Index>. The points are sorted in increasing order of parameter along the axis.
 
@@ -614,7 +614,7 @@ class LocOpe_CurveShapeIntersector(object):
         """
         return _LocOpe.LocOpe_CurveShapeIntersector_Point(self, *args)
 
-    def LocalizeAfter(self, *args):
+    def LocalizeAfter(self, *args) -> "Standard_Boolean" :
         """
         * Searches the first intersection point located after the parameter <From>, wich orientation is not TopAbs_EXTERNAL. If found, returns <Standard_True>. <Or> contains the orientation of the point, <IndFrom> and <IndTo> represents the interval of index in the sequence of intersection point corresponding to the point. (IndFrom <= IndTo).  Otherwise, returns <Standard_False>.
 
@@ -643,7 +643,7 @@ class LocOpe_CurveShapeIntersector(object):
         """
         return _LocOpe.LocOpe_CurveShapeIntersector_LocalizeAfter(self, *args)
 
-    def LocalizeBefore(self, *args):
+    def LocalizeBefore(self, *args) -> "Standard_Boolean" :
         """
         * Searches the first intersection point located before the parameter <From>, wich orientation is not TopAbs_EXTERNAL. If found, returns <Standard_True>. <Or> contains the orientation of the point, <IndFrom> and <IndTo> represents the interval of index in the sequence of intersection point corresponding to the point (IndFrom <= IndTo).  Otherwise, returns <Standard_False>.
 
@@ -715,49 +715,49 @@ class LocOpe_DPrism(object):
 
         """
         _LocOpe.LocOpe_DPrism_swiginit(self,_LocOpe.new_LocOpe_DPrism(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_DPrism_IsDone(self, *args)
 
-    def Spine(self, *args):
+    def Spine(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DPrism_Spine(self, *args)
 
-    def Profile(self, *args):
+    def Profile(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DPrism_Profile(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DPrism_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DPrism_LastShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DPrism_Shape(self, *args)
 
-    def Shapes(self, *args):
+    def Shapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -766,7 +766,7 @@ class LocOpe_DPrism(object):
         """
         return _LocOpe.LocOpe_DPrism_Shapes(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "void" :
         """
         :param SCurves:
         :type SCurves: TColGeom_SequenceOfCurve &
@@ -775,7 +775,7 @@ class LocOpe_DPrism(object):
         """
         return _LocOpe.LocOpe_DPrism_Curves(self, *args)
 
-    def BarycCurve(self, *args):
+    def BarycCurve(self, *args) -> "Handle_Geom_Curve" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -816,7 +816,7 @@ class LocOpe_DataMapIteratorOfDataMapOfShapePnt(OCC.TCollection.TCollection_Basi
 
         """
         _LocOpe.LocOpe_DataMapIteratorOfDataMapOfShapePnt_swiginit(self,_LocOpe.new_LocOpe_DataMapIteratorOfDataMapOfShapePnt(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: LocOpe_DataMapOfShapePnt &
@@ -825,14 +825,14 @@ class LocOpe_DataMapIteratorOfDataMapOfShapePnt(OCC.TCollection.TCollection_Basi
         """
         return _LocOpe.LocOpe_DataMapIteratorOfDataMapOfShapePnt_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DataMapIteratorOfDataMapOfShapePnt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -869,25 +869,25 @@ class LocOpe_DataMapNodeOfDataMapOfShapePnt(OCC.TCollection.TCollection_MapNode)
 
         """
         _LocOpe.LocOpe_DataMapNodeOfDataMapOfShapePnt_swiginit(self,_LocOpe.new_LocOpe_DataMapNodeOfDataMapOfShapePnt(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_DataMapNodeOfDataMapOfShapePnt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         :rtype: gp_Pnt
 
         """
         return _LocOpe.LocOpe_DataMapNodeOfDataMapOfShapePnt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_DataMapNodeOfDataMapOfShapePnt self)"""
         return _LocOpe.LocOpe_DataMapNodeOfDataMapOfShapePnt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt" :
         """GetHandle(LocOpe_DataMapNodeOfDataMapOfShapePnt self) -> Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt"""
         return _LocOpe.LocOpe_DataMapNodeOfDataMapOfShapePnt_GetHandle(self)
 
@@ -927,7 +927,7 @@ Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt._kill_pointed = new_instancemethod(
 Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_swigregister = _LocOpe.Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_swigregister
 Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_swigregister(Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt)
 
-def Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_DownCast(*args):
+def Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_DownCast(*args) -> "Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt const" :
   return _LocOpe.Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_DownCast(*args)
 Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_DownCast = _LocOpe.Handle_LocOpe_DataMapNodeOfDataMapOfShapePnt_DownCast
 
@@ -942,7 +942,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
 
         """
         _LocOpe.LocOpe_DataMapOfShapePnt_swiginit(self,_LocOpe.new_LocOpe_DataMapOfShapePnt(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "LocOpe_DataMapOfShapePnt &" :
         """
         :param Other:
         :type Other: LocOpe_DataMapOfShapePnt &
@@ -951,7 +951,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "LocOpe_DataMapOfShapePnt &" :
         """
         :param Other:
         :type Other: LocOpe_DataMapOfShapePnt &
@@ -960,7 +960,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -969,14 +969,14 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -987,7 +987,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -996,7 +996,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1005,7 +1005,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "gp_Pnt const" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1014,7 +1014,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "gp_Pnt" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1023,7 +1023,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1032,7 +1032,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1041,7 +1041,7 @@ class LocOpe_DataMapOfShapePnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _LocOpe.LocOpe_DataMapOfShapePnt_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_DataMapOfShapePnt self)"""
         return _LocOpe.LocOpe_DataMapOfShapePnt__kill_pointed(self)
 
@@ -1083,7 +1083,7 @@ class LocOpe_FindEdges(object):
 
         """
         _LocOpe.LocOpe_FindEdges_swiginit(self,_LocOpe.new_LocOpe_FindEdges(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param FFrom:
         :type FFrom: TopoDS_Shape &
@@ -1094,35 +1094,35 @@ class LocOpe_FindEdges(object):
         """
         return _LocOpe.LocOpe_FindEdges_Set(self, *args)
 
-    def InitIterator(self, *args):
+    def InitIterator(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_FindEdges_InitIterator(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_FindEdges_More(self, *args)
 
-    def EdgeFrom(self, *args):
+    def EdgeFrom(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _LocOpe.LocOpe_FindEdges_EdgeFrom(self, *args)
 
-    def EdgeTo(self, *args):
+    def EdgeTo(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _LocOpe.LocOpe_FindEdges_EdgeTo(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1162,7 +1162,7 @@ class LocOpe_FindEdgesInFace(object):
 
         """
         _LocOpe.LocOpe_FindEdgesInFace_swiginit(self,_LocOpe.new_LocOpe_FindEdgesInFace(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1173,28 +1173,28 @@ class LocOpe_FindEdgesInFace(object):
         """
         return _LocOpe.LocOpe_FindEdgesInFace_Set(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_FindEdgesInFace_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_FindEdgesInFace_More(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _LocOpe.LocOpe_FindEdgesInFace_Edge(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1222,14 +1222,14 @@ class LocOpe_GeneratedShape(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GeneratingEdges(self, *args):
+    def GeneratingEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _LocOpe.LocOpe_GeneratedShape_GeneratingEdges(self, *args)
 
-    def Generated(self, *args):
+    def Generated(self, *args) -> "TopoDS_Face" :
         """
         * Returns the edge created by the vertex <V>. If none, must return a null shape.
 
@@ -1246,7 +1246,7 @@ class LocOpe_GeneratedShape(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_GeneratedShape_Generated(self, *args)
 
-    def OrientedFaces(self, *args):
+    def OrientedFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of correctly oriented generated faces.
 
@@ -1255,11 +1255,11 @@ class LocOpe_GeneratedShape(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_GeneratedShape_OrientedFaces(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_GeneratedShape self)"""
         return _LocOpe.LocOpe_GeneratedShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_GeneratedShape" :
         """GetHandle(LocOpe_GeneratedShape self) -> Handle_LocOpe_GeneratedShape"""
         return _LocOpe.LocOpe_GeneratedShape_GetHandle(self)
 
@@ -1300,7 +1300,7 @@ Handle_LocOpe_GeneratedShape._kill_pointed = new_instancemethod(_LocOpe.Handle_L
 Handle_LocOpe_GeneratedShape_swigregister = _LocOpe.Handle_LocOpe_GeneratedShape_swigregister
 Handle_LocOpe_GeneratedShape_swigregister(Handle_LocOpe_GeneratedShape)
 
-def Handle_LocOpe_GeneratedShape_DownCast(*args):
+def Handle_LocOpe_GeneratedShape_DownCast(*args) -> "Handle_LocOpe_GeneratedShape const" :
   return _LocOpe.Handle_LocOpe_GeneratedShape_DownCast(*args)
 Handle_LocOpe_GeneratedShape_DownCast = _LocOpe.Handle_LocOpe_GeneratedShape_DownCast
 
@@ -1321,7 +1321,7 @@ class LocOpe_Generator(object):
 
         """
         _LocOpe.LocOpe_Generator_swiginit(self,_LocOpe.new_LocOpe_Generator(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the algorithm on the shape <S>.
 
@@ -1332,7 +1332,7 @@ class LocOpe_Generator(object):
         """
         return _LocOpe.LocOpe_Generator_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param G:
         :type G: Handle_LocOpe_GeneratedShape &
@@ -1341,14 +1341,14 @@ class LocOpe_Generator(object):
         """
         return _LocOpe.LocOpe_Generator_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_Generator_IsDone(self, *args)
 
-    def ResultingShape(self, *args):
+    def ResultingShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the new shape
 
@@ -1357,7 +1357,7 @@ class LocOpe_Generator(object):
         """
         return _LocOpe.LocOpe_Generator_ResultingShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the initial shape
 
@@ -1366,7 +1366,7 @@ class LocOpe_Generator(object):
         """
         return _LocOpe.LocOpe_Generator_Shape(self, *args)
 
-    def DescendantFace(self, *args):
+    def DescendantFace(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the descendant face of <F>. <F> may belong to the original shape or to the 'generated' shape. The returned face may be a null shape (when <F> disappears).
 
@@ -1410,7 +1410,7 @@ class LocOpe_Gluer(object):
 
         """
         _LocOpe.LocOpe_Gluer_swiginit(self,_LocOpe.new_LocOpe_Gluer(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Sbase:
         :type Sbase: TopoDS_Shape &
@@ -1421,7 +1421,7 @@ class LocOpe_Gluer(object):
         """
         return _LocOpe.LocOpe_Gluer_Init(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param Fnew:
         :type Fnew: TopoDS_Face &
@@ -1438,35 +1438,35 @@ class LocOpe_Gluer(object):
         """
         return _LocOpe.LocOpe_Gluer_Bind(self, *args)
 
-    def OpeType(self, *args):
+    def OpeType(self, *args) -> "LocOpe_Operation" :
         """
         :rtype: LocOpe_Operation
 
         """
         return _LocOpe.LocOpe_Gluer_OpeType(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_Gluer_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_Gluer_IsDone(self, *args)
 
-    def ResultingShape(self, *args):
+    def ResultingShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Gluer_ResultingShape(self, *args)
 
-    def DescendantFaces(self, *args):
+    def DescendantFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1475,28 +1475,28 @@ class LocOpe_Gluer(object):
         """
         return _LocOpe.LocOpe_Gluer_DescendantFaces(self, *args)
 
-    def BasisShape(self, *args):
+    def BasisShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Gluer_BasisShape(self, *args)
 
-    def GluedShape(self, *args):
+    def GluedShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Gluer_GluedShape(self, *args)
 
-    def Edges(self, *args):
+    def Edges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _LocOpe.LocOpe_Gluer_Edges(self, *args)
 
-    def TgtEdges(self, *args):
+    def TgtEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
@@ -1537,7 +1537,7 @@ class LocOpe_HBuilder(OCC.TopOpeBRepBuild.TopOpeBRepBuild_HBuilder):
 
         """
         _LocOpe.LocOpe_HBuilder_swiginit(self,_LocOpe.new_LocOpe_HBuilder(*args))
-    def Classify(self, *args):
+    def Classify(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1548,11 +1548,11 @@ class LocOpe_HBuilder(OCC.TopOpeBRepBuild.TopOpeBRepBuild_HBuilder):
         """
         return _LocOpe.LocOpe_HBuilder_Classify(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_HBuilder self)"""
         return _LocOpe.LocOpe_HBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_HBuilder" :
         """GetHandle(LocOpe_HBuilder self) -> Handle_LocOpe_HBuilder"""
         return _LocOpe.LocOpe_HBuilder_GetHandle(self)
 
@@ -1591,7 +1591,7 @@ Handle_LocOpe_HBuilder._kill_pointed = new_instancemethod(_LocOpe.Handle_LocOpe_
 Handle_LocOpe_HBuilder_swigregister = _LocOpe.Handle_LocOpe_HBuilder_swigregister
 Handle_LocOpe_HBuilder_swigregister(Handle_LocOpe_HBuilder)
 
-def Handle_LocOpe_HBuilder_DownCast(*args):
+def Handle_LocOpe_HBuilder_DownCast(*args) -> "Handle_LocOpe_HBuilder const" :
   return _LocOpe.Handle_LocOpe_HBuilder_DownCast(*args)
 Handle_LocOpe_HBuilder_DownCast = _LocOpe.Handle_LocOpe_HBuilder_DownCast
 
@@ -1626,7 +1626,7 @@ class LocOpe_LinearForm(object):
 
         """
         _LocOpe.LocOpe_LinearForm_swiginit(self,_LocOpe.new_LocOpe_LinearForm(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Base:
         :type Base: TopoDS_Shape &
@@ -1653,28 +1653,28 @@ class LocOpe_LinearForm(object):
         """
         return _LocOpe.LocOpe_LinearForm_Perform(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_LinearForm_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_LinearForm_LastShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_LinearForm_Shape(self, *args)
 
-    def Shapes(self, *args):
+    def Shapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1713,42 +1713,42 @@ class LocOpe_Pipe(object):
 
         """
         _LocOpe.LocOpe_Pipe_swiginit(self,_LocOpe.new_LocOpe_Pipe(*args))
-    def Spine(self, *args):
+    def Spine(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Pipe_Spine(self, *args)
 
-    def Profile(self, *args):
+    def Profile(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Pipe_Profile(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Pipe_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Pipe_LastShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Pipe_Shape(self, *args)
 
-    def Shapes(self, *args):
+    def Shapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1757,7 +1757,7 @@ class LocOpe_Pipe(object):
         """
         return _LocOpe.LocOpe_Pipe_Shapes(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "TColGeom_SequenceOfCurve const &" :
         """
         :param Spt:
         :type Spt: TColgp_SequenceOfPnt
@@ -1766,7 +1766,7 @@ class LocOpe_Pipe(object):
         """
         return _LocOpe.LocOpe_Pipe_Curves(self, *args)
 
-    def BarycCurve(self, *args):
+    def BarycCurve(self, *args) -> "Handle_Geom_Curve" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -1818,49 +1818,49 @@ class LocOpe_PntFace(object):
 
         """
         _LocOpe.LocOpe_PntFace_swiginit(self,_LocOpe.new_LocOpe_PntFace(*args))
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _LocOpe.LocOpe_PntFace_Pnt(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _LocOpe.LocOpe_PntFace_Face(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :rtype: TopAbs_Orientation
 
         """
         return _LocOpe.LocOpe_PntFace_Orientation(self, *args)
 
-    def ChangeOrientation(self, *args):
+    def ChangeOrientation(self, *args) -> "TopAbs_Orientation &" :
         """
         :rtype: TopAbs_Orientation
 
         """
         return _LocOpe.LocOpe_PntFace_ChangeOrientation(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocOpe.LocOpe_PntFace_Parameter(self, *args)
 
-    def UParameter(self, *args):
+    def UParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocOpe.LocOpe_PntFace_UParameter(self, *args)
 
-    def VParameter(self, *args):
+    def VParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1909,7 +1909,7 @@ class LocOpe_Prism(object):
 
         """
         _LocOpe.LocOpe_Prism_swiginit(self,_LocOpe.new_LocOpe_Prism(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Base:
         :type Base: TopoDS_Shape &
@@ -1928,28 +1928,28 @@ class LocOpe_Prism(object):
         """
         return _LocOpe.LocOpe_Prism_Perform(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Prism_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Prism_LastShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_Prism_Shape(self, *args)
 
-    def Shapes(self, *args):
+    def Shapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1958,7 +1958,7 @@ class LocOpe_Prism(object):
         """
         return _LocOpe.LocOpe_Prism_Shapes(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "void" :
         """
         :param SCurves:
         :type SCurves: TColGeom_SequenceOfCurve &
@@ -1967,7 +1967,7 @@ class LocOpe_Prism(object):
         """
         return _LocOpe.LocOpe_Prism_Curves(self, *args)
 
-    def BarycCurve(self, *args):
+    def BarycCurve(self, *args) -> "Handle_Geom_Curve" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -1997,28 +1997,28 @@ class LocOpe_ProjectedWires(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def InitEdgeIterator(self, *args):
+    def InitEdgeIterator(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _LocOpe.LocOpe_ProjectedWires_InitEdgeIterator(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_ProjectedWires_MoreEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _LocOpe.LocOpe_ProjectedWires_Edge(self, *args)
 
-    def OnFace(self, *args):
+    def OnFace(self, *args) -> "TopoDS_Face" :
         """
         * Returns the face of the shape on which the current edge is projected.
 
@@ -2027,14 +2027,14 @@ class LocOpe_ProjectedWires(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_ProjectedWires_OnFace(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _LocOpe.LocOpe_ProjectedWires_NextEdge(self, *args)
 
-    def OnVertex(self, *args):
+    def OnVertex(self, *args) -> "Standard_Boolean" :
         """
         :param Vwire:
         :type Vwire: TopoDS_Vertex &
@@ -2045,7 +2045,7 @@ class LocOpe_ProjectedWires(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_ProjectedWires_OnVertex(self, *args)
 
-    def OnEdge(self, *args):
+    def OnEdge(self, *args) -> "Standard_Boolean" :
         """
         * If the current edge is projected on an edge, returns <Standard_True> and sets the value of <E>. Otherwise, returns <Standard_False>.
 
@@ -2066,7 +2066,7 @@ class LocOpe_ProjectedWires(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_ProjectedWires_OnEdge(self, *args)
 
-    def IsFaceWithSection(self, *args):
+    def IsFaceWithSection(self, *args) -> "Standard_Boolean" :
         """
         * tells is the face to be split by section or not
 
@@ -2077,11 +2077,11 @@ class LocOpe_ProjectedWires(OCC.MMgt.MMgt_TShared):
         """
         return _LocOpe.LocOpe_ProjectedWires_IsFaceWithSection(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_ProjectedWires self)"""
         return _LocOpe.LocOpe_ProjectedWires__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_ProjectedWires" :
         """GetHandle(LocOpe_ProjectedWires self) -> Handle_LocOpe_ProjectedWires"""
         return _LocOpe.LocOpe_ProjectedWires_GetHandle(self)
 
@@ -2127,7 +2127,7 @@ Handle_LocOpe_ProjectedWires._kill_pointed = new_instancemethod(_LocOpe.Handle_L
 Handle_LocOpe_ProjectedWires_swigregister = _LocOpe.Handle_LocOpe_ProjectedWires_swigregister
 Handle_LocOpe_ProjectedWires_swigregister(Handle_LocOpe_ProjectedWires)
 
-def Handle_LocOpe_ProjectedWires_DownCast(*args):
+def Handle_LocOpe_ProjectedWires_DownCast(*args) -> "Handle_LocOpe_ProjectedWires const" :
   return _LocOpe.Handle_LocOpe_ProjectedWires_DownCast(*args)
 Handle_LocOpe_ProjectedWires_DownCast = _LocOpe.Handle_LocOpe_ProjectedWires_DownCast
 
@@ -2146,18 +2146,18 @@ class LocOpe_SequenceNodeOfSequenceOfCirc(OCC.TCollection.TCollection_SeqNode):
 
         """
         _LocOpe.LocOpe_SequenceNodeOfSequenceOfCirc_swiginit(self,_LocOpe.new_LocOpe_SequenceNodeOfSequenceOfCirc(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Circ" :
         """
         :rtype: gp_Circ
 
         """
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfCirc_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_SequenceNodeOfSequenceOfCirc self)"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfCirc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_SequenceNodeOfSequenceOfCirc" :
         """GetHandle(LocOpe_SequenceNodeOfSequenceOfCirc self) -> Handle_LocOpe_SequenceNodeOfSequenceOfCirc"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfCirc_GetHandle(self)
 
@@ -2196,7 +2196,7 @@ Handle_LocOpe_SequenceNodeOfSequenceOfCirc._kill_pointed = new_instancemethod(_L
 Handle_LocOpe_SequenceNodeOfSequenceOfCirc_swigregister = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfCirc_swigregister
 Handle_LocOpe_SequenceNodeOfSequenceOfCirc_swigregister(Handle_LocOpe_SequenceNodeOfSequenceOfCirc)
 
-def Handle_LocOpe_SequenceNodeOfSequenceOfCirc_DownCast(*args):
+def Handle_LocOpe_SequenceNodeOfSequenceOfCirc_DownCast(*args) -> "Handle_LocOpe_SequenceNodeOfSequenceOfCirc const" :
   return _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfCirc_DownCast(*args)
 Handle_LocOpe_SequenceNodeOfSequenceOfCirc_DownCast = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfCirc_DownCast
 
@@ -2215,18 +2215,18 @@ class LocOpe_SequenceNodeOfSequenceOfLin(OCC.TCollection.TCollection_SeqNode):
 
         """
         _LocOpe.LocOpe_SequenceNodeOfSequenceOfLin_swiginit(self,_LocOpe.new_LocOpe_SequenceNodeOfSequenceOfLin(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Lin" :
         """
         :rtype: gp_Lin
 
         """
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfLin_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_SequenceNodeOfSequenceOfLin self)"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfLin__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_SequenceNodeOfSequenceOfLin" :
         """GetHandle(LocOpe_SequenceNodeOfSequenceOfLin self) -> Handle_LocOpe_SequenceNodeOfSequenceOfLin"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfLin_GetHandle(self)
 
@@ -2265,7 +2265,7 @@ Handle_LocOpe_SequenceNodeOfSequenceOfLin._kill_pointed = new_instancemethod(_Lo
 Handle_LocOpe_SequenceNodeOfSequenceOfLin_swigregister = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfLin_swigregister
 Handle_LocOpe_SequenceNodeOfSequenceOfLin_swigregister(Handle_LocOpe_SequenceNodeOfSequenceOfLin)
 
-def Handle_LocOpe_SequenceNodeOfSequenceOfLin_DownCast(*args):
+def Handle_LocOpe_SequenceNodeOfSequenceOfLin_DownCast(*args) -> "Handle_LocOpe_SequenceNodeOfSequenceOfLin const" :
   return _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfLin_DownCast(*args)
 Handle_LocOpe_SequenceNodeOfSequenceOfLin_DownCast = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfLin_DownCast
 
@@ -2284,18 +2284,18 @@ class LocOpe_SequenceNodeOfSequenceOfPntFace(OCC.TCollection.TCollection_SeqNode
 
         """
         _LocOpe.LocOpe_SequenceNodeOfSequenceOfPntFace_swiginit(self,_LocOpe.new_LocOpe_SequenceNodeOfSequenceOfPntFace(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "LocOpe_PntFace &" :
         """
         :rtype: LocOpe_PntFace
 
         """
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfPntFace_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_SequenceNodeOfSequenceOfPntFace self)"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfPntFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_SequenceNodeOfSequenceOfPntFace" :
         """GetHandle(LocOpe_SequenceNodeOfSequenceOfPntFace self) -> Handle_LocOpe_SequenceNodeOfSequenceOfPntFace"""
         return _LocOpe.LocOpe_SequenceNodeOfSequenceOfPntFace_GetHandle(self)
 
@@ -2334,7 +2334,7 @@ Handle_LocOpe_SequenceNodeOfSequenceOfPntFace._kill_pointed = new_instancemethod
 Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_swigregister = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_swigregister
 Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_swigregister(Handle_LocOpe_SequenceNodeOfSequenceOfPntFace)
 
-def Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_DownCast(*args):
+def Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_DownCast(*args) -> "Handle_LocOpe_SequenceNodeOfSequenceOfPntFace const" :
   return _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_DownCast(*args)
 Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_DownCast = _LocOpe.Handle_LocOpe_SequenceNodeOfSequenceOfPntFace_DownCast
 
@@ -2347,14 +2347,14 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _LocOpe.LocOpe_SequenceOfCirc_swiginit(self,_LocOpe.new_LocOpe_SequenceOfCirc(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "LocOpe_SequenceOfCirc const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfCirc &
@@ -2363,7 +2363,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "LocOpe_SequenceOfCirc const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfCirc &
@@ -2372,7 +2372,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Circ
@@ -2385,7 +2385,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Circ
@@ -2398,7 +2398,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2415,7 +2415,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2432,21 +2432,21 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "gp_Circ const" :
         """
         :rtype: gp_Circ
 
         """
         return _LocOpe.LocOpe_SequenceOfCirc_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "gp_Circ const" :
         """
         :rtype: gp_Circ
 
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2457,7 +2457,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Circ const" :
         """
         :param Index:
         :type Index: int
@@ -2466,7 +2466,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2477,7 +2477,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "gp_Circ" :
         """
         :param Index:
         :type Index: int
@@ -2486,7 +2486,7 @@ class LocOpe_SequenceOfCirc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfCirc_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2536,14 +2536,14 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _LocOpe.LocOpe_SequenceOfLin_swiginit(self,_LocOpe.new_LocOpe_SequenceOfLin(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_SequenceOfLin_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "LocOpe_SequenceOfLin const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfLin &
@@ -2552,7 +2552,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "LocOpe_SequenceOfLin const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfLin &
@@ -2561,7 +2561,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Lin
@@ -2574,7 +2574,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Lin
@@ -2587,7 +2587,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2604,7 +2604,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2621,21 +2621,21 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "gp_Lin const" :
         """
         :rtype: gp_Lin
 
         """
         return _LocOpe.LocOpe_SequenceOfLin_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "gp_Lin const" :
         """
         :rtype: gp_Lin
 
         """
         return _LocOpe.LocOpe_SequenceOfLin_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2646,7 +2646,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Lin const" :
         """
         :param Index:
         :type Index: int
@@ -2655,7 +2655,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2666,7 +2666,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "gp_Lin" :
         """
         :param Index:
         :type Index: int
@@ -2675,7 +2675,7 @@ class LocOpe_SequenceOfLin(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfLin_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2725,14 +2725,14 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _LocOpe.LocOpe_SequenceOfPntFace_swiginit(self,_LocOpe.new_LocOpe_SequenceOfPntFace(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "LocOpe_SequenceOfPntFace const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfPntFace &
@@ -2741,7 +2741,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "LocOpe_SequenceOfPntFace const &" :
         """
         :param Other:
         :type Other: LocOpe_SequenceOfPntFace &
@@ -2750,7 +2750,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: LocOpe_PntFace &
@@ -2763,7 +2763,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: LocOpe_PntFace &
@@ -2776,7 +2776,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2793,7 +2793,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2810,21 +2810,21 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "LocOpe_PntFace const &" :
         """
         :rtype: LocOpe_PntFace
 
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "LocOpe_PntFace const &" :
         """
         :rtype: LocOpe_PntFace
 
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2835,7 +2835,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "LocOpe_PntFace const &" :
         """
         :param Index:
         :type Index: int
@@ -2844,7 +2844,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2855,7 +2855,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "LocOpe_PntFace &" :
         """
         :param Index:
         :type Index: int
@@ -2864,7 +2864,7 @@ class LocOpe_SequenceOfPntFace(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LocOpe.LocOpe_SequenceOfPntFace_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2922,7 +2922,7 @@ class LocOpe_SplitDrafts(object):
 
         """
         _LocOpe.LocOpe_SplitDrafts_swiginit(self,_LocOpe.new_LocOpe_SplitDrafts(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the algoritm with the shape <S>.
 
@@ -2933,7 +2933,7 @@ class LocOpe_SplitDrafts(object):
         """
         return _LocOpe.LocOpe_SplitDrafts_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Splits the face <F> of the former given shape with the wire <W>. The wire is assumed to lie on the face. Puts a draft angle on both parts of the wire. <Extractg>, <Nplg>, <Angleg> define the arguments for the left part of the wire. <Extractd>, <Npld>, <Angled> define the arguments for the right part of the wire. The draft angle is measured with the direction <Extract>. <Npl> defines the neutral plane (points belonging to the neutral plane are not modified). <Angle> is the value of the draft angle. If <ModifyLeft> is set to <Standard_False>, no draft angle is applied to the left part of the wire. If <ModifyRight> is set to <Standard_False>,no draft angle is applied to the right part of the wire.
 
@@ -2976,7 +2976,7 @@ class LocOpe_SplitDrafts(object):
         """
         return _LocOpe.LocOpe_SplitDrafts_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns <Standard_True> if the modification has been succesfully performed.
 
@@ -2985,14 +2985,14 @@ class LocOpe_SplitDrafts(object):
         """
         return _LocOpe.LocOpe_SplitDrafts_IsDone(self, *args)
 
-    def OriginalShape(self, *args):
+    def OriginalShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _LocOpe.LocOpe_SplitDrafts_OriginalShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the modified shape.
 
@@ -3001,7 +3001,7 @@ class LocOpe_SplitDrafts(object):
         """
         return _LocOpe.LocOpe_SplitDrafts_Shape(self, *args)
 
-    def ShapesFromShape(self, *args):
+    def ShapesFromShape(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Manages the descendant shapes.
 
@@ -3047,7 +3047,7 @@ class LocOpe_SplitShape(object):
 
         """
         _LocOpe.LocOpe_SplitShape_swiginit(self,_LocOpe.new_LocOpe_SplitShape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the process on the shape <S>.
 
@@ -3058,7 +3058,7 @@ class LocOpe_SplitShape(object):
         """
         return _LocOpe.LocOpe_SplitShape_Init(self, *args)
 
-    def CanSplit(self, *args):
+    def CanSplit(self, *args) -> "Standard_Boolean" :
         """
         * Tests if it is possible to split the edge <E>.
 
@@ -3069,7 +3069,7 @@ class LocOpe_SplitShape(object):
         """
         return _LocOpe.LocOpe_SplitShape_CanSplit(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the vertex <V> on the edge <E>, at parameter <P>.
 
@@ -3100,7 +3100,7 @@ class LocOpe_SplitShape(object):
         """
         return _LocOpe.LocOpe_SplitShape_Add(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the 'original' shape.
 
@@ -3109,7 +3109,7 @@ class LocOpe_SplitShape(object):
         """
         return _LocOpe.LocOpe_SplitShape_Shape(self, *args)
 
-    def DescendantShapes(self, *args):
+    def DescendantShapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of descendant shapes of <S>.
 
@@ -3120,7 +3120,7 @@ class LocOpe_SplitShape(object):
         """
         return _LocOpe.LocOpe_SplitShape_DescendantShapes(self, *args)
 
-    def LeftOf(self, *args):
+    def LeftOf(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the 'left' part defined by the wire <W> on the face <F>. The returned list of shape is in fact a list of faces. The face <F> is considered with its topological orientation in the original shape. <W> is considered with its orientation.
 
@@ -3168,7 +3168,7 @@ class LocOpe_Spliter(object):
 
         """
         _LocOpe.LocOpe_Spliter_swiginit(self,_LocOpe.new_LocOpe_Spliter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the algorithm on the shape <S>.
 
@@ -3179,7 +3179,7 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param PW:
         :type PW: Handle_LocOpe_ProjectedWires &
@@ -3188,14 +3188,14 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_Spliter_IsDone(self, *args)
 
-    def ResultingShape(self, *args):
+    def ResultingShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the new shape
 
@@ -3204,7 +3204,7 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_ResultingShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the initial shape
 
@@ -3213,7 +3213,7 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_Shape(self, *args)
 
-    def DirectLeft(self, *args):
+    def DirectLeft(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the faces which are the left of the projected wires and which are
 
@@ -3222,7 +3222,7 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_DirectLeft(self, *args)
 
-    def Left(self, *args):
+    def Left(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the faces of the 'left' part on the shape. (It is build from DirectLeft, with the faces connected to this set, and so on...).
 
@@ -3231,7 +3231,7 @@ class LocOpe_Spliter(object):
         """
         return _LocOpe.LocOpe_Spliter_Left(self, *args)
 
-    def DescendantShapes(self, *args):
+    def DescendantShapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of descendant shapes of <S>.
 
@@ -3275,7 +3275,7 @@ class LocOpe_GluedShape(LocOpe_GeneratedShape):
 
         """
         _LocOpe.LocOpe_GluedShape_swiginit(self,_LocOpe.new_LocOpe_GluedShape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -3284,7 +3284,7 @@ class LocOpe_GluedShape(LocOpe_GeneratedShape):
         """
         return _LocOpe.LocOpe_GluedShape_Init(self, *args)
 
-    def GlueOnFace(self, *args):
+    def GlueOnFace(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -3293,7 +3293,7 @@ class LocOpe_GluedShape(LocOpe_GeneratedShape):
         """
         return _LocOpe.LocOpe_GluedShape_GlueOnFace(self, *args)
 
-    def Generated(self, *args):
+    def Generated(self, *args) -> "TopoDS_Face" :
         """
         * Returns the edge created by the vertex <V>. If none, must return a null shape.
 
@@ -3310,11 +3310,11 @@ class LocOpe_GluedShape(LocOpe_GeneratedShape):
         """
         return _LocOpe.LocOpe_GluedShape_Generated(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_GluedShape self)"""
         return _LocOpe.LocOpe_GluedShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_GluedShape" :
         """GetHandle(LocOpe_GluedShape self) -> Handle_LocOpe_GluedShape"""
         return _LocOpe.LocOpe_GluedShape_GetHandle(self)
 
@@ -3355,7 +3355,7 @@ Handle_LocOpe_GluedShape._kill_pointed = new_instancemethod(_LocOpe.Handle_LocOp
 Handle_LocOpe_GluedShape_swigregister = _LocOpe.Handle_LocOpe_GluedShape_swigregister
 Handle_LocOpe_GluedShape_swigregister(Handle_LocOpe_GluedShape)
 
-def Handle_LocOpe_GluedShape_DownCast(*args):
+def Handle_LocOpe_GluedShape_DownCast(*args) -> "Handle_LocOpe_GluedShape const" :
   return _LocOpe.Handle_LocOpe_GluedShape_DownCast(*args)
 Handle_LocOpe_GluedShape_DownCast = _LocOpe.Handle_LocOpe_GluedShape_DownCast
 
@@ -3370,7 +3370,7 @@ class LocOpe_WiresOnShape(LocOpe_ProjectedWires):
 
         """
         _LocOpe.LocOpe_WiresOnShape_swiginit(self,_LocOpe.new_LocOpe_WiresOnShape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -3379,7 +3379,7 @@ class LocOpe_WiresOnShape(LocOpe_ProjectedWires):
         """
         return _LocOpe.LocOpe_WiresOnShape_Init(self, *args)
 
-    def SetCheckInterior(self, *args):
+    def SetCheckInterior(self, *args) -> "void" :
         """
         * Set the flag of check internal intersections default value is True (to check)
 
@@ -3390,7 +3390,7 @@ class LocOpe_WiresOnShape(LocOpe_ProjectedWires):
         """
         return _LocOpe.LocOpe_WiresOnShape_SetCheckInterior(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param W:
         :type W: TopoDS_Wire &
@@ -3419,21 +3419,21 @@ class LocOpe_WiresOnShape(LocOpe_ProjectedWires):
         """
         return _LocOpe.LocOpe_WiresOnShape_Bind(self, *args)
 
-    def BindAll(self, *args):
+    def BindAll(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LocOpe.LocOpe_WiresOnShape_BindAll(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocOpe.LocOpe_WiresOnShape_IsDone(self, *args)
 
-    def OnEdge(self, *args):
+    def OnEdge(self, *args) -> "Standard_Boolean" :
         """
         * If the current edge is projected on an edge, returns <Standard_True> and sets the value of <E>. Otherwise, returns <Standard_False>.
 
@@ -3454,11 +3454,11 @@ class LocOpe_WiresOnShape(LocOpe_ProjectedWires):
         """
         return _LocOpe.LocOpe_WiresOnShape_OnEdge(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LocOpe_WiresOnShape self)"""
         return _LocOpe.LocOpe_WiresOnShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LocOpe_WiresOnShape" :
         """GetHandle(LocOpe_WiresOnShape self) -> Handle_LocOpe_WiresOnShape"""
         return _LocOpe.LocOpe_WiresOnShape_GetHandle(self)
 
@@ -3502,7 +3502,7 @@ Handle_LocOpe_WiresOnShape._kill_pointed = new_instancemethod(_LocOpe.Handle_Loc
 Handle_LocOpe_WiresOnShape_swigregister = _LocOpe.Handle_LocOpe_WiresOnShape_swigregister
 Handle_LocOpe_WiresOnShape_swigregister(Handle_LocOpe_WiresOnShape)
 
-def Handle_LocOpe_WiresOnShape_DownCast(*args):
+def Handle_LocOpe_WiresOnShape_DownCast(*args) -> "Handle_LocOpe_WiresOnShape const" :
   return _LocOpe.Handle_LocOpe_WiresOnShape_DownCast(*args)
 Handle_LocOpe_WiresOnShape_DownCast = _LocOpe.Handle_LocOpe_WiresOnShape_DownCast
 

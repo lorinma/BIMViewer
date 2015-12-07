@@ -132,7 +132,7 @@ class TColStd_Array1OfAsciiString(object):
 
         """
         _TColStd.TColStd_Array1OfAsciiString_swiginit(self,_TColStd.new_TColStd_Array1OfAsciiString(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TCollection_AsciiString &
@@ -141,21 +141,21 @@ class TColStd_Array1OfAsciiString(object):
         """
         return _TColStd.TColStd_Array1OfAsciiString_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfAsciiString_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfAsciiString_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfAsciiString &
@@ -164,7 +164,7 @@ class TColStd_Array1OfAsciiString(object):
         """
         return _TColStd.TColStd_Array1OfAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfAsciiString &
@@ -173,28 +173,28 @@ class TColStd_Array1OfAsciiString(object):
         """
         return _TColStd.TColStd_Array1OfAsciiString_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfAsciiString_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfAsciiString_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfAsciiString_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -205,7 +205,7 @@ class TColStd_Array1OfAsciiString(object):
         """
         return _TColStd.TColStd_Array1OfAsciiString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param Index:
         :type Index: int
@@ -214,7 +214,7 @@ class TColStd_Array1OfAsciiString(object):
         """
         return _TColStd.TColStd_Array1OfAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_AsciiString &" :
         """
         :param Index:
         :type Index: int
@@ -267,7 +267,7 @@ class TColStd_Array1OfBoolean(object):
 
         """
         _TColStd.TColStd_Array1OfBoolean_swiginit(self,_TColStd.new_TColStd_Array1OfBoolean(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: bool
@@ -276,21 +276,21 @@ class TColStd_Array1OfBoolean(object):
         """
         return _TColStd.TColStd_Array1OfBoolean_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfBoolean_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfBoolean_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfBoolean &
@@ -299,7 +299,7 @@ class TColStd_Array1OfBoolean(object):
         """
         return _TColStd.TColStd_Array1OfBoolean_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfBoolean &
@@ -308,28 +308,28 @@ class TColStd_Array1OfBoolean(object):
         """
         return _TColStd.TColStd_Array1OfBoolean_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfBoolean_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfBoolean_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfBoolean_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -340,7 +340,7 @@ class TColStd_Array1OfBoolean(object):
         """
         return _TColStd.TColStd_Array1OfBoolean_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :param Index:
         :type Index: int
@@ -349,7 +349,7 @@ class TColStd_Array1OfBoolean(object):
         """
         return _TColStd.TColStd_Array1OfBoolean_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Boolean &" :
         """
         :param Index:
         :type Index: int
@@ -402,7 +402,7 @@ class TColStd_Array1OfByte(object):
 
         """
         _TColStd.TColStd_Array1OfByte_swiginit(self,_TColStd.new_TColStd_Array1OfByte(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Byte &
@@ -411,21 +411,21 @@ class TColStd_Array1OfByte(object):
         """
         return _TColStd.TColStd_Array1OfByte_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfByte_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfByte_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfByte const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfByte &
@@ -434,7 +434,7 @@ class TColStd_Array1OfByte(object):
         """
         return _TColStd.TColStd_Array1OfByte_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfByte const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfByte &
@@ -443,28 +443,28 @@ class TColStd_Array1OfByte(object):
         """
         return _TColStd.TColStd_Array1OfByte_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfByte_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfByte_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfByte_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -475,7 +475,7 @@ class TColStd_Array1OfByte(object):
         """
         return _TColStd.TColStd_Array1OfByte_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte const &" :
         """
         :param Index:
         :type Index: int
@@ -484,7 +484,7 @@ class TColStd_Array1OfByte(object):
         """
         return _TColStd.TColStd_Array1OfByte_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Byte &" :
         """
         :param Index:
         :type Index: int
@@ -537,7 +537,7 @@ class TColStd_Array1OfCharacter(object):
 
         """
         _TColStd.TColStd_Array1OfCharacter_swiginit(self,_TColStd.new_TColStd_Array1OfCharacter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Character &
@@ -546,21 +546,21 @@ class TColStd_Array1OfCharacter(object):
         """
         return _TColStd.TColStd_Array1OfCharacter_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfCharacter_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfCharacter_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfCharacter const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfCharacter &
@@ -569,7 +569,7 @@ class TColStd_Array1OfCharacter(object):
         """
         return _TColStd.TColStd_Array1OfCharacter_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfCharacter const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfCharacter &
@@ -578,28 +578,28 @@ class TColStd_Array1OfCharacter(object):
         """
         return _TColStd.TColStd_Array1OfCharacter_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfCharacter_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfCharacter_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfCharacter_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -610,7 +610,7 @@ class TColStd_Array1OfCharacter(object):
         """
         return _TColStd.TColStd_Array1OfCharacter_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character const &" :
         """
         :param Index:
         :type Index: int
@@ -619,7 +619,7 @@ class TColStd_Array1OfCharacter(object):
         """
         return _TColStd.TColStd_Array1OfCharacter_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Character &" :
         """
         :param Index:
         :type Index: int
@@ -672,7 +672,7 @@ class TColStd_Array1OfExtendedString(object):
 
         """
         _TColStd.TColStd_Array1OfExtendedString_swiginit(self,_TColStd.new_TColStd_Array1OfExtendedString(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TCollection_ExtendedString &
@@ -681,21 +681,21 @@ class TColStd_Array1OfExtendedString(object):
         """
         return _TColStd.TColStd_Array1OfExtendedString_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfExtendedString_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfExtendedString_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfExtendedString &
@@ -704,7 +704,7 @@ class TColStd_Array1OfExtendedString(object):
         """
         return _TColStd.TColStd_Array1OfExtendedString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfExtendedString &
@@ -713,28 +713,28 @@ class TColStd_Array1OfExtendedString(object):
         """
         return _TColStd.TColStd_Array1OfExtendedString_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfExtendedString_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfExtendedString_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfExtendedString_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -745,7 +745,7 @@ class TColStd_Array1OfExtendedString(object):
         """
         return _TColStd.TColStd_Array1OfExtendedString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param Index:
         :type Index: int
@@ -754,7 +754,7 @@ class TColStd_Array1OfExtendedString(object):
         """
         return _TColStd.TColStd_Array1OfExtendedString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_ExtendedString &" :
         """
         :param Index:
         :type Index: int
@@ -807,7 +807,7 @@ class TColStd_Array1OfInteger(object):
 
         """
         _TColStd.TColStd_Array1OfInteger_swiginit(self,_TColStd.new_TColStd_Array1OfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: int &
@@ -816,21 +816,21 @@ class TColStd_Array1OfInteger(object):
         """
         return _TColStd.TColStd_Array1OfInteger_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfInteger_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfInteger_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfInteger &
@@ -839,7 +839,7 @@ class TColStd_Array1OfInteger(object):
         """
         return _TColStd.TColStd_Array1OfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfInteger &
@@ -848,28 +848,28 @@ class TColStd_Array1OfInteger(object):
         """
         return _TColStd.TColStd_Array1OfInteger_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -880,7 +880,7 @@ class TColStd_Array1OfInteger(object):
         """
         return _TColStd.TColStd_Array1OfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param Index:
         :type Index: int
@@ -889,7 +889,7 @@ class TColStd_Array1OfInteger(object):
         """
         return _TColStd.TColStd_Array1OfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param Index:
         :type Index: int
@@ -942,7 +942,7 @@ class TColStd_Array1OfListOfInteger(object):
 
         """
         _TColStd.TColStd_Array1OfListOfInteger_swiginit(self,_TColStd.new_TColStd_Array1OfListOfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_ListOfInteger &
@@ -951,21 +951,21 @@ class TColStd_Array1OfListOfInteger(object):
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfListOfInteger_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfListOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfListOfInteger &
@@ -974,7 +974,7 @@ class TColStd_Array1OfListOfInteger(object):
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfListOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfListOfInteger &
@@ -983,28 +983,28 @@ class TColStd_Array1OfListOfInteger(object):
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1015,7 +1015,7 @@ class TColStd_Array1OfListOfInteger(object):
         """
         return _TColStd.TColStd_Array1OfListOfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :param Index:
         :type Index: int
@@ -1024,7 +1024,7 @@ class TColStd_Array1OfListOfInteger(object):
         """
         return _TColStd.TColStd_Array1OfListOfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_ListOfInteger &" :
         """
         :param Index:
         :type Index: int
@@ -1077,7 +1077,7 @@ class TColStd_Array1OfReal(object):
 
         """
         _TColStd.TColStd_Array1OfReal_swiginit(self,_TColStd.new_TColStd_Array1OfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: float &
@@ -1086,21 +1086,21 @@ class TColStd_Array1OfReal(object):
         """
         return _TColStd.TColStd_Array1OfReal_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfReal_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfReal_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfReal &
@@ -1109,7 +1109,7 @@ class TColStd_Array1OfReal(object):
         """
         return _TColStd.TColStd_Array1OfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfReal &
@@ -1118,28 +1118,28 @@ class TColStd_Array1OfReal(object):
         """
         return _TColStd.TColStd_Array1OfReal_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfReal_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfReal_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfReal_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1150,7 +1150,7 @@ class TColStd_Array1OfReal(object):
         """
         return _TColStd.TColStd_Array1OfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param Index:
         :type Index: int
@@ -1159,7 +1159,7 @@ class TColStd_Array1OfReal(object):
         """
         return _TColStd.TColStd_Array1OfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param Index:
         :type Index: int
@@ -1212,7 +1212,7 @@ class TColStd_Array1OfTransient(object):
 
         """
         _TColStd.TColStd_Array1OfTransient_swiginit(self,_TColStd.new_TColStd_Array1OfTransient(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Standard_Transient &
@@ -1221,21 +1221,21 @@ class TColStd_Array1OfTransient(object):
         """
         return _TColStd.TColStd_Array1OfTransient_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array1OfTransient_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_Array1OfTransient_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array1OfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfTransient &
@@ -1244,7 +1244,7 @@ class TColStd_Array1OfTransient(object):
         """
         return _TColStd.TColStd_Array1OfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array1OfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_Array1OfTransient &
@@ -1253,28 +1253,28 @@ class TColStd_Array1OfTransient(object):
         """
         return _TColStd.TColStd_Array1OfTransient_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfTransient_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfTransient_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array1OfTransient_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1285,7 +1285,7 @@ class TColStd_Array1OfTransient(object):
         """
         return _TColStd.TColStd_Array1OfTransient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param Index:
         :type Index: int
@@ -1294,7 +1294,7 @@ class TColStd_Array1OfTransient(object):
         """
         return _TColStd.TColStd_Array1OfTransient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param Index:
         :type Index: int
@@ -1355,7 +1355,7 @@ class TColStd_Array2OfBoolean(object):
 
         """
         _TColStd.TColStd_Array2OfBoolean_swiginit(self,_TColStd.new_TColStd_Array2OfBoolean(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: bool
@@ -1364,14 +1364,14 @@ class TColStd_Array2OfBoolean(object):
         """
         return _TColStd.TColStd_Array2OfBoolean_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array2OfBoolean_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array2OfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfBoolean &
@@ -1380,7 +1380,7 @@ class TColStd_Array2OfBoolean(object):
         """
         return _TColStd.TColStd_Array2OfBoolean_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array2OfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfBoolean &
@@ -1389,49 +1389,49 @@ class TColStd_Array2OfBoolean(object):
         """
         return _TColStd.TColStd_Array2OfBoolean_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfBoolean_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1444,7 +1444,7 @@ class TColStd_Array2OfBoolean(object):
         """
         return _TColStd.TColStd_Array2OfBoolean_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :param Row:
         :type Row: int
@@ -1455,7 +1455,7 @@ class TColStd_Array2OfBoolean(object):
         """
         return _TColStd.TColStd_Array2OfBoolean_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Boolean &" :
         """
         :param Row:
         :type Row: int
@@ -1520,7 +1520,7 @@ class TColStd_Array2OfCharacter(object):
 
         """
         _TColStd.TColStd_Array2OfCharacter_swiginit(self,_TColStd.new_TColStd_Array2OfCharacter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Character &
@@ -1529,14 +1529,14 @@ class TColStd_Array2OfCharacter(object):
         """
         return _TColStd.TColStd_Array2OfCharacter_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array2OfCharacter_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array2OfCharacter const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfCharacter &
@@ -1545,7 +1545,7 @@ class TColStd_Array2OfCharacter(object):
         """
         return _TColStd.TColStd_Array2OfCharacter_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array2OfCharacter const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfCharacter &
@@ -1554,49 +1554,49 @@ class TColStd_Array2OfCharacter(object):
         """
         return _TColStd.TColStd_Array2OfCharacter_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfCharacter_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1609,7 +1609,7 @@ class TColStd_Array2OfCharacter(object):
         """
         return _TColStd.TColStd_Array2OfCharacter_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character const &" :
         """
         :param Row:
         :type Row: int
@@ -1620,7 +1620,7 @@ class TColStd_Array2OfCharacter(object):
         """
         return _TColStd.TColStd_Array2OfCharacter_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Character &" :
         """
         :param Row:
         :type Row: int
@@ -1685,7 +1685,7 @@ class TColStd_Array2OfInteger(object):
 
         """
         _TColStd.TColStd_Array2OfInteger_swiginit(self,_TColStd.new_TColStd_Array2OfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: int &
@@ -1694,14 +1694,14 @@ class TColStd_Array2OfInteger(object):
         """
         return _TColStd.TColStd_Array2OfInteger_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array2OfInteger_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array2OfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfInteger &
@@ -1710,7 +1710,7 @@ class TColStd_Array2OfInteger(object):
         """
         return _TColStd.TColStd_Array2OfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array2OfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfInteger &
@@ -1719,49 +1719,49 @@ class TColStd_Array2OfInteger(object):
         """
         return _TColStd.TColStd_Array2OfInteger_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfInteger_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1774,7 +1774,7 @@ class TColStd_Array2OfInteger(object):
         """
         return _TColStd.TColStd_Array2OfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param Row:
         :type Row: int
@@ -1785,7 +1785,7 @@ class TColStd_Array2OfInteger(object):
         """
         return _TColStd.TColStd_Array2OfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param Row:
         :type Row: int
@@ -1850,7 +1850,7 @@ class TColStd_Array2OfReal(object):
 
         """
         _TColStd.TColStd_Array2OfReal_swiginit(self,_TColStd.new_TColStd_Array2OfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: float &
@@ -1859,14 +1859,14 @@ class TColStd_Array2OfReal(object):
         """
         return _TColStd.TColStd_Array2OfReal_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array2OfReal_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfReal &
@@ -1875,7 +1875,7 @@ class TColStd_Array2OfReal(object):
         """
         return _TColStd.TColStd_Array2OfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfReal &
@@ -1884,49 +1884,49 @@ class TColStd_Array2OfReal(object):
         """
         return _TColStd.TColStd_Array2OfReal_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfReal_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1939,7 +1939,7 @@ class TColStd_Array2OfReal(object):
         """
         return _TColStd.TColStd_Array2OfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param Row:
         :type Row: int
@@ -1950,7 +1950,7 @@ class TColStd_Array2OfReal(object):
         """
         return _TColStd.TColStd_Array2OfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param Row:
         :type Row: int
@@ -2015,7 +2015,7 @@ class TColStd_Array2OfTransient(object):
 
         """
         _TColStd.TColStd_Array2OfTransient_swiginit(self,_TColStd.new_TColStd_Array2OfTransient(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Standard_Transient &
@@ -2024,14 +2024,14 @@ class TColStd_Array2OfTransient(object):
         """
         return _TColStd.TColStd_Array2OfTransient_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_Array2OfTransient_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_Array2OfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfTransient &
@@ -2040,7 +2040,7 @@ class TColStd_Array2OfTransient(object):
         """
         return _TColStd.TColStd_Array2OfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_Array2OfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_Array2OfTransient &
@@ -2049,49 +2049,49 @@ class TColStd_Array2OfTransient(object):
         """
         return _TColStd.TColStd_Array2OfTransient_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_Array2OfTransient_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -2104,7 +2104,7 @@ class TColStd_Array2OfTransient(object):
         """
         return _TColStd.TColStd_Array2OfTransient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param Row:
         :type Row: int
@@ -2115,7 +2115,7 @@ class TColStd_Array2OfTransient(object):
         """
         return _TColStd.TColStd_Array2OfTransient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param Row:
         :type Row: int
@@ -2164,7 +2164,7 @@ class TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger(OCC.TCollection.TColl
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfAsciiStringInteger &
@@ -2173,14 +2173,14 @@ class TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger(OCC.TCollection.TColl
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfAsciiStringInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -2215,7 +2215,7 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerInteger(OCC.TCollection.TCollecti
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerInteger_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfIntegerInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfIntegerInteger &
@@ -2224,14 +2224,14 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerInteger(OCC.TCollection.TCollecti
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -2266,7 +2266,7 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger(OCC.TCollection.TCo
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfIntegerListOfInteger &
@@ -2275,14 +2275,14 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger(OCC.TCollection.TCo
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerListOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :rtype: TColStd_ListOfInteger
 
@@ -2317,7 +2317,7 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerReal(OCC.TCollection.TCollection_
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerReal_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfIntegerReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfIntegerReal &
@@ -2326,14 +2326,14 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerReal(OCC.TCollection.TCollection_
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -2368,7 +2368,7 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerTransient(OCC.TCollection.TCollec
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerTransient_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfIntegerTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfIntegerTransient &
@@ -2377,14 +2377,14 @@ class TColStd_DataMapIteratorOfDataMapOfIntegerTransient(OCC.TCollection.TCollec
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerTransient_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfIntegerTransient_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -2419,7 +2419,7 @@ class TColStd_DataMapIteratorOfDataMapOfStringInteger(OCC.TCollection.TCollectio
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfStringInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfStringInteger &
@@ -2428,14 +2428,14 @@ class TColStd_DataMapIteratorOfDataMapOfStringInteger(OCC.TCollection.TCollectio
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfStringInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfStringInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -2470,7 +2470,7 @@ class TColStd_DataMapIteratorOfDataMapOfTransientTransient(OCC.TCollection.TColl
 
         """
         _TColStd.TColStd_DataMapIteratorOfDataMapOfTransientTransient_swiginit(self,_TColStd.new_TColStd_DataMapIteratorOfDataMapOfTransientTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_DataMapOfTransientTransient &
@@ -2479,14 +2479,14 @@ class TColStd_DataMapIteratorOfDataMapOfTransientTransient(OCC.TCollection.TColl
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfTransientTransient_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_DataMapIteratorOfDataMapOfTransientTransient_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -2523,26 +2523,26 @@ class TColStd_DataMapNodeOfDataMapOfAsciiStringInteger(OCC.TCollection.TCollecti
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_DataMapNodeOfDataMapOfAsciiStringInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_DataMapNodeOfDataMapOfAsciiStringInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfAsciiStringInteger self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfAsciiStringInteger self) -> Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_GetHandle(self)
 
@@ -2583,7 +2583,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger._kill_pointed = new_inst
 Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfAsciiStringInteger_DownCast
 
@@ -2602,27 +2602,27 @@ class TColStd_DataMapNodeOfDataMapOfIntegerInteger(OCC.TCollection.TCollection_M
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfIntegerInteger(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(TColStd_DataMapNodeOfDataMapOfIntegerInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_DataMapNodeOfDataMapOfIntegerInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_SetKey(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_DataMapNodeOfDataMapOfIntegerInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_DataMapNodeOfDataMapOfIntegerInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfIntegerInteger self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfIntegerInteger self) -> Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerInteger_GetHandle(self)
 
@@ -2664,7 +2664,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger._kill_pointed = new_instance
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerInteger_DownCast
 
@@ -2683,26 +2683,26 @@ class TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger(OCC.TCollection.TCollec
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfInteger &" :
         """
         :rtype: TColStd_ListOfInteger
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger self) -> Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_GetHandle(self)
 
@@ -2743,7 +2743,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger._kill_pointed = new_in
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast
 
@@ -2762,27 +2762,27 @@ class TColStd_DataMapNodeOfDataMapOfIntegerReal(OCC.TCollection.TCollection_MapN
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfIntegerReal(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(TColStd_DataMapNodeOfDataMapOfIntegerReal self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_DataMapNodeOfDataMapOfIntegerReal self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_SetKey(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_DataMapNodeOfDataMapOfIntegerReal self) -> Standard_Real"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_DataMapNodeOfDataMapOfIntegerReal self, Standard_Real value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfIntegerReal self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfIntegerReal self) -> Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerReal_GetHandle(self)
 
@@ -2824,7 +2824,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal._kill_pointed = new_instancemet
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerReal_DownCast
 
@@ -2843,26 +2843,26 @@ class TColStd_DataMapNodeOfDataMapOfIntegerTransient(OCC.TCollection.TCollection
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfIntegerTransient(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(TColStd_DataMapNodeOfDataMapOfIntegerTransient self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_DataMapNodeOfDataMapOfIntegerTransient self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfIntegerTransient self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfIntegerTransient self) -> Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfIntegerTransient_GetHandle(self)
 
@@ -2903,7 +2903,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient._kill_pointed = new_instan
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfIntegerTransient_DownCast
 
@@ -2922,26 +2922,26 @@ class TColStd_DataMapNodeOfDataMapOfStringInteger(OCC.TCollection.TCollection_Ma
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfStringInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_DataMapNodeOfDataMapOfStringInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_DataMapNodeOfDataMapOfStringInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfStringInteger self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfStringInteger" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfStringInteger self) -> Handle_TColStd_DataMapNodeOfDataMapOfStringInteger"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfStringInteger_GetHandle(self)
 
@@ -2982,7 +2982,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfStringInteger._kill_pointed = new_instancem
 Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfStringInteger)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfStringInteger const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfStringInteger_DownCast
 
@@ -3001,25 +3001,25 @@ class TColStd_DataMapNodeOfDataMapOfTransientTransient(OCC.TCollection.TCollecti
 
         """
         _TColStd.TColStd_DataMapNodeOfDataMapOfTransientTransient_swiginit(self,_TColStd.new_TColStd_DataMapNodeOfDataMapOfTransientTransient(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfTransientTransient_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_DataMapNodeOfDataMapOfTransientTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapNodeOfDataMapOfTransientTransient self)"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfTransientTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient" :
         """GetHandle(TColStd_DataMapNodeOfDataMapOfTransientTransient self) -> Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient"""
         return _TColStd.TColStd_DataMapNodeOfDataMapOfTransientTransient_GetHandle(self)
 
@@ -3059,7 +3059,7 @@ Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient._kill_pointed = new_inst
 Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_swigregister = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_swigregister
 Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_swigregister(Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient)
 
-def Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_DownCast(*args):
+def Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_DownCast(*args) -> "Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient const" :
   return _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_DownCast(*args)
 Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_DownCast = _TColStd.Handle_TColStd_DataMapNodeOfDataMapOfTransientTransient_DownCast
 
@@ -3074,7 +3074,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfAsciiStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapOfAsciiStringInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfAsciiStringInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfAsciiStringInteger &
@@ -3083,7 +3083,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfAsciiStringInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfAsciiStringInteger &
@@ -3092,7 +3092,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3101,14 +3101,14 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3119,7 +3119,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3128,7 +3128,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3137,7 +3137,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3146,7 +3146,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3155,7 +3155,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3164,7 +3164,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3173,7 +3173,7 @@ class TColStd_DataMapOfAsciiStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfAsciiStringInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfAsciiStringInteger self)"""
         return _TColStd.TColStd_DataMapOfAsciiStringInteger__kill_pointed(self)
 
@@ -3211,7 +3211,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfIntegerInteger_swiginit(self,_TColStd.new_TColStd_DataMapOfIntegerInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfIntegerInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerInteger &
@@ -3220,7 +3220,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfIntegerInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerInteger &
@@ -3229,7 +3229,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3238,14 +3238,14 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3256,7 +3256,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3265,7 +3265,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3274,7 +3274,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: int &
@@ -3283,7 +3283,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: int &
@@ -3292,7 +3292,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3301,7 +3301,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3310,7 +3310,7 @@ class TColStd_DataMapOfIntegerInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfIntegerInteger self)"""
         return _TColStd.TColStd_DataMapOfIntegerInteger__kill_pointed(self)
 
@@ -3348,7 +3348,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
 
         """
         _TColStd.TColStd_DataMapOfIntegerListOfInteger_swiginit(self,_TColStd.new_TColStd_DataMapOfIntegerListOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfIntegerListOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerListOfInteger &
@@ -3357,7 +3357,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfIntegerListOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerListOfInteger &
@@ -3366,7 +3366,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3375,14 +3375,14 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3393,7 +3393,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3402,7 +3402,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3411,7 +3411,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :param K:
         :type K: int &
@@ -3420,7 +3420,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColStd_ListOfInteger &" :
         """
         :param K:
         :type K: int &
@@ -3429,7 +3429,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3438,7 +3438,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3447,7 +3447,7 @@ class TColStd_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfIntegerListOfInteger self)"""
         return _TColStd.TColStd_DataMapOfIntegerListOfInteger__kill_pointed(self)
 
@@ -3485,7 +3485,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfIntegerReal_swiginit(self,_TColStd.new_TColStd_DataMapOfIntegerReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfIntegerReal &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerReal &
@@ -3494,7 +3494,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfIntegerReal &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerReal &
@@ -3503,7 +3503,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3512,14 +3512,14 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3530,7 +3530,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3539,7 +3539,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3548,7 +3548,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Real const &" :
         """
         :param K:
         :type K: int &
@@ -3557,7 +3557,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Real &" :
         """
         :param K:
         :type K: int &
@@ -3566,7 +3566,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3575,7 +3575,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3584,7 +3584,7 @@ class TColStd_DataMapOfIntegerReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfIntegerReal self)"""
         return _TColStd.TColStd_DataMapOfIntegerReal__kill_pointed(self)
 
@@ -3622,7 +3622,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfIntegerTransient_swiginit(self,_TColStd.new_TColStd_DataMapOfIntegerTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfIntegerTransient &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerTransient &
@@ -3631,7 +3631,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfIntegerTransient &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfIntegerTransient &
@@ -3640,7 +3640,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3649,14 +3649,14 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3667,7 +3667,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3676,7 +3676,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3685,7 +3685,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param K:
         :type K: int &
@@ -3694,7 +3694,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param K:
         :type K: int &
@@ -3703,7 +3703,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3712,7 +3712,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3721,7 +3721,7 @@ class TColStd_DataMapOfIntegerTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfIntegerTransient_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfIntegerTransient self)"""
         return _TColStd.TColStd_DataMapOfIntegerTransient__kill_pointed(self)
 
@@ -3759,7 +3759,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfStringInteger_swiginit(self,_TColStd.new_TColStd_DataMapOfStringInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfStringInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfStringInteger &
@@ -3768,7 +3768,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfStringInteger &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfStringInteger &
@@ -3777,7 +3777,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3786,14 +3786,14 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3804,7 +3804,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3813,7 +3813,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3822,7 +3822,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3831,7 +3831,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3840,7 +3840,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3849,7 +3849,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -3858,7 +3858,7 @@ class TColStd_DataMapOfStringInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfStringInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfStringInteger self)"""
         return _TColStd.TColStd_DataMapOfStringInteger__kill_pointed(self)
 
@@ -3896,7 +3896,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_DataMapOfTransientTransient_swiginit(self,_TColStd.new_TColStd_DataMapOfTransientTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_DataMapOfTransientTransient &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfTransientTransient &
@@ -3905,7 +3905,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_DataMapOfTransientTransient &" :
         """
         :param Other:
         :type Other: TColStd_DataMapOfTransientTransient &
@@ -3914,7 +3914,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3923,14 +3923,14 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3941,7 +3941,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3950,7 +3950,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3959,7 +3959,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3968,7 +3968,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3977,7 +3977,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3986,7 +3986,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3995,7 +3995,7 @@ class TColStd_DataMapOfTransientTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_DataMapOfTransientTransient_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_DataMapOfTransientTransient self)"""
         return _TColStd.TColStd_DataMapOfTransientTransient__kill_pointed(self)
 
@@ -4043,7 +4043,7 @@ class TColStd_HArray1OfAsciiString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfAsciiString_swiginit(self,_TColStd.new_TColStd_HArray1OfAsciiString(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TCollection_AsciiString &
@@ -4052,28 +4052,28 @@ class TColStd_HArray1OfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4084,7 +4084,7 @@ class TColStd_HArray1OfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfAsciiString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param Index:
         :type Index: int
@@ -4093,7 +4093,7 @@ class TColStd_HArray1OfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_AsciiString &" :
         """
         :param Index:
         :type Index: int
@@ -4102,25 +4102,25 @@ class TColStd_HArray1OfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfAsciiString_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfAsciiString const &" :
         """
         :rtype: TColStd_Array1OfAsciiString
 
         """
         return _TColStd.TColStd_HArray1OfAsciiString_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfAsciiString &" :
         """
         :rtype: TColStd_Array1OfAsciiString
 
         """
         return _TColStd.TColStd_HArray1OfAsciiString_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfAsciiString self)"""
         return _TColStd.TColStd_HArray1OfAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfAsciiString" :
         """GetHandle(TColStd_HArray1OfAsciiString self) -> Handle_TColStd_HArray1OfAsciiString"""
         return _TColStd.TColStd_HArray1OfAsciiString_GetHandle(self)
 
@@ -4167,7 +4167,7 @@ Handle_TColStd_HArray1OfAsciiString._kill_pointed = new_instancemethod(_TColStd.
 Handle_TColStd_HArray1OfAsciiString_swigregister = _TColStd.Handle_TColStd_HArray1OfAsciiString_swigregister
 Handle_TColStd_HArray1OfAsciiString_swigregister(Handle_TColStd_HArray1OfAsciiString)
 
-def Handle_TColStd_HArray1OfAsciiString_DownCast(*args):
+def Handle_TColStd_HArray1OfAsciiString_DownCast(*args) -> "Handle_TColStd_HArray1OfAsciiString const" :
   return _TColStd.Handle_TColStd_HArray1OfAsciiString_DownCast(*args)
 Handle_TColStd_HArray1OfAsciiString_DownCast = _TColStd.Handle_TColStd_HArray1OfAsciiString_DownCast
 
@@ -4192,7 +4192,7 @@ class TColStd_HArray1OfBoolean(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfBoolean_swiginit(self,_TColStd.new_TColStd_HArray1OfBoolean(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: bool
@@ -4201,28 +4201,28 @@ class TColStd_HArray1OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfBoolean_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfBoolean_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfBoolean_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfBoolean_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4233,7 +4233,7 @@ class TColStd_HArray1OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfBoolean_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :param Index:
         :type Index: int
@@ -4242,7 +4242,7 @@ class TColStd_HArray1OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfBoolean_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Boolean &" :
         """
         :param Index:
         :type Index: int
@@ -4251,25 +4251,25 @@ class TColStd_HArray1OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfBoolean_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfBoolean const &" :
         """
         :rtype: TColStd_Array1OfBoolean
 
         """
         return _TColStd.TColStd_HArray1OfBoolean_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfBoolean &" :
         """
         :rtype: TColStd_Array1OfBoolean
 
         """
         return _TColStd.TColStd_HArray1OfBoolean_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfBoolean self)"""
         return _TColStd.TColStd_HArray1OfBoolean__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfBoolean" :
         """GetHandle(TColStd_HArray1OfBoolean self) -> Handle_TColStd_HArray1OfBoolean"""
         return _TColStd.TColStd_HArray1OfBoolean_GetHandle(self)
 
@@ -4316,7 +4316,7 @@ Handle_TColStd_HArray1OfBoolean._kill_pointed = new_instancemethod(_TColStd.Hand
 Handle_TColStd_HArray1OfBoolean_swigregister = _TColStd.Handle_TColStd_HArray1OfBoolean_swigregister
 Handle_TColStd_HArray1OfBoolean_swigregister(Handle_TColStd_HArray1OfBoolean)
 
-def Handle_TColStd_HArray1OfBoolean_DownCast(*args):
+def Handle_TColStd_HArray1OfBoolean_DownCast(*args) -> "Handle_TColStd_HArray1OfBoolean const" :
   return _TColStd.Handle_TColStd_HArray1OfBoolean_DownCast(*args)
 Handle_TColStd_HArray1OfBoolean_DownCast = _TColStd.Handle_TColStd_HArray1OfBoolean_DownCast
 
@@ -4341,7 +4341,7 @@ class TColStd_HArray1OfByte(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfByte_swiginit(self,_TColStd.new_TColStd_HArray1OfByte(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Byte &
@@ -4350,28 +4350,28 @@ class TColStd_HArray1OfByte(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfByte_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfByte_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfByte_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfByte_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4382,7 +4382,7 @@ class TColStd_HArray1OfByte(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfByte_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte const &" :
         """
         :param Index:
         :type Index: int
@@ -4391,7 +4391,7 @@ class TColStd_HArray1OfByte(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfByte_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Byte &" :
         """
         :param Index:
         :type Index: int
@@ -4400,25 +4400,25 @@ class TColStd_HArray1OfByte(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfByte_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfByte const &" :
         """
         :rtype: TColStd_Array1OfByte
 
         """
         return _TColStd.TColStd_HArray1OfByte_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfByte &" :
         """
         :rtype: TColStd_Array1OfByte
 
         """
         return _TColStd.TColStd_HArray1OfByte_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfByte self)"""
         return _TColStd.TColStd_HArray1OfByte__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfByte" :
         """GetHandle(TColStd_HArray1OfByte self) -> Handle_TColStd_HArray1OfByte"""
         return _TColStd.TColStd_HArray1OfByte_GetHandle(self)
 
@@ -4465,7 +4465,7 @@ Handle_TColStd_HArray1OfByte._kill_pointed = new_instancemethod(_TColStd.Handle_
 Handle_TColStd_HArray1OfByte_swigregister = _TColStd.Handle_TColStd_HArray1OfByte_swigregister
 Handle_TColStd_HArray1OfByte_swigregister(Handle_TColStd_HArray1OfByte)
 
-def Handle_TColStd_HArray1OfByte_DownCast(*args):
+def Handle_TColStd_HArray1OfByte_DownCast(*args) -> "Handle_TColStd_HArray1OfByte const" :
   return _TColStd.Handle_TColStd_HArray1OfByte_DownCast(*args)
 Handle_TColStd_HArray1OfByte_DownCast = _TColStd.Handle_TColStd_HArray1OfByte_DownCast
 
@@ -4490,7 +4490,7 @@ class TColStd_HArray1OfCharacter(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfCharacter_swiginit(self,_TColStd.new_TColStd_HArray1OfCharacter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Character &
@@ -4499,28 +4499,28 @@ class TColStd_HArray1OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfCharacter_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfCharacter_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfCharacter_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfCharacter_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4531,7 +4531,7 @@ class TColStd_HArray1OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfCharacter_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character const &" :
         """
         :param Index:
         :type Index: int
@@ -4540,7 +4540,7 @@ class TColStd_HArray1OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfCharacter_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Character &" :
         """
         :param Index:
         :type Index: int
@@ -4549,25 +4549,25 @@ class TColStd_HArray1OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfCharacter_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfCharacter const &" :
         """
         :rtype: TColStd_Array1OfCharacter
 
         """
         return _TColStd.TColStd_HArray1OfCharacter_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfCharacter &" :
         """
         :rtype: TColStd_Array1OfCharacter
 
         """
         return _TColStd.TColStd_HArray1OfCharacter_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfCharacter self)"""
         return _TColStd.TColStd_HArray1OfCharacter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfCharacter" :
         """GetHandle(TColStd_HArray1OfCharacter self) -> Handle_TColStd_HArray1OfCharacter"""
         return _TColStd.TColStd_HArray1OfCharacter_GetHandle(self)
 
@@ -4614,7 +4614,7 @@ Handle_TColStd_HArray1OfCharacter._kill_pointed = new_instancemethod(_TColStd.Ha
 Handle_TColStd_HArray1OfCharacter_swigregister = _TColStd.Handle_TColStd_HArray1OfCharacter_swigregister
 Handle_TColStd_HArray1OfCharacter_swigregister(Handle_TColStd_HArray1OfCharacter)
 
-def Handle_TColStd_HArray1OfCharacter_DownCast(*args):
+def Handle_TColStd_HArray1OfCharacter_DownCast(*args) -> "Handle_TColStd_HArray1OfCharacter const" :
   return _TColStd.Handle_TColStd_HArray1OfCharacter_DownCast(*args)
 Handle_TColStd_HArray1OfCharacter_DownCast = _TColStd.Handle_TColStd_HArray1OfCharacter_DownCast
 
@@ -4639,7 +4639,7 @@ class TColStd_HArray1OfExtendedString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfExtendedString_swiginit(self,_TColStd.new_TColStd_HArray1OfExtendedString(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TCollection_ExtendedString &
@@ -4648,28 +4648,28 @@ class TColStd_HArray1OfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4680,7 +4680,7 @@ class TColStd_HArray1OfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfExtendedString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param Index:
         :type Index: int
@@ -4689,7 +4689,7 @@ class TColStd_HArray1OfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_ExtendedString &" :
         """
         :param Index:
         :type Index: int
@@ -4698,25 +4698,25 @@ class TColStd_HArray1OfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfExtendedString_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfExtendedString const &" :
         """
         :rtype: TColStd_Array1OfExtendedString
 
         """
         return _TColStd.TColStd_HArray1OfExtendedString_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfExtendedString &" :
         """
         :rtype: TColStd_Array1OfExtendedString
 
         """
         return _TColStd.TColStd_HArray1OfExtendedString_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfExtendedString self)"""
         return _TColStd.TColStd_HArray1OfExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfExtendedString" :
         """GetHandle(TColStd_HArray1OfExtendedString self) -> Handle_TColStd_HArray1OfExtendedString"""
         return _TColStd.TColStd_HArray1OfExtendedString_GetHandle(self)
 
@@ -4763,7 +4763,7 @@ Handle_TColStd_HArray1OfExtendedString._kill_pointed = new_instancemethod(_TColS
 Handle_TColStd_HArray1OfExtendedString_swigregister = _TColStd.Handle_TColStd_HArray1OfExtendedString_swigregister
 Handle_TColStd_HArray1OfExtendedString_swigregister(Handle_TColStd_HArray1OfExtendedString)
 
-def Handle_TColStd_HArray1OfExtendedString_DownCast(*args):
+def Handle_TColStd_HArray1OfExtendedString_DownCast(*args) -> "Handle_TColStd_HArray1OfExtendedString const" :
   return _TColStd.Handle_TColStd_HArray1OfExtendedString_DownCast(*args)
 Handle_TColStd_HArray1OfExtendedString_DownCast = _TColStd.Handle_TColStd_HArray1OfExtendedString_DownCast
 
@@ -4788,7 +4788,7 @@ class TColStd_HArray1OfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfInteger_swiginit(self,_TColStd.new_TColStd_HArray1OfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: int &
@@ -4797,28 +4797,28 @@ class TColStd_HArray1OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfInteger_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4829,7 +4829,7 @@ class TColStd_HArray1OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param Index:
         :type Index: int
@@ -4838,7 +4838,7 @@ class TColStd_HArray1OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param Index:
         :type Index: int
@@ -4847,25 +4847,25 @@ class TColStd_HArray1OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfInteger_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _TColStd.TColStd_HArray1OfInteger_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfInteger &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _TColStd.TColStd_HArray1OfInteger_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfInteger self)"""
         return _TColStd.TColStd_HArray1OfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfInteger" :
         """GetHandle(TColStd_HArray1OfInteger self) -> Handle_TColStd_HArray1OfInteger"""
         return _TColStd.TColStd_HArray1OfInteger_GetHandle(self)
 
@@ -4912,7 +4912,7 @@ Handle_TColStd_HArray1OfInteger._kill_pointed = new_instancemethod(_TColStd.Hand
 Handle_TColStd_HArray1OfInteger_swigregister = _TColStd.Handle_TColStd_HArray1OfInteger_swigregister
 Handle_TColStd_HArray1OfInteger_swigregister(Handle_TColStd_HArray1OfInteger)
 
-def Handle_TColStd_HArray1OfInteger_DownCast(*args):
+def Handle_TColStd_HArray1OfInteger_DownCast(*args) -> "Handle_TColStd_HArray1OfInteger const" :
   return _TColStd.Handle_TColStd_HArray1OfInteger_DownCast(*args)
 Handle_TColStd_HArray1OfInteger_DownCast = _TColStd.Handle_TColStd_HArray1OfInteger_DownCast
 
@@ -4937,7 +4937,7 @@ class TColStd_HArray1OfListOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfListOfInteger_swiginit(self,_TColStd.new_TColStd_HArray1OfListOfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_ListOfInteger &
@@ -4946,28 +4946,28 @@ class TColStd_HArray1OfListOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4978,7 +4978,7 @@ class TColStd_HArray1OfListOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :param Index:
         :type Index: int
@@ -4987,7 +4987,7 @@ class TColStd_HArray1OfListOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_ListOfInteger &" :
         """
         :param Index:
         :type Index: int
@@ -4996,25 +4996,25 @@ class TColStd_HArray1OfListOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfListOfInteger const &" :
         """
         :rtype: TColStd_Array1OfListOfInteger
 
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfListOfInteger &" :
         """
         :rtype: TColStd_Array1OfListOfInteger
 
         """
         return _TColStd.TColStd_HArray1OfListOfInteger_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfListOfInteger self)"""
         return _TColStd.TColStd_HArray1OfListOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfListOfInteger" :
         """GetHandle(TColStd_HArray1OfListOfInteger self) -> Handle_TColStd_HArray1OfListOfInteger"""
         return _TColStd.TColStd_HArray1OfListOfInteger_GetHandle(self)
 
@@ -5061,7 +5061,7 @@ Handle_TColStd_HArray1OfListOfInteger._kill_pointed = new_instancemethod(_TColSt
 Handle_TColStd_HArray1OfListOfInteger_swigregister = _TColStd.Handle_TColStd_HArray1OfListOfInteger_swigregister
 Handle_TColStd_HArray1OfListOfInteger_swigregister(Handle_TColStd_HArray1OfListOfInteger)
 
-def Handle_TColStd_HArray1OfListOfInteger_DownCast(*args):
+def Handle_TColStd_HArray1OfListOfInteger_DownCast(*args) -> "Handle_TColStd_HArray1OfListOfInteger const" :
   return _TColStd.Handle_TColStd_HArray1OfListOfInteger_DownCast(*args)
 Handle_TColStd_HArray1OfListOfInteger_DownCast = _TColStd.Handle_TColStd_HArray1OfListOfInteger_DownCast
 
@@ -5086,7 +5086,7 @@ class TColStd_HArray1OfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfReal_swiginit(self,_TColStd.new_TColStd_HArray1OfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: float &
@@ -5095,28 +5095,28 @@ class TColStd_HArray1OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfReal_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfReal_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfReal_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfReal_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5127,7 +5127,7 @@ class TColStd_HArray1OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param Index:
         :type Index: int
@@ -5136,7 +5136,7 @@ class TColStd_HArray1OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param Index:
         :type Index: int
@@ -5145,25 +5145,25 @@ class TColStd_HArray1OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfReal_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _TColStd.TColStd_HArray1OfReal_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfReal &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _TColStd.TColStd_HArray1OfReal_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfReal self)"""
         return _TColStd.TColStd_HArray1OfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfReal" :
         """GetHandle(TColStd_HArray1OfReal self) -> Handle_TColStd_HArray1OfReal"""
         return _TColStd.TColStd_HArray1OfReal_GetHandle(self)
 
@@ -5210,7 +5210,7 @@ Handle_TColStd_HArray1OfReal._kill_pointed = new_instancemethod(_TColStd.Handle_
 Handle_TColStd_HArray1OfReal_swigregister = _TColStd.Handle_TColStd_HArray1OfReal_swigregister
 Handle_TColStd_HArray1OfReal_swigregister(Handle_TColStd_HArray1OfReal)
 
-def Handle_TColStd_HArray1OfReal_DownCast(*args):
+def Handle_TColStd_HArray1OfReal_DownCast(*args) -> "Handle_TColStd_HArray1OfReal const" :
   return _TColStd.Handle_TColStd_HArray1OfReal_DownCast(*args)
 Handle_TColStd_HArray1OfReal_DownCast = _TColStd.Handle_TColStd_HArray1OfReal_DownCast
 
@@ -5235,7 +5235,7 @@ class TColStd_HArray1OfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray1OfTransient_swiginit(self,_TColStd.new_TColStd_HArray1OfTransient(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Standard_Transient &
@@ -5244,28 +5244,28 @@ class TColStd_HArray1OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfTransient_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfTransient_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfTransient_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray1OfTransient_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5276,7 +5276,7 @@ class TColStd_HArray1OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfTransient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param Index:
         :type Index: int
@@ -5285,7 +5285,7 @@ class TColStd_HArray1OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfTransient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param Index:
         :type Index: int
@@ -5294,25 +5294,25 @@ class TColStd_HArray1OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray1OfTransient_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColStd_Array1OfTransient const &" :
         """
         :rtype: TColStd_Array1OfTransient
 
         """
         return _TColStd.TColStd_HArray1OfTransient_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColStd_Array1OfTransient &" :
         """
         :rtype: TColStd_Array1OfTransient
 
         """
         return _TColStd.TColStd_HArray1OfTransient_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray1OfTransient self)"""
         return _TColStd.TColStd_HArray1OfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray1OfTransient" :
         """GetHandle(TColStd_HArray1OfTransient self) -> Handle_TColStd_HArray1OfTransient"""
         return _TColStd.TColStd_HArray1OfTransient_GetHandle(self)
 
@@ -5359,7 +5359,7 @@ Handle_TColStd_HArray1OfTransient._kill_pointed = new_instancemethod(_TColStd.Ha
 Handle_TColStd_HArray1OfTransient_swigregister = _TColStd.Handle_TColStd_HArray1OfTransient_swigregister
 Handle_TColStd_HArray1OfTransient_swigregister(Handle_TColStd_HArray1OfTransient)
 
-def Handle_TColStd_HArray1OfTransient_DownCast(*args):
+def Handle_TColStd_HArray1OfTransient_DownCast(*args) -> "Handle_TColStd_HArray1OfTransient const" :
   return _TColStd.Handle_TColStd_HArray1OfTransient_DownCast(*args)
 Handle_TColStd_HArray1OfTransient_DownCast = _TColStd.Handle_TColStd_HArray1OfTransient_DownCast
 
@@ -5392,7 +5392,7 @@ class TColStd_HArray2OfBoolean(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray2OfBoolean_swiginit(self,_TColStd.new_TColStd_HArray2OfBoolean(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: bool
@@ -5401,49 +5401,49 @@ class TColStd_HArray2OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfBoolean_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -5456,7 +5456,7 @@ class TColStd_HArray2OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfBoolean_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :param Row:
         :type Row: int
@@ -5467,7 +5467,7 @@ class TColStd_HArray2OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfBoolean_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Boolean &" :
         """
         :param Row:
         :type Row: int
@@ -5478,25 +5478,25 @@ class TColStd_HArray2OfBoolean(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfBoolean_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColStd_Array2OfBoolean const &" :
         """
         :rtype: TColStd_Array2OfBoolean
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColStd_Array2OfBoolean &" :
         """
         :rtype: TColStd_Array2OfBoolean
 
         """
         return _TColStd.TColStd_HArray2OfBoolean_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray2OfBoolean self)"""
         return _TColStd.TColStd_HArray2OfBoolean__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray2OfBoolean" :
         """GetHandle(TColStd_HArray2OfBoolean self) -> Handle_TColStd_HArray2OfBoolean"""
         return _TColStd.TColStd_HArray2OfBoolean_GetHandle(self)
 
@@ -5546,7 +5546,7 @@ Handle_TColStd_HArray2OfBoolean._kill_pointed = new_instancemethod(_TColStd.Hand
 Handle_TColStd_HArray2OfBoolean_swigregister = _TColStd.Handle_TColStd_HArray2OfBoolean_swigregister
 Handle_TColStd_HArray2OfBoolean_swigregister(Handle_TColStd_HArray2OfBoolean)
 
-def Handle_TColStd_HArray2OfBoolean_DownCast(*args):
+def Handle_TColStd_HArray2OfBoolean_DownCast(*args) -> "Handle_TColStd_HArray2OfBoolean const" :
   return _TColStd.Handle_TColStd_HArray2OfBoolean_DownCast(*args)
 Handle_TColStd_HArray2OfBoolean_DownCast = _TColStd.Handle_TColStd_HArray2OfBoolean_DownCast
 
@@ -5579,7 +5579,7 @@ class TColStd_HArray2OfCharacter(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray2OfCharacter_swiginit(self,_TColStd.new_TColStd_HArray2OfCharacter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Standard_Character &
@@ -5588,49 +5588,49 @@ class TColStd_HArray2OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfCharacter_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -5643,7 +5643,7 @@ class TColStd_HArray2OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfCharacter_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Character const &" :
         """
         :param Row:
         :type Row: int
@@ -5654,7 +5654,7 @@ class TColStd_HArray2OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfCharacter_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Character &" :
         """
         :param Row:
         :type Row: int
@@ -5665,25 +5665,25 @@ class TColStd_HArray2OfCharacter(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfCharacter_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColStd_Array2OfCharacter const &" :
         """
         :rtype: TColStd_Array2OfCharacter
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColStd_Array2OfCharacter &" :
         """
         :rtype: TColStd_Array2OfCharacter
 
         """
         return _TColStd.TColStd_HArray2OfCharacter_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray2OfCharacter self)"""
         return _TColStd.TColStd_HArray2OfCharacter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray2OfCharacter" :
         """GetHandle(TColStd_HArray2OfCharacter self) -> Handle_TColStd_HArray2OfCharacter"""
         return _TColStd.TColStd_HArray2OfCharacter_GetHandle(self)
 
@@ -5733,7 +5733,7 @@ Handle_TColStd_HArray2OfCharacter._kill_pointed = new_instancemethod(_TColStd.Ha
 Handle_TColStd_HArray2OfCharacter_swigregister = _TColStd.Handle_TColStd_HArray2OfCharacter_swigregister
 Handle_TColStd_HArray2OfCharacter_swigregister(Handle_TColStd_HArray2OfCharacter)
 
-def Handle_TColStd_HArray2OfCharacter_DownCast(*args):
+def Handle_TColStd_HArray2OfCharacter_DownCast(*args) -> "Handle_TColStd_HArray2OfCharacter const" :
   return _TColStd.Handle_TColStd_HArray2OfCharacter_DownCast(*args)
 Handle_TColStd_HArray2OfCharacter_DownCast = _TColStd.Handle_TColStd_HArray2OfCharacter_DownCast
 
@@ -5766,7 +5766,7 @@ class TColStd_HArray2OfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray2OfInteger_swiginit(self,_TColStd.new_TColStd_HArray2OfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: int &
@@ -5775,49 +5775,49 @@ class TColStd_HArray2OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfInteger_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfInteger_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -5830,7 +5830,7 @@ class TColStd_HArray2OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param Row:
         :type Row: int
@@ -5841,7 +5841,7 @@ class TColStd_HArray2OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param Row:
         :type Row: int
@@ -5852,25 +5852,25 @@ class TColStd_HArray2OfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfInteger_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColStd_Array2OfInteger const &" :
         """
         :rtype: TColStd_Array2OfInteger
 
         """
         return _TColStd.TColStd_HArray2OfInteger_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColStd_Array2OfInteger &" :
         """
         :rtype: TColStd_Array2OfInteger
 
         """
         return _TColStd.TColStd_HArray2OfInteger_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray2OfInteger self)"""
         return _TColStd.TColStd_HArray2OfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray2OfInteger" :
         """GetHandle(TColStd_HArray2OfInteger self) -> Handle_TColStd_HArray2OfInteger"""
         return _TColStd.TColStd_HArray2OfInteger_GetHandle(self)
 
@@ -5920,7 +5920,7 @@ Handle_TColStd_HArray2OfInteger._kill_pointed = new_instancemethod(_TColStd.Hand
 Handle_TColStd_HArray2OfInteger_swigregister = _TColStd.Handle_TColStd_HArray2OfInteger_swigregister
 Handle_TColStd_HArray2OfInteger_swigregister(Handle_TColStd_HArray2OfInteger)
 
-def Handle_TColStd_HArray2OfInteger_DownCast(*args):
+def Handle_TColStd_HArray2OfInteger_DownCast(*args) -> "Handle_TColStd_HArray2OfInteger const" :
   return _TColStd.Handle_TColStd_HArray2OfInteger_DownCast(*args)
 Handle_TColStd_HArray2OfInteger_DownCast = _TColStd.Handle_TColStd_HArray2OfInteger_DownCast
 
@@ -5953,7 +5953,7 @@ class TColStd_HArray2OfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray2OfReal_swiginit(self,_TColStd.new_TColStd_HArray2OfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: float &
@@ -5962,49 +5962,49 @@ class TColStd_HArray2OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfReal_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfReal_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -6017,7 +6017,7 @@ class TColStd_HArray2OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param Row:
         :type Row: int
@@ -6028,7 +6028,7 @@ class TColStd_HArray2OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param Row:
         :type Row: int
@@ -6039,25 +6039,25 @@ class TColStd_HArray2OfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfReal_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :rtype: TColStd_Array2OfReal
 
         """
         return _TColStd.TColStd_HArray2OfReal_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColStd_Array2OfReal &" :
         """
         :rtype: TColStd_Array2OfReal
 
         """
         return _TColStd.TColStd_HArray2OfReal_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray2OfReal self)"""
         return _TColStd.TColStd_HArray2OfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray2OfReal" :
         """GetHandle(TColStd_HArray2OfReal self) -> Handle_TColStd_HArray2OfReal"""
         return _TColStd.TColStd_HArray2OfReal_GetHandle(self)
 
@@ -6107,7 +6107,7 @@ Handle_TColStd_HArray2OfReal._kill_pointed = new_instancemethod(_TColStd.Handle_
 Handle_TColStd_HArray2OfReal_swigregister = _TColStd.Handle_TColStd_HArray2OfReal_swigregister
 Handle_TColStd_HArray2OfReal_swigregister(Handle_TColStd_HArray2OfReal)
 
-def Handle_TColStd_HArray2OfReal_DownCast(*args):
+def Handle_TColStd_HArray2OfReal_DownCast(*args) -> "Handle_TColStd_HArray2OfReal const" :
   return _TColStd.Handle_TColStd_HArray2OfReal_DownCast(*args)
 Handle_TColStd_HArray2OfReal_DownCast = _TColStd.Handle_TColStd_HArray2OfReal_DownCast
 
@@ -6140,7 +6140,7 @@ class TColStd_HArray2OfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HArray2OfTransient_swiginit(self,_TColStd.new_TColStd_HArray2OfTransient(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Standard_Transient &
@@ -6149,49 +6149,49 @@ class TColStd_HArray2OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfTransient_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HArray2OfTransient_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -6204,7 +6204,7 @@ class TColStd_HArray2OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfTransient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param Row:
         :type Row: int
@@ -6215,7 +6215,7 @@ class TColStd_HArray2OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfTransient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param Row:
         :type Row: int
@@ -6226,25 +6226,25 @@ class TColStd_HArray2OfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HArray2OfTransient_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColStd_Array2OfTransient const &" :
         """
         :rtype: TColStd_Array2OfTransient
 
         """
         return _TColStd.TColStd_HArray2OfTransient_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColStd_Array2OfTransient &" :
         """
         :rtype: TColStd_Array2OfTransient
 
         """
         return _TColStd.TColStd_HArray2OfTransient_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HArray2OfTransient self)"""
         return _TColStd.TColStd_HArray2OfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HArray2OfTransient" :
         """GetHandle(TColStd_HArray2OfTransient self) -> Handle_TColStd_HArray2OfTransient"""
         return _TColStd.TColStd_HArray2OfTransient_GetHandle(self)
 
@@ -6294,7 +6294,7 @@ Handle_TColStd_HArray2OfTransient._kill_pointed = new_instancemethod(_TColStd.Ha
 Handle_TColStd_HArray2OfTransient_swigregister = _TColStd.Handle_TColStd_HArray2OfTransient_swigregister
 Handle_TColStd_HArray2OfTransient_swigregister(Handle_TColStd_HArray2OfTransient)
 
-def Handle_TColStd_HArray2OfTransient_DownCast(*args):
+def Handle_TColStd_HArray2OfTransient_DownCast(*args) -> "Handle_TColStd_HArray2OfTransient const" :
   return _TColStd.Handle_TColStd_HArray2OfTransient_DownCast(*args)
 Handle_TColStd_HArray2OfTransient_DownCast = _TColStd.Handle_TColStd_HArray2OfTransient_DownCast
 
@@ -6313,25 +6313,25 @@ class TColStd_HPackedMapOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HPackedMapOfInteger_swiginit(self,_TColStd.new_TColStd_HPackedMapOfInteger(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TColStd_PackedMapOfInteger const &" :
         """
         :rtype: TColStd_PackedMapOfInteger
 
         """
         return _TColStd.TColStd_HPackedMapOfInteger_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TColStd_PackedMapOfInteger &" :
         """
         :rtype: TColStd_PackedMapOfInteger
 
         """
         return _TColStd.TColStd_HPackedMapOfInteger_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HPackedMapOfInteger self)"""
         return _TColStd.TColStd_HPackedMapOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HPackedMapOfInteger" :
         """GetHandle(TColStd_HPackedMapOfInteger self) -> Handle_TColStd_HPackedMapOfInteger"""
         return _TColStd.TColStd_HPackedMapOfInteger_GetHandle(self)
 
@@ -6371,7 +6371,7 @@ Handle_TColStd_HPackedMapOfInteger._kill_pointed = new_instancemethod(_TColStd.H
 Handle_TColStd_HPackedMapOfInteger_swigregister = _TColStd.Handle_TColStd_HPackedMapOfInteger_swigregister
 Handle_TColStd_HPackedMapOfInteger_swigregister(Handle_TColStd_HPackedMapOfInteger)
 
-def Handle_TColStd_HPackedMapOfInteger_DownCast(*args):
+def Handle_TColStd_HPackedMapOfInteger_DownCast(*args) -> "Handle_TColStd_HPackedMapOfInteger const" :
   return _TColStd.Handle_TColStd_HPackedMapOfInteger_DownCast(*args)
 Handle_TColStd_HPackedMapOfInteger_DownCast = _TColStd.Handle_TColStd_HPackedMapOfInteger_DownCast
 
@@ -6384,28 +6384,28 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfAsciiString_swiginit(self,_TColStd.new_TColStd_HSequenceOfAsciiString(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: TCollection_AsciiString &
@@ -6418,7 +6418,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: TCollection_AsciiString &
@@ -6431,14 +6431,14 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6455,7 +6455,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6472,7 +6472,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6483,7 +6483,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6492,7 +6492,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6503,7 +6503,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6512,7 +6512,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_AsciiString &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6521,7 +6521,7 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6536,32 +6536,32 @@ class TColStd_HSequenceOfAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
         """
         :rtype: TColStd_SequenceOfAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfAsciiString &" :
         """
         :rtype: TColStd_SequenceOfAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
         """
         :rtype: Handle_TColStd_HSequenceOfAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfAsciiString_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfAsciiString self)"""
         return _TColStd.TColStd_HSequenceOfAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfAsciiString" :
         """GetHandle(TColStd_HSequenceOfAsciiString self) -> Handle_TColStd_HSequenceOfAsciiString"""
         return _TColStd.TColStd_HSequenceOfAsciiString_GetHandle(self)
 
@@ -6616,7 +6616,7 @@ Handle_TColStd_HSequenceOfAsciiString._kill_pointed = new_instancemethod(_TColSt
 Handle_TColStd_HSequenceOfAsciiString_swigregister = _TColStd.Handle_TColStd_HSequenceOfAsciiString_swigregister
 Handle_TColStd_HSequenceOfAsciiString_swigregister(Handle_TColStd_HSequenceOfAsciiString)
 
-def Handle_TColStd_HSequenceOfAsciiString_DownCast(*args):
+def Handle_TColStd_HSequenceOfAsciiString_DownCast(*args) -> "Handle_TColStd_HSequenceOfAsciiString const" :
   return _TColStd.Handle_TColStd_HSequenceOfAsciiString_DownCast(*args)
 Handle_TColStd_HSequenceOfAsciiString_DownCast = _TColStd.Handle_TColStd_HSequenceOfAsciiString_DownCast
 
@@ -6629,28 +6629,28 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfExtendedString_swiginit(self,_TColStd.new_TColStd_HSequenceOfExtendedString(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: TCollection_ExtendedString &
@@ -6663,7 +6663,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: TCollection_ExtendedString &
@@ -6676,14 +6676,14 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6700,7 +6700,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6717,7 +6717,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6728,7 +6728,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfExtendedString" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6737,7 +6737,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6748,7 +6748,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6757,7 +6757,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_ExtendedString &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6766,7 +6766,7 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6781,32 +6781,32 @@ class TColStd_HSequenceOfExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfExtendedString const &" :
         """
         :rtype: TColStd_SequenceOfExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfExtendedString &" :
         """
         :rtype: TColStd_SequenceOfExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfExtendedString" :
         """
         :rtype: Handle_TColStd_HSequenceOfExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfExtendedString_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfExtendedString self)"""
         return _TColStd.TColStd_HSequenceOfExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfExtendedString" :
         """GetHandle(TColStd_HSequenceOfExtendedString self) -> Handle_TColStd_HSequenceOfExtendedString"""
         return _TColStd.TColStd_HSequenceOfExtendedString_GetHandle(self)
 
@@ -6861,7 +6861,7 @@ Handle_TColStd_HSequenceOfExtendedString._kill_pointed = new_instancemethod(_TCo
 Handle_TColStd_HSequenceOfExtendedString_swigregister = _TColStd.Handle_TColStd_HSequenceOfExtendedString_swigregister
 Handle_TColStd_HSequenceOfExtendedString_swigregister(Handle_TColStd_HSequenceOfExtendedString)
 
-def Handle_TColStd_HSequenceOfExtendedString_DownCast(*args):
+def Handle_TColStd_HSequenceOfExtendedString_DownCast(*args) -> "Handle_TColStd_HSequenceOfExtendedString const" :
   return _TColStd.Handle_TColStd_HSequenceOfExtendedString_DownCast(*args)
 Handle_TColStd_HSequenceOfExtendedString_DownCast = _TColStd.Handle_TColStd_HSequenceOfExtendedString_DownCast
 
@@ -6874,28 +6874,28 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfHAsciiString_swiginit(self,_TColStd.new_TColStd_HSequenceOfHAsciiString(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TCollection_HAsciiString &
@@ -6908,7 +6908,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TCollection_HAsciiString &
@@ -6921,14 +6921,14 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6945,7 +6945,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6962,7 +6962,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6973,7 +6973,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6982,7 +6982,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -6993,7 +6993,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HAsciiString const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7002,7 +7002,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TCollection_HAsciiString &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7011,7 +7011,7 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7026,32 +7026,32 @@ class TColStd_HSequenceOfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfHAsciiString const &" :
         """
         :rtype: TColStd_SequenceOfHAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfHAsciiString &" :
         """
         :rtype: TColStd_SequenceOfHAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         :rtype: Handle_TColStd_HSequenceOfHAsciiString
 
         """
         return _TColStd.TColStd_HSequenceOfHAsciiString_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfHAsciiString self)"""
         return _TColStd.TColStd_HSequenceOfHAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """GetHandle(TColStd_HSequenceOfHAsciiString self) -> Handle_TColStd_HSequenceOfHAsciiString"""
         return _TColStd.TColStd_HSequenceOfHAsciiString_GetHandle(self)
 
@@ -7106,7 +7106,7 @@ Handle_TColStd_HSequenceOfHAsciiString._kill_pointed = new_instancemethod(_TColS
 Handle_TColStd_HSequenceOfHAsciiString_swigregister = _TColStd.Handle_TColStd_HSequenceOfHAsciiString_swigregister
 Handle_TColStd_HSequenceOfHAsciiString_swigregister(Handle_TColStd_HSequenceOfHAsciiString)
 
-def Handle_TColStd_HSequenceOfHAsciiString_DownCast(*args):
+def Handle_TColStd_HSequenceOfHAsciiString_DownCast(*args) -> "Handle_TColStd_HSequenceOfHAsciiString const" :
   return _TColStd.Handle_TColStd_HSequenceOfHAsciiString_DownCast(*args)
 Handle_TColStd_HSequenceOfHAsciiString_DownCast = _TColStd.Handle_TColStd_HSequenceOfHAsciiString_DownCast
 
@@ -7119,28 +7119,28 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfHExtendedString_swiginit(self,_TColStd.new_TColStd_HSequenceOfHExtendedString(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TCollection_HExtendedString &
@@ -7153,7 +7153,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_TCollection_HExtendedString &
@@ -7166,14 +7166,14 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7190,7 +7190,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7207,7 +7207,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7218,7 +7218,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfHExtendedString" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7227,7 +7227,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7238,7 +7238,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HExtendedString const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7247,7 +7247,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TCollection_HExtendedString &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7256,7 +7256,7 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7271,32 +7271,32 @@ class TColStd_HSequenceOfHExtendedString(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfHExtendedString const &" :
         """
         :rtype: TColStd_SequenceOfHExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfHExtendedString &" :
         """
         :rtype: TColStd_SequenceOfHExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfHExtendedString" :
         """
         :rtype: Handle_TColStd_HSequenceOfHExtendedString
 
         """
         return _TColStd.TColStd_HSequenceOfHExtendedString_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfHExtendedString self)"""
         return _TColStd.TColStd_HSequenceOfHExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfHExtendedString" :
         """GetHandle(TColStd_HSequenceOfHExtendedString self) -> Handle_TColStd_HSequenceOfHExtendedString"""
         return _TColStd.TColStd_HSequenceOfHExtendedString_GetHandle(self)
 
@@ -7351,7 +7351,7 @@ Handle_TColStd_HSequenceOfHExtendedString._kill_pointed = new_instancemethod(_TC
 Handle_TColStd_HSequenceOfHExtendedString_swigregister = _TColStd.Handle_TColStd_HSequenceOfHExtendedString_swigregister
 Handle_TColStd_HSequenceOfHExtendedString_swigregister(Handle_TColStd_HSequenceOfHExtendedString)
 
-def Handle_TColStd_HSequenceOfHExtendedString_DownCast(*args):
+def Handle_TColStd_HSequenceOfHExtendedString_DownCast(*args) -> "Handle_TColStd_HSequenceOfHExtendedString const" :
   return _TColStd.Handle_TColStd_HSequenceOfHExtendedString_DownCast(*args)
 Handle_TColStd_HSequenceOfHExtendedString_DownCast = _TColStd.Handle_TColStd_HSequenceOfHExtendedString_DownCast
 
@@ -7364,28 +7364,28 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfInteger_swiginit(self,_TColStd.new_TColStd_HSequenceOfInteger(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: int &
@@ -7398,7 +7398,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: int &
@@ -7411,14 +7411,14 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7435,7 +7435,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7452,7 +7452,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7463,7 +7463,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7472,7 +7472,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7483,7 +7483,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7492,7 +7492,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7501,7 +7501,7 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7516,32 +7516,32 @@ class TColStd_HSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfInteger_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         :rtype: Handle_TColStd_HSequenceOfInteger
 
         """
         return _TColStd.TColStd_HSequenceOfInteger_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfInteger self)"""
         return _TColStd.TColStd_HSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfInteger" :
         """GetHandle(TColStd_HSequenceOfInteger self) -> Handle_TColStd_HSequenceOfInteger"""
         return _TColStd.TColStd_HSequenceOfInteger_GetHandle(self)
 
@@ -7596,7 +7596,7 @@ Handle_TColStd_HSequenceOfInteger._kill_pointed = new_instancemethod(_TColStd.Ha
 Handle_TColStd_HSequenceOfInteger_swigregister = _TColStd.Handle_TColStd_HSequenceOfInteger_swigregister
 Handle_TColStd_HSequenceOfInteger_swigregister(Handle_TColStd_HSequenceOfInteger)
 
-def Handle_TColStd_HSequenceOfInteger_DownCast(*args):
+def Handle_TColStd_HSequenceOfInteger_DownCast(*args) -> "Handle_TColStd_HSequenceOfInteger const" :
   return _TColStd.Handle_TColStd_HSequenceOfInteger_DownCast(*args)
 Handle_TColStd_HSequenceOfInteger_DownCast = _TColStd.Handle_TColStd_HSequenceOfInteger_DownCast
 
@@ -7609,28 +7609,28 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfReal_swiginit(self,_TColStd.new_TColStd_HSequenceOfReal(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfReal_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfReal_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfReal_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: float &
@@ -7643,7 +7643,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: float &
@@ -7656,14 +7656,14 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfReal_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7680,7 +7680,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7697,7 +7697,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7708,7 +7708,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7717,7 +7717,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7728,7 +7728,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7737,7 +7737,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7746,7 +7746,7 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7761,32 +7761,32 @@ class TColStd_HSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfReal_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :rtype: TColStd_SequenceOfReal
 
         """
         return _TColStd.TColStd_HSequenceOfReal_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfReal &" :
         """
         :rtype: TColStd_SequenceOfReal
 
         """
         return _TColStd.TColStd_HSequenceOfReal_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         :rtype: Handle_TColStd_HSequenceOfReal
 
         """
         return _TColStd.TColStd_HSequenceOfReal_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfReal self)"""
         return _TColStd.TColStd_HSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfReal" :
         """GetHandle(TColStd_HSequenceOfReal self) -> Handle_TColStd_HSequenceOfReal"""
         return _TColStd.TColStd_HSequenceOfReal_GetHandle(self)
 
@@ -7841,7 +7841,7 @@ Handle_TColStd_HSequenceOfReal._kill_pointed = new_instancemethod(_TColStd.Handl
 Handle_TColStd_HSequenceOfReal_swigregister = _TColStd.Handle_TColStd_HSequenceOfReal_swigregister
 Handle_TColStd_HSequenceOfReal_swigregister(Handle_TColStd_HSequenceOfReal)
 
-def Handle_TColStd_HSequenceOfReal_DownCast(*args):
+def Handle_TColStd_HSequenceOfReal_DownCast(*args) -> "Handle_TColStd_HSequenceOfReal const" :
   return _TColStd.Handle_TColStd_HSequenceOfReal_DownCast(*args)
 Handle_TColStd_HSequenceOfReal_DownCast = _TColStd.Handle_TColStd_HSequenceOfReal_DownCast
 
@@ -7854,28 +7854,28 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSequenceOfTransient_swiginit(self,_TColStd.new_TColStd_HSequenceOfTransient(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Standard_Transient &
@@ -7888,7 +7888,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Standard_Transient &
@@ -7901,14 +7901,14 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7925,7 +7925,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7942,7 +7942,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7953,7 +7953,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7962,7 +7962,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7973,7 +7973,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7982,7 +7982,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -7991,7 +7991,7 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -8006,32 +8006,32 @@ class TColStd_HSequenceOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSequenceOfTransient_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColStd_SequenceOfTransient const &" :
         """
         :rtype: TColStd_SequenceOfTransient
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColStd_SequenceOfTransient &" :
         """
         :rtype: TColStd_SequenceOfTransient
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         :rtype: Handle_TColStd_HSequenceOfTransient
 
         """
         return _TColStd.TColStd_HSequenceOfTransient_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSequenceOfTransient self)"""
         return _TColStd.TColStd_HSequenceOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSequenceOfTransient" :
         """GetHandle(TColStd_HSequenceOfTransient self) -> Handle_TColStd_HSequenceOfTransient"""
         return _TColStd.TColStd_HSequenceOfTransient_GetHandle(self)
 
@@ -8086,7 +8086,7 @@ Handle_TColStd_HSequenceOfTransient._kill_pointed = new_instancemethod(_TColStd.
 Handle_TColStd_HSequenceOfTransient_swigregister = _TColStd.Handle_TColStd_HSequenceOfTransient_swigregister
 Handle_TColStd_HSequenceOfTransient_swigregister(Handle_TColStd_HSequenceOfTransient)
 
-def Handle_TColStd_HSequenceOfTransient_DownCast(*args):
+def Handle_TColStd_HSequenceOfTransient_DownCast(*args) -> "Handle_TColStd_HSequenceOfTransient const" :
   return _TColStd.Handle_TColStd_HSequenceOfTransient_DownCast(*args)
 Handle_TColStd_HSequenceOfTransient_DownCast = _TColStd.Handle_TColStd_HSequenceOfTransient_DownCast
 
@@ -8099,28 +8099,28 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSetOfInteger_swiginit(self,_TColStd.new_TColStd_HSetOfInteger(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSetOfInteger_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSetOfInteger_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSetOfInteger_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -8129,7 +8129,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -8138,7 +8138,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "Handle_TColStd_HSetOfInteger" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfInteger &
@@ -8147,7 +8147,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "Handle_TColStd_HSetOfInteger" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfInteger &
@@ -8156,7 +8156,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "Handle_TColStd_HSetOfInteger" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfInteger &
@@ -8165,7 +8165,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -8174,7 +8174,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfInteger &
@@ -8183,7 +8183,7 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfInteger &
@@ -8192,32 +8192,32 @@ class TColStd_HSetOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfInteger_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSetOfInteger" :
         """
         :rtype: Handle_TColStd_HSetOfInteger
 
         """
         return _TColStd.TColStd_HSetOfInteger_ShallowCopy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SetOfInteger const &" :
         """
         :rtype: TColStd_SetOfInteger
 
         """
         return _TColStd.TColStd_HSetOfInteger_Set(self, *args)
 
-    def ChangeSet(self, *args):
+    def ChangeSet(self, *args) -> "TColStd_SetOfInteger &" :
         """
         :rtype: TColStd_SetOfInteger
 
         """
         return _TColStd.TColStd_HSetOfInteger_ChangeSet(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSetOfInteger self)"""
         return _TColStd.TColStd_HSetOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSetOfInteger" :
         """GetHandle(TColStd_HSetOfInteger self) -> Handle_TColStd_HSetOfInteger"""
         return _TColStd.TColStd_HSetOfInteger_GetHandle(self)
 
@@ -8269,7 +8269,7 @@ Handle_TColStd_HSetOfInteger._kill_pointed = new_instancemethod(_TColStd.Handle_
 Handle_TColStd_HSetOfInteger_swigregister = _TColStd.Handle_TColStd_HSetOfInteger_swigregister
 Handle_TColStd_HSetOfInteger_swigregister(Handle_TColStd_HSetOfInteger)
 
-def Handle_TColStd_HSetOfInteger_DownCast(*args):
+def Handle_TColStd_HSetOfInteger_DownCast(*args) -> "Handle_TColStd_HSetOfInteger const" :
   return _TColStd.Handle_TColStd_HSetOfInteger_DownCast(*args)
 Handle_TColStd_HSetOfInteger_DownCast = _TColStd.Handle_TColStd_HSetOfInteger_DownCast
 
@@ -8282,28 +8282,28 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSetOfReal_swiginit(self,_TColStd.new_TColStd_HSetOfReal(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSetOfReal_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSetOfReal_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSetOfReal_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -8312,7 +8312,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -8321,7 +8321,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "Handle_TColStd_HSetOfReal" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfReal &
@@ -8330,7 +8330,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "Handle_TColStd_HSetOfReal" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfReal &
@@ -8339,7 +8339,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "Handle_TColStd_HSetOfReal" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfReal &
@@ -8348,7 +8348,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -8357,7 +8357,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfReal &
@@ -8366,7 +8366,7 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfReal &
@@ -8375,32 +8375,32 @@ class TColStd_HSetOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfReal_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSetOfReal" :
         """
         :rtype: Handle_TColStd_HSetOfReal
 
         """
         return _TColStd.TColStd_HSetOfReal_ShallowCopy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SetOfReal const &" :
         """
         :rtype: TColStd_SetOfReal
 
         """
         return _TColStd.TColStd_HSetOfReal_Set(self, *args)
 
-    def ChangeSet(self, *args):
+    def ChangeSet(self, *args) -> "TColStd_SetOfReal &" :
         """
         :rtype: TColStd_SetOfReal
 
         """
         return _TColStd.TColStd_HSetOfReal_ChangeSet(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSetOfReal self)"""
         return _TColStd.TColStd_HSetOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSetOfReal" :
         """GetHandle(TColStd_HSetOfReal self) -> Handle_TColStd_HSetOfReal"""
         return _TColStd.TColStd_HSetOfReal_GetHandle(self)
 
@@ -8452,7 +8452,7 @@ Handle_TColStd_HSetOfReal._kill_pointed = new_instancemethod(_TColStd.Handle_TCo
 Handle_TColStd_HSetOfReal_swigregister = _TColStd.Handle_TColStd_HSetOfReal_swigregister
 Handle_TColStd_HSetOfReal_swigregister(Handle_TColStd_HSetOfReal)
 
-def Handle_TColStd_HSetOfReal_DownCast(*args):
+def Handle_TColStd_HSetOfReal_DownCast(*args) -> "Handle_TColStd_HSetOfReal const" :
   return _TColStd.Handle_TColStd_HSetOfReal_DownCast(*args)
 Handle_TColStd_HSetOfReal_DownCast = _TColStd.Handle_TColStd_HSetOfReal_DownCast
 
@@ -8465,28 +8465,28 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _TColStd.TColStd_HSetOfTransient_swiginit(self,_TColStd.new_TColStd_HSetOfTransient(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_HSetOfTransient_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_HSetOfTransient_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_HSetOfTransient_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -8495,7 +8495,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -8504,7 +8504,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "Handle_TColStd_HSetOfTransient" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfTransient &
@@ -8513,7 +8513,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "Handle_TColStd_HSetOfTransient" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfTransient &
@@ -8522,7 +8522,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "Handle_TColStd_HSetOfTransient" :
         """
         :param B:
         :type B: Handle_TColStd_HSetOfTransient &
@@ -8531,7 +8531,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -8540,7 +8540,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfTransient &
@@ -8549,7 +8549,7 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_TColStd_HSetOfTransient &
@@ -8558,32 +8558,32 @@ class TColStd_HSetOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _TColStd.TColStd_HSetOfTransient_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColStd_HSetOfTransient" :
         """
         :rtype: Handle_TColStd_HSetOfTransient
 
         """
         return _TColStd.TColStd_HSetOfTransient_ShallowCopy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SetOfTransient const &" :
         """
         :rtype: TColStd_SetOfTransient
 
         """
         return _TColStd.TColStd_HSetOfTransient_Set(self, *args)
 
-    def ChangeSet(self, *args):
+    def ChangeSet(self, *args) -> "TColStd_SetOfTransient &" :
         """
         :rtype: TColStd_SetOfTransient
 
         """
         return _TColStd.TColStd_HSetOfTransient_ChangeSet(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_HSetOfTransient self)"""
         return _TColStd.TColStd_HSetOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_HSetOfTransient" :
         """GetHandle(TColStd_HSetOfTransient self) -> Handle_TColStd_HSetOfTransient"""
         return _TColStd.TColStd_HSetOfTransient_GetHandle(self)
 
@@ -8635,7 +8635,7 @@ Handle_TColStd_HSetOfTransient._kill_pointed = new_instancemethod(_TColStd.Handl
 Handle_TColStd_HSetOfTransient_swigregister = _TColStd.Handle_TColStd_HSetOfTransient_swigregister
 Handle_TColStd_HSetOfTransient_swigregister(Handle_TColStd_HSetOfTransient)
 
-def Handle_TColStd_HSetOfTransient_DownCast(*args):
+def Handle_TColStd_HSetOfTransient_DownCast(*args) -> "Handle_TColStd_HSetOfTransient const" :
   return _TColStd.Handle_TColStd_HSetOfTransient_DownCast(*args)
 Handle_TColStd_HSetOfTransient_DownCast = _TColStd.Handle_TColStd_HSetOfTransient_DownCast
 
@@ -8658,40 +8658,40 @@ class TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient(OCC.TCollec
 
         """
         _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_swiginit(self,_TColStd.new_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient self) -> Standard_Integer"""
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient self, Standard_Integer value)"""
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient self)"""
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient" :
         """GetHandle(TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient self) -> Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient"""
         return _TColStd.TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_GetHandle(self)
 
@@ -8734,7 +8734,7 @@ Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient._kill_poin
 Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_swigregister = _TColStd.Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_swigregister
 Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_swigregister(Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient)
 
-def Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_DownCast(*args):
+def Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_DownCast(*args) -> "Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient const" :
   return _TColStd.Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_DownCast(*args)
 Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_DownCast = _TColStd.Handle_TColStd_IndexedDataMapNodeOfIndexedDataMapOfTransientTransient_DownCast
 
@@ -8749,7 +8749,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
 
         """
         _TColStd.TColStd_IndexedDataMapOfTransientTransient_swiginit(self,_TColStd.new_TColStd_IndexedDataMapOfTransientTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_IndexedDataMapOfTransientTransient &" :
         """
         :param Other:
         :type Other: TColStd_IndexedDataMapOfTransientTransient &
@@ -8758,7 +8758,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_IndexedDataMapOfTransientTransient &" :
         """
         :param Other:
         :type Other: TColStd_IndexedDataMapOfTransientTransient &
@@ -8767,7 +8767,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -8776,14 +8776,14 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8794,7 +8794,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -8807,14 +8807,14 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8823,7 +8823,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param I:
         :type I: int
@@ -8832,7 +8832,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param I:
         :type I: int
@@ -8841,7 +8841,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param I:
         :type I: int
@@ -8850,7 +8850,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8859,7 +8859,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8868,7 +8868,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8877,7 +8877,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8886,7 +8886,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -8895,7 +8895,7 @@ class TColStd_IndexedDataMapOfTransientTransient(OCC.TCollection.TCollection_Bas
         """
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedDataMapOfTransientTransient self)"""
         return _TColStd.TColStd_IndexedDataMapOfTransientTransient__kill_pointed(self)
 
@@ -8944,34 +8944,34 @@ class TColStd_IndexedMapNodeOfIndexedMapOfInteger(OCC.TCollection.TCollection_Ma
 
         """
         _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_swiginit(self,_TColStd.new_TColStd_IndexedMapNodeOfIndexedMapOfInteger(*args))
-    def GetKey1(self):
+    def GetKey1(self) -> "Standard_Integer" :
         """GetKey1(TColStd_IndexedMapNodeOfIndexedMapOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_GetKey1(self)
 
-    def SetKey1(self, *args):
+    def SetKey1(self, *args) -> "void" :
         """SetKey1(TColStd_IndexedMapNodeOfIndexedMapOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_SetKey1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TColStd_IndexedMapNodeOfIndexedMapOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TColStd_IndexedMapNodeOfIndexedMapOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapNodeOfIndexedMapOfInteger self)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger" :
         """GetHandle(TColStd_IndexedMapNodeOfIndexedMapOfInteger self) -> Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfInteger_GetHandle(self)
 
@@ -9014,7 +9014,7 @@ Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger._kill_pointed = new_instancem
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_swigregister = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_swigregister
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_swigregister(Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger)
 
-def Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_DownCast(*args):
+def Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_DownCast(*args) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger const" :
   return _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_DownCast(*args)
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_DownCast = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfInteger_DownCast
 
@@ -9035,34 +9035,34 @@ class TColStd_IndexedMapNodeOfIndexedMapOfReal(OCC.TCollection.TCollection_MapNo
 
         """
         _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_swiginit(self,_TColStd.new_TColStd_IndexedMapNodeOfIndexedMapOfReal(*args))
-    def GetKey1(self):
+    def GetKey1(self) -> "Standard_Real" :
         """GetKey1(TColStd_IndexedMapNodeOfIndexedMapOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_GetKey1(self)
 
-    def SetKey1(self, *args):
+    def SetKey1(self, *args) -> "void" :
         """SetKey1(TColStd_IndexedMapNodeOfIndexedMapOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_SetKey1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TColStd_IndexedMapNodeOfIndexedMapOfReal self) -> Standard_Integer"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TColStd_IndexedMapNodeOfIndexedMapOfReal self, Standard_Integer value)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapNodeOfIndexedMapOfReal self)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal" :
         """GetHandle(TColStd_IndexedMapNodeOfIndexedMapOfReal self) -> Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfReal_GetHandle(self)
 
@@ -9105,7 +9105,7 @@ Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal._kill_pointed = new_instancemeth
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_swigregister = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_swigregister
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_swigregister(Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal)
 
-def Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_DownCast(*args):
+def Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_DownCast(*args) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal const" :
   return _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_DownCast(*args)
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_DownCast = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfReal_DownCast
 
@@ -9126,33 +9126,33 @@ class TColStd_IndexedMapNodeOfIndexedMapOfTransient(OCC.TCollection.TCollection_
 
         """
         _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_swiginit(self,_TColStd.new_TColStd_IndexedMapNodeOfIndexedMapOfTransient(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TColStd_IndexedMapNodeOfIndexedMapOfTransient self) -> Standard_Integer"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TColStd_IndexedMapNodeOfIndexedMapOfTransient self, Standard_Integer value)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapNodeOfIndexedMapOfTransient self)"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient" :
         """GetHandle(TColStd_IndexedMapNodeOfIndexedMapOfTransient self) -> Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient"""
         return _TColStd.TColStd_IndexedMapNodeOfIndexedMapOfTransient_GetHandle(self)
 
@@ -9194,7 +9194,7 @@ Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient._kill_pointed = new_instanc
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_swigregister = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_swigregister
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_swigregister(Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient)
 
-def Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_DownCast(*args):
+def Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_DownCast(*args) -> "Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient const" :
   return _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_DownCast(*args)
 Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_DownCast = _TColStd.Handle_TColStd_IndexedMapNodeOfIndexedMapOfTransient_DownCast
 
@@ -9209,7 +9209,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_IndexedMapOfInteger_swiginit(self,_TColStd.new_TColStd_IndexedMapOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_IndexedMapOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfInteger &
@@ -9218,7 +9218,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_IndexedMapOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfInteger &
@@ -9227,7 +9227,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -9236,14 +9236,14 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: int &
@@ -9252,7 +9252,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -9263,14 +9263,14 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfInteger_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -9279,7 +9279,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Standard_Integer const &" :
         """
         :param I:
         :type I: int
@@ -9288,7 +9288,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: int &
@@ -9297,7 +9297,7 @@ class TColStd_IndexedMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfInteger_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapOfInteger self)"""
         return _TColStd.TColStd_IndexedMapOfInteger__kill_pointed(self)
 
@@ -9334,7 +9334,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_IndexedMapOfReal_swiginit(self,_TColStd.new_TColStd_IndexedMapOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_IndexedMapOfReal &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfReal &
@@ -9343,7 +9343,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_IndexedMapOfReal &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfReal &
@@ -9352,7 +9352,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -9361,14 +9361,14 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfReal_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: float &
@@ -9377,7 +9377,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -9388,14 +9388,14 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfReal_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: float &
@@ -9404,7 +9404,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Standard_Real const &" :
         """
         :param I:
         :type I: int
@@ -9413,7 +9413,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: float &
@@ -9422,7 +9422,7 @@ class TColStd_IndexedMapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfReal_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapOfReal self)"""
         return _TColStd.TColStd_IndexedMapOfReal__kill_pointed(self)
 
@@ -9459,7 +9459,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_IndexedMapOfTransient_swiginit(self,_TColStd.new_TColStd_IndexedMapOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_IndexedMapOfTransient &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfTransient &
@@ -9468,7 +9468,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_IndexedMapOfTransient &" :
         """
         :param Other:
         :type Other: TColStd_IndexedMapOfTransient &
@@ -9477,7 +9477,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -9486,14 +9486,14 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -9502,7 +9502,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -9513,14 +9513,14 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_IndexedMapOfTransient_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -9529,7 +9529,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param I:
         :type I: int
@@ -9538,7 +9538,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -9547,7 +9547,7 @@ class TColStd_IndexedMapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_IndexedMapOfTransient_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_IndexedMapOfTransient self)"""
         return _TColStd.TColStd_IndexedMapOfTransient__kill_pointed(self)
 
@@ -9586,7 +9586,7 @@ class TColStd_ListIteratorOfListOfAsciiString(object):
 
         """
         _TColStd.TColStd_ListIteratorOfListOfAsciiString_swiginit(self,_TColStd.new_TColStd_ListIteratorOfListOfAsciiString(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_ListOfAsciiString &
@@ -9595,21 +9595,21 @@ class TColStd_ListIteratorOfListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListIteratorOfListOfAsciiString_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfAsciiString_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfAsciiString_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
@@ -9645,7 +9645,7 @@ class TColStd_ListIteratorOfListOfInteger(object):
 
         """
         _TColStd.TColStd_ListIteratorOfListOfInteger_swiginit(self,_TColStd.new_TColStd_ListIteratorOfListOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_ListOfInteger &
@@ -9654,29 +9654,29 @@ class TColStd_ListIteratorOfListOfInteger(object):
         """
         return _TColStd.TColStd_ListIteratorOfListOfInteger_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfInteger_Next(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_ListIteratorOfListOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListIteratorOfListOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListIteratorOfListOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListIteratorOfListOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListIteratorOfListOfInteger self)"""
         return _TColStd.TColStd_ListIteratorOfListOfInteger__kill_pointed(self)
 
@@ -9710,7 +9710,7 @@ class TColStd_ListIteratorOfListOfReal(object):
 
         """
         _TColStd.TColStd_ListIteratorOfListOfReal_swiginit(self,_TColStd.new_TColStd_ListIteratorOfListOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_ListOfReal &
@@ -9719,29 +9719,29 @@ class TColStd_ListIteratorOfListOfReal(object):
         """
         return _TColStd.TColStd_ListIteratorOfListOfReal_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfReal_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfReal_Next(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_ListIteratorOfListOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListIteratorOfListOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListIteratorOfListOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListIteratorOfListOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListIteratorOfListOfReal self)"""
         return _TColStd.TColStd_ListIteratorOfListOfReal__kill_pointed(self)
 
@@ -9775,7 +9775,7 @@ class TColStd_ListIteratorOfListOfTransient(object):
 
         """
         _TColStd.TColStd_ListIteratorOfListOfTransient_swiginit(self,_TColStd.new_TColStd_ListIteratorOfListOfTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_ListOfTransient &
@@ -9784,21 +9784,21 @@ class TColStd_ListIteratorOfListOfTransient(object):
         """
         return _TColStd.TColStd_ListIteratorOfListOfTransient_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfTransient_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfListOfTransient_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -9834,7 +9834,7 @@ class TColStd_ListIteratorOfSetListOfSetOfInteger(object):
 
         """
         _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_swiginit(self,_TColStd.new_TColStd_ListIteratorOfSetListOfSetOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_SetListOfSetOfInteger &
@@ -9843,29 +9843,29 @@ class TColStd_ListIteratorOfSetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_Next(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_ListIteratorOfSetListOfSetOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListIteratorOfSetListOfSetOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListIteratorOfSetListOfSetOfInteger self)"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfInteger__kill_pointed(self)
 
@@ -9899,7 +9899,7 @@ class TColStd_ListIteratorOfSetListOfSetOfReal(object):
 
         """
         _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_swiginit(self,_TColStd.new_TColStd_ListIteratorOfSetListOfSetOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_SetListOfSetOfReal &
@@ -9908,29 +9908,29 @@ class TColStd_ListIteratorOfSetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_Next(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_ListIteratorOfSetListOfSetOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListIteratorOfSetListOfSetOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListIteratorOfSetListOfSetOfReal self)"""
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfReal__kill_pointed(self)
 
@@ -9964,7 +9964,7 @@ class TColStd_ListIteratorOfSetListOfSetOfTransient(object):
 
         """
         _TColStd.TColStd_ListIteratorOfSetListOfSetOfTransient_swiginit(self,_TColStd.new_TColStd_ListIteratorOfSetListOfSetOfTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TColStd_SetListOfSetOfTransient &
@@ -9973,21 +9973,21 @@ class TColStd_ListIteratorOfSetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfTransient_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfTransient_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListIteratorOfSetListOfSetOfTransient_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -10023,18 +10023,18 @@ class TColStd_ListNodeOfListOfAsciiString(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_ListNodeOfListOfAsciiString_swiginit(self,_TColStd.new_TColStd_ListNodeOfListOfAsciiString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_ListNodeOfListOfAsciiString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfListOfAsciiString self)"""
         return _TColStd.TColStd_ListNodeOfListOfAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfListOfAsciiString" :
         """GetHandle(TColStd_ListNodeOfListOfAsciiString self) -> Handle_TColStd_ListNodeOfListOfAsciiString"""
         return _TColStd.TColStd_ListNodeOfListOfAsciiString_GetHandle(self)
 
@@ -10073,7 +10073,7 @@ Handle_TColStd_ListNodeOfListOfAsciiString._kill_pointed = new_instancemethod(_T
 Handle_TColStd_ListNodeOfListOfAsciiString_swigregister = _TColStd.Handle_TColStd_ListNodeOfListOfAsciiString_swigregister
 Handle_TColStd_ListNodeOfListOfAsciiString_swigregister(Handle_TColStd_ListNodeOfListOfAsciiString)
 
-def Handle_TColStd_ListNodeOfListOfAsciiString_DownCast(*args):
+def Handle_TColStd_ListNodeOfListOfAsciiString_DownCast(*args) -> "Handle_TColStd_ListNodeOfListOfAsciiString const" :
   return _TColStd.Handle_TColStd_ListNodeOfListOfAsciiString_DownCast(*args)
 Handle_TColStd_ListNodeOfListOfAsciiString_DownCast = _TColStd.Handle_TColStd_ListNodeOfListOfAsciiString_DownCast
 
@@ -10090,19 +10090,19 @@ class TColStd_ListNodeOfListOfInteger(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_ListNodeOfListOfInteger_swiginit(self,_TColStd.new_TColStd_ListNodeOfListOfInteger(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_ListNodeOfListOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListNodeOfListOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListNodeOfListOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListNodeOfListOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfListOfInteger self)"""
         return _TColStd.TColStd_ListNodeOfListOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfListOfInteger" :
         """GetHandle(TColStd_ListNodeOfListOfInteger self) -> Handle_TColStd_ListNodeOfListOfInteger"""
         return _TColStd.TColStd_ListNodeOfListOfInteger_GetHandle(self)
 
@@ -10142,7 +10142,7 @@ Handle_TColStd_ListNodeOfListOfInteger._kill_pointed = new_instancemethod(_TColS
 Handle_TColStd_ListNodeOfListOfInteger_swigregister = _TColStd.Handle_TColStd_ListNodeOfListOfInteger_swigregister
 Handle_TColStd_ListNodeOfListOfInteger_swigregister(Handle_TColStd_ListNodeOfListOfInteger)
 
-def Handle_TColStd_ListNodeOfListOfInteger_DownCast(*args):
+def Handle_TColStd_ListNodeOfListOfInteger_DownCast(*args) -> "Handle_TColStd_ListNodeOfListOfInteger const" :
   return _TColStd.Handle_TColStd_ListNodeOfListOfInteger_DownCast(*args)
 Handle_TColStd_ListNodeOfListOfInteger_DownCast = _TColStd.Handle_TColStd_ListNodeOfListOfInteger_DownCast
 
@@ -10159,19 +10159,19 @@ class TColStd_ListNodeOfListOfReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_ListNodeOfListOfReal_swiginit(self,_TColStd.new_TColStd_ListNodeOfListOfReal(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_ListNodeOfListOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListNodeOfListOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListNodeOfListOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListNodeOfListOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfListOfReal self)"""
         return _TColStd.TColStd_ListNodeOfListOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfListOfReal" :
         """GetHandle(TColStd_ListNodeOfListOfReal self) -> Handle_TColStd_ListNodeOfListOfReal"""
         return _TColStd.TColStd_ListNodeOfListOfReal_GetHandle(self)
 
@@ -10211,7 +10211,7 @@ Handle_TColStd_ListNodeOfListOfReal._kill_pointed = new_instancemethod(_TColStd.
 Handle_TColStd_ListNodeOfListOfReal_swigregister = _TColStd.Handle_TColStd_ListNodeOfListOfReal_swigregister
 Handle_TColStd_ListNodeOfListOfReal_swigregister(Handle_TColStd_ListNodeOfListOfReal)
 
-def Handle_TColStd_ListNodeOfListOfReal_DownCast(*args):
+def Handle_TColStd_ListNodeOfListOfReal_DownCast(*args) -> "Handle_TColStd_ListNodeOfListOfReal const" :
   return _TColStd.Handle_TColStd_ListNodeOfListOfReal_DownCast(*args)
 Handle_TColStd_ListNodeOfListOfReal_DownCast = _TColStd.Handle_TColStd_ListNodeOfListOfReal_DownCast
 
@@ -10228,18 +10228,18 @@ class TColStd_ListNodeOfListOfTransient(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_ListNodeOfListOfTransient_swiginit(self,_TColStd.new_TColStd_ListNodeOfListOfTransient(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_ListNodeOfListOfTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfListOfTransient self)"""
         return _TColStd.TColStd_ListNodeOfListOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfListOfTransient" :
         """GetHandle(TColStd_ListNodeOfListOfTransient self) -> Handle_TColStd_ListNodeOfListOfTransient"""
         return _TColStd.TColStd_ListNodeOfListOfTransient_GetHandle(self)
 
@@ -10278,7 +10278,7 @@ Handle_TColStd_ListNodeOfListOfTransient._kill_pointed = new_instancemethod(_TCo
 Handle_TColStd_ListNodeOfListOfTransient_swigregister = _TColStd.Handle_TColStd_ListNodeOfListOfTransient_swigregister
 Handle_TColStd_ListNodeOfListOfTransient_swigregister(Handle_TColStd_ListNodeOfListOfTransient)
 
-def Handle_TColStd_ListNodeOfListOfTransient_DownCast(*args):
+def Handle_TColStd_ListNodeOfListOfTransient_DownCast(*args) -> "Handle_TColStd_ListNodeOfListOfTransient const" :
   return _TColStd.Handle_TColStd_ListNodeOfListOfTransient_DownCast(*args)
 Handle_TColStd_ListNodeOfListOfTransient_DownCast = _TColStd.Handle_TColStd_ListNodeOfListOfTransient_DownCast
 
@@ -10295,19 +10295,19 @@ class TColStd_ListNodeOfSetListOfSetOfInteger(OCC.TCollection.TCollection_MapNod
 
         """
         _TColStd.TColStd_ListNodeOfSetListOfSetOfInteger_swiginit(self,_TColStd.new_TColStd_ListNodeOfSetListOfSetOfInteger(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_ListNodeOfSetListOfSetOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListNodeOfSetListOfSetOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfSetListOfSetOfInteger self)"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfSetListOfSetOfInteger" :
         """GetHandle(TColStd_ListNodeOfSetListOfSetOfInteger self) -> Handle_TColStd_ListNodeOfSetListOfSetOfInteger"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfInteger_GetHandle(self)
 
@@ -10347,7 +10347,7 @@ Handle_TColStd_ListNodeOfSetListOfSetOfInteger._kill_pointed = new_instancemetho
 Handle_TColStd_ListNodeOfSetListOfSetOfInteger_swigregister = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfInteger_swigregister
 Handle_TColStd_ListNodeOfSetListOfSetOfInteger_swigregister(Handle_TColStd_ListNodeOfSetListOfSetOfInteger)
 
-def Handle_TColStd_ListNodeOfSetListOfSetOfInteger_DownCast(*args):
+def Handle_TColStd_ListNodeOfSetListOfSetOfInteger_DownCast(*args) -> "Handle_TColStd_ListNodeOfSetListOfSetOfInteger const" :
   return _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfInteger_DownCast(*args)
 Handle_TColStd_ListNodeOfSetListOfSetOfInteger_DownCast = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfInteger_DownCast
 
@@ -10364,19 +10364,19 @@ class TColStd_ListNodeOfSetListOfSetOfReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_ListNodeOfSetListOfSetOfReal_swiginit(self,_TColStd.new_TColStd_ListNodeOfSetListOfSetOfReal(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_ListNodeOfSetListOfSetOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_ListNodeOfSetListOfSetOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfSetListOfSetOfReal self)"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfSetListOfSetOfReal" :
         """GetHandle(TColStd_ListNodeOfSetListOfSetOfReal self) -> Handle_TColStd_ListNodeOfSetListOfSetOfReal"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfReal_GetHandle(self)
 
@@ -10416,7 +10416,7 @@ Handle_TColStd_ListNodeOfSetListOfSetOfReal._kill_pointed = new_instancemethod(_
 Handle_TColStd_ListNodeOfSetListOfSetOfReal_swigregister = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfReal_swigregister
 Handle_TColStd_ListNodeOfSetListOfSetOfReal_swigregister(Handle_TColStd_ListNodeOfSetListOfSetOfReal)
 
-def Handle_TColStd_ListNodeOfSetListOfSetOfReal_DownCast(*args):
+def Handle_TColStd_ListNodeOfSetListOfSetOfReal_DownCast(*args) -> "Handle_TColStd_ListNodeOfSetListOfSetOfReal const" :
   return _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfReal_DownCast(*args)
 Handle_TColStd_ListNodeOfSetListOfSetOfReal_DownCast = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfReal_DownCast
 
@@ -10433,18 +10433,18 @@ class TColStd_ListNodeOfSetListOfSetOfTransient(OCC.TCollection.TCollection_MapN
 
         """
         _TColStd.TColStd_ListNodeOfSetListOfSetOfTransient_swiginit(self,_TColStd.new_TColStd_ListNodeOfSetListOfSetOfTransient(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListNodeOfSetListOfSetOfTransient self)"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_ListNodeOfSetListOfSetOfTransient" :
         """GetHandle(TColStd_ListNodeOfSetListOfSetOfTransient self) -> Handle_TColStd_ListNodeOfSetListOfSetOfTransient"""
         return _TColStd.TColStd_ListNodeOfSetListOfSetOfTransient_GetHandle(self)
 
@@ -10483,7 +10483,7 @@ Handle_TColStd_ListNodeOfSetListOfSetOfTransient._kill_pointed = new_instancemet
 Handle_TColStd_ListNodeOfSetListOfSetOfTransient_swigregister = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfTransient_swigregister
 Handle_TColStd_ListNodeOfSetListOfSetOfTransient_swigregister(Handle_TColStd_ListNodeOfSetListOfSetOfTransient)
 
-def Handle_TColStd_ListNodeOfSetListOfSetOfTransient_DownCast(*args):
+def Handle_TColStd_ListNodeOfSetListOfSetOfTransient_DownCast(*args) -> "Handle_TColStd_ListNodeOfSetListOfSetOfTransient const" :
   return _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfTransient_DownCast(*args)
 Handle_TColStd_ListNodeOfSetListOfSetOfTransient_DownCast = _TColStd.Handle_TColStd_ListNodeOfSetListOfSetOfTransient_DownCast
 
@@ -10496,7 +10496,7 @@ class TColStd_ListOfAsciiString(object):
 
         """
         _TColStd.TColStd_ListOfAsciiString_swiginit(self,_TColStd.new_TColStd_ListOfAsciiString(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfAsciiString &
@@ -10505,7 +10505,7 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfAsciiString &
@@ -10514,28 +10514,28 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_ListOfAsciiString_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfAsciiString_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListOfAsciiString_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_AsciiString &
@@ -10554,7 +10554,7 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_AsciiString &
@@ -10573,28 +10573,28 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_ListOfAsciiString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_ListOfAsciiString_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfAsciiString_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfListOfAsciiString &
@@ -10603,7 +10603,7 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_AsciiString &
@@ -10620,7 +10620,7 @@ class TColStd_ListOfAsciiString(object):
         """
         return _TColStd.TColStd_ListOfAsciiString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_AsciiString &
@@ -10671,7 +10671,7 @@ class TColStd_ListOfInteger(object):
 
         """
         _TColStd.TColStd_ListOfInteger_swiginit(self,_TColStd.new_TColStd_ListOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfInteger &
@@ -10680,7 +10680,7 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfInteger &
@@ -10689,28 +10689,28 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_ListOfInteger_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfInteger_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListOfInteger_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -10729,7 +10729,7 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -10748,30 +10748,30 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_Append(self, *args)
 
-    def GetFirst(self):
+    def GetFirst(self) -> "Standard_Integer" :
         """GetFirst(TColStd_ListOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListOfInteger_GetFirst(self)
 
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """SetFirst(TColStd_ListOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListOfInteger_SetFirst(self, *args)
 
-    def GetLast(self):
+    def GetLast(self) -> "Standard_Integer" :
         """GetLast(TColStd_ListOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_ListOfInteger_GetLast(self)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """SetLast(TColStd_ListOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_ListOfInteger_SetLast(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfInteger_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfListOfInteger &
@@ -10780,7 +10780,7 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -10797,7 +10797,7 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -10814,7 +10814,7 @@ class TColStd_ListOfInteger(object):
         """
         return _TColStd.TColStd_ListOfInteger_InsertAfter(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListOfInteger self)"""
         return _TColStd.TColStd_ListOfInteger__kill_pointed(self)
 
@@ -10854,7 +10854,7 @@ class TColStd_ListOfReal(object):
 
         """
         _TColStd.TColStd_ListOfReal_swiginit(self,_TColStd.new_TColStd_ListOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfReal &
@@ -10863,7 +10863,7 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfReal &
@@ -10872,28 +10872,28 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_ListOfReal_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfReal_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListOfReal_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -10912,7 +10912,7 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -10931,30 +10931,30 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_Append(self, *args)
 
-    def GetFirst(self):
+    def GetFirst(self) -> "Standard_Real" :
         """GetFirst(TColStd_ListOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListOfReal_GetFirst(self)
 
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """SetFirst(TColStd_ListOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListOfReal_SetFirst(self, *args)
 
-    def GetLast(self):
+    def GetLast(self) -> "Standard_Real" :
         """GetLast(TColStd_ListOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_ListOfReal_GetLast(self)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """SetLast(TColStd_ListOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_ListOfReal_SetLast(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfReal_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfListOfReal &
@@ -10963,7 +10963,7 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -10980,7 +10980,7 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -10997,7 +10997,7 @@ class TColStd_ListOfReal(object):
         """
         return _TColStd.TColStd_ListOfReal_InsertAfter(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_ListOfReal self)"""
         return _TColStd.TColStd_ListOfReal__kill_pointed(self)
 
@@ -11037,7 +11037,7 @@ class TColStd_ListOfTransient(object):
 
         """
         _TColStd.TColStd_ListOfTransient_swiginit(self,_TColStd.new_TColStd_ListOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfTransient &
@@ -11046,7 +11046,7 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_ListOfTransient &
@@ -11055,28 +11055,28 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_ListOfTransient_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfTransient_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_ListOfTransient_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -11095,7 +11095,7 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -11114,28 +11114,28 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_ListOfTransient_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_ListOfTransient_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_ListOfTransient_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfListOfTransient &
@@ -11144,7 +11144,7 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -11161,7 +11161,7 @@ class TColStd_ListOfTransient(object):
         """
         return _TColStd.TColStd_ListOfTransient_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -11206,7 +11206,7 @@ TColStd_ListOfTransient_swigregister(TColStd_ListOfTransient)
 class TColStd_MapIntegerHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: int &
@@ -11218,7 +11218,7 @@ class TColStd_MapIntegerHasher(object):
         return _TColStd.TColStd_MapIntegerHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: int &
@@ -11244,7 +11244,7 @@ TColStd_MapIntegerHasher._kill_pointed = new_instancemethod(_TColStd.TColStd_Map
 TColStd_MapIntegerHasher_swigregister = _TColStd.TColStd_MapIntegerHasher_swigregister
 TColStd_MapIntegerHasher_swigregister(TColStd_MapIntegerHasher)
 
-def TColStd_MapIntegerHasher_HashCode(*args):
+def TColStd_MapIntegerHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: int &
@@ -11255,7 +11255,7 @@ def TColStd_MapIntegerHasher_HashCode(*args):
     """
   return _TColStd.TColStd_MapIntegerHasher_HashCode(*args)
 
-def TColStd_MapIntegerHasher_IsEqual(*args):
+def TColStd_MapIntegerHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: int &
@@ -11279,7 +11279,7 @@ class TColStd_MapIteratorOfMapOfAsciiString(OCC.TCollection.TCollection_BasicMap
 
         """
         _TColStd.TColStd_MapIteratorOfMapOfAsciiString_swiginit(self,_TColStd.new_TColStd_MapIteratorOfMapOfAsciiString(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_MapOfAsciiString &
@@ -11288,7 +11288,7 @@ class TColStd_MapIteratorOfMapOfAsciiString(OCC.TCollection.TCollection_BasicMap
         """
         return _TColStd.TColStd_MapIteratorOfMapOfAsciiString_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
@@ -11322,7 +11322,7 @@ class TColStd_MapIteratorOfMapOfInteger(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _TColStd.TColStd_MapIteratorOfMapOfInteger_swiginit(self,_TColStd.new_TColStd_MapIteratorOfMapOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_MapOfInteger &
@@ -11331,7 +11331,7 @@ class TColStd_MapIteratorOfMapOfInteger(OCC.TCollection.TCollection_BasicMapIter
         """
         return _TColStd.TColStd_MapIteratorOfMapOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -11365,7 +11365,7 @@ class TColStd_MapIteratorOfMapOfReal(OCC.TCollection.TCollection_BasicMapIterato
 
         """
         _TColStd.TColStd_MapIteratorOfMapOfReal_swiginit(self,_TColStd.new_TColStd_MapIteratorOfMapOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_MapOfReal &
@@ -11374,7 +11374,7 @@ class TColStd_MapIteratorOfMapOfReal(OCC.TCollection.TCollection_BasicMapIterato
         """
         return _TColStd.TColStd_MapIteratorOfMapOfReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -11408,7 +11408,7 @@ class TColStd_MapIteratorOfMapOfTransient(OCC.TCollection.TCollection_BasicMapIt
 
         """
         _TColStd.TColStd_MapIteratorOfMapOfTransient_swiginit(self,_TColStd.new_TColStd_MapIteratorOfMapOfTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TColStd_MapOfTransient &
@@ -11417,7 +11417,7 @@ class TColStd_MapIteratorOfMapOfTransient(OCC.TCollection.TCollection_BasicMapIt
         """
         return _TColStd.TColStd_MapIteratorOfMapOfTransient_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -11455,7 +11455,7 @@ class TColStd_MapIteratorOfPackedMapOfInteger(OCC.TCollection.TCollection_BasicM
 
         """
         _TColStd.TColStd_MapIteratorOfPackedMapOfInteger_swiginit(self,_TColStd.new_TColStd_MapIteratorOfPackedMapOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * /// Re-initialize with the same or another Map instance.
 
@@ -11466,7 +11466,7 @@ class TColStd_MapIteratorOfPackedMapOfInteger(OCC.TCollection.TCollection_BasicM
         """
         return _TColStd.TColStd_MapIteratorOfPackedMapOfInteger_Initialize(self, *args)
 
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * /// Restart the iteraton
 
@@ -11475,7 +11475,7 @@ class TColStd_MapIteratorOfPackedMapOfInteger(OCC.TCollection.TCollection_BasicM
         """
         return _TColStd.TColStd_MapIteratorOfPackedMapOfInteger_Reset(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer" :
         """
         * /// Query the iterated key. Defined in TColStd_PackedMapOfInteger.cxx
 
@@ -11484,7 +11484,7 @@ class TColStd_MapIteratorOfPackedMapOfInteger(OCC.TCollection.TCollection_BasicM
         """
         return _TColStd.TColStd_MapIteratorOfPackedMapOfInteger_Key(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * /// Increment the iterator
 
@@ -11520,7 +11520,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_MapOfAsciiString_swiginit(self,_TColStd.new_TColStd_MapOfAsciiString(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_MapOfAsciiString &" :
         """
         :param Other:
         :type Other: TColStd_MapOfAsciiString &
@@ -11529,7 +11529,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_MapOfAsciiString &" :
         """
         :param Other:
         :type Other: TColStd_MapOfAsciiString &
@@ -11538,7 +11538,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -11547,14 +11547,14 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_MapOfAsciiString_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TCollection_AsciiString &
@@ -11563,7 +11563,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TCollection_AsciiString &
@@ -11572,7 +11572,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TCollection_AsciiString &
@@ -11581,7 +11581,7 @@ class TColStd_MapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfAsciiString_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_MapOfAsciiString self)"""
         return _TColStd.TColStd_MapOfAsciiString__kill_pointed(self)
 
@@ -11615,7 +11615,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_MapOfInteger_swiginit(self,_TColStd.new_TColStd_MapOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_MapOfInteger &
@@ -11624,7 +11624,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :param Other:
         :type Other: TColStd_MapOfInteger &
@@ -11633,7 +11633,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -11642,14 +11642,14 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_MapOfInteger_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: int &
@@ -11658,7 +11658,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: int &
@@ -11667,7 +11667,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: int &
@@ -11676,7 +11676,7 @@ class TColStd_MapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfInteger_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_MapOfInteger self)"""
         return _TColStd.TColStd_MapOfInteger__kill_pointed(self)
 
@@ -11710,7 +11710,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_MapOfReal_swiginit(self,_TColStd.new_TColStd_MapOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_MapOfReal &" :
         """
         :param Other:
         :type Other: TColStd_MapOfReal &
@@ -11719,7 +11719,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_MapOfReal &" :
         """
         :param Other:
         :type Other: TColStd_MapOfReal &
@@ -11728,7 +11728,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -11737,14 +11737,14 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_MapOfReal_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: float &
@@ -11753,7 +11753,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: float &
@@ -11762,7 +11762,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: float &
@@ -11771,7 +11771,7 @@ class TColStd_MapOfReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfReal_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_MapOfReal self)"""
         return _TColStd.TColStd_MapOfReal__kill_pointed(self)
 
@@ -11805,7 +11805,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TColStd.TColStd_MapOfTransient_swiginit(self,_TColStd.new_TColStd_MapOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_MapOfTransient &" :
         """
         :param Other:
         :type Other: TColStd_MapOfTransient &
@@ -11814,7 +11814,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_MapOfTransient &" :
         """
         :param Other:
         :type Other: TColStd_MapOfTransient &
@@ -11823,7 +11823,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -11832,14 +11832,14 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_MapOfTransient_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_Standard_Transient &
@@ -11848,7 +11848,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_Standard_Transient &
@@ -11857,7 +11857,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_Standard_Transient &
@@ -11866,7 +11866,7 @@ class TColStd_MapOfTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColStd.TColStd_MapOfTransient_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_MapOfTransient self)"""
         return _TColStd.TColStd_MapOfTransient__kill_pointed(self)
 
@@ -11892,7 +11892,7 @@ TColStd_MapOfTransient_swigregister(TColStd_MapOfTransient)
 class TColStd_MapRealHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: float &
@@ -11904,7 +11904,7 @@ class TColStd_MapRealHasher(object):
         return _TColStd.TColStd_MapRealHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: float &
@@ -11930,7 +11930,7 @@ TColStd_MapRealHasher._kill_pointed = new_instancemethod(_TColStd.TColStd_MapRea
 TColStd_MapRealHasher_swigregister = _TColStd.TColStd_MapRealHasher_swigregister
 TColStd_MapRealHasher_swigregister(TColStd_MapRealHasher)
 
-def TColStd_MapRealHasher_HashCode(*args):
+def TColStd_MapRealHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: float &
@@ -11941,7 +11941,7 @@ def TColStd_MapRealHasher_HashCode(*args):
     """
   return _TColStd.TColStd_MapRealHasher_HashCode(*args)
 
-def TColStd_MapRealHasher_IsEqual(*args):
+def TColStd_MapRealHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: float &
@@ -11955,7 +11955,7 @@ def TColStd_MapRealHasher_IsEqual(*args):
 class TColStd_MapTransientHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -11967,7 +11967,7 @@ class TColStd_MapTransientHasher(object):
         return _TColStd.TColStd_MapTransientHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: Handle_Standard_Transient &
@@ -11993,7 +11993,7 @@ TColStd_MapTransientHasher._kill_pointed = new_instancemethod(_TColStd.TColStd_M
 TColStd_MapTransientHasher_swigregister = _TColStd.TColStd_MapTransientHasher_swigregister
 TColStd_MapTransientHasher_swigregister(TColStd_MapTransientHasher)
 
-def TColStd_MapTransientHasher_HashCode(*args):
+def TColStd_MapTransientHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: Handle_Standard_Transient &
@@ -12004,7 +12004,7 @@ def TColStd_MapTransientHasher_HashCode(*args):
     """
   return _TColStd.TColStd_MapTransientHasher_HashCode(*args)
 
-def TColStd_MapTransientHasher_IsEqual(*args):
+def TColStd_MapTransientHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: Handle_Standard_Transient &
@@ -12028,19 +12028,19 @@ class TColStd_QueueNodeOfQueueOfInteger(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_QueueNodeOfQueueOfInteger_swiginit(self,_TColStd.new_TColStd_QueueNodeOfQueueOfInteger(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_QueueNodeOfQueueOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_QueueNodeOfQueueOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_QueueNodeOfQueueOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_QueueNodeOfQueueOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_QueueNodeOfQueueOfInteger self)"""
         return _TColStd.TColStd_QueueNodeOfQueueOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_QueueNodeOfQueueOfInteger" :
         """GetHandle(TColStd_QueueNodeOfQueueOfInteger self) -> Handle_TColStd_QueueNodeOfQueueOfInteger"""
         return _TColStd.TColStd_QueueNodeOfQueueOfInteger_GetHandle(self)
 
@@ -12080,7 +12080,7 @@ Handle_TColStd_QueueNodeOfQueueOfInteger._kill_pointed = new_instancemethod(_TCo
 Handle_TColStd_QueueNodeOfQueueOfInteger_swigregister = _TColStd.Handle_TColStd_QueueNodeOfQueueOfInteger_swigregister
 Handle_TColStd_QueueNodeOfQueueOfInteger_swigregister(Handle_TColStd_QueueNodeOfQueueOfInteger)
 
-def Handle_TColStd_QueueNodeOfQueueOfInteger_DownCast(*args):
+def Handle_TColStd_QueueNodeOfQueueOfInteger_DownCast(*args) -> "Handle_TColStd_QueueNodeOfQueueOfInteger const" :
   return _TColStd.Handle_TColStd_QueueNodeOfQueueOfInteger_DownCast(*args)
 Handle_TColStd_QueueNodeOfQueueOfInteger_DownCast = _TColStd.Handle_TColStd_QueueNodeOfQueueOfInteger_DownCast
 
@@ -12097,19 +12097,19 @@ class TColStd_QueueNodeOfQueueOfReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_QueueNodeOfQueueOfReal_swiginit(self,_TColStd.new_TColStd_QueueNodeOfQueueOfReal(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_QueueNodeOfQueueOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_QueueNodeOfQueueOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_QueueNodeOfQueueOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_QueueNodeOfQueueOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_QueueNodeOfQueueOfReal self)"""
         return _TColStd.TColStd_QueueNodeOfQueueOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_QueueNodeOfQueueOfReal" :
         """GetHandle(TColStd_QueueNodeOfQueueOfReal self) -> Handle_TColStd_QueueNodeOfQueueOfReal"""
         return _TColStd.TColStd_QueueNodeOfQueueOfReal_GetHandle(self)
 
@@ -12149,7 +12149,7 @@ Handle_TColStd_QueueNodeOfQueueOfReal._kill_pointed = new_instancemethod(_TColSt
 Handle_TColStd_QueueNodeOfQueueOfReal_swigregister = _TColStd.Handle_TColStd_QueueNodeOfQueueOfReal_swigregister
 Handle_TColStd_QueueNodeOfQueueOfReal_swigregister(Handle_TColStd_QueueNodeOfQueueOfReal)
 
-def Handle_TColStd_QueueNodeOfQueueOfReal_DownCast(*args):
+def Handle_TColStd_QueueNodeOfQueueOfReal_DownCast(*args) -> "Handle_TColStd_QueueNodeOfQueueOfReal const" :
   return _TColStd.Handle_TColStd_QueueNodeOfQueueOfReal_DownCast(*args)
 Handle_TColStd_QueueNodeOfQueueOfReal_DownCast = _TColStd.Handle_TColStd_QueueNodeOfQueueOfReal_DownCast
 
@@ -12166,18 +12166,18 @@ class TColStd_QueueNodeOfQueueOfTransient(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_QueueNodeOfQueueOfTransient_swiginit(self,_TColStd.new_TColStd_QueueNodeOfQueueOfTransient(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_QueueNodeOfQueueOfTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_QueueNodeOfQueueOfTransient self)"""
         return _TColStd.TColStd_QueueNodeOfQueueOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_QueueNodeOfQueueOfTransient" :
         """GetHandle(TColStd_QueueNodeOfQueueOfTransient self) -> Handle_TColStd_QueueNodeOfQueueOfTransient"""
         return _TColStd.TColStd_QueueNodeOfQueueOfTransient_GetHandle(self)
 
@@ -12216,7 +12216,7 @@ Handle_TColStd_QueueNodeOfQueueOfTransient._kill_pointed = new_instancemethod(_T
 Handle_TColStd_QueueNodeOfQueueOfTransient_swigregister = _TColStd.Handle_TColStd_QueueNodeOfQueueOfTransient_swigregister
 Handle_TColStd_QueueNodeOfQueueOfTransient_swigregister(Handle_TColStd_QueueNodeOfQueueOfTransient)
 
-def Handle_TColStd_QueueNodeOfQueueOfTransient_DownCast(*args):
+def Handle_TColStd_QueueNodeOfQueueOfTransient_DownCast(*args) -> "Handle_TColStd_QueueNodeOfQueueOfTransient const" :
   return _TColStd.Handle_TColStd_QueueNodeOfQueueOfTransient_DownCast(*args)
 Handle_TColStd_QueueNodeOfQueueOfTransient_DownCast = _TColStd.Handle_TColStd_QueueNodeOfQueueOfTransient_DownCast
 
@@ -12229,7 +12229,7 @@ class TColStd_QueueOfInteger(object):
 
         """
         _TColStd.TColStd_QueueOfInteger_swiginit(self,_TColStd.new_TColStd_QueueOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_QueueOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfInteger &
@@ -12238,7 +12238,7 @@ class TColStd_QueueOfInteger(object):
         """
         return _TColStd.TColStd_QueueOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_QueueOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfInteger &
@@ -12247,35 +12247,35 @@ class TColStd_QueueOfInteger(object):
         """
         return _TColStd.TColStd_QueueOfInteger_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_QueueOfInteger_Length(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_QueueOfInteger_IsEmpty(self, *args)
 
-    def Front(self, *args):
+    def Front(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_QueueOfInteger_Front(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfInteger_Clear(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param T:
         :type T: int &
@@ -12284,22 +12284,22 @@ class TColStd_QueueOfInteger(object):
         """
         return _TColStd.TColStd_QueueOfInteger_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfInteger_Pop(self, *args)
 
-    def GetChangeFront(self):
+    def GetChangeFront(self) -> "Standard_Integer" :
         """GetChangeFront(TColStd_QueueOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_QueueOfInteger_GetChangeFront(self)
 
-    def SetChangeFront(self, *args):
+    def SetChangeFront(self, *args) -> "void" :
         """SetChangeFront(TColStd_QueueOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_QueueOfInteger_SetChangeFront(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_QueueOfInteger self)"""
         return _TColStd.TColStd_QueueOfInteger__kill_pointed(self)
 
@@ -12334,7 +12334,7 @@ class TColStd_QueueOfReal(object):
 
         """
         _TColStd.TColStd_QueueOfReal_swiginit(self,_TColStd.new_TColStd_QueueOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_QueueOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfReal &
@@ -12343,7 +12343,7 @@ class TColStd_QueueOfReal(object):
         """
         return _TColStd.TColStd_QueueOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_QueueOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfReal &
@@ -12352,35 +12352,35 @@ class TColStd_QueueOfReal(object):
         """
         return _TColStd.TColStd_QueueOfReal_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_QueueOfReal_Length(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_QueueOfReal_IsEmpty(self, *args)
 
-    def Front(self, *args):
+    def Front(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
         """
         return _TColStd.TColStd_QueueOfReal_Front(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfReal_Clear(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param T:
         :type T: float &
@@ -12389,22 +12389,22 @@ class TColStd_QueueOfReal(object):
         """
         return _TColStd.TColStd_QueueOfReal_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfReal_Pop(self, *args)
 
-    def GetChangeFront(self):
+    def GetChangeFront(self) -> "Standard_Real" :
         """GetChangeFront(TColStd_QueueOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_QueueOfReal_GetChangeFront(self)
 
-    def SetChangeFront(self, *args):
+    def SetChangeFront(self, *args) -> "void" :
         """SetChangeFront(TColStd_QueueOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_QueueOfReal_SetChangeFront(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_QueueOfReal self)"""
         return _TColStd.TColStd_QueueOfReal__kill_pointed(self)
 
@@ -12439,7 +12439,7 @@ class TColStd_QueueOfTransient(object):
 
         """
         _TColStd.TColStd_QueueOfTransient_swiginit(self,_TColStd.new_TColStd_QueueOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_QueueOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfTransient &
@@ -12448,7 +12448,7 @@ class TColStd_QueueOfTransient(object):
         """
         return _TColStd.TColStd_QueueOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_QueueOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_QueueOfTransient &
@@ -12457,35 +12457,35 @@ class TColStd_QueueOfTransient(object):
         """
         return _TColStd.TColStd_QueueOfTransient_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_QueueOfTransient_Length(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_QueueOfTransient_IsEmpty(self, *args)
 
-    def Front(self, *args):
+    def Front(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_QueueOfTransient_Front(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfTransient_Clear(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -12494,14 +12494,14 @@ class TColStd_QueueOfTransient(object):
         """
         return _TColStd.TColStd_QueueOfTransient_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_QueueOfTransient_Pop(self, *args)
 
-    def ChangeFront(self, *args):
+    def ChangeFront(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -12544,18 +12544,18 @@ class TColStd_SequenceNodeOfSequenceOfAddress(OCC.TCollection.TCollection_SeqNod
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfAddress_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfAddress(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Address &" :
         """
         :rtype: Standard_Address
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAddress_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfAddress self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAddress__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfAddress" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfAddress self) -> Handle_TColStd_SequenceNodeOfSequenceOfAddress"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAddress_GetHandle(self)
 
@@ -12594,7 +12594,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfAddress._kill_pointed = new_instancemetho
 Handle_TColStd_SequenceNodeOfSequenceOfAddress_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAddress_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfAddress_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfAddress)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfAddress_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfAddress_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfAddress const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAddress_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfAddress_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAddress_DownCast
 
@@ -12613,18 +12613,18 @@ class TColStd_SequenceNodeOfSequenceOfAsciiString(OCC.TCollection.TCollection_Se
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfAsciiString_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfAsciiString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAsciiString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfAsciiString self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfAsciiString" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfAsciiString self) -> Handle_TColStd_SequenceNodeOfSequenceOfAsciiString"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfAsciiString_GetHandle(self)
 
@@ -12663,7 +12663,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfAsciiString._kill_pointed = new_instancem
 Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfAsciiString)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfAsciiString const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfAsciiString_DownCast
 
@@ -12682,19 +12682,19 @@ class TColStd_SequenceNodeOfSequenceOfBoolean(OCC.TCollection.TCollection_SeqNod
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfBoolean_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfBoolean(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Boolean" :
         """GetValue(TColStd_SequenceNodeOfSequenceOfBoolean self) -> Standard_Boolean"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfBoolean_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_SequenceNodeOfSequenceOfBoolean self, Standard_Boolean value)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfBoolean_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfBoolean self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfBoolean__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfBoolean" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfBoolean self) -> Handle_TColStd_SequenceNodeOfSequenceOfBoolean"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfBoolean_GetHandle(self)
 
@@ -12734,7 +12734,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfBoolean._kill_pointed = new_instancemetho
 Handle_TColStd_SequenceNodeOfSequenceOfBoolean_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfBoolean_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfBoolean_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfBoolean)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfBoolean_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfBoolean_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfBoolean const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfBoolean_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfBoolean_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfBoolean_DownCast
 
@@ -12753,18 +12753,18 @@ class TColStd_SequenceNodeOfSequenceOfExtendedString(OCC.TCollection.TCollection
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfExtendedString_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfExtendedString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfExtendedString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfExtendedString self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfExtendedString" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfExtendedString self) -> Handle_TColStd_SequenceNodeOfSequenceOfExtendedString"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfExtendedString_GetHandle(self)
 
@@ -12803,7 +12803,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfExtendedString._kill_pointed = new_instan
 Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfExtendedString)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfExtendedString const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfExtendedString_DownCast
 
@@ -12822,18 +12822,18 @@ class TColStd_SequenceNodeOfSequenceOfHAsciiString(OCC.TCollection.TCollection_S
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfHAsciiString_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfHAsciiString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HAsciiString &" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHAsciiString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfHAsciiString self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfHAsciiString self) -> Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHAsciiString_GetHandle(self)
 
@@ -12872,7 +12872,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString._kill_pointed = new_instance
 Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHAsciiString_DownCast
 
@@ -12891,18 +12891,18 @@ class TColStd_SequenceNodeOfSequenceOfHExtendedString(OCC.TCollection.TCollectio
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfHExtendedString_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfHExtendedString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HExtendedString &" :
         """
         :rtype: Handle_TCollection_HExtendedString
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHExtendedString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfHExtendedString self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfHExtendedString self) -> Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfHExtendedString_GetHandle(self)
 
@@ -12941,7 +12941,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString._kill_pointed = new_insta
 Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfHExtendedString_DownCast
 
@@ -12960,19 +12960,19 @@ class TColStd_SequenceNodeOfSequenceOfInteger(OCC.TCollection.TCollection_SeqNod
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfInteger_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfInteger(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_SequenceNodeOfSequenceOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_SequenceNodeOfSequenceOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfInteger self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfInteger" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfInteger self) -> Handle_TColStd_SequenceNodeOfSequenceOfInteger"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfInteger_GetHandle(self)
 
@@ -13012,7 +13012,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfInteger._kill_pointed = new_instancemetho
 Handle_TColStd_SequenceNodeOfSequenceOfInteger_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfInteger_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfInteger_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfInteger)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfInteger_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfInteger_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfInteger const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfInteger_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfInteger_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfInteger_DownCast
 
@@ -13031,19 +13031,19 @@ class TColStd_SequenceNodeOfSequenceOfReal(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfReal_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfReal(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_SequenceNodeOfSequenceOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_SequenceNodeOfSequenceOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfReal self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfReal" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfReal self) -> Handle_TColStd_SequenceNodeOfSequenceOfReal"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfReal_GetHandle(self)
 
@@ -13083,7 +13083,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfReal._kill_pointed = new_instancemethod(_
 Handle_TColStd_SequenceNodeOfSequenceOfReal_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfReal_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfReal_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfReal)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfReal_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfReal_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfReal const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfReal_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfReal_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfReal_DownCast
 
@@ -13102,18 +13102,18 @@ class TColStd_SequenceNodeOfSequenceOfTransient(OCC.TCollection.TCollection_SeqN
 
         """
         _TColStd.TColStd_SequenceNodeOfSequenceOfTransient_swiginit(self,_TColStd.new_TColStd_SequenceNodeOfSequenceOfTransient(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_SequenceNodeOfSequenceOfTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SequenceNodeOfSequenceOfTransient self)"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_SequenceNodeOfSequenceOfTransient" :
         """GetHandle(TColStd_SequenceNodeOfSequenceOfTransient self) -> Handle_TColStd_SequenceNodeOfSequenceOfTransient"""
         return _TColStd.TColStd_SequenceNodeOfSequenceOfTransient_GetHandle(self)
 
@@ -13152,7 +13152,7 @@ Handle_TColStd_SequenceNodeOfSequenceOfTransient._kill_pointed = new_instancemet
 Handle_TColStd_SequenceNodeOfSequenceOfTransient_swigregister = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfTransient_swigregister
 Handle_TColStd_SequenceNodeOfSequenceOfTransient_swigregister(Handle_TColStd_SequenceNodeOfSequenceOfTransient)
 
-def Handle_TColStd_SequenceNodeOfSequenceOfTransient_DownCast(*args):
+def Handle_TColStd_SequenceNodeOfSequenceOfTransient_DownCast(*args) -> "Handle_TColStd_SequenceNodeOfSequenceOfTransient const" :
   return _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfTransient_DownCast(*args)
 Handle_TColStd_SequenceNodeOfSequenceOfTransient_DownCast = _TColStd.Handle_TColStd_SequenceNodeOfSequenceOfTransient_DownCast
 
@@ -13165,14 +13165,14 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfAddress_swiginit(self,_TColStd.new_TColStd_SequenceOfAddress(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfAddress_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfAddress const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfAddress &
@@ -13181,7 +13181,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfAddress const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfAddress &
@@ -13190,7 +13190,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Standard_Address &
@@ -13203,7 +13203,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Standard_Address &
@@ -13216,7 +13216,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13233,7 +13233,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13250,21 +13250,21 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Address const &" :
         """
         :rtype: Standard_Address
 
         """
         return _TColStd.TColStd_SequenceOfAddress_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Address const &" :
         """
         :rtype: Standard_Address
 
         """
         return _TColStd.TColStd_SequenceOfAddress_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13275,7 +13275,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Address const &" :
         """
         :param Index:
         :type Index: int
@@ -13284,7 +13284,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13295,7 +13295,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Address &" :
         """
         :param Index:
         :type Index: int
@@ -13304,7 +13304,7 @@ class TColStd_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAddress_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13354,14 +13354,14 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfAsciiString_swiginit(self,_TColStd.new_TColStd_SequenceOfAsciiString(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfAsciiString &
@@ -13370,7 +13370,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfAsciiString &
@@ -13379,7 +13379,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TCollection_AsciiString &
@@ -13392,7 +13392,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TCollection_AsciiString &
@@ -13405,7 +13405,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13422,7 +13422,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13439,21 +13439,21 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_SequenceOfAsciiString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13464,7 +13464,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param Index:
         :type Index: int
@@ -13473,7 +13473,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13484,7 +13484,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_AsciiString &" :
         """
         :param Index:
         :type Index: int
@@ -13493,7 +13493,7 @@ class TColStd_SequenceOfAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfAsciiString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13543,14 +13543,14 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfBoolean_swiginit(self,_TColStd.new_TColStd_SequenceOfBoolean(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfBoolean_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfBoolean &
@@ -13559,7 +13559,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfBoolean const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfBoolean &
@@ -13568,7 +13568,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: bool
@@ -13581,7 +13581,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: bool
@@ -13594,7 +13594,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13611,7 +13611,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13628,21 +13628,21 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Boolean const &" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SequenceOfBoolean_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Boolean const &" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SequenceOfBoolean_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13653,7 +13653,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :param Index:
         :type Index: int
@@ -13662,7 +13662,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13673,7 +13673,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Boolean &" :
         """
         :param Index:
         :type Index: int
@@ -13682,7 +13682,7 @@ class TColStd_SequenceOfBoolean(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfBoolean_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13732,14 +13732,14 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
 
         """
         _TColStd.TColStd_SequenceOfExtendedString_swiginit(self,_TColStd.new_TColStd_SequenceOfExtendedString(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfExtendedString &
@@ -13748,7 +13748,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfExtendedString &
@@ -13757,7 +13757,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TCollection_ExtendedString &
@@ -13770,7 +13770,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TCollection_ExtendedString &
@@ -13783,7 +13783,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13800,7 +13800,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13817,21 +13817,21 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TColStd.TColStd_SequenceOfExtendedString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13842,7 +13842,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param Index:
         :type Index: int
@@ -13851,7 +13851,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13862,7 +13862,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TCollection_ExtendedString &" :
         """
         :param Index:
         :type Index: int
@@ -13871,7 +13871,7 @@ class TColStd_SequenceOfExtendedString(OCC.TCollection.TCollection_BaseSequence)
         """
         return _TColStd.TColStd_SequenceOfExtendedString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13921,14 +13921,14 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfHAsciiString_swiginit(self,_TColStd.new_TColStd_SequenceOfHAsciiString(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfHAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfHAsciiString &
@@ -13937,7 +13937,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfHAsciiString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfHAsciiString &
@@ -13946,7 +13946,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TCollection_HAsciiString &
@@ -13959,7 +13959,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TCollection_HAsciiString &
@@ -13972,7 +13972,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -13989,7 +13989,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14006,21 +14006,21 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TCollection_HAsciiString const &" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TCollection_HAsciiString const &" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14031,7 +14031,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HAsciiString const &" :
         """
         :param Index:
         :type Index: int
@@ -14040,7 +14040,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14051,7 +14051,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TCollection_HAsciiString &" :
         """
         :param Index:
         :type Index: int
@@ -14060,7 +14060,7 @@ class TColStd_SequenceOfHAsciiString(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfHAsciiString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14110,14 +14110,14 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
 
         """
         _TColStd.TColStd_SequenceOfHExtendedString_swiginit(self,_TColStd.new_TColStd_SequenceOfHExtendedString(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfHExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfHExtendedString &
@@ -14126,7 +14126,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfHExtendedString const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfHExtendedString &
@@ -14135,7 +14135,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TCollection_HExtendedString &
@@ -14148,7 +14148,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TCollection_HExtendedString &
@@ -14161,7 +14161,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14178,7 +14178,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14195,21 +14195,21 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TCollection_HExtendedString const &" :
         """
         :rtype: Handle_TCollection_HExtendedString
 
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TCollection_HExtendedString const &" :
         """
         :rtype: Handle_TCollection_HExtendedString
 
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14220,7 +14220,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HExtendedString const &" :
         """
         :param Index:
         :type Index: int
@@ -14229,7 +14229,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14240,7 +14240,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TCollection_HExtendedString &" :
         """
         :param Index:
         :type Index: int
@@ -14249,7 +14249,7 @@ class TColStd_SequenceOfHExtendedString(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColStd.TColStd_SequenceOfHExtendedString_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14299,14 +14299,14 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfInteger_swiginit(self,_TColStd.new_TColStd_SequenceOfInteger(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfInteger_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfInteger &
@@ -14315,7 +14315,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfInteger &
@@ -14324,7 +14324,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: int &
@@ -14337,7 +14337,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: int &
@@ -14350,7 +14350,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14367,7 +14367,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14384,21 +14384,21 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SequenceOfInteger_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SequenceOfInteger_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14409,7 +14409,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :param Index:
         :type Index: int
@@ -14418,7 +14418,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14429,7 +14429,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         :param Index:
         :type Index: int
@@ -14438,7 +14438,7 @@ class TColStd_SequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfInteger_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14488,14 +14488,14 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfReal_swiginit(self,_TColStd.new_TColStd_SequenceOfReal(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfReal_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfReal &
@@ -14504,7 +14504,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfReal &
@@ -14513,7 +14513,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: float &
@@ -14526,7 +14526,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: float &
@@ -14539,7 +14539,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14556,7 +14556,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14573,21 +14573,21 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
         """
         return _TColStd.TColStd_SequenceOfReal_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
         """
         return _TColStd.TColStd_SequenceOfReal_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14598,7 +14598,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :param Index:
         :type Index: int
@@ -14607,7 +14607,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14618,7 +14618,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param Index:
         :type Index: int
@@ -14627,7 +14627,7 @@ class TColStd_SequenceOfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfReal_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14677,14 +14677,14 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColStd.TColStd_SequenceOfTransient_swiginit(self,_TColStd.new_TColStd_SequenceOfTransient(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SequenceOfTransient_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_SequenceOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfTransient &
@@ -14693,7 +14693,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_SequenceOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_SequenceOfTransient &
@@ -14702,7 +14702,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -14715,7 +14715,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -14728,7 +14728,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14745,7 +14745,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14762,21 +14762,21 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_SequenceOfTransient_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_SequenceOfTransient_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14787,7 +14787,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param Index:
         :type Index: int
@@ -14796,7 +14796,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14807,7 +14807,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param Index:
         :type Index: int
@@ -14816,7 +14816,7 @@ class TColStd_SequenceOfTransient(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColStd.TColStd_SequenceOfTransient_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -14870,7 +14870,7 @@ class TColStd_SetIteratorOfSetOfInteger(object):
 
         """
         _TColStd.TColStd_SetIteratorOfSetOfInteger_swiginit(self,_TColStd.new_TColStd_SetIteratorOfSetOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_SetOfInteger &
@@ -14879,21 +14879,21 @@ class TColStd_SetIteratorOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetIteratorOfSetOfInteger_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfInteger_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -14929,7 +14929,7 @@ class TColStd_SetIteratorOfSetOfReal(object):
 
         """
         _TColStd.TColStd_SetIteratorOfSetOfReal_swiginit(self,_TColStd.new_TColStd_SetIteratorOfSetOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_SetOfReal &
@@ -14938,21 +14938,21 @@ class TColStd_SetIteratorOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetIteratorOfSetOfReal_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfReal_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfReal_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -14988,7 +14988,7 @@ class TColStd_SetIteratorOfSetOfTransient(object):
 
         """
         _TColStd.TColStd_SetIteratorOfSetOfTransient_swiginit(self,_TColStd.new_TColStd_SetIteratorOfSetOfTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_SetOfTransient &
@@ -14997,21 +14997,21 @@ class TColStd_SetIteratorOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetIteratorOfSetOfTransient_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfTransient_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetIteratorOfSetOfTransient_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -15043,7 +15043,7 @@ class TColStd_SetListOfSetOfInteger(object):
 
         """
         _TColStd.TColStd_SetListOfSetOfInteger_swiginit(self,_TColStd.new_TColStd_SetListOfSetOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfInteger &
@@ -15052,7 +15052,7 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfInteger &
@@ -15061,28 +15061,28 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -15101,7 +15101,7 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -15120,30 +15120,30 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Append(self, *args)
 
-    def GetFirst(self):
+    def GetFirst(self) -> "Standard_Integer" :
         """GetFirst(TColStd_SetListOfSetOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_SetListOfSetOfInteger_GetFirst(self)
 
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """SetFirst(TColStd_SetListOfSetOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_SetListOfSetOfInteger_SetFirst(self, *args)
 
-    def GetLast(self):
+    def GetLast(self) -> "Standard_Integer" :
         """GetLast(TColStd_SetListOfSetOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_SetListOfSetOfInteger_GetLast(self)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """SetLast(TColStd_SetListOfSetOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_SetListOfSetOfInteger_SetLast(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfSetListOfSetOfInteger &
@@ -15152,7 +15152,7 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -15169,7 +15169,7 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -15186,7 +15186,7 @@ class TColStd_SetListOfSetOfInteger(object):
         """
         return _TColStd.TColStd_SetListOfSetOfInteger_InsertAfter(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SetListOfSetOfInteger self)"""
         return _TColStd.TColStd_SetListOfSetOfInteger__kill_pointed(self)
 
@@ -15226,7 +15226,7 @@ class TColStd_SetListOfSetOfReal(object):
 
         """
         _TColStd.TColStd_SetListOfSetOfReal_swiginit(self,_TColStd.new_TColStd_SetListOfSetOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfReal &
@@ -15235,7 +15235,7 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfReal &
@@ -15244,28 +15244,28 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetListOfSetOfReal_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -15284,7 +15284,7 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -15303,30 +15303,30 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Append(self, *args)
 
-    def GetFirst(self):
+    def GetFirst(self) -> "Standard_Real" :
         """GetFirst(TColStd_SetListOfSetOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_SetListOfSetOfReal_GetFirst(self)
 
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """SetFirst(TColStd_SetListOfSetOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_SetListOfSetOfReal_SetFirst(self, *args)
 
-    def GetLast(self):
+    def GetLast(self) -> "Standard_Real" :
         """GetLast(TColStd_SetListOfSetOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_SetListOfSetOfReal_GetLast(self)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """SetLast(TColStd_SetListOfSetOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_SetListOfSetOfReal_SetLast(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfReal_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfSetListOfSetOfReal &
@@ -15335,7 +15335,7 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -15352,7 +15352,7 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -15369,7 +15369,7 @@ class TColStd_SetListOfSetOfReal(object):
         """
         return _TColStd.TColStd_SetListOfSetOfReal_InsertAfter(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_SetListOfSetOfReal self)"""
         return _TColStd.TColStd_SetListOfSetOfReal__kill_pointed(self)
 
@@ -15409,7 +15409,7 @@ class TColStd_SetListOfSetOfTransient(object):
 
         """
         _TColStd.TColStd_SetListOfSetOfTransient_swiginit(self,_TColStd.new_TColStd_SetListOfSetOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfTransient &
@@ -15418,7 +15418,7 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TColStd_SetListOfSetOfTransient &
@@ -15427,28 +15427,28 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -15467,7 +15467,7 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -15486,28 +15486,28 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TColStd_ListIteratorOfSetListOfSetOfTransient &
@@ -15516,7 +15516,7 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -15533,7 +15533,7 @@ class TColStd_SetListOfSetOfTransient(object):
         """
         return _TColStd.TColStd_SetListOfSetOfTransient_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -15584,28 +15584,28 @@ class TColStd_SetOfInteger(object):
 
         """
         _TColStd.TColStd_SetOfInteger_swiginit(self,_TColStd.new_TColStd_SetOfInteger(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetOfInteger_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetOfInteger_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetOfInteger_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -15614,7 +15614,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -15623,7 +15623,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfInteger &
@@ -15632,7 +15632,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfInteger &
@@ -15641,7 +15641,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfInteger &
@@ -15650,7 +15650,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: int &
@@ -15659,7 +15659,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfInteger &
@@ -15668,7 +15668,7 @@ class TColStd_SetOfInteger(object):
         """
         return _TColStd.TColStd_SetOfInteger_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfInteger &
@@ -15709,28 +15709,28 @@ class TColStd_SetOfReal(object):
 
         """
         _TColStd.TColStd_SetOfReal_swiginit(self,_TColStd.new_TColStd_SetOfReal(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetOfReal_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetOfReal_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetOfReal_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -15739,7 +15739,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -15748,7 +15748,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfReal &
@@ -15757,7 +15757,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfReal &
@@ -15766,7 +15766,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfReal &
@@ -15775,7 +15775,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: float &
@@ -15784,7 +15784,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfReal &
@@ -15793,7 +15793,7 @@ class TColStd_SetOfReal(object):
         """
         return _TColStd.TColStd_SetOfReal_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfReal &
@@ -15834,28 +15834,28 @@ class TColStd_SetOfTransient(object):
 
         """
         _TColStd.TColStd_SetOfTransient_swiginit(self,_TColStd.new_TColStd_SetOfTransient(*args))
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_SetOfTransient_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_SetOfTransient_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_SetOfTransient_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -15864,7 +15864,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -15873,7 +15873,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Remove(self, *args)
 
-    def Union(self, *args):
+    def Union(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfTransient &
@@ -15882,7 +15882,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Union(self, *args)
 
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfTransient &
@@ -15891,7 +15891,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Intersection(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "void" :
         """
         :param B:
         :type B: TColStd_SetOfTransient &
@@ -15900,7 +15900,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Difference(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param T:
         :type T: Handle_Standard_Transient &
@@ -15909,7 +15909,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_Contains(self, *args)
 
-    def IsASubset(self, *args):
+    def IsASubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfTransient &
@@ -15918,7 +15918,7 @@ class TColStd_SetOfTransient(object):
         """
         return _TColStd.TColStd_SetOfTransient_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args):
+    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TColStd_SetOfTransient &
@@ -15963,7 +15963,7 @@ class TColStd_StackIteratorOfStackOfInteger(object):
 
         """
         _TColStd.TColStd_StackIteratorOfStackOfInteger_swiginit(self,_TColStd.new_TColStd_StackIteratorOfStackOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_StackOfInteger &
@@ -15972,21 +15972,21 @@ class TColStd_StackIteratorOfStackOfInteger(object):
         """
         return _TColStd.TColStd_StackIteratorOfStackOfInteger_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfInteger_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -16022,7 +16022,7 @@ class TColStd_StackIteratorOfStackOfReal(object):
 
         """
         _TColStd.TColStd_StackIteratorOfStackOfReal_swiginit(self,_TColStd.new_TColStd_StackIteratorOfStackOfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_StackOfReal &
@@ -16031,21 +16031,21 @@ class TColStd_StackIteratorOfStackOfReal(object):
         """
         return _TColStd.TColStd_StackIteratorOfStackOfReal_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfReal_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfReal_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -16081,7 +16081,7 @@ class TColStd_StackIteratorOfStackOfTransient(object):
 
         """
         _TColStd.TColStd_StackIteratorOfStackOfTransient_swiginit(self,_TColStd.new_TColStd_StackIteratorOfStackOfTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: TColStd_StackOfTransient &
@@ -16090,21 +16090,21 @@ class TColStd_StackIteratorOfStackOfTransient(object):
         """
         return _TColStd.TColStd_StackIteratorOfStackOfTransient_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfTransient_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackIteratorOfStackOfTransient_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -16140,19 +16140,19 @@ class TColStd_StackNodeOfStackOfInteger(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StackNodeOfStackOfInteger_swiginit(self,_TColStd.new_TColStd_StackNodeOfStackOfInteger(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TColStd_StackNodeOfStackOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_StackNodeOfStackOfInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_StackNodeOfStackOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_StackNodeOfStackOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StackNodeOfStackOfInteger self)"""
         return _TColStd.TColStd_StackNodeOfStackOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StackNodeOfStackOfInteger" :
         """GetHandle(TColStd_StackNodeOfStackOfInteger self) -> Handle_TColStd_StackNodeOfStackOfInteger"""
         return _TColStd.TColStd_StackNodeOfStackOfInteger_GetHandle(self)
 
@@ -16192,7 +16192,7 @@ Handle_TColStd_StackNodeOfStackOfInteger._kill_pointed = new_instancemethod(_TCo
 Handle_TColStd_StackNodeOfStackOfInteger_swigregister = _TColStd.Handle_TColStd_StackNodeOfStackOfInteger_swigregister
 Handle_TColStd_StackNodeOfStackOfInteger_swigregister(Handle_TColStd_StackNodeOfStackOfInteger)
 
-def Handle_TColStd_StackNodeOfStackOfInteger_DownCast(*args):
+def Handle_TColStd_StackNodeOfStackOfInteger_DownCast(*args) -> "Handle_TColStd_StackNodeOfStackOfInteger const" :
   return _TColStd.Handle_TColStd_StackNodeOfStackOfInteger_DownCast(*args)
 Handle_TColStd_StackNodeOfStackOfInteger_DownCast = _TColStd.Handle_TColStd_StackNodeOfStackOfInteger_DownCast
 
@@ -16209,19 +16209,19 @@ class TColStd_StackNodeOfStackOfReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StackNodeOfStackOfReal_swiginit(self,_TColStd.new_TColStd_StackNodeOfStackOfReal(*args))
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TColStd_StackNodeOfStackOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_StackNodeOfStackOfReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TColStd_StackNodeOfStackOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_StackNodeOfStackOfReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StackNodeOfStackOfReal self)"""
         return _TColStd.TColStd_StackNodeOfStackOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StackNodeOfStackOfReal" :
         """GetHandle(TColStd_StackNodeOfStackOfReal self) -> Handle_TColStd_StackNodeOfStackOfReal"""
         return _TColStd.TColStd_StackNodeOfStackOfReal_GetHandle(self)
 
@@ -16261,7 +16261,7 @@ Handle_TColStd_StackNodeOfStackOfReal._kill_pointed = new_instancemethod(_TColSt
 Handle_TColStd_StackNodeOfStackOfReal_swigregister = _TColStd.Handle_TColStd_StackNodeOfStackOfReal_swigregister
 Handle_TColStd_StackNodeOfStackOfReal_swigregister(Handle_TColStd_StackNodeOfStackOfReal)
 
-def Handle_TColStd_StackNodeOfStackOfReal_DownCast(*args):
+def Handle_TColStd_StackNodeOfStackOfReal_DownCast(*args) -> "Handle_TColStd_StackNodeOfStackOfReal const" :
   return _TColStd.Handle_TColStd_StackNodeOfStackOfReal_DownCast(*args)
 Handle_TColStd_StackNodeOfStackOfReal_DownCast = _TColStd.Handle_TColStd_StackNodeOfStackOfReal_DownCast
 
@@ -16278,18 +16278,18 @@ class TColStd_StackNodeOfStackOfTransient(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StackNodeOfStackOfTransient_swiginit(self,_TColStd.new_TColStd_StackNodeOfStackOfTransient(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_StackNodeOfStackOfTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StackNodeOfStackOfTransient self)"""
         return _TColStd.TColStd_StackNodeOfStackOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StackNodeOfStackOfTransient" :
         """GetHandle(TColStd_StackNodeOfStackOfTransient self) -> Handle_TColStd_StackNodeOfStackOfTransient"""
         return _TColStd.TColStd_StackNodeOfStackOfTransient_GetHandle(self)
 
@@ -16328,7 +16328,7 @@ Handle_TColStd_StackNodeOfStackOfTransient._kill_pointed = new_instancemethod(_T
 Handle_TColStd_StackNodeOfStackOfTransient_swigregister = _TColStd.Handle_TColStd_StackNodeOfStackOfTransient_swigregister
 Handle_TColStd_StackNodeOfStackOfTransient_swigregister(Handle_TColStd_StackNodeOfStackOfTransient)
 
-def Handle_TColStd_StackNodeOfStackOfTransient_DownCast(*args):
+def Handle_TColStd_StackNodeOfStackOfTransient_DownCast(*args) -> "Handle_TColStd_StackNodeOfStackOfTransient const" :
   return _TColStd.Handle_TColStd_StackNodeOfStackOfTransient_DownCast(*args)
 Handle_TColStd_StackNodeOfStackOfTransient_DownCast = _TColStd.Handle_TColStd_StackNodeOfStackOfTransient_DownCast
 
@@ -16341,7 +16341,7 @@ class TColStd_StackOfInteger(object):
 
         """
         _TColStd.TColStd_StackOfInteger_swiginit(self,_TColStd.new_TColStd_StackOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_StackOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfInteger &
@@ -16350,7 +16350,7 @@ class TColStd_StackOfInteger(object):
         """
         return _TColStd.TColStd_StackOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_StackOfInteger const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfInteger &
@@ -16359,28 +16359,28 @@ class TColStd_StackOfInteger(object):
         """
         return _TColStd.TColStd_StackOfInteger_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackOfInteger_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_StackOfInteger_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_StackOfInteger_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: int &
@@ -16389,29 +16389,29 @@ class TColStd_StackOfInteger(object):
         """
         return _TColStd.TColStd_StackOfInteger_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfInteger_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfInteger_Clear(self, *args)
 
-    def GetChangeTop(self):
+    def GetChangeTop(self) -> "Standard_Integer" :
         """GetChangeTop(TColStd_StackOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_StackOfInteger_GetChangeTop(self)
 
-    def SetChangeTop(self, *args):
+    def SetChangeTop(self, *args) -> "void" :
         """SetChangeTop(TColStd_StackOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_StackOfInteger_SetChangeTop(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StackOfInteger self)"""
         return _TColStd.TColStd_StackOfInteger__kill_pointed(self)
 
@@ -16446,7 +16446,7 @@ class TColStd_StackOfReal(object):
 
         """
         _TColStd.TColStd_StackOfReal_swiginit(self,_TColStd.new_TColStd_StackOfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_StackOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfReal &
@@ -16455,7 +16455,7 @@ class TColStd_StackOfReal(object):
         """
         return _TColStd.TColStd_StackOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_StackOfReal const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfReal &
@@ -16464,28 +16464,28 @@ class TColStd_StackOfReal(object):
         """
         return _TColStd.TColStd_StackOfReal_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackOfReal_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_StackOfReal_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
         """
         return _TColStd.TColStd_StackOfReal_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: float &
@@ -16494,29 +16494,29 @@ class TColStd_StackOfReal(object):
         """
         return _TColStd.TColStd_StackOfReal_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfReal_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfReal_Clear(self, *args)
 
-    def GetChangeTop(self):
+    def GetChangeTop(self) -> "Standard_Real" :
         """GetChangeTop(TColStd_StackOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_StackOfReal_GetChangeTop(self)
 
-    def SetChangeTop(self, *args):
+    def SetChangeTop(self, *args) -> "void" :
         """SetChangeTop(TColStd_StackOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_StackOfReal_SetChangeTop(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StackOfReal self)"""
         return _TColStd.TColStd_StackOfReal__kill_pointed(self)
 
@@ -16551,7 +16551,7 @@ class TColStd_StackOfTransient(object):
 
         """
         _TColStd.TColStd_StackOfTransient_swiginit(self,_TColStd.new_TColStd_StackOfTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColStd_StackOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfTransient &
@@ -16560,7 +16560,7 @@ class TColStd_StackOfTransient(object):
         """
         return _TColStd.TColStd_StackOfTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColStd_StackOfTransient const &" :
         """
         :param Other:
         :type Other: TColStd_StackOfTransient &
@@ -16569,28 +16569,28 @@ class TColStd_StackOfTransient(object):
         """
         return _TColStd.TColStd_StackOfTransient_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColStd.TColStd_StackOfTransient_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColStd.TColStd_StackOfTransient_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_StackOfTransient_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Standard_Transient &
@@ -16599,21 +16599,21 @@ class TColStd_StackOfTransient(object):
         """
         return _TColStd.TColStd_StackOfTransient_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfTransient_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColStd.TColStd_StackOfTransient_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -16654,18 +16654,18 @@ class TColStd_StdMapNodeOfMapOfAsciiString(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StdMapNodeOfMapOfAsciiString_swiginit(self,_TColStd.new_TColStd_StdMapNodeOfMapOfAsciiString(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TColStd.TColStd_StdMapNodeOfMapOfAsciiString_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StdMapNodeOfMapOfAsciiString self)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StdMapNodeOfMapOfAsciiString" :
         """GetHandle(TColStd_StdMapNodeOfMapOfAsciiString self) -> Handle_TColStd_StdMapNodeOfMapOfAsciiString"""
         return _TColStd.TColStd_StdMapNodeOfMapOfAsciiString_GetHandle(self)
 
@@ -16704,7 +16704,7 @@ Handle_TColStd_StdMapNodeOfMapOfAsciiString._kill_pointed = new_instancemethod(_
 Handle_TColStd_StdMapNodeOfMapOfAsciiString_swigregister = _TColStd.Handle_TColStd_StdMapNodeOfMapOfAsciiString_swigregister
 Handle_TColStd_StdMapNodeOfMapOfAsciiString_swigregister(Handle_TColStd_StdMapNodeOfMapOfAsciiString)
 
-def Handle_TColStd_StdMapNodeOfMapOfAsciiString_DownCast(*args):
+def Handle_TColStd_StdMapNodeOfMapOfAsciiString_DownCast(*args) -> "Handle_TColStd_StdMapNodeOfMapOfAsciiString const" :
   return _TColStd.Handle_TColStd_StdMapNodeOfMapOfAsciiString_DownCast(*args)
 Handle_TColStd_StdMapNodeOfMapOfAsciiString_DownCast = _TColStd.Handle_TColStd_StdMapNodeOfMapOfAsciiString_DownCast
 
@@ -16721,19 +16721,19 @@ class TColStd_StdMapNodeOfMapOfInteger(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StdMapNodeOfMapOfInteger_swiginit(self,_TColStd.new_TColStd_StdMapNodeOfMapOfInteger(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(TColStd_StdMapNodeOfMapOfInteger self) -> Standard_Integer"""
         return _TColStd.TColStd_StdMapNodeOfMapOfInteger_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_StdMapNodeOfMapOfInteger self, Standard_Integer value)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfInteger_SetKey(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StdMapNodeOfMapOfInteger self)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StdMapNodeOfMapOfInteger" :
         """GetHandle(TColStd_StdMapNodeOfMapOfInteger self) -> Handle_TColStd_StdMapNodeOfMapOfInteger"""
         return _TColStd.TColStd_StdMapNodeOfMapOfInteger_GetHandle(self)
 
@@ -16773,7 +16773,7 @@ Handle_TColStd_StdMapNodeOfMapOfInteger._kill_pointed = new_instancemethod(_TCol
 Handle_TColStd_StdMapNodeOfMapOfInteger_swigregister = _TColStd.Handle_TColStd_StdMapNodeOfMapOfInteger_swigregister
 Handle_TColStd_StdMapNodeOfMapOfInteger_swigregister(Handle_TColStd_StdMapNodeOfMapOfInteger)
 
-def Handle_TColStd_StdMapNodeOfMapOfInteger_DownCast(*args):
+def Handle_TColStd_StdMapNodeOfMapOfInteger_DownCast(*args) -> "Handle_TColStd_StdMapNodeOfMapOfInteger const" :
   return _TColStd.Handle_TColStd_StdMapNodeOfMapOfInteger_DownCast(*args)
 Handle_TColStd_StdMapNodeOfMapOfInteger_DownCast = _TColStd.Handle_TColStd_StdMapNodeOfMapOfInteger_DownCast
 
@@ -16790,19 +16790,19 @@ class TColStd_StdMapNodeOfMapOfReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StdMapNodeOfMapOfReal_swiginit(self,_TColStd.new_TColStd_StdMapNodeOfMapOfReal(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Real" :
         """GetKey(TColStd_StdMapNodeOfMapOfReal self) -> Standard_Real"""
         return _TColStd.TColStd_StdMapNodeOfMapOfReal_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(TColStd_StdMapNodeOfMapOfReal self, Standard_Real value)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfReal_SetKey(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StdMapNodeOfMapOfReal self)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StdMapNodeOfMapOfReal" :
         """GetHandle(TColStd_StdMapNodeOfMapOfReal self) -> Handle_TColStd_StdMapNodeOfMapOfReal"""
         return _TColStd.TColStd_StdMapNodeOfMapOfReal_GetHandle(self)
 
@@ -16842,7 +16842,7 @@ Handle_TColStd_StdMapNodeOfMapOfReal._kill_pointed = new_instancemethod(_TColStd
 Handle_TColStd_StdMapNodeOfMapOfReal_swigregister = _TColStd.Handle_TColStd_StdMapNodeOfMapOfReal_swigregister
 Handle_TColStd_StdMapNodeOfMapOfReal_swigregister(Handle_TColStd_StdMapNodeOfMapOfReal)
 
-def Handle_TColStd_StdMapNodeOfMapOfReal_DownCast(*args):
+def Handle_TColStd_StdMapNodeOfMapOfReal_DownCast(*args) -> "Handle_TColStd_StdMapNodeOfMapOfReal const" :
   return _TColStd.Handle_TColStd_StdMapNodeOfMapOfReal_DownCast(*args)
 Handle_TColStd_StdMapNodeOfMapOfReal_DownCast = _TColStd.Handle_TColStd_StdMapNodeOfMapOfReal_DownCast
 
@@ -16859,18 +16859,18 @@ class TColStd_StdMapNodeOfMapOfTransient(OCC.TCollection.TCollection_MapNode):
 
         """
         _TColStd.TColStd_StdMapNodeOfMapOfTransient_swiginit(self,_TColStd.new_TColStd_StdMapNodeOfMapOfTransient(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _TColStd.TColStd_StdMapNodeOfMapOfTransient_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColStd_StdMapNodeOfMapOfTransient self)"""
         return _TColStd.TColStd_StdMapNodeOfMapOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColStd_StdMapNodeOfMapOfTransient" :
         """GetHandle(TColStd_StdMapNodeOfMapOfTransient self) -> Handle_TColStd_StdMapNodeOfMapOfTransient"""
         return _TColStd.TColStd_StdMapNodeOfMapOfTransient_GetHandle(self)
 
@@ -16909,7 +16909,7 @@ Handle_TColStd_StdMapNodeOfMapOfTransient._kill_pointed = new_instancemethod(_TC
 Handle_TColStd_StdMapNodeOfMapOfTransient_swigregister = _TColStd.Handle_TColStd_StdMapNodeOfMapOfTransient_swigregister
 Handle_TColStd_StdMapNodeOfMapOfTransient_swigregister(Handle_TColStd_StdMapNodeOfMapOfTransient)
 
-def Handle_TColStd_StdMapNodeOfMapOfTransient_DownCast(*args):
+def Handle_TColStd_StdMapNodeOfMapOfTransient_DownCast(*args) -> "Handle_TColStd_StdMapNodeOfMapOfTransient const" :
   return _TColStd.Handle_TColStd_StdMapNodeOfMapOfTransient_DownCast(*args)
 Handle_TColStd_StdMapNodeOfMapOfTransient_DownCast = _TColStd.Handle_TColStd_StdMapNodeOfMapOfTransient_DownCast
 

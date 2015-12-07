@@ -187,7 +187,7 @@ BRepFeat_NullToolU = _BRepFeat.BRepFeat_NullToolU
 class brepfeat(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SampleEdges(*args):
+    def SampleEdges(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -199,7 +199,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_SampleEdges(*args)
 
     SampleEdges = staticmethod(SampleEdges)
-    def Barycenter(*args):
+    def Barycenter(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -211,7 +211,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_Barycenter(*args)
 
     Barycenter = staticmethod(Barycenter)
-    def ParametricBarycenter(*args):
+    def ParametricBarycenter(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -223,7 +223,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_ParametricBarycenter(*args)
 
     ParametricBarycenter = staticmethod(ParametricBarycenter)
-    def ParametricMinMax(*args):
+    def ParametricMinMax(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Boolean &" :
         """
         * Ori = True taking account the orientation
 
@@ -249,7 +249,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_ParametricMinMax(*args)
 
     ParametricMinMax = staticmethod(ParametricMinMax)
-    def IsInside(*args):
+    def IsInside(*args) -> "Standard_Boolean" :
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -261,7 +261,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_IsInside(*args)
 
     IsInside = staticmethod(IsInside)
-    def FaceUntil(*args):
+    def FaceUntil(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -273,7 +273,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_FaceUntil(*args)
 
     FaceUntil = staticmethod(FaceUntil)
-    def Tool(*args):
+    def Tool(*args) -> "TopoDS_Solid" :
         """
         :param SRef:
         :type SRef: TopoDS_Shape &
@@ -287,7 +287,7 @@ class brepfeat(object):
         return _BRepFeat.brepfeat_Tool(*args)
 
     Tool = staticmethod(Tool)
-    def Print(*args):
+    def Print(*args) -> "Standard_OStream &" :
         """
         * Prints the Error description of the State <St> as a String on the Stream <S> and returns <S>.
 
@@ -315,7 +315,7 @@ brepfeat._kill_pointed = new_instancemethod(_BRepFeat.brepfeat__kill_pointed,Non
 brepfeat_swigregister = _BRepFeat.brepfeat_swigregister
 brepfeat_swigregister(brepfeat)
 
-def brepfeat_SampleEdges(*args):
+def brepfeat_SampleEdges(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -326,7 +326,7 @@ def brepfeat_SampleEdges(*args):
     """
   return _BRepFeat.brepfeat_SampleEdges(*args)
 
-def brepfeat_Barycenter(*args):
+def brepfeat_Barycenter(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -337,7 +337,7 @@ def brepfeat_Barycenter(*args):
     """
   return _BRepFeat.brepfeat_Barycenter(*args)
 
-def brepfeat_ParametricBarycenter(*args):
+def brepfeat_ParametricBarycenter(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -348,7 +348,7 @@ def brepfeat_ParametricBarycenter(*args):
     """
   return _BRepFeat.brepfeat_ParametricBarycenter(*args)
 
-def brepfeat_ParametricMinMax(*args):
+def brepfeat_ParametricMinMax(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Boolean &" :
   """
     * Ori = True taking account the orientation
 
@@ -373,7 +373,7 @@ def brepfeat_ParametricMinMax(*args):
     """
   return _BRepFeat.brepfeat_ParametricMinMax(*args)
 
-def brepfeat_IsInside(*args):
+def brepfeat_IsInside(*args) -> "Standard_Boolean" :
   """
     :param F1:
     :type F1: TopoDS_Face &
@@ -384,7 +384,7 @@ def brepfeat_IsInside(*args):
     """
   return _BRepFeat.brepfeat_IsInside(*args)
 
-def brepfeat_FaceUntil(*args):
+def brepfeat_FaceUntil(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -395,7 +395,7 @@ def brepfeat_FaceUntil(*args):
     """
   return _BRepFeat.brepfeat_FaceUntil(*args)
 
-def brepfeat_Tool(*args):
+def brepfeat_Tool(*args) -> "TopoDS_Solid" :
   """
     :param SRef:
     :type SRef: TopoDS_Shape &
@@ -408,7 +408,7 @@ def brepfeat_Tool(*args):
     """
   return _BRepFeat.brepfeat_Tool(*args)
 
-def brepfeat_Print(*args):
+def brepfeat_Print(*args) -> "Standard_OStream &" :
   """
     * Prints the Error description of the State <St> as a String on the Stream <S> and returns <S>.
 
@@ -430,7 +430,7 @@ class BRepFeat_Builder(object):
 
         """
         _BRepFeat.BRepFeat_Builder_swiginit(self,_BRepFeat.new_BRepFeat_Builder(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears internal fields and arguments.
 
@@ -439,7 +439,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_Clear(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialyzes the object of local boolean operation.
 
@@ -458,7 +458,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_Init(self, *args)
 
-    def SetOperation(self, *args):
+    def SetOperation(self, *args) -> "void" :
         """
         * Sets the operation of local boolean operation. If theFuse = 0 than the operation is CUT, otherwise FUSE.
 
@@ -477,7 +477,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_SetOperation(self, *args)
 
-    def PartsOfTool(self, *args):
+    def PartsOfTool(self, *args) -> "void" :
         """
         * Collects parts of the tool.
 
@@ -488,7 +488,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_PartsOfTool(self, *args)
 
-    def KeepParts(self, *args):
+    def KeepParts(self, *args) -> "void" :
         """
         * Initialyzes parts of the tool for second step of algorithm. Collects shapes and all sub-shapes into myShapes map.
 
@@ -499,7 +499,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_KeepParts(self, *args)
 
-    def KeepPart(self, *args):
+    def KeepPart(self, *args) -> "void" :
         """
         * Adds shape theS and all its sub-shapes into myShapes map.
 
@@ -510,7 +510,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_KeepPart(self, *args)
 
-    def PerformResult(self, *args):
+    def PerformResult(self, *args) -> "void" :
         """
         * Main function to build the result of the local operation required.
 
@@ -519,7 +519,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_PerformResult(self, *args)
 
-    def RebuildFaces(self, *args):
+    def RebuildFaces(self, *args) -> "void" :
         """
         * Rebuilds faces in accordance with the kept parts of the tool.
 
@@ -528,7 +528,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_RebuildFaces(self, *args)
 
-    def RebuildEdge(self, *args):
+    def RebuildEdge(self, *args) -> "void" :
         """
         * Rebuilds edges in accordance with the kept parts of the tool.
 
@@ -545,7 +545,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_RebuildEdge(self, *args)
 
-    def CheckSolidImages(self, *args):
+    def CheckSolidImages(self, *args) -> "void" :
         """
         * Collects the images of the object, that contains in the images of the tool.
 
@@ -554,7 +554,7 @@ class BRepFeat_Builder(object):
         """
         return _BRepFeat.BRepFeat_Builder_CheckSolidImages(self, *args)
 
-    def FillRemoved(self, *args):
+    def FillRemoved(self, *args) -> "void" :
         """
         * Collects the removed parts of the tool into myRemoved map.
 
@@ -598,7 +598,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of shapes created at the bottom of the created form. It may be an empty list.
 
@@ -607,7 +607,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of shapes created at the top of the created form. It may be an empty list.
 
@@ -616,7 +616,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_LastShape(self, *args)
 
-    def NewEdges(self, *args):
+    def NewEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of the limiting and glueing edges generated by the feature. These edges did not originally exist in the basis shape. The list provides the information necessary for subsequent addition of fillets. It may be an empty list.
 
@@ -625,7 +625,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_NewEdges(self, *args)
 
-    def TgtEdges(self, *args):
+    def TgtEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of the tangent edges among the limiting and glueing edges generated by the feature. These edges did not originally exist in the basis shape and are tangent to the face against which the feature is built. The list provides the information necessary for subsequent addition of fillets. It may be an empty list. If an edge is tangent, no fillet is possible, and the edge must subsequently be removed if you want to add a fillet.
 
@@ -634,7 +634,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_TgtEdges(self, *args)
 
-    def BasisShapeValid(self, *args):
+    def BasisShapeValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the basis shape is present.
 
@@ -643,7 +643,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_BasisShapeValid(self, *args)
 
-    def GeneratedShapeValid(self, *args):
+    def GeneratedShapeValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the generated shape S is present.
 
@@ -652,7 +652,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_GeneratedShapeValid(self, *args)
 
-    def ShapeFromValid(self, *args):
+    def ShapeFromValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the shape is present from the specified integer on.
 
@@ -661,7 +661,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_ShapeFromValid(self, *args)
 
-    def ShapeUntilValid(self, *args):
+    def ShapeUntilValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the shape is present until the specified integer.
 
@@ -670,7 +670,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_ShapeUntilValid(self, *args)
 
-    def GluedFacesValid(self, *args):
+    def GluedFacesValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the glued face is present.
 
@@ -679,7 +679,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_GluedFacesValid(self, *args)
 
-    def SketchFaceValid(self, *args):
+    def SketchFaceValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the sketch face is present. If the sketch face is inside the basis shape, local operations such as glueing can be performed.
 
@@ -688,7 +688,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_SketchFaceValid(self, *args)
 
-    def PerfSelectionValid(self, *args):
+    def PerfSelectionValid(self, *args) -> "void" :
         """
         * Initializes the topological construction if the selected face is present.
 
@@ -697,7 +697,7 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_PerfSelectionValid(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "void" :
         """
         :param S:
         :type S: TColGeom_SequenceOfCurve &
@@ -706,14 +706,14 @@ class BRepFeat_Form(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Form_Curves(self, *args)
 
-    def BarycCurve(self, *args):
+    def BarycCurve(self, *args) -> "Handle_Geom_Curve" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _BRepFeat.BRepFeat_Form_BarycCurve(self, *args)
 
-    def CurrentStatusError(self, *args):
+    def CurrentStatusError(self, *args) -> "BRepFeat_StatusError" :
         """
         :rtype: BRepFeat_StatusError
 
@@ -765,7 +765,7 @@ class BRepFeat_Gluer(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepFeat.BRepFeat_Gluer_swiginit(self,_BRepFeat.new_BRepFeat_Gluer(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the new shape Snew and the basis shape Sbase for the local glueing operation.
 
@@ -778,7 +778,7 @@ class BRepFeat_Gluer(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Gluer_Init(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         * Defines a contact between Fnew on the new shape Snew and Fbase on the basis shape Sbase. Informs other methods that Fnew in the new shape Snew is connected to the face Fbase in the basis shape Sbase. The contact faces of the glued shape must not have parts outside the contact faces of the basis shape. This indicates that glueing is possible.
 
@@ -799,7 +799,7 @@ class BRepFeat_Gluer(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Gluer_Bind(self, *args)
 
-    def OpeType(self, *args):
+    def OpeType(self, *args) -> "LocOpe_Operation" :
         """
         * Determine which operation type to use glueing or sliding.
 
@@ -808,7 +808,7 @@ class BRepFeat_Gluer(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Gluer_OpeType(self, *args)
 
-    def BasisShape(self, *args):
+    def BasisShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the basis shape of the compound shape.
 
@@ -817,7 +817,7 @@ class BRepFeat_Gluer(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_Gluer_BasisShape(self, *args)
 
-    def GluedShape(self, *args):
+    def GluedShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the resulting compound shape.
 
@@ -847,7 +847,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of shapes created at the bottom of the created form. It may be an empty list.
 
@@ -856,7 +856,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_RibSlot_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of shapes created at the top of the created form. It may be an empty list.
 
@@ -865,7 +865,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_RibSlot_LastShape(self, *args)
 
-    def FacesForDraft(self, *args):
+    def FacesForDraft(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of the limiting and glueing faces generated by the feature. These faces did not originally exist in the basis shape. The list provides the information necessary for subsequent addition of a draft to a face. It may be an empty list. If a face has tangent edges, no draft is possible, and the tangent edges must subsequently be removed if you want to add a draft to the face.
 
@@ -874,7 +874,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_RibSlot_FacesForDraft(self, *args)
 
-    def NewEdges(self, *args):
+    def NewEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of the limiting and glueing edges generated by the feature. These edges did not originally exist in the basis shape. The list provides the information necessary for subsequent addition of fillets. It may be an empty list.
 
@@ -883,7 +883,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_RibSlot_NewEdges(self, *args)
 
-    def TgtEdges(self, *args):
+    def TgtEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of the tangent edges among the limiting and glueing edges generated by the feature. These edges did not originally exist in the basis shape and are tangent to the face against which the feature is built. The list provides the information necessary for subsequent addition of fillets. It may be an empty list. If an edge is tangent, no fillet is possible, and the edge must subsequently be removed if you want to add a fillet.
 
@@ -892,7 +892,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_RibSlot_TgtEdges(self, *args)
 
-    def IntPar(*args):
+    def IntPar(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -904,7 +904,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         return _BRepFeat.BRepFeat_RibSlot_IntPar(*args)
 
     IntPar = staticmethod(IntPar)
-    def ChoiceOfFaces(*args):
+    def ChoiceOfFaces(*args) -> "TopoDS_Face" :
         """
         :param faces:
         :type faces: TopTools_ListOfShape &
@@ -922,7 +922,7 @@ class BRepFeat_RibSlot(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         return _BRepFeat.BRepFeat_RibSlot_ChoiceOfFaces(*args)
 
     ChoiceOfFaces = staticmethod(ChoiceOfFaces)
-    def CurrentStatusError(self, *args):
+    def CurrentStatusError(self, *args) -> "BRepFeat_StatusError" :
         """
         :rtype: BRepFeat_StatusError
 
@@ -947,7 +947,7 @@ BRepFeat_RibSlot._kill_pointed = new_instancemethod(_BRepFeat.BRepFeat_RibSlot__
 BRepFeat_RibSlot_swigregister = _BRepFeat.BRepFeat_RibSlot_swigregister
 BRepFeat_RibSlot_swigregister(BRepFeat_RibSlot)
 
-def BRepFeat_RibSlot_IntPar(*args):
+def BRepFeat_RibSlot_IntPar(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Geom_Curve &
@@ -958,7 +958,7 @@ def BRepFeat_RibSlot_IntPar(*args):
     """
   return _BRepFeat.BRepFeat_RibSlot_IntPar(*args)
 
-def BRepFeat_RibSlot_ChoiceOfFaces(*args):
+def BRepFeat_RibSlot_ChoiceOfFaces(*args) -> "TopoDS_Face" :
   """
     :param faces:
     :type faces: TopTools_ListOfShape &
@@ -992,7 +992,7 @@ class BRepFeat_SplitShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepFeat.BRepFeat_SplitShape_swiginit(self,_BRepFeat.new_BRepFeat_SplitShape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the process on the shape <S>.
 
@@ -1003,7 +1003,7 @@ class BRepFeat_SplitShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_SplitShape_Init(self, *args)
 
-    def SetCheckInterior(self, *args):
+    def SetCheckInterior(self, *args) -> "void" :
         """
         * Set the flag of check internal intersections default value is True (to check)
 
@@ -1014,7 +1014,7 @@ class BRepFeat_SplitShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_SplitShape_SetCheckInterior(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the wire <W> on the face <F>. Raises NoSuchObject if <F> does not belong to the original shape.
 
@@ -1051,7 +1051,7 @@ class BRepFeat_SplitShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_SplitShape_Add(self, *args)
 
-    def DirectLeft(self, *args):
+    def DirectLeft(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the faces which are the left of the projected wires.
 
@@ -1060,7 +1060,7 @@ class BRepFeat_SplitShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFeat.BRepFeat_SplitShape_DirectLeft(self, *args)
 
-    def Left(self, *args):
+    def Left(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the faces of the 'left' part on the shape. (It is build from DirectLeft, with the faces connected to this set, and so on...). Raises NotDone if IsDone returns <Standard_False>.
 
@@ -1097,7 +1097,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
 
         """
         _BRepFeat.BRepFeat_MakeCylindricalHole_swiginit(self,_BRepFeat.new_BRepFeat_MakeCylindricalHole(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Sets the axis of the hole(s).
 
@@ -1116,7 +1116,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs every holes of radius <Radius>. This command has the same effect as a cut operation with an infinite cylinder defined by the given axis and <Radius>.
 
@@ -1139,7 +1139,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_Perform(self, *args)
 
-    def PerformThruNext(self, *args):
+    def PerformThruNext(self, *args) -> "void" :
         """
         * Performs the first hole of radius <Radius>, in the direction of the defined axis. First hole signify first encountered after the origin of the axis. If <WithControl> is set to Standard_False no control are done on the resulting shape after the operation is performed.
 
@@ -1152,7 +1152,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_PerformThruNext(self, *args)
 
-    def PerformUntilEnd(self, *args):
+    def PerformUntilEnd(self, *args) -> "void" :
         """
         * Performs evry holes of radius <Radius> located after the origin of the given axis. If <WithControl> is set to Standard_False no control are done on the resulting shape after the operation is performed.
 
@@ -1165,7 +1165,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_PerformUntilEnd(self, *args)
 
-    def PerformBlind(self, *args):
+    def PerformBlind(self, *args) -> "void" :
         """
         * Performs a blind hole of radius <Radius> and length <Length>. The length is measured from the origin of the given axis. If <WithControl> is set to Standard_False no control are done after the operation is performed.
 
@@ -1180,7 +1180,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_PerformBlind(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "BRepFeat_Status" :
         """
         * Returns the status after a hole is performed.
 
@@ -1189,7 +1189,7 @@ class BRepFeat_MakeCylindricalHole(BRepFeat_Builder):
         """
         return _BRepFeat.BRepFeat_MakeCylindricalHole_Status(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Builds the resulting shape (redefined from MakeShape). Invalidates the given parts of tools if any, and performs the result of the local operation.
 
@@ -1242,7 +1242,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
 
         """
         _BRepFeat.BRepFeat_MakeDPrism_swiginit(self,_BRepFeat.new_BRepFeat_MakeDPrism(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm for building draft prisms along surfaces. A face Pbase is selected in the basis shape Sbase to serve as the basis from the draft prism. The draft will be defined by the angle Angle and Fuse offers a choice between: - removing matter with a Boolean cut using the setting 0 - adding matter with Boolean fusion using the setting 1. The sketch face Skface serves to determine the type of operation. If it is inside the basis shape, a local operation such as glueing can be performed.
 
@@ -1263,7 +1263,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1276,7 +1276,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Height:
         :type Height: float
@@ -1297,7 +1297,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_Perform(self, *args)
 
-    def PerformUntilEnd(self, *args):
+    def PerformUntilEnd(self, *args) -> "void" :
         """
         * Realizes a semi-infinite prism, limited by the position of the prism base.
 
@@ -1306,7 +1306,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_PerformUntilEnd(self, *args)
 
-    def PerformFromEnd(self, *args):
+    def PerformFromEnd(self, *args) -> "void" :
         """
         * Realizes a semi-infinite prism, limited by the face Funtil.
 
@@ -1317,7 +1317,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_PerformFromEnd(self, *args)
 
-    def PerformThruAll(self, *args):
+    def PerformThruAll(self, *args) -> "void" :
         """
         * Builds an infinite prism. The infinite descendants will not be kept in the result.
 
@@ -1326,7 +1326,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_PerformThruAll(self, *args)
 
-    def PerformUntilHeight(self, *args):
+    def PerformUntilHeight(self, *args) -> "void" :
         """
         * Assigns both a limiting shape, Until from TopoDS_Shape, and a height, Height at which to stop generation of the prism feature.
 
@@ -1339,7 +1339,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_PerformUntilHeight(self, *args)
 
-    def BossEdges(self, *args):
+    def BossEdges(self, *args) -> "void" :
         """
         * Determination of TopEdges and LatEdges. sig = 1 -> TopEdges = FirstShape of the DPrism sig = 2 -> TOpEdges = LastShape of the DPrism
 
@@ -1350,7 +1350,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_BossEdges(self, *args)
 
-    def TopEdges(self, *args):
+    def TopEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of TopoDS Edges of the top of the boss.
 
@@ -1359,7 +1359,7 @@ class BRepFeat_MakeDPrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeDPrism_TopEdges(self, *args)
 
-    def LatEdges(self, *args):
+    def LatEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of TopoDS Edges of the bottom of the boss.
 
@@ -1419,7 +1419,7 @@ class BRepFeat_MakeLinearForm(BRepFeat_RibSlot):
 
         """
         _BRepFeat.BRepFeat_MakeLinearForm_swiginit(self,_BRepFeat.new_BRepFeat_MakeLinearForm(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this construction algorithm. A contour W, a shape Sbase and a plane P are initialized to serve as the basic elements in the construction of the rib or groove. The vectors for defining the direction(s) in which thickness will be built up are given by Direction and Direction1. Fuse offers a choice between: - removing matter with a Boolean cut using the setting 0 in case of the groove - adding matter with Boolean fusion using the setting 1 in case of the rib.
 
@@ -1442,7 +1442,7 @@ class BRepFeat_MakeLinearForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeLinearForm_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1455,7 +1455,7 @@ class BRepFeat_MakeLinearForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeLinearForm_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs a prism from the wire to the plane along the basis shape Sbase. Reconstructs the feature topologically.
 
@@ -1464,7 +1464,7 @@ class BRepFeat_MakeLinearForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeLinearForm_Perform(self, *args)
 
-    def Propagate(self, *args):
+    def Propagate(self, *args) -> "Standard_Boolean" :
         """
         :param L:
         :type L: TopTools_ListOfShape &
@@ -1524,7 +1524,7 @@ class BRepFeat_MakePipe(BRepFeat_Form):
 
         """
         _BRepFeat.BRepFeat_MakePipe_swiginit(self,_BRepFeat.new_BRepFeat_MakePipe(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm for adding pipes to shapes. A face Pbase is selected in the shape Sbase to serve as the basis for the pipe. It will be defined by the wire Spine. Fuse offers a choice between: - removing matter with a Boolean cut using the setting 0 - adding matter with Boolean fusion using the setting 1. The sketch face Skface serves to determine the type of operation. If it is inside the basis shape, a local operation such as glueing can be performed.
 
@@ -1545,7 +1545,7 @@ class BRepFeat_MakePipe(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePipe_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1558,7 +1558,7 @@ class BRepFeat_MakePipe(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePipe_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1619,7 +1619,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
 
         """
         _BRepFeat.BRepFeat_MakePrism_swiginit(self,_BRepFeat.new_BRepFeat_MakePrism(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm for building prisms along surfaces. A face Pbase is selected in the shape Sbase to serve as the basis for the prism. The orientation of the prism will be defined by the vector Direction. Fuse offers a choice between: - removing matter with a Boolean cut using the setting 0 - adding matter with Boolean fusion using the setting 1. The sketch face Skface serves to determine the type of operation. If it is inside the basis shape, a local operation such as glueing can be performed.
 
@@ -1640,7 +1640,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1653,7 +1653,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Length:
         :type Length: float
@@ -1674,7 +1674,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_Perform(self, *args)
 
-    def PerformUntilEnd(self, *args):
+    def PerformUntilEnd(self, *args) -> "void" :
         """
         * Realizes a semi-infinite prism, limited by the position of the prism base. All other faces extend infinitely.
 
@@ -1683,7 +1683,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_PerformUntilEnd(self, *args)
 
-    def PerformFromEnd(self, *args):
+    def PerformFromEnd(self, *args) -> "void" :
         """
         * Realizes a semi-infinite prism, limited by the face Funtil.
 
@@ -1694,7 +1694,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_PerformFromEnd(self, *args)
 
-    def PerformThruAll(self, *args):
+    def PerformThruAll(self, *args) -> "void" :
         """
         * Builds an infinite prism. The infinite descendants will not be kept in the result.
 
@@ -1703,7 +1703,7 @@ class BRepFeat_MakePrism(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakePrism_PerformThruAll(self, *args)
 
-    def PerformUntilHeight(self, *args):
+    def PerformUntilHeight(self, *args) -> "void" :
         """
         * Assigns both a limiting shape, Until from TopoDS_Shape, and a height, Length at which to stop generation of the prism feature.
 
@@ -1762,7 +1762,7 @@ class BRepFeat_MakeRevol(BRepFeat_Form):
 
         """
         _BRepFeat.BRepFeat_MakeRevol_swiginit(self,_BRepFeat.new_BRepFeat_MakeRevol(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Sbase:
         :type Sbase: TopoDS_Shape &
@@ -1781,7 +1781,7 @@ class BRepFeat_MakeRevol(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeRevol_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1794,7 +1794,7 @@ class BRepFeat_MakeRevol(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeRevol_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Angle:
         :type Angle: float
@@ -1815,7 +1815,7 @@ class BRepFeat_MakeRevol(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeRevol_Perform(self, *args)
 
-    def PerformThruAll(self, *args):
+    def PerformThruAll(self, *args) -> "void" :
         """
         * Builds an infinite shell. The infinite descendants will not be kept in the result.
 
@@ -1824,7 +1824,7 @@ class BRepFeat_MakeRevol(BRepFeat_Form):
         """
         return _BRepFeat.BRepFeat_MakeRevol_PerformThruAll(self, *args)
 
-    def PerformUntilAngle(self, *args):
+    def PerformUntilAngle(self, *args) -> "void" :
         """
         * Assigns both a limiting shape, Until from TopoDS_Shape, and an angle, Angle at which to stop generation of the revolved shell feature.
 
@@ -1885,7 +1885,7 @@ class BRepFeat_MakeRevolutionForm(BRepFeat_RibSlot):
 
         """
         _BRepFeat.BRepFeat_MakeRevolutionForm_swiginit(self,_BRepFeat.new_BRepFeat_MakeRevolutionForm(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this construction algorithm A contour W, a shape Sbase and a plane P are initialized to serve as the basic elements in the construction of the rib or groove. The axis Axis of the revolved surface in the basis shape defines the feature's axis of revolution. Height1 and Height2 may be used as limits to the construction of the feature. Fuse offers a choice between: - removing matter with a Boolean cut using the setting 0 in case of the groove - adding matter with Boolean fusion using the setting 1 in case of the rib.
 
@@ -1910,7 +1910,7 @@ class BRepFeat_MakeRevolutionForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeRevolutionForm_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Indicates that the edge <E> will slide on the face <OnFace>. Raises ConstructionError if the face does not belong to the basis shape, or the edge to the prismed shape.
 
@@ -1923,7 +1923,7 @@ class BRepFeat_MakeRevolutionForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeRevolutionForm_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs a prism from the wire to the plane along the basis shape S. Reconstructs the feature topologically.
 
@@ -1932,7 +1932,7 @@ class BRepFeat_MakeRevolutionForm(BRepFeat_RibSlot):
         """
         return _BRepFeat.BRepFeat_MakeRevolutionForm_Perform(self, *args)
 
-    def Propagate(self, *args):
+    def Propagate(self, *args) -> "Standard_Boolean" :
         """
         :param L:
         :type L: TopTools_ListOfShape &

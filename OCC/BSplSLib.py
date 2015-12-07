@@ -117,7 +117,7 @@ import OCC.TColStd
 class bsplslib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def RationalDerivative(*args):
+    def RationalDerivative(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * this is a one dimensional function typedef void (*EvaluatorFunction) ( Standard_Integer // Derivative Request Standard_Real * // StartEnd[2][2]  // [0] = U  // [1] = V  // [0] = start  // [1] = end Standard_Real // UParameter Standard_Real // VParamerer Standard_Real & // Result Standard_Integer &) ;// Error Code serves to multiply a given vectorial BSpline by a function Computes the derivatives of a ratio of two-variables functions x(u,v) / w(u,v) at orders <N,M>, x(u,v) is a vector in dimension <3>.  <Ders> is an array containing the values of the input derivatives from 0 to Min(<N>,<UDeg>), 0 to Min(<M>,<VDeg>). For orders higher than <UDeg,VDeg> the input derivatives are assumed to be 0.  The <Ders> is a 2d array and the dimension of the lines is always (<VDeg>+1) * (<3>+1), even if <N> is smaller than <Udeg> (the derivatives higher than <N> are not used).  Content of <Ders> :  x(i,j)[k] means : the composant k of x derivated (i) times in u and (j) times in v.  ... First line ...  x[1],x[2],...,x[3],w x(0,1)[1],...,x(0,1)[3],w(1,0) ... x(0,VDeg)[1],...,x(0,VDeg)[3],w(0,VDeg)  ... Then second line ...  x(1,0)[1],...,x(1,0)[3],w(1,0) x(1,1)[1],...,x(1,1)[3],w(1,1) ... x(1,VDeg)[1],...,x(1,VDeg)[3],w(1,VDeg)  ...  ... Last line ...  x(UDeg,0)[1],...,x(UDeg,0)[3],w(UDeg,0) x(UDeg,1)[1],...,x(UDeg,1)[3],w(UDeg,1) ... x(Udeg,VDeg)[1],...,x(UDeg,VDeg)[3],w(Udeg,VDeg) If <All> is false, only the derivative at order <N,M> is computed. <RDers> is an array of length 3 which will contain the result :  x(1)/w , x(2)/w , ... derivated <N> <M> times  If <All> is true multiples derivatives are computed. All the derivatives (i,j) with 0 <= i+j <= Max(N,M) are computed. <RDers> is an array of length 3 * (<N>+1) * (<M>+1) which will contains :  x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated <0,1> times x(1)/w , x(2)/w , ... derivated <0,2> times ... x(1)/w , x(2)/w , ... derivated <0,N> times  x(1)/w , x(2)/w , ... derivated <1,0> times x(1)/w , x(2)/w , ... derivated <1,1> times ... x(1)/w , x(2)/w , ... derivated <1,N> times  x(1)/w , x(2)/w , ... derivated <N,0> times .... Warning: <RDers> must be dimensionned properly.
 
@@ -141,7 +141,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_RationalDerivative(*args)
 
     RationalDerivative = staticmethod(RationalDerivative)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -183,7 +183,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -229,7 +229,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -281,7 +281,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -341,7 +341,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -387,7 +387,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_DN(*args)
 
     DN = staticmethod(DN)
-    def Iso(*args):
+    def Iso(*args) -> "void" :
         """
         * Computes the poles and weights of an isoparametric curve at parameter <Param> (UIso if <IsU> is True, VIso else).
 
@@ -417,7 +417,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_Iso(*args)
 
     Iso = staticmethod(Iso)
-    def HomogeneousD0(*args):
+    def HomogeneousD0(*args) -> "Standard_Real &" :
         """
         * Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0
 
@@ -463,7 +463,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_HomogeneousD0(*args)
 
     HomogeneousD0 = staticmethod(HomogeneousD0)
-    def HomogeneousD1(*args):
+    def HomogeneousD1(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0
 
@@ -517,7 +517,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_HomogeneousD1(*args)
 
     HomogeneousD1 = staticmethod(HomogeneousD1)
-    def Reverse(*args):
+    def Reverse(*args) -> "void" :
         """
         * Reverses the array of poles. Last is the Index of the new first Row( Col) of Poles. On a non periodic surface Last is  Poles.Upper(). On a periodic curve last is  (number of flat knots - degree - 1) or  (sum of multiplicities(but for the last) + degree - 1)
 
@@ -543,7 +543,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_Reverse(*args)
 
     Reverse = staticmethod(Reverse)
-    def IsRational(*args):
+    def IsRational(*args) -> "Standard_Boolean" :
         """
         * Returns False if all the weights of the array <Weights> in the area [I1,I2] * [J1,J2] are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
 
@@ -565,7 +565,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def SetPoles(*args):
+    def SetPoles(*args) -> "void" :
         """
         * Copy in FP the coordinates of the poles.
 
@@ -593,7 +593,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_SetPoles(*args)
 
     SetPoles = staticmethod(SetPoles)
-    def GetPoles(*args):
+    def GetPoles(*args) -> "void" :
         """
         * Get from FP the coordinates of the poles.
 
@@ -621,7 +621,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_GetPoles(*args)
 
     GetPoles = staticmethod(GetPoles)
-    def MovePoint(*args):
+    def MovePoint(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &" :
         """
         * Find the new poles which allows an old point (with a given u,v as parameters) to reach a new position UIndex1,UIndex2 indicate the range of poles we can move for U (1, UNbPoles-1) or (2, UNbPoles) -> no constraint for one side in U (2, UNbPoles-1) -> the ends are enforced for U don't enter (1,NbPoles) and (1,VNbPoles) -> error: rigid move if problem in BSplineBasis calculation, no change for the curve and UFirstIndex, VLastIndex = 0 VFirstIndex, VLastIndex = 0
 
@@ -669,7 +669,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_MovePoint(*args)
 
     MovePoint = staticmethod(MovePoint)
-    def InsertKnots(*args):
+    def InsertKnots(*args) -> "void" :
         """
         :param UDirection:
         :type UDirection: bool
@@ -707,7 +707,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_InsertKnots(*args)
 
     InsertKnots = staticmethod(InsertKnots)
-    def RemoveKnot(*args):
+    def RemoveKnot(*args) -> "Standard_Boolean" :
         """
         :param UDirection:
         :type UDirection: bool
@@ -743,7 +743,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_RemoveKnot(*args)
 
     RemoveKnot = staticmethod(RemoveKnot)
-    def IncreaseDegree(*args):
+    def IncreaseDegree(*args) -> "void" :
         """
         :param UDirection:
         :type UDirection: bool
@@ -775,7 +775,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_IncreaseDegree(*args)
 
     IncreaseDegree = staticmethod(IncreaseDegree)
-    def Unperiodize(*args):
+    def Unperiodize(*args) -> "void" :
         """
         :param UDirection:
         :type UDirection: bool
@@ -803,7 +803,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_Unperiodize(*args)
 
     Unperiodize = staticmethod(Unperiodize)
-    def NoWeights(*args):
+    def NoWeights(*args) -> "TColStd_Array2OfReal &" :
         """
         * Used as argument for a non rational curve.
 
@@ -813,7 +813,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_NoWeights(*args)
 
     NoWeights = staticmethod(NoWeights)
-    def BuildCache(*args):
+    def BuildCache(*args) -> "void" :
         """
         * Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. If rational computes the homogeneous Taylor expension for the numerator and stores it in CachePoles
 
@@ -855,7 +855,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_BuildCache(*args)
 
     BuildCache = staticmethod(BuildCache)
-    def CacheD0(*args):
+    def CacheD0(*args) -> "void" :
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -887,7 +887,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CacheD0(*args)
 
     CacheD0 = staticmethod(CacheD0)
-    def CoefsD0(*args):
+    def CoefsD0(*args) -> "void" :
         """
         * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -907,7 +907,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CoefsD0(*args)
 
     CoefsD0 = staticmethod(CoefsD0)
-    def CacheD1(*args):
+    def CacheD1(*args) -> "void" :
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -943,7 +943,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CacheD1(*args)
 
     CacheD1 = staticmethod(CacheD1)
-    def CoefsD1(*args):
+    def CoefsD1(*args) -> "void" :
         """
         * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -967,7 +967,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CoefsD1(*args)
 
     CoefsD1 = staticmethod(CoefsD1)
-    def CacheD2(*args):
+    def CacheD2(*args) -> "void" :
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -1009,7 +1009,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CacheD2(*args)
 
     CacheD2 = staticmethod(CacheD2)
-    def CoefsD2(*args):
+    def CoefsD2(*args) -> "void" :
         """
         * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -1039,7 +1039,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_CoefsD2(*args)
 
     CoefsD2 = staticmethod(CoefsD2)
-    def PolesCoefficients(*args):
+    def PolesCoefficients(*args) -> "void" :
         """
         * Warning! To be used for BezierSurfaces ONLY!!!
 
@@ -1065,7 +1065,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_PolesCoefficients(*args)
 
     PolesCoefficients = staticmethod(PolesCoefficients)
-    def Resolution(*args):
+    def Resolution(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Given a tolerance in 3D space returns two tolerances, one in U one in V such that for all (u1,v1) and (u0,v0) in the domain of the surface f(u,v) we have : | u1 - u0 | < UTolerance and | v1 - v0 | < VTolerance we have |f (u1,v1) - f (u0,v0)| < Tolerance3D
 
@@ -1105,7 +1105,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def Interpolate(*args):
+    def Interpolate(*args) -> "Standard_Integer &" :
         """
         * Performs the interpolation of the data points given in  the Poles array in the form  [1,...,RL][1,...,RC][1...PolesDimension] . The ColLength CL and the Length of UParameters must be the same. The length of VFlatKnots is VDegree + CL + 1.  The RowLength RL and the Length of VParameters must be the same. The length of VFlatKnots is Degree + RL + 1. Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
@@ -1153,7 +1153,7 @@ class bsplslib(object):
         return _BSplSLib.bsplslib_Interpolate(*args)
 
     Interpolate = staticmethod(Interpolate)
-    def FunctionMultiply(*args):
+    def FunctionMultiply(*args) -> "Standard_Integer &" :
         """
         * this will multiply a given BSpline numerator N(u,v) and denominator D(u,v) defined by its U/VBSplineDegree and U/VBSplineKnots, and U/VMults. Its Poles and Weights are arrays which are coded as array2 of the form  [1..UNumPoles][1..VNumPoles] by a function a(u,v) which is assumed to satisfy the following : 1. a(u,v) * N(u,v) and a(u,v) * D(u,v) is a polynomial BSpline that can be expressed exactly as a BSpline of degree U/VNewDegree on the knots U/VFlatKnots 2. the range of a(u,v) is the same as the range of N(u,v) or D(u,v) ---Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method -- Status will return 0 if OK else it will return the  pivot index -- of the matrix that was inverted to compute the multiplied -- BSpline : the method used is interpolation at Schoenenberg -- points of a(u,v)* N(u,v) and a(u,v) * D(u,v) Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(u,v)*F(u,v) --
 
@@ -1209,7 +1209,7 @@ bsplslib._kill_pointed = new_instancemethod(_BSplSLib.bsplslib__kill_pointed,Non
 bsplslib_swigregister = _BSplSLib.bsplslib_swigregister
 bsplslib_swigregister(bsplslib)
 
-def bsplslib_RationalDerivative(*args):
+def bsplslib_RationalDerivative(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * this is a one dimensional function typedef void (*EvaluatorFunction) ( Standard_Integer // Derivative Request Standard_Real * // StartEnd[2][2]  // [0] = U  // [1] = V  // [0] = start  // [1] = end Standard_Real // UParameter Standard_Real // VParamerer Standard_Real & // Result Standard_Integer &) ;// Error Code serves to multiply a given vectorial BSpline by a function Computes the derivatives of a ratio of two-variables functions x(u,v) / w(u,v) at orders <N,M>, x(u,v) is a vector in dimension <3>.  <Ders> is an array containing the values of the input derivatives from 0 to Min(<N>,<UDeg>), 0 to Min(<M>,<VDeg>). For orders higher than <UDeg,VDeg> the input derivatives are assumed to be 0.  The <Ders> is a 2d array and the dimension of the lines is always (<VDeg>+1) * (<3>+1), even if <N> is smaller than <Udeg> (the derivatives higher than <N> are not used).  Content of <Ders> :  x(i,j)[k] means : the composant k of x derivated (i) times in u and (j) times in v.  ... First line ...  x[1],x[2],...,x[3],w x(0,1)[1],...,x(0,1)[3],w(1,0) ... x(0,VDeg)[1],...,x(0,VDeg)[3],w(0,VDeg)  ... Then second line ...  x(1,0)[1],...,x(1,0)[3],w(1,0) x(1,1)[1],...,x(1,1)[3],w(1,1) ... x(1,VDeg)[1],...,x(1,VDeg)[3],w(1,VDeg)  ...  ... Last line ...  x(UDeg,0)[1],...,x(UDeg,0)[3],w(UDeg,0) x(UDeg,1)[1],...,x(UDeg,1)[3],w(UDeg,1) ... x(Udeg,VDeg)[1],...,x(UDeg,VDeg)[3],w(Udeg,VDeg) If <All> is false, only the derivative at order <N,M> is computed. <RDers> is an array of length 3 which will contain the result :  x(1)/w , x(2)/w , ... derivated <N> <M> times  If <All> is true multiples derivatives are computed. All the derivatives (i,j) with 0 <= i+j <= Max(N,M) are computed. <RDers> is an array of length 3 * (<N>+1) * (<M>+1) which will contains :  x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated <0,1> times x(1)/w , x(2)/w , ... derivated <0,2> times ... x(1)/w , x(2)/w , ... derivated <0,N> times  x(1)/w , x(2)/w , ... derivated <1,0> times x(1)/w , x(2)/w , ... derivated <1,1> times ... x(1)/w , x(2)/w , ... derivated <1,N> times  x(1)/w , x(2)/w , ... derivated <N,0> times .... Warning: <RDers> must be dimensionned properly.
 
@@ -1232,7 +1232,7 @@ def bsplslib_RationalDerivative(*args):
     """
   return _BSplSLib.bsplslib_RationalDerivative(*args)
 
-def bsplslib_D0(*args):
+def bsplslib_D0(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -1273,7 +1273,7 @@ def bsplslib_D0(*args):
     """
   return _BSplSLib.bsplslib_D0(*args)
 
-def bsplslib_D1(*args):
+def bsplslib_D1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -1318,7 +1318,7 @@ def bsplslib_D1(*args):
     """
   return _BSplSLib.bsplslib_D1(*args)
 
-def bsplslib_D2(*args):
+def bsplslib_D2(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -1369,7 +1369,7 @@ def bsplslib_D2(*args):
     """
   return _BSplSLib.bsplslib_D2(*args)
 
-def bsplslib_D3(*args):
+def bsplslib_D3(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -1428,7 +1428,7 @@ def bsplslib_D3(*args):
     """
   return _BSplSLib.bsplslib_D3(*args)
 
-def bsplslib_DN(*args):
+def bsplslib_DN(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -1473,7 +1473,7 @@ def bsplslib_DN(*args):
     """
   return _BSplSLib.bsplslib_DN(*args)
 
-def bsplslib_Iso(*args):
+def bsplslib_Iso(*args) -> "void" :
   """
     * Computes the poles and weights of an isoparametric curve at parameter <Param> (UIso if <IsU> is True, VIso else).
 
@@ -1502,7 +1502,7 @@ def bsplslib_Iso(*args):
     """
   return _BSplSLib.bsplslib_Iso(*args)
 
-def bsplslib_HomogeneousD0(*args):
+def bsplslib_HomogeneousD0(*args) -> "Standard_Real &" :
   """
     * Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0
 
@@ -1547,7 +1547,7 @@ def bsplslib_HomogeneousD0(*args):
     """
   return _BSplSLib.bsplslib_HomogeneousD0(*args)
 
-def bsplslib_HomogeneousD1(*args):
+def bsplslib_HomogeneousD1(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0
 
@@ -1600,7 +1600,7 @@ def bsplslib_HomogeneousD1(*args):
     """
   return _BSplSLib.bsplslib_HomogeneousD1(*args)
 
-def bsplslib_Reverse(*args):
+def bsplslib_Reverse(*args) -> "void" :
   """
     * Reverses the array of poles. Last is the Index of the new first Row( Col) of Poles. On a non periodic surface Last is  Poles.Upper(). On a periodic curve last is  (number of flat knots - degree - 1) or  (sum of multiplicities(but for the last) + degree - 1)
 
@@ -1625,7 +1625,7 @@ def bsplslib_Reverse(*args):
     """
   return _BSplSLib.bsplslib_Reverse(*args)
 
-def bsplslib_IsRational(*args):
+def bsplslib_IsRational(*args) -> "Standard_Boolean" :
   """
     * Returns False if all the weights of the array <Weights> in the area [I1,I2] * [J1,J2] are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
 
@@ -1646,7 +1646,7 @@ def bsplslib_IsRational(*args):
     """
   return _BSplSLib.bsplslib_IsRational(*args)
 
-def bsplslib_SetPoles(*args):
+def bsplslib_SetPoles(*args) -> "void" :
   """
     * Copy in FP the coordinates of the poles.
 
@@ -1673,7 +1673,7 @@ def bsplslib_SetPoles(*args):
     """
   return _BSplSLib.bsplslib_SetPoles(*args)
 
-def bsplslib_GetPoles(*args):
+def bsplslib_GetPoles(*args) -> "void" :
   """
     * Get from FP the coordinates of the poles.
 
@@ -1700,7 +1700,7 @@ def bsplslib_GetPoles(*args):
     """
   return _BSplSLib.bsplslib_GetPoles(*args)
 
-def bsplslib_MovePoint(*args):
+def bsplslib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &" :
   """
     * Find the new poles which allows an old point (with a given u,v as parameters) to reach a new position UIndex1,UIndex2 indicate the range of poles we can move for U (1, UNbPoles-1) or (2, UNbPoles) -> no constraint for one side in U (2, UNbPoles-1) -> the ends are enforced for U don't enter (1,NbPoles) and (1,VNbPoles) -> error: rigid move if problem in BSplineBasis calculation, no change for the curve and UFirstIndex, VLastIndex = 0 VFirstIndex, VLastIndex = 0
 
@@ -1747,7 +1747,7 @@ def bsplslib_MovePoint(*args):
     """
   return _BSplSLib.bsplslib_MovePoint(*args)
 
-def bsplslib_InsertKnots(*args):
+def bsplslib_InsertKnots(*args) -> "void" :
   """
     :param UDirection:
     :type UDirection: bool
@@ -1784,7 +1784,7 @@ def bsplslib_InsertKnots(*args):
     """
   return _BSplSLib.bsplslib_InsertKnots(*args)
 
-def bsplslib_RemoveKnot(*args):
+def bsplslib_RemoveKnot(*args) -> "Standard_Boolean" :
   """
     :param UDirection:
     :type UDirection: bool
@@ -1819,7 +1819,7 @@ def bsplslib_RemoveKnot(*args):
     """
   return _BSplSLib.bsplslib_RemoveKnot(*args)
 
-def bsplslib_IncreaseDegree(*args):
+def bsplslib_IncreaseDegree(*args) -> "void" :
   """
     :param UDirection:
     :type UDirection: bool
@@ -1850,7 +1850,7 @@ def bsplslib_IncreaseDegree(*args):
     """
   return _BSplSLib.bsplslib_IncreaseDegree(*args)
 
-def bsplslib_Unperiodize(*args):
+def bsplslib_Unperiodize(*args) -> "void" :
   """
     :param UDirection:
     :type UDirection: bool
@@ -1877,7 +1877,7 @@ def bsplslib_Unperiodize(*args):
     """
   return _BSplSLib.bsplslib_Unperiodize(*args)
 
-def bsplslib_NoWeights(*args):
+def bsplslib_NoWeights(*args) -> "TColStd_Array2OfReal &" :
   """
     * Used as argument for a non rational curve.
 
@@ -1886,7 +1886,7 @@ def bsplslib_NoWeights(*args):
     """
   return _BSplSLib.bsplslib_NoWeights(*args)
 
-def bsplslib_BuildCache(*args):
+def bsplslib_BuildCache(*args) -> "void" :
   """
     * Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. If rational computes the homogeneous Taylor expension for the numerator and stores it in CachePoles
 
@@ -1927,7 +1927,7 @@ def bsplslib_BuildCache(*args):
     """
   return _BSplSLib.bsplslib_BuildCache(*args)
 
-def bsplslib_CacheD0(*args):
+def bsplslib_CacheD0(*args) -> "void" :
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -1958,7 +1958,7 @@ def bsplslib_CacheD0(*args):
     """
   return _BSplSLib.bsplslib_CacheD0(*args)
 
-def bsplslib_CoefsD0(*args):
+def bsplslib_CoefsD0(*args) -> "void" :
   """
     * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -1977,7 +1977,7 @@ def bsplslib_CoefsD0(*args):
     """
   return _BSplSLib.bsplslib_CoefsD0(*args)
 
-def bsplslib_CacheD1(*args):
+def bsplslib_CacheD1(*args) -> "void" :
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -2012,7 +2012,7 @@ def bsplslib_CacheD1(*args):
     """
   return _BSplSLib.bsplslib_CacheD1(*args)
 
-def bsplslib_CoefsD1(*args):
+def bsplslib_CoefsD1(*args) -> "void" :
   """
     * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -2035,7 +2035,7 @@ def bsplslib_CoefsD1(*args):
     """
   return _BSplSLib.bsplslib_CoefsD1(*args)
 
-def bsplslib_CacheD2(*args):
+def bsplslib_CacheD2(*args) -> "void" :
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
@@ -2076,7 +2076,7 @@ def bsplslib_CacheD2(*args):
     """
   return _BSplSLib.bsplslib_CacheD2(*args)
 
-def bsplslib_CoefsD2(*args):
+def bsplslib_CoefsD2(*args) -> "void" :
   """
     * Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!
 
@@ -2105,7 +2105,7 @@ def bsplslib_CoefsD2(*args):
     """
   return _BSplSLib.bsplslib_CoefsD2(*args)
 
-def bsplslib_PolesCoefficients(*args):
+def bsplslib_PolesCoefficients(*args) -> "void" :
   """
     * Warning! To be used for BezierSurfaces ONLY!!!
 
@@ -2130,7 +2130,7 @@ def bsplslib_PolesCoefficients(*args):
     """
   return _BSplSLib.bsplslib_PolesCoefficients(*args)
 
-def bsplslib_Resolution(*args):
+def bsplslib_Resolution(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Given a tolerance in 3D space returns two tolerances, one in U one in V such that for all (u1,v1) and (u0,v0) in the domain of the surface f(u,v) we have : | u1 - u0 | < UTolerance and | v1 - v0 | < VTolerance we have |f (u1,v1) - f (u0,v0)| < Tolerance3D
 
@@ -2169,7 +2169,7 @@ def bsplslib_Resolution(*args):
     """
   return _BSplSLib.bsplslib_Resolution(*args)
 
-def bsplslib_Interpolate(*args):
+def bsplslib_Interpolate(*args) -> "Standard_Integer &" :
   """
     * Performs the interpolation of the data points given in  the Poles array in the form  [1,...,RL][1,...,RC][1...PolesDimension] . The ColLength CL and the Length of UParameters must be the same. The length of VFlatKnots is VDegree + CL + 1.  The RowLength RL and the Length of VParameters must be the same. The length of VFlatKnots is Degree + RL + 1. Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
@@ -2216,7 +2216,7 @@ def bsplslib_Interpolate(*args):
     """
   return _BSplSLib.bsplslib_Interpolate(*args)
 
-def bsplslib_FunctionMultiply(*args):
+def bsplslib_FunctionMultiply(*args) -> "Standard_Integer &" :
   """
     * this will multiply a given BSpline numerator N(u,v) and denominator D(u,v) defined by its U/VBSplineDegree and U/VBSplineKnots, and U/VMults. Its Poles and Weights are arrays which are coded as array2 of the form  [1..UNumPoles][1..VNumPoles] by a function a(u,v) which is assumed to satisfy the following : 1. a(u,v) * N(u,v) and a(u,v) * D(u,v) is a polynomial BSpline that can be expressed exactly as a BSpline of degree U/VNewDegree on the knots U/VFlatKnots 2. the range of a(u,v) is the same as the range of N(u,v) or D(u,v) ---Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method -- Status will return 0 if OK else it will return the  pivot index -- of the matrix that was inverted to compute the multiplied -- BSpline : the method used is interpolation at Schoenenberg -- points of a(u,v)* N(u,v) and a(u,v) * D(u,v) Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(u,v)*F(u,v) --
 

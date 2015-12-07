@@ -148,7 +148,7 @@ import OCC.IntCurve
 class inttools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Length(*args):
+    def Length(*args) -> "Standard_Real" :
         """
         * returns the length of the edge;
 
@@ -160,7 +160,7 @@ class inttools(object):
         return _IntTools.inttools_Length(*args)
 
     Length = staticmethod(Length)
-    def RemoveIdenticalRoots(*args):
+    def RemoveIdenticalRoots(*args) -> "void" :
         """
         * Remove from the sequence aSeq the Roots that have values ti and tj such as |ti-tj] < anEpsT.
 
@@ -174,7 +174,7 @@ class inttools(object):
         return _IntTools.inttools_RemoveIdenticalRoots(*args)
 
     RemoveIdenticalRoots = staticmethod(RemoveIdenticalRoots)
-    def SortRoots(*args):
+    def SortRoots(*args) -> "void" :
         """
         * Sort the sequence aSeq of the Roots to arrange the Roons in increasing order
 
@@ -188,7 +188,7 @@ class inttools(object):
         return _IntTools.inttools_SortRoots(*args)
 
     SortRoots = staticmethod(SortRoots)
-    def FindRootStates(*args):
+    def FindRootStates(*args) -> "void" :
         """
         * Find the states (before and after) for each Root from the sequence aSeq
 
@@ -202,7 +202,7 @@ class inttools(object):
         return _IntTools.inttools_FindRootStates(*args)
 
     FindRootStates = staticmethod(FindRootStates)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real &" :
         """
         :param P:
         :type P: gp_Pnt
@@ -216,7 +216,7 @@ class inttools(object):
         return _IntTools.inttools_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def GetRadius(*args):
+    def GetRadius(*args) -> "Standard_Real &" :
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -232,7 +232,7 @@ class inttools(object):
         return _IntTools.inttools_GetRadius(*args)
 
     GetRadius = staticmethod(GetRadius)
-    def PrepareArgs(*args):
+    def PrepareArgs(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -266,7 +266,7 @@ inttools._kill_pointed = new_instancemethod(_IntTools.inttools__kill_pointed,Non
 inttools_swigregister = _IntTools.inttools_swigregister
 inttools_swigregister(inttools)
 
-def inttools_Length(*args):
+def inttools_Length(*args) -> "Standard_Real" :
   """
     * returns the length of the edge;
 
@@ -277,7 +277,7 @@ def inttools_Length(*args):
     """
   return _IntTools.inttools_Length(*args)
 
-def inttools_RemoveIdenticalRoots(*args):
+def inttools_RemoveIdenticalRoots(*args) -> "void" :
   """
     * Remove from the sequence aSeq the Roots that have values ti and tj such as |ti-tj] < anEpsT.
 
@@ -290,7 +290,7 @@ def inttools_RemoveIdenticalRoots(*args):
     """
   return _IntTools.inttools_RemoveIdenticalRoots(*args)
 
-def inttools_SortRoots(*args):
+def inttools_SortRoots(*args) -> "void" :
   """
     * Sort the sequence aSeq of the Roots to arrange the Roons in increasing order
 
@@ -303,7 +303,7 @@ def inttools_SortRoots(*args):
     """
   return _IntTools.inttools_SortRoots(*args)
 
-def inttools_FindRootStates(*args):
+def inttools_FindRootStates(*args) -> "void" :
   """
     * Find the states (before and after) for each Root from the sequence aSeq
 
@@ -316,7 +316,7 @@ def inttools_FindRootStates(*args):
     """
   return _IntTools.inttools_FindRootStates(*args)
 
-def inttools_Parameter(*args):
+def inttools_Parameter(*args) -> "Standard_Real &" :
   """
     :param P:
     :type P: gp_Pnt
@@ -329,7 +329,7 @@ def inttools_Parameter(*args):
     """
   return _IntTools.inttools_Parameter(*args)
 
-def inttools_GetRadius(*args):
+def inttools_GetRadius(*args) -> "Standard_Real &" :
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -344,7 +344,7 @@ def inttools_GetRadius(*args):
     """
   return _IntTools.inttools_GetRadius(*args)
 
-def inttools_PrepareArgs(*args):
+def inttools_PrepareArgs(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -384,7 +384,7 @@ class IntTools_Array1OfRange(object):
 
         """
         _IntTools.IntTools_Array1OfRange_swiginit(self,_IntTools.new_IntTools_Array1OfRange(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: IntTools_Range &
@@ -393,21 +393,21 @@ class IntTools_Array1OfRange(object):
         """
         return _IntTools.IntTools_Array1OfRange_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_Array1OfRange_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_Array1OfRange_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_Array1OfRange const &" :
         """
         :param Other:
         :type Other: IntTools_Array1OfRange &
@@ -416,7 +416,7 @@ class IntTools_Array1OfRange(object):
         """
         return _IntTools.IntTools_Array1OfRange_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_Array1OfRange const &" :
         """
         :param Other:
         :type Other: IntTools_Array1OfRange &
@@ -425,28 +425,28 @@ class IntTools_Array1OfRange(object):
         """
         return _IntTools.IntTools_Array1OfRange_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRange_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRange_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRange_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -457,7 +457,7 @@ class IntTools_Array1OfRange(object):
         """
         return _IntTools.IntTools_Array1OfRange_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Range const &" :
         """
         :param Index:
         :type Index: int
@@ -466,7 +466,7 @@ class IntTools_Array1OfRange(object):
         """
         return _IntTools.IntTools_Array1OfRange_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_Range &" :
         """
         :param Index:
         :type Index: int
@@ -519,7 +519,7 @@ class IntTools_Array1OfRoots(object):
 
         """
         _IntTools.IntTools_Array1OfRoots_swiginit(self,_IntTools.new_IntTools_Array1OfRoots(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: IntTools_Root &
@@ -528,21 +528,21 @@ class IntTools_Array1OfRoots(object):
         """
         return _IntTools.IntTools_Array1OfRoots_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_Array1OfRoots_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_Array1OfRoots_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_Array1OfRoots const &" :
         """
         :param Other:
         :type Other: IntTools_Array1OfRoots &
@@ -551,7 +551,7 @@ class IntTools_Array1OfRoots(object):
         """
         return _IntTools.IntTools_Array1OfRoots_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_Array1OfRoots const &" :
         """
         :param Other:
         :type Other: IntTools_Array1OfRoots &
@@ -560,28 +560,28 @@ class IntTools_Array1OfRoots(object):
         """
         return _IntTools.IntTools_Array1OfRoots_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRoots_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRoots_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_Array1OfRoots_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -592,7 +592,7 @@ class IntTools_Array1OfRoots(object):
         """
         return _IntTools.IntTools_Array1OfRoots_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Root const &" :
         """
         :param Index:
         :type Index: int
@@ -601,7 +601,7 @@ class IntTools_Array1OfRoots(object):
         """
         return _IntTools.IntTools_Array1OfRoots_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_Root &" :
         """
         :param Index:
         :type Index: int
@@ -646,7 +646,7 @@ class IntTools_BaseRangeSample(object):
 
         """
         _IntTools.IntTools_BaseRangeSample_swiginit(self,_IntTools.new_IntTools_BaseRangeSample(*args))
-    def SetDepth(self, *args):
+    def SetDepth(self, *args) -> "void" :
         """
         :param theDepth:
         :type theDepth: int
@@ -655,7 +655,7 @@ class IntTools_BaseRangeSample(object):
         """
         return _IntTools.IntTools_BaseRangeSample_SetDepth(self, *args)
 
-    def GetDepth(self, *args):
+    def GetDepth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -729,7 +729,7 @@ class IntTools_BeanFaceIntersector(object):
 
         """
         _IntTools.IntTools_BeanFaceIntersector_swiginit(self,_IntTools.new_IntTools_BeanFaceIntersector(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the algorithm Warning: The parts of the edge which are on the surface of the face and belong to the whole in the face (if there is) is considered as result
 
@@ -778,7 +778,7 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_Init(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets the intersecton context
 
@@ -789,7 +789,7 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_BOPInt_Context const &" :
         """
         * Gets the intersecton context
 
@@ -798,7 +798,7 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_Context(self, *args)
 
-    def SetBeanParameters(self, *args):
+    def SetBeanParameters(self, *args) -> "void" :
         """
         * Set restrictions for curve
 
@@ -811,7 +811,7 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_SetBeanParameters(self, *args)
 
-    def SetSurfaceParameters(self, *args):
+    def SetSurfaceParameters(self, *args) -> "void" :
         """
         * Set restrictions for surface
 
@@ -828,7 +828,7 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_SetSurfaceParameters(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Launches the algorithm
 
@@ -837,14 +837,14 @@ class IntTools_BeanFaceIntersector(object):
         """
         return _IntTools.IntTools_BeanFaceIntersector_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_BeanFaceIntersector_IsDone(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "void" :
         """
         :rtype: IntTools_SequenceOfRanges
 
@@ -892,7 +892,7 @@ class IntTools_CommonPrt(object):
 
         """
         _IntTools.IntTools_CommonPrt_swiginit(self,_IntTools.new_IntTools_CommonPrt(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_CommonPrt &" :
         """
         :param Other:
         :type Other: IntTools_CommonPrt &
@@ -901,7 +901,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_CommonPrt &" :
         """
         :param Other:
         :type Other: IntTools_CommonPrt &
@@ -910,7 +910,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Set(self, *args)
 
-    def SetEdge1(self, *args):
+    def SetEdge1(self, *args) -> "void" :
         """
         * Sets the first edge.
 
@@ -921,7 +921,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetEdge1(self, *args)
 
-    def SetEdge2(self, *args):
+    def SetEdge2(self, *args) -> "void" :
         """
         * Sets the second edge.
 
@@ -932,7 +932,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetEdge2(self, *args)
 
-    def SetType(self, *args):
+    def SetType(self, *args) -> "void" :
         """
         * Sets the type of the common part Vertex or Edge
 
@@ -943,7 +943,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetType(self, *args)
 
-    def SetRange1(self, *args):
+    def SetRange1(self, *args) -> "void" :
         """
         * Sets the range of first edge.
 
@@ -962,7 +962,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetRange1(self, *args)
 
-    def AppendRange2(self, *args):
+    def AppendRange2(self, *args) -> "void" :
         """
         * Appends the range of second edge.
 
@@ -981,7 +981,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_AppendRange2(self, *args)
 
-    def SetVertexParameter1(self, *args):
+    def SetVertexParameter1(self, *args) -> "void" :
         """
         * Sets a parameter of first vertex
 
@@ -992,7 +992,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetVertexParameter1(self, *args)
 
-    def SetVertexParameter2(self, *args):
+    def SetVertexParameter2(self, *args) -> "void" :
         """
         * Sets a parameter of second vertex
 
@@ -1003,7 +1003,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetVertexParameter2(self, *args)
 
-    def Edge1(self, *args):
+    def Edge1(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the first edge.
 
@@ -1012,7 +1012,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Edge1(self, *args)
 
-    def Edge2(self, *args):
+    def Edge2(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the second edge
 
@@ -1021,7 +1021,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Edge2(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * Returns the type of the common part
 
@@ -1030,7 +1030,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Type(self, *args)
 
-    def Range1(self, *args):
+    def Range1(self, *args) -> "void" :
         """
         * Returns the range of first edge
 
@@ -1047,7 +1047,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Range1(self, *args)
 
-    def Ranges2(self, *args):
+    def Ranges2(self, *args) -> "IntTools_SequenceOfRanges const &" :
         """
         * Returns the ranges of second edge.
 
@@ -1056,7 +1056,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Ranges2(self, *args)
 
-    def ChangeRanges2(self, *args):
+    def ChangeRanges2(self, *args) -> "IntTools_SequenceOfRanges &" :
         """
         * Returns the ranges of second edge.
 
@@ -1065,7 +1065,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_ChangeRanges2(self, *args)
 
-    def VertexParameter1(self, *args):
+    def VertexParameter1(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of first vertex
 
@@ -1074,7 +1074,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_VertexParameter1(self, *args)
 
-    def VertexParameter2(self, *args):
+    def VertexParameter2(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of second vertex
 
@@ -1083,7 +1083,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_VertexParameter2(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * Copies me to anOther
 
@@ -1094,7 +1094,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_Copy(self, *args)
 
-    def AllNullFlag(self, *args):
+    def AllNullFlag(self, *args) -> "Standard_Boolean" :
         """
         * Modifier
 
@@ -1103,7 +1103,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_AllNullFlag(self, *args)
 
-    def SetAllNullFlag(self, *args):
+    def SetAllNullFlag(self, *args) -> "void" :
         """
         * Selector
 
@@ -1114,7 +1114,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetAllNullFlag(self, *args)
 
-    def SetBoundingPoints(self, *args):
+    def SetBoundingPoints(self, *args) -> "void" :
         """
         * Modifier
 
@@ -1127,7 +1127,7 @@ class IntTools_CommonPrt(object):
         """
         return _IntTools.IntTools_CommonPrt_SetBoundingPoints(self, *args)
 
-    def BoundingPoints(self, *args):
+    def BoundingPoints(self, *args) -> "void" :
         """
         * Selector
 
@@ -1191,7 +1191,7 @@ class IntTools_Compare(object):
 
         """
         _IntTools.IntTools_Compare_swiginit(self,_IntTools.new_IntTools_Compare(*args))
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <Left> is lower than <Right>.
 
@@ -1204,7 +1204,7 @@ class IntTools_Compare(object):
         """
         return _IntTools.IntTools_Compare_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <Left> is greater than <Right>.
 
@@ -1217,7 +1217,7 @@ class IntTools_Compare(object):
         """
         return _IntTools.IntTools_Compare_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when <Right> and <Left> are equal.
 
@@ -1262,7 +1262,7 @@ class IntTools_CompareRange(object):
 
         """
         _IntTools.IntTools_CompareRange_swiginit(self,_IntTools.new_IntTools_CompareRange(*args))
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <Left> is lower than <Right>.
 
@@ -1275,7 +1275,7 @@ class IntTools_CompareRange(object):
         """
         return _IntTools.IntTools_CompareRange_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <Left> is greater than <Right>.
 
@@ -1288,7 +1288,7 @@ class IntTools_CompareRange(object):
         """
         return _IntTools.IntTools_CompareRange_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when <Right> and <Left> are equal.
 
@@ -1337,7 +1337,7 @@ class IntTools_Curve(object):
 
         """
         _IntTools.IntTools_Curve_swiginit(self,_IntTools.new_IntTools_Curve(*args))
-    def SetCurves(self, *args):
+    def SetCurves(self, *args) -> "void" :
         """
         * Modifier
 
@@ -1352,7 +1352,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_SetCurves(self, *args)
 
-    def SetCurve(self, *args):
+    def SetCurve(self, *args) -> "void" :
         """
         * Modifier
 
@@ -1363,7 +1363,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_SetCurve(self, *args)
 
-    def SetFirstCurve2d(self, *args):
+    def SetFirstCurve2d(self, *args) -> "void" :
         """
         * Modifier
 
@@ -1374,7 +1374,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_SetFirstCurve2d(self, *args)
 
-    def SetSecondCurve2d(self, *args):
+    def SetSecondCurve2d(self, *args) -> "void" :
         """
         * Modifier
 
@@ -1385,7 +1385,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_SetSecondCurve2d(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * Selector
 
@@ -1394,7 +1394,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_Curve(self, *args)
 
-    def FirstCurve2d(self, *args):
+    def FirstCurve2d(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * Selector
 
@@ -1403,7 +1403,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_FirstCurve2d(self, *args)
 
-    def SecondCurve2d(self, *args):
+    def SecondCurve2d(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * Selector
 
@@ -1412,7 +1412,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_SecondCurve2d(self, *args)
 
-    def HasBounds(self, *args):
+    def HasBounds(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if 3d curve is BoundedCurve from Geom
 
@@ -1421,7 +1421,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_HasBounds(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         * Returns boundary parameters and corresponded 3d point. Warning: If HasBounds returns false the returned parameters are equal to zero.
 
@@ -1438,7 +1438,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_Bounds(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "Standard_Boolean" :
         """
         * Computes 3d point corresponded to parameter aT1 Returns true if given parameter aT1 is inside the boundaries of the curve
 
@@ -1451,7 +1451,7 @@ class IntTools_Curve(object):
         """
         return _IntTools.IntTools_Curve_D0(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "GeomAbs_CurveType" :
         """
         * Returns the type of 3d curve
 
@@ -1496,21 +1496,21 @@ class IntTools_CurveRangeLocalizeData(object):
 
         """
         _IntTools.IntTools_CurveRangeLocalizeData_swiginit(self,_IntTools.new_IntTools_CurveRangeLocalizeData(*args))
-    def GetNbSample(self, *args):
+    def GetNbSample(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_GetNbSample(self, *args)
 
-    def GetMinRange(self, *args):
+    def GetMinRange(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_GetMinRange(self, *args)
 
-    def AddOutRange(self, *args):
+    def AddOutRange(self, *args) -> "void" :
         """
         :param theRange:
         :type theRange: IntTools_CurveRangeSample &
@@ -1519,7 +1519,7 @@ class IntTools_CurveRangeLocalizeData(object):
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_AddOutRange(self, *args)
 
-    def AddBox(self, *args):
+    def AddBox(self, *args) -> "void" :
         """
         :param theRange:
         :type theRange: IntTools_CurveRangeSample &
@@ -1530,7 +1530,7 @@ class IntTools_CurveRangeLocalizeData(object):
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_AddBox(self, *args)
 
-    def FindBox(self, *args):
+    def FindBox(self, *args) -> "Standard_Boolean" :
         """
         :param theRange:
         :type theRange: IntTools_CurveRangeSample &
@@ -1541,7 +1541,7 @@ class IntTools_CurveRangeLocalizeData(object):
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_FindBox(self, *args)
 
-    def IsRangeOut(self, *args):
+    def IsRangeOut(self, *args) -> "Standard_Boolean" :
         """
         :param theRange:
         :type theRange: IntTools_CurveRangeSample &
@@ -1550,7 +1550,7 @@ class IntTools_CurveRangeLocalizeData(object):
         """
         return _IntTools.IntTools_CurveRangeLocalizeData_IsRangeOut(self, *args)
 
-    def ListRangeOut(self, *args):
+    def ListRangeOut(self, *args) -> "void" :
         """
         :param theList:
         :type theList: IntTools_ListOfCurveRangeSample &
@@ -1591,7 +1591,7 @@ class IntTools_DataMapIteratorOfDataMapOfCurveSampleBox(OCC.TCollection.TCollect
 
         """
         _IntTools.IntTools_DataMapIteratorOfDataMapOfCurveSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapIteratorOfDataMapOfCurveSampleBox(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: IntTools_DataMapOfCurveSampleBox &
@@ -1600,14 +1600,14 @@ class IntTools_DataMapIteratorOfDataMapOfCurveSampleBox(OCC.TCollection.TCollect
         """
         return _IntTools.IntTools_DataMapIteratorOfDataMapOfCurveSampleBox_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_CurveRangeSample const &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_DataMapIteratorOfDataMapOfCurveSampleBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
@@ -1642,7 +1642,7 @@ class IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox(OCC.TCollection.TColle
 
         """
         _IntTools.IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: IntTools_DataMapOfSurfaceSampleBox &
@@ -1651,14 +1651,14 @@ class IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox(OCC.TCollection.TColle
         """
         return _IntTools.IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_SurfaceRangeSample const &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_DataMapIteratorOfDataMapOfSurfaceSampleBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
@@ -1695,25 +1695,25 @@ class IntTools_DataMapNodeOfDataMapOfCurveSampleBox(OCC.TCollection.TCollection_
 
         """
         _IntTools.IntTools_DataMapNodeOfDataMapOfCurveSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapNodeOfDataMapOfCurveSampleBox(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_DataMapNodeOfDataMapOfCurveSampleBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntTools.IntTools_DataMapNodeOfDataMapOfCurveSampleBox_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_DataMapNodeOfDataMapOfCurveSampleBox self)"""
         return _IntTools.IntTools_DataMapNodeOfDataMapOfCurveSampleBox__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox" :
         """GetHandle(IntTools_DataMapNodeOfDataMapOfCurveSampleBox self) -> Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox"""
         return _IntTools.IntTools_DataMapNodeOfDataMapOfCurveSampleBox_GetHandle(self)
 
@@ -1753,7 +1753,7 @@ Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox._kill_pointed = new_instanc
 Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_swigregister = _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_swigregister
 Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_swigregister(Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox)
 
-def Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_DownCast(*args):
+def Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_DownCast(*args) -> "Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox const" :
   return _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_DownCast(*args)
 Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_DownCast = _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfCurveSampleBox_DownCast
 
@@ -1772,25 +1772,25 @@ class IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox(OCC.TCollection.TCollectio
 
         """
         _IntTools.IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntTools.IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox self)"""
         return _IntTools.IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox" :
         """GetHandle(IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox self) -> Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox"""
         return _IntTools.IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_GetHandle(self)
 
@@ -1830,7 +1830,7 @@ Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox._kill_pointed = new_insta
 Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_swigregister = _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_swigregister
 Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_swigregister(Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox)
 
-def Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_DownCast(*args):
+def Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_DownCast(*args) -> "Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox const" :
   return _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_DownCast(*args)
 Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_DownCast = _IntTools.Handle_IntTools_DataMapNodeOfDataMapOfSurfaceSampleBox_DownCast
 
@@ -1845,7 +1845,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
 
         """
         _IntTools.IntTools_DataMapOfCurveSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapOfCurveSampleBox(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_DataMapOfCurveSampleBox &" :
         """
         :param Other:
         :type Other: IntTools_DataMapOfCurveSampleBox &
@@ -1854,7 +1854,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_DataMapOfCurveSampleBox &" :
         """
         :param Other:
         :type Other: IntTools_DataMapOfCurveSampleBox &
@@ -1863,7 +1863,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1872,14 +1872,14 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1890,7 +1890,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1899,7 +1899,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1908,7 +1908,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Bnd_Box const &" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1917,7 +1917,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Bnd_Box &" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1926,7 +1926,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1935,7 +1935,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: IntTools_CurveRangeSample &
@@ -1944,7 +1944,7 @@ class IntTools_DataMapOfCurveSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfCurveSampleBox_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_DataMapOfCurveSampleBox self)"""
         return _IntTools.IntTools_DataMapOfCurveSampleBox__kill_pointed(self)
 
@@ -1982,7 +1982,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
 
         """
         _IntTools.IntTools_DataMapOfSurfaceSampleBox_swiginit(self,_IntTools.new_IntTools_DataMapOfSurfaceSampleBox(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_DataMapOfSurfaceSampleBox &" :
         """
         :param Other:
         :type Other: IntTools_DataMapOfSurfaceSampleBox &
@@ -1991,7 +1991,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_DataMapOfSurfaceSampleBox &" :
         """
         :param Other:
         :type Other: IntTools_DataMapOfSurfaceSampleBox &
@@ -2000,7 +2000,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2009,14 +2009,14 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2027,7 +2027,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2036,7 +2036,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2045,7 +2045,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Bnd_Box const &" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2054,7 +2054,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Bnd_Box &" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2063,7 +2063,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2072,7 +2072,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: IntTools_SurfaceRangeSample &
@@ -2081,7 +2081,7 @@ class IntTools_DataMapOfSurfaceSampleBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_DataMapOfSurfaceSampleBox self)"""
         return _IntTools.IntTools_DataMapOfSurfaceSampleBox__kill_pointed(self)
 
@@ -2143,7 +2143,7 @@ class IntTools_EdgeEdge(object):
 
         """
         _IntTools.IntTools_EdgeEdge_swiginit(self,_IntTools.new_IntTools_EdgeEdge(*args))
-    def SetEdge1(self, *args):
+    def SetEdge1(self, *args) -> "void" :
         """
         * Sets the first edge
 
@@ -2164,7 +2164,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_SetEdge1(self, *args)
 
-    def SetRange1(self, *args):
+    def SetRange1(self, *args) -> "void" :
         """
         * Sets the range for the first edge
 
@@ -2183,7 +2183,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_SetRange1(self, *args)
 
-    def SetEdge2(self, *args):
+    def SetEdge2(self, *args) -> "void" :
         """
         * Sets the second edge
 
@@ -2204,7 +2204,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_SetEdge2(self, *args)
 
-    def SetRange2(self, *args):
+    def SetRange2(self, *args) -> "void" :
         """
         * Sets the range for the second edge
 
@@ -2223,7 +2223,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_SetRange2(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the intersection between edges
 
@@ -2232,7 +2232,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if common part(s) is(are) found
 
@@ -2241,7 +2241,7 @@ class IntTools_EdgeEdge(object):
         """
         return _IntTools.IntTools_EdgeEdge_IsDone(self, *args)
 
-    def CommonParts(self, *args):
+    def CommonParts(self, *args) -> "IntTools_SequenceOfCommonPrts const &" :
         """
         * Returns common parts
 
@@ -2280,7 +2280,7 @@ class IntTools_EdgeFace(object):
 
         """
         _IntTools.IntTools_EdgeFace_swiginit(self,_IntTools.new_IntTools_EdgeFace(*args))
-    def SetEdge(self, *args):
+    def SetEdge(self, *args) -> "void" :
         """
         * Initializes algorithm by the edge anEdge
 
@@ -2291,7 +2291,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetEdge(self, *args)
 
-    def SetTolE(self, *args):
+    def SetTolE(self, *args) -> "void" :
         """
         * Initializes algorithm by edge tolerance
 
@@ -2302,7 +2302,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetTolE(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Initializes algorithm by the face aFace
 
@@ -2313,7 +2313,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetFace(self, *args)
 
-    def SetTolF(self, *args):
+    def SetTolF(self, *args) -> "void" :
         """
         * Initializes algorithm by face tolerance
 
@@ -2324,7 +2324,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetTolF(self, *args)
 
-    def SetDiscretize(self, *args):
+    def SetDiscretize(self, *args) -> "void" :
         """
         * Initializes algorithm by discretization value
 
@@ -2335,7 +2335,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetDiscretize(self, *args)
 
-    def SetDeflection(self, *args):
+    def SetDeflection(self, *args) -> "void" :
         """
         * Initializes algorithm by deflection value
 
@@ -2346,7 +2346,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetDeflection(self, *args)
 
-    def SetEpsilonT(self, *args):
+    def SetEpsilonT(self, *args) -> "void" :
         """
         * Initializes algorithm by parameter tolerance
 
@@ -2357,7 +2357,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetEpsilonT(self, *args)
 
-    def SetEpsilonNull(self, *args):
+    def SetEpsilonNull(self, *args) -> "void" :
         """
         * Initializes algorithm by distance tolerance
 
@@ -2368,7 +2368,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetEpsilonNull(self, *args)
 
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         * Sets boundaries for edge. The algorithm processes edge inside these boundaries.
 
@@ -2387,7 +2387,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetRange(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets the intersecton context
 
@@ -2398,7 +2398,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_BOPInt_Context const &" :
         """
         * Gets the intersecton context
 
@@ -2407,7 +2407,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_Context(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Launches the process
 
@@ -2416,7 +2416,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if computation was done successfully, otherwise returns false
 
@@ -2425,7 +2425,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_IsDone(self, *args)
 
-    def ErrorStatus(self, *args):
+    def ErrorStatus(self, *args) -> "Standard_Integer" :
         """
         * Returns code of completion 0 - means successful completion 1 - the process was not started 2,3,4,5 - invalid source data for the algorithm 6 - discretization failed 7 - no projectable ranges found 11 - distance computing error
 
@@ -2434,7 +2434,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_ErrorStatus(self, *args)
 
-    def CommonParts(self, *args):
+    def CommonParts(self, *args) -> "IntTools_SequenceOfCommonPrts const &" :
         """
         * Returns results
 
@@ -2443,7 +2443,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_CommonParts(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "IntTools_Range const &" :
         """
         * Returns boundaries for edge
 
@@ -2452,7 +2452,7 @@ class IntTools_EdgeFace(object):
         """
         return _IntTools.IntTools_EdgeFace_Range(self, *args)
 
-    def IsEqDistance(*args):
+    def IsEqDistance(*args) -> "Standard_Real &" :
         """
         * 
 
@@ -2498,7 +2498,7 @@ IntTools_EdgeFace._kill_pointed = new_instancemethod(_IntTools.IntTools_EdgeFace
 IntTools_EdgeFace_swigregister = _IntTools.IntTools_EdgeFace_swigregister
 IntTools_EdgeFace_swigregister(IntTools_EdgeFace)
 
-def IntTools_EdgeFace_IsEqDistance(*args):
+def IntTools_EdgeFace_IsEqDistance(*args) -> "Standard_Real &" :
   """
     * 
 
@@ -2534,7 +2534,7 @@ class IntTools_FClass2d(object):
 
         """
         _IntTools.IntTools_FClass2d_swiginit(self,_IntTools.new_IntTools_FClass2d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes algorithm by the face F and tolerance Tol
 
@@ -2547,7 +2547,7 @@ class IntTools_FClass2d(object):
         """
         return _IntTools.IntTools_FClass2d_Init(self, *args)
 
-    def PerformInfinitePoint(self, *args):
+    def PerformInfinitePoint(self, *args) -> "TopAbs_State" :
         """
         * Returns state of infinite 2d point relatively to (0, 0)
 
@@ -2556,7 +2556,7 @@ class IntTools_FClass2d(object):
         """
         return _IntTools.IntTools_FClass2d_PerformInfinitePoint(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "TopAbs_State" :
         """
         * Returns state of the 2d point Puv. If RecadreOnPeriodic is true (defalut value), for the periodic surface 2d point, adjusted to period, is classified.
 
@@ -2569,7 +2569,7 @@ class IntTools_FClass2d(object):
         """
         return _IntTools.IntTools_FClass2d_Perform(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Destructor
 
@@ -2578,7 +2578,7 @@ class IntTools_FClass2d(object):
         """
         return _IntTools.IntTools_FClass2d_Destroy(self, *args)
 
-    def TestOnRestriction(self, *args):
+    def TestOnRestriction(self, *args) -> "TopAbs_State" :
         """
         * Test a point with +- an offset (Tol) and returns On if some points are OUT an some are IN (Caution: Internal use . see the code for more details)
 
@@ -2593,7 +2593,7 @@ class IntTools_FClass2d(object):
         """
         return _IntTools.IntTools_FClass2d_TestOnRestriction(self, *args)
 
-    def IsHole(self, *args):
+    def IsHole(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -2629,7 +2629,7 @@ class IntTools_FaceFace(object):
 
         """
         _IntTools.IntTools_FaceFace_swiginit(self,_IntTools.new_IntTools_FaceFace(*args))
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         * Modifier
 
@@ -2646,7 +2646,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_SetParameters(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersects underliing surfaces of F1 and F2 Use sum of tolerance of F1 and F2 as intersection criteria
 
@@ -2659,7 +2659,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the intersection was successful
 
@@ -2668,7 +2668,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_IsDone(self, *args)
 
-    def Lines(self, *args):
+    def Lines(self, *args) -> "IntTools_SequenceOfCurves const &" :
         """
         * Returns sequence of 3d curves as result of intersection
 
@@ -2677,7 +2677,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_Lines(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "IntTools_SequenceOfPntOn2Faces const &" :
         """
         * Returns sequence of 3d curves as result of intersection
 
@@ -2686,7 +2686,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_Points(self, *args)
 
-    def TolReached3d(self, *args):
+    def TolReached3d(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance reached during approximation. If approximation was not done, returns zero.
 
@@ -2695,7 +2695,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_TolReached3d(self, *args)
 
-    def TolReached2d(self, *args):
+    def TolReached2d(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance reached during approximation. If approximation was not done, returns zero.
 
@@ -2704,7 +2704,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_TolReached2d(self, *args)
 
-    def Face1(self, *args):
+    def Face1(self, *args) -> "TopoDS_Face const" :
         """
         * Returns first of processed faces
 
@@ -2713,7 +2713,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_Face1(self, *args)
 
-    def Face2(self, *args):
+    def Face2(self, *args) -> "TopoDS_Face const" :
         """
         * Returns second of processed faces
 
@@ -2722,7 +2722,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_Face2(self, *args)
 
-    def TangentFaces(self, *args):
+    def TangentFaces(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if faces are tangent
 
@@ -2731,7 +2731,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_TangentFaces(self, *args)
 
-    def PrepareLines3D(self, *args):
+    def PrepareLines3D(self, *args) -> "void" :
         """
         * Provides post-processing the result lines. <bToSplit> - the flag. In case of <bToSplit> is true the closed 3D-curves will be splitted on parts. In case of <bToSplit> is false the closed 3D-curves remain untouched.
 
@@ -2742,7 +2742,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_PrepareLines3D(self, *args)
 
-    def SetList(self, *args):
+    def SetList(self, *args) -> "void" :
         """
         :param ListOfPnts:
         :type ListOfPnts: IntSurf_ListOfPntOn2S &
@@ -2751,7 +2751,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_SetList(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets the intersecton context
 
@@ -2762,7 +2762,7 @@ class IntTools_FaceFace(object):
         """
         return _IntTools.IntTools_FaceFace_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_BOPInt_Context const &" :
         """
         * Gets the intersecton context
 
@@ -2816,40 +2816,40 @@ class IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress(OCC.TCollect
 
         """
         _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_swiginit(self,_IntTools.new_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress self) -> Standard_Integer"""
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress self, Standard_Integer value)"""
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Address &" :
         """
         :rtype: Standard_Address
 
         """
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress self)"""
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress" :
         """GetHandle(IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress self) -> Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress"""
         return _IntTools.IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_GetHandle(self)
 
@@ -2892,7 +2892,7 @@ Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress._kill_point
 Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_swigregister = _IntTools.Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_swigregister
 Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_swigregister(Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress)
 
-def Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_DownCast(*args):
+def Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_DownCast(*args) -> "Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress const" :
   return _IntTools.Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_DownCast(*args)
 Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_DownCast = _IntTools.Handle_IntTools_IndexedDataMapNodeOfIndexedDataMapOfTransientAddress_DownCast
 
@@ -2907,7 +2907,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
 
         """
         _IntTools.IntTools_IndexedDataMapOfTransientAddress_swiginit(self,_IntTools.new_IntTools_IndexedDataMapOfTransientAddress(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_IndexedDataMapOfTransientAddress &" :
         """
         :param Other:
         :type Other: IntTools_IndexedDataMapOfTransientAddress &
@@ -2916,7 +2916,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_IndexedDataMapOfTransientAddress &" :
         """
         :param Other:
         :type Other: IntTools_IndexedDataMapOfTransientAddress &
@@ -2925,7 +2925,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2934,14 +2934,14 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2952,7 +2952,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -2965,14 +2965,14 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2981,7 +2981,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param I:
         :type I: int
@@ -2990,7 +2990,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "Standard_Address const &" :
         """
         :param I:
         :type I: int
@@ -2999,7 +2999,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "Standard_Address &" :
         """
         :param I:
         :type I: int
@@ -3008,7 +3008,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3017,7 +3017,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "Standard_Address const &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3026,7 +3026,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "Standard_Address &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3035,7 +3035,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3044,7 +3044,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -3053,7 +3053,7 @@ class IntTools_IndexedDataMapOfTransientAddress(OCC.TCollection.TCollection_Basi
         """
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_IndexedDataMapOfTransientAddress self)"""
         return _IntTools.IntTools_IndexedDataMapOfTransientAddress__kill_pointed(self)
 
@@ -3098,7 +3098,7 @@ class IntTools_ListIteratorOfListOfBox(object):
 
         """
         _IntTools.IntTools_ListIteratorOfListOfBox_swiginit(self,_IntTools.new_IntTools_ListIteratorOfListOfBox(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: IntTools_ListOfBox &
@@ -3107,21 +3107,21 @@ class IntTools_ListIteratorOfListOfBox(object):
         """
         return _IntTools.IntTools_ListIteratorOfListOfBox_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfBox_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfBox_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
@@ -3157,7 +3157,7 @@ class IntTools_ListIteratorOfListOfCurveRangeSample(object):
 
         """
         _IntTools.IntTools_ListIteratorOfListOfCurveRangeSample_swiginit(self,_IntTools.new_IntTools_ListIteratorOfListOfCurveRangeSample(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: IntTools_ListOfCurveRangeSample &
@@ -3166,21 +3166,21 @@ class IntTools_ListIteratorOfListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListIteratorOfListOfCurveRangeSample_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfCurveRangeSample_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfCurveRangeSample_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
@@ -3216,7 +3216,7 @@ class IntTools_ListIteratorOfListOfSurfaceRangeSample(object):
 
         """
         _IntTools.IntTools_ListIteratorOfListOfSurfaceRangeSample_swiginit(self,_IntTools.new_IntTools_ListIteratorOfListOfSurfaceRangeSample(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: IntTools_ListOfSurfaceRangeSample &
@@ -3225,21 +3225,21 @@ class IntTools_ListIteratorOfListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListIteratorOfListOfSurfaceRangeSample_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfSurfaceRangeSample_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListIteratorOfListOfSurfaceRangeSample_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
@@ -3275,18 +3275,18 @@ class IntTools_ListNodeOfListOfBox(OCC.TCollection.TCollection_MapNode):
 
         """
         _IntTools.IntTools_ListNodeOfListOfBox_swiginit(self,_IntTools.new_IntTools_ListNodeOfListOfBox(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntTools.IntTools_ListNodeOfListOfBox_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_ListNodeOfListOfBox self)"""
         return _IntTools.IntTools_ListNodeOfListOfBox__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_ListNodeOfListOfBox" :
         """GetHandle(IntTools_ListNodeOfListOfBox self) -> Handle_IntTools_ListNodeOfListOfBox"""
         return _IntTools.IntTools_ListNodeOfListOfBox_GetHandle(self)
 
@@ -3325,7 +3325,7 @@ Handle_IntTools_ListNodeOfListOfBox._kill_pointed = new_instancemethod(_IntTools
 Handle_IntTools_ListNodeOfListOfBox_swigregister = _IntTools.Handle_IntTools_ListNodeOfListOfBox_swigregister
 Handle_IntTools_ListNodeOfListOfBox_swigregister(Handle_IntTools_ListNodeOfListOfBox)
 
-def Handle_IntTools_ListNodeOfListOfBox_DownCast(*args):
+def Handle_IntTools_ListNodeOfListOfBox_DownCast(*args) -> "Handle_IntTools_ListNodeOfListOfBox const" :
   return _IntTools.Handle_IntTools_ListNodeOfListOfBox_DownCast(*args)
 Handle_IntTools_ListNodeOfListOfBox_DownCast = _IntTools.Handle_IntTools_ListNodeOfListOfBox_DownCast
 
@@ -3342,18 +3342,18 @@ class IntTools_ListNodeOfListOfCurveRangeSample(OCC.TCollection.TCollection_MapN
 
         """
         _IntTools.IntTools_ListNodeOfListOfCurveRangeSample_swiginit(self,_IntTools.new_IntTools_ListNodeOfListOfCurveRangeSample(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_ListNodeOfListOfCurveRangeSample_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_ListNodeOfListOfCurveRangeSample self)"""
         return _IntTools.IntTools_ListNodeOfListOfCurveRangeSample__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_ListNodeOfListOfCurveRangeSample" :
         """GetHandle(IntTools_ListNodeOfListOfCurveRangeSample self) -> Handle_IntTools_ListNodeOfListOfCurveRangeSample"""
         return _IntTools.IntTools_ListNodeOfListOfCurveRangeSample_GetHandle(self)
 
@@ -3392,7 +3392,7 @@ Handle_IntTools_ListNodeOfListOfCurveRangeSample._kill_pointed = new_instancemet
 Handle_IntTools_ListNodeOfListOfCurveRangeSample_swigregister = _IntTools.Handle_IntTools_ListNodeOfListOfCurveRangeSample_swigregister
 Handle_IntTools_ListNodeOfListOfCurveRangeSample_swigregister(Handle_IntTools_ListNodeOfListOfCurveRangeSample)
 
-def Handle_IntTools_ListNodeOfListOfCurveRangeSample_DownCast(*args):
+def Handle_IntTools_ListNodeOfListOfCurveRangeSample_DownCast(*args) -> "Handle_IntTools_ListNodeOfListOfCurveRangeSample const" :
   return _IntTools.Handle_IntTools_ListNodeOfListOfCurveRangeSample_DownCast(*args)
 Handle_IntTools_ListNodeOfListOfCurveRangeSample_DownCast = _IntTools.Handle_IntTools_ListNodeOfListOfCurveRangeSample_DownCast
 
@@ -3409,18 +3409,18 @@ class IntTools_ListNodeOfListOfSurfaceRangeSample(OCC.TCollection.TCollection_Ma
 
         """
         _IntTools.IntTools_ListNodeOfListOfSurfaceRangeSample_swiginit(self,_IntTools.new_IntTools_ListNodeOfListOfSurfaceRangeSample(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_ListNodeOfListOfSurfaceRangeSample_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_ListNodeOfListOfSurfaceRangeSample self)"""
         return _IntTools.IntTools_ListNodeOfListOfSurfaceRangeSample__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_ListNodeOfListOfSurfaceRangeSample" :
         """GetHandle(IntTools_ListNodeOfListOfSurfaceRangeSample self) -> Handle_IntTools_ListNodeOfListOfSurfaceRangeSample"""
         return _IntTools.IntTools_ListNodeOfListOfSurfaceRangeSample_GetHandle(self)
 
@@ -3459,7 +3459,7 @@ Handle_IntTools_ListNodeOfListOfSurfaceRangeSample._kill_pointed = new_instancem
 Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_swigregister = _IntTools.Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_swigregister
 Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_swigregister(Handle_IntTools_ListNodeOfListOfSurfaceRangeSample)
 
-def Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_DownCast(*args):
+def Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_DownCast(*args) -> "Handle_IntTools_ListNodeOfListOfSurfaceRangeSample const" :
   return _IntTools.Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_DownCast(*args)
 Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_DownCast = _IntTools.Handle_IntTools_ListNodeOfListOfSurfaceRangeSample_DownCast
 
@@ -3472,7 +3472,7 @@ class IntTools_ListOfBox(object):
 
         """
         _IntTools.IntTools_ListOfBox_swiginit(self,_IntTools.new_IntTools_ListOfBox(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfBox &
@@ -3481,7 +3481,7 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfBox &
@@ -3490,28 +3490,28 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_ListOfBox_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfBox_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListOfBox_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box &
@@ -3530,7 +3530,7 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box &
@@ -3549,28 +3549,28 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntTools.IntTools_ListOfBox_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntTools.IntTools_ListOfBox_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfBox_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: IntTools_ListIteratorOfListOfBox &
@@ -3579,7 +3579,7 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box &
@@ -3596,7 +3596,7 @@ class IntTools_ListOfBox(object):
         """
         return _IntTools.IntTools_ListOfBox_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Bnd_Box &
@@ -3647,7 +3647,7 @@ class IntTools_ListOfCurveRangeSample(object):
 
         """
         _IntTools.IntTools_ListOfCurveRangeSample_swiginit(self,_IntTools.new_IntTools_ListOfCurveRangeSample(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfCurveRangeSample &
@@ -3656,7 +3656,7 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfCurveRangeSample &
@@ -3665,28 +3665,28 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_CurveRangeSample &
@@ -3705,7 +3705,7 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_CurveRangeSample &
@@ -3724,28 +3724,28 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: IntTools_ListIteratorOfListOfCurveRangeSample &
@@ -3754,7 +3754,7 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_CurveRangeSample &
@@ -3771,7 +3771,7 @@ class IntTools_ListOfCurveRangeSample(object):
         """
         return _IntTools.IntTools_ListOfCurveRangeSample_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_CurveRangeSample &
@@ -3822,7 +3822,7 @@ class IntTools_ListOfSurfaceRangeSample(object):
 
         """
         _IntTools.IntTools_ListOfSurfaceRangeSample_swiginit(self,_IntTools.new_IntTools_ListOfSurfaceRangeSample(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfSurfaceRangeSample &
@@ -3831,7 +3831,7 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntTools_ListOfSurfaceRangeSample &
@@ -3840,28 +3840,28 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_SurfaceRangeSample &
@@ -3880,7 +3880,7 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_SurfaceRangeSample &
@@ -3899,28 +3899,28 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: IntTools_ListIteratorOfListOfSurfaceRangeSample &
@@ -3929,7 +3929,7 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_SurfaceRangeSample &
@@ -3946,7 +3946,7 @@ class IntTools_ListOfSurfaceRangeSample(object):
         """
         return _IntTools.IntTools_ListOfSurfaceRangeSample_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: IntTools_SurfaceRangeSample &
@@ -4001,7 +4001,7 @@ class IntTools_MapIteratorOfMapOfCurveSample(OCC.TCollection.TCollection_BasicMa
 
         """
         _IntTools.IntTools_MapIteratorOfMapOfCurveSample_swiginit(self,_IntTools.new_IntTools_MapIteratorOfMapOfCurveSample(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: IntTools_MapOfCurveSample &
@@ -4010,7 +4010,7 @@ class IntTools_MapIteratorOfMapOfCurveSample(OCC.TCollection.TCollection_BasicMa
         """
         return _IntTools.IntTools_MapIteratorOfMapOfCurveSample_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_CurveRangeSample const &" :
         """
         :rtype: IntTools_CurveRangeSample
 
@@ -4044,7 +4044,7 @@ class IntTools_MapIteratorOfMapOfSurfaceSample(OCC.TCollection.TCollection_Basic
 
         """
         _IntTools.IntTools_MapIteratorOfMapOfSurfaceSample_swiginit(self,_IntTools.new_IntTools_MapIteratorOfMapOfSurfaceSample(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: IntTools_MapOfSurfaceSample &
@@ -4053,7 +4053,7 @@ class IntTools_MapIteratorOfMapOfSurfaceSample(OCC.TCollection.TCollection_Basic
         """
         return _IntTools.IntTools_MapIteratorOfMapOfSurfaceSample_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_SurfaceRangeSample const &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
@@ -4085,7 +4085,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
 
         """
         _IntTools.IntTools_MapOfCurveSample_swiginit(self,_IntTools.new_IntTools_MapOfCurveSample(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_MapOfCurveSample &" :
         """
         :param Other:
         :type Other: IntTools_MapOfCurveSample &
@@ -4094,7 +4094,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_MapOfCurveSample &" :
         """
         :param Other:
         :type Other: IntTools_MapOfCurveSample &
@@ -4103,7 +4103,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -4112,14 +4112,14 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_MapOfCurveSample_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_CurveRangeSample &
@@ -4128,7 +4128,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_CurveRangeSample &
@@ -4137,7 +4137,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_CurveRangeSample &
@@ -4146,7 +4146,7 @@ class IntTools_MapOfCurveSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfCurveSample_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_MapOfCurveSample self)"""
         return _IntTools.IntTools_MapOfCurveSample__kill_pointed(self)
 
@@ -4180,7 +4180,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
 
         """
         _IntTools.IntTools_MapOfSurfaceSample_swiginit(self,_IntTools.new_IntTools_MapOfSurfaceSample(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_MapOfSurfaceSample &" :
         """
         :param Other:
         :type Other: IntTools_MapOfSurfaceSample &
@@ -4189,7 +4189,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_MapOfSurfaceSample &" :
         """
         :param Other:
         :type Other: IntTools_MapOfSurfaceSample &
@@ -4198,7 +4198,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -4207,14 +4207,14 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_SurfaceRangeSample &
@@ -4223,7 +4223,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_SurfaceRangeSample &
@@ -4232,7 +4232,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: IntTools_SurfaceRangeSample &
@@ -4241,7 +4241,7 @@ class IntTools_MapOfSurfaceSample(OCC.TCollection.TCollection_BasicMap):
         """
         return _IntTools.IntTools_MapOfSurfaceSample_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_MapOfSurfaceSample self)"""
         return _IntTools.IntTools_MapOfSurfaceSample__kill_pointed(self)
 
@@ -4293,7 +4293,7 @@ class IntTools_MarkedRangeSet(object):
 
         """
         _IntTools.IntTools_MarkedRangeSet_swiginit(self,_IntTools.new_IntTools_MarkedRangeSet(*args))
-    def SetBoundaries(self, *args):
+    def SetBoundaries(self, *args) -> "void" :
         """
         * build set of ranges which consists of one range with boundary values theFirstBoundary and theLastBoundary
 
@@ -4308,7 +4308,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_SetBoundaries(self, *args)
 
-    def SetRanges(self, *args):
+    def SetRanges(self, *args) -> "void" :
         """
         * Build set of ranges based on the array of progressive sorted values Warning: The function do not check if the values of array are not sorted It should be checked before function invocation
 
@@ -4321,7 +4321,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_SetRanges(self, *args)
 
-    def InsertRange(self, *args):
+    def InsertRange(self, *args) -> "Standard_Boolean" :
         """
         * Inserts a new range marked with flag theFlag It replace the existing ranges or parts of ranges and their flags. Returns True if the range is inside the initial boundaries, otherwise or in case of some error returns False
 
@@ -4366,7 +4366,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_InsertRange(self, *args)
 
-    def SetFlag(self, *args):
+    def SetFlag(self, *args) -> "void" :
         """
         * Set flag theFlag for range with index theIndex
 
@@ -4379,7 +4379,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_SetFlag(self, *args)
 
-    def Flag(self, *args):
+    def Flag(self, *args) -> "Standard_Integer" :
         """
         * Returns flag of the range with index theIndex
 
@@ -4390,7 +4390,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_Flag(self, *args)
 
-    def GetIndices(self, *args):
+    def GetIndices(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param theValue:
         :type theValue: float
@@ -4399,7 +4399,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_GetIndices(self, *args)
 
-    def GetIndex(self, *args):
+    def GetIndex(self, *args) -> "Standard_Integer" :
         """
         * Returns index of range which contains theValue. If theValue do not belong any range returns 0.
 
@@ -4418,7 +4418,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_GetIndex(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns number of ranges
 
@@ -4427,7 +4427,7 @@ class IntTools_MarkedRangeSet(object):
         """
         return _IntTools.IntTools_MarkedRangeSet_Length(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "IntTools_Range" :
         """
         * Returns the range with index theIndex. the Index can be from 1 to Length()
 
@@ -4478,7 +4478,7 @@ class IntTools_PntOn2Faces(object):
 
         """
         _IntTools.IntTools_PntOn2Faces_swiginit(self,_IntTools.new_IntTools_PntOn2Faces(*args))
-    def SetP1(self, *args):
+    def SetP1(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4489,7 +4489,7 @@ class IntTools_PntOn2Faces(object):
         """
         return _IntTools.IntTools_PntOn2Faces_SetP1(self, *args)
 
-    def SetP2(self, *args):
+    def SetP2(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4500,7 +4500,7 @@ class IntTools_PntOn2Faces(object):
         """
         return _IntTools.IntTools_PntOn2Faces_SetP2(self, *args)
 
-    def SetValid(self, *args):
+    def SetValid(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4511,7 +4511,7 @@ class IntTools_PntOn2Faces(object):
         """
         return _IntTools.IntTools_PntOn2Faces_SetValid(self, *args)
 
-    def P1(self, *args):
+    def P1(self, *args) -> "IntTools_PntOnFace const &" :
         """
         * Selector
 
@@ -4520,7 +4520,7 @@ class IntTools_PntOn2Faces(object):
         """
         return _IntTools.IntTools_PntOn2Faces_P1(self, *args)
 
-    def P2(self, *args):
+    def P2(self, *args) -> "IntTools_PntOnFace const &" :
         """
         * Selector
 
@@ -4529,7 +4529,7 @@ class IntTools_PntOn2Faces(object):
         """
         return _IntTools.IntTools_PntOn2Faces_P2(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Selector
 
@@ -4567,7 +4567,7 @@ class IntTools_PntOnFace(object):
 
         """
         _IntTools.IntTools_PntOnFace_swiginit(self,_IntTools.new_IntTools_PntOnFace(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes me by aFace, a 3d point and it's UV parameters on face
 
@@ -4584,7 +4584,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_Init(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4595,7 +4595,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_SetFace(self, *args)
 
-    def SetPnt(self, *args):
+    def SetPnt(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4606,7 +4606,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_SetPnt(self, *args)
 
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4619,7 +4619,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_SetParameters(self, *args)
 
-    def SetValid(self, *args):
+    def SetValid(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4630,7 +4630,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_SetValid(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Selector
 
@@ -4639,7 +4639,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_Face(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Selector
 
@@ -4648,7 +4648,7 @@ class IntTools_PntOnFace(object):
         """
         return _IntTools.IntTools_PntOnFace_Pnt(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Selector
 
@@ -4684,7 +4684,7 @@ IntTools_PntOnFace_swigregister(IntTools_PntOnFace)
 class IntTools_QuickSort(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: IntTools_Array1OfRoots &
@@ -4710,7 +4710,7 @@ IntTools_QuickSort._kill_pointed = new_instancemethod(_IntTools.IntTools_QuickSo
 IntTools_QuickSort_swigregister = _IntTools.IntTools_QuickSort_swigregister
 IntTools_QuickSort_swigregister(IntTools_QuickSort)
 
-def IntTools_QuickSort_Sort(*args):
+def IntTools_QuickSort_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: IntTools_Array1OfRoots &
@@ -4724,7 +4724,7 @@ def IntTools_QuickSort_Sort(*args):
 class IntTools_QuickSortRange(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: IntTools_Array1OfRange &
@@ -4750,7 +4750,7 @@ IntTools_QuickSortRange._kill_pointed = new_instancemethod(_IntTools.IntTools_Qu
 IntTools_QuickSortRange_swigregister = _IntTools.IntTools_QuickSortRange_swigregister
 IntTools_QuickSortRange_swigregister(IntTools_QuickSortRange)
 
-def IntTools_QuickSortRange_Sort(*args):
+def IntTools_QuickSortRange_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: IntTools_Array1OfRange &
@@ -4780,7 +4780,7 @@ class IntTools_Range(object):
 
         """
         _IntTools.IntTools_Range_swiginit(self,_IntTools.new_IntTools_Range(*args))
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4791,7 +4791,7 @@ class IntTools_Range(object):
         """
         return _IntTools.IntTools_Range_SetFirst(self, *args)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """
         * Modifier
 
@@ -4802,7 +4802,7 @@ class IntTools_Range(object):
         """
         return _IntTools.IntTools_Range_SetLast(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Real" :
         """
         * Selector
 
@@ -4811,7 +4811,7 @@ class IntTools_Range(object):
         """
         return _IntTools.IntTools_Range_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Real" :
         """
         * Selector
 
@@ -4820,7 +4820,7 @@ class IntTools_Range(object):
         """
         return _IntTools.IntTools_Range_Last(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "void" :
         """
         * Selector
 
@@ -4869,7 +4869,7 @@ class IntTools_Root(object):
 
         """
         _IntTools.IntTools_Root_swiginit(self,_IntTools.new_IntTools_Root(*args))
-    def SetRoot(self, *args):
+    def SetRoot(self, *args) -> "void" :
         """
         * Sets the Root's value
 
@@ -4880,7 +4880,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetRoot(self, *args)
 
-    def SetType(self, *args):
+    def SetType(self, *args) -> "void" :
         """
         * Sets the Root's Type
 
@@ -4891,7 +4891,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetType(self, *args)
 
-    def SetStateBefore(self, *args):
+    def SetStateBefore(self, *args) -> "void" :
         """
         * Set the value of the state before the root (at t=Root-dt)
 
@@ -4902,7 +4902,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetStateBefore(self, *args)
 
-    def SetStateAfter(self, *args):
+    def SetStateAfter(self, *args) -> "void" :
         """
         * Set the value of the state after the root (at t=Root-dt)
 
@@ -4913,7 +4913,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetStateAfter(self, *args)
 
-    def SetLayerHeight(self, *args):
+    def SetLayerHeight(self, *args) -> "void" :
         """
         * Not used in Edge/Edge algorithm
 
@@ -4924,7 +4924,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetLayerHeight(self, *args)
 
-    def SetInterval(self, *args):
+    def SetInterval(self, *args) -> "void" :
         """
         * Sets the interval from which the Root was found [t1,t2] and the corresponding values of the function on the bounds f(t1), f(t2).
 
@@ -4941,7 +4941,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_SetInterval(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "Standard_Real" :
         """
         * Returns the Root value
 
@@ -4950,7 +4950,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_Root(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "Standard_Integer" :
         """
         * Returns the type of the root =0 - Simple (was found by bisection method); =2 - Smart when f1=0, f2!=0 or vice versa (was found by Fibbonacci method); =1 - Pure (pure zero for all t [t1,t2] );
 
@@ -4959,7 +4959,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_Type(self, *args)
 
-    def StateBefore(self, *args):
+    def StateBefore(self, *args) -> "TopAbs_State" :
         """
         * Returns the state before the root
 
@@ -4968,7 +4968,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_StateBefore(self, *args)
 
-    def StateAfter(self, *args):
+    def StateAfter(self, *args) -> "TopAbs_State" :
         """
         * Returns the state after the root
 
@@ -4977,7 +4977,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_StateAfter(self, *args)
 
-    def LayerHeight(self, *args):
+    def LayerHeight(self, *args) -> "Standard_Real" :
         """
         * Not used in Edge/Edge algorithm
 
@@ -4986,7 +4986,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_LayerHeight(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Returns the validity flag for the root, True if myStateBefore==TopAbs_OUT && myStateAfter==TopAbs_IN or myStateBefore==TopAbs_OUT && myStateAfter==TopAbs_ON or myStateBefore==TopAbs_ON && myStateAfter==TopAbs_OUT or myStateBefore==TopAbs_IN && myStateAfter==TopAbs_OUT . For other cases it returns False.
 
@@ -4995,7 +4995,7 @@ class IntTools_Root(object):
         """
         return _IntTools.IntTools_Root_IsValid(self, *args)
 
-    def Interval(self, *args):
+    def Interval(self, *args) -> "void" :
         """
         * Returns the values of interval from which the Root was found [t1,t2] and the corresponding values of the function on the bounds f(t1), f(t2).
 
@@ -5052,18 +5052,18 @@ class IntTools_SequenceNodeOfSequenceOfCommonPrts(OCC.TCollection.TCollection_Se
 
         """
         _IntTools.IntTools_SequenceNodeOfSequenceOfCommonPrts_swiginit(self,_IntTools.new_IntTools_SequenceNodeOfSequenceOfCommonPrts(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_CommonPrt &" :
         """
         :rtype: IntTools_CommonPrt
 
         """
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCommonPrts_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_SequenceNodeOfSequenceOfCommonPrts self)"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCommonPrts__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts" :
         """GetHandle(IntTools_SequenceNodeOfSequenceOfCommonPrts self) -> Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCommonPrts_GetHandle(self)
 
@@ -5102,7 +5102,7 @@ Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts._kill_pointed = new_instancem
 Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_swigregister = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_swigregister
 Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_swigregister(Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts)
 
-def Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_DownCast(*args):
+def Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_DownCast(*args) -> "Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts const" :
   return _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_DownCast(*args)
 Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_DownCast = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCommonPrts_DownCast
 
@@ -5121,18 +5121,18 @@ class IntTools_SequenceNodeOfSequenceOfCurves(OCC.TCollection.TCollection_SeqNod
 
         """
         _IntTools.IntTools_SequenceNodeOfSequenceOfCurves_swiginit(self,_IntTools.new_IntTools_SequenceNodeOfSequenceOfCurves(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Curve &" :
         """
         :rtype: IntTools_Curve
 
         """
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCurves_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_SequenceNodeOfSequenceOfCurves self)"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCurves__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_SequenceNodeOfSequenceOfCurves" :
         """GetHandle(IntTools_SequenceNodeOfSequenceOfCurves self) -> Handle_IntTools_SequenceNodeOfSequenceOfCurves"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfCurves_GetHandle(self)
 
@@ -5171,7 +5171,7 @@ Handle_IntTools_SequenceNodeOfSequenceOfCurves._kill_pointed = new_instancemetho
 Handle_IntTools_SequenceNodeOfSequenceOfCurves_swigregister = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCurves_swigregister
 Handle_IntTools_SequenceNodeOfSequenceOfCurves_swigregister(Handle_IntTools_SequenceNodeOfSequenceOfCurves)
 
-def Handle_IntTools_SequenceNodeOfSequenceOfCurves_DownCast(*args):
+def Handle_IntTools_SequenceNodeOfSequenceOfCurves_DownCast(*args) -> "Handle_IntTools_SequenceNodeOfSequenceOfCurves const" :
   return _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCurves_DownCast(*args)
 Handle_IntTools_SequenceNodeOfSequenceOfCurves_DownCast = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfCurves_DownCast
 
@@ -5190,18 +5190,18 @@ class IntTools_SequenceNodeOfSequenceOfPntOn2Faces(OCC.TCollection.TCollection_S
 
         """
         _IntTools.IntTools_SequenceNodeOfSequenceOfPntOn2Faces_swiginit(self,_IntTools.new_IntTools_SequenceNodeOfSequenceOfPntOn2Faces(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_PntOn2Faces &" :
         """
         :rtype: IntTools_PntOn2Faces
 
         """
         return _IntTools.IntTools_SequenceNodeOfSequenceOfPntOn2Faces_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_SequenceNodeOfSequenceOfPntOn2Faces self)"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfPntOn2Faces__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces" :
         """GetHandle(IntTools_SequenceNodeOfSequenceOfPntOn2Faces self) -> Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfPntOn2Faces_GetHandle(self)
 
@@ -5240,7 +5240,7 @@ Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces._kill_pointed = new_instance
 Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_swigregister = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_swigregister
 Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_swigregister(Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces)
 
-def Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_DownCast(*args):
+def Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_DownCast(*args) -> "Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces const" :
   return _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_DownCast(*args)
 Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_DownCast = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfPntOn2Faces_DownCast
 
@@ -5259,18 +5259,18 @@ class IntTools_SequenceNodeOfSequenceOfRanges(OCC.TCollection.TCollection_SeqNod
 
         """
         _IntTools.IntTools_SequenceNodeOfSequenceOfRanges_swiginit(self,_IntTools.new_IntTools_SequenceNodeOfSequenceOfRanges(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Range &" :
         """
         :rtype: IntTools_Range
 
         """
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRanges_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_SequenceNodeOfSequenceOfRanges self)"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRanges__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_SequenceNodeOfSequenceOfRanges" :
         """GetHandle(IntTools_SequenceNodeOfSequenceOfRanges self) -> Handle_IntTools_SequenceNodeOfSequenceOfRanges"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRanges_GetHandle(self)
 
@@ -5309,7 +5309,7 @@ Handle_IntTools_SequenceNodeOfSequenceOfRanges._kill_pointed = new_instancemetho
 Handle_IntTools_SequenceNodeOfSequenceOfRanges_swigregister = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRanges_swigregister
 Handle_IntTools_SequenceNodeOfSequenceOfRanges_swigregister(Handle_IntTools_SequenceNodeOfSequenceOfRanges)
 
-def Handle_IntTools_SequenceNodeOfSequenceOfRanges_DownCast(*args):
+def Handle_IntTools_SequenceNodeOfSequenceOfRanges_DownCast(*args) -> "Handle_IntTools_SequenceNodeOfSequenceOfRanges const" :
   return _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRanges_DownCast(*args)
 Handle_IntTools_SequenceNodeOfSequenceOfRanges_DownCast = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRanges_DownCast
 
@@ -5328,18 +5328,18 @@ class IntTools_SequenceNodeOfSequenceOfRoots(OCC.TCollection.TCollection_SeqNode
 
         """
         _IntTools.IntTools_SequenceNodeOfSequenceOfRoots_swiginit(self,_IntTools.new_IntTools_SequenceNodeOfSequenceOfRoots(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Root &" :
         """
         :rtype: IntTools_Root
 
         """
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRoots_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_SequenceNodeOfSequenceOfRoots self)"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRoots__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_SequenceNodeOfSequenceOfRoots" :
         """GetHandle(IntTools_SequenceNodeOfSequenceOfRoots self) -> Handle_IntTools_SequenceNodeOfSequenceOfRoots"""
         return _IntTools.IntTools_SequenceNodeOfSequenceOfRoots_GetHandle(self)
 
@@ -5378,7 +5378,7 @@ Handle_IntTools_SequenceNodeOfSequenceOfRoots._kill_pointed = new_instancemethod
 Handle_IntTools_SequenceNodeOfSequenceOfRoots_swigregister = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRoots_swigregister
 Handle_IntTools_SequenceNodeOfSequenceOfRoots_swigregister(Handle_IntTools_SequenceNodeOfSequenceOfRoots)
 
-def Handle_IntTools_SequenceNodeOfSequenceOfRoots_DownCast(*args):
+def Handle_IntTools_SequenceNodeOfSequenceOfRoots_DownCast(*args) -> "Handle_IntTools_SequenceNodeOfSequenceOfRoots const" :
   return _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRoots_DownCast(*args)
 Handle_IntTools_SequenceNodeOfSequenceOfRoots_DownCast = _IntTools.Handle_IntTools_SequenceNodeOfSequenceOfRoots_DownCast
 
@@ -5391,14 +5391,14 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntTools.IntTools_SequenceOfCommonPrts_swiginit(self,_IntTools.new_IntTools_SequenceOfCommonPrts(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SequenceOfCommonPrts const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfCommonPrts &
@@ -5407,7 +5407,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SequenceOfCommonPrts const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfCommonPrts &
@@ -5416,7 +5416,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_CommonPrt &
@@ -5429,7 +5429,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_CommonPrt &
@@ -5442,7 +5442,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5459,7 +5459,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5476,21 +5476,21 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_CommonPrt const &" :
         """
         :rtype: IntTools_CommonPrt
 
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_CommonPrt const &" :
         """
         :rtype: IntTools_CommonPrt
 
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5501,7 +5501,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_CommonPrt const &" :
         """
         :param Index:
         :type Index: int
@@ -5510,7 +5510,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5521,7 +5521,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_CommonPrt &" :
         """
         :param Index:
         :type Index: int
@@ -5530,7 +5530,7 @@ class IntTools_SequenceOfCommonPrts(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCommonPrts_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5580,14 +5580,14 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntTools.IntTools_SequenceOfCurves_swiginit(self,_IntTools.new_IntTools_SequenceOfCurves(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SequenceOfCurves_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SequenceOfCurves const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfCurves &
@@ -5596,7 +5596,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SequenceOfCurves const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfCurves &
@@ -5605,7 +5605,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Curve &
@@ -5618,7 +5618,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Curve &
@@ -5631,7 +5631,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5648,7 +5648,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5665,21 +5665,21 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_Curve const &" :
         """
         :rtype: IntTools_Curve
 
         """
         return _IntTools.IntTools_SequenceOfCurves_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_Curve const &" :
         """
         :rtype: IntTools_Curve
 
         """
         return _IntTools.IntTools_SequenceOfCurves_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5690,7 +5690,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Curve const &" :
         """
         :param Index:
         :type Index: int
@@ -5699,7 +5699,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5710,7 +5710,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_Curve &" :
         """
         :param Index:
         :type Index: int
@@ -5719,7 +5719,7 @@ class IntTools_SequenceOfCurves(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfCurves_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5769,14 +5769,14 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntTools.IntTools_SequenceOfPntOn2Faces_swiginit(self,_IntTools.new_IntTools_SequenceOfPntOn2Faces(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SequenceOfPntOn2Faces const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfPntOn2Faces &
@@ -5785,7 +5785,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SequenceOfPntOn2Faces const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfPntOn2Faces &
@@ -5794,7 +5794,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_PntOn2Faces &
@@ -5807,7 +5807,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_PntOn2Faces &
@@ -5820,7 +5820,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5837,7 +5837,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5854,21 +5854,21 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_PntOn2Faces const &" :
         """
         :rtype: IntTools_PntOn2Faces
 
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_PntOn2Faces const &" :
         """
         :rtype: IntTools_PntOn2Faces
 
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5879,7 +5879,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_PntOn2Faces const &" :
         """
         :param Index:
         :type Index: int
@@ -5888,7 +5888,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5899,7 +5899,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_PntOn2Faces &" :
         """
         :param Index:
         :type Index: int
@@ -5908,7 +5908,7 @@ class IntTools_SequenceOfPntOn2Faces(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfPntOn2Faces_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5958,14 +5958,14 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntTools.IntTools_SequenceOfRanges_swiginit(self,_IntTools.new_IntTools_SequenceOfRanges(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SequenceOfRanges_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SequenceOfRanges const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfRanges &
@@ -5974,7 +5974,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SequenceOfRanges const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfRanges &
@@ -5983,7 +5983,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Range &
@@ -5996,7 +5996,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Range &
@@ -6009,7 +6009,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6026,7 +6026,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6043,21 +6043,21 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_Range const &" :
         """
         :rtype: IntTools_Range
 
         """
         return _IntTools.IntTools_SequenceOfRanges_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_Range const &" :
         """
         :rtype: IntTools_Range
 
         """
         return _IntTools.IntTools_SequenceOfRanges_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6068,7 +6068,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Range const &" :
         """
         :param Index:
         :type Index: int
@@ -6077,7 +6077,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6088,7 +6088,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_Range &" :
         """
         :param Index:
         :type Index: int
@@ -6097,7 +6097,7 @@ class IntTools_SequenceOfRanges(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRanges_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6147,14 +6147,14 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntTools.IntTools_SequenceOfRoots_swiginit(self,_IntTools.new_IntTools_SequenceOfRoots(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SequenceOfRoots_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SequenceOfRoots const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfRoots &
@@ -6163,7 +6163,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SequenceOfRoots const &" :
         """
         :param Other:
         :type Other: IntTools_SequenceOfRoots &
@@ -6172,7 +6172,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Root &
@@ -6185,7 +6185,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntTools_Root &
@@ -6198,7 +6198,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6215,7 +6215,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6232,21 +6232,21 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntTools_Root const &" :
         """
         :rtype: IntTools_Root
 
         """
         return _IntTools.IntTools_SequenceOfRoots_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntTools_Root const &" :
         """
         :rtype: IntTools_Root
 
         """
         return _IntTools.IntTools_SequenceOfRoots_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6257,7 +6257,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntTools_Root const &" :
         """
         :param Index:
         :type Index: int
@@ -6266,7 +6266,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6277,7 +6277,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntTools_Root &" :
         """
         :param Index:
         :type Index: int
@@ -6286,7 +6286,7 @@ class IntTools_SequenceOfRoots(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntTools.IntTools_SequenceOfRoots_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6340,18 +6340,18 @@ class IntTools_StdMapNodeOfMapOfCurveSample(OCC.TCollection.TCollection_MapNode)
 
         """
         _IntTools.IntTools_StdMapNodeOfMapOfCurveSample_swiginit(self,_IntTools.new_IntTools_StdMapNodeOfMapOfCurveSample(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_CurveRangeSample &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_StdMapNodeOfMapOfCurveSample_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_StdMapNodeOfMapOfCurveSample self)"""
         return _IntTools.IntTools_StdMapNodeOfMapOfCurveSample__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_StdMapNodeOfMapOfCurveSample" :
         """GetHandle(IntTools_StdMapNodeOfMapOfCurveSample self) -> Handle_IntTools_StdMapNodeOfMapOfCurveSample"""
         return _IntTools.IntTools_StdMapNodeOfMapOfCurveSample_GetHandle(self)
 
@@ -6390,7 +6390,7 @@ Handle_IntTools_StdMapNodeOfMapOfCurveSample._kill_pointed = new_instancemethod(
 Handle_IntTools_StdMapNodeOfMapOfCurveSample_swigregister = _IntTools.Handle_IntTools_StdMapNodeOfMapOfCurveSample_swigregister
 Handle_IntTools_StdMapNodeOfMapOfCurveSample_swigregister(Handle_IntTools_StdMapNodeOfMapOfCurveSample)
 
-def Handle_IntTools_StdMapNodeOfMapOfCurveSample_DownCast(*args):
+def Handle_IntTools_StdMapNodeOfMapOfCurveSample_DownCast(*args) -> "Handle_IntTools_StdMapNodeOfMapOfCurveSample const" :
   return _IntTools.Handle_IntTools_StdMapNodeOfMapOfCurveSample_DownCast(*args)
 Handle_IntTools_StdMapNodeOfMapOfCurveSample_DownCast = _IntTools.Handle_IntTools_StdMapNodeOfMapOfCurveSample_DownCast
 
@@ -6407,18 +6407,18 @@ class IntTools_StdMapNodeOfMapOfSurfaceSample(OCC.TCollection.TCollection_MapNod
 
         """
         _IntTools.IntTools_StdMapNodeOfMapOfSurfaceSample_swiginit(self,_IntTools.new_IntTools_StdMapNodeOfMapOfSurfaceSample(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :rtype: IntTools_SurfaceRangeSample
 
         """
         return _IntTools.IntTools_StdMapNodeOfMapOfSurfaceSample_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_StdMapNodeOfMapOfSurfaceSample self)"""
         return _IntTools.IntTools_StdMapNodeOfMapOfSurfaceSample__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_StdMapNodeOfMapOfSurfaceSample" :
         """GetHandle(IntTools_StdMapNodeOfMapOfSurfaceSample self) -> Handle_IntTools_StdMapNodeOfMapOfSurfaceSample"""
         return _IntTools.IntTools_StdMapNodeOfMapOfSurfaceSample_GetHandle(self)
 
@@ -6457,7 +6457,7 @@ Handle_IntTools_StdMapNodeOfMapOfSurfaceSample._kill_pointed = new_instancemetho
 Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_swigregister = _IntTools.Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_swigregister
 Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_swigregister(Handle_IntTools_StdMapNodeOfMapOfSurfaceSample)
 
-def Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_DownCast(*args):
+def Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_DownCast(*args) -> "Handle_IntTools_StdMapNodeOfMapOfSurfaceSample const" :
   return _IntTools.Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_DownCast(*args)
 Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_DownCast = _IntTools.Handle_IntTools_StdMapNodeOfMapOfSurfaceSample_DownCast
 
@@ -6484,7 +6484,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
 
         """
         _IntTools.IntTools_SurfaceRangeLocalizeData_swiginit(self,_IntTools.new_IntTools_SurfaceRangeLocalizeData(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SurfaceRangeLocalizeData &" :
         """
         :param Other:
         :type Other: IntTools_SurfaceRangeLocalizeData &
@@ -6493,7 +6493,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SurfaceRangeLocalizeData &" :
         """
         :param Other:
         :type Other: IntTools_SurfaceRangeLocalizeData &
@@ -6502,35 +6502,35 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_Set(self, *args)
 
-    def GetNbSampleU(self, *args):
+    def GetNbSampleU(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetNbSampleU(self, *args)
 
-    def GetNbSampleV(self, *args):
+    def GetNbSampleV(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetNbSampleV(self, *args)
 
-    def GetMinRangeU(self, *args):
+    def GetMinRangeU(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetMinRangeU(self, *args)
 
-    def GetMinRangeV(self, *args):
+    def GetMinRangeV(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetMinRangeV(self, *args)
 
-    def AddOutRange(self, *args):
+    def AddOutRange(self, *args) -> "void" :
         """
         :param theRange:
         :type theRange: IntTools_SurfaceRangeSample &
@@ -6539,7 +6539,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_AddOutRange(self, *args)
 
-    def AddBox(self, *args):
+    def AddBox(self, *args) -> "void" :
         """
         :param theRange:
         :type theRange: IntTools_SurfaceRangeSample &
@@ -6550,7 +6550,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_AddBox(self, *args)
 
-    def FindBox(self, *args):
+    def FindBox(self, *args) -> "Standard_Boolean" :
         """
         :param theRange:
         :type theRange: IntTools_SurfaceRangeSample &
@@ -6561,7 +6561,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_FindBox(self, *args)
 
-    def IsRangeOut(self, *args):
+    def IsRangeOut(self, *args) -> "Standard_Boolean" :
         """
         :param theRange:
         :type theRange: IntTools_SurfaceRangeSample &
@@ -6570,7 +6570,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_IsRangeOut(self, *args)
 
-    def ListRangeOut(self, *args):
+    def ListRangeOut(self, *args) -> "void" :
         """
         :param theList:
         :type theList: IntTools_ListOfSurfaceRangeSample &
@@ -6579,14 +6579,14 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_ListRangeOut(self, *args)
 
-    def RemoveRangeOutAll(self, *args):
+    def RemoveRangeOutAll(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_RemoveRangeOutAll(self, *args)
 
-    def SetGridDeflection(self, *args):
+    def SetGridDeflection(self, *args) -> "void" :
         """
         * Set the grid deflection.
 
@@ -6597,7 +6597,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetGridDeflection(self, *args)
 
-    def GetGridDeflection(self, *args):
+    def GetGridDeflection(self, *args) -> "Standard_Real" :
         """
         * Query the grid deflection.
 
@@ -6606,7 +6606,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetGridDeflection(self, *args)
 
-    def SetRangeUGrid(self, *args):
+    def SetRangeUGrid(self, *args) -> "void" :
         """
         * Set the range U of the grid of points.
 
@@ -6617,7 +6617,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetRangeUGrid(self, *args)
 
-    def GetRangeUGrid(self, *args):
+    def GetRangeUGrid(self, *args) -> "Standard_Integer" :
         """
         * Query the range U of the grid of points.
 
@@ -6626,7 +6626,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetRangeUGrid(self, *args)
 
-    def SetUParam(self, *args):
+    def SetUParam(self, *args) -> "void" :
         """
         * Set the U parameter of the grid points at that index.
 
@@ -6639,7 +6639,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetUParam(self, *args)
 
-    def GetUParam(self, *args):
+    def GetUParam(self, *args) -> "Standard_Real" :
         """
         * Query the U parameter of the grid points at that index.
 
@@ -6650,7 +6650,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetUParam(self, *args)
 
-    def SetRangeVGrid(self, *args):
+    def SetRangeVGrid(self, *args) -> "void" :
         """
         * Set the range V of the grid of points.
 
@@ -6661,7 +6661,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetRangeVGrid(self, *args)
 
-    def GetRangeVGrid(self, *args):
+    def GetRangeVGrid(self, *args) -> "Standard_Integer" :
         """
         * Query the range V of the grid of points.
 
@@ -6670,7 +6670,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetRangeVGrid(self, *args)
 
-    def SetVParam(self, *args):
+    def SetVParam(self, *args) -> "void" :
         """
         * Set the V parameter of the grid points at that index.
 
@@ -6683,7 +6683,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetVParam(self, *args)
 
-    def GetVParam(self, *args):
+    def GetVParam(self, *args) -> "Standard_Real" :
         """
         * Query the V parameter of the grid points at that index.
 
@@ -6694,7 +6694,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetVParam(self, *args)
 
-    def SetGridPoint(self, *args):
+    def SetGridPoint(self, *args) -> "void" :
         """
         * Set the grid point.
 
@@ -6709,7 +6709,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetGridPoint(self, *args)
 
-    def GetGridPoint(self, *args):
+    def GetGridPoint(self, *args) -> "gp_Pnt const" :
         """
         * Set the grid point.
 
@@ -6722,7 +6722,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetGridPoint(self, *args)
 
-    def SetFrame(self, *args):
+    def SetFrame(self, *args) -> "void" :
         """
         * Sets the frame area. Used to work with grid points.
 
@@ -6739,7 +6739,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_SetFrame(self, *args)
 
-    def GetNBUPointsInFrame(self, *args):
+    def GetNBUPointsInFrame(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of grid points on U direction in frame.
 
@@ -6748,7 +6748,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetNBUPointsInFrame(self, *args)
 
-    def GetNBVPointsInFrame(self, *args):
+    def GetNBVPointsInFrame(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of grid points on V direction in frame.
 
@@ -6757,7 +6757,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetNBVPointsInFrame(self, *args)
 
-    def GetPointInFrame(self, *args):
+    def GetPointInFrame(self, *args) -> "gp_Pnt const" :
         """
         * Returns the grid point in frame.
 
@@ -6770,7 +6770,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetPointInFrame(self, *args)
 
-    def GetUParamInFrame(self, *args):
+    def GetUParamInFrame(self, *args) -> "Standard_Real" :
         """
         * Query the U parameter of the grid points at that index in frame.
 
@@ -6781,7 +6781,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetUParamInFrame(self, *args)
 
-    def GetVParamInFrame(self, *args):
+    def GetVParamInFrame(self, *args) -> "Standard_Real" :
         """
         * Query the V parameter of the grid points at that index in frame.
 
@@ -6792,7 +6792,7 @@ class IntTools_SurfaceRangeLocalizeData(object):
         """
         return _IntTools.IntTools_SurfaceRangeLocalizeData_GetVParamInFrame(self, *args)
 
-    def ClearGrid(self, *args):
+    def ClearGrid(self, *args) -> "void" :
         """
         * Clears the grid of points.
 
@@ -6873,7 +6873,7 @@ class IntTools_SurfaceRangeSample(object):
 
         """
         _IntTools.IntTools_SurfaceRangeSample_swiginit(self,_IntTools.new_IntTools_SurfaceRangeSample(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :param Other:
         :type Other: IntTools_SurfaceRangeSample &
@@ -6882,7 +6882,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntTools_SurfaceRangeSample &" :
         """
         :param Other:
         :type Other: IntTools_SurfaceRangeSample &
@@ -6891,7 +6891,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_Set(self, *args)
 
-    def SetRanges(self, *args):
+    def SetRanges(self, *args) -> "void" :
         """
         :param theRangeU:
         :type theRangeU: IntTools_CurveRangeSample &
@@ -6902,7 +6902,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetRanges(self, *args)
 
-    def GetRanges(self, *args):
+    def GetRanges(self, *args) -> "void" :
         """
         :param theRangeU:
         :type theRangeU: IntTools_CurveRangeSample &
@@ -6913,7 +6913,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetRanges(self, *args)
 
-    def SetIndexes(self, *args):
+    def SetIndexes(self, *args) -> "void" :
         """
         :param theIndexU:
         :type theIndexU: int
@@ -6924,7 +6924,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetIndexes(self, *args)
 
-    def GetIndexes(self, *args):
+    def GetIndexes(self, *args) -> "void" :
         """
         :param theIndexU:
         :type theIndexU: int &
@@ -6935,7 +6935,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetIndexes(self, *args)
 
-    def GetDepths(self, *args):
+    def GetDepths(self, *args) -> "void" :
         """
         :param theDepthU:
         :type theDepthU: int &
@@ -6946,7 +6946,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetDepths(self, *args)
 
-    def SetSampleRangeU(self, *args):
+    def SetSampleRangeU(self, *args) -> "void" :
         """
         :param theRangeSampleU:
         :type theRangeSampleU: IntTools_CurveRangeSample &
@@ -6955,14 +6955,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetSampleRangeU(self, *args)
 
-    def GetSampleRangeU(self, *args):
+    def GetSampleRangeU(self, *args) -> "IntTools_CurveRangeSample const &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetSampleRangeU(self, *args)
 
-    def SetSampleRangeV(self, *args):
+    def SetSampleRangeV(self, *args) -> "void" :
         """
         :param theRangeSampleV:
         :type theRangeSampleV: IntTools_CurveRangeSample &
@@ -6971,14 +6971,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetSampleRangeV(self, *args)
 
-    def GetSampleRangeV(self, *args):
+    def GetSampleRangeV(self, *args) -> "IntTools_CurveRangeSample const &" :
         """
         :rtype: IntTools_CurveRangeSample
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetSampleRangeV(self, *args)
 
-    def SetIndexU(self, *args):
+    def SetIndexU(self, *args) -> "void" :
         """
         :param theIndexU:
         :type theIndexU: int
@@ -6987,14 +6987,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetIndexU(self, *args)
 
-    def GetIndexU(self, *args):
+    def GetIndexU(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetIndexU(self, *args)
 
-    def SetIndexV(self, *args):
+    def SetIndexV(self, *args) -> "void" :
         """
         :param theIndexV:
         :type theIndexV: int
@@ -7003,14 +7003,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetIndexV(self, *args)
 
-    def GetIndexV(self, *args):
+    def GetIndexV(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetIndexV(self, *args)
 
-    def SetDepthU(self, *args):
+    def SetDepthU(self, *args) -> "void" :
         """
         :param theDepthU:
         :type theDepthU: int
@@ -7019,14 +7019,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetDepthU(self, *args)
 
-    def GetDepthU(self, *args):
+    def GetDepthU(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetDepthU(self, *args)
 
-    def SetDepthV(self, *args):
+    def SetDepthV(self, *args) -> "void" :
         """
         :param theDepthV:
         :type theDepthV: int
@@ -7035,14 +7035,14 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_SetDepthV(self, *args)
 
-    def GetDepthV(self, *args):
+    def GetDepthV(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetDepthV(self, *args)
 
-    def GetRangeU(self, *args):
+    def GetRangeU(self, *args) -> "IntTools_Range" :
         """
         :param theFirstU:
         :type theFirstU: float
@@ -7055,7 +7055,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetRangeU(self, *args)
 
-    def GetRangeV(self, *args):
+    def GetRangeV(self, *args) -> "IntTools_Range" :
         """
         :param theFirstV:
         :type theFirstV: float
@@ -7068,7 +7068,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetRangeV(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Other:
         :type Other: IntTools_SurfaceRangeSample &
@@ -7077,7 +7077,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_IsEqual(self, *args)
 
-    def GetRangeIndexUDeeper(self, *args):
+    def GetRangeIndexUDeeper(self, *args) -> "Standard_Integer" :
         """
         :param theNbSampleU:
         :type theNbSampleU: int
@@ -7086,7 +7086,7 @@ class IntTools_SurfaceRangeSample(object):
         """
         return _IntTools.IntTools_SurfaceRangeSample_GetRangeIndexUDeeper(self, *args)
 
-    def GetRangeIndexVDeeper(self, *args):
+    def GetRangeIndexVDeeper(self, *args) -> "Standard_Integer" :
         """
         :param theNbSampleV:
         :type theNbSampleV: int
@@ -7134,7 +7134,7 @@ IntTools_SurfaceRangeSample_swigregister(IntTools_SurfaceRangeSample)
 class IntTools_SurfaceRangeSampleMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -7148,7 +7148,7 @@ class IntTools_SurfaceRangeSampleMapHasher(object):
         return _IntTools.IntTools_SurfaceRangeSampleMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -7176,7 +7176,7 @@ IntTools_SurfaceRangeSampleMapHasher._kill_pointed = new_instancemethod(_IntTool
 IntTools_SurfaceRangeSampleMapHasher_swigregister = _IntTools.IntTools_SurfaceRangeSampleMapHasher_swigregister
 IntTools_SurfaceRangeSampleMapHasher_swigregister(IntTools_SurfaceRangeSampleMapHasher)
 
-def IntTools_SurfaceRangeSampleMapHasher_HashCode(*args):
+def IntTools_SurfaceRangeSampleMapHasher_HashCode(*args) -> "Standard_Integer" :
   """
     * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -7189,7 +7189,7 @@ def IntTools_SurfaceRangeSampleMapHasher_HashCode(*args):
     """
   return _IntTools.IntTools_SurfaceRangeSampleMapHasher_HashCode(*args)
 
-def IntTools_SurfaceRangeSampleMapHasher_IsEqual(*args):
+def IntTools_SurfaceRangeSampleMapHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -7205,7 +7205,7 @@ def IntTools_SurfaceRangeSampleMapHasher_IsEqual(*args):
 class IntTools_Tools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ComputeVV(*args):
+    def ComputeVV(*args) -> "Standard_Integer" :
         """
         * Computes distance between vertex V1 and vertex V2, if the distance is less than sum of vertex tolerances returns zero, otherwise returns negative value
 
@@ -7219,7 +7219,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_ComputeVV(*args)
 
     ComputeVV = staticmethod(ComputeVV)
-    def HasInternalEdge(*args):
+    def HasInternalEdge(*args) -> "Standard_Boolean" :
         """
         * Returns True if wire aW contains edges with INTERNAL orientation
 
@@ -7231,7 +7231,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_HasInternalEdge(*args)
 
     HasInternalEdge = staticmethod(HasInternalEdge)
-    def MakeFaceFromWireAndFace(*args):
+    def MakeFaceFromWireAndFace(*args) -> "void" :
         """
         * Build a face based on surface of given face aF and bounded by wire aW
 
@@ -7247,7 +7247,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_MakeFaceFromWireAndFace(*args)
 
     MakeFaceFromWireAndFace = staticmethod(MakeFaceFromWireAndFace)
-    def ClassifyPointByFace(*args):
+    def ClassifyPointByFace(*args) -> "TopAbs_State" :
         """
         * 
 
@@ -7261,7 +7261,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_ClassifyPointByFace(*args)
 
     ClassifyPointByFace = staticmethod(ClassifyPointByFace)
-    def IsMiddlePointsEqual(*args):
+    def IsMiddlePointsEqual(*args) -> "Standard_Boolean" :
         """
         * Gets boundary of parameters of E1 and E2. Computes 3d points on each corresponded to average parameters. Returns True if distance between computed points is less than sum of edge tolerance, otherwise returns False.
 
@@ -7275,7 +7275,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_IsMiddlePointsEqual(*args)
 
     IsMiddlePointsEqual = staticmethod(IsMiddlePointsEqual)
-    def IsVertex(*args):
+    def IsVertex(*args) -> "Standard_Boolean" :
         """
         * Computes square distance between a point on the edge E corresponded to parameter t and vertices of edge E. Returns True if this distance is less than square tolerance of vertex, otherwise returns false.
 
@@ -7315,7 +7315,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_IsVertex(*args)
 
     IsVertex = staticmethod(IsVertex)
-    def IntermediatePoint(*args):
+    def IntermediatePoint(*args) -> "Standard_Real" :
         """
         * Returns some value between aFirst and aLast
 
@@ -7329,7 +7329,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_IntermediatePoint(*args)
 
     IntermediatePoint = staticmethod(IntermediatePoint)
-    def SplitCurve(*args):
+    def SplitCurve(*args) -> "Standard_Integer" :
         """
         * Split aC by average parameter if aC is closed in 3D. Returns positive value if splitting has been done, otherwise returns zero.
 
@@ -7343,7 +7343,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_SplitCurve(*args)
 
     SplitCurve = staticmethod(SplitCurve)
-    def RejectLines(*args):
+    def RejectLines(*args) -> "void" :
         """
         * Puts curves from aSIn to aSOut except those curves that are coincide with first curve from aSIn.
 
@@ -7357,7 +7357,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_RejectLines(*args)
 
     RejectLines = staticmethod(RejectLines)
-    def IsDirsCoinside(*args):
+    def IsDirsCoinside(*args) -> "Standard_Boolean" :
         """
         * Returns True if D1 and D2 coinside
 
@@ -7381,7 +7381,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_IsDirsCoinside(*args)
 
     IsDirsCoinside = staticmethod(IsDirsCoinside)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         * Returns True if aC is BoundedCurve from Geom and the distance between first point of the curve aC and last point is less than 1.e-12
 
@@ -7393,7 +7393,7 @@ class IntTools_Tools(object):
         return _IntTools.IntTools_Tools_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def CurveTolerance(*args):
+    def CurveTolerance(*args) -> "Standard_Real" :
         """
         * Returns adaptive tolerance for given aTolBase if aC is trimmed curve and basis curve is parabola, otherwise returns value of aTolBase
 
@@ -7421,7 +7421,7 @@ IntTools_Tools._kill_pointed = new_instancemethod(_IntTools.IntTools_Tools__kill
 IntTools_Tools_swigregister = _IntTools.IntTools_Tools_swigregister
 IntTools_Tools_swigregister(IntTools_Tools)
 
-def IntTools_Tools_ComputeVV(*args):
+def IntTools_Tools_ComputeVV(*args) -> "Standard_Integer" :
   """
     * Computes distance between vertex V1 and vertex V2, if the distance is less than sum of vertex tolerances returns zero, otherwise returns negative value
 
@@ -7434,7 +7434,7 @@ def IntTools_Tools_ComputeVV(*args):
     """
   return _IntTools.IntTools_Tools_ComputeVV(*args)
 
-def IntTools_Tools_HasInternalEdge(*args):
+def IntTools_Tools_HasInternalEdge(*args) -> "Standard_Boolean" :
   """
     * Returns True if wire aW contains edges with INTERNAL orientation
 
@@ -7445,7 +7445,7 @@ def IntTools_Tools_HasInternalEdge(*args):
     """
   return _IntTools.IntTools_Tools_HasInternalEdge(*args)
 
-def IntTools_Tools_MakeFaceFromWireAndFace(*args):
+def IntTools_Tools_MakeFaceFromWireAndFace(*args) -> "void" :
   """
     * Build a face based on surface of given face aF and bounded by wire aW
 
@@ -7460,7 +7460,7 @@ def IntTools_Tools_MakeFaceFromWireAndFace(*args):
     """
   return _IntTools.IntTools_Tools_MakeFaceFromWireAndFace(*args)
 
-def IntTools_Tools_ClassifyPointByFace(*args):
+def IntTools_Tools_ClassifyPointByFace(*args) -> "TopAbs_State" :
   """
     * 
 
@@ -7473,7 +7473,7 @@ def IntTools_Tools_ClassifyPointByFace(*args):
     """
   return _IntTools.IntTools_Tools_ClassifyPointByFace(*args)
 
-def IntTools_Tools_IsMiddlePointsEqual(*args):
+def IntTools_Tools_IsMiddlePointsEqual(*args) -> "Standard_Boolean" :
   """
     * Gets boundary of parameters of E1 and E2. Computes 3d points on each corresponded to average parameters. Returns True if distance between computed points is less than sum of edge tolerance, otherwise returns False.
 
@@ -7486,7 +7486,7 @@ def IntTools_Tools_IsMiddlePointsEqual(*args):
     """
   return _IntTools.IntTools_Tools_IsMiddlePointsEqual(*args)
 
-def IntTools_Tools_IsVertex(*args):
+def IntTools_Tools_IsVertex(*args) -> "Standard_Boolean" :
   """
     * Computes square distance between a point on the edge E corresponded to parameter t and vertices of edge E. Returns True if this distance is less than square tolerance of vertex, otherwise returns false.
 
@@ -7525,7 +7525,7 @@ def IntTools_Tools_IsVertex(*args):
     """
   return _IntTools.IntTools_Tools_IsVertex(*args)
 
-def IntTools_Tools_IntermediatePoint(*args):
+def IntTools_Tools_IntermediatePoint(*args) -> "Standard_Real" :
   """
     * Returns some value between aFirst and aLast
 
@@ -7538,7 +7538,7 @@ def IntTools_Tools_IntermediatePoint(*args):
     """
   return _IntTools.IntTools_Tools_IntermediatePoint(*args)
 
-def IntTools_Tools_SplitCurve(*args):
+def IntTools_Tools_SplitCurve(*args) -> "Standard_Integer" :
   """
     * Split aC by average parameter if aC is closed in 3D. Returns positive value if splitting has been done, otherwise returns zero.
 
@@ -7551,7 +7551,7 @@ def IntTools_Tools_SplitCurve(*args):
     """
   return _IntTools.IntTools_Tools_SplitCurve(*args)
 
-def IntTools_Tools_RejectLines(*args):
+def IntTools_Tools_RejectLines(*args) -> "void" :
   """
     * Puts curves from aSIn to aSOut except those curves that are coincide with first curve from aSIn.
 
@@ -7564,7 +7564,7 @@ def IntTools_Tools_RejectLines(*args):
     """
   return _IntTools.IntTools_Tools_RejectLines(*args)
 
-def IntTools_Tools_IsDirsCoinside(*args):
+def IntTools_Tools_IsDirsCoinside(*args) -> "Standard_Boolean" :
   """
     * Returns True if D1 and D2 coinside
 
@@ -7587,7 +7587,7 @@ def IntTools_Tools_IsDirsCoinside(*args):
     """
   return _IntTools.IntTools_Tools_IsDirsCoinside(*args)
 
-def IntTools_Tools_IsClosed(*args):
+def IntTools_Tools_IsClosed(*args) -> "Standard_Boolean" :
   """
     * Returns True if aC is BoundedCurve from Geom and the distance between first point of the curve aC and last point is less than 1.e-12
 
@@ -7598,7 +7598,7 @@ def IntTools_Tools_IsClosed(*args):
     """
   return _IntTools.IntTools_Tools_IsClosed(*args)
 
-def IntTools_Tools_CurveTolerance(*args):
+def IntTools_Tools_CurveTolerance(*args) -> "Standard_Real" :
   """
     * Returns adaptive tolerance for given aTolBase if aC is trimmed curve and basis curve is parabola, otherwise returns value of aTolBase
 
@@ -7628,7 +7628,7 @@ class IntTools_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
 
         """
         _IntTools.IntTools_TopolTool_swiginit(self,_IntTools.new_IntTools_TopolTool(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Redefined empty initializer Warning: Raises the exception NotImplemented
 
@@ -7643,11 +7643,11 @@ class IntTools_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
         """
         return _IntTools.IntTools_TopolTool_Initialize(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntTools_TopolTool self)"""
         return _IntTools.IntTools_TopolTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntTools_TopolTool" :
         """GetHandle(IntTools_TopolTool self) -> Handle_IntTools_TopolTool"""
         return _IntTools.IntTools_TopolTool_GetHandle(self)
 
@@ -7686,7 +7686,7 @@ Handle_IntTools_TopolTool._kill_pointed = new_instancemethod(_IntTools.Handle_In
 Handle_IntTools_TopolTool_swigregister = _IntTools.Handle_IntTools_TopolTool_swigregister
 Handle_IntTools_TopolTool_swigregister(Handle_IntTools_TopolTool)
 
-def Handle_IntTools_TopolTool_DownCast(*args):
+def Handle_IntTools_TopolTool_DownCast(*args) -> "Handle_IntTools_TopolTool const" :
   return _IntTools.Handle_IntTools_TopolTool_DownCast(*args)
 Handle_IntTools_TopolTool_DownCast = _IntTools.Handle_IntTools_TopolTool_DownCast
 
@@ -7703,7 +7703,7 @@ class IntTools_CurveRangeSample(IntTools_BaseRangeSample):
 
         """
         _IntTools.IntTools_CurveRangeSample_swiginit(self,_IntTools.new_IntTools_CurveRangeSample(*args))
-    def SetRangeIndex(self, *args):
+    def SetRangeIndex(self, *args) -> "void" :
         """
         :param theIndex:
         :type theIndex: int
@@ -7712,14 +7712,14 @@ class IntTools_CurveRangeSample(IntTools_BaseRangeSample):
         """
         return _IntTools.IntTools_CurveRangeSample_SetRangeIndex(self, *args)
 
-    def GetRangeIndex(self, *args):
+    def GetRangeIndex(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntTools.IntTools_CurveRangeSample_GetRangeIndex(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Other:
         :type Other: IntTools_CurveRangeSample &
@@ -7728,7 +7728,7 @@ class IntTools_CurveRangeSample(IntTools_BaseRangeSample):
         """
         return _IntTools.IntTools_CurveRangeSample_IsEqual(self, *args)
 
-    def GetRange(self, *args):
+    def GetRange(self, *args) -> "IntTools_Range" :
         """
         :param theFirst:
         :type theFirst: float
@@ -7741,7 +7741,7 @@ class IntTools_CurveRangeSample(IntTools_BaseRangeSample):
         """
         return _IntTools.IntTools_CurveRangeSample_GetRange(self, *args)
 
-    def GetRangeIndexDeeper(self, *args):
+    def GetRangeIndexDeeper(self, *args) -> "Standard_Integer" :
         """
         :param theNbSample:
         :type theNbSample: int

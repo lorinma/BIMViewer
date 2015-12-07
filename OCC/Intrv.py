@@ -149,35 +149,35 @@ class Intrv_Interval(object):
 
         """
         _Intrv.Intrv_Interval_swiginit(self,_Intrv.new_Intrv_Interval(*args))
-    def Start(self, *args):
+    def Start(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Intrv.Intrv_Interval_Start(self, *args)
 
-    def End(self, *args):
+    def End(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Intrv.Intrv_Interval_End(self, *args)
 
-    def TolStart(self, *args):
+    def TolStart(self, *args) -> "Standard_ShortReal" :
         """
         :rtype: Standard_ShortReal
 
         """
         return _Intrv.Intrv_Interval_TolStart(self, *args)
 
-    def TolEnd(self, *args):
+    def TolEnd(self, *args) -> "Standard_ShortReal" :
         """
         :rtype: Standard_ShortReal
 
         """
         return _Intrv.Intrv_Interval_TolEnd(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         :param Start:
         :type Start: float &
@@ -192,7 +192,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_Bounds(self, *args)
 
-    def SetStart(self, *args):
+    def SetStart(self, *args) -> "void" :
         """
         :param Start:
         :type Start: float
@@ -203,7 +203,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_SetStart(self, *args)
 
-    def FuseAtStart(self, *args):
+    def FuseAtStart(self, *args) -> "void" :
         """
         * ****+****--------------------> Old one  ****+****------------------------> New one to fuse  <<< <<<  ****+****------------------------> result
 
@@ -216,7 +216,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_FuseAtStart(self, *args)
 
-    def CutAtStart(self, *args):
+    def CutAtStart(self, *args) -> "void" :
         """
         * ****+****-----------> Old one  <----------**+** Tool for cutting  >>> >>> ****+****-----------> result
 
@@ -229,7 +229,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_CutAtStart(self, *args)
 
-    def SetEnd(self, *args):
+    def SetEnd(self, *args) -> "void" :
         """
         :param End:
         :type End: float
@@ -240,7 +240,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_SetEnd(self, *args)
 
-    def FuseAtEnd(self, *args):
+    def FuseAtEnd(self, *args) -> "void" :
         """
         * <---------------------****+**** Old one  <-----------------**+**  New one to fuse  >>> >>>  <---------------------****+**** result
 
@@ -253,7 +253,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_FuseAtEnd(self, *args)
 
-    def CutAtEnd(self, *args):
+    def CutAtEnd(self, *args) -> "void" :
         """
         * <-----****+****  Old one  **+**------> Tool for cutting  <<< <<<  <-----****+****  result
 
@@ -266,7 +266,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_CutAtEnd(self, *args)
 
-    def IsProbablyEmpty(self, *args):
+    def IsProbablyEmpty(self, *args) -> "Standard_Boolean" :
         """
         * True if myStart+myTolStart > myEnd-myTolEnd  or if myEnd+myTolEnd > myStart-myTolStart
 
@@ -275,7 +275,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsProbablyEmpty(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "Intrv_Position" :
         """
         * True if me is Before Other  **-----------**** Other ***-----*   Before ***------------*  JustBefore ***-----------------*  OverlappingAtStart ***--------------------------*  JustEnclosingAtEnd ***-------------------------------------* Enclosing ***----*  JustOverlappingAtStart ***-------------*  Similar ***------------------------* JustEnclosingAtStart  ***-*  Inside  ***------*  JustOverlappingAtEnd  ***-----------------* OverlappingAtEnd  ***--------* JustAfter  ***---* After
 
@@ -286,7 +286,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_Position(self, *args)
 
-    def IsBefore(self, *args):
+    def IsBefore(self, *args) -> "Standard_Boolean" :
         """
         * True if me is Before Other ***----------------**  me  **-----------**** Other
 
@@ -297,7 +297,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsBefore(self, *args)
 
-    def IsAfter(self, *args):
+    def IsAfter(self, *args) -> "Standard_Boolean" :
         """
         * True if me is After Other  **-----------**** me ***----------------**  Other
 
@@ -308,7 +308,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsAfter(self, *args)
 
-    def IsInside(self, *args):
+    def IsInside(self, *args) -> "Standard_Boolean" :
         """
         * True if me is Inside Other  **-----------****  me ***--------------------------**  Other
 
@@ -319,7 +319,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsInside(self, *args)
 
-    def IsEnclosing(self, *args):
+    def IsEnclosing(self, *args) -> "Standard_Boolean" :
         """
         * True if me is Enclosing Other ***----------------------------**** me ***------------------** Other
 
@@ -330,7 +330,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsEnclosing(self, *args)
 
-    def IsJustEnclosingAtStart(self, *args):
+    def IsJustEnclosingAtStart(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just Enclosing Other at start  ***---------------------------**** me ***------------------** Other
 
@@ -341,7 +341,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustEnclosingAtStart(self, *args)
 
-    def IsJustEnclosingAtEnd(self, *args):
+    def IsJustEnclosingAtEnd(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just Enclosing Other at End ***----------------------------**** me  ***-----------------****  Other
 
@@ -352,7 +352,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustEnclosingAtEnd(self, *args)
 
-    def IsJustBefore(self, *args):
+    def IsJustBefore(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just before Other ***--------****   me  ***-----------** Other
 
@@ -363,7 +363,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustBefore(self, *args)
 
-    def IsJustAfter(self, *args):
+    def IsJustAfter(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just after Other  ****-------****  me ***-----------**  Other
 
@@ -374,7 +374,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustAfter(self, *args)
 
-    def IsOverlappingAtStart(self, *args):
+    def IsOverlappingAtStart(self, *args) -> "Standard_Boolean" :
         """
         * True if me is overlapping Other at start ***---------------***  me  ***-----------** Other
 
@@ -385,7 +385,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsOverlappingAtStart(self, *args)
 
-    def IsOverlappingAtEnd(self, *args):
+    def IsOverlappingAtEnd(self, *args) -> "Standard_Boolean" :
         """
         * True if me is overlapping Other at end  ***-----------** me ***---------------***  Other
 
@@ -396,7 +396,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsOverlappingAtEnd(self, *args)
 
-    def IsJustOverlappingAtStart(self, *args):
+    def IsJustOverlappingAtStart(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just overlapping Other at start ***-----------***  me ***------------------------** Other
 
@@ -407,7 +407,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustOverlappingAtStart(self, *args)
 
-    def IsJustOverlappingAtEnd(self, *args):
+    def IsJustOverlappingAtEnd(self, *args) -> "Standard_Boolean" :
         """
         * True if me is just overlapping Other at end  ***-----------*  me ***------------------------** Other
 
@@ -418,7 +418,7 @@ class Intrv_Interval(object):
         """
         return _Intrv.Intrv_Interval_IsJustOverlappingAtEnd(self, *args)
 
-    def IsSimilar(self, *args):
+    def IsSimilar(self, *args) -> "Standard_Boolean" :
         """
         * True if me and Other have the same bounds  *----------------***  me ***-----------------**  Other
 
@@ -490,7 +490,7 @@ class Intrv_Intervals(object):
 
         """
         _Intrv.Intrv_Intervals_swiginit(self,_Intrv.new_Intrv_Intervals(*args))
-    def Intersect(self, *args):
+    def Intersect(self, *args) -> "void" :
         """
         * Intersects the intervals with the interval <Tool>.
 
@@ -507,7 +507,7 @@ class Intrv_Intervals(object):
         """
         return _Intrv.Intrv_Intervals_Intersect(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "void" :
         """
         :param Tool:
         :type Tool: Intrv_Interval &
@@ -520,7 +520,7 @@ class Intrv_Intervals(object):
         """
         return _Intrv.Intrv_Intervals_Subtract(self, *args)
 
-    def Unite(self, *args):
+    def Unite(self, *args) -> "void" :
         """
         :param Tool:
         :type Tool: Intrv_Interval &
@@ -533,7 +533,7 @@ class Intrv_Intervals(object):
         """
         return _Intrv.Intrv_Intervals_Unite(self, *args)
 
-    def XUnite(self, *args):
+    def XUnite(self, *args) -> "void" :
         """
         :param Tool:
         :type Tool: Intrv_Interval &
@@ -546,14 +546,14 @@ class Intrv_Intervals(object):
         """
         return _Intrv.Intrv_Intervals_XUnite(self, *args)
 
-    def NbIntervals(self, *args):
+    def NbIntervals(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Intrv.Intrv_Intervals_NbIntervals(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Intrv_Interval const &" :
         """
         :param Index:
         :type Index: int
@@ -595,18 +595,18 @@ class Intrv_SequenceNodeOfSequenceOfInterval(OCC.TCollection.TCollection_SeqNode
 
         """
         _Intrv.Intrv_SequenceNodeOfSequenceOfInterval_swiginit(self,_Intrv.new_Intrv_SequenceNodeOfSequenceOfInterval(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Intrv_Interval &" :
         """
         :rtype: Intrv_Interval
 
         """
         return _Intrv.Intrv_SequenceNodeOfSequenceOfInterval_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Intrv_SequenceNodeOfSequenceOfInterval self)"""
         return _Intrv.Intrv_SequenceNodeOfSequenceOfInterval__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Intrv_SequenceNodeOfSequenceOfInterval" :
         """GetHandle(Intrv_SequenceNodeOfSequenceOfInterval self) -> Handle_Intrv_SequenceNodeOfSequenceOfInterval"""
         return _Intrv.Intrv_SequenceNodeOfSequenceOfInterval_GetHandle(self)
 
@@ -645,7 +645,7 @@ Handle_Intrv_SequenceNodeOfSequenceOfInterval._kill_pointed = new_instancemethod
 Handle_Intrv_SequenceNodeOfSequenceOfInterval_swigregister = _Intrv.Handle_Intrv_SequenceNodeOfSequenceOfInterval_swigregister
 Handle_Intrv_SequenceNodeOfSequenceOfInterval_swigregister(Handle_Intrv_SequenceNodeOfSequenceOfInterval)
 
-def Handle_Intrv_SequenceNodeOfSequenceOfInterval_DownCast(*args):
+def Handle_Intrv_SequenceNodeOfSequenceOfInterval_DownCast(*args) -> "Handle_Intrv_SequenceNodeOfSequenceOfInterval const" :
   return _Intrv.Handle_Intrv_SequenceNodeOfSequenceOfInterval_DownCast(*args)
 Handle_Intrv_SequenceNodeOfSequenceOfInterval_DownCast = _Intrv.Handle_Intrv_SequenceNodeOfSequenceOfInterval_DownCast
 
@@ -658,14 +658,14 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Intrv.Intrv_SequenceOfInterval_swiginit(self,_Intrv.new_Intrv_SequenceOfInterval(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Intrv.Intrv_SequenceOfInterval_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Intrv_SequenceOfInterval const &" :
         """
         :param Other:
         :type Other: Intrv_SequenceOfInterval &
@@ -674,7 +674,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Intrv_SequenceOfInterval const &" :
         """
         :param Other:
         :type Other: Intrv_SequenceOfInterval &
@@ -683,7 +683,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Intrv_Interval &
@@ -696,7 +696,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Intrv_Interval &
@@ -709,7 +709,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -726,7 +726,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -743,21 +743,21 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Intrv_Interval const &" :
         """
         :rtype: Intrv_Interval
 
         """
         return _Intrv.Intrv_SequenceOfInterval_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Intrv_Interval const &" :
         """
         :rtype: Intrv_Interval
 
         """
         return _Intrv.Intrv_SequenceOfInterval_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -768,7 +768,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Intrv_Interval const &" :
         """
         :param Index:
         :type Index: int
@@ -777,7 +777,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -788,7 +788,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Intrv_Interval &" :
         """
         :param Index:
         :type Index: int
@@ -797,7 +797,7 @@ class Intrv_SequenceOfInterval(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intrv.Intrv_SequenceOfInterval_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

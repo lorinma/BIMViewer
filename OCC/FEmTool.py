@@ -130,7 +130,7 @@ class FEmTool_Assembly(object):
 
         """
         _FEmTool.FEmTool_Assembly_swiginit(self,_FEmTool.new_FEmTool_Assembly(*args))
-    def NullifyMatrix(self, *args):
+    def NullifyMatrix(self, *args) -> "void" :
         """
         * Nullify all Matrix 's Coefficient
 
@@ -139,7 +139,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_NullifyMatrix(self, *args)
 
-    def AddMatrix(self, *args):
+    def AddMatrix(self, *args) -> "void" :
         """
         * Add an elementary Matrix in the assembly Matrix if Dependence(Dimension1,Dimension2) is False
 
@@ -156,7 +156,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_AddMatrix(self, *args)
 
-    def NullifyVector(self, *args):
+    def NullifyVector(self, *args) -> "void" :
         """
         * Nullify all Coordinate of assembly Vector (second member)
 
@@ -165,7 +165,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_NullifyVector(self, *args)
 
-    def AddVector(self, *args):
+    def AddVector(self, *args) -> "void" :
         """
         * Add an elementary Vector in the assembly Vector (second member)
 
@@ -180,7 +180,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_AddVector(self, *args)
 
-    def ResetConstraint(self, *args):
+    def ResetConstraint(self, *args) -> "void" :
         """
         * Delete all Constraints.
 
@@ -189,7 +189,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_ResetConstraint(self, *args)
 
-    def NullifyConstraint(self, *args):
+    def NullifyConstraint(self, *args) -> "void" :
         """
         * Nullify all Constraints.
 
@@ -198,7 +198,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_NullifyConstraint(self, *args)
 
-    def AddConstraint(self, *args):
+    def AddConstraint(self, *args) -> "void" :
         """
         :param IndexofConstraint:
         :type IndexofConstraint: int
@@ -215,7 +215,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_AddConstraint(self, *args)
 
-    def Solve(self, *args):
+    def Solve(self, *args) -> "Standard_Boolean" :
         """
         * Solve the assembly system Returns Standard_False if the computation failed.
 
@@ -224,7 +224,7 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_Solve(self, *args)
 
-    def Solution(self, *args):
+    def Solution(self, *args) -> "void" :
         """
         :param Solution:
         :type Solution: math_Vector &
@@ -233,14 +233,14 @@ class FEmTool_Assembly(object):
         """
         return _FEmTool.FEmTool_Assembly_Solution(self, *args)
 
-    def NbGlobVar(self, *args):
+    def NbGlobVar(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_Assembly_NbGlobVar(self, *args)
 
-    def GetAssemblyTable(self, *args):
+    def GetAssemblyTable(self, *args) -> "void" :
         """
         :param AssTable:
         :type AssTable: Handle_FEmTool_HAssemblyTable &
@@ -301,7 +301,7 @@ class FEmTool_AssemblyTable(object):
 
         """
         _FEmTool.FEmTool_AssemblyTable_swiginit(self,_FEmTool.new_FEmTool_AssemblyTable(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_TColStd_HArray1OfInteger &
@@ -310,14 +310,14 @@ class FEmTool_AssemblyTable(object):
         """
         return _FEmTool.FEmTool_AssemblyTable_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_AssemblyTable_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "FEmTool_AssemblyTable const &" :
         """
         :param Other:
         :type Other: FEmTool_AssemblyTable &
@@ -326,7 +326,7 @@ class FEmTool_AssemblyTable(object):
         """
         return _FEmTool.FEmTool_AssemblyTable_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "FEmTool_AssemblyTable const &" :
         """
         :param Other:
         :type Other: FEmTool_AssemblyTable &
@@ -335,49 +335,49 @@ class FEmTool_AssemblyTable(object):
         """
         return _FEmTool.FEmTool_AssemblyTable_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_AssemblyTable_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -390,7 +390,7 @@ class FEmTool_AssemblyTable(object):
         """
         return _FEmTool.FEmTool_AssemblyTable_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         :param Row:
         :type Row: int
@@ -401,7 +401,7 @@ class FEmTool_AssemblyTable(object):
         """
         return _FEmTool.FEmTool_AssemblyTable_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColStd_HArray1OfInteger &" :
         """
         :param Row:
         :type Row: int
@@ -454,14 +454,14 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
 
         """
         _FEmTool.FEmTool_Curve_swiginit(self,_FEmTool.new_FEmTool_Curve(*args))
-    def Knots(self, *args):
+    def Knots(self, *args) -> "TColStd_Array1OfReal &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _FEmTool.FEmTool_Curve_Knots(self, *args)
 
-    def SetElement(self, *args):
+    def SetElement(self, *args) -> "void" :
         """
         :param IndexOfElement:
         :type IndexOfElement: int
@@ -472,7 +472,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_SetElement(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -483,7 +483,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -494,7 +494,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -505,7 +505,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_D2(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "void" :
         """
         :param FirstU:
         :type FirstU: float
@@ -518,7 +518,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_Length(self, *args)
 
-    def GetElement(self, *args):
+    def GetElement(self, *args) -> "void" :
         """
         :param IndexOfElement:
         :type IndexOfElement: int
@@ -529,7 +529,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_GetElement(self, *args)
 
-    def GetPolynom(self, *args):
+    def GetPolynom(self, *args) -> "void" :
         """
         * returns coefficients of all elements in canonical base.
 
@@ -540,28 +540,28 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_GetPolynom(self, *args)
 
-    def NbElements(self, *args):
+    def NbElements(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_Curve_NbElements(self, *args)
 
-    def Dimension(self, *args):
+    def Dimension(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_Curve_Dimension(self, *args)
 
-    def Base(self, *args):
+    def Base(self, *args) -> "Handle_PLib_Base" :
         """
         :rtype: Handle_PLib_Base
 
         """
         return _FEmTool.FEmTool_Curve_Base(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :param IndexOfElement:
         :type IndexOfElement: int
@@ -570,7 +570,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_Degree(self, *args)
 
-    def SetDegree(self, *args):
+    def SetDegree(self, *args) -> "void" :
         """
         :param IndexOfElement:
         :type IndexOfElement: int
@@ -581,7 +581,7 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_SetDegree(self, *args)
 
-    def ReduceDegree(self, *args):
+    def ReduceDegree(self, *args) -> "void" :
         """
         :param IndexOfElement:
         :type IndexOfElement: int
@@ -596,11 +596,11 @@ class FEmTool_Curve(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_Curve_ReduceDegree(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_Curve self)"""
         return _FEmTool.FEmTool_Curve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_Curve" :
         """GetHandle(FEmTool_Curve self) -> Handle_FEmTool_Curve"""
         return _FEmTool.FEmTool_Curve_GetHandle(self)
 
@@ -652,7 +652,7 @@ Handle_FEmTool_Curve._kill_pointed = new_instancemethod(_FEmTool.Handle_FEmTool_
 Handle_FEmTool_Curve_swigregister = _FEmTool.Handle_FEmTool_Curve_swigregister
 Handle_FEmTool_Curve_swigregister(Handle_FEmTool_Curve)
 
-def Handle_FEmTool_Curve_DownCast(*args):
+def Handle_FEmTool_Curve_DownCast(*args) -> "Handle_FEmTool_Curve const" :
   return _FEmTool.Handle_FEmTool_Curve_DownCast(*args)
 Handle_FEmTool_Curve_DownCast = _FEmTool.Handle_FEmTool_Curve_DownCast
 
@@ -660,7 +660,7 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Set the coefficient of the Element (the Curve)
 
@@ -679,7 +679,7 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_ElementaryCriterion_Set(self, *args)
 
-    def DependenceTable(self, *args):
+    def DependenceTable(self, *args) -> "Handle_TColStd_HArray2OfInteger" :
         """
         * To know if two dimension are independent.
 
@@ -688,7 +688,7 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_ElementaryCriterion_DependenceTable(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         * To Compute J(E) where E is the current Element
 
@@ -697,7 +697,7 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_ElementaryCriterion_Value(self, *args)
 
-    def Hessian(self, *args):
+    def Hessian(self, *args) -> "void" :
         """
         * To Compute J(E) the coefficients of Hessian matrix of J(E) wich are crossed derivatives in dimensions <Dim1> and <Dim2>. If DependenceTable(Dimension1,Dimension2) is False
 
@@ -712,7 +712,7 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_ElementaryCriterion_Hessian(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "void" :
         """
         * To Compute the coefficients in the dimension <dim> of the J(E)'s Gradient where E is the current Element
 
@@ -725,11 +725,11 @@ class FEmTool_ElementaryCriterion(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_ElementaryCriterion_Gradient(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_ElementaryCriterion self)"""
         return _FEmTool.FEmTool_ElementaryCriterion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_ElementaryCriterion" :
         """GetHandle(FEmTool_ElementaryCriterion self) -> Handle_FEmTool_ElementaryCriterion"""
         return _FEmTool.FEmTool_ElementaryCriterion_GetHandle(self)
 
@@ -772,7 +772,7 @@ Handle_FEmTool_ElementaryCriterion._kill_pointed = new_instancemethod(_FEmTool.H
 Handle_FEmTool_ElementaryCriterion_swigregister = _FEmTool.Handle_FEmTool_ElementaryCriterion_swigregister
 Handle_FEmTool_ElementaryCriterion_swigregister(Handle_FEmTool_ElementaryCriterion)
 
-def Handle_FEmTool_ElementaryCriterion_DownCast(*args):
+def Handle_FEmTool_ElementaryCriterion_DownCast(*args) -> "Handle_FEmTool_ElementaryCriterion const" :
   return _FEmTool.Handle_FEmTool_ElementaryCriterion_DownCast(*args)
 Handle_FEmTool_ElementaryCriterion_DownCast = _FEmTool.Handle_FEmTool_ElementaryCriterion_DownCast
 
@@ -789,7 +789,7 @@ class FEmTool_ElementsOfRefMatrix(object):
 
         """
         _FEmTool.FEmTool_ElementsOfRefMatrix_swiginit(self,_FEmTool.new_FEmTool_ElementsOfRefMatrix(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * returns the number of variables of the function. It is supposed that NbVariables = 1.
 
@@ -798,7 +798,7 @@ class FEmTool_ElementsOfRefMatrix(object):
         """
         return _FEmTool.FEmTool_ElementsOfRefMatrix_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -807,7 +807,7 @@ class FEmTool_ElementsOfRefMatrix(object):
         """
         return _FEmTool.FEmTool_ElementsOfRefMatrix_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise. F contains results only for i<=j in following order: P0*P0, P0*P1, P0*P2... P1*P1, P1*P2,... (upper triangle of matrix {PiPj})
 
@@ -864,7 +864,7 @@ class FEmTool_HAssemblyTable(OCC.MMgt.MMgt_TShared):
 
         """
         _FEmTool.FEmTool_HAssemblyTable_swiginit(self,_FEmTool.new_FEmTool_HAssemblyTable(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_TColStd_HArray1OfInteger &
@@ -873,49 +873,49 @@ class FEmTool_HAssemblyTable(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_HAssemblyTable_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -928,7 +928,7 @@ class FEmTool_HAssemblyTable(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_HAssemblyTable_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         :param Row:
         :type Row: int
@@ -939,7 +939,7 @@ class FEmTool_HAssemblyTable(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_HAssemblyTable_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColStd_HArray1OfInteger &" :
         """
         :param Row:
         :type Row: int
@@ -950,25 +950,25 @@ class FEmTool_HAssemblyTable(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_HAssemblyTable_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "FEmTool_AssemblyTable const &" :
         """
         :rtype: FEmTool_AssemblyTable
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "FEmTool_AssemblyTable &" :
         """
         :rtype: FEmTool_AssemblyTable
 
         """
         return _FEmTool.FEmTool_HAssemblyTable_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_HAssemblyTable self)"""
         return _FEmTool.FEmTool_HAssemblyTable__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_HAssemblyTable" :
         """GetHandle(FEmTool_HAssemblyTable self) -> Handle_FEmTool_HAssemblyTable"""
         return _FEmTool.FEmTool_HAssemblyTable_GetHandle(self)
 
@@ -1018,7 +1018,7 @@ Handle_FEmTool_HAssemblyTable._kill_pointed = new_instancemethod(_FEmTool.Handle
 Handle_FEmTool_HAssemblyTable_swigregister = _FEmTool.Handle_FEmTool_HAssemblyTable_swigregister
 Handle_FEmTool_HAssemblyTable_swigregister(Handle_FEmTool_HAssemblyTable)
 
-def Handle_FEmTool_HAssemblyTable_DownCast(*args):
+def Handle_FEmTool_HAssemblyTable_DownCast(*args) -> "Handle_FEmTool_HAssemblyTable const" :
   return _FEmTool.Handle_FEmTool_HAssemblyTable_DownCast(*args)
 Handle_FEmTool_HAssemblyTable_DownCast = _FEmTool.Handle_FEmTool_HAssemblyTable_DownCast
 
@@ -1035,7 +1035,7 @@ class FEmTool_ListIteratorOfListOfVectors(object):
 
         """
         _FEmTool.FEmTool_ListIteratorOfListOfVectors_swiginit(self,_FEmTool.new_FEmTool_ListIteratorOfListOfVectors(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: FEmTool_ListOfVectors &
@@ -1044,21 +1044,21 @@ class FEmTool_ListIteratorOfListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListIteratorOfListOfVectors_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _FEmTool.FEmTool_ListIteratorOfListOfVectors_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_ListIteratorOfListOfVectors_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
@@ -1094,18 +1094,18 @@ class FEmTool_ListNodeOfListOfVectors(OCC.TCollection.TCollection_MapNode):
 
         """
         _FEmTool.FEmTool_ListNodeOfListOfVectors_swiginit(self,_FEmTool.new_FEmTool_ListNodeOfListOfVectors(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _FEmTool.FEmTool_ListNodeOfListOfVectors_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_ListNodeOfListOfVectors self)"""
         return _FEmTool.FEmTool_ListNodeOfListOfVectors__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_ListNodeOfListOfVectors" :
         """GetHandle(FEmTool_ListNodeOfListOfVectors self) -> Handle_FEmTool_ListNodeOfListOfVectors"""
         return _FEmTool.FEmTool_ListNodeOfListOfVectors_GetHandle(self)
 
@@ -1144,7 +1144,7 @@ Handle_FEmTool_ListNodeOfListOfVectors._kill_pointed = new_instancemethod(_FEmTo
 Handle_FEmTool_ListNodeOfListOfVectors_swigregister = _FEmTool.Handle_FEmTool_ListNodeOfListOfVectors_swigregister
 Handle_FEmTool_ListNodeOfListOfVectors_swigregister(Handle_FEmTool_ListNodeOfListOfVectors)
 
-def Handle_FEmTool_ListNodeOfListOfVectors_DownCast(*args):
+def Handle_FEmTool_ListNodeOfListOfVectors_DownCast(*args) -> "Handle_FEmTool_ListNodeOfListOfVectors const" :
   return _FEmTool.Handle_FEmTool_ListNodeOfListOfVectors_DownCast(*args)
 Handle_FEmTool_ListNodeOfListOfVectors_DownCast = _FEmTool.Handle_FEmTool_ListNodeOfListOfVectors_DownCast
 
@@ -1157,7 +1157,7 @@ class FEmTool_ListOfVectors(object):
 
         """
         _FEmTool.FEmTool_ListOfVectors_swiginit(self,_FEmTool.new_FEmTool_ListOfVectors(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: FEmTool_ListOfVectors &
@@ -1166,7 +1166,7 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: FEmTool_ListOfVectors &
@@ -1175,28 +1175,28 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _FEmTool.FEmTool_ListOfVectors_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_ListOfVectors_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _FEmTool.FEmTool_ListOfVectors_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TColStd_HArray1OfReal &
@@ -1215,7 +1215,7 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TColStd_HArray1OfReal &
@@ -1234,28 +1234,28 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _FEmTool.FEmTool_ListOfVectors_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _FEmTool.FEmTool_ListOfVectors_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_ListOfVectors_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: FEmTool_ListIteratorOfListOfVectors &
@@ -1264,7 +1264,7 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TColStd_HArray1OfReal &
@@ -1281,7 +1281,7 @@ class FEmTool_ListOfVectors(object):
         """
         return _FEmTool.FEmTool_ListOfVectors_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TColStd_HArray1OfReal &
@@ -1332,14 +1332,14 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _FEmTool.FEmTool_SeqOfLinConstr_swiginit(self,_FEmTool.new_FEmTool_SeqOfLinConstr(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "FEmTool_SeqOfLinConstr const &" :
         """
         :param Other:
         :type Other: FEmTool_SeqOfLinConstr &
@@ -1348,7 +1348,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "FEmTool_SeqOfLinConstr const &" :
         """
         :param Other:
         :type Other: FEmTool_SeqOfLinConstr &
@@ -1357,7 +1357,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: FEmTool_ListOfVectors &
@@ -1370,7 +1370,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: FEmTool_ListOfVectors &
@@ -1383,7 +1383,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1400,7 +1400,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1417,21 +1417,21 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "FEmTool_ListOfVectors const &" :
         """
         :rtype: FEmTool_ListOfVectors
 
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "FEmTool_ListOfVectors const &" :
         """
         :rtype: FEmTool_ListOfVectors
 
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1442,7 +1442,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "FEmTool_ListOfVectors const &" :
         """
         :param Index:
         :type Index: int
@@ -1451,7 +1451,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1462,7 +1462,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "FEmTool_ListOfVectors &" :
         """
         :param Index:
         :type Index: int
@@ -1471,7 +1471,7 @@ class FEmTool_SeqOfLinConstr(OCC.TCollection.TCollection_BaseSequence):
         """
         return _FEmTool.FEmTool_SeqOfLinConstr_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1527,18 +1527,18 @@ class FEmTool_SequenceNodeOfSeqOfLinConstr(OCC.TCollection.TCollection_SeqNode):
 
         """
         _FEmTool.FEmTool_SequenceNodeOfSeqOfLinConstr_swiginit(self,_FEmTool.new_FEmTool_SequenceNodeOfSeqOfLinConstr(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "FEmTool_ListOfVectors &" :
         """
         :rtype: FEmTool_ListOfVectors
 
         """
         return _FEmTool.FEmTool_SequenceNodeOfSeqOfLinConstr_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_SequenceNodeOfSeqOfLinConstr self)"""
         return _FEmTool.FEmTool_SequenceNodeOfSeqOfLinConstr__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_SequenceNodeOfSeqOfLinConstr" :
         """GetHandle(FEmTool_SequenceNodeOfSeqOfLinConstr self) -> Handle_FEmTool_SequenceNodeOfSeqOfLinConstr"""
         return _FEmTool.FEmTool_SequenceNodeOfSeqOfLinConstr_GetHandle(self)
 
@@ -1577,7 +1577,7 @@ Handle_FEmTool_SequenceNodeOfSeqOfLinConstr._kill_pointed = new_instancemethod(_
 Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_swigregister = _FEmTool.Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_swigregister
 Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_swigregister(Handle_FEmTool_SequenceNodeOfSeqOfLinConstr)
 
-def Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_DownCast(*args):
+def Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_DownCast(*args) -> "Handle_FEmTool_SequenceNodeOfSeqOfLinConstr const" :
   return _FEmTool.Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_DownCast(*args)
 Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_DownCast = _FEmTool.Handle_FEmTool_SequenceNodeOfSeqOfLinConstr_DownCast
 
@@ -1585,7 +1585,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Value:
         :type Value: float
@@ -1594,7 +1594,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_Init(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Real &" :
         """
         :param I:
         :type I: int
@@ -1605,7 +1605,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_ChangeValue(self, *args)
 
-    def Decompose(self, *args):
+    def Decompose(self, *args) -> "Standard_Boolean" :
         """
         * To make a Factorization of <self>
 
@@ -1614,7 +1614,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_Decompose(self, *args)
 
-    def Prepare(self, *args):
+    def Prepare(self, *args) -> "Standard_Boolean" :
         """
         * Make Preparation to iterative solve
 
@@ -1623,7 +1623,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_Prepare(self, *args)
 
-    def Solve(self, *args):
+    def Solve(self, *args) -> "void" :
         """
         * Direct Solve of AX = B
 
@@ -1652,7 +1652,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_Solve(self, *args)
 
-    def Multiplied(self, *args):
+    def Multiplied(self, *args) -> "void" :
         """
         * returns the product of a SparseMatrix by a vector. An exception is raised if the dimensions are different
 
@@ -1665,7 +1665,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_Multiplied(self, *args)
 
-    def RowNumber(self, *args):
+    def RowNumber(self, *args) -> "Standard_Integer" :
         """
         * returns the row range of a matrix.
 
@@ -1674,7 +1674,7 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_RowNumber(self, *args)
 
-    def ColNumber(self, *args):
+    def ColNumber(self, *args) -> "Standard_Integer" :
         """
         * returns the column range of the matrix.
 
@@ -1683,11 +1683,11 @@ class FEmTool_SparseMatrix(OCC.MMgt.MMgt_TShared):
         """
         return _FEmTool.FEmTool_SparseMatrix_ColNumber(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_SparseMatrix self)"""
         return _FEmTool.FEmTool_SparseMatrix__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_SparseMatrix" :
         """GetHandle(FEmTool_SparseMatrix self) -> Handle_FEmTool_SparseMatrix"""
         return _FEmTool.FEmTool_SparseMatrix_GetHandle(self)
 
@@ -1733,7 +1733,7 @@ Handle_FEmTool_SparseMatrix._kill_pointed = new_instancemethod(_FEmTool.Handle_F
 Handle_FEmTool_SparseMatrix_swigregister = _FEmTool.Handle_FEmTool_SparseMatrix_swigregister
 Handle_FEmTool_SparseMatrix_swigregister(Handle_FEmTool_SparseMatrix)
 
-def Handle_FEmTool_SparseMatrix_DownCast(*args):
+def Handle_FEmTool_SparseMatrix_DownCast(*args) -> "Handle_FEmTool_SparseMatrix const" :
   return _FEmTool.Handle_FEmTool_SparseMatrix_DownCast(*args)
 Handle_FEmTool_SparseMatrix_DownCast = _FEmTool.Handle_FEmTool_SparseMatrix_DownCast
 
@@ -1750,11 +1750,11 @@ class FEmTool_LinearFlexion(FEmTool_ElementaryCriterion):
 
         """
         _FEmTool.FEmTool_LinearFlexion_swiginit(self,_FEmTool.new_FEmTool_LinearFlexion(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_LinearFlexion self)"""
         return _FEmTool.FEmTool_LinearFlexion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_LinearFlexion" :
         """GetHandle(FEmTool_LinearFlexion self) -> Handle_FEmTool_LinearFlexion"""
         return _FEmTool.FEmTool_LinearFlexion_GetHandle(self)
 
@@ -1792,7 +1792,7 @@ Handle_FEmTool_LinearFlexion._kill_pointed = new_instancemethod(_FEmTool.Handle_
 Handle_FEmTool_LinearFlexion_swigregister = _FEmTool.Handle_FEmTool_LinearFlexion_swigregister
 Handle_FEmTool_LinearFlexion_swigregister(Handle_FEmTool_LinearFlexion)
 
-def Handle_FEmTool_LinearFlexion_DownCast(*args):
+def Handle_FEmTool_LinearFlexion_DownCast(*args) -> "Handle_FEmTool_LinearFlexion const" :
   return _FEmTool.Handle_FEmTool_LinearFlexion_DownCast(*args)
 Handle_FEmTool_LinearFlexion_DownCast = _FEmTool.Handle_FEmTool_LinearFlexion_DownCast
 
@@ -1809,11 +1809,11 @@ class FEmTool_LinearJerk(FEmTool_ElementaryCriterion):
 
         """
         _FEmTool.FEmTool_LinearJerk_swiginit(self,_FEmTool.new_FEmTool_LinearJerk(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_LinearJerk self)"""
         return _FEmTool.FEmTool_LinearJerk__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_LinearJerk" :
         """GetHandle(FEmTool_LinearJerk self) -> Handle_FEmTool_LinearJerk"""
         return _FEmTool.FEmTool_LinearJerk_GetHandle(self)
 
@@ -1851,7 +1851,7 @@ Handle_FEmTool_LinearJerk._kill_pointed = new_instancemethod(_FEmTool.Handle_FEm
 Handle_FEmTool_LinearJerk_swigregister = _FEmTool.Handle_FEmTool_LinearJerk_swigregister
 Handle_FEmTool_LinearJerk_swigregister(Handle_FEmTool_LinearJerk)
 
-def Handle_FEmTool_LinearJerk_DownCast(*args):
+def Handle_FEmTool_LinearJerk_DownCast(*args) -> "Handle_FEmTool_LinearJerk const" :
   return _FEmTool.Handle_FEmTool_LinearJerk_DownCast(*args)
 Handle_FEmTool_LinearJerk_DownCast = _FEmTool.Handle_FEmTool_LinearJerk_DownCast
 
@@ -1868,11 +1868,11 @@ class FEmTool_LinearTension(FEmTool_ElementaryCriterion):
 
         """
         _FEmTool.FEmTool_LinearTension_swiginit(self,_FEmTool.new_FEmTool_LinearTension(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_LinearTension self)"""
         return _FEmTool.FEmTool_LinearTension__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_LinearTension" :
         """GetHandle(FEmTool_LinearTension self) -> Handle_FEmTool_LinearTension"""
         return _FEmTool.FEmTool_LinearTension_GetHandle(self)
 
@@ -1910,7 +1910,7 @@ Handle_FEmTool_LinearTension._kill_pointed = new_instancemethod(_FEmTool.Handle_
 Handle_FEmTool_LinearTension_swigregister = _FEmTool.Handle_FEmTool_LinearTension_swigregister
 Handle_FEmTool_LinearTension_swigregister(Handle_FEmTool_LinearTension)
 
-def Handle_FEmTool_LinearTension_DownCast(*args):
+def Handle_FEmTool_LinearTension_DownCast(*args) -> "Handle_FEmTool_LinearTension const" :
   return _FEmTool.Handle_FEmTool_LinearTension_DownCast(*args)
 Handle_FEmTool_LinearTension_DownCast = _FEmTool.Handle_FEmTool_LinearTension_DownCast
 
@@ -1925,7 +1925,7 @@ class FEmTool_ProfileMatrix(FEmTool_SparseMatrix):
 
         """
         _FEmTool.FEmTool_ProfileMatrix_swiginit(self,_FEmTool.new_FEmTool_ProfileMatrix(*args))
-    def Solve(self, *args):
+    def Solve(self, *args) -> "void" :
         """
         * Direct Solve of AX = B
 
@@ -1954,7 +1954,7 @@ class FEmTool_ProfileMatrix(FEmTool_SparseMatrix):
         """
         return _FEmTool.FEmTool_ProfileMatrix_Solve(self, *args)
 
-    def IsInProfile(self, *args):
+    def IsInProfile(self, *args) -> "Standard_Boolean" :
         """
         :param i:
         :type i: int
@@ -1965,25 +1965,25 @@ class FEmTool_ProfileMatrix(FEmTool_SparseMatrix):
         """
         return _FEmTool.FEmTool_ProfileMatrix_IsInProfile(self, *args)
 
-    def OutM(self, *args):
+    def OutM(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_ProfileMatrix_OutM(self, *args)
 
-    def OutS(self, *args):
+    def OutS(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FEmTool.FEmTool_ProfileMatrix_OutS(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FEmTool_ProfileMatrix self)"""
         return _FEmTool.FEmTool_ProfileMatrix__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_FEmTool_ProfileMatrix" :
         """GetHandle(FEmTool_ProfileMatrix self) -> Handle_FEmTool_ProfileMatrix"""
         return _FEmTool.FEmTool_ProfileMatrix_GetHandle(self)
 
@@ -2025,7 +2025,7 @@ Handle_FEmTool_ProfileMatrix._kill_pointed = new_instancemethod(_FEmTool.Handle_
 Handle_FEmTool_ProfileMatrix_swigregister = _FEmTool.Handle_FEmTool_ProfileMatrix_swigregister
 Handle_FEmTool_ProfileMatrix_swigregister(Handle_FEmTool_ProfileMatrix)
 
-def Handle_FEmTool_ProfileMatrix_DownCast(*args):
+def Handle_FEmTool_ProfileMatrix_DownCast(*args) -> "Handle_FEmTool_ProfileMatrix const" :
   return _FEmTool.Handle_FEmTool_ProfileMatrix_DownCast(*args)
 Handle_FEmTool_ProfileMatrix_DownCast = _FEmTool.Handle_FEmTool_ProfileMatrix_DownCast
 

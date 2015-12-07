@@ -228,7 +228,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
 
         """
         _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_swiginit(self,_AdvApp2Var.new_AdvApp2Var_ApproxAFunc2Var(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the approximation succeeded within the imposed tolerances and the wished continuities
 
@@ -237,7 +237,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         * True if the approximation did come out with a result that is not NECESSARELY within the required tolerance or a result that is not recognized with the wished continuities
 
@@ -246,7 +246,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_HasResult(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_BSplineSurface" :
         """
         * returns the BSplineSurface of range Index
 
@@ -257,21 +257,21 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_Surface(self, *args)
 
-    def UDegree(self, *args):
+    def UDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_UDegree(self, *args)
 
-    def VDegree(self, *args):
+    def VDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_VDegree(self, *args)
 
-    def NumSubSpaces(self, *args):
+    def NumSubSpaces(self, *args) -> "Standard_Integer" :
         """
         :param Dimension:
         :type Dimension: int
@@ -280,7 +280,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_NumSubSpaces(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         * returns the errors max
 
@@ -299,7 +299,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_MaxError(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         * returns the average errors
 
@@ -318,7 +318,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_AverageError(self, *args)
 
-    def UFrontError(self, *args):
+    def UFrontError(self, *args) -> "Standard_Real" :
         """
         * returns the errors max on UFrontiers Warning: Dimension must be equal to 3.
 
@@ -337,7 +337,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_UFrontError(self, *args)
 
-    def VFrontError(self, *args):
+    def VFrontError(self, *args) -> "Standard_Real" :
         """
         * returns the errors max on VFrontiers Warning: Dimension must be equal to 3.
 
@@ -356,7 +356,7 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_VFrontError(self, *args)
 
-    def CritError(self, *args):
+    def CritError(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -367,11 +367,11 @@ class AdvApp2Var_ApproxAFunc2Var(object):
         """
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_CritError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(AdvApp2Var_ApproxAFunc2Var self) -> std::string"""
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApp2Var_ApproxAFunc2Var self)"""
         return _AdvApp2Var.AdvApp2Var_ApproxAFunc2Var__kill_pointed(self)
 
@@ -403,7 +403,7 @@ class AdvApp2Var_ApproxF2var(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def mma2fnc_(*args):
+    def mma2fnc_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -463,7 +463,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2fnc_(*args)
 
     mma2fnc_ = staticmethod(mma2fnc_)
-    def mma2roo_(*args):
+    def mma2roo_(*args) -> "int" :
         """
         :param nbpntu:
         :type nbpntu: integer *
@@ -479,7 +479,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2roo_(*args)
 
     mma2roo_ = staticmethod(mma2roo_)
-    def mma2jmx_(*args):
+    def mma2jmx_(*args) -> "int" :
         """
         :param ndgjac:
         :type ndgjac: integer *
@@ -493,7 +493,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2jmx_(*args)
 
     mma2jmx_ = staticmethod(mma2jmx_)
-    def mmapptt_(*args):
+    def mmapptt_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -511,7 +511,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mmapptt_(*args)
 
     mmapptt_ = staticmethod(mmapptt_)
-    def mma2cdi_(*args):
+    def mma2cdi_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -567,7 +567,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2cdi_(*args)
 
     mma2cdi_ = staticmethod(mma2cdi_)
-    def mma2ds1_(*args):
+    def mma2ds1_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -607,7 +607,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ds1_(*args)
 
     mma2ds1_ = staticmethod(mma2ds1_)
-    def mma2ce1_(*args):
+    def mma2ce1_(*args) -> "int" :
         """
         :param numdec:
         :type numdec: integer *
@@ -667,7 +667,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ce1_(*args)
 
     mma2ce1_ = staticmethod(mma2ce1_)
-    def mma2can_(*args):
+    def mma2can_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -697,7 +697,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2can_(*args)
 
     mma2can_ = staticmethod(mma2can_)
-    def mma1her_(*args):
+    def mma1her_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -711,7 +711,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma1her_(*args)
 
     mma1her_ = staticmethod(mma1her_)
-    def mma2ac2_(*args):
+    def mma2ac2_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -741,7 +741,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac2_(*args)
 
     mma2ac2_ = staticmethod(mma2ac2_)
-    def mma2ac3_(*args):
+    def mma2ac3_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -771,7 +771,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac3_(*args)
 
     mma2ac3_ = staticmethod(mma2ac3_)
-    def mma2ac1_(*args):
+    def mma2ac1_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -803,7 +803,7 @@ class AdvApp2Var_ApproxF2var(object):
         return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac1_(*args)
 
     mma2ac1_ = staticmethod(mma2ac1_)
-    def mma2fx6_(*args):
+    def mma2fx6_(*args) -> "int" :
         """
         :param ncfmxu:
         :type ncfmxu: integer *
@@ -853,7 +853,7 @@ AdvApp2Var_ApproxF2var._kill_pointed = new_instancemethod(_AdvApp2Var.AdvApp2Var
 AdvApp2Var_ApproxF2var_swigregister = _AdvApp2Var.AdvApp2Var_ApproxF2var_swigregister
 AdvApp2Var_ApproxF2var_swigregister(AdvApp2Var_ApproxF2var)
 
-def AdvApp2Var_ApproxF2var_mma2fnc_(*args):
+def AdvApp2Var_ApproxF2var_mma2fnc_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -912,7 +912,7 @@ def AdvApp2Var_ApproxF2var_mma2fnc_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2fnc_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2roo_(*args):
+def AdvApp2Var_ApproxF2var_mma2roo_(*args) -> "int" :
   """
     :param nbpntu:
     :type nbpntu: integer *
@@ -927,7 +927,7 @@ def AdvApp2Var_ApproxF2var_mma2roo_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2roo_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2jmx_(*args):
+def AdvApp2Var_ApproxF2var_mma2jmx_(*args) -> "int" :
   """
     :param ndgjac:
     :type ndgjac: integer *
@@ -940,7 +940,7 @@ def AdvApp2Var_ApproxF2var_mma2jmx_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2jmx_(*args)
 
-def AdvApp2Var_ApproxF2var_mmapptt_(*args):
+def AdvApp2Var_ApproxF2var_mmapptt_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -957,7 +957,7 @@ def AdvApp2Var_ApproxF2var_mmapptt_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mmapptt_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2cdi_(*args):
+def AdvApp2Var_ApproxF2var_mma2cdi_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -1012,7 +1012,7 @@ def AdvApp2Var_ApproxF2var_mma2cdi_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2cdi_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2ds1_(*args):
+def AdvApp2Var_ApproxF2var_mma2ds1_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -1051,7 +1051,7 @@ def AdvApp2Var_ApproxF2var_mma2ds1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ds1_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2ce1_(*args):
+def AdvApp2Var_ApproxF2var_mma2ce1_(*args) -> "int" :
   """
     :param numdec:
     :type numdec: integer *
@@ -1110,7 +1110,7 @@ def AdvApp2Var_ApproxF2var_mma2ce1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ce1_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2can_(*args):
+def AdvApp2Var_ApproxF2var_mma2can_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -1139,7 +1139,7 @@ def AdvApp2Var_ApproxF2var_mma2can_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2can_(*args)
 
-def AdvApp2Var_ApproxF2var_mma1her_(*args):
+def AdvApp2Var_ApproxF2var_mma1her_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -1152,7 +1152,7 @@ def AdvApp2Var_ApproxF2var_mma1her_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma1her_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2ac2_(*args):
+def AdvApp2Var_ApproxF2var_mma2ac2_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -1181,7 +1181,7 @@ def AdvApp2Var_ApproxF2var_mma2ac2_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac2_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2ac3_(*args):
+def AdvApp2Var_ApproxF2var_mma2ac3_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -1210,7 +1210,7 @@ def AdvApp2Var_ApproxF2var_mma2ac3_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac3_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2ac1_(*args):
+def AdvApp2Var_ApproxF2var_mma2ac1_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -1241,7 +1241,7 @@ def AdvApp2Var_ApproxF2var_mma2ac1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_ApproxF2var_mma2ac1_(*args)
 
-def AdvApp2Var_ApproxF2var_mma2fx6_(*args):
+def AdvApp2Var_ApproxF2var_mma2fx6_(*args) -> "int" :
   """
     :param ncfmxu:
     :type ncfmxu: integer *
@@ -1319,126 +1319,126 @@ class AdvApp2Var_Context(object):
 
         """
         _AdvApp2Var.AdvApp2Var_Context_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Context(*args))
-    def TotalDimension(self, *args):
+    def TotalDimension(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_TotalDimension(self, *args)
 
-    def TotalNumberSSP(self, *args):
+    def TotalNumberSSP(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_TotalNumberSSP(self, *args)
 
-    def FavorIso(self, *args):
+    def FavorIso(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_FavorIso(self, *args)
 
-    def UOrder(self, *args):
+    def UOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_UOrder(self, *args)
 
-    def VOrder(self, *args):
+    def VOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VOrder(self, *args)
 
-    def ULimit(self, *args):
+    def ULimit(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_ULimit(self, *args)
 
-    def VLimit(self, *args):
+    def VLimit(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VLimit(self, *args)
 
-    def UJacDeg(self, *args):
+    def UJacDeg(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_UJacDeg(self, *args)
 
-    def VJacDeg(self, *args):
+    def VJacDeg(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VJacDeg(self, *args)
 
-    def UJacMax(self, *args):
+    def UJacMax(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_UJacMax(self, *args)
 
-    def VJacMax(self, *args):
+    def VJacMax(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VJacMax(self, *args)
 
-    def URoots(self, *args):
+    def URoots(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_URoots(self, *args)
 
-    def VRoots(self, *args):
+    def VRoots(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VRoots(self, *args)
 
-    def UGauss(self, *args):
+    def UGauss(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_UGauss(self, *args)
 
-    def VGauss(self, *args):
+    def VGauss(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_VGauss(self, *args)
 
-    def IToler(self, *args):
+    def IToler(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_IToler(self, *args)
 
-    def FToler(self, *args):
+    def FToler(self, *args) -> "Handle_TColStd_HArray2OfReal" :
         """
         :rtype: Handle_TColStd_HArray2OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Context_FToler(self, *args)
 
-    def CToler(self, *args):
+    def CToler(self, *args) -> "Handle_TColStd_HArray2OfReal" :
         """
         :rtype: Handle_TColStd_HArray2OfReal
 
@@ -1479,14 +1479,14 @@ class AdvApp2Var_Criterion(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AdvApp2Var.AdvApp2Var_Criterion_Delete(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         :param P:
         :type P: AdvApp2Var_Patch &
@@ -1497,7 +1497,7 @@ class AdvApp2Var_Criterion(object):
         """
         return _AdvApp2Var.AdvApp2Var_Criterion_Value(self, *args)
 
-    def IsSatisfied(self, *args):
+    def IsSatisfied(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: AdvApp2Var_Patch &
@@ -1506,21 +1506,21 @@ class AdvApp2Var_Criterion(object):
         """
         return _AdvApp2Var.AdvApp2Var_Criterion_IsSatisfied(self, *args)
 
-    def MaxValue(self, *args):
+    def MaxValue(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Criterion_MaxValue(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "AdvApp2Var_CriterionType" :
         """
         :rtype: AdvApp2Var_CriterionType
 
         """
         return _AdvApp2Var.AdvApp2Var_Criterion_Type(self, *args)
 
-    def Repartition(self, *args):
+    def Repartition(self, *args) -> "AdvApp2Var_CriterionRepartition" :
         """
         :rtype: AdvApp2Var_CriterionRepartition
 
@@ -1549,7 +1549,7 @@ class AdvApp2Var_Data(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Getmdnombr(*args):
+    def Getmdnombr(*args) -> "mdnombr_1_ &" :
         """
         :rtype: mdnombr_1_
 
@@ -1557,7 +1557,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmdnombr(*args)
 
     Getmdnombr = staticmethod(Getmdnombr)
-    def Getminombr(*args):
+    def Getminombr(*args) -> "minombr_1_ &" :
         """
         :rtype: minombr_1_
 
@@ -1565,7 +1565,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getminombr(*args)
 
     Getminombr = staticmethod(Getminombr)
-    def Getmaovpar(*args):
+    def Getmaovpar(*args) -> "maovpar_1_ &" :
         """
         :rtype: maovpar_1_
 
@@ -1573,7 +1573,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmaovpar(*args)
 
     Getmaovpar = staticmethod(Getmaovpar)
-    def Getmaovpch(*args):
+    def Getmaovpch(*args) -> "maovpch_1_ &" :
         """
         :rtype: maovpch_1_
 
@@ -1581,7 +1581,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmaovpch(*args)
 
     Getmaovpch = staticmethod(Getmaovpch)
-    def Getmlgdrtl(*args):
+    def Getmlgdrtl(*args) -> "mlgdrtl_1_ &" :
         """
         :rtype: mlgdrtl_1_
 
@@ -1589,7 +1589,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmlgdrtl(*args)
 
     Getmlgdrtl = staticmethod(Getmlgdrtl)
-    def Getmmjcobi(*args):
+    def Getmmjcobi(*args) -> "mmjcobi_1_ &" :
         """
         :rtype: mmjcobi_1_
 
@@ -1597,7 +1597,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmmjcobi(*args)
 
     Getmmjcobi = staticmethod(Getmmjcobi)
-    def Getmmcmcnp(*args):
+    def Getmmcmcnp(*args) -> "mmcmcnp_1_ &" :
         """
         :rtype: mmcmcnp_1_
 
@@ -1605,7 +1605,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmmcmcnp(*args)
 
     Getmmcmcnp = staticmethod(Getmmcmcnp)
-    def Getmmapgss(*args):
+    def Getmmapgss(*args) -> "mmapgss_1_ &" :
         """
         :rtype: mmapgss_1_
 
@@ -1613,7 +1613,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmmapgss(*args)
 
     Getmmapgss = staticmethod(Getmmapgss)
-    def Getmmapgs0(*args):
+    def Getmmapgs0(*args) -> "mmapgs0_1_ &" :
         """
         :rtype: mmapgs0_1_
 
@@ -1621,7 +1621,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmmapgs0(*args)
 
     Getmmapgs0 = staticmethod(Getmmapgs0)
-    def Getmmapgs1(*args):
+    def Getmmapgs1(*args) -> "mmapgs1_1_ &" :
         """
         :rtype: mmapgs1_1_
 
@@ -1629,7 +1629,7 @@ class AdvApp2Var_Data(object):
         return _AdvApp2Var.AdvApp2Var_Data_Getmmapgs1(*args)
 
     Getmmapgs1 = staticmethod(Getmmapgs1)
-    def Getmmapgs2(*args):
+    def Getmmapgs2(*args) -> "mmapgs2_1_ &" :
         """
         :rtype: mmapgs2_1_
 
@@ -1649,77 +1649,77 @@ AdvApp2Var_Data._kill_pointed = new_instancemethod(_AdvApp2Var.AdvApp2Var_Data__
 AdvApp2Var_Data_swigregister = _AdvApp2Var.AdvApp2Var_Data_swigregister
 AdvApp2Var_Data_swigregister(AdvApp2Var_Data)
 
-def AdvApp2Var_Data_Getmdnombr(*args):
+def AdvApp2Var_Data_Getmdnombr(*args) -> "mdnombr_1_ &" :
   """
     :rtype: mdnombr_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmdnombr(*args)
 
-def AdvApp2Var_Data_Getminombr(*args):
+def AdvApp2Var_Data_Getminombr(*args) -> "minombr_1_ &" :
   """
     :rtype: minombr_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getminombr(*args)
 
-def AdvApp2Var_Data_Getmaovpar(*args):
+def AdvApp2Var_Data_Getmaovpar(*args) -> "maovpar_1_ &" :
   """
     :rtype: maovpar_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmaovpar(*args)
 
-def AdvApp2Var_Data_Getmaovpch(*args):
+def AdvApp2Var_Data_Getmaovpch(*args) -> "maovpch_1_ &" :
   """
     :rtype: maovpch_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmaovpch(*args)
 
-def AdvApp2Var_Data_Getmlgdrtl(*args):
+def AdvApp2Var_Data_Getmlgdrtl(*args) -> "mlgdrtl_1_ &" :
   """
     :rtype: mlgdrtl_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmlgdrtl(*args)
 
-def AdvApp2Var_Data_Getmmjcobi(*args):
+def AdvApp2Var_Data_Getmmjcobi(*args) -> "mmjcobi_1_ &" :
   """
     :rtype: mmjcobi_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmmjcobi(*args)
 
-def AdvApp2Var_Data_Getmmcmcnp(*args):
+def AdvApp2Var_Data_Getmmcmcnp(*args) -> "mmcmcnp_1_ &" :
   """
     :rtype: mmcmcnp_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmmcmcnp(*args)
 
-def AdvApp2Var_Data_Getmmapgss(*args):
+def AdvApp2Var_Data_Getmmapgss(*args) -> "mmapgss_1_ &" :
   """
     :rtype: mmapgss_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmmapgss(*args)
 
-def AdvApp2Var_Data_Getmmapgs0(*args):
+def AdvApp2Var_Data_Getmmapgs0(*args) -> "mmapgs0_1_ &" :
   """
     :rtype: mmapgs0_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmmapgs0(*args)
 
-def AdvApp2Var_Data_Getmmapgs1(*args):
+def AdvApp2Var_Data_Getmmapgs1(*args) -> "mmapgs1_1_ &" :
   """
     :rtype: mmapgs1_1_
 
     """
   return _AdvApp2Var.AdvApp2Var_Data_Getmmapgs1(*args)
 
-def AdvApp2Var_Data_Getmmapgs2(*args):
+def AdvApp2Var_Data_Getmmapgs2(*args) -> "mmapgs2_1_ &" :
   """
     :rtype: mmapgs2_1_
 
@@ -1743,7 +1743,7 @@ class AdvApp2Var_Framework(object):
 
         """
         _AdvApp2Var.AdvApp2Var_Framework_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Framework(*args))
-    def FirstNotApprox(self, *args):
+    def FirstNotApprox(self, *args) -> "Standard_Boolean" :
         """
         * search the Index of the first Iso not approximated, if all Isos are approximated Standard_False is returned.
 
@@ -1758,7 +1758,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_FirstNotApprox(self, *args)
 
-    def FirstNode(self, *args):
+    def FirstNode(self, *args) -> "Standard_Integer" :
         """
         :param Type:
         :type Type: GeomAbs_IsoType
@@ -1771,7 +1771,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_FirstNode(self, *args)
 
-    def LastNode(self, *args):
+    def LastNode(self, *args) -> "Standard_Integer" :
         """
         :param Type:
         :type Type: GeomAbs_IsoType
@@ -1784,7 +1784,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_LastNode(self, *args)
 
-    def ChangeIso(self, *args):
+    def ChangeIso(self, *args) -> "void" :
         """
         :param IndexIso:
         :type IndexIso: int
@@ -1797,7 +1797,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_ChangeIso(self, *args)
 
-    def Node(self, *args):
+    def Node(self, *args) -> "AdvApp2Var_Node const &" :
         """
         :param IndexNode:
         :type IndexNode: int
@@ -1812,7 +1812,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_Node(self, *args)
 
-    def IsoU(self, *args):
+    def IsoU(self, *args) -> "AdvApp2Var_Iso const &" :
         """
         :param U:
         :type U: float
@@ -1825,7 +1825,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_IsoU(self, *args)
 
-    def IsoV(self, *args):
+    def IsoV(self, *args) -> "AdvApp2Var_Iso const &" :
         """
         :param U0:
         :type U0: float
@@ -1838,7 +1838,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_IsoV(self, *args)
 
-    def ChangeNode(self, *args):
+    def ChangeNode(self, *args) -> "AdvApp2Var_Node &" :
         """
         :param IndexNode:
         :type IndexNode: int
@@ -1847,7 +1847,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_ChangeNode(self, *args)
 
-    def UpdateInU(self, *args):
+    def UpdateInU(self, *args) -> "void" :
         """
         :param CuttingValue:
         :type CuttingValue: float
@@ -1856,7 +1856,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_UpdateInU(self, *args)
 
-    def UpdateInV(self, *args):
+    def UpdateInV(self, *args) -> "void" :
         """
         :param CuttingValue:
         :type CuttingValue: float
@@ -1865,7 +1865,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_UpdateInV(self, *args)
 
-    def UEquation(self, *args):
+    def UEquation(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :param IndexIso:
         :type IndexIso: int
@@ -1876,7 +1876,7 @@ class AdvApp2Var_Framework(object):
         """
         return _AdvApp2Var.AdvApp2Var_Framework_UEquation(self, *args)
 
-    def VEquation(self, *args):
+    def VEquation(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :param IndexIso:
         :type IndexIso: int
@@ -1915,7 +1915,7 @@ class AdvApp2Var_MathBase(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def mmapcmp_(*args):
+    def mmapcmp_(*args) -> "int" :
         """
         * ///
 
@@ -1935,7 +1935,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmapcmp_(*args)
 
     mmapcmp_ = staticmethod(mmapcmp_)
-    def mmdrc11_(*args):
+    def mmdrc11_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -1955,7 +1955,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmdrc11_(*args)
 
     mmdrc11_ = staticmethod(mmdrc11_)
-    def mmfmca9_(*args):
+    def mmfmca9_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -1979,7 +1979,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmfmca9_(*args)
 
     mmfmca9_ = staticmethod(mmfmca9_)
-    def mmfmcb5_(*args):
+    def mmfmcb5_(*args) -> "int" :
         """
         :param :
         :type : integer *
@@ -2005,7 +2005,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmfmcb5_(*args)
 
     mmfmcb5_ = staticmethod(mmfmcb5_)
-    def mmwprcs_(*args):
+    def mmwprcs_(*args) -> "void" :
         """
         :param :
         :type : doublereal *
@@ -2025,7 +2025,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmwprcs_(*args)
 
     mmwprcs_ = staticmethod(mmwprcs_)
-    def mmcglc1_(*args):
+    def mmcglc1_(*args) -> "int" :
         """
         * ///
 
@@ -2055,7 +2055,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmcglc1_(*args)
 
     mmcglc1_ = staticmethod(mmcglc1_)
-    def mmbulld_(*args):
+    def mmbulld_(*args) -> "int" :
         """
         :param nbcoln:
         :type nbcoln: integer *
@@ -2071,7 +2071,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmbulld_(*args)
 
     mmbulld_ = staticmethod(mmbulld_)
-    def mmcdriv_(*args):
+    def mmcdriv_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2091,7 +2091,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmcdriv_(*args)
 
     mmcdriv_ = staticmethod(mmcdriv_)
-    def mmcvctx_(*args):
+    def mmcvctx_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2115,7 +2115,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmcvctx_(*args)
 
     mmcvctx_ = staticmethod(mmcvctx_)
-    def mdsptpt_(*args):
+    def mdsptpt_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2131,7 +2131,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mdsptpt_(*args)
 
     mdsptpt_ = staticmethod(mdsptpt_)
-    def mmaperx_(*args):
+    def mmaperx_(*args) -> "int" :
         """
         :param ncofmx:
         :type ncofmx: integer *
@@ -2157,7 +2157,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmaperx_(*args)
 
     mmaperx_ = staticmethod(mmaperx_)
-    def mmdrvck_(*args):
+    def mmdrvck_(*args) -> "int" :
         """
         :param ncoeff:
         :type ncoeff: integer *
@@ -2177,7 +2177,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmdrvck_(*args)
 
     mmdrvck_ = staticmethod(mmdrvck_)
-    def mmeps1_(*args):
+    def mmeps1_(*args) -> "int" :
         """
         :param epsilo:
         :type epsilo: doublereal *
@@ -2187,7 +2187,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmeps1_(*args)
 
     mmeps1_ = staticmethod(mmeps1_)
-    def mmfmca8_(*args):
+    def mmfmca8_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2211,7 +2211,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmfmca8_(*args)
 
     mmfmca8_ = staticmethod(mmfmca8_)
-    def mmfmcar_(*args):
+    def mmfmcar_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2241,7 +2241,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmfmcar_(*args)
 
     mmfmcar_ = staticmethod(mmfmcar_)
-    def mmfmtb1_(*args):
+    def mmfmtb1_(*args) -> "int" :
         """
         :param maxsz1:
         :type maxsz1: integer *
@@ -2267,7 +2267,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmfmtb1_(*args)
 
     mmfmtb1_ = staticmethod(mmfmtb1_)
-    def mmgaus1_(*args):
+    def mmgaus1_(*args) -> "int" :
         """
         :param ndimf:
         :type ndimf: integer *
@@ -2295,7 +2295,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmgaus1_(*args)
 
     mmgaus1_ = staticmethod(mmgaus1_)
-    def mmhjcan_(*args):
+    def mmhjcan_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2321,7 +2321,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmhjcan_(*args)
 
     mmhjcan_ = staticmethod(mmhjcan_)
-    def mminltt_(*args):
+    def mminltt_(*args) -> "int" :
         """
         :param ncolmx:
         :type ncolmx: integer *
@@ -2345,7 +2345,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mminltt_(*args)
 
     mminltt_ = staticmethod(mminltt_)
-    def mmjaccv_(*args):
+    def mmjaccv_(*args) -> "int" :
         """
         :param ncoef:
         :type ncoef: integer *
@@ -2365,7 +2365,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmjaccv_(*args)
 
     mmjaccv_ = staticmethod(mmjaccv_)
-    def mmpobas_(*args):
+    def mmpobas_(*args) -> "int" :
         """
         :param tparam:
         :type tparam: doublereal *
@@ -2385,7 +2385,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmpobas_(*args)
 
     mmpobas_ = staticmethod(mmpobas_)
-    def mmmpocur_(*args):
+    def mmmpocur_(*args) -> "int" :
         """
         :param ncofmx:
         :type ncofmx: integer *
@@ -2405,7 +2405,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmmpocur_(*args)
 
     mmmpocur_ = staticmethod(mmmpocur_)
-    def mmposui_(*args):
+    def mmposui_(*args) -> "int" :
         """
         :param dimmat:
         :type dimmat: integer *
@@ -2423,7 +2423,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmposui_(*args)
 
     mmposui_ = staticmethod(mmposui_)
-    def mmresol_(*args):
+    def mmresol_(*args) -> "int" :
         """
         :param hdimen:
         :type hdimen: integer *
@@ -2463,7 +2463,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmresol_(*args)
 
     mmresol_ = staticmethod(mmresol_)
-    def mmrtptt_(*args):
+    def mmrtptt_(*args) -> "int" :
         """
         :param ndglgd:
         :type ndglgd: integer *
@@ -2475,7 +2475,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmrtptt_(*args)
 
     mmrtptt_ = staticmethod(mmrtptt_)
-    def mmsrre2_(*args):
+    def mmsrre2_(*args) -> "int" :
         """
         :param tparam:
         :type tparam: doublereal *
@@ -2497,7 +2497,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmsrre2_(*args)
 
     mmsrre2_ = staticmethod(mmsrre2_)
-    def mmtrpjj_(*args):
+    def mmtrpjj_(*args) -> "int" :
         """
         :param ncofmx:
         :type ncofmx: integer *
@@ -2523,7 +2523,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmtrpjj_(*args)
 
     mmtrpjj_ = staticmethod(mmtrpjj_)
-    def mmunivt_(*args):
+    def mmunivt_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2541,7 +2541,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmunivt_(*args)
 
     mmunivt_ = staticmethod(mmunivt_)
-    def mmvncol_(*args):
+    def mmvncol_(*args) -> "int" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2557,7 +2557,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmvncol_(*args)
 
     mmvncol_ = staticmethod(mmvncol_)
-    def msc_(*args):
+    def msc_(*args) -> "doublereal" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2571,7 +2571,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_msc_(*args)
 
     msc_ = staticmethod(msc_)
-    def mvsheld_(*args):
+    def mvsheld_(*args) -> "int" :
         """
         :param n:
         :type n: integer *
@@ -2587,7 +2587,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mvsheld_(*args)
 
     mvsheld_ = staticmethod(mvsheld_)
-    def mmarcin_(*args):
+    def mmarcin_(*args) -> "int" :
         """
         :param ndimax:
         :type ndimax: integer *
@@ -2611,7 +2611,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmarcin_(*args)
 
     mmarcin_ = staticmethod(mmarcin_)
-    def mmcvinv_(*args):
+    def mmcvinv_(*args) -> "int" :
         """
         :param ndimax:
         :type ndimax: integer *
@@ -2629,7 +2629,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmcvinv_(*args)
 
     mmcvinv_ = staticmethod(mmcvinv_)
-    def mmjacan_(*args):
+    def mmjacan_(*args) -> "int" :
         """
         :param ideriv:
         :type ideriv: integer *
@@ -2645,7 +2645,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmjacan_(*args)
 
     mmjacan_ = staticmethod(mmjacan_)
-    def mmpocrb_(*args):
+    def mmpocrb_(*args) -> "int" :
         """
         :param ndimax:
         :type ndimax: integer *
@@ -2665,7 +2665,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmpocrb_(*args)
 
     mmpocrb_ = staticmethod(mmpocrb_)
-    def mmmrslwd_(*args):
+    def mmmrslwd_(*args) -> "int" :
         """
         :param normax:
         :type normax: integer *
@@ -2691,7 +2691,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmmrslwd_(*args)
 
     mmmrslwd_ = staticmethod(mmmrslwd_)
-    def mmveps3_(*args):
+    def mmveps3_(*args) -> "int" :
         """
         :param eps03:
         :type eps03: doublereal *
@@ -2701,7 +2701,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_mmveps3_(*args)
 
     mmveps3_ = staticmethod(mmveps3_)
-    def pow__di(*args):
+    def pow__di(*args) -> "doublereal" :
         """
         :param x:
         :type x: doublereal *
@@ -2713,7 +2713,7 @@ class AdvApp2Var_MathBase(object):
         return _AdvApp2Var.AdvApp2Var_MathBase_pow__di(*args)
 
     pow__di = staticmethod(pow__di)
-    def mzsnorm_(*args):
+    def mzsnorm_(*args) -> "doublereal" :
         """
         :param ndimen:
         :type ndimen: integer *
@@ -2737,7 +2737,7 @@ AdvApp2Var_MathBase._kill_pointed = new_instancemethod(_AdvApp2Var.AdvApp2Var_Ma
 AdvApp2Var_MathBase_swigregister = _AdvApp2Var.AdvApp2Var_MathBase_swigregister
 AdvApp2Var_MathBase_swigregister(AdvApp2Var_MathBase)
 
-def AdvApp2Var_MathBase_mmapcmp_(*args):
+def AdvApp2Var_MathBase_mmapcmp_(*args) -> "int" :
   """
     * ///
 
@@ -2756,7 +2756,7 @@ def AdvApp2Var_MathBase_mmapcmp_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmapcmp_(*args)
 
-def AdvApp2Var_MathBase_mmdrc11_(*args):
+def AdvApp2Var_MathBase_mmdrc11_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -2775,7 +2775,7 @@ def AdvApp2Var_MathBase_mmdrc11_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmdrc11_(*args)
 
-def AdvApp2Var_MathBase_mmfmca9_(*args):
+def AdvApp2Var_MathBase_mmfmca9_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -2798,7 +2798,7 @@ def AdvApp2Var_MathBase_mmfmca9_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmfmca9_(*args)
 
-def AdvApp2Var_MathBase_mmfmcb5_(*args):
+def AdvApp2Var_MathBase_mmfmcb5_(*args) -> "int" :
   """
     :param :
     :type : integer *
@@ -2823,7 +2823,7 @@ def AdvApp2Var_MathBase_mmfmcb5_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmfmcb5_(*args)
 
-def AdvApp2Var_MathBase_mmwprcs_(*args):
+def AdvApp2Var_MathBase_mmwprcs_(*args) -> "void" :
   """
     :param :
     :type : doublereal *
@@ -2842,7 +2842,7 @@ def AdvApp2Var_MathBase_mmwprcs_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmwprcs_(*args)
 
-def AdvApp2Var_MathBase_mmcglc1_(*args):
+def AdvApp2Var_MathBase_mmcglc1_(*args) -> "int" :
   """
     * ///
 
@@ -2871,7 +2871,7 @@ def AdvApp2Var_MathBase_mmcglc1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmcglc1_(*args)
 
-def AdvApp2Var_MathBase_mmbulld_(*args):
+def AdvApp2Var_MathBase_mmbulld_(*args) -> "int" :
   """
     :param nbcoln:
     :type nbcoln: integer *
@@ -2886,7 +2886,7 @@ def AdvApp2Var_MathBase_mmbulld_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmbulld_(*args)
 
-def AdvApp2Var_MathBase_mmcdriv_(*args):
+def AdvApp2Var_MathBase_mmcdriv_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -2905,7 +2905,7 @@ def AdvApp2Var_MathBase_mmcdriv_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmcdriv_(*args)
 
-def AdvApp2Var_MathBase_mmcvctx_(*args):
+def AdvApp2Var_MathBase_mmcvctx_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -2928,7 +2928,7 @@ def AdvApp2Var_MathBase_mmcvctx_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmcvctx_(*args)
 
-def AdvApp2Var_MathBase_mdsptpt_(*args):
+def AdvApp2Var_MathBase_mdsptpt_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -2943,7 +2943,7 @@ def AdvApp2Var_MathBase_mdsptpt_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mdsptpt_(*args)
 
-def AdvApp2Var_MathBase_mmaperx_(*args):
+def AdvApp2Var_MathBase_mmaperx_(*args) -> "int" :
   """
     :param ncofmx:
     :type ncofmx: integer *
@@ -2968,7 +2968,7 @@ def AdvApp2Var_MathBase_mmaperx_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmaperx_(*args)
 
-def AdvApp2Var_MathBase_mmdrvck_(*args):
+def AdvApp2Var_MathBase_mmdrvck_(*args) -> "int" :
   """
     :param ncoeff:
     :type ncoeff: integer *
@@ -2987,7 +2987,7 @@ def AdvApp2Var_MathBase_mmdrvck_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmdrvck_(*args)
 
-def AdvApp2Var_MathBase_mmeps1_(*args):
+def AdvApp2Var_MathBase_mmeps1_(*args) -> "int" :
   """
     :param epsilo:
     :type epsilo: doublereal *
@@ -2996,7 +2996,7 @@ def AdvApp2Var_MathBase_mmeps1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmeps1_(*args)
 
-def AdvApp2Var_MathBase_mmfmca8_(*args):
+def AdvApp2Var_MathBase_mmfmca8_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3019,7 +3019,7 @@ def AdvApp2Var_MathBase_mmfmca8_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmfmca8_(*args)
 
-def AdvApp2Var_MathBase_mmfmcar_(*args):
+def AdvApp2Var_MathBase_mmfmcar_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3048,7 +3048,7 @@ def AdvApp2Var_MathBase_mmfmcar_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmfmcar_(*args)
 
-def AdvApp2Var_MathBase_mmfmtb1_(*args):
+def AdvApp2Var_MathBase_mmfmtb1_(*args) -> "int" :
   """
     :param maxsz1:
     :type maxsz1: integer *
@@ -3073,7 +3073,7 @@ def AdvApp2Var_MathBase_mmfmtb1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmfmtb1_(*args)
 
-def AdvApp2Var_MathBase_mmgaus1_(*args):
+def AdvApp2Var_MathBase_mmgaus1_(*args) -> "int" :
   """
     :param ndimf:
     :type ndimf: integer *
@@ -3100,7 +3100,7 @@ def AdvApp2Var_MathBase_mmgaus1_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmgaus1_(*args)
 
-def AdvApp2Var_MathBase_mmhjcan_(*args):
+def AdvApp2Var_MathBase_mmhjcan_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3125,7 +3125,7 @@ def AdvApp2Var_MathBase_mmhjcan_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmhjcan_(*args)
 
-def AdvApp2Var_MathBase_mminltt_(*args):
+def AdvApp2Var_MathBase_mminltt_(*args) -> "int" :
   """
     :param ncolmx:
     :type ncolmx: integer *
@@ -3148,7 +3148,7 @@ def AdvApp2Var_MathBase_mminltt_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mminltt_(*args)
 
-def AdvApp2Var_MathBase_mmjaccv_(*args):
+def AdvApp2Var_MathBase_mmjaccv_(*args) -> "int" :
   """
     :param ncoef:
     :type ncoef: integer *
@@ -3167,7 +3167,7 @@ def AdvApp2Var_MathBase_mmjaccv_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmjaccv_(*args)
 
-def AdvApp2Var_MathBase_mmpobas_(*args):
+def AdvApp2Var_MathBase_mmpobas_(*args) -> "int" :
   """
     :param tparam:
     :type tparam: doublereal *
@@ -3186,7 +3186,7 @@ def AdvApp2Var_MathBase_mmpobas_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmpobas_(*args)
 
-def AdvApp2Var_MathBase_mmmpocur_(*args):
+def AdvApp2Var_MathBase_mmmpocur_(*args) -> "int" :
   """
     :param ncofmx:
     :type ncofmx: integer *
@@ -3205,7 +3205,7 @@ def AdvApp2Var_MathBase_mmmpocur_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmmpocur_(*args)
 
-def AdvApp2Var_MathBase_mmposui_(*args):
+def AdvApp2Var_MathBase_mmposui_(*args) -> "int" :
   """
     :param dimmat:
     :type dimmat: integer *
@@ -3222,7 +3222,7 @@ def AdvApp2Var_MathBase_mmposui_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmposui_(*args)
 
-def AdvApp2Var_MathBase_mmresol_(*args):
+def AdvApp2Var_MathBase_mmresol_(*args) -> "int" :
   """
     :param hdimen:
     :type hdimen: integer *
@@ -3261,7 +3261,7 @@ def AdvApp2Var_MathBase_mmresol_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmresol_(*args)
 
-def AdvApp2Var_MathBase_mmrtptt_(*args):
+def AdvApp2Var_MathBase_mmrtptt_(*args) -> "int" :
   """
     :param ndglgd:
     :type ndglgd: integer *
@@ -3272,7 +3272,7 @@ def AdvApp2Var_MathBase_mmrtptt_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmrtptt_(*args)
 
-def AdvApp2Var_MathBase_mmsrre2_(*args):
+def AdvApp2Var_MathBase_mmsrre2_(*args) -> "int" :
   """
     :param tparam:
     :type tparam: doublereal *
@@ -3293,7 +3293,7 @@ def AdvApp2Var_MathBase_mmsrre2_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmsrre2_(*args)
 
-def AdvApp2Var_MathBase_mmtrpjj_(*args):
+def AdvApp2Var_MathBase_mmtrpjj_(*args) -> "int" :
   """
     :param ncofmx:
     :type ncofmx: integer *
@@ -3318,7 +3318,7 @@ def AdvApp2Var_MathBase_mmtrpjj_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmtrpjj_(*args)
 
-def AdvApp2Var_MathBase_mmunivt_(*args):
+def AdvApp2Var_MathBase_mmunivt_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3335,7 +3335,7 @@ def AdvApp2Var_MathBase_mmunivt_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmunivt_(*args)
 
-def AdvApp2Var_MathBase_mmvncol_(*args):
+def AdvApp2Var_MathBase_mmvncol_(*args) -> "int" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3350,7 +3350,7 @@ def AdvApp2Var_MathBase_mmvncol_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmvncol_(*args)
 
-def AdvApp2Var_MathBase_msc_(*args):
+def AdvApp2Var_MathBase_msc_(*args) -> "doublereal" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3363,7 +3363,7 @@ def AdvApp2Var_MathBase_msc_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_msc_(*args)
 
-def AdvApp2Var_MathBase_mvsheld_(*args):
+def AdvApp2Var_MathBase_mvsheld_(*args) -> "int" :
   """
     :param n:
     :type n: integer *
@@ -3378,7 +3378,7 @@ def AdvApp2Var_MathBase_mvsheld_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mvsheld_(*args)
 
-def AdvApp2Var_MathBase_mmarcin_(*args):
+def AdvApp2Var_MathBase_mmarcin_(*args) -> "int" :
   """
     :param ndimax:
     :type ndimax: integer *
@@ -3401,7 +3401,7 @@ def AdvApp2Var_MathBase_mmarcin_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmarcin_(*args)
 
-def AdvApp2Var_MathBase_mmcvinv_(*args):
+def AdvApp2Var_MathBase_mmcvinv_(*args) -> "int" :
   """
     :param ndimax:
     :type ndimax: integer *
@@ -3418,7 +3418,7 @@ def AdvApp2Var_MathBase_mmcvinv_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmcvinv_(*args)
 
-def AdvApp2Var_MathBase_mmjacan_(*args):
+def AdvApp2Var_MathBase_mmjacan_(*args) -> "int" :
   """
     :param ideriv:
     :type ideriv: integer *
@@ -3433,7 +3433,7 @@ def AdvApp2Var_MathBase_mmjacan_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmjacan_(*args)
 
-def AdvApp2Var_MathBase_mmpocrb_(*args):
+def AdvApp2Var_MathBase_mmpocrb_(*args) -> "int" :
   """
     :param ndimax:
     :type ndimax: integer *
@@ -3452,7 +3452,7 @@ def AdvApp2Var_MathBase_mmpocrb_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmpocrb_(*args)
 
-def AdvApp2Var_MathBase_mmmrslwd_(*args):
+def AdvApp2Var_MathBase_mmmrslwd_(*args) -> "int" :
   """
     :param normax:
     :type normax: integer *
@@ -3477,7 +3477,7 @@ def AdvApp2Var_MathBase_mmmrslwd_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmmrslwd_(*args)
 
-def AdvApp2Var_MathBase_mmveps3_(*args):
+def AdvApp2Var_MathBase_mmveps3_(*args) -> "int" :
   """
     :param eps03:
     :type eps03: doublereal *
@@ -3486,7 +3486,7 @@ def AdvApp2Var_MathBase_mmveps3_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_mmveps3_(*args)
 
-def AdvApp2Var_MathBase_pow__di(*args):
+def AdvApp2Var_MathBase_pow__di(*args) -> "doublereal" :
   """
     :param x:
     :type x: doublereal *
@@ -3497,7 +3497,7 @@ def AdvApp2Var_MathBase_pow__di(*args):
     """
   return _AdvApp2Var.AdvApp2Var_MathBase_pow__di(*args)
 
-def AdvApp2Var_MathBase_mzsnorm_(*args):
+def AdvApp2Var_MathBase_mzsnorm_(*args) -> "doublereal" :
   """
     :param ndimen:
     :type ndimen: integer *
@@ -3525,7 +3525,7 @@ class AdvApp2Var_Network(object):
 
         """
         _AdvApp2Var.AdvApp2Var_Network_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Network(*args))
-    def FirstNotApprox(self, *args):
+    def FirstNotApprox(self, *args) -> "Standard_Boolean" :
         """
         * search the Index of the first Patch not approximated, if all Patches are approximated Standard_False is returned
 
@@ -3536,7 +3536,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_FirstNotApprox(self, *args)
 
-    def ChangePatch(self, *args):
+    def ChangePatch(self, *args) -> "AdvApp2Var_Patch &" :
         """
         :param Index:
         :type Index: int
@@ -3545,7 +3545,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_ChangePatch(self, *args)
 
-    def UpdateInU(self, *args):
+    def UpdateInU(self, *args) -> "void" :
         """
         :param CuttingValue:
         :type CuttingValue: float
@@ -3554,7 +3554,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_UpdateInU(self, *args)
 
-    def UpdateInV(self, *args):
+    def UpdateInV(self, *args) -> "void" :
         """
         :param CuttingValue:
         :type CuttingValue: float
@@ -3563,7 +3563,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_UpdateInV(self, *args)
 
-    def SameDegree(self, *args):
+    def SameDegree(self, *args) -> "void" :
         """
         :param iu:
         :type iu: int
@@ -3578,28 +3578,28 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_SameDegree(self, *args)
 
-    def NbPatch(self, *args):
+    def NbPatch(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Network_NbPatch(self, *args)
 
-    def NbPatchInU(self, *args):
+    def NbPatchInU(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Network_NbPatchInU(self, *args)
 
-    def NbPatchInV(self, *args):
+    def NbPatchInV(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Network_NbPatchInV(self, *args)
 
-    def UParameter(self, *args):
+    def UParameter(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -3608,7 +3608,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_UParameter(self, *args)
 
-    def VParameter(self, *args):
+    def VParameter(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -3617,7 +3617,7 @@ class AdvApp2Var_Network(object):
         """
         return _AdvApp2Var.AdvApp2Var_Network_VParameter(self, *args)
 
-    def Patch(self, *args):
+    def Patch(self, *args) -> "AdvApp2Var_Patch const &" :
         """
         :param UIndex:
         :type UIndex: int
@@ -3674,14 +3674,14 @@ class AdvApp2Var_Node(object):
 
         """
         _AdvApp2Var.AdvApp2Var_Node_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Node(*args))
-    def Coord(self, *args):
+    def Coord(self, *args) -> "gp_XY" :
         """
         :rtype: gp_XY
 
         """
         return _AdvApp2Var.AdvApp2Var_Node_Coord(self, *args)
 
-    def SetCoord(self, *args):
+    def SetCoord(self, *args) -> "void" :
         """
         :param x1:
         :type x1: float
@@ -3692,21 +3692,21 @@ class AdvApp2Var_Node(object):
         """
         return _AdvApp2Var.AdvApp2Var_Node_SetCoord(self, *args)
 
-    def UOrder(self, *args):
+    def UOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Node_UOrder(self, *args)
 
-    def VOrder(self, *args):
+    def VOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Node_VOrder(self, *args)
 
-    def SetPoint(self, *args):
+    def SetPoint(self, *args) -> "void" :
         """
         :param iu:
         :type iu: int
@@ -3719,7 +3719,7 @@ class AdvApp2Var_Node(object):
         """
         return _AdvApp2Var.AdvApp2Var_Node_SetPoint(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         :param iu:
         :type iu: int
@@ -3730,7 +3730,7 @@ class AdvApp2Var_Node(object):
         """
         return _AdvApp2Var.AdvApp2Var_Node_Point(self, *args)
 
-    def SetError(self, *args):
+    def SetError(self, *args) -> "void" :
         """
         :param iu:
         :type iu: int
@@ -3743,7 +3743,7 @@ class AdvApp2Var_Node(object):
         """
         return _AdvApp2Var.AdvApp2Var_Node_SetError(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param iu:
         :type iu: int
@@ -3797,14 +3797,14 @@ class AdvApp2Var_Patch(object):
 
         """
         _AdvApp2Var.AdvApp2Var_Patch_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Patch(*args))
-    def IsDiscretised(self, *args):
+    def IsDiscretised(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_IsDiscretised(self, *args)
 
-    def Discretise(self, *args):
+    def Discretise(self, *args) -> "void" :
         """
         :param Conditions:
         :type Conditions: AdvApp2Var_Context &
@@ -3817,21 +3817,21 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_Discretise(self, *args)
 
-    def IsApproximated(self, *args):
+    def IsApproximated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_IsApproximated(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_HasResult(self, *args)
 
-    def MakeApprox(self, *args):
+    def MakeApprox(self, *args) -> "void" :
         """
         :param Conditions:
         :type Conditions: AdvApp2Var_Context &
@@ -3844,7 +3844,7 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_MakeApprox(self, *args)
 
-    def AddConstraints(self, *args):
+    def AddConstraints(self, *args) -> "void" :
         """
         :param Conditions:
         :type Conditions: AdvApp2Var_Context &
@@ -3855,7 +3855,7 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_AddConstraints(self, *args)
 
-    def AddErrors(self, *args):
+    def AddErrors(self, *args) -> "void" :
         """
         :param Constraints:
         :type Constraints: AdvApp2Var_Framework &
@@ -3864,7 +3864,7 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_AddErrors(self, *args)
 
-    def ChangeDomain(self, *args):
+    def ChangeDomain(self, *args) -> "void" :
         """
         :param a:
         :type a: float
@@ -3879,63 +3879,63 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_ChangeDomain(self, *args)
 
-    def ResetApprox(self, *args):
+    def ResetApprox(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_ResetApprox(self, *args)
 
-    def OverwriteApprox(self, *args):
+    def OverwriteApprox(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_OverwriteApprox(self, *args)
 
-    def U0(self, *args):
+    def U0(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_U0(self, *args)
 
-    def U1(self, *args):
+    def U1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_U1(self, *args)
 
-    def V0(self, *args):
+    def V0(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_V0(self, *args)
 
-    def V1(self, *args):
+    def V1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_V1(self, *args)
 
-    def UOrder(self, *args):
+    def UOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_UOrder(self, *args)
 
-    def VOrder(self, *args):
+    def VOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_VOrder(self, *args)
 
-    def CutSense(self, *args):
+    def CutSense(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -3948,21 +3948,21 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_CutSense(self, *args)
 
-    def NbCoeffInU(self, *args):
+    def NbCoeffInU(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_NbCoeffInU(self, *args)
 
-    def NbCoeffInV(self, *args):
+    def NbCoeffInV(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_NbCoeffInV(self, *args)
 
-    def ChangeNbCoeff(self, *args):
+    def ChangeNbCoeff(self, *args) -> "void" :
         """
         :param NbCoeffU:
         :type NbCoeffU: int
@@ -3973,7 +3973,7 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_ChangeNbCoeff(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "Handle_TColgp_HArray2OfPnt" :
         """
         :param SSPIndex:
         :type SSPIndex: int
@@ -3984,7 +3984,7 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_Poles(self, *args)
 
-    def Coefficients(self, *args):
+    def Coefficients(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :param SSPIndex:
         :type SSPIndex: int
@@ -3995,35 +3995,35 @@ class AdvApp2Var_Patch(object):
         """
         return _AdvApp2Var.AdvApp2Var_Patch_Coefficients(self, *args)
 
-    def MaxErrors(self, *args):
+    def MaxErrors(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_MaxErrors(self, *args)
 
-    def AverageErrors(self, *args):
+    def AverageErrors(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_AverageErrors(self, *args)
 
-    def IsoErrors(self, *args):
+    def IsoErrors(self, *args) -> "Handle_TColStd_HArray2OfReal" :
         """
         :rtype: Handle_TColStd_HArray2OfReal
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_IsoErrors(self, *args)
 
-    def CritValue(self, *args):
+    def CritValue(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AdvApp2Var.AdvApp2Var_Patch_CritValue(self, *args)
 
-    def SetCritValue(self, *args):
+    def SetCritValue(self, *args) -> "void" :
         """
         :param dist:
         :type dist: float
@@ -4086,18 +4086,18 @@ class AdvApp2Var_SequenceNodeOfSequenceOfNode(OCC.TCollection.TCollection_SeqNod
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfNode_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceNodeOfSequenceOfNode(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Node &" :
         """
         :rtype: AdvApp2Var_Node
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfNode_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApp2Var_SequenceNodeOfSequenceOfNode self)"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode" :
         """GetHandle(AdvApp2Var_SequenceNodeOfSequenceOfNode self) -> Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfNode_GetHandle(self)
 
@@ -4136,7 +4136,7 @@ Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode._kill_pointed = new_instancemetho
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_swigregister = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_swigregister
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_swigregister(Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode)
 
-def Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_DownCast(*args):
+def Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_DownCast(*args) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode const" :
   return _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_DownCast(*args)
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_DownCast = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfNode_DownCast
 
@@ -4155,18 +4155,18 @@ class AdvApp2Var_SequenceNodeOfSequenceOfPatch(OCC.TCollection.TCollection_SeqNo
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfPatch_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceNodeOfSequenceOfPatch(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Patch &" :
         """
         :rtype: AdvApp2Var_Patch
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfPatch_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApp2Var_SequenceNodeOfSequenceOfPatch self)"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfPatch__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch" :
         """GetHandle(AdvApp2Var_SequenceNodeOfSequenceOfPatch self) -> Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfPatch_GetHandle(self)
 
@@ -4205,7 +4205,7 @@ Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch._kill_pointed = new_instancemeth
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_swigregister = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_swigregister
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_swigregister(Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch)
 
-def Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_DownCast(*args):
+def Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_DownCast(*args) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch const" :
   return _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_DownCast(*args)
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_DownCast = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfPatch_DownCast
 
@@ -4224,18 +4224,18 @@ class AdvApp2Var_SequenceNodeOfSequenceOfStrip(OCC.TCollection.TCollection_SeqNo
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfStrip_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceNodeOfSequenceOfStrip(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Strip &" :
         """
         :rtype: AdvApp2Var_Strip
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfStrip_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApp2Var_SequenceNodeOfSequenceOfStrip self)"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfStrip__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip" :
         """GetHandle(AdvApp2Var_SequenceNodeOfSequenceOfStrip self) -> Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfSequenceOfStrip_GetHandle(self)
 
@@ -4274,7 +4274,7 @@ Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip._kill_pointed = new_instancemeth
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_swigregister = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_swigregister
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_swigregister(Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip)
 
-def Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_DownCast(*args):
+def Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_DownCast(*args) -> "Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip const" :
   return _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_DownCast(*args)
 Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_DownCast = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfSequenceOfStrip_DownCast
 
@@ -4293,18 +4293,18 @@ class AdvApp2Var_SequenceNodeOfStrip(OCC.TCollection.TCollection_SeqNode):
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceNodeOfStrip_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceNodeOfStrip(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Iso &" :
         """
         :rtype: AdvApp2Var_Iso
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfStrip_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApp2Var_SequenceNodeOfStrip self)"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfStrip__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AdvApp2Var_SequenceNodeOfStrip" :
         """GetHandle(AdvApp2Var_SequenceNodeOfStrip self) -> Handle_AdvApp2Var_SequenceNodeOfStrip"""
         return _AdvApp2Var.AdvApp2Var_SequenceNodeOfStrip_GetHandle(self)
 
@@ -4343,7 +4343,7 @@ Handle_AdvApp2Var_SequenceNodeOfStrip._kill_pointed = new_instancemethod(_AdvApp
 Handle_AdvApp2Var_SequenceNodeOfStrip_swigregister = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfStrip_swigregister
 Handle_AdvApp2Var_SequenceNodeOfStrip_swigregister(Handle_AdvApp2Var_SequenceNodeOfStrip)
 
-def Handle_AdvApp2Var_SequenceNodeOfStrip_DownCast(*args):
+def Handle_AdvApp2Var_SequenceNodeOfStrip_DownCast(*args) -> "Handle_AdvApp2Var_SequenceNodeOfStrip const" :
   return _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfStrip_DownCast(*args)
 Handle_AdvApp2Var_SequenceNodeOfStrip_DownCast = _AdvApp2Var.Handle_AdvApp2Var_SequenceNodeOfStrip_DownCast
 
@@ -4356,14 +4356,14 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceOfNode_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceOfNode(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AdvApp2Var_SequenceOfNode const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfNode &
@@ -4372,7 +4372,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AdvApp2Var_SequenceOfNode const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfNode &
@@ -4381,7 +4381,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Node &
@@ -4394,7 +4394,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Node &
@@ -4407,7 +4407,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4424,7 +4424,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4441,21 +4441,21 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "AdvApp2Var_Node const &" :
         """
         :rtype: AdvApp2Var_Node
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "AdvApp2Var_Node const &" :
         """
         :rtype: AdvApp2Var_Node
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4466,7 +4466,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Node const &" :
         """
         :param Index:
         :type Index: int
@@ -4475,7 +4475,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4486,7 +4486,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AdvApp2Var_Node &" :
         """
         :param Index:
         :type Index: int
@@ -4495,7 +4495,7 @@ class AdvApp2Var_SequenceOfNode(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfNode_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4545,14 +4545,14 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceOfPatch_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceOfPatch(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AdvApp2Var_SequenceOfPatch const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfPatch &
@@ -4561,7 +4561,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AdvApp2Var_SequenceOfPatch const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfPatch &
@@ -4570,7 +4570,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Patch &
@@ -4583,7 +4583,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Patch &
@@ -4596,7 +4596,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4613,7 +4613,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4630,21 +4630,21 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "AdvApp2Var_Patch const &" :
         """
         :rtype: AdvApp2Var_Patch
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "AdvApp2Var_Patch const &" :
         """
         :rtype: AdvApp2Var_Patch
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4655,7 +4655,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Patch const &" :
         """
         :param Index:
         :type Index: int
@@ -4664,7 +4664,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4675,7 +4675,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AdvApp2Var_Patch &" :
         """
         :param Index:
         :type Index: int
@@ -4684,7 +4684,7 @@ class AdvApp2Var_SequenceOfPatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfPatch_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4734,14 +4734,14 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AdvApp2Var.AdvApp2Var_SequenceOfStrip_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SequenceOfStrip(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AdvApp2Var_SequenceOfStrip const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfStrip &
@@ -4750,7 +4750,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AdvApp2Var_SequenceOfStrip const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_SequenceOfStrip &
@@ -4759,7 +4759,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Strip &
@@ -4772,7 +4772,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Strip &
@@ -4785,7 +4785,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4802,7 +4802,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4819,21 +4819,21 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "AdvApp2Var_Strip const &" :
         """
         :rtype: AdvApp2Var_Strip
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "AdvApp2Var_Strip const &" :
         """
         :rtype: AdvApp2Var_Strip
 
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4844,7 +4844,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Strip const &" :
         """
         :param Index:
         :type Index: int
@@ -4853,7 +4853,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4864,7 +4864,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AdvApp2Var_Strip &" :
         """
         :param Index:
         :type Index: int
@@ -4873,7 +4873,7 @@ class AdvApp2Var_SequenceOfStrip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_SequenceOfStrip_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4923,14 +4923,14 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AdvApp2Var.AdvApp2Var_Strip_swiginit(self,_AdvApp2Var.new_AdvApp2Var_Strip(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AdvApp2Var_Strip const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_Strip &
@@ -4939,7 +4939,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AdvApp2Var_Strip const &" :
         """
         :param Other:
         :type Other: AdvApp2Var_Strip &
@@ -4948,7 +4948,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Iso &
@@ -4961,7 +4961,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: AdvApp2Var_Iso &
@@ -4974,7 +4974,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4991,7 +4991,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5008,21 +5008,21 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "AdvApp2Var_Iso const &" :
         """
         :rtype: AdvApp2Var_Iso
 
         """
         return _AdvApp2Var.AdvApp2Var_Strip_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "AdvApp2Var_Iso const &" :
         """
         :rtype: AdvApp2Var_Iso
 
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5033,7 +5033,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AdvApp2Var_Iso const &" :
         """
         :param Index:
         :type Index: int
@@ -5042,7 +5042,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5053,7 +5053,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AdvApp2Var_Iso &" :
         """
         :param Index:
         :type Index: int
@@ -5062,7 +5062,7 @@ class AdvApp2Var_Strip(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AdvApp2Var.AdvApp2Var_Strip_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5112,14 +5112,14 @@ class AdvApp2Var_SysBase(object):
 
         """
         _AdvApp2Var.AdvApp2Var_SysBase_swiginit(self,_AdvApp2Var.new_AdvApp2Var_SysBase(*args))
-    def mainial_(self, *args):
+    def mainial_(self, *args) -> "int" :
         """
         :rtype: int
 
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_mainial_(self, *args)
 
-    def macinit_(*args):
+    def macinit_(*args) -> "int" :
         """
         :param :
         :type : int *
@@ -5131,7 +5131,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_macinit_(*args)
 
     macinit_ = staticmethod(macinit_)
-    def mcrdelt_(self, *args):
+    def mcrdelt_(self, *args) -> "int" :
         """
         :param iunit:
         :type iunit: integer *
@@ -5148,7 +5148,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_mcrdelt_(self, *args)
 
-    def mcrfill_(*args):
+    def mcrfill_(*args) -> "int" :
         """
         :param size:
         :type size: integer *
@@ -5162,7 +5162,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_mcrfill_(*args)
 
     mcrfill_ = staticmethod(mcrfill_)
-    def mcrrqst_(self, *args):
+    def mcrrqst_(self, *args) -> "int" :
         """
         :param iunit:
         :type iunit: integer *
@@ -5179,7 +5179,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_mcrrqst_(self, *args)
 
-    def mnfndeb_(*args):
+    def mnfndeb_(*args) -> "integer" :
         """
         :rtype: integer
 
@@ -5187,7 +5187,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_mnfndeb_(*args)
 
     mnfndeb_ = staticmethod(mnfndeb_)
-    def do__fio(*args):
+    def do__fio(*args) -> "int" :
         """
         :rtype: int
 
@@ -5195,7 +5195,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_do__fio(*args)
 
     do__fio = staticmethod(do__fio)
-    def do__lio(*args):
+    def do__lio(*args) -> "int" :
         """
         :rtype: int
 
@@ -5203,7 +5203,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_do__lio(*args)
 
     do__lio = staticmethod(do__lio)
-    def macrai4_(self, *args):
+    def macrai4_(self, *args) -> "int" :
         """
         :param nbelem:
         :type nbelem: integer *
@@ -5220,7 +5220,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_macrai4_(self, *args)
 
-    def macrar8_(self, *args):
+    def macrar8_(self, *args) -> "int" :
         """
         :param nbelem:
         :type nbelem: integer *
@@ -5237,7 +5237,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_macrar8_(self, *args)
 
-    def macrdi4_(self, *args):
+    def macrdi4_(self, *args) -> "int" :
         """
         :param nbelem:
         :type nbelem: integer *
@@ -5254,7 +5254,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_macrdi4_(self, *args)
 
-    def macrdr8_(self, *args):
+    def macrdr8_(self, *args) -> "int" :
         """
         :param nbelem:
         :type nbelem: integer *
@@ -5271,7 +5271,7 @@ class AdvApp2Var_SysBase(object):
         """
         return _AdvApp2Var.AdvApp2Var_SysBase_macrdr8_(self, *args)
 
-    def maermsg_(*args):
+    def maermsg_(*args) -> "int" :
         """
         :param cnompg:
         :type cnompg: char *
@@ -5285,7 +5285,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_maermsg_(*args)
 
     maermsg_ = staticmethod(maermsg_)
-    def maitbr8_(*args):
+    def maitbr8_(*args) -> "int" :
         """
         :param itaill:
         :type itaill: integer *
@@ -5299,7 +5299,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_maitbr8_(*args)
 
     maitbr8_ = staticmethod(maitbr8_)
-    def maovsr8_(*args):
+    def maovsr8_(*args) -> "int" :
         """
         :param ivalcs:
         :type ivalcs: integer *
@@ -5309,7 +5309,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_maovsr8_(*args)
 
     maovsr8_ = staticmethod(maovsr8_)
-    def mgenmsg_(*args):
+    def mgenmsg_(*args) -> "int" :
         """
         :param nomprg:
         :type nomprg: char *
@@ -5321,7 +5321,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_mgenmsg_(*args)
 
     mgenmsg_ = staticmethod(mgenmsg_)
-    def mgsomsg_(*args):
+    def mgsomsg_(*args) -> "int" :
         """
         :param nomprg:
         :type nomprg: char *
@@ -5333,7 +5333,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_mgsomsg_(*args)
 
     mgsomsg_ = staticmethod(mgsomsg_)
-    def miraz_(*args):
+    def miraz_(*args) -> "void" :
         """
         :param taille:
         :type taille: integer *
@@ -5345,7 +5345,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_miraz_(*args)
 
     miraz_ = staticmethod(miraz_)
-    def msifill_(*args):
+    def msifill_(*args) -> "int" :
         """
         :param nbintg:
         :type nbintg: integer *
@@ -5359,7 +5359,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_msifill_(*args)
 
     msifill_ = staticmethod(msifill_)
-    def msrfill_(*args):
+    def msrfill_(*args) -> "int" :
         """
         :param nbreel:
         :type nbreel: integer *
@@ -5373,7 +5373,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_msrfill_(*args)
 
     msrfill_ = staticmethod(msrfill_)
-    def mswrdbg_(*args):
+    def mswrdbg_(*args) -> "int" :
         """
         :param ctexte:
         :type ctexte: char *
@@ -5385,7 +5385,7 @@ class AdvApp2Var_SysBase(object):
         return _AdvApp2Var.AdvApp2Var_SysBase_mswrdbg_(*args)
 
     mswrdbg_ = staticmethod(mswrdbg_)
-    def mvriraz_(*args):
+    def mvriraz_(*args) -> "void" :
         """
         :param taille:
         :type taille: integer *
@@ -5416,7 +5416,7 @@ AdvApp2Var_SysBase._kill_pointed = new_instancemethod(_AdvApp2Var.AdvApp2Var_Sys
 AdvApp2Var_SysBase_swigregister = _AdvApp2Var.AdvApp2Var_SysBase_swigregister
 AdvApp2Var_SysBase_swigregister(AdvApp2Var_SysBase)
 
-def AdvApp2Var_SysBase_macinit_(*args):
+def AdvApp2Var_SysBase_macinit_(*args) -> "int" :
   """
     :param :
     :type : int *
@@ -5427,7 +5427,7 @@ def AdvApp2Var_SysBase_macinit_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_macinit_(*args)
 
-def AdvApp2Var_SysBase_mcrfill_(*args):
+def AdvApp2Var_SysBase_mcrfill_(*args) -> "int" :
   """
     :param size:
     :type size: integer *
@@ -5440,28 +5440,28 @@ def AdvApp2Var_SysBase_mcrfill_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_mcrfill_(*args)
 
-def AdvApp2Var_SysBase_mnfndeb_(*args):
+def AdvApp2Var_SysBase_mnfndeb_(*args) -> "integer" :
   """
     :rtype: integer
 
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_mnfndeb_(*args)
 
-def AdvApp2Var_SysBase_do__fio(*args):
+def AdvApp2Var_SysBase_do__fio(*args) -> "int" :
   """
     :rtype: int
 
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_do__fio(*args)
 
-def AdvApp2Var_SysBase_do__lio(*args):
+def AdvApp2Var_SysBase_do__lio(*args) -> "int" :
   """
     :rtype: int
 
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_do__lio(*args)
 
-def AdvApp2Var_SysBase_maermsg_(*args):
+def AdvApp2Var_SysBase_maermsg_(*args) -> "int" :
   """
     :param cnompg:
     :type cnompg: char *
@@ -5474,7 +5474,7 @@ def AdvApp2Var_SysBase_maermsg_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_maermsg_(*args)
 
-def AdvApp2Var_SysBase_maitbr8_(*args):
+def AdvApp2Var_SysBase_maitbr8_(*args) -> "int" :
   """
     :param itaill:
     :type itaill: integer *
@@ -5487,7 +5487,7 @@ def AdvApp2Var_SysBase_maitbr8_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_maitbr8_(*args)
 
-def AdvApp2Var_SysBase_maovsr8_(*args):
+def AdvApp2Var_SysBase_maovsr8_(*args) -> "int" :
   """
     :param ivalcs:
     :type ivalcs: integer *
@@ -5496,7 +5496,7 @@ def AdvApp2Var_SysBase_maovsr8_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_maovsr8_(*args)
 
-def AdvApp2Var_SysBase_mgenmsg_(*args):
+def AdvApp2Var_SysBase_mgenmsg_(*args) -> "int" :
   """
     :param nomprg:
     :type nomprg: char *
@@ -5507,7 +5507,7 @@ def AdvApp2Var_SysBase_mgenmsg_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_mgenmsg_(*args)
 
-def AdvApp2Var_SysBase_mgsomsg_(*args):
+def AdvApp2Var_SysBase_mgsomsg_(*args) -> "int" :
   """
     :param nomprg:
     :type nomprg: char *
@@ -5518,7 +5518,7 @@ def AdvApp2Var_SysBase_mgsomsg_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_mgsomsg_(*args)
 
-def AdvApp2Var_SysBase_miraz_(*args):
+def AdvApp2Var_SysBase_miraz_(*args) -> "void" :
   """
     :param taille:
     :type taille: integer *
@@ -5529,7 +5529,7 @@ def AdvApp2Var_SysBase_miraz_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_miraz_(*args)
 
-def AdvApp2Var_SysBase_msifill_(*args):
+def AdvApp2Var_SysBase_msifill_(*args) -> "int" :
   """
     :param nbintg:
     :type nbintg: integer *
@@ -5542,7 +5542,7 @@ def AdvApp2Var_SysBase_msifill_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_msifill_(*args)
 
-def AdvApp2Var_SysBase_msrfill_(*args):
+def AdvApp2Var_SysBase_msrfill_(*args) -> "int" :
   """
     :param nbreel:
     :type nbreel: integer *
@@ -5555,7 +5555,7 @@ def AdvApp2Var_SysBase_msrfill_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_msrfill_(*args)
 
-def AdvApp2Var_SysBase_mswrdbg_(*args):
+def AdvApp2Var_SysBase_mswrdbg_(*args) -> "int" :
   """
     :param ctexte:
     :type ctexte: char *
@@ -5566,7 +5566,7 @@ def AdvApp2Var_SysBase_mswrdbg_(*args):
     """
   return _AdvApp2Var.AdvApp2Var_SysBase_mswrdbg_(*args)
 
-def AdvApp2Var_SysBase_mvriraz_(*args):
+def AdvApp2Var_SysBase_mvriraz_(*args) -> "void" :
   """
     :param taille:
     :type taille: integer *

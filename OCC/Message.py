@@ -253,7 +253,7 @@ Message_FAIL = _Message.Message_FAIL
 class message(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DefaultMessenger(*args):
+    def DefaultMessenger(*args) -> "Handle_Message_Messenger const &" :
         """
         * Defines default messenger for OCCT applications. This is global static instance of the messenger. By default, it contains single printer directed to cout. It can be customized according to the application needs.
 
@@ -263,7 +263,7 @@ class message(object):
         return _Message.message_DefaultMessenger(*args)
 
     DefaultMessenger = staticmethod(DefaultMessenger)
-    def FillTime(*args):
+    def FillTime(*args) -> "TCollection_AsciiString" :
         """
         * Returns the string filled with values of hours, minutes and seconds. Example: 1. (5, 12, 26.3345) returns '05h:12m:26.33s', 2. (0, 6, 34.496 ) returns '06m:34.50s', 3. (0, 0, 4.5 ) returns '4.50s'
 
@@ -293,7 +293,7 @@ message._kill_pointed = new_instancemethod(_Message.message__kill_pointed,None,m
 message_swigregister = _Message.message_swigregister
 message_swigregister(message)
 
-def message_DefaultMessenger(*args):
+def message_DefaultMessenger(*args) -> "Handle_Message_Messenger const &" :
   """
     * Defines default messenger for OCCT applications. This is global static instance of the messenger. By default, it contains single printer directed to cout. It can be customized according to the application needs.
 
@@ -302,7 +302,7 @@ def message_DefaultMessenger(*args):
     """
   return _Message.message_DefaultMessenger(*args)
 
-def message_FillTime(*args):
+def message_FillTime(*args) -> "TCollection_AsciiString" :
   """
     * Returns the string filled with values of hours, minutes and seconds. Example: 1. (5, 12, 26.3345) returns '05h:12m:26.33s', 2. (0, 6, 34.496 ) returns '06m:34.50s', 3. (0, 0, 4.5 ) returns '4.50s'
 
@@ -328,7 +328,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
 
         """
         _Message.Message_Algorithm_swiginit(self,_Message.new_Message_Algorithm(*args))
-    def SetStatus(self, *args):
+    def SetStatus(self, *args) -> "void" :
         """
         * Sets status with no parameter
 
@@ -405,7 +405,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_SetStatus(self, *args)
 
-    def GetStatus(self, *args):
+    def GetStatus(self, *args) -> "Message_ExecStatus const &" :
         """
         * Returns copy of exec status of algorithm
 
@@ -414,7 +414,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_GetStatus(self, *args)
 
-    def ChangeStatus(self, *args):
+    def ChangeStatus(self, *args) -> "Message_ExecStatus &" :
         """
         * Returns exec status of algorithm
 
@@ -423,7 +423,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_ChangeStatus(self, *args)
 
-    def ClearStatus(self, *args):
+    def ClearStatus(self, *args) -> "void" :
         """
         * Clear exec status of algorithm
 
@@ -432,7 +432,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_ClearStatus(self, *args)
 
-    def SetMessenger(self, *args):
+    def SetMessenger(self, *args) -> "void" :
         """
         * Sets messenger to algorithm
 
@@ -443,7 +443,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_SetMessenger(self, *args)
 
-    def GetMessenger(self, *args):
+    def GetMessenger(self, *args) -> "Handle_Message_Messenger" :
         """
         * Returns messenger of algorithm. The returned handle is always non-null and can be used for sending messages.
 
@@ -452,7 +452,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_GetMessenger(self, *args)
 
-    def SendStatusMessages(self, *args):
+    def SendStatusMessages(self, *args) -> "void" :
         """
         * Print messages for all status flags that have been set during algorithm execution, excluding statuses that are NOT set in theFilter.  The messages are taken from resource file, names being constructed as {dynamic class type}.{status name}, for instance, 'Message_Algorithm.Fail5'. If message is not found in resources for this class and all its base types, surrogate text is printed.  For the statuses having number or string parameters, theMaxCount defines maximal number of numbers or strings to be included in the message  Note that this method is virtual; this allows descendant classes to customize message output (e.g. by adding messages from other sub-algorithms)
 
@@ -467,7 +467,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_SendStatusMessages(self, *args)
 
-    def SendMessages(self, *args):
+    def SendMessages(self, *args) -> "void" :
         """
         * Convenient variant of SendStatusMessages() with theFilter having defined all WARN, ALARM, and FAIL (but not DONE) status flags
 
@@ -480,7 +480,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_SendMessages(self, *args)
 
-    def AddStatus(self, *args):
+    def AddStatus(self, *args) -> "void" :
         """
         * Add statuses to this algorithm from other algorithm (including messages)
 
@@ -499,7 +499,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_AddStatus(self, *args)
 
-    def GetMessageNumbers(self, *args):
+    def GetMessageNumbers(self, *args) -> "Handle_TColStd_HPackedMapOfInteger" :
         """
         * Return the numbers associated with the indicated status; Null handle if no such status or no numbers associated with it
 
@@ -510,7 +510,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_GetMessageNumbers(self, *args)
 
-    def GetMessageStrings(self, *args):
+    def GetMessageStrings(self, *args) -> "Handle_TColStd_HSequenceOfHExtendedString" :
         """
         * Return the strings associated with the indicated status; Null handle if no such status or no strings associated with it
 
@@ -521,7 +521,7 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Algorithm_GetMessageStrings(self, *args)
 
-    def PrepareReport(*args):
+    def PrepareReport(*args) -> "TCollection_ExtendedString" :
         """
         * Prepares a string containing a list of integers contained in theError map, but not more than theMaxCount
 
@@ -543,11 +543,11 @@ class Message_Algorithm(OCC.MMgt.MMgt_TShared):
         return _Message.Message_Algorithm_PrepareReport(*args)
 
     PrepareReport = staticmethod(PrepareReport)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_Algorithm self)"""
         return _Message.Message_Algorithm__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_Algorithm" :
         """GetHandle(Message_Algorithm self) -> Handle_Message_Algorithm"""
         return _Message.Message_Algorithm_GetHandle(self)
 
@@ -575,7 +575,7 @@ Message_Algorithm.GetHandle = new_instancemethod(_Message.Message_Algorithm_GetH
 Message_Algorithm_swigregister = _Message.Message_Algorithm_swigregister
 Message_Algorithm_swigregister(Message_Algorithm)
 
-def Message_Algorithm_PrepareReport(*args):
+def Message_Algorithm_PrepareReport(*args) -> "TCollection_ExtendedString" :
   """
     * Prepares a string containing a list of integers contained in theError map, but not more than theMaxCount
 
@@ -617,7 +617,7 @@ Handle_Message_Algorithm._kill_pointed = new_instancemethod(_Message.Handle_Mess
 Handle_Message_Algorithm_swigregister = _Message.Handle_Message_Algorithm_swigregister
 Handle_Message_Algorithm_swigregister(Handle_Message_Algorithm)
 
-def Handle_Message_Algorithm_DownCast(*args):
+def Handle_Message_Algorithm_DownCast(*args) -> "Handle_Message_Algorithm const" :
   return _Message.Handle_Message_Algorithm_DownCast(*args)
 Handle_Message_Algorithm_DownCast = _Message.Handle_Message_Algorithm_DownCast
 
@@ -634,7 +634,7 @@ class Message_ListIteratorOfListOfMsg(object):
 
         """
         _Message.Message_ListIteratorOfListOfMsg_swiginit(self,_Message.new_Message_ListIteratorOfListOfMsg(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: Message_ListOfMsg &
@@ -643,21 +643,21 @@ class Message_ListIteratorOfListOfMsg(object):
         """
         return _Message.Message_ListIteratorOfListOfMsg_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Message.Message_ListIteratorOfListOfMsg_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Message.Message_ListIteratorOfListOfMsg_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Message_Msg &" :
         """
         :rtype: Message_Msg
 
@@ -693,18 +693,18 @@ class Message_ListNodeOfListOfMsg(OCC.TCollection.TCollection_MapNode):
 
         """
         _Message.Message_ListNodeOfListOfMsg_swiginit(self,_Message.new_Message_ListNodeOfListOfMsg(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Message_Msg &" :
         """
         :rtype: Message_Msg
 
         """
         return _Message.Message_ListNodeOfListOfMsg_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_ListNodeOfListOfMsg self)"""
         return _Message.Message_ListNodeOfListOfMsg__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_ListNodeOfListOfMsg" :
         """GetHandle(Message_ListNodeOfListOfMsg self) -> Handle_Message_ListNodeOfListOfMsg"""
         return _Message.Message_ListNodeOfListOfMsg_GetHandle(self)
 
@@ -743,7 +743,7 @@ Handle_Message_ListNodeOfListOfMsg._kill_pointed = new_instancemethod(_Message.H
 Handle_Message_ListNodeOfListOfMsg_swigregister = _Message.Handle_Message_ListNodeOfListOfMsg_swigregister
 Handle_Message_ListNodeOfListOfMsg_swigregister(Handle_Message_ListNodeOfListOfMsg)
 
-def Handle_Message_ListNodeOfListOfMsg_DownCast(*args):
+def Handle_Message_ListNodeOfListOfMsg_DownCast(*args) -> "Handle_Message_ListNodeOfListOfMsg const" :
   return _Message.Handle_Message_ListNodeOfListOfMsg_DownCast(*args)
 Handle_Message_ListNodeOfListOfMsg_DownCast = _Message.Handle_Message_ListNodeOfListOfMsg_DownCast
 
@@ -756,7 +756,7 @@ class Message_ListOfMsg(object):
 
         """
         _Message.Message_ListOfMsg_swiginit(self,_Message.new_Message_ListOfMsg(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Message_ListOfMsg &
@@ -765,7 +765,7 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Message_ListOfMsg &
@@ -774,28 +774,28 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Message.Message_ListOfMsg_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Message.Message_ListOfMsg_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Message.Message_ListOfMsg_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Message_Msg &
@@ -814,7 +814,7 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Message_Msg &
@@ -833,28 +833,28 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Message_Msg &" :
         """
         :rtype: Message_Msg
 
         """
         return _Message.Message_ListOfMsg_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Message_Msg &" :
         """
         :rtype: Message_Msg
 
         """
         return _Message.Message_ListOfMsg_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Message.Message_ListOfMsg_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: Message_ListIteratorOfListOfMsg &
@@ -863,7 +863,7 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Message_Msg &
@@ -880,7 +880,7 @@ class Message_ListOfMsg(object):
         """
         return _Message.Message_ListOfMsg_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Message_Msg &
@@ -939,7 +939,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
 
         """
         _Message.Message_Messenger_swiginit(self,_Message.new_Message_Messenger(*args))
-    def AddPrinter(self, *args):
+    def AddPrinter(self, *args) -> "Standard_Boolean" :
         """
         * Add a printer to the messenger. The printer will be added only if it is not yet in the list. Returns True if printer has been added.
 
@@ -950,7 +950,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_AddPrinter(self, *args)
 
-    def RemovePrinter(self, *args):
+    def RemovePrinter(self, *args) -> "Standard_Boolean" :
         """
         * Removes specified printer from the messenger. Returns True if this printer has been found in the list and removed.
 
@@ -961,7 +961,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_RemovePrinter(self, *args)
 
-    def RemovePrinters(self, *args):
+    def RemovePrinters(self, *args) -> "Standard_Integer" :
         """
         * Removes printers of specified type (including derived classes) from the messenger. Returns number of removed printers.
 
@@ -972,7 +972,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_RemovePrinters(self, *args)
 
-    def Printers(self, *args):
+    def Printers(self, *args) -> "Message_SequenceOfPrinters const &" :
         """
         * Returns current sequence of printers
 
@@ -981,7 +981,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_Printers(self, *args)
 
-    def ChangePrinters(self, *args):
+    def ChangePrinters(self, *args) -> "Message_SequenceOfPrinters &" :
         """
         * Returns sequence of printers The sequence can be modified.
 
@@ -990,7 +990,7 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_ChangePrinters(self, *args)
 
-    def Send(self, *args):
+    def Send(self, *args) -> "void" :
         """
         * Dispatch a message to all the printers in the list. Three versions of string representations are accepted for convenience, by default all are converted to ExtendedString. The parameter putEndl specifies whether the new line should be started after this message (default) or not (may have sense in some conditions).
 
@@ -1025,11 +1025,11 @@ class Message_Messenger(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Messenger_Send(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_Messenger self)"""
         return _Message.Message_Messenger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_Messenger" :
         """GetHandle(Message_Messenger self) -> Handle_Message_Messenger"""
         return _Message.Message_Messenger_GetHandle(self)
 
@@ -1073,14 +1073,14 @@ Handle_Message_Messenger._kill_pointed = new_instancemethod(_Message.Handle_Mess
 Handle_Message_Messenger_swigregister = _Message.Handle_Message_Messenger_swigregister
 Handle_Message_Messenger_swigregister(Handle_Message_Messenger)
 
-def Handle_Message_Messenger_DownCast(*args):
+def Handle_Message_Messenger_DownCast(*args) -> "Handle_Message_Messenger const" :
   return _Message.Handle_Message_Messenger_DownCast(*args)
 Handle_Message_Messenger_DownCast = _Message.Handle_Message_Messenger_DownCast
 
 class Message_MsgFile(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Load(*args):
+    def Load(*args) -> "Standard_Boolean" :
         """
         * Load message file <theFileName> from directory <theDirName> or its sub-directory
 
@@ -1094,7 +1094,7 @@ class Message_MsgFile(object):
         return _Message.Message_MsgFile_Load(*args)
 
     Load = staticmethod(Load)
-    def LoadFile(*args):
+    def LoadFile(*args) -> "Standard_Boolean" :
         """
         * Load the messages from the given file, additive to any previously loaded messages. Messages with same keywords, if already present, are replaced with the new ones.
 
@@ -1106,7 +1106,7 @@ class Message_MsgFile(object):
         return _Message.Message_MsgFile_LoadFile(*args)
 
     LoadFile = staticmethod(LoadFile)
-    def LoadFromEnv(*args):
+    def LoadFromEnv(*args) -> "void" :
         """
         * Loads the messages from the file with name (without extension) given by environment variable. Extension of the file name is given separately. If its not defined, it is taken: - by default from environment CSF_LANGUAGE, - if not defined either, as 'us'.
 
@@ -1122,7 +1122,7 @@ class Message_MsgFile(object):
         return _Message.Message_MsgFile_LoadFromEnv(*args)
 
     LoadFromEnv = staticmethod(LoadFromEnv)
-    def AddMsg(*args):
+    def AddMsg(*args) -> "Standard_Boolean" :
         """
         * Adds new message to the map. Parameter <key> gives the key of the message, <text> defines the message itself. If there already was defined the message identified by the same keyword, it is replaced with the new one.
 
@@ -1136,7 +1136,7 @@ class Message_MsgFile(object):
         return _Message.Message_MsgFile_AddMsg(*args)
 
     AddMsg = staticmethod(AddMsg)
-    def Msg(*args):
+    def Msg(*args) -> "TCollection_ExtendedString const &" :
         """
         :param key:
         :type key: char *
@@ -1166,7 +1166,7 @@ Message_MsgFile._kill_pointed = new_instancemethod(_Message.Message_MsgFile__kil
 Message_MsgFile_swigregister = _Message.Message_MsgFile_swigregister
 Message_MsgFile_swigregister(Message_MsgFile)
 
-def Message_MsgFile_Load(*args):
+def Message_MsgFile_Load(*args) -> "Standard_Boolean" :
   """
     * Load message file <theFileName> from directory <theDirName> or its sub-directory
 
@@ -1179,7 +1179,7 @@ def Message_MsgFile_Load(*args):
     """
   return _Message.Message_MsgFile_Load(*args)
 
-def Message_MsgFile_LoadFile(*args):
+def Message_MsgFile_LoadFile(*args) -> "Standard_Boolean" :
   """
     * Load the messages from the given file, additive to any previously loaded messages. Messages with same keywords, if already present, are replaced with the new ones.
 
@@ -1190,7 +1190,7 @@ def Message_MsgFile_LoadFile(*args):
     """
   return _Message.Message_MsgFile_LoadFile(*args)
 
-def Message_MsgFile_LoadFromEnv(*args):
+def Message_MsgFile_LoadFromEnv(*args) -> "void" :
   """
     * Loads the messages from the file with name (without extension) given by environment variable. Extension of the file name is given separately. If its not defined, it is taken: - by default from environment CSF_LANGUAGE, - if not defined either, as 'us'.
 
@@ -1205,7 +1205,7 @@ def Message_MsgFile_LoadFromEnv(*args):
     """
   return _Message.Message_MsgFile_LoadFromEnv(*args)
 
-def Message_MsgFile_AddMsg(*args):
+def Message_MsgFile_AddMsg(*args) -> "Standard_Boolean" :
   """
     * Adds new message to the map. Parameter <key> gives the key of the message, <text> defines the message itself. If there already was defined the message identified by the same keyword, it is replaced with the new one.
 
@@ -1218,7 +1218,7 @@ def Message_MsgFile_AddMsg(*args):
     """
   return _Message.Message_MsgFile_AddMsg(*args)
 
-def Message_MsgFile_Msg(*args):
+def Message_MsgFile_Msg(*args) -> "TCollection_ExtendedString const &" :
   """
     :param key:
     :type key: char *
@@ -1237,7 +1237,7 @@ class Message_Printer(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Send(self, *args):
+    def Send(self, *args) -> "void" :
         """
         * Send a string message with specified trace level. The parameter putEndl specified whether end-of-line should be added to the end of the message. This method must be redefined in descentant.
 
@@ -1272,11 +1272,11 @@ class Message_Printer(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_Printer_Send(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_Printer self)"""
         return _Message.Message_Printer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_Printer" :
         """GetHandle(Message_Printer self) -> Handle_Message_Printer"""
         return _Message.Message_Printer_GetHandle(self)
 
@@ -1315,7 +1315,7 @@ Handle_Message_Printer._kill_pointed = new_instancemethod(_Message.Handle_Messag
 Handle_Message_Printer_swigregister = _Message.Handle_Message_Printer_swigregister
 Handle_Message_Printer_swigregister(Handle_Message_Printer)
 
-def Handle_Message_Printer_DownCast(*args):
+def Handle_Message_Printer_DownCast(*args) -> "Handle_Message_Printer const" :
   return _Message.Handle_Message_Printer_DownCast(*args)
 Handle_Message_Printer_DownCast = _Message.Handle_Message_Printer_DownCast
 
@@ -1323,7 +1323,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Drops all scopes and sets scale from 0 to 100, step 1 This scale has name 'Step'
 
@@ -1332,7 +1332,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_Reset(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -1347,7 +1347,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetName(self, *args)
 
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         * Set range for current scale
 
@@ -1360,7 +1360,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetRange(self, *args)
 
-    def SetStep(self, *args):
+    def SetStep(self, *args) -> "void" :
         """
         * Set step for current scale
 
@@ -1371,7 +1371,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetStep(self, *args)
 
-    def SetInfinite(self, *args):
+    def SetInfinite(self, *args) -> "void" :
         """
         * Set or drop infinite mode for the current scale
 
@@ -1382,7 +1382,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetInfinite(self, *args)
 
-    def SetScale(self, *args):
+    def SetScale(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -1411,7 +1411,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetScale(self, *args)
 
-    def GetScale(self, *args):
+    def GetScale(self, *args) -> "void" :
         """
         * Returns all parameters for current scale
 
@@ -1428,7 +1428,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_GetScale(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param val:
         :type val: float
@@ -1437,7 +1437,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_SetValue(self, *args)
 
-    def GetValue(self, *args):
+    def GetValue(self, *args) -> "Standard_Real" :
         """
         * Set and get progress value at current scale If the value to be set is more than currently set one, or out of range for the current scale, it is limited by that range
 
@@ -1446,7 +1446,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_GetValue(self, *args)
 
-    def Increment(self, *args):
+    def Increment(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1459,7 +1459,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_Increment(self, *args)
 
-    def NewScope(self, *args):
+    def NewScope(self, *args) -> "Standard_Boolean" :
         """
         :param name: default value is 0
         :type name: char *
@@ -1486,7 +1486,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_NewScope(self, *args)
 
-    def EndScope(self, *args):
+    def EndScope(self, *args) -> "Standard_Boolean" :
         """
         * Close the current scope and thus return to previous scale Updates position to be at the end of the closing scope Returns False if no scope is opened
 
@@ -1495,7 +1495,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_EndScope(self, *args)
 
-    def NextScope(self, *args):
+    def NextScope(self, *args) -> "Standard_Boolean" :
         """
         :param name: default value is 0
         :type name: char *
@@ -1512,7 +1512,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_NextScope(self, *args)
 
-    def UserBreak(self, *args):
+    def UserBreak(self, *args) -> "Standard_Boolean" :
         """
         * Should return True if user has send a break signal. Default implementation returns False.
 
@@ -1521,7 +1521,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_UserBreak(self, *args)
 
-    def Show(self, *args):
+    def Show(self, *args) -> "Standard_Boolean" :
         """
         * Update presentation of the progress indicator Called when progress position is changed Flag force is intended for forcing update in case if it is optimized; all internal calls from ProgressIndicator are done with this flag equal to False
 
@@ -1532,7 +1532,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_Show(self, *args)
 
-    def GetPosition(self, *args):
+    def GetPosition(self, *args) -> "Standard_Real" :
         """
         * Returns total progress position on the basic scale ranged from 0. to 1.
 
@@ -1541,7 +1541,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_GetPosition(self, *args)
 
-    def GetNbScopes(self, *args):
+    def GetNbScopes(self, *args) -> "Standard_Integer" :
         """
         * Returns current number of opened scopes This number is always >=1 as top-level scale is always present
 
@@ -1550,7 +1550,7 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_GetNbScopes(self, *args)
 
-    def GetScope(self, *args):
+    def GetScope(self, *args) -> "Message_ProgressScale const &" :
         """
         * Returns data for scale of index-th scope The first scope is current one, the last is the top-level one
 
@@ -1561,11 +1561,11 @@ class Message_ProgressIndicator(OCC.MMgt.MMgt_TShared):
         """
         return _Message.Message_ProgressIndicator_GetScope(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_ProgressIndicator self)"""
         return _Message.Message_ProgressIndicator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_ProgressIndicator" :
         """GetHandle(Message_ProgressIndicator self) -> Handle_Message_ProgressIndicator"""
         return _Message.Message_ProgressIndicator_GetHandle(self)
 
@@ -1621,7 +1621,7 @@ Handle_Message_ProgressIndicator._kill_pointed = new_instancemethod(_Message.Han
 Handle_Message_ProgressIndicator_swigregister = _Message.Handle_Message_ProgressIndicator_swigregister
 Handle_Message_ProgressIndicator_swigregister(Handle_Message_ProgressIndicator)
 
-def Handle_Message_ProgressIndicator_DownCast(*args):
+def Handle_Message_ProgressIndicator_DownCast(*args) -> "Handle_Message_ProgressIndicator const" :
   return _Message.Handle_Message_ProgressIndicator_DownCast(*args)
 Handle_Message_ProgressIndicator_DownCast = _Message.Handle_Message_ProgressIndicator_DownCast
 
@@ -1636,7 +1636,7 @@ class Message_ProgressScale(object):
 
         """
         _Message.Message_ProgressScale_swiginit(self,_Message.new_Message_ProgressScale(*args))
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         :param theName:
         :type theName: char *
@@ -1651,7 +1651,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetName(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Gets scale name Name may be Null handle if not set
 
@@ -1660,7 +1660,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetName(self, *args)
 
-    def SetMin(self, *args):
+    def SetMin(self, *args) -> "void" :
         """
         * Sets minimum value of scale
 
@@ -1671,7 +1671,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetMin(self, *args)
 
-    def GetMin(self, *args):
+    def GetMin(self, *args) -> "Standard_Real" :
         """
         * Gets minimum value of scale
 
@@ -1680,7 +1680,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetMin(self, *args)
 
-    def SetMax(self, *args):
+    def SetMax(self, *args) -> "void" :
         """
         * Sets minimum value of scale
 
@@ -1691,7 +1691,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetMax(self, *args)
 
-    def GetMax(self, *args):
+    def GetMax(self, *args) -> "Standard_Real" :
         """
         * Gets minimum value of scale
 
@@ -1700,7 +1700,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetMax(self, *args)
 
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         * Set both min and max
 
@@ -1713,7 +1713,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetRange(self, *args)
 
-    def SetStep(self, *args):
+    def SetStep(self, *args) -> "void" :
         """
         * Sets default step
 
@@ -1724,7 +1724,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetStep(self, *args)
 
-    def GetStep(self, *args):
+    def GetStep(self, *args) -> "Standard_Real" :
         """
         * Gets default step
 
@@ -1733,7 +1733,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetStep(self, *args)
 
-    def SetInfinite(self, *args):
+    def SetInfinite(self, *args) -> "void" :
         """
         * Sets flag for infinite scale
 
@@ -1744,7 +1744,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetInfinite(self, *args)
 
-    def GetInfinite(self, *args):
+    def GetInfinite(self, *args) -> "Standard_Boolean" :
         """
         * Gets flag for infinite scale
 
@@ -1753,7 +1753,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetInfinite(self, *args)
 
-    def SetScale(self, *args):
+    def SetScale(self, *args) -> "void" :
         """
         * Set all scale parameters
 
@@ -1770,7 +1770,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetScale(self, *args)
 
-    def SetSpan(self, *args):
+    def SetSpan(self, *args) -> "void" :
         """
         * Defines span occupied by the scale on the basis scale
 
@@ -1783,14 +1783,14 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_SetSpan(self, *args)
 
-    def GetFirst(self, *args):
+    def GetFirst(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Message.Message_ProgressScale_GetFirst(self, *args)
 
-    def GetLast(self, *args):
+    def GetLast(self, *args) -> "Standard_Real" :
         """
         * Return information on span occupied by the scale on the base scale
 
@@ -1799,7 +1799,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_GetLast(self, *args)
 
-    def LocalToBase(self, *args):
+    def LocalToBase(self, *args) -> "Standard_Real" :
         """
         :param val:
         :type val: float
@@ -1808,7 +1808,7 @@ class Message_ProgressScale(object):
         """
         return _Message.Message_ProgressScale_LocalToBase(self, *args)
 
-    def BaseToLocal(self, *args):
+    def BaseToLocal(self, *args) -> "Standard_Real" :
         """
         * Convert value from this scale to base one and back
 
@@ -1889,7 +1889,7 @@ class Message_ProgressSentry(object):
 
         """
         _Message.Message_ProgressSentry_swiginit(self,_Message.new_Message_ProgressSentry(*args))
-    def Relieve(self, *args):
+    def Relieve(self, *args) -> "void" :
         """
         * Moves progress indicator to the end of the current scale and relieves sentry from its duty. Methods other than Show() will do nothing after this one is called.
 
@@ -1898,7 +1898,7 @@ class Message_ProgressSentry(object):
         """
         return _Message.Message_ProgressSentry_Relieve(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :param name: default value is 0
         :type name: char *
@@ -1921,7 +1921,7 @@ class Message_ProgressSentry(object):
         """
         return _Message.Message_ProgressSentry_Next(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns False if ProgressIndicator signals UserBreak
 
@@ -1930,7 +1930,7 @@ class Message_ProgressSentry(object):
         """
         return _Message.Message_ProgressSentry_More(self, *args)
 
-    def Show(self, *args):
+    def Show(self, *args) -> "void" :
         """
         * Forces update of progress indicator display
 
@@ -1970,18 +1970,18 @@ class Message_SequenceNodeOfSequenceOfPrinters(OCC.TCollection.TCollection_SeqNo
 
         """
         _Message.Message_SequenceNodeOfSequenceOfPrinters_swiginit(self,_Message.new_Message_SequenceNodeOfSequenceOfPrinters(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Message_Printer &" :
         """
         :rtype: Handle_Message_Printer
 
         """
         return _Message.Message_SequenceNodeOfSequenceOfPrinters_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_SequenceNodeOfSequenceOfPrinters self)"""
         return _Message.Message_SequenceNodeOfSequenceOfPrinters__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_SequenceNodeOfSequenceOfPrinters" :
         """GetHandle(Message_SequenceNodeOfSequenceOfPrinters self) -> Handle_Message_SequenceNodeOfSequenceOfPrinters"""
         return _Message.Message_SequenceNodeOfSequenceOfPrinters_GetHandle(self)
 
@@ -2020,7 +2020,7 @@ Handle_Message_SequenceNodeOfSequenceOfPrinters._kill_pointed = new_instancemeth
 Handle_Message_SequenceNodeOfSequenceOfPrinters_swigregister = _Message.Handle_Message_SequenceNodeOfSequenceOfPrinters_swigregister
 Handle_Message_SequenceNodeOfSequenceOfPrinters_swigregister(Handle_Message_SequenceNodeOfSequenceOfPrinters)
 
-def Handle_Message_SequenceNodeOfSequenceOfPrinters_DownCast(*args):
+def Handle_Message_SequenceNodeOfSequenceOfPrinters_DownCast(*args) -> "Handle_Message_SequenceNodeOfSequenceOfPrinters const" :
   return _Message.Handle_Message_SequenceNodeOfSequenceOfPrinters_DownCast(*args)
 Handle_Message_SequenceNodeOfSequenceOfPrinters_DownCast = _Message.Handle_Message_SequenceNodeOfSequenceOfPrinters_DownCast
 
@@ -2039,18 +2039,18 @@ class Message_SequenceNodeOfSequenceOfProgressScale(OCC.TCollection.TCollection_
 
         """
         _Message.Message_SequenceNodeOfSequenceOfProgressScale_swiginit(self,_Message.new_Message_SequenceNodeOfSequenceOfProgressScale(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Message_ProgressScale &" :
         """
         :rtype: Message_ProgressScale
 
         """
         return _Message.Message_SequenceNodeOfSequenceOfProgressScale_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_SequenceNodeOfSequenceOfProgressScale self)"""
         return _Message.Message_SequenceNodeOfSequenceOfProgressScale__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_SequenceNodeOfSequenceOfProgressScale" :
         """GetHandle(Message_SequenceNodeOfSequenceOfProgressScale self) -> Handle_Message_SequenceNodeOfSequenceOfProgressScale"""
         return _Message.Message_SequenceNodeOfSequenceOfProgressScale_GetHandle(self)
 
@@ -2089,7 +2089,7 @@ Handle_Message_SequenceNodeOfSequenceOfProgressScale._kill_pointed = new_instanc
 Handle_Message_SequenceNodeOfSequenceOfProgressScale_swigregister = _Message.Handle_Message_SequenceNodeOfSequenceOfProgressScale_swigregister
 Handle_Message_SequenceNodeOfSequenceOfProgressScale_swigregister(Handle_Message_SequenceNodeOfSequenceOfProgressScale)
 
-def Handle_Message_SequenceNodeOfSequenceOfProgressScale_DownCast(*args):
+def Handle_Message_SequenceNodeOfSequenceOfProgressScale_DownCast(*args) -> "Handle_Message_SequenceNodeOfSequenceOfProgressScale const" :
   return _Message.Handle_Message_SequenceNodeOfSequenceOfProgressScale_DownCast(*args)
 Handle_Message_SequenceNodeOfSequenceOfProgressScale_DownCast = _Message.Handle_Message_SequenceNodeOfSequenceOfProgressScale_DownCast
 
@@ -2102,14 +2102,14 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Message.Message_SequenceOfPrinters_swiginit(self,_Message.new_Message_SequenceOfPrinters(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Message.Message_SequenceOfPrinters_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Message_SequenceOfPrinters const &" :
         """
         :param Other:
         :type Other: Message_SequenceOfPrinters &
@@ -2118,7 +2118,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Message_SequenceOfPrinters const &" :
         """
         :param Other:
         :type Other: Message_SequenceOfPrinters &
@@ -2127,7 +2127,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Message_Printer &
@@ -2140,7 +2140,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Message_Printer &
@@ -2153,7 +2153,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2170,7 +2170,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2187,21 +2187,21 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Message_Printer const &" :
         """
         :rtype: Handle_Message_Printer
 
         """
         return _Message.Message_SequenceOfPrinters_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Message_Printer const &" :
         """
         :rtype: Handle_Message_Printer
 
         """
         return _Message.Message_SequenceOfPrinters_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2212,7 +2212,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Message_Printer const &" :
         """
         :param Index:
         :type Index: int
@@ -2221,7 +2221,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2232,7 +2232,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Message_Printer &" :
         """
         :param Index:
         :type Index: int
@@ -2241,7 +2241,7 @@ class Message_SequenceOfPrinters(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfPrinters_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2291,14 +2291,14 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Message.Message_SequenceOfProgressScale_swiginit(self,_Message.new_Message_SequenceOfProgressScale(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Message.Message_SequenceOfProgressScale_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Message_SequenceOfProgressScale const &" :
         """
         :param Other:
         :type Other: Message_SequenceOfProgressScale &
@@ -2307,7 +2307,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Message_SequenceOfProgressScale const &" :
         """
         :param Other:
         :type Other: Message_SequenceOfProgressScale &
@@ -2316,7 +2316,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Message_ProgressScale &
@@ -2329,7 +2329,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Message_ProgressScale &
@@ -2342,7 +2342,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2359,7 +2359,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2376,21 +2376,21 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Message_ProgressScale const &" :
         """
         :rtype: Message_ProgressScale
 
         """
         return _Message.Message_SequenceOfProgressScale_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Message_ProgressScale const &" :
         """
         :rtype: Message_ProgressScale
 
         """
         return _Message.Message_SequenceOfProgressScale_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2401,7 +2401,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Message_ProgressScale const &" :
         """
         :param Index:
         :type Index: int
@@ -2410,7 +2410,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2421,7 +2421,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Message_ProgressScale &" :
         """
         :param Index:
         :type Index: int
@@ -2430,7 +2430,7 @@ class Message_SequenceOfProgressScale(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Message.Message_SequenceOfProgressScale_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2494,7 +2494,7 @@ class Message_PrinterOStream(Message_Printer):
 
         """
         _Message.Message_PrinterOStream_swiginit(self,_Message.new_Message_PrinterOStream(*args))
-    def Close(self, *args):
+    def Close(self, *args) -> "void" :
         """
         * Flushes the output stream and destroys it if it has been specified externally with option doFree (or if it is internal file stream)
 
@@ -2503,7 +2503,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_Close(self, *args)
 
-    def GetTraceLevel(self, *args):
+    def GetTraceLevel(self, *args) -> "Message_Gravity" :
         """
         * Return trace level used for filtering messages; messages with lover gravity will be ignored.
 
@@ -2512,7 +2512,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_GetTraceLevel(self, *args)
 
-    def SetTraceLevel(self, *args):
+    def SetTraceLevel(self, *args) -> "void" :
         """
         * Set trace level used for filtering messages. By default, trace level is Message_Info, so that all messages are output
 
@@ -2523,7 +2523,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_SetTraceLevel(self, *args)
 
-    def GetUseUtf8(self, *args):
+    def GetUseUtf8(self, *args) -> "Standard_Boolean" :
         """
         * Returns option to convert non-Ascii symbols to UTF8 encoding
 
@@ -2532,7 +2532,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_GetUseUtf8(self, *args)
 
-    def SetUseUtf8(self, *args):
+    def SetUseUtf8(self, *args) -> "void" :
         """
         * Sets option to convert non-Ascii symbols to UTF8 encoding
 
@@ -2543,7 +2543,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_SetUseUtf8(self, *args)
 
-    def GetStream(self, *args):
+    def GetStream(self, *args) -> "Standard_OStream &" :
         """
         * Returns reference to the output stream
 
@@ -2552,7 +2552,7 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_GetStream(self, *args)
 
-    def Send(self, *args):
+    def Send(self, *args) -> "void" :
         """
         * Puts a message to the current stream if its gravity is equal or greater to the trace level set by SetTraceLevel()
 
@@ -2587,11 +2587,11 @@ class Message_PrinterOStream(Message_Printer):
         """
         return _Message.Message_PrinterOStream_Send(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Message_PrinterOStream self)"""
         return _Message.Message_PrinterOStream__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Message_PrinterOStream" :
         """GetHandle(Message_PrinterOStream self) -> Handle_Message_PrinterOStream"""
         return _Message.Message_PrinterOStream_GetHandle(self)
 
@@ -2636,7 +2636,7 @@ Handle_Message_PrinterOStream._kill_pointed = new_instancemethod(_Message.Handle
 Handle_Message_PrinterOStream_swigregister = _Message.Handle_Message_PrinterOStream_swigregister
 Handle_Message_PrinterOStream_swigregister(Handle_Message_PrinterOStream)
 
-def Handle_Message_PrinterOStream_DownCast(*args):
+def Handle_Message_PrinterOStream_DownCast(*args) -> "Handle_Message_PrinterOStream const" :
   return _Message.Handle_Message_PrinterOStream_DownCast(*args)
 Handle_Message_PrinterOStream_DownCast = _Message.Handle_Message_PrinterOStream_DownCast
 

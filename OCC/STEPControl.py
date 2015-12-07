@@ -139,7 +139,7 @@ class STEPControl_ActorRead(object):
 
         """
         _STEPControl.STEPControl_ActorRead_swiginit(self,_STEPControl.new_STEPControl_ActorRead(*args))
-    def Recognize(self, *args):
+    def Recognize(self, *args) -> "Standard_Boolean" :
         """
         :param start:
         :type start: Handle_Standard_Transient &
@@ -148,7 +148,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_Recognize(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Standard_Transient &
@@ -159,7 +159,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_Transfer(self, *args)
 
-    def TransferShape(self, *args):
+    def TransferShape(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Standard_Transient &
@@ -172,7 +172,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_TransferShape(self, *args)
 
-    def PrepareUnits(self, *args):
+    def PrepareUnits(self, *args) -> "void" :
         """
         * set units and tolerances context by given ShapeRepresentation
 
@@ -185,7 +185,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_PrepareUnits(self, *args)
 
-    def ResetUnits(self, *args):
+    def ResetUnits(self, *args) -> "void" :
         """
         * reset units and tolerances context to default  (mm, radians, read.precision.val, etc.)
 
@@ -194,7 +194,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_ResetUnits(self, *args)
 
-    def ComputeTransformation(self, *args):
+    def ComputeTransformation(self, *args) -> "Standard_Boolean" :
         """
         * Computes transformation defined by two axis placements (in MAPPED_ITEM or ITEM_DEFINED_TRANSFORMATION) taking into account their representation contexts (i.e. units, which may be different) Returns True if transformation is computed and is not an identity.
 
@@ -215,7 +215,7 @@ class STEPControl_ActorRead(object):
         """
         return _STEPControl.STEPControl_ActorRead_ComputeTransformation(self, *args)
 
-    def ComputeSRRWT(self, *args):
+    def ComputeSRRWT(self, *args) -> "Standard_Boolean" :
         """
         * Computes transformation defined by given REPRESENTATION_RELATIONSHIP_WITH_TRANSFORMATION
 
@@ -271,7 +271,7 @@ Handle_STEPControl_ActorRead._kill_pointed = new_instancemethod(_STEPControl.Han
 Handle_STEPControl_ActorRead_swigregister = _STEPControl.Handle_STEPControl_ActorRead_swigregister
 Handle_STEPControl_ActorRead_swigregister(Handle_STEPControl_ActorRead)
 
-def Handle_STEPControl_ActorRead_DownCast(*args):
+def Handle_STEPControl_ActorRead_DownCast(*args) -> "Handle_STEPControl_ActorRead const" :
   return _STEPControl.Handle_STEPControl_ActorRead_DownCast(*args)
 Handle_STEPControl_ActorRead_DownCast = _STEPControl.Handle_STEPControl_ActorRead_DownCast
 
@@ -284,7 +284,7 @@ class STEPControl_ActorWrite(object):
 
         """
         _STEPControl.STEPControl_ActorWrite_swiginit(self,_STEPControl.new_STEPControl_ActorWrite(*args))
-    def Recognize(self, *args):
+    def Recognize(self, *args) -> "Standard_Boolean" :
         """
         :param start:
         :type start: Handle_Transfer_Finder &
@@ -293,7 +293,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_Recognize(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Transfer_Finder &
@@ -304,7 +304,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_Transfer(self, *args)
 
-    def TransferSubShape(self, *args):
+    def TransferSubShape(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Transfer_Finder &
@@ -323,7 +323,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_TransferSubShape(self, *args)
 
-    def TransferShape(self, *args):
+    def TransferShape(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Transfer_Finder &
@@ -340,7 +340,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_TransferShape(self, *args)
 
-    def TransferCompound(self, *args):
+    def TransferCompound(self, *args) -> "Handle_Transfer_Binder" :
         """
         :param start:
         :type start: Handle_Transfer_Finder &
@@ -353,7 +353,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_TransferCompound(self, *args)
 
-    def SetMode(self, *args):
+    def SetMode(self, *args) -> "void" :
         """
         :param M:
         :type M: STEPControl_StepModelType
@@ -362,14 +362,14 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_SetMode(self, *args)
 
-    def Mode(self, *args):
+    def Mode(self, *args) -> "STEPControl_StepModelType" :
         """
         :rtype: STEPControl_StepModelType
 
         """
         return _STEPControl.STEPControl_ActorWrite_Mode(self, *args)
 
-    def SetGroupMode(self, *args):
+    def SetGroupMode(self, *args) -> "void" :
         """
         :param mode:
         :type mode: int
@@ -378,14 +378,14 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_SetGroupMode(self, *args)
 
-    def GroupMode(self, *args):
+    def GroupMode(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _STEPControl.STEPControl_ActorWrite_GroupMode(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         :param Tol:
         :type Tol: float
@@ -394,7 +394,7 @@ class STEPControl_ActorWrite(object):
         """
         return _STEPControl.STEPControl_ActorWrite_SetTolerance(self, *args)
 
-    def IsAssembly(self, *args):
+    def IsAssembly(self, *args) -> "Standard_Boolean" :
         """
         * Customizable method to check whether shape S should be written as assembly or not Default implementation uses flag GroupMode and analyses the shape itself NOTE: this method can modify shape
 
@@ -450,7 +450,7 @@ Handle_STEPControl_ActorWrite._kill_pointed = new_instancemethod(_STEPControl.Ha
 Handle_STEPControl_ActorWrite_swigregister = _STEPControl.Handle_STEPControl_ActorWrite_swigregister
 Handle_STEPControl_ActorWrite_swigregister(Handle_STEPControl_ActorWrite)
 
-def Handle_STEPControl_ActorWrite_DownCast(*args):
+def Handle_STEPControl_ActorWrite_DownCast(*args) -> "Handle_STEPControl_ActorWrite const" :
   return _STEPControl.Handle_STEPControl_ActorWrite_DownCast(*args)
 Handle_STEPControl_ActorWrite_DownCast = _STEPControl.Handle_STEPControl_ActorWrite_DownCast
 
@@ -465,7 +465,7 @@ class STEPControl_Controller(OCC.XSControl.XSControl_Controller):
 
         """
         _STEPControl.STEPControl_Controller_swiginit(self,_STEPControl.new_STEPControl_Controller(*args))
-    def Init(*args):
+    def Init(*args) -> "Standard_Boolean" :
         """
         * Standard Initialisation. It creates a Controller for STEP and records it to various names, available to select it later Returns True when done, False if could not be done
 
@@ -475,11 +475,11 @@ class STEPControl_Controller(OCC.XSControl.XSControl_Controller):
         return _STEPControl.STEPControl_Controller_Init(*args)
 
     Init = staticmethod(Init)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPControl_Controller self)"""
         return _STEPControl.STEPControl_Controller__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPControl_Controller" :
         """GetHandle(STEPControl_Controller self) -> Handle_STEPControl_Controller"""
         return _STEPControl.STEPControl_Controller_GetHandle(self)
 
@@ -496,7 +496,7 @@ STEPControl_Controller.GetHandle = new_instancemethod(_STEPControl.STEPControl_C
 STEPControl_Controller_swigregister = _STEPControl.STEPControl_Controller_swigregister
 STEPControl_Controller_swigregister(STEPControl_Controller)
 
-def STEPControl_Controller_Init(*args):
+def STEPControl_Controller_Init(*args) -> "Standard_Boolean" :
   """
     * Standard Initialisation. It creates a Controller for STEP and records it to various names, available to select it later Returns True when done, False if could not be done
 
@@ -526,7 +526,7 @@ Handle_STEPControl_Controller._kill_pointed = new_instancemethod(_STEPControl.Ha
 Handle_STEPControl_Controller_swigregister = _STEPControl.Handle_STEPControl_Controller_swigregister
 Handle_STEPControl_Controller_swigregister(Handle_STEPControl_Controller)
 
-def Handle_STEPControl_Controller_DownCast(*args):
+def Handle_STEPControl_Controller_DownCast(*args) -> "Handle_STEPControl_Controller const" :
   return _STEPControl.Handle_STEPControl_Controller_DownCast(*args)
 Handle_STEPControl_Controller_DownCast = _STEPControl.Handle_STEPControl_Controller_DownCast
 
@@ -549,7 +549,7 @@ class STEPControl_Reader(OCC.XSControl.XSControl_Reader):
 
         """
         _STEPControl.STEPControl_Reader_swiginit(self,_STEPControl.new_STEPControl_Reader(*args))
-    def StepModel(self, *args):
+    def StepModel(self, *args) -> "Handle_StepData_StepModel" :
         """
         * Returns the model as a StepModel. It can then be consulted (header, product)
 
@@ -558,7 +558,7 @@ class STEPControl_Reader(OCC.XSControl.XSControl_Reader):
         """
         return _STEPControl.STEPControl_Reader_StepModel(self, *args)
 
-    def TransferRoot(self, *args):
+    def TransferRoot(self, *args) -> "Standard_Boolean" :
         """
         * Transfers a root given its rank in the list of candidate roots Default is the first one Returns True if a shape has resulted, false else Same as inherited TransferOneRoot, kept for compatibility
 
@@ -569,7 +569,7 @@ class STEPControl_Reader(OCC.XSControl.XSControl_Reader):
         """
         return _STEPControl.STEPControl_Reader_TransferRoot(self, *args)
 
-    def FileUnits(self, *args):
+    def FileUnits(self, *args) -> "void" :
         """
         * Returns sequence of all unit names for shape representations found in file
 
@@ -618,7 +618,7 @@ class STEPControl_Writer(object):
 
         """
         _STEPControl.STEPControl_Writer_swiginit(self,_STEPControl.new_STEPControl_Writer(*args))
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets a length-measure value that will be written to uncertainty-measure-with-unit when the next shape is translated.
 
@@ -629,7 +629,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_SetTolerance(self, *args)
 
-    def UnsetTolerance(self, *args):
+    def UnsetTolerance(self, *args) -> "void" :
         """
         * Unsets the tolerance formerly forced by SetTolerance
 
@@ -638,7 +638,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_UnsetTolerance(self, *args)
 
-    def SetWS(self, *args):
+    def SetWS(self, *args) -> "void" :
         """
         * Sets a specific session to <self>
 
@@ -651,7 +651,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_SetWS(self, *args)
 
-    def WS(self, *args):
+    def WS(self, *args) -> "Handle_XSControl_WorkSession" :
         """
         * Returns the session used in <self>
 
@@ -660,7 +660,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_WS(self, *args)
 
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_StepData_StepModel" :
         """
         * Returns the produced model. Produces a new one if not yet done or if <newone> is True This method allows for instance to edit product or header data before writing.
 
@@ -671,7 +671,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_Model(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Translates shape sh to a STEP entity. mode defines the STEP entity type to be output: - STEPControlStd_AsIs translates a shape to its highest possible STEP representation. - STEPControlStd_ManifoldSolidBrep translates a shape to a STEP manifold_solid_brep or brep_with_voids entity. - STEPControlStd_FacetedBrep translates a shape into a STEP faceted_brep entity. - STEPControlStd_ShellBasedSurfaceModel translates a shape into a STEP shell_based_surface_model entity. - STEPControlStd_GeometricCurveSet translates a shape into a STEP geometric_curve_set entity.
 
@@ -686,7 +686,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_Transfer(self, *args)
 
-    def Write(self, *args):
+    def Write(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Writes a STEP model in the file identified by filename.
 
@@ -697,7 +697,7 @@ class STEPControl_Writer(object):
         """
         return _STEPControl.STEPControl_Writer_Write(self, *args)
 
-    def PrintStatsTransfer(self, *args):
+    def PrintStatsTransfer(self, *args) -> "void" :
         """
         * Displays the statistics for the last translation. what defines the kind of statistics that are displayed: - 0 gives general statistics (number of translated roots, number of warnings, number of fail messages), - 1 gives root results, - 2 gives statistics for all checked entities, - 3 gives the list of translated entities, - 4 gives warning and fail messages, - 5 gives fail messages only. mode is used according to the use of what. If what is 0, mode is ignored. If what is 1, 2 or 3, mode defines the following: - 0 lists the numbers of STEP entities in a STEP model, - 1 gives the number, identifier, type and result type for each STEP entity and/or its status (fail, warning, etc.), - 2 gives maximum information for each STEP entity (i.e. checks), - 3 gives the number of entities by the type of a STEP entity, - 4 gives the number of of STEP entities per result type and/or status, - 5 gives the number of pairs (STEP or result type and status), - 6 gives the number of pairs (STEP or result type and status) AND the list of entity numbers in the STEP model.
 

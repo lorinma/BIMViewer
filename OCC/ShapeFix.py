@@ -142,7 +142,7 @@ import OCC.IntRes2d
 class shapefix(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SameParameter(*args):
+    def SameParameter(*args) -> "Standard_Boolean" :
         """
         * Runs SameParameter from BRepLib with these adaptations : <enforce> forces computations, else they are made only on Edges with flag SameParameter false <preci>, if not precised, is taken for each EDge as its own Tolerance Returns True when done, False if an exception has been raised In case of exception anyway, as many edges as possible have been processed. The passed progress indicator allows user to consult the current progress stage and abort algorithm if needed.
 
@@ -160,7 +160,7 @@ class shapefix(object):
         return _ShapeFix.shapefix_SameParameter(*args)
 
     SameParameter = staticmethod(SameParameter)
-    def EncodeRegularity(*args):
+    def EncodeRegularity(*args) -> "void" :
         """
         * Runs EncodeRegularity from BRepLib taking into account shared components of assemblies, so that each component is processed only once
 
@@ -174,7 +174,7 @@ class shapefix(object):
         return _ShapeFix.shapefix_EncodeRegularity(*args)
 
     EncodeRegularity = staticmethod(EncodeRegularity)
-    def RemoveSmallEdges(*args):
+    def RemoveSmallEdges(*args) -> "TopoDS_Shape" :
         """
         * Removes edges which are less than given tolerance from shape with help of ShapeFix_Wire::FixSmall()
 
@@ -190,7 +190,7 @@ class shapefix(object):
         return _ShapeFix.shapefix_RemoveSmallEdges(*args)
 
     RemoveSmallEdges = staticmethod(RemoveSmallEdges)
-    def FixVertexPosition(*args):
+    def FixVertexPosition(*args) -> "Standard_Boolean" :
         """
         * Fix position of the vertices having tolerance more tnan specified one.;
 
@@ -206,7 +206,7 @@ class shapefix(object):
         return _ShapeFix.shapefix_FixVertexPosition(*args)
 
     FixVertexPosition = staticmethod(FixVertexPosition)
-    def LeastEdgeSize(*args):
+    def LeastEdgeSize(*args) -> "Standard_Real" :
         """
         * Calculate size of least edge;
 
@@ -232,7 +232,7 @@ shapefix._kill_pointed = new_instancemethod(_ShapeFix.shapefix__kill_pointed,Non
 shapefix_swigregister = _ShapeFix.shapefix_swigregister
 shapefix_swigregister(shapefix)
 
-def shapefix_SameParameter(*args):
+def shapefix_SameParameter(*args) -> "Standard_Boolean" :
   """
     * Runs SameParameter from BRepLib with these adaptations : <enforce> forces computations, else they are made only on Edges with flag SameParameter false <preci>, if not precised, is taken for each EDge as its own Tolerance Returns True when done, False if an exception has been raised In case of exception anyway, as many edges as possible have been processed. The passed progress indicator allows user to consult the current progress stage and abort algorithm if needed.
 
@@ -249,7 +249,7 @@ def shapefix_SameParameter(*args):
     """
   return _ShapeFix.shapefix_SameParameter(*args)
 
-def shapefix_EncodeRegularity(*args):
+def shapefix_EncodeRegularity(*args) -> "void" :
   """
     * Runs EncodeRegularity from BRepLib taking into account shared components of assemblies, so that each component is processed only once
 
@@ -262,7 +262,7 @@ def shapefix_EncodeRegularity(*args):
     """
   return _ShapeFix.shapefix_EncodeRegularity(*args)
 
-def shapefix_RemoveSmallEdges(*args):
+def shapefix_RemoveSmallEdges(*args) -> "TopoDS_Shape" :
   """
     * Removes edges which are less than given tolerance from shape with help of ShapeFix_Wire::FixSmall()
 
@@ -277,7 +277,7 @@ def shapefix_RemoveSmallEdges(*args):
     """
   return _ShapeFix.shapefix_RemoveSmallEdges(*args)
 
-def shapefix_FixVertexPosition(*args):
+def shapefix_FixVertexPosition(*args) -> "Standard_Boolean" :
   """
     * Fix position of the vertices having tolerance more tnan specified one.;
 
@@ -292,7 +292,7 @@ def shapefix_FixVertexPosition(*args):
     """
   return _ShapeFix.shapefix_FixVertexPosition(*args)
 
-def shapefix_LeastEdgeSize(*args):
+def shapefix_LeastEdgeSize(*args) -> "Standard_Real" :
   """
     * Calculate size of least edge;
 
@@ -316,7 +316,7 @@ class ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d(OCC.TCollection.TCollection_
 
         """
         _ShapeFix.ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d_swiginit(self,_ShapeFix.new_ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: ShapeFix_DataMapOfShapeBox2d &
@@ -325,14 +325,14 @@ class ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d(OCC.TCollection.TCollection_
         """
         return _ShapeFix.ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_DataMapIteratorOfDataMapOfShapeBox2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box2d const &" :
         """
         :rtype: Bnd_Box2d
 
@@ -369,25 +369,25 @@ class ShapeFix_DataMapNodeOfDataMapOfShapeBox2d(OCC.TCollection.TCollection_MapN
 
         """
         _ShapeFix.ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_swiginit(self,_ShapeFix.new_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box2d &" :
         """
         :rtype: Bnd_Box2d
 
         """
         return _ShapeFix.ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_DataMapNodeOfDataMapOfShapeBox2d self)"""
         return _ShapeFix.ShapeFix_DataMapNodeOfDataMapOfShapeBox2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d" :
         """GetHandle(ShapeFix_DataMapNodeOfDataMapOfShapeBox2d self) -> Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d"""
         return _ShapeFix.ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_GetHandle(self)
 
@@ -427,7 +427,7 @@ Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d._kill_pointed = new_instancemet
 Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_swigregister = _ShapeFix.Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_swigregister
 Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_swigregister(Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d)
 
-def Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_DownCast(*args):
+def Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_DownCast(*args) -> "Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d const" :
   return _ShapeFix.Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_DownCast(*args)
 Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_DownCast = _ShapeFix.Handle_ShapeFix_DataMapNodeOfDataMapOfShapeBox2d_DownCast
 
@@ -442,7 +442,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
 
         """
         _ShapeFix.ShapeFix_DataMapOfShapeBox2d_swiginit(self,_ShapeFix.new_ShapeFix_DataMapOfShapeBox2d(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ShapeFix_DataMapOfShapeBox2d &" :
         """
         :param Other:
         :type Other: ShapeFix_DataMapOfShapeBox2d &
@@ -451,7 +451,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ShapeFix_DataMapOfShapeBox2d &" :
         """
         :param Other:
         :type Other: ShapeFix_DataMapOfShapeBox2d &
@@ -460,7 +460,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -469,14 +469,14 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -487,7 +487,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -496,7 +496,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -505,7 +505,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Bnd_Box2d const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -514,7 +514,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Bnd_Box2d &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -523,7 +523,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -532,7 +532,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -541,7 +541,7 @@ class ShapeFix_DataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_DataMapOfShapeBox2d self)"""
         return _ShapeFix.ShapeFix_DataMapOfShapeBox2d__kill_pointed(self)
 
@@ -579,7 +579,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeFix.ShapeFix_Edge_swiginit(self,_ShapeFix.new_ShapeFix_Edge(*args))
-    def Projector(self, *args):
+    def Projector(self, *args) -> "Handle_ShapeConstruct_ProjectCurveOnSurface" :
         """
         * Returns the projector used for recomputing missing pcurves Can be used for adjusting parameters of projector
 
@@ -588,7 +588,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_Projector(self, *args)
 
-    def FixRemovePCurve(self, *args):
+    def FixRemovePCurve(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -609,7 +609,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixRemovePCurve(self, *args)
 
-    def FixRemoveCurve3d(self, *args):
+    def FixRemoveCurve3d(self, *args) -> "Standard_Boolean" :
         """
         * Removes 3d curve of the edge if it does not match the vertices Returns: True, if does not match, removed (status DONE) False, (status OK) if matches or (status FAIL) if no 3d curve, nothing done
 
@@ -620,7 +620,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixRemoveCurve3d(self, *args)
 
-    def FixAddPCurve(self, *args):
+    def FixAddPCurve(self, *args) -> "Standard_Boolean" :
         """
         * See method below for information
 
@@ -681,7 +681,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixAddPCurve(self, *args)
 
-    def FixAddCurve3d(self, *args):
+    def FixAddCurve3d(self, *args) -> "Standard_Boolean" :
         """
         * Tries to build 3d curve of the edge if missing Use : It is to be called after FixRemoveCurve3d (if removed) or in any case when edge can have no 3d curve Returns: True if 3d curve was added, else False Status : OK : 3d curve exists FAIL1: BRepLib::BuildCurve3d() has failed DONE1: 3d curve was added
 
@@ -692,7 +692,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixAddCurve3d(self, *args)
 
-    def FixVertexTolerance(self, *args):
+    def FixVertexTolerance(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -709,7 +709,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixVertexTolerance(self, *args)
 
-    def FixReversed2d(self, *args):
+    def FixReversed2d(self, *args) -> "Standard_Boolean" :
         """
         :param edge:
         :type edge: TopoDS_Edge &
@@ -730,7 +730,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixReversed2d(self, *args)
 
-    def FixSameParameter(self, *args):
+    def FixSameParameter(self, *args) -> "Standard_Boolean" :
         """
         * Tries to make edge SameParameter and sets corresponding tolerance and SameParameter flag. First, it makes edge same range if SameRange flag is not set.  If flag SameParameter is set, this method calls the function ShapeAnalysis_Edge::CheckSameParameter() that calculates the maximal deviation of pcurves of the edge from its 3d curve. If deviation > tolerance, the tolerance of edge is increased to a value of deviation. If deviation < tolerance nothing happens.  If flag SameParameter is not set, this method chooses the best variant (one that has minimal tolerance), either a. only after computing deviation (as above) or b. after calling standard procedure BRepLib::SameParameter and computing deviation (as above). If <tolerance> > 0, it is used as parameter for BRepLib::SameParameter, otherwise, tolerance of the edge is used. Use : Is to be called after all pcurves and 3d curve of the edge are correctly computed Remark : SameParameter flag is always set to True after this method Returns: True, if something done, else False Status : OK - edge was initially SameParameter, nothing is done FAIL1 - computation of deviation of pcurves from 3d curve has failed FAIL2 - BRepLib::SameParameter() has failed DONE1 - tolerance of the edge was increased DONE2 - flag SameParameter was set to True (only if  BRepLib::SameParameter() did not set it) DONE3 - edge was modified by BRepLib::SameParameter() to SameParameter DONE4 - not used anymore DONE5 - if the edge resulting from BRepLib has been chosen, i.e. variant b. above  (only for edges with not set SameParameter)
 
@@ -743,7 +743,7 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_FixSameParameter(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status (in the form of True/False) of last Fix
 
@@ -754,11 +754,11 @@ class ShapeFix_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Edge_Status(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Edge self)"""
         return _ShapeFix.ShapeFix_Edge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Edge" :
         """GetHandle(ShapeFix_Edge self) -> Handle_ShapeFix_Edge"""
         return _ShapeFix.ShapeFix_Edge_GetHandle(self)
 
@@ -805,7 +805,7 @@ Handle_ShapeFix_Edge._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeFi
 Handle_ShapeFix_Edge_swigregister = _ShapeFix.Handle_ShapeFix_Edge_swigregister
 Handle_ShapeFix_Edge_swigregister(Handle_ShapeFix_Edge)
 
-def Handle_ShapeFix_Edge_DownCast(*args):
+def Handle_ShapeFix_Edge_DownCast(*args) -> "Handle_ShapeFix_Edge const" :
   return _ShapeFix.Handle_ShapeFix_Edge_DownCast(*args)
 Handle_ShapeFix_Edge_DownCast = _ShapeFix.Handle_ShapeFix_Edge_DownCast
 
@@ -818,7 +818,7 @@ class ShapeFix_EdgeConnect(object):
 
         """
         _ShapeFix.ShapeFix_EdgeConnect_swiginit(self,_ShapeFix.new_ShapeFix_EdgeConnect(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds information on connectivity between start vertex of second edge and end vertex of first edge, taking edges orientation into account
 
@@ -837,7 +837,7 @@ class ShapeFix_EdgeConnect(object):
         """
         return _ShapeFix.ShapeFix_EdgeConnect_Add(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Builds shared vertices, updates their positions and tolerances
 
@@ -846,7 +846,7 @@ class ShapeFix_EdgeConnect(object):
         """
         return _ShapeFix.ShapeFix_EdgeConnect_Build(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears internal data structure
 
@@ -885,7 +885,7 @@ class ShapeFix_EdgeProjAux(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeFix.ShapeFix_EdgeProjAux_swiginit(self,_ShapeFix.new_ShapeFix_EdgeProjAux(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -896,7 +896,7 @@ class ShapeFix_EdgeProjAux(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_Init(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         :param preci:
         :type preci: float
@@ -905,35 +905,35 @@ class ShapeFix_EdgeProjAux(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_Compute(self, *args)
 
-    def IsFirstDone(self, *args):
+    def IsFirstDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_IsFirstDone(self, *args)
 
-    def IsLastDone(self, *args):
+    def IsLastDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_IsLastDone(self, *args)
 
-    def FirstParam(self, *args):
+    def FirstParam(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_FirstParam(self, *args)
 
-    def LastParam(self, *args):
+    def LastParam(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_LastParam(self, *args)
 
-    def IsIso(self, *args):
+    def IsIso(self, *args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -942,11 +942,11 @@ class ShapeFix_EdgeProjAux(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_EdgeProjAux_IsIso(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_EdgeProjAux self)"""
         return _ShapeFix.ShapeFix_EdgeProjAux__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_EdgeProjAux" :
         """GetHandle(ShapeFix_EdgeProjAux self) -> Handle_ShapeFix_EdgeProjAux"""
         return _ShapeFix.ShapeFix_EdgeProjAux_GetHandle(self)
 
@@ -991,7 +991,7 @@ Handle_ShapeFix_EdgeProjAux._kill_pointed = new_instancemethod(_ShapeFix.Handle_
 Handle_ShapeFix_EdgeProjAux_swigregister = _ShapeFix.Handle_ShapeFix_EdgeProjAux_swigregister
 Handle_ShapeFix_EdgeProjAux_swigregister(Handle_ShapeFix_EdgeProjAux)
 
-def Handle_ShapeFix_EdgeProjAux_DownCast(*args):
+def Handle_ShapeFix_EdgeProjAux_DownCast(*args) -> "Handle_ShapeFix_EdgeProjAux const" :
   return _ShapeFix.Handle_ShapeFix_EdgeProjAux_DownCast(*args)
 Handle_ShapeFix_EdgeProjAux_DownCast = _ShapeFix.Handle_ShapeFix_EdgeProjAux_DownCast
 
@@ -1004,7 +1004,7 @@ class ShapeFix_FaceConnect(object):
 
         """
         _ShapeFix.ShapeFix_FaceConnect_swiginit(self,_ShapeFix.new_ShapeFix_FaceConnect(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aFirst:
         :type aFirst: TopoDS_Face &
@@ -1015,7 +1015,7 @@ class ShapeFix_FaceConnect(object):
         """
         return _ShapeFix.ShapeFix_FaceConnect_Add(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "TopoDS_Shell" :
         """
         :param shell:
         :type shell: TopoDS_Shell &
@@ -1028,7 +1028,7 @@ class ShapeFix_FaceConnect(object):
         """
         return _ShapeFix.ShapeFix_FaceConnect_Build(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears internal data structure
 
@@ -1089,7 +1089,7 @@ class ShapeFix_FreeBounds(object):
 
         """
         _ShapeFix.ShapeFix_FreeBounds_swiginit(self,_ShapeFix.new_ShapeFix_FreeBounds(*args))
-    def GetClosedWires(self, *args):
+    def GetClosedWires(self, *args) -> "TopoDS_Compound const" :
         """
         * Returns compound of closed wires out of free edges.
 
@@ -1098,7 +1098,7 @@ class ShapeFix_FreeBounds(object):
         """
         return _ShapeFix.ShapeFix_FreeBounds_GetClosedWires(self, *args)
 
-    def GetOpenWires(self, *args):
+    def GetOpenWires(self, *args) -> "TopoDS_Compound const" :
         """
         * Returns compound of open wires out of free edges.
 
@@ -1107,7 +1107,7 @@ class ShapeFix_FreeBounds(object):
         """
         return _ShapeFix.ShapeFix_FreeBounds_GetOpenWires(self, *args)
 
-    def GetShape(self, *args):
+    def GetShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns modified source shape.
 
@@ -1148,7 +1148,7 @@ class ShapeFix_IntersectionTool(object):
 
         """
         _ShapeFix.ShapeFix_IntersectionTool_swiginit(self,_ShapeFix.new_ShapeFix_IntersectionTool(*args))
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_ShapeBuild_ReShape" :
         """
         * Returns context
 
@@ -1157,7 +1157,7 @@ class ShapeFix_IntersectionTool(object):
         """
         return _ShapeFix.ShapeFix_IntersectionTool_Context(self, *args)
 
-    def SplitEdge(self, *args):
+    def SplitEdge(self, *args) -> "Standard_Boolean" :
         """
         * Split edge on two new edges using new vertex 'vert' and 'param' - parameter for splitting The 'face' is necessary for pcurves and using TransferParameterProj
 
@@ -1180,7 +1180,7 @@ class ShapeFix_IntersectionTool(object):
         """
         return _ShapeFix.ShapeFix_IntersectionTool_SplitEdge(self, *args)
 
-    def CutEdge(self, *args):
+    def CutEdge(self, *args) -> "Standard_Boolean" :
         """
         * Cut edge by parameters pend and cut
 
@@ -1199,7 +1199,7 @@ class ShapeFix_IntersectionTool(object):
         """
         return _ShapeFix.ShapeFix_IntersectionTool_CutEdge(self, *args)
 
-    def FixSelfIntersectWire(self, *args):
+    def FixSelfIntersectWire(self, *args) -> "Standard_Boolean" :
         """
         :param sewd:
         :type sewd: Handle_ShapeExtend_WireData &
@@ -1216,7 +1216,7 @@ class ShapeFix_IntersectionTool(object):
         """
         return _ShapeFix.ShapeFix_IntersectionTool_FixSelfIntersectWire(self, *args)
 
-    def FixIntersectingWires(self, *args):
+    def FixIntersectingWires(self, *args) -> "Standard_Boolean" :
         """
         :param face:
         :type face: TopoDS_Face &
@@ -1253,7 +1253,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeFix.ShapeFix_Root_swiginit(self,_ShapeFix.new_ShapeFix_Root(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Copy all fields from another Root object
 
@@ -1264,7 +1264,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_Set(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets context
 
@@ -1275,7 +1275,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_ShapeBuild_ReShape" :
         """
         * Returns context
 
@@ -1284,7 +1284,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_Context(self, *args)
 
-    def SetMsgRegistrator(self, *args):
+    def SetMsgRegistrator(self, *args) -> "void" :
         """
         * Sets message registrator
 
@@ -1295,7 +1295,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SetMsgRegistrator(self, *args)
 
-    def MsgRegistrator(self, *args):
+    def MsgRegistrator(self, *args) -> "Handle_ShapeExtend_BasicMsgRegistrator" :
         """
         * Returns message registrator
 
@@ -1304,7 +1304,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_MsgRegistrator(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         * Sets basic precision value
 
@@ -1315,7 +1315,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SetPrecision(self, *args)
 
-    def Precision(self, *args):
+    def Precision(self, *args) -> "Standard_Real" :
         """
         * Returns basic precision value
 
@@ -1324,7 +1324,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_Precision(self, *args)
 
-    def SetMinTolerance(self, *args):
+    def SetMinTolerance(self, *args) -> "void" :
         """
         * Sets minimal allowed tolerance
 
@@ -1335,7 +1335,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SetMinTolerance(self, *args)
 
-    def MinTolerance(self, *args):
+    def MinTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns minimal allowed tolerance
 
@@ -1344,7 +1344,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_MinTolerance(self, *args)
 
-    def SetMaxTolerance(self, *args):
+    def SetMaxTolerance(self, *args) -> "void" :
         """
         * Sets maximal allowed tolerance
 
@@ -1355,7 +1355,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SetMaxTolerance(self, *args)
 
-    def MaxTolerance(self, *args):
+    def MaxTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns maximal allowed tolerance
 
@@ -1364,7 +1364,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_MaxTolerance(self, *args)
 
-    def LimitTolerance(self, *args):
+    def LimitTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance limited by [myMinTol,myMaxTol]
 
@@ -1375,7 +1375,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_LimitTolerance(self, *args)
 
-    def SendMsg(self, *args):
+    def SendMsg(self, *args) -> "void" :
         """
         * Sends a message to be attached to the shape. Calls corresponding message of message registrator.
 
@@ -1398,7 +1398,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SendMsg(self, *args)
 
-    def SendWarning(self, *args):
+    def SendWarning(self, *args) -> "void" :
         """
         * Sends a warning to be attached to the shape. Calls SendMsg with gravity set to Message_Warning.
 
@@ -1417,7 +1417,7 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SendWarning(self, *args)
 
-    def SendFail(self, *args):
+    def SendFail(self, *args) -> "void" :
         """
         * Sends a fail to be attached to the shape. Calls SendMsg with gravity set to Message_Fail.
 
@@ -1436,11 +1436,11 @@ class ShapeFix_Root(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeFix.ShapeFix_Root_SendFail(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Root self)"""
         return _ShapeFix.ShapeFix_Root__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Root" :
         """GetHandle(ShapeFix_Root self) -> Handle_ShapeFix_Root"""
         return _ShapeFix.ShapeFix_Root_GetHandle(self)
 
@@ -1493,7 +1493,7 @@ Handle_ShapeFix_Root._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeFi
 Handle_ShapeFix_Root_swigregister = _ShapeFix.Handle_ShapeFix_Root_swigregister
 Handle_ShapeFix_Root_swigregister(Handle_ShapeFix_Root)
 
-def Handle_ShapeFix_Root_DownCast(*args):
+def Handle_ShapeFix_Root_DownCast(*args) -> "Handle_ShapeFix_Root const" :
   return _ShapeFix.Handle_ShapeFix_Root_DownCast(*args)
 Handle_ShapeFix_Root_DownCast = _ShapeFix.Handle_ShapeFix_Root_DownCast
 
@@ -1512,18 +1512,18 @@ class ShapeFix_SequenceNodeOfSequenceOfWireSegment(OCC.TCollection.TCollection_S
 
         """
         _ShapeFix.ShapeFix_SequenceNodeOfSequenceOfWireSegment_swiginit(self,_ShapeFix.new_ShapeFix_SequenceNodeOfSequenceOfWireSegment(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "ShapeFix_WireSegment &" :
         """
         :rtype: ShapeFix_WireSegment
 
         """
         return _ShapeFix.ShapeFix_SequenceNodeOfSequenceOfWireSegment_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_SequenceNodeOfSequenceOfWireSegment self)"""
         return _ShapeFix.ShapeFix_SequenceNodeOfSequenceOfWireSegment__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment" :
         """GetHandle(ShapeFix_SequenceNodeOfSequenceOfWireSegment self) -> Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment"""
         return _ShapeFix.ShapeFix_SequenceNodeOfSequenceOfWireSegment_GetHandle(self)
 
@@ -1562,7 +1562,7 @@ Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment._kill_pointed = new_instance
 Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_swigregister = _ShapeFix.Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_swigregister
 Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_swigregister(Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment)
 
-def Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_DownCast(*args):
+def Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_DownCast(*args) -> "Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment const" :
   return _ShapeFix.Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_DownCast(*args)
 Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_DownCast = _ShapeFix.Handle_ShapeFix_SequenceNodeOfSequenceOfWireSegment_DownCast
 
@@ -1575,14 +1575,14 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _ShapeFix.ShapeFix_SequenceOfWireSegment_swiginit(self,_ShapeFix.new_ShapeFix_SequenceOfWireSegment(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ShapeFix_SequenceOfWireSegment const &" :
         """
         :param Other:
         :type Other: ShapeFix_SequenceOfWireSegment &
@@ -1591,7 +1591,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ShapeFix_SequenceOfWireSegment const &" :
         """
         :param Other:
         :type Other: ShapeFix_SequenceOfWireSegment &
@@ -1600,7 +1600,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: ShapeFix_WireSegment &
@@ -1613,7 +1613,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: ShapeFix_WireSegment &
@@ -1626,7 +1626,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1643,7 +1643,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1660,21 +1660,21 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "ShapeFix_WireSegment const &" :
         """
         :rtype: ShapeFix_WireSegment
 
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "ShapeFix_WireSegment const &" :
         """
         :rtype: ShapeFix_WireSegment
 
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1685,7 +1685,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "ShapeFix_WireSegment const &" :
         """
         :param Index:
         :type Index: int
@@ -1694,7 +1694,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1705,7 +1705,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "ShapeFix_WireSegment &" :
         """
         :param Index:
         :type Index: int
@@ -1714,7 +1714,7 @@ class ShapeFix_SequenceOfWireSegment(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ShapeFix.ShapeFix_SequenceOfWireSegment_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1764,7 +1764,7 @@ class ShapeFix_ShapeTolerance(object):
 
         """
         _ShapeFix.ShapeFix_ShapeTolerance_swiginit(self,_ShapeFix.new_ShapeFix_ShapeTolerance(*args))
-    def LimitTolerance(self, *args):
+    def LimitTolerance(self, *args) -> "Standard_Boolean" :
         """
         * Limits tolerances in a shape as follows : tmin = tmax -> as SetTolerance (forces) tmin = 0 -> maximum tolerance will be <tmax> tmax = 0 or not given (more generally, tmax < tmin) -> <tmax> ignored, minimum will be <tmin> else, maximum will be <max> and minimum will be <min> styp = VERTEX : only vertices are set styp = EDGE : only edges are set styp = FACE : only faces are set styp = WIRE : to have edges and their vertices set styp = other value : all (vertices,edges,faces) are set Returns True if at least one tolerance of the sub-shape has been modified
 
@@ -1781,7 +1781,7 @@ class ShapeFix_ShapeTolerance(object):
         """
         return _ShapeFix.ShapeFix_ShapeTolerance_LimitTolerance(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets (enforces) tolerances in a shape to the given value styp = VERTEX : only vertices are set styp = EDGE : only edges are set styp = FACE : only faces are set styp = WIRE : to have edges and their vertices set styp = other value : all (vertices,edges,faces) are set
 
@@ -1821,7 +1821,7 @@ class ShapeFix_SplitTool(object):
 
         """
         _ShapeFix.ShapeFix_SplitTool_swiginit(self,_ShapeFix.new_ShapeFix_SplitTool(*args))
-    def CutEdge(self, *args):
+    def CutEdge(self, *args) -> "Standard_Boolean" :
         """
         * Cut edge by parameters pend and cut
 
@@ -1840,7 +1840,7 @@ class ShapeFix_SplitTool(object):
         """
         return _ShapeFix.ShapeFix_SplitTool_CutEdge(self, *args)
 
-    def SplitEdge(self, *args):
+    def SplitEdge(self, *args) -> "Standard_Boolean" :
         """
         * Split edge on two new edges using new vertex 'vert' and 'param' - parameter for splitting The 'face' is necessary for pcurves and using TransferParameterProj
 
@@ -1936,7 +1936,7 @@ class ShapeFix_WireVertex(object):
 
         """
         _ShapeFix.ShapeFix_WireVertex_swiginit(self,_ShapeFix.new_ShapeFix_WireVertex(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Loads the wire, ininializes internal analyzer (ShapeAnalysis_WireVertex) with the given precision, and performs analysis
 
@@ -1963,7 +1963,7 @@ class ShapeFix_WireVertex(object):
         """
         return _ShapeFix.ShapeFix_WireVertex_Init(self, *args)
 
-    def Analyzer(self, *args):
+    def Analyzer(self, *args) -> "ShapeAnalysis_WireVertex const &" :
         """
         * returns internal analyzer
 
@@ -1972,7 +1972,7 @@ class ShapeFix_WireVertex(object):
         """
         return _ShapeFix.ShapeFix_WireVertex_Analyzer(self, *args)
 
-    def WireData(self, *args):
+    def WireData(self, *args) -> "Handle_ShapeExtend_WireData const &" :
         """
         * returns data on wire (fixed)
 
@@ -1981,7 +1981,7 @@ class ShapeFix_WireVertex(object):
         """
         return _ShapeFix.ShapeFix_WireVertex_WireData(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire" :
         """
         * returns resulting wire (fixed)
 
@@ -1990,7 +1990,7 @@ class ShapeFix_WireVertex(object):
         """
         return _ShapeFix.ShapeFix_WireVertex_Wire(self, *args)
 
-    def FixSame(self, *args):
+    def FixSame(self, *args) -> "Standard_Integer" :
         """
         * Fixes 'Same' or 'Close' status (same vertex may be set, without changing parameters) Returns the count of fixed vertices, 0 if none
 
@@ -1999,7 +1999,7 @@ class ShapeFix_WireVertex(object):
         """
         return _ShapeFix.ShapeFix_WireVertex_FixSame(self, *args)
 
-    def Fix(self, *args):
+    def Fix(self, *args) -> "Standard_Integer" :
         """
         * Fixes all statuses except 'Disjoined', i.e. the cases in which a common value has been set, with or without changing parameters Returns the count of fixed vertices, 0 if none
 
@@ -2037,7 +2037,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_ComposeShell_swiginit(self,_ShapeFix.new_ShapeFix_ComposeShell(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes with composite surface, face and precision. Here face defines both set of wires and way of getting pcurves. Precision is used (together with tolerance of edges) for handling subtle cases, such as tangential intersections.
 
@@ -2054,15 +2054,15 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_Init(self, *args)
 
-    def GetClosedMode(self):
+    def GetClosedMode(self) -> "Standard_Boolean" :
         """GetClosedMode(ShapeFix_ComposeShell self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_ComposeShell_GetClosedMode(self)
 
-    def SetClosedMode(self, *args):
+    def SetClosedMode(self, *args) -> "void" :
         """SetClosedMode(ShapeFix_ComposeShell self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_ComposeShell_SetClosedMode(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs the work on already loaded data.
 
@@ -2071,7 +2071,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_Perform(self, *args)
 
-    def SplitEdges(self, *args):
+    def SplitEdges(self, *args) -> "void" :
         """
         * Splits edges in the original shape by grid. This is a part of Perform() which does not produce any resulting shape; the only result is filled context where splittings are recorded.  NOTE: If edge is splitted, it is replaced by wire, and order of edges in the wire corresponds to FORWARD orientation of the edge.
 
@@ -2080,7 +2080,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_SplitEdges(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns resulting shell or face (or Null shape if not done)
 
@@ -2089,7 +2089,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_Result(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Queries status of last call to Perform() OK : nothing done (some kind of error) DONE1: splitting is done, at least one new face created DONE2: splitting is done, several new faces obtained FAIL1: misoriented wire encountered (handled) FAIL2: recoverable parity error FAIL3: edge with no pcurve on supporting face FAIL4: unrecoverable algorithm error (parity check)
 
@@ -2100,7 +2100,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_Status(self, *args)
 
-    def DispatchWires(self, *args):
+    def DispatchWires(self, *args) -> "void" :
         """
         * Creates new faces from the set of (closed) wires. Each wire is put on corresponding patch in the composite surface, and all pcurves on the initial (pseudo)face are reassigned to that surface. If several wires are one inside another, single face is created.
 
@@ -2113,7 +2113,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_DispatchWires(self, *args)
 
-    def SetTransferParamTool(self, *args):
+    def SetTransferParamTool(self, *args) -> "void" :
         """
         * Sets tool for transfer parameters from 3d to 2d and vice versa.
 
@@ -2124,7 +2124,7 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_SetTransferParamTool(self, *args)
 
-    def GetTransferParamTool(self, *args):
+    def GetTransferParamTool(self, *args) -> "Handle_ShapeAnalysis_TransferParameters" :
         """
         * Gets tool for transfer parameters from 3d to 2d and vice versa.
 
@@ -2133,11 +2133,11 @@ class ShapeFix_ComposeShell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_ComposeShell_GetTransferParamTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_ComposeShell self)"""
         return _ShapeFix.ShapeFix_ComposeShell__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_ComposeShell" :
         """GetHandle(ShapeFix_ComposeShell self) -> Handle_ShapeFix_ComposeShell"""
         return _ShapeFix.ShapeFix_ComposeShell_GetHandle(self)
 
@@ -2185,7 +2185,7 @@ Handle_ShapeFix_ComposeShell._kill_pointed = new_instancemethod(_ShapeFix.Handle
 Handle_ShapeFix_ComposeShell_swigregister = _ShapeFix.Handle_ShapeFix_ComposeShell_swigregister
 Handle_ShapeFix_ComposeShell_swigregister(Handle_ShapeFix_ComposeShell)
 
-def Handle_ShapeFix_ComposeShell_DownCast(*args):
+def Handle_ShapeFix_ComposeShell_DownCast(*args) -> "Handle_ShapeFix_ComposeShell const" :
   return _ShapeFix.Handle_ShapeFix_ComposeShell_DownCast(*args)
 Handle_ShapeFix_ComposeShell_DownCast = _ShapeFix.Handle_ShapeFix_ComposeShell_DownCast
 
@@ -2206,7 +2206,7 @@ class ShapeFix_Face(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Face_swiginit(self,_ShapeFix.new_ShapeFix_Face(*args))
-    def ClearModes(self, *args):
+    def ClearModes(self, *args) -> "void" :
         """
         * Sets all modes to default
 
@@ -2215,7 +2215,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_ClearModes(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Loads a whole face already created, with its wires, sense and location
 
@@ -2246,87 +2246,87 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Init(self, *args)
 
-    def GetFixWireMode(self):
+    def GetFixWireMode(self) -> "Standard_Integer" :
         """GetFixWireMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixWireMode(self)
 
-    def SetFixWireMode(self, *args):
+    def SetFixWireMode(self, *args) -> "void" :
         """SetFixWireMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixWireMode(self, *args)
 
-    def GetFixOrientationMode(self):
+    def GetFixOrientationMode(self) -> "Standard_Integer" :
         """GetFixOrientationMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixOrientationMode(self)
 
-    def SetFixOrientationMode(self, *args):
+    def SetFixOrientationMode(self, *args) -> "void" :
         """SetFixOrientationMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixOrientationMode(self, *args)
 
-    def GetFixAddNaturalBoundMode(self):
+    def GetFixAddNaturalBoundMode(self) -> "Standard_Integer" :
         """GetFixAddNaturalBoundMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixAddNaturalBoundMode(self)
 
-    def SetFixAddNaturalBoundMode(self, *args):
+    def SetFixAddNaturalBoundMode(self, *args) -> "void" :
         """SetFixAddNaturalBoundMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixAddNaturalBoundMode(self, *args)
 
-    def GetFixMissingSeamMode(self):
+    def GetFixMissingSeamMode(self) -> "Standard_Integer" :
         """GetFixMissingSeamMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixMissingSeamMode(self)
 
-    def SetFixMissingSeamMode(self, *args):
+    def SetFixMissingSeamMode(self, *args) -> "void" :
         """SetFixMissingSeamMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixMissingSeamMode(self, *args)
 
-    def GetFixSmallAreaWireMode(self):
+    def GetFixSmallAreaWireMode(self) -> "Standard_Integer" :
         """GetFixSmallAreaWireMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixSmallAreaWireMode(self)
 
-    def SetFixSmallAreaWireMode(self, *args):
+    def SetFixSmallAreaWireMode(self, *args) -> "void" :
         """SetFixSmallAreaWireMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixSmallAreaWireMode(self, *args)
 
-    def GetFixIntersectingWiresMode(self):
+    def GetFixIntersectingWiresMode(self) -> "Standard_Integer" :
         """GetFixIntersectingWiresMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixIntersectingWiresMode(self)
 
-    def SetFixIntersectingWiresMode(self, *args):
+    def SetFixIntersectingWiresMode(self, *args) -> "void" :
         """SetFixIntersectingWiresMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixIntersectingWiresMode(self, *args)
 
-    def GetFixLoopWiresMode(self):
+    def GetFixLoopWiresMode(self) -> "Standard_Integer" :
         """GetFixLoopWiresMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixLoopWiresMode(self)
 
-    def SetFixLoopWiresMode(self, *args):
+    def SetFixLoopWiresMode(self, *args) -> "void" :
         """SetFixLoopWiresMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixLoopWiresMode(self, *args)
 
-    def GetFixSplitFaceMode(self):
+    def GetFixSplitFaceMode(self) -> "Standard_Integer" :
         """GetFixSplitFaceMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixSplitFaceMode(self)
 
-    def SetFixSplitFaceMode(self, *args):
+    def SetFixSplitFaceMode(self, *args) -> "void" :
         """SetFixSplitFaceMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixSplitFaceMode(self, *args)
 
-    def GetAutoCorrectPrecisionMode(self):
+    def GetAutoCorrectPrecisionMode(self) -> "Standard_Integer" :
         """GetAutoCorrectPrecisionMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetAutoCorrectPrecisionMode(self)
 
-    def SetAutoCorrectPrecisionMode(self, *args):
+    def SetAutoCorrectPrecisionMode(self, *args) -> "void" :
         """SetAutoCorrectPrecisionMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetAutoCorrectPrecisionMode(self, *args)
 
-    def GetFixPeriodicDegeneratedMode(self):
+    def GetFixPeriodicDegeneratedMode(self) -> "Standard_Integer" :
         """GetFixPeriodicDegeneratedMode(ShapeFix_Face self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Face_GetFixPeriodicDegeneratedMode(self)
 
-    def SetFixPeriodicDegeneratedMode(self, *args):
+    def SetFixPeriodicDegeneratedMode(self, *args) -> "void" :
         """SetFixPeriodicDegeneratedMode(ShapeFix_Face self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Face_SetFixPeriodicDegeneratedMode(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face" :
         """
         * Returns a face which corresponds to the current state Warning: The finally produced face may be another one ... but with the same support
 
@@ -2335,7 +2335,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Face(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopoDS_Shape" :
         """
         * Returns resulting shape (Face or Shell if splitted) To be used instead of Face() if FixMissingSeam involved
 
@@ -2344,7 +2344,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Result(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Add a wire to current face using BRep_Builder. Wire is added without taking into account orientation of face (as if face were FORWARD).
 
@@ -2355,7 +2355,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs all the fixes, depending on modes Function Status returns the status of last call to Perform() ShapeExtend_OK : face was OK, nothing done ShapeExtend_DONE1: some wires are fixed ShapeExtend_DONE2: orientation of wires fixed ShapeExtend_DONE3: missing seam added ShapeExtend_DONE4: small area wire removed ShapeExtend_DONE5: natural bounds added ShapeExtend_FAIL1: some fails during fixing wires ShapeExtend_FAIL2: cannot fix orientation of wires ShapeExtend_FAIL3: cannot add missing seam ShapeExtend_FAIL4: cannot remove small area wire
 
@@ -2364,7 +2364,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Perform(self, *args)
 
-    def FixOrientation(self, *args):
+    def FixOrientation(self, *args) -> "Standard_Boolean" :
         """
         * Fixes orientation of wires on the face It tries to make all wires lie outside all others (according to orientation) by reversing orientation of some of them. If face lying on sphere or torus has single wire and AddNaturalBoundMode is True, that wire is not reversed in any case (supposing that natural bound will be added). Returns True if wires were reversed
 
@@ -2379,7 +2379,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixOrientation(self, *args)
 
-    def FixAddNaturalBound(self, *args):
+    def FixAddNaturalBound(self, *args) -> "Standard_Boolean" :
         """
         * Adds natural boundary on face if it is missing. Two cases are supported: - face has no wires - face lies on geometrically double-closed surface  (sphere or torus) and none of wires is left-oriented Returns True if natural boundary was added
 
@@ -2388,7 +2388,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixAddNaturalBound(self, *args)
 
-    def FixMissingSeam(self, *args):
+    def FixMissingSeam(self, *args) -> "Standard_Boolean" :
         """
         * Detects and fixes the special case when face on a closed surface is given by two wires closed in 3d but with gap in 2d. In that case it creates a new wire from the two, and adds a missing seam edge Returns True if missing seam was added
 
@@ -2397,7 +2397,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixMissingSeam(self, *args)
 
-    def FixSmallAreaWire(self, *args):
+    def FixSmallAreaWire(self, *args) -> "Standard_Boolean" :
         """
         * Detects wires with small area (that is less than 100*Precision::PConfusion(). Removes these wires if they are internal. Returns : True if at least one small wire removed, 	 False if does nothing.
 
@@ -2406,7 +2406,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixSmallAreaWire(self, *args)
 
-    def FixLoopWire(self, *args):
+    def FixLoopWire(self, *args) -> "Standard_Boolean" :
         """
         * Detects if wire has a loop and fixes this situation by splitting on the few parts. if wire has a loops and it was splitted Status was set to value ShapeExtend_DONE6.
 
@@ -2417,7 +2417,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixLoopWire(self, *args)
 
-    def FixIntersectingWires(self, *args):
+    def FixIntersectingWires(self, *args) -> "Standard_Boolean" :
         """
         * Detects and fixes the special case when face has more than one wire and this wires have intersection point
 
@@ -2426,7 +2426,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixIntersectingWires(self, *args)
 
-    def FixWiresTwoCoincEdges(self, *args):
+    def FixWiresTwoCoincEdges(self, *args) -> "Standard_Boolean" :
         """
         * If wire contains two coincidence edges it must be removed Queries on status after Perform()
 
@@ -2435,7 +2435,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixWiresTwoCoincEdges(self, *args)
 
-    def FixSplitFace(self, *args):
+    def FixSplitFace(self, *args) -> "Standard_Boolean" :
         """
         * Split face if there are more than one out wire using inrormation after FixOrientation()
 
@@ -2446,7 +2446,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixSplitFace(self, *args)
 
-    def FixPeriodicDegenerated(self, *args):
+    def FixPeriodicDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Fixes topology for a specific case when face is composed by a single wire belting a periodic surface. In that case a degenerated edge is reconstructed in the degenerated pole of the surface. Initial wire gets consistent orientation. Must be used in couple and before FixMissingSeam routine
 
@@ -2455,7 +2455,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixPeriodicDegenerated(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of last call to Perform() ShapeExtend_OK : face was OK, nothing done ShapeExtend_DONE1: some wires are fixed ShapeExtend_DONE2: orientation of wires fixed ShapeExtend_DONE3: missing seam added ShapeExtend_DONE4: small area wire removed ShapeExtend_DONE5: natural bounds added ShapeExtend_DONE8: face may be splited ShapeExtend_FAIL1: some fails during fixing wires ShapeExtend_FAIL2: cannot fix orientation of wires ShapeExtend_FAIL3: cannot add missing seam ShapeExtend_FAIL4: cannot remove small area wire
 
@@ -2466,7 +2466,7 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_Status(self, *args)
 
-    def FixWireTool(self, *args):
+    def FixWireTool(self, *args) -> "Handle_ShapeFix_Wire" :
         """
         * Returns tool for fixing wires.
 
@@ -2475,11 +2475,11 @@ class ShapeFix_Face(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Face_FixWireTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Face self)"""
         return _ShapeFix.ShapeFix_Face__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Face" :
         """GetHandle(ShapeFix_Face self) -> Handle_ShapeFix_Face"""
         return _ShapeFix.ShapeFix_Face_GetHandle(self)
 
@@ -2554,7 +2554,7 @@ Handle_ShapeFix_Face._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeFi
 Handle_ShapeFix_Face_swigregister = _ShapeFix.Handle_ShapeFix_Face_swigregister
 Handle_ShapeFix_Face_swigregister(Handle_ShapeFix_Face)
 
-def Handle_ShapeFix_Face_DownCast(*args):
+def Handle_ShapeFix_Face_DownCast(*args) -> "Handle_ShapeFix_Face const" :
   return _ShapeFix.Handle_ShapeFix_Face_DownCast(*args)
 Handle_ShapeFix_Face_DownCast = _ShapeFix.Handle_ShapeFix_Face_DownCast
 
@@ -2567,7 +2567,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_FixSmallFace_swiginit(self,_ShapeFix.new_ShapeFix_FixSmallFace(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2576,7 +2576,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Fixing case of spot face
 
@@ -2585,7 +2585,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_Perform(self, *args)
 
-    def FixSpotFace(self, *args):
+    def FixSpotFace(self, *args) -> "TopoDS_Shape" :
         """
         * Fixing case of spot face, if tol = -1 used local tolerance.
 
@@ -2594,7 +2594,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixSpotFace(self, *args)
 
-    def ReplaceVerticesInCaseOfSpot(self, *args):
+    def ReplaceVerticesInCaseOfSpot(self, *args) -> "Standard_Boolean" :
         """
         * Compute average vertex and replacing vertices by new one.
 
@@ -2607,7 +2607,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_ReplaceVerticesInCaseOfSpot(self, *args)
 
-    def RemoveFacesInCaseOfSpot(self, *args):
+    def RemoveFacesInCaseOfSpot(self, *args) -> "Standard_Boolean" :
         """
         * Remove spot face from compound
 
@@ -2618,7 +2618,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_RemoveFacesInCaseOfSpot(self, *args)
 
-    def FixStripFace(self, *args):
+    def FixStripFace(self, *args) -> "TopoDS_Shape" :
         """
         * Fixing case of strip face, if tol = -1 used local tolerance
 
@@ -2629,7 +2629,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixStripFace(self, *args)
 
-    def ReplaceInCaseOfStrip(self, *args):
+    def ReplaceInCaseOfStrip(self, *args) -> "Standard_Boolean" :
         """
         * Replace veretces and edges.
 
@@ -2646,7 +2646,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_ReplaceInCaseOfStrip(self, *args)
 
-    def RemoveFacesInCaseOfStrip(self, *args):
+    def RemoveFacesInCaseOfStrip(self, *args) -> "Standard_Boolean" :
         """
         * Remove strip face from compound.
 
@@ -2657,7 +2657,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_RemoveFacesInCaseOfStrip(self, *args)
 
-    def ComputeSharedEdgeForStripFace(self, *args):
+    def ComputeSharedEdgeForStripFace(self, *args) -> "TopoDS_Edge" :
         """
         * Compute average edge for strip face
 
@@ -2676,7 +2676,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_ComputeSharedEdgeForStripFace(self, *args)
 
-    def FixSplitFace(self, *args):
+    def FixSplitFace(self, *args) -> "TopoDS_Shape" :
         """
         * 
 
@@ -2687,7 +2687,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixSplitFace(self, *args)
 
-    def SplitFaces(self, *args):
+    def SplitFaces(self, *args) -> "TopoDS_Shape" :
         """
         * Split faces by splitting vertices
 
@@ -2696,7 +2696,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_SplitFaces(self, *args)
 
-    def SplitOneFace(self, *args):
+    def SplitOneFace(self, *args) -> "Standard_Boolean" :
         """
         * Compute data for face splitting.
 
@@ -2709,7 +2709,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_SplitOneFace(self, *args)
 
-    def RemoveSmallFaces(self, *args):
+    def RemoveSmallFaces(self, *args) -> "TopoDS_Shape" :
         """
         * Remove small faces from compound.
 
@@ -2718,7 +2718,7 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_RemoveSmallFaces(self, *args)
 
-    def FixFace(self, *args):
+    def FixFace(self, *args) -> "TopoDS_Face" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -2727,21 +2727,21 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixFace(self, *args)
 
-    def FixShape(self, *args):
+    def FixShape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_FixSmallFace_Shape(self, *args)
 
-    def FixPinFace(self, *args):
+    def FixPinFace(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -2750,11 +2750,11 @@ class ShapeFix_FixSmallFace(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_FixSmallFace_FixPinFace(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_FixSmallFace self)"""
         return _ShapeFix.ShapeFix_FixSmallFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_FixSmallFace" :
         """GetHandle(ShapeFix_FixSmallFace self) -> Handle_ShapeFix_FixSmallFace"""
         return _ShapeFix.ShapeFix_FixSmallFace_GetHandle(self)
 
@@ -2809,7 +2809,7 @@ Handle_ShapeFix_FixSmallFace._kill_pointed = new_instancemethod(_ShapeFix.Handle
 Handle_ShapeFix_FixSmallFace_swigregister = _ShapeFix.Handle_ShapeFix_FixSmallFace_swigregister
 Handle_ShapeFix_FixSmallFace_swigregister(Handle_ShapeFix_FixSmallFace)
 
-def Handle_ShapeFix_FixSmallFace_DownCast(*args):
+def Handle_ShapeFix_FixSmallFace_DownCast(*args) -> "Handle_ShapeFix_FixSmallFace const" :
   return _ShapeFix.Handle_ShapeFix_FixSmallFace_DownCast(*args)
 Handle_ShapeFix_FixSmallFace_DownCast = _ShapeFix.Handle_ShapeFix_FixSmallFace_DownCast
 
@@ -2830,7 +2830,7 @@ class ShapeFix_Shape(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Shape_swiginit(self,_ShapeFix.new_ShapeFix_Shape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initislises by shape.
 
@@ -2841,7 +2841,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Iterates on sub- shape and performs fixes
 
@@ -2852,7 +2852,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_Perform(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns resulting shape
 
@@ -2861,7 +2861,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_Shape(self, *args)
 
-    def FixSolidTool(self, *args):
+    def FixSolidTool(self, *args) -> "Handle_ShapeFix_Solid" :
         """
         * Returns tool for fixing solids.
 
@@ -2870,7 +2870,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_FixSolidTool(self, *args)
 
-    def FixShellTool(self, *args):
+    def FixShellTool(self, *args) -> "Handle_ShapeFix_Shell" :
         """
         * Returns tool for fixing shells.
 
@@ -2879,7 +2879,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_FixShellTool(self, *args)
 
-    def FixFaceTool(self, *args):
+    def FixFaceTool(self, *args) -> "Handle_ShapeFix_Face" :
         """
         * Returns tool for fixing faces.
 
@@ -2888,7 +2888,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_FixFaceTool(self, *args)
 
-    def FixWireTool(self, *args):
+    def FixWireTool(self, *args) -> "Handle_ShapeFix_Wire" :
         """
         * Returns tool for fixing wires.
 
@@ -2897,7 +2897,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_FixWireTool(self, *args)
 
-    def FixEdgeTool(self, *args):
+    def FixEdgeTool(self, *args) -> "Handle_ShapeFix_Edge" :
         """
         * Returns tool for fixing edges.
 
@@ -2906,7 +2906,7 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_FixEdgeTool(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of the last Fix. This can be a combination of the following flags: ShapeExtend_DONE1: some free edges were fixed ShapeExtend_DONE2: some free wires were fixed ShapeExtend_DONE3: some free faces were fixed ShapeExtend_DONE4: some free shells were fixed ShapeExtend_DONE5: some free solids were fixed ShapeExtend_DONE6: shapes in compound(s) were fixed
 
@@ -2917,59 +2917,59 @@ class ShapeFix_Shape(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shape_Status(self, *args)
 
-    def GetFixSolidMode(self):
+    def GetFixSolidMode(self) -> "Standard_Integer" :
         """GetFixSolidMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixSolidMode(self)
 
-    def SetFixSolidMode(self, *args):
+    def SetFixSolidMode(self, *args) -> "void" :
         """SetFixSolidMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixSolidMode(self, *args)
 
-    def GetFixFreeShellMode(self):
+    def GetFixFreeShellMode(self) -> "Standard_Integer" :
         """GetFixFreeShellMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixFreeShellMode(self)
 
-    def SetFixFreeShellMode(self, *args):
+    def SetFixFreeShellMode(self, *args) -> "void" :
         """SetFixFreeShellMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixFreeShellMode(self, *args)
 
-    def GetFixFreeFaceMode(self):
+    def GetFixFreeFaceMode(self) -> "Standard_Integer" :
         """GetFixFreeFaceMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixFreeFaceMode(self)
 
-    def SetFixFreeFaceMode(self, *args):
+    def SetFixFreeFaceMode(self, *args) -> "void" :
         """SetFixFreeFaceMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixFreeFaceMode(self, *args)
 
-    def GetFixFreeWireMode(self):
+    def GetFixFreeWireMode(self) -> "Standard_Integer" :
         """GetFixFreeWireMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixFreeWireMode(self)
 
-    def SetFixFreeWireMode(self, *args):
+    def SetFixFreeWireMode(self, *args) -> "void" :
         """SetFixFreeWireMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixFreeWireMode(self, *args)
 
-    def GetFixSameParameterMode(self):
+    def GetFixSameParameterMode(self) -> "Standard_Integer" :
         """GetFixSameParameterMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixSameParameterMode(self)
 
-    def SetFixSameParameterMode(self, *args):
+    def SetFixSameParameterMode(self, *args) -> "void" :
         """SetFixSameParameterMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixSameParameterMode(self, *args)
 
-    def GetFixVertexPositionMode(self):
+    def GetFixVertexPositionMode(self) -> "Standard_Integer" :
         """GetFixVertexPositionMode(ShapeFix_Shape self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shape_GetFixVertexPositionMode(self)
 
-    def SetFixVertexPositionMode(self, *args):
+    def SetFixVertexPositionMode(self, *args) -> "void" :
         """SetFixVertexPositionMode(ShapeFix_Shape self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shape_SetFixVertexPositionMode(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Shape self)"""
         return _ShapeFix.ShapeFix_Shape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Shape" :
         """GetHandle(ShapeFix_Shape self) -> Handle_ShapeFix_Shape"""
         return _ShapeFix.ShapeFix_Shape_GetHandle(self)
 
@@ -3028,7 +3028,7 @@ Handle_ShapeFix_Shape._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeF
 Handle_ShapeFix_Shape_swigregister = _ShapeFix.Handle_ShapeFix_Shape_swigregister
 Handle_ShapeFix_Shape_swigregister(Handle_ShapeFix_Shape)
 
-def Handle_ShapeFix_Shape_DownCast(*args):
+def Handle_ShapeFix_Shape_DownCast(*args) -> "Handle_ShapeFix_Shape const" :
   return _ShapeFix.Handle_ShapeFix_Shape_DownCast(*args)
 Handle_ShapeFix_Shape_DownCast = _ShapeFix.Handle_ShapeFix_Shape_DownCast
 
@@ -3049,7 +3049,7 @@ class ShapeFix_Shell(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Shell_swiginit(self,_ShapeFix.new_ShapeFix_Shell(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes by shell.
 
@@ -3060,7 +3060,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Iterates on subshapes and performs fixes (for each face calls ShapeFix_Face::Perform and then calls FixFaceOrientation). The passed progress indicator allows user to consult the current progress stage and abort algorithm if needed.
 
@@ -3071,7 +3071,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_Perform(self, *args)
 
-    def FixFaceOrientation(self, *args):
+    def FixFaceOrientation(self, *args) -> "Standard_Boolean" :
         """
         * Fixes orientation of faces in shell. Changes orientation of face in the shell, if it is oriented opposite to neigbouring faces. If it is not possible to orient all faces in the shell (like in case of mebious band), this method orients only subset of faces. Other faces are stored in Error compound. Modes : 	 isAccountMultiConex - mode for account cases of multiconnexity. If this mode is equal to Standard_True, separate shells will be created in the cases of multiconnexity. If this mode is equal to Standard_False, one shell will be created without account of multiconnexity.By defautt - Standard_True; NonManifold - mode for creation of non-manifold shells. If this mode is equal to Standard_True one non-manifold will be created from shell contains multishared edges. Else if this mode is equal to Standard_False only manifold shells will be created. By default - Standard_False.
 
@@ -3086,7 +3086,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_FixFaceOrientation(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell" :
         """
         * Returns fixed shell (or subset of oriented faces).
 
@@ -3095,7 +3095,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_Shell(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * In case of multiconnexity returns compound of fixed shells else returns one shell..
 
@@ -3104,7 +3104,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_Shape(self, *args)
 
-    def NbShells(self, *args):
+    def NbShells(self, *args) -> "Standard_Integer" :
         """
         * Returns Number of obtainrd shells;
 
@@ -3113,7 +3113,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_NbShells(self, *args)
 
-    def ErrorFaces(self, *args):
+    def ErrorFaces(self, *args) -> "TopoDS_Compound" :
         """
         * Returns not oriented subset of faces.
 
@@ -3122,7 +3122,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_ErrorFaces(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of the last Fix.
 
@@ -3133,7 +3133,7 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_Status(self, *args)
 
-    def FixFaceTool(self, *args):
+    def FixFaceTool(self, *args) -> "Handle_ShapeFix_Face" :
         """
         * Returns tool for fixing faces.
 
@@ -3142,27 +3142,27 @@ class ShapeFix_Shell(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Shell_FixFaceTool(self, *args)
 
-    def GetFixFaceMode(self):
+    def GetFixFaceMode(self) -> "Standard_Integer" :
         """GetFixFaceMode(ShapeFix_Shell self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shell_GetFixFaceMode(self)
 
-    def SetFixFaceMode(self, *args):
+    def SetFixFaceMode(self, *args) -> "void" :
         """SetFixFaceMode(ShapeFix_Shell self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shell_SetFixFaceMode(self, *args)
 
-    def GetFixOrientationMode(self):
+    def GetFixOrientationMode(self) -> "Standard_Integer" :
         """GetFixOrientationMode(ShapeFix_Shell self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Shell_GetFixOrientationMode(self)
 
-    def SetFixOrientationMode(self, *args):
+    def SetFixOrientationMode(self, *args) -> "void" :
         """SetFixOrientationMode(ShapeFix_Shell self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Shell_SetFixOrientationMode(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Shell self)"""
         return _ShapeFix.ShapeFix_Shell__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Shell" :
         """GetHandle(ShapeFix_Shell self) -> Handle_ShapeFix_Shell"""
         return _ShapeFix.ShapeFix_Shell_GetHandle(self)
 
@@ -3213,7 +3213,7 @@ Handle_ShapeFix_Shell._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeF
 Handle_ShapeFix_Shell_swigregister = _ShapeFix.Handle_ShapeFix_Shell_swigregister
 Handle_ShapeFix_Shell_swigregister(Handle_ShapeFix_Shell)
 
-def Handle_ShapeFix_Shell_DownCast(*args):
+def Handle_ShapeFix_Shell_DownCast(*args) -> "Handle_ShapeFix_Shell const" :
   return _ShapeFix.Handle_ShapeFix_Shell_DownCast(*args)
 Handle_ShapeFix_Shell_DownCast = _ShapeFix.Handle_ShapeFix_Shell_DownCast
 
@@ -3234,7 +3234,7 @@ class ShapeFix_Solid(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Solid_swiginit(self,_ShapeFix.new_ShapeFix_Solid(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes by solid .
 
@@ -3245,7 +3245,7 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Iterates on shells and performs fixes (calls ShapeFix_Shell for each subshell). The passed progress indicator allows user to consult the current progress stage and abort algorithm if needed.
 
@@ -3256,7 +3256,7 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_Perform(self, *args)
 
-    def SolidFromShell(self, *args):
+    def SolidFromShell(self, *args) -> "TopoDS_Solid" :
         """
         * Calls MakeSolid and orients the solid to be 'not infinite'
 
@@ -3267,7 +3267,7 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_SolidFromShell(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Integer" :
         """
         * Returns the status of the last Fix.
 
@@ -3278,7 +3278,7 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_Status(self, *args)
 
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Shape" :
         """
         * Returns resulting solid.
 
@@ -3287,7 +3287,7 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_Solid(self, *args)
 
-    def FixShellTool(self, *args):
+    def FixShellTool(self, *args) -> "Handle_ShapeFix_Shell" :
         """
         * Returns tool for fixing shells.
 
@@ -3296,23 +3296,23 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_FixShellTool(self, *args)
 
-    def GetFixShellMode(self):
+    def GetFixShellMode(self) -> "Standard_Integer" :
         """GetFixShellMode(ShapeFix_Solid self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Solid_GetFixShellMode(self)
 
-    def SetFixShellMode(self, *args):
+    def SetFixShellMode(self, *args) -> "void" :
         """SetFixShellMode(ShapeFix_Solid self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Solid_SetFixShellMode(self, *args)
 
-    def GetCreateOpenSolidMode(self):
+    def GetCreateOpenSolidMode(self) -> "Standard_Boolean" :
         """GetCreateOpenSolidMode(ShapeFix_Solid self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Solid_GetCreateOpenSolidMode(self)
 
-    def SetCreateOpenSolidMode(self, *args):
+    def SetCreateOpenSolidMode(self, *args) -> "void" :
         """SetCreateOpenSolidMode(ShapeFix_Solid self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Solid_SetCreateOpenSolidMode(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * In case of multiconnexity returns compound of fixed solids else returns one solid.
 
@@ -3321,11 +3321,11 @@ class ShapeFix_Solid(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Solid_Shape(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Solid self)"""
         return _ShapeFix.ShapeFix_Solid__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Solid" :
         """GetHandle(ShapeFix_Solid self) -> Handle_ShapeFix_Solid"""
         return _ShapeFix.ShapeFix_Solid_GetHandle(self)
 
@@ -3374,7 +3374,7 @@ Handle_ShapeFix_Solid._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeF
 Handle_ShapeFix_Solid_swigregister = _ShapeFix.Handle_ShapeFix_Solid_swigregister
 Handle_ShapeFix_Solid_swigregister(Handle_ShapeFix_Solid)
 
-def Handle_ShapeFix_Solid_DownCast(*args):
+def Handle_ShapeFix_Solid_DownCast(*args) -> "Handle_ShapeFix_Solid const" :
   return _ShapeFix.Handle_ShapeFix_Solid_DownCast(*args)
 Handle_ShapeFix_Solid_DownCast = _ShapeFix.Handle_ShapeFix_Solid_DownCast
 
@@ -3387,7 +3387,7 @@ class ShapeFix_SplitCommonVertex(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_SplitCommonVertex_swiginit(self,_ShapeFix.new_ShapeFix_SplitCommonVertex(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -3396,25 +3396,25 @@ class ShapeFix_SplitCommonVertex(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_SplitCommonVertex_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeFix.ShapeFix_SplitCommonVertex_Perform(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_SplitCommonVertex_Shape(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_SplitCommonVertex self)"""
         return _ShapeFix.ShapeFix_SplitCommonVertex__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_SplitCommonVertex" :
         """GetHandle(ShapeFix_SplitCommonVertex self) -> Handle_ShapeFix_SplitCommonVertex"""
         return _ShapeFix.ShapeFix_SplitCommonVertex_GetHandle(self)
 
@@ -3455,7 +3455,7 @@ Handle_ShapeFix_SplitCommonVertex._kill_pointed = new_instancemethod(_ShapeFix.H
 Handle_ShapeFix_SplitCommonVertex_swigregister = _ShapeFix.Handle_ShapeFix_SplitCommonVertex_swigregister
 Handle_ShapeFix_SplitCommonVertex_swigregister(Handle_ShapeFix_SplitCommonVertex)
 
-def Handle_ShapeFix_SplitCommonVertex_DownCast(*args):
+def Handle_ShapeFix_SplitCommonVertex_DownCast(*args) -> "Handle_ShapeFix_SplitCommonVertex const" :
   return _ShapeFix.Handle_ShapeFix_SplitCommonVertex_DownCast(*args)
 Handle_ShapeFix_SplitCommonVertex_DownCast = _ShapeFix.Handle_ShapeFix_SplitCommonVertex_DownCast
 
@@ -3480,7 +3480,7 @@ class ShapeFix_Wire(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Wire_swiginit(self,_ShapeFix.new_ShapeFix_Wire(*args))
-    def ClearModes(self, *args):
+    def ClearModes(self, *args) -> "void" :
         """
         * Sets all modes to default
 
@@ -3489,7 +3489,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_ClearModes(self, *args)
 
-    def ClearStatuses(self, *args):
+    def ClearStatuses(self, *args) -> "void" :
         """
         * Clears all statuses
 
@@ -3498,7 +3498,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_ClearStatuses(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Load analyzer with all the data for the wire and face and drops all fixing statuses
 
@@ -3519,7 +3519,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Init(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Load data for the wire, and drops all fixing statuses
 
@@ -3536,7 +3536,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Load(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Set working face for the wire
 
@@ -3547,7 +3547,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_SetFace(self, *args)
 
-    def SetSurface(self, *args):
+    def SetSurface(self, *args) -> "void" :
         """
         * Set surface for the wire
 
@@ -3566,7 +3566,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_SetSurface(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the wire is loaded
 
@@ -3575,7 +3575,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_IsLoaded(self, *args)
 
-    def IsReady(self, *args):
+    def IsReady(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the wire and face are loaded
 
@@ -3584,7 +3584,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_IsReady(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         * returns number of edges in the working wire
 
@@ -3593,7 +3593,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_NbEdges(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire" :
         """
         * Makes the resulting Wire (by basic Brep_Builder)
 
@@ -3602,7 +3602,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Wire(self, *args)
 
-    def WireAPIMake(self, *args):
+    def WireAPIMake(self, *args) -> "TopoDS_Wire" :
         """
         * Makes the resulting Wire (by BRepAPI_MakeWire)
 
@@ -3611,7 +3611,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_WireAPIMake(self, *args)
 
-    def Analyzer(self, *args):
+    def Analyzer(self, *args) -> "Handle_ShapeAnalysis_Wire" :
         """
         * returns field Analyzer (working tool)
 
@@ -3620,7 +3620,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Analyzer(self, *args)
 
-    def WireData(self, *args):
+    def WireData(self, *args) -> "Handle_ShapeExtend_WireData const &" :
         """
         * returns working wire
 
@@ -3629,7 +3629,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_WireData(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * returns working face (Analyzer.Face())
 
@@ -3638,231 +3638,231 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Face(self, *args)
 
-    def GetModifyTopologyMode(self):
+    def GetModifyTopologyMode(self) -> "Standard_Boolean" :
         """GetModifyTopologyMode(ShapeFix_Wire self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wire_GetModifyTopologyMode(self)
 
-    def SetModifyTopologyMode(self, *args):
+    def SetModifyTopologyMode(self, *args) -> "void" :
         """SetModifyTopologyMode(ShapeFix_Wire self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wire_SetModifyTopologyMode(self, *args)
 
-    def GetModifyGeometryMode(self):
+    def GetModifyGeometryMode(self) -> "Standard_Boolean" :
         """GetModifyGeometryMode(ShapeFix_Wire self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wire_GetModifyGeometryMode(self)
 
-    def SetModifyGeometryMode(self, *args):
+    def SetModifyGeometryMode(self, *args) -> "void" :
         """SetModifyGeometryMode(ShapeFix_Wire self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wire_SetModifyGeometryMode(self, *args)
 
-    def GetModifyRemoveLoopMode(self):
+    def GetModifyRemoveLoopMode(self) -> "Standard_Integer" :
         """GetModifyRemoveLoopMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetModifyRemoveLoopMode(self)
 
-    def SetModifyRemoveLoopMode(self, *args):
+    def SetModifyRemoveLoopMode(self, *args) -> "void" :
         """SetModifyRemoveLoopMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetModifyRemoveLoopMode(self, *args)
 
-    def GetClosedWireMode(self):
+    def GetClosedWireMode(self) -> "Standard_Boolean" :
         """GetClosedWireMode(ShapeFix_Wire self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wire_GetClosedWireMode(self)
 
-    def SetClosedWireMode(self, *args):
+    def SetClosedWireMode(self, *args) -> "void" :
         """SetClosedWireMode(ShapeFix_Wire self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wire_SetClosedWireMode(self, *args)
 
-    def GetPreferencePCurveMode(self):
+    def GetPreferencePCurveMode(self) -> "Standard_Boolean" :
         """GetPreferencePCurveMode(ShapeFix_Wire self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wire_GetPreferencePCurveMode(self)
 
-    def SetPreferencePCurveMode(self, *args):
+    def SetPreferencePCurveMode(self, *args) -> "void" :
         """SetPreferencePCurveMode(ShapeFix_Wire self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wire_SetPreferencePCurveMode(self, *args)
 
-    def GetFixGapsByRangesMode(self):
+    def GetFixGapsByRangesMode(self) -> "Standard_Boolean" :
         """GetFixGapsByRangesMode(ShapeFix_Wire self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wire_GetFixGapsByRangesMode(self)
 
-    def SetFixGapsByRangesMode(self, *args):
+    def SetFixGapsByRangesMode(self, *args) -> "void" :
         """SetFixGapsByRangesMode(ShapeFix_Wire self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixGapsByRangesMode(self, *args)
 
-    def GetFixReorderMode(self):
+    def GetFixReorderMode(self) -> "Standard_Integer" :
         """GetFixReorderMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixReorderMode(self)
 
-    def SetFixReorderMode(self, *args):
+    def SetFixReorderMode(self, *args) -> "void" :
         """SetFixReorderMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixReorderMode(self, *args)
 
-    def GetFixSmallMode(self):
+    def GetFixSmallMode(self) -> "Standard_Integer" :
         """GetFixSmallMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixSmallMode(self)
 
-    def SetFixSmallMode(self, *args):
+    def SetFixSmallMode(self, *args) -> "void" :
         """SetFixSmallMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixSmallMode(self, *args)
 
-    def GetFixConnectedMode(self):
+    def GetFixConnectedMode(self) -> "Standard_Integer" :
         """GetFixConnectedMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixConnectedMode(self)
 
-    def SetFixConnectedMode(self, *args):
+    def SetFixConnectedMode(self, *args) -> "void" :
         """SetFixConnectedMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixConnectedMode(self, *args)
 
-    def GetFixEdgeCurvesMode(self):
+    def GetFixEdgeCurvesMode(self) -> "Standard_Integer" :
         """GetFixEdgeCurvesMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixEdgeCurvesMode(self)
 
-    def SetFixEdgeCurvesMode(self, *args):
+    def SetFixEdgeCurvesMode(self, *args) -> "void" :
         """SetFixEdgeCurvesMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixEdgeCurvesMode(self, *args)
 
-    def GetFixDegeneratedMode(self):
+    def GetFixDegeneratedMode(self) -> "Standard_Integer" :
         """GetFixDegeneratedMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixDegeneratedMode(self)
 
-    def SetFixDegeneratedMode(self, *args):
+    def SetFixDegeneratedMode(self, *args) -> "void" :
         """SetFixDegeneratedMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixDegeneratedMode(self, *args)
 
-    def GetFixSelfIntersectionMode(self):
+    def GetFixSelfIntersectionMode(self) -> "Standard_Integer" :
         """GetFixSelfIntersectionMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixSelfIntersectionMode(self)
 
-    def SetFixSelfIntersectionMode(self, *args):
+    def SetFixSelfIntersectionMode(self, *args) -> "void" :
         """SetFixSelfIntersectionMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixSelfIntersectionMode(self, *args)
 
-    def GetFixLackingMode(self):
+    def GetFixLackingMode(self) -> "Standard_Integer" :
         """GetFixLackingMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixLackingMode(self)
 
-    def SetFixLackingMode(self, *args):
+    def SetFixLackingMode(self, *args) -> "void" :
         """SetFixLackingMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixLackingMode(self, *args)
 
-    def GetFixGaps3dMode(self):
+    def GetFixGaps3dMode(self) -> "Standard_Integer" :
         """GetFixGaps3dMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixGaps3dMode(self)
 
-    def SetFixGaps3dMode(self, *args):
+    def SetFixGaps3dMode(self, *args) -> "void" :
         """SetFixGaps3dMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixGaps3dMode(self, *args)
 
-    def GetFixGaps2dMode(self):
+    def GetFixGaps2dMode(self) -> "Standard_Integer" :
         """GetFixGaps2dMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixGaps2dMode(self)
 
-    def SetFixGaps2dMode(self, *args):
+    def SetFixGaps2dMode(self, *args) -> "void" :
         """SetFixGaps2dMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixGaps2dMode(self, *args)
 
-    def GetFixReversed2dMode(self):
+    def GetFixReversed2dMode(self) -> "Standard_Integer" :
         """GetFixReversed2dMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixReversed2dMode(self)
 
-    def SetFixReversed2dMode(self, *args):
+    def SetFixReversed2dMode(self, *args) -> "void" :
         """SetFixReversed2dMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixReversed2dMode(self, *args)
 
-    def GetFixRemovePCurveMode(self):
+    def GetFixRemovePCurveMode(self) -> "Standard_Integer" :
         """GetFixRemovePCurveMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixRemovePCurveMode(self)
 
-    def SetFixRemovePCurveMode(self, *args):
+    def SetFixRemovePCurveMode(self, *args) -> "void" :
         """SetFixRemovePCurveMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixRemovePCurveMode(self, *args)
 
-    def GetFixAddPCurveMode(self):
+    def GetFixAddPCurveMode(self) -> "Standard_Integer" :
         """GetFixAddPCurveMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixAddPCurveMode(self)
 
-    def SetFixAddPCurveMode(self, *args):
+    def SetFixAddPCurveMode(self, *args) -> "void" :
         """SetFixAddPCurveMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixAddPCurveMode(self, *args)
 
-    def GetFixRemoveCurve3dMode(self):
+    def GetFixRemoveCurve3dMode(self) -> "Standard_Integer" :
         """GetFixRemoveCurve3dMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixRemoveCurve3dMode(self)
 
-    def SetFixRemoveCurve3dMode(self, *args):
+    def SetFixRemoveCurve3dMode(self, *args) -> "void" :
         """SetFixRemoveCurve3dMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixRemoveCurve3dMode(self, *args)
 
-    def GetFixAddCurve3dMode(self):
+    def GetFixAddCurve3dMode(self) -> "Standard_Integer" :
         """GetFixAddCurve3dMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixAddCurve3dMode(self)
 
-    def SetFixAddCurve3dMode(self, *args):
+    def SetFixAddCurve3dMode(self, *args) -> "void" :
         """SetFixAddCurve3dMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixAddCurve3dMode(self, *args)
 
-    def GetFixSeamMode(self):
+    def GetFixSeamMode(self) -> "Standard_Integer" :
         """GetFixSeamMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixSeamMode(self)
 
-    def SetFixSeamMode(self, *args):
+    def SetFixSeamMode(self, *args) -> "void" :
         """SetFixSeamMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixSeamMode(self, *args)
 
-    def GetFixShiftedMode(self):
+    def GetFixShiftedMode(self) -> "Standard_Integer" :
         """GetFixShiftedMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixShiftedMode(self)
 
-    def SetFixShiftedMode(self, *args):
+    def SetFixShiftedMode(self, *args) -> "void" :
         """SetFixShiftedMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixShiftedMode(self, *args)
 
-    def GetFixSameParameterMode(self):
+    def GetFixSameParameterMode(self) -> "Standard_Integer" :
         """GetFixSameParameterMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixSameParameterMode(self)
 
-    def SetFixSameParameterMode(self, *args):
+    def SetFixSameParameterMode(self, *args) -> "void" :
         """SetFixSameParameterMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixSameParameterMode(self, *args)
 
-    def GetFixVertexToleranceMode(self):
+    def GetFixVertexToleranceMode(self) -> "Standard_Integer" :
         """GetFixVertexToleranceMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixVertexToleranceMode(self)
 
-    def SetFixVertexToleranceMode(self, *args):
+    def SetFixVertexToleranceMode(self, *args) -> "void" :
         """SetFixVertexToleranceMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixVertexToleranceMode(self, *args)
 
-    def GetFixNotchedEdgesMode(self):
+    def GetFixNotchedEdgesMode(self) -> "Standard_Integer" :
         """GetFixNotchedEdgesMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixNotchedEdgesMode(self)
 
-    def SetFixNotchedEdgesMode(self, *args):
+    def SetFixNotchedEdgesMode(self, *args) -> "void" :
         """SetFixNotchedEdgesMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixNotchedEdgesMode(self, *args)
 
-    def GetFixSelfIntersectingEdgeMode(self):
+    def GetFixSelfIntersectingEdgeMode(self) -> "Standard_Integer" :
         """GetFixSelfIntersectingEdgeMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixSelfIntersectingEdgeMode(self)
 
-    def SetFixSelfIntersectingEdgeMode(self, *args):
+    def SetFixSelfIntersectingEdgeMode(self, *args) -> "void" :
         """SetFixSelfIntersectingEdgeMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixSelfIntersectingEdgeMode(self, *args)
 
-    def GetFixIntersectingEdgesMode(self):
+    def GetFixIntersectingEdgesMode(self) -> "Standard_Integer" :
         """GetFixIntersectingEdgesMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixIntersectingEdgesMode(self)
 
-    def SetFixIntersectingEdgesMode(self, *args):
+    def SetFixIntersectingEdgesMode(self, *args) -> "void" :
         """SetFixIntersectingEdgesMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixIntersectingEdgesMode(self, *args)
 
-    def GetFixNonAdjacentIntersectingEdgesMode(self):
+    def GetFixNonAdjacentIntersectingEdgesMode(self) -> "Standard_Integer" :
         """GetFixNonAdjacentIntersectingEdgesMode(ShapeFix_Wire self) -> Standard_Integer"""
         return _ShapeFix.ShapeFix_Wire_GetFixNonAdjacentIntersectingEdgesMode(self)
 
-    def SetFixNonAdjacentIntersectingEdgesMode(self, *args):
+    def SetFixNonAdjacentIntersectingEdgesMode(self, *args) -> "void" :
         """SetFixNonAdjacentIntersectingEdgesMode(ShapeFix_Wire self, Standard_Integer value)"""
         return _ShapeFix.ShapeFix_Wire_SetFixNonAdjacentIntersectingEdgesMode(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * This method performs all the available fixes. If some fix is turned on or off explicitly by the Fix..Mode() flag, this fix is either called or not depending on that flag. Else (i.e. if flag is default) fix is called depending on the situation: some fixes are not called or are limited if order of edges in the wire is not OK, or depending on modes  The order of the fixes and default behaviour of Perform() are: FixReorder FixSmall (with lockvtx true if ! TopoMode or if wire is not ordered) FixConnected (if wire is ordered) FixEdgeCurves (without FixShifted if wire is not ordered) FixDegenerated (if wire is ordered) FixSelfIntersection (if wire is ordered and ClosedMode is True) FixLacking (if wire is ordered)
 
@@ -3871,7 +3871,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_Perform(self, *args)
 
-    def FixEdgeCurves(self, *args):
+    def FixEdgeCurves(self, *args) -> "Standard_Boolean" :
         """
         * Groups the fixes dealing with 3d and pcurves of the edges. The order of the fixes and the default behaviour are: ShapeFix_Edge::FixReversed2d ShapeFix_Edge::FixRemovePCurve (only if forced) ShapeFix_Edge::FixAddPCurve ShapeFix_Edge::FixRemoveCurve3d (only if forced) ShapeFix_Edge::FixAddCurve3d FixSeam, FixShifted, ShapeFix_Edge::FixSameParameter
 
@@ -3880,7 +3880,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixEdgeCurves(self, *args)
 
-    def FixSelfIntersection(self, *args):
+    def FixSelfIntersection(self, *args) -> "Standard_Boolean" :
         """
         * Applies FixSelfIntersectingEdge(num) and FixIntersectingEdges(num) to all edges in the wire and FixIntersectingEdges(num1, num2) for all pairs num1 and num2 such that num2 >= num1 + 2 and removes wrong edges if any
 
@@ -3889,7 +3889,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixSelfIntersection(self, *args)
 
-    def FixClosed(self, *args):
+    def FixClosed(self, *args) -> "Standard_Boolean" :
         """
         * Fixes a wire to be well closed It performs FixConnected, FixDegenerated and FixLacking between last and first edges (independingly on flag ClosedMode and modes for these fixings) If <prec> is -1 then MaxTolerance() is taken.
 
@@ -3900,7 +3900,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixClosed(self, *args)
 
-    def FixGaps3d(self, *args):
+    def FixGaps3d(self, *args) -> "Standard_Boolean" :
         """
         * Fixes gaps between ends of 3d curves on adjacent edges myPrecision is used to detect the gaps.
 
@@ -3909,7 +3909,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixGaps3d(self, *args)
 
-    def FixGaps2d(self, *args):
+    def FixGaps2d(self, *args) -> "Standard_Boolean" :
         """
         * Fixes gaps between ends of pcurves on adjacent edges myPrecision is used to detect the gaps.
 
@@ -3918,7 +3918,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixGaps2d(self, *args)
 
-    def FixReorder(self, *args):
+    def FixReorder(self, *args) -> "Standard_Boolean" :
         """
         * Performs an analysis and reorders edges in the wire using class WireOrder
 
@@ -3933,7 +3933,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixReorder(self, *args)
 
-    def FixSmall(self, *args):
+    def FixSmall(self, *args) -> "Standard_Boolean" :
         """
         * Applies FixSmall(num) to all edges in the wire
 
@@ -3956,7 +3956,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixSmall(self, *args)
 
-    def FixConnected(self, *args):
+    def FixConnected(self, *args) -> "Standard_Boolean" :
         """
         * Applies FixConnected(num) to all edges in the wire Connection between first and last edges is treated only if flag ClosedMode is True If <prec> is -1 then MaxTolerance() is taken.
 
@@ -3975,7 +3975,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixConnected(self, *args)
 
-    def FixSeam(self, *args):
+    def FixSeam(self, *args) -> "Standard_Boolean" :
         """
         * Fixes a seam edge A Seam edge has two pcurves, one for forward. one for reversed The forward pcurve must be set as first  NOTE that correct order of pcurves in the seam edge depends on its orientation (i.e., on orientation of the wire, method of exploration of edges etc.). Since wire represented by the ShapeExtend_WireData is always forward (orientation is accounted by edges), it will work correct if: 1. Wire created from ShapeExtend_WireData with methods ShapeExtend_WireData::Wire..() is added into the FORWARD face (orientation can be applied later) 2. Wire is extracted from the face with orientation not composed with orientation of the face
 
@@ -3986,7 +3986,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixSeam(self, *args)
 
-    def FixShifted(self, *args):
+    def FixShifted(self, *args) -> "Standard_Boolean" :
         """
         * Fixes edges which have pcurves shifted by whole parameter range on the closed surface (the case may occur if pcurve of edge was computed by projecting 3d curve, which goes along the seam). It compares each two consequent edges and tries to connect them if distance between ends is near to range of the surface. It also can detect and fix the case if all pcurves are connected, but lie out of parametric bounds of the surface. In addition to FixShifted from ShapeFix_Wire, more sophisticated check of degenerate points is performed, and special cases like sphere given by two meridians are treated.
 
@@ -3995,7 +3995,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixShifted(self, *args)
 
-    def FixDegenerated(self, *args):
+    def FixDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Applies FixDegenerated(num) to all edges in the wire Connection between first and last edges is treated only if flag ClosedMode is True
 
@@ -4010,7 +4010,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixDegenerated(self, *args)
 
-    def FixLacking(self, *args):
+    def FixLacking(self, *args) -> "Standard_Boolean" :
         """
         * Applies FixLacking(num) to all edges in the wire Connection between first and last edges is treated only if flag ClosedMode is True If <force> is False (default), test for connectness is done with precision of vertex between edges, else it is done with minimal value of vertex tolerance and Analyzer.Precision(). Hence, <force> will lead to inserting lacking edges in replacement of vertices which have big tolerances.
 
@@ -4029,14 +4029,14 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixLacking(self, *args)
 
-    def FixNotchedEdges(self, *args):
+    def FixNotchedEdges(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeFix.ShapeFix_Wire_FixNotchedEdges(self, *args)
 
-    def FixGap3d(self, *args):
+    def FixGap3d(self, *args) -> "Standard_Boolean" :
         """
         * Fixes gap between ends of 3d curves on num-1 and num-th edges. myPrecision is used to detect the gap. If convert is True, converts curves to bsplines to bend.
 
@@ -4049,7 +4049,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixGap3d(self, *args)
 
-    def FixGap2d(self, *args):
+    def FixGap2d(self, *args) -> "Standard_Boolean" :
         """
         * Fixes gap between ends of pcurves on num-1 and num-th edges. myPrecision is used to detect the gap. If convert is True, converts pcurves to bsplines to bend.
 
@@ -4062,7 +4062,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixGap2d(self, *args)
 
-    def StatusReorder(self, *args):
+    def StatusReorder(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4071,7 +4071,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusReorder(self, *args)
 
-    def StatusSmall(self, *args):
+    def StatusSmall(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4080,7 +4080,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusSmall(self, *args)
 
-    def StatusConnected(self, *args):
+    def StatusConnected(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4089,7 +4089,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusConnected(self, *args)
 
-    def StatusEdgeCurves(self, *args):
+    def StatusEdgeCurves(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4098,7 +4098,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusEdgeCurves(self, *args)
 
-    def StatusDegenerated(self, *args):
+    def StatusDegenerated(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4107,7 +4107,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusDegenerated(self, *args)
 
-    def StatusSelfIntersection(self, *args):
+    def StatusSelfIntersection(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4116,7 +4116,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusSelfIntersection(self, *args)
 
-    def StatusLacking(self, *args):
+    def StatusLacking(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4125,7 +4125,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusLacking(self, *args)
 
-    def StatusClosed(self, *args):
+    def StatusClosed(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4134,7 +4134,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusClosed(self, *args)
 
-    def StatusGaps3d(self, *args):
+    def StatusGaps3d(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4143,7 +4143,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusGaps3d(self, *args)
 
-    def StatusGaps2d(self, *args):
+    def StatusGaps2d(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4152,7 +4152,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusGaps2d(self, *args)
 
-    def StatusNotches(self, *args):
+    def StatusNotches(self, *args) -> "Standard_Boolean" :
         """
         :param status:
         :type status: ShapeExtend_Status
@@ -4161,7 +4161,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusNotches(self, *args)
 
-    def StatusRemovedSegment(self, *args):
+    def StatusRemovedSegment(self, *args) -> "Standard_Boolean" :
         """
         * Querying the status of perfomed API fixing procedures Each Status..() methods gives information about the last call to the corresponding Fix..() method of API level: OK : no problems detected; nothing done DONE: some problem(s) was(were) detected and successfully fixed FAIL: some problem(s) cannot be fixed
 
@@ -4170,7 +4170,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_StatusRemovedSegment(self, *args)
 
-    def LastFixStatus(self, *args):
+    def LastFixStatus(self, *args) -> "Standard_Boolean" :
         """
         * Queries the status of last call to methods Fix... of advanced level For details see corresponding methods; universal statuses are: OK : problem not detected; nothing done DONE: problem was detected and successfully fixed FAIL: problem cannot be fixed
 
@@ -4181,7 +4181,7 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_LastFixStatus(self, *args)
 
-    def FixEdgeTool(self, *args):
+    def FixEdgeTool(self, *args) -> "Handle_ShapeFix_Edge" :
         """
         * Returns tool for fixing wires.
 
@@ -4190,11 +4190,11 @@ class ShapeFix_Wire(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wire_FixEdgeTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Wire self)"""
         return _ShapeFix.ShapeFix_Wire__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Wire" :
         """GetHandle(ShapeFix_Wire self) -> Handle_ShapeFix_Wire"""
         return _ShapeFix.ShapeFix_Wire_GetHandle(self)
 
@@ -4332,7 +4332,7 @@ Handle_ShapeFix_Wire._kill_pointed = new_instancemethod(_ShapeFix.Handle_ShapeFi
 Handle_ShapeFix_Wire_swigregister = _ShapeFix.Handle_ShapeFix_Wire_swigregister
 Handle_ShapeFix_Wire_swigregister(Handle_ShapeFix_Wire)
 
-def Handle_ShapeFix_Wire_DownCast(*args):
+def Handle_ShapeFix_Wire_DownCast(*args) -> "Handle_ShapeFix_Wire const" :
   return _ShapeFix.Handle_ShapeFix_Wire_DownCast(*args)
 Handle_ShapeFix_Wire_DownCast = _ShapeFix.Handle_ShapeFix_Wire_DownCast
 
@@ -4349,7 +4349,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
 
         """
         _ShapeFix.ShapeFix_Wireframe_swiginit(self,_ShapeFix.new_ShapeFix_Wireframe(*args))
-    def ClearStatuses(self, *args):
+    def ClearStatuses(self, *args) -> "void" :
         """
         * Clears all statuses
 
@@ -4358,7 +4358,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_ClearStatuses(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Loads a shape, resets statuses
 
@@ -4369,7 +4369,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_Load(self, *args)
 
-    def FixWireGaps(self, *args):
+    def FixWireGaps(self, *args) -> "Standard_Boolean" :
         """
         * Fixes gaps between ends of curves of adjacent edges (both 3d and pcurves) in wires If precision is 0.0, uses Precision::Confusion().
 
@@ -4378,7 +4378,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_FixWireGaps(self, *args)
 
-    def FixSmallEdges(self, *args):
+    def FixSmallEdges(self, *args) -> "Standard_Boolean" :
         """
         * Fixes small edges in shape by merging adjacent edges If precision is 0.0, uses Precision::Confusion().
 
@@ -4387,7 +4387,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_FixSmallEdges(self, *args)
 
-    def CheckSmallEdges(self, *args):
+    def CheckSmallEdges(self, *args) -> "Standard_Boolean" :
         """
         * Auxiliary tool for FixSmallEdges which checks for small edges and fills the maps. Returns True if at least one small edge has been found.
 
@@ -4404,7 +4404,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_CheckSmallEdges(self, *args)
 
-    def MergeSmallEdges(self, *args):
+    def MergeSmallEdges(self, *args) -> "Standard_Boolean" :
         """
         * Auxiliary tool for FixSmallEdges which merges small edges. If theModeDrop is equal to Standard_True then small edges, which cannot be connected with adjacent edges are dropped. Otherwise they are kept. theLimitAngle specifies maximum allowed tangency discontinuity between adjacent edges. If theLimitAngle is equal to -1, this angle is not taken into account.
 
@@ -4425,7 +4425,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_MergeSmallEdges(self, *args)
 
-    def StatusWireGaps(self, *args):
+    def StatusWireGaps(self, *args) -> "Standard_Boolean" :
         """
         * Decodes the status of the last FixWireGaps. OK - No gaps were found DONE1 - Some gaps in 3D were fixed DONE2 - Some gaps in 2D were fixed FAIL1 - Failed to fix some gaps in 3D FAIL2 - Failed to fix some gaps in 2D
 
@@ -4436,7 +4436,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_StatusWireGaps(self, *args)
 
-    def StatusSmallEdges(self, *args):
+    def StatusSmallEdges(self, *args) -> "Standard_Boolean" :
         """
         * Decodes the status of the last FixSmallEdges. OK - No small edges were found DONE1 - Some small edges were fixed FAIL1 - Failed to fix some small edges
 
@@ -4447,22 +4447,22 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_StatusSmallEdges(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _ShapeFix.ShapeFix_Wireframe_Shape(self, *args)
 
-    def GetModeDropSmallEdges(self):
+    def GetModeDropSmallEdges(self) -> "Standard_Boolean" :
         """GetModeDropSmallEdges(ShapeFix_Wireframe self) -> Standard_Boolean"""
         return _ShapeFix.ShapeFix_Wireframe_GetModeDropSmallEdges(self)
 
-    def SetModeDropSmallEdges(self, *args):
+    def SetModeDropSmallEdges(self, *args) -> "void" :
         """SetModeDropSmallEdges(ShapeFix_Wireframe self, Standard_Boolean value)"""
         return _ShapeFix.ShapeFix_Wireframe_SetModeDropSmallEdges(self, *args)
 
-    def SetLimitAngle(self, *args):
+    def SetLimitAngle(self, *args) -> "void" :
         """
         * //!Set limit angle for merging edges.
 
@@ -4473,7 +4473,7 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_SetLimitAngle(self, *args)
 
-    def LimitAngle(self, *args):
+    def LimitAngle(self, *args) -> "Standard_Real" :
         """
         * //!Get limit angle for merging edges.
 
@@ -4482,11 +4482,11 @@ class ShapeFix_Wireframe(ShapeFix_Root):
         """
         return _ShapeFix.ShapeFix_Wireframe_LimitAngle(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeFix_Wireframe self)"""
         return _ShapeFix.ShapeFix_Wireframe__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeFix_Wireframe" :
         """GetHandle(ShapeFix_Wireframe self) -> Handle_ShapeFix_Wireframe"""
         return _ShapeFix.ShapeFix_Wireframe_GetHandle(self)
 
@@ -4537,7 +4537,7 @@ Handle_ShapeFix_Wireframe._kill_pointed = new_instancemethod(_ShapeFix.Handle_Sh
 Handle_ShapeFix_Wireframe_swigregister = _ShapeFix.Handle_ShapeFix_Wireframe_swigregister
 Handle_ShapeFix_Wireframe_swigregister(Handle_ShapeFix_Wireframe)
 
-def Handle_ShapeFix_Wireframe_DownCast(*args):
+def Handle_ShapeFix_Wireframe_DownCast(*args) -> "Handle_ShapeFix_Wireframe const" :
   return _ShapeFix.Handle_ShapeFix_Wireframe_DownCast(*args)
 Handle_ShapeFix_Wireframe_DownCast = _ShapeFix.Handle_ShapeFix_Wireframe_DownCast
 

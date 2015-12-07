@@ -144,7 +144,7 @@ class GCE2d_MakeMirror(object):
 
         """
         _GCE2d.GCE2d_MakeMirror_swiginit(self,_GCE2d.new_GCE2d_MakeMirror(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         * Returns the constructed transformation.
 
@@ -153,7 +153,7 @@ class GCE2d_MakeMirror(object):
         """
         return _GCE2d.GCE2d_MakeMirror_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         :rtype: Handle_Geom2d_Transformation
 
@@ -189,7 +189,7 @@ class GCE2d_MakeRotation(object):
 
         """
         _GCE2d.GCE2d_MakeRotation_swiginit(self,_GCE2d.new_GCE2d_MakeRotation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         * Returns the constructed transformation.
 
@@ -198,7 +198,7 @@ class GCE2d_MakeRotation(object):
         """
         return _GCE2d.GCE2d_MakeRotation_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         :rtype: Handle_Geom2d_Transformation
 
@@ -234,7 +234,7 @@ class GCE2d_MakeScale(object):
 
         """
         _GCE2d.GCE2d_MakeScale_swiginit(self,_GCE2d.new_GCE2d_MakeScale(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         * Returns the constructed transformation.
 
@@ -243,7 +243,7 @@ class GCE2d_MakeScale(object):
         """
         return _GCE2d.GCE2d_MakeScale_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         :rtype: Handle_Geom2d_Transformation
 
@@ -285,7 +285,7 @@ class GCE2d_MakeTranslation(object):
 
         """
         _GCE2d.GCE2d_MakeTranslation_swiginit(self,_GCE2d.new_GCE2d_MakeTranslation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         * Returns the constructed transformation.
 
@@ -294,7 +294,7 @@ class GCE2d_MakeTranslation(object):
         """
         return _GCE2d.GCE2d_MakeTranslation_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
         """
         :rtype: Handle_Geom2d_Transformation
 
@@ -318,7 +318,7 @@ GCE2d_MakeTranslation_swigregister(GCE2d_MakeTranslation)
 class GCE2d_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the construction is successful.
 
@@ -327,7 +327,7 @@ class GCE2d_Root(object):
         """
         return _GCE2d.GCE2d_Root_IsDone(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "gce_ErrorType" :
         """
         * Returns the status of the construction - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.
 
@@ -415,7 +415,7 @@ class GCE2d_MakeArcOfCircle(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeArcOfCircle_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfCircle(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         * Returns the constructed arc of circle. Exceptions StdFail_NotDone if no arc of circle is constructed.
 
@@ -424,7 +424,7 @@ class GCE2d_MakeArcOfCircle(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeArcOfCircle_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
@@ -488,7 +488,7 @@ class GCE2d_MakeArcOfEllipse(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeArcOfEllipse_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfEllipse(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         * Returns the constructed arc of ellipse.
 
@@ -497,7 +497,7 @@ class GCE2d_MakeArcOfEllipse(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeArcOfEllipse_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
@@ -561,7 +561,7 @@ class GCE2d_MakeArcOfHyperbola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeArcOfHyperbola_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfHyperbola(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         * Returns the constructed arc of hyperbola.
 
@@ -570,7 +570,7 @@ class GCE2d_MakeArcOfHyperbola(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeArcOfHyperbola_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
@@ -634,7 +634,7 @@ class GCE2d_MakeArcOfParabola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeArcOfParabola_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfParabola(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         * Returns the constructed arc of parabola.
 
@@ -643,7 +643,7 @@ class GCE2d_MakeArcOfParabola(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeArcOfParabola_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
@@ -741,7 +741,7 @@ class GCE2d_MakeCircle(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeCircle_swiginit(self,_GCE2d.new_GCE2d_MakeCircle(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Circle const &" :
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
@@ -750,7 +750,7 @@ class GCE2d_MakeCircle(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeCircle_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Circle const &" :
         """
         :rtype: Handle_Geom2d_Circle
 
@@ -816,7 +816,7 @@ class GCE2d_MakeEllipse(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeEllipse_swiginit(self,_GCE2d.new_GCE2d_MakeEllipse(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Ellipse const &" :
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
@@ -825,7 +825,7 @@ class GCE2d_MakeEllipse(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeEllipse_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Ellipse const &" :
         """
         :rtype: Handle_Geom2d_Ellipse
 
@@ -891,7 +891,7 @@ class GCE2d_MakeHyperbola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeHyperbola_swiginit(self,_GCE2d.new_GCE2d_MakeHyperbola(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Hyperbola const &" :
         """
         * Returns the constructed hyperbola. Exceptions: StdFail_NotDone if no hyperbola is constructed.
 
@@ -900,7 +900,7 @@ class GCE2d_MakeHyperbola(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeHyperbola_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Hyperbola const &" :
         """
         :rtype: Handle_Geom2d_Hyperbola
 
@@ -972,7 +972,7 @@ class GCE2d_MakeLine(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeLine_swiginit(self,_GCE2d.new_GCE2d_MakeLine(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Line const &" :
         """
         * Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.
 
@@ -981,7 +981,7 @@ class GCE2d_MakeLine(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeLine_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Line const &" :
         """
         :rtype: Handle_Geom2d_Line
 
@@ -1059,7 +1059,7 @@ class GCE2d_MakeParabola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeParabola_swiginit(self,_GCE2d.new_GCE2d_MakeParabola(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Parabola const &" :
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
@@ -1068,7 +1068,7 @@ class GCE2d_MakeParabola(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeParabola_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_Parabola const &" :
         """
         :rtype: Handle_Geom2d_Parabola
 
@@ -1144,7 +1144,7 @@ class GCE2d_MakeSegment(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeSegment_swiginit(self,_GCE2d.new_GCE2d_MakeSegment(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         * Returns the constructed line segment. Exceptions StdFail_NotDone if no line segment is constructed.
 
@@ -1153,7 +1153,7 @@ class GCE2d_MakeSegment(GCE2d_Root):
         """
         return _GCE2d.GCE2d_MakeSegment_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 

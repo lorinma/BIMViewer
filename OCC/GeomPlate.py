@@ -178,7 +178,7 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
 
         """
         _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_swiginit(self,_GeomPlate.new_GeomPlate_Array1OfHCurveOnSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HCurveOnSurface &
@@ -187,21 +187,21 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
         """
         :param Other:
         :type Other: GeomPlate_Array1OfHCurveOnSurface &
@@ -210,7 +210,7 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
         """
         :param Other:
         :type Other: GeomPlate_Array1OfHCurveOnSurface &
@@ -219,28 +219,28 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -251,7 +251,7 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -260,7 +260,7 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface &" :
         """
         :param Index:
         :type Index: int
@@ -313,7 +313,7 @@ class GeomPlate_Array1OfSequenceOfReal(object):
 
         """
         _GeomPlate.GeomPlate_Array1OfSequenceOfReal_swiginit(self,_GeomPlate.new_GeomPlate_Array1OfSequenceOfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_SequenceOfReal &
@@ -322,21 +322,21 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
         """
         :param Other:
         :type Other: GeomPlate_Array1OfSequenceOfReal &
@@ -345,7 +345,7 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
         """
         :param Other:
         :type Other: GeomPlate_Array1OfSequenceOfReal &
@@ -354,28 +354,28 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -386,7 +386,7 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :param Index:
         :type Index: int
@@ -395,7 +395,7 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_SequenceOfReal &" :
         """
         :param Index:
         :type Index: int
@@ -456,7 +456,7 @@ class GeomPlate_BuildAveragePlane(object):
 
         """
         _GeomPlate.GeomPlate_BuildAveragePlane_swiginit(self,_GeomPlate.new_GeomPlate_BuildAveragePlane(*args))
-    def Plane(self, *args):
+    def Plane(self, *args) -> "Handle_Geom_Plane" :
         """
         * Return the average Plane.
 
@@ -465,7 +465,7 @@ class GeomPlate_BuildAveragePlane(object):
         """
         return _GeomPlate.GeomPlate_BuildAveragePlane_Plane(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_Geom_Line" :
         """
         * Return a Line when 2 eigenvalues are null.
 
@@ -474,7 +474,7 @@ class GeomPlate_BuildAveragePlane(object):
         """
         return _GeomPlate.GeomPlate_BuildAveragePlane_Line(self, *args)
 
-    def IsPlane(self, *args):
+    def IsPlane(self, *args) -> "Standard_Boolean" :
         """
         * return OK if is a plane.
 
@@ -483,7 +483,7 @@ class GeomPlate_BuildAveragePlane(object):
         """
         return _GeomPlate.GeomPlate_BuildAveragePlane_IsPlane(self, *args)
 
-    def IsLine(self, *args):
+    def IsLine(self, *args) -> "Standard_Boolean" :
         """
         * return OK if is a line.
 
@@ -492,7 +492,7 @@ class GeomPlate_BuildAveragePlane(object):
         """
         return _GeomPlate.GeomPlate_BuildAveragePlane_IsLine(self, *args)
 
-    def MinMaxBox(self, *args):
+    def MinMaxBox(self, *args) -> "void" :
         """
         * computes the minimal box to include all normal projection points of the initial array on the plane.
 
@@ -509,7 +509,7 @@ class GeomPlate_BuildAveragePlane(object):
         """
         return _GeomPlate.GeomPlate_BuildAveragePlane_MinMaxBox(self, *args)
 
-    def HalfSpace(*args):
+    def HalfSpace(*args) -> "Standard_Boolean" :
         """
         :param NewNormals:
         :type NewNormals: TColgp_SequenceOfVec
@@ -544,7 +544,7 @@ GeomPlate_BuildAveragePlane._kill_pointed = new_instancemethod(_GeomPlate.GeomPl
 GeomPlate_BuildAveragePlane_swigregister = _GeomPlate.GeomPlate_BuildAveragePlane_swigregister
 GeomPlate_BuildAveragePlane_swigregister(GeomPlate_BuildAveragePlane)
 
-def GeomPlate_BuildAveragePlane_HalfSpace(*args):
+def GeomPlate_BuildAveragePlane_HalfSpace(*args) -> "Standard_Boolean" :
   """
     :param NewNormals:
     :type NewNormals: TColgp_SequenceOfVec
@@ -632,7 +632,7 @@ class GeomPlate_BuildPlateSurface(object):
 
         """
         _GeomPlate.GeomPlate_BuildPlateSurface_swiginit(self,_GeomPlate.new_GeomPlate_BuildPlateSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Resets all constraints
 
@@ -641,7 +641,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Init(self, *args)
 
-    def LoadInitSurface(self, *args):
+    def LoadInitSurface(self, *args) -> "void" :
         """
         * Loads the initial Surface
 
@@ -652,7 +652,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_LoadInitSurface(self, *args)
 
-    def SetNbBounds(self, *args):
+    def SetNbBounds(self, *args) -> "void" :
         """
         :param NbBounds:
         :type NbBounds: int
@@ -661,7 +661,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_SetNbBounds(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the linear constraint cont.
 
@@ -678,7 +678,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Calls the algorithm and computes the plate surface using the loaded constraints. If no initial surface is given, the algorithm automatically computes one. Exceptions Standard_RangeError if the value of the constraint is null or if plate is not done.
 
@@ -687,7 +687,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Perform(self, *args)
 
-    def CurveConstraint(self, *args):
+    def CurveConstraint(self, *args) -> "Handle_GeomPlate_CurveConstraint" :
         """
         * returns the CurveConstraints of order order
 
@@ -698,7 +698,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_CurveConstraint(self, *args)
 
-    def PointConstraint(self, *args):
+    def PointConstraint(self, *args) -> "Handle_GeomPlate_PointConstraint" :
         """
         * returns the PointConstraint of order order
 
@@ -709,7 +709,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_PointConstraint(self, *args)
 
-    def Disc2dContour(self, *args):
+    def Disc2dContour(self, *args) -> "void" :
         """
         :param nbp:
         :type nbp: int
@@ -720,7 +720,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Disc2dContour(self, *args)
 
-    def Disc3dContour(self, *args):
+    def Disc3dContour(self, *args) -> "void" :
         """
         :param nbp:
         :type nbp: int
@@ -733,7 +733,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Disc3dContour(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Tests whether computation of the plate has been completed.
 
@@ -742,7 +742,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_IsDone(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_GeomPlate_Surface" :
         """
         * Returns the result of the computation. This surface can then be used by GeomPlate_MakeApprox for converting the resulting surface into a BSpline.
 
@@ -751,7 +751,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Surface(self, *args)
 
-    def SurfInit(self, *args):
+    def SurfInit(self, *args) -> "Handle_Geom_Surface" :
         """
         * Returns the initial surface
 
@@ -760,7 +760,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_SurfInit(self, *args)
 
-    def Sense(self, *args):
+    def Sense(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
         """
         * Allows you to ensure that the array of curves returned by Curves2d has the correct orientation. Returns the orientation of the curves in the the array returned by Curves2d. Computation changes the orientation of these curves. Consequently, this method returns the orientation prior to computation.
 
@@ -769,7 +769,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Sense(self, *args)
 
-    def Curves2d(self, *args):
+    def Curves2d(self, *args) -> "Handle_TColGeom2d_HArray1OfCurve" :
         """
         * Extracts the array of curves on the plate surface which correspond to the curve constraints set in Add.
 
@@ -778,7 +778,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Curves2d(self, *args)
 
-    def Order(self, *args):
+    def Order(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
         """
         * Returns the order of the curves in the array returned by Curves2d. Computation changes this order. Consequently, this method returns the order of the curves prior to computation.
 
@@ -787,7 +787,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Order(self, *args)
 
-    def G0Error(self, *args):
+    def G0Error(self, *args) -> "Standard_Real" :
         """
         * Returns the max distance betwen the result and the constraints
 
@@ -802,7 +802,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_G0Error(self, *args)
 
-    def G1Error(self, *args):
+    def G1Error(self, *args) -> "Standard_Real" :
         """
         * Returns the max angle betwen the result and the constraints
 
@@ -817,7 +817,7 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_G1Error(self, *args)
 
-    def G2Error(self, *args):
+    def G2Error(self, *args) -> "Standard_Real" :
         """
         * Returns the max difference of curvature betwen the result and the constraints
 
@@ -901,7 +901,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_CurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_CurveConstraint(*args))
-    def SetOrder(self, *args):
+    def SetOrder(self, *args) -> "void" :
         """
         * Allows you to set the order of continuity required for the constraints: G0, G1, and G2, controlled respectively by G0Criterion G1Criterion and G2Criterion.
 
@@ -912,7 +912,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetOrder(self, *args)
 
-    def Order(self, *args):
+    def Order(self, *args) -> "Standard_Integer" :
         """
         * Returns the order of constraint, one of G0, G1 or G2.
 
@@ -921,7 +921,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_Order(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points on the curve used as a constraint. The default setting is 10. This parameter affects computation time, which increases by the cube of the number of points.
 
@@ -930,7 +930,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_NbPoints(self, *args)
 
-    def SetNbPoints(self, *args):
+    def SetNbPoints(self, *args) -> "void" :
         """
         * Allows you to set the number of points on the curve constraint. The default setting is 10. This parameter affects computation time, which increases by the cube of the number of points.
 
@@ -941,7 +941,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetNbPoints(self, *args)
 
-    def SetG0Criterion(self, *args):
+    def SetG0Criterion(self, *args) -> "void" :
         """
         * Allows you to set the G0 criterion. This is the law defining the greatest distance allowed between the constraint and the target surface for each point of the constraint. If this criterion is not set, TolDist, the distance tolerance from the constructor, is used.
 
@@ -952,7 +952,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG0Criterion(self, *args)
 
-    def SetG1Criterion(self, *args):
+    def SetG1Criterion(self, *args) -> "void" :
         """
         * Allows you to set the G1 criterion. This is the law defining the greatest angle allowed between the constraint and the target surface. If this criterion is not set, TolAng, the angular tolerance from the constructor, is used. Raises ConstructionError if the curve is not on a surface
 
@@ -963,7 +963,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG1Criterion(self, *args)
 
-    def SetG2Criterion(self, *args):
+    def SetG2Criterion(self, *args) -> "void" :
         """
         :param G2Crit:
         :type G2Crit: Handle_Law_Function &
@@ -972,7 +972,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG2Criterion(self, *args)
 
-    def G0Criterion(self, *args):
+    def G0Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G0 criterion at the parametric point U on the curve. This is the greatest distance allowed between the constraint and the target surface at U.
 
@@ -983,7 +983,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G0Criterion(self, *args)
 
-    def G1Criterion(self, *args):
+    def G1Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G1 criterion at the parametric point U on the curve. This is the greatest angle allowed between the constraint and the target surface at U. Raises ConstructionError if the curve is not on a surface
 
@@ -994,7 +994,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G1Criterion(self, *args)
 
-    def G2Criterion(self, *args):
+    def G2Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G2 criterion at the parametric point U on the curve. This is the greatest difference in curvature allowed between the constraint and the target surface at U. Raises ConstructionError if the curve is not on a surface
 
@@ -1005,28 +1005,28 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G2Criterion(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_LastParameter(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_Length(self, *args)
 
-    def LPropSurf(self, *args):
+    def LPropSurf(self, *args) -> "GeomLProp_SLProps &" :
         """
         :param U:
         :type U: float
@@ -1035,7 +1035,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_LPropSurf(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1046,7 +1046,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1061,7 +1061,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1082,14 +1082,14 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D2(self, *args)
 
-    def Curve3d(self, *args):
+    def Curve3d(self, *args) -> "Handle_Adaptor3d_HCurve" :
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_Curve3d(self, *args)
 
-    def SetCurve2dOnSurf(self, *args):
+    def SetCurve2dOnSurf(self, *args) -> "void" :
         """
         * loads a 2d curve associated the surface resulting of the constraints
 
@@ -1100,7 +1100,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetCurve2dOnSurf(self, *args)
 
-    def Curve2dOnSurf(self, *args):
+    def Curve2dOnSurf(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * Returns a 2d curve associated the surface resulting of the constraints
 
@@ -1109,7 +1109,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_Curve2dOnSurf(self, *args)
 
-    def SetProjectedCurve(self, *args):
+    def SetProjectedCurve(self, *args) -> "void" :
         """
         * loads a 2d curve resulting from the normal projection of the curve on the initial surface
 
@@ -1124,7 +1124,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetProjectedCurve(self, *args)
 
-    def ProjectedCurve(self, *args):
+    def ProjectedCurve(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
         """
         * Returns the projected curve resulting from the normal projection of the curve on the initial surface
 
@@ -1133,11 +1133,11 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_ProjectedCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_CurveConstraint self)"""
         return _GeomPlate.GeomPlate_CurveConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_CurveConstraint" :
         """GetHandle(GeomPlate_CurveConstraint self) -> Handle_GeomPlate_CurveConstraint"""
         return _GeomPlate.GeomPlate_CurveConstraint_GetHandle(self)
 
@@ -1197,7 +1197,7 @@ Handle_GeomPlate_CurveConstraint._kill_pointed = new_instancemethod(_GeomPlate.H
 Handle_GeomPlate_CurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_CurveConstraint_swigregister
 Handle_GeomPlate_CurveConstraint_swigregister(Handle_GeomPlate_CurveConstraint)
 
-def Handle_GeomPlate_CurveConstraint_DownCast(*args):
+def Handle_GeomPlate_CurveConstraint_DownCast(*args) -> "Handle_GeomPlate_CurveConstraint const" :
   return _GeomPlate.Handle_GeomPlate_CurveConstraint_DownCast(*args)
 Handle_GeomPlate_CurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_CurveConstraint_DownCast
 
@@ -1222,7 +1222,7 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_swiginit(self,_GeomPlate.new_GeomPlate_HArray1OfHCurveOnSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HCurveOnSurface &
@@ -1231,28 +1231,28 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1263,7 +1263,7 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -1272,7 +1272,7 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface &" :
         """
         :param Index:
         :type Index: int
@@ -1281,25 +1281,25 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
         """
         :rtype: GeomPlate_Array1OfHCurveOnSurface
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface &" :
         """
         :rtype: GeomPlate_Array1OfHCurveOnSurface
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_HArray1OfHCurveOnSurface self)"""
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_HArray1OfHCurveOnSurface" :
         """GetHandle(GeomPlate_HArray1OfHCurveOnSurface self) -> Handle_GeomPlate_HArray1OfHCurveOnSurface"""
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_GetHandle(self)
 
@@ -1346,7 +1346,7 @@ Handle_GeomPlate_HArray1OfHCurveOnSurface._kill_pointed = new_instancemethod(_Ge
 Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister = _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister
 Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister(Handle_GeomPlate_HArray1OfHCurveOnSurface)
 
-def Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args):
+def Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args) -> "Handle_GeomPlate_HArray1OfHCurveOnSurface const" :
   return _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args)
 Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast = _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast
 
@@ -1371,7 +1371,7 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_swiginit(self,_GeomPlate.new_GeomPlate_HArray1OfSequenceOfReal(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_SequenceOfReal &
@@ -1380,28 +1380,28 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1412,7 +1412,7 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :param Index:
         :type Index: int
@@ -1421,7 +1421,7 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_SequenceOfReal &" :
         """
         :param Index:
         :type Index: int
@@ -1430,25 +1430,25 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
         """
         :rtype: GeomPlate_Array1OfSequenceOfReal
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "GeomPlate_Array1OfSequenceOfReal &" :
         """
         :rtype: GeomPlate_Array1OfSequenceOfReal
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_HArray1OfSequenceOfReal self)"""
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_HArray1OfSequenceOfReal" :
         """GetHandle(GeomPlate_HArray1OfSequenceOfReal self) -> Handle_GeomPlate_HArray1OfSequenceOfReal"""
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_GetHandle(self)
 
@@ -1495,7 +1495,7 @@ Handle_GeomPlate_HArray1OfSequenceOfReal._kill_pointed = new_instancemethod(_Geo
 Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister = _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister
 Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister(Handle_GeomPlate_HArray1OfSequenceOfReal)
 
-def Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args):
+def Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args) -> "Handle_GeomPlate_HArray1OfSequenceOfReal const" :
   return _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args)
 Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast = _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast
 
@@ -1508,28 +1508,28 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfCurveConstraint(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
@@ -1542,7 +1542,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
@@ -1555,14 +1555,14 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1579,7 +1579,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1596,7 +1596,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1607,7 +1607,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1616,7 +1616,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1627,7 +1627,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1636,7 +1636,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1645,7 +1645,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1660,32 +1660,32 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
         """
         :rtype: GeomPlate_SequenceOfCurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "GeomPlate_SequenceOfCurveConstraint &" :
         """
         :rtype: GeomPlate_SequenceOfCurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
         """
         :rtype: Handle_GeomPlate_HSequenceOfCurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_HSequenceOfCurveConstraint self)"""
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
         """GetHandle(GeomPlate_HSequenceOfCurveConstraint self) -> Handle_GeomPlate_HSequenceOfCurveConstraint"""
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_GetHandle(self)
 
@@ -1740,7 +1740,7 @@ Handle_GeomPlate_HSequenceOfCurveConstraint._kill_pointed = new_instancemethod(_
 Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister
 Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister(Handle_GeomPlate_HSequenceOfCurveConstraint)
 
-def Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args):
+def Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint const" :
   return _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args)
 Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast
 
@@ -1753,28 +1753,28 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_HSequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfPointConstraint(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
@@ -1787,7 +1787,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
@@ -1800,14 +1800,14 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1824,7 +1824,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1841,7 +1841,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1852,7 +1852,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1861,7 +1861,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1872,7 +1872,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1881,7 +1881,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1890,7 +1890,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1905,32 +1905,32 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
         """
         :rtype: GeomPlate_SequenceOfPointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "GeomPlate_SequenceOfPointConstraint &" :
         """
         :rtype: GeomPlate_SequenceOfPointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
         """
         :rtype: Handle_GeomPlate_HSequenceOfPointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_HSequenceOfPointConstraint self)"""
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
         """GetHandle(GeomPlate_HSequenceOfPointConstraint self) -> Handle_GeomPlate_HSequenceOfPointConstraint"""
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_GetHandle(self)
 
@@ -1985,7 +1985,7 @@ Handle_GeomPlate_HSequenceOfPointConstraint._kill_pointed = new_instancemethod(_
 Handle_GeomPlate_HSequenceOfPointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_swigregister
 Handle_GeomPlate_HSequenceOfPointConstraint_swigregister(Handle_GeomPlate_HSequenceOfPointConstraint)
 
-def Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args):
+def Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args) -> "Handle_GeomPlate_HSequenceOfPointConstraint const" :
   return _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args)
 Handle_GeomPlate_HSequenceOfPointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_DownCast
 
@@ -2034,7 +2034,7 @@ class GeomPlate_MakeApprox(object):
 
         """
         _GeomPlate.GeomPlate_MakeApprox_swiginit(self,_GeomPlate.new_GeomPlate_MakeApprox(*args))
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_BSplineSurface" :
         """
         * Returns the BSpline surface extracted from the GeomPlate_MakeApprox object.
 
@@ -2043,7 +2043,7 @@ class GeomPlate_MakeApprox(object):
         """
         return _GeomPlate.GeomPlate_MakeApprox_Surface(self, *args)
 
-    def ApproxError(self, *args):
+    def ApproxError(self, *args) -> "Standard_Real" :
         """
         * Returns the error in computation of the approximation surface. This is the distance between the entire target BSpline surface and the entire original surface generated by BuildPlateSurface and converted by GeomPlate_Surface.
 
@@ -2052,7 +2052,7 @@ class GeomPlate_MakeApprox(object):
         """
         return _GeomPlate.GeomPlate_MakeApprox_ApproxError(self, *args)
 
-    def CriterionError(self, *args):
+    def CriterionError(self, *args) -> "Standard_Real" :
         """
         * Returns the criterion error in computation of the approximation surface. This is estimated relative to the curve and point constraints only.
 
@@ -2173,7 +2173,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_PointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_PointConstraint(*args))
-    def SetOrder(self, *args):
+    def SetOrder(self, *args) -> "void" :
         """
         :param Order:
         :type Order: int
@@ -2182,7 +2182,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetOrder(self, *args)
 
-    def Order(self, *args):
+    def Order(self, *args) -> "Standard_Integer" :
         """
         * Returns the order of constraint: G0, G1, and G2, controlled respectively by G0Criterion G1Criterion and G2Criterion.
 
@@ -2191,7 +2191,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_Order(self, *args)
 
-    def SetG0Criterion(self, *args):
+    def SetG0Criterion(self, *args) -> "void" :
         """
         * Allows you to set the G0 criterion. This is the law defining the greatest distance allowed between the constraint and the target surface. If this criterion is not set, {TolDist, the distance tolerance from the constructor, is used
 
@@ -2202,7 +2202,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG0Criterion(self, *args)
 
-    def SetG1Criterion(self, *args):
+    def SetG1Criterion(self, *args) -> "void" :
         """
         * Allows you to set the G1 criterion. This is the law defining the greatest angle allowed between the constraint and the target surface. If this criterion is not set, TolAng, the angular tolerance from the constructor, is used. Raises ConstructionError if the point is not on the surface
 
@@ -2213,7 +2213,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG1Criterion(self, *args)
 
-    def SetG2Criterion(self, *args):
+    def SetG2Criterion(self, *args) -> "void" :
         """
         * Allows you to set the G2 criterion. This is the law defining the greatest difference in curvature allowed between the constraint and the target surface. If this criterion is not set, TolCurv, the curvature tolerance from the constructor, is used. Raises ConstructionError if the point is not on the surface
 
@@ -2224,7 +2224,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG2Criterion(self, *args)
 
-    def G0Criterion(self, *args):
+    def G0Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G0 criterion. This is the greatest distance allowed between the constraint and the target surface.
 
@@ -2233,7 +2233,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_G0Criterion(self, *args)
 
-    def G1Criterion(self, *args):
+    def G1Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G1 criterion. This is the greatest angle allowed between the constraint and the target surface. Raises ConstructionError if the point is not on the surface.
 
@@ -2242,7 +2242,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_G1Criterion(self, *args)
 
-    def G2Criterion(self, *args):
+    def G2Criterion(self, *args) -> "Standard_Real" :
         """
         * Returns the G2 criterion. This is the greatest difference in curvature allowed between the constraint and the target surface. Raises ConstructionError if the point is not on the surface
 
@@ -2251,7 +2251,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_G2Criterion(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -2260,7 +2260,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -2273,7 +2273,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -2292,14 +2292,14 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D2(self, *args)
 
-    def HasPnt2dOnSurf(self, *args):
+    def HasPnt2dOnSurf(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomPlate.GeomPlate_PointConstraint_HasPnt2dOnSurf(self, *args)
 
-    def SetPnt2dOnSurf(self, *args):
+    def SetPnt2dOnSurf(self, *args) -> "void" :
         """
         :param Pnt:
         :type Pnt: gp_Pnt2d
@@ -2308,25 +2308,25 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetPnt2dOnSurf(self, *args)
 
-    def Pnt2dOnSurf(self, *args):
+    def Pnt2dOnSurf(self, *args) -> "gp_Pnt2d" :
         """
         :rtype: gp_Pnt2d
 
         """
         return _GeomPlate.GeomPlate_PointConstraint_Pnt2dOnSurf(self, *args)
 
-    def LPropSurf(self, *args):
+    def LPropSurf(self, *args) -> "GeomLProp_SLProps &" :
         """
         :rtype: GeomLProp_SLProps
 
         """
         return _GeomPlate.GeomPlate_PointConstraint_LPropSurf(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_PointConstraint self)"""
         return _GeomPlate.GeomPlate_PointConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_PointConstraint" :
         """GetHandle(GeomPlate_PointConstraint self) -> Handle_GeomPlate_PointConstraint"""
         return _GeomPlate.GeomPlate_PointConstraint_GetHandle(self)
 
@@ -2379,7 +2379,7 @@ Handle_GeomPlate_PointConstraint._kill_pointed = new_instancemethod(_GeomPlate.H
 Handle_GeomPlate_PointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_PointConstraint_swigregister
 Handle_GeomPlate_PointConstraint_swigregister(Handle_GeomPlate_PointConstraint)
 
-def Handle_GeomPlate_PointConstraint_DownCast(*args):
+def Handle_GeomPlate_PointConstraint_DownCast(*args) -> "Handle_GeomPlate_PointConstraint const" :
   return _GeomPlate.Handle_GeomPlate_PointConstraint_DownCast(*args)
 Handle_GeomPlate_PointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_PointConstraint_DownCast
 
@@ -2398,18 +2398,18 @@ class GeomPlate_SequenceNodeOfSequenceOfAij(OCC.TCollection.TCollection_SeqNode)
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfAij(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "GeomPlate_Aij &" :
         """
         :rtype: GeomPlate_Aij
 
         """
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfAij self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfAij" :
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfAij self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfAij"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_GetHandle(self)
 
@@ -2448,7 +2448,7 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfAij._kill_pointed = new_instancemethod(
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfAij)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args):
+def Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfAij const" :
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast
 
@@ -2467,18 +2467,18 @@ class GeomPlate_SequenceNodeOfSequenceOfCurveConstraint(OCC.TCollection.TCollect
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfCurveConstraint self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint" :
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfCurveConstraint self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_GetHandle(self)
 
@@ -2517,7 +2517,7 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint._kill_pointed = new_ins
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args):
+def Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint const" :
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast
 
@@ -2536,18 +2536,18 @@ class GeomPlate_SequenceNodeOfSequenceOfPointConstraint(OCC.TCollection.TCollect
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfPointConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfPointConstraint self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint" :
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfPointConstraint self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_GetHandle(self)
 
@@ -2586,7 +2586,7 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint._kill_pointed = new_ins
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args):
+def Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint const" :
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast
 
@@ -2599,14 +2599,14 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _GeomPlate.GeomPlate_SequenceOfAij_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfAij(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GeomPlate_SequenceOfAij const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfAij &
@@ -2615,7 +2615,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GeomPlate_SequenceOfAij const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfAij &
@@ -2624,7 +2624,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: GeomPlate_Aij &
@@ -2637,7 +2637,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: GeomPlate_Aij &
@@ -2650,7 +2650,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2667,7 +2667,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2684,21 +2684,21 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "GeomPlate_Aij const &" :
         """
         :rtype: GeomPlate_Aij
 
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "GeomPlate_Aij const &" :
         """
         :rtype: GeomPlate_Aij
 
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2709,7 +2709,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "GeomPlate_Aij const &" :
         """
         :param Index:
         :type Index: int
@@ -2718,7 +2718,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2729,7 +2729,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "GeomPlate_Aij &" :
         """
         :param Index:
         :type Index: int
@@ -2738,7 +2738,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2788,14 +2788,14 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
 
         """
         _GeomPlate.GeomPlate_SequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfCurveConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfCurveConstraint &
@@ -2804,7 +2804,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfCurveConstraint &
@@ -2813,7 +2813,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
@@ -2826,7 +2826,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
@@ -2839,7 +2839,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2856,7 +2856,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2873,21 +2873,21 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2898,7 +2898,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -2907,7 +2907,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2918,7 +2918,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -2927,7 +2927,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2977,14 +2977,14 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
 
         """
         _GeomPlate.GeomPlate_SequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfPointConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfPointConstraint &
@@ -2993,7 +2993,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfPointConstraint &
@@ -3002,7 +3002,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
@@ -3015,7 +3015,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
@@ -3028,7 +3028,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3045,7 +3045,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3062,21 +3062,21 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3087,7 +3087,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -3096,7 +3096,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3107,7 +3107,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -3116,7 +3116,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3170,14 +3170,14 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
 
         """
         _GeomPlate.GeomPlate_Surface_swiginit(self,_GeomPlate.new_GeomPlate_Surface(*args))
-    def CallSurfinit(self, *args):
+    def CallSurfinit(self, *args) -> "Handle_Geom_Surface" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _GeomPlate.GeomPlate_Surface_CallSurfinit(self, *args)
 
-    def SetBounds(self, *args):
+    def SetBounds(self, *args) -> "void" :
         """
         :param Umin:
         :type Umin: float
@@ -3192,7 +3192,7 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         """
         return _GeomPlate.GeomPlate_Surface_SetBounds(self, *args)
 
-    def RealBounds(self, *args):
+    def RealBounds(self, *args) -> "void" :
         """
         :param U1:
         :type U1: float &
@@ -3207,7 +3207,7 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         """
         return _GeomPlate.GeomPlate_Surface_RealBounds(self, *args)
 
-    def Constraints(self, *args):
+    def Constraints(self, *args) -> "void" :
         """
         :param Seq:
         :type Seq: TColgp_SequenceOfXY
@@ -3216,11 +3216,11 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         """
         return _GeomPlate.GeomPlate_Surface_Constraints(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GeomPlate_Surface self)"""
         return _GeomPlate.GeomPlate_Surface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GeomPlate_Surface" :
         """GetHandle(GeomPlate_Surface self) -> Handle_GeomPlate_Surface"""
         return _GeomPlate.GeomPlate_Surface_GetHandle(self)
 
@@ -3262,7 +3262,7 @@ Handle_GeomPlate_Surface._kill_pointed = new_instancemethod(_GeomPlate.Handle_Ge
 Handle_GeomPlate_Surface_swigregister = _GeomPlate.Handle_GeomPlate_Surface_swigregister
 Handle_GeomPlate_Surface_swigregister(Handle_GeomPlate_Surface)
 
-def Handle_GeomPlate_Surface_DownCast(*args):
+def Handle_GeomPlate_Surface_DownCast(*args) -> "Handle_GeomPlate_Surface const" :
   return _GeomPlate.Handle_GeomPlate_Surface_DownCast(*args)
 Handle_GeomPlate_Surface_DownCast = _GeomPlate.Handle_GeomPlate_Surface_DownCast
 

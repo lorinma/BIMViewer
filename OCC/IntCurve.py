@@ -149,7 +149,7 @@ class IntCurve_IConicTool(object):
 
         """
         _IntCurve.IntCurve_IConicTool_swiginit(self,_IntCurve.new_IntCurve_IConicTool(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d" :
         """
         :param X:
         :type X: float
@@ -158,7 +158,7 @@ class IntCurve_IConicTool(object):
         """
         return _IntCurve.IntCurve_IConicTool_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -171,7 +171,7 @@ class IntCurve_IConicTool(object):
         """
         return _IntCurve.IntCurve_IConicTool_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -186,7 +186,7 @@ class IntCurve_IConicTool(object):
         """
         return _IntCurve.IntCurve_IConicTool_D2(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         * Computes the value of the signed distance between the point P and the implicit curve.
 
@@ -197,7 +197,7 @@ class IntCurve_IConicTool(object):
         """
         return _IntCurve.IntCurve_IConicTool_Distance(self, *args)
 
-    def GradDistance(self, *args):
+    def GradDistance(self, *args) -> "gp_Vec2d" :
         """
         * Computes the Gradient of the Signed Distance between a point and the implicit curve, at the point P.
 
@@ -208,7 +208,7 @@ class IntCurve_IConicTool(object):
         """
         return _IntCurve.IntCurve_IConicTool_GradDistance(self, *args)
 
-    def FindParameter(self, *args):
+    def FindParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter U of the point on the implicit curve corresponding to the point P. The correspondance between P and the point P(U) on the implicit curve must be coherent with the way of determination of the signed distance.
 
@@ -488,7 +488,7 @@ class IntCurve_IntConicConic(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _IntCurve.IntCurve_IntConicConic_swiginit(self,_IntCurve.new_IntCurve_IntConicConic(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersection between 2 lines from gp.
 
@@ -769,7 +769,7 @@ class IntCurve_IntImpConicParConic(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _IntCurve.IntCurve_IntImpConicParConic_swiginit(self,_IntCurve.new_IntCurve_IntImpConicParConic(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param ITool:
         :type ITool: IntCurve_IConicTool &
@@ -788,7 +788,7 @@ class IntCurve_IntImpConicParConic(OCC.IntRes2d.IntRes2d_Intersection):
         """
         return _IntCurve.IntCurve_IntImpConicParConic_Perform(self, *args)
 
-    def FindU(self, *args):
+    def FindU(self, *args) -> "Standard_Real" :
         """
         :param parameter:
         :type parameter: float
@@ -803,7 +803,7 @@ class IntCurve_IntImpConicParConic(OCC.IntRes2d.IntRes2d_Intersection):
         """
         return _IntCurve.IntCurve_IntImpConicParConic_FindU(self, *args)
 
-    def FindV(self, *args):
+    def FindV(self, *args) -> "Standard_Real" :
         """
         :param parameter:
         :type parameter: float
@@ -826,7 +826,7 @@ class IntCurve_IntImpConicParConic(OCC.IntRes2d.IntRes2d_Intersection):
         """
         return _IntCurve.IntCurve_IntImpConicParConic_FindV(self, *args)
 
-    def And_Domaine_Objet1_Intersections(self, *args):
+    def And_Domaine_Objet1_Intersections(self, *args) -> "void" :
         """
         :param TheImpTool:
         :type TheImpTool: IntCurve_IConicTool &
@@ -882,7 +882,7 @@ class IntCurve_MyImpParToolOfIntImpConicParConic(object):
 
         """
         _IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic_swiginit(self,_IntCurve.new_IntCurve_MyImpParToolOfIntImpConicParConic(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -893,7 +893,7 @@ class IntCurve_MyImpParToolOfIntImpConicParConic(object):
         """
         return _IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -904,7 +904,7 @@ class IntCurve_MyImpParToolOfIntImpConicParConic(object):
         """
         return _IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -963,7 +963,7 @@ class IntCurve_PConic(object):
 
         """
         _IntCurve.IntCurve_PConic_swiginit(self,_IntCurve.new_IntCurve_PConic(*args))
-    def SetEpsX(self, *args):
+    def SetEpsX(self, *args) -> "void" :
         """
         * EpsX is a internal tolerance used in math algorithms, usually about 1e-10 (See FunctionAllRoots for more details)
 
@@ -974,7 +974,7 @@ class IntCurve_PConic(object):
         """
         return _IntCurve.IntCurve_PConic_SetEpsX(self, *args)
 
-    def SetAccuracy(self, *args):
+    def SetAccuracy(self, *args) -> "void" :
         """
         * Accuracy is the number of samples used to approximate the parametric curve on its domain.
 
@@ -985,21 +985,21 @@ class IntCurve_PConic(object):
         """
         return _IntCurve.IntCurve_PConic_SetAccuracy(self, *args)
 
-    def Accuracy(self, *args):
+    def Accuracy(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntCurve.IntCurve_PConic_Accuracy(self, *args)
 
-    def EpsX(self, *args):
+    def EpsX(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntCurve.IntCurve_PConic_EpsX(self, *args)
 
-    def TypeCurve(self, *args):
+    def TypeCurve(self, *args) -> "GeomAbs_CurveType" :
         """
         * The Conics are manipulated as objects which only depend on three parameters : Axis and two Real from Standards. Type Curve is used to select the correct Conic.
 
@@ -1008,21 +1008,21 @@ class IntCurve_PConic(object):
         """
         return _IntCurve.IntCurve_PConic_TypeCurve(self, *args)
 
-    def Axis2(self, *args):
+    def Axis2(self, *args) -> "gp_Ax22d const" :
         """
         :rtype: gp_Ax22d
 
         """
         return _IntCurve.IntCurve_PConic_Axis2(self, *args)
 
-    def Param1(self, *args):
+    def Param1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntCurve.IntCurve_PConic_Param1(self, *args)
 
-    def Param2(self, *args):
+    def Param2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1052,7 +1052,7 @@ IntCurve_PConic_swigregister(IntCurve_PConic)
 class IntCurve_PConicTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def EpsX(*args):
+    def EpsX(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: IntCurve_PConic &
@@ -1062,7 +1062,7 @@ class IntCurve_PConicTool(object):
         return _IntCurve.IntCurve_PConicTool_EpsX(*args)
 
     EpsX = staticmethod(EpsX)
-    def NbSamples(*args):
+    def NbSamples(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: IntCurve_PConic &
@@ -1080,7 +1080,7 @@ class IntCurve_PConicTool(object):
         return _IntCurve.IntCurve_PConicTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt2d" :
         """
         :param C:
         :type C: IntCurve_PConic &
@@ -1092,7 +1092,7 @@ class IntCurve_PConicTool(object):
         return _IntCurve.IntCurve_PConicTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param C:
         :type C: IntCurve_PConic &
@@ -1108,7 +1108,7 @@ class IntCurve_PConicTool(object):
         return _IntCurve.IntCurve_PConicTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param C:
         :type C: IntCurve_PConic &
@@ -1140,7 +1140,7 @@ IntCurve_PConicTool._kill_pointed = new_instancemethod(_IntCurve.IntCurve_PConic
 IntCurve_PConicTool_swigregister = _IntCurve.IntCurve_PConicTool_swigregister
 IntCurve_PConicTool_swigregister(IntCurve_PConicTool)
 
-def IntCurve_PConicTool_EpsX(*args):
+def IntCurve_PConicTool_EpsX(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: IntCurve_PConic &
@@ -1149,7 +1149,7 @@ def IntCurve_PConicTool_EpsX(*args):
     """
   return _IntCurve.IntCurve_PConicTool_EpsX(*args)
 
-def IntCurve_PConicTool_NbSamples(*args):
+def IntCurve_PConicTool_NbSamples(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: IntCurve_PConic &
@@ -1166,7 +1166,7 @@ def IntCurve_PConicTool_NbSamples(*args):
     """
   return _IntCurve.IntCurve_PConicTool_NbSamples(*args)
 
-def IntCurve_PConicTool_Value(*args):
+def IntCurve_PConicTool_Value(*args) -> "gp_Pnt2d" :
   """
     :param C:
     :type C: IntCurve_PConic &
@@ -1177,7 +1177,7 @@ def IntCurve_PConicTool_Value(*args):
     """
   return _IntCurve.IntCurve_PConicTool_Value(*args)
 
-def IntCurve_PConicTool_D1(*args):
+def IntCurve_PConicTool_D1(*args) -> "void" :
   """
     :param C:
     :type C: IntCurve_PConic &
@@ -1192,7 +1192,7 @@ def IntCurve_PConicTool_D1(*args):
     """
   return _IntCurve.IntCurve_PConicTool_D1(*args)
 
-def IntCurve_PConicTool_D2(*args):
+def IntCurve_PConicTool_D2(*args) -> "void" :
   """
     :param C:
     :type C: IntCurve_PConic &
@@ -1212,7 +1212,7 @@ def IntCurve_PConicTool_D2(*args):
 class IntCurve_ProjectOnPConicTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FindParameter(*args):
+    def FindParameter(*args) -> "Standard_Real" :
         """
         * Returns the parameter V of the point on the parametric curve corresponding to the Point Pnt. The Correspondance between Pnt and the point P(V) on the parametric curve must be coherent with the way of determination of the signed distance between a point and the implicit curve. Tol is the tolerance on the distance between a point and the parametrised curve. In that case, no bounds are given. The research of the rigth parameter has to be made on the natural parametric domain of the curve.
 
@@ -1256,7 +1256,7 @@ IntCurve_ProjectOnPConicTool._kill_pointed = new_instancemethod(_IntCurve.IntCur
 IntCurve_ProjectOnPConicTool_swigregister = _IntCurve.IntCurve_ProjectOnPConicTool_swigregister
 IntCurve_ProjectOnPConicTool_swigregister(IntCurve_ProjectOnPConicTool)
 
-def IntCurve_ProjectOnPConicTool_FindParameter(*args):
+def IntCurve_ProjectOnPConicTool_FindParameter(*args) -> "Standard_Real" :
   """
     * Returns the parameter V of the point on the parametric curve corresponding to the Point Pnt. The Correspondance between Pnt and the point P(V) on the parametric curve must be coherent with the way of determination of the signed distance between a point and the implicit curve. Tol is the tolerance on the distance between a point and the parametrised curve. In that case, no bounds are given. The research of the rigth parameter has to be made on the natural parametric domain of the curve.
 

@@ -140,14 +140,14 @@ class FairCurve_Batten(object):
 
         """
         _FairCurve.FairCurve_Batten_swiginit(self,_FairCurve.new_FairCurve_Batten(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _FairCurve.FairCurve_Batten_Delete(self, *args)
 
-    def SetFreeSliding(self, *args):
+    def SetFreeSliding(self, *args) -> "void" :
         """
         * Freesliding is initialized with the default setting false. When Freesliding is set to true and, as a result, sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten.
 
@@ -158,7 +158,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetFreeSliding(self, *args)
 
-    def SetConstraintOrder1(self, *args):
+    def SetConstraintOrder1(self, *args) -> "void" :
         """
         * Allows you to change the order of the constraint on the first point. ConstraintOrder has the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.
 
@@ -169,7 +169,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetConstraintOrder1(self, *args)
 
-    def SetConstraintOrder2(self, *args):
+    def SetConstraintOrder2(self, *args) -> "void" :
         """
         * Allows you to change the order of the constraint on the second point. ConstraintOrder is initialized with the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.
 
@@ -180,7 +180,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetConstraintOrder2(self, *args)
 
-    def SetP1(self, *args):
+    def SetP1(self, *args) -> "void" :
         """
         * Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.
 
@@ -191,7 +191,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetP1(self, *args)
 
-    def SetP2(self, *args):
+    def SetP2(self, *args) -> "void" :
         """
         * Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.
 
@@ -202,7 +202,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetP2(self, *args)
 
-    def SetAngle1(self, *args):
+    def SetAngle1(self, *args) -> "void" :
         """
         * Allows you to change the angle Angle1 at the first point, P1. The default setting is 0.
 
@@ -213,7 +213,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetAngle1(self, *args)
 
-    def SetAngle2(self, *args):
+    def SetAngle2(self, *args) -> "void" :
         """
         * Allows you to change the angle Angle2 at the second point, P2. The default setting is 0.
 
@@ -224,7 +224,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetAngle2(self, *args)
 
-    def SetHeight(self, *args):
+    def SetHeight(self, *args) -> "void" :
         """
         * Allows you to change the height of the deformation. Raises NegativeValue; -- if Height <= 0 if Height <= 0
 
@@ -235,7 +235,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetHeight(self, *args)
 
-    def SetSlope(self, *args):
+    def SetSlope(self, *args) -> "void" :
         """
         * Allows you to set the slope value, Slope.
 
@@ -246,7 +246,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetSlope(self, *args)
 
-    def SetSlidingFactor(self, *args):
+    def SetSlidingFactor(self, *args) -> "void" :
         """
         * Allows you to change the ratio SlidingFactor. This compares the length of the batten and the reference length, which is, in turn, a function of the constraints. This modification has one of the following two effects: - if you increase the value, it inflates the batten - if you decrease the value, it flattens the batten. When sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten. When sliding is imposed, a value is required for the sliding factor. SlidingFactor is initialized with the default setting of 1.
 
@@ -257,7 +257,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetSlidingFactor(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "Standard_Boolean" :
         """
         * Performs the algorithm, using the arguments Code, NbIterations and Tolerance and computes the curve with respect to the constraints. Code will have one of the following values: - OK - NotConverged - InfiniteSliding - NullHeight The parameters Tolerance and NbIterations control how precise the computation is, and how long it will take.
 
@@ -272,7 +272,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_Compute(self, *args)
 
-    def SlidingOfReference(self, *args):
+    def SlidingOfReference(self, *args) -> "Standard_Real" :
         """
         * Computes the real number value for length Sliding of Reference for new constraints. If you want to give a specific length to a batten curve, use the following syntax: b.SetSlidingFactor(L / b.SlidingOfReference()) where b is the name of the batten curve object.
 
@@ -281,7 +281,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SlidingOfReference(self, *args)
 
-    def GetFreeSliding(self, *args):
+    def GetFreeSliding(self, *args) -> "Standard_Boolean" :
         """
         * Returns the initial free sliding value, false by default. Free sliding is generally more aesthetically pleasing than constrained sliding. However, the computation can fail with values such as angles greater than PI/2. This is because the resulting batten length is theoretically infinite.
 
@@ -290,7 +290,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetFreeSliding(self, *args)
 
-    def GetConstraintOrder1(self, *args):
+    def GetConstraintOrder1(self, *args) -> "Standard_Integer" :
         """
         * Returns the established first constraint order.
 
@@ -299,7 +299,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetConstraintOrder1(self, *args)
 
-    def GetConstraintOrder2(self, *args):
+    def GetConstraintOrder2(self, *args) -> "Standard_Integer" :
         """
         * Returns the established second constraint order.
 
@@ -308,7 +308,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetConstraintOrder2(self, *args)
 
-    def GetP1(self, *args):
+    def GetP1(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the established location of the point P1.
 
@@ -317,7 +317,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetP1(self, *args)
 
-    def GetP2(self, *args):
+    def GetP2(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the established location of the point P2.
 
@@ -326,7 +326,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetP2(self, *args)
 
-    def GetAngle1(self, *args):
+    def GetAngle1(self, *args) -> "Standard_Real" :
         """
         * Returns the established first angle.
 
@@ -335,7 +335,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetAngle1(self, *args)
 
-    def GetAngle2(self, *args):
+    def GetAngle2(self, *args) -> "Standard_Real" :
         """
         * Returns the established second angle.
 
@@ -344,7 +344,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetAngle2(self, *args)
 
-    def GetHeight(self, *args):
+    def GetHeight(self, *args) -> "Standard_Real" :
         """
         * Returns the thickness of the lathe.
 
@@ -353,7 +353,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetHeight(self, *args)
 
-    def GetSlope(self, *args):
+    def GetSlope(self, *args) -> "Standard_Real" :
         """
         * Returns the established slope value.
 
@@ -362,7 +362,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetSlope(self, *args)
 
-    def GetSlidingFactor(self, *args):
+    def GetSlidingFactor(self, *args) -> "Standard_Real" :
         """
         * Returns the initial sliding factor.
 
@@ -371,7 +371,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_GetSlidingFactor(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * Returns the computed curve a 2d BSpline.
 
@@ -380,11 +380,11 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_Curve(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(FairCurve_Batten self) -> std::string"""
         return _FairCurve.FairCurve_Batten_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FairCurve_Batten self)"""
         return _FairCurve.FairCurve_Batten__kill_pointed(self)
 
@@ -442,7 +442,7 @@ class FairCurve_BattenLaw(object):
 
         """
         _FairCurve.FairCurve_BattenLaw_swiginit(self,_FairCurve.new_FairCurve_BattenLaw(*args))
-    def SetSliding(self, *args):
+    def SetSliding(self, *args) -> "void" :
         """
         * Change the value of sliding
 
@@ -453,7 +453,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetSliding(self, *args)
 
-    def SetHeigth(self, *args):
+    def SetHeigth(self, *args) -> "void" :
         """
         * Change the value of Heigth at the middle point.
 
@@ -464,7 +464,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetHeigth(self, *args)
 
-    def SetSlope(self, *args):
+    def SetSlope(self, *args) -> "void" :
         """
         * Change the value of the geometric slope.
 
@@ -475,7 +475,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetSlope(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the value of the heigth for the parameter T on the neutral fibber
 
@@ -508,7 +508,7 @@ class FairCurve_DistributionOfEnergy(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * returns the number of variables of the function.
 
@@ -517,7 +517,7 @@ class FairCurve_DistributionOfEnergy(object):
         """
         return _FairCurve.FairCurve_DistributionOfEnergy_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -526,7 +526,7 @@ class FairCurve_DistributionOfEnergy(object):
         """
         return _FairCurve.FairCurve_DistributionOfEnergy_NbEquations(self, *args)
 
-    def SetDerivativeOrder(self, *args):
+    def SetDerivativeOrder(self, *args) -> "void" :
         """
         :param DerivativeOrder:
         :type DerivativeOrder: int
@@ -554,7 +554,7 @@ class FairCurve_Energy(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * returns the number of variables of the energy.
 
@@ -563,7 +563,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_NbVariables(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values of the Energys E for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -576,7 +576,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Value(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "Standard_Boolean" :
         """
         * //!computes the gradient <G> of the energys for the  variable <X>.  Returns True if the computation was done successfully,  False otherwise.
 
@@ -589,7 +589,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Gradient(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * computes the Energy <E> and the gradient <G> of the energy for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -616,7 +616,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Values(self, *args)
 
-    def Variable(self, *args):
+    def Variable(self, *args) -> "Standard_Boolean" :
         """
         * compute the variables <X> wich correspond with the field <MyPoles>
 
@@ -627,7 +627,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Variable(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
         """
         * return the poles
 
@@ -695,7 +695,7 @@ class FairCurve_Newton(object):
 
         """
         _FairCurve.FairCurve_Newton_swiginit(self,_FairCurve.new_FairCurve_Newton(*args))
-    def IsConverged(self, *args):
+    def IsConverged(self, *args) -> "Standard_Boolean" :
         """
         * This method is called at the end of each iteration to check the convergence : || Xi+1 - Xi || < SpatialTolerance/100 Or || Xi+1 - Xi || < SpatialTolerance and |F(Xi+1) - F(Xi)| < CriteriumTolerance * |F(xi)| It can be redefined in a sub-class to implement a specific test.
 
@@ -738,7 +738,7 @@ class FairCurve_DistributionOfJerk(FairCurve_DistributionOfEnergy):
 
         """
         _FairCurve.FairCurve_DistributionOfJerk_swiginit(self,_FairCurve.new_FairCurve_DistributionOfJerk(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -785,7 +785,7 @@ class FairCurve_DistributionOfSagging(FairCurve_DistributionOfEnergy):
 
         """
         _FairCurve.FairCurve_DistributionOfSagging_swiginit(self,_FairCurve.new_FairCurve_DistributionOfSagging(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -836,7 +836,7 @@ class FairCurve_DistributionOfTension(FairCurve_DistributionOfEnergy):
 
         """
         _FairCurve.FairCurve_DistributionOfTension_swiginit(self,_FairCurve.new_FairCurve_DistributionOfTension(*args))
-    def SetLengthSliding(self, *args):
+    def SetLengthSliding(self, *args) -> "void" :
         """
         * change the length sliding
 
@@ -847,7 +847,7 @@ class FairCurve_DistributionOfTension(FairCurve_DistributionOfEnergy):
         """
         return _FairCurve.FairCurve_DistributionOfTension_SetLengthSliding(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -905,7 +905,7 @@ class FairCurve_EnergyOfBatten(FairCurve_Energy):
 
         """
         _FairCurve.FairCurve_EnergyOfBatten_swiginit(self,_FairCurve.new_FairCurve_EnergyOfBatten(*args))
-    def LengthSliding(self, *args):
+    def LengthSliding(self, *args) -> "Standard_Real" :
         """
         * return the lengthSliding = P1P2 + Sliding
 
@@ -914,7 +914,7 @@ class FairCurve_EnergyOfBatten(FairCurve_Energy):
         """
         return _FairCurve.FairCurve_EnergyOfBatten_LengthSliding(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "FairCurve_AnalysisCode" :
         """
         * return the status
 
@@ -974,7 +974,7 @@ class FairCurve_EnergyOfMVC(FairCurve_Energy):
 
         """
         _FairCurve.FairCurve_EnergyOfMVC_swiginit(self,_FairCurve.new_FairCurve_EnergyOfMVC(*args))
-    def LengthSliding(self, *args):
+    def LengthSliding(self, *args) -> "Standard_Real" :
         """
         * return the lengthSliding = P1P2 + Sliding
 
@@ -983,7 +983,7 @@ class FairCurve_EnergyOfMVC(FairCurve_Energy):
         """
         return _FairCurve.FairCurve_EnergyOfMVC_LengthSliding(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "FairCurve_AnalysisCode" :
         """
         * return the status
 
@@ -1027,7 +1027,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
 
         """
         _FairCurve.FairCurve_MinimalVariation_swiginit(self,_FairCurve.new_FairCurve_MinimalVariation(*args))
-    def SetCurvature1(self, *args):
+    def SetCurvature1(self, *args) -> "void" :
         """
         * Allows you to set a new constraint on curvature at the first point.
 
@@ -1038,7 +1038,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetCurvature1(self, *args)
 
-    def SetCurvature2(self, *args):
+    def SetCurvature2(self, *args) -> "void" :
         """
         * Allows you to set a new constraint on curvature at the second point.
 
@@ -1049,7 +1049,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetCurvature2(self, *args)
 
-    def SetPhysicalRatio(self, *args):
+    def SetPhysicalRatio(self, *args) -> "void" :
         """
         * Allows you to set the physical ratio Ratio. The kinds of energy which you can specify include: 0 is only 'Jerk' Energy 1 is only 'Sagging' Energy like batten Warning: if Ratio is 1 it is impossible to impose curvature constraints. Raises DomainError if Ratio < 0 or Ratio > 1
 
@@ -1060,7 +1060,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetPhysicalRatio(self, *args)
 
-    def GetCurvature1(self, *args):
+    def GetCurvature1(self, *args) -> "Standard_Real" :
         """
         * Returns the first established curvature.
 
@@ -1069,7 +1069,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_GetCurvature1(self, *args)
 
-    def GetCurvature2(self, *args):
+    def GetCurvature2(self, *args) -> "Standard_Real" :
         """
         * Returns the second established curvature.
 
@@ -1078,7 +1078,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_GetCurvature2(self, *args)
 
-    def GetPhysicalRatio(self, *args):
+    def GetPhysicalRatio(self, *args) -> "Standard_Real" :
         """
         * Returns the physical ratio, or kind of energy.
 
@@ -1087,11 +1087,11 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_GetPhysicalRatio(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(FairCurve_MinimalVariation self) -> std::string"""
         return _FairCurve.FairCurve_MinimalVariation_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(FairCurve_MinimalVariation self)"""
         return _FairCurve.FairCurve_MinimalVariation__kill_pointed(self)
 

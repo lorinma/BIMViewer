@@ -196,7 +196,7 @@ V3d_SLICE = _V3d.V3d_SLICE
 class v3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetProjAxis(*args):
+    def GetProjAxis(*args) -> "Graphic3d_Vector" :
         """
         * Determines the orientation vector corresponding to the predefined orientation type.
 
@@ -208,7 +208,7 @@ class v3d(object):
         return _V3d.v3d_GetProjAxis(*args)
 
     GetProjAxis = staticmethod(GetProjAxis)
-    def ArrowOfRadius(*args):
+    def ArrowOfRadius(*args) -> "void" :
         """
         * Compute the graphic structure of arrow. X0,Y0,Z0 : coordinate of the arrow. DX,DY,DZ : Direction of the arrow. Alpha : Angle of arrow. Lng : Length of arrow.
 
@@ -236,7 +236,7 @@ class v3d(object):
         return _V3d.v3d_ArrowOfRadius(*args)
 
     ArrowOfRadius = staticmethod(ArrowOfRadius)
-    def CircleInPlane(*args):
+    def CircleInPlane(*args) -> "void" :
         """
         * Compute the graphic structure of circle. X0,Y0,Z0 : Center of circle. VX,VY,VZ : Axis of circle. Radius : Radius of circle.
 
@@ -262,7 +262,7 @@ class v3d(object):
         return _V3d.v3d_CircleInPlane(*args)
 
     CircleInPlane = staticmethod(CircleInPlane)
-    def SwitchViewsinWindow(*args):
+    def SwitchViewsinWindow(*args) -> "void" :
         """
         :param aPreviousView:
         :type aPreviousView: Handle_V3d_View &
@@ -274,7 +274,7 @@ class v3d(object):
         return _V3d.v3d_SwitchViewsinWindow(*args)
 
     SwitchViewsinWindow = staticmethod(SwitchViewsinWindow)
-    def DrawSphere(*args):
+    def DrawSphere(*args) -> "void" :
         """
         * test.
 
@@ -288,7 +288,7 @@ class v3d(object):
         return _V3d.v3d_DrawSphere(*args)
 
     DrawSphere = staticmethod(DrawSphere)
-    def PickGrid(*args):
+    def PickGrid(*args) -> "void" :
         """
         * test.
 
@@ -302,7 +302,7 @@ class v3d(object):
         return _V3d.v3d_PickGrid(*args)
 
     PickGrid = staticmethod(PickGrid)
-    def SetPlane(*args):
+    def SetPlane(*args) -> "void" :
         """
         * test.
 
@@ -340,7 +340,7 @@ v3d._kill_pointed = new_instancemethod(_V3d.v3d__kill_pointed,None,v3d)
 v3d_swigregister = _V3d.v3d_swigregister
 v3d_swigregister(v3d)
 
-def v3d_GetProjAxis(*args):
+def v3d_GetProjAxis(*args) -> "Graphic3d_Vector" :
   """
     * Determines the orientation vector corresponding to the predefined orientation type.
 
@@ -351,7 +351,7 @@ def v3d_GetProjAxis(*args):
     """
   return _V3d.v3d_GetProjAxis(*args)
 
-def v3d_ArrowOfRadius(*args):
+def v3d_ArrowOfRadius(*args) -> "void" :
   """
     * Compute the graphic structure of arrow. X0,Y0,Z0 : coordinate of the arrow. DX,DY,DZ : Direction of the arrow. Alpha : Angle of arrow. Lng : Length of arrow.
 
@@ -378,7 +378,7 @@ def v3d_ArrowOfRadius(*args):
     """
   return _V3d.v3d_ArrowOfRadius(*args)
 
-def v3d_CircleInPlane(*args):
+def v3d_CircleInPlane(*args) -> "void" :
   """
     * Compute the graphic structure of circle. X0,Y0,Z0 : Center of circle. VX,VY,VZ : Axis of circle. Radius : Radius of circle.
 
@@ -403,7 +403,7 @@ def v3d_CircleInPlane(*args):
     """
   return _V3d.v3d_CircleInPlane(*args)
 
-def v3d_SwitchViewsinWindow(*args):
+def v3d_SwitchViewsinWindow(*args) -> "void" :
   """
     :param aPreviousView:
     :type aPreviousView: Handle_V3d_View &
@@ -414,7 +414,7 @@ def v3d_SwitchViewsinWindow(*args):
     """
   return _V3d.v3d_SwitchViewsinWindow(*args)
 
-def v3d_DrawSphere(*args):
+def v3d_DrawSphere(*args) -> "void" :
   """
     * test.
 
@@ -427,7 +427,7 @@ def v3d_DrawSphere(*args):
     """
   return _V3d.v3d_DrawSphere(*args)
 
-def v3d_PickGrid(*args):
+def v3d_PickGrid(*args) -> "void" :
   """
     * test.
 
@@ -440,7 +440,7 @@ def v3d_PickGrid(*args):
     """
   return _V3d.v3d_PickGrid(*args)
 
-def v3d_SetPlane(*args):
+def v3d_SetPlane(*args) -> "void" :
   """
     * test.
 
@@ -478,7 +478,7 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
 
         """
         _V3d.V3d_CircularGrid_swiginit(self,_V3d.new_V3d_CircularGrid(*args))
-    def GraphicValues(self, *args):
+    def GraphicValues(self, *args) -> "void" :
         """
         :param Radius:
         :type Radius: float &
@@ -489,7 +489,7 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
         """
         return _V3d.V3d_CircularGrid_GraphicValues(self, *args)
 
-    def SetGraphicValues(self, *args):
+    def SetGraphicValues(self, *args) -> "void" :
         """
         :param Radius:
         :type Radius: float
@@ -500,11 +500,11 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
         """
         return _V3d.V3d_CircularGrid_SetGraphicValues(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_CircularGrid self)"""
         return _V3d.V3d_CircularGrid__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_CircularGrid" :
         """GetHandle(V3d_CircularGrid self) -> Handle_V3d_CircularGrid"""
         return _V3d.V3d_CircularGrid_GetHandle(self)
 
@@ -544,7 +544,7 @@ Handle_V3d_CircularGrid._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Circu
 Handle_V3d_CircularGrid_swigregister = _V3d.Handle_V3d_CircularGrid_swigregister
 Handle_V3d_CircularGrid_swigregister(Handle_V3d_CircularGrid)
 
-def Handle_V3d_CircularGrid_DownCast(*args):
+def Handle_V3d_CircularGrid_DownCast(*args) -> "Handle_V3d_CircularGrid const" :
   return _V3d.Handle_V3d_CircularGrid_DownCast(*args)
 Handle_V3d_CircularGrid_DownCast = _V3d.Handle_V3d_CircularGrid_DownCast
 
@@ -561,28 +561,28 @@ class V3d_ColorScale(OCC.Aspect.Aspect_ColorScale):
 
         """
         _V3d.V3d_ColorScale_swiginit(self,_V3d.new_V3d_ColorScale(*args))
-    def Display(self, *args):
+    def Display(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_ColorScale_Display(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_ColorScale_Erase(self, *args)
 
-    def IsDisplayed(self, *args):
+    def IsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _V3d.V3d_ColorScale_IsDisplayed(self, *args)
 
-    def TextSize(self, *args):
+    def TextSize(self, *args) -> "void" :
         """
         :param AText:
         :type AText: TCollection_ExtendedString &
@@ -599,18 +599,18 @@ class V3d_ColorScale(OCC.Aspect.Aspect_ColorScale):
         """
         return _V3d.V3d_ColorScale_TextSize(self, *args)
 
-    def DrawScale(self, *args):
+    def DrawScale(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_ColorScale_DrawScale(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_ColorScale self)"""
         return _V3d.V3d_ColorScale__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_ColorScale" :
         """GetHandle(V3d_ColorScale self) -> Handle_V3d_ColorScale"""
         return _V3d.V3d_ColorScale_GetHandle(self)
 
@@ -653,7 +653,7 @@ Handle_V3d_ColorScale._kill_pointed = new_instancemethod(_V3d.Handle_V3d_ColorSc
 Handle_V3d_ColorScale_swigregister = _V3d.Handle_V3d_ColorScale_swigregister
 Handle_V3d_ColorScale_swigregister(Handle_V3d_ColorScale)
 
-def Handle_V3d_ColorScale_DownCast(*args):
+def Handle_V3d_ColorScale_DownCast(*args) -> "Handle_V3d_ColorScale const" :
   return _V3d.Handle_V3d_ColorScale_DownCast(*args)
 Handle_V3d_ColorScale_DownCast = _V3d.Handle_V3d_ColorScale_DownCast
 
@@ -670,11 +670,11 @@ class V3d_ColorScaleLayerItem(OCC.Visual3d.Visual3d_LayerItem):
 
         """
         _V3d.V3d_ColorScaleLayerItem_swiginit(self,_V3d.new_V3d_ColorScaleLayerItem(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_ColorScaleLayerItem self)"""
         return _V3d.V3d_ColorScaleLayerItem__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_ColorScaleLayerItem" :
         """GetHandle(V3d_ColorScaleLayerItem self) -> Handle_V3d_ColorScaleLayerItem"""
         return _V3d.V3d_ColorScaleLayerItem_GetHandle(self)
 
@@ -712,7 +712,7 @@ Handle_V3d_ColorScaleLayerItem._kill_pointed = new_instancemethod(_V3d.Handle_V3
 Handle_V3d_ColorScaleLayerItem_swigregister = _V3d.Handle_V3d_ColorScaleLayerItem_swigregister
 Handle_V3d_ColorScaleLayerItem_swigregister(Handle_V3d_ColorScaleLayerItem)
 
-def Handle_V3d_ColorScaleLayerItem_DownCast(*args):
+def Handle_V3d_ColorScaleLayerItem_DownCast(*args) -> "Handle_V3d_ColorScaleLayerItem const" :
   return _V3d.Handle_V3d_ColorScaleLayerItem_DownCast(*args)
 Handle_V3d_ColorScaleLayerItem_DownCast = _V3d.Handle_V3d_ColorScaleLayerItem_DownCast
 
@@ -727,49 +727,49 @@ class V3d_LayerMgr(OCC.MMgt.MMgt_TShared):
 
         """
         _V3d.V3d_LayerMgr_swiginit(self,_V3d.new_V3d_LayerMgr(*args))
-    def Overlay(self, *args):
+    def Overlay(self, *args) -> "Handle_Visual3d_Layer const &" :
         """
         :rtype: Handle_Visual3d_Layer
 
         """
         return _V3d.V3d_LayerMgr_Overlay(self, *args)
 
-    def View(self, *args):
+    def View(self, *args) -> "Handle_V3d_View" :
         """
         :rtype: Handle_V3d_View
 
         """
         return _V3d.V3d_LayerMgr_View(self, *args)
 
-    def ColorScaleDisplay(self, *args):
+    def ColorScaleDisplay(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_LayerMgr_ColorScaleDisplay(self, *args)
 
-    def ColorScaleErase(self, *args):
+    def ColorScaleErase(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_LayerMgr_ColorScaleErase(self, *args)
 
-    def ColorScaleIsDisplayed(self, *args):
+    def ColorScaleIsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _V3d.V3d_LayerMgr_ColorScaleIsDisplayed(self, *args)
 
-    def ColorScale(self, *args):
+    def ColorScale(self, *args) -> "Handle_Aspect_ColorScale" :
         """
         :rtype: Handle_Aspect_ColorScale
 
         """
         return _V3d.V3d_LayerMgr_ColorScale(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Recompute layer with objects
 
@@ -778,18 +778,18 @@ class V3d_LayerMgr(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_LayerMgr_Compute(self, *args)
 
-    def Resized(self, *args):
+    def Resized(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_LayerMgr_Resized(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_LayerMgr self)"""
         return _V3d.V3d_LayerMgr__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_LayerMgr" :
         """GetHandle(V3d_LayerMgr self) -> Handle_V3d_LayerMgr"""
         return _V3d.V3d_LayerMgr_GetHandle(self)
 
@@ -835,7 +835,7 @@ Handle_V3d_LayerMgr._kill_pointed = new_instancemethod(_V3d.Handle_V3d_LayerMgr_
 Handle_V3d_LayerMgr_swigregister = _V3d.Handle_V3d_LayerMgr_swigregister
 Handle_V3d_LayerMgr_swigregister(Handle_V3d_LayerMgr)
 
-def Handle_V3d_LayerMgr_DownCast(*args):
+def Handle_V3d_LayerMgr_DownCast(*args) -> "Handle_V3d_LayerMgr const" :
   return _V3d.Handle_V3d_LayerMgr_DownCast(*args)
 Handle_V3d_LayerMgr_DownCast = _V3d.Handle_V3d_LayerMgr_DownCast
 
@@ -843,7 +843,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Defines the colour of a light source according to the type of colour definition and the three corresponding values.
 
@@ -872,7 +872,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_SetColor(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "Quantity_Color" :
         """
         * Returns the colour of the light source depending of //!	 the color type.
 
@@ -899,7 +899,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_Color(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "V3d_TypeOfLight" :
         """
         * Returns the Type of the Light
 
@@ -908,7 +908,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_Type(self, *args)
 
-    def Headlight(self, *args):
+    def Headlight(self, *args) -> "Standard_Boolean" :
         """
         * returns true if the light is a headlight
 
@@ -917,7 +917,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_Headlight(self, *args)
 
-    def SetHeadlight(self, *args):
+    def SetHeadlight(self, *args) -> "void" :
         """
         * Setup headlight flag.
 
@@ -928,7 +928,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_SetHeadlight(self, *args)
 
-    def IsDisplayed(self, *args):
+    def IsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when a light representation is displayed
 
@@ -937,11 +937,11 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_IsDisplayed(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_Light self)"""
         return _V3d.V3d_Light__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_Light" :
         """GetHandle(V3d_Light self) -> Handle_V3d_Light"""
         return _V3d.V3d_Light_GetHandle(self)
 
@@ -985,7 +985,7 @@ Handle_V3d_Light._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Light__kill_
 Handle_V3d_Light_swigregister = _V3d.Handle_V3d_Light_swigregister
 Handle_V3d_Light_swigregister(Handle_V3d_Light)
 
-def Handle_V3d_Light_DownCast(*args):
+def Handle_V3d_Light_DownCast(*args) -> "Handle_V3d_Light const" :
   return _V3d.Handle_V3d_Light_DownCast(*args)
 Handle_V3d_Light_DownCast = _V3d.Handle_V3d_Light_DownCast
 
@@ -998,7 +998,7 @@ class V3d_ListOfTransient(OCC.TColStd.TColStd_ListOfTransient):
 
         """
         _V3d.V3d_ListOfTransient_swiginit(self,_V3d.new_V3d_ListOfTransient(*args))
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aTransient:
         :type aTransient: Handle_Standard_Transient &
@@ -1007,7 +1007,7 @@ class V3d_ListOfTransient(OCC.TColStd.TColStd_ListOfTransient):
         """
         return _V3d.V3d_ListOfTransient_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param aTransient:
         :type aTransient: Handle_Standard_Transient &
@@ -1045,7 +1045,7 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
 
         """
         _V3d.V3d_RectangularGrid_swiginit(self,_V3d.new_V3d_RectangularGrid(*args))
-    def GraphicValues(self, *args):
+    def GraphicValues(self, *args) -> "void" :
         """
         :param XSize:
         :type XSize: float &
@@ -1058,7 +1058,7 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
         """
         return _V3d.V3d_RectangularGrid_GraphicValues(self, *args)
 
-    def SetGraphicValues(self, *args):
+    def SetGraphicValues(self, *args) -> "void" :
         """
         :param XSize:
         :type XSize: float
@@ -1071,11 +1071,11 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
         """
         return _V3d.V3d_RectangularGrid_SetGraphicValues(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_RectangularGrid self)"""
         return _V3d.V3d_RectangularGrid__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_RectangularGrid" :
         """GetHandle(V3d_RectangularGrid self) -> Handle_V3d_RectangularGrid"""
         return _V3d.V3d_RectangularGrid_GetHandle(self)
 
@@ -1115,7 +1115,7 @@ Handle_V3d_RectangularGrid._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Re
 Handle_V3d_RectangularGrid_swigregister = _V3d.Handle_V3d_RectangularGrid_swigregister
 Handle_V3d_RectangularGrid_swigregister(Handle_V3d_RectangularGrid)
 
-def Handle_V3d_RectangularGrid_DownCast(*args):
+def Handle_V3d_RectangularGrid_DownCast(*args) -> "Handle_V3d_RectangularGrid const" :
   return _V3d.Handle_V3d_RectangularGrid_DownCast(*args)
 Handle_V3d_RectangularGrid_DownCast = _V3d.Handle_V3d_RectangularGrid_DownCast
 
@@ -1144,7 +1144,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
 
         """
         _V3d.V3d_View_swiginit(self,_V3d.new_V3d_View(*args))
-    def SetWindow(self, *args):
+    def SetWindow(self, *args) -> "void" :
         """
         * Activates the view in the window specified and Map the Window to the screen. Warning! raises MultiplyDefined from Standard if the view is already activated in a window. Warning: The view is centered and resized to preserve the height/width ratio of the window.
 
@@ -1167,7 +1167,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetWindow(self, *args)
 
-    def SetMagnify(self, *args):
+    def SetMagnify(self, *args) -> "void" :
         """
         :param IdWin:
         :type IdWin: Handle_Aspect_Window &
@@ -1186,7 +1186,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetMagnify(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Destroys the view.
 
@@ -1195,7 +1195,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Remove(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Deprecated, Redraw() should be used instead.
 
@@ -1204,7 +1204,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Update(self, *args)
 
-    def Redraw(self, *args):
+    def Redraw(self, *args) -> "void" :
         """
         * Redisplays the view even if there has not been any modification. Must be called if the view is shown. (Ex: DeIconification ) .
 
@@ -1225,7 +1225,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Redraw(self, *args)
 
-    def MustBeResized(self, *args):
+    def MustBeResized(self, *args) -> "void" :
         """
         * Must be called when the window supporting the view changes size. if the view is not mapped on a window. Warning: The view is centered and resized to preserve the height/width ratio of the window.
 
@@ -1234,7 +1234,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_MustBeResized(self, *args)
 
-    def DoMapping(self, *args):
+    def DoMapping(self, *args) -> "void" :
         """
         * Must be called when the window supporting the view is mapped or unmapped.
 
@@ -1243,7 +1243,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_DoMapping(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of the view regarding the displayed structures inside Returns True is The View is empty
 
@@ -1252,7 +1252,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IsEmpty(self, *args)
 
-    def UpdateLights(self, *args):
+    def UpdateLights(self, *args) -> "void" :
         """
         * Updates the lights of the view. The view is redrawn.
 
@@ -1261,7 +1261,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_UpdateLights(self, *args)
 
-    def SetBackgroundColor(self, *args):
+    def SetBackgroundColor(self, *args) -> "void" :
         """
         * Defines the background colour of the view by supplying : the colour definition type, and the three corresponding values.
 
@@ -1290,7 +1290,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackgroundColor(self, *args)
 
-    def SetBgGradientColors(self, *args):
+    def SetBgGradientColors(self, *args) -> "void" :
         """
         * Defines the gradient background colours of the view by supplying : two colour objects, and fill method (horizontal by default)
 
@@ -1319,7 +1319,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBgGradientColors(self, *args)
 
-    def SetBgGradientStyle(self, *args):
+    def SetBgGradientStyle(self, *args) -> "void" :
         """
         * Defines the gradient background fill method of the view
 
@@ -1332,7 +1332,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBgGradientStyle(self, *args)
 
-    def SetBackgroundImage(self, *args):
+    def SetBackgroundImage(self, *args) -> "void" :
         """
         * Defines the background texture of the view  by supplying :  texture image file name,  and fill method (centered by default)
 
@@ -1347,7 +1347,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackgroundImage(self, *args)
 
-    def SetBgImageStyle(self, *args):
+    def SetBgImageStyle(self, *args) -> "void" :
         """
         * Defines the textured background fill method of the view
 
@@ -1360,7 +1360,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBgImageStyle(self, *args)
 
-    def SetAxis(self, *args):
+    def SetAxis(self, *args) -> "void" :
         """
         * Definition of an axis from its origin and its orientation . This will be the current axis for rotations and movements. Warning! raises BadValue from V3d if the vector normal is NULL. .
 
@@ -1381,7 +1381,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAxis(self, *args)
 
-    def SetShadingModel(self, *args):
+    def SetShadingModel(self, *args) -> "void" :
         """
         * Defines the shading model for the visualisation ZBUFFER mode. Various models are available.
 
@@ -1392,7 +1392,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetShadingModel(self, *args)
 
-    def SetSurfaceDetail(self, *args):
+    def SetSurfaceDetail(self, *args) -> "void" :
         """
         * select the kind of rendering for texture mapping no texture mapping by default
 
@@ -1403,7 +1403,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetSurfaceDetail(self, *args)
 
-    def SetTextureEnv(self, *args):
+    def SetTextureEnv(self, *args) -> "void" :
         """
         * set the environment texture to use no environment texture by default
 
@@ -1414,7 +1414,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTextureEnv(self, *args)
 
-    def SetVisualization(self, *args):
+    def SetVisualization(self, *args) -> "void" :
         """
         * Defines the visualisation mode in the view.
 
@@ -1425,7 +1425,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetVisualization(self, *args)
 
-    def SetAntialiasingOn(self, *args):
+    def SetAntialiasingOn(self, *args) -> "void" :
         """
         * Activates antialiasing in the view.
 
@@ -1434,7 +1434,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAntialiasingOn(self, *args)
 
-    def SetAntialiasingOff(self, *args):
+    def SetAntialiasingOff(self, *args) -> "void" :
         """
         * Desactivates antialiasing in the view.
 
@@ -1443,7 +1443,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAntialiasingOff(self, *args)
 
-    def SetZClippingDepth(self, *args):
+    def SetZClippingDepth(self, *args) -> "void" :
         """
         * Defines the depth of the medium clipping plane.
 
@@ -1454,7 +1454,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingDepth(self, *args)
 
-    def SetZClippingWidth(self, *args):
+    def SetZClippingWidth(self, *args) -> "void" :
         """
         * Defines the thicknes around the medium clippling plane. .
 
@@ -1465,7 +1465,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingWidth(self, *args)
 
-    def SetZClippingType(self, *args):
+    def SetZClippingType(self, *args) -> "void" :
         """
         * Defines the type of ZClipping.
 
@@ -1476,7 +1476,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingType(self, *args)
 
-    def SetZCueingDepth(self, *args):
+    def SetZCueingDepth(self, *args) -> "void" :
         """
         * Defines the depth of the medium plane.
 
@@ -1487,7 +1487,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingDepth(self, *args)
 
-    def SetZCueingWidth(self, *args):
+    def SetZCueingWidth(self, *args) -> "void" :
         """
         * Defines the thickness around the medium plane.
 
@@ -1498,7 +1498,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingWidth(self, *args)
 
-    def SetZCueingOn(self, *args):
+    def SetZCueingOn(self, *args) -> "void" :
         """
         * Activates ZCueing in the view.
 
@@ -1507,7 +1507,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingOn(self, *args)
 
-    def SetZCueingOff(self, *args):
+    def SetZCueingOff(self, *args) -> "void" :
         """
         * Desactivates ZCueing in the view.
 
@@ -1516,7 +1516,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingOff(self, *args)
 
-    def SetLightOn(self, *args):
+    def SetLightOn(self, *args) -> "void" :
         """
         * Activates MyLight in the view.
 
@@ -1531,7 +1531,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLightOn(self, *args)
 
-    def SetLightOff(self, *args):
+    def SetLightOff(self, *args) -> "void" :
         """
         * Desactivate MyLight in this view.
 
@@ -1546,7 +1546,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLightOff(self, *args)
 
-    def IsActiveLight(self, *args):
+    def IsActiveLight(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when the light is active in this view.
 
@@ -1557,7 +1557,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IsActiveLight(self, *args)
 
-    def SetTransparency(self, *args):
+    def SetTransparency(self, *args) -> "void" :
         """
         * Activate/Deactivate the transparency in this view.
 
@@ -1568,7 +1568,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTransparency(self, *args)
 
-    def SetImmediateUpdate(self, *args):
+    def SetImmediateUpdate(self, *args) -> "Standard_Boolean" :
         """
         * sets the immediate update mode and returns the previous one.
 
@@ -1579,7 +1579,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetImmediateUpdate(self, *args)
 
-    def ZBufferTriedronSetup(self, *args):
+    def ZBufferTriedronSetup(self, *args) -> "void" :
         """
         * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
 
@@ -1600,7 +1600,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZBufferTriedronSetup(self, *args)
 
-    def TriedronDisplay(self, *args):
+    def TriedronDisplay(self, *args) -> "void" :
         """
         * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
 
@@ -1617,7 +1617,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TriedronDisplay(self, *args)
 
-    def TriedronErase(self, *args):
+    def TriedronErase(self, *args) -> "void" :
         """
         * Erases the Triedron.
 
@@ -1626,7 +1626,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TriedronErase(self, *args)
 
-    def TriedronEcho(self, *args):
+    def TriedronEcho(self, *args) -> "void" :
         """
         * Highlights the echo zone of the Triedron.
 
@@ -1637,7 +1637,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TriedronEcho(self, *args)
 
-    def GetGraduatedTrihedron(self, *args):
+    def GetGraduatedTrihedron(self, *args) -> "void" :
         """
         * Returns data of a graduated trihedron.
 
@@ -1724,7 +1724,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GetGraduatedTrihedron(self, *args)
 
-    def GraduatedTrihedronDisplay(self, *args):
+    def GraduatedTrihedronDisplay(self, *args) -> "void" :
         """
         * Displays a graduated trihedron.
 
@@ -1811,7 +1811,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GraduatedTrihedronDisplay(self, *args)
 
-    def GraduatedTrihedronErase(self, *args):
+    def GraduatedTrihedronErase(self, *args) -> "void" :
         """
         * Erases a graduated trihedron from the view.
 
@@ -1820,7 +1820,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GraduatedTrihedronErase(self, *args)
 
-    def SetLayerMgr(self, *args):
+    def SetLayerMgr(self, *args) -> "void" :
         """
         :param aMgr:
         :type aMgr: Handle_V3d_LayerMgr &
@@ -1829,35 +1829,35 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLayerMgr(self, *args)
 
-    def ColorScaleDisplay(self, *args):
+    def ColorScaleDisplay(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_View_ColorScaleDisplay(self, *args)
 
-    def ColorScaleErase(self, *args):
+    def ColorScaleErase(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _V3d.V3d_View_ColorScaleErase(self, *args)
 
-    def ColorScaleIsDisplayed(self, *args):
+    def ColorScaleIsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _V3d.V3d_View_ColorScaleIsDisplayed(self, *args)
 
-    def ColorScale(self, *args):
+    def ColorScale(self, *args) -> "Handle_Aspect_ColorScale" :
         """
         :rtype: Handle_Aspect_ColorScale
 
         """
         return _V3d.V3d_View_ColorScale(self, *args)
 
-    def SetFront(self, *args):
+    def SetFront(self, *args) -> "void" :
         """
         * modify the Projection of the view perpendicularly to the privileged plane of the viewer.
 
@@ -1866,7 +1866,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetFront(self, *args)
 
-    def Rotate(self, *args):
+    def Rotate(self, *args) -> "void" :
         """
         * Rotates the eye about the coordinate system of reference of the screen for which the origin is the view point of the projection, with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True Warning! raises BadValue from V3d If the eye, the view point, or the high point are aligned or confused.
 
@@ -1935,7 +1935,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Rotate(self, *args)
 
-    def Move(self, *args):
+    def Move(self, *args) -> "void" :
         """
         * Movement of the eye parallel to the coordinate system of reference of the screen a distance relative to the initial position expressed by Start = Standard_True.
 
@@ -1970,7 +1970,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Move(self, *args)
 
-    def Translate(self, *args):
+    def Translate(self, *args) -> "void" :
         """
         * Movement of the ye and the view point parallel to the frame of reference of the screen a distance relative to the initial position expressed by Start = Standard_True
 
@@ -2005,7 +2005,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Translate(self, *args)
 
-    def Place(self, *args):
+    def Place(self, *args) -> "void" :
         """
         * places the point of the view corresponding at the pixel position x,y at the center of the window and updates the view.
 
@@ -2020,7 +2020,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Place(self, *args)
 
-    def Turn(self, *args):
+    def Turn(self, *args) -> "void" :
         """
         * Rotation of the view point around the frame of reference of the screen for which the origin is the eye of the projection with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
 
@@ -2055,7 +2055,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Turn(self, *args)
 
-    def SetTwist(self, *args):
+    def SetTwist(self, *args) -> "void" :
         """
         * Defines the angular position of the high point of the reference frame of the view with respect to the Y screen axis with an absolute angular value in RADIANS.
 
@@ -2066,7 +2066,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTwist(self, *args)
 
-    def SetEye(self, *args):
+    def SetEye(self, *args) -> "void" :
         """
         * Defines the position of the eye..
 
@@ -2081,7 +2081,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetEye(self, *args)
 
-    def SetDepth(self, *args):
+    def SetDepth(self, *args) -> "void" :
         """
         * Defines the Depth of the eye from the view point without update the projection .
 
@@ -2092,7 +2092,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetDepth(self, *args)
 
-    def SetProj(self, *args):
+    def SetProj(self, *args) -> "void" :
         """
         * Defines the orientation of the projection.
 
@@ -2113,7 +2113,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetProj(self, *args)
 
-    def SetAt(self, *args):
+    def SetAt(self, *args) -> "void" :
         """
         * Defines the position of the view point.
 
@@ -2128,7 +2128,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAt(self, *args)
 
-    def SetUp(self, *args):
+    def SetUp(self, *args) -> "void" :
         """
         * Defines the orientation of the high point.
 
@@ -2149,7 +2149,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetUp(self, *args)
 
-    def SetViewOrientation(self, *args):
+    def SetViewOrientation(self, *args) -> "void" :
         """
         * Modifies the orientation of the view.
 
@@ -2160,7 +2160,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewOrientation(self, *args)
 
-    def SetViewOrientationDefault(self, *args):
+    def SetViewOrientationDefault(self, *args) -> "void" :
         """
         * Saves the current state of the orientation of the view which will be the return state at ResetViewOrientation.
 
@@ -2169,7 +2169,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewOrientationDefault(self, *args)
 
-    def ResetViewOrientation(self, *args):
+    def ResetViewOrientation(self, *args) -> "void" :
         """
         * Resets the orientation of the view. Updates the view
 
@@ -2178,7 +2178,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ResetViewOrientation(self, *args)
 
-    def Panning(self, *args):
+    def Panning(self, *args) -> "void" :
         """
         * translates the center of the view and zooms the view. Updates the view.
 
@@ -2195,7 +2195,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Panning(self, *args)
 
-    def SetCenter(self, *args):
+    def SetCenter(self, *args) -> "void" :
         """
         * Defines the centre of the view. Updates the view.
 
@@ -2216,7 +2216,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetCenter(self, *args)
 
-    def SetSize(self, *args):
+    def SetSize(self, *args) -> "void" :
         """
         * Defines the size of the view while preserving the center and height/width ratio of the window supporting the view. NOTE than the Depth of the View is NOT modified .
 
@@ -2227,7 +2227,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetSize(self, *args)
 
-    def SetZSize(self, *args):
+    def SetZSize(self, *args) -> "void" :
         """
         * Defines the Depth size of the view Front Plane will be set to Size/2. Back Plane will be set to -Size/2. Any Object located Above the Front Plane or  behind the Back Plane will be Clipped . NOTE than the XY Size of the View is NOT modified .
 
@@ -2238,7 +2238,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZSize(self, *args)
 
-    def SetZoom(self, *args):
+    def SetZoom(self, *args) -> "void" :
         """
         * Zooms the view by a factor relative to the initial value expressed by Start = Standard_True Updates the view.
 
@@ -2251,7 +2251,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZoom(self, *args)
 
-    def SetScale(self, *args):
+    def SetScale(self, *args) -> "void" :
         """
         * Zooms the view by a factor relative to the value initialised by SetViewMappingDefault(). Updates the view.
 
@@ -2262,7 +2262,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetScale(self, *args)
 
-    def SetAxialScale(self, *args):
+    def SetAxialScale(self, *args) -> "void" :
         """
         * Sets anisotropic (axial) scale factors <Sx>, <Sy>, <Sz> for view <self>. Anisotropic scaling operation is performed through multiplying the current view orientation matrix by a scaling matrix: || Sx 0 0 0 || || 0 Sy 0 0 || || 0 0 Sz 0 || || 0 0 0 1 || Updates the view.
 
@@ -2277,7 +2277,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAxialScale(self, *args)
 
-    def ZFitAll(self, *args):
+    def ZFitAll(self, *args) -> "void" :
         """
         * Automatic Depth Panning. Objects visible in the view are visualised so as to occupy the maximum Z amount of space while respecting the margin coefficient . NOTE than the original XY size of the view is NOT modified .
 
@@ -2288,7 +2288,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZFitAll(self, *args)
 
-    def DepthFitAll(self, *args):
+    def DepthFitAll(self, *args) -> "void" :
         """
         * Adjusts the viewing volume so as not to clip the displayed objects by front and back and back clipping planes. Also sets depth value automatically depending on the calculated Z size and Aspect parameter. NOTE than the original XY size of the view is NOT modified .
 
@@ -2301,7 +2301,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_DepthFitAll(self, *args)
 
-    def FitAll(self, *args):
+    def FitAll(self, *args) -> "void" :
         """
         * Automatic zoom/panning. Objects in the view are visualised so as to occupy the maximum space while respecting the margin coefficient and the initial height /width ratio. NOTE than the original Z size of the view is NOT modified .
 
@@ -2328,7 +2328,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_FitAll(self, *args)
 
-    def WindowFit(self, *args):
+    def WindowFit(self, *args) -> "void" :
         """
         * Centres the defined PIXEL window so that it occupies the maximum space while respecting the initial height/width ratio. NOTE than the original Z size of the view is NOT modified .
 
@@ -2345,7 +2345,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_WindowFit(self, *args)
 
-    def SetViewingVolume(self, *args):
+    def SetViewingVolume(self, *args) -> "void" :
         """
         * Sets Z and XY size of the view according to given values with respecting the initial view depth (eye position). Width/heigth aspect ratio should be preserved by the caller of this method similarly to SetSize() to avoid unexpected visual results like non-uniform scaling of objects in the view.
 
@@ -2366,7 +2366,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewingVolume(self, *args)
 
-    def SetViewMapping(self, *args):
+    def SetViewMapping(self, *args) -> "void" :
         """
         * Modifies the mapping of the view.
 
@@ -2377,7 +2377,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewMapping(self, *args)
 
-    def SetViewMappingDefault(self, *args):
+    def SetViewMappingDefault(self, *args) -> "void" :
         """
         * Saves the current view mapping. This will be the state returned from ResetViewmapping.
 
@@ -2386,7 +2386,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewMappingDefault(self, *args)
 
-    def ResetViewMapping(self, *args):
+    def ResetViewMapping(self, *args) -> "void" :
         """
         * Resets the centring of the view. Updates the view
 
@@ -2395,7 +2395,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ResetViewMapping(self, *args)
 
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Resets the centring and the orientation of the view Updates the view
 
@@ -2406,7 +2406,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Reset(self, *args)
 
-    def ConvertWithProj(self, *args):
+    def ConvertWithProj(self, *args) -> "void" :
         """
         * Converts the projected point into a point in the reference frame of the view corresponding to the intersection with the projection plane of the eye/view point vector and returns the projection ray for further computations.
 
@@ -2431,7 +2431,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ConvertWithProj(self, *args)
 
-    def ConvertToGrid(self, *args):
+    def ConvertToGrid(self, *args) -> "void" :
         """
         * Converts the projected point into the nearest grid point in the reference frame of the view corresponding to the intersection with the projection plane of the eye/view point vector and display the grid marker. Warning: When the grid is not active the result is identical to the above Convert() method. How to use : 1) Enable the grid echo display myViewer->SetGridEcho(Standard_True); 2) When application receive a move event : 2.1) Check if any object is detected if( myInteractiveContext->MoveTo(x,y) == AIS_SOD_Nothing ) { 2.2) Check if the grid is active if( myViewer->Grid()->IsActive() ) { 2.3) Display the grid echo and gets the grid point myView->ConvertToGrid(x,y,X,Y,Z); 2.4) Else this is the standard case } else myView->Convert(x,y,X,Y,Z);
 
@@ -2466,7 +2466,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ConvertToGrid(self, *args)
 
-    def Convert(self, *args):
+    def Convert(self, *args) -> "void" :
         """
         * Converts the PIXEL value to a value in the projection plane.
 
@@ -2535,7 +2535,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Convert(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         * Converts the point defined in the user space of the view to the projected view plane point at z 0.
 
@@ -2554,7 +2554,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Project(self, *args)
 
-    def BackgroundColor(self, *args):
+    def BackgroundColor(self, *args) -> "Quantity_Color" :
         """
         * Returns the Background color values of the view depending of the color Type.
 
@@ -2575,7 +2575,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_BackgroundColor(self, *args)
 
-    def GradientBackgroundColors(self, *args):
+    def GradientBackgroundColors(self, *args) -> "void" :
         """
         * Returns the gradient background colour objects of the view.
 
@@ -2588,7 +2588,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GradientBackgroundColors(self, *args)
 
-    def GradientBackground(self, *args):
+    def GradientBackground(self, *args) -> "Aspect_GradientBackground" :
         """
         * Returns the gradient background of the view.
 
@@ -2597,7 +2597,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GradientBackground(self, *args)
 
-    def Scale(self, *args):
+    def Scale(self, *args) -> "Quantity_Factor" :
         """
         * Returns the current value of the zoom expressed with respect to SetViewMappingDefault().
 
@@ -2606,7 +2606,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Scale(self, *args)
 
-    def Center(self, *args):
+    def Center(self, *args) -> "void" :
         """
         * Returns the centre of the view.
 
@@ -2619,7 +2619,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Center(self, *args)
 
-    def Size(self, *args):
+    def Size(self, *args) -> "void" :
         """
         * Returns the height and width of the view.
 
@@ -2632,7 +2632,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Size(self, *args)
 
-    def ZSize(self, *args):
+    def ZSize(self, *args) -> "Standard_Real" :
         """
         * Returns the Depth of the view .
 
@@ -2641,7 +2641,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZSize(self, *args)
 
-    def Eye(self, *args):
+    def Eye(self, *args) -> "void" :
         """
         * Returns the position of the eye.
 
@@ -2656,7 +2656,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Eye(self, *args)
 
-    def FocalReferencePoint(self, *args):
+    def FocalReferencePoint(self, *args) -> "void" :
         """
         * Returns the position of point which emanating the projections.
 
@@ -2671,7 +2671,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_FocalReferencePoint(self, *args)
 
-    def ProjReferenceAxe(self, *args):
+    def ProjReferenceAxe(self, *args) -> "void" :
         """
         * Returns the coordinate of the point (Xpix,Ypix) in the view (XP,YP,ZP), and the projection vector of the view passing by the point (for PerspectiveView).
 
@@ -2696,7 +2696,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ProjReferenceAxe(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Quantity_Length" :
         """
         * Returns the Distance between the Eye and View Point.
 
@@ -2705,7 +2705,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Depth(self, *args)
 
-    def Proj(self, *args):
+    def Proj(self, *args) -> "void" :
         """
         * Returns the projection vector.
 
@@ -2720,7 +2720,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Proj(self, *args)
 
-    def At(self, *args):
+    def At(self, *args) -> "void" :
         """
         * Returns the position of the view point.
 
@@ -2735,7 +2735,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_At(self, *args)
 
-    def Up(self, *args):
+    def Up(self, *args) -> "void" :
         """
         * Returns the vector giving the position of the high point.
 
@@ -2750,7 +2750,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Up(self, *args)
 
-    def Twist(self, *args):
+    def Twist(self, *args) -> "Quantity_PlaneAngle" :
         """
         * Returns in RADIANS the orientation of the view around the visual axis measured from the Y axis of the screen.
 
@@ -2759,7 +2759,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Twist(self, *args)
 
-    def ShadingModel(self, *args):
+    def ShadingModel(self, *args) -> "V3d_TypeOfShadingModel" :
         """
         * Returns the current shading model.
 
@@ -2768,21 +2768,21 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ShadingModel(self, *args)
 
-    def SurfaceDetail(self, *args):
+    def SurfaceDetail(self, *args) -> "V3d_TypeOfSurfaceDetail" :
         """
         :rtype: V3d_TypeOfSurfaceDetail
 
         """
         return _V3d.V3d_View_SurfaceDetail(self, *args)
 
-    def TextureEnv(self, *args):
+    def TextureEnv(self, *args) -> "Handle_Graphic3d_TextureEnv" :
         """
         :rtype: Handle_Graphic3d_TextureEnv
 
         """
         return _V3d.V3d_View_TextureEnv(self, *args)
 
-    def Transparency(self, *args):
+    def Transparency(self, *args) -> "Standard_Boolean" :
         """
         * Returns the transparency activity.
 
@@ -2791,7 +2791,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Transparency(self, *args)
 
-    def Visualization(self, *args):
+    def Visualization(self, *args) -> "V3d_TypeOfVisualization" :
         """
         * Returns the current visualisation mode.
 
@@ -2800,7 +2800,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Visualization(self, *args)
 
-    def Antialiasing(self, *args):
+    def Antialiasing(self, *args) -> "Standard_Boolean" :
         """
         * Indicates if the antialiasing is active (True) or inactive (False).
 
@@ -2809,7 +2809,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Antialiasing(self, *args)
 
-    def ZCueing(self, *args):
+    def ZCueing(self, *args) -> "Standard_Boolean" :
         """
         * Returns activity and information on the Zcueing. <Depth> : Depth of plane. <Width> : Thickness around the plane.
 
@@ -2822,7 +2822,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZCueing(self, *args)
 
-    def ZClipping(self, *args):
+    def ZClipping(self, *args) -> "V3d_TypeOfZclipping" :
         """
         * Returns current information on the ZClipping. <Depth> : Depth of plane. <Width> : Thickness around the plane. <TypeOfZclipping> : 'BACK'  'FRONT'  'SLICE'  'OFF'
 
@@ -2835,7 +2835,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZClipping(self, *args)
 
-    def IfMoreLights(self, *args):
+    def IfMoreLights(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if One light more can be activated in this View.
 
@@ -2844,7 +2844,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IfMoreLights(self, *args)
 
-    def InitActiveLights(self, *args):
+    def InitActiveLights(self, *args) -> "void" :
         """
         * initializes an iteration on the active Lights.
 
@@ -2853,7 +2853,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_InitActiveLights(self, *args)
 
-    def MoreActiveLights(self, *args):
+    def MoreActiveLights(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there are more active Light(s) to return.
 
@@ -2862,7 +2862,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_MoreActiveLights(self, *args)
 
-    def NextActiveLights(self, *args):
+    def NextActiveLights(self, *args) -> "void" :
         """
         * Go to the next active Light (if there is not, ActiveLight will raise an exception)
 
@@ -2871,14 +2871,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_NextActiveLights(self, *args)
 
-    def ActiveLight(self, *args):
+    def ActiveLight(self, *args) -> "Handle_V3d_Light" :
         """
         :rtype: Handle_V3d_Light
 
         """
         return _V3d.V3d_View_ActiveLight(self, *args)
 
-    def Viewer(self, *args):
+    def Viewer(self, *args) -> "Handle_V3d_Viewer" :
         """
         * Returns the viewer in which the view has been created.
 
@@ -2887,7 +2887,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Viewer(self, *args)
 
-    def IfWindow(self, *args):
+    def IfWindow(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if MyView is associated with a window .
 
@@ -2896,7 +2896,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IfWindow(self, *args)
 
-    def Window(self, *args):
+    def Window(self, *args) -> "Handle_Aspect_Window" :
         """
         * Returns the Aspect Window associated with the view.
 
@@ -2905,7 +2905,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Window(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "V3d_TypeOfView" :
         """
         * Returns the Type of the View
 
@@ -2914,7 +2914,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Type(self, *args)
 
-    def Pan(self, *args):
+    def Pan(self, *args) -> "void" :
         """
         * translates the center of the view and zooms the view. and updates the view.
 
@@ -2929,7 +2929,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Pan(self, *args)
 
-    def Zoom(self, *args):
+    def Zoom(self, *args) -> "void" :
         """
         * Zoom the view according to a zoom factor computed from the distance between the 2 mouse position <X1,Y1>,<X2,Y2>
 
@@ -2954,7 +2954,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Zoom(self, *args)
 
-    def StartZoomAtPoint(self, *args):
+    def StartZoomAtPoint(self, *args) -> "void" :
         """
         * Defines the point (pixel) of zooming (for the method ZoomAtPoint()).
 
@@ -2967,7 +2967,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_StartZoomAtPoint(self, *args)
 
-    def ZoomAtPoint(self, *args):
+    def ZoomAtPoint(self, *args) -> "void" :
         """
         * Zooms the model at a pixel defined by the method StartZoomAtPoint().
 
@@ -2984,7 +2984,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ZoomAtPoint(self, *args)
 
-    def AxialScale(self, *args):
+    def AxialScale(self, *args) -> "void" :
         """
         * Returns the current values of the anisotropic (axial) scale factors.
 
@@ -3009,7 +3009,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_AxialScale(self, *args)
 
-    def StartRotation(self, *args):
+    def StartRotation(self, *args) -> "void" :
         """
         * Begin the rotation of the view arround the screen axis according to the mouse position <X,Y>. Warning: Enable rotation around the Z screen axis when <zRotationThreshold> factor is > 0 soon the distance from the start point and the center of the view is > (medium viewSize * <zRotationThreshold> ). Generally a value of 0.4 is usable to rotate around XY screen axis inside the circular treshold area and to rotate around Z screen axis outside this area.
 
@@ -3024,7 +3024,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_StartRotation(self, *args)
 
-    def Rotation(self, *args):
+    def Rotation(self, *args) -> "void" :
         """
         * Continues the rotation of the view with an angle computed from the last and new mouse position <X,Y>.
 
@@ -3037,7 +3037,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Rotation(self, *args)
 
-    def SetFocale(self, *args):
+    def SetFocale(self, *args) -> "void" :
         """
         * Change View Plane Distance for Perspective Views Warning! raises TypeMismatch from Standard if the view is not a perspective view.
 
@@ -3048,7 +3048,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetFocale(self, *args)
 
-    def Focale(self, *args):
+    def Focale(self, *args) -> "Quantity_Length" :
         """
         * Returns the View Plane Distance for Perspective Views
 
@@ -3057,7 +3057,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Focale(self, *args)
 
-    def View(self, *args):
+    def View(self, *args) -> "Handle_Visual3d_View" :
         """
         * Returns the associated Visual3d view.
 
@@ -3066,7 +3066,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_View(self, *args)
 
-    def ViewMapping(self, *args):
+    def ViewMapping(self, *args) -> "Visual3d_ViewMapping" :
         """
         * Returns the current mapping of the view.
 
@@ -3075,7 +3075,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ViewMapping(self, *args)
 
-    def ViewOrientation(self, *args):
+    def ViewOrientation(self, *args) -> "Visual3d_ViewOrientation" :
         """
         * Returns the current orientation of the view.
 
@@ -3084,7 +3084,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ViewOrientation(self, *args)
 
-    def TransientManagerBeginDraw(self, *args):
+    def TransientManagerBeginDraw(self, *args) -> "Standard_Boolean" :
         """
         * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ...
 
@@ -3097,7 +3097,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TransientManagerBeginDraw(self, *args)
 
-    def TransientManagerClearDraw(self, *args):
+    def TransientManagerClearDraw(self, *args) -> "void" :
         """
         * Clear all transient graphics in the view <aView>
 
@@ -3106,7 +3106,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TransientManagerClearDraw(self, *args)
 
-    def TransientManagerBeginAddDraw(self, *args):
+    def TransientManagerBeginAddDraw(self, *args) -> "Standard_Boolean" :
         """
         * Begins any add graphics in the view <aView> Redraw any structured graphics in the back buffer before the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in  the associated view. Returns False ,if nothing works because something  is wrong for the transient principle :
 
@@ -3115,7 +3115,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TransientManagerBeginAddDraw(self, *args)
 
-    def SetComputedMode(self, *args):
+    def SetComputedMode(self, *args) -> "void" :
         """
         * Switches computed HLR mode in the view
 
@@ -3126,7 +3126,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetComputedMode(self, *args)
 
-    def ComputedMode(self, *args):
+    def ComputedMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the computed HLR mode state
 
@@ -3135,7 +3135,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ComputedMode(self, *args)
 
-    def WindowFitAll(self, *args):
+    def WindowFitAll(self, *args) -> "void" :
         """
         * idem than WindowFit
 
@@ -3152,7 +3152,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_WindowFitAll(self, *args)
 
-    def SetPlotter(self, *args):
+    def SetPlotter(self, *args) -> "void" :
         """
         * Set a plotter for plotting the contents of the view field MyPlotter
 
@@ -3163,7 +3163,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetPlotter(self, *args)
 
-    def Plot(self, *args):
+    def Plot(self, *args) -> "void" :
         """
         * Create a 2D View for plotting the contents of the view
 
@@ -3172,7 +3172,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Plot(self, *args)
 
-    def SetGrid(self, *args):
+    def SetGrid(self, *args) -> "void" :
         """
         * Defines or Updates the definition of the grid in <self>
 
@@ -3185,7 +3185,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGrid(self, *args)
 
-    def SetGridGraphicValues(self, *args):
+    def SetGridGraphicValues(self, *args) -> "void" :
         """
         * Defines or Updates the graphic definition of the grid in <self>
 
@@ -3196,7 +3196,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGridGraphicValues(self, *args)
 
-    def SetGridActivity(self, *args):
+    def SetGridActivity(self, *args) -> "void" :
         """
         * Defines or Updates the activity of the grid in <self>
 
@@ -3207,7 +3207,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGridActivity(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "Standard_Boolean" :
         """
         * dump the full contents of the view at the same scale in the file <theFile>. The file name extension must be one of '.png','.bmp','.jpg','.gif'. Returns False when the dump has failed
 
@@ -3220,7 +3220,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Dump(self, *args)
 
-    def ToPixMap(self, *args):
+    def ToPixMap(self, *args) -> "Standard_Boolean" :
         """
         * dump the full contents of the view to a pixmap of pixel size <theWidth>*<theHeight> and buffer type <theBufferType>. If <theForceCentered> is true view scene will be centered. Pixmap will be automatically (re)allocated when needed.
 
@@ -3239,7 +3239,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ToPixMap(self, *args)
 
-    def SetProjModel(self, *args):
+    def SetProjModel(self, *args) -> "void" :
         """
         * Manages projection model
 
@@ -3250,7 +3250,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetProjModel(self, *args)
 
-    def ProjModel(self, *args):
+    def ProjModel(self, *args) -> "V3d_TypeOfProjectionModel" :
         """
         * Returns the current projection model
 
@@ -3259,7 +3259,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ProjModel(self, *args)
 
-    def SetBackFacingModel(self, *args):
+    def SetBackFacingModel(self, *args) -> "void" :
         """
         * Manages display of the back faces When <aModel> is TOBM_AUTOMATIC the object backfaces are displayed only for surface objects and never displayed for solid objects. this was the previous mode. <aModel> is TOBM_ALWAYS_DISPLAYED the object backfaces are always displayed both for surfaces or solids. <aModel> is TOBM_NEVER_DISPLAYED the object backfaces are never displayed.
 
@@ -3270,7 +3270,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackFacingModel(self, *args)
 
-    def BackFacingModel(self, *args):
+    def BackFacingModel(self, *args) -> "V3d_TypeOfBackfacingModel" :
         """
         * Returns current state of the back faces display
 
@@ -3279,7 +3279,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_BackFacingModel(self, *args)
 
-    def EnableDepthTest(self, *args):
+    def EnableDepthTest(self, *args) -> "void" :
         """
         * turns on/off opengl depth testing
 
@@ -3290,7 +3290,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableDepthTest(self, *args)
 
-    def IsDepthTestEnabled(self, *args):
+    def IsDepthTestEnabled(self, *args) -> "Standard_Boolean" :
         """
         * returns the current state of the depth testing
 
@@ -3299,7 +3299,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IsDepthTestEnabled(self, *args)
 
-    def EnableGLLight(self, *args):
+    def EnableGLLight(self, *args) -> "void" :
         """
         * turns on/off opengl lighting, currently used in triedron displaying
 
@@ -3310,7 +3310,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableGLLight(self, *args)
 
-    def IsGLLightEnabled(self, *args):
+    def IsGLLightEnabled(self, *args) -> "Standard_Boolean" :
         """
         * returns the current state of the gl lighting currently used in triedron displaying
 
@@ -3319,7 +3319,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IsGLLightEnabled(self, *args)
 
-    def AddClipPlane(self, *args):
+    def AddClipPlane(self, *args) -> "void" :
         """
         * Adds clip plane to the view. The composition of clip planes truncates the rendering space to convex volume. Number of supported clip planes can be consulted by PlaneLimit method of associated Visual3d_View. Please be aware that the planes which exceed the limit are igonred during rendering. @param thePlane [in] the clip plane to be added to view.
 
@@ -3330,7 +3330,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_AddClipPlane(self, *args)
 
-    def RemoveClipPlane(self, *args):
+    def RemoveClipPlane(self, *args) -> "void" :
         """
         * Removes clip plane from the view. @param thePlane [in] the clip plane to be removed from view.
 
@@ -3341,7 +3341,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_RemoveClipPlane(self, *args)
 
-    def SetClipPlanes(self, *args):
+    def SetClipPlanes(self, *args) -> "void" :
         """
         * Sets sequence of clip planes to the view. The planes that have been set before are removed from the view. The composition of clip planes truncates the rendering space to convex volume. Number of supported clip planes can be consulted by PlaneLimit method of associated Visual3d_View. Please be aware that the planes which exceed the limit are igonred during rendering. @param thePlanes [in] the clip planes to set.
 
@@ -3352,7 +3352,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetClipPlanes(self, *args)
 
-    def GetClipPlanes(self, *args):
+    def GetClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane const &" :
         """
         * Get clip planes. returns sequence clip planes that have been set for the view
 
@@ -3361,7 +3361,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GetClipPlanes(self, *args)
 
-    def SetRaytracingMode(self, *args):
+    def SetRaytracingMode(self, *args) -> "void" :
         """
         * enables OpenCL-based ray-tracing mode
 
@@ -3370,7 +3370,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetRaytracingMode(self, *args)
 
-    def SetRasterizationMode(self, *args):
+    def SetRasterizationMode(self, *args) -> "void" :
         """
         * enables OpenGL-based rasterization mode
 
@@ -3379,7 +3379,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetRasterizationMode(self, *args)
 
-    def EnableRaytracedShadows(self, *args):
+    def EnableRaytracedShadows(self, *args) -> "void" :
         """
         * enables sharp shadows in OpenCL-based ray-tracing mode
 
@@ -3388,7 +3388,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableRaytracedShadows(self, *args)
 
-    def EnableRaytracedReflections(self, *args):
+    def EnableRaytracedReflections(self, *args) -> "void" :
         """
         * enables specular reflections in OpenCL-based ray-tracing mode
 
@@ -3397,7 +3397,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableRaytracedReflections(self, *args)
 
-    def EnableRaytracedAntialiasing(self, *args):
+    def EnableRaytracedAntialiasing(self, *args) -> "void" :
         """
         * enables antialiasing in OpenCL-based ray-tracing mode
 
@@ -3406,7 +3406,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableRaytracedAntialiasing(self, *args)
 
-    def DisableRaytracedShadows(self, *args):
+    def DisableRaytracedShadows(self, *args) -> "void" :
         """
         * disables sharp shadows in OpenCL-based ray-tracing mode
 
@@ -3415,7 +3415,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_DisableRaytracedShadows(self, *args)
 
-    def DisableRaytracedReflections(self, *args):
+    def DisableRaytracedReflections(self, *args) -> "void" :
         """
         * disables specular reflections in OpenCL-based ray-tracing mode
 
@@ -3424,7 +3424,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_DisableRaytracedReflections(self, *args)
 
-    def DisableRaytracedAntialiasing(self, *args):
+    def DisableRaytracedAntialiasing(self, *args) -> "void" :
         """
         * disables antialiasing in OpenCL-based ray-tracing mode
 
@@ -3433,11 +3433,11 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_DisableRaytracedAntialiasing(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_View self)"""
         return _V3d.V3d_View__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_View" :
         """GetHandle(V3d_View self) -> Handle_V3d_View"""
         return _V3d.V3d_View_GetHandle(self)
 
@@ -3632,7 +3632,7 @@ Handle_V3d_View._kill_pointed = new_instancemethod(_V3d.Handle_V3d_View__kill_po
 Handle_V3d_View_swigregister = _V3d.Handle_V3d_View_swigregister
 Handle_V3d_View_swigregister(Handle_V3d_View)
 
-def Handle_V3d_View_DownCast(*args):
+def Handle_V3d_View_DownCast(*args) -> "Handle_V3d_View const" :
   return _V3d.Handle_V3d_View_DownCast(*args)
 Handle_V3d_View_DownCast = _V3d.Handle_V3d_View_DownCast
 
@@ -3671,7 +3671,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
 
         """
         _V3d.V3d_Viewer_swiginit(self,_V3d.new_V3d_Viewer(*args))
-    def CreateView(self, *args):
+    def CreateView(self, *args) -> "Handle_V3d_View" :
         """
         * creates a view in the viewer according to its default parameters.
 
@@ -3680,7 +3680,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_CreateView(self, *args)
 
-    def SetViewOn(self, *args):
+    def SetViewOn(self, *args) -> "void" :
         """
         * Activates all of the views of a viewer attached  to a window.
 
@@ -3695,7 +3695,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetViewOn(self, *args)
 
-    def SetViewOff(self, *args):
+    def SetViewOff(self, *args) -> "void" :
         """
         * Deactivates all the views of a Viewer  attached to a window.
 
@@ -3710,7 +3710,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetViewOff(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Deprecated, Redraw() should be used instead.
 
@@ -3719,7 +3719,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Update(self, *args)
 
-    def UpdateLights(self, *args):
+    def UpdateLights(self, *args) -> "void" :
         """
         * Updates the lights of all the views of a viewer.
 
@@ -3728,7 +3728,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_UpdateLights(self, *args)
 
-    def Redraw(self, *args):
+    def Redraw(self, *args) -> "void" :
         """
         * Redraws all the views of the Viewer even if no  modification has taken place. Must be called if  all the views of the Viewer are exposed, as for example in a global DeIconification.
 
@@ -3737,7 +3737,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Redraw(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Suppresses the Viewer.
 
@@ -3746,7 +3746,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Remove(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "void" :
         """
         * Erase all Objects in All the views.
 
@@ -3755,7 +3755,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Erase(self, *args)
 
-    def UnHighlight(self, *args):
+    def UnHighlight(self, *args) -> "void" :
         """
         * UnHighlight all Objects in All the views.
 
@@ -3764,7 +3764,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_UnHighlight(self, *args)
 
-    def SetDefaultBackgroundColor(self, *args):
+    def SetDefaultBackgroundColor(self, *args) -> "void" :
         """
         * Defines the default base colour of views attached  to the Viewer by supplying the type of colour  definition and the three component values..
 
@@ -3793,7 +3793,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultBackgroundColor(self, *args)
 
-    def SetDefaultBgGradientColors(self, *args):
+    def SetDefaultBgGradientColors(self, *args) -> "void" :
         """
         * Defines the default gradient background colours of view  attached to the viewer by supplying the name of the  colours under the form Quantity_NOC_xxxx .
 
@@ -3818,7 +3818,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultBgGradientColors(self, *args)
 
-    def SetDefaultViewSize(self, *args):
+    def SetDefaultViewSize(self, *args) -> "void" :
         """
         * Gives a default size for the creation of views of  the viewer.
 
@@ -3829,7 +3829,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultViewSize(self, *args)
 
-    def SetDefaultViewProj(self, *args):
+    def SetDefaultViewProj(self, *args) -> "void" :
         """
         * Gives the default projection for creating views  in the viewer.
 
@@ -3840,7 +3840,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultViewProj(self, *args)
 
-    def SetDefaultVisualization(self, *args):
+    def SetDefaultVisualization(self, *args) -> "void" :
         """
         * Gives the default visualisation mode..
 
@@ -3851,7 +3851,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultVisualization(self, *args)
 
-    def SetZBufferManagment(self, *args):
+    def SetZBufferManagment(self, *args) -> "void" :
         """
         * defines the strategy concerning the ZBuffer activity. If Automatic is true, ZBuffer will be activated or deactivated depending on the fact that faces exist or not in the Viewer. This will optimize the response time in the case where only wireframe objects are displayed. If Automatic is False, ZBuffer will be activated or deactivated depending on the choice of SetVisualization in each View. Note that by default, the ZBufferManagment is not automatic.
 
@@ -3862,7 +3862,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetZBufferManagment(self, *args)
 
-    def ZBufferManagment(self, *args):
+    def ZBufferManagment(self, *args) -> "Standard_Boolean" :
         """
         * returns the ZBuffer stategy choice.
 
@@ -3871,7 +3871,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ZBufferManagment(self, *args)
 
-    def SetDefaultShadingModel(self, *args):
+    def SetDefaultShadingModel(self, *args) -> "void" :
         """
         * Gives the default type of SHADING.
 
@@ -3882,7 +3882,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultShadingModel(self, *args)
 
-    def SetDefaultSurfaceDetail(self, *args):
+    def SetDefaultSurfaceDetail(self, *args) -> "void" :
         """
         * Gives the default type of texture mapping.
 
@@ -3893,7 +3893,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultSurfaceDetail(self, *args)
 
-    def SetDefaultAngle(self, *args):
+    def SetDefaultAngle(self, *args) -> "void" :
         """
         :param Angle:
         :type Angle: Quantity_PlaneAngle
@@ -3902,7 +3902,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultAngle(self, *args)
 
-    def SetUpdateMode(self, *args):
+    def SetUpdateMode(self, *args) -> "void" :
         """
         * Defines the mode of regenerating the views making  up the viewer. This can be immediate <ASAP> or  deferred <WAIT>. In this latter case, the views are  updated when the method Update(me) is called.
 
@@ -3913,7 +3913,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetUpdateMode(self, *args)
 
-    def SetDefaultTypeOfView(self, *args):
+    def SetDefaultTypeOfView(self, *args) -> "void" :
         """
         :param Type:
         :type Type: V3d_TypeOfView
@@ -3922,7 +3922,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultTypeOfView(self, *args)
 
-    def SetPrivilegedPlane(self, *args):
+    def SetPrivilegedPlane(self, *args) -> "void" :
         """
         :param aPlane:
         :type aPlane: gp_Ax3
@@ -3931,14 +3931,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetPrivilegedPlane(self, *args)
 
-    def PrivilegedPlane(self, *args):
+    def PrivilegedPlane(self, *args) -> "gp_Ax3" :
         """
         :rtype: gp_Ax3
 
         """
         return _V3d.V3d_Viewer_PrivilegedPlane(self, *args)
 
-    def DisplayPrivilegedPlane(self, *args):
+    def DisplayPrivilegedPlane(self, *args) -> "void" :
         """
         :param OnOff:
         :type OnOff: bool
@@ -3949,7 +3949,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DisplayPrivilegedPlane(self, *args)
 
-    def SetLightOn(self, *args):
+    def SetLightOn(self, *args) -> "void" :
         """
         * Activates MyLight in the viewer.
 
@@ -3964,7 +3964,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetLightOn(self, *args)
 
-    def SetLightOff(self, *args):
+    def SetLightOff(self, *args) -> "void" :
         """
         * Desactivate MyLight in this viewer.
 
@@ -3979,7 +3979,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetLightOff(self, *args)
 
-    def DelLight(self, *args):
+    def DelLight(self, *args) -> "void" :
         """
         * Delete Light in Sequence Of Lights.
 
@@ -3990,7 +3990,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DelLight(self, *args)
 
-    def SetCurrentSelectedLight(self, *args):
+    def SetCurrentSelectedLight(self, *args) -> "void" :
         """
         * Defines the selected light.
 
@@ -4001,7 +4001,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCurrentSelectedLight(self, *args)
 
-    def ClearCurrentSelectedLight(self, *args):
+    def ClearCurrentSelectedLight(self, *args) -> "void" :
         """
         * Defines the selected light at NULL.
 
@@ -4010,7 +4010,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ClearCurrentSelectedLight(self, *args)
 
-    def DefaultBackgroundColor(self, *args):
+    def DefaultBackgroundColor(self, *args) -> "Quantity_Color" :
         """
         * Returns the default background colour depending of the type.
 
@@ -4031,7 +4031,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultBackgroundColor(self, *args)
 
-    def DefaultBgGradientColors(self, *args):
+    def DefaultBgGradientColors(self, *args) -> "void" :
         """
         * Returns the gradient background colour objects of the view.
 
@@ -4044,7 +4044,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultBgGradientColors(self, *args)
 
-    def DefaultViewSize(self, *args):
+    def DefaultViewSize(self, *args) -> "Quantity_Length" :
         """
         * Returns the default size of the view.
 
@@ -4053,7 +4053,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultViewSize(self, *args)
 
-    def DefaultViewProj(self, *args):
+    def DefaultViewProj(self, *args) -> "V3d_TypeOfOrientation" :
         """
         * Returns the default Projection.
 
@@ -4062,7 +4062,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultViewProj(self, *args)
 
-    def DefaultVisualization(self, *args):
+    def DefaultVisualization(self, *args) -> "V3d_TypeOfVisualization" :
         """
         * Returns the default type of Visualization.
 
@@ -4071,7 +4071,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultVisualization(self, *args)
 
-    def DefaultShadingModel(self, *args):
+    def DefaultShadingModel(self, *args) -> "V3d_TypeOfShadingModel" :
         """
         * Returns the default type of Shading
 
@@ -4080,7 +4080,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultShadingModel(self, *args)
 
-    def DefaultSurfaceDetail(self, *args):
+    def DefaultSurfaceDetail(self, *args) -> "V3d_TypeOfSurfaceDetail" :
         """
         * Returns the default type of texture mapping
 
@@ -4089,14 +4089,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultSurfaceDetail(self, *args)
 
-    def DefaultAngle(self, *args):
+    def DefaultAngle(self, *args) -> "Quantity_PlaneAngle" :
         """
         :rtype: Quantity_PlaneAngle
 
         """
         return _V3d.V3d_Viewer_DefaultAngle(self, *args)
 
-    def UpdateMode(self, *args):
+    def UpdateMode(self, *args) -> "V3d_TypeOfUpdate" :
         """
         * Returns the regeneration mode of views in the viewer.
 
@@ -4105,7 +4105,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_UpdateMode(self, *args)
 
-    def IfMoreViews(self, *args):
+    def IfMoreViews(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if One View more can be activated in this Viewer.
 
@@ -4114,7 +4114,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_IfMoreViews(self, *args)
 
-    def InitActiveViews(self, *args):
+    def InitActiveViews(self, *args) -> "void" :
         """
         * initializes an iteration on the active views.
 
@@ -4123,7 +4123,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_InitActiveViews(self, *args)
 
-    def MoreActiveViews(self, *args):
+    def MoreActiveViews(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there are more active view(s) to return.
 
@@ -4132,7 +4132,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_MoreActiveViews(self, *args)
 
-    def NextActiveViews(self, *args):
+    def NextActiveViews(self, *args) -> "void" :
         """
         * Go to the next active view (if there is not, ActiveView will raise an exception)
 
@@ -4141,14 +4141,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_NextActiveViews(self, *args)
 
-    def ActiveView(self, *args):
+    def ActiveView(self, *args) -> "Handle_V3d_View" :
         """
         :rtype: Handle_V3d_View
 
         """
         return _V3d.V3d_Viewer_ActiveView(self, *args)
 
-    def LastActiveView(self, *args):
+    def LastActiveView(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there is only one active view.
 
@@ -4157,7 +4157,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_LastActiveView(self, *args)
 
-    def InitDefinedViews(self, *args):
+    def InitDefinedViews(self, *args) -> "void" :
         """
         * initializes an iteration on the Defined views.
 
@@ -4166,7 +4166,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_InitDefinedViews(self, *args)
 
-    def MoreDefinedViews(self, *args):
+    def MoreDefinedViews(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there are more Defined view(s) to return.
 
@@ -4175,7 +4175,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_MoreDefinedViews(self, *args)
 
-    def NextDefinedViews(self, *args):
+    def NextDefinedViews(self, *args) -> "void" :
         """
         * Go to the next Defined view (if there is not, DefinedView will raise an exception)
 
@@ -4184,14 +4184,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_NextDefinedViews(self, *args)
 
-    def DefinedView(self, *args):
+    def DefinedView(self, *args) -> "Handle_V3d_View" :
         """
         :rtype: Handle_V3d_View
 
         """
         return _V3d.V3d_Viewer_DefinedView(self, *args)
 
-    def InitActiveLights(self, *args):
+    def InitActiveLights(self, *args) -> "void" :
         """
         * initializes an iteration on the active Lights.
 
@@ -4200,7 +4200,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_InitActiveLights(self, *args)
 
-    def MoreActiveLights(self, *args):
+    def MoreActiveLights(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there are more active Light(s) to return.
 
@@ -4209,7 +4209,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_MoreActiveLights(self, *args)
 
-    def NextActiveLights(self, *args):
+    def NextActiveLights(self, *args) -> "void" :
         """
         * Go to the next active Light (if there is not, ActiveLight will raise an exception)
 
@@ -4218,14 +4218,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_NextActiveLights(self, *args)
 
-    def ActiveLight(self, *args):
+    def ActiveLight(self, *args) -> "Handle_V3d_Light" :
         """
         :rtype: Handle_V3d_Light
 
         """
         return _V3d.V3d_Viewer_ActiveLight(self, *args)
 
-    def InitDefinedLights(self, *args):
+    def InitDefinedLights(self, *args) -> "void" :
         """
         * initializes an iteration on the Defined Lights.
 
@@ -4234,7 +4234,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_InitDefinedLights(self, *args)
 
-    def MoreDefinedLights(self, *args):
+    def MoreDefinedLights(self, *args) -> "Standard_Boolean" :
         """
         * returns true if there are more Defined Light(s) to return.
 
@@ -4243,7 +4243,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_MoreDefinedLights(self, *args)
 
-    def NextDefinedLights(self, *args):
+    def NextDefinedLights(self, *args) -> "void" :
         """
         * Go to the next Defined Light (if there is not, DefinedLight will raise an exception)
 
@@ -4252,14 +4252,14 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_NextDefinedLights(self, *args)
 
-    def DefinedLight(self, *args):
+    def DefinedLight(self, *args) -> "Handle_V3d_Light" :
         """
         :rtype: Handle_V3d_Light
 
         """
         return _V3d.V3d_Viewer_DefinedLight(self, *args)
 
-    def Viewer(self, *args):
+    def Viewer(self, *args) -> "Handle_Visual3d_ViewManager" :
         """
         * Returns the viewer associated to Visual3d .
 
@@ -4268,7 +4268,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Viewer(self, *args)
 
-    def CurrentSelectedLight(self, *args):
+    def CurrentSelectedLight(self, *args) -> "Handle_V3d_Light" :
         """
         * Returns the Selected Light.
 
@@ -4277,7 +4277,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_CurrentSelectedLight(self, *args)
 
-    def IsGlobalLight(self, *args):
+    def IsGlobalLight(self, *args) -> "Standard_Boolean" :
         """
         :param TheLight:
         :type TheLight: Handle_V3d_Light &
@@ -4286,7 +4286,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_IsGlobalLight(self, *args)
 
-    def ComputedMode(self, *args):
+    def ComputedMode(self, *args) -> "Standard_Boolean" :
         """
         * returns true if the computed mode can be used.
 
@@ -4295,7 +4295,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ComputedMode(self, *args)
 
-    def DefaultComputedMode(self, *args):
+    def DefaultComputedMode(self, *args) -> "Standard_Boolean" :
         """
         * returns true if by default the computed mode must be used.
 
@@ -4304,7 +4304,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultComputedMode(self, *args)
 
-    def ActivateGrid(self, *args):
+    def ActivateGrid(self, *args) -> "void" :
         """
         * Activates the grid in all views of <self>.
 
@@ -4317,7 +4317,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ActivateGrid(self, *args)
 
-    def DeactivateGrid(self, *args):
+    def DeactivateGrid(self, *args) -> "void" :
         """
         * Deactivates the grid in all views of <self>.
 
@@ -4326,7 +4326,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DeactivateGrid(self, *args)
 
-    def SetGridEcho(self, *args):
+    def SetGridEcho(self, *args) -> "void" :
         """
         * Show/Don't show grid echo to the hit point. If True,the grid echo will be shown at ConvertToGrid() time.
 
@@ -4343,7 +4343,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetGridEcho(self, *args)
 
-    def GridEcho(self, *args):
+    def GridEcho(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when grid echo must be displayed at hit point.
 
@@ -4352,7 +4352,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GridEcho(self, *args)
 
-    def IsActive(self, *args):
+    def IsActive(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if a grid is activated in <self>.
 
@@ -4361,7 +4361,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_IsActive(self, *args)
 
-    def Grid(self, *args):
+    def Grid(self, *args) -> "Handle_Aspect_Grid" :
         """
         * Returns the defined grid in <self>.
 
@@ -4370,7 +4370,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_Grid(self, *args)
 
-    def GridType(self, *args):
+    def GridType(self, *args) -> "Aspect_GridType" :
         """
         * Returns the current grid type defined in <self>.
 
@@ -4379,7 +4379,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GridType(self, *args)
 
-    def GridDrawMode(self, *args):
+    def GridDrawMode(self, *args) -> "Aspect_GridDrawMode" :
         """
         * Returns the current grid draw mode defined in <self>.
 
@@ -4388,7 +4388,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GridDrawMode(self, *args)
 
-    def RectangularGridValues(self, *args):
+    def RectangularGridValues(self, *args) -> "void" :
         """
         * Returns the definition of the rectangular grid.
 
@@ -4407,7 +4407,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_RectangularGridValues(self, *args)
 
-    def SetRectangularGridValues(self, *args):
+    def SetRectangularGridValues(self, *args) -> "void" :
         """
         * Sets the definition of the rectangular grid.  <XOrigin>, <YOrigin> defines the origin of the grid.  <XStep> defines the interval between 2 vertical lines.  <YStep> defines the interval between 2 horizontal lines.  <RotationAngle> defines the rotation angle of the grid.
 
@@ -4426,7 +4426,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetRectangularGridValues(self, *args)
 
-    def CircularGridValues(self, *args):
+    def CircularGridValues(self, *args) -> "void" :
         """
         * Returns the definition of the circular grid.
 
@@ -4445,7 +4445,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_CircularGridValues(self, *args)
 
-    def SetCircularGridValues(self, *args):
+    def SetCircularGridValues(self, *args) -> "void" :
         """
         * Sets the definition of the circular grid.  <XOrigin>, <YOrigin> defines the origin of the grid.  <RadiusStep> defines the interval between 2 circles.  <DivisionNumber> defines the section number of one half circle.  <RotationAngle> defines the rotation angle of the grid.
 
@@ -4464,7 +4464,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCircularGridValues(self, *args)
 
-    def CircularGridGraphicValues(self, *args):
+    def CircularGridGraphicValues(self, *args) -> "void" :
         """
         * Returns the location and the size of the grid.
 
@@ -4477,7 +4477,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_CircularGridGraphicValues(self, *args)
 
-    def SetCircularGridGraphicValues(self, *args):
+    def SetCircularGridGraphicValues(self, *args) -> "void" :
         """
         * Sets the location and the size of the grid.  <XSize> defines the width of the grid.  <YSize> defines the height of the grid.  <OffSet> defines the displacement along the plane normal.
 
@@ -4490,7 +4490,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCircularGridGraphicValues(self, *args)
 
-    def RectangularGridGraphicValues(self, *args):
+    def RectangularGridGraphicValues(self, *args) -> "void" :
         """
         * Returns the location and the size of the grid.
 
@@ -4505,7 +4505,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_RectangularGridGraphicValues(self, *args)
 
-    def SetRectangularGridGraphicValues(self, *args):
+    def SetRectangularGridGraphicValues(self, *args) -> "void" :
         """
         * Sets the location and the size of the grid.  <XSize> defines the width of the grid.  <YSize> defines the height of the grid.  <OffSet> defines the displacement along the plane normal.
 
@@ -4520,7 +4520,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetRectangularGridGraphicValues(self, *args)
 
-    def GetGradientBackground(self, *args):
+    def GetGradientBackground(self, *args) -> "Aspect_GradientBackground" :
         """
         * Returns the gradient background of the view.
 
@@ -4529,7 +4529,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GetGradientBackground(self, *args)
 
-    def SetDefaultLights(self, *args):
+    def SetDefaultLights(self, *args) -> "void" :
         """
         * defines default lights - positional-light 0.3 0. 0. directional-light V3d_XnegYposZpos directional-light V3d_XnegYneg ambient-light
 
@@ -4538,7 +4538,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultLights(self, *args)
 
-    def SetZLayerSettings(self, *args):
+    def SetZLayerSettings(self, *args) -> "void" :
         """
         * Sets the settings for a single Z layer.
 
@@ -4551,7 +4551,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetZLayerSettings(self, *args)
 
-    def ZLayerSettings(self, *args):
+    def ZLayerSettings(self, *args) -> "Graphic3d_ZLayerSettings" :
         """
         * Returns the settings of a single Z layer.
 
@@ -4562,7 +4562,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ZLayerSettings(self, *args)
 
-    def AddZLayer(self, *args):
+    def AddZLayer(self, *args) -> "Standard_Boolean" :
         """
         * Add a new top-level Z layer to all managed views and get its ID as <theLayerId> value. The Z layers are controlled entirely by viewer, it is not possible to add a layer to a particular view. The method returns Standard_False if the layer can not be created. The layer mechanism allows to display structures in higher layers in overlay of structures in lower layers.
 
@@ -4573,7 +4573,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_AddZLayer(self, *args)
 
-    def RemoveZLayer(self, *args):
+    def RemoveZLayer(self, *args) -> "Standard_Boolean" :
         """
         * Remove Z layer with ID <theLayerId>. Method returns Standard_False if the layer can not be removed or doesn't exists. By default, there are always default bottom-level layer that can't be removed.
 
@@ -4584,7 +4584,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_RemoveZLayer(self, *args)
 
-    def GetAllZLayers(self, *args):
+    def GetAllZLayers(self, *args) -> "void" :
         """
         * Return all Z layer ids in sequence ordered by overlay level from lowest layer to highest ( foreground ). The first layer ID in sequence is the default layer that can't be removed.
 
@@ -4595,32 +4595,32 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GetAllZLayers(self, *args)
 
-    def Driver(self, *args):
+    def Driver(self, *args) -> "Handle_Graphic3d_GraphicDriver const &" :
         """
         :rtype: Handle_Graphic3d_GraphicDriver
 
         """
         return _V3d.V3d_Viewer_Driver(self, *args)
 
-    def NextName(self, *args):
+    def NextName(self, *args) -> "Standard_ExtString" :
         """
         :rtype: Standard_ExtString
 
         """
         return _V3d.V3d_Viewer_NextName(self, *args)
 
-    def Domain(self, *args):
+    def Domain(self, *args) -> "char *" :
         """
         :rtype: char *
 
         """
         return _V3d.V3d_Viewer_Domain(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_Viewer self)"""
         return _V3d.V3d_Viewer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_Viewer" :
         """GetHandle(V3d_Viewer self) -> Handle_V3d_Viewer"""
         return _V3d.V3d_Viewer_GetHandle(self)
 
@@ -4745,7 +4745,7 @@ Handle_V3d_Viewer._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Viewer__kil
 Handle_V3d_Viewer_swigregister = _V3d.Handle_V3d_Viewer_swigregister
 Handle_V3d_Viewer_swigregister(Handle_V3d_Viewer)
 
-def Handle_V3d_Viewer_DownCast(*args):
+def Handle_V3d_Viewer_DownCast(*args) -> "Handle_V3d_Viewer const" :
   return _V3d.Handle_V3d_Viewer_DownCast(*args)
 Handle_V3d_Viewer_DownCast = _V3d.Handle_V3d_Viewer_DownCast
 
@@ -4764,11 +4764,11 @@ class V3d_AmbientLight(V3d_Light):
 
         """
         _V3d.V3d_AmbientLight_swiginit(self,_V3d.new_V3d_AmbientLight(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_AmbientLight self)"""
         return _V3d.V3d_AmbientLight__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_AmbientLight" :
         """GetHandle(V3d_AmbientLight self) -> Handle_V3d_AmbientLight"""
         return _V3d.V3d_AmbientLight_GetHandle(self)
 
@@ -4806,7 +4806,7 @@ Handle_V3d_AmbientLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Ambie
 Handle_V3d_AmbientLight_swigregister = _V3d.Handle_V3d_AmbientLight_swigregister
 Handle_V3d_AmbientLight_swigregister(Handle_V3d_AmbientLight)
 
-def Handle_V3d_AmbientLight_DownCast(*args):
+def Handle_V3d_AmbientLight_DownCast(*args) -> "Handle_V3d_AmbientLight const" :
   return _V3d.Handle_V3d_AmbientLight_DownCast(*args)
 Handle_V3d_AmbientLight_DownCast = _V3d.Handle_V3d_AmbientLight_DownCast
 
@@ -4839,18 +4839,18 @@ class V3d_OrthographicView(V3d_View):
 
         """
         _V3d.V3d_OrthographicView_swiginit(self,_V3d.new_V3d_OrthographicView(*args))
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_V3d_OrthographicView" :
         """
         :rtype: Handle_V3d_OrthographicView
 
         """
         return _V3d.V3d_OrthographicView_Copy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_OrthographicView self)"""
         return _V3d.V3d_OrthographicView__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_OrthographicView" :
         """GetHandle(V3d_OrthographicView self) -> Handle_V3d_OrthographicView"""
         return _V3d.V3d_OrthographicView_GetHandle(self)
 
@@ -4889,7 +4889,7 @@ Handle_V3d_OrthographicView._kill_pointed = new_instancemethod(_V3d.Handle_V3d_O
 Handle_V3d_OrthographicView_swigregister = _V3d.Handle_V3d_OrthographicView_swigregister
 Handle_V3d_OrthographicView_swigregister(Handle_V3d_OrthographicView)
 
-def Handle_V3d_OrthographicView_DownCast(*args):
+def Handle_V3d_OrthographicView_DownCast(*args) -> "Handle_V3d_OrthographicView const" :
   return _V3d.Handle_V3d_OrthographicView_DownCast(*args)
 Handle_V3d_OrthographicView_DownCast = _V3d.Handle_V3d_OrthographicView_DownCast
 
@@ -4922,14 +4922,14 @@ class V3d_PerspectiveView(V3d_View):
 
         """
         _V3d.V3d_PerspectiveView_swiginit(self,_V3d.new_V3d_PerspectiveView(*args))
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_V3d_PerspectiveView" :
         """
         :rtype: Handle_V3d_PerspectiveView
 
         """
         return _V3d.V3d_PerspectiveView_Copy(self, *args)
 
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         * Modifies the angle of opening of the perspective in RADIANS. //!	 The projection window is resized according to the //!	 formula : //!	 TAN(Angle/2) = Size/Length //!	 	Size expresses the smallest dimension of the window. //!	 Length expresses the focal length. Warning! raises BadValue from V3d //!	 if the opening angle is <= 0 or >= PI
 
@@ -4940,7 +4940,7 @@ class V3d_PerspectiveView(V3d_View):
         """
         return _V3d.V3d_PerspectiveView_SetAngle(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * Returns the value of the angle of opening.
 
@@ -4949,7 +4949,7 @@ class V3d_PerspectiveView(V3d_View):
         """
         return _V3d.V3d_PerspectiveView_Angle(self, *args)
 
-    def SetPerspective(self, *args):
+    def SetPerspective(self, *args) -> "void" :
         """
         * Modifies the viewing perspective volume by given //!		angle of opening of the perspective in RADIANS, aspect ratio of window width to its height and near and far clipping planes
 
@@ -4966,11 +4966,11 @@ class V3d_PerspectiveView(V3d_View):
         """
         return _V3d.V3d_PerspectiveView_SetPerspective(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_PerspectiveView self)"""
         return _V3d.V3d_PerspectiveView__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_PerspectiveView" :
         """GetHandle(V3d_PerspectiveView self) -> Handle_V3d_PerspectiveView"""
         return _V3d.V3d_PerspectiveView_GetHandle(self)
 
@@ -5012,7 +5012,7 @@ Handle_V3d_PerspectiveView._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Pe
 Handle_V3d_PerspectiveView_swigregister = _V3d.Handle_V3d_PerspectiveView_swigregister
 Handle_V3d_PerspectiveView_swigregister(Handle_V3d_PerspectiveView)
 
-def Handle_V3d_PerspectiveView_DownCast(*args):
+def Handle_V3d_PerspectiveView_DownCast(*args) -> "Handle_V3d_PerspectiveView const" :
   return _V3d.Handle_V3d_PerspectiveView_DownCast(*args)
 Handle_V3d_PerspectiveView_DownCast = _V3d.Handle_V3d_PerspectiveView_DownCast
 
@@ -5020,7 +5020,7 @@ class V3d_PositionLight(V3d_Light):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetPosition(self, *args):
+    def SetPosition(self, *args) -> "void" :
         """
         * Defines the position of the light source. Should be redefined!
 
@@ -5035,7 +5035,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetPosition(self, *args)
 
-    def SetTarget(self, *args):
+    def SetTarget(self, *args) -> "void" :
         """
         * Defines the target of the light (the center of the sphere)
 
@@ -5050,7 +5050,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetTarget(self, *args)
 
-    def SetRadius(self, *args):
+    def SetRadius(self, *args) -> "void" :
         """
         * Define the radius.
 
@@ -5061,7 +5061,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetRadius(self, *args)
 
-    def OnHideFace(self, *args):
+    def OnHideFace(self, *args) -> "void" :
         """
         * Calculate the position of the light, on the hide face of the picking sphere.
 
@@ -5072,7 +5072,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_OnHideFace(self, *args)
 
-    def OnSeeFace(self, *args):
+    def OnSeeFace(self, *args) -> "void" :
         """
         * Calculate the position of the light, on the seen face of the picking sphere.
 
@@ -5083,7 +5083,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_OnSeeFace(self, *args)
 
-    def Tracking(self, *args):
+    def Tracking(self, *args) -> "void" :
         """
         * Tracking the light position, or the light space, or the radius of the light space, that depends of initial picking 'WhatPick' (see the pick method). If WhatPick is SPACELIGHT, then the parameters Xpix, Ypix are the coordinates of a translation vector.
 
@@ -5100,7 +5100,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Tracking(self, *args)
 
-    def Display(self, *args):
+    def Display(self, *args) -> "void" :
         """
         * Display the graphic structure of light source in the choosen view. We have three type of representation - SIMPLE : Only the light source is displayed. - PARTIAL : The light source and the light space are  displayed. - COMPLETE : The light source, the light space and the  radius of light space are displayed. We can choose the 'SAMELAST' as parameter of representation In this case the graphic structure representation will be the last displayed.
 
@@ -5113,7 +5113,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Display(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "void" :
         """
         * Erase the graphic structure of light source.
 
@@ -5122,7 +5122,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Erase(self, *args)
 
-    def Radius(self, *args):
+    def Radius(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the radius of the picking sphere.
 
@@ -5131,7 +5131,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Radius(self, *args)
 
-    def SeeOrHide(self, *args):
+    def SeeOrHide(self, *args) -> "Standard_Boolean" :
         """
         * Returns the visibility status If True the source is visible. If False it's hidden.
 
@@ -5142,7 +5142,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SeeOrHide(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "void" :
         """
         * Returns the position of the light source.
 
@@ -5157,7 +5157,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Position(self, *args)
 
-    def Target(self, *args):
+    def Target(self, *args) -> "void" :
         """
         * Returns the position of the target of the light source.
 
@@ -5172,11 +5172,11 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Target(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_PositionLight self)"""
         return _V3d.V3d_PositionLight__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_PositionLight" :
         """GetHandle(V3d_PositionLight self) -> Handle_V3d_PositionLight"""
         return _V3d.V3d_PositionLight_GetHandle(self)
 
@@ -5226,7 +5226,7 @@ Handle_V3d_PositionLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Posi
 Handle_V3d_PositionLight_swigregister = _V3d.Handle_V3d_PositionLight_swigregister
 Handle_V3d_PositionLight_swigregister(Handle_V3d_PositionLight)
 
-def Handle_V3d_PositionLight_DownCast(*args):
+def Handle_V3d_PositionLight_DownCast(*args) -> "Handle_V3d_PositionLight const" :
   return _V3d.Handle_V3d_PositionLight_DownCast(*args)
 Handle_V3d_PositionLight_DownCast = _V3d.Handle_V3d_PositionLight_DownCast
 
@@ -5271,7 +5271,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
 
         """
         _V3d.V3d_DirectionalLight_swiginit(self,_V3d.new_V3d_DirectionalLight(*args))
-    def SetDirection(self, *args):
+    def SetDirection(self, *args) -> "void" :
         """
         * Defines the direction of the light source //!	 by a predefined orientation.
 
@@ -5292,7 +5292,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_SetDirection(self, *args)
 
-    def SetDisplayPosition(self, *args):
+    def SetDisplayPosition(self, *args) -> "void" :
         """
         * Defines the point of light source representation.
 
@@ -5307,7 +5307,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_SetDisplayPosition(self, *args)
 
-    def DisplayPosition(self, *args):
+    def DisplayPosition(self, *args) -> "void" :
         """
         * Returns the choosen position to represent the light source.
 
@@ -5322,7 +5322,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_DisplayPosition(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "void" :
         """
         * Returns the Vx,Vy,Vz direction of the light source.
 
@@ -5337,11 +5337,11 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_Direction(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_DirectionalLight self)"""
         return _V3d.V3d_DirectionalLight__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_DirectionalLight" :
         """GetHandle(V3d_DirectionalLight self) -> Handle_V3d_DirectionalLight"""
         return _V3d.V3d_DirectionalLight_GetHandle(self)
 
@@ -5383,7 +5383,7 @@ Handle_V3d_DirectionalLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_D
 Handle_V3d_DirectionalLight_swigregister = _V3d.Handle_V3d_DirectionalLight_swigregister
 Handle_V3d_DirectionalLight_swigregister(Handle_V3d_DirectionalLight)
 
-def Handle_V3d_DirectionalLight_DownCast(*args):
+def Handle_V3d_DirectionalLight_DownCast(*args) -> "Handle_V3d_DirectionalLight const" :
   return _V3d.Handle_V3d_DirectionalLight_DownCast(*args)
 Handle_V3d_DirectionalLight_DownCast = _V3d.Handle_V3d_DirectionalLight_DownCast
 
@@ -5436,7 +5436,7 @@ class V3d_PositionalLight(V3d_PositionLight):
 
         """
         _V3d.V3d_PositionalLight_swiginit(self,_V3d.new_V3d_PositionalLight(*args))
-    def SetAttenuation(self, *args):
+    def SetAttenuation(self, *args) -> "void" :
         """
         * Defines the attenuation factors. Warning: raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
 
@@ -5449,7 +5449,7 @@ class V3d_PositionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_PositionalLight_SetAttenuation(self, *args)
 
-    def Attenuation(self, *args):
+    def Attenuation(self, *args) -> "void" :
         """
         * Returns the attenuation factors A1,A2 of the light source used at construction time.
 
@@ -5462,11 +5462,11 @@ class V3d_PositionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_PositionalLight_Attenuation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_PositionalLight self)"""
         return _V3d.V3d_PositionalLight__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_PositionalLight" :
         """GetHandle(V3d_PositionalLight self) -> Handle_V3d_PositionalLight"""
         return _V3d.V3d_PositionalLight_GetHandle(self)
 
@@ -5506,7 +5506,7 @@ Handle_V3d_PositionalLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Po
 Handle_V3d_PositionalLight_swigregister = _V3d.Handle_V3d_PositionalLight_swigregister
 Handle_V3d_PositionalLight_swigregister(Handle_V3d_PositionalLight)
 
-def Handle_V3d_PositionalLight_DownCast(*args):
+def Handle_V3d_PositionalLight_DownCast(*args) -> "Handle_V3d_PositionalLight const" :
   return _V3d.Handle_V3d_PositionalLight_DownCast(*args)
 Handle_V3d_PositionalLight_DownCast = _V3d.Handle_V3d_PositionalLight_DownCast
 
@@ -5569,7 +5569,7 @@ class V3d_SpotLight(V3d_PositionLight):
 
         """
         _V3d.V3d_SpotLight_swiginit(self,_V3d.new_V3d_SpotLight(*args))
-    def SetDirection(self, *args):
+    def SetDirection(self, *args) -> "void" :
         """
         * Defines the direction of the light source. //!	If the normal vector is NULL.
 
@@ -5590,7 +5590,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetDirection(self, *args)
 
-    def SetAttenuation(self, *args):
+    def SetAttenuation(self, *args) -> "void" :
         """
         * Defines the coefficients of attenuation. Warning! raises BadValue from V3d //!	 if one of the coefficient is <0 ou >1 .
 
@@ -5603,7 +5603,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetAttenuation(self, *args)
 
-    def SetConcentration(self, *args):
+    def SetConcentration(self, *args) -> "void" :
         """
         * Defines the coefficient of concentration. //!	if the coefficient is <0 ou >1 .
 
@@ -5614,7 +5614,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetConcentration(self, *args)
 
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         * Defines the spot angle in RADIANS. Warning: raises BadValue from from V3d //!	If the angle is <= 0 ou > PI .
 
@@ -5625,7 +5625,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetAngle(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "void" :
         """
         * Returns the direction of the light source defined by Vx,Vy,Vz.
 
@@ -5640,7 +5640,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_Direction(self, *args)
 
-    def Attenuation(self, *args):
+    def Attenuation(self, *args) -> "void" :
         """
         * Returns the attenuation factors A1,A2 of the light source.
 
@@ -5653,14 +5653,14 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_Attenuation(self, *args)
 
-    def Concentration(self, *args):
+    def Concentration(self, *args) -> "Quantity_Coefficient" :
         """
         :rtype: Quantity_Coefficient
 
         """
         return _V3d.V3d_SpotLight_Concentration(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * Returns the spot angle.
 
@@ -5669,11 +5669,11 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_Angle(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(V3d_SpotLight self)"""
         return _V3d.V3d_SpotLight__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_V3d_SpotLight" :
         """GetHandle(V3d_SpotLight self) -> Handle_V3d_SpotLight"""
         return _V3d.V3d_SpotLight_GetHandle(self)
 
@@ -5719,7 +5719,7 @@ Handle_V3d_SpotLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_SpotLigh
 Handle_V3d_SpotLight_swigregister = _V3d.Handle_V3d_SpotLight_swigregister
 Handle_V3d_SpotLight_swigregister(Handle_V3d_SpotLight)
 
-def Handle_V3d_SpotLight_DownCast(*args):
+def Handle_V3d_SpotLight_DownCast(*args) -> "Handle_V3d_SpotLight const" :
   return _V3d.Handle_V3d_SpotLight_DownCast(*args)
 Handle_V3d_SpotLight_DownCast = _V3d.Handle_V3d_SpotLight_DownCast
 

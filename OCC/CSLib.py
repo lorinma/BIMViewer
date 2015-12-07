@@ -134,7 +134,7 @@ CSLib_D1NuIsParallelD1Nv = _CSLib.CSLib_D1NuIsParallelD1Nv
 class cslib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Normal(*args):
+    def Normal(*args) -> "Standard_Integer &, Standard_Integer &" :
         """
         * The following functions computes the normal to a surface inherits FunctionWithDerivative from math Computes the normal direction of a surface as the cross product between D1U and D1V. If D1U has null length or D1V has null length or D1U and D1V are parallel the normal is undefined. To check that D1U and D1V are colinear the sinus of the angle between D1U and D1V is computed and compared with SinTol. The normal is computed if Status == Done else the Status gives the reason why the computation has failed.
 
@@ -220,7 +220,7 @@ class cslib(object):
         return _CSLib.cslib_Normal(*args)
 
     Normal = staticmethod(Normal)
-    def DNNUV(*args):
+    def DNNUV(*args) -> "gp_Vec" :
         """
         * -- Computes the derivative of order Nu in the --  direction U and Nv in the direction V of the not --  normalized normal vector at the point P(U,V) The  array DerSurf contain the derivative (i,j) of the surface  for i=0,Nu+1 ; j=0,Nv+1
 
@@ -248,7 +248,7 @@ class cslib(object):
         return _CSLib.cslib_DNNUV(*args)
 
     DNNUV = staticmethod(DNNUV)
-    def DNNormal(*args):
+    def DNNormal(*args) -> "gp_Vec" :
         """
         * -- Computes the derivative of order Nu in the --  direction U and Nv in the direction V of the  normalized normal vector at the point P(U,V) array  DerNUV contain the derivative (i+Iduref,j+Idvref)  of D1U ^ D1V for i=0,Nu ; j=0,Nv Iduref and Idvref  correspond to a derivative of D1U ^ D1V which can  be used to compute the normalized normal vector.  In the regular cases , Iduref=Idvref=0.
 
@@ -282,7 +282,7 @@ cslib._kill_pointed = new_instancemethod(_CSLib.cslib__kill_pointed,None,cslib)
 cslib_swigregister = _CSLib.cslib_swigregister
 cslib_swigregister(cslib)
 
-def cslib_Normal(*args):
+def cslib_Normal(*args) -> "Standard_Integer &, Standard_Integer &" :
   """
     * The following functions computes the normal to a surface inherits FunctionWithDerivative from math Computes the normal direction of a surface as the cross product between D1U and D1V. If D1U has null length or D1V has null length or D1U and D1V are parallel the normal is undefined. To check that D1U and D1V are colinear the sinus of the angle between D1U and D1V is computed and compared with SinTol. The normal is computed if Status == Done else the Status gives the reason why the computation has failed.
 
@@ -367,7 +367,7 @@ def cslib_Normal(*args):
     """
   return _CSLib.cslib_Normal(*args)
 
-def cslib_DNNUV(*args):
+def cslib_DNNUV(*args) -> "gp_Vec" :
   """
     * -- Computes the derivative of order Nu in the --  direction U and Nv in the direction V of the not --  normalized normal vector at the point P(U,V) The  array DerSurf contain the derivative (i,j) of the surface  for i=0,Nu+1 ; j=0,Nv+1
 
@@ -394,7 +394,7 @@ def cslib_DNNUV(*args):
     """
   return _CSLib.cslib_DNNUV(*args)
 
-def cslib_DNNormal(*args):
+def cslib_DNNormal(*args) -> "gp_Vec" :
   """
     * -- Computes the derivative of order Nu in the --  direction U and Nv in the direction V of the  normalized normal vector at the point P(U,V) array  DerNUV contain the derivative (i+Iduref,j+Idvref)  of D1U ^ D1V for i=0,Nu ; j=0,Nv Iduref and Idvref  correspond to a derivative of D1U ^ D1V which can  be used to compute the normalized normal vector.  In the regular cases , Iduref=Idvref=0.
 
@@ -436,7 +436,7 @@ class CSLib_Class2d(object):
 
         """
         _CSLib.CSLib_Class2d_swiginit(self,_CSLib.new_CSLib_Class2d(*args))
-    def SiDans(self, *args):
+    def SiDans(self, *args) -> "Standard_Integer" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -445,7 +445,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_SiDans(self, *args)
 
-    def SiDans_OnMode(self, *args):
+    def SiDans_OnMode(self, *args) -> "Standard_Integer" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -456,7 +456,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_SiDans_OnMode(self, *args)
 
-    def InternalSiDans(self, *args):
+    def InternalSiDans(self, *args) -> "Standard_Integer" :
         """
         :param X:
         :type X: float
@@ -467,7 +467,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_InternalSiDans(self, *args)
 
-    def InternalSiDansOuOn(self, *args):
+    def InternalSiDansOuOn(self, *args) -> "Standard_Integer" :
         """
         :param X:
         :type X: float
@@ -478,7 +478,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_InternalSiDansOuOn(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "CSLib_Class2d const &" :
         """
         :param Other:
         :type Other: CSLib_Class2d &
@@ -487,7 +487,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_Copy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "CSLib_Class2d const &" :
         """
         :param Other:
         :type Other: CSLib_Class2d &
@@ -496,7 +496,7 @@ class CSLib_Class2d(object):
         """
         return _CSLib.CSLib_Class2d_Set(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -535,7 +535,7 @@ class CSLib_NormalPolyDef(object):
 
         """
         _CSLib.CSLib_NormalPolyDef_swiginit(self,_CSLib.new_CSLib_NormalPolyDef(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the value <F>of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -548,7 +548,7 @@ class CSLib_NormalPolyDef(object):
         """
         return _CSLib.CSLib_NormalPolyDef_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         * computes the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -561,7 +561,7 @@ class CSLib_NormalPolyDef(object):
         """
         return _CSLib.CSLib_NormalPolyDef_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * computes the value <F> and the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 

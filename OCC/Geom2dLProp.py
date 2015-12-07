@@ -149,7 +149,7 @@ class Geom2dLProp_CLProps2d(object):
 
         """
         _Geom2dLProp.Geom2dLProp_CLProps2d_swiginit(self,_Geom2dLProp.new_Geom2dLProp_CLProps2d(*args))
-    def SetParameter(self, *args):
+    def SetParameter(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -158,7 +158,7 @@ class Geom2dLProp_CLProps2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_SetParameter(self, *args)
 
-    def SetCurve(self, *args):
+    def SetCurve(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -167,42 +167,42 @@ class Geom2dLProp_CLProps2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_SetCurve(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d const" :
         """
         :rtype: gp_Pnt2d
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "gp_Vec2d const" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "gp_Vec2d const" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_D2(self, *args)
 
-    def D3(self, *args):
+    def D3(self, *args) -> "gp_Vec2d const" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_D3(self, *args)
 
-    def IsTangentDefined(self, *args):
+    def IsTangentDefined(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_IsTangentDefined(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "void" :
         """
         :param D:
         :type D: gp_Dir2d
@@ -211,14 +211,14 @@ class Geom2dLProp_CLProps2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_Tangent(self, *args)
 
-    def Curvature(self, *args):
+    def Curvature(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_Curvature(self, *args)
 
-    def Normal(self, *args):
+    def Normal(self, *args) -> "void" :
         """
         :param N:
         :type N: gp_Dir2d
@@ -227,7 +227,7 @@ class Geom2dLProp_CLProps2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_CLProps2d_Normal(self, *args)
 
-    def CentreOfCurvature(self, *args):
+    def CentreOfCurvature(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -270,7 +270,7 @@ class Geom2dLProp_CurAndInf2d(OCC.LProp.LProp_CurAndInf):
 
         """
         _Geom2dLProp.Geom2dLProp_CurAndInf2d_swiginit(self,_Geom2dLProp.new_Geom2dLProp_CurAndInf2d(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * For the curve C, Computes both the inflection points and the maximum and minimum curvatures.
 
@@ -281,7 +281,7 @@ class Geom2dLProp_CurAndInf2d(OCC.LProp.LProp_CurAndInf):
         """
         return _Geom2dLProp.Geom2dLProp_CurAndInf2d_Perform(self, *args)
 
-    def PerformCurExt(self, *args):
+    def PerformCurExt(self, *args) -> "void" :
         """
         * For the curve C, Computes the locals extremas of curvature.
 
@@ -292,7 +292,7 @@ class Geom2dLProp_CurAndInf2d(OCC.LProp.LProp_CurAndInf):
         """
         return _Geom2dLProp.Geom2dLProp_CurAndInf2d_PerformCurExt(self, *args)
 
-    def PerformInf(self, *args):
+    def PerformInf(self, *args) -> "void" :
         """
         * For the curve C, Computes the inflections. After computation, the following functions can be used: - IsDone to check if the computation was successful - NbPoints to obtain the number of computed particular points - Parameter to obtain the parameter on the curve for each particular point - Type to check if the point is an inflection point or an extremum of curvature of the curve C. Warning These functions can be used to analyze a series of curves, however it is necessary to clear the table of results between each computation.
 
@@ -303,7 +303,7 @@ class Geom2dLProp_CurAndInf2d(OCC.LProp.LProp_CurAndInf):
         """
         return _Geom2dLProp.Geom2dLProp_CurAndInf2d_PerformInf(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the solutions are found.
 
@@ -331,7 +331,7 @@ Geom2dLProp_CurAndInf2d_swigregister(Geom2dLProp_CurAndInf2d)
 class Geom2dLProp_Curve2dTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Value(*args):
+    def Value(*args) -> "void" :
         """
         * Computes the point <P> of parameter <U> on the curve <C>.
 
@@ -347,7 +347,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -365,7 +365,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -385,7 +385,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -407,7 +407,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def Continuity(*args):
+    def Continuity(*args) -> "Standard_Integer" :
         """
         * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -419,7 +419,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         * returns the first parameter bound of the curve.
 
@@ -431,7 +431,7 @@ class Geom2dLProp_Curve2dTool(object):
         return _Geom2dLProp.Geom2dLProp_Curve2dTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         * returns the last parameter bound of the curve. FirstParameter must be less than LastParameter.
 
@@ -457,7 +457,7 @@ Geom2dLProp_Curve2dTool._kill_pointed = new_instancemethod(_Geom2dLProp.Geom2dLP
 Geom2dLProp_Curve2dTool_swigregister = _Geom2dLProp.Geom2dLProp_Curve2dTool_swigregister
 Geom2dLProp_Curve2dTool_swigregister(Geom2dLProp_Curve2dTool)
 
-def Geom2dLProp_Curve2dTool_Value(*args):
+def Geom2dLProp_Curve2dTool_Value(*args) -> "void" :
   """
     * Computes the point <P> of parameter <U> on the curve <C>.
 
@@ -472,7 +472,7 @@ def Geom2dLProp_Curve2dTool_Value(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_Value(*args)
 
-def Geom2dLProp_Curve2dTool_D1(*args):
+def Geom2dLProp_Curve2dTool_D1(*args) -> "void" :
   """
     * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -489,7 +489,7 @@ def Geom2dLProp_Curve2dTool_D1(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_D1(*args)
 
-def Geom2dLProp_Curve2dTool_D2(*args):
+def Geom2dLProp_Curve2dTool_D2(*args) -> "void" :
   """
     * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -508,7 +508,7 @@ def Geom2dLProp_Curve2dTool_D2(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_D2(*args)
 
-def Geom2dLProp_Curve2dTool_D3(*args):
+def Geom2dLProp_Curve2dTool_D3(*args) -> "void" :
   """
     * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -529,7 +529,7 @@ def Geom2dLProp_Curve2dTool_D3(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_D3(*args)
 
-def Geom2dLProp_Curve2dTool_Continuity(*args):
+def Geom2dLProp_Curve2dTool_Continuity(*args) -> "Standard_Integer" :
   """
     * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -540,7 +540,7 @@ def Geom2dLProp_Curve2dTool_Continuity(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_Continuity(*args)
 
-def Geom2dLProp_Curve2dTool_FirstParameter(*args):
+def Geom2dLProp_Curve2dTool_FirstParameter(*args) -> "Standard_Real" :
   """
     * returns the first parameter bound of the curve.
 
@@ -551,7 +551,7 @@ def Geom2dLProp_Curve2dTool_FirstParameter(*args):
     """
   return _Geom2dLProp.Geom2dLProp_Curve2dTool_FirstParameter(*args)
 
-def Geom2dLProp_Curve2dTool_LastParameter(*args):
+def Geom2dLProp_Curve2dTool_LastParameter(*args) -> "Standard_Real" :
   """
     * returns the last parameter bound of the curve. FirstParameter must be less than LastParameter.
 
@@ -575,7 +575,7 @@ class Geom2dLProp_FCurExtOfNumericCurInf2d(object):
 
         """
         _Geom2dLProp.Geom2dLProp_FCurExtOfNumericCurInf2d_swiginit(self,_Geom2dLProp.new_Geom2dLProp_FCurExtOfNumericCurInf2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -586,7 +586,7 @@ class Geom2dLProp_FCurExtOfNumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_FCurExtOfNumericCurInf2d_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -597,7 +597,7 @@ class Geom2dLProp_FCurExtOfNumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_FCurExtOfNumericCurInf2d_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -610,7 +610,7 @@ class Geom2dLProp_FCurExtOfNumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_FCurExtOfNumericCurInf2d_Values(self, *args)
 
-    def IsMinKC(self, *args):
+    def IsMinKC(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -646,7 +646,7 @@ class Geom2dLProp_FCurNulOfNumericCurInf2d(object):
 
         """
         _Geom2dLProp.Geom2dLProp_FCurNulOfNumericCurInf2d_swiginit(self,_Geom2dLProp.new_Geom2dLProp_FCurNulOfNumericCurInf2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -657,7 +657,7 @@ class Geom2dLProp_FCurNulOfNumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_FCurNulOfNumericCurInf2d_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -668,7 +668,7 @@ class Geom2dLProp_FCurNulOfNumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_FCurNulOfNumericCurInf2d_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -705,7 +705,7 @@ class Geom2dLProp_NumericCurInf2d(object):
 
         """
         _Geom2dLProp.Geom2dLProp_NumericCurInf2d_swiginit(self,_Geom2dLProp.new_Geom2dLProp_NumericCurInf2d(*args))
-    def PerformCurExt(self, *args):
+    def PerformCurExt(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -726,7 +726,7 @@ class Geom2dLProp_NumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_NumericCurInf2d_PerformCurExt(self, *args)
 
-    def PerformInf(self, *args):
+    def PerformInf(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -747,7 +747,7 @@ class Geom2dLProp_NumericCurInf2d(object):
         """
         return _Geom2dLProp.Geom2dLProp_NumericCurInf2d_PerformInf(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 

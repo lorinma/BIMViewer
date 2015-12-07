@@ -138,7 +138,7 @@ class ExprIntrp_Analysis(object):
 
         """
         _ExprIntrp.ExprIntrp_Analysis_swiginit(self,_ExprIntrp.new_ExprIntrp_Analysis(*args))
-    def SetMaster(self, *args):
+    def SetMaster(self, *args) -> "void" :
         """
         :param agen:
         :type agen: Handle_ExprIntrp_Generator &
@@ -147,7 +147,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_SetMaster(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param exp:
         :type exp: Handle_Expr_GeneralExpression &
@@ -156,7 +156,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_Push(self, *args)
 
-    def PushRelation(self, *args):
+    def PushRelation(self, *args) -> "void" :
         """
         :param rel:
         :type rel: Handle_Expr_GeneralRelation &
@@ -165,7 +165,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_PushRelation(self, *args)
 
-    def PushName(self, *args):
+    def PushName(self, *args) -> "void" :
         """
         :param name:
         :type name: TCollection_AsciiString &
@@ -174,7 +174,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_PushName(self, *args)
 
-    def PushValue(self, *args):
+    def PushValue(self, *args) -> "void" :
         """
         :param degree:
         :type degree: int
@@ -183,7 +183,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_PushValue(self, *args)
 
-    def PushFunction(self, *args):
+    def PushFunction(self, *args) -> "void" :
         """
         :param func:
         :type func: Handle_Expr_GeneralFunction &
@@ -192,63 +192,63 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_PushFunction(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_Pop(self, *args)
 
-    def PopRelation(self, *args):
+    def PopRelation(self, *args) -> "Handle_Expr_GeneralRelation" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_PopRelation(self, *args)
 
-    def PopName(self, *args):
+    def PopName(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_PopName(self, *args)
 
-    def PopValue(self, *args):
+    def PopValue(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_PopValue(self, *args)
 
-    def PopFunction(self, *args):
+    def PopFunction(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         :rtype: Handle_Expr_GeneralFunction
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_PopFunction(self, *args)
 
-    def IsExpStackEmpty(self, *args):
+    def IsExpStackEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_IsExpStackEmpty(self, *args)
 
-    def IsRelStackEmpty(self, *args):
+    def IsRelStackEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_IsRelStackEmpty(self, *args)
 
-    def ResetAll(self, *args):
+    def ResetAll(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_Analysis_ResetAll(self, *args)
 
-    def Use(self, *args):
+    def Use(self, *args) -> "void" :
         """
         :param func:
         :type func: Handle_Expr_NamedFunction &
@@ -261,7 +261,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_Use(self, *args)
 
-    def GetNamed(self, *args):
+    def GetNamed(self, *args) -> "Handle_Expr_NamedExpression" :
         """
         :param name:
         :type name: TCollection_AsciiString &
@@ -270,7 +270,7 @@ class ExprIntrp_Analysis(object):
         """
         return _ExprIntrp.ExprIntrp_Analysis_GetNamed(self, *args)
 
-    def GetFunction(self, *args):
+    def GetFunction(self, *args) -> "Handle_Expr_NamedFunction" :
         """
         :param name:
         :type name: TCollection_AsciiString &
@@ -312,7 +312,7 @@ class ExprIntrp_Generator(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Use(self, *args):
+    def Use(self, *args) -> "void" :
         """
         :param func:
         :type func: Handle_Expr_NamedFunction &
@@ -325,14 +325,14 @@ class ExprIntrp_Generator(OCC.MMgt.MMgt_TShared):
         """
         return _ExprIntrp.ExprIntrp_Generator_Use(self, *args)
 
-    def GetFunctions(self, *args):
+    def GetFunctions(self, *args) -> "ExprIntrp_SequenceOfNamedFunction const &" :
         """
         :rtype: ExprIntrp_SequenceOfNamedFunction
 
         """
         return _ExprIntrp.ExprIntrp_Generator_GetFunctions(self, *args)
 
-    def GetNamed(self, *args):
+    def GetNamed(self, *args) -> "Handle_Expr_NamedExpression" :
         """
         :rtype: ExprIntrp_SequenceOfNamedExpression
 
@@ -345,7 +345,7 @@ class ExprIntrp_Generator(OCC.MMgt.MMgt_TShared):
         """
         return _ExprIntrp.ExprIntrp_Generator_GetNamed(self, *args)
 
-    def GetFunction(self, *args):
+    def GetFunction(self, *args) -> "Handle_Expr_NamedFunction" :
         """
         * Returns NamedFunction with name <name> already interpreted if it exists. Returns a null handle if not.
 
@@ -356,11 +356,11 @@ class ExprIntrp_Generator(OCC.MMgt.MMgt_TShared):
         """
         return _ExprIntrp.ExprIntrp_Generator_GetFunction(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_Generator self)"""
         return _ExprIntrp.ExprIntrp_Generator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_Generator" :
         """GetHandle(ExprIntrp_Generator self) -> Handle_ExprIntrp_Generator"""
         return _ExprIntrp.ExprIntrp_Generator_GetHandle(self)
 
@@ -402,7 +402,7 @@ Handle_ExprIntrp_Generator._kill_pointed = new_instancemethod(_ExprIntrp.Handle_
 Handle_ExprIntrp_Generator_swigregister = _ExprIntrp.Handle_ExprIntrp_Generator_swigregister
 Handle_ExprIntrp_Generator_swigregister(Handle_ExprIntrp_Generator)
 
-def Handle_ExprIntrp_Generator_DownCast(*args):
+def Handle_ExprIntrp_Generator_DownCast(*args) -> "Handle_ExprIntrp_Generator const" :
   return _ExprIntrp.Handle_ExprIntrp_Generator_DownCast(*args)
 Handle_ExprIntrp_Generator_DownCast = _ExprIntrp.Handle_ExprIntrp_Generator_DownCast
 
@@ -421,18 +421,18 @@ class ExprIntrp_SequenceNodeOfSequenceOfNamedExpression(OCC.TCollection.TCollect
 
         """
         _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_swiginit(self,_ExprIntrp.new_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedExpression &" :
         """
         :rtype: Handle_Expr_NamedExpression
 
         """
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_SequenceNodeOfSequenceOfNamedExpression self)"""
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression" :
         """GetHandle(ExprIntrp_SequenceNodeOfSequenceOfNamedExpression self) -> Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression"""
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_GetHandle(self)
 
@@ -471,7 +471,7 @@ Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression._kill_pointed = new_ins
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_swigregister = _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_swigregister
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_swigregister(Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression)
 
-def Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_DownCast(*args):
+def Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_DownCast(*args) -> "Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression const" :
   return _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_DownCast(*args)
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_DownCast = _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedExpression_DownCast
 
@@ -490,18 +490,18 @@ class ExprIntrp_SequenceNodeOfSequenceOfNamedFunction(OCC.TCollection.TCollectio
 
         """
         _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_swiginit(self,_ExprIntrp.new_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedFunction &" :
         """
         :rtype: Handle_Expr_NamedFunction
 
         """
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_SequenceNodeOfSequenceOfNamedFunction self)"""
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction" :
         """GetHandle(ExprIntrp_SequenceNodeOfSequenceOfNamedFunction self) -> Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction"""
         return _ExprIntrp.ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_GetHandle(self)
 
@@ -540,7 +540,7 @@ Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction._kill_pointed = new_insta
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_swigregister = _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_swigregister
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_swigregister(Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction)
 
-def Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_DownCast(*args):
+def Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_DownCast(*args) -> "Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction const" :
   return _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_DownCast(*args)
 Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_DownCast = _ExprIntrp.Handle_ExprIntrp_SequenceNodeOfSequenceOfNamedFunction_DownCast
 
@@ -553,14 +553,14 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
 
         """
         _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_swiginit(self,_ExprIntrp.new_ExprIntrp_SequenceOfNamedExpression(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_SequenceOfNamedExpression const &" :
         """
         :param Other:
         :type Other: ExprIntrp_SequenceOfNamedExpression &
@@ -569,7 +569,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_SequenceOfNamedExpression const &" :
         """
         :param Other:
         :type Other: ExprIntrp_SequenceOfNamedExpression &
@@ -578,7 +578,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_NamedExpression &
@@ -591,7 +591,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_NamedExpression &
@@ -604,7 +604,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -621,7 +621,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -638,21 +638,21 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Expr_NamedExpression const &" :
         """
         :rtype: Handle_Expr_NamedExpression
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Expr_NamedExpression const &" :
         """
         :rtype: Handle_Expr_NamedExpression
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -663,7 +663,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedExpression const &" :
         """
         :param Index:
         :type Index: int
@@ -672,7 +672,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -683,7 +683,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_NamedExpression &" :
         """
         :param Index:
         :type Index: int
@@ -692,7 +692,7 @@ class ExprIntrp_SequenceOfNamedExpression(OCC.TCollection.TCollection_BaseSequen
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedExpression_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -742,14 +742,14 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
 
         """
         _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_swiginit(self,_ExprIntrp.new_ExprIntrp_SequenceOfNamedFunction(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_SequenceOfNamedFunction const &" :
         """
         :param Other:
         :type Other: ExprIntrp_SequenceOfNamedFunction &
@@ -758,7 +758,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_SequenceOfNamedFunction const &" :
         """
         :param Other:
         :type Other: ExprIntrp_SequenceOfNamedFunction &
@@ -767,7 +767,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_NamedFunction &
@@ -780,7 +780,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_NamedFunction &
@@ -793,7 +793,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -810,7 +810,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -827,21 +827,21 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Expr_NamedFunction const &" :
         """
         :rtype: Handle_Expr_NamedFunction
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Expr_NamedFunction const &" :
         """
         :rtype: Handle_Expr_NamedFunction
 
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -852,7 +852,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedFunction const &" :
         """
         :param Index:
         :type Index: int
@@ -861,7 +861,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -872,7 +872,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_NamedFunction &" :
         """
         :param Index:
         :type Index: int
@@ -881,7 +881,7 @@ class ExprIntrp_SequenceOfNamedFunction(OCC.TCollection.TCollection_BaseSequence
         """
         return _ExprIntrp.ExprIntrp_SequenceOfNamedFunction_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -935,7 +935,7 @@ class ExprIntrp_StackIteratorOfStackOfGeneralExpression(object):
 
         """
         _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralExpression_swiginit(self,_ExprIntrp.new_ExprIntrp_StackIteratorOfStackOfGeneralExpression(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: ExprIntrp_StackOfGeneralExpression &
@@ -944,21 +944,21 @@ class ExprIntrp_StackIteratorOfStackOfGeneralExpression(object):
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralExpression_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralExpression_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralExpression_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
@@ -994,7 +994,7 @@ class ExprIntrp_StackIteratorOfStackOfGeneralFunction(object):
 
         """
         _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralFunction_swiginit(self,_ExprIntrp.new_ExprIntrp_StackIteratorOfStackOfGeneralFunction(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: ExprIntrp_StackOfGeneralFunction &
@@ -1003,21 +1003,21 @@ class ExprIntrp_StackIteratorOfStackOfGeneralFunction(object):
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralFunction_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralFunction_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralFunction_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralFunction const &" :
         """
         :rtype: Handle_Expr_GeneralFunction
 
@@ -1053,7 +1053,7 @@ class ExprIntrp_StackIteratorOfStackOfGeneralRelation(object):
 
         """
         _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralRelation_swiginit(self,_ExprIntrp.new_ExprIntrp_StackIteratorOfStackOfGeneralRelation(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: ExprIntrp_StackOfGeneralRelation &
@@ -1062,21 +1062,21 @@ class ExprIntrp_StackIteratorOfStackOfGeneralRelation(object):
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralRelation_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralRelation_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfGeneralRelation_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralRelation const &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
@@ -1112,7 +1112,7 @@ class ExprIntrp_StackIteratorOfStackOfNames(object):
 
         """
         _ExprIntrp.ExprIntrp_StackIteratorOfStackOfNames_swiginit(self,_ExprIntrp.new_ExprIntrp_StackIteratorOfStackOfNames(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: ExprIntrp_StackOfNames &
@@ -1121,21 +1121,21 @@ class ExprIntrp_StackIteratorOfStackOfNames(object):
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfNames_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfNames_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackIteratorOfStackOfNames_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
@@ -1171,18 +1171,18 @@ class ExprIntrp_StackNodeOfStackOfGeneralExpression(OCC.TCollection.TCollection_
 
         """
         _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralExpression_swiginit(self,_ExprIntrp.new_ExprIntrp_StackNodeOfStackOfGeneralExpression(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralExpression &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralExpression_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_StackNodeOfStackOfGeneralExpression self)"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression" :
         """GetHandle(ExprIntrp_StackNodeOfStackOfGeneralExpression self) -> Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralExpression_GetHandle(self)
 
@@ -1221,7 +1221,7 @@ Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression._kill_pointed = new_instanc
 Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_swigregister = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_swigregister
 Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_swigregister(Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression)
 
-def Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_DownCast(*args):
+def Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_DownCast(*args) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression const" :
   return _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_DownCast(*args)
 Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_DownCast = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralExpression_DownCast
 
@@ -1238,18 +1238,18 @@ class ExprIntrp_StackNodeOfStackOfGeneralFunction(OCC.TCollection.TCollection_Ma
 
         """
         _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralFunction_swiginit(self,_ExprIntrp.new_ExprIntrp_StackNodeOfStackOfGeneralFunction(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralFunction &" :
         """
         :rtype: Handle_Expr_GeneralFunction
 
         """
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralFunction_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_StackNodeOfStackOfGeneralFunction self)"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction" :
         """GetHandle(ExprIntrp_StackNodeOfStackOfGeneralFunction self) -> Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralFunction_GetHandle(self)
 
@@ -1288,7 +1288,7 @@ Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction._kill_pointed = new_instancem
 Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_swigregister = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_swigregister
 Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_swigregister(Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction)
 
-def Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_DownCast(*args):
+def Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_DownCast(*args) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction const" :
   return _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_DownCast(*args)
 Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_DownCast = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralFunction_DownCast
 
@@ -1305,18 +1305,18 @@ class ExprIntrp_StackNodeOfStackOfGeneralRelation(OCC.TCollection.TCollection_Ma
 
         """
         _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralRelation_swiginit(self,_ExprIntrp.new_ExprIntrp_StackNodeOfStackOfGeneralRelation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralRelation &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralRelation_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_StackNodeOfStackOfGeneralRelation self)"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralRelation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation" :
         """GetHandle(ExprIntrp_StackNodeOfStackOfGeneralRelation self) -> Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfGeneralRelation_GetHandle(self)
 
@@ -1355,7 +1355,7 @@ Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation._kill_pointed = new_instancem
 Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_swigregister = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_swigregister
 Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_swigregister(Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation)
 
-def Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_DownCast(*args):
+def Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_DownCast(*args) -> "Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation const" :
   return _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_DownCast(*args)
 Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_DownCast = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfGeneralRelation_DownCast
 
@@ -1372,18 +1372,18 @@ class ExprIntrp_StackNodeOfStackOfNames(OCC.TCollection.TCollection_MapNode):
 
         """
         _ExprIntrp.ExprIntrp_StackNodeOfStackOfNames_swiginit(self,_ExprIntrp.new_ExprIntrp_StackNodeOfStackOfNames(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfNames_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_StackNodeOfStackOfNames self)"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfNames__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_StackNodeOfStackOfNames" :
         """GetHandle(ExprIntrp_StackNodeOfStackOfNames self) -> Handle_ExprIntrp_StackNodeOfStackOfNames"""
         return _ExprIntrp.ExprIntrp_StackNodeOfStackOfNames_GetHandle(self)
 
@@ -1422,7 +1422,7 @@ Handle_ExprIntrp_StackNodeOfStackOfNames._kill_pointed = new_instancemethod(_Exp
 Handle_ExprIntrp_StackNodeOfStackOfNames_swigregister = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfNames_swigregister
 Handle_ExprIntrp_StackNodeOfStackOfNames_swigregister(Handle_ExprIntrp_StackNodeOfStackOfNames)
 
-def Handle_ExprIntrp_StackNodeOfStackOfNames_DownCast(*args):
+def Handle_ExprIntrp_StackNodeOfStackOfNames_DownCast(*args) -> "Handle_ExprIntrp_StackNodeOfStackOfNames const" :
   return _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfNames_DownCast(*args)
 Handle_ExprIntrp_StackNodeOfStackOfNames_DownCast = _ExprIntrp.Handle_ExprIntrp_StackNodeOfStackOfNames_DownCast
 
@@ -1435,7 +1435,7 @@ class ExprIntrp_StackOfGeneralExpression(object):
 
         """
         _ExprIntrp.ExprIntrp_StackOfGeneralExpression_swiginit(self,_ExprIntrp.new_ExprIntrp_StackOfGeneralExpression(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_StackOfGeneralExpression const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralExpression &
@@ -1444,7 +1444,7 @@ class ExprIntrp_StackOfGeneralExpression(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_StackOfGeneralExpression const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralExpression &
@@ -1453,28 +1453,28 @@ class ExprIntrp_StackOfGeneralExpression(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Expr_GeneralExpression &
@@ -1483,21 +1483,21 @@ class ExprIntrp_StackOfGeneralExpression(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralExpression_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "Handle_Expr_GeneralExpression &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
@@ -1534,7 +1534,7 @@ class ExprIntrp_StackOfGeneralFunction(object):
 
         """
         _ExprIntrp.ExprIntrp_StackOfGeneralFunction_swiginit(self,_ExprIntrp.new_ExprIntrp_StackOfGeneralFunction(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_StackOfGeneralFunction const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralFunction &
@@ -1543,7 +1543,7 @@ class ExprIntrp_StackOfGeneralFunction(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_StackOfGeneralFunction const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralFunction &
@@ -1552,28 +1552,28 @@ class ExprIntrp_StackOfGeneralFunction(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Handle_Expr_GeneralFunction const &" :
         """
         :rtype: Handle_Expr_GeneralFunction
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Expr_GeneralFunction &
@@ -1582,21 +1582,21 @@ class ExprIntrp_StackOfGeneralFunction(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralFunction_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "Handle_Expr_GeneralFunction &" :
         """
         :rtype: Handle_Expr_GeneralFunction
 
@@ -1633,7 +1633,7 @@ class ExprIntrp_StackOfGeneralRelation(object):
 
         """
         _ExprIntrp.ExprIntrp_StackOfGeneralRelation_swiginit(self,_ExprIntrp.new_ExprIntrp_StackOfGeneralRelation(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_StackOfGeneralRelation const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralRelation &
@@ -1642,7 +1642,7 @@ class ExprIntrp_StackOfGeneralRelation(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_StackOfGeneralRelation const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfGeneralRelation &
@@ -1651,28 +1651,28 @@ class ExprIntrp_StackOfGeneralRelation(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Handle_Expr_GeneralRelation const &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Expr_GeneralRelation &
@@ -1681,21 +1681,21 @@ class ExprIntrp_StackOfGeneralRelation(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfGeneralRelation_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "Handle_Expr_GeneralRelation &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
@@ -1732,7 +1732,7 @@ class ExprIntrp_StackOfNames(object):
 
         """
         _ExprIntrp.ExprIntrp_StackOfNames_swiginit(self,_ExprIntrp.new_ExprIntrp_StackOfNames(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "ExprIntrp_StackOfNames const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfNames &
@@ -1741,7 +1741,7 @@ class ExprIntrp_StackOfNames(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "ExprIntrp_StackOfNames const &" :
         """
         :param Other:
         :type Other: ExprIntrp_StackOfNames &
@@ -1750,28 +1750,28 @@ class ExprIntrp_StackOfNames(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_AsciiString &
@@ -1780,21 +1780,21 @@ class ExprIntrp_StackOfNames(object):
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ExprIntrp.ExprIntrp_StackOfNames_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
@@ -1826,7 +1826,7 @@ class ExprIntrp_GenExp(ExprIntrp_Generator):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Create(*args):
+    def Create(*args) -> "Handle_ExprIntrp_GenExp" :
         """
         :rtype: Handle_ExprIntrp_GenExp
 
@@ -1834,7 +1834,7 @@ class ExprIntrp_GenExp(ExprIntrp_Generator):
         return _ExprIntrp.ExprIntrp_GenExp_Create(*args)
 
     Create = staticmethod(Create)
-    def Process(self, *args):
+    def Process(self, *args) -> "void" :
         """
         * Processes given string.
 
@@ -1845,7 +1845,7 @@ class ExprIntrp_GenExp(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenExp_Process(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns false if any syntax error has occurred during process.
 
@@ -1854,7 +1854,7 @@ class ExprIntrp_GenExp(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenExp_IsDone(self, *args)
 
-    def Expression(self, *args):
+    def Expression(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns expression generated. Raises an exception if IsDone answers false.
 
@@ -1863,11 +1863,11 @@ class ExprIntrp_GenExp(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenExp_Expression(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_GenExp self)"""
         return _ExprIntrp.ExprIntrp_GenExp__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_GenExp" :
         """GetHandle(ExprIntrp_GenExp self) -> Handle_ExprIntrp_GenExp"""
         return _ExprIntrp.ExprIntrp_GenExp_GetHandle(self)
 
@@ -1887,7 +1887,7 @@ ExprIntrp_GenExp.GetHandle = new_instancemethod(_ExprIntrp.ExprIntrp_GenExp_GetH
 ExprIntrp_GenExp_swigregister = _ExprIntrp.ExprIntrp_GenExp_swigregister
 ExprIntrp_GenExp_swigregister(ExprIntrp_GenExp)
 
-def ExprIntrp_GenExp_Create(*args):
+def ExprIntrp_GenExp_Create(*args) -> "Handle_ExprIntrp_GenExp" :
   """
     :rtype: Handle_ExprIntrp_GenExp
 
@@ -1915,7 +1915,7 @@ Handle_ExprIntrp_GenExp._kill_pointed = new_instancemethod(_ExprIntrp.Handle_Exp
 Handle_ExprIntrp_GenExp_swigregister = _ExprIntrp.Handle_ExprIntrp_GenExp_swigregister
 Handle_ExprIntrp_GenExp_swigregister(Handle_ExprIntrp_GenExp)
 
-def Handle_ExprIntrp_GenExp_DownCast(*args):
+def Handle_ExprIntrp_GenExp_DownCast(*args) -> "Handle_ExprIntrp_GenExp const" :
   return _ExprIntrp.Handle_ExprIntrp_GenExp_DownCast(*args)
 Handle_ExprIntrp_GenExp_DownCast = _ExprIntrp.Handle_ExprIntrp_GenExp_DownCast
 
@@ -1923,7 +1923,7 @@ class ExprIntrp_GenFct(ExprIntrp_Generator):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Create(*args):
+    def Create(*args) -> "Handle_ExprIntrp_GenFct" :
         """
         :rtype: Handle_ExprIntrp_GenFct
 
@@ -1931,7 +1931,7 @@ class ExprIntrp_GenFct(ExprIntrp_Generator):
         return _ExprIntrp.ExprIntrp_GenFct_Create(*args)
 
     Create = staticmethod(Create)
-    def Process(self, *args):
+    def Process(self, *args) -> "void" :
         """
         :param str:
         :type str: TCollection_AsciiString &
@@ -1940,18 +1940,18 @@ class ExprIntrp_GenFct(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenFct_Process(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ExprIntrp.ExprIntrp_GenFct_IsDone(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_GenFct self)"""
         return _ExprIntrp.ExprIntrp_GenFct__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_GenFct" :
         """GetHandle(ExprIntrp_GenFct self) -> Handle_ExprIntrp_GenFct"""
         return _ExprIntrp.ExprIntrp_GenFct_GetHandle(self)
 
@@ -1970,7 +1970,7 @@ ExprIntrp_GenFct.GetHandle = new_instancemethod(_ExprIntrp.ExprIntrp_GenFct_GetH
 ExprIntrp_GenFct_swigregister = _ExprIntrp.ExprIntrp_GenFct_swigregister
 ExprIntrp_GenFct_swigregister(ExprIntrp_GenFct)
 
-def ExprIntrp_GenFct_Create(*args):
+def ExprIntrp_GenFct_Create(*args) -> "Handle_ExprIntrp_GenFct" :
   """
     :rtype: Handle_ExprIntrp_GenFct
 
@@ -1998,7 +1998,7 @@ Handle_ExprIntrp_GenFct._kill_pointed = new_instancemethod(_ExprIntrp.Handle_Exp
 Handle_ExprIntrp_GenFct_swigregister = _ExprIntrp.Handle_ExprIntrp_GenFct_swigregister
 Handle_ExprIntrp_GenFct_swigregister(Handle_ExprIntrp_GenFct)
 
-def Handle_ExprIntrp_GenFct_DownCast(*args):
+def Handle_ExprIntrp_GenFct_DownCast(*args) -> "Handle_ExprIntrp_GenFct const" :
   return _ExprIntrp.Handle_ExprIntrp_GenFct_DownCast(*args)
 Handle_ExprIntrp_GenFct_DownCast = _ExprIntrp.Handle_ExprIntrp_GenFct_DownCast
 
@@ -2006,7 +2006,7 @@ class ExprIntrp_GenRel(ExprIntrp_Generator):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Create(*args):
+    def Create(*args) -> "Handle_ExprIntrp_GenRel" :
         """
         :rtype: Handle_ExprIntrp_GenRel
 
@@ -2014,7 +2014,7 @@ class ExprIntrp_GenRel(ExprIntrp_Generator):
         return _ExprIntrp.ExprIntrp_GenRel_Create(*args)
 
     Create = staticmethod(Create)
-    def Process(self, *args):
+    def Process(self, *args) -> "void" :
         """
         * Processes given string.
 
@@ -2025,7 +2025,7 @@ class ExprIntrp_GenRel(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenRel_Process(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns false if any syntax error has occurred during process.
 
@@ -2034,7 +2034,7 @@ class ExprIntrp_GenRel(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenRel_IsDone(self, *args)
 
-    def Relation(self, *args):
+    def Relation(self, *args) -> "Handle_Expr_GeneralRelation" :
         """
         * Returns relation generated. Raises an exception if IsDone answers false.
 
@@ -2043,11 +2043,11 @@ class ExprIntrp_GenRel(ExprIntrp_Generator):
         """
         return _ExprIntrp.ExprIntrp_GenRel_Relation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ExprIntrp_GenRel self)"""
         return _ExprIntrp.ExprIntrp_GenRel__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ExprIntrp_GenRel" :
         """GetHandle(ExprIntrp_GenRel self) -> Handle_ExprIntrp_GenRel"""
         return _ExprIntrp.ExprIntrp_GenRel_GetHandle(self)
 
@@ -2067,7 +2067,7 @@ ExprIntrp_GenRel.GetHandle = new_instancemethod(_ExprIntrp.ExprIntrp_GenRel_GetH
 ExprIntrp_GenRel_swigregister = _ExprIntrp.ExprIntrp_GenRel_swigregister
 ExprIntrp_GenRel_swigregister(ExprIntrp_GenRel)
 
-def ExprIntrp_GenRel_Create(*args):
+def ExprIntrp_GenRel_Create(*args) -> "Handle_ExprIntrp_GenRel" :
   """
     :rtype: Handle_ExprIntrp_GenRel
 
@@ -2095,7 +2095,7 @@ Handle_ExprIntrp_GenRel._kill_pointed = new_instancemethod(_ExprIntrp.Handle_Exp
 Handle_ExprIntrp_GenRel_swigregister = _ExprIntrp.Handle_ExprIntrp_GenRel_swigregister
 Handle_ExprIntrp_GenRel_swigregister(Handle_ExprIntrp_GenRel)
 
-def Handle_ExprIntrp_GenRel_DownCast(*args):
+def Handle_ExprIntrp_GenRel_DownCast(*args) -> "Handle_ExprIntrp_GenRel const" :
   return _ExprIntrp.Handle_ExprIntrp_GenRel_DownCast(*args)
 Handle_ExprIntrp_GenRel_DownCast = _ExprIntrp.Handle_ExprIntrp_GenRel_DownCast
 

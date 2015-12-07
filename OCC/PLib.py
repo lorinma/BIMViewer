@@ -119,7 +119,7 @@ import OCC.GeomAbs
 class plib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NoWeights(*args):
+    def NoWeights(*args) -> "TColStd_Array1OfReal &" :
         """
         * Used as argument for a non rational functions
 
@@ -129,7 +129,7 @@ class plib(object):
         return _PLib.plib_NoWeights(*args)
 
     NoWeights = staticmethod(NoWeights)
-    def NoWeights2(*args):
+    def NoWeights2(*args) -> "TColStd_Array2OfReal &" :
         """
         * Used as argument for a non rational functions
 
@@ -139,7 +139,7 @@ class plib(object):
         return _PLib.plib_NoWeights2(*args)
 
     NoWeights2 = staticmethod(NoWeights2)
-    def SetPoles(*args):
+    def SetPoles(*args) -> "void" :
         """
         * Copy in FP the coordinates of the poles.
 
@@ -181,7 +181,7 @@ class plib(object):
         return _PLib.plib_SetPoles(*args)
 
     SetPoles = staticmethod(SetPoles)
-    def GetPoles(*args):
+    def GetPoles(*args) -> "void" :
         """
         * Get from FP the coordinates of the poles.
 
@@ -223,7 +223,7 @@ class plib(object):
         return _PLib.plib_GetPoles(*args)
 
     GetPoles = staticmethod(GetPoles)
-    def Bin(*args):
+    def Bin(*args) -> "Standard_Real" :
         """
         * Returns the Binomial Cnp. N should be <= BSplCLib::MaxDegree().
 
@@ -237,7 +237,7 @@ class plib(object):
         return _PLib.plib_Bin(*args)
 
     Bin = staticmethod(Bin)
-    def RationalDerivative(*args):
+    def RationalDerivative(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Computes the derivatives of a ratio at order <N> in dimension <Dimension>.  <Ders> is an array containing the values of the input derivatives from 0 to Min(<N>,<Degree>). For orders higher than <Degree> the inputcd /s2d1/BMDL/ derivatives are assumed to be 0.  Content of <Ders> :  x(1),x(2),...,x(Dimension),w x'(1),x'(2),...,x'(Dimension),w' x''(1),x''(2),...,x''(Dimension),w''  If <All> is false, only the derivative at order <N> is computed. <RDers> is an array of length Dimension which will contain the result :  x(1)/w , x(2)/w , ... derivated <N> times  If <All> is true all the derivatives up to order <N> are computed. <RDers> is an array of length Dimension * (N+1) which will contains :  x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated <1> times x(1)/w , x(2)/w , ... derivated <2> times ... x(1)/w , x(2)/w , ... derivated <N> times Warning: <RDers> must be dimensionned properly.
 
@@ -259,7 +259,7 @@ class plib(object):
         return _PLib.plib_RationalDerivative(*args)
 
     RationalDerivative = staticmethod(RationalDerivative)
-    def RationalDerivatives(*args):
+    def RationalDerivatives(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Computes DerivativesRequest derivatives of a ratio at of a BSpline function of degree <Degree> dimension <Dimension>.  <PolesDerivatives> is an array containing the values of the input derivatives from 0 to <DerivativeRequest> For orders higher than <Degree> the input derivatives are assumed to be 0.  Content of <PoleasDerivatives> :  x(1),x(2),...,x(Dimension) x'(1),x'(2),...,x'(Dimension) x''(1),x''(2),...,x''(Dimension) WeightsDerivatives is an array that contains derivatives from 0 to <DerivativeRequest> After returning from the routine the array RationalDerivatives contains the following x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated once x(1)/w , x(2)/w , ... twice x(1)/w , x(2)/w , ... derivated <DerivativeRequest> times  The array RationalDerivatives and PolesDerivatives can be same since the overwrite is non destructive within the algorithm Warning: <RationalDerivates> must be dimensionned properly.
 
@@ -279,7 +279,7 @@ class plib(object):
         return _PLib.plib_RationalDerivatives(*args)
 
     RationalDerivatives = staticmethod(RationalDerivatives)
-    def EvalPolynomial(*args):
+    def EvalPolynomial(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Performs Horner method with synthethic division for derivatives parameter <U>, with <Degree> and <Dimension>. PolynomialCoeff are stored in the following fashion c0(1) c0(2) .... c0(Dimension) c1(1) c1(2) .... c1(Dimension) cDegree(1) cDegree(2) .... cDegree(Dimension) where the polynomial is defined as :  2 Degree c0 + c1 X + c2 X + .... cDegree X  Results stores the result in the following format  f(1) f(2) .... f(Dimension) (1)  (1)  (1) f (1) f (2) .... f (Dimension) (DerivativeRequest) (DerivativeRequest) f (1)  f (Dimension)  this just evaluates the point at parameter U Warning: <Results> and <PolynomialCoeff> must be dimensioned properly
 
@@ -301,7 +301,7 @@ class plib(object):
         return _PLib.plib_EvalPolynomial(*args)
 
     EvalPolynomial = staticmethod(EvalPolynomial)
-    def NoDerivativeEvalPolynomial(*args):
+    def NoDerivativeEvalPolynomial(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Same as above with DerivativeOrder = 0;
 
@@ -323,7 +323,7 @@ class plib(object):
         return _PLib.plib_NoDerivativeEvalPolynomial(*args)
 
     NoDerivativeEvalPolynomial = staticmethod(NoDerivativeEvalPolynomial)
-    def EvalPoly2Var(*args):
+    def EvalPoly2Var(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Applies EvalPolynomial twice to evaluate the derivative of orders UDerivativeOrder in U, VDerivativeOrder in V at parameters U,V PolynomialCoeff are stored in the following fashion c00(1) .... c00(Dimension) c10(1) .... c10(Dimension) .... cm0(1) .... cm0(Dimension) .... c01(1) .... c01(Dimension) c11(1) .... c11(Dimension) .... cm1(1) .... cm1(Dimension) .... c0n(1) .... c0n(Dimension) c1n(1) .... c1n(Dimension) .... cmn(1) .... cmn(Dimension) where the polynomial is defined as :  2  m c00 + c10 U + c20 U + .... + cm0 U  2  m + c01 V + c11 UV + c21 U V + .... + cm1 U V  n m n + .... + c0n V + .... + cmn U V  with m = UDegree and n = VDegree  Results stores the result in the following format  f(1) f(2) .... f(Dimension) Warning: <Results> and <PolynomialCoeff> must be dimensioned properly
 
@@ -351,7 +351,7 @@ class plib(object):
         return _PLib.plib_EvalPoly2Var(*args)
 
     EvalPoly2Var = staticmethod(EvalPoly2Var)
-    def EvalLagrange(*args):
+    def EvalLagrange(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Performs the Lagrange Interpolation of given series of points with given parameters with the requested derivative order Results will store things in the following format with d = DerivativeOrder [0], [Dimension-1]  : value [Dimension], [Dimension + Dimension-1] : first derivative [d *Dimension], [d*Dimension + Dimension-1]: dth derivative
 
@@ -375,7 +375,7 @@ class plib(object):
         return _PLib.plib_EvalLagrange(*args)
 
     EvalLagrange = staticmethod(EvalLagrange)
-    def EvalCubicHermite(*args):
+    def EvalCubicHermite(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Performs the Cubic Hermite Interpolation of given series of points with given parameters with the requested derivative order. ValueArray stores the value at the first and last parameter. It has the following format : [0], [Dimension-1]  : value at first param [Dimension], [Dimension + Dimension-1] : value at last param Derivative array stores the value of the derivatives at the first parameter and at the last parameter in the following format [0], [Dimension-1]  : derivative at   first param [Dimension], [Dimension + Dimension-1] : derivative at   last param  ParameterArray stores the first and last parameter in the following format : [0] : first parameter [1] : last parameter  Results will store things in the following format with d = DerivativeOrder [0], [Dimension-1]  : value [Dimension], [Dimension + Dimension-1] : first derivative [d *Dimension], [d*Dimension + Dimension-1]: dth derivative
 
@@ -399,7 +399,7 @@ class plib(object):
         return _PLib.plib_EvalCubicHermite(*args)
 
     EvalCubicHermite = staticmethod(EvalCubicHermite)
-    def HermiteCoefficients(*args):
+    def HermiteCoefficients(*args) -> "Standard_Boolean" :
         """
         * This build the coefficient of Hermite's polynomes on [FirstParameter, LastParameter]  if j <= FirstOrder+1 then  MatrixCoefs[i, j] = ith coefficient of the polynome H0,j-1  else  MatrixCoefs[i, j] = ith coefficient of the polynome H1,k  with k = j - FirstOrder - 2  return false if - |FirstParameter| > 100 - |LastParameter| > 100 - |FirstParameter| +|LastParameter| < 1/100 - |LastParameter - FirstParameter|  / (|FirstParameter| +|LastParameter|) < 1/100
 
@@ -419,7 +419,7 @@ class plib(object):
         return _PLib.plib_HermiteCoefficients(*args)
 
     HermiteCoefficients = staticmethod(HermiteCoefficients)
-    def Trimming(*args):
+    def Trimming(*args) -> "void" :
         """
         :param U1:
         :type U1: float
@@ -467,7 +467,7 @@ class plib(object):
         return _PLib.plib_Trimming(*args)
 
     Trimming = staticmethod(Trimming)
-    def CoefficientsPoles(*args):
+    def CoefficientsPoles(*args) -> "void" :
         """
         :param Coefs:
         :type Coefs: TColgp_Array1OfPnt
@@ -525,7 +525,7 @@ class plib(object):
         return _PLib.plib_CoefficientsPoles(*args)
 
     CoefficientsPoles = staticmethod(CoefficientsPoles)
-    def UTrimming(*args):
+    def UTrimming(*args) -> "void" :
         """
         :param U1:
         :type U1: float
@@ -541,7 +541,7 @@ class plib(object):
         return _PLib.plib_UTrimming(*args)
 
     UTrimming = staticmethod(UTrimming)
-    def VTrimming(*args):
+    def VTrimming(*args) -> "void" :
         """
         :param V1:
         :type V1: float
@@ -557,7 +557,7 @@ class plib(object):
         return _PLib.plib_VTrimming(*args)
 
     VTrimming = staticmethod(VTrimming)
-    def HermiteInterpolate(*args):
+    def HermiteInterpolate(*args) -> "Standard_Boolean" :
         """
         * Compute the coefficients in the canonical base of the  polynomial satisfying the given constraints  at the given parameters  The array FirstContr(i,j) i=1,Dimension j=0,FirstOrder  contains the values of the constraint at parameter FirstParameter  idem for LastConstr
 
@@ -583,7 +583,7 @@ class plib(object):
         return _PLib.plib_HermiteInterpolate(*args)
 
     HermiteInterpolate = staticmethod(HermiteInterpolate)
-    def JacobiParameters(*args):
+    def JacobiParameters(*args) -> "Standard_Integer &, Standard_Integer &" :
         """
         * Compute the number of points used for integral  computations (NbGaussPoints) and the degree of Jacobi  Polynomial (WorkDegree).  ConstraintOrder has to be GeomAbs_C0, GeomAbs_C1 or GeomAbs_C2  Code: Code d' init. des parametres de discretisation.  = -5  = -4  = -3  = -2  = -1  = 1 calcul rapide avec precision moyenne.  = 2 calcul rapide avec meilleure precision.  = 3 calcul un peu plus lent avec bonne precision.  = 4 calcul lent avec la meilleure precision possible.
 
@@ -603,7 +603,7 @@ class plib(object):
         return _PLib.plib_JacobiParameters(*args)
 
     JacobiParameters = staticmethod(JacobiParameters)
-    def NivConstr(*args):
+    def NivConstr(*args) -> "Standard_Integer" :
         """
         * translates from GeomAbs_Shape to Integer
 
@@ -615,7 +615,7 @@ class plib(object):
         return _PLib.plib_NivConstr(*args)
 
     NivConstr = staticmethod(NivConstr)
-    def ConstraintOrder(*args):
+    def ConstraintOrder(*args) -> "GeomAbs_Shape" :
         """
         * translates from Integer to GeomAbs_Shape
 
@@ -627,7 +627,7 @@ class plib(object):
         return _PLib.plib_ConstraintOrder(*args)
 
     ConstraintOrder = staticmethod(ConstraintOrder)
-    def EvalLength(*args):
+    def EvalLength(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         :param Degree:
         :type Degree: int
@@ -679,7 +679,7 @@ plib._kill_pointed = new_instancemethod(_PLib.plib__kill_pointed,None,plib)
 plib_swigregister = _PLib.plib_swigregister
 plib_swigregister(plib)
 
-def plib_NoWeights(*args):
+def plib_NoWeights(*args) -> "TColStd_Array1OfReal &" :
   """
     * Used as argument for a non rational functions
 
@@ -688,7 +688,7 @@ def plib_NoWeights(*args):
     """
   return _PLib.plib_NoWeights(*args)
 
-def plib_NoWeights2(*args):
+def plib_NoWeights2(*args) -> "TColStd_Array2OfReal &" :
   """
     * Used as argument for a non rational functions
 
@@ -697,7 +697,7 @@ def plib_NoWeights2(*args):
     """
   return _PLib.plib_NoWeights2(*args)
 
-def plib_SetPoles(*args):
+def plib_SetPoles(*args) -> "void" :
   """
     * Copy in FP the coordinates of the poles.
 
@@ -738,7 +738,7 @@ def plib_SetPoles(*args):
     """
   return _PLib.plib_SetPoles(*args)
 
-def plib_GetPoles(*args):
+def plib_GetPoles(*args) -> "void" :
   """
     * Get from FP the coordinates of the poles.
 
@@ -779,7 +779,7 @@ def plib_GetPoles(*args):
     """
   return _PLib.plib_GetPoles(*args)
 
-def plib_Bin(*args):
+def plib_Bin(*args) -> "Standard_Real" :
   """
     * Returns the Binomial Cnp. N should be <= BSplCLib::MaxDegree().
 
@@ -792,7 +792,7 @@ def plib_Bin(*args):
     """
   return _PLib.plib_Bin(*args)
 
-def plib_RationalDerivative(*args):
+def plib_RationalDerivative(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Computes the derivatives of a ratio at order <N> in dimension <Dimension>.  <Ders> is an array containing the values of the input derivatives from 0 to Min(<N>,<Degree>). For orders higher than <Degree> the inputcd /s2d1/BMDL/ derivatives are assumed to be 0.  Content of <Ders> :  x(1),x(2),...,x(Dimension),w x'(1),x'(2),...,x'(Dimension),w' x''(1),x''(2),...,x''(Dimension),w''  If <All> is false, only the derivative at order <N> is computed. <RDers> is an array of length Dimension which will contain the result :  x(1)/w , x(2)/w , ... derivated <N> times  If <All> is true all the derivatives up to order <N> are computed. <RDers> is an array of length Dimension * (N+1) which will contains :  x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated <1> times x(1)/w , x(2)/w , ... derivated <2> times ... x(1)/w , x(2)/w , ... derivated <N> times Warning: <RDers> must be dimensionned properly.
 
@@ -813,7 +813,7 @@ def plib_RationalDerivative(*args):
     """
   return _PLib.plib_RationalDerivative(*args)
 
-def plib_RationalDerivatives(*args):
+def plib_RationalDerivatives(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Computes DerivativesRequest derivatives of a ratio at of a BSpline function of degree <Degree> dimension <Dimension>.  <PolesDerivatives> is an array containing the values of the input derivatives from 0 to <DerivativeRequest> For orders higher than <Degree> the input derivatives are assumed to be 0.  Content of <PoleasDerivatives> :  x(1),x(2),...,x(Dimension) x'(1),x'(2),...,x'(Dimension) x''(1),x''(2),...,x''(Dimension) WeightsDerivatives is an array that contains derivatives from 0 to <DerivativeRequest> After returning from the routine the array RationalDerivatives contains the following x(1)/w , x(2)/w , ... x(1)/w , x(2)/w , ... derivated once x(1)/w , x(2)/w , ... twice x(1)/w , x(2)/w , ... derivated <DerivativeRequest> times  The array RationalDerivatives and PolesDerivatives can be same since the overwrite is non destructive within the algorithm Warning: <RationalDerivates> must be dimensionned properly.
 
@@ -832,7 +832,7 @@ def plib_RationalDerivatives(*args):
     """
   return _PLib.plib_RationalDerivatives(*args)
 
-def plib_EvalPolynomial(*args):
+def plib_EvalPolynomial(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Performs Horner method with synthethic division for derivatives parameter <U>, with <Degree> and <Dimension>. PolynomialCoeff are stored in the following fashion c0(1) c0(2) .... c0(Dimension) c1(1) c1(2) .... c1(Dimension) cDegree(1) cDegree(2) .... cDegree(Dimension) where the polynomial is defined as :  2 Degree c0 + c1 X + c2 X + .... cDegree X  Results stores the result in the following format  f(1) f(2) .... f(Dimension) (1)  (1)  (1) f (1) f (2) .... f (Dimension) (DerivativeRequest) (DerivativeRequest) f (1)  f (Dimension)  this just evaluates the point at parameter U Warning: <Results> and <PolynomialCoeff> must be dimensioned properly
 
@@ -853,7 +853,7 @@ def plib_EvalPolynomial(*args):
     """
   return _PLib.plib_EvalPolynomial(*args)
 
-def plib_NoDerivativeEvalPolynomial(*args):
+def plib_NoDerivativeEvalPolynomial(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Same as above with DerivativeOrder = 0;
 
@@ -874,7 +874,7 @@ def plib_NoDerivativeEvalPolynomial(*args):
     """
   return _PLib.plib_NoDerivativeEvalPolynomial(*args)
 
-def plib_EvalPoly2Var(*args):
+def plib_EvalPoly2Var(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Applies EvalPolynomial twice to evaluate the derivative of orders UDerivativeOrder in U, VDerivativeOrder in V at parameters U,V PolynomialCoeff are stored in the following fashion c00(1) .... c00(Dimension) c10(1) .... c10(Dimension) .... cm0(1) .... cm0(Dimension) .... c01(1) .... c01(Dimension) c11(1) .... c11(Dimension) .... cm1(1) .... cm1(Dimension) .... c0n(1) .... c0n(Dimension) c1n(1) .... c1n(Dimension) .... cmn(1) .... cmn(Dimension) where the polynomial is defined as :  2  m c00 + c10 U + c20 U + .... + cm0 U  2  m + c01 V + c11 UV + c21 U V + .... + cm1 U V  n m n + .... + c0n V + .... + cmn U V  with m = UDegree and n = VDegree  Results stores the result in the following format  f(1) f(2) .... f(Dimension) Warning: <Results> and <PolynomialCoeff> must be dimensioned properly
 
@@ -901,7 +901,7 @@ def plib_EvalPoly2Var(*args):
     """
   return _PLib.plib_EvalPoly2Var(*args)
 
-def plib_EvalLagrange(*args):
+def plib_EvalLagrange(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Performs the Lagrange Interpolation of given series of points with given parameters with the requested derivative order Results will store things in the following format with d = DerivativeOrder [0], [Dimension-1]  : value [Dimension], [Dimension + Dimension-1] : first derivative [d *Dimension], [d*Dimension + Dimension-1]: dth derivative
 
@@ -924,7 +924,7 @@ def plib_EvalLagrange(*args):
     """
   return _PLib.plib_EvalLagrange(*args)
 
-def plib_EvalCubicHermite(*args):
+def plib_EvalCubicHermite(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Performs the Cubic Hermite Interpolation of given series of points with given parameters with the requested derivative order. ValueArray stores the value at the first and last parameter. It has the following format : [0], [Dimension-1]  : value at first param [Dimension], [Dimension + Dimension-1] : value at last param Derivative array stores the value of the derivatives at the first parameter and at the last parameter in the following format [0], [Dimension-1]  : derivative at   first param [Dimension], [Dimension + Dimension-1] : derivative at   last param  ParameterArray stores the first and last parameter in the following format : [0] : first parameter [1] : last parameter  Results will store things in the following format with d = DerivativeOrder [0], [Dimension-1]  : value [Dimension], [Dimension + Dimension-1] : first derivative [d *Dimension], [d*Dimension + Dimension-1]: dth derivative
 
@@ -947,7 +947,7 @@ def plib_EvalCubicHermite(*args):
     """
   return _PLib.plib_EvalCubicHermite(*args)
 
-def plib_HermiteCoefficients(*args):
+def plib_HermiteCoefficients(*args) -> "Standard_Boolean" :
   """
     * This build the coefficient of Hermite's polynomes on [FirstParameter, LastParameter]  if j <= FirstOrder+1 then  MatrixCoefs[i, j] = ith coefficient of the polynome H0,j-1  else  MatrixCoefs[i, j] = ith coefficient of the polynome H1,k  with k = j - FirstOrder - 2  return false if - |FirstParameter| > 100 - |LastParameter| > 100 - |FirstParameter| +|LastParameter| < 1/100 - |LastParameter - FirstParameter|  / (|FirstParameter| +|LastParameter|) < 1/100
 
@@ -966,7 +966,7 @@ def plib_HermiteCoefficients(*args):
     """
   return _PLib.plib_HermiteCoefficients(*args)
 
-def plib_Trimming(*args):
+def plib_Trimming(*args) -> "void" :
   """
     :param U1:
     :type U1: float
@@ -1013,7 +1013,7 @@ def plib_Trimming(*args):
     """
   return _PLib.plib_Trimming(*args)
 
-def plib_CoefficientsPoles(*args):
+def plib_CoefficientsPoles(*args) -> "void" :
   """
     :param Coefs:
     :type Coefs: TColgp_Array1OfPnt
@@ -1070,7 +1070,7 @@ def plib_CoefficientsPoles(*args):
     """
   return _PLib.plib_CoefficientsPoles(*args)
 
-def plib_UTrimming(*args):
+def plib_UTrimming(*args) -> "void" :
   """
     :param U1:
     :type U1: float
@@ -1085,7 +1085,7 @@ def plib_UTrimming(*args):
     """
   return _PLib.plib_UTrimming(*args)
 
-def plib_VTrimming(*args):
+def plib_VTrimming(*args) -> "void" :
   """
     :param V1:
     :type V1: float
@@ -1100,7 +1100,7 @@ def plib_VTrimming(*args):
     """
   return _PLib.plib_VTrimming(*args)
 
-def plib_HermiteInterpolate(*args):
+def plib_HermiteInterpolate(*args) -> "Standard_Boolean" :
   """
     * Compute the coefficients in the canonical base of the  polynomial satisfying the given constraints  at the given parameters  The array FirstContr(i,j) i=1,Dimension j=0,FirstOrder  contains the values of the constraint at parameter FirstParameter  idem for LastConstr
 
@@ -1125,7 +1125,7 @@ def plib_HermiteInterpolate(*args):
     """
   return _PLib.plib_HermiteInterpolate(*args)
 
-def plib_JacobiParameters(*args):
+def plib_JacobiParameters(*args) -> "Standard_Integer &, Standard_Integer &" :
   """
     * Compute the number of points used for integral  computations (NbGaussPoints) and the degree of Jacobi  Polynomial (WorkDegree).  ConstraintOrder has to be GeomAbs_C0, GeomAbs_C1 or GeomAbs_C2  Code: Code d' init. des parametres de discretisation.  = -5  = -4  = -3  = -2  = -1  = 1 calcul rapide avec precision moyenne.  = 2 calcul rapide avec meilleure precision.  = 3 calcul un peu plus lent avec bonne precision.  = 4 calcul lent avec la meilleure precision possible.
 
@@ -1144,7 +1144,7 @@ def plib_JacobiParameters(*args):
     """
   return _PLib.plib_JacobiParameters(*args)
 
-def plib_NivConstr(*args):
+def plib_NivConstr(*args) -> "Standard_Integer" :
   """
     * translates from GeomAbs_Shape to Integer
 
@@ -1155,7 +1155,7 @@ def plib_NivConstr(*args):
     """
   return _PLib.plib_NivConstr(*args)
 
-def plib_ConstraintOrder(*args):
+def plib_ConstraintOrder(*args) -> "GeomAbs_Shape" :
   """
     * translates from Integer to GeomAbs_Shape
 
@@ -1166,7 +1166,7 @@ def plib_ConstraintOrder(*args):
     """
   return _PLib.plib_ConstraintOrder(*args)
 
-def plib_EvalLength(*args):
+def plib_EvalLength(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     :param Degree:
     :type Degree: int
@@ -1207,7 +1207,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ToCoefficients(self, *args):
+    def ToCoefficients(self, *args) -> "void" :
         """
         * Convert the polynomial P(t) in the canonical base.
 
@@ -1224,7 +1224,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_ToCoefficients(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         * Compute the values of the basis functions in u
 
@@ -1237,7 +1237,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         * Compute the values and the derivatives values of the basis functions in u
 
@@ -1252,7 +1252,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "void" :
         """
         * Compute the values and the derivatives values of the basis functions in u
 
@@ -1269,7 +1269,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_D2(self, *args)
 
-    def D3(self, *args):
+    def D3(self, *args) -> "void" :
         """
         * Compute the values and the derivatives values of the basis functions in u
 
@@ -1288,7 +1288,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_D3(self, *args)
 
-    def WorkDegree(self, *args):
+    def WorkDegree(self, *args) -> "Standard_Integer" :
         """
         * returns WorkDegree
 
@@ -1297,7 +1297,7 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_WorkDegree(self, *args)
 
-    def ReduceDegree(self, *args):
+    def ReduceDegree(self, *args) -> "void" :
         """
         * Compute NewDegree <= MaxDegree so that MaxError is lower than Tol. MaxError can be greater than Tol if it is not possible to find a NewDegree <= MaxDegree. In this case NewDegree = MaxDegree
 
@@ -1318,11 +1318,11 @@ class PLib_Base(OCC.MMgt.MMgt_TShared):
         """
         return _PLib.PLib_Base_ReduceDegree(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PLib_Base self)"""
         return _PLib.PLib_Base__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PLib_Base" :
         """GetHandle(PLib_Base self) -> Handle_PLib_Base"""
         return _PLib.PLib_Base_GetHandle(self)
 
@@ -1367,7 +1367,7 @@ Handle_PLib_Base._kill_pointed = new_instancemethod(_PLib.Handle_PLib_Base__kill
 Handle_PLib_Base_swigregister = _PLib.Handle_PLib_Base_swigregister
 Handle_PLib_Base_swigregister(Handle_PLib_Base)
 
-def Handle_PLib_Base_DownCast(*args):
+def Handle_PLib_Base_DownCast(*args) -> "Handle_PLib_Base const" :
   return _PLib.Handle_PLib_Base_DownCast(*args)
 Handle_PLib_Base_DownCast = _PLib.Handle_PLib_Base_DownCast
 
@@ -1386,7 +1386,7 @@ class PLib_DoubleJacobiPolynomial(object):
 
         """
         _PLib.PLib_DoubleJacobiPolynomial_swiginit(self,_PLib.new_PLib_DoubleJacobiPolynomial(*args))
-    def MaxErrorU(self, *args):
+    def MaxErrorU(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1403,7 +1403,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_MaxErrorU(self, *args)
 
-    def MaxErrorV(self, *args):
+    def MaxErrorV(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1420,7 +1420,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_MaxErrorV(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1443,7 +1443,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_MaxError(self, *args)
 
-    def ReduceDegree(self, *args):
+    def ReduceDegree(self, *args) -> "void" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1472,7 +1472,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_ReduceDegree(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1489,7 +1489,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_AverageError(self, *args)
 
-    def WDoubleJacobiToCoefficients(self, *args):
+    def WDoubleJacobiToCoefficients(self, *args) -> "void" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1506,7 +1506,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_WDoubleJacobiToCoefficients(self, *args)
 
-    def U(self, *args):
+    def U(self, *args) -> "Handle_PLib_JacobiPolynomial" :
         """
         * returns myJacPolU;
 
@@ -1515,7 +1515,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_U(self, *args)
 
-    def V(self, *args):
+    def V(self, *args) -> "Handle_PLib_JacobiPolynomial" :
         """
         * returns myJacPolV;
 
@@ -1524,7 +1524,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_V(self, *args)
 
-    def TabMaxU(self, *args):
+    def TabMaxU(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * returns myTabMaxU;
 
@@ -1533,7 +1533,7 @@ class PLib_DoubleJacobiPolynomial(object):
         """
         return _PLib.PLib_DoubleJacobiPolynomial_TabMaxU(self, *args)
 
-    def TabMaxV(self, *args):
+    def TabMaxV(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * returns myTabMaxV;
 
@@ -1579,7 +1579,7 @@ class PLib_JacobiPolynomial(PLib_Base):
 
         """
         _PLib.PLib_JacobiPolynomial_swiginit(self,_PLib.new_PLib_JacobiPolynomial(*args))
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * returns the Jacobi Points for Gauss integration ie the positive values of the Legendre roots by increasing values NbGaussPoints is the number of points choosen for the integral computation. TabPoints (0,NbGaussPoints/2) TabPoints (0) is loaded only for the odd values of NbGaussPoints The possible values for NbGaussPoints are : 8, 10, 15, 20, 25, 30, 35, 40, 50, 61 NbGaussPoints must be greater than Degree
 
@@ -1592,7 +1592,7 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_Points(self, *args)
 
-    def Weights(self, *args):
+    def Weights(self, *args) -> "void" :
         """
         * returns the Jacobi weigths for Gauss integration only for the positive values of the Legendre roots in the order they are given by the method Points NbGaussPoints is the number of points choosen for the integral computation. TabWeights (0,NbGaussPoints/2,0,Degree) TabWeights (0,.) are only loaded for the odd values of NbGaussPoints The possible values for NbGaussPoints are : 8 , 10 , 15 ,20 ,25 , 30, 35 , 40 , 50 , 61 NbGaussPoints must be greater than Degree
 
@@ -1605,7 +1605,7 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_Weights(self, *args)
 
-    def MaxValue(self, *args):
+    def MaxValue(self, *args) -> "void" :
         """
         * this method loads for k=0,q the maximum value of abs ( W(t)*Jk(t) )for t bellonging to [-1,1] This values are loaded is the array TabMax(0,myWorkDegree-2*(myNivConst+1)) MaxValue ( me ; TabMaxPointer : in out Real );
 
@@ -1616,7 +1616,7 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_MaxValue(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         * This method computes the maximum error on the polynomial W(t) Q(t) obtained by missing the coefficients of JacCoeff from NewDegree +1 to Degree
 
@@ -1631,7 +1631,7 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_MaxError(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :param Dimension:
         :type Dimension: int
@@ -1644,7 +1644,7 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_AverageError(self, *args)
 
-    def NivConstr(self, *args):
+    def NivConstr(self, *args) -> "Standard_Integer" :
         """
         * returns NivConstr
 
@@ -1653,11 +1653,11 @@ class PLib_JacobiPolynomial(PLib_Base):
         """
         return _PLib.PLib_JacobiPolynomial_NivConstr(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PLib_JacobiPolynomial self)"""
         return _PLib.PLib_JacobiPolynomial__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PLib_JacobiPolynomial" :
         """GetHandle(PLib_JacobiPolynomial self) -> Handle_PLib_JacobiPolynomial"""
         return _PLib.PLib_JacobiPolynomial_GetHandle(self)
 
@@ -1701,7 +1701,7 @@ Handle_PLib_JacobiPolynomial._kill_pointed = new_instancemethod(_PLib.Handle_PLi
 Handle_PLib_JacobiPolynomial_swigregister = _PLib.Handle_PLib_JacobiPolynomial_swigregister
 Handle_PLib_JacobiPolynomial_swigregister(Handle_PLib_JacobiPolynomial)
 
-def Handle_PLib_JacobiPolynomial_DownCast(*args):
+def Handle_PLib_JacobiPolynomial_DownCast(*args) -> "Handle_PLib_JacobiPolynomial const" :
   return _PLib.Handle_PLib_JacobiPolynomial_DownCast(*args)
 Handle_PLib_JacobiPolynomial_DownCast = _PLib.Handle_PLib_JacobiPolynomial_DownCast
 

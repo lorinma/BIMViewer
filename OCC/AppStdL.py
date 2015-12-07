@@ -124,7 +124,7 @@ class AppStdL_Application(OCC.TDocStd.TDocStd_Application):
 
         """
         _AppStdL.AppStdL_Application_swiginit(self,_AppStdL.new_AppStdL_Application(*args))
-    def MessageDriver(self, *args):
+    def MessageDriver(self, *args) -> "Handle_CDM_MessageDriver" :
         """
         :rtype: Handle_CDM_MessageDriver
 
@@ -166,7 +166,7 @@ Handle_AppStdL_Application._kill_pointed = new_instancemethod(_AppStdL.Handle_Ap
 Handle_AppStdL_Application_swigregister = _AppStdL.Handle_AppStdL_Application_swigregister
 Handle_AppStdL_Application_swigregister(Handle_AppStdL_Application)
 
-def Handle_AppStdL_Application_DownCast(*args):
+def Handle_AppStdL_Application_DownCast(*args) -> "Handle_AppStdL_Application const" :
   return _AppStdL.Handle_AppStdL_Application_DownCast(*args)
 Handle_AppStdL_Application_DownCast = _AppStdL.Handle_AppStdL_Application_DownCast
 

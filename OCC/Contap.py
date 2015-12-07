@@ -139,7 +139,7 @@ class Contap_ContAna(object):
 
         """
         _Contap.Contap_ContAna_swiginit(self,_Contap.new_Contap_ContAna(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param S:
         :type S: gp_Sphere
@@ -204,21 +204,21 @@ class Contap_ContAna(object):
         """
         return _Contap.Contap_ContAna_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_ContAna_IsDone(self, *args)
 
-    def NbContours(self, *args):
+    def NbContours(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_ContAna_NbContours(self, *args)
 
-    def TypeContour(self, *args):
+    def TypeContour(self, *args) -> "GeomAbs_CurveType" :
         """
         * Returns GeomAbs_Line or GeomAbs_Circle, when IsDone() returns True.
 
@@ -227,14 +227,14 @@ class Contap_ContAna(object):
         """
         return _Contap.Contap_ContAna_TypeContour(self, *args)
 
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ" :
         """
         :rtype: gp_Circ
 
         """
         return _Contap.Contap_ContAna_Circle(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "gp_Lin" :
         """
         :param Index:
         :type Index: int
@@ -310,7 +310,7 @@ class Contap_Contour(object):
 
         """
         _Contap.Contap_Contour_swiginit(self,_Contap.new_Contap_Contour(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Surf:
         :type Surf: Handle_Adaptor3d_HSurface &
@@ -347,7 +347,7 @@ class Contap_Contour(object):
         """
         return _Contap.Contap_Contour_Perform(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Direction:
         :type Direction: gp_Vec
@@ -366,28 +366,28 @@ class Contap_Contour(object):
         """
         return _Contap.Contap_Contour_Init(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_Contour_IsDone(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_Contour_IsEmpty(self, *args)
 
-    def NbLines(self, *args):
+    def NbLines(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_Contour_NbLines(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Contap_TheLineOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -396,7 +396,7 @@ class Contap_Contour(object):
         """
         return _Contap.Contap_Contour_Line(self, *args)
 
-    def SurfaceFunction(self, *args):
+    def SurfaceFunction(self, *args) -> "Contap_TheSurfFunctionOfContour &" :
         """
         :rtype: Contap_TheSurfFunctionOfContour
 
@@ -425,7 +425,7 @@ Contap_Contour_swigregister(Contap_Contour)
 class Contap_HContTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NbSamplesU(*args):
+    def NbSamplesU(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -439,7 +439,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args):
+    def NbSamplesV(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -453,7 +453,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbSamplesV(*args)
 
     NbSamplesV = staticmethod(NbSamplesV)
-    def NbSamplePoints(*args):
+    def NbSamplePoints(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -463,7 +463,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbSamplePoints(*args)
 
     NbSamplePoints = staticmethod(NbSamplePoints)
-    def SamplePoint(*args):
+    def SamplePoint(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -479,7 +479,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_SamplePoint(*args)
 
     SamplePoint = staticmethod(SamplePoint)
-    def HasBeenSeen(*args):
+    def HasBeenSeen(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -489,7 +489,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_HasBeenSeen(*args)
 
     HasBeenSeen = staticmethod(HasBeenSeen)
-    def NbSamplesOnArc(*args):
+    def NbSamplesOnArc(*args) -> "Standard_Integer" :
         """
         :param A:
         :type A: Handle_Adaptor2d_HCurve2d &
@@ -499,7 +499,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbSamplesOnArc(*args)
 
     NbSamplesOnArc = staticmethod(NbSamplesOnArc)
-    def Bounds(*args):
+    def Bounds(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -513,7 +513,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Bounds(*args)
 
     Bounds = staticmethod(Bounds)
-    def Project(*args):
+    def Project(*args) -> "Standard_Real &" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -529,7 +529,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Project(*args)
 
     Project = staticmethod(Project)
-    def Tolerance(*args):
+    def Tolerance(*args) -> "Standard_Real" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HVertex &
@@ -541,7 +541,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Tolerance(*args)
 
     Tolerance = staticmethod(Tolerance)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HVertex &
@@ -553,7 +553,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def NbPoints(*args):
+    def NbPoints(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -563,7 +563,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbPoints(*args)
 
     NbPoints = staticmethod(NbPoints)
-    def Value(*args):
+    def Value(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -581,7 +581,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Value(*args)
 
     Value = staticmethod(Value)
-    def IsVertex(*args):
+    def IsVertex(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -593,7 +593,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_IsVertex(*args)
 
     IsVertex = staticmethod(IsVertex)
-    def Vertex(*args):
+    def Vertex(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -607,7 +607,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_Vertex(*args)
 
     Vertex = staticmethod(Vertex)
-    def NbSegments(*args):
+    def NbSegments(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -617,7 +617,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_NbSegments(*args)
 
     NbSegments = staticmethod(NbSegments)
-    def HasFirstPoint(*args):
+    def HasFirstPoint(*args) -> "Standard_Integer &" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -631,7 +631,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_HasFirstPoint(*args)
 
     HasFirstPoint = staticmethod(HasFirstPoint)
-    def HasLastPoint(*args):
+    def HasLastPoint(*args) -> "Standard_Integer &" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -645,7 +645,7 @@ class Contap_HContTool(object):
         return _Contap.Contap_HContTool_HasLastPoint(*args)
 
     HasLastPoint = staticmethod(HasLastPoint)
-    def IsAllSolution(*args):
+    def IsAllSolution(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -669,7 +669,7 @@ Contap_HContTool._kill_pointed = new_instancemethod(_Contap.Contap_HContTool__ki
 Contap_HContTool_swigregister = _Contap.Contap_HContTool_swigregister
 Contap_HContTool_swigregister(Contap_HContTool)
 
-def Contap_HContTool_NbSamplesU(*args):
+def Contap_HContTool_NbSamplesU(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -682,7 +682,7 @@ def Contap_HContTool_NbSamplesU(*args):
     """
   return _Contap.Contap_HContTool_NbSamplesU(*args)
 
-def Contap_HContTool_NbSamplesV(*args):
+def Contap_HContTool_NbSamplesV(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -695,7 +695,7 @@ def Contap_HContTool_NbSamplesV(*args):
     """
   return _Contap.Contap_HContTool_NbSamplesV(*args)
 
-def Contap_HContTool_NbSamplePoints(*args):
+def Contap_HContTool_NbSamplePoints(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -704,7 +704,7 @@ def Contap_HContTool_NbSamplePoints(*args):
     """
   return _Contap.Contap_HContTool_NbSamplePoints(*args)
 
-def Contap_HContTool_SamplePoint(*args):
+def Contap_HContTool_SamplePoint(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -719,7 +719,7 @@ def Contap_HContTool_SamplePoint(*args):
     """
   return _Contap.Contap_HContTool_SamplePoint(*args)
 
-def Contap_HContTool_HasBeenSeen(*args):
+def Contap_HContTool_HasBeenSeen(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -728,7 +728,7 @@ def Contap_HContTool_HasBeenSeen(*args):
     """
   return _Contap.Contap_HContTool_HasBeenSeen(*args)
 
-def Contap_HContTool_NbSamplesOnArc(*args):
+def Contap_HContTool_NbSamplesOnArc(*args) -> "Standard_Integer" :
   """
     :param A:
     :type A: Handle_Adaptor2d_HCurve2d &
@@ -737,7 +737,7 @@ def Contap_HContTool_NbSamplesOnArc(*args):
     """
   return _Contap.Contap_HContTool_NbSamplesOnArc(*args)
 
-def Contap_HContTool_Bounds(*args):
+def Contap_HContTool_Bounds(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -750,7 +750,7 @@ def Contap_HContTool_Bounds(*args):
     """
   return _Contap.Contap_HContTool_Bounds(*args)
 
-def Contap_HContTool_Project(*args):
+def Contap_HContTool_Project(*args) -> "Standard_Real &" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -765,7 +765,7 @@ def Contap_HContTool_Project(*args):
     """
   return _Contap.Contap_HContTool_Project(*args)
 
-def Contap_HContTool_Tolerance(*args):
+def Contap_HContTool_Tolerance(*args) -> "Standard_Real" :
   """
     :param V:
     :type V: Handle_Adaptor3d_HVertex &
@@ -776,7 +776,7 @@ def Contap_HContTool_Tolerance(*args):
     """
   return _Contap.Contap_HContTool_Tolerance(*args)
 
-def Contap_HContTool_Parameter(*args):
+def Contap_HContTool_Parameter(*args) -> "Standard_Real" :
   """
     :param V:
     :type V: Handle_Adaptor3d_HVertex &
@@ -787,7 +787,7 @@ def Contap_HContTool_Parameter(*args):
     """
   return _Contap.Contap_HContTool_Parameter(*args)
 
-def Contap_HContTool_NbPoints(*args):
+def Contap_HContTool_NbPoints(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -796,7 +796,7 @@ def Contap_HContTool_NbPoints(*args):
     """
   return _Contap.Contap_HContTool_NbPoints(*args)
 
-def Contap_HContTool_Value(*args):
+def Contap_HContTool_Value(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -813,7 +813,7 @@ def Contap_HContTool_Value(*args):
     """
   return _Contap.Contap_HContTool_Value(*args)
 
-def Contap_HContTool_IsVertex(*args):
+def Contap_HContTool_IsVertex(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -824,7 +824,7 @@ def Contap_HContTool_IsVertex(*args):
     """
   return _Contap.Contap_HContTool_IsVertex(*args)
 
-def Contap_HContTool_Vertex(*args):
+def Contap_HContTool_Vertex(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -837,7 +837,7 @@ def Contap_HContTool_Vertex(*args):
     """
   return _Contap.Contap_HContTool_Vertex(*args)
 
-def Contap_HContTool_NbSegments(*args):
+def Contap_HContTool_NbSegments(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -846,7 +846,7 @@ def Contap_HContTool_NbSegments(*args):
     """
   return _Contap.Contap_HContTool_NbSegments(*args)
 
-def Contap_HContTool_HasFirstPoint(*args):
+def Contap_HContTool_HasFirstPoint(*args) -> "Standard_Integer &" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -859,7 +859,7 @@ def Contap_HContTool_HasFirstPoint(*args):
     """
   return _Contap.Contap_HContTool_HasFirstPoint(*args)
 
-def Contap_HContTool_HasLastPoint(*args):
+def Contap_HContTool_HasLastPoint(*args) -> "Standard_Integer &" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -872,7 +872,7 @@ def Contap_HContTool_HasLastPoint(*args):
     """
   return _Contap.Contap_HContTool_HasLastPoint(*args)
 
-def Contap_HContTool_IsAllSolution(*args):
+def Contap_HContTool_IsAllSolution(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -884,7 +884,7 @@ def Contap_HContTool_IsAllSolution(*args):
 class Contap_HCurve2dTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -894,7 +894,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -904,7 +904,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args):
+    def Continuity(*args) -> "GeomAbs_Shape" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -914,7 +914,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args):
+    def NbIntervals(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -926,7 +926,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args):
+    def Intervals(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -940,7 +940,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -950,7 +950,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args):
+    def IsPeriodic(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -960,7 +960,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args):
+    def Period(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -970,7 +970,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -982,7 +982,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -996,7 +996,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1012,7 +1012,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1030,7 +1030,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1050,7 +1050,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1064,7 +1064,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args):
+    def Resolution(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1076,7 +1076,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args):
+    def GetType(*args) -> "GeomAbs_CurveType" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1086,7 +1086,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args):
+    def Line(*args) -> "gp_Lin2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1096,7 +1096,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args):
+    def Circle(*args) -> "gp_Circ2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1106,7 +1106,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args):
+    def Ellipse(*args) -> "gp_Elips2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1116,7 +1116,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args):
+    def Hyperbola(*args) -> "gp_Hypr2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1126,7 +1126,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args):
+    def Parabola(*args) -> "gp_Parab2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1136,7 +1136,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args):
+    def Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1146,7 +1146,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args):
+    def BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1156,7 +1156,7 @@ class Contap_HCurve2dTool(object):
         return _Contap.Contap_HCurve2dTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def NbSamples(*args):
+    def NbSamples(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1184,7 +1184,7 @@ Contap_HCurve2dTool._kill_pointed = new_instancemethod(_Contap.Contap_HCurve2dTo
 Contap_HCurve2dTool_swigregister = _Contap.Contap_HCurve2dTool_swigregister
 Contap_HCurve2dTool_swigregister(Contap_HCurve2dTool)
 
-def Contap_HCurve2dTool_FirstParameter(*args):
+def Contap_HCurve2dTool_FirstParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1193,7 +1193,7 @@ def Contap_HCurve2dTool_FirstParameter(*args):
     """
   return _Contap.Contap_HCurve2dTool_FirstParameter(*args)
 
-def Contap_HCurve2dTool_LastParameter(*args):
+def Contap_HCurve2dTool_LastParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1202,7 +1202,7 @@ def Contap_HCurve2dTool_LastParameter(*args):
     """
   return _Contap.Contap_HCurve2dTool_LastParameter(*args)
 
-def Contap_HCurve2dTool_Continuity(*args):
+def Contap_HCurve2dTool_Continuity(*args) -> "GeomAbs_Shape" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1211,7 +1211,7 @@ def Contap_HCurve2dTool_Continuity(*args):
     """
   return _Contap.Contap_HCurve2dTool_Continuity(*args)
 
-def Contap_HCurve2dTool_NbIntervals(*args):
+def Contap_HCurve2dTool_NbIntervals(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1222,7 +1222,7 @@ def Contap_HCurve2dTool_NbIntervals(*args):
     """
   return _Contap.Contap_HCurve2dTool_NbIntervals(*args)
 
-def Contap_HCurve2dTool_Intervals(*args):
+def Contap_HCurve2dTool_Intervals(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1235,7 +1235,7 @@ def Contap_HCurve2dTool_Intervals(*args):
     """
   return _Contap.Contap_HCurve2dTool_Intervals(*args)
 
-def Contap_HCurve2dTool_IsClosed(*args):
+def Contap_HCurve2dTool_IsClosed(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1244,7 +1244,7 @@ def Contap_HCurve2dTool_IsClosed(*args):
     """
   return _Contap.Contap_HCurve2dTool_IsClosed(*args)
 
-def Contap_HCurve2dTool_IsPeriodic(*args):
+def Contap_HCurve2dTool_IsPeriodic(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1253,7 +1253,7 @@ def Contap_HCurve2dTool_IsPeriodic(*args):
     """
   return _Contap.Contap_HCurve2dTool_IsPeriodic(*args)
 
-def Contap_HCurve2dTool_Period(*args):
+def Contap_HCurve2dTool_Period(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1262,7 +1262,7 @@ def Contap_HCurve2dTool_Period(*args):
     """
   return _Contap.Contap_HCurve2dTool_Period(*args)
 
-def Contap_HCurve2dTool_Value(*args):
+def Contap_HCurve2dTool_Value(*args) -> "gp_Pnt2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1273,7 +1273,7 @@ def Contap_HCurve2dTool_Value(*args):
     """
   return _Contap.Contap_HCurve2dTool_Value(*args)
 
-def Contap_HCurve2dTool_D0(*args):
+def Contap_HCurve2dTool_D0(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1286,7 +1286,7 @@ def Contap_HCurve2dTool_D0(*args):
     """
   return _Contap.Contap_HCurve2dTool_D0(*args)
 
-def Contap_HCurve2dTool_D1(*args):
+def Contap_HCurve2dTool_D1(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1301,7 +1301,7 @@ def Contap_HCurve2dTool_D1(*args):
     """
   return _Contap.Contap_HCurve2dTool_D1(*args)
 
-def Contap_HCurve2dTool_D2(*args):
+def Contap_HCurve2dTool_D2(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1318,7 +1318,7 @@ def Contap_HCurve2dTool_D2(*args):
     """
   return _Contap.Contap_HCurve2dTool_D2(*args)
 
-def Contap_HCurve2dTool_D3(*args):
+def Contap_HCurve2dTool_D3(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1337,7 +1337,7 @@ def Contap_HCurve2dTool_D3(*args):
     """
   return _Contap.Contap_HCurve2dTool_D3(*args)
 
-def Contap_HCurve2dTool_DN(*args):
+def Contap_HCurve2dTool_DN(*args) -> "gp_Vec2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1350,7 +1350,7 @@ def Contap_HCurve2dTool_DN(*args):
     """
   return _Contap.Contap_HCurve2dTool_DN(*args)
 
-def Contap_HCurve2dTool_Resolution(*args):
+def Contap_HCurve2dTool_Resolution(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1361,7 +1361,7 @@ def Contap_HCurve2dTool_Resolution(*args):
     """
   return _Contap.Contap_HCurve2dTool_Resolution(*args)
 
-def Contap_HCurve2dTool_GetType(*args):
+def Contap_HCurve2dTool_GetType(*args) -> "GeomAbs_CurveType" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1370,7 +1370,7 @@ def Contap_HCurve2dTool_GetType(*args):
     """
   return _Contap.Contap_HCurve2dTool_GetType(*args)
 
-def Contap_HCurve2dTool_Line(*args):
+def Contap_HCurve2dTool_Line(*args) -> "gp_Lin2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1379,7 +1379,7 @@ def Contap_HCurve2dTool_Line(*args):
     """
   return _Contap.Contap_HCurve2dTool_Line(*args)
 
-def Contap_HCurve2dTool_Circle(*args):
+def Contap_HCurve2dTool_Circle(*args) -> "gp_Circ2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1388,7 +1388,7 @@ def Contap_HCurve2dTool_Circle(*args):
     """
   return _Contap.Contap_HCurve2dTool_Circle(*args)
 
-def Contap_HCurve2dTool_Ellipse(*args):
+def Contap_HCurve2dTool_Ellipse(*args) -> "gp_Elips2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1397,7 +1397,7 @@ def Contap_HCurve2dTool_Ellipse(*args):
     """
   return _Contap.Contap_HCurve2dTool_Ellipse(*args)
 
-def Contap_HCurve2dTool_Hyperbola(*args):
+def Contap_HCurve2dTool_Hyperbola(*args) -> "gp_Hypr2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1406,7 +1406,7 @@ def Contap_HCurve2dTool_Hyperbola(*args):
     """
   return _Contap.Contap_HCurve2dTool_Hyperbola(*args)
 
-def Contap_HCurve2dTool_Parabola(*args):
+def Contap_HCurve2dTool_Parabola(*args) -> "gp_Parab2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1415,7 +1415,7 @@ def Contap_HCurve2dTool_Parabola(*args):
     """
   return _Contap.Contap_HCurve2dTool_Parabola(*args)
 
-def Contap_HCurve2dTool_Bezier(*args):
+def Contap_HCurve2dTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1424,7 +1424,7 @@ def Contap_HCurve2dTool_Bezier(*args):
     """
   return _Contap.Contap_HCurve2dTool_Bezier(*args)
 
-def Contap_HCurve2dTool_BSpline(*args):
+def Contap_HCurve2dTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1433,7 +1433,7 @@ def Contap_HCurve2dTool_BSpline(*args):
     """
   return _Contap.Contap_HCurve2dTool_BSpline(*args)
 
-def Contap_HCurve2dTool_NbSamples(*args):
+def Contap_HCurve2dTool_NbSamples(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1461,18 +1461,18 @@ class Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollectio
 
         """
         _Contap.Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_swiginit(self,_Contap.new_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour &" :
         """
         :rtype: Handle_Contap_TheIWLineOfTheIWalkingOfContour
 
         """
         return _Contap.Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour self)"""
         return _Contap.Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour" :
         """GetHandle(Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour self) -> Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour"""
         return _Contap.Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_GetHandle(self)
 
@@ -1511,7 +1511,7 @@ Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour._kill_pointed
 Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_swigregister = _Contap.Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_swigregister
 Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_swigregister(Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour)
 
-def Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_DownCast(*args):
+def Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_DownCast(*args) -> "Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour const" :
   return _Contap.Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_DownCast(*args)
 Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_DownCast = _Contap.Handle_Contap_SequenceNodeOfSequenceOfIWLineOfTheIWalkingOfContour_DownCast
 
@@ -1530,18 +1530,18 @@ class Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour(OCC.TCollecti
 
         """
         _Contap.Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour &" :
         """
         :rtype: Contap_ThePathPointOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour self)"""
         return _Contap.Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour" :
         """GetHandle(Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour self) -> Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour"""
         return _Contap.Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_GetHandle(self)
 
@@ -1580,7 +1580,7 @@ Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour._kill_pointe
 Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_swigregister = _Contap.Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_swigregister
 Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_swigregister(Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour)
 
-def Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_DownCast(*args):
+def Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_DownCast(*args) -> "Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour const" :
   return _Contap.Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_DownCast(*args)
 Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_DownCast = _Contap.Handle_Contap_SequenceNodeOfSequenceOfPathPointOfTheSearchOfContour_DownCast
 
@@ -1599,18 +1599,18 @@ class Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour(OCC.TCollection
 
         """
         _Contap.Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour &" :
         """
         :rtype: Contap_TheSegmentOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour self)"""
         return _Contap.Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour" :
         """GetHandle(Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour self) -> Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour"""
         return _Contap.Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_GetHandle(self)
 
@@ -1649,7 +1649,7 @@ Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour._kill_pointed 
 Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_swigregister = _Contap.Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_swigregister
 Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_swigregister(Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour)
 
-def Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_DownCast(*args):
+def Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_DownCast(*args) -> "Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour const" :
   return _Contap.Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_DownCast(*args)
 Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_DownCast = _Contap.Handle_Contap_SequenceNodeOfSequenceOfSegmentOfTheSearchOfContour_DownCast
 
@@ -1668,18 +1668,18 @@ class Contap_SequenceNodeOfTheSequenceOfLineOfContour(OCC.TCollection.TCollectio
 
         """
         _Contap.Contap_SequenceNodeOfTheSequenceOfLineOfContour_swiginit(self,_Contap.new_Contap_SequenceNodeOfTheSequenceOfLineOfContour(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_TheLineOfContour &" :
         """
         :rtype: Contap_TheLineOfContour
 
         """
         return _Contap.Contap_SequenceNodeOfTheSequenceOfLineOfContour_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_SequenceNodeOfTheSequenceOfLineOfContour self)"""
         return _Contap.Contap_SequenceNodeOfTheSequenceOfLineOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour" :
         """GetHandle(Contap_SequenceNodeOfTheSequenceOfLineOfContour self) -> Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour"""
         return _Contap.Contap_SequenceNodeOfTheSequenceOfLineOfContour_GetHandle(self)
 
@@ -1718,7 +1718,7 @@ Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour._kill_pointed = new_insta
 Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_swigregister = _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_swigregister
 Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_swigregister(Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour)
 
-def Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_DownCast(*args):
+def Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_DownCast(*args) -> "Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour const" :
   return _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_DownCast(*args)
 Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_DownCast = _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfLineOfContour_DownCast
 
@@ -1737,18 +1737,18 @@ class Contap_SequenceNodeOfTheSequenceOfPointOfContour(OCC.TCollection.TCollecti
 
         """
         _Contap.Contap_SequenceNodeOfTheSequenceOfPointOfContour_swiginit(self,_Contap.new_Contap_SequenceNodeOfTheSequenceOfPointOfContour(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_ThePointOfContour &" :
         """
         :rtype: Contap_ThePointOfContour
 
         """
         return _Contap.Contap_SequenceNodeOfTheSequenceOfPointOfContour_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_SequenceNodeOfTheSequenceOfPointOfContour self)"""
         return _Contap.Contap_SequenceNodeOfTheSequenceOfPointOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour" :
         """GetHandle(Contap_SequenceNodeOfTheSequenceOfPointOfContour self) -> Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour"""
         return _Contap.Contap_SequenceNodeOfTheSequenceOfPointOfContour_GetHandle(self)
 
@@ -1787,7 +1787,7 @@ Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour._kill_pointed = new_inst
 Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_swigregister = _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_swigregister
 Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_swigregister(Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour)
 
-def Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_DownCast(*args):
+def Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_DownCast(*args) -> "Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour const" :
   return _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_DownCast(*args)
 Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_DownCast = _Contap.Handle_Contap_SequenceNodeOfTheSequenceOfPointOfContour_DownCast
 
@@ -1800,14 +1800,14 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
 
         """
         _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_swiginit(self,_Contap.new_Contap_SequenceOfIWLineOfTheIWalkingOfContour(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Contap_SequenceOfIWLineOfTheIWalkingOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfIWLineOfTheIWalkingOfContour &
@@ -1816,7 +1816,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Contap_SequenceOfIWLineOfTheIWalkingOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfIWLineOfTheIWalkingOfContour &
@@ -1825,7 +1825,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Contap_TheIWLineOfTheIWalkingOfContour &
@@ -1838,7 +1838,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Contap_TheIWLineOfTheIWalkingOfContour &
@@ -1851,7 +1851,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1868,7 +1868,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1885,21 +1885,21 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour const &" :
         """
         :rtype: Handle_Contap_TheIWLineOfTheIWalkingOfContour
 
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour const &" :
         """
         :rtype: Handle_Contap_TheIWLineOfTheIWalkingOfContour
 
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1910,7 +1910,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -1919,7 +1919,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1930,7 +1930,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -1939,7 +1939,7 @@ class Contap_SequenceOfIWLineOfTheIWalkingOfContour(OCC.TCollection.TCollection_
         """
         return _Contap.Contap_SequenceOfIWLineOfTheIWalkingOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1989,14 +1989,14 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
 
         """
         _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_SequenceOfPathPointOfTheSearchOfContour(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Contap_SequenceOfPathPointOfTheSearchOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfPathPointOfTheSearchOfContour &
@@ -2005,7 +2005,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Contap_SequenceOfPathPointOfTheSearchOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfPathPointOfTheSearchOfContour &
@@ -2014,7 +2014,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_ThePathPointOfTheSearchOfContour &
@@ -2027,7 +2027,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_ThePathPointOfTheSearchOfContour &
@@ -2040,7 +2040,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2057,7 +2057,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2074,21 +2074,21 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :rtype: Contap_ThePathPointOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :rtype: Contap_ThePathPointOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2099,7 +2099,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -2108,7 +2108,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2119,7 +2119,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -2128,7 +2128,7 @@ class Contap_SequenceOfPathPointOfTheSearchOfContour(OCC.TCollection.TCollection
         """
         return _Contap.Contap_SequenceOfPathPointOfTheSearchOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2178,14 +2178,14 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
 
         """
         _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_SequenceOfSegmentOfTheSearchOfContour(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Contap_SequenceOfSegmentOfTheSearchOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfSegmentOfTheSearchOfContour &
@@ -2194,7 +2194,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Contap_SequenceOfSegmentOfTheSearchOfContour const &" :
         """
         :param Other:
         :type Other: Contap_SequenceOfSegmentOfTheSearchOfContour &
@@ -2203,7 +2203,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_TheSegmentOfTheSearchOfContour &
@@ -2216,7 +2216,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_TheSegmentOfTheSearchOfContour &
@@ -2229,7 +2229,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2246,7 +2246,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2263,21 +2263,21 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour const &" :
         """
         :rtype: Contap_TheSegmentOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour const &" :
         """
         :rtype: Contap_TheSegmentOfTheSearchOfContour
 
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2288,7 +2288,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -2297,7 +2297,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2308,7 +2308,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -2317,7 +2317,7 @@ class Contap_SequenceOfSegmentOfTheSearchOfContour(OCC.TCollection.TCollection_B
         """
         return _Contap.Contap_SequenceOfSegmentOfTheSearchOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2367,7 +2367,7 @@ class Contap_TheArcFunctionOfContour(object):
 
         """
         _Contap.Contap_TheArcFunctionOfContour_swiginit(self,_Contap.new_Contap_TheArcFunctionOfContour(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -2400,7 +2400,7 @@ class Contap_TheArcFunctionOfContour(object):
         """
         return _Contap.Contap_TheArcFunctionOfContour_Set(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -2411,7 +2411,7 @@ class Contap_TheArcFunctionOfContour(object):
         """
         return _Contap.Contap_TheArcFunctionOfContour_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -2422,7 +2422,7 @@ class Contap_TheArcFunctionOfContour(object):
         """
         return _Contap.Contap_TheArcFunctionOfContour_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float
@@ -2435,21 +2435,21 @@ class Contap_TheArcFunctionOfContour(object):
         """
         return _Contap.Contap_TheArcFunctionOfContour_Values(self, *args)
 
-    def NbSamples(self, *args):
+    def NbSamples(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheArcFunctionOfContour_NbSamples(self, *args)
 
-    def GetStateNumber(self, *args):
+    def GetStateNumber(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheArcFunctionOfContour_GetStateNumber(self, *args)
 
-    def Valpoint(self, *args):
+    def Valpoint(self, *args) -> "gp_Pnt const" :
         """
         :param Index:
         :type Index: int
@@ -2458,7 +2458,7 @@ class Contap_TheArcFunctionOfContour(object):
         """
         return _Contap.Contap_TheArcFunctionOfContour_Valpoint(self, *args)
 
-    def Quadric(self, *args):
+    def Quadric(self, *args) -> "IntSurf_Quadric const &" :
         """
         :rtype: IntSurf_Quadric
 
@@ -2494,28 +2494,28 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
 
         """
         _Contap.Contap_TheHSequenceOfPointOfContour_swiginit(self,_Contap.new_Contap_TheHSequenceOfPointOfContour(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Contap_ThePointOfContour &
@@ -2528,7 +2528,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Contap_ThePointOfContour &
@@ -2541,14 +2541,14 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2565,7 +2565,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2582,7 +2582,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2593,7 +2593,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_Contap_TheHSequenceOfPointOfContour" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2602,7 +2602,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2613,7 +2613,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_ThePointOfContour const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2622,7 +2622,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Contap_ThePointOfContour &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2631,7 +2631,7 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2646,32 +2646,32 @@ class Contap_TheHSequenceOfPointOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Contap_TheSequenceOfPointOfContour const &" :
         """
         :rtype: Contap_TheSequenceOfPointOfContour
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "Contap_TheSequenceOfPointOfContour &" :
         """
         :rtype: Contap_TheSequenceOfPointOfContour
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_Contap_TheHSequenceOfPointOfContour" :
         """
         :rtype: Handle_Contap_TheHSequenceOfPointOfContour
 
         """
         return _Contap.Contap_TheHSequenceOfPointOfContour_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_TheHSequenceOfPointOfContour self)"""
         return _Contap.Contap_TheHSequenceOfPointOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_TheHSequenceOfPointOfContour" :
         """GetHandle(Contap_TheHSequenceOfPointOfContour self) -> Handle_Contap_TheHSequenceOfPointOfContour"""
         return _Contap.Contap_TheHSequenceOfPointOfContour_GetHandle(self)
 
@@ -2726,7 +2726,7 @@ Handle_Contap_TheHSequenceOfPointOfContour._kill_pointed = new_instancemethod(_C
 Handle_Contap_TheHSequenceOfPointOfContour_swigregister = _Contap.Handle_Contap_TheHSequenceOfPointOfContour_swigregister
 Handle_Contap_TheHSequenceOfPointOfContour_swigregister(Handle_Contap_TheHSequenceOfPointOfContour)
 
-def Handle_Contap_TheHSequenceOfPointOfContour_DownCast(*args):
+def Handle_Contap_TheHSequenceOfPointOfContour_DownCast(*args) -> "Handle_Contap_TheHSequenceOfPointOfContour const" :
   return _Contap.Handle_Contap_TheHSequenceOfPointOfContour_DownCast(*args)
 Handle_Contap_TheHSequenceOfPointOfContour_DownCast = _Contap.Handle_Contap_TheHSequenceOfPointOfContour_DownCast
 
@@ -2741,14 +2741,14 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
 
         """
         _Contap.Contap_TheIWLineOfTheIWalkingOfContour_swiginit(self,_Contap.new_Contap_TheIWLineOfTheIWalkingOfContour(*args))
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_Reverse(self, *args)
 
-    def Cut(self, *args):
+    def Cut(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2757,7 +2757,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_Cut(self, *args)
 
-    def AddPoint(self, *args):
+    def AddPoint(self, *args) -> "void" :
         """
         :param P:
         :type P: IntSurf_PntOn2S &
@@ -2766,7 +2766,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_AddPoint(self, *args)
 
-    def AddStatusFirst(self, *args):
+    def AddStatusFirst(self, *args) -> "void" :
         """
         :param Closed:
         :type Closed: bool
@@ -2787,7 +2787,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_AddStatusFirst(self, *args)
 
-    def AddStatusFirstLast(self, *args):
+    def AddStatusFirstLast(self, *args) -> "void" :
         """
         :param Closed:
         :type Closed: bool
@@ -2800,7 +2800,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_AddStatusFirstLast(self, *args)
 
-    def AddStatusLast(self, *args):
+    def AddStatusLast(self, *args) -> "void" :
         """
         :param HasLast:
         :type HasLast: bool
@@ -2817,7 +2817,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_AddStatusLast(self, *args)
 
-    def AddIndexPassing(self, *args):
+    def AddIndexPassing(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2826,7 +2826,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_AddIndexPassing(self, *args)
 
-    def SetTangentVector(self, *args):
+    def SetTangentVector(self, *args) -> "void" :
         """
         :param V:
         :type V: gp_Vec
@@ -2837,7 +2837,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_SetTangentVector(self, *args)
 
-    def SetTangencyAtBegining(self, *args):
+    def SetTangencyAtBegining(self, *args) -> "void" :
         """
         :param IsTangent:
         :type IsTangent: bool
@@ -2846,7 +2846,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_SetTangencyAtBegining(self, *args)
 
-    def SetTangencyAtEnd(self, *args):
+    def SetTangencyAtEnd(self, *args) -> "void" :
         """
         :param IsTangent:
         :type IsTangent: bool
@@ -2855,14 +2855,14 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_SetTangencyAtEnd(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_NbPoints(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_PntOn2S const &" :
         """
         :param Index:
         :type Index: int
@@ -2871,70 +2871,70 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_Value(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_IntSurf_LineOn2S const &" :
         """
         :rtype: Handle_IntSurf_LineOn2S
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_Line(self, *args)
 
-    def IsClosed(self, *args):
+    def IsClosed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_IsClosed(self, *args)
 
-    def HasFirstPoint(self, *args):
+    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_HasFirstPoint(self, *args)
 
-    def HasLastPoint(self, *args):
+    def HasLastPoint(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_HasLastPoint(self, *args)
 
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :rtype: IntSurf_PathPoint
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_FirstPoint(self, *args)
 
-    def FirstPointIndex(self, *args):
+    def FirstPointIndex(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_FirstPointIndex(self, *args)
 
-    def LastPoint(self, *args):
+    def LastPoint(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :rtype: IntSurf_PathPoint
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_LastPoint(self, *args)
 
-    def LastPointIndex(self, *args):
+    def LastPointIndex(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_LastPointIndex(self, *args)
 
-    def NbPassingPoint(self, *args):
+    def NbPassingPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_NbPassingPoint(self, *args)
 
-    def PassingPoint(self, *args):
+    def PassingPoint(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2947,7 +2947,7 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_PassingPoint(self, *args)
 
-    def TangentVector(self, *args):
+    def TangentVector(self, *args) -> "gp_Vec const" :
         """
         :param Index:
         :type Index: int &
@@ -2956,25 +2956,25 @@ class Contap_TheIWLineOfTheIWalkingOfContour(OCC.MMgt.MMgt_TShared):
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_TangentVector(self, *args)
 
-    def IsTangentAtBegining(self, *args):
+    def IsTangentAtBegining(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_IsTangentAtBegining(self, *args)
 
-    def IsTangentAtEnd(self, *args):
+    def IsTangentAtEnd(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_IsTangentAtEnd(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Contap_TheIWLineOfTheIWalkingOfContour self)"""
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour" :
         """GetHandle(Contap_TheIWLineOfTheIWalkingOfContour self) -> Handle_Contap_TheIWLineOfTheIWalkingOfContour"""
         return _Contap.Contap_TheIWLineOfTheIWalkingOfContour_GetHandle(self)
 
@@ -3037,7 +3037,7 @@ Handle_Contap_TheIWLineOfTheIWalkingOfContour._kill_pointed = new_instancemethod
 Handle_Contap_TheIWLineOfTheIWalkingOfContour_swigregister = _Contap.Handle_Contap_TheIWLineOfTheIWalkingOfContour_swigregister
 Handle_Contap_TheIWLineOfTheIWalkingOfContour_swigregister(Handle_Contap_TheIWLineOfTheIWalkingOfContour)
 
-def Handle_Contap_TheIWLineOfTheIWalkingOfContour_DownCast(*args):
+def Handle_Contap_TheIWLineOfTheIWalkingOfContour_DownCast(*args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour const" :
   return _Contap.Handle_Contap_TheIWLineOfTheIWalkingOfContour_DownCast(*args)
 Handle_Contap_TheIWLineOfTheIWalkingOfContour_DownCast = _Contap.Handle_Contap_TheIWLineOfTheIWalkingOfContour_DownCast
 
@@ -3056,7 +3056,7 @@ class Contap_TheIWalkingOfContour(object):
 
         """
         _Contap.Contap_TheIWalkingOfContour_swiginit(self,_Contap.new_Contap_TheIWalkingOfContour(*args))
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         :param Epsilon:
         :type Epsilon: float
@@ -3069,7 +3069,7 @@ class Contap_TheIWalkingOfContour(object):
         """
         return _Contap.Contap_TheIWalkingOfContour_SetTolerance(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Pnts1:
         :type Pnts1: IntSurf_SequenceOfPathPoint &
@@ -3096,21 +3096,21 @@ class Contap_TheIWalkingOfContour(object):
         """
         return _Contap.Contap_TheIWalkingOfContour_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheIWalkingOfContour_IsDone(self, *args)
 
-    def NbLines(self, *args):
+    def NbLines(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWalkingOfContour_NbLines(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Contap_TheIWLineOfTheIWalkingOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -3119,14 +3119,14 @@ class Contap_TheIWalkingOfContour(object):
         """
         return _Contap.Contap_TheIWalkingOfContour_Value(self, *args)
 
-    def NbSinglePnts(self, *args):
+    def NbSinglePnts(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheIWalkingOfContour_NbSinglePnts(self, *args)
 
-    def SinglePnt(self, *args):
+    def SinglePnt(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -3163,7 +3163,7 @@ class Contap_TheLineOfContour(object):
 
         """
         _Contap.Contap_TheLineOfContour_swiginit(self,_Contap.new_Contap_TheLineOfContour(*args))
-    def SetLineOn2S(self, *args):
+    def SetLineOn2S(self, *args) -> "void" :
         """
         :param L:
         :type L: Handle_IntSurf_LineOn2S &
@@ -3172,28 +3172,28 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_SetLineOn2S(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheLineOfContour_Clear(self, *args)
 
-    def LineOn2S(self, *args):
+    def LineOn2S(self, *args) -> "Handle_IntSurf_LineOn2S const &" :
         """
         :rtype: Handle_IntSurf_LineOn2S
 
         """
         return _Contap.Contap_TheLineOfContour_LineOn2S(self, *args)
 
-    def ResetSeqOfVertex(self, *args):
+    def ResetSeqOfVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheLineOfContour_ResetSeqOfVertex(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin
@@ -3210,7 +3210,7 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_SetValue(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param P:
         :type P: IntSurf_PntOn2S &
@@ -3223,14 +3223,14 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_Add(self, *args)
 
-    def NbVertex(self, *args):
+    def NbVertex(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheLineOfContour_NbVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "Contap_ThePointOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -3239,21 +3239,21 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_Vertex(self, *args)
 
-    def TypeContour(self, *args):
+    def TypeContour(self, *args) -> "Contap_IType" :
         """
         :rtype: Contap_IType
 
         """
         return _Contap.Contap_TheLineOfContour_TypeContour(self, *args)
 
-    def NbPnts(self, *args):
+    def NbPnts(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheLineOfContour_NbPnts(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "IntSurf_PntOn2S const &" :
         """
         :param Index:
         :type Index: int
@@ -3262,28 +3262,28 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_Point(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "gp_Lin" :
         """
         :rtype: gp_Lin
 
         """
         return _Contap.Contap_TheLineOfContour_Line(self, *args)
 
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ" :
         """
         :rtype: gp_Circ
 
         """
         return _Contap.Contap_TheLineOfContour_Circle(self, *args)
 
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
         return _Contap.Contap_TheLineOfContour_Arc(self, *args)
 
-    def SetTransitionOnS(self, *args):
+    def SetTransitionOnS(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_TypeTrans
@@ -3292,7 +3292,7 @@ class Contap_TheLineOfContour(object):
         """
         return _Contap.Contap_TheLineOfContour_SetTransitionOnS(self, *args)
 
-    def TransitionOnS(self, *args):
+    def TransitionOnS(self, *args) -> "IntSurf_TypeTrans" :
         """
         :rtype: IntSurf_TypeTrans
 
@@ -3358,7 +3358,7 @@ class Contap_ThePathPointOfTheSearchOfContour(object):
 
         """
         _Contap.Contap_ThePathPointOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_ThePathPointOfTheSearchOfContour(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -3385,42 +3385,42 @@ class Contap_ThePathPointOfTheSearchOfContour(object):
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_Value(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_Tolerance(self, *args)
 
-    def IsNew(self, *args):
+    def IsNew(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_IsNew(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "Handle_Adaptor3d_HVertex const &" :
         """
         :rtype: Handle_Adaptor3d_HVertex
 
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_Vertex(self, *args)
 
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
         return _Contap.Contap_ThePathPointOfTheSearchOfContour_Arc(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -3463,7 +3463,7 @@ class Contap_ThePointOfContour(object):
 
         """
         _Contap.Contap_ThePointOfContour_swiginit(self,_Contap.new_Contap_ThePointOfContour(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Pt:
         :type Pt: gp_Pnt
@@ -3476,7 +3476,7 @@ class Contap_ThePointOfContour(object):
         """
         return _Contap.Contap_ThePointOfContour_SetValue(self, *args)
 
-    def SetParameter(self, *args):
+    def SetParameter(self, *args) -> "void" :
         """
         :param Para:
         :type Para: float
@@ -3485,7 +3485,7 @@ class Contap_ThePointOfContour(object):
         """
         return _Contap.Contap_ThePointOfContour_SetParameter(self, *args)
 
-    def SetVertex(self, *args):
+    def SetVertex(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HVertex &
@@ -3494,7 +3494,7 @@ class Contap_ThePointOfContour(object):
         """
         return _Contap.Contap_ThePointOfContour_SetVertex(self, *args)
 
-    def SetArc(self, *args):
+    def SetArc(self, *args) -> "void" :
         """
         :param A:
         :type A: Handle_Adaptor2d_HCurve2d &
@@ -3509,35 +3509,35 @@ class Contap_ThePointOfContour(object):
         """
         return _Contap.Contap_ThePointOfContour_SetArc(self, *args)
 
-    def SetMultiple(self, *args):
+    def SetMultiple(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_ThePointOfContour_SetMultiple(self, *args)
 
-    def SetInternal(self, *args):
+    def SetInternal(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_ThePointOfContour_SetInternal(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Contap.Contap_ThePointOfContour_Value(self, *args)
 
-    def ParameterOnLine(self, *args):
+    def ParameterOnLine(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_ThePointOfContour_ParameterOnLine(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param U1:
         :type U1: float &
@@ -3548,63 +3548,63 @@ class Contap_ThePointOfContour(object):
         """
         return _Contap.Contap_ThePointOfContour_Parameters(self, *args)
 
-    def IsOnArc(self, *args):
+    def IsOnArc(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_ThePointOfContour_IsOnArc(self, *args)
 
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
         return _Contap.Contap_ThePointOfContour_Arc(self, *args)
 
-    def ParameterOnArc(self, *args):
+    def ParameterOnArc(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_ThePointOfContour_ParameterOnArc(self, *args)
 
-    def TransitionOnLine(self, *args):
+    def TransitionOnLine(self, *args) -> "IntSurf_Transition const &" :
         """
         :rtype: IntSurf_Transition
 
         """
         return _Contap.Contap_ThePointOfContour_TransitionOnLine(self, *args)
 
-    def TransitionOnArc(self, *args):
+    def TransitionOnArc(self, *args) -> "IntSurf_Transition const &" :
         """
         :rtype: IntSurf_Transition
 
         """
         return _Contap.Contap_ThePointOfContour_TransitionOnArc(self, *args)
 
-    def IsVertex(self, *args):
+    def IsVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_ThePointOfContour_IsVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "Handle_Adaptor3d_HVertex const &" :
         """
         :rtype: Handle_Adaptor3d_HVertex
 
         """
         return _Contap.Contap_ThePointOfContour_Vertex(self, *args)
 
-    def IsMultiple(self, *args):
+    def IsMultiple(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_ThePointOfContour_IsMultiple(self, *args)
 
-    def IsInternal(self, *args):
+    def IsInternal(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -3660,7 +3660,7 @@ class Contap_TheSearchInsideOfContour(object):
 
         """
         _Contap.Contap_TheSearchInsideOfContour_swiginit(self,_Contap.new_Contap_TheSearchInsideOfContour(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param F:
         :type F: Contap_TheSurfFunctionOfContour &
@@ -3685,21 +3685,21 @@ class Contap_TheSearchInsideOfContour(object):
         """
         return _Contap.Contap_TheSearchInsideOfContour_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSearchInsideOfContour_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheSearchInsideOfContour_NbPoints(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_InteriorPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -3733,7 +3733,7 @@ class Contap_TheSearchOfContour(object):
 
         """
         _Contap.Contap_TheSearchOfContour_swiginit(self,_Contap.new_Contap_TheSearchOfContour(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param F:
         :type F: Contap_TheArcFunctionOfContour &
@@ -3750,28 +3750,28 @@ class Contap_TheSearchOfContour(object):
         """
         return _Contap.Contap_TheSearchOfContour_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSearchOfContour_IsDone(self, *args)
 
-    def AllArcSolution(self, *args):
+    def AllArcSolution(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSearchOfContour_AllArcSolution(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheSearchOfContour_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -3780,14 +3780,14 @@ class Contap_TheSearchOfContour(object):
         """
         return _Contap.Contap_TheSearchOfContour_Point(self, *args)
 
-    def NbSegments(self, *args):
+    def NbSegments(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheSearchOfContour_NbSegments(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "Contap_TheSegmentOfTheSearchOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -3824,7 +3824,7 @@ class Contap_TheSegmentOfTheSearchOfContour(object):
 
         """
         _Contap.Contap_TheSegmentOfTheSearchOfContour_swiginit(self,_Contap.new_Contap_TheSegmentOfTheSearchOfContour(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param A:
         :type A: Handle_Adaptor2d_HCurve2d &
@@ -3833,7 +3833,7 @@ class Contap_TheSegmentOfTheSearchOfContour(object):
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_SetValue(self, *args)
 
-    def SetLimitPoint(self, *args):
+    def SetLimitPoint(self, *args) -> "void" :
         """
         :param V:
         :type V: Contap_ThePathPointOfTheSearchOfContour &
@@ -3844,35 +3844,35 @@ class Contap_TheSegmentOfTheSearchOfContour(object):
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_SetLimitPoint(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_Curve(self, *args)
 
-    def HasFirstPoint(self, *args):
+    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_HasFirstPoint(self, *args)
 
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :rtype: Contap_ThePathPointOfTheSearchOfContour
 
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_FirstPoint(self, *args)
 
-    def HasLastPoint(self, *args):
+    def HasLastPoint(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSegmentOfTheSearchOfContour_HasLastPoint(self, *args)
 
-    def LastPoint(self, *args):
+    def LastPoint(self, *args) -> "Contap_ThePathPointOfTheSearchOfContour const &" :
         """
         :rtype: Contap_ThePathPointOfTheSearchOfContour
 
@@ -3907,14 +3907,14 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
 
         """
         _Contap.Contap_TheSequenceOfLineOfContour_swiginit(self,_Contap.new_Contap_TheSequenceOfLineOfContour(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Contap_TheSequenceOfLineOfContour const &" :
         """
         :param Other:
         :type Other: Contap_TheSequenceOfLineOfContour &
@@ -3923,7 +3923,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Contap_TheSequenceOfLineOfContour const &" :
         """
         :param Other:
         :type Other: Contap_TheSequenceOfLineOfContour &
@@ -3932,7 +3932,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_TheLineOfContour &
@@ -3945,7 +3945,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_TheLineOfContour &
@@ -3958,7 +3958,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3975,7 +3975,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3992,21 +3992,21 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Contap_TheLineOfContour const &" :
         """
         :rtype: Contap_TheLineOfContour
 
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Contap_TheLineOfContour const &" :
         """
         :rtype: Contap_TheLineOfContour
 
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4017,7 +4017,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_TheLineOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -4026,7 +4026,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4037,7 +4037,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Contap_TheLineOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -4046,7 +4046,7 @@ class Contap_TheSequenceOfLineOfContour(OCC.TCollection.TCollection_BaseSequence
         """
         return _Contap.Contap_TheSequenceOfLineOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4096,14 +4096,14 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _Contap.Contap_TheSequenceOfPointOfContour_swiginit(self,_Contap.new_Contap_TheSequenceOfPointOfContour(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Contap_TheSequenceOfPointOfContour const &" :
         """
         :param Other:
         :type Other: Contap_TheSequenceOfPointOfContour &
@@ -4112,7 +4112,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Contap_TheSequenceOfPointOfContour const &" :
         """
         :param Other:
         :type Other: Contap_TheSequenceOfPointOfContour &
@@ -4121,7 +4121,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_ThePointOfContour &
@@ -4134,7 +4134,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Contap_ThePointOfContour &
@@ -4147,7 +4147,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4164,7 +4164,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4181,21 +4181,21 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Contap_ThePointOfContour const &" :
         """
         :rtype: Contap_ThePointOfContour
 
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Contap_ThePointOfContour const &" :
         """
         :rtype: Contap_ThePointOfContour
 
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4206,7 +4206,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Contap_ThePointOfContour const &" :
         """
         :param Index:
         :type Index: int
@@ -4215,7 +4215,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4226,7 +4226,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Contap_ThePointOfContour &" :
         """
         :param Index:
         :type Index: int
@@ -4235,7 +4235,7 @@ class Contap_TheSequenceOfPointOfContour(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Contap.Contap_TheSequenceOfPointOfContour_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4285,7 +4285,7 @@ class Contap_TheSurfFunctionOfContour(object):
 
         """
         _Contap.Contap_TheSurfFunctionOfContour_swiginit(self,_Contap.new_Contap_TheSurfFunctionOfContour(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -4318,21 +4318,21 @@ class Contap_TheSurfFunctionOfContour(object):
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Set(self, *args)
 
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4343,7 +4343,7 @@ class Contap_TheSurfFunctionOfContour(object):
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4354,7 +4354,7 @@ class Contap_TheSurfFunctionOfContour(object):
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4367,77 +4367,77 @@ class Contap_TheSurfFunctionOfContour(object):
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Values(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Root(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Tolerance(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Point(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_IsTangent(self, *args)
 
-    def Direction3d(self, *args):
+    def Direction3d(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Direction3d(self, *args)
 
-    def Direction2d(self, *args):
+    def Direction2d(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Direction2d(self, *args)
 
-    def FunctionType(self, *args):
+    def FunctionType(self, *args) -> "Contap_TFunction" :
         """
         :rtype: Contap_TFunction
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_FunctionType(self, *args)
 
-    def Eye(self, *args):
+    def Eye(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Eye(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "gp_Dir const" :
         """
         :rtype: gp_Dir
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Direction(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Contap.Contap_TheSurfFunctionOfContour_Angle(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
         """
         :rtype: Handle_Adaptor3d_HSurface
 
@@ -4476,7 +4476,7 @@ Contap_TheSurfFunctionOfContour_swigregister(Contap_TheSurfFunctionOfContour)
 class Contap_TheSurfPropsOfContour(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Normale(*args):
+    def Normale(*args) -> "void" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -4494,7 +4494,7 @@ class Contap_TheSurfPropsOfContour(object):
         return _Contap.Contap_TheSurfPropsOfContour_Normale(*args)
 
     Normale = staticmethod(Normale)
-    def DerivAndNorm(*args):
+    def DerivAndNorm(*args) -> "void" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -4516,7 +4516,7 @@ class Contap_TheSurfPropsOfContour(object):
         return _Contap.Contap_TheSurfPropsOfContour_DerivAndNorm(*args)
 
     DerivAndNorm = staticmethod(DerivAndNorm)
-    def NormAndDn(*args):
+    def NormAndDn(*args) -> "void" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -4552,7 +4552,7 @@ Contap_TheSurfPropsOfContour._kill_pointed = new_instancemethod(_Contap.Contap_T
 Contap_TheSurfPropsOfContour_swigregister = _Contap.Contap_TheSurfPropsOfContour_swigregister
 Contap_TheSurfPropsOfContour_swigregister(Contap_TheSurfPropsOfContour)
 
-def Contap_TheSurfPropsOfContour_Normale(*args):
+def Contap_TheSurfPropsOfContour_Normale(*args) -> "void" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -4569,7 +4569,7 @@ def Contap_TheSurfPropsOfContour_Normale(*args):
     """
   return _Contap.Contap_TheSurfPropsOfContour_Normale(*args)
 
-def Contap_TheSurfPropsOfContour_DerivAndNorm(*args):
+def Contap_TheSurfPropsOfContour_DerivAndNorm(*args) -> "void" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -4590,7 +4590,7 @@ def Contap_TheSurfPropsOfContour_DerivAndNorm(*args):
     """
   return _Contap.Contap_TheSurfPropsOfContour_DerivAndNorm(*args)
 
-def Contap_TheSurfPropsOfContour_NormAndDn(*args):
+def Contap_TheSurfPropsOfContour_NormAndDn(*args) -> "void" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &

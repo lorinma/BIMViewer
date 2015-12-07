@@ -128,7 +128,7 @@ class LProp_AnalyticCurInf(object):
 
         """
         _LProp.LProp_AnalyticCurInf_swiginit(self,_LProp.new_LProp_AnalyticCurInf(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param T:
         :type T: GeomAbs_CurveType
@@ -165,7 +165,7 @@ class LProp_CurAndInf(object):
 
         """
         _LProp.LProp_CurAndInf_swiginit(self,_LProp.new_LProp_CurAndInf(*args))
-    def AddInflection(self, *args):
+    def AddInflection(self, *args) -> "void" :
         """
         :param Param:
         :type Param: float
@@ -174,7 +174,7 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_AddInflection(self, *args)
 
-    def AddExtCur(self, *args):
+    def AddExtCur(self, *args) -> "void" :
         """
         :param Param:
         :type Param: float
@@ -185,21 +185,21 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_AddExtCur(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LProp.LProp_CurAndInf_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LProp.LProp_CurAndInf_IsEmpty(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points. The Points are stored to increasing parameter.
 
@@ -208,7 +208,7 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the Nth point. raises if N not in the range [1,NbPoints()]
 
@@ -219,7 +219,7 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_Parameter(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "LProp_CIType" :
         """
         * Returns - MinCur if the Nth parameter corresponds to a minimum of the radius of curvature. - MaxCur if the Nth parameter corresponds to a maximum of the radius of curvature. - Inflection if the parameter corresponds to a point of inflection. raises if N not in the range [1,NbPoints()]
 
@@ -264,18 +264,18 @@ class LProp_SequenceNodeOfSequenceOfCIType(OCC.TCollection.TCollection_SeqNode):
 
         """
         _LProp.LProp_SequenceNodeOfSequenceOfCIType_swiginit(self,_LProp.new_LProp_SequenceNodeOfSequenceOfCIType(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "LProp_CIType &" :
         """
         :rtype: LProp_CIType
 
         """
         return _LProp.LProp_SequenceNodeOfSequenceOfCIType_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(LProp_SequenceNodeOfSequenceOfCIType self)"""
         return _LProp.LProp_SequenceNodeOfSequenceOfCIType__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_LProp_SequenceNodeOfSequenceOfCIType" :
         """GetHandle(LProp_SequenceNodeOfSequenceOfCIType self) -> Handle_LProp_SequenceNodeOfSequenceOfCIType"""
         return _LProp.LProp_SequenceNodeOfSequenceOfCIType_GetHandle(self)
 
@@ -314,7 +314,7 @@ Handle_LProp_SequenceNodeOfSequenceOfCIType._kill_pointed = new_instancemethod(_
 Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister = _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister
 Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister(Handle_LProp_SequenceNodeOfSequenceOfCIType)
 
-def Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args):
+def Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args) -> "Handle_LProp_SequenceNodeOfSequenceOfCIType const" :
   return _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args)
 Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast = _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast
 
@@ -327,14 +327,14 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _LProp.LProp_SequenceOfCIType_swiginit(self,_LProp.new_LProp_SequenceOfCIType(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _LProp.LProp_SequenceOfCIType_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "LProp_SequenceOfCIType const &" :
         """
         :param Other:
         :type Other: LProp_SequenceOfCIType &
@@ -343,7 +343,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "LProp_SequenceOfCIType const &" :
         """
         :param Other:
         :type Other: LProp_SequenceOfCIType &
@@ -352,7 +352,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: LProp_CIType &
@@ -365,7 +365,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: LProp_CIType &
@@ -378,7 +378,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -395,7 +395,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -412,21 +412,21 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "LProp_CIType const &" :
         """
         :rtype: LProp_CIType
 
         """
         return _LProp.LProp_SequenceOfCIType_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "LProp_CIType const &" :
         """
         :rtype: LProp_CIType
 
         """
         return _LProp.LProp_SequenceOfCIType_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -437,7 +437,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "LProp_CIType const &" :
         """
         :param Index:
         :type Index: int
@@ -446,7 +446,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -457,7 +457,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "LProp_CIType &" :
         """
         :param Index:
         :type Index: int
@@ -466,7 +466,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

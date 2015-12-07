@@ -118,7 +118,7 @@ GccEnt_noqualifier = _GccEnt.GccEnt_noqualifier
 class gccent(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Unqualified(*args):
+    def Unqualified(*args) -> "GccEnt_QualifiedCirc" :
         """
         * Constructs a qualified line, so that the relative position to the circle or line of the solution computed by a construction algorithm using the qualified circle or line is not qualified, i.e. all solutions apply.
 
@@ -136,7 +136,7 @@ class gccent(object):
         return _GccEnt.gccent_Unqualified(*args)
 
     Unqualified = staticmethod(Unqualified)
-    def Enclosing(*args):
+    def Enclosing(*args) -> "GccEnt_QualifiedCirc" :
         """
         * Constructs such a qualified circle that the solution computed by a construction algorithm using the qualified circle encloses the circle.
 
@@ -148,7 +148,7 @@ class gccent(object):
         return _GccEnt.gccent_Enclosing(*args)
 
     Enclosing = staticmethod(Enclosing)
-    def Enclosed(*args):
+    def Enclosed(*args) -> "GccEnt_QualifiedCirc" :
         """
         * Constructs a qualified line, so that the solution computed by a construction algorithm using the qualified circle or line is enclosed by the circle or line.
 
@@ -166,7 +166,7 @@ class gccent(object):
         return _GccEnt.gccent_Enclosed(*args)
 
     Enclosed = staticmethod(Enclosed)
-    def Outside(*args):
+    def Outside(*args) -> "GccEnt_QualifiedCirc" :
         """
         * Constructs a qualified line, so that the solution computed by a construction algorithm using the qualified circle or line and the circle or line are external to one another.
 
@@ -198,7 +198,7 @@ gccent._kill_pointed = new_instancemethod(_GccEnt.gccent__kill_pointed,None,gcce
 gccent_swigregister = _GccEnt.gccent_swigregister
 gccent_swigregister(gccent)
 
-def gccent_Unqualified(*args):
+def gccent_Unqualified(*args) -> "GccEnt_QualifiedCirc" :
   """
     * Constructs a qualified line, so that the relative position to the circle or line of the solution computed by a construction algorithm using the qualified circle or line is not qualified, i.e. all solutions apply.
 
@@ -215,7 +215,7 @@ def gccent_Unqualified(*args):
     """
   return _GccEnt.gccent_Unqualified(*args)
 
-def gccent_Enclosing(*args):
+def gccent_Enclosing(*args) -> "GccEnt_QualifiedCirc" :
   """
     * Constructs such a qualified circle that the solution computed by a construction algorithm using the qualified circle encloses the circle.
 
@@ -226,7 +226,7 @@ def gccent_Enclosing(*args):
     """
   return _GccEnt.gccent_Enclosing(*args)
 
-def gccent_Enclosed(*args):
+def gccent_Enclosed(*args) -> "GccEnt_QualifiedCirc" :
   """
     * Constructs a qualified line, so that the solution computed by a construction algorithm using the qualified circle or line is enclosed by the circle or line.
 
@@ -243,7 +243,7 @@ def gccent_Enclosed(*args):
     """
   return _GccEnt.gccent_Enclosed(*args)
 
-def gccent_Outside(*args):
+def gccent_Outside(*args) -> "GccEnt_QualifiedCirc" :
   """
     * Constructs a qualified line, so that the solution computed by a construction algorithm using the qualified circle or line and the circle or line are external to one another.
 
@@ -281,7 +281,7 @@ class GccEnt_Array1OfPosition(object):
 
         """
         _GccEnt.GccEnt_Array1OfPosition_swiginit(self,_GccEnt.new_GccEnt_Array1OfPosition(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: GccEnt_Position &
@@ -290,21 +290,21 @@ class GccEnt_Array1OfPosition(object):
         """
         return _GccEnt.GccEnt_Array1OfPosition_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GccEnt.GccEnt_Array1OfPosition_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GccEnt.GccEnt_Array1OfPosition_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GccEnt_Array1OfPosition const &" :
         """
         :param Other:
         :type Other: GccEnt_Array1OfPosition &
@@ -313,7 +313,7 @@ class GccEnt_Array1OfPosition(object):
         """
         return _GccEnt.GccEnt_Array1OfPosition_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GccEnt_Array1OfPosition const &" :
         """
         :param Other:
         :type Other: GccEnt_Array1OfPosition &
@@ -322,28 +322,28 @@ class GccEnt_Array1OfPosition(object):
         """
         return _GccEnt.GccEnt_Array1OfPosition_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GccEnt.GccEnt_Array1OfPosition_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GccEnt.GccEnt_Array1OfPosition_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GccEnt.GccEnt_Array1OfPosition_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -354,7 +354,7 @@ class GccEnt_Array1OfPosition(object):
         """
         return _GccEnt.GccEnt_Array1OfPosition_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "GccEnt_Position const &" :
         """
         :param Index:
         :type Index: int
@@ -363,7 +363,7 @@ class GccEnt_Array1OfPosition(object):
         """
         return _GccEnt.GccEnt_Array1OfPosition_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "GccEnt_Position &" :
         """
         :param Index:
         :type Index: int
@@ -398,7 +398,7 @@ GccEnt_Array1OfPosition_swigregister(GccEnt_Array1OfPosition)
 class GccEnt_QualifiedCirc(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Qualified(self, *args):
+    def Qualified(self, *args) -> "gp_Circ2d" :
         """
         * Returns a 2D circle to which the qualifier is assigned.
 
@@ -407,7 +407,7 @@ class GccEnt_QualifiedCirc(object):
         """
         return _GccEnt.GccEnt_QualifiedCirc_Qualified(self, *args)
 
-    def Qualifier(self, *args):
+    def Qualifier(self, *args) -> "GccEnt_Position" :
         """
         * Returns - the qualifier of this qualified circle, if it is enclosing, enclosed or outside, or - GccEnt_noqualifier if it is unqualified.
 
@@ -416,7 +416,7 @@ class GccEnt_QualifiedCirc(object):
         """
         return _GccEnt.GccEnt_QualifiedCirc_Qualifier(self, *args)
 
-    def IsUnqualified(self, *args):
+    def IsUnqualified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Circ2d is Unqualified and false in the other cases.
 
@@ -425,7 +425,7 @@ class GccEnt_QualifiedCirc(object):
         """
         return _GccEnt.GccEnt_QualifiedCirc_IsUnqualified(self, *args)
 
-    def IsEnclosing(self, *args):
+    def IsEnclosing(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the solution computed by a construction algorithm using this qualified circle encloses the circle.
 
@@ -434,7 +434,7 @@ class GccEnt_QualifiedCirc(object):
         """
         return _GccEnt.GccEnt_QualifiedCirc_IsEnclosing(self, *args)
 
-    def IsEnclosed(self, *args):
+    def IsEnclosed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the solution computed by a construction algorithm using this qualified circle is enclosed by the circle.
 
@@ -443,7 +443,7 @@ class GccEnt_QualifiedCirc(object):
         """
         return _GccEnt.GccEnt_QualifiedCirc_IsEnclosed(self, *args)
 
-    def IsOutside(self, *args):
+    def IsOutside(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if both the solution computed by a construction algorithm using this qualified circle and the circle are external to one another.
 
@@ -466,21 +466,21 @@ class GccEnt_QualifiedCirc(object):
 
         """
         _GccEnt.GccEnt_QualifiedCirc_swiginit(self,_GccEnt.new_GccEnt_QualifiedCirc(*args))
-    def _CSFDB_GetGccEnt_QualifiedCircTheQualified(self, *args):
+    def _CSFDB_GetGccEnt_QualifiedCircTheQualified(self, *args) -> "gp_Circ2d const" :
         """
         :rtype: gp_Circ2d
 
         """
         return _GccEnt.GccEnt_QualifiedCirc__CSFDB_GetGccEnt_QualifiedCircTheQualified(self, *args)
 
-    def _CSFDB_GetGccEnt_QualifiedCircTheQualifier(self, *args):
+    def _CSFDB_GetGccEnt_QualifiedCircTheQualifier(self, *args) -> "GccEnt_Position" :
         """
         :rtype: GccEnt_Position
 
         """
         return _GccEnt.GccEnt_QualifiedCirc__CSFDB_GetGccEnt_QualifiedCircTheQualifier(self, *args)
 
-    def _CSFDB_SetGccEnt_QualifiedCircTheQualifier(self, *args):
+    def _CSFDB_SetGccEnt_QualifiedCircTheQualifier(self, *args) -> "void" :
         """
         :param p:
         :type p: GccEnt_Position
@@ -513,7 +513,7 @@ GccEnt_QualifiedCirc_swigregister(GccEnt_QualifiedCirc)
 class GccEnt_QualifiedLin(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Qualified(self, *args):
+    def Qualified(self, *args) -> "gp_Lin2d" :
         """
         * Returns a 2D line to which the qualifier is assigned.
 
@@ -522,7 +522,7 @@ class GccEnt_QualifiedLin(object):
         """
         return _GccEnt.GccEnt_QualifiedLin_Qualified(self, *args)
 
-    def Qualifier(self, *args):
+    def Qualifier(self, *args) -> "GccEnt_Position" :
         """
         * Returns the qualifier of this qualified line, if it is 'enclosed' or 'outside', or - GccEnt_noqualifier if it is unqualified.
 
@@ -531,7 +531,7 @@ class GccEnt_QualifiedLin(object):
         """
         return _GccEnt.GccEnt_QualifiedLin_Qualifier(self, *args)
 
-    def IsUnqualified(self, *args):
+    def IsUnqualified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the solution is unqualified and false in the other cases.
 
@@ -540,7 +540,7 @@ class GccEnt_QualifiedLin(object):
         """
         return _GccEnt.GccEnt_QualifiedLin_IsUnqualified(self, *args)
 
-    def IsEnclosed(self, *args):
+    def IsEnclosed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the solution is Enclosed in the Lin2d and false in the other cases.
 
@@ -549,7 +549,7 @@ class GccEnt_QualifiedLin(object):
         """
         return _GccEnt.GccEnt_QualifiedLin_IsEnclosed(self, *args)
 
-    def IsOutside(self, *args):
+    def IsOutside(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the solution is Outside the Lin2d and false in the other cases.
 
@@ -572,14 +572,14 @@ class GccEnt_QualifiedLin(object):
 
         """
         _GccEnt.GccEnt_QualifiedLin_swiginit(self,_GccEnt.new_GccEnt_QualifiedLin(*args))
-    def _CSFDB_GetGccEnt_QualifiedLinTheQualifier(self, *args):
+    def _CSFDB_GetGccEnt_QualifiedLinTheQualifier(self, *args) -> "GccEnt_Position" :
         """
         :rtype: GccEnt_Position
 
         """
         return _GccEnt.GccEnt_QualifiedLin__CSFDB_GetGccEnt_QualifiedLinTheQualifier(self, *args)
 
-    def _CSFDB_SetGccEnt_QualifiedLinTheQualifier(self, *args):
+    def _CSFDB_SetGccEnt_QualifiedLinTheQualifier(self, *args) -> "void" :
         """
         :param p:
         :type p: GccEnt_Position
@@ -588,7 +588,7 @@ class GccEnt_QualifiedLin(object):
         """
         return _GccEnt.GccEnt_QualifiedLin__CSFDB_SetGccEnt_QualifiedLinTheQualifier(self, *args)
 
-    def _CSFDB_GetGccEnt_QualifiedLinTheQualified(self, *args):
+    def _CSFDB_GetGccEnt_QualifiedLinTheQualified(self, *args) -> "gp_Lin2d const" :
         """
         :rtype: gp_Lin2d
 

@@ -151,7 +151,7 @@ import OCC.NCollection
 class boptools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MapShapes(*args):
+    def MapShapes(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -177,7 +177,7 @@ class boptools(object):
         return _BOPTools.boptools_MapShapes(*args)
 
     MapShapes = staticmethod(MapShapes)
-    def MapShapesAndAncestors(*args):
+    def MapShapesAndAncestors(*args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -207,7 +207,7 @@ boptools._kill_pointed = new_instancemethod(_BOPTools.boptools__kill_pointed,Non
 boptools_swigregister = _BOPTools.boptools_swigregister
 boptools_swigregister(boptools)
 
-def boptools_MapShapes(*args):
+def boptools_MapShapes(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -232,7 +232,7 @@ def boptools_MapShapes(*args):
     """
   return _BOPTools.boptools_MapShapes(*args)
 
-def boptools_MapShapesAndAncestors(*args):
+def boptools_MapShapesAndAncestors(*args) -> "void" :
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -250,7 +250,7 @@ def boptools_MapShapesAndAncestors(*args):
 class BOPTools_AlgoTools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ComputeVV(*args):
+    def ComputeVV(*args) -> "Standard_Integer" :
         """
         :param aV1:
         :type aV1: TopoDS_Vertex &
@@ -270,7 +270,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_ComputeVV(*args)
 
     ComputeVV = staticmethod(ComputeVV)
-    def MakeVertex(*args):
+    def MakeVertex(*args) -> "void" :
         """
         :param aLV:
         :type aLV: BOPCol_ListOfShape &
@@ -282,7 +282,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeVertex(*args)
 
     MakeVertex = staticmethod(MakeVertex)
-    def MakeEdge(*args):
+    def MakeEdge(*args) -> "void" :
         """
         :param theCurve:
         :type theCurve: IntTools_Curve &
@@ -304,7 +304,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeEdge(*args)
 
     MakeEdge = staticmethod(MakeEdge)
-    def MakePCurve(*args):
+    def MakePCurve(*args) -> "void" :
         """
         :param theE:
         :type theE: TopoDS_Edge &
@@ -324,7 +324,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakePCurve(*args)
 
     MakePCurve = staticmethod(MakePCurve)
-    def MakeContainer(*args):
+    def MakeContainer(*args) -> "void" :
         """
         :param theType:
         :type theType: TopAbs_ShapeEnum
@@ -336,7 +336,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeContainer(*args)
 
     MakeContainer = staticmethod(MakeContainer)
-    def IsHole(*args):
+    def IsHole(*args) -> "Standard_Boolean" :
         """
         :param aW:
         :type aW: TopoDS_Shape &
@@ -348,7 +348,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsHole(*args)
 
     IsHole = staticmethod(IsHole)
-    def IsSplitToReverse(*args):
+    def IsSplitToReverse(*args) -> "Standard_Boolean" :
         """
         * Returns True if the shape theSplit has opposite direction than theShape theContext - cashed geometrical tools
 
@@ -382,7 +382,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsSplitToReverse(*args)
 
     IsSplitToReverse = staticmethod(IsSplitToReverse)
-    def AreFacesSameDomain(*args):
+    def AreFacesSameDomain(*args) -> "Standard_Boolean" :
         """
         :param theF1:
         :type theF1: TopoDS_Face &
@@ -396,7 +396,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_AreFacesSameDomain(*args)
 
     AreFacesSameDomain = staticmethod(AreFacesSameDomain)
-    def CheckSameGeom(*args):
+    def CheckSameGeom(*args) -> "Standard_Boolean" :
         """
         :param theF1:
         :type theF1: TopoDS_Face &
@@ -410,7 +410,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CheckSameGeom(*args)
 
     CheckSameGeom = staticmethod(CheckSameGeom)
-    def Sense(*args):
+    def Sense(*args) -> "Standard_Integer" :
         """
         :param theF1:
         :type theF1: TopoDS_Face &
@@ -422,7 +422,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_Sense(*args)
 
     Sense = staticmethod(Sense)
-    def GetEdgeOff(*args):
+    def GetEdgeOff(*args) -> "Standard_Boolean" :
         """
         * Returns True if the face theFace contains the edge theEdge but with opposite orientation. If the method returns True theEdgeOff is the edge founded
 
@@ -438,7 +438,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_GetEdgeOff(*args)
 
     GetEdgeOff = staticmethod(GetEdgeOff)
-    def GetFaceOff(*args):
+    def GetFaceOff(*args) -> "Standard_Boolean" :
         """
         * For the face theFace and its edge theEdge finds the face suitable to produce shell. theLCEF - set of faces to search. All faces from theLCEF must share edge theEdge
 
@@ -458,7 +458,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_GetFaceOff(*args)
 
     GetFaceOff = staticmethod(GetFaceOff)
-    def IsInternalFace(*args):
+    def IsInternalFace(*args) -> "Standard_Integer" :
         """
         * Returns True if the face theFace is inside of the couple of faces theFace1, theFace2. The faces theFace, theFace1, theFace2 must share the edge theEdge
 
@@ -504,7 +504,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsInternalFace(*args)
 
     IsInternalFace = staticmethod(IsInternalFace)
-    def GetEdgeOnFace(*args):
+    def GetEdgeOnFace(*args) -> "Standard_Boolean" :
         """
         * For the face theFace gets the edge theEdgeOnF that is the same as theEdge Returns True if such edge exists Returns False if there is no such edge
 
@@ -520,7 +520,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_GetEdgeOnFace(*args)
 
     GetEdgeOnFace = staticmethod(GetEdgeOnFace)
-    def ComputeState(*args):
+    def ComputeState(*args) -> "TopAbs_State" :
         """
         * Computes the 3-D state of the point thePoint toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.
 
@@ -576,7 +576,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_ComputeState(*args)
 
     ComputeState = staticmethod(ComputeState)
-    def ComputeStateByOnePoint(*args):
+    def ComputeStateByOnePoint(*args) -> "TopAbs_State" :
         """
         * Computes the 3-D state of the shape theShape toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.
 
@@ -594,7 +594,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_ComputeStateByOnePoint(*args)
 
     ComputeStateByOnePoint = staticmethod(ComputeStateByOnePoint)
-    def MakeConnexityBlock(*args):
+    def MakeConnexityBlock(*args) -> "void" :
         """
         * For the list of faces theLS build block theLSCB in terms of connexity by edges theMapAvoid - set of edges to avoid for the treatment
 
@@ -612,7 +612,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeConnexityBlock(*args)
 
     MakeConnexityBlock = staticmethod(MakeConnexityBlock)
-    def MakeConnexityBlocks(*args):
+    def MakeConnexityBlocks(*args) -> "void" :
         """
         * For the compound theS build the blocks theLCB (as list of compounds) in terms of connexity by the shapes of theType
 
@@ -630,7 +630,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeConnexityBlocks(*args)
 
     MakeConnexityBlocks = staticmethod(MakeConnexityBlocks)
-    def OrientFacesOnShell(*args):
+    def OrientFacesOnShell(*args) -> "void" :
         """
         :param theS:
         :type theS: TopoDS_Shape &
@@ -640,7 +640,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_OrientFacesOnShell(*args)
 
     OrientFacesOnShell = staticmethod(OrientFacesOnShell)
-    def CorrectTolerances(*args):
+    def CorrectTolerances(*args) -> "void" :
         """
         * Provides valid values of tolerances for the shape <theS> <theTolMax> is max value of the tolerance that can be accepted for correction. If real value of the tolerance will be greater than <aTolMax>, the correction does not perform.
 
@@ -654,7 +654,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CorrectTolerances(*args)
 
     CorrectTolerances = staticmethod(CorrectTolerances)
-    def CorrectCurveOnSurface(*args):
+    def CorrectCurveOnSurface(*args) -> "void" :
         """
         * Provides valid values of tolerances for the shape <theS> in terms of BRepCheck_InvalidCurveOnSurface.
 
@@ -668,7 +668,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CorrectCurveOnSurface(*args)
 
     CorrectCurveOnSurface = staticmethod(CorrectCurveOnSurface)
-    def CorrectPointOnCurve(*args):
+    def CorrectPointOnCurve(*args) -> "void" :
         """
         * Provides valid values of tolerances for the shape <theS> in terms of BRepCheck_InvalidPointOnCurve.
 
@@ -682,7 +682,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CorrectPointOnCurve(*args)
 
     CorrectPointOnCurve = staticmethod(CorrectPointOnCurve)
-    def MakeNewVertex(*args):
+    def MakeNewVertex(*args) -> "void" :
         """
         * Make a vertex using 3D-point <aP1> and 3D-tolerance value <aTol>
 
@@ -734,7 +734,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeNewVertex(*args)
 
     MakeNewVertex = staticmethod(MakeNewVertex)
-    def PointOnEdge(*args):
+    def PointOnEdge(*args) -> "void" :
         """
         * Compute a 3D-point on the edge <aEdge> at parameter <aPrm>
 
@@ -750,7 +750,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_PointOnEdge(*args)
 
     PointOnEdge = staticmethod(PointOnEdge)
-    def MakeSplitEdge(*args):
+    def MakeSplitEdge(*args) -> "void" :
         """
         * Make the edge from base edge <aE1> and two vertices <aV1,aV2> at parameters <aP1,aP2>
 
@@ -772,7 +772,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeSplitEdge(*args)
 
     MakeSplitEdge = staticmethod(MakeSplitEdge)
-    def MakeSectEdge(*args):
+    def MakeSectEdge(*args) -> "void" :
         """
         * Make the edge from 3D-Curve <aIC> and two vertices <aV1,aV2> at parameters <aP1,aP2>
 
@@ -794,7 +794,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_MakeSectEdge(*args)
 
     MakeSectEdge = staticmethod(MakeSectEdge)
-    def UpdateVertex(*args):
+    def UpdateVertex(*args) -> "void" :
         """
         * Update the tolerance value for vertex <aV> taking into account the fact that <aV> lays on the curve <aIC>
 
@@ -828,7 +828,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_UpdateVertex(*args)
 
     UpdateVertex = staticmethod(UpdateVertex)
-    def CorrectRange(*args):
+    def CorrectRange(*args) -> "void" :
         """
         * Correct shrunk range <aSR> taking into account 3D-curve resolution and corresp. tolerances' values of <aE1>, <aE2>
 
@@ -858,7 +858,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CorrectRange(*args)
 
     CorrectRange = staticmethod(CorrectRange)
-    def IsBlockInOnFace(*args):
+    def IsBlockInOnFace(*args) -> "Standard_Boolean" :
         """
         * Returns True if PaveBlock <aPB> lays on the face <aF>, i.e the <PB> is IN or ON in 2D of <aF>
 
@@ -876,7 +876,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsBlockInOnFace(*args)
 
     IsBlockInOnFace = staticmethod(IsBlockInOnFace)
-    def IsMicroEdge(*args):
+    def IsMicroEdge(*args) -> "Standard_Boolean" :
         """
         * Checks if it is possible to compute shrunk range for the edge <aE>.
 
@@ -890,7 +890,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsMicroEdge(*args)
 
     IsMicroEdge = staticmethod(IsMicroEdge)
-    def CorrectShapeTolerances(*args):
+    def CorrectShapeTolerances(*args) -> "void" :
         """
         * Corrects tolerance values of the sub-shapes of the shape <theS> if needed.
 
@@ -902,7 +902,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_CorrectShapeTolerances(*args)
 
     CorrectShapeTolerances = staticmethod(CorrectShapeTolerances)
-    def Dimension(*args):
+    def Dimension(*args) -> "Standard_Integer" :
         """
         * Retutns dimension of the shape <theS>.
 
@@ -914,7 +914,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_Dimension(*args)
 
     Dimension = staticmethod(Dimension)
-    def IsOpenShell(*args):
+    def IsOpenShell(*args) -> "Standard_Boolean" :
         """
         * Returns true if the shell <theShell> is open
 
@@ -926,7 +926,7 @@ class BOPTools_AlgoTools(object):
         return _BOPTools.BOPTools_AlgoTools_IsOpenShell(*args)
 
     IsOpenShell = staticmethod(IsOpenShell)
-    def IsInvertedSolid(*args):
+    def IsInvertedSolid(*args) -> "Standard_Boolean" :
         """
         * Returns true if the solid <theSolid> is inverted
 
@@ -952,7 +952,7 @@ BOPTools_AlgoTools._kill_pointed = new_instancemethod(_BOPTools.BOPTools_AlgoToo
 BOPTools_AlgoTools_swigregister = _BOPTools.BOPTools_AlgoTools_swigregister
 BOPTools_AlgoTools_swigregister(BOPTools_AlgoTools)
 
-def BOPTools_AlgoTools_ComputeVV(*args):
+def BOPTools_AlgoTools_ComputeVV(*args) -> "Standard_Integer" :
   """
     :param aV1:
     :type aV1: TopoDS_Vertex &
@@ -971,7 +971,7 @@ def BOPTools_AlgoTools_ComputeVV(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_ComputeVV(*args)
 
-def BOPTools_AlgoTools_MakeVertex(*args):
+def BOPTools_AlgoTools_MakeVertex(*args) -> "void" :
   """
     :param aLV:
     :type aLV: BOPCol_ListOfShape &
@@ -982,7 +982,7 @@ def BOPTools_AlgoTools_MakeVertex(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeVertex(*args)
 
-def BOPTools_AlgoTools_MakeEdge(*args):
+def BOPTools_AlgoTools_MakeEdge(*args) -> "void" :
   """
     :param theCurve:
     :type theCurve: IntTools_Curve &
@@ -1003,7 +1003,7 @@ def BOPTools_AlgoTools_MakeEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeEdge(*args)
 
-def BOPTools_AlgoTools_MakePCurve(*args):
+def BOPTools_AlgoTools_MakePCurve(*args) -> "void" :
   """
     :param theE:
     :type theE: TopoDS_Edge &
@@ -1022,7 +1022,7 @@ def BOPTools_AlgoTools_MakePCurve(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakePCurve(*args)
 
-def BOPTools_AlgoTools_MakeContainer(*args):
+def BOPTools_AlgoTools_MakeContainer(*args) -> "void" :
   """
     :param theType:
     :type theType: TopAbs_ShapeEnum
@@ -1033,7 +1033,7 @@ def BOPTools_AlgoTools_MakeContainer(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeContainer(*args)
 
-def BOPTools_AlgoTools_IsHole(*args):
+def BOPTools_AlgoTools_IsHole(*args) -> "Standard_Boolean" :
   """
     :param aW:
     :type aW: TopoDS_Shape &
@@ -1044,7 +1044,7 @@ def BOPTools_AlgoTools_IsHole(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsHole(*args)
 
-def BOPTools_AlgoTools_IsSplitToReverse(*args):
+def BOPTools_AlgoTools_IsSplitToReverse(*args) -> "Standard_Boolean" :
   """
     * Returns True if the shape theSplit has opposite direction than theShape theContext - cashed geometrical tools
 
@@ -1077,7 +1077,7 @@ def BOPTools_AlgoTools_IsSplitToReverse(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsSplitToReverse(*args)
 
-def BOPTools_AlgoTools_AreFacesSameDomain(*args):
+def BOPTools_AlgoTools_AreFacesSameDomain(*args) -> "Standard_Boolean" :
   """
     :param theF1:
     :type theF1: TopoDS_Face &
@@ -1090,7 +1090,7 @@ def BOPTools_AlgoTools_AreFacesSameDomain(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_AreFacesSameDomain(*args)
 
-def BOPTools_AlgoTools_CheckSameGeom(*args):
+def BOPTools_AlgoTools_CheckSameGeom(*args) -> "Standard_Boolean" :
   """
     :param theF1:
     :type theF1: TopoDS_Face &
@@ -1103,7 +1103,7 @@ def BOPTools_AlgoTools_CheckSameGeom(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CheckSameGeom(*args)
 
-def BOPTools_AlgoTools_Sense(*args):
+def BOPTools_AlgoTools_Sense(*args) -> "Standard_Integer" :
   """
     :param theF1:
     :type theF1: TopoDS_Face &
@@ -1114,7 +1114,7 @@ def BOPTools_AlgoTools_Sense(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_Sense(*args)
 
-def BOPTools_AlgoTools_GetEdgeOff(*args):
+def BOPTools_AlgoTools_GetEdgeOff(*args) -> "Standard_Boolean" :
   """
     * Returns True if the face theFace contains the edge theEdge but with opposite orientation. If the method returns True theEdgeOff is the edge founded
 
@@ -1129,7 +1129,7 @@ def BOPTools_AlgoTools_GetEdgeOff(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_GetEdgeOff(*args)
 
-def BOPTools_AlgoTools_GetFaceOff(*args):
+def BOPTools_AlgoTools_GetFaceOff(*args) -> "Standard_Boolean" :
   """
     * For the face theFace and its edge theEdge finds the face suitable to produce shell. theLCEF - set of faces to search. All faces from theLCEF must share edge theEdge
 
@@ -1148,7 +1148,7 @@ def BOPTools_AlgoTools_GetFaceOff(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_GetFaceOff(*args)
 
-def BOPTools_AlgoTools_IsInternalFace(*args):
+def BOPTools_AlgoTools_IsInternalFace(*args) -> "Standard_Integer" :
   """
     * Returns True if the face theFace is inside of the couple of faces theFace1, theFace2. The faces theFace, theFace1, theFace2 must share the edge theEdge
 
@@ -1193,7 +1193,7 @@ def BOPTools_AlgoTools_IsInternalFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsInternalFace(*args)
 
-def BOPTools_AlgoTools_GetEdgeOnFace(*args):
+def BOPTools_AlgoTools_GetEdgeOnFace(*args) -> "Standard_Boolean" :
   """
     * For the face theFace gets the edge theEdgeOnF that is the same as theEdge Returns True if such edge exists Returns False if there is no such edge
 
@@ -1208,7 +1208,7 @@ def BOPTools_AlgoTools_GetEdgeOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_GetEdgeOnFace(*args)
 
-def BOPTools_AlgoTools_ComputeState(*args):
+def BOPTools_AlgoTools_ComputeState(*args) -> "TopAbs_State" :
   """
     * Computes the 3-D state of the point thePoint toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.
 
@@ -1263,7 +1263,7 @@ def BOPTools_AlgoTools_ComputeState(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_ComputeState(*args)
 
-def BOPTools_AlgoTools_ComputeStateByOnePoint(*args):
+def BOPTools_AlgoTools_ComputeStateByOnePoint(*args) -> "TopAbs_State" :
   """
     * Computes the 3-D state of the shape theShape toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.
 
@@ -1280,7 +1280,7 @@ def BOPTools_AlgoTools_ComputeStateByOnePoint(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_ComputeStateByOnePoint(*args)
 
-def BOPTools_AlgoTools_MakeConnexityBlock(*args):
+def BOPTools_AlgoTools_MakeConnexityBlock(*args) -> "void" :
   """
     * For the list of faces theLS build block theLSCB in terms of connexity by edges theMapAvoid - set of edges to avoid for the treatment
 
@@ -1297,7 +1297,7 @@ def BOPTools_AlgoTools_MakeConnexityBlock(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeConnexityBlock(*args)
 
-def BOPTools_AlgoTools_MakeConnexityBlocks(*args):
+def BOPTools_AlgoTools_MakeConnexityBlocks(*args) -> "void" :
   """
     * For the compound theS build the blocks theLCB (as list of compounds) in terms of connexity by the shapes of theType
 
@@ -1314,7 +1314,7 @@ def BOPTools_AlgoTools_MakeConnexityBlocks(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeConnexityBlocks(*args)
 
-def BOPTools_AlgoTools_OrientFacesOnShell(*args):
+def BOPTools_AlgoTools_OrientFacesOnShell(*args) -> "void" :
   """
     :param theS:
     :type theS: TopoDS_Shape &
@@ -1323,7 +1323,7 @@ def BOPTools_AlgoTools_OrientFacesOnShell(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_OrientFacesOnShell(*args)
 
-def BOPTools_AlgoTools_CorrectTolerances(*args):
+def BOPTools_AlgoTools_CorrectTolerances(*args) -> "void" :
   """
     * Provides valid values of tolerances for the shape <theS> <theTolMax> is max value of the tolerance that can be accepted for correction. If real value of the tolerance will be greater than <aTolMax>, the correction does not perform.
 
@@ -1336,7 +1336,7 @@ def BOPTools_AlgoTools_CorrectTolerances(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CorrectTolerances(*args)
 
-def BOPTools_AlgoTools_CorrectCurveOnSurface(*args):
+def BOPTools_AlgoTools_CorrectCurveOnSurface(*args) -> "void" :
   """
     * Provides valid values of tolerances for the shape <theS> in terms of BRepCheck_InvalidCurveOnSurface.
 
@@ -1349,7 +1349,7 @@ def BOPTools_AlgoTools_CorrectCurveOnSurface(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CorrectCurveOnSurface(*args)
 
-def BOPTools_AlgoTools_CorrectPointOnCurve(*args):
+def BOPTools_AlgoTools_CorrectPointOnCurve(*args) -> "void" :
   """
     * Provides valid values of tolerances for the shape <theS> in terms of BRepCheck_InvalidPointOnCurve.
 
@@ -1362,7 +1362,7 @@ def BOPTools_AlgoTools_CorrectPointOnCurve(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CorrectPointOnCurve(*args)
 
-def BOPTools_AlgoTools_MakeNewVertex(*args):
+def BOPTools_AlgoTools_MakeNewVertex(*args) -> "void" :
   """
     * Make a vertex using 3D-point <aP1> and 3D-tolerance value <aTol>
 
@@ -1413,7 +1413,7 @@ def BOPTools_AlgoTools_MakeNewVertex(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeNewVertex(*args)
 
-def BOPTools_AlgoTools_PointOnEdge(*args):
+def BOPTools_AlgoTools_PointOnEdge(*args) -> "void" :
   """
     * Compute a 3D-point on the edge <aEdge> at parameter <aPrm>
 
@@ -1428,7 +1428,7 @@ def BOPTools_AlgoTools_PointOnEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_PointOnEdge(*args)
 
-def BOPTools_AlgoTools_MakeSplitEdge(*args):
+def BOPTools_AlgoTools_MakeSplitEdge(*args) -> "void" :
   """
     * Make the edge from base edge <aE1> and two vertices <aV1,aV2> at parameters <aP1,aP2>
 
@@ -1449,7 +1449,7 @@ def BOPTools_AlgoTools_MakeSplitEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeSplitEdge(*args)
 
-def BOPTools_AlgoTools_MakeSectEdge(*args):
+def BOPTools_AlgoTools_MakeSectEdge(*args) -> "void" :
   """
     * Make the edge from 3D-Curve <aIC> and two vertices <aV1,aV2> at parameters <aP1,aP2>
 
@@ -1470,7 +1470,7 @@ def BOPTools_AlgoTools_MakeSectEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_MakeSectEdge(*args)
 
-def BOPTools_AlgoTools_UpdateVertex(*args):
+def BOPTools_AlgoTools_UpdateVertex(*args) -> "void" :
   """
     * Update the tolerance value for vertex <aV> taking into account the fact that <aV> lays on the curve <aIC>
 
@@ -1503,7 +1503,7 @@ def BOPTools_AlgoTools_UpdateVertex(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_UpdateVertex(*args)
 
-def BOPTools_AlgoTools_CorrectRange(*args):
+def BOPTools_AlgoTools_CorrectRange(*args) -> "void" :
   """
     * Correct shrunk range <aSR> taking into account 3D-curve resolution and corresp. tolerances' values of <aE1>, <aE2>
 
@@ -1532,7 +1532,7 @@ def BOPTools_AlgoTools_CorrectRange(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CorrectRange(*args)
 
-def BOPTools_AlgoTools_IsBlockInOnFace(*args):
+def BOPTools_AlgoTools_IsBlockInOnFace(*args) -> "Standard_Boolean" :
   """
     * Returns True if PaveBlock <aPB> lays on the face <aF>, i.e the <PB> is IN or ON in 2D of <aF>
 
@@ -1549,7 +1549,7 @@ def BOPTools_AlgoTools_IsBlockInOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsBlockInOnFace(*args)
 
-def BOPTools_AlgoTools_IsMicroEdge(*args):
+def BOPTools_AlgoTools_IsMicroEdge(*args) -> "Standard_Boolean" :
   """
     * Checks if it is possible to compute shrunk range for the edge <aE>.
 
@@ -1562,7 +1562,7 @@ def BOPTools_AlgoTools_IsMicroEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsMicroEdge(*args)
 
-def BOPTools_AlgoTools_CorrectShapeTolerances(*args):
+def BOPTools_AlgoTools_CorrectShapeTolerances(*args) -> "void" :
   """
     * Corrects tolerance values of the sub-shapes of the shape <theS> if needed.
 
@@ -1573,7 +1573,7 @@ def BOPTools_AlgoTools_CorrectShapeTolerances(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_CorrectShapeTolerances(*args)
 
-def BOPTools_AlgoTools_Dimension(*args):
+def BOPTools_AlgoTools_Dimension(*args) -> "Standard_Integer" :
   """
     * Retutns dimension of the shape <theS>.
 
@@ -1584,7 +1584,7 @@ def BOPTools_AlgoTools_Dimension(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_Dimension(*args)
 
-def BOPTools_AlgoTools_IsOpenShell(*args):
+def BOPTools_AlgoTools_IsOpenShell(*args) -> "Standard_Boolean" :
   """
     * Returns true if the shell <theShell> is open
 
@@ -1595,7 +1595,7 @@ def BOPTools_AlgoTools_IsOpenShell(*args):
     """
   return _BOPTools.BOPTools_AlgoTools_IsOpenShell(*args)
 
-def BOPTools_AlgoTools_IsInvertedSolid(*args):
+def BOPTools_AlgoTools_IsInvertedSolid(*args) -> "Standard_Boolean" :
   """
     * Returns true if the solid <theSolid> is inverted
 
@@ -1609,7 +1609,7 @@ def BOPTools_AlgoTools_IsInvertedSolid(*args):
 class BOPTools_AlgoTools2D(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def BuildPCurveForEdgeOnFace(*args):
+    def BuildPCurveForEdgeOnFace(*args) -> "void" :
         """
         * Compute P-Curve for the edge <aE> on the face <aF>
 
@@ -1623,7 +1623,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgeOnFace(*args)
 
     BuildPCurveForEdgeOnFace = staticmethod(BuildPCurveForEdgeOnFace)
-    def EdgeTangent(*args):
+    def EdgeTangent(*args) -> "Standard_Boolean" :
         """
         * Compute tangent for the edge <aE> [in 3D] at parameter <aT>
 
@@ -1639,7 +1639,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_EdgeTangent(*args)
 
     EdgeTangent = staticmethod(EdgeTangent)
-    def PointOnSurface(*args):
+    def PointOnSurface(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Compute surface parameters <U,V> of the face <aF> for the point from the edge <aE> at parameter <aT>.
 
@@ -1659,7 +1659,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_PointOnSurface(*args)
 
     PointOnSurface = staticmethod(PointOnSurface)
-    def HasCurveOnSurface(*args):
+    def HasCurveOnSurface(*args) -> "Standard_Boolean" :
         """
         * Returns True if the edge <aE> has P-Curve <aC> on surface <aF> . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance If the P-Curve does not exist, aC.IsNull()=True.
 
@@ -1689,7 +1689,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_HasCurveOnSurface(*args)
 
     HasCurveOnSurface = staticmethod(HasCurveOnSurface)
-    def AdjustPCurveOnFace(*args):
+    def AdjustPCurveOnFace(*args) -> "void" :
         """
         * Adjust P-Curve <aC2D> (3D-curve <C3D>) on surface <aF> .
 
@@ -1721,7 +1721,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_AdjustPCurveOnFace(*args)
 
     AdjustPCurveOnFace = staticmethod(AdjustPCurveOnFace)
-    def IntermediatePoint(*args):
+    def IntermediatePoint(*args) -> "Standard_Real" :
         """
         * Compute intermediate value in between [aFirst, aLast] .
 
@@ -1741,7 +1741,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_IntermediatePoint(*args)
 
     IntermediatePoint = staticmethod(IntermediatePoint)
-    def BuildPCurveForEdgeOnPlane(*args):
+    def BuildPCurveForEdgeOnPlane(*args) -> "void" :
         """
         :param theE:
         :type theE: TopoDS_Edge &
@@ -1753,7 +1753,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgeOnPlane(*args)
 
     BuildPCurveForEdgeOnPlane = staticmethod(BuildPCurveForEdgeOnPlane)
-    def BuildPCurveForEdgesOnPlane(*args):
+    def BuildPCurveForEdgesOnPlane(*args) -> "void" :
         """
         :param theLE:
         :type theLE: BOPCol_ListOfShape &
@@ -1765,7 +1765,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgesOnPlane(*args)
 
     BuildPCurveForEdgesOnPlane = staticmethod(BuildPCurveForEdgesOnPlane)
-    def Make2D(*args):
+    def Make2D(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Make P-Curve <aC> for the edge <aE> on surface <aF> . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance
 
@@ -1787,7 +1787,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_Make2D(*args)
 
     Make2D = staticmethod(Make2D)
-    def MakePCurveOnFace(*args):
+    def MakePCurveOnFace(*args) -> "Standard_Real &" :
         """
         * Make P-Curve <aC> for the 3D-curve <C3D> on surface <aF> . [aToler] - reached tolerance
 
@@ -1821,7 +1821,7 @@ class BOPTools_AlgoTools2D(object):
         return _BOPTools.BOPTools_AlgoTools2D_MakePCurveOnFace(*args)
 
     MakePCurveOnFace = staticmethod(MakePCurveOnFace)
-    def MakePCurveOfType(*args):
+    def MakePCurveOfType(*args) -> "void" :
         """
         * Make empty P-Curve <aC> of relevant to <PC> type
 
@@ -1849,7 +1849,7 @@ BOPTools_AlgoTools2D._kill_pointed = new_instancemethod(_BOPTools.BOPTools_AlgoT
 BOPTools_AlgoTools2D_swigregister = _BOPTools.BOPTools_AlgoTools2D_swigregister
 BOPTools_AlgoTools2D_swigregister(BOPTools_AlgoTools2D)
 
-def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnFace(*args):
+def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnFace(*args) -> "void" :
   """
     * Compute P-Curve for the edge <aE> on the face <aF>
 
@@ -1862,7 +1862,7 @@ def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgeOnFace(*args)
 
-def BOPTools_AlgoTools2D_EdgeTangent(*args):
+def BOPTools_AlgoTools2D_EdgeTangent(*args) -> "Standard_Boolean" :
   """
     * Compute tangent for the edge <aE> [in 3D] at parameter <aT>
 
@@ -1877,7 +1877,7 @@ def BOPTools_AlgoTools2D_EdgeTangent(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_EdgeTangent(*args)
 
-def BOPTools_AlgoTools2D_PointOnSurface(*args):
+def BOPTools_AlgoTools2D_PointOnSurface(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Compute surface parameters <U,V> of the face <aF> for the point from the edge <aE> at parameter <aT>.
 
@@ -1896,7 +1896,7 @@ def BOPTools_AlgoTools2D_PointOnSurface(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_PointOnSurface(*args)
 
-def BOPTools_AlgoTools2D_HasCurveOnSurface(*args):
+def BOPTools_AlgoTools2D_HasCurveOnSurface(*args) -> "Standard_Boolean" :
   """
     * Returns True if the edge <aE> has P-Curve <aC> on surface <aF> . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance If the P-Curve does not exist, aC.IsNull()=True.
 
@@ -1925,7 +1925,7 @@ def BOPTools_AlgoTools2D_HasCurveOnSurface(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_HasCurveOnSurface(*args)
 
-def BOPTools_AlgoTools2D_AdjustPCurveOnFace(*args):
+def BOPTools_AlgoTools2D_AdjustPCurveOnFace(*args) -> "void" :
   """
     * Adjust P-Curve <aC2D> (3D-curve <C3D>) on surface <aF> .
 
@@ -1956,7 +1956,7 @@ def BOPTools_AlgoTools2D_AdjustPCurveOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_AdjustPCurveOnFace(*args)
 
-def BOPTools_AlgoTools2D_IntermediatePoint(*args):
+def BOPTools_AlgoTools2D_IntermediatePoint(*args) -> "Standard_Real" :
   """
     * Compute intermediate value in between [aFirst, aLast] .
 
@@ -1975,7 +1975,7 @@ def BOPTools_AlgoTools2D_IntermediatePoint(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_IntermediatePoint(*args)
 
-def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnPlane(*args):
+def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnPlane(*args) -> "void" :
   """
     :param theE:
     :type theE: TopoDS_Edge &
@@ -1986,7 +1986,7 @@ def BOPTools_AlgoTools2D_BuildPCurveForEdgeOnPlane(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgeOnPlane(*args)
 
-def BOPTools_AlgoTools2D_BuildPCurveForEdgesOnPlane(*args):
+def BOPTools_AlgoTools2D_BuildPCurveForEdgesOnPlane(*args) -> "void" :
   """
     :param theLE:
     :type theLE: BOPCol_ListOfShape &
@@ -1997,7 +1997,7 @@ def BOPTools_AlgoTools2D_BuildPCurveForEdgesOnPlane(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_BuildPCurveForEdgesOnPlane(*args)
 
-def BOPTools_AlgoTools2D_Make2D(*args):
+def BOPTools_AlgoTools2D_Make2D(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Make P-Curve <aC> for the edge <aE> on surface <aF> . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance
 
@@ -2018,7 +2018,7 @@ def BOPTools_AlgoTools2D_Make2D(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_Make2D(*args)
 
-def BOPTools_AlgoTools2D_MakePCurveOnFace(*args):
+def BOPTools_AlgoTools2D_MakePCurveOnFace(*args) -> "Standard_Real &" :
   """
     * Make P-Curve <aC> for the 3D-curve <C3D> on surface <aF> . [aToler] - reached tolerance
 
@@ -2051,7 +2051,7 @@ def BOPTools_AlgoTools2D_MakePCurveOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools2D_MakePCurveOnFace(*args)
 
-def BOPTools_AlgoTools2D_MakePCurveOfType(*args):
+def BOPTools_AlgoTools2D_MakePCurveOfType(*args) -> "void" :
   """
     * Make empty P-Curve <aC> of relevant to <PC> type
 
@@ -2067,7 +2067,7 @@ def BOPTools_AlgoTools2D_MakePCurveOfType(*args):
 class BOPTools_AlgoTools3D(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DoSplitSEAMOnFace(*args):
+    def DoSplitSEAMOnFace(*args) -> "void" :
         """
         * Make the edge <aSp> seam edge for the face <aF>
 
@@ -2081,7 +2081,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_DoSplitSEAMOnFace(*args)
 
     DoSplitSEAMOnFace = staticmethod(DoSplitSEAMOnFace)
-    def GetNormalToFaceOnEdge(*args):
+    def GetNormalToFaceOnEdge(*args) -> "void" :
         """
         * Computes normal to the face <aF> for the point on the edge <aE> at parameter <aT>
 
@@ -2109,7 +2109,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_GetNormalToFaceOnEdge(*args)
 
     GetNormalToFaceOnEdge = staticmethod(GetNormalToFaceOnEdge)
-    def SenseFlag(*args):
+    def SenseFlag(*args) -> "Standard_Integer" :
         """
         * Returns 1 if scalar product aNF1* aNF2>0. Returns 0 if directions aNF1 aNF2 coinside Returns -1 if scalar product aNF1* aNF2<0.
 
@@ -2123,7 +2123,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_SenseFlag(*args)
 
     SenseFlag = staticmethod(SenseFlag)
-    def GetNormalToSurface(*args):
+    def GetNormalToSurface(*args) -> "Standard_Boolean" :
         """
         * Compute normal <aD> to surface <aS> in point (U,V) Returns True if directions aD1U, aD1V coinside
 
@@ -2141,7 +2141,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_GetNormalToSurface(*args)
 
     GetNormalToSurface = staticmethod(GetNormalToSurface)
-    def GetApproxNormalToFaceOnEdge(*args):
+    def GetApproxNormalToFaceOnEdge(*args) -> "void" :
         """
         * Computes normal to the face <aF> for the 3D-point that belonds to the edge <aE> at parameter <aT>. Output: aPx - the 3D-point where the normal computed aD - the normal; Warning: The normal is computed not exactly in the point on the edge, but in point that is near to the edge towards to the face material (so, we'll have approx. normal)
 
@@ -2177,7 +2177,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_GetApproxNormalToFaceOnEdge(*args)
 
     GetApproxNormalToFaceOnEdge = staticmethod(GetApproxNormalToFaceOnEdge)
-    def PointNearEdge(*args):
+    def PointNearEdge(*args) -> "void" :
         """
         * Compute the point <aPx>, (<aP2D>) that is near to the edge <aE> at parameter <aT> towards to the material of the face <aF>. The value of shifting in 2D is <aDt2D>
 
@@ -2229,7 +2229,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_PointNearEdge(*args)
 
     PointNearEdge = staticmethod(PointNearEdge)
-    def MinStepIn2d(*args):
+    def MinStepIn2d(*args) -> "Standard_Real" :
         """
         * Returns simple step value that is used in 2D-computations = 1.e-5
 
@@ -2239,7 +2239,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_MinStepIn2d(*args)
 
     MinStepIn2d = staticmethod(MinStepIn2d)
-    def IsEmptyShape(*args):
+    def IsEmptyShape(*args) -> "Standard_Boolean" :
         """
         * Returns True if the shape <aS> does not contain geometry information (e.g. empty compound)
 
@@ -2251,7 +2251,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_IsEmptyShape(*args)
 
     IsEmptyShape = staticmethod(IsEmptyShape)
-    def OrientEdgeOnFace(*args):
+    def OrientEdgeOnFace(*args) -> "void" :
         """
         * Get the edge <aER> from the face <aF> that is the same as the edge <aE>
 
@@ -2267,7 +2267,7 @@ class BOPTools_AlgoTools3D(object):
         return _BOPTools.BOPTools_AlgoTools3D_OrientEdgeOnFace(*args)
 
     OrientEdgeOnFace = staticmethod(OrientEdgeOnFace)
-    def PointInFace(*args):
+    def PointInFace(*args) -> "Standard_Integer" :
         """
         * Computes a point <theP> inside the face <theF>.  <theP2D> - 2D representation of <theP>  on the surface of <theF>  Returns 0 in case of success.
 
@@ -2299,7 +2299,7 @@ BOPTools_AlgoTools3D._kill_pointed = new_instancemethod(_BOPTools.BOPTools_AlgoT
 BOPTools_AlgoTools3D_swigregister = _BOPTools.BOPTools_AlgoTools3D_swigregister
 BOPTools_AlgoTools3D_swigregister(BOPTools_AlgoTools3D)
 
-def BOPTools_AlgoTools3D_DoSplitSEAMOnFace(*args):
+def BOPTools_AlgoTools3D_DoSplitSEAMOnFace(*args) -> "void" :
   """
     * Make the edge <aSp> seam edge for the face <aF>
 
@@ -2312,7 +2312,7 @@ def BOPTools_AlgoTools3D_DoSplitSEAMOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_DoSplitSEAMOnFace(*args)
 
-def BOPTools_AlgoTools3D_GetNormalToFaceOnEdge(*args):
+def BOPTools_AlgoTools3D_GetNormalToFaceOnEdge(*args) -> "void" :
   """
     * Computes normal to the face <aF> for the point on the edge <aE> at parameter <aT>
 
@@ -2339,7 +2339,7 @@ def BOPTools_AlgoTools3D_GetNormalToFaceOnEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_GetNormalToFaceOnEdge(*args)
 
-def BOPTools_AlgoTools3D_SenseFlag(*args):
+def BOPTools_AlgoTools3D_SenseFlag(*args) -> "Standard_Integer" :
   """
     * Returns 1 if scalar product aNF1* aNF2>0. Returns 0 if directions aNF1 aNF2 coinside Returns -1 if scalar product aNF1* aNF2<0.
 
@@ -2352,7 +2352,7 @@ def BOPTools_AlgoTools3D_SenseFlag(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_SenseFlag(*args)
 
-def BOPTools_AlgoTools3D_GetNormalToSurface(*args):
+def BOPTools_AlgoTools3D_GetNormalToSurface(*args) -> "Standard_Boolean" :
   """
     * Compute normal <aD> to surface <aS> in point (U,V) Returns True if directions aD1U, aD1V coinside
 
@@ -2369,7 +2369,7 @@ def BOPTools_AlgoTools3D_GetNormalToSurface(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_GetNormalToSurface(*args)
 
-def BOPTools_AlgoTools3D_GetApproxNormalToFaceOnEdge(*args):
+def BOPTools_AlgoTools3D_GetApproxNormalToFaceOnEdge(*args) -> "void" :
   """
     * Computes normal to the face <aF> for the 3D-point that belonds to the edge <aE> at parameter <aT>. Output: aPx - the 3D-point where the normal computed aD - the normal; Warning: The normal is computed not exactly in the point on the edge, but in point that is near to the edge towards to the face material (so, we'll have approx. normal)
 
@@ -2404,7 +2404,7 @@ def BOPTools_AlgoTools3D_GetApproxNormalToFaceOnEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_GetApproxNormalToFaceOnEdge(*args)
 
-def BOPTools_AlgoTools3D_PointNearEdge(*args):
+def BOPTools_AlgoTools3D_PointNearEdge(*args) -> "void" :
   """
     * Compute the point <aPx>, (<aP2D>) that is near to the edge <aE> at parameter <aT> towards to the material of the face <aF>. The value of shifting in 2D is <aDt2D>
 
@@ -2455,7 +2455,7 @@ def BOPTools_AlgoTools3D_PointNearEdge(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_PointNearEdge(*args)
 
-def BOPTools_AlgoTools3D_MinStepIn2d(*args):
+def BOPTools_AlgoTools3D_MinStepIn2d(*args) -> "Standard_Real" :
   """
     * Returns simple step value that is used in 2D-computations = 1.e-5
 
@@ -2464,7 +2464,7 @@ def BOPTools_AlgoTools3D_MinStepIn2d(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_MinStepIn2d(*args)
 
-def BOPTools_AlgoTools3D_IsEmptyShape(*args):
+def BOPTools_AlgoTools3D_IsEmptyShape(*args) -> "Standard_Boolean" :
   """
     * Returns True if the shape <aS> does not contain geometry information (e.g. empty compound)
 
@@ -2475,7 +2475,7 @@ def BOPTools_AlgoTools3D_IsEmptyShape(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_IsEmptyShape(*args)
 
-def BOPTools_AlgoTools3D_OrientEdgeOnFace(*args):
+def BOPTools_AlgoTools3D_OrientEdgeOnFace(*args) -> "void" :
   """
     * Get the edge <aER> from the face <aF> that is the same as the edge <aE>
 
@@ -2490,7 +2490,7 @@ def BOPTools_AlgoTools3D_OrientEdgeOnFace(*args):
     """
   return _BOPTools.BOPTools_AlgoTools3D_OrientEdgeOnFace(*args)
 
-def BOPTools_AlgoTools3D_PointInFace(*args):
+def BOPTools_AlgoTools3D_PointInFace(*args) -> "Standard_Integer" :
   """
     * Computes a point <theP> inside the face <theF>.  <theP2D> - 2D representation of <theP>  on the surface of <theF>  Returns 0 in case of success.
 
@@ -2520,21 +2520,21 @@ class BOPTools_ConnexityBlock(object):
 
         """
         _BOPTools.BOPTools_ConnexityBlock_swiginit(self,_BOPTools.new_BOPTools_ConnexityBlock(*args))
-    def Shapes(self, *args):
+    def Shapes(self, *args) -> "BOPCol_ListOfShape const &" :
         """
         :rtype: BOPCol_ListOfShape
 
         """
         return _BOPTools.BOPTools_ConnexityBlock_Shapes(self, *args)
 
-    def ChangeShapes(self, *args):
+    def ChangeShapes(self, *args) -> "BOPCol_ListOfShape &" :
         """
         :rtype: BOPCol_ListOfShape
 
         """
         return _BOPTools.BOPTools_ConnexityBlock_ChangeShapes(self, *args)
 
-    def SetRegular(self, *args):
+    def SetRegular(self, *args) -> "void" :
         """
         :param theFlag:
         :type theFlag: bool
@@ -2543,21 +2543,21 @@ class BOPTools_ConnexityBlock(object):
         """
         return _BOPTools.BOPTools_ConnexityBlock_SetRegular(self, *args)
 
-    def IsRegular(self, *args):
+    def IsRegular(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BOPTools.BOPTools_ConnexityBlock_IsRegular(self, *args)
 
-    def Loops(self, *args):
+    def Loops(self, *args) -> "BOPCol_ListOfShape const &" :
         """
         :rtype: BOPCol_ListOfShape
 
         """
         return _BOPTools.BOPTools_ConnexityBlock_Loops(self, *args)
 
-    def ChangeLoops(self, *args):
+    def ChangeLoops(self, *args) -> "BOPCol_ListOfShape &" :
         """
         :rtype: BOPCol_ListOfShape
 
@@ -2591,7 +2591,7 @@ class BOPTools_CoupleOfShape(object):
 
         """
         _BOPTools.BOPTools_CoupleOfShape_swiginit(self,_BOPTools.new_BOPTools_CoupleOfShape(*args))
-    def SetShape1(self, *args):
+    def SetShape1(self, *args) -> "void" :
         """
         :param theShape:
         :type theShape: TopoDS_Shape &
@@ -2600,14 +2600,14 @@ class BOPTools_CoupleOfShape(object):
         """
         return _BOPTools.BOPTools_CoupleOfShape_SetShape1(self, *args)
 
-    def Shape1(self, *args):
+    def Shape1(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BOPTools.BOPTools_CoupleOfShape_Shape1(self, *args)
 
-    def SetShape2(self, *args):
+    def SetShape2(self, *args) -> "void" :
         """
         :param theShape:
         :type theShape: TopoDS_Shape &
@@ -2616,7 +2616,7 @@ class BOPTools_CoupleOfShape(object):
         """
         return _BOPTools.BOPTools_CoupleOfShape_SetShape2(self, *args)
 
-    def Shape2(self, *args):
+    def Shape2(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
@@ -2652,7 +2652,7 @@ class BOPTools_EdgeSet(object):
 
         """
         _BOPTools.BOPTools_EdgeSet_swiginit(self,_BOPTools.new_BOPTools_EdgeSet(*args))
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         :param theS:
         :type theS: TopoDS_Shape &
@@ -2661,14 +2661,14 @@ class BOPTools_EdgeSet(object):
         """
         return _BOPTools.BOPTools_EdgeSet_SetShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BOPTools.BOPTools_EdgeSet_Shape(self, *args)
 
-    def AddEdge(self, *args):
+    def AddEdge(self, *args) -> "void" :
         """
         :param theEdge:
         :type theEdge: TopoDS_Edge &
@@ -2677,7 +2677,7 @@ class BOPTools_EdgeSet(object):
         """
         return _BOPTools.BOPTools_EdgeSet_AddEdge(self, *args)
 
-    def AddEdges(self, *args):
+    def AddEdges(self, *args) -> "void" :
         """
         :param theLS:
         :type theLS: BOPCol_ListOfShape &
@@ -2690,14 +2690,14 @@ class BOPTools_EdgeSet(object):
         """
         return _BOPTools.BOPTools_EdgeSet_AddEdges(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPTools.BOPTools_EdgeSet_Clear(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "void" :
         """
         :param theLS:
         :type theLS: BOPCol_ListOfShape &
@@ -2706,7 +2706,7 @@ class BOPTools_EdgeSet(object):
         """
         return _BOPTools.BOPTools_EdgeSet_Get(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param theSet:
         :type theSet: BOPTools_EdgeSet &
@@ -2747,7 +2747,7 @@ class BOPTools_Set(object):
 
         """
         _BOPTools.BOPTools_Set_swiginit(self,_BOPTools.new_BOPTools_Set(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BOPTools_Set &" :
         """
         :param Other:
         :type Other: BOPTools_Set &
@@ -2756,7 +2756,7 @@ class BOPTools_Set(object):
         """
         return _BOPTools.BOPTools_Set_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BOPTools_Set &" :
         """
         :param Other:
         :type Other: BOPTools_Set &
@@ -2765,14 +2765,14 @@ class BOPTools_Set(object):
         """
         return _BOPTools.BOPTools_Set_Set(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BOPTools.BOPTools_Set_Shape(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param theS:
         :type theS: TopoDS_Shape &
@@ -2783,14 +2783,14 @@ class BOPTools_Set(object):
         """
         return _BOPTools.BOPTools_Set_Add(self, *args)
 
-    def NbShapes(self, *args):
+    def NbShapes(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BOPTools.BOPTools_Set_NbShapes(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param aOther:
         :type aOther: BOPTools_Set &
@@ -2799,7 +2799,7 @@ class BOPTools_Set(object):
         """
         return _BOPTools.BOPTools_Set_IsEqual(self, *args)
 
-    def HashCode(self, *args):
+    def HashCode(self, *args) -> "Standard_Integer" :
         """
         :param Upper:
         :type Upper: int
@@ -2831,7 +2831,7 @@ BOPTools_Set_swigregister(BOPTools_Set)
 class BOPTools_SetMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param aSet:
         :type aSet: BOPTools_Set &
@@ -2843,7 +2843,7 @@ class BOPTools_SetMapHasher(object):
         return _BOPTools.BOPTools_SetMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param aSet1:
         :type aSet1: BOPTools_Set &
@@ -2869,7 +2869,7 @@ BOPTools_SetMapHasher._kill_pointed = new_instancemethod(_BOPTools.BOPTools_SetM
 BOPTools_SetMapHasher_swigregister = _BOPTools.BOPTools_SetMapHasher_swigregister
 BOPTools_SetMapHasher_swigregister(BOPTools_SetMapHasher)
 
-def BOPTools_SetMapHasher_HashCode(*args):
+def BOPTools_SetMapHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param aSet:
     :type aSet: BOPTools_Set &
@@ -2880,7 +2880,7 @@ def BOPTools_SetMapHasher_HashCode(*args):
     """
   return _BOPTools.BOPTools_SetMapHasher_HashCode(*args)
 
-def BOPTools_SetMapHasher_IsEqual(*args):
+def BOPTools_SetMapHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param aSet1:
     :type aSet1: BOPTools_Set &
@@ -2904,7 +2904,7 @@ class BOPTools_ShapeSet(object):
 
         """
         _BOPTools.BOPTools_ShapeSet_swiginit(self,_BOPTools.new_BOPTools_ShapeSet(*args))
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         :param theS:
         :type theS: TopoDS_Shape &
@@ -2913,14 +2913,14 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_SetShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BOPTools.BOPTools_ShapeSet_Shape(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param theLS:
         :type theLS: BOPCol_ListOfShape &
@@ -2939,7 +2939,7 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_Add(self, *args)
 
-    def AddEdge(self, *args):
+    def AddEdge(self, *args) -> "void" :
         """
         :param theEdge:
         :type theEdge: TopoDS_Edge &
@@ -2948,7 +2948,7 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_AddEdge(self, *args)
 
-    def AddEdges(self, *args):
+    def AddEdges(self, *args) -> "void" :
         """
         :param theLS:
         :type theLS: BOPCol_ListOfShape &
@@ -2961,7 +2961,7 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_AddEdges(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "void" :
         """
         :param theSet:
         :type theSet: BOPTools_ShapeSet &
@@ -2970,7 +2970,7 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_Subtract(self, *args)
 
-    def __isub__(self, *args):
+    def __isub__(self, *args) -> "void" :
         """
         :param theSet:
         :type theSet: BOPTools_ShapeSet &
@@ -2979,14 +2979,14 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet___isub__(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPTools.BOPTools_ShapeSet_Clear(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "void" :
         """
         :param theLS:
         :type theLS: BOPCol_ListOfShape &
@@ -2995,7 +2995,7 @@ class BOPTools_ShapeSet(object):
         """
         return _BOPTools.BOPTools_ShapeSet_Get(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param theSet:
         :type theSet: BOPTools_ShapeSet &

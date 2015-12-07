@@ -131,7 +131,7 @@ GCPnts_DefComposite = _GCPnts.GCPnts_DefComposite
 class GCPnts_AbscissaPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Length(*args):
+    def Length(*args) -> "Standard_Real" :
         """
         * Computes the length of the Curve <C>.
 
@@ -311,7 +311,7 @@ class GCPnts_AbscissaPoint(object):
 
         """
         _GCPnts.GCPnts_AbscissaPoint_swiginit(self,_GCPnts.new_GCPnts_AbscissaPoint(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True if the computation was successful, False otherwise. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
@@ -320,7 +320,7 @@ class GCPnts_AbscissaPoint(object):
         """
         return _GCPnts.GCPnts_AbscissaPoint_IsDone(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the curve of the point solution of this algorithm. Exceptions StdFail_NotDone if the computation was not successful, or was not done.
 
@@ -343,7 +343,7 @@ GCPnts_AbscissaPoint._kill_pointed = new_instancemethod(_GCPnts.GCPnts_AbscissaP
 GCPnts_AbscissaPoint_swigregister = _GCPnts.GCPnts_AbscissaPoint_swigregister
 GCPnts_AbscissaPoint_swigregister(GCPnts_AbscissaPoint)
 
-def GCPnts_AbscissaPoint_Length(*args):
+def GCPnts_AbscissaPoint_Length(*args) -> "Standard_Real" :
   """
     * Computes the length of the Curve <C>.
 
@@ -471,7 +471,7 @@ class GCPnts_QuasiUniformAbscissa(object):
 
         """
         _GCPnts.GCPnts_QuasiUniformAbscissa_swiginit(self,_GCPnts.new_GCPnts_QuasiUniformAbscissa(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initialize the algoritms with <C>, <NbPoints> and
 
@@ -516,7 +516,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         """
         return _GCPnts.GCPnts_QuasiUniformAbscissa_Initialize(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
@@ -525,7 +525,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         """
         return _GCPnts.GCPnts_QuasiUniformAbscissa_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points of the distribution computed by this algorithm. This value is either: - the one imposed on the algorithm at the time of construction (or initialization), or - the one computed by the algorithm when the curvilinear distance between two consecutive points of the distribution is imposed on the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -534,7 +534,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         """
         return _GCPnts.GCPnts_QuasiUniformAbscissa_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -620,7 +620,7 @@ class GCPnts_QuasiUniformDeflection(object):
 
         """
         _GCPnts.GCPnts_QuasiUniformDeflection_swiginit(self,_GCPnts.new_GCPnts_QuasiUniformDeflection(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initialize the algoritms with <C>, <Deflection>
 
@@ -673,7 +673,7 @@ class GCPnts_QuasiUniformDeflection(object):
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Initialize(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
@@ -682,7 +682,7 @@ class GCPnts_QuasiUniformDeflection(object):
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points of the distribution computed by this algorithm. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -691,7 +691,7 @@ class GCPnts_QuasiUniformDeflection(object):
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -702,7 +702,7 @@ class GCPnts_QuasiUniformDeflection(object):
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Parameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         * Returns the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -713,7 +713,7 @@ class GCPnts_QuasiUniformDeflection(object):
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Value(self, *args)
 
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         * Returns the deflection between the curve and the polygon resulting from the points of the distribution computed by this algorithm. This is the value given to the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -805,7 +805,7 @@ class GCPnts_TangentialDeflection(object):
 
         """
         _GCPnts.GCPnts_TangentialDeflection_swiginit(self,_GCPnts.new_GCPnts_TangentialDeflection(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -866,7 +866,7 @@ class GCPnts_TangentialDeflection(object):
         """
         return _GCPnts.GCPnts_TangentialDeflection_Initialize(self, *args)
 
-    def AddPoint(self, *args):
+    def AddPoint(self, *args) -> "Standard_Integer" :
         """
         * Add point to already calculated points (or replace existing) Returns index of new added point or founded with parametric tolerance (replaced if theIsReplace is true)
 
@@ -881,14 +881,14 @@ class GCPnts_TangentialDeflection(object):
         """
         return _GCPnts.GCPnts_TangentialDeflection_AddPoint(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GCPnts.GCPnts_TangentialDeflection_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :param I:
         :type I: int
@@ -897,7 +897,7 @@ class GCPnts_TangentialDeflection(object):
         """
         return _GCPnts.GCPnts_TangentialDeflection_Parameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         :param I:
         :type I: int
@@ -1030,7 +1030,7 @@ class GCPnts_UniformAbscissa(object):
 
         """
         _GCPnts.GCPnts_UniformAbscissa_swiginit(self,_GCPnts.new_GCPnts_UniformAbscissa(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initialize the algoritms with <C>, <Abscissa>, <Toler>
 
@@ -1131,21 +1131,21 @@ class GCPnts_UniformAbscissa(object):
         """
         return _GCPnts.GCPnts_UniformAbscissa_Initialize(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GCPnts.GCPnts_UniformAbscissa_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GCPnts.GCPnts_UniformAbscissa_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * returns the computed Parameter of index <Index>.
 
@@ -1156,7 +1156,7 @@ class GCPnts_UniformAbscissa(object):
         """
         return _GCPnts.GCPnts_UniformAbscissa_Parameter(self, *args)
 
-    def Abscissa(self, *args):
+    def Abscissa(self, *args) -> "Standard_Real" :
         """
         * returne the current abscissa ie the distance between two consecutive points
 
@@ -1241,7 +1241,7 @@ class GCPnts_UniformDeflection(object):
 
         """
         _GCPnts.GCPnts_UniformDeflection_swiginit(self,_GCPnts.new_GCPnts_UniformDeflection(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initialize the algoritms with <C>, <Deflection>
 
@@ -1294,7 +1294,7 @@ class GCPnts_UniformDeflection(object):
         """
         return _GCPnts.GCPnts_UniformDeflection_Initialize(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
@@ -1303,7 +1303,7 @@ class GCPnts_UniformDeflection(object):
         """
         return _GCPnts.GCPnts_UniformDeflection_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points of the distribution computed by this algorithm. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -1312,7 +1312,7 @@ class GCPnts_UniformDeflection(object):
         """
         return _GCPnts.GCPnts_UniformDeflection_NbPoints(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -1323,7 +1323,7 @@ class GCPnts_UniformDeflection(object):
         """
         return _GCPnts.GCPnts_UniformDeflection_Parameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         * Returns the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFAil_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
@@ -1334,7 +1334,7 @@ class GCPnts_UniformDeflection(object):
         """
         return _GCPnts.GCPnts_UniformDeflection_Value(self, *args)
 
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         * Returns the deflection between the curve and the polygon resulting from the points of the distribution computed by this algorithm. This value is the one given to the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 

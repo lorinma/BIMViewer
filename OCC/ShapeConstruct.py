@@ -140,7 +140,7 @@ import OCC.IntRes2d
 class shapeconstruct(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ConvertCurveToBSpline(*args):
+    def ConvertCurveToBSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * Tool for wire triangulation
 
@@ -180,7 +180,7 @@ class shapeconstruct(object):
         return _ShapeConstruct.shapeconstruct_ConvertCurveToBSpline(*args)
 
     ConvertCurveToBSpline = staticmethod(ConvertCurveToBSpline)
-    def ConvertSurfaceToBSpline(*args):
+    def ConvertSurfaceToBSpline(*args) -> "Handle_Geom_BSplineSurface" :
         """
         :param surf:
         :type surf: Handle_Geom_Surface &
@@ -206,7 +206,7 @@ class shapeconstruct(object):
         return _ShapeConstruct.shapeconstruct_ConvertSurfaceToBSpline(*args)
 
     ConvertSurfaceToBSpline = staticmethod(ConvertSurfaceToBSpline)
-    def JoinPCurves(*args):
+    def JoinPCurves(*args) -> "Standard_Boolean" :
         """
         * join pcurves of the <theEdge> on the <theFace> 	 try to use pcurves from originas edges <theEdges> Returns false if cannot join pcurves
 
@@ -222,7 +222,7 @@ class shapeconstruct(object):
         return _ShapeConstruct.shapeconstruct_JoinPCurves(*args)
 
     JoinPCurves = staticmethod(JoinPCurves)
-    def JoinCurves(*args):
+    def JoinCurves(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Boolean &, Standard_Boolean &" :
         """
         * //!Method for joininig curves 3D. Parameters : c3d1,ac3d2 - initial curves //!	 Orient1, Orient2 - initial edges orientations.  first1,last1,first2,last2 - parameters for trimming curves //!	 	 (re-calculate with account of orientation edges)  c3dOut - result curve  isRev1,isRev2 - out parameters indicative on possible errors. Return value : True - if curves were joined successfully,  else - False.
 
@@ -296,7 +296,7 @@ shapeconstruct._kill_pointed = new_instancemethod(_ShapeConstruct.shapeconstruct
 shapeconstruct_swigregister = _ShapeConstruct.shapeconstruct_swigregister
 shapeconstruct_swigregister(shapeconstruct)
 
-def shapeconstruct_ConvertCurveToBSpline(*args):
+def shapeconstruct_ConvertCurveToBSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     * Tool for wire triangulation
 
@@ -335,7 +335,7 @@ def shapeconstruct_ConvertCurveToBSpline(*args):
     """
   return _ShapeConstruct.shapeconstruct_ConvertCurveToBSpline(*args)
 
-def shapeconstruct_ConvertSurfaceToBSpline(*args):
+def shapeconstruct_ConvertSurfaceToBSpline(*args) -> "Handle_Geom_BSplineSurface" :
   """
     :param surf:
     :type surf: Handle_Geom_Surface &
@@ -360,7 +360,7 @@ def shapeconstruct_ConvertSurfaceToBSpline(*args):
     """
   return _ShapeConstruct.shapeconstruct_ConvertSurfaceToBSpline(*args)
 
-def shapeconstruct_JoinPCurves(*args):
+def shapeconstruct_JoinPCurves(*args) -> "Standard_Boolean" :
   """
     * join pcurves of the <theEdge> on the <theFace> 	 try to use pcurves from originas edges <theEdges> Returns false if cannot join pcurves
 
@@ -375,7 +375,7 @@ def shapeconstruct_JoinPCurves(*args):
     """
   return _ShapeConstruct.shapeconstruct_JoinPCurves(*args)
 
-def shapeconstruct_JoinCurves(*args):
+def shapeconstruct_JoinCurves(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Boolean &, Standard_Boolean &" :
   """
     * //!Method for joininig curves 3D. Parameters : c3d1,ac3d2 - initial curves //!	 Orient1, Orient2 - initial edges orientations.  first1,last1,first2,last2 - parameters for trimming curves //!	 	 (re-calculate with account of orientation edges)  c3dOut - result curve  isRev1,isRev2 - out parameters indicative on possible errors. Return value : True - if curves were joined successfully,  else - False.
 
@@ -445,7 +445,7 @@ class ShapeConstruct_CompBezierCurves2dToBSplineCurve2d(object):
 
         """
         _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_swiginit(self,_ShapeConstruct.new_ShapeConstruct_CompBezierCurves2dToBSplineCurve2d(*args))
-    def AddCurve(self, *args):
+    def AddCurve(self, *args) -> "void" :
         """
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
@@ -454,7 +454,7 @@ class ShapeConstruct_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_AddCurve(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the algorithm.
 
@@ -463,21 +463,21 @@ class ShapeConstruct_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_Perform(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_Degree(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_NbPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
@@ -486,14 +486,14 @@ class ShapeConstruct_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_Poles(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurves2dToBSplineCurve2d_NbKnots(self, *args)
 
-    def KnotsAndMults(self, *args):
+    def KnotsAndMults(self, *args) -> "void" :
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -534,7 +534,7 @@ class ShapeConstruct_CompBezierCurvesToBSplineCurve(object):
 
         """
         _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_swiginit(self,_ShapeConstruct.new_ShapeConstruct_CompBezierCurvesToBSplineCurve(*args))
-    def AddCurve(self, *args):
+    def AddCurve(self, *args) -> "void" :
         """
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
@@ -543,7 +543,7 @@ class ShapeConstruct_CompBezierCurvesToBSplineCurve(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_AddCurve(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the algorithm.
 
@@ -552,21 +552,21 @@ class ShapeConstruct_CompBezierCurvesToBSplineCurve(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_Perform(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_Degree(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_NbPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
@@ -575,14 +575,14 @@ class ShapeConstruct_CompBezierCurvesToBSplineCurve(object):
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_Poles(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _ShapeConstruct.ShapeConstruct_CompBezierCurvesToBSplineCurve_NbKnots(self, *args)
 
-    def KnotsAndMults(self, *args):
+    def KnotsAndMults(self, *args) -> "void" :
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -615,7 +615,7 @@ ShapeConstruct_CompBezierCurvesToBSplineCurve_swigregister(ShapeConstruct_CompBe
 class ShapeConstruct_Curve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def AdjustCurve(self, *args):
+    def AdjustCurve(self, *args) -> "Standard_Boolean" :
         """
         * Modifies a curve in order to make its bounds confused with given points. Works only on lines and B-Splines, returns True in this case, else returns False. For line considers both bounding points, for B-Splines only specified. Warning : Does not check if curve should be reversed
 
@@ -634,7 +634,7 @@ class ShapeConstruct_Curve(object):
         """
         return _ShapeConstruct.ShapeConstruct_Curve_AdjustCurve(self, *args)
 
-    def AdjustCurveSegment(self, *args):
+    def AdjustCurveSegment(self, *args) -> "Standard_Boolean" :
         """
         * Modifies a curve in order to make its bounds confused with given points. Works only on lines and B-Splines. For lines works as previous method, B-Splines are segmented at the given values and then are adjusted to the points.
 
@@ -653,7 +653,7 @@ class ShapeConstruct_Curve(object):
         """
         return _ShapeConstruct.ShapeConstruct_Curve_AdjustCurveSegment(self, *args)
 
-    def AdjustCurve2d(self, *args):
+    def AdjustCurve2d(self, *args) -> "Standard_Boolean" :
         """
         * Modifies a curve in order to make its bounds confused with given points. Works only on lines and B-Splines, returns True in this case, else returns False. For line considers both bounding points, for B-Splines only specified. Warning : Does not check if curve should be reversed
 
@@ -672,7 +672,7 @@ class ShapeConstruct_Curve(object):
         """
         return _ShapeConstruct.ShapeConstruct_Curve_AdjustCurve2d(self, *args)
 
-    def ConvertToBSpline(self, *args):
+    def ConvertToBSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * Converts a curve of any type (only part from first to last) to bspline. The method of conversion depends on the type of original curve: BSpline -> C.Segment(first,last) Bezier and Line -> GeomConvert::CurveToBSplineCurve(C).Segment(first,last) Conic and Other -> Approx_Curve3d(C[first,last],prec,C1,9,1000)
 
@@ -701,7 +701,7 @@ class ShapeConstruct_Curve(object):
         """
         return _ShapeConstruct.ShapeConstruct_Curve_ConvertToBSpline(self, *args)
 
-    def FixKnots(*args):
+    def FixKnots(*args) -> "Standard_Boolean" :
         """
         :param knots:
         :type knots: Handle_TColStd_HArray1OfReal &
@@ -735,7 +735,7 @@ ShapeConstruct_Curve._kill_pointed = new_instancemethod(_ShapeConstruct.ShapeCon
 ShapeConstruct_Curve_swigregister = _ShapeConstruct.ShapeConstruct_Curve_swigregister
 ShapeConstruct_Curve_swigregister(ShapeConstruct_Curve)
 
-def ShapeConstruct_Curve_FixKnots(*args):
+def ShapeConstruct_Curve_FixKnots(*args) -> "Standard_Boolean" :
   """
     :param knots:
     :type knots: Handle_TColStd_HArray1OfReal &
@@ -792,7 +792,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_swiginit(self,_ShapeConstruct.new_ShapeConstruct_ProjectCurveOnSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the object with all necessary parameters, i.e. surface and precision
 
@@ -813,7 +813,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_Init(self, *args)
 
-    def SetSurface(self, *args):
+    def SetSurface(self, *args) -> "void" :
         """
         * Loads a surface (in the form of Geom_Surface) to project on
 
@@ -830,7 +830,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_SetSurface(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         * Sets value for current precision
 
@@ -841,23 +841,23 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_SetPrecision(self, *args)
 
-    def GetBuildCurveMode(self):
+    def GetBuildCurveMode(self) -> "Standard_Boolean" :
         """GetBuildCurveMode(ShapeConstruct_ProjectCurveOnSurface self) -> Standard_Boolean"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_GetBuildCurveMode(self)
 
-    def SetBuildCurveMode(self, *args):
+    def SetBuildCurveMode(self, *args) -> "void" :
         """SetBuildCurveMode(ShapeConstruct_ProjectCurveOnSurface self, Standard_Boolean value)"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_SetBuildCurveMode(self, *args)
 
-    def GetAdjustOverDegenMode(self):
+    def GetAdjustOverDegenMode(self) -> "Standard_Integer" :
         """GetAdjustOverDegenMode(ShapeConstruct_ProjectCurveOnSurface self) -> Standard_Integer"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_GetAdjustOverDegenMode(self)
 
-    def SetAdjustOverDegenMode(self, *args):
+    def SetAdjustOverDegenMode(self, *args) -> "void" :
         """SetAdjustOverDegenMode(ShapeConstruct_ProjectCurveOnSurface self, Standard_Integer value)"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_SetAdjustOverDegenMode(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status of last Peform
 
@@ -868,7 +868,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_Status(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Computes the projection of 3d curve onto a surface using the standard algorithm from ProjLib. Returns False if standard projector fails or raises an exception or cuts the curve by parametrical bounds of the surface. Else, if pcurve computed successfully, returns True. The continuity, maxdeg and nbinterval are parameters of call to Approx_CurveOnSurface. If nbinterval is equal to -1 (default), this value is computed depending on source 3d curve and surface.
 
@@ -891,7 +891,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_Perform(self, *args)
 
-    def PerformByProjLib(self, *args):
+    def PerformByProjLib(self, *args) -> "Standard_Boolean" :
         """
         * Computes the projection of 3d curve onto a surface using the standard algorithm from ProjLib. Returns False if standard projector fails or raises an exception or cuts the curve by parametrical bounds of the surface. Else, if pcurve computed successfully, returns True. The continuity, maxdeg and nbinterval are parameters of call to Approx_CurveOnSurface. If nbinterval is equal to -1 (default), this value is computed depending on source 3d curve and surface.
 
@@ -914,7 +914,7 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_PerformByProjLib(self, *args)
 
-    def PerformAdvanced(self, *args):
+    def PerformAdvanced(self, *args) -> "Standard_Boolean" :
         """
         * Computes the projection of 3d curve onto a surface using either standard projector (method PerformByStandard()) or internal one (method Perform()). The selection is done by analyzing the surface and 3d curve and is aimed to filter the cases potentially dangerous for the standard projector. If the standard projector fails, internal one is used.
 
@@ -931,11 +931,11 @@ class ShapeConstruct_ProjectCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_PerformAdvanced(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeConstruct_ProjectCurveOnSurface self)"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeConstruct_ProjectCurveOnSurface" :
         """GetHandle(ShapeConstruct_ProjectCurveOnSurface self) -> Handle_ShapeConstruct_ProjectCurveOnSurface"""
         return _ShapeConstruct.ShapeConstruct_ProjectCurveOnSurface_GetHandle(self)
 
@@ -984,7 +984,7 @@ Handle_ShapeConstruct_ProjectCurveOnSurface._kill_pointed = new_instancemethod(_
 Handle_ShapeConstruct_ProjectCurveOnSurface_swigregister = _ShapeConstruct.Handle_ShapeConstruct_ProjectCurveOnSurface_swigregister
 Handle_ShapeConstruct_ProjectCurveOnSurface_swigregister(Handle_ShapeConstruct_ProjectCurveOnSurface)
 
-def Handle_ShapeConstruct_ProjectCurveOnSurface_DownCast(*args):
+def Handle_ShapeConstruct_ProjectCurveOnSurface_DownCast(*args) -> "Handle_ShapeConstruct_ProjectCurveOnSurface const" :
   return _ShapeConstruct.Handle_ShapeConstruct_ProjectCurveOnSurface_DownCast(*args)
 Handle_ShapeConstruct_ProjectCurveOnSurface_DownCast = _ShapeConstruct.Handle_ShapeConstruct_ProjectCurveOnSurface_DownCast
 

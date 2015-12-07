@@ -130,7 +130,7 @@ import OCC.Resource
 class igescafcontrol(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DecodeColor(*args):
+    def DecodeColor(*args) -> "Quantity_Color" :
         """
         * Provides a tool for writing IGES file Converts IGES color index to CASCADE color
 
@@ -142,7 +142,7 @@ class igescafcontrol(object):
         return _IGESCAFControl.igescafcontrol_DecodeColor(*args)
 
     DecodeColor = staticmethod(DecodeColor)
-    def EncodeColor(*args):
+    def EncodeColor(*args) -> "Standard_Integer" :
         """
         * Tries to Convert CASCADE color to IGES color index If no corresponding color defined in IGES, returns 0
 
@@ -168,7 +168,7 @@ igescafcontrol._kill_pointed = new_instancemethod(_IGESCAFControl.igescafcontrol
 igescafcontrol_swigregister = _IGESCAFControl.igescafcontrol_swigregister
 igescafcontrol_swigregister(igescafcontrol)
 
-def igescafcontrol_DecodeColor(*args):
+def igescafcontrol_DecodeColor(*args) -> "Quantity_Color" :
   """
     * Provides a tool for writing IGES file Converts IGES color index to CASCADE color
 
@@ -179,7 +179,7 @@ def igescafcontrol_DecodeColor(*args):
     """
   return _IGESCAFControl.igescafcontrol_DecodeColor(*args)
 
-def igescafcontrol_EncodeColor(*args):
+def igescafcontrol_EncodeColor(*args) -> "Standard_Integer" :
   """
     * Tries to Convert CASCADE color to IGES color index If no corresponding color defined in IGES, returns 0
 
@@ -209,7 +209,7 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
 
         """
         _IGESCAFControl.IGESCAFControl_Reader_swiginit(self,_IGESCAFControl.new_IGESCAFControl_Reader(*args))
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Standard_Boolean" :
         """
         * Translates currently loaded IGES file into the document Returns True if succeeded, and False in case of fail
 
@@ -220,7 +220,7 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
         """
         return _IGESCAFControl.IGESCAFControl_Reader_Transfer(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         :param filename:
         :type filename: TCollection_AsciiString &
@@ -239,7 +239,7 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
         """
         return _IGESCAFControl.IGESCAFControl_Reader_Perform(self, *args)
 
-    def SetColorMode(self, *args):
+    def SetColorMode(self, *args) -> "void" :
         """
         * Set ColorMode for indicate read Colors or not.
 
@@ -250,14 +250,14 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
         """
         return _IGESCAFControl.IGESCAFControl_Reader_SetColorMode(self, *args)
 
-    def GetColorMode(self, *args):
+    def GetColorMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IGESCAFControl.IGESCAFControl_Reader_GetColorMode(self, *args)
 
-    def SetNameMode(self, *args):
+    def SetNameMode(self, *args) -> "void" :
         """
         * Set NameMode for indicate read Name or not.
 
@@ -268,14 +268,14 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
         """
         return _IGESCAFControl.IGESCAFControl_Reader_SetNameMode(self, *args)
 
-    def GetNameMode(self, *args):
+    def GetNameMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IGESCAFControl.IGESCAFControl_Reader_GetNameMode(self, *args)
 
-    def SetLayerMode(self, *args):
+    def SetLayerMode(self, *args) -> "void" :
         """
         * Set LayerMode for indicate read Layers or not.
 
@@ -286,7 +286,7 @@ class IGESCAFControl_Reader(OCC.IGESControl.IGESControl_Reader):
         """
         return _IGESCAFControl.IGESCAFControl_Reader_SetLayerMode(self, *args)
 
-    def GetLayerMode(self, *args):
+    def GetLayerMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -332,7 +332,7 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
 
         """
         _IGESCAFControl.IGESCAFControl_Writer_swiginit(self,_IGESCAFControl.new_IGESCAFControl_Writer(*args))
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Standard_Boolean" :
         """
         * Transfers a document to a IGES model Returns True if translation is OK
 
@@ -343,7 +343,7 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
         """
         return _IGESCAFControl.IGESCAFControl_Writer_Transfer(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         :param doc:
         :type doc: Handle_TDocStd_Document &
@@ -362,7 +362,7 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
         """
         return _IGESCAFControl.IGESCAFControl_Writer_Perform(self, *args)
 
-    def SetColorMode(self, *args):
+    def SetColorMode(self, *args) -> "void" :
         """
         * Set ColorMode for indicate write Colors or not.
 
@@ -373,14 +373,14 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
         """
         return _IGESCAFControl.IGESCAFControl_Writer_SetColorMode(self, *args)
 
-    def GetColorMode(self, *args):
+    def GetColorMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IGESCAFControl.IGESCAFControl_Writer_GetColorMode(self, *args)
 
-    def SetNameMode(self, *args):
+    def SetNameMode(self, *args) -> "void" :
         """
         * Set NameMode for indicate write Name or not.
 
@@ -391,14 +391,14 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
         """
         return _IGESCAFControl.IGESCAFControl_Writer_SetNameMode(self, *args)
 
-    def GetNameMode(self, *args):
+    def GetNameMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IGESCAFControl.IGESCAFControl_Writer_GetNameMode(self, *args)
 
-    def SetLayerMode(self, *args):
+    def SetLayerMode(self, *args) -> "void" :
         """
         * Set LayerMode for indicate write Layers or not.
 
@@ -409,7 +409,7 @@ class IGESCAFControl_Writer(OCC.IGESControl.IGESControl_Writer):
         """
         return _IGESCAFControl.IGESCAFControl_Writer_SetLayerMode(self, *args)
 
-    def GetLayerMode(self, *args):
+    def GetLayerMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 

@@ -154,7 +154,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
 
         """
         _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_swiginit(self,_Geom2dAPI.new_Geom2dAPI_ExtremaCurveCurve(*args))
-    def NbExtrema(self, *args):
+    def NbExtrema(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
@@ -163,7 +163,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_NbExtrema(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -178,7 +178,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_Points(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -193,7 +193,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_Parameters(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -204,7 +204,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_Distance(self, *args)
 
-    def NearestPoints(self, *args):
+    def NearestPoints(self, *args) -> "void" :
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -217,7 +217,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args):
+    def LowerDistanceParameters(self, *args) -> "void" :
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -230,7 +230,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_LowerDistanceParameters(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -239,7 +239,7 @@ class Geom2dAPI_ExtremaCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ExtremaCurveCurve_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtCC2d const &" :
         """
         :rtype: Extrema_ExtCC2d
 
@@ -295,7 +295,7 @@ class Geom2dAPI_InterCurveCurve(object):
 
         """
         _Geom2dAPI.Geom2dAPI_InterCurveCurve_swiginit(self,_Geom2dAPI.new_Geom2dAPI_InterCurveCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes an algorithm with the given arguments and computes the intersections between the curves C1. and C2.
 
@@ -318,7 +318,7 @@ class Geom2dAPI_InterCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_InterCurveCurve_Init(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersection-points in case of cross intersections. NbPoints returns 0 if no intersections were found.
 
@@ -327,7 +327,7 @@ class Geom2dAPI_InterCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_InterCurveCurve_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt2d" :
         """
         * Returns the intersection point of index Index. Intersection points are computed in case of cross intersections with a precision equal to the tolerance value assigned at the time of construction or in the function Init (this value is defaulted to 1.0e-6). Exceptions Standard_OutOfRange if index is not in the range [ 1,NbPoints ], where NbPoints is the number of computed intersection points
 
@@ -338,7 +338,7 @@ class Geom2dAPI_InterCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_InterCurveCurve_Point(self, *args)
 
-    def NbSegments(self, *args):
+    def NbSegments(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of tangential intersections. NbSegments returns 0 if no intersections were found
 
@@ -347,7 +347,7 @@ class Geom2dAPI_InterCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_InterCurveCurve_NbSegments(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "void" :
         """
         * Use this syntax only to get solutions of tangential intersection between two curves. Output values Curve1 and Curve2 are the intersection segments on the first curve and on the second curve accordingly. Parameter Index defines a number of computed solution. An intersection segment is a portion of an initial curve limited by two points. The distance from each point of this segment to the other curve is less or equal to the tolerance value assigned at the time of construction or in function Init (this value is defaulted to 1.0e-6). Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbSegments ], where NbSegments is the number of computed tangential intersections. Standard_NullObject if the algorithm is initialized for the computing of self-intersections on a curve.
 
@@ -370,7 +370,7 @@ class Geom2dAPI_InterCurveCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_InterCurveCurve_Segment(self, *args)
 
-    def Intersector(self, *args):
+    def Intersector(self, *args) -> "Geom2dInt_GInter const &" :
         """
         * return the algorithmic object from Intersection.
 
@@ -426,7 +426,7 @@ class Geom2dAPI_Interpolate(object):
 
         """
         _Geom2dAPI.Geom2dAPI_Interpolate_swiginit(self,_Geom2dAPI.new_Geom2dAPI_Interpolate(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Assigns this constrained BSpline curve to be tangential to vectors InitialTangent and FinalTangent at its first and last points respectively (i.e. the first and last points of the table of points through which the curve passes, as defined at the time of initialization).
 
@@ -447,7 +447,7 @@ class Geom2dAPI_Interpolate(object):
         """
         return _Geom2dAPI.Geom2dAPI_Interpolate_Load(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the constrained BSpline curve. Use the function IsDone to verify that the computation is successful, and then the function Curve to obtain the result.
 
@@ -456,7 +456,7 @@ class Geom2dAPI_Interpolate(object):
         """
         return _Geom2dAPI.Geom2dAPI_Interpolate_Perform(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve const &" :
         """
         * Returns the computed BSpline curve. Raises StdFail_NotDone if the interpolation fails.
 
@@ -465,7 +465,7 @@ class Geom2dAPI_Interpolate(object):
         """
         return _Geom2dAPI.Geom2dAPI_Interpolate_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the constrained BSpline curve is successfully constructed. Note: in this case, the result is given by the function Curve.
 
@@ -583,7 +583,7 @@ class Geom2dAPI_PointsToBSpline(object):
 
         """
         _Geom2dAPI.Geom2dAPI_PointsToBSpline_swiginit(self,_Geom2dAPI.new_Geom2dAPI_PointsToBSpline(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol2D
 
@@ -670,7 +670,7 @@ class Geom2dAPI_PointsToBSpline(object):
         """
         return _Geom2dAPI.Geom2dAPI_PointsToBSpline_Init(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve const &" :
         """
         * Returns the approximate BSpline Curve
 
@@ -679,7 +679,7 @@ class Geom2dAPI_PointsToBSpline(object):
         """
         return _Geom2dAPI.Geom2dAPI_PointsToBSpline_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -732,7 +732,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
 
         """
         _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_swiginit(self,_Geom2dAPI.new_Geom2dAPI_ProjectPointOnCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm with the given arguments, and computes the orthogonal projections of a point <P> on a curve <Curve>
 
@@ -757,7 +757,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_Init(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * return the number of of computed orthogonal projectionn points.
 
@@ -766,7 +766,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt2d" :
         """
         * Returns the orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -777,7 +777,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_Point(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         * Returns the parameter on the curve of a point which is the orthogonal projection. Index is a number of a computed projected point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -796,7 +796,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_Parameter(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its computed orthogonal projection on the curve. Index is a number of computed projected point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -807,7 +807,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_Distance(self, *args)
 
-    def NearestPoint(self, *args):
+    def NearestPoint(self, *args) -> "gp_Pnt2d" :
         """
         * Returns the nearest orthogonal projection of the point on the curve. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -816,7 +816,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_NearestPoint(self, *args)
 
-    def LowerDistanceParameter(self, *args):
+    def LowerDistanceParameter(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the parameter on the curve of the nearest orthogonal projection of the point. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -825,7 +825,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_LowerDistanceParameter(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its nearest orthogonal projection on the curve. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -834,7 +834,7 @@ class Geom2dAPI_ProjectPointOnCurve(object):
         """
         return _Geom2dAPI.Geom2dAPI_ProjectPointOnCurve_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtPC2d const &" :
         """
         * return the algorithmic object from Extrema
 

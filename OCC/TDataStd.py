@@ -119,7 +119,7 @@ TDataStd_ANGULAR = _TDataStd.TDataStd_ANGULAR
 class tdatastd(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IDList(*args):
+    def IDList(*args) -> "void" :
         """
         * Appends to <anIDList> the list of the attributes IDs of this package. CAUTION: <anIDList> is NOT cleared before use.
 
@@ -131,7 +131,7 @@ class tdatastd(object):
         return _TDataStd.tdatastd_IDList(*args)
 
     IDList = staticmethod(IDList)
-    def Print(*args):
+    def Print(*args) -> "Standard_OStream &" :
         """
         * Prints the name of the real dimension <DIM> as a String on the Stream <S> and returns <S>.
 
@@ -159,7 +159,7 @@ tdatastd._kill_pointed = new_instancemethod(_TDataStd.tdatastd__kill_pointed,Non
 tdatastd_swigregister = _TDataStd.tdatastd_swigregister
 tdatastd_swigregister(tdatastd)
 
-def tdatastd_IDList(*args):
+def tdatastd_IDList(*args) -> "void" :
   """
     * Appends to <anIDList> the list of the attributes IDs of this package. CAUTION: <anIDList> is NOT cleared before use.
 
@@ -170,7 +170,7 @@ def tdatastd_IDList(*args):
     """
   return _TDataStd.tdatastd_IDList(*args)
 
-def tdatastd_Print(*args):
+def tdatastd_Print(*args) -> "Standard_OStream &" :
   """
     * Prints the name of the real dimension <DIM> as a String on the Stream <S> and returns <S>.
 
@@ -186,7 +186,7 @@ def tdatastd_Print(*args):
 class TDataStd_AsciiString(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID of the attribute.
 
@@ -202,7 +202,7 @@ class TDataStd_AsciiString(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_AsciiString_swiginit(self,_TDataStd.new_TDataStd_AsciiString(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Finds, or creates an AsciiString attribute and sets the string. the AsciiString attribute is returned. AsciiString methods ===================
 
@@ -219,29 +219,29 @@ class TDataStd_AsciiString(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_AsciiString_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _TDataStd.TDataStd_AsciiString_Get(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_AsciiString_IsEmpty(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_AsciiString self) -> std::string"""
         return _TDataStd.TDataStd_AsciiString_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_AsciiString self)"""
         return _TDataStd.TDataStd_AsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_AsciiString" :
         """GetHandle(TDataStd_AsciiString self) -> Handle_TDataStd_AsciiString"""
         return _TDataStd.TDataStd_AsciiString_GetHandle(self)
 
@@ -262,7 +262,7 @@ TDataStd_AsciiString.GetHandle = new_instancemethod(_TDataStd.TDataStd_AsciiStri
 TDataStd_AsciiString_swigregister = _TDataStd.TDataStd_AsciiString_swigregister
 TDataStd_AsciiString_swigregister(TDataStd_AsciiString)
 
-def TDataStd_AsciiString_GetID(*args):
+def TDataStd_AsciiString_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID of the attribute.
 
@@ -292,14 +292,14 @@ Handle_TDataStd_AsciiString._kill_pointed = new_instancemethod(_TDataStd.Handle_
 Handle_TDataStd_AsciiString_swigregister = _TDataStd.Handle_TDataStd_AsciiString_swigregister
 Handle_TDataStd_AsciiString_swigregister(Handle_TDataStd_AsciiString)
 
-def Handle_TDataStd_AsciiString_DownCast(*args):
+def Handle_TDataStd_AsciiString_DownCast(*args) -> "Handle_TDataStd_AsciiString const" :
   return _TDataStd.Handle_TDataStd_AsciiString_DownCast(*args)
 Handle_TDataStd_AsciiString_DownCast = _TDataStd.Handle_TDataStd_AsciiString_DownCast
 
 class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns an ID for array.
 
@@ -309,7 +309,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_BooleanArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_BooleanArray" :
         """
         * Finds or creates an attribute with the array.
 
@@ -325,7 +325,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_BooleanArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize the inner array with bounds from <lower> to <upper>
 
@@ -338,7 +338,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -351,7 +351,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * Return the value of the <Index>th element of the array.
 
@@ -362,7 +362,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Returns the lower boundary of the array.
 
@@ -371,7 +371,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Returns the upper boundary of the array.
 
@@ -380,7 +380,7 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of elements in the array.
 
@@ -389,14 +389,14 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanArray_Length(self, *args)
 
-    def InternalArray(self, *args):
+    def InternalArray(self, *args) -> "Handle_TColStd_HArray1OfByte const &" :
         """
         :rtype: Handle_TColStd_HArray1OfByte
 
         """
         return _TDataStd.TDataStd_BooleanArray_InternalArray(self, *args)
 
-    def SetInternalArray(self, *args):
+    def SetInternalArray(self, *args) -> "void" :
         """
         :param values:
         :type values: Handle_TColStd_HArray1OfByte &
@@ -411,15 +411,15 @@ class TDataStd_BooleanArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_BooleanArray_swiginit(self,_TDataStd.new_TDataStd_BooleanArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_BooleanArray self) -> std::string"""
         return _TDataStd.TDataStd_BooleanArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_BooleanArray self)"""
         return _TDataStd.TDataStd_BooleanArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_BooleanArray" :
         """GetHandle(TDataStd_BooleanArray self) -> Handle_TDataStd_BooleanArray"""
         return _TDataStd.TDataStd_BooleanArray_GetHandle(self)
 
@@ -445,7 +445,7 @@ TDataStd_BooleanArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_BooleanA
 TDataStd_BooleanArray_swigregister = _TDataStd.TDataStd_BooleanArray_swigregister
 TDataStd_BooleanArray_swigregister(TDataStd_BooleanArray)
 
-def TDataStd_BooleanArray_GetID(*args):
+def TDataStd_BooleanArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns an ID for array.
 
@@ -454,7 +454,7 @@ def TDataStd_BooleanArray_GetID(*args):
     """
   return _TDataStd.TDataStd_BooleanArray_GetID(*args)
 
-def TDataStd_BooleanArray_Set(*args):
+def TDataStd_BooleanArray_Set(*args) -> "Handle_TDataStd_BooleanArray" :
   """
     * Finds or creates an attribute with the array.
 
@@ -490,14 +490,14 @@ Handle_TDataStd_BooleanArray._kill_pointed = new_instancemethod(_TDataStd.Handle
 Handle_TDataStd_BooleanArray_swigregister = _TDataStd.Handle_TDataStd_BooleanArray_swigregister
 Handle_TDataStd_BooleanArray_swigregister(Handle_TDataStd_BooleanArray)
 
-def Handle_TDataStd_BooleanArray_DownCast(*args):
+def Handle_TDataStd_BooleanArray_DownCast(*args) -> "Handle_TDataStd_BooleanArray const" :
   return _TDataStd.Handle_TDataStd_BooleanArray_DownCast(*args)
 Handle_TDataStd_BooleanArray_DownCast = _TDataStd.Handle_TDataStd_BooleanArray_DownCast
 
 class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the list of booleans attribute.
 
@@ -507,7 +507,7 @@ class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_BooleanList_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_BooleanList" :
         """
         * Finds or creates a list of boolean values attribute.
 
@@ -525,21 +525,21 @@ class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_BooleanList_swiginit(self,_TDataStd.new_TDataStd_BooleanList(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_BooleanList_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_BooleanList_Extent(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param value:
         :type value: bool
@@ -548,7 +548,7 @@ class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param value:
         :type value: bool
@@ -557,28 +557,28 @@ class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanList_Append(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_BooleanList_Clear(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_BooleanList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_BooleanList_Last(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "TDataStd_ListOfByte const &" :
         """
         * 1 - means True, 0 - means False.
 
@@ -587,15 +587,15 @@ class TDataStd_BooleanList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_BooleanList_List(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_BooleanList self) -> std::string"""
         return _TDataStd.TDataStd_BooleanList_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_BooleanList self)"""
         return _TDataStd.TDataStd_BooleanList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_BooleanList" :
         """GetHandle(TDataStd_BooleanList self) -> Handle_TDataStd_BooleanList"""
         return _TDataStd.TDataStd_BooleanList_GetHandle(self)
 
@@ -621,7 +621,7 @@ TDataStd_BooleanList.GetHandle = new_instancemethod(_TDataStd.TDataStd_BooleanLi
 TDataStd_BooleanList_swigregister = _TDataStd.TDataStd_BooleanList_swigregister
 TDataStd_BooleanList_swigregister(TDataStd_BooleanList)
 
-def TDataStd_BooleanList_GetID(*args):
+def TDataStd_BooleanList_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the list of booleans attribute.
 
@@ -630,7 +630,7 @@ def TDataStd_BooleanList_GetID(*args):
     """
   return _TDataStd.TDataStd_BooleanList_GetID(*args)
 
-def TDataStd_BooleanList_Set(*args):
+def TDataStd_BooleanList_Set(*args) -> "Handle_TDataStd_BooleanList" :
   """
     * Finds or creates a list of boolean values attribute.
 
@@ -662,14 +662,14 @@ Handle_TDataStd_BooleanList._kill_pointed = new_instancemethod(_TDataStd.Handle_
 Handle_TDataStd_BooleanList_swigregister = _TDataStd.Handle_TDataStd_BooleanList_swigregister
 Handle_TDataStd_BooleanList_swigregister(Handle_TDataStd_BooleanList)
 
-def Handle_TDataStd_BooleanList_DownCast(*args):
+def Handle_TDataStd_BooleanList_DownCast(*args) -> "Handle_TDataStd_BooleanList const" :
   return _TDataStd.Handle_TDataStd_BooleanList_DownCast(*args)
 Handle_TDataStd_BooleanList_DownCast = _TDataStd.Handle_TDataStd_BooleanList_DownCast
 
 class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns an ID for array.
 
@@ -679,7 +679,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ByteArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_ByteArray" :
         """
         * Finds or creates an attribute with the array. If <isDelta> == False, DefaultDeltaOnModification is used. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -697,7 +697,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ByteArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize the inner array with bounds from <lower> to <upper>
 
@@ -710,7 +710,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -723,7 +723,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte" :
         """
         * Return the value of the <Index>th element of the array.
 
@@ -734,7 +734,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Returns the lower boundary of the array.
 
@@ -743,7 +743,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Returns the upper boundary of the array.
 
@@ -752,7 +752,7 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of elements in the array.
 
@@ -761,14 +761,14 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_Length(self, *args)
 
-    def InternalArray(self, *args):
+    def InternalArray(self, *args) -> "Handle_TColStd_HArray1OfByte const" :
         """
         :rtype: Handle_TColStd_HArray1OfByte
 
         """
         return _TDataStd.TDataStd_ByteArray_InternalArray(self, *args)
 
-    def ChangeArray(self, *args):
+    def ChangeArray(self, *args) -> "void" :
         """
         * Sets the inner array <myValue> of the attribute to <newArray>. If value of <newArray> differs from <myValue>, Backup performed and myValue refers to new instance of HArray1OfInteger that holds <newArray> values. If <isCheckItems> equal True each item of <newArray> will be checked with each item of <myValue> for coincidence (to avoid backup).
 
@@ -781,14 +781,14 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ByteArray_ChangeArray(self, *args)
 
-    def GetDelta(self, *args):
+    def GetDelta(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ByteArray_GetDelta(self, *args)
 
-    def SetDelta(self, *args):
+    def SetDelta(self, *args) -> "void" :
         """
         * for internal use only!
 
@@ -805,15 +805,15 @@ class TDataStd_ByteArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_ByteArray_swiginit(self,_TDataStd.new_TDataStd_ByteArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_ByteArray self) -> std::string"""
         return _TDataStd.TDataStd_ByteArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ByteArray self)"""
         return _TDataStd.TDataStd_ByteArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ByteArray" :
         """GetHandle(TDataStd_ByteArray self) -> Handle_TDataStd_ByteArray"""
         return _TDataStd.TDataStd_ByteArray_GetHandle(self)
 
@@ -841,7 +841,7 @@ TDataStd_ByteArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_ByteArray_G
 TDataStd_ByteArray_swigregister = _TDataStd.TDataStd_ByteArray_swigregister
 TDataStd_ByteArray_swigregister(TDataStd_ByteArray)
 
-def TDataStd_ByteArray_GetID(*args):
+def TDataStd_ByteArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns an ID for array.
 
@@ -850,7 +850,7 @@ def TDataStd_ByteArray_GetID(*args):
     """
   return _TDataStd.TDataStd_ByteArray_GetID(*args)
 
-def TDataStd_ByteArray_Set(*args):
+def TDataStd_ByteArray_Set(*args) -> "Handle_TDataStd_ByteArray" :
   """
     * Finds or creates an attribute with the array. If <isDelta> == False, DefaultDeltaOnModification is used. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -888,7 +888,7 @@ Handle_TDataStd_ByteArray._kill_pointed = new_instancemethod(_TDataStd.Handle_TD
 Handle_TDataStd_ByteArray_swigregister = _TDataStd.Handle_TDataStd_ByteArray_swigregister
 Handle_TDataStd_ByteArray_swigregister(Handle_TDataStd_ByteArray)
 
-def Handle_TDataStd_ByteArray_DownCast(*args):
+def Handle_TDataStd_ByteArray_DownCast(*args) -> "Handle_TDataStd_ByteArray const" :
   return _TDataStd.Handle_TDataStd_ByteArray_DownCast(*args)
 Handle_TDataStd_ByteArray_DownCast = _TDataStd.Handle_TDataStd_ByteArray_DownCast
 
@@ -911,7 +911,7 @@ class TDataStd_ChildNodeIterator(object):
 
         """
         _TDataStd.TDataStd_ChildNodeIterator_swiginit(self,_TDataStd.new_TDataStd_ChildNodeIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes the iteration on the Children Step of the given Step. If <allLevels> option is set to true, it explores not only the first, but all the sub Step levels.
 
@@ -924,7 +924,7 @@ class TDataStd_ChildNodeIterator(object):
         """
         return _TDataStd.TDataStd_ChildNodeIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current Item in the iteration.
 
@@ -933,7 +933,7 @@ class TDataStd_ChildNodeIterator(object):
         """
         return _TDataStd.TDataStd_ChildNodeIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move to the next Item
 
@@ -942,7 +942,7 @@ class TDataStd_ChildNodeIterator(object):
         """
         return _TDataStd.TDataStd_ChildNodeIterator_Next(self, *args)
 
-    def NextBrother(self, *args):
+    def NextBrother(self, *args) -> "void" :
         """
         * Move to the next Brother. If there is none, go up etc. This method is interesting only with 'allLevels' behavior, because it avoids to explore the current Step ChildStepren.
 
@@ -951,7 +951,7 @@ class TDataStd_ChildNodeIterator(object):
         """
         return _TDataStd.TDataStd_ChildNodeIterator_NextBrother(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the current item; a null Step if there is no one.
 
@@ -980,7 +980,7 @@ TDataStd_ChildNodeIterator_swigregister(TDataStd_ChildNodeIterator)
 class TDataStd_Comment(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for comments.
 
@@ -996,7 +996,7 @@ class TDataStd_Comment(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Comment_swiginit(self,_TDataStd.new_TDataStd_Comment(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Find, or create a Comment attribute. the Comment attribute is returned.
 
@@ -1019,7 +1019,7 @@ class TDataStd_Comment(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Comment_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns the comment attribute.
 
@@ -1028,15 +1028,15 @@ class TDataStd_Comment(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Comment_Get(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Comment self) -> std::string"""
         return _TDataStd.TDataStd_Comment_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Comment self)"""
         return _TDataStd.TDataStd_Comment__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Comment" :
         """GetHandle(TDataStd_Comment self) -> Handle_TDataStd_Comment"""
         return _TDataStd.TDataStd_Comment_GetHandle(self)
 
@@ -1056,7 +1056,7 @@ TDataStd_Comment.GetHandle = new_instancemethod(_TDataStd.TDataStd_Comment_GetHa
 TDataStd_Comment_swigregister = _TDataStd.TDataStd_Comment_swigregister
 TDataStd_Comment_swigregister(TDataStd_Comment)
 
-def TDataStd_Comment_GetID(*args):
+def TDataStd_Comment_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for comments.
 
@@ -1086,14 +1086,14 @@ Handle_TDataStd_Comment._kill_pointed = new_instancemethod(_TDataStd.Handle_TDat
 Handle_TDataStd_Comment_swigregister = _TDataStd.Handle_TDataStd_Comment_swigregister
 Handle_TDataStd_Comment_swigregister(Handle_TDataStd_Comment)
 
-def Handle_TDataStd_Comment_DownCast(*args):
+def Handle_TDataStd_Comment_DownCast(*args) -> "Handle_TDataStd_Comment const" :
   return _TDataStd.Handle_TDataStd_Comment_DownCast(*args)
 Handle_TDataStd_Comment_DownCast = _TDataStd.Handle_TDataStd_Comment_DownCast
 
 class TDataStd_Current(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -1103,7 +1103,7 @@ class TDataStd_Current(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Current_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "void" :
         """
         * Set <L> as current of <L> Framework.
 
@@ -1115,7 +1115,7 @@ class TDataStd_Current(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Current_Set(*args)
 
     Set = staticmethod(Set)
-    def Get(*args):
+    def Get(*args) -> "TDF_Label" :
         """
         * returns current of <acces> Framework. raise if (!Has)
 
@@ -1127,7 +1127,7 @@ class TDataStd_Current(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Current_Get(*args)
 
     Get = staticmethod(Get)
-    def Has(*args):
+    def Has(*args) -> "Standard_Boolean" :
         """
         * returns True if a current label is managed in <acces> Framework. class methods =============
 
@@ -1145,7 +1145,7 @@ class TDataStd_Current(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Current_swiginit(self,_TDataStd.new_TDataStd_Current(*args))
-    def SetLabel(self, *args):
+    def SetLabel(self, *args) -> "void" :
         """
         :param current:
         :type current: TDF_Label &
@@ -1154,22 +1154,22 @@ class TDataStd_Current(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Current_SetLabel(self, *args)
 
-    def GetLabel(self, *args):
+    def GetLabel(self, *args) -> "TDF_Label" :
         """
         :rtype: TDF_Label
 
         """
         return _TDataStd.TDataStd_Current_GetLabel(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Current self) -> std::string"""
         return _TDataStd.TDataStd_Current_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Current self)"""
         return _TDataStd.TDataStd_Current__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Current" :
         """GetHandle(TDataStd_Current self) -> Handle_TDataStd_Current"""
         return _TDataStd.TDataStd_Current_GetHandle(self)
 
@@ -1189,7 +1189,7 @@ TDataStd_Current.GetHandle = new_instancemethod(_TDataStd.TDataStd_Current_GetHa
 TDataStd_Current_swigregister = _TDataStd.TDataStd_Current_swigregister
 TDataStd_Current_swigregister(TDataStd_Current)
 
-def TDataStd_Current_GetID(*args):
+def TDataStd_Current_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -1198,7 +1198,7 @@ def TDataStd_Current_GetID(*args):
     """
   return _TDataStd.TDataStd_Current_GetID(*args)
 
-def TDataStd_Current_Set(*args):
+def TDataStd_Current_Set(*args) -> "void" :
   """
     * Set <L> as current of <L> Framework.
 
@@ -1209,7 +1209,7 @@ def TDataStd_Current_Set(*args):
     """
   return _TDataStd.TDataStd_Current_Set(*args)
 
-def TDataStd_Current_Get(*args):
+def TDataStd_Current_Get(*args) -> "TDF_Label" :
   """
     * returns current of <acces> Framework. raise if (!Has)
 
@@ -1220,7 +1220,7 @@ def TDataStd_Current_Get(*args):
     """
   return _TDataStd.TDataStd_Current_Get(*args)
 
-def TDataStd_Current_Has(*args):
+def TDataStd_Current_Has(*args) -> "Standard_Boolean" :
   """
     * returns True if a current label is managed in <acces> Framework. class methods =============
 
@@ -1252,7 +1252,7 @@ Handle_TDataStd_Current._kill_pointed = new_instancemethod(_TDataStd.Handle_TDat
 Handle_TDataStd_Current_swigregister = _TDataStd.Handle_TDataStd_Current_swigregister
 Handle_TDataStd_Current_swigregister(Handle_TDataStd_Current)
 
-def Handle_TDataStd_Current_DownCast(*args):
+def Handle_TDataStd_Current_DownCast(*args) -> "Handle_TDataStd_Current const" :
   return _TDataStd.Handle_TDataStd_Current_DownCast(*args)
 Handle_TDataStd_Current_DownCast = _TDataStd.Handle_TDataStd_Current_DownCast
 
@@ -1269,7 +1269,7 @@ class TDataStd_DataMapIteratorOfDataMapOfStringByte(OCC.TCollection.TCollection_
 
         """
         _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringByte_swiginit(self,_TDataStd.new_TDataStd_DataMapIteratorOfDataMapOfStringByte(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDataStd_DataMapOfStringByte &
@@ -1278,14 +1278,14 @@ class TDataStd_DataMapIteratorOfDataMapOfStringByte(OCC.TCollection.TCollection_
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringByte_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringByte_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte const &" :
         """
         :rtype: Standard_Byte
 
@@ -1320,7 +1320,7 @@ class TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger(OCC.TCollection.
 
         """
         _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger_swiginit(self,_TDataStd.new_TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDataStd_DataMapOfStringHArray1OfInteger &
@@ -1329,14 +1329,14 @@ class TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger(OCC.TCollection.
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         :rtype: Handle_TColStd_HArray1OfInteger
 
@@ -1371,7 +1371,7 @@ class TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal(OCC.TCollection.TCo
 
         """
         _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal_swiginit(self,_TDataStd.new_TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDataStd_DataMapOfStringHArray1OfReal &
@@ -1380,14 +1380,14 @@ class TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal(OCC.TCollection.TCo
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringHArray1OfReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
@@ -1422,7 +1422,7 @@ class TDataStd_DataMapIteratorOfDataMapOfStringReal(OCC.TCollection.TCollection_
 
         """
         _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringReal_swiginit(self,_TDataStd.new_TDataStd_DataMapIteratorOfDataMapOfStringReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDataStd_DataMapOfStringReal &
@@ -1431,14 +1431,14 @@ class TDataStd_DataMapIteratorOfDataMapOfStringReal(OCC.TCollection.TCollection_
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -1473,7 +1473,7 @@ class TDataStd_DataMapIteratorOfDataMapOfStringString(OCC.TCollection.TCollectio
 
         """
         _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringString_swiginit(self,_TDataStd.new_TDataStd_DataMapIteratorOfDataMapOfStringString(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDataStd_DataMapOfStringString &
@@ -1482,14 +1482,14 @@ class TDataStd_DataMapIteratorOfDataMapOfStringString(OCC.TCollection.TCollectio
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringString_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapIteratorOfDataMapOfStringString_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
@@ -1526,25 +1526,25 @@ class TDataStd_DataMapNodeOfDataMapOfStringByte(OCC.TCollection.TCollection_MapN
 
         """
         _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringByte_swiginit(self,_TDataStd.new_TDataStd_DataMapNodeOfDataMapOfStringByte(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringByte_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte &" :
         """
         :rtype: Standard_Byte
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringByte_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapNodeOfDataMapOfStringByte self)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringByte__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringByte" :
         """GetHandle(TDataStd_DataMapNodeOfDataMapOfStringByte self) -> Handle_TDataStd_DataMapNodeOfDataMapOfStringByte"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringByte_GetHandle(self)
 
@@ -1584,7 +1584,7 @@ Handle_TDataStd_DataMapNodeOfDataMapOfStringByte._kill_pointed = new_instancemet
 Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_swigregister = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_swigregister
 Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_swigregister(Handle_TDataStd_DataMapNodeOfDataMapOfStringByte)
 
-def Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_DownCast(*args):
+def Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_DownCast(*args) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringByte const" :
   return _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_DownCast(*args)
 Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_DownCast = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringByte_DownCast
 
@@ -1603,25 +1603,25 @@ class TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger(OCC.TCollection.TCol
 
         """
         _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_swiginit(self,_TDataStd.new_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfInteger &" :
         """
         :rtype: Handle_TColStd_HArray1OfInteger
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger self)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger" :
         """GetHandle(TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger self) -> Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_GetHandle(self)
 
@@ -1661,7 +1661,7 @@ Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger._kill_pointed = new
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_swigregister = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_swigregister
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_swigregister(Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger)
 
-def Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_DownCast(*args):
+def Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_DownCast(*args) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger const" :
   return _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_DownCast(*args)
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_DownCast = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfInteger_DownCast
 
@@ -1680,25 +1680,25 @@ class TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal(OCC.TCollection.TCollec
 
         """
         _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_swiginit(self,_TDataStd.new_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal self)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal" :
         """GetHandle(TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal self) -> Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_GetHandle(self)
 
@@ -1738,7 +1738,7 @@ Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal._kill_pointed = new_in
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_swigregister = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_swigregister
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_swigregister(Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal)
 
-def Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_DownCast(*args):
+def Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_DownCast(*args) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal const" :
   return _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_DownCast(*args)
 Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_DownCast = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringHArray1OfReal_DownCast
 
@@ -1757,26 +1757,26 @@ class TDataStd_DataMapNodeOfDataMapOfStringReal(OCC.TCollection.TCollection_MapN
 
         """
         _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal_swiginit(self,_TDataStd.new_TDataStd_DataMapNodeOfDataMapOfStringReal(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(TDataStd_DataMapNodeOfDataMapOfStringReal self) -> Standard_Real"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TDataStd_DataMapNodeOfDataMapOfStringReal self, Standard_Real value)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapNodeOfDataMapOfStringReal self)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringReal" :
         """GetHandle(TDataStd_DataMapNodeOfDataMapOfStringReal self) -> Handle_TDataStd_DataMapNodeOfDataMapOfStringReal"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringReal_GetHandle(self)
 
@@ -1817,7 +1817,7 @@ Handle_TDataStd_DataMapNodeOfDataMapOfStringReal._kill_pointed = new_instancemet
 Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_swigregister = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_swigregister
 Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_swigregister(Handle_TDataStd_DataMapNodeOfDataMapOfStringReal)
 
-def Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_DownCast(*args):
+def Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_DownCast(*args) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringReal const" :
   return _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_DownCast(*args)
 Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_DownCast = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringReal_DownCast
 
@@ -1836,25 +1836,25 @@ class TDataStd_DataMapNodeOfDataMapOfStringString(OCC.TCollection.TCollection_Ma
 
         """
         _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringString_swiginit(self,_TDataStd.new_TDataStd_DataMapNodeOfDataMapOfStringString(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringString_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapNodeOfDataMapOfStringString self)"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringString" :
         """GetHandle(TDataStd_DataMapNodeOfDataMapOfStringString self) -> Handle_TDataStd_DataMapNodeOfDataMapOfStringString"""
         return _TDataStd.TDataStd_DataMapNodeOfDataMapOfStringString_GetHandle(self)
 
@@ -1894,7 +1894,7 @@ Handle_TDataStd_DataMapNodeOfDataMapOfStringString._kill_pointed = new_instancem
 Handle_TDataStd_DataMapNodeOfDataMapOfStringString_swigregister = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringString_swigregister
 Handle_TDataStd_DataMapNodeOfDataMapOfStringString_swigregister(Handle_TDataStd_DataMapNodeOfDataMapOfStringString)
 
-def Handle_TDataStd_DataMapNodeOfDataMapOfStringString_DownCast(*args):
+def Handle_TDataStd_DataMapNodeOfDataMapOfStringString_DownCast(*args) -> "Handle_TDataStd_DataMapNodeOfDataMapOfStringString const" :
   return _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringString_DownCast(*args)
 Handle_TDataStd_DataMapNodeOfDataMapOfStringString_DownCast = _TDataStd.Handle_TDataStd_DataMapNodeOfDataMapOfStringString_DownCast
 
@@ -1909,7 +1909,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDataStd.TDataStd_DataMapOfStringByte_swiginit(self,_TDataStd.new_TDataStd_DataMapOfStringByte(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_DataMapOfStringByte &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringByte &
@@ -1918,7 +1918,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_DataMapOfStringByte &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringByte &
@@ -1927,7 +1927,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1936,14 +1936,14 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1954,7 +1954,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1963,7 +1963,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1972,7 +1972,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Byte const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1981,7 +1981,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Byte &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1990,7 +1990,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -1999,7 +1999,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2008,7 +2008,7 @@ class TDataStd_DataMapOfStringByte(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringByte_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapOfStringByte self)"""
         return _TDataStd.TDataStd_DataMapOfStringByte__kill_pointed(self)
 
@@ -2046,7 +2046,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
 
         """
         _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_swiginit(self,_TDataStd.new_TDataStd_DataMapOfStringHArray1OfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_DataMapOfStringHArray1OfInteger &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringHArray1OfInteger &
@@ -2055,7 +2055,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_DataMapOfStringHArray1OfInteger &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringHArray1OfInteger &
@@ -2064,7 +2064,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2073,14 +2073,14 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2091,7 +2091,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2100,7 +2100,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2109,7 +2109,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2118,7 +2118,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_TColStd_HArray1OfInteger &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2127,7 +2127,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2136,7 +2136,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2145,7 +2145,7 @@ class TDataStd_DataMapOfStringHArray1OfInteger(OCC.TCollection.TCollection_Basic
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapOfStringHArray1OfInteger self)"""
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfInteger__kill_pointed(self)
 
@@ -2183,7 +2183,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
 
         """
         _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_swiginit(self,_TDataStd.new_TDataStd_DataMapOfStringHArray1OfReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_DataMapOfStringHArray1OfReal &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringHArray1OfReal &
@@ -2192,7 +2192,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_DataMapOfStringHArray1OfReal &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringHArray1OfReal &
@@ -2201,7 +2201,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2210,14 +2210,14 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2228,7 +2228,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2237,7 +2237,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2246,7 +2246,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2255,7 +2255,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2264,7 +2264,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2273,7 +2273,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2282,7 +2282,7 @@ class TDataStd_DataMapOfStringHArray1OfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapOfStringHArray1OfReal self)"""
         return _TDataStd.TDataStd_DataMapOfStringHArray1OfReal__kill_pointed(self)
 
@@ -2320,7 +2320,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDataStd.TDataStd_DataMapOfStringReal_swiginit(self,_TDataStd.new_TDataStd_DataMapOfStringReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_DataMapOfStringReal &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringReal &
@@ -2329,7 +2329,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_DataMapOfStringReal &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringReal &
@@ -2338,7 +2338,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2347,14 +2347,14 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2365,7 +2365,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2374,7 +2374,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2383,7 +2383,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Real const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2392,7 +2392,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Real &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2401,7 +2401,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2410,7 +2410,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2419,7 +2419,7 @@ class TDataStd_DataMapOfStringReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapOfStringReal self)"""
         return _TDataStd.TDataStd_DataMapOfStringReal__kill_pointed(self)
 
@@ -2457,7 +2457,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDataStd.TDataStd_DataMapOfStringString_swiginit(self,_TDataStd.new_TDataStd_DataMapOfStringString(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_DataMapOfStringString &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringString &
@@ -2466,7 +2466,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_DataMapOfStringString &" :
         """
         :param Other:
         :type Other: TDataStd_DataMapOfStringString &
@@ -2475,7 +2475,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2484,14 +2484,14 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2502,7 +2502,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2511,7 +2511,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2520,7 +2520,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2529,7 +2529,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TCollection_ExtendedString &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2538,7 +2538,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2547,7 +2547,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -2556,7 +2556,7 @@ class TDataStd_DataMapOfStringString(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDataStd.TDataStd_DataMapOfStringString_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DataMapOfStringString self)"""
         return _TDataStd.TDataStd_DataMapOfStringString__kill_pointed(self)
 
@@ -2596,11 +2596,11 @@ class TDataStd_DeltaOnModificationOfByteArray(OCC.TDF.TDF_DeltaOnModification):
 
         """
         _TDataStd.TDataStd_DeltaOnModificationOfByteArray_swiginit(self,_TDataStd.new_TDataStd_DeltaOnModificationOfByteArray(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DeltaOnModificationOfByteArray self)"""
         return _TDataStd.TDataStd_DeltaOnModificationOfByteArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DeltaOnModificationOfByteArray" :
         """GetHandle(TDataStd_DeltaOnModificationOfByteArray self) -> Handle_TDataStd_DeltaOnModificationOfByteArray"""
         return _TDataStd.TDataStd_DeltaOnModificationOfByteArray_GetHandle(self)
 
@@ -2638,7 +2638,7 @@ Handle_TDataStd_DeltaOnModificationOfByteArray._kill_pointed = new_instancemetho
 Handle_TDataStd_DeltaOnModificationOfByteArray_swigregister = _TDataStd.Handle_TDataStd_DeltaOnModificationOfByteArray_swigregister
 Handle_TDataStd_DeltaOnModificationOfByteArray_swigregister(Handle_TDataStd_DeltaOnModificationOfByteArray)
 
-def Handle_TDataStd_DeltaOnModificationOfByteArray_DownCast(*args):
+def Handle_TDataStd_DeltaOnModificationOfByteArray_DownCast(*args) -> "Handle_TDataStd_DeltaOnModificationOfByteArray const" :
   return _TDataStd.Handle_TDataStd_DeltaOnModificationOfByteArray_DownCast(*args)
 Handle_TDataStd_DeltaOnModificationOfByteArray_DownCast = _TDataStd.Handle_TDataStd_DeltaOnModificationOfByteArray_DownCast
 
@@ -2655,11 +2655,11 @@ class TDataStd_DeltaOnModificationOfExtStringArray(OCC.TDF.TDF_DeltaOnModificati
 
         """
         _TDataStd.TDataStd_DeltaOnModificationOfExtStringArray_swiginit(self,_TDataStd.new_TDataStd_DeltaOnModificationOfExtStringArray(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DeltaOnModificationOfExtStringArray self)"""
         return _TDataStd.TDataStd_DeltaOnModificationOfExtStringArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DeltaOnModificationOfExtStringArray" :
         """GetHandle(TDataStd_DeltaOnModificationOfExtStringArray self) -> Handle_TDataStd_DeltaOnModificationOfExtStringArray"""
         return _TDataStd.TDataStd_DeltaOnModificationOfExtStringArray_GetHandle(self)
 
@@ -2697,7 +2697,7 @@ Handle_TDataStd_DeltaOnModificationOfExtStringArray._kill_pointed = new_instance
 Handle_TDataStd_DeltaOnModificationOfExtStringArray_swigregister = _TDataStd.Handle_TDataStd_DeltaOnModificationOfExtStringArray_swigregister
 Handle_TDataStd_DeltaOnModificationOfExtStringArray_swigregister(Handle_TDataStd_DeltaOnModificationOfExtStringArray)
 
-def Handle_TDataStd_DeltaOnModificationOfExtStringArray_DownCast(*args):
+def Handle_TDataStd_DeltaOnModificationOfExtStringArray_DownCast(*args) -> "Handle_TDataStd_DeltaOnModificationOfExtStringArray const" :
   return _TDataStd.Handle_TDataStd_DeltaOnModificationOfExtStringArray_DownCast(*args)
 Handle_TDataStd_DeltaOnModificationOfExtStringArray_DownCast = _TDataStd.Handle_TDataStd_DeltaOnModificationOfExtStringArray_DownCast
 
@@ -2714,11 +2714,11 @@ class TDataStd_DeltaOnModificationOfIntArray(OCC.TDF.TDF_DeltaOnModification):
 
         """
         _TDataStd.TDataStd_DeltaOnModificationOfIntArray_swiginit(self,_TDataStd.new_TDataStd_DeltaOnModificationOfIntArray(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DeltaOnModificationOfIntArray self)"""
         return _TDataStd.TDataStd_DeltaOnModificationOfIntArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DeltaOnModificationOfIntArray" :
         """GetHandle(TDataStd_DeltaOnModificationOfIntArray self) -> Handle_TDataStd_DeltaOnModificationOfIntArray"""
         return _TDataStd.TDataStd_DeltaOnModificationOfIntArray_GetHandle(self)
 
@@ -2756,7 +2756,7 @@ Handle_TDataStd_DeltaOnModificationOfIntArray._kill_pointed = new_instancemethod
 Handle_TDataStd_DeltaOnModificationOfIntArray_swigregister = _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntArray_swigregister
 Handle_TDataStd_DeltaOnModificationOfIntArray_swigregister(Handle_TDataStd_DeltaOnModificationOfIntArray)
 
-def Handle_TDataStd_DeltaOnModificationOfIntArray_DownCast(*args):
+def Handle_TDataStd_DeltaOnModificationOfIntArray_DownCast(*args) -> "Handle_TDataStd_DeltaOnModificationOfIntArray const" :
   return _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntArray_DownCast(*args)
 Handle_TDataStd_DeltaOnModificationOfIntArray_DownCast = _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntArray_DownCast
 
@@ -2773,11 +2773,11 @@ class TDataStd_DeltaOnModificationOfIntPackedMap(OCC.TDF.TDF_DeltaOnModification
 
         """
         _TDataStd.TDataStd_DeltaOnModificationOfIntPackedMap_swiginit(self,_TDataStd.new_TDataStd_DeltaOnModificationOfIntPackedMap(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DeltaOnModificationOfIntPackedMap self)"""
         return _TDataStd.TDataStd_DeltaOnModificationOfIntPackedMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DeltaOnModificationOfIntPackedMap" :
         """GetHandle(TDataStd_DeltaOnModificationOfIntPackedMap self) -> Handle_TDataStd_DeltaOnModificationOfIntPackedMap"""
         return _TDataStd.TDataStd_DeltaOnModificationOfIntPackedMap_GetHandle(self)
 
@@ -2815,7 +2815,7 @@ Handle_TDataStd_DeltaOnModificationOfIntPackedMap._kill_pointed = new_instanceme
 Handle_TDataStd_DeltaOnModificationOfIntPackedMap_swigregister = _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntPackedMap_swigregister
 Handle_TDataStd_DeltaOnModificationOfIntPackedMap_swigregister(Handle_TDataStd_DeltaOnModificationOfIntPackedMap)
 
-def Handle_TDataStd_DeltaOnModificationOfIntPackedMap_DownCast(*args):
+def Handle_TDataStd_DeltaOnModificationOfIntPackedMap_DownCast(*args) -> "Handle_TDataStd_DeltaOnModificationOfIntPackedMap const" :
   return _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntPackedMap_DownCast(*args)
 Handle_TDataStd_DeltaOnModificationOfIntPackedMap_DownCast = _TDataStd.Handle_TDataStd_DeltaOnModificationOfIntPackedMap_DownCast
 
@@ -2832,11 +2832,11 @@ class TDataStd_DeltaOnModificationOfRealArray(OCC.TDF.TDF_DeltaOnModification):
 
         """
         _TDataStd.TDataStd_DeltaOnModificationOfRealArray_swiginit(self,_TDataStd.new_TDataStd_DeltaOnModificationOfRealArray(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_DeltaOnModificationOfRealArray self)"""
         return _TDataStd.TDataStd_DeltaOnModificationOfRealArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_DeltaOnModificationOfRealArray" :
         """GetHandle(TDataStd_DeltaOnModificationOfRealArray self) -> Handle_TDataStd_DeltaOnModificationOfRealArray"""
         return _TDataStd.TDataStd_DeltaOnModificationOfRealArray_GetHandle(self)
 
@@ -2874,14 +2874,14 @@ Handle_TDataStd_DeltaOnModificationOfRealArray._kill_pointed = new_instancemetho
 Handle_TDataStd_DeltaOnModificationOfRealArray_swigregister = _TDataStd.Handle_TDataStd_DeltaOnModificationOfRealArray_swigregister
 Handle_TDataStd_DeltaOnModificationOfRealArray_swigregister(Handle_TDataStd_DeltaOnModificationOfRealArray)
 
-def Handle_TDataStd_DeltaOnModificationOfRealArray_DownCast(*args):
+def Handle_TDataStd_DeltaOnModificationOfRealArray_DownCast(*args) -> "Handle_TDataStd_DeltaOnModificationOfRealArray const" :
   return _TDataStd.Handle_TDataStd_DeltaOnModificationOfRealArray_DownCast(*args)
 Handle_TDataStd_DeltaOnModificationOfRealArray_DownCast = _TDataStd.Handle_TDataStd_DeltaOnModificationOfRealArray_DownCast
 
 class TDataStd_Directory(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Find(*args):
+    def Find(*args) -> "Standard_Boolean" :
         """
         * class methods ============= Searches for a directory attribute on the label current, or on one of the father labels of current. If a directory attribute is found, true is returned, and the attribute found is set as D.
 
@@ -2895,7 +2895,7 @@ class TDataStd_Directory(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Directory_Find(*args)
 
     Find = staticmethod(Find)
-    def New(*args):
+    def New(*args) -> "Handle_TDataStd_Directory" :
         """
         * Creates an enpty Directory attribute, located at <label>. Raises if <label> has attribute
 
@@ -2907,7 +2907,7 @@ class TDataStd_Directory(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Directory_New(*args)
 
     New = staticmethod(New)
-    def AddDirectory(*args):
+    def AddDirectory(*args) -> "Handle_TDataStd_Directory" :
         """
         * Creates a new sub-label and sets the sub-directory dir on that label.
 
@@ -2919,7 +2919,7 @@ class TDataStd_Directory(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Directory_AddDirectory(*args)
 
     AddDirectory = staticmethod(AddDirectory)
-    def MakeObjectLabel(*args):
+    def MakeObjectLabel(*args) -> "TDF_Label" :
         """
         * Makes new label and returns it to insert other object attributes (sketch,part...etc...)
 
@@ -2931,7 +2931,7 @@ class TDataStd_Directory(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Directory_MakeObjectLabel(*args)
 
     MakeObjectLabel = staticmethod(MakeObjectLabel)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Directory methods ===============
 
@@ -2947,15 +2947,15 @@ class TDataStd_Directory(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Directory_swiginit(self,_TDataStd.new_TDataStd_Directory(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Directory self) -> std::string"""
         return _TDataStd.TDataStd_Directory_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Directory self)"""
         return _TDataStd.TDataStd_Directory__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Directory" :
         """GetHandle(TDataStd_Directory self) -> Handle_TDataStd_Directory"""
         return _TDataStd.TDataStd_Directory_GetHandle(self)
 
@@ -2973,7 +2973,7 @@ TDataStd_Directory.GetHandle = new_instancemethod(_TDataStd.TDataStd_Directory_G
 TDataStd_Directory_swigregister = _TDataStd.TDataStd_Directory_swigregister
 TDataStd_Directory_swigregister(TDataStd_Directory)
 
-def TDataStd_Directory_Find(*args):
+def TDataStd_Directory_Find(*args) -> "Standard_Boolean" :
   """
     * class methods ============= Searches for a directory attribute on the label current, or on one of the father labels of current. If a directory attribute is found, true is returned, and the attribute found is set as D.
 
@@ -2986,7 +2986,7 @@ def TDataStd_Directory_Find(*args):
     """
   return _TDataStd.TDataStd_Directory_Find(*args)
 
-def TDataStd_Directory_New(*args):
+def TDataStd_Directory_New(*args) -> "Handle_TDataStd_Directory" :
   """
     * Creates an enpty Directory attribute, located at <label>. Raises if <label> has attribute
 
@@ -2997,7 +2997,7 @@ def TDataStd_Directory_New(*args):
     """
   return _TDataStd.TDataStd_Directory_New(*args)
 
-def TDataStd_Directory_AddDirectory(*args):
+def TDataStd_Directory_AddDirectory(*args) -> "Handle_TDataStd_Directory" :
   """
     * Creates a new sub-label and sets the sub-directory dir on that label.
 
@@ -3008,7 +3008,7 @@ def TDataStd_Directory_AddDirectory(*args):
     """
   return _TDataStd.TDataStd_Directory_AddDirectory(*args)
 
-def TDataStd_Directory_MakeObjectLabel(*args):
+def TDataStd_Directory_MakeObjectLabel(*args) -> "TDF_Label" :
   """
     * Makes new label and returns it to insert other object attributes (sketch,part...etc...)
 
@@ -3019,7 +3019,7 @@ def TDataStd_Directory_MakeObjectLabel(*args):
     """
   return _TDataStd.TDataStd_Directory_MakeObjectLabel(*args)
 
-def TDataStd_Directory_GetID(*args):
+def TDataStd_Directory_GetID(*args) -> "Standard_GUID const &" :
   """
     * Directory methods ===============
 
@@ -3049,14 +3049,14 @@ Handle_TDataStd_Directory._kill_pointed = new_instancemethod(_TDataStd.Handle_TD
 Handle_TDataStd_Directory_swigregister = _TDataStd.Handle_TDataStd_Directory_swigregister
 Handle_TDataStd_Directory_swigregister(Handle_TDataStd_Directory)
 
-def Handle_TDataStd_Directory_DownCast(*args):
+def Handle_TDataStd_Directory_DownCast(*args) -> "Handle_TDataStd_Directory const" :
   return _TDataStd.Handle_TDataStd_Directory_DownCast(*args)
 Handle_TDataStd_Directory_DownCast = _TDataStd.Handle_TDataStd_Directory_DownCast
 
 class TDataStd_Expression(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -3066,7 +3066,7 @@ class TDataStd_Expression(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Expression_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_Expression" :
         """
         * Find, or create, an Expression attribute. Expressionmethods ============
 
@@ -3084,7 +3084,7 @@ class TDataStd_Expression(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Expression_swiginit(self,_TDataStd.new_TDataStd_Expression(*args))
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_ExtendedString" :
         """
         * build and return the expression name
 
@@ -3093,7 +3093,7 @@ class TDataStd_Expression(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Expression_Name(self, *args)
 
-    def SetExpression(self, *args):
+    def SetExpression(self, *args) -> "void" :
         """
         :param E:
         :type E: TCollection_ExtendedString &
@@ -3102,29 +3102,29 @@ class TDataStd_Expression(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Expression_SetExpression(self, *args)
 
-    def GetExpression(self, *args):
+    def GetExpression(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_Expression_GetExpression(self, *args)
 
-    def GetVariables(self, *args):
+    def GetVariables(self, *args) -> "TDF_AttributeList &" :
         """
         :rtype: TDF_AttributeList
 
         """
         return _TDataStd.TDataStd_Expression_GetVariables(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Expression self) -> std::string"""
         return _TDataStd.TDataStd_Expression_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Expression self)"""
         return _TDataStd.TDataStd_Expression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Expression" :
         """GetHandle(TDataStd_Expression self) -> Handle_TDataStd_Expression"""
         return _TDataStd.TDataStd_Expression_GetHandle(self)
 
@@ -3146,7 +3146,7 @@ TDataStd_Expression.GetHandle = new_instancemethod(_TDataStd.TDataStd_Expression
 TDataStd_Expression_swigregister = _TDataStd.TDataStd_Expression_swigregister
 TDataStd_Expression_swigregister(TDataStd_Expression)
 
-def TDataStd_Expression_GetID(*args):
+def TDataStd_Expression_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -3155,7 +3155,7 @@ def TDataStd_Expression_GetID(*args):
     """
   return _TDataStd.TDataStd_Expression_GetID(*args)
 
-def TDataStd_Expression_Set(*args):
+def TDataStd_Expression_Set(*args) -> "Handle_TDataStd_Expression" :
   """
     * Find, or create, an Expression attribute. Expressionmethods ============
 
@@ -3187,14 +3187,14 @@ Handle_TDataStd_Expression._kill_pointed = new_instancemethod(_TDataStd.Handle_T
 Handle_TDataStd_Expression_swigregister = _TDataStd.Handle_TDataStd_Expression_swigregister
 Handle_TDataStd_Expression_swigregister(Handle_TDataStd_Expression)
 
-def Handle_TDataStd_Expression_DownCast(*args):
+def Handle_TDataStd_Expression_DownCast(*args) -> "Handle_TDataStd_Expression const" :
   return _TDataStd.Handle_TDataStd_Expression_DownCast(*args)
 Handle_TDataStd_Expression_DownCast = _TDataStd.Handle_TDataStd_Expression_DownCast
 
 class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for the attribute.
 
@@ -3204,7 +3204,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ExtStringArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_ExtStringArray" :
         """
         * Finds, or creates, an ExtStringArray attribute with <lower> and <upper> bounds. The ExtStringArray attribute is returned. If <isDelta> == False, DefaultDeltaOnModification is used. 	 If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -3222,7 +3222,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ExtStringArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the inner array with bounds from <lower> to <upper>
 
@@ -3235,7 +3235,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -3248,7 +3248,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns the value of the <Index>th element of the array
 
@@ -3259,7 +3259,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Return the lower bound.
 
@@ -3268,7 +3268,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Return the upper bound
 
@@ -3277,7 +3277,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Return the number of elements of <self>.
 
@@ -3286,7 +3286,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Length(self, *args)
 
-    def ChangeArray(self, *args):
+    def ChangeArray(self, *args) -> "void" :
         """
         * Sets the inner array <myValue> of the ExtStringArray attribute to <newArray>. If value of <newArray> differs from <myValue>, Backup performed and myValue refers to new instance of HArray1OfExtendedString that holds <newArray> values If <isCheckItems> equal True each item of <newArray> will be checked with each item of <myValue> for coincidence (to avoid backup).
 
@@ -3299,7 +3299,7 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_ChangeArray(self, *args)
 
-    def Array(self, *args):
+    def Array(self, *args) -> "Handle_TColStd_HArray1OfExtendedString const" :
         """
         * Return the inner array of the ExtStringArray attribute
 
@@ -3308,14 +3308,14 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringArray_Array(self, *args)
 
-    def GetDelta(self, *args):
+    def GetDelta(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ExtStringArray_GetDelta(self, *args)
 
-    def SetDelta(self, *args):
+    def SetDelta(self, *args) -> "void" :
         """
         * for internal use only!
 
@@ -3332,15 +3332,15 @@ class TDataStd_ExtStringArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_ExtStringArray_swiginit(self,_TDataStd.new_TDataStd_ExtStringArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_ExtStringArray self) -> std::string"""
         return _TDataStd.TDataStd_ExtStringArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ExtStringArray self)"""
         return _TDataStd.TDataStd_ExtStringArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ExtStringArray" :
         """GetHandle(TDataStd_ExtStringArray self) -> Handle_TDataStd_ExtStringArray"""
         return _TDataStd.TDataStd_ExtStringArray_GetHandle(self)
 
@@ -3368,7 +3368,7 @@ TDataStd_ExtStringArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_ExtStr
 TDataStd_ExtStringArray_swigregister = _TDataStd.TDataStd_ExtStringArray_swigregister
 TDataStd_ExtStringArray_swigregister(TDataStd_ExtStringArray)
 
-def TDataStd_ExtStringArray_GetID(*args):
+def TDataStd_ExtStringArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for the attribute.
 
@@ -3377,7 +3377,7 @@ def TDataStd_ExtStringArray_GetID(*args):
     """
   return _TDataStd.TDataStd_ExtStringArray_GetID(*args)
 
-def TDataStd_ExtStringArray_Set(*args):
+def TDataStd_ExtStringArray_Set(*args) -> "Handle_TDataStd_ExtStringArray" :
   """
     * Finds, or creates, an ExtStringArray attribute with <lower> and <upper> bounds. The ExtStringArray attribute is returned. If <isDelta> == False, DefaultDeltaOnModification is used. 	 If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -3415,14 +3415,14 @@ Handle_TDataStd_ExtStringArray._kill_pointed = new_instancemethod(_TDataStd.Hand
 Handle_TDataStd_ExtStringArray_swigregister = _TDataStd.Handle_TDataStd_ExtStringArray_swigregister
 Handle_TDataStd_ExtStringArray_swigregister(Handle_TDataStd_ExtStringArray)
 
-def Handle_TDataStd_ExtStringArray_DownCast(*args):
+def Handle_TDataStd_ExtStringArray_DownCast(*args) -> "Handle_TDataStd_ExtStringArray const" :
   return _TDataStd.Handle_TDataStd_ExtStringArray_DownCast(*args)
 Handle_TDataStd_ExtStringArray_DownCast = _TDataStd.Handle_TDataStd_ExtStringArray_DownCast
 
 class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the list of strings attribute.
 
@@ -3432,7 +3432,7 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ExtStringList_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_ExtStringList" :
         """
         * Finds or creates a list of string values attribute.
 
@@ -3450,21 +3450,21 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_ExtStringList_swiginit(self,_TDataStd.new_TDataStd_ExtStringList(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ExtStringList_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_ExtStringList_Extent(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param value:
         :type value: TCollection_ExtendedString &
@@ -3473,7 +3473,7 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param value:
         :type value: TCollection_ExtendedString &
@@ -3482,7 +3482,7 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringList_Append(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> before the first meet of <before_value>.
 
@@ -3495,7 +3495,7 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> after the first meet of <after_value>.
 
@@ -3508,7 +3508,7 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringList_InsertAfter(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes the first meet of the <value>.
 
@@ -3519,43 +3519,43 @@ class TDataStd_ExtStringList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ExtStringList_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ExtStringList_Clear(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_ExtStringList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_ExtStringList_Last(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "TDataStd_ListOfExtendedString const &" :
         """
         :rtype: TDataStd_ListOfExtendedString
 
         """
         return _TDataStd.TDataStd_ExtStringList_List(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_ExtStringList self) -> std::string"""
         return _TDataStd.TDataStd_ExtStringList_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ExtStringList self)"""
         return _TDataStd.TDataStd_ExtStringList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ExtStringList" :
         """GetHandle(TDataStd_ExtStringList self) -> Handle_TDataStd_ExtStringList"""
         return _TDataStd.TDataStd_ExtStringList_GetHandle(self)
 
@@ -3584,7 +3584,7 @@ TDataStd_ExtStringList.GetHandle = new_instancemethod(_TDataStd.TDataStd_ExtStri
 TDataStd_ExtStringList_swigregister = _TDataStd.TDataStd_ExtStringList_swigregister
 TDataStd_ExtStringList_swigregister(TDataStd_ExtStringList)
 
-def TDataStd_ExtStringList_GetID(*args):
+def TDataStd_ExtStringList_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the list of strings attribute.
 
@@ -3593,7 +3593,7 @@ def TDataStd_ExtStringList_GetID(*args):
     """
   return _TDataStd.TDataStd_ExtStringList_GetID(*args)
 
-def TDataStd_ExtStringList_Set(*args):
+def TDataStd_ExtStringList_Set(*args) -> "Handle_TDataStd_ExtStringList" :
   """
     * Finds or creates a list of string values attribute.
 
@@ -3625,7 +3625,7 @@ Handle_TDataStd_ExtStringList._kill_pointed = new_instancemethod(_TDataStd.Handl
 Handle_TDataStd_ExtStringList_swigregister = _TDataStd.Handle_TDataStd_ExtStringList_swigregister
 Handle_TDataStd_ExtStringList_swigregister(Handle_TDataStd_ExtStringList)
 
-def Handle_TDataStd_ExtStringList_DownCast(*args):
+def Handle_TDataStd_ExtStringList_DownCast(*args) -> "Handle_TDataStd_ExtStringList const" :
   return _TDataStd.Handle_TDataStd_ExtStringList_DownCast(*args)
 Handle_TDataStd_ExtStringList_DownCast = _TDataStd.Handle_TDataStd_ExtStringList_DownCast
 
@@ -3644,25 +3644,25 @@ class TDataStd_HDataMapOfStringByte(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringByte_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringByte(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TDataStd_DataMapOfStringByte const &" :
         """
         :rtype: TDataStd_DataMapOfStringByte
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringByte_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TDataStd_DataMapOfStringByte &" :
         """
         :rtype: TDataStd_DataMapOfStringByte
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringByte_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringByte self)"""
         return _TDataStd.TDataStd_HDataMapOfStringByte__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringByte" :
         """GetHandle(TDataStd_HDataMapOfStringByte self) -> Handle_TDataStd_HDataMapOfStringByte"""
         return _TDataStd.TDataStd_HDataMapOfStringByte_GetHandle(self)
 
@@ -3702,7 +3702,7 @@ Handle_TDataStd_HDataMapOfStringByte._kill_pointed = new_instancemethod(_TDataSt
 Handle_TDataStd_HDataMapOfStringByte_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringByte_swigregister
 Handle_TDataStd_HDataMapOfStringByte_swigregister(Handle_TDataStd_HDataMapOfStringByte)
 
-def Handle_TDataStd_HDataMapOfStringByte_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringByte_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringByte const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringByte_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringByte_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringByte_DownCast
 
@@ -3721,25 +3721,25 @@ class TDataStd_HDataMapOfStringHArray1OfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringHArray1OfInteger_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringHArray1OfInteger(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TDataStd_DataMapOfStringHArray1OfInteger const &" :
         """
         :rtype: TDataStd_DataMapOfStringHArray1OfInteger
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfInteger_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TDataStd_DataMapOfStringHArray1OfInteger &" :
         """
         :rtype: TDataStd_DataMapOfStringHArray1OfInteger
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfInteger_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringHArray1OfInteger self)"""
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringHArray1OfInteger" :
         """GetHandle(TDataStd_HDataMapOfStringHArray1OfInteger self) -> Handle_TDataStd_HDataMapOfStringHArray1OfInteger"""
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfInteger_GetHandle(self)
 
@@ -3779,7 +3779,7 @@ Handle_TDataStd_HDataMapOfStringHArray1OfInteger._kill_pointed = new_instancemet
 Handle_TDataStd_HDataMapOfStringHArray1OfInteger_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfInteger_swigregister
 Handle_TDataStd_HDataMapOfStringHArray1OfInteger_swigregister(Handle_TDataStd_HDataMapOfStringHArray1OfInteger)
 
-def Handle_TDataStd_HDataMapOfStringHArray1OfInteger_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringHArray1OfInteger_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringHArray1OfInteger const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfInteger_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringHArray1OfInteger_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfInteger_DownCast
 
@@ -3798,25 +3798,25 @@ class TDataStd_HDataMapOfStringHArray1OfReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringHArray1OfReal_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringHArray1OfReal(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TDataStd_DataMapOfStringHArray1OfReal const &" :
         """
         :rtype: TDataStd_DataMapOfStringHArray1OfReal
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfReal_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TDataStd_DataMapOfStringHArray1OfReal &" :
         """
         :rtype: TDataStd_DataMapOfStringHArray1OfReal
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfReal_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringHArray1OfReal self)"""
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringHArray1OfReal" :
         """GetHandle(TDataStd_HDataMapOfStringHArray1OfReal self) -> Handle_TDataStd_HDataMapOfStringHArray1OfReal"""
         return _TDataStd.TDataStd_HDataMapOfStringHArray1OfReal_GetHandle(self)
 
@@ -3856,7 +3856,7 @@ Handle_TDataStd_HDataMapOfStringHArray1OfReal._kill_pointed = new_instancemethod
 Handle_TDataStd_HDataMapOfStringHArray1OfReal_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfReal_swigregister
 Handle_TDataStd_HDataMapOfStringHArray1OfReal_swigregister(Handle_TDataStd_HDataMapOfStringHArray1OfReal)
 
-def Handle_TDataStd_HDataMapOfStringHArray1OfReal_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringHArray1OfReal_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringHArray1OfReal const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfReal_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringHArray1OfReal_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringHArray1OfReal_DownCast
 
@@ -3875,25 +3875,25 @@ class TDataStd_HDataMapOfStringInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringInteger_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringInteger(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TColStd_DataMapOfStringInteger const &" :
         """
         :rtype: TColStd_DataMapOfStringInteger
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringInteger_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TColStd_DataMapOfStringInteger &" :
         """
         :rtype: TColStd_DataMapOfStringInteger
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringInteger_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringInteger self)"""
         return _TDataStd.TDataStd_HDataMapOfStringInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringInteger" :
         """GetHandle(TDataStd_HDataMapOfStringInteger self) -> Handle_TDataStd_HDataMapOfStringInteger"""
         return _TDataStd.TDataStd_HDataMapOfStringInteger_GetHandle(self)
 
@@ -3933,7 +3933,7 @@ Handle_TDataStd_HDataMapOfStringInteger._kill_pointed = new_instancemethod(_TDat
 Handle_TDataStd_HDataMapOfStringInteger_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringInteger_swigregister
 Handle_TDataStd_HDataMapOfStringInteger_swigregister(Handle_TDataStd_HDataMapOfStringInteger)
 
-def Handle_TDataStd_HDataMapOfStringInteger_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringInteger_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringInteger const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringInteger_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringInteger_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringInteger_DownCast
 
@@ -3952,25 +3952,25 @@ class TDataStd_HDataMapOfStringReal(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringReal_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringReal(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TDataStd_DataMapOfStringReal const &" :
         """
         :rtype: TDataStd_DataMapOfStringReal
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringReal_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TDataStd_DataMapOfStringReal &" :
         """
         :rtype: TDataStd_DataMapOfStringReal
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringReal_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringReal self)"""
         return _TDataStd.TDataStd_HDataMapOfStringReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringReal" :
         """GetHandle(TDataStd_HDataMapOfStringReal self) -> Handle_TDataStd_HDataMapOfStringReal"""
         return _TDataStd.TDataStd_HDataMapOfStringReal_GetHandle(self)
 
@@ -4010,7 +4010,7 @@ Handle_TDataStd_HDataMapOfStringReal._kill_pointed = new_instancemethod(_TDataSt
 Handle_TDataStd_HDataMapOfStringReal_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringReal_swigregister
 Handle_TDataStd_HDataMapOfStringReal_swigregister(Handle_TDataStd_HDataMapOfStringReal)
 
-def Handle_TDataStd_HDataMapOfStringReal_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringReal_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringReal const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringReal_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringReal_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringReal_DownCast
 
@@ -4029,25 +4029,25 @@ class TDataStd_HDataMapOfStringString(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HDataMapOfStringString_swiginit(self,_TDataStd.new_TDataStd_HDataMapOfStringString(*args))
-    def Map(self, *args):
+    def Map(self, *args) -> "TDataStd_DataMapOfStringString const &" :
         """
         :rtype: TDataStd_DataMapOfStringString
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringString_Map(self, *args)
 
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "TDataStd_DataMapOfStringString &" :
         """
         :rtype: TDataStd_DataMapOfStringString
 
         """
         return _TDataStd.TDataStd_HDataMapOfStringString_ChangeMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HDataMapOfStringString self)"""
         return _TDataStd.TDataStd_HDataMapOfStringString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HDataMapOfStringString" :
         """GetHandle(TDataStd_HDataMapOfStringString self) -> Handle_TDataStd_HDataMapOfStringString"""
         return _TDataStd.TDataStd_HDataMapOfStringString_GetHandle(self)
 
@@ -4087,7 +4087,7 @@ Handle_TDataStd_HDataMapOfStringString._kill_pointed = new_instancemethod(_TData
 Handle_TDataStd_HDataMapOfStringString_swigregister = _TDataStd.Handle_TDataStd_HDataMapOfStringString_swigregister
 Handle_TDataStd_HDataMapOfStringString_swigregister(Handle_TDataStd_HDataMapOfStringString)
 
-def Handle_TDataStd_HDataMapOfStringString_DownCast(*args):
+def Handle_TDataStd_HDataMapOfStringString_DownCast(*args) -> "Handle_TDataStd_HDataMapOfStringString const" :
   return _TDataStd.Handle_TDataStd_HDataMapOfStringString_DownCast(*args)
 Handle_TDataStd_HDataMapOfStringString_DownCast = _TDataStd.Handle_TDataStd_HDataMapOfStringString_DownCast
 
@@ -4112,7 +4112,7 @@ class TDataStd_HLabelArray1(OCC.MMgt.MMgt_TShared):
 
         """
         _TDataStd.TDataStd_HLabelArray1_swiginit(self,_TDataStd.new_TDataStd_HLabelArray1(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TDF_Label &
@@ -4121,28 +4121,28 @@ class TDataStd_HLabelArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDataStd.TDataStd_HLabelArray1_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_HLabelArray1_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_HLabelArray1_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_HLabelArray1_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4153,7 +4153,7 @@ class TDataStd_HLabelArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDataStd.TDataStd_HLabelArray1_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :param Index:
         :type Index: int
@@ -4162,7 +4162,7 @@ class TDataStd_HLabelArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDataStd.TDataStd_HLabelArray1_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TDF_Label &" :
         """
         :param Index:
         :type Index: int
@@ -4171,25 +4171,25 @@ class TDataStd_HLabelArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDataStd.TDataStd_HLabelArray1_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TDataStd_LabelArray1 const &" :
         """
         :rtype: TDataStd_LabelArray1
 
         """
         return _TDataStd.TDataStd_HLabelArray1_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TDataStd_LabelArray1 &" :
         """
         :rtype: TDataStd_LabelArray1
 
         """
         return _TDataStd.TDataStd_HLabelArray1_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_HLabelArray1 self)"""
         return _TDataStd.TDataStd_HLabelArray1__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_HLabelArray1" :
         """GetHandle(TDataStd_HLabelArray1 self) -> Handle_TDataStd_HLabelArray1"""
         return _TDataStd.TDataStd_HLabelArray1_GetHandle(self)
 
@@ -4236,14 +4236,14 @@ Handle_TDataStd_HLabelArray1._kill_pointed = new_instancemethod(_TDataStd.Handle
 Handle_TDataStd_HLabelArray1_swigregister = _TDataStd.Handle_TDataStd_HLabelArray1_swigregister
 Handle_TDataStd_HLabelArray1_swigregister(Handle_TDataStd_HLabelArray1)
 
-def Handle_TDataStd_HLabelArray1_DownCast(*args):
+def Handle_TDataStd_HLabelArray1_DownCast(*args) -> "Handle_TDataStd_HLabelArray1 const" :
   return _TDataStd.Handle_TDataStd_HLabelArray1_DownCast(*args)
 Handle_TDataStd_HLabelArray1_DownCast = _TDataStd.Handle_TDataStd_HLabelArray1_DownCast
 
 class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID of the attribute.
 
@@ -4253,7 +4253,7 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_IntPackedMap_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_IntPackedMap" :
         """
         * Finds or creates an integer map attribute on the given label. If <isDelta> == False, DefaultDeltaOnModification is used. If <isDelta> == True, DeltaOnModification of the current attribute is used. If attribute is already set, input parameter <isDelta> is refused and the found attribute returned. Attribute methods ===================
 
@@ -4273,7 +4273,7 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_IntPackedMap_swiginit(self,_TDataStd.new_TDataStd_IntPackedMap(*args))
-    def ChangeMap(self, *args):
+    def ChangeMap(self, *args) -> "Standard_Boolean" :
         """
         :param theMap:
         :type theMap: Handle_TColStd_HPackedMapOfInteger &
@@ -4282,28 +4282,28 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntPackedMap_ChangeMap(self, *args)
 
-    def GetMap(self, *args):
+    def GetMap(self, *args) -> "TColStd_PackedMapOfInteger const &" :
         """
         :rtype: TColStd_PackedMapOfInteger
 
         """
         return _TDataStd.TDataStd_IntPackedMap_GetMap(self, *args)
 
-    def GetHMap(self, *args):
+    def GetHMap(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         :rtype: Handle_TColStd_HPackedMapOfInteger
 
         """
         return _TDataStd.TDataStd_IntPackedMap_GetHMap(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_IntPackedMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param theKey:
         :type theKey: int
@@ -4312,7 +4312,7 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntPackedMap_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param theKey:
         :type theKey: int
@@ -4321,7 +4321,7 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntPackedMap_Remove(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param theKey:
         :type theKey: int
@@ -4330,28 +4330,28 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntPackedMap_Contains(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_IntPackedMap_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_IntPackedMap_IsEmpty(self, *args)
 
-    def GetDelta(self, *args):
+    def GetDelta(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_IntPackedMap_GetDelta(self, *args)
 
-    def SetDelta(self, *args):
+    def SetDelta(self, *args) -> "void" :
         """
         * for internal use only!
 
@@ -4362,15 +4362,15 @@ class TDataStd_IntPackedMap(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntPackedMap_SetDelta(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_IntPackedMap self) -> std::string"""
         return _TDataStd.TDataStd_IntPackedMap_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_IntPackedMap self)"""
         return _TDataStd.TDataStd_IntPackedMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_IntPackedMap" :
         """GetHandle(TDataStd_IntPackedMap self) -> Handle_TDataStd_IntPackedMap"""
         return _TDataStd.TDataStd_IntPackedMap_GetHandle(self)
 
@@ -4399,7 +4399,7 @@ TDataStd_IntPackedMap.GetHandle = new_instancemethod(_TDataStd.TDataStd_IntPacke
 TDataStd_IntPackedMap_swigregister = _TDataStd.TDataStd_IntPackedMap_swigregister
 TDataStd_IntPackedMap_swigregister(TDataStd_IntPackedMap)
 
-def TDataStd_IntPackedMap_GetID(*args):
+def TDataStd_IntPackedMap_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID of the attribute.
 
@@ -4408,7 +4408,7 @@ def TDataStd_IntPackedMap_GetID(*args):
     """
   return _TDataStd.TDataStd_IntPackedMap_GetID(*args)
 
-def TDataStd_IntPackedMap_Set(*args):
+def TDataStd_IntPackedMap_Set(*args) -> "Handle_TDataStd_IntPackedMap" :
   """
     * Finds or creates an integer map attribute on the given label. If <isDelta> == False, DefaultDeltaOnModification is used. If <isDelta> == True, DeltaOnModification of the current attribute is used. If attribute is already set, input parameter <isDelta> is refused and the found attribute returned. Attribute methods ===================
 
@@ -4442,14 +4442,14 @@ Handle_TDataStd_IntPackedMap._kill_pointed = new_instancemethod(_TDataStd.Handle
 Handle_TDataStd_IntPackedMap_swigregister = _TDataStd.Handle_TDataStd_IntPackedMap_swigregister
 Handle_TDataStd_IntPackedMap_swigregister(Handle_TDataStd_IntPackedMap)
 
-def Handle_TDataStd_IntPackedMap_DownCast(*args):
+def Handle_TDataStd_IntPackedMap_DownCast(*args) -> "Handle_TDataStd_IntPackedMap const" :
   return _TDataStd.Handle_TDataStd_IntPackedMap_DownCast(*args)
 Handle_TDataStd_IntPackedMap_DownCast = _TDataStd.Handle_TDataStd_IntPackedMap_DownCast
 
 class TDataStd_Integer(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for integers.
 
@@ -4459,7 +4459,7 @@ class TDataStd_Integer(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Integer_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Finds, or creates, an Integer attribute and sets <value> the Integer attribute is returned. Integer methods ===============
 
@@ -4476,7 +4476,7 @@ class TDataStd_Integer(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Integer_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "Standard_Integer" :
         """
         * Returns the integer value contained in the attribute.
 
@@ -4485,7 +4485,7 @@ class TDataStd_Integer(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Integer_Get(self, *args)
 
-    def IsCaptured(self, *args):
+    def IsCaptured(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a reference on the same label
 
@@ -4494,7 +4494,7 @@ class TDataStd_Integer(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Integer_IsCaptured(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Integer self) -> std::string"""
         return _TDataStd.TDataStd_Integer_DumpToString(self)
 
@@ -4504,11 +4504,11 @@ class TDataStd_Integer(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Integer_swiginit(self,_TDataStd.new_TDataStd_Integer(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Integer self)"""
         return _TDataStd.TDataStd_Integer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Integer" :
         """GetHandle(TDataStd_Integer self) -> Handle_TDataStd_Integer"""
         return _TDataStd.TDataStd_Integer_GetHandle(self)
 
@@ -4529,7 +4529,7 @@ TDataStd_Integer.GetHandle = new_instancemethod(_TDataStd.TDataStd_Integer_GetHa
 TDataStd_Integer_swigregister = _TDataStd.TDataStd_Integer_swigregister
 TDataStd_Integer_swigregister(TDataStd_Integer)
 
-def TDataStd_Integer_GetID(*args):
+def TDataStd_Integer_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for integers.
 
@@ -4559,14 +4559,14 @@ Handle_TDataStd_Integer._kill_pointed = new_instancemethod(_TDataStd.Handle_TDat
 Handle_TDataStd_Integer_swigregister = _TDataStd.Handle_TDataStd_Integer_swigregister
 Handle_TDataStd_Integer_swigregister(Handle_TDataStd_Integer)
 
-def Handle_TDataStd_Integer_DownCast(*args):
+def Handle_TDataStd_Integer_DownCast(*args) -> "Handle_TDataStd_Integer const" :
   return _TDataStd.Handle_TDataStd_Integer_DownCast(*args)
 Handle_TDataStd_Integer_DownCast = _TDataStd.Handle_TDataStd_Integer_DownCast
 
 class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for arrays of integers.
 
@@ -4576,7 +4576,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_IntegerArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_IntegerArray" :
         """
         * Finds or creates on the <label> an integer array attribute with the specified <lower> and <upper> boundaries. If <isDelta> == False, DefaultDeltaOnModification is used. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -4594,7 +4594,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_IntegerArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize the inner array with bounds from <lower> to <upper>
 
@@ -4607,7 +4607,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -4620,7 +4620,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         * Return the value of the <Index>th element of the array
 
@@ -4631,7 +4631,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Returns the lower boundary of this array of integers.
 
@@ -4640,7 +4640,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Return the upper boundary of this array of integers.
 
@@ -4649,7 +4649,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the length of this array of integers in terms of the number of elements it contains.
 
@@ -4658,7 +4658,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Length(self, *args)
 
-    def ChangeArray(self, *args):
+    def ChangeArray(self, *args) -> "void" :
         """
         * Sets the inner array <myValue> of the IntegerArray attribute to <newArray>. If value of <newArray> differs from <myValue>, Backup performed and myValue refers to new instance of HArray1OfInteger that holds <newArray> values If <isCheckItems> equal True each item of <newArray> will be checked with each item of <myValue> for coincidence (to avoid backup).
 
@@ -4671,7 +4671,7 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_ChangeArray(self, *args)
 
-    def Array(self, *args):
+    def Array(self, *args) -> "Handle_TColStd_HArray1OfInteger const" :
         """
         * Return the inner array of the IntegerArray attribute
 
@@ -4680,14 +4680,14 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerArray_Array(self, *args)
 
-    def GetDelta(self, *args):
+    def GetDelta(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_IntegerArray_GetDelta(self, *args)
 
-    def SetDelta(self, *args):
+    def SetDelta(self, *args) -> "void" :
         """
         * for internal use only!
 
@@ -4704,15 +4704,15 @@ class TDataStd_IntegerArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_IntegerArray_swiginit(self,_TDataStd.new_TDataStd_IntegerArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_IntegerArray self) -> std::string"""
         return _TDataStd.TDataStd_IntegerArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_IntegerArray self)"""
         return _TDataStd.TDataStd_IntegerArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_IntegerArray" :
         """GetHandle(TDataStd_IntegerArray self) -> Handle_TDataStd_IntegerArray"""
         return _TDataStd.TDataStd_IntegerArray_GetHandle(self)
 
@@ -4740,7 +4740,7 @@ TDataStd_IntegerArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_IntegerA
 TDataStd_IntegerArray_swigregister = _TDataStd.TDataStd_IntegerArray_swigregister
 TDataStd_IntegerArray_swigregister(TDataStd_IntegerArray)
 
-def TDataStd_IntegerArray_GetID(*args):
+def TDataStd_IntegerArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for arrays of integers.
 
@@ -4749,7 +4749,7 @@ def TDataStd_IntegerArray_GetID(*args):
     """
   return _TDataStd.TDataStd_IntegerArray_GetID(*args)
 
-def TDataStd_IntegerArray_Set(*args):
+def TDataStd_IntegerArray_Set(*args) -> "Handle_TDataStd_IntegerArray" :
   """
     * Finds or creates on the <label> an integer array attribute with the specified <lower> and <upper> boundaries. If <isDelta> == False, DefaultDeltaOnModification is used. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -4787,14 +4787,14 @@ Handle_TDataStd_IntegerArray._kill_pointed = new_instancemethod(_TDataStd.Handle
 Handle_TDataStd_IntegerArray_swigregister = _TDataStd.Handle_TDataStd_IntegerArray_swigregister
 Handle_TDataStd_IntegerArray_swigregister(Handle_TDataStd_IntegerArray)
 
-def Handle_TDataStd_IntegerArray_DownCast(*args):
+def Handle_TDataStd_IntegerArray_DownCast(*args) -> "Handle_TDataStd_IntegerArray const" :
   return _TDataStd.Handle_TDataStd_IntegerArray_DownCast(*args)
 Handle_TDataStd_IntegerArray_DownCast = _TDataStd.Handle_TDataStd_IntegerArray_DownCast
 
 class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the list of integer attribute.
 
@@ -4804,7 +4804,7 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_IntegerList_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_IntegerList" :
         """
         * Finds or creates a list of integer values attribute.
 
@@ -4822,21 +4822,21 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_IntegerList_swiginit(self,_TDataStd.new_TDataStd_IntegerList(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_IntegerList_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_IntegerList_Extent(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param value:
         :type value: int
@@ -4845,7 +4845,7 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param value:
         :type value: int
@@ -4854,7 +4854,7 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerList_Append(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> before the first meet of <before_value>.
 
@@ -4867,7 +4867,7 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> after the first meet of <after_value>.
 
@@ -4880,7 +4880,7 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerList_InsertAfter(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes the first meet of the <value>.
 
@@ -4891,43 +4891,43 @@ class TDataStd_IntegerList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_IntegerList_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_IntegerList_Clear(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_IntegerList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_IntegerList_Last(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :rtype: TColStd_ListOfInteger
 
         """
         return _TDataStd.TDataStd_IntegerList_List(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_IntegerList self) -> std::string"""
         return _TDataStd.TDataStd_IntegerList_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_IntegerList self)"""
         return _TDataStd.TDataStd_IntegerList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_IntegerList" :
         """GetHandle(TDataStd_IntegerList self) -> Handle_TDataStd_IntegerList"""
         return _TDataStd.TDataStd_IntegerList_GetHandle(self)
 
@@ -4956,7 +4956,7 @@ TDataStd_IntegerList.GetHandle = new_instancemethod(_TDataStd.TDataStd_IntegerLi
 TDataStd_IntegerList_swigregister = _TDataStd.TDataStd_IntegerList_swigregister
 TDataStd_IntegerList_swigregister(TDataStd_IntegerList)
 
-def TDataStd_IntegerList_GetID(*args):
+def TDataStd_IntegerList_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the list of integer attribute.
 
@@ -4965,7 +4965,7 @@ def TDataStd_IntegerList_GetID(*args):
     """
   return _TDataStd.TDataStd_IntegerList_GetID(*args)
 
-def TDataStd_IntegerList_Set(*args):
+def TDataStd_IntegerList_Set(*args) -> "Handle_TDataStd_IntegerList" :
   """
     * Finds or creates a list of integer values attribute.
 
@@ -4997,7 +4997,7 @@ Handle_TDataStd_IntegerList._kill_pointed = new_instancemethod(_TDataStd.Handle_
 Handle_TDataStd_IntegerList_swigregister = _TDataStd.Handle_TDataStd_IntegerList_swigregister
 Handle_TDataStd_IntegerList_swigregister(Handle_TDataStd_IntegerList)
 
-def Handle_TDataStd_IntegerList_DownCast(*args):
+def Handle_TDataStd_IntegerList_DownCast(*args) -> "Handle_TDataStd_IntegerList const" :
   return _TDataStd.Handle_TDataStd_IntegerList_DownCast(*args)
 Handle_TDataStd_IntegerList_DownCast = _TDataStd.Handle_TDataStd_IntegerList_DownCast
 
@@ -5022,7 +5022,7 @@ class TDataStd_LabelArray1(object):
 
         """
         _TDataStd.TDataStd_LabelArray1_swiginit(self,_TDataStd.new_TDataStd_LabelArray1(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TDF_Label &
@@ -5031,21 +5031,21 @@ class TDataStd_LabelArray1(object):
         """
         return _TDataStd.TDataStd_LabelArray1_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_LabelArray1_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_LabelArray1_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDataStd_LabelArray1 const &" :
         """
         :param Other:
         :type Other: TDataStd_LabelArray1 &
@@ -5054,7 +5054,7 @@ class TDataStd_LabelArray1(object):
         """
         return _TDataStd.TDataStd_LabelArray1_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDataStd_LabelArray1 const &" :
         """
         :param Other:
         :type Other: TDataStd_LabelArray1 &
@@ -5063,28 +5063,28 @@ class TDataStd_LabelArray1(object):
         """
         return _TDataStd.TDataStd_LabelArray1_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_LabelArray1_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_LabelArray1_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_LabelArray1_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5095,7 +5095,7 @@ class TDataStd_LabelArray1(object):
         """
         return _TDataStd.TDataStd_LabelArray1_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :param Index:
         :type Index: int
@@ -5104,7 +5104,7 @@ class TDataStd_LabelArray1(object):
         """
         return _TDataStd.TDataStd_LabelArray1_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TDF_Label &" :
         """
         :param Index:
         :type Index: int
@@ -5149,7 +5149,7 @@ class TDataStd_ListIteratorOfListOfByte(object):
 
         """
         _TDataStd.TDataStd_ListIteratorOfListOfByte_swiginit(self,_TDataStd.new_TDataStd_ListIteratorOfListOfByte(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDataStd_ListOfByte &
@@ -5158,21 +5158,21 @@ class TDataStd_ListIteratorOfListOfByte(object):
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfByte_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfByte_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfByte_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte &" :
         """
         :rtype: Standard_Byte
 
@@ -5208,7 +5208,7 @@ class TDataStd_ListIteratorOfListOfExtendedString(object):
 
         """
         _TDataStd.TDataStd_ListIteratorOfListOfExtendedString_swiginit(self,_TDataStd.new_TDataStd_ListIteratorOfListOfExtendedString(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDataStd_ListOfExtendedString &
@@ -5217,21 +5217,21 @@ class TDataStd_ListIteratorOfListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfExtendedString_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfExtendedString_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListIteratorOfListOfExtendedString_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
@@ -5267,18 +5267,18 @@ class TDataStd_ListNodeOfListOfByte(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDataStd.TDataStd_ListNodeOfListOfByte_swiginit(self,_TDataStd.new_TDataStd_ListNodeOfListOfByte(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Byte &" :
         """
         :rtype: Standard_Byte
 
         """
         return _TDataStd.TDataStd_ListNodeOfListOfByte_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ListNodeOfListOfByte self)"""
         return _TDataStd.TDataStd_ListNodeOfListOfByte__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ListNodeOfListOfByte" :
         """GetHandle(TDataStd_ListNodeOfListOfByte self) -> Handle_TDataStd_ListNodeOfListOfByte"""
         return _TDataStd.TDataStd_ListNodeOfListOfByte_GetHandle(self)
 
@@ -5317,7 +5317,7 @@ Handle_TDataStd_ListNodeOfListOfByte._kill_pointed = new_instancemethod(_TDataSt
 Handle_TDataStd_ListNodeOfListOfByte_swigregister = _TDataStd.Handle_TDataStd_ListNodeOfListOfByte_swigregister
 Handle_TDataStd_ListNodeOfListOfByte_swigregister(Handle_TDataStd_ListNodeOfListOfByte)
 
-def Handle_TDataStd_ListNodeOfListOfByte_DownCast(*args):
+def Handle_TDataStd_ListNodeOfListOfByte_DownCast(*args) -> "Handle_TDataStd_ListNodeOfListOfByte const" :
   return _TDataStd.Handle_TDataStd_ListNodeOfListOfByte_DownCast(*args)
 Handle_TDataStd_ListNodeOfListOfByte_DownCast = _TDataStd.Handle_TDataStd_ListNodeOfListOfByte_DownCast
 
@@ -5334,18 +5334,18 @@ class TDataStd_ListNodeOfListOfExtendedString(OCC.TCollection.TCollection_MapNod
 
         """
         _TDataStd.TDataStd_ListNodeOfListOfExtendedString_swiginit(self,_TDataStd.new_TDataStd_ListNodeOfListOfExtendedString(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_ListNodeOfListOfExtendedString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ListNodeOfListOfExtendedString self)"""
         return _TDataStd.TDataStd_ListNodeOfListOfExtendedString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ListNodeOfListOfExtendedString" :
         """GetHandle(TDataStd_ListNodeOfListOfExtendedString self) -> Handle_TDataStd_ListNodeOfListOfExtendedString"""
         return _TDataStd.TDataStd_ListNodeOfListOfExtendedString_GetHandle(self)
 
@@ -5384,7 +5384,7 @@ Handle_TDataStd_ListNodeOfListOfExtendedString._kill_pointed = new_instancemetho
 Handle_TDataStd_ListNodeOfListOfExtendedString_swigregister = _TDataStd.Handle_TDataStd_ListNodeOfListOfExtendedString_swigregister
 Handle_TDataStd_ListNodeOfListOfExtendedString_swigregister(Handle_TDataStd_ListNodeOfListOfExtendedString)
 
-def Handle_TDataStd_ListNodeOfListOfExtendedString_DownCast(*args):
+def Handle_TDataStd_ListNodeOfListOfExtendedString_DownCast(*args) -> "Handle_TDataStd_ListNodeOfListOfExtendedString const" :
   return _TDataStd.Handle_TDataStd_ListNodeOfListOfExtendedString_DownCast(*args)
 Handle_TDataStd_ListNodeOfListOfExtendedString_DownCast = _TDataStd.Handle_TDataStd_ListNodeOfListOfExtendedString_DownCast
 
@@ -5397,7 +5397,7 @@ class TDataStd_ListOfByte(object):
 
         """
         _TDataStd.TDataStd_ListOfByte_swiginit(self,_TDataStd.new_TDataStd_ListOfByte(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDataStd_ListOfByte &
@@ -5406,7 +5406,7 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDataStd_ListOfByte &
@@ -5415,28 +5415,28 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_ListOfByte_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListOfByte_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ListOfByte_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_Byte &
@@ -5455,7 +5455,7 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_Byte &
@@ -5474,28 +5474,28 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Byte &" :
         """
         :rtype: Standard_Byte
 
         """
         return _TDataStd.TDataStd_ListOfByte_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Byte &" :
         """
         :rtype: Standard_Byte
 
         """
         return _TDataStd.TDataStd_ListOfByte_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListOfByte_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDataStd_ListIteratorOfListOfByte &
@@ -5504,7 +5504,7 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_Byte &
@@ -5521,7 +5521,7 @@ class TDataStd_ListOfByte(object):
         """
         return _TDataStd.TDataStd_ListOfByte_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_Byte &
@@ -5572,7 +5572,7 @@ class TDataStd_ListOfExtendedString(object):
 
         """
         _TDataStd.TDataStd_ListOfExtendedString_swiginit(self,_TDataStd.new_TDataStd_ListOfExtendedString(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDataStd_ListOfExtendedString &
@@ -5581,7 +5581,7 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDataStd_ListOfExtendedString &
@@ -5590,28 +5590,28 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_ExtendedString &
@@ -5630,7 +5630,7 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_ExtendedString &
@@ -5649,28 +5649,28 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ListOfExtendedString_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDataStd_ListIteratorOfListOfExtendedString &
@@ -5679,7 +5679,7 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_ExtendedString &
@@ -5696,7 +5696,7 @@ class TDataStd_ListOfExtendedString(object):
         """
         return _TDataStd.TDataStd_ListOfExtendedString_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TCollection_ExtendedString &
@@ -5741,7 +5741,7 @@ TDataStd_ListOfExtendedString_swigregister(TDataStd_ListOfExtendedString)
 class TDataStd_Name(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods working on the name itself ======================================== Returns the GUID for name attributes.
 
@@ -5757,7 +5757,7 @@ class TDataStd_Name(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Name_swiginit(self,_TDataStd.new_TDataStd_Name(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Creates (if does not exist) and sets the name in the name attribute. from any label <L> search in father labels (L is not concerned) the first name attribute.if found set it in <father>. class methods working on the name tree ====================================== Search in the whole TDF_Data the Name attribute which fit with <fullPath>. Returns True if found. Search under <currentLabel> a label which fit with <name>. Returns True if found. Shortcut which avoids building a ListOfExtendedStrin. Search in the whole TDF_Data the label which fit with name Returns True if found. tools methods to translate path <-> pathlist =========================================== move to draw For Draw test we may provide this tool method which convert a path in a //!	 	sequence of string to call after the FindLabel methods. Example: if it's given 'Assembly:Part_1:Sketch_5' it will return in <pathlist> the list of 3 strings: 'Assembly','Part_1','Sketch_5'. move to draw from <pathlist> build the string path Name methods ============
 
@@ -5776,7 +5776,7 @@ class TDataStd_Name(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Name_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns the name contained in this name attribute.
 
@@ -5785,15 +5785,15 @@ class TDataStd_Name(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Name_Get(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Name self) -> std::string"""
         return _TDataStd.TDataStd_Name_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Name self)"""
         return _TDataStd.TDataStd_Name__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Name" :
         """GetHandle(TDataStd_Name self) -> Handle_TDataStd_Name"""
         return _TDataStd.TDataStd_Name_GetHandle(self)
 
@@ -5813,7 +5813,7 @@ TDataStd_Name.GetHandle = new_instancemethod(_TDataStd.TDataStd_Name_GetHandle,N
 TDataStd_Name_swigregister = _TDataStd.TDataStd_Name_swigregister
 TDataStd_Name_swigregister(TDataStd_Name)
 
-def TDataStd_Name_GetID(*args):
+def TDataStd_Name_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods working on the name itself ======================================== Returns the GUID for name attributes.
 
@@ -5843,14 +5843,14 @@ Handle_TDataStd_Name._kill_pointed = new_instancemethod(_TDataStd.Handle_TDataSt
 Handle_TDataStd_Name_swigregister = _TDataStd.Handle_TDataStd_Name_swigregister
 Handle_TDataStd_Name_swigregister(Handle_TDataStd_Name)
 
-def Handle_TDataStd_Name_DownCast(*args):
+def Handle_TDataStd_Name_DownCast(*args) -> "Handle_TDataStd_Name const" :
   return _TDataStd.Handle_TDataStd_Name_DownCast(*args)
 Handle_TDataStd_Name_DownCast = _TDataStd.Handle_TDataStd_Name_DownCast
 
 class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the named data attribute.
 
@@ -5860,7 +5860,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_NamedData_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_NamedData" :
         """
         * Finds or creates a named data attribute.
 
@@ -5878,7 +5878,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_NamedData_swiginit(self,_TDataStd.new_TDataStd_NamedData(*args))
-    def HasIntegers(self, *args):
+    def HasIntegers(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if at least one named integer value is kept in the attribute.
 
@@ -5887,7 +5887,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasIntegers(self, *args)
 
-    def HasInteger(self, *args):
+    def HasInteger(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains specified by Name integer value.
 
@@ -5898,7 +5898,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasInteger(self, *args)
 
-    def GetInteger(self, *args):
+    def GetInteger(self, *args) -> "Standard_Integer" :
         """
         * Returns the integer value specified by the Name. It returns 0 if internal map doesn't contain the specified integer (use HasInteger() to check before).
 
@@ -5909,7 +5909,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetInteger(self, *args)
 
-    def SetInteger(self, *args):
+    def SetInteger(self, *args) -> "void" :
         """
         * Defines a named integer. If the integer already exists, it changes its value to <theInteger>.
 
@@ -5922,7 +5922,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetInteger(self, *args)
 
-    def GetIntegersContainer(self, *args):
+    def GetIntegersContainer(self, *args) -> "TColStd_DataMapOfStringInteger const &" :
         """
         * Returns the internal container of named integers.
 
@@ -5931,7 +5931,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetIntegersContainer(self, *args)
 
-    def ChangeIntegers(self, *args):
+    def ChangeIntegers(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theIntegers>.
 
@@ -5942,7 +5942,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeIntegers(self, *args)
 
-    def HasReals(self, *args):
+    def HasReals(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if at least one named real value is kept in the attribute.
 
@@ -5951,7 +5951,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasReals(self, *args)
 
-    def HasReal(self, *args):
+    def HasReal(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains a real specified by Name.
 
@@ -5962,7 +5962,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasReal(self, *args)
 
-    def GetReal(self, *args):
+    def GetReal(self, *args) -> "Standard_Real" :
         """
         * Returns the named real. It returns 0.0 if there is no such a named real (use HasReal()).
 
@@ -5973,7 +5973,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetReal(self, *args)
 
-    def SetReal(self, *args):
+    def SetReal(self, *args) -> "void" :
         """
         * Defines a named real. If the real already exists, it changes its value to <theReal>.
 
@@ -5986,7 +5986,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetReal(self, *args)
 
-    def GetRealsContainer(self, *args):
+    def GetRealsContainer(self, *args) -> "TDataStd_DataMapOfStringReal const &" :
         """
         * Returns the internal container of named reals.
 
@@ -5995,7 +5995,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetRealsContainer(self, *args)
 
-    def ChangeReals(self, *args):
+    def ChangeReals(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theReals>.
 
@@ -6006,7 +6006,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeReals(self, *args)
 
-    def HasStrings(self, *args):
+    def HasStrings(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are some named strings in the attribute.
 
@@ -6015,7 +6015,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasStrings(self, *args)
 
-    def HasString(self, *args):
+    def HasString(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains this named string.
 
@@ -6026,7 +6026,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasString(self, *args)
 
-    def GetString(self, *args):
+    def GetString(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns the named string. It returns an empty string if there is no such a named string (use HasString()).
 
@@ -6037,7 +6037,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetString(self, *args)
 
-    def SetString(self, *args):
+    def SetString(self, *args) -> "void" :
         """
         * Defines a named string. If the string already exists, it changes its value to <theString>.
 
@@ -6050,7 +6050,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetString(self, *args)
 
-    def GetStringsContainer(self, *args):
+    def GetStringsContainer(self, *args) -> "TDataStd_DataMapOfStringString const &" :
         """
         * Returns the internal container of named strings.
 
@@ -6059,7 +6059,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetStringsContainer(self, *args)
 
-    def ChangeStrings(self, *args):
+    def ChangeStrings(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theStrings>.
 
@@ -6070,7 +6070,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeStrings(self, *args)
 
-    def HasBytes(self, *args):
+    def HasBytes(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are some named bytes in the attribute.
 
@@ -6079,7 +6079,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasBytes(self, *args)
 
-    def HasByte(self, *args):
+    def HasByte(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains this named byte.
 
@@ -6090,7 +6090,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasByte(self, *args)
 
-    def GetByte(self, *args):
+    def GetByte(self, *args) -> "Standard_Byte" :
         """
         * Returns the named byte. It returns 0 if there is no such a named byte (use HasByte()).
 
@@ -6101,7 +6101,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetByte(self, *args)
 
-    def SetByte(self, *args):
+    def SetByte(self, *args) -> "void" :
         """
         * Defines a named byte. If the byte already exists, it changes its value to <theByte>.
 
@@ -6114,7 +6114,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetByte(self, *args)
 
-    def GetBytesContainer(self, *args):
+    def GetBytesContainer(self, *args) -> "TDataStd_DataMapOfStringByte const &" :
         """
         * Returns the internal container of named bytes.
 
@@ -6123,7 +6123,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetBytesContainer(self, *args)
 
-    def ChangeBytes(self, *args):
+    def ChangeBytes(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theBytes>.
 
@@ -6134,7 +6134,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeBytes(self, *args)
 
-    def HasArraysOfIntegers(self, *args):
+    def HasArraysOfIntegers(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are some named arrays of integer values in the attribute.
 
@@ -6143,7 +6143,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasArraysOfIntegers(self, *args)
 
-    def HasArrayOfIntegers(self, *args):
+    def HasArrayOfIntegers(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains this named array of integer values.
 
@@ -6154,7 +6154,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasArrayOfIntegers(self, *args)
 
-    def GetArrayOfIntegers(self, *args):
+    def GetArrayOfIntegers(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         * Returns the named array of integer values. It returns a NULL Handle if there is no such a named array of integers (use HasArrayOfIntegers()).
 
@@ -6165,7 +6165,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetArrayOfIntegers(self, *args)
 
-    def SetArrayOfIntegers(self, *args):
+    def SetArrayOfIntegers(self, *args) -> "void" :
         """
         * Defines a named array of integer values. If the array already exists, it changes its value to <theArrayOfIntegers>.
 
@@ -6178,7 +6178,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetArrayOfIntegers(self, *args)
 
-    def GetArraysOfIntegersContainer(self, *args):
+    def GetArraysOfIntegersContainer(self, *args) -> "TDataStd_DataMapOfStringHArray1OfInteger const &" :
         """
         * Returns the internal container of named arrays of integer values.
 
@@ -6187,7 +6187,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetArraysOfIntegersContainer(self, *args)
 
-    def ChangeArraysOfIntegers(self, *args):
+    def ChangeArraysOfIntegers(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theArraysOfIntegers>.
 
@@ -6198,7 +6198,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeArraysOfIntegers(self, *args)
 
-    def HasArraysOfReals(self, *args):
+    def HasArraysOfReals(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there are some named arrays of real values in the attribute.
 
@@ -6207,7 +6207,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasArraysOfReals(self, *args)
 
-    def HasArrayOfReals(self, *args):
+    def HasArrayOfReals(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute contains this named array of real values.
 
@@ -6218,7 +6218,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_HasArrayOfReals(self, *args)
 
-    def GetArrayOfReals(self, *args):
+    def GetArrayOfReals(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         * Returns the named array of real values. It returns a NULL Handle if there is no such a named array of reals (use HasArrayOfReals()).
 
@@ -6229,7 +6229,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetArrayOfReals(self, *args)
 
-    def SetArrayOfReals(self, *args):
+    def SetArrayOfReals(self, *args) -> "void" :
         """
         * Defines a named array of real values. If the array already exists, it changes its value to <theArrayOfReals>.
 
@@ -6242,7 +6242,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_SetArrayOfReals(self, *args)
 
-    def GetArraysOfRealsContainer(self, *args):
+    def GetArraysOfRealsContainer(self, *args) -> "TDataStd_DataMapOfStringHArray1OfReal const &" :
         """
         * Returns the internal container of named arrays of real values.
 
@@ -6251,7 +6251,7 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_GetArraysOfRealsContainer(self, *args)
 
-    def ChangeArraysOfReals(self, *args):
+    def ChangeArraysOfReals(self, *args) -> "void" :
         """
         * Replace the container content by new content of the <theArraysOfReals>.
 
@@ -6262,15 +6262,15 @@ class TDataStd_NamedData(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NamedData_ChangeArraysOfReals(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_NamedData self) -> std::string"""
         return _TDataStd.TDataStd_NamedData_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_NamedData self)"""
         return _TDataStd.TDataStd_NamedData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_NamedData" :
         """GetHandle(TDataStd_NamedData self) -> Handle_TDataStd_NamedData"""
         return _TDataStd.TDataStd_NamedData_GetHandle(self)
 
@@ -6324,7 +6324,7 @@ TDataStd_NamedData.GetHandle = new_instancemethod(_TDataStd.TDataStd_NamedData_G
 TDataStd_NamedData_swigregister = _TDataStd.TDataStd_NamedData_swigregister
 TDataStd_NamedData_swigregister(TDataStd_NamedData)
 
-def TDataStd_NamedData_GetID(*args):
+def TDataStd_NamedData_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the named data attribute.
 
@@ -6333,7 +6333,7 @@ def TDataStd_NamedData_GetID(*args):
     """
   return _TDataStd.TDataStd_NamedData_GetID(*args)
 
-def TDataStd_NamedData_Set(*args):
+def TDataStd_NamedData_Set(*args) -> "Handle_TDataStd_NamedData" :
   """
     * Finds or creates a named data attribute.
 
@@ -6365,14 +6365,14 @@ Handle_TDataStd_NamedData._kill_pointed = new_instancemethod(_TDataStd.Handle_TD
 Handle_TDataStd_NamedData_swigregister = _TDataStd.Handle_TDataStd_NamedData_swigregister
 Handle_TDataStd_NamedData_swigregister(Handle_TDataStd_NamedData)
 
-def Handle_TDataStd_NamedData_DownCast(*args):
+def Handle_TDataStd_NamedData_DownCast(*args) -> "Handle_TDataStd_NamedData const" :
   return _TDataStd.Handle_TDataStd_NamedData_DownCast(*args)
 Handle_TDataStd_NamedData_DownCast = _TDataStd.Handle_TDataStd_NamedData_DownCast
 
 class TDataStd_NoteBook(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Find(*args):
+    def Find(*args) -> "Standard_Boolean" :
         """
         * class methods ============= try to retrieve a NoteBook attribute at <current> label or in fathers label of <current>. Returns True if found and set <N>.
 
@@ -6386,7 +6386,7 @@ class TDataStd_NoteBook(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_NoteBook_Find(*args)
 
     Find = staticmethod(Find)
-    def New(*args):
+    def New(*args) -> "Handle_TDataStd_NoteBook" :
         """
         * Create an enpty NoteBook attribute, located at <label>. Raises if <label> has attribute
 
@@ -6398,7 +6398,7 @@ class TDataStd_NoteBook(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_NoteBook_New(*args)
 
     New = staticmethod(New)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * NoteBook methods ===============
 
@@ -6414,7 +6414,7 @@ class TDataStd_NoteBook(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_NoteBook_swiginit(self,_TDataStd.new_TDataStd_NoteBook(*args))
-    def Append(self, *args):
+    def Append(self, *args) -> "Handle_TDataStd_Integer" :
         """
         * Tool to Create an Integer attribute from <value>, Insert it in a new son label of <self>. The Real attribute is returned.
 
@@ -6435,15 +6435,15 @@ class TDataStd_NoteBook(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_NoteBook_Append(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_NoteBook self) -> std::string"""
         return _TDataStd.TDataStd_NoteBook_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_NoteBook self)"""
         return _TDataStd.TDataStd_NoteBook__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_NoteBook" :
         """GetHandle(TDataStd_NoteBook self) -> Handle_TDataStd_NoteBook"""
         return _TDataStd.TDataStd_NoteBook_GetHandle(self)
 
@@ -6462,7 +6462,7 @@ TDataStd_NoteBook.GetHandle = new_instancemethod(_TDataStd.TDataStd_NoteBook_Get
 TDataStd_NoteBook_swigregister = _TDataStd.TDataStd_NoteBook_swigregister
 TDataStd_NoteBook_swigregister(TDataStd_NoteBook)
 
-def TDataStd_NoteBook_Find(*args):
+def TDataStd_NoteBook_Find(*args) -> "Standard_Boolean" :
   """
     * class methods ============= try to retrieve a NoteBook attribute at <current> label or in fathers label of <current>. Returns True if found and set <N>.
 
@@ -6475,7 +6475,7 @@ def TDataStd_NoteBook_Find(*args):
     """
   return _TDataStd.TDataStd_NoteBook_Find(*args)
 
-def TDataStd_NoteBook_New(*args):
+def TDataStd_NoteBook_New(*args) -> "Handle_TDataStd_NoteBook" :
   """
     * Create an enpty NoteBook attribute, located at <label>. Raises if <label> has attribute
 
@@ -6486,7 +6486,7 @@ def TDataStd_NoteBook_New(*args):
     """
   return _TDataStd.TDataStd_NoteBook_New(*args)
 
-def TDataStd_NoteBook_GetID(*args):
+def TDataStd_NoteBook_GetID(*args) -> "Standard_GUID const &" :
   """
     * NoteBook methods ===============
 
@@ -6516,14 +6516,14 @@ Handle_TDataStd_NoteBook._kill_pointed = new_instancemethod(_TDataStd.Handle_TDa
 Handle_TDataStd_NoteBook_swigregister = _TDataStd.Handle_TDataStd_NoteBook_swigregister
 Handle_TDataStd_NoteBook_swigregister(Handle_TDataStd_NoteBook)
 
-def Handle_TDataStd_NoteBook_DownCast(*args):
+def Handle_TDataStd_NoteBook_DownCast(*args) -> "Handle_TDataStd_NoteBook const" :
   return _TDataStd.Handle_TDataStd_NoteBook_DownCast(*args)
 Handle_TDataStd_NoteBook_DownCast = _TDataStd.Handle_TDataStd_NoteBook_DownCast
 
 class TDataStd_Real(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for real numbers.
 
@@ -6539,7 +6539,7 @@ class TDataStd_Real(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Real_swiginit(self,_TDataStd.new_TDataStd_Real(*args))
-    def SetDimension(self, *args):
+    def SetDimension(self, *args) -> "void" :
         """
         :param DIM:
         :type DIM: TDataStd_RealEnum
@@ -6548,14 +6548,14 @@ class TDataStd_Real(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Real_SetDimension(self, *args)
 
-    def GetDimension(self, *args):
+    def GetDimension(self, *args) -> "TDataStd_RealEnum" :
         """
         :rtype: TDataStd_RealEnum
 
         """
         return _TDataStd.TDataStd_Real_GetDimension(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Finds, or creates, an Real attribute and sets <value> the Real attribute is returned. the Real dimension is Scalar by default. use SetDimension to overwrite. Real methods ============
 
@@ -6574,7 +6574,7 @@ class TDataStd_Real(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Real_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "Standard_Real" :
         """
         * Returns the real number value contained in the attribute.
 
@@ -6583,7 +6583,7 @@ class TDataStd_Real(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Real_Get(self, *args)
 
-    def IsCaptured(self, *args):
+    def IsCaptured(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a reference on the same label
 
@@ -6592,15 +6592,15 @@ class TDataStd_Real(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Real_IsCaptured(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Real self) -> std::string"""
         return _TDataStd.TDataStd_Real_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Real self)"""
         return _TDataStd.TDataStd_Real__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Real" :
         """GetHandle(TDataStd_Real self) -> Handle_TDataStd_Real"""
         return _TDataStd.TDataStd_Real_GetHandle(self)
 
@@ -6623,7 +6623,7 @@ TDataStd_Real.GetHandle = new_instancemethod(_TDataStd.TDataStd_Real_GetHandle,N
 TDataStd_Real_swigregister = _TDataStd.TDataStd_Real_swigregister
 TDataStd_Real_swigregister(TDataStd_Real)
 
-def TDataStd_Real_GetID(*args):
+def TDataStd_Real_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for real numbers.
 
@@ -6653,14 +6653,14 @@ Handle_TDataStd_Real._kill_pointed = new_instancemethod(_TDataStd.Handle_TDataSt
 Handle_TDataStd_Real_swigregister = _TDataStd.Handle_TDataStd_Real_swigregister
 Handle_TDataStd_Real_swigregister(Handle_TDataStd_Real)
 
-def Handle_TDataStd_Real_DownCast(*args):
+def Handle_TDataStd_Real_DownCast(*args) -> "Handle_TDataStd_Real const" :
   return _TDataStd.Handle_TDataStd_Real_DownCast(*args)
 Handle_TDataStd_Real_DownCast = _TDataStd.Handle_TDataStd_Real_DownCast
 
 class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods ============= Returns the GUID for arrays of reals.
 
@@ -6670,7 +6670,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_RealArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_RealArray" :
         """
         * Finds or creates on the <label> a real array attribute with the specified <lower> and <upper> boundaries. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -6688,7 +6688,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_RealArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize the inner array with bounds from <lower> to <upper>
 
@@ -6701,7 +6701,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -6714,7 +6714,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         * Return the value of the <Index>th element of the array
 
@@ -6725,7 +6725,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Returns the lower boundary of the array.
 
@@ -6734,7 +6734,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Returns the upper boundary of the array.
 
@@ -6743,7 +6743,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of elements of the array of reals in terms of the number of elements it contains.
 
@@ -6752,7 +6752,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Length(self, *args)
 
-    def ChangeArray(self, *args):
+    def ChangeArray(self, *args) -> "void" :
         """
         * Sets the inner array <myValue> of the RealArray attribute to <newArray>. If value of <newArray> differs from <myValue>, Backup performed and myValue refers to new instance of HArray1OfReal that holds <newArray> values If <isCheckItems> equal True each item of <newArray> will be checked with each item of <myValue> for coincidence (to avoid backup).
 
@@ -6765,7 +6765,7 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_ChangeArray(self, *args)
 
-    def Array(self, *args):
+    def Array(self, *args) -> "Handle_TColStd_HArray1OfReal const" :
         """
         * Returns the handle of this array of reals.
 
@@ -6774,14 +6774,14 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealArray_Array(self, *args)
 
-    def GetDelta(self, *args):
+    def GetDelta(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_RealArray_GetDelta(self, *args)
 
-    def SetDelta(self, *args):
+    def SetDelta(self, *args) -> "void" :
         """
         * for internal use only!
 
@@ -6798,15 +6798,15 @@ class TDataStd_RealArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_RealArray_swiginit(self,_TDataStd.new_TDataStd_RealArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_RealArray self) -> std::string"""
         return _TDataStd.TDataStd_RealArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_RealArray self)"""
         return _TDataStd.TDataStd_RealArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_RealArray" :
         """GetHandle(TDataStd_RealArray self) -> Handle_TDataStd_RealArray"""
         return _TDataStd.TDataStd_RealArray_GetHandle(self)
 
@@ -6834,7 +6834,7 @@ TDataStd_RealArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_RealArray_G
 TDataStd_RealArray_swigregister = _TDataStd.TDataStd_RealArray_swigregister
 TDataStd_RealArray_swigregister(TDataStd_RealArray)
 
-def TDataStd_RealArray_GetID(*args):
+def TDataStd_RealArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods ============= Returns the GUID for arrays of reals.
 
@@ -6843,7 +6843,7 @@ def TDataStd_RealArray_GetID(*args):
     """
   return _TDataStd.TDataStd_RealArray_GetID(*args)
 
-def TDataStd_RealArray_Set(*args):
+def TDataStd_RealArray_Set(*args) -> "Handle_TDataStd_RealArray" :
   """
     * Finds or creates on the <label> a real array attribute with the specified <lower> and <upper> boundaries. If attribute is already set, all input parameters are refused and the found attribute is returned.
 
@@ -6881,14 +6881,14 @@ Handle_TDataStd_RealArray._kill_pointed = new_instancemethod(_TDataStd.Handle_TD
 Handle_TDataStd_RealArray_swigregister = _TDataStd.Handle_TDataStd_RealArray_swigregister
 Handle_TDataStd_RealArray_swigregister(Handle_TDataStd_RealArray)
 
-def Handle_TDataStd_RealArray_DownCast(*args):
+def Handle_TDataStd_RealArray_DownCast(*args) -> "Handle_TDataStd_RealArray const" :
   return _TDataStd.Handle_TDataStd_RealArray_DownCast(*args)
 Handle_TDataStd_RealArray_DownCast = _TDataStd.Handle_TDataStd_RealArray_DownCast
 
 class TDataStd_RealList(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the list of doubles attribute.
 
@@ -6898,7 +6898,7 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_RealList_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_RealList" :
         """
         * Finds or creates a list of double values attribute.
 
@@ -6916,21 +6916,21 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_RealList_swiginit(self,_TDataStd.new_TDataStd_RealList(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_RealList_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_RealList_Extent(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param value:
         :type value: float
@@ -6939,7 +6939,7 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param value:
         :type value: float
@@ -6948,7 +6948,7 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealList_Append(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> before the first meet of <before_value>.
 
@@ -6961,7 +6961,7 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> after the first meet of <after_value>.
 
@@ -6974,7 +6974,7 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealList_InsertAfter(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes the first meet of the <value>.
 
@@ -6985,43 +6985,43 @@ class TDataStd_RealList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_RealList_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_RealList_Clear(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _TDataStd.TDataStd_RealList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _TDataStd.TDataStd_RealList_Last(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "TColStd_ListOfReal const &" :
         """
         :rtype: TColStd_ListOfReal
 
         """
         return _TDataStd.TDataStd_RealList_List(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_RealList self) -> std::string"""
         return _TDataStd.TDataStd_RealList_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_RealList self)"""
         return _TDataStd.TDataStd_RealList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_RealList" :
         """GetHandle(TDataStd_RealList self) -> Handle_TDataStd_RealList"""
         return _TDataStd.TDataStd_RealList_GetHandle(self)
 
@@ -7050,7 +7050,7 @@ TDataStd_RealList.GetHandle = new_instancemethod(_TDataStd.TDataStd_RealList_Get
 TDataStd_RealList_swigregister = _TDataStd.TDataStd_RealList_swigregister
 TDataStd_RealList_swigregister(TDataStd_RealList)
 
-def TDataStd_RealList_GetID(*args):
+def TDataStd_RealList_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the list of doubles attribute.
 
@@ -7059,7 +7059,7 @@ def TDataStd_RealList_GetID(*args):
     """
   return _TDataStd.TDataStd_RealList_GetID(*args)
 
-def TDataStd_RealList_Set(*args):
+def TDataStd_RealList_Set(*args) -> "Handle_TDataStd_RealList" :
   """
     * Finds or creates a list of double values attribute.
 
@@ -7091,14 +7091,14 @@ Handle_TDataStd_RealList._kill_pointed = new_instancemethod(_TDataStd.Handle_TDa
 Handle_TDataStd_RealList_swigregister = _TDataStd.Handle_TDataStd_RealList_swigregister
 Handle_TDataStd_RealList_swigregister(Handle_TDataStd_RealList)
 
-def Handle_TDataStd_RealList_DownCast(*args):
+def Handle_TDataStd_RealList_DownCast(*args) -> "Handle_TDataStd_RealList const" :
   return _TDataStd.Handle_TDataStd_RealList_DownCast(*args)
 Handle_TDataStd_RealList_DownCast = _TDataStd.Handle_TDataStd_RealList_DownCast
 
 class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the array of references (labels) attribute.
 
@@ -7108,7 +7108,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ReferenceArray_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_ReferenceArray" :
         """
         * Finds or creates an array of reference values (labels) attribute.
 
@@ -7124,7 +7124,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ReferenceArray_Set(*args)
 
     Set = staticmethod(Set)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize the inner array with bounds from <lower> to <upper>
 
@@ -7137,7 +7137,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_Init(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the <Index>th element of the array to <Value> OutOfRange exception is raised if <Index> doesn't respect Lower and Upper bounds of the internal array.
 
@@ -7150,7 +7150,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label" :
         """
         * Returns the value of the <Index>th element of the array.
 
@@ -7161,7 +7161,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_Value(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         * Returns the lower boundary of the array.
 
@@ -7170,7 +7170,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         * Returns the upper boundary of the array.
 
@@ -7179,7 +7179,7 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_Upper(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of elements in the array.
 
@@ -7188,14 +7188,14 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceArray_Length(self, *args)
 
-    def InternalArray(self, *args):
+    def InternalArray(self, *args) -> "Handle_TDataStd_HLabelArray1 const &" :
         """
         :rtype: Handle_TDataStd_HLabelArray1
 
         """
         return _TDataStd.TDataStd_ReferenceArray_InternalArray(self, *args)
 
-    def SetInternalArray(self, *args):
+    def SetInternalArray(self, *args) -> "void" :
         """
         :param values:
         :type values: Handle_TDataStd_HLabelArray1 &
@@ -7212,15 +7212,15 @@ class TDataStd_ReferenceArray(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_ReferenceArray_swiginit(self,_TDataStd.new_TDataStd_ReferenceArray(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_ReferenceArray self) -> std::string"""
         return _TDataStd.TDataStd_ReferenceArray_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ReferenceArray self)"""
         return _TDataStd.TDataStd_ReferenceArray__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ReferenceArray" :
         """GetHandle(TDataStd_ReferenceArray self) -> Handle_TDataStd_ReferenceArray"""
         return _TDataStd.TDataStd_ReferenceArray_GetHandle(self)
 
@@ -7246,7 +7246,7 @@ TDataStd_ReferenceArray.GetHandle = new_instancemethod(_TDataStd.TDataStd_Refere
 TDataStd_ReferenceArray_swigregister = _TDataStd.TDataStd_ReferenceArray_swigregister
 TDataStd_ReferenceArray_swigregister(TDataStd_ReferenceArray)
 
-def TDataStd_ReferenceArray_GetID(*args):
+def TDataStd_ReferenceArray_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the array of references (labels) attribute.
 
@@ -7255,7 +7255,7 @@ def TDataStd_ReferenceArray_GetID(*args):
     """
   return _TDataStd.TDataStd_ReferenceArray_GetID(*args)
 
-def TDataStd_ReferenceArray_Set(*args):
+def TDataStd_ReferenceArray_Set(*args) -> "Handle_TDataStd_ReferenceArray" :
   """
     * Finds or creates an array of reference values (labels) attribute.
 
@@ -7291,14 +7291,14 @@ Handle_TDataStd_ReferenceArray._kill_pointed = new_instancemethod(_TDataStd.Hand
 Handle_TDataStd_ReferenceArray_swigregister = _TDataStd.Handle_TDataStd_ReferenceArray_swigregister
 Handle_TDataStd_ReferenceArray_swigregister(Handle_TDataStd_ReferenceArray)
 
-def Handle_TDataStd_ReferenceArray_DownCast(*args):
+def Handle_TDataStd_ReferenceArray_DownCast(*args) -> "Handle_TDataStd_ReferenceArray const" :
   return _TDataStd.Handle_TDataStd_ReferenceArray_DownCast(*args)
 Handle_TDataStd_ReferenceArray_DownCast = _TDataStd.Handle_TDataStd_ReferenceArray_DownCast
 
 class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ============== Returns the ID of the list of references (labels) attribute.
 
@@ -7308,7 +7308,7 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_ReferenceList_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_ReferenceList" :
         """
         * Finds or creates a list of reference values (labels) attribute.
 
@@ -7326,21 +7326,21 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_ReferenceList_swiginit(self,_TDataStd.new_TDataStd_ReferenceList(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDataStd.TDataStd_ReferenceList_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDataStd.TDataStd_ReferenceList_Extent(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param value:
         :type value: TDF_Label &
@@ -7349,7 +7349,7 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param value:
         :type value: TDF_Label &
@@ -7358,7 +7358,7 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceList_Append(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> before the first meet of <before_value>.
 
@@ -7371,7 +7371,7 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the <value> after the first meet of <after_value>.
 
@@ -7384,7 +7384,7 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceList_InsertAfter(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes the first meet of the <value>.
 
@@ -7395,43 +7395,43 @@ class TDataStd_ReferenceList(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_ReferenceList_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDataStd.TDataStd_ReferenceList_Clear(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDataStd.TDataStd_ReferenceList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDataStd.TDataStd_ReferenceList_Last(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "TDF_LabelList const &" :
         """
         :rtype: TDF_LabelList
 
         """
         return _TDataStd.TDataStd_ReferenceList_List(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_ReferenceList self) -> std::string"""
         return _TDataStd.TDataStd_ReferenceList_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_ReferenceList self)"""
         return _TDataStd.TDataStd_ReferenceList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_ReferenceList" :
         """GetHandle(TDataStd_ReferenceList self) -> Handle_TDataStd_ReferenceList"""
         return _TDataStd.TDataStd_ReferenceList_GetHandle(self)
 
@@ -7460,7 +7460,7 @@ TDataStd_ReferenceList.GetHandle = new_instancemethod(_TDataStd.TDataStd_Referen
 TDataStd_ReferenceList_swigregister = _TDataStd.TDataStd_ReferenceList_swigregister
 TDataStd_ReferenceList_swigregister(TDataStd_ReferenceList)
 
-def TDataStd_ReferenceList_GetID(*args):
+def TDataStd_ReferenceList_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ============== Returns the ID of the list of references (labels) attribute.
 
@@ -7469,7 +7469,7 @@ def TDataStd_ReferenceList_GetID(*args):
     """
   return _TDataStd.TDataStd_ReferenceList_GetID(*args)
 
-def TDataStd_ReferenceList_Set(*args):
+def TDataStd_ReferenceList_Set(*args) -> "Handle_TDataStd_ReferenceList" :
   """
     * Finds or creates a list of reference values (labels) attribute.
 
@@ -7501,14 +7501,14 @@ Handle_TDataStd_ReferenceList._kill_pointed = new_instancemethod(_TDataStd.Handl
 Handle_TDataStd_ReferenceList_swigregister = _TDataStd.Handle_TDataStd_ReferenceList_swigregister
 Handle_TDataStd_ReferenceList_swigregister(Handle_TDataStd_ReferenceList)
 
-def Handle_TDataStd_ReferenceList_DownCast(*args):
+def Handle_TDataStd_ReferenceList_DownCast(*args) -> "Handle_TDataStd_ReferenceList const" :
   return _TDataStd.Handle_TDataStd_ReferenceList_DownCast(*args)
 Handle_TDataStd_ReferenceList_DownCast = _TDataStd.Handle_TDataStd_ReferenceList_DownCast
 
 class TDataStd_Relation(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -7518,7 +7518,7 @@ class TDataStd_Relation(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Relation_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_Relation" :
         """
         * Find, or create, an Relation attribute. Real methods ============
 
@@ -7536,7 +7536,7 @@ class TDataStd_Relation(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Relation_swiginit(self,_TDataStd.new_TDataStd_Relation(*args))
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_ExtendedString" :
         """
         * build and return the relation name
 
@@ -7545,7 +7545,7 @@ class TDataStd_Relation(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Relation_Name(self, *args)
 
-    def SetRelation(self, *args):
+    def SetRelation(self, *args) -> "void" :
         """
         :param E:
         :type E: TCollection_ExtendedString &
@@ -7554,29 +7554,29 @@ class TDataStd_Relation(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Relation_SetRelation(self, *args)
 
-    def GetRelation(self, *args):
+    def GetRelation(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDataStd.TDataStd_Relation_GetRelation(self, *args)
 
-    def GetVariables(self, *args):
+    def GetVariables(self, *args) -> "TDF_AttributeList &" :
         """
         :rtype: TDF_AttributeList
 
         """
         return _TDataStd.TDataStd_Relation_GetVariables(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Relation self) -> std::string"""
         return _TDataStd.TDataStd_Relation_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Relation self)"""
         return _TDataStd.TDataStd_Relation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Relation" :
         """GetHandle(TDataStd_Relation self) -> Handle_TDataStd_Relation"""
         return _TDataStd.TDataStd_Relation_GetHandle(self)
 
@@ -7598,7 +7598,7 @@ TDataStd_Relation.GetHandle = new_instancemethod(_TDataStd.TDataStd_Relation_Get
 TDataStd_Relation_swigregister = _TDataStd.TDataStd_Relation_swigregister
 TDataStd_Relation_swigregister(TDataStd_Relation)
 
-def TDataStd_Relation_GetID(*args):
+def TDataStd_Relation_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -7607,7 +7607,7 @@ def TDataStd_Relation_GetID(*args):
     """
   return _TDataStd.TDataStd_Relation_GetID(*args)
 
-def TDataStd_Relation_Set(*args):
+def TDataStd_Relation_Set(*args) -> "Handle_TDataStd_Relation" :
   """
     * Find, or create, an Relation attribute. Real methods ============
 
@@ -7639,14 +7639,14 @@ Handle_TDataStd_Relation._kill_pointed = new_instancemethod(_TDataStd.Handle_TDa
 Handle_TDataStd_Relation_swigregister = _TDataStd.Handle_TDataStd_Relation_swigregister
 Handle_TDataStd_Relation_swigregister(Handle_TDataStd_Relation)
 
-def Handle_TDataStd_Relation_DownCast(*args):
+def Handle_TDataStd_Relation_DownCast(*args) -> "Handle_TDataStd_Relation const" :
   return _TDataStd.Handle_TDataStd_Relation_DownCast(*args)
 Handle_TDataStd_Relation_DownCast = _TDataStd.Handle_TDataStd_Relation_DownCast
 
 class TDataStd_Tick(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Static methods ==============
 
@@ -7656,7 +7656,7 @@ class TDataStd_Tick(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_Tick_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_Tick" :
         """
         * Find, or create, a Tick attribute. Tick methods ============
 
@@ -7674,15 +7674,15 @@ class TDataStd_Tick(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Tick_swiginit(self,_TDataStd.new_TDataStd_Tick(*args))
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Tick self) -> std::string"""
         return _TDataStd.TDataStd_Tick_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Tick self)"""
         return _TDataStd.TDataStd_Tick__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Tick" :
         """GetHandle(TDataStd_Tick self) -> Handle_TDataStd_Tick"""
         return _TDataStd.TDataStd_Tick_GetHandle(self)
 
@@ -7700,7 +7700,7 @@ TDataStd_Tick.GetHandle = new_instancemethod(_TDataStd.TDataStd_Tick_GetHandle,N
 TDataStd_Tick_swigregister = _TDataStd.TDataStd_Tick_swigregister
 TDataStd_Tick_swigregister(TDataStd_Tick)
 
-def TDataStd_Tick_GetID(*args):
+def TDataStd_Tick_GetID(*args) -> "Standard_GUID const &" :
   """
     * Static methods ==============
 
@@ -7709,7 +7709,7 @@ def TDataStd_Tick_GetID(*args):
     """
   return _TDataStd.TDataStd_Tick_GetID(*args)
 
-def TDataStd_Tick_Set(*args):
+def TDataStd_Tick_Set(*args) -> "Handle_TDataStd_Tick" :
   """
     * Find, or create, a Tick attribute. Tick methods ============
 
@@ -7741,14 +7741,14 @@ Handle_TDataStd_Tick._kill_pointed = new_instancemethod(_TDataStd.Handle_TDataSt
 Handle_TDataStd_Tick_swigregister = _TDataStd.Handle_TDataStd_Tick_swigregister
 Handle_TDataStd_Tick_swigregister(Handle_TDataStd_Tick)
 
-def Handle_TDataStd_Tick_DownCast(*args):
+def Handle_TDataStd_Tick_DownCast(*args) -> "Handle_TDataStd_Tick const" :
   return _TDataStd.Handle_TDataStd_Tick_DownCast(*args)
 Handle_TDataStd_Tick_DownCast = _TDataStd.Handle_TDataStd_Tick_DownCast
 
 class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Find(*args):
+    def Find(*args) -> "Standard_Boolean" :
         """
         * class methods working on the node =================================== Returns true if the tree node T is found on the label L. Otherwise, false is returned.
 
@@ -7762,7 +7762,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_TreeNode_Find(*args)
 
     Find = staticmethod(Find)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_TreeNode" :
         """
         * Finds or Creates a TreeNode attribute on the label <L> with the default tree ID, returned by the method <GetDefaultTreeID>. Returns the created/found TreeNode attribute.
 
@@ -7782,7 +7782,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         return _TDataStd.TDataStd_TreeNode_Set(*args)
 
     Set = staticmethod(Set)
-    def GetDefaultTreeID(*args):
+    def GetDefaultTreeID(*args) -> "Standard_GUID const &" :
         """
         * returns a default tree ID. this ID is used by the <Set> method without explicit tree ID. Instance methods: ================
 
@@ -7798,7 +7798,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_TreeNode_swiginit(self,_TDataStd.new_TDataStd_TreeNode(*args))
-    def Append(self, *args):
+    def Append(self, *args) -> "Standard_Boolean" :
         """
         * Insert the TreeNode <Child> as last child of <self>. If  the insertion is successful <self> becomes the Father of <Child>.
 
@@ -7809,7 +7809,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "Standard_Boolean" :
         """
         * Insert the the TreeNode <Child> as first child of <self>. If the insertion is successful <self> becomes the Father of <Child>
 
@@ -7820,7 +7820,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the TreeNode <Node> before <self>. If insertion is successful <self> and <Node> belongs to the same Father.
 
@@ -7831,7 +7831,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "Standard_Boolean" :
         """
         * Inserts the TreeNode <Node> after <self>. If insertion is successful <self> and <Node> belongs to the same Father.
 
@@ -7842,7 +7842,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_InsertAfter(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes this tree node attribute from its father node. The result is that this attribute becomes a root node.
 
@@ -7851,7 +7851,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Remove(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         * Returns the depth of this tree node in the overall tree node structure. In other words, the number of father tree nodes of this one is returned.
 
@@ -7860,7 +7860,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Depth(self, *args)
 
-    def NbChildren(self, *args):
+    def NbChildren(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of child nodes. If <allLevels> is true, the method counts children of all levels (children of children ...)
 
@@ -7871,7 +7871,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_NbChildren(self, *args)
 
-    def IsAscendant(self, *args):
+    def IsAscendant(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute is an ascendant of of. In other words, if it is a father or the father of a father of of.
 
@@ -7882,7 +7882,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_IsAscendant(self, *args)
 
-    def IsDescendant(self, *args):
+    def IsDescendant(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute is a descendant of of. In other words, if it is a child or the child of a child of of.
 
@@ -7893,7 +7893,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_IsDescendant(self, *args)
 
-    def IsRoot(self, *args):
+    def IsRoot(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute is the ultimate father in the tree.
 
@@ -7902,7 +7902,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_IsRoot(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the ultimate father of this tree node attribute.
 
@@ -7911,7 +7911,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Root(self, *args)
 
-    def IsFather(self, *args):
+    def IsFather(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute is a father of of.
 
@@ -7922,7 +7922,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_IsFather(self, *args)
 
-    def IsChild(self, *args):
+    def IsChild(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute is a child of of.
 
@@ -7933,7 +7933,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_IsChild(self, *args)
 
-    def HasFather(self, *args):
+    def HasFather(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute has a father tree node.
 
@@ -7942,7 +7942,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_HasFather(self, *args)
 
-    def Father(self, *args):
+    def Father(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the father TreeNode of <self>. Null if root.
 
@@ -7951,7 +7951,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Father(self, *args)
 
-    def HasNext(self, *args):
+    def HasNext(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute has a next tree node.
 
@@ -7960,7 +7960,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_HasNext(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the next tree node in this tree node attribute. Warning This tree node is null if it is the last one in this tree node attribute.Returns the next TreeNode of <self>. Null if last.
 
@@ -7969,7 +7969,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Next(self, *args)
 
-    def HasPrevious(self, *args):
+    def HasPrevious(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute has a previous tree node.
 
@@ -7978,7 +7978,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_HasPrevious(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the previous tree node of this tree node attribute. Warning This tree node is null if it is the first one in this tree node attribute.
 
@@ -7987,7 +7987,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Previous(self, *args)
 
-    def HasFirst(self, *args):
+    def HasFirst(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute has a first child tree node.
 
@@ -7996,7 +7996,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_HasFirst(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the first child tree node in this tree node object.
 
@@ -8005,7 +8005,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_First(self, *args)
 
-    def HasLast(self, *args):
+    def HasLast(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tree node attribute has a last child tree node.
 
@@ -8014,7 +8014,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_HasLast(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the last child tree node in this tree node object.
 
@@ -8023,7 +8023,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_Last(self, *args)
 
-    def FindLast(self, *args):
+    def FindLast(self, *args) -> "Handle_TDataStd_TreeNode" :
         """
         * Returns the last child tree node in this tree node object. to set fields =============
 
@@ -8032,7 +8032,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_FindLast(self, *args)
 
-    def SetTreeID(self, *args):
+    def SetTreeID(self, *args) -> "void" :
         """
         :param explicitID:
         :type explicitID: Standard_GUID &
@@ -8041,7 +8041,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetTreeID(self, *args)
 
-    def SetFather(self, *args):
+    def SetFather(self, *args) -> "void" :
         """
         :param F:
         :type F: Handle_TDataStd_TreeNode &
@@ -8050,7 +8050,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetFather(self, *args)
 
-    def SetNext(self, *args):
+    def SetNext(self, *args) -> "void" :
         """
         :param F:
         :type F: Handle_TDataStd_TreeNode &
@@ -8059,7 +8059,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetNext(self, *args)
 
-    def SetPrevious(self, *args):
+    def SetPrevious(self, *args) -> "void" :
         """
         :param F:
         :type F: Handle_TDataStd_TreeNode &
@@ -8068,7 +8068,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetPrevious(self, *args)
 
-    def SetFirst(self, *args):
+    def SetFirst(self, *args) -> "void" :
         """
         :param F:
         :type F: Handle_TDataStd_TreeNode &
@@ -8077,7 +8077,7 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetFirst(self, *args)
 
-    def SetLast(self, *args):
+    def SetLast(self, *args) -> "void" :
         """
         * TreeNode callback: ==================
 
@@ -8088,15 +8088,15 @@ class TDataStd_TreeNode(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_TreeNode_SetLast(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_TreeNode self) -> std::string"""
         return _TDataStd.TDataStd_TreeNode_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_TreeNode self)"""
         return _TDataStd.TDataStd_TreeNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_TreeNode" :
         """GetHandle(TDataStd_TreeNode self) -> Handle_TDataStd_TreeNode"""
         return _TDataStd.TDataStd_TreeNode_GetHandle(self)
 
@@ -8144,7 +8144,7 @@ TDataStd_TreeNode.GetHandle = new_instancemethod(_TDataStd.TDataStd_TreeNode_Get
 TDataStd_TreeNode_swigregister = _TDataStd.TDataStd_TreeNode_swigregister
 TDataStd_TreeNode_swigregister(TDataStd_TreeNode)
 
-def TDataStd_TreeNode_Find(*args):
+def TDataStd_TreeNode_Find(*args) -> "Standard_Boolean" :
   """
     * class methods working on the node =================================== Returns true if the tree node T is found on the label L. Otherwise, false is returned.
 
@@ -8157,7 +8157,7 @@ def TDataStd_TreeNode_Find(*args):
     """
   return _TDataStd.TDataStd_TreeNode_Find(*args)
 
-def TDataStd_TreeNode_Set(*args):
+def TDataStd_TreeNode_Set(*args) -> "Handle_TDataStd_TreeNode" :
   """
     * Finds or Creates a TreeNode attribute on the label <L> with the default tree ID, returned by the method <GetDefaultTreeID>. Returns the created/found TreeNode attribute.
 
@@ -8176,7 +8176,7 @@ def TDataStd_TreeNode_Set(*args):
     """
   return _TDataStd.TDataStd_TreeNode_Set(*args)
 
-def TDataStd_TreeNode_GetDefaultTreeID(*args):
+def TDataStd_TreeNode_GetDefaultTreeID(*args) -> "Standard_GUID const &" :
   """
     * returns a default tree ID. this ID is used by the <Set> method without explicit tree ID. Instance methods: ================
 
@@ -8206,14 +8206,14 @@ Handle_TDataStd_TreeNode._kill_pointed = new_instancemethod(_TDataStd.Handle_TDa
 Handle_TDataStd_TreeNode_swigregister = _TDataStd.Handle_TDataStd_TreeNode_swigregister
 Handle_TDataStd_TreeNode_swigregister(Handle_TDataStd_TreeNode)
 
-def Handle_TDataStd_TreeNode_DownCast(*args):
+def Handle_TDataStd_TreeNode_DownCast(*args) -> "Handle_TDataStd_TreeNode const" :
   return _TDataStd.Handle_TDataStd_TreeNode_DownCast(*args)
 Handle_TDataStd_TreeNode_DownCast = _TDataStd.Handle_TDataStd_TreeNode_DownCast
 
 class TDataStd_UAttribute(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Set(*args):
+    def Set(*args) -> "Handle_TDataStd_UAttribute" :
         """
         * api class methods ============= Find, or create, a UAttribute attribute with <LocalID> as Local GUID. The UAttribute attribute is returned. UAttribute methods ============
 
@@ -8233,7 +8233,7 @@ class TDataStd_UAttribute(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_UAttribute_swiginit(self,_TDataStd.new_TDataStd_UAttribute(*args))
-    def SetID(self, *args):
+    def SetID(self, *args) -> "void" :
         """
         :param LocalID:
         :type LocalID: Standard_GUID &
@@ -8242,15 +8242,15 @@ class TDataStd_UAttribute(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_UAttribute_SetID(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_UAttribute self) -> std::string"""
         return _TDataStd.TDataStd_UAttribute_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_UAttribute self)"""
         return _TDataStd.TDataStd_UAttribute__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_UAttribute" :
         """GetHandle(TDataStd_UAttribute self) -> Handle_TDataStd_UAttribute"""
         return _TDataStd.TDataStd_UAttribute_GetHandle(self)
 
@@ -8269,7 +8269,7 @@ TDataStd_UAttribute.GetHandle = new_instancemethod(_TDataStd.TDataStd_UAttribute
 TDataStd_UAttribute_swigregister = _TDataStd.TDataStd_UAttribute_swigregister
 TDataStd_UAttribute_swigregister(TDataStd_UAttribute)
 
-def TDataStd_UAttribute_Set(*args):
+def TDataStd_UAttribute_Set(*args) -> "Handle_TDataStd_UAttribute" :
   """
     * api class methods ============= Find, or create, a UAttribute attribute with <LocalID> as Local GUID. The UAttribute attribute is returned. UAttribute methods ============
 
@@ -8303,14 +8303,14 @@ Handle_TDataStd_UAttribute._kill_pointed = new_instancemethod(_TDataStd.Handle_T
 Handle_TDataStd_UAttribute_swigregister = _TDataStd.Handle_TDataStd_UAttribute_swigregister
 Handle_TDataStd_UAttribute_swigregister(Handle_TDataStd_UAttribute)
 
-def Handle_TDataStd_UAttribute_DownCast(*args):
+def Handle_TDataStd_UAttribute_DownCast(*args) -> "Handle_TDataStd_UAttribute const" :
   return _TDataStd.Handle_TDataStd_UAttribute_DownCast(*args)
 Handle_TDataStd_UAttribute_DownCast = _TDataStd.Handle_TDataStd_UAttribute_DownCast
 
 class TDataStd_Variable(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -8326,7 +8326,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
 
         """
         _TDataStd.TDataStd_Variable_swiginit(self,_TDataStd.new_TDataStd_Variable(*args))
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * set or change the name of the variable, in myUnknown and my associated Name attribute.
 
@@ -8341,7 +8341,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Name(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Find, or create, a Variable attribute. Real methods ============
 
@@ -8360,7 +8360,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Set(self, *args)
 
-    def IsValued(self, *args):
+    def IsValued(self, *args) -> "Standard_Boolean" :
         """
         * returns True if a Real attribute is associated.
 
@@ -8369,7 +8369,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_IsValued(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "Standard_Real" :
         """
         * returns value stored in associated Real attribute.
 
@@ -8378,7 +8378,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Get(self, *args)
 
-    def Real(self, *args):
+    def Real(self, *args) -> "Handle_TDataStd_Real" :
         """
         * returns associated Real attribute.
 
@@ -8387,7 +8387,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Real(self, *args)
 
-    def IsAssigned(self, *args):
+    def IsAssigned(self, *args) -> "Standard_Boolean" :
         """
         * returns True if an Expression attribute is associated. create(if doesn't exist), set and returns the assigned expression attribute.
 
@@ -8396,7 +8396,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_IsAssigned(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Handle_TDataStd_Expression" :
         """
         * create(if doesn't exist) and returns the assigned expression attribute. fill it after.
 
@@ -8405,7 +8405,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Assign(self, *args)
 
-    def Desassign(self, *args):
+    def Desassign(self, *args) -> "void" :
         """
         * if <self> is assigned delete the associated expression attribute.
 
@@ -8414,7 +8414,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Desassign(self, *args)
 
-    def Expression(self, *args):
+    def Expression(self, *args) -> "Handle_TDataStd_Expression" :
         """
         * if <self> is assigned, returns associated Expression attribute.
 
@@ -8423,7 +8423,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Expression(self, *args)
 
-    def IsCaptured(self, *args):
+    def IsCaptured(self, *args) -> "Standard_Boolean" :
         """
         * shortcut for <Real()->IsCaptured()>
 
@@ -8432,7 +8432,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_IsCaptured(self, *args)
 
-    def IsConstant(self, *args):
+    def IsConstant(self, *args) -> "Standard_Boolean" :
         """
         * A constant value is not modified by regeneration.
 
@@ -8441,7 +8441,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_IsConstant(self, *args)
 
-    def Unit(self, *args):
+    def Unit(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param unit:
         :type unit: TCollection_AsciiString &
@@ -8454,7 +8454,7 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Unit(self, *args)
 
-    def Constant(self, *args):
+    def Constant(self, *args) -> "void" :
         """
         * if <status> is True, this variable will not be modified by the solver.
 
@@ -8465,15 +8465,15 @@ class TDataStd_Variable(OCC.TDF.TDF_Attribute):
         """
         return _TDataStd.TDataStd_Variable_Constant(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDataStd_Variable self) -> std::string"""
         return _TDataStd.TDataStd_Variable_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDataStd_Variable self)"""
         return _TDataStd.TDataStd_Variable__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDataStd_Variable" :
         """GetHandle(TDataStd_Variable self) -> Handle_TDataStd_Variable"""
         return _TDataStd.TDataStd_Variable_GetHandle(self)
 
@@ -8504,7 +8504,7 @@ TDataStd_Variable.GetHandle = new_instancemethod(_TDataStd.TDataStd_Variable_Get
 TDataStd_Variable_swigregister = _TDataStd.TDataStd_Variable_swigregister
 TDataStd_Variable_swigregister(TDataStd_Variable)
 
-def TDataStd_Variable_GetID(*args):
+def TDataStd_Variable_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -8534,7 +8534,7 @@ Handle_TDataStd_Variable._kill_pointed = new_instancemethod(_TDataStd.Handle_TDa
 Handle_TDataStd_Variable_swigregister = _TDataStd.Handle_TDataStd_Variable_swigregister
 Handle_TDataStd_Variable_swigregister(Handle_TDataStd_Variable)
 
-def Handle_TDataStd_Variable_DownCast(*args):
+def Handle_TDataStd_Variable_DownCast(*args) -> "Handle_TDataStd_Variable const" :
   return _TDataStd.Handle_TDataStd_Variable_DownCast(*args)
 Handle_TDataStd_Variable_DownCast = _TDataStd.Handle_TDataStd_Variable_DownCast
 

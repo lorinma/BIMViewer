@@ -133,7 +133,7 @@ import OCC.TColGeom
 class shapebuild(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def PlaneXOY(*args):
+    def PlaneXOY(*args) -> "Handle_Geom_Plane" :
         """
         * Rebuilds a shape with substitution of some components Returns a Geom_Surface which is the Plane XOY (Z positive) This allows to consider an UV space homologous to a 3D space, with this support surface
 
@@ -157,7 +157,7 @@ shapebuild._kill_pointed = new_instancemethod(_ShapeBuild.shapebuild__kill_point
 shapebuild_swigregister = _ShapeBuild.shapebuild_swigregister
 shapebuild_swigregister(shapebuild)
 
-def shapebuild_PlaneXOY(*args):
+def shapebuild_PlaneXOY(*args) -> "Handle_Geom_Plane" :
   """
     * Rebuilds a shape with substitution of some components Returns a Geom_Surface which is the Plane XOY (Z positive) This allows to consider an UV space homologous to a 3D space, with this support surface
 
@@ -169,7 +169,7 @@ def shapebuild_PlaneXOY(*args):
 class ShapeBuild_Edge(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CopyReplaceVertices(self, *args):
+    def CopyReplaceVertices(self, *args) -> "TopoDS_Edge" :
         """
         * Copy edge and replace one or both its vertices to a given one(s). Vertex V1 replaces FORWARD vertex, and V2 - REVERSED, as they are found by TopoDS_Iterator. If V1 or V2 is NULL, the original vertex is taken
 
@@ -184,7 +184,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_CopyReplaceVertices(self, *args)
 
-    def CopyRanges(self, *args):
+    def CopyRanges(self, *args) -> "void" :
         """
         * Copies ranges for curve3d and all common pcurves from edge <fromedge> into edge <toedge>.
 
@@ -201,7 +201,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_CopyRanges(self, *args)
 
-    def SetRange3d(self, *args):
+    def SetRange3d(self, *args) -> "void" :
         """
         * Sets range on 3d curve only.
 
@@ -216,7 +216,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_SetRange3d(self, *args)
 
-    def CopyPCurves(self, *args):
+    def CopyPCurves(self, *args) -> "void" :
         """
         * Makes a copy of pcurves from edge <fromedge> into edge <toedge>. Pcurves which are already present in <toedge>, are replaced by copies, other are copied. Ranges are also copied.
 
@@ -229,7 +229,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_CopyPCurves(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "TopoDS_Edge" :
         """
         * Make a copy of <edge> by call to CopyReplaceVertices() (i.e. construct new TEdge with the same pcurves and vertices). If <sharepcurves> is False, pcurves are also replaced by their copies with help of method CopyPCurves
 
@@ -242,7 +242,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_Copy(self, *args)
 
-    def RemovePCurve(self, *args):
+    def RemovePCurve(self, *args) -> "void" :
         """
         * Removes the PCurve(s) which could be recorded in an Edge for the given Face
 
@@ -273,7 +273,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_RemovePCurve(self, *args)
 
-    def ReplacePCurve(self, *args):
+    def ReplacePCurve(self, *args) -> "void" :
         """
         * Replace the PCurve in an Edge for the given Face In case if edge is seam, i.e. has 2 pcurves on that face, only pcurve corresponding to the orientation of the edge is replaced
 
@@ -288,7 +288,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_ReplacePCurve(self, *args)
 
-    def ReassignPCurve(self, *args):
+    def ReassignPCurve(self, *args) -> "Standard_Boolean" :
         """
         * Reassign edge pcurve lying on face <old> to another face <sub>. If edge has two pcurves on <old> face, only one of them will be reassigned, and other will left alone. Similarly, if edge already had a pcurve on face <sub>, it will have two pcurves on it. Returns True if succeeded, False if no pcurve lying on <old> found.
 
@@ -303,7 +303,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_ReassignPCurve(self, *args)
 
-    def TransformPCurve(self, *args):
+    def TransformPCurve(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * Transforms the PCurve with given matrix and affinity U factor.
 
@@ -322,7 +322,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_TransformPCurve(self, *args)
 
-    def RemoveCurve3d(self, *args):
+    def RemoveCurve3d(self, *args) -> "void" :
         """
         * Removes the Curve3D recorded in an Edge
 
@@ -333,7 +333,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_RemoveCurve3d(self, *args)
 
-    def BuildCurve3d(self, *args):
+    def BuildCurve3d(self, *args) -> "Standard_Boolean" :
         """
         * Calls BRepTools::BuildCurve3D
 
@@ -344,7 +344,7 @@ class ShapeBuild_Edge(object):
         """
         return _ShapeBuild.ShapeBuild_Edge_BuildCurve3d(self, *args)
 
-    def MakeEdge(self, *args):
+    def MakeEdge(self, *args) -> "void" :
         """
         * Makes edge with curve and location
 
@@ -462,7 +462,7 @@ class ShapeBuild_ReShape(OCC.BRepTools.BRepTools_ReShape):
 
         """
         _ShapeBuild.ShapeBuild_ReShape_swiginit(self,_ShapeBuild.new_ShapeBuild_ReShape(*args))
-    def Apply(self, *args):
+    def Apply(self, *args) -> "TopoDS_Shape" :
         """
         * Applies the substitutions requests to a shape  <until> gives the level of type until which requests are taken into account. For subshapes of the type <until> no rebuild and futher exploring are done. ACTUALLY, NOT IMPLEMENTED BELOW TopAbs_FACE  <buildmode> says how to do on a SOLID,SHELL ... if one of its sub-shapes has been changed: 0: at least one Replace or Remove -> COMPOUND, else as such 1: at least one Remove (Replace are ignored) -> COMPOUND 2: Replace and Remove are both ignored If Replace/Remove are ignored or absent, the result as same type as the starting shape
 
@@ -485,7 +485,7 @@ class ShapeBuild_ReShape(OCC.BRepTools.BRepTools_ReShape):
         """
         return _ShapeBuild.ShapeBuild_ReShape_Apply(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns a complete substitution status for a shape 0 : not recorded, <newsh> = original <shape> < 0: to be removed, <newsh> is NULL > 0: to be replaced, <newsh> is a new item If <last> is False, returns status and new shape recorded in the map directly for the shape, if True and status > 0 then recursively searches for the last status and new shape.
 
@@ -506,11 +506,11 @@ class ShapeBuild_ReShape(OCC.BRepTools.BRepTools_ReShape):
         """
         return _ShapeBuild.ShapeBuild_ReShape_Status(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeBuild_ReShape self)"""
         return _ShapeBuild.ShapeBuild_ReShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeBuild_ReShape" :
         """GetHandle(ShapeBuild_ReShape self) -> Handle_ShapeBuild_ReShape"""
         return _ShapeBuild.ShapeBuild_ReShape_GetHandle(self)
 
@@ -550,14 +550,14 @@ Handle_ShapeBuild_ReShape._kill_pointed = new_instancemethod(_ShapeBuild.Handle_
 Handle_ShapeBuild_ReShape_swigregister = _ShapeBuild.Handle_ShapeBuild_ReShape_swigregister
 Handle_ShapeBuild_ReShape_swigregister(Handle_ShapeBuild_ReShape)
 
-def Handle_ShapeBuild_ReShape_DownCast(*args):
+def Handle_ShapeBuild_ReShape_DownCast(*args) -> "Handle_ShapeBuild_ReShape const" :
   return _ShapeBuild.Handle_ShapeBuild_ReShape_DownCast(*args)
 Handle_ShapeBuild_ReShape_DownCast = _ShapeBuild.Handle_ShapeBuild_ReShape_DownCast
 
 class ShapeBuild_Vertex(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CombineVertex(self, *args):
+    def CombineVertex(self, *args) -> "TopoDS_Vertex" :
         """
         * Combines new vertex from two others. This new one is the smallest vertex which comprises both of the source vertices. The function takes into account the positions and tolerances of the source vertices. The tolerance of the new vertex will be equal to the minimal tolerance that is required to comprise source vertices multiplied by tolFactor (in order to avoid errors because of discreteness of calculations).
 

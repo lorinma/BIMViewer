@@ -116,7 +116,7 @@ import OCC.Dynamic
 class materials(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MaterialFile(*args):
+    def MaterialFile(*args) -> "void" :
         """
         * Sets the location and the name of the file defining the definition of a material, in term of properties.
 
@@ -128,7 +128,7 @@ class materials(object):
         return _Materials.materials_MaterialFile(*args)
 
     MaterialFile = staticmethod(MaterialFile)
-    def MaterialsFile(*args):
+    def MaterialsFile(*args) -> "char *" :
         """
         * Sets the location and the name of the file defining the dictionary of materials.
 
@@ -144,7 +144,7 @@ class materials(object):
         return _Materials.materials_MaterialsFile(*args)
 
     MaterialsFile = staticmethod(MaterialsFile)
-    def DictionaryOfMaterials(*args):
+    def DictionaryOfMaterials(*args) -> "Handle_Materials_MaterialsDictionary" :
         """
         * Returns the dictionary of materials.The dictionary is created at the first call to this method, or if the dictionary is not up to date with respect to the file date.
 
@@ -154,7 +154,7 @@ class materials(object):
         return _Materials.materials_DictionaryOfMaterials(*args)
 
     DictionaryOfMaterials = staticmethod(DictionaryOfMaterials)
-    def ExistMaterial(*args):
+    def ExistMaterial(*args) -> "Standard_Boolean" :
         """
         * True if the materialofname aName exists ...
 
@@ -166,7 +166,7 @@ class materials(object):
         return _Materials.materials_ExistMaterial(*args)
 
     ExistMaterial = staticmethod(ExistMaterial)
-    def NumberOfMaterials(*args):
+    def NumberOfMaterials(*args) -> "Standard_Integer" :
         """
         * Returns the number of materials previously stored in the dictionary.
 
@@ -176,7 +176,7 @@ class materials(object):
         return _Materials.materials_NumberOfMaterials(*args)
 
     NumberOfMaterials = staticmethod(NumberOfMaterials)
-    def Material(*args):
+    def Material(*args) -> "Handle_Materials_Material" :
         """
         * Retrieves from the dictionary the object material with <amaterial> as name.
 
@@ -208,7 +208,7 @@ materials._kill_pointed = new_instancemethod(_Materials.materials__kill_pointed,
 materials_swigregister = _Materials.materials_swigregister
 materials_swigregister(materials)
 
-def materials_MaterialFile(*args):
+def materials_MaterialFile(*args) -> "void" :
   """
     * Sets the location and the name of the file defining the definition of a material, in term of properties.
 
@@ -219,7 +219,7 @@ def materials_MaterialFile(*args):
     """
   return _Materials.materials_MaterialFile(*args)
 
-def materials_MaterialsFile(*args):
+def materials_MaterialsFile(*args) -> "char *" :
   """
     * Sets the location and the name of the file defining the dictionary of materials.
 
@@ -234,7 +234,7 @@ def materials_MaterialsFile(*args):
     """
   return _Materials.materials_MaterialsFile(*args)
 
-def materials_DictionaryOfMaterials(*args):
+def materials_DictionaryOfMaterials(*args) -> "Handle_Materials_MaterialsDictionary" :
   """
     * Returns the dictionary of materials.The dictionary is created at the first call to this method, or if the dictionary is not up to date with respect to the file date.
 
@@ -243,7 +243,7 @@ def materials_DictionaryOfMaterials(*args):
     """
   return _Materials.materials_DictionaryOfMaterials(*args)
 
-def materials_ExistMaterial(*args):
+def materials_ExistMaterial(*args) -> "Standard_Boolean" :
   """
     * True if the materialofname aName exists ...
 
@@ -254,7 +254,7 @@ def materials_ExistMaterial(*args):
     """
   return _Materials.materials_ExistMaterial(*args)
 
-def materials_NumberOfMaterials(*args):
+def materials_NumberOfMaterials(*args) -> "Standard_Integer" :
   """
     * Returns the number of materials previously stored in the dictionary.
 
@@ -263,7 +263,7 @@ def materials_NumberOfMaterials(*args):
     """
   return _Materials.materials_NumberOfMaterials(*args)
 
-def materials_Material(*args):
+def materials_Material(*args) -> "Handle_Materials_Material" :
   """
     * Retrieves from the dictionary the object material with <amaterial> as name.
 
@@ -297,7 +297,7 @@ class Materials_Color(OCC.Standard.Standard_Transient):
 
         """
         _Materials.Materials_Color_swiginit(self,_Materials.new_Materials_Color(*args))
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         * Sets <acolor> into <self>.
 
@@ -324,7 +324,7 @@ class Materials_Color(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_Color_Color(self, *args)
 
-    def Color255(self, *args):
+    def Color255(self, *args) -> "void" :
         """
         * Get the values ( RGB or HLS ) between 0.0 and 255.0
 
@@ -341,7 +341,7 @@ class Materials_Color(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_Color_Color255(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Set the values ( RGB or HLS ) between 0.0 and 1.0
 
@@ -358,7 +358,7 @@ class Materials_Color(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_Color_SetColor(self, *args)
 
-    def SetColor255(self, *args):
+    def SetColor255(self, *args) -> "void" :
         """
         * Set the values ( RGB or HLS ) between 0.0 and 255.0
 
@@ -375,11 +375,11 @@ class Materials_Color(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_Color_SetColor255(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_Color self)"""
         return _Materials.Materials_Color__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_Color" :
         """GetHandle(Materials_Color self) -> Handle_Materials_Color"""
         return _Materials.Materials_Color_GetHandle(self)
 
@@ -421,7 +421,7 @@ Handle_Materials_Color._kill_pointed = new_instancemethod(_Materials.Handle_Mate
 Handle_Materials_Color_swigregister = _Materials.Handle_Materials_Color_swigregister
 Handle_Materials_Color_swigregister(Handle_Materials_Color)
 
-def Handle_Materials_Color_DownCast(*args):
+def Handle_Materials_Color_DownCast(*args) -> "Handle_Materials_Color const" :
   return _Materials.Handle_Materials_Color_DownCast(*args)
 Handle_Materials_Color_DownCast = _Materials.Handle_Materials_Color_DownCast
 
@@ -440,14 +440,14 @@ class Materials_FuzzyInstance(OCC.Dynamic.Dynamic_FuzzyClass):
 
         """
         _Materials.Materials_FuzzyInstance_swiginit(self,_Materials.new_Materials_FuzzyInstance(*args))
-    def Definition(self, *args):
+    def Definition(self, *args) -> "Handle_Dynamic_FuzzyClass" :
         """
         :rtype: Handle_Dynamic_FuzzyClass
 
         """
         return _Materials.Materials_FuzzyInstance_Definition(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         :param aparameter:
         :type aparameter: char *
@@ -482,7 +482,7 @@ class Materials_FuzzyInstance(OCC.Dynamic.Dynamic_FuzzyClass):
         """
         return _Materials.Materials_FuzzyInstance_Parameter(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param aparameter:
         :type aparameter: char *
@@ -517,15 +517,15 @@ class Materials_FuzzyInstance(OCC.Dynamic.Dynamic_FuzzyClass):
         """
         return _Materials.Materials_FuzzyInstance_Value(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Materials_FuzzyInstance self) -> std::string"""
         return _Materials.Materials_FuzzyInstance_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_FuzzyInstance self)"""
         return _Materials.Materials_FuzzyInstance__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_FuzzyInstance" :
         """GetHandle(Materials_FuzzyInstance self) -> Handle_Materials_FuzzyInstance"""
         return _Materials.Materials_FuzzyInstance_GetHandle(self)
 
@@ -567,7 +567,7 @@ Handle_Materials_FuzzyInstance._kill_pointed = new_instancemethod(_Materials.Han
 Handle_Materials_FuzzyInstance_swigregister = _Materials.Handle_Materials_FuzzyInstance_swigregister
 Handle_Materials_FuzzyInstance_swigregister(Handle_Materials_FuzzyInstance)
 
-def Handle_Materials_FuzzyInstance_DownCast(*args):
+def Handle_Materials_FuzzyInstance_DownCast(*args) -> "Handle_Materials_FuzzyInstance const" :
   return _Materials.Handle_Materials_FuzzyInstance_DownCast(*args)
 Handle_Materials_FuzzyInstance_DownCast = _Materials.Handle_Materials_FuzzyInstance_DownCast
 
@@ -582,11 +582,11 @@ class Materials_MaterialDefinition(OCC.Dynamic.Dynamic_FuzzyDefinitionsDictionar
 
         """
         _Materials.Materials_MaterialDefinition_swiginit(self,_Materials.new_Materials_MaterialDefinition(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_MaterialDefinition self)"""
         return _Materials.Materials_MaterialDefinition__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_MaterialDefinition" :
         """GetHandle(Materials_MaterialDefinition self) -> Handle_Materials_MaterialDefinition"""
         return _Materials.Materials_MaterialDefinition_GetHandle(self)
 
@@ -624,7 +624,7 @@ Handle_Materials_MaterialDefinition._kill_pointed = new_instancemethod(_Material
 Handle_Materials_MaterialDefinition_swigregister = _Materials.Handle_Materials_MaterialDefinition_swigregister
 Handle_Materials_MaterialDefinition_swigregister(Handle_Materials_MaterialDefinition)
 
-def Handle_Materials_MaterialDefinition_DownCast(*args):
+def Handle_Materials_MaterialDefinition_DownCast(*args) -> "Handle_Materials_MaterialDefinition const" :
   return _Materials.Handle_Materials_MaterialDefinition_DownCast(*args)
 Handle_Materials_MaterialDefinition_DownCast = _Materials.Handle_Materials_MaterialDefinition_DownCast
 
@@ -639,7 +639,7 @@ class Materials_MaterialsDictionary(OCC.Standard.Standard_Transient):
 
         """
         _Materials.Materials_MaterialsDictionary_swiginit(self,_Materials.new_Materials_MaterialsDictionary(*args))
-    def ExistMaterial(self, *args):
+    def ExistMaterial(self, *args) -> "Standard_Boolean" :
         """
         * True if the materialofname aName exists ...
 
@@ -650,7 +650,7 @@ class Materials_MaterialsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_MaterialsDictionary_ExistMaterial(self, *args)
 
-    def NumberOfMaterials(self, *args):
+    def NumberOfMaterials(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of materials previously stored in the dictionary.
 
@@ -659,7 +659,7 @@ class Materials_MaterialsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_MaterialsDictionary_NumberOfMaterials(self, *args)
 
-    def Material(self, *args):
+    def Material(self, *args) -> "Handle_Materials_Material" :
         """
         * Retrieves from the dictionary the object material with <amaterial> as name. If <amaterial> does not exist in the dictionary an exeption is raised.
 
@@ -676,7 +676,7 @@ class Materials_MaterialsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_MaterialsDictionary_Material(self, *args)
 
-    def UpToDate(self, *args):
+    def UpToDate(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there has been no modification of the file Materials.dat since the creation of the dictionary object, false otherwise.
 
@@ -685,15 +685,15 @@ class Materials_MaterialsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Materials.Materials_MaterialsDictionary_UpToDate(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Materials_MaterialsDictionary self) -> std::string"""
         return _Materials.Materials_MaterialsDictionary_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_MaterialsDictionary self)"""
         return _Materials.Materials_MaterialsDictionary__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_MaterialsDictionary" :
         """GetHandle(Materials_MaterialsDictionary self) -> Handle_Materials_MaterialsDictionary"""
         return _Materials.Materials_MaterialsDictionary_GetHandle(self)
 
@@ -736,7 +736,7 @@ Handle_Materials_MaterialsDictionary._kill_pointed = new_instancemethod(_Materia
 Handle_Materials_MaterialsDictionary_swigregister = _Materials.Handle_Materials_MaterialsDictionary_swigregister
 Handle_Materials_MaterialsDictionary_swigregister(Handle_Materials_MaterialsDictionary)
 
-def Handle_Materials_MaterialsDictionary_DownCast(*args):
+def Handle_Materials_MaterialsDictionary_DownCast(*args) -> "Handle_Materials_MaterialsDictionary const" :
   return _Materials.Handle_Materials_MaterialsDictionary_DownCast(*args)
 Handle_Materials_MaterialsDictionary_DownCast = _Materials.Handle_Materials_MaterialsDictionary_DownCast
 
@@ -749,28 +749,28 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
 
         """
         _Materials.Materials_MaterialsSequence_swiginit(self,_Materials.new_Materials_MaterialsSequence(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Materials.Materials_MaterialsSequence_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Materials.Materials_MaterialsSequence_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Materials.Materials_MaterialsSequence_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Materials_Material &
@@ -783,7 +783,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Materials_Material &
@@ -796,14 +796,14 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Materials.Materials_MaterialsSequence_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -820,7 +820,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -837,7 +837,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -848,7 +848,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_Materials_MaterialsSequence" :
         """
         :param anIndex:
         :type anIndex: int
@@ -857,7 +857,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -868,7 +868,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Materials_Material const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -877,7 +877,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Materials_Material &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -886,7 +886,7 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -901,32 +901,32 @@ class Materials_MaterialsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Materials.Materials_MaterialsSequence_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Materials_MtsSequence const &" :
         """
         :rtype: Materials_MtsSequence
 
         """
         return _Materials.Materials_MaterialsSequence_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "Materials_MtsSequence &" :
         """
         :rtype: Materials_MtsSequence
 
         """
         return _Materials.Materials_MaterialsSequence_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_Materials_MaterialsSequence" :
         """
         :rtype: Handle_Materials_MaterialsSequence
 
         """
         return _Materials.Materials_MaterialsSequence_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_MaterialsSequence self)"""
         return _Materials.Materials_MaterialsSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_MaterialsSequence" :
         """GetHandle(Materials_MaterialsSequence self) -> Handle_Materials_MaterialsSequence"""
         return _Materials.Materials_MaterialsSequence_GetHandle(self)
 
@@ -981,7 +981,7 @@ Handle_Materials_MaterialsSequence._kill_pointed = new_instancemethod(_Materials
 Handle_Materials_MaterialsSequence_swigregister = _Materials.Handle_Materials_MaterialsSequence_swigregister
 Handle_Materials_MaterialsSequence_swigregister(Handle_Materials_MaterialsSequence)
 
-def Handle_Materials_MaterialsSequence_DownCast(*args):
+def Handle_Materials_MaterialsSequence_DownCast(*args) -> "Handle_Materials_MaterialsSequence const" :
   return _Materials.Handle_Materials_MaterialsSequence_DownCast(*args)
 Handle_Materials_MaterialsSequence_DownCast = _Materials.Handle_Materials_MaterialsSequence_DownCast
 
@@ -994,14 +994,14 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Materials.Materials_MtsSequence_swiginit(self,_Materials.new_Materials_MtsSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Materials.Materials_MtsSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Materials_MtsSequence const &" :
         """
         :param Other:
         :type Other: Materials_MtsSequence &
@@ -1010,7 +1010,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Materials_MtsSequence const &" :
         """
         :param Other:
         :type Other: Materials_MtsSequence &
@@ -1019,7 +1019,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Materials_Material &
@@ -1032,7 +1032,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Materials_Material &
@@ -1045,7 +1045,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1062,7 +1062,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1079,21 +1079,21 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Materials_Material const &" :
         """
         :rtype: Handle_Materials_Material
 
         """
         return _Materials.Materials_MtsSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Materials_Material const &" :
         """
         :rtype: Handle_Materials_Material
 
         """
         return _Materials.Materials_MtsSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1104,7 +1104,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Materials_Material const &" :
         """
         :param Index:
         :type Index: int
@@ -1113,7 +1113,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1124,7 +1124,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Materials_Material &" :
         """
         :param Index:
         :type Index: int
@@ -1133,7 +1133,7 @@ class Materials_MtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Materials.Materials_MtsSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1189,18 +1189,18 @@ class Materials_SequenceNodeOfMtsSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Materials.Materials_SequenceNodeOfMtsSequence_swiginit(self,_Materials.new_Materials_SequenceNodeOfMtsSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Materials_Material &" :
         """
         :rtype: Handle_Materials_Material
 
         """
         return _Materials.Materials_SequenceNodeOfMtsSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_SequenceNodeOfMtsSequence self)"""
         return _Materials.Materials_SequenceNodeOfMtsSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_SequenceNodeOfMtsSequence" :
         """GetHandle(Materials_SequenceNodeOfMtsSequence self) -> Handle_Materials_SequenceNodeOfMtsSequence"""
         return _Materials.Materials_SequenceNodeOfMtsSequence_GetHandle(self)
 
@@ -1239,7 +1239,7 @@ Handle_Materials_SequenceNodeOfMtsSequence._kill_pointed = new_instancemethod(_M
 Handle_Materials_SequenceNodeOfMtsSequence_swigregister = _Materials.Handle_Materials_SequenceNodeOfMtsSequence_swigregister
 Handle_Materials_SequenceNodeOfMtsSequence_swigregister(Handle_Materials_SequenceNodeOfMtsSequence)
 
-def Handle_Materials_SequenceNodeOfMtsSequence_DownCast(*args):
+def Handle_Materials_SequenceNodeOfMtsSequence_DownCast(*args) -> "Handle_Materials_SequenceNodeOfMtsSequence const" :
   return _Materials.Handle_Materials_SequenceNodeOfMtsSequence_DownCast(*args)
 Handle_Materials_SequenceNodeOfMtsSequence_DownCast = _Materials.Handle_Materials_SequenceNodeOfMtsSequence_DownCast
 
@@ -1256,7 +1256,7 @@ class Materials_Material(Materials_FuzzyInstance):
 
         """
         _Materials.Materials_Material_swiginit(self,_Materials.new_Materials_Material(*args))
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name of the material.
 
@@ -1265,15 +1265,15 @@ class Materials_Material(Materials_FuzzyInstance):
         """
         return _Materials.Materials_Material_Name(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Materials_Material self) -> std::string"""
         return _Materials.Materials_Material_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Materials_Material self)"""
         return _Materials.Materials_Material__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Materials_Material" :
         """GetHandle(Materials_Material self) -> Handle_Materials_Material"""
         return _Materials.Materials_Material_GetHandle(self)
 
@@ -1313,7 +1313,7 @@ Handle_Materials_Material._kill_pointed = new_instancemethod(_Materials.Handle_M
 Handle_Materials_Material_swigregister = _Materials.Handle_Materials_Material_swigregister
 Handle_Materials_Material_swigregister(Handle_Materials_Material)
 
-def Handle_Materials_Material_DownCast(*args):
+def Handle_Materials_Material_DownCast(*args) -> "Handle_Materials_Material const" :
   return _Materials.Handle_Materials_Material_DownCast(*args)
 Handle_Materials_Material_DownCast = _Materials.Handle_Materials_Material_DownCast
 

@@ -163,7 +163,7 @@ class gce_MakeMirror(object):
 
         """
         _gce.gce_MakeMirror_swiginit(self,_gce.new_gce_MakeMirror(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf const" :
         """
         * Returns the constructed transformation.
 
@@ -172,7 +172,7 @@ class gce_MakeMirror(object):
         """
         return _gce.gce_MakeMirror_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf const" :
         """
         :rtype: gp_Trsf
 
@@ -220,7 +220,7 @@ class gce_MakeMirror2d(object):
 
         """
         _gce.gce_MakeMirror2d_swiginit(self,_gce.new_gce_MakeMirror2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf2d const" :
         """
         * Returns the constructed transformation.
 
@@ -229,7 +229,7 @@ class gce_MakeMirror2d(object):
         """
         return _gce.gce_MakeMirror2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf2d const" :
         """
         :rtype: gp_Trsf2d
 
@@ -283,7 +283,7 @@ class gce_MakeRotation(object):
 
         """
         _gce.gce_MakeRotation_swiginit(self,_gce.new_gce_MakeRotation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf const" :
         """
         * Returns the constructed transformation.
 
@@ -292,7 +292,7 @@ class gce_MakeRotation(object):
         """
         return _gce.gce_MakeRotation_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf const" :
         """
         :rtype: gp_Trsf
 
@@ -328,7 +328,7 @@ class gce_MakeRotation2d(object):
 
         """
         _gce.gce_MakeRotation2d_swiginit(self,_gce.new_gce_MakeRotation2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf2d const" :
         """
         * Returns the constructed transformation.
 
@@ -337,7 +337,7 @@ class gce_MakeRotation2d(object):
         """
         return _gce.gce_MakeRotation2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf2d const" :
         """
         :rtype: gp_Trsf2d
 
@@ -373,7 +373,7 @@ class gce_MakeScale(object):
 
         """
         _gce.gce_MakeScale_swiginit(self,_gce.new_gce_MakeScale(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf const" :
         """
         * Returns the constructed transformation.
 
@@ -382,7 +382,7 @@ class gce_MakeScale(object):
         """
         return _gce.gce_MakeScale_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf const" :
         """
         :rtype: gp_Trsf
 
@@ -418,7 +418,7 @@ class gce_MakeScale2d(object):
 
         """
         _gce.gce_MakeScale2d_swiginit(self,_gce.new_gce_MakeScale2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf2d const" :
         """
         * Returns the constructed transformation.
 
@@ -427,7 +427,7 @@ class gce_MakeScale2d(object):
         """
         return _gce.gce_MakeScale2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf2d const" :
         """
         :rtype: gp_Trsf2d
 
@@ -469,7 +469,7 @@ class gce_MakeTranslation(object):
 
         """
         _gce.gce_MakeTranslation_swiginit(self,_gce.new_gce_MakeTranslation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf const" :
         """
         * Returns the constructed transformation.
 
@@ -478,7 +478,7 @@ class gce_MakeTranslation(object):
         """
         return _gce.gce_MakeTranslation_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf const" :
         """
         :rtype: gp_Trsf
 
@@ -520,7 +520,7 @@ class gce_MakeTranslation2d(object):
 
         """
         _gce.gce_MakeTranslation2d_swiginit(self,_gce.new_gce_MakeTranslation2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Trsf2d const" :
         """
         * Returns the constructed transformation.
 
@@ -529,7 +529,7 @@ class gce_MakeTranslation2d(object):
         """
         return _gce.gce_MakeTranslation2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Trsf2d const" :
         """
         :rtype: gp_Trsf2d
 
@@ -553,7 +553,7 @@ gce_MakeTranslation2d_swigregister(gce_MakeTranslation2d)
 class gce_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the construction is successful.
 
@@ -562,7 +562,7 @@ class gce_Root(object):
         """
         return _gce.gce_Root_IsDone(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "gce_ErrorType" :
         """
         * Returns the status of the construction: - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.
 
@@ -666,7 +666,7 @@ class gce_MakeCirc(gce_Root):
 
         """
         _gce.gce_MakeCirc_swiginit(self,_gce.new_gce_MakeCirc(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Circ const" :
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
@@ -675,7 +675,7 @@ class gce_MakeCirc(gce_Root):
         """
         return _gce.gce_MakeCirc_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Circ const" :
         """
         :rtype: gp_Circ
 
@@ -767,7 +767,7 @@ class gce_MakeCirc2d(gce_Root):
 
         """
         _gce.gce_MakeCirc2d_swiginit(self,_gce.new_gce_MakeCirc2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Circ2d const" :
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
@@ -776,7 +776,7 @@ class gce_MakeCirc2d(gce_Root):
         """
         return _gce.gce_MakeCirc2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Circ2d const" :
         """
         :rtype: gp_Circ2d
 
@@ -874,7 +874,7 @@ class gce_MakeCone(gce_Root):
 
         """
         _gce.gce_MakeCone_swiginit(self,_gce.new_gce_MakeCone(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Cone const" :
         """
         * Returns the constructed cone. Exceptions StdFail_NotDone if no cone is constructed.
 
@@ -883,7 +883,7 @@ class gce_MakeCone(gce_Root):
         """
         return _gce.gce_MakeCone_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Cone const" :
         """
         :rtype: gp_Cone
 
@@ -959,7 +959,7 @@ class gce_MakeCylinder(gce_Root):
 
         """
         _gce.gce_MakeCylinder_swiginit(self,_gce.new_gce_MakeCylinder(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Cylinder const" :
         """
         * Returns the constructed cylinder. Exceptions StdFail_NotDone if no cylinder is constructed.
 
@@ -968,7 +968,7 @@ class gce_MakeCylinder(gce_Root):
         """
         return _gce.gce_MakeCylinder_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Cylinder const" :
         """
         :rtype: gp_Cylinder
 
@@ -1026,7 +1026,7 @@ class gce_MakeDir(gce_Root):
 
         """
         _gce.gce_MakeDir_swiginit(self,_gce.new_gce_MakeDir(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Dir const" :
         """
         * Returns the constructed unit vector. Exceptions StdFail_NotDone if no unit vector is constructed.
 
@@ -1035,7 +1035,7 @@ class gce_MakeDir(gce_Root):
         """
         return _gce.gce_MakeDir_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Dir const" :
         """
         :rtype: gp_Dir
 
@@ -1091,7 +1091,7 @@ class gce_MakeDir2d(gce_Root):
 
         """
         _gce.gce_MakeDir2d_swiginit(self,_gce.new_gce_MakeDir2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Dir2d const" :
         """
         * Returns the constructed unit vector. Exceptions StdFail_NotDone if no unit vector is constructed.
 
@@ -1100,7 +1100,7 @@ class gce_MakeDir2d(gce_Root):
         """
         return _gce.gce_MakeDir2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
@@ -1148,7 +1148,7 @@ class gce_MakeElips(gce_Root):
 
         """
         _gce.gce_MakeElips_swiginit(self,_gce.new_gce_MakeElips(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Elips const" :
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
@@ -1157,7 +1157,7 @@ class gce_MakeElips(gce_Root):
         """
         return _gce.gce_MakeElips_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Elips const" :
         """
         :rtype: gp_Elips
 
@@ -1217,7 +1217,7 @@ class gce_MakeElips2d(gce_Root):
 
         """
         _gce.gce_MakeElips2d_swiginit(self,_gce.new_gce_MakeElips2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Elips2d const" :
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
@@ -1226,7 +1226,7 @@ class gce_MakeElips2d(gce_Root):
         """
         return _gce.gce_MakeElips2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Elips2d const" :
         """
         :rtype: gp_Elips2d
 
@@ -1274,7 +1274,7 @@ class gce_MakeHypr(gce_Root):
 
         """
         _gce.gce_MakeHypr_swiginit(self,_gce.new_gce_MakeHypr(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Hypr const" :
         """
         * Returns the constructed hyperbola. Exceptions StdFail_NotDone if no hyperbola is constructed.
 
@@ -1283,7 +1283,7 @@ class gce_MakeHypr(gce_Root):
         """
         return _gce.gce_MakeHypr_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Hypr const" :
         """
         :rtype: gp_Hypr
 
@@ -1343,7 +1343,7 @@ class gce_MakeHypr2d(gce_Root):
 
         """
         _gce.gce_MakeHypr2d_swiginit(self,_gce.new_gce_MakeHypr2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Hypr2d const" :
         """
         * Returns the constructed hyperbola. Exceptions StdFail_NotDone if no hyperbola is constructed.
 
@@ -1352,7 +1352,7 @@ class gce_MakeHypr2d(gce_Root):
         """
         return _gce.gce_MakeHypr2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Hypr2d const" :
         """
         :rtype: gp_Hypr2d
 
@@ -1410,7 +1410,7 @@ class gce_MakeLin(gce_Root):
 
         """
         _gce.gce_MakeLin_swiginit(self,_gce.new_gce_MakeLin(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Lin const" :
         """
         * Returns the constructed line. Exceptions StdFail_NotDone is raised if no line is constructed.
 
@@ -1419,7 +1419,7 @@ class gce_MakeLin(gce_Root):
         """
         return _gce.gce_MakeLin_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Lin const" :
         """
         :rtype: gp_Lin
 
@@ -1495,7 +1495,7 @@ class gce_MakeLin2d(gce_Root):
 
         """
         _gce.gce_MakeLin2d_swiginit(self,_gce.new_gce_MakeLin2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Lin2d" :
         """
         * Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.
 
@@ -1504,7 +1504,7 @@ class gce_MakeLin2d(gce_Root):
         """
         return _gce.gce_MakeLin2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Lin2d" :
         """
         :rtype: gp_Lin2d
 
@@ -1548,7 +1548,7 @@ class gce_MakeParab(gce_Root):
 
         """
         _gce.gce_MakeParab_swiginit(self,_gce.new_gce_MakeParab(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Parab const" :
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
@@ -1557,7 +1557,7 @@ class gce_MakeParab(gce_Root):
         """
         return _gce.gce_MakeParab_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Parab const" :
         """
         :rtype: gp_Parab
 
@@ -1631,7 +1631,7 @@ class gce_MakeParab2d(gce_Root):
 
         """
         _gce.gce_MakeParab2d_swiginit(self,_gce.new_gce_MakeParab2d(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Parab2d const" :
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
@@ -1640,7 +1640,7 @@ class gce_MakeParab2d(gce_Root):
         """
         return _gce.gce_MakeParab2d_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Parab2d const" :
         """
         :rtype: gp_Parab2d
 
@@ -1734,7 +1734,7 @@ class gce_MakePln(gce_Root):
 
         """
         _gce.gce_MakePln_swiginit(self,_gce.new_gce_MakePln(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pln const" :
         """
         * Returns the constructed plane. Exceptions StdFail_NotDone if no plane is constructed.
 
@@ -1743,7 +1743,7 @@ class gce_MakePln(gce_Root):
         """
         return _gce.gce_MakePln_Value(self, *args)
 
-    def Operator(self, *args):
+    def Operator(self, *args) -> "gp_Pln const" :
         """
         :rtype: gp_Pln
 

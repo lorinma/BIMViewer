@@ -115,7 +115,7 @@ import OCC.TColStd
 class units(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def UnitsFile(*args):
+    def UnitsFile(*args) -> "void" :
         """
         * Defines the location of the file containing all the information useful in creating the dictionary of all the units known to the system.
 
@@ -127,7 +127,7 @@ class units(object):
         return _Units.units_UnitsFile(*args)
 
     UnitsFile = staticmethod(UnitsFile)
-    def LexiconFile(*args):
+    def LexiconFile(*args) -> "void" :
         """
         * Defines the location of the file containing the lexicon useful in manipulating composite units.
 
@@ -139,7 +139,7 @@ class units(object):
         return _Units.units_LexiconFile(*args)
 
     LexiconFile = staticmethod(LexiconFile)
-    def DictionaryOfUnits(*args):
+    def DictionaryOfUnits(*args) -> "Handle_Units_UnitsDictionary" :
         """
         * Returns a unique instance of the dictionary of units. If <amode> is True, then it forces the recomputation of the dictionary of units.
 
@@ -151,7 +151,7 @@ class units(object):
         return _Units.units_DictionaryOfUnits(*args)
 
     DictionaryOfUnits = staticmethod(DictionaryOfUnits)
-    def Quantity(*args):
+    def Quantity(*args) -> "Handle_Units_Quantity" :
         """
         * Returns a unique quantity instance corresponding to <aquantity>.
 
@@ -163,7 +163,7 @@ class units(object):
         return _Units.units_Quantity(*args)
 
     Quantity = staticmethod(Quantity)
-    def FirstQuantity(*args):
+    def FirstQuantity(*args) -> "char *" :
         """
         * Returns the first quantity string founded from the unit <aUnit>.
 
@@ -175,7 +175,7 @@ class units(object):
         return _Units.units_FirstQuantity(*args)
 
     FirstQuantity = staticmethod(FirstQuantity)
-    def LexiconUnits(*args):
+    def LexiconUnits(*args) -> "Handle_Units_Lexicon" :
         """
         * Returns a unique instance of the Units_Lexicon. If <amode> is True, it forces the recomputation of the dictionary of units, and by consequence the completion of the Units_Lexicon.
 
@@ -187,7 +187,7 @@ class units(object):
         return _Units.units_LexiconUnits(*args)
 
     LexiconUnits = staticmethod(LexiconUnits)
-    def LexiconFormula(*args):
+    def LexiconFormula(*args) -> "Handle_Units_Lexicon" :
         """
         * Return a unique instance of LexiconFormula.
 
@@ -197,7 +197,7 @@ class units(object):
         return _Units.units_LexiconFormula(*args)
 
     LexiconFormula = staticmethod(LexiconFormula)
-    def NullDimensions(*args):
+    def NullDimensions(*args) -> "Handle_Units_Dimensions" :
         """
         * Returns always the same instance of Dimensions.
 
@@ -207,7 +207,7 @@ class units(object):
         return _Units.units_NullDimensions(*args)
 
     NullDimensions = staticmethod(NullDimensions)
-    def Convert(*args):
+    def Convert(*args) -> "Standard_Real" :
         """
         * Converts <avalue> expressed in <afirstunit> into the <asecondunit>.
 
@@ -223,7 +223,7 @@ class units(object):
         return _Units.units_Convert(*args)
 
     Convert = staticmethod(Convert)
-    def ToSI(*args):
+    def ToSI(*args) -> "Standard_Real" :
         """
         :param aData:
         :type aData: float
@@ -243,7 +243,7 @@ class units(object):
         return _Units.units_ToSI(*args)
 
     ToSI = staticmethod(ToSI)
-    def FromSI(*args):
+    def FromSI(*args) -> "Standard_Real" :
         """
         :param aData:
         :type aData: float
@@ -263,7 +263,7 @@ class units(object):
         return _Units.units_FromSI(*args)
 
     FromSI = staticmethod(FromSI)
-    def Dimensions(*args):
+    def Dimensions(*args) -> "Handle_Units_Dimensions" :
         """
         * return the dimension associated to the Type
 
@@ -289,7 +289,7 @@ units._kill_pointed = new_instancemethod(_Units.units__kill_pointed,None,units)
 units_swigregister = _Units.units_swigregister
 units_swigregister(units)
 
-def units_UnitsFile(*args):
+def units_UnitsFile(*args) -> "void" :
   """
     * Defines the location of the file containing all the information useful in creating the dictionary of all the units known to the system.
 
@@ -300,7 +300,7 @@ def units_UnitsFile(*args):
     """
   return _Units.units_UnitsFile(*args)
 
-def units_LexiconFile(*args):
+def units_LexiconFile(*args) -> "void" :
   """
     * Defines the location of the file containing the lexicon useful in manipulating composite units.
 
@@ -311,7 +311,7 @@ def units_LexiconFile(*args):
     """
   return _Units.units_LexiconFile(*args)
 
-def units_DictionaryOfUnits(*args):
+def units_DictionaryOfUnits(*args) -> "Handle_Units_UnitsDictionary" :
   """
     * Returns a unique instance of the dictionary of units. If <amode> is True, then it forces the recomputation of the dictionary of units.
 
@@ -322,7 +322,7 @@ def units_DictionaryOfUnits(*args):
     """
   return _Units.units_DictionaryOfUnits(*args)
 
-def units_Quantity(*args):
+def units_Quantity(*args) -> "Handle_Units_Quantity" :
   """
     * Returns a unique quantity instance corresponding to <aquantity>.
 
@@ -333,7 +333,7 @@ def units_Quantity(*args):
     """
   return _Units.units_Quantity(*args)
 
-def units_FirstQuantity(*args):
+def units_FirstQuantity(*args) -> "char *" :
   """
     * Returns the first quantity string founded from the unit <aUnit>.
 
@@ -344,7 +344,7 @@ def units_FirstQuantity(*args):
     """
   return _Units.units_FirstQuantity(*args)
 
-def units_LexiconUnits(*args):
+def units_LexiconUnits(*args) -> "Handle_Units_Lexicon" :
   """
     * Returns a unique instance of the Units_Lexicon. If <amode> is True, it forces the recomputation of the dictionary of units, and by consequence the completion of the Units_Lexicon.
 
@@ -355,7 +355,7 @@ def units_LexiconUnits(*args):
     """
   return _Units.units_LexiconUnits(*args)
 
-def units_LexiconFormula(*args):
+def units_LexiconFormula(*args) -> "Handle_Units_Lexicon" :
   """
     * Return a unique instance of LexiconFormula.
 
@@ -364,7 +364,7 @@ def units_LexiconFormula(*args):
     """
   return _Units.units_LexiconFormula(*args)
 
-def units_NullDimensions(*args):
+def units_NullDimensions(*args) -> "Handle_Units_Dimensions" :
   """
     * Returns always the same instance of Dimensions.
 
@@ -373,7 +373,7 @@ def units_NullDimensions(*args):
     """
   return _Units.units_NullDimensions(*args)
 
-def units_Convert(*args):
+def units_Convert(*args) -> "Standard_Real" :
   """
     * Converts <avalue> expressed in <afirstunit> into the <asecondunit>.
 
@@ -388,7 +388,7 @@ def units_Convert(*args):
     """
   return _Units.units_Convert(*args)
 
-def units_ToSI(*args):
+def units_ToSI(*args) -> "Standard_Real" :
   """
     :param aData:
     :type aData: float
@@ -407,7 +407,7 @@ def units_ToSI(*args):
     """
   return _Units.units_ToSI(*args)
 
-def units_FromSI(*args):
+def units_FromSI(*args) -> "Standard_Real" :
   """
     :param aData:
     :type aData: float
@@ -426,7 +426,7 @@ def units_FromSI(*args):
     """
   return _Units.units_FromSI(*args)
 
-def units_Dimensions(*args):
+def units_Dimensions(*args) -> "Handle_Units_Dimensions" :
   """
     * return the dimension associated to the Type
 
@@ -476,7 +476,7 @@ class Units_Explorer(object):
 
         """
         _Units.Units_Explorer_swiginit(self,_Units.new_Units_Explorer(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the instance of the class with the UnitsSystem <aunitssystem>.
 
@@ -509,7 +509,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_Init(self, *args)
 
-    def MoreQuantity(self, *args):
+    def MoreQuantity(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is another Quantity to explore, False otherwise.
 
@@ -518,7 +518,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_MoreQuantity(self, *args)
 
-    def NextQuantity(self, *args):
+    def NextQuantity(self, *args) -> "void" :
         """
         * Sets the next Quantity current.
 
@@ -527,7 +527,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_NextQuantity(self, *args)
 
-    def Quantity(self, *args):
+    def Quantity(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name of the current Quantity.
 
@@ -536,7 +536,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_Quantity(self, *args)
 
-    def MoreUnit(self, *args):
+    def MoreUnit(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is another Unit to explore, False otherwise.
 
@@ -545,7 +545,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_MoreUnit(self, *args)
 
-    def NextUnit(self, *args):
+    def NextUnit(self, *args) -> "void" :
         """
         * Sets the next Unit current.
 
@@ -554,7 +554,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_NextUnit(self, *args)
 
-    def Unit(self, *args):
+    def Unit(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name of the current unit.
 
@@ -563,7 +563,7 @@ class Units_Explorer(object):
         """
         return _Units.Units_Explorer_Unit(self, *args)
 
-    def IsActive(self, *args):
+    def IsActive(self, *args) -> "Standard_Boolean" :
         """
         * If the units system to explore is a user system, returns True if the current unit is active, False otherwise.  If the units system to explore is the units dictionary, returns True if the current unit is the S.I. unit.
 
@@ -603,7 +603,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_Lexicon_swiginit(self,_Units.new_Units_Lexicon(*args))
-    def Creates(self, *args):
+    def Creates(self, *args) -> "void" :
         """
         * Reads the file <afilename> to create a sequence of tokens stored in <thesequenceoftokens>.
 
@@ -614,7 +614,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_Creates(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Handle_Units_TokensSequence" :
         """
         * Returns the first item of the sequence of tokens.
 
@@ -623,7 +623,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_Sequence(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns in a AsciiString from TCollection the name of the file.
 
@@ -632,7 +632,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_FileName(self, *args)
 
-    def UpToDate(self, *args):
+    def UpToDate(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the file has not changed since the creation of the Lexicon object. Returns false otherwise.
 
@@ -641,7 +641,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_UpToDate(self, *args)
 
-    def AddToken(self, *args):
+    def AddToken(self, *args) -> "void" :
         """
         * Adds to the lexicon a new token with <aword>, <amean>, <avalue> as arguments. If there is already a token with the field <theword> equal to <aword>, the existing token is updated.
 
@@ -656,7 +656,7 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_AddToken(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging.
 
@@ -665,11 +665,11 @@ class Units_Lexicon(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Lexicon_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_Lexicon self)"""
         return _Units.Units_Lexicon__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_Lexicon" :
         """GetHandle(Units_Lexicon self) -> Handle_Units_Lexicon"""
         return _Units.Units_Lexicon_GetHandle(self)
 
@@ -713,7 +713,7 @@ Handle_Units_Lexicon._kill_pointed = new_instancemethod(_Units.Handle_Units_Lexi
 Handle_Units_Lexicon_swigregister = _Units.Handle_Units_Lexicon_swigregister
 Handle_Units_Lexicon_swigregister(Handle_Units_Lexicon)
 
-def Handle_Units_Lexicon_DownCast(*args):
+def Handle_Units_Lexicon_DownCast(*args) -> "Handle_Units_Lexicon const" :
   return _Units.Handle_Units_Lexicon_DownCast(*args)
 Handle_Units_Lexicon_DownCast = _Units.Handle_Units_Lexicon_DownCast
 
@@ -744,7 +744,7 @@ class Units_Measurement(object):
 
         """
         _Units.Units_Measurement_swiginit(self,_Units.new_Units_Measurement(*args))
-    def Convert(self, *args):
+    def Convert(self, *args) -> "void" :
         """
         * Converts (if possible) the measurement object into another unit. <aunit> must have the same dimensionality as the unit contained in the token <thetoken>.
 
@@ -755,7 +755,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Convert(self, *args)
 
-    def Integer(self, *args):
+    def Integer(self, *args) -> "Units_Measurement" :
         """
         * Returns a Measurement object with the integer value of the measurement contained in <self>.
 
@@ -764,7 +764,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Integer(self, *args)
 
-    def Fractional(self, *args):
+    def Fractional(self, *args) -> "Units_Measurement" :
         """
         * Returns a Measurement object with the fractional value of the measurement contained in <self>.
 
@@ -773,7 +773,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Fractional(self, *args)
 
-    def Measurement(self, *args):
+    def Measurement(self, *args) -> "Standard_Real" :
         """
         * Returns the value of the measurement.
 
@@ -782,7 +782,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Measurement(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "Handle_Units_Token" :
         """
         * Returns the token contained in <self>.
 
@@ -791,7 +791,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Token(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Units_Measurement" :
         """
         * Returns (if it is possible) a measurement which is the addition of <self> and <ameasurement>. The chosen returned unit is the unit of <self>.
 
@@ -802,7 +802,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Add(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "Units_Measurement" :
         """
         :param ameasurement:
         :type ameasurement: Units_Measurement &
@@ -811,7 +811,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement___add__(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "Units_Measurement" :
         """
         * Returns (if it is possible) a measurement which is the subtraction of <self> and <ameasurement>. The chosen returned unit is the unit of <self>.
 
@@ -822,7 +822,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Subtract(self, *args)
 
-    def __sub__(self, *args):
+    def __sub__(self, *args) -> "Units_Measurement" :
         """
         :param ameasurement:
         :type ameasurement: Units_Measurement &
@@ -831,7 +831,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement___sub__(self, *args)
 
-    def Multiply(self, *args):
+    def Multiply(self, *args) -> "Units_Measurement" :
         """
         * Returns a measurement which is the multiplication of <self> and <ameasurement>.
 
@@ -848,7 +848,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Multiply(self, *args)
 
-    def __mul__(self, *args):
+    def __mul__(self, *args) -> "Units_Measurement" :
         """
         :param ameasurement:
         :type ameasurement: Units_Measurement &
@@ -861,7 +861,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement___mul__(self, *args)
 
-    def Divide(self, *args):
+    def Divide(self, *args) -> "Units_Measurement" :
         """
         * Returns a measurement which is the division of <self> by <ameasurement>.
 
@@ -878,7 +878,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Divide(self, *args)
 
-    def __div__(self, *args):
+    def __div__(self, *args) -> "Units_Measurement" :
         """
         :param ameasurement:
         :type ameasurement: Units_Measurement &
@@ -891,7 +891,7 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement___div__(self, *args)
 
-    def Power(self, *args):
+    def Power(self, *args) -> "Units_Measurement" :
         """
         * Returns a measurement which is <self> powered <anexponent>.
 
@@ -902,14 +902,14 @@ class Units_Measurement(object):
         """
         return _Units.Units_Measurement_Power(self, *args)
 
-    def HasToken(self, *args):
+    def HasToken(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Units.Units_Measurement_HasToken(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging.
 
@@ -955,14 +955,14 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Units.Units_QtsSequence_swiginit(self,_Units.new_Units_QtsSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_QtsSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Units_QtsSequence const &" :
         """
         :param Other:
         :type Other: Units_QtsSequence &
@@ -971,7 +971,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Units_QtsSequence const &" :
         """
         :param Other:
         :type Other: Units_QtsSequence &
@@ -980,7 +980,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Quantity &
@@ -993,7 +993,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Quantity &
@@ -1006,7 +1006,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1023,7 +1023,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1040,21 +1040,21 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Units_Quantity const &" :
         """
         :rtype: Handle_Units_Quantity
 
         """
         return _Units.Units_QtsSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Units_Quantity const &" :
         """
         :rtype: Handle_Units_Quantity
 
         """
         return _Units.Units_QtsSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1065,7 +1065,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Quantity const &" :
         """
         :param Index:
         :type Index: int
@@ -1074,7 +1074,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1085,7 +1085,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Quantity &" :
         """
         :param Index:
         :type Index: int
@@ -1094,7 +1094,7 @@ class Units_QtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_QtsSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1144,28 +1144,28 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_QuantitiesSequence_swiginit(self,_Units.new_Units_QuantitiesSequence(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Units.Units_QuantitiesSequence_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Units.Units_QuantitiesSequence_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_QuantitiesSequence_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Quantity &
@@ -1178,7 +1178,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Quantity &
@@ -1191,14 +1191,14 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_QuantitiesSequence_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1215,7 +1215,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1232,7 +1232,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1243,7 +1243,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_Units_QuantitiesSequence" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1252,7 +1252,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1263,7 +1263,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Quantity const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1272,7 +1272,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Quantity &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1281,7 +1281,7 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -1296,32 +1296,32 @@ class Units_QuantitiesSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_QuantitiesSequence_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Units_QtsSequence const &" :
         """
         :rtype: Units_QtsSequence
 
         """
         return _Units.Units_QuantitiesSequence_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "Units_QtsSequence &" :
         """
         :rtype: Units_QtsSequence
 
         """
         return _Units.Units_QuantitiesSequence_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_Units_QuantitiesSequence" :
         """
         :rtype: Handle_Units_QuantitiesSequence
 
         """
         return _Units.Units_QuantitiesSequence_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_QuantitiesSequence self)"""
         return _Units.Units_QuantitiesSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_QuantitiesSequence" :
         """GetHandle(Units_QuantitiesSequence self) -> Handle_Units_QuantitiesSequence"""
         return _Units.Units_QuantitiesSequence_GetHandle(self)
 
@@ -1376,7 +1376,7 @@ Handle_Units_QuantitiesSequence._kill_pointed = new_instancemethod(_Units.Handle
 Handle_Units_QuantitiesSequence_swigregister = _Units.Handle_Units_QuantitiesSequence_swigregister
 Handle_Units_QuantitiesSequence_swigregister(Handle_Units_QuantitiesSequence)
 
-def Handle_Units_QuantitiesSequence_DownCast(*args):
+def Handle_Units_QuantitiesSequence_DownCast(*args) -> "Handle_Units_QuantitiesSequence const" :
   return _Units.Handle_Units_QuantitiesSequence_DownCast(*args)
 Handle_Units_QuantitiesSequence_DownCast = _Units.Handle_Units_QuantitiesSequence_DownCast
 
@@ -1395,7 +1395,7 @@ class Units_Sentence(object):
 
         """
         _Units.Units_Sentence_swiginit(self,_Units.new_Units_Sentence(*args))
-    def SetConstants(self, *args):
+    def SetConstants(self, *args) -> "void" :
         """
         * For each constant encountered, sets the value.
 
@@ -1404,7 +1404,7 @@ class Units_Sentence(object):
         """
         return _Units.Units_Sentence_SetConstants(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "void" :
         """
         * Returns <thesequenceoftokens>.
 
@@ -1419,7 +1419,7 @@ class Units_Sentence(object):
         """
         return _Units.Units_Sentence_Sequence(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "Handle_Units_Token" :
         """
         * Computes and returns in a token the result of the expression.
 
@@ -1428,7 +1428,7 @@ class Units_Sentence(object):
         """
         return _Units.Units_Sentence_Evaluate(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Return True if number of created tokens > 0 (i.e creation of sentence is succesfull)
 
@@ -1437,7 +1437,7 @@ class Units_Sentence(object):
         """
         return _Units.Units_Sentence_IsDone(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging.
 
@@ -1478,18 +1478,18 @@ class Units_SequenceNodeOfQtsSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Units.Units_SequenceNodeOfQtsSequence_swiginit(self,_Units.new_Units_SequenceNodeOfQtsSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Quantity &" :
         """
         :rtype: Handle_Units_Quantity
 
         """
         return _Units.Units_SequenceNodeOfQtsSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_SequenceNodeOfQtsSequence self)"""
         return _Units.Units_SequenceNodeOfQtsSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_SequenceNodeOfQtsSequence" :
         """GetHandle(Units_SequenceNodeOfQtsSequence self) -> Handle_Units_SequenceNodeOfQtsSequence"""
         return _Units.Units_SequenceNodeOfQtsSequence_GetHandle(self)
 
@@ -1528,7 +1528,7 @@ Handle_Units_SequenceNodeOfQtsSequence._kill_pointed = new_instancemethod(_Units
 Handle_Units_SequenceNodeOfQtsSequence_swigregister = _Units.Handle_Units_SequenceNodeOfQtsSequence_swigregister
 Handle_Units_SequenceNodeOfQtsSequence_swigregister(Handle_Units_SequenceNodeOfQtsSequence)
 
-def Handle_Units_SequenceNodeOfQtsSequence_DownCast(*args):
+def Handle_Units_SequenceNodeOfQtsSequence_DownCast(*args) -> "Handle_Units_SequenceNodeOfQtsSequence const" :
   return _Units.Handle_Units_SequenceNodeOfQtsSequence_DownCast(*args)
 Handle_Units_SequenceNodeOfQtsSequence_DownCast = _Units.Handle_Units_SequenceNodeOfQtsSequence_DownCast
 
@@ -1547,18 +1547,18 @@ class Units_SequenceNodeOfTksSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Units.Units_SequenceNodeOfTksSequence_swiginit(self,_Units.new_Units_SequenceNodeOfTksSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Token &" :
         """
         :rtype: Handle_Units_Token
 
         """
         return _Units.Units_SequenceNodeOfTksSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_SequenceNodeOfTksSequence self)"""
         return _Units.Units_SequenceNodeOfTksSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_SequenceNodeOfTksSequence" :
         """GetHandle(Units_SequenceNodeOfTksSequence self) -> Handle_Units_SequenceNodeOfTksSequence"""
         return _Units.Units_SequenceNodeOfTksSequence_GetHandle(self)
 
@@ -1597,7 +1597,7 @@ Handle_Units_SequenceNodeOfTksSequence._kill_pointed = new_instancemethod(_Units
 Handle_Units_SequenceNodeOfTksSequence_swigregister = _Units.Handle_Units_SequenceNodeOfTksSequence_swigregister
 Handle_Units_SequenceNodeOfTksSequence_swigregister(Handle_Units_SequenceNodeOfTksSequence)
 
-def Handle_Units_SequenceNodeOfTksSequence_DownCast(*args):
+def Handle_Units_SequenceNodeOfTksSequence_DownCast(*args) -> "Handle_Units_SequenceNodeOfTksSequence const" :
   return _Units.Handle_Units_SequenceNodeOfTksSequence_DownCast(*args)
 Handle_Units_SequenceNodeOfTksSequence_DownCast = _Units.Handle_Units_SequenceNodeOfTksSequence_DownCast
 
@@ -1616,18 +1616,18 @@ class Units_SequenceNodeOfUtsSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Units.Units_SequenceNodeOfUtsSequence_swiginit(self,_Units.new_Units_SequenceNodeOfUtsSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Unit &" :
         """
         :rtype: Handle_Units_Unit
 
         """
         return _Units.Units_SequenceNodeOfUtsSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_SequenceNodeOfUtsSequence self)"""
         return _Units.Units_SequenceNodeOfUtsSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_SequenceNodeOfUtsSequence" :
         """GetHandle(Units_SequenceNodeOfUtsSequence self) -> Handle_Units_SequenceNodeOfUtsSequence"""
         return _Units.Units_SequenceNodeOfUtsSequence_GetHandle(self)
 
@@ -1666,7 +1666,7 @@ Handle_Units_SequenceNodeOfUtsSequence._kill_pointed = new_instancemethod(_Units
 Handle_Units_SequenceNodeOfUtsSequence_swigregister = _Units.Handle_Units_SequenceNodeOfUtsSequence_swigregister
 Handle_Units_SequenceNodeOfUtsSequence_swigregister(Handle_Units_SequenceNodeOfUtsSequence)
 
-def Handle_Units_SequenceNodeOfUtsSequence_DownCast(*args):
+def Handle_Units_SequenceNodeOfUtsSequence_DownCast(*args) -> "Handle_Units_SequenceNodeOfUtsSequence const" :
   return _Units.Handle_Units_SequenceNodeOfUtsSequence_DownCast(*args)
 Handle_Units_SequenceNodeOfUtsSequence_DownCast = _Units.Handle_Units_SequenceNodeOfUtsSequence_DownCast
 
@@ -1679,14 +1679,14 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Units.Units_TksSequence_swiginit(self,_Units.new_Units_TksSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_TksSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Units_TksSequence const &" :
         """
         :param Other:
         :type Other: Units_TksSequence &
@@ -1695,7 +1695,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Units_TksSequence const &" :
         """
         :param Other:
         :type Other: Units_TksSequence &
@@ -1704,7 +1704,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Token &
@@ -1717,7 +1717,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Token &
@@ -1730,7 +1730,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1747,7 +1747,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1764,21 +1764,21 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Units_Token const &" :
         """
         :rtype: Handle_Units_Token
 
         """
         return _Units.Units_TksSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Units_Token const &" :
         """
         :rtype: Handle_Units_Token
 
         """
         return _Units.Units_TksSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1789,7 +1789,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Token const &" :
         """
         :param Index:
         :type Index: int
@@ -1798,7 +1798,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1809,7 +1809,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Token &" :
         """
         :param Index:
         :type Index: int
@@ -1818,7 +1818,7 @@ class Units_TksSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_TksSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1912,7 +1912,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_Token_swiginit(self,_Units.new_Units_Token(*args))
-    def Creates(self, *args):
+    def Creates(self, *args) -> "Handle_Units_Token" :
         """
         * Creates and returns a token, which is a ShiftedToken.
 
@@ -1921,7 +1921,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Creates(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         * Returns the length of the word.
 
@@ -1930,7 +1930,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Length(self, *args)
 
-    def Word(self, *args):
+    def Word(self, *args) -> "void" :
         """
         * Returns the string <theword>
 
@@ -1945,7 +1945,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Word(self, *args)
 
-    def Mean(self, *args):
+    def Mean(self, *args) -> "void" :
         """
         * Returns the significance of the word <theword>, which is in the field <themean>.
 
@@ -1960,7 +1960,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Mean(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         * Returns the value stored in the field <thevalue>.
 
@@ -1975,7 +1975,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Value(self, *args)
 
-    def Dimensions(self, *args):
+    def Dimensions(self, *args) -> "void" :
         """
         * Returns the dimensions of the token <thedimensions>.
 
@@ -1990,7 +1990,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Dimensions(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Updates the token <self> with the additional signification <amean> by concatenation of the two strings <themean> and <amean>. If the two significations are the same , an information message is written in the output device.
 
@@ -2001,7 +2001,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Update(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Handle_Units_Token" :
         """
         :param aninteger:
         :type aninteger: int
@@ -2016,7 +2016,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Add(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "Handle_Units_Token" :
         """
         * Returns a token which is the subtraction of <self> and another token <atoken>. The subtraction is possible if and only if the dimensions are the same.
 
@@ -2027,7 +2027,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Subtract(self, *args)
 
-    def Multiply(self, *args):
+    def Multiply(self, *args) -> "Handle_Units_Token" :
         """
         * Returns a token which is the product of <self> and another token <atoken>.
 
@@ -2038,7 +2038,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Multiply(self, *args)
 
-    def Multiplied(self, *args):
+    def Multiplied(self, *args) -> "Standard_Real" :
         """
         * This virtual method is called by the Measurement methods, to compute the measurement during a conversion.
 
@@ -2049,7 +2049,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Multiplied(self, *args)
 
-    def Divide(self, *args):
+    def Divide(self, *args) -> "Handle_Units_Token" :
         """
         * Returns a token which is the division of <self> by another token <atoken>.
 
@@ -2060,7 +2060,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Divide(self, *args)
 
-    def Divided(self, *args):
+    def Divided(self, *args) -> "Standard_Real" :
         """
         * This virtual method is called by the Measurement methods, to compute the measurement during a conversion.
 
@@ -2071,7 +2071,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Divided(self, *args)
 
-    def Power(self, *args):
+    def Power(self, *args) -> "Handle_Units_Token" :
         """
         * Returns a token which is <self> to the power of another token <atoken>. The computation is possible only if <atoken> is a dimensionless constant.
 
@@ -2088,7 +2088,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Power(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the field <theword> and the string <astring> are the same, false otherwise.
 
@@ -2105,7 +2105,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_IsEqual(self, *args)
 
-    def IsNotEqual(self, *args):
+    def IsNotEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns false if the field <theword> and the string <astring> are the same, true otherwise.
 
@@ -2122,7 +2122,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_IsNotEqual(self, *args)
 
-    def IsLessOrEqual(self, *args):
+    def IsLessOrEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the field <theword> is strictly contained at the beginning of the string <astring>, false otherwise.
 
@@ -2133,7 +2133,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_IsLessOrEqual(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * Returns false if the field <theword> is strictly contained at the beginning of the string <astring>, true otherwise.
 
@@ -2150,7 +2150,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_IsGreater(self, *args)
 
-    def IsGreaterOrEqual(self, *args):
+    def IsGreaterOrEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the string <astring> is strictly contained at the beginning of the field <theword> false otherwise.
 
@@ -2161,7 +2161,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_IsGreaterOrEqual(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Destroies the Token
 
@@ -2170,7 +2170,7 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Destroy(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging
 
@@ -2183,11 +2183,11 @@ class Units_Token(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Token_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_Token self)"""
         return _Units.Units_Token__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_Token" :
         """GetHandle(Units_Token self) -> Handle_Units_Token"""
         return _Units.Units_Token_GetHandle(self)
 
@@ -2246,7 +2246,7 @@ Handle_Units_Token._kill_pointed = new_instancemethod(_Units.Handle_Units_Token_
 Handle_Units_Token_swigregister = _Units.Handle_Units_Token_swigregister
 Handle_Units_Token_swigregister(Handle_Units_Token)
 
-def Handle_Units_Token_DownCast(*args):
+def Handle_Units_Token_DownCast(*args) -> "Handle_Units_Token const" :
   return _Units.Handle_Units_Token_DownCast(*args)
 Handle_Units_Token_DownCast = _Units.Handle_Units_Token_DownCast
 
@@ -2259,28 +2259,28 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_TokensSequence_swiginit(self,_Units.new_Units_TokensSequence(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Units.Units_TokensSequence_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Units.Units_TokensSequence_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_TokensSequence_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Token &
@@ -2293,7 +2293,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Token &
@@ -2306,14 +2306,14 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_TokensSequence_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2330,7 +2330,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2347,7 +2347,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2358,7 +2358,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_Units_TokensSequence" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2367,7 +2367,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2378,7 +2378,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Token const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2387,7 +2387,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Token &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2396,7 +2396,7 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2411,32 +2411,32 @@ class Units_TokensSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_TokensSequence_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Units_TksSequence const &" :
         """
         :rtype: Units_TksSequence
 
         """
         return _Units.Units_TokensSequence_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "Units_TksSequence &" :
         """
         :rtype: Units_TksSequence
 
         """
         return _Units.Units_TokensSequence_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_Units_TokensSequence" :
         """
         :rtype: Handle_Units_TokensSequence
 
         """
         return _Units.Units_TokensSequence_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_TokensSequence self)"""
         return _Units.Units_TokensSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_TokensSequence" :
         """GetHandle(Units_TokensSequence self) -> Handle_Units_TokensSequence"""
         return _Units.Units_TokensSequence_GetHandle(self)
 
@@ -2491,7 +2491,7 @@ Handle_Units_TokensSequence._kill_pointed = new_instancemethod(_Units.Handle_Uni
 Handle_Units_TokensSequence_swigregister = _Units.Handle_Units_TokensSequence_swigregister
 Handle_Units_TokensSequence_swigregister(Handle_Units_TokensSequence)
 
-def Handle_Units_TokensSequence_DownCast(*args):
+def Handle_Units_TokensSequence_DownCast(*args) -> "Handle_Units_TokensSequence const" :
   return _Units.Handle_Units_TokensSequence_DownCast(*args)
 Handle_Units_TokensSequence_DownCast = _Units.Handle_Units_TokensSequence_DownCast
 
@@ -2528,7 +2528,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_Unit_swiginit(self,_Units.new_Units_Unit(*args))
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name of the unit <thename>
 
@@ -2537,7 +2537,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Name(self, *args)
 
-    def Symbol(self, *args):
+    def Symbol(self, *args) -> "void" :
         """
         * Adds a new symbol <asymbol> attached to <self>.
 
@@ -2548,7 +2548,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Symbol(self, *args)
 
-    def SymbolsSequence(self, *args):
+    def SymbolsSequence(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the sequence of symbols <thesymbolssequence>
 
@@ -2557,7 +2557,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_SymbolsSequence(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         * Returns the value in relation with the International System of Units.
 
@@ -2572,7 +2572,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Value(self, *args)
 
-    def Quantity(self, *args):
+    def Quantity(self, *args) -> "void" :
         """
         * Returns <thequantity> contained in <self>.
 
@@ -2587,7 +2587,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Quantity(self, *args)
 
-    def Token(self, *args):
+    def Token(self, *args) -> "Handle_Units_Token" :
         """
         * Starting with <self>, returns a new Token object.
 
@@ -2596,7 +2596,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Token(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Compares all the symbols linked within <self> with the name of <atoken>, and returns True if there is one symbol equal to the name, False otherwise.
 
@@ -2607,7 +2607,7 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_IsEqual(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging
 
@@ -2620,11 +2620,11 @@ class Units_Unit(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_Unit_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_Unit self)"""
         return _Units.Units_Unit__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_Unit" :
         """GetHandle(Units_Unit self) -> Handle_Units_Unit"""
         return _Units.Units_Unit_GetHandle(self)
 
@@ -2670,7 +2670,7 @@ Handle_Units_Unit._kill_pointed = new_instancemethod(_Units.Handle_Units_Unit__k
 Handle_Units_Unit_swigregister = _Units.Handle_Units_Unit_swigregister
 Handle_Units_Unit_swigregister(Handle_Units_Unit)
 
-def Handle_Units_Unit_DownCast(*args):
+def Handle_Units_Unit_DownCast(*args) -> "Handle_Units_Unit const" :
   return _Units.Handle_Units_Unit_DownCast(*args)
 Handle_Units_Unit_DownCast = _Units.Handle_Units_Unit_DownCast
 
@@ -2685,7 +2685,7 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_UnitsDictionary_swiginit(self,_Units.new_Units_UnitsDictionary(*args))
-    def Creates(self, *args):
+    def Creates(self, *args) -> "void" :
         """
         * Returns a UnitsDictionary object which contains the sequence of all the units you want to consider, physical quantity by physical quantity.
 
@@ -2696,7 +2696,7 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsDictionary_Creates(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Handle_Units_QuantitiesSequence" :
         """
         * Returns the head of the sequence of physical quantities.
 
@@ -2705,7 +2705,7 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsDictionary_Sequence(self, *args)
 
-    def UpToDate(self, *args):
+    def UpToDate(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there has been no modification of the file Units.dat since the creation of the dictionary object, false otherwise.
 
@@ -2714,7 +2714,7 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsDictionary_UpToDate(self, *args)
 
-    def ActiveUnit(self, *args):
+    def ActiveUnit(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns for <aquantity> the active unit.
 
@@ -2725,7 +2725,7 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsDictionary_ActiveUnit(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Dumps only the sequence of quantities without the units if <alevel> is equal to zero, and for each quantity all the units stored if <alevel> is equal to one.
 
@@ -2742,11 +2742,11 @@ class Units_UnitsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsDictionary_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_UnitsDictionary self)"""
         return _Units.Units_UnitsDictionary__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_UnitsDictionary" :
         """GetHandle(Units_UnitsDictionary self) -> Handle_Units_UnitsDictionary"""
         return _Units.Units_UnitsDictionary_GetHandle(self)
 
@@ -2789,7 +2789,7 @@ Handle_Units_UnitsDictionary._kill_pointed = new_instancemethod(_Units.Handle_Un
 Handle_Units_UnitsDictionary_swigregister = _Units.Handle_Units_UnitsDictionary_swigregister
 Handle_Units_UnitsDictionary_swigregister(Handle_Units_UnitsDictionary)
 
-def Handle_Units_UnitsDictionary_DownCast(*args):
+def Handle_Units_UnitsDictionary_DownCast(*args) -> "Handle_Units_UnitsDictionary const" :
   return _Units.Handle_Units_UnitsDictionary_DownCast(*args)
 Handle_Units_UnitsDictionary_DownCast = _Units.Handle_Units_UnitsDictionary_DownCast
 
@@ -2802,28 +2802,28 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_UnitsSequence_swiginit(self,_Units.new_Units_UnitsSequence(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Units.Units_UnitsSequence_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Units.Units_UnitsSequence_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_UnitsSequence_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Unit &
@@ -2836,7 +2836,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Units_Unit &
@@ -2849,14 +2849,14 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_UnitsSequence_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2873,7 +2873,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2890,7 +2890,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2901,7 +2901,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_Units_UnitsSequence" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2910,7 +2910,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2921,7 +2921,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Unit const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2930,7 +2930,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Unit &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2939,7 +2939,7 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2954,32 +2954,32 @@ class Units_UnitsSequence(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSequence_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "Units_UtsSequence const &" :
         """
         :rtype: Units_UtsSequence
 
         """
         return _Units.Units_UnitsSequence_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "Units_UtsSequence &" :
         """
         :rtype: Units_UtsSequence
 
         """
         return _Units.Units_UnitsSequence_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_Units_UnitsSequence" :
         """
         :rtype: Handle_Units_UnitsSequence
 
         """
         return _Units.Units_UnitsSequence_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_UnitsSequence self)"""
         return _Units.Units_UnitsSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_UnitsSequence" :
         """GetHandle(Units_UnitsSequence self) -> Handle_Units_UnitsSequence"""
         return _Units.Units_UnitsSequence_GetHandle(self)
 
@@ -3034,7 +3034,7 @@ Handle_Units_UnitsSequence._kill_pointed = new_instancemethod(_Units.Handle_Unit
 Handle_Units_UnitsSequence_swigregister = _Units.Handle_Units_UnitsSequence_swigregister
 Handle_Units_UnitsSequence_swigregister(Handle_Units_UnitsSequence)
 
-def Handle_Units_UnitsSequence_DownCast(*args):
+def Handle_Units_UnitsSequence_DownCast(*args) -> "Handle_Units_UnitsSequence const" :
   return _Units.Handle_Units_UnitsSequence_DownCast(*args)
 Handle_Units_UnitsSequence_DownCast = _Units.Handle_Units_UnitsSequence_DownCast
 
@@ -3057,7 +3057,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
 
         """
         _Units.Units_UnitsSystem_swiginit(self,_Units.new_Units_UnitsSystem(*args))
-    def QuantitiesSequence(self, *args):
+    def QuantitiesSequence(self, *args) -> "Handle_Units_QuantitiesSequence" :
         """
         * Returns the sequence of refined quantities.
 
@@ -3066,7 +3066,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_QuantitiesSequence(self, *args)
 
-    def ActiveUnitsSequence(self, *args):
+    def ActiveUnitsSequence(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         * Returns a sequence of integer in correspondance with the sequence of quantities, which indicates, for each redefined quantity, the index into the sequence of units, of the active unit.
 
@@ -3075,7 +3075,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_ActiveUnitsSequence(self, *args)
 
-    def Specify(self, *args):
+    def Specify(self, *args) -> "void" :
         """
         * Specifies for <aquantity> the unit <aunit> used.
 
@@ -3088,7 +3088,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_Specify(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Removes for <aquantity> the unit <aunit> used.
 
@@ -3101,7 +3101,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_Remove(self, *args)
 
-    def Activate(self, *args):
+    def Activate(self, *args) -> "void" :
         """
         * Specifies for <aquantity> the unit <aunit> used.
 
@@ -3114,7 +3114,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_Activate(self, *args)
 
-    def Activates(self, *args):
+    def Activates(self, *args) -> "void" :
         """
         * Activates the first unit of all defined system quantities
 
@@ -3123,7 +3123,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_Activates(self, *args)
 
-    def ActiveUnit(self, *args):
+    def ActiveUnit(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns for <aquantity> the active unit.
 
@@ -3134,7 +3134,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_ActiveUnit(self, *args)
 
-    def ConvertValueToUserSystem(self, *args):
+    def ConvertValueToUserSystem(self, *args) -> "Standard_Real" :
         """
         * Converts a real value <avalue> from the unit <aunit> belonging to the physical dimensions <aquantity> to the corresponding unit of the user system.
 
@@ -3149,7 +3149,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_ConvertValueToUserSystem(self, *args)
 
-    def ConvertSIValueToUserSystem(self, *args):
+    def ConvertSIValueToUserSystem(self, *args) -> "Standard_Real" :
         """
         * Converts the real value <avalue> from the S.I. system of units to the user system of units. <aquantity> is the physical dimensions of the measurement.
 
@@ -3162,7 +3162,7 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_ConvertSIValueToUserSystem(self, *args)
 
-    def ConvertUserSystemValueToSI(self, *args):
+    def ConvertUserSystemValueToSI(self, *args) -> "Standard_Real" :
         """
         * Converts the real value <avalue> from the user system of units to the S.I. system of units. <aquantity> is the physical dimensions of the measurement.
 
@@ -3175,14 +3175,14 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_ConvertUserSystemValueToSI(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_UnitsSystem_Dump(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if no units has been defined in the system.
 
@@ -3191,11 +3191,11 @@ class Units_UnitsSystem(OCC.MMgt.MMgt_TShared):
         """
         return _Units.Units_UnitsSystem_IsEmpty(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_UnitsSystem self)"""
         return _Units.Units_UnitsSystem__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_UnitsSystem" :
         """GetHandle(Units_UnitsSystem self) -> Handle_Units_UnitsSystem"""
         return _Units.Units_UnitsSystem_GetHandle(self)
 
@@ -3245,7 +3245,7 @@ Handle_Units_UnitsSystem._kill_pointed = new_instancemethod(_Units.Handle_Units_
 Handle_Units_UnitsSystem_swigregister = _Units.Handle_Units_UnitsSystem_swigregister
 Handle_Units_UnitsSystem_swigregister(Handle_Units_UnitsSystem)
 
-def Handle_Units_UnitsSystem_DownCast(*args):
+def Handle_Units_UnitsSystem_DownCast(*args) -> "Handle_Units_UnitsSystem const" :
   return _Units.Handle_Units_UnitsSystem_DownCast(*args)
 Handle_Units_UnitsSystem_DownCast = _Units.Handle_Units_UnitsSystem_DownCast
 
@@ -3258,14 +3258,14 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Units.Units_UtsSequence_swiginit(self,_Units.new_Units_UtsSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Units.Units_UtsSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Units_UtsSequence const &" :
         """
         :param Other:
         :type Other: Units_UtsSequence &
@@ -3274,7 +3274,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Units_UtsSequence const &" :
         """
         :param Other:
         :type Other: Units_UtsSequence &
@@ -3283,7 +3283,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Unit &
@@ -3296,7 +3296,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Units_Unit &
@@ -3309,7 +3309,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3326,7 +3326,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3343,21 +3343,21 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Units_Unit const &" :
         """
         :rtype: Handle_Units_Unit
 
         """
         return _Units.Units_UtsSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Units_Unit const &" :
         """
         :rtype: Handle_Units_Unit
 
         """
         return _Units.Units_UtsSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3368,7 +3368,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Units_Unit const &" :
         """
         :param Index:
         :type Index: int
@@ -3377,7 +3377,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3388,7 +3388,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Units_Unit &" :
         """
         :param Index:
         :type Index: int
@@ -3397,7 +3397,7 @@ class Units_UtsSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Units.Units_UtsSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3484,7 +3484,7 @@ class Units_ShiftedToken(Units_Token):
 
         """
         _Units.Units_ShiftedToken_swiginit(self,_Units.new_Units_ShiftedToken(*args))
-    def Move(self, *args):
+    def Move(self, *args) -> "Standard_Real" :
         """
         * Returns the gap <themove>
 
@@ -3493,11 +3493,11 @@ class Units_ShiftedToken(Units_Token):
         """
         return _Units.Units_ShiftedToken_Move(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_ShiftedToken self)"""
         return _Units.Units_ShiftedToken__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_ShiftedToken" :
         """GetHandle(Units_ShiftedToken self) -> Handle_Units_ShiftedToken"""
         return _Units.Units_ShiftedToken_GetHandle(self)
 
@@ -3536,7 +3536,7 @@ Handle_Units_ShiftedToken._kill_pointed = new_instancemethod(_Units.Handle_Units
 Handle_Units_ShiftedToken_swigregister = _Units.Handle_Units_ShiftedToken_swigregister
 Handle_Units_ShiftedToken_swigregister(Handle_Units_ShiftedToken)
 
-def Handle_Units_ShiftedToken_DownCast(*args):
+def Handle_Units_ShiftedToken_DownCast(*args) -> "Handle_Units_ShiftedToken const" :
   return _Units.Handle_Units_ShiftedToken_DownCast(*args)
 Handle_Units_ShiftedToken_DownCast = _Units.Handle_Units_ShiftedToken_DownCast
 
@@ -3575,7 +3575,7 @@ class Units_ShiftedUnit(Units_Unit):
 
         """
         _Units.Units_ShiftedUnit_swiginit(self,_Units.new_Units_ShiftedUnit(*args))
-    def Move(self, *args):
+    def Move(self, *args) -> "Standard_Real" :
         """
         * Sets the field <themove> to <amove>
 
@@ -3590,11 +3590,11 @@ class Units_ShiftedUnit(Units_Unit):
         """
         return _Units.Units_ShiftedUnit_Move(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_ShiftedUnit self)"""
         return _Units.Units_ShiftedUnit__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_ShiftedUnit" :
         """GetHandle(Units_ShiftedUnit self) -> Handle_Units_ShiftedUnit"""
         return _Units.Units_ShiftedUnit_GetHandle(self)
 
@@ -3633,7 +3633,7 @@ Handle_Units_ShiftedUnit._kill_pointed = new_instancemethod(_Units.Handle_Units_
 Handle_Units_ShiftedUnit_swigregister = _Units.Handle_Units_ShiftedUnit_swigregister
 Handle_Units_ShiftedUnit_swigregister(Handle_Units_ShiftedUnit)
 
-def Handle_Units_ShiftedUnit_DownCast(*args):
+def Handle_Units_ShiftedUnit_DownCast(*args) -> "Handle_Units_ShiftedUnit const" :
   return _Units.Handle_Units_ShiftedUnit_DownCast(*args)
 Handle_Units_ShiftedUnit_DownCast = _Units.Handle_Units_ShiftedUnit_DownCast
 
@@ -3658,7 +3658,7 @@ class Units_UnitSentence(Units_Sentence):
 
         """
         _Units.Units_UnitSentence_swiginit(self,_Units.new_Units_UnitSentence(*args))
-    def Analyse(self, *args):
+    def Analyse(self, *args) -> "void" :
         """
         * Analyzes the sequence of tokens created by the constructor to find the true significance of each token.
 
@@ -3667,7 +3667,7 @@ class Units_UnitSentence(Units_Sentence):
         """
         return _Units.Units_UnitSentence_Analyse(self, *args)
 
-    def SetUnits(self, *args):
+    def SetUnits(self, *args) -> "void" :
         """
         * For each token which represents a unit, finds in the sequence of physical quantities all the characteristics of the unit found.
 
@@ -3703,7 +3703,7 @@ class Units_UnitsLexicon(Units_Lexicon):
 
         """
         _Units.Units_UnitsLexicon_swiginit(self,_Units.new_Units_UnitsLexicon(*args))
-    def Creates(self, *args):
+    def Creates(self, *args) -> "void" :
         """
         * Reads the files <afilename1> and <afilename2> to create a sequence of tokens stored in <thesequenceoftokens>.
 
@@ -3718,7 +3718,7 @@ class Units_UnitsLexicon(Units_Lexicon):
         """
         return _Units.Units_UnitsLexicon_Creates(self, *args)
 
-    def FileName2(self, *args):
+    def FileName2(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns in a AsciiString from TCollection the name of the file.
 
@@ -3727,7 +3727,7 @@ class Units_UnitsLexicon(Units_Lexicon):
         """
         return _Units.Units_UnitsLexicon_FileName2(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Useful for debugging.
 
@@ -3736,11 +3736,11 @@ class Units_UnitsLexicon(Units_Lexicon):
         """
         return _Units.Units_UnitsLexicon_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Units_UnitsLexicon self)"""
         return _Units.Units_UnitsLexicon__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Units_UnitsLexicon" :
         """GetHandle(Units_UnitsLexicon self) -> Handle_Units_UnitsLexicon"""
         return _Units.Units_UnitsLexicon_GetHandle(self)
 
@@ -3781,7 +3781,7 @@ Handle_Units_UnitsLexicon._kill_pointed = new_instancemethod(_Units.Handle_Units
 Handle_Units_UnitsLexicon_swigregister = _Units.Handle_Units_UnitsLexicon_swigregister
 Handle_Units_UnitsLexicon_swigregister(Handle_Units_UnitsLexicon)
 
-def Handle_Units_UnitsLexicon_DownCast(*args):
+def Handle_Units_UnitsLexicon_DownCast(*args) -> "Handle_Units_UnitsLexicon const" :
   return _Units.Handle_Units_UnitsLexicon_DownCast(*args)
 Handle_Units_UnitsLexicon_DownCast = _Units.Handle_Units_UnitsLexicon_DownCast
 

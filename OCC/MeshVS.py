@@ -246,7 +246,7 @@ class MeshVS_Array1OfSequenceOfInteger(object):
 
         """
         _MeshVS.MeshVS_Array1OfSequenceOfInteger_swiginit(self,_MeshVS.new_MeshVS_Array1OfSequenceOfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_SequenceOfInteger &
@@ -255,21 +255,21 @@ class MeshVS_Array1OfSequenceOfInteger(object):
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_Array1OfSequenceOfInteger const &" :
         """
         :param Other:
         :type Other: MeshVS_Array1OfSequenceOfInteger &
@@ -278,7 +278,7 @@ class MeshVS_Array1OfSequenceOfInteger(object):
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_Array1OfSequenceOfInteger const &" :
         """
         :param Other:
         :type Other: MeshVS_Array1OfSequenceOfInteger &
@@ -287,28 +287,28 @@ class MeshVS_Array1OfSequenceOfInteger(object):
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -319,7 +319,7 @@ class MeshVS_Array1OfSequenceOfInteger(object):
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param Index:
         :type Index: int
@@ -328,7 +328,7 @@ class MeshVS_Array1OfSequenceOfInteger(object):
         """
         return _MeshVS.MeshVS_Array1OfSequenceOfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :param Index:
         :type Index: int
@@ -363,7 +363,7 @@ MeshVS_Array1OfSequenceOfInteger_swigregister(MeshVS_Array1OfSequenceOfInteger)
 class MeshVS_ColorHasher(OCC.TColStd.TColStd_MapIntegerHasher):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -375,7 +375,7 @@ class MeshVS_ColorHasher(OCC.TColStd.TColStd_MapIntegerHasher):
         return _MeshVS.MeshVS_ColorHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: Quantity_Color &
@@ -401,7 +401,7 @@ MeshVS_ColorHasher._kill_pointed = new_instancemethod(_MeshVS.MeshVS_ColorHasher
 MeshVS_ColorHasher_swigregister = _MeshVS.MeshVS_ColorHasher_swigregister
 MeshVS_ColorHasher_swigregister(MeshVS_ColorHasher)
 
-def MeshVS_ColorHasher_HashCode(*args):
+def MeshVS_ColorHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: Quantity_Color &
@@ -412,7 +412,7 @@ def MeshVS_ColorHasher_HashCode(*args):
     """
   return _MeshVS.MeshVS_ColorHasher_HashCode(*args)
 
-def MeshVS_ColorHasher_IsEqual(*args):
+def MeshVS_ColorHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: Quantity_Color &
@@ -436,7 +436,7 @@ class MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger(OCC.TCollection.TCollec
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfColorMapOfInteger &
@@ -445,14 +445,14 @@ class MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger(OCC.TCollection.TCollec
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Quantity_Color const &" :
         """
         :rtype: Quantity_Color
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfColorMapOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         :rtype: TColStd_MapOfInteger
 
@@ -487,7 +487,7 @@ class MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger(OCC.TCollectio
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfHArray1OfSequenceOfInteger &
@@ -496,14 +496,14 @@ class MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger(OCC.TCollectio
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfHArray1OfSequenceOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger const &" :
         """
         :rtype: Handle_MeshVS_HArray1OfSequenceOfInteger
 
@@ -538,7 +538,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString(OCC.TCollection.TColle
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerAsciiString &
@@ -547,14 +547,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString(OCC.TCollection.TColle
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerAsciiString_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
@@ -589,7 +589,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean(OCC.TCollection.TCollectio
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerBoolean &
@@ -598,14 +598,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean(OCC.TCollection.TCollectio
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerBoolean_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean const &" :
         """
         :rtype: bool
 
@@ -640,7 +640,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerColor(OCC.TCollection.TCollection_
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerColor_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerColor(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerColor &
@@ -649,14 +649,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerColor(OCC.TCollection.TCollection_
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerColor_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerColor_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Color const &" :
         """
         :rtype: Quantity_Color
 
@@ -691,7 +691,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial(OCC.TCollection.TCollecti
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerMaterial &
@@ -700,14 +700,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial(OCC.TCollection.TCollecti
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMaterial_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Graphic3d_MaterialAspect const &" :
         """
         :rtype: Graphic3d_MaterialAspect
 
@@ -742,7 +742,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner(OCC.TCollection.TC
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerMeshEntityOwner &
@@ -751,14 +751,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner(OCC.TCollection.TC
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerMeshEntityOwner_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_MeshEntityOwner const &" :
         """
         :rtype: Handle_MeshVS_MeshEntityOwner
 
@@ -793,7 +793,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerOwner(OCC.TCollection.TCollection_
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerOwner(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerOwner &
@@ -802,14 +802,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerOwner(OCC.TCollection.TCollection_
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerOwner_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerOwner_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectMgr_EntityOwner const &" :
         """
         :rtype: Handle_SelectMgr_EntityOwner
 
@@ -844,7 +844,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors(OCC.TCollection.TCollect
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerTwoColors &
@@ -853,14 +853,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors(OCC.TCollection.TCollect
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerTwoColors_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "MeshVS_TwoColors const &" :
         """
         :rtype: MeshVS_TwoColors
 
@@ -895,7 +895,7 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerVector(OCC.TCollection.TCollection
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerVector_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfIntegerVector(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfIntegerVector &
@@ -904,14 +904,14 @@ class MeshVS_DataMapIteratorOfDataMapOfIntegerVector(OCC.TCollection.TCollection
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerVector_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfIntegerVector_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
@@ -946,7 +946,7 @@ class MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCo
 
         """
         _MeshVS.MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_DataMapOfTwoColorsMapOfInteger &
@@ -955,14 +955,14 @@ class MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCo
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "MeshVS_TwoColors const &" :
         """
         :rtype: MeshVS_TwoColors
 
         """
         return _MeshVS.MeshVS_DataMapIteratorOfDataMapOfTwoColorsMapOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         :rtype: TColStd_MapOfInteger
 
@@ -999,25 +999,25 @@ class MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger(OCC.TCollection.TCollection
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Quantity_Color &" :
         """
         :rtype: Quantity_Color
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :rtype: TColStd_MapOfInteger
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger self) -> Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_GetHandle(self)
 
@@ -1057,7 +1057,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger._kill_pointed = new_instan
 Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfColorMapOfInteger_DownCast
 
@@ -1076,26 +1076,26 @@ class MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TC
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger &" :
         """
         :rtype: Handle_MeshVS_HArray1OfSequenceOfInteger
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger self) -> Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_GetHandle(self)
 
@@ -1136,7 +1136,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger._kill_pointed = n
 Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfHArray1OfSequenceOfInteger_DownCast
 
@@ -1155,26 +1155,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString(OCC.TCollection.TCollectio
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TCollection_AsciiString &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_GetHandle(self)
 
@@ -1215,7 +1215,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString._kill_pointed = new_insta
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerAsciiString_DownCast
 
@@ -1234,27 +1234,27 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerBoolean(OCC.TCollection.TCollection_Ma
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_SetKey(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Boolean" :
         """GetValue(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self) -> Standard_Boolean"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self, Standard_Boolean value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerBoolean self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_GetHandle(self)
 
@@ -1296,7 +1296,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean._kill_pointed = new_instancem
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerBoolean_DownCast
 
@@ -1315,26 +1315,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerColor(OCC.TCollection.TCollection_MapN
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerColor(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerColor self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerColor self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Color &" :
         """
         :rtype: Quantity_Color
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerColor self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerColor self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerColor_GetHandle(self)
 
@@ -1375,7 +1375,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor._kill_pointed = new_instancemet
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerColor_DownCast
 
@@ -1394,26 +1394,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerMaterial(OCC.TCollection.TCollection_M
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerMaterial self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerMaterial self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Graphic3d_MaterialAspect &" :
         """
         :rtype: Graphic3d_MaterialAspect
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerMaterial self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerMaterial self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_GetHandle(self)
 
@@ -1454,7 +1454,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial._kill_pointed = new_instance
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMaterial_DownCast
 
@@ -1473,26 +1473,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner(OCC.TCollection.TColle
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_MeshEntityOwner &" :
         """
         :rtype: Handle_MeshVS_MeshEntityOwner
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_GetHandle(self)
 
@@ -1533,7 +1533,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner._kill_pointed = new_i
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerMeshEntityOwner_DownCast
 
@@ -1552,26 +1552,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerOwner(OCC.TCollection.TCollection_MapN
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerOwner(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerOwner self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerOwner self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_SelectMgr_EntityOwner &" :
         """
         :rtype: Handle_SelectMgr_EntityOwner
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerOwner self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerOwner self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerOwner_GetHandle(self)
 
@@ -1612,7 +1612,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner._kill_pointed = new_instancemet
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerOwner_DownCast
 
@@ -1631,26 +1631,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors(OCC.TCollection.TCollection_
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "MeshVS_TwoColors &" :
         """
         :rtype: MeshVS_TwoColors
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_GetHandle(self)
 
@@ -1691,7 +1691,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors._kill_pointed = new_instanc
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerTwoColors_DownCast
 
@@ -1710,26 +1710,26 @@ class MeshVS_DataMapNodeOfDataMapOfIntegerVector(OCC.TCollection.TCollection_Map
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfIntegerVector(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MeshVS_DataMapNodeOfDataMapOfIntegerVector self) -> Standard_Integer"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MeshVS_DataMapNodeOfDataMapOfIntegerVector self, Standard_Integer value)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Vec" :
         """
         :rtype: gp_Vec
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfIntegerVector self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfIntegerVector self) -> Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfIntegerVector_GetHandle(self)
 
@@ -1770,7 +1770,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector._kill_pointed = new_instanceme
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfIntegerVector_DownCast
 
@@ -1789,25 +1789,25 @@ class MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollec
 
         """
         _MeshVS.MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "MeshVS_TwoColors &" :
         """
         :rtype: MeshVS_TwoColors
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :rtype: TColStd_MapOfInteger
 
         """
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger self)"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger" :
         """GetHandle(MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger self) -> Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger"""
         return _MeshVS.MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_GetHandle(self)
 
@@ -1847,7 +1847,7 @@ Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger._kill_pointed = new_in
 Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_swigregister = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_swigregister
 Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_swigregister(Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger)
 
-def Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_DownCast(*args):
+def Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_DownCast(*args) -> "Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger const" :
   return _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_DownCast(*args)
 Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_DownCast = _MeshVS.Handle_MeshVS_DataMapNodeOfDataMapOfTwoColorsMapOfInteger_DownCast
 
@@ -1862,7 +1862,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfColorMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapOfColorMapOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfColorMapOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfColorMapOfInteger &
@@ -1871,7 +1871,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfColorMapOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfColorMapOfInteger &
@@ -1880,7 +1880,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1889,14 +1889,14 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1907,7 +1907,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1916,7 +1916,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1925,7 +1925,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1934,7 +1934,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1943,7 +1943,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1952,7 +1952,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Quantity_Color &
@@ -1961,7 +1961,7 @@ class MeshVS_DataMapOfColorMapOfInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfColorMapOfInteger self)"""
         return _MeshVS.MeshVS_DataMapOfColorMapOfInteger__kill_pointed(self)
 
@@ -1999,7 +1999,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
 
         """
         _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapOfHArray1OfSequenceOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfHArray1OfSequenceOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfHArray1OfSequenceOfInteger &
@@ -2008,7 +2008,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfHArray1OfSequenceOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfHArray1OfSequenceOfInteger &
@@ -2017,7 +2017,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2026,14 +2026,14 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2044,7 +2044,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2053,7 +2053,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2062,7 +2062,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger const &" :
         """
         :param K:
         :type K: int &
@@ -2071,7 +2071,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger &" :
         """
         :param K:
         :type K: int &
@@ -2080,7 +2080,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2089,7 +2089,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2098,7 +2098,7 @@ class MeshVS_DataMapOfHArray1OfSequenceOfInteger(OCC.TCollection.TCollection_Bas
         """
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfHArray1OfSequenceOfInteger self)"""
         return _MeshVS.MeshVS_DataMapOfHArray1OfSequenceOfInteger__kill_pointed(self)
 
@@ -2136,7 +2136,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerAsciiString_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerAsciiString(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerAsciiString &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerAsciiString &
@@ -2145,7 +2145,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerAsciiString &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerAsciiString &
@@ -2154,7 +2154,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2163,14 +2163,14 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2181,7 +2181,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2190,7 +2190,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2199,7 +2199,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param K:
         :type K: int &
@@ -2208,7 +2208,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TCollection_AsciiString &" :
         """
         :param K:
         :type K: int &
@@ -2217,7 +2217,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2226,7 +2226,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2235,7 +2235,7 @@ class MeshVS_DataMapOfIntegerAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerAsciiString self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerAsciiString__kill_pointed(self)
 
@@ -2273,7 +2273,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerBoolean_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerBoolean(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerBoolean &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerBoolean &
@@ -2282,7 +2282,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerBoolean &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerBoolean &
@@ -2291,7 +2291,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2300,14 +2300,14 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2318,7 +2318,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2327,7 +2327,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2336,7 +2336,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Boolean const &" :
         """
         :param K:
         :type K: int &
@@ -2345,7 +2345,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Boolean &" :
         """
         :param K:
         :type K: int &
@@ -2354,7 +2354,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2363,7 +2363,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2372,7 +2372,7 @@ class MeshVS_DataMapOfIntegerBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerBoolean self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerBoolean__kill_pointed(self)
 
@@ -2410,7 +2410,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerColor_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerColor(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerColor &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerColor &
@@ -2419,7 +2419,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerColor &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerColor &
@@ -2428,7 +2428,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2437,14 +2437,14 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2455,7 +2455,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2464,7 +2464,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2473,7 +2473,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Quantity_Color const &" :
         """
         :param K:
         :type K: int &
@@ -2482,7 +2482,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Quantity_Color &" :
         """
         :param K:
         :type K: int &
@@ -2491,7 +2491,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2500,7 +2500,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2509,7 +2509,7 @@ class MeshVS_DataMapOfIntegerColor(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerColor_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerColor self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerColor__kill_pointed(self)
 
@@ -2547,7 +2547,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerMaterial_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerMaterial(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerMaterial &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerMaterial &
@@ -2556,7 +2556,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerMaterial &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerMaterial &
@@ -2565,7 +2565,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2574,14 +2574,14 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2592,7 +2592,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2601,7 +2601,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2610,7 +2610,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Graphic3d_MaterialAspect const &" :
         """
         :param K:
         :type K: int &
@@ -2619,7 +2619,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Graphic3d_MaterialAspect &" :
         """
         :param K:
         :type K: int &
@@ -2628,7 +2628,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2637,7 +2637,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2646,7 +2646,7 @@ class MeshVS_DataMapOfIntegerMaterial(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerMaterial self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerMaterial__kill_pointed(self)
 
@@ -2684,7 +2684,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerMeshEntityOwner(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerMeshEntityOwner &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerMeshEntityOwner &
@@ -2693,7 +2693,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerMeshEntityOwner &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerMeshEntityOwner &
@@ -2702,7 +2702,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2711,14 +2711,14 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2729,7 +2729,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2738,7 +2738,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2747,7 +2747,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MeshVS_MeshEntityOwner const &" :
         """
         :param K:
         :type K: int &
@@ -2756,7 +2756,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MeshVS_MeshEntityOwner &" :
         """
         :param K:
         :type K: int &
@@ -2765,7 +2765,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2774,7 +2774,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2783,7 +2783,7 @@ class MeshVS_DataMapOfIntegerMeshEntityOwner(OCC.TCollection.TCollection_BasicMa
         """
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerMeshEntityOwner self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerMeshEntityOwner__kill_pointed(self)
 
@@ -2821,7 +2821,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerOwner_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerOwner(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerOwner &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerOwner &
@@ -2830,7 +2830,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerOwner &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerOwner &
@@ -2839,7 +2839,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2848,14 +2848,14 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2866,7 +2866,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2875,7 +2875,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2884,7 +2884,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_SelectMgr_EntityOwner const &" :
         """
         :param K:
         :type K: int &
@@ -2893,7 +2893,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_SelectMgr_EntityOwner &" :
         """
         :param K:
         :type K: int &
@@ -2902,7 +2902,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2911,7 +2911,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2920,7 +2920,7 @@ class MeshVS_DataMapOfIntegerOwner(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerOwner_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerOwner self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerOwner__kill_pointed(self)
 
@@ -2958,7 +2958,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerTwoColors_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerTwoColors(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerTwoColors &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerTwoColors &
@@ -2967,7 +2967,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerTwoColors &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerTwoColors &
@@ -2976,7 +2976,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2985,14 +2985,14 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3003,7 +3003,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3012,7 +3012,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3021,7 +3021,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "MeshVS_TwoColors const &" :
         """
         :param K:
         :type K: int &
@@ -3030,7 +3030,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "MeshVS_TwoColors &" :
         """
         :param K:
         :type K: int &
@@ -3039,7 +3039,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3048,7 +3048,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3057,7 +3057,7 @@ class MeshVS_DataMapOfIntegerTwoColors(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerTwoColors self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerTwoColors__kill_pointed(self)
 
@@ -3095,7 +3095,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_DataMapOfIntegerVector_swiginit(self,_MeshVS.new_MeshVS_DataMapOfIntegerVector(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfIntegerVector &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerVector &
@@ -3104,7 +3104,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfIntegerVector &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfIntegerVector &
@@ -3113,7 +3113,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3122,14 +3122,14 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3140,7 +3140,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3149,7 +3149,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -3158,7 +3158,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "gp_Vec const" :
         """
         :param K:
         :type K: int &
@@ -3167,7 +3167,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "gp_Vec" :
         """
         :param K:
         :type K: int &
@@ -3176,7 +3176,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3185,7 +3185,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -3194,7 +3194,7 @@ class MeshVS_DataMapOfIntegerVector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_DataMapOfIntegerVector_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfIntegerVector self)"""
         return _MeshVS.MeshVS_DataMapOfIntegerVector__kill_pointed(self)
 
@@ -3232,7 +3232,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
 
         """
         _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_swiginit(self,_MeshVS.new_MeshVS_DataMapOfTwoColorsMapOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_DataMapOfTwoColorsMapOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfTwoColorsMapOfInteger &
@@ -3241,7 +3241,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_DataMapOfTwoColorsMapOfInteger &" :
         """
         :param Other:
         :type Other: MeshVS_DataMapOfTwoColorsMapOfInteger &
@@ -3250,7 +3250,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3259,14 +3259,14 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3277,7 +3277,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3286,7 +3286,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3295,7 +3295,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3304,7 +3304,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColStd_MapOfInteger &" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3313,7 +3313,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3322,7 +3322,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -3331,7 +3331,7 @@ class MeshVS_DataMapOfTwoColorsMapOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataMapOfTwoColorsMapOfInteger self)"""
         return _MeshVS.MeshVS_DataMapOfTwoColorsMapOfInteger__kill_pointed(self)
 
@@ -3362,7 +3362,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetGeom(self, *args):
+    def GetGeom(self, *args) -> "Standard_Boolean" :
         """
         * Returns geometry information about node or element ID is the numerical identificator of node or element IsElement indicates this ID describe node ( if Standard_False ) or element ( if Standard_True ) Coords is an array of co-ordinates of node(s). For node it is only 3 numbers: X, Y, Z in the strict order For element it is 3*n numbers, where n is number of this element vertices The order is strict also: X1, Y1, Z1, X2,...., where Xi, Yi, Zi are co-ordinates of vertices NbNodes is number of nodes. It is recommended this parameter to be set to 1 for node. Type is type of node or element (from enumeration). It is recommended this parameter to be set to MeshVS_ET_Node for node.
 
@@ -3381,7 +3381,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetGeom(self, *args)
 
-    def GetGeomType(self, *args):
+    def GetGeomType(self, *args) -> "Standard_Boolean" :
         """
         * This method is similar to GetGeom, but returns only element or node type.
 
@@ -3396,7 +3396,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetGeomType(self, *args)
 
-    def Get3DGeom(self, *args):
+    def Get3DGeom(self, *args) -> "Standard_Boolean" :
         """
         * This method returns topology information about 3D-element Returns false if element with ID isn't 3D or because other troubles
 
@@ -3411,7 +3411,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_Get3DGeom(self, *args)
 
-    def GetAddr(self, *args):
+    def GetAddr(self, *args) -> "Standard_Address" :
         """
         * This method returns pointer which represents element or node data structure. This address will be saved in MeshVS_MeshEntityOwner, so that you can access to data structure fast by the method Owner(). In the redefined method you can return NULL. ID is the numerical identificator of node or element IsElement indicates this ID describe node ( if Standard_False ) or element ( if Standard_True )
 
@@ -3424,7 +3424,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetAddr(self, *args)
 
-    def GetNodesByElement(self, *args):
+    def GetNodesByElement(self, *args) -> "Standard_Boolean" :
         """
         * This method returns information about nodes this element consist of. ID is the numerical identificator of element. NodeIDs is the output array of nodes IDs in correct order, the same as coordinates returned by GetGeom(). NbNodes is number of nodes (number of items set in NodeIDs). Returns False if element does not exist
 
@@ -3439,7 +3439,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetNodesByElement(self, *args)
 
-    def GetAllNodes(self, *args):
+    def GetAllNodes(self, *args) -> "TColStd_PackedMapOfInteger const &" :
         """
         * This method returns map of all nodes the object consist of.
 
@@ -3448,7 +3448,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetAllNodes(self, *args)
 
-    def GetAllElements(self, *args):
+    def GetAllElements(self, *args) -> "TColStd_PackedMapOfInteger const &" :
         """
         * This method returns map of all elements the object consist of.
 
@@ -3457,7 +3457,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetAllElements(self, *args)
 
-    def GetNormal(self, *args):
+    def GetNormal(self, *args) -> "Standard_Boolean" :
         """
         * This method calculates normal of face, which is using for correct reflection presentation. There is default method, for advance reflection this method can be redefined. Id is the numerical identificator of only element! Max is maximal number of nodes an element can consist of nx, ny, nz are values whose represent co-ordinates of normal (will be returned) In the redefined method you can return normal with length more then 1, but in this case the appearance of element will be more bright than usual. For ordinary brightness you must return normal with length 1
 
@@ -3476,7 +3476,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetNormal(self, *args)
 
-    def GetNodeNormal(self, *args):
+    def GetNodeNormal(self, *args) -> "Standard_Boolean" :
         """
         * This method return normal of node ranknode of face Id, which is using for smooth shading presentation. Returns false if normal isn't defined.
 
@@ -3495,7 +3495,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetNodeNormal(self, *args)
 
-    def GetNormalsByElement(self, *args):
+    def GetNormalsByElement(self, *args) -> "Standard_Boolean" :
         """
         * This method puts components of normal vectors at each node of a mesh face (at each face of a mesh volume) into the output array. Returns false if some problem was detected during calculation of normals. Id is an identifier of the mesh element. IsNodal, when true, means that normals at mesh element nodes are needed. If nodal normals are not available, or IsNodal is false, or the mesh element is a volume, then the output array contents depend on the element type: face: a normal calculated by GetNormal() is duplicated for each node of the face; volume: normals to all faces of the volume are computed (not for each node!). MaxNodes is maximal number of nodes an element can consist of. Normals contains the result.
 
@@ -3512,7 +3512,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetNormalsByElement(self, *args)
 
-    def GetAllGroups(self, *args):
+    def GetAllGroups(self, *args) -> "void" :
         """
         * This method returns map of all groups the object contains.
 
@@ -3523,7 +3523,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetAllGroups(self, *args)
 
-    def GetGroup(self, *args):
+    def GetGroup(self, *args) -> "Standard_Boolean" :
         """
         * This method returns map of all group elements.
 
@@ -3538,7 +3538,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetGroup(self, *args)
 
-    def GetGroupAddr(self, *args):
+    def GetGroupAddr(self, *args) -> "Standard_Address" :
         """
         * This method returns pointer which represents group data structure. This address will be saved in MeshVS_MeshOwner, so that you can access to data structure fast by the method Owner(). In the redefined method you can return NULL. ID is the numerical identificator of group
 
@@ -3549,7 +3549,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetGroupAddr(self, *args)
 
-    def IsAdvancedSelectionEnabled(self, *args):
+    def IsAdvancedSelectionEnabled(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if advanced mesh selection is enabled. Default implementation returns False. It should be redefined to return True for advanced mesh selection activation.
 
@@ -3558,7 +3558,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_IsAdvancedSelectionEnabled(self, *args)
 
-    def GetBoundingBox(self, *args):
+    def GetBoundingBox(self, *args) -> "Bnd_Box" :
         """
         * Returns the bounding box of the whole mesh. It is used in advanced selection mode to define roughly the sensitive area of the mesh. It can be redefined to get access to a box computed in advance.
 
@@ -3567,7 +3567,7 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetBoundingBox(self, *args)
 
-    def GetDetectedEntities(self, *args):
+    def GetDetectedEntities(self, *args) -> "Standard_Boolean" :
         """
         * Returns maps of entities (nodes and elements) detected by mouse click at the point (X,Y) on the current view plane, with the tolerance aTol. DMin - is out argument should return actual detection tolerance. Returns True if something is detected. It should be redefined if the advanced mesh selection is activated. Default implementation returns False.
 
@@ -3636,11 +3636,11 @@ class MeshVS_DataSource(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_DataSource_GetDetectedEntities(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataSource self)"""
         return _MeshVS.MeshVS_DataSource__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataSource" :
         """GetHandle(MeshVS_DataSource self) -> Handle_MeshVS_DataSource"""
         return _MeshVS.MeshVS_DataSource_GetHandle(self)
 
@@ -3694,7 +3694,7 @@ Handle_MeshVS_DataSource._kill_pointed = new_instancemethod(_MeshVS.Handle_MeshV
 Handle_MeshVS_DataSource_swigregister = _MeshVS.Handle_MeshVS_DataSource_swigregister
 Handle_MeshVS_DataSource_swigregister(Handle_MeshVS_DataSource)
 
-def Handle_MeshVS_DataSource_DownCast(*args):
+def Handle_MeshVS_DataSource_DownCast(*args) -> "Handle_MeshVS_DataSource const" :
   return _MeshVS.Handle_MeshVS_DataSource_DownCast(*args)
 Handle_MeshVS_DataSource_DownCast = _MeshVS.Handle_MeshVS_DataSource_DownCast
 
@@ -3702,7 +3702,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         * This method copies other drawer contents to this.
 
@@ -3713,7 +3713,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_Assign(self, *args)
 
-    def SetInteger(self, *args):
+    def SetInteger(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3724,7 +3724,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetInteger(self, *args)
 
-    def SetDouble(self, *args):
+    def SetDouble(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3735,7 +3735,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetDouble(self, *args)
 
-    def SetBoolean(self, *args):
+    def SetBoolean(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3746,7 +3746,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetBoolean(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3757,7 +3757,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetColor(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3768,7 +3768,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetMaterial(self, *args)
 
-    def SetAsciiString(self, *args):
+    def SetAsciiString(self, *args) -> "void" :
         """
         :param Key:
         :type Key: int
@@ -3779,7 +3779,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_SetAsciiString(self, *args)
 
-    def GetInteger(self, *args):
+    def GetInteger(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3790,7 +3790,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetInteger(self, *args)
 
-    def GetDouble(self, *args):
+    def GetDouble(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3801,7 +3801,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetDouble(self, *args)
 
-    def GetBoolean(self, *args):
+    def GetBoolean(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3812,7 +3812,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetBoolean(self, *args)
 
-    def GetColor(self, *args):
+    def GetColor(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3823,7 +3823,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetColor(self, *args)
 
-    def GetMaterial(self, *args):
+    def GetMaterial(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3834,7 +3834,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetMaterial(self, *args)
 
-    def GetAsciiString(self, *args):
+    def GetAsciiString(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3845,7 +3845,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_GetAsciiString(self, *args)
 
-    def RemoveInteger(self, *args):
+    def RemoveInteger(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3854,7 +3854,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveInteger(self, *args)
 
-    def RemoveDouble(self, *args):
+    def RemoveDouble(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3863,7 +3863,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveDouble(self, *args)
 
-    def RemoveBoolean(self, *args):
+    def RemoveBoolean(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3872,7 +3872,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveBoolean(self, *args)
 
-    def RemoveColor(self, *args):
+    def RemoveColor(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3881,7 +3881,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveColor(self, *args)
 
-    def RemoveMaterial(self, *args):
+    def RemoveMaterial(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3890,7 +3890,7 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveMaterial(self, *args)
 
-    def RemoveAsciiString(self, *args):
+    def RemoveAsciiString(self, *args) -> "Standard_Boolean" :
         """
         :param Key:
         :type Key: int
@@ -3899,11 +3899,11 @@ class MeshVS_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_Drawer_RemoveAsciiString(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_Drawer self)"""
         return _MeshVS.MeshVS_Drawer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_Drawer" :
         """GetHandle(MeshVS_Drawer self) -> Handle_MeshVS_Drawer"""
         return _MeshVS.MeshVS_Drawer_GetHandle(self)
 
@@ -3960,7 +3960,7 @@ Handle_MeshVS_Drawer._kill_pointed = new_instancemethod(_MeshVS.Handle_MeshVS_Dr
 Handle_MeshVS_Drawer_swigregister = _MeshVS.Handle_MeshVS_Drawer_swigregister
 Handle_MeshVS_Drawer_swigregister(Handle_MeshVS_Drawer)
 
-def Handle_MeshVS_Drawer_DownCast(*args):
+def Handle_MeshVS_Drawer_DownCast(*args) -> "Handle_MeshVS_Drawer const" :
   return _MeshVS.Handle_MeshVS_Drawer_DownCast(*args)
 Handle_MeshVS_Drawer_DownCast = _MeshVS.Handle_MeshVS_Drawer_DownCast
 
@@ -3975,7 +3975,7 @@ class MeshVS_DummySensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity)
 
         """
         _MeshVS.MeshVS_DummySensitiveEntity_swiginit(self,_MeshVS.new_MeshVS_DummySensitiveEntity(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         :param thePickArgs:
         :type thePickArgs: SelectBasics_PickArgs &
@@ -4008,11 +4008,11 @@ class MeshVS_DummySensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity)
         """
         return _MeshVS.MeshVS_DummySensitiveEntity_Matches(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DummySensitiveEntity self)"""
         return _MeshVS.MeshVS_DummySensitiveEntity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DummySensitiveEntity" :
         """GetHandle(MeshVS_DummySensitiveEntity self) -> Handle_MeshVS_DummySensitiveEntity"""
         return _MeshVS.MeshVS_DummySensitiveEntity_GetHandle(self)
 
@@ -4051,7 +4051,7 @@ Handle_MeshVS_DummySensitiveEntity._kill_pointed = new_instancemethod(_MeshVS.Ha
 Handle_MeshVS_DummySensitiveEntity_swigregister = _MeshVS.Handle_MeshVS_DummySensitiveEntity_swigregister
 Handle_MeshVS_DummySensitiveEntity_swigregister(Handle_MeshVS_DummySensitiveEntity)
 
-def Handle_MeshVS_DummySensitiveEntity_DownCast(*args):
+def Handle_MeshVS_DummySensitiveEntity_DownCast(*args) -> "Handle_MeshVS_DummySensitiveEntity const" :
   return _MeshVS.Handle_MeshVS_DummySensitiveEntity_DownCast(*args)
 Handle_MeshVS_DummySensitiveEntity_DownCast = _MeshVS.Handle_MeshVS_DummySensitiveEntity_DownCast
 
@@ -4076,7 +4076,7 @@ class MeshVS_HArray1OfSequenceOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _MeshVS.MeshVS_HArray1OfSequenceOfInteger_swiginit(self,_MeshVS.new_MeshVS_HArray1OfSequenceOfInteger(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TColStd_SequenceOfInteger &
@@ -4085,28 +4085,28 @@ class MeshVS_HArray1OfSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4117,7 +4117,7 @@ class MeshVS_HArray1OfSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param Index:
         :type Index: int
@@ -4126,7 +4126,7 @@ class MeshVS_HArray1OfSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :param Index:
         :type Index: int
@@ -4135,25 +4135,25 @@ class MeshVS_HArray1OfSequenceOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "MeshVS_Array1OfSequenceOfInteger const &" :
         """
         :rtype: MeshVS_Array1OfSequenceOfInteger
 
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "MeshVS_Array1OfSequenceOfInteger &" :
         """
         :rtype: MeshVS_Array1OfSequenceOfInteger
 
         """
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_HArray1OfSequenceOfInteger self)"""
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
         """GetHandle(MeshVS_HArray1OfSequenceOfInteger self) -> Handle_MeshVS_HArray1OfSequenceOfInteger"""
         return _MeshVS.MeshVS_HArray1OfSequenceOfInteger_GetHandle(self)
 
@@ -4200,7 +4200,7 @@ Handle_MeshVS_HArray1OfSequenceOfInteger._kill_pointed = new_instancemethod(_Mes
 Handle_MeshVS_HArray1OfSequenceOfInteger_swigregister = _MeshVS.Handle_MeshVS_HArray1OfSequenceOfInteger_swigregister
 Handle_MeshVS_HArray1OfSequenceOfInteger_swigregister(Handle_MeshVS_HArray1OfSequenceOfInteger)
 
-def Handle_MeshVS_HArray1OfSequenceOfInteger_DownCast(*args):
+def Handle_MeshVS_HArray1OfSequenceOfInteger_DownCast(*args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger const" :
   return _MeshVS.Handle_MeshVS_HArray1OfSequenceOfInteger_DownCast(*args)
 Handle_MeshVS_HArray1OfSequenceOfInteger_DownCast = _MeshVS.Handle_MeshVS_HArray1OfSequenceOfInteger_DownCast
 
@@ -4217,7 +4217,7 @@ class MeshVS_MapIteratorOfMapOfTwoNodes(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _MeshVS.MeshVS_MapIteratorOfMapOfTwoNodes_swiginit(self,_MeshVS.new_MeshVS_MapIteratorOfMapOfTwoNodes(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MeshVS_MapOfTwoNodes &
@@ -4226,7 +4226,7 @@ class MeshVS_MapIteratorOfMapOfTwoNodes(OCC.TCollection.TCollection_BasicMapIter
         """
         return _MeshVS.MeshVS_MapIteratorOfMapOfTwoNodes_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "MeshVS_TwoNodes const &" :
         """
         :rtype: MeshVS_TwoNodes
 
@@ -4258,7 +4258,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MeshVS.MeshVS_MapOfTwoNodes_swiginit(self,_MeshVS.new_MeshVS_MapOfTwoNodes(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_MapOfTwoNodes &" :
         """
         :param Other:
         :type Other: MeshVS_MapOfTwoNodes &
@@ -4267,7 +4267,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_MapOfTwoNodes &" :
         """
         :param Other:
         :type Other: MeshVS_MapOfTwoNodes &
@@ -4276,7 +4276,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -4285,14 +4285,14 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: MeshVS_TwoNodes &
@@ -4301,7 +4301,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: MeshVS_TwoNodes &
@@ -4310,7 +4310,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: MeshVS_TwoNodes &
@@ -4319,7 +4319,7 @@ class MeshVS_MapOfTwoNodes(OCC.TCollection.TCollection_BasicMap):
         """
         return _MeshVS.MeshVS_MapOfTwoNodes_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_MapOfTwoNodes self)"""
         return _MeshVS.MeshVS_MapOfTwoNodes__kill_pointed(self)
 
@@ -4355,14 +4355,14 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
 
         """
         _MeshVS.MeshVS_Mesh_swiginit(self,_MeshVS.new_MeshVS_Mesh(*args))
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _MeshVS.MeshVS_Mesh_Destroy(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Computes presentation using builders added to sequence. Each builder computes own part of mesh presentation according to its type.
 
@@ -4377,7 +4377,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_Compute(self, *args)
 
-    def ComputeSelection(self, *args):
+    def ComputeSelection(self, *args) -> "void" :
         """
         * Computes selection according to SelectMode
 
@@ -4390,7 +4390,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_ComputeSelection(self, *args)
 
-    def HilightSelected(self, *args):
+    def HilightSelected(self, *args) -> "void" :
         """
         * Draw selected owners presentation
 
@@ -4403,7 +4403,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_HilightSelected(self, *args)
 
-    def HilightOwnerWithColor(self, *args):
+    def HilightOwnerWithColor(self, *args) -> "void" :
         """
         * Draw hilighted owner presentation
 
@@ -4418,7 +4418,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_HilightOwnerWithColor(self, *args)
 
-    def ClearSelected(self, *args):
+    def ClearSelected(self, *args) -> "void" :
         """
         * Clears internal selection presentation
 
@@ -4427,7 +4427,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_ClearSelected(self, *args)
 
-    def GetBuildersCount(self, *args):
+    def GetBuildersCount(self, *args) -> "Standard_Integer" :
         """
         * How many builders there are in sequence
 
@@ -4436,7 +4436,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetBuildersCount(self, *args)
 
-    def GetBuilder(self, *args):
+    def GetBuilder(self, *args) -> "Handle_MeshVS_PrsBuilder" :
         """
         * Returns builder by its index in sequence
 
@@ -4447,7 +4447,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetBuilder(self, *args)
 
-    def GetBuilderById(self, *args):
+    def GetBuilderById(self, *args) -> "Handle_MeshVS_PrsBuilder" :
         """
         * Returns builder by its ID
 
@@ -4458,7 +4458,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetBuilderById(self, *args)
 
-    def GetFreeId(self, *args):
+    def GetFreeId(self, *args) -> "Standard_Integer" :
         """
         * Returns the smallest positive ID, not occupied by any builder. This method using when builder is created with ID = -1
 
@@ -4467,7 +4467,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetFreeId(self, *args)
 
-    def AddBuilder(self, *args):
+    def AddBuilder(self, *args) -> "void" :
         """
         * Adds builder to tale of sequence. PrsBuilder is builder to be added If TreatAsHilighter is true, MeshVS_Mesh will use this builder to create presentation of hilighted and selected owners. Only one builder can be hilighter, so that if you call this method with TreatAsHilighter = Standard_True some times, only last builder will be hilighter WARNING: As minimum one builder must be added as hilighter, otherwise selection cannot be computed
 
@@ -4480,7 +4480,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_AddBuilder(self, *args)
 
-    def SetHilighter(self, *args):
+    def SetHilighter(self, *args) -> "Standard_Boolean" :
         """
         * Changes hilighter ( see above )
 
@@ -4497,7 +4497,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetHilighter(self, *args)
 
-    def SetHilighterById(self, *args):
+    def SetHilighterById(self, *args) -> "Standard_Boolean" :
         """
         * Sets builder with identificator 'Id' as hilighter
 
@@ -4508,7 +4508,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetHilighterById(self, *args)
 
-    def GetHilighter(self, *args):
+    def GetHilighter(self, *args) -> "Handle_MeshVS_PrsBuilder" :
         """
         * Returns hilighter
 
@@ -4517,7 +4517,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetHilighter(self, *args)
 
-    def RemoveBuilder(self, *args):
+    def RemoveBuilder(self, *args) -> "void" :
         """
         * Removes builder from sequence. If it is hilighter, hilighter will be NULL ( Don't remember to set it to other after!!! )
 
@@ -4528,7 +4528,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_RemoveBuilder(self, *args)
 
-    def RemoveBuilderById(self, *args):
+    def RemoveBuilderById(self, *args) -> "void" :
         """
         * Removes builder with identificator Id
 
@@ -4539,7 +4539,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_RemoveBuilderById(self, *args)
 
-    def FindBuilder(self, *args):
+    def FindBuilder(self, *args) -> "Handle_MeshVS_PrsBuilder" :
         """
         * Finds builder by its type the string represents
 
@@ -4550,7 +4550,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_FindBuilder(self, *args)
 
-    def GetOwnerMaps(self, *args):
+    def GetOwnerMaps(self, *args) -> "MeshVS_DataMapOfIntegerOwner const &" :
         """
         * Returns map of owners.
 
@@ -4561,7 +4561,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetOwnerMaps(self, *args)
 
-    def GetDataSource(self, *args):
+    def GetDataSource(self, *args) -> "Handle_MeshVS_DataSource" :
         """
         * Returns default builders' data source
 
@@ -4570,7 +4570,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetDataSource(self, *args)
 
-    def SetDataSource(self, *args):
+    def SetDataSource(self, *args) -> "void" :
         """
         * Sets default builders' data source
 
@@ -4581,7 +4581,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetDataSource(self, *args)
 
-    def GetDrawer(self, *args):
+    def GetDrawer(self, *args) -> "Handle_MeshVS_Drawer" :
         """
         * Returns default builders' drawer
 
@@ -4590,7 +4590,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetDrawer(self, *args)
 
-    def SetDrawer(self, *args):
+    def SetDrawer(self, *args) -> "void" :
         """
         * Sets default builders' drawer
 
@@ -4601,7 +4601,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetDrawer(self, *args)
 
-    def IsHiddenElem(self, *args):
+    def IsHiddenElem(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if specified element is hidden By default no elements are hidden
 
@@ -4612,7 +4612,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_IsHiddenElem(self, *args)
 
-    def IsHiddenNode(self, *args):
+    def IsHiddenNode(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if specified node is hidden. By default all nodes are hidden
 
@@ -4623,7 +4623,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_IsHiddenNode(self, *args)
 
-    def IsSelectableElem(self, *args):
+    def IsSelectableElem(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if specified element is not hidden
 
@@ -4634,7 +4634,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_IsSelectableElem(self, *args)
 
-    def IsSelectableNode(self, *args):
+    def IsSelectableNode(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if specified node is specified as selectable.
 
@@ -4645,7 +4645,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_IsSelectableNode(self, *args)
 
-    def GetHiddenNodes(self, *args):
+    def GetHiddenNodes(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns map of hidden nodes (may be null handle)
 
@@ -4654,7 +4654,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetHiddenNodes(self, *args)
 
-    def SetHiddenNodes(self, *args):
+    def SetHiddenNodes(self, *args) -> "void" :
         """
         * Sets map of hidden nodes, which shall not be displayed individually. If nodes shared by some elements shall not be drawn, they should be included into that map
 
@@ -4665,7 +4665,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetHiddenNodes(self, *args)
 
-    def GetHiddenElems(self, *args):
+    def GetHiddenElems(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns map of hidden elements (may be null handle)
 
@@ -4674,7 +4674,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetHiddenElems(self, *args)
 
-    def SetHiddenElems(self, *args):
+    def SetHiddenElems(self, *args) -> "void" :
         """
         * Sets map of hidden elements
 
@@ -4685,7 +4685,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetHiddenElems(self, *args)
 
-    def GetSelectableNodes(self, *args):
+    def GetSelectableNodes(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns map of selectable elements (may be null handle)
 
@@ -4694,7 +4694,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetSelectableNodes(self, *args)
 
-    def SetSelectableNodes(self, *args):
+    def SetSelectableNodes(self, *args) -> "void" :
         """
         * Sets map of selectable nodes.
 
@@ -4705,7 +4705,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetSelectableNodes(self, *args)
 
-    def UpdateSelectableNodes(self, *args):
+    def UpdateSelectableNodes(self, *args) -> "void" :
         """
         * Automatically computes selectable nodes; the node is considered as being selectable if it is either not hidden, or is hidden but referred by at least one non-hidden element. Thus all nodes that are visible (either individually, or as ends or corners of elements) are selectable by default.
 
@@ -4714,7 +4714,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_UpdateSelectableNodes(self, *args)
 
-    def GetMeshSelMethod(self, *args):
+    def GetMeshSelMethod(self, *args) -> "MeshVS_MeshSelectionMethod" :
         """
         * Returns set mesh selection method (see MeshVS.cdl)
 
@@ -4723,7 +4723,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_GetMeshSelMethod(self, *args)
 
-    def SetMeshSelMethod(self, *args):
+    def SetMeshSelMethod(self, *args) -> "void" :
         """
         * Sets mesh selection method (see MeshVS.cdl)
 
@@ -4734,7 +4734,7 @@ class MeshVS_Mesh(OCC.AIS.AIS_InteractiveObject):
         """
         return _MeshVS.MeshVS_Mesh_SetMeshSelMethod(self, *args)
 
-    def IsWholeMeshOwner(self, *args):
+    def IsWholeMeshOwner(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the given owner represents a whole mesh.
 
@@ -4815,7 +4815,7 @@ Handle_MeshVS_Mesh._kill_pointed = new_instancemethod(_MeshVS.Handle_MeshVS_Mesh
 Handle_MeshVS_Mesh_swigregister = _MeshVS.Handle_MeshVS_Mesh_swigregister
 Handle_MeshVS_Mesh_swigregister(Handle_MeshVS_Mesh)
 
-def Handle_MeshVS_Mesh_DownCast(*args):
+def Handle_MeshVS_Mesh_DownCast(*args) -> "Handle_MeshVS_Mesh const" :
   return _MeshVS.Handle_MeshVS_Mesh_DownCast(*args)
 Handle_MeshVS_Mesh_DownCast = _MeshVS.Handle_MeshVS_Mesh_DownCast
 
@@ -4840,7 +4840,7 @@ class MeshVS_MeshEntityOwner(object):
 
         """
         _MeshVS.MeshVS_MeshEntityOwner_swiginit(self,_MeshVS.new_MeshVS_MeshEntityOwner(*args))
-    def Owner(self, *args):
+    def Owner(self, *args) -> "Standard_Address" :
         """
         * Returns an address of element or node data structure
 
@@ -4849,7 +4849,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_Owner(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "MeshVS_EntityType" :
         """
         * Returns type of element or node data structure
 
@@ -4858,7 +4858,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_Type(self, *args)
 
-    def ID(self, *args):
+    def ID(self, *args) -> "Standard_Integer" :
         """
         * Returns ID of element or node data structure
 
@@ -4867,7 +4867,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_ID(self, *args)
 
-    def IsGroup(self, *args):
+    def IsGroup(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if owner represents group of nodes or elements
 
@@ -4876,7 +4876,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_IsGroup(self, *args)
 
-    def IsHilighted(self, *args):
+    def IsHilighted(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if owner is hilighted
 
@@ -4889,7 +4889,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_IsHilighted(self, *args)
 
-    def Hilight(self, *args):
+    def Hilight(self, *args) -> "void" :
         """
         * Hilights owner
 
@@ -4906,7 +4906,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_Hilight(self, *args)
 
-    def HilightWithColor(self, *args):
+    def HilightWithColor(self, *args) -> "void" :
         """
         * Hilights owner with the certain color
 
@@ -4921,7 +4921,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_HilightWithColor(self, *args)
 
-    def Unhilight(self, *args):
+    def Unhilight(self, *args) -> "void" :
         """
         * Strip hilight of owner
 
@@ -4934,7 +4934,7 @@ class MeshVS_MeshEntityOwner(object):
         """
         return _MeshVS.MeshVS_MeshEntityOwner_Unhilight(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :param PM:
         :type PM: Handle_PrsMgr_PresentationManager &
@@ -4988,7 +4988,7 @@ Handle_MeshVS_MeshEntityOwner._kill_pointed = new_instancemethod(_MeshVS.Handle_
 Handle_MeshVS_MeshEntityOwner_swigregister = _MeshVS.Handle_MeshVS_MeshEntityOwner_swigregister
 Handle_MeshVS_MeshEntityOwner_swigregister(Handle_MeshVS_MeshEntityOwner)
 
-def Handle_MeshVS_MeshEntityOwner_DownCast(*args):
+def Handle_MeshVS_MeshEntityOwner_DownCast(*args) -> "Handle_MeshVS_MeshEntityOwner const" :
   return _MeshVS.Handle_MeshVS_MeshEntityOwner_DownCast(*args)
 Handle_MeshVS_MeshEntityOwner_DownCast = _MeshVS.Handle_MeshVS_MeshEntityOwner_DownCast
 
@@ -5007,14 +5007,14 @@ class MeshVS_MeshOwner(object):
 
         """
         _MeshVS.MeshVS_MeshOwner_swiginit(self,_MeshVS.new_MeshVS_MeshOwner(*args))
-    def GetDataSource(self, *args):
+    def GetDataSource(self, *args) -> "Handle_MeshVS_DataSource const &" :
         """
         :rtype: Handle_MeshVS_DataSource
 
         """
         return _MeshVS.MeshVS_MeshOwner_GetDataSource(self, *args)
 
-    def GetSelectedNodes(self, *args):
+    def GetSelectedNodes(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns ids of selected mesh nodes
 
@@ -5023,7 +5023,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_GetSelectedNodes(self, *args)
 
-    def GetSelectedElements(self, *args):
+    def GetSelectedElements(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns ids of selected mesh elements
 
@@ -5032,7 +5032,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_GetSelectedElements(self, *args)
 
-    def AddSelectedEntities(self, *args):
+    def AddSelectedEntities(self, *args) -> "void" :
         """
         * Saves ids of selected mesh entities
 
@@ -5045,7 +5045,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_AddSelectedEntities(self, *args)
 
-    def ClearSelectedEntities(self, *args):
+    def ClearSelectedEntities(self, *args) -> "void" :
         """
         * Clears ids of selected mesh entities
 
@@ -5054,7 +5054,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_ClearSelectedEntities(self, *args)
 
-    def GetDetectedNodes(self, *args):
+    def GetDetectedNodes(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns ids of hilighted mesh nodes
 
@@ -5063,7 +5063,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_GetDetectedNodes(self, *args)
 
-    def GetDetectedElements(self, *args):
+    def GetDetectedElements(self, *args) -> "Handle_TColStd_HPackedMapOfInteger const &" :
         """
         * Returns ids of hilighted mesh elements
 
@@ -5072,7 +5072,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_GetDetectedElements(self, *args)
 
-    def SetDetectedEntities(self, *args):
+    def SetDetectedEntities(self, *args) -> "void" :
         """
         * Saves ids of hilighted mesh entities
 
@@ -5085,7 +5085,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_SetDetectedEntities(self, *args)
 
-    def HilightWithColor(self, *args):
+    def HilightWithColor(self, *args) -> "void" :
         """
         :param PM:
         :type PM: Handle_PrsMgr_PresentationManager3d &
@@ -5098,7 +5098,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_HilightWithColor(self, *args)
 
-    def Unhilight(self, *args):
+    def Unhilight(self, *args) -> "void" :
         """
         :param PM:
         :type PM: Handle_PrsMgr_PresentationManager &
@@ -5109,7 +5109,7 @@ class MeshVS_MeshOwner(object):
         """
         return _MeshVS.MeshVS_MeshOwner_Unhilight(self, *args)
 
-    def IsForcedHilight(self, *args):
+    def IsForcedHilight(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -5161,7 +5161,7 @@ Handle_MeshVS_MeshOwner._kill_pointed = new_instancemethod(_MeshVS.Handle_MeshVS
 Handle_MeshVS_MeshOwner_swigregister = _MeshVS.Handle_MeshVS_MeshOwner_swigregister
 Handle_MeshVS_MeshOwner_swigregister(Handle_MeshVS_MeshOwner)
 
-def Handle_MeshVS_MeshOwner_DownCast(*args):
+def Handle_MeshVS_MeshOwner_DownCast(*args) -> "Handle_MeshVS_MeshOwner const" :
   return _MeshVS.Handle_MeshVS_MeshOwner_DownCast(*args)
 Handle_MeshVS_MeshOwner_DownCast = _MeshVS.Handle_MeshVS_MeshOwner_DownCast
 
@@ -5169,7 +5169,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Builds presentation of certain type of data. Prs is presentation object which this method constructs. IDs is set of numeric identificators forming object appearance. IDsToExclude is set of IDs to exclude from processing. If some entity has been excluded, it is not processed by other builders. IsElement indicates, IDs is identificators of nodes or elements. DisplayMode is numeric constant describing display mode (see MeshVS_DisplayModeFlags.hxx)
 
@@ -5188,7 +5188,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_Build(self, *args)
 
-    def CustomBuild(self, *args):
+    def CustomBuild(self, *args) -> "void" :
         """
         * This method is called to build presentation of custom elements (they have MeshVS_ET_0D type). IDs is set of numeric identificators of elements for custom building. IDsToExclude is set of IDs to exclude from processing. If some entity has been excluded, it is not processed by other builders. DisplayMode is numeric constant describing display mode (see MeshVS_DisplayModeFlags.hxx)
 
@@ -5205,7 +5205,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_CustomBuild(self, *args)
 
-    def CustomSensitiveEntity(self, *args):
+    def CustomSensitiveEntity(self, *args) -> "Handle_SelectBasics_SensitiveEntity" :
         """
         * This method is called to build sensitive of custom elements ( they have MeshVS_ET_0D type )
 
@@ -5218,7 +5218,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_CustomSensitiveEntity(self, *args)
 
-    def GetFlags(self, *args):
+    def GetFlags(self, *args) -> "Standard_Integer" :
         """
         * Returns flags, assigned with builder during creation
 
@@ -5227,7 +5227,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetFlags(self, *args)
 
-    def TestFlags(self, *args):
+    def TestFlags(self, *args) -> "Standard_Boolean" :
         """
         * Test whether display mode has flags assigned with this builder. This method has default implementation and can be redefined for advance behavior Returns Standard_True only if display mode is appropriate for this builder
 
@@ -5238,7 +5238,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_TestFlags(self, *args)
 
-    def GetId(self, *args):
+    def GetId(self, *args) -> "Standard_Integer" :
         """
         * Returns builder ID
 
@@ -5247,7 +5247,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetId(self, *args)
 
-    def GetPriority(self, *args):
+    def GetPriority(self, *args) -> "Standard_Integer" :
         """
         * Returns priority; as priority bigger, as soon builder will be called.
 
@@ -5256,7 +5256,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetPriority(self, *args)
 
-    def GetDataSource(self, *args):
+    def GetDataSource(self, *args) -> "Handle_MeshVS_DataSource" :
         """
         * Returns custom data source or default ( from MeshVS_Mesh ) if custom is NULL
 
@@ -5265,7 +5265,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetDataSource(self, *args)
 
-    def SetDataSource(self, *args):
+    def SetDataSource(self, *args) -> "void" :
         """
         * Change custom data source
 
@@ -5276,7 +5276,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_SetDataSource(self, *args)
 
-    def GetDrawer(self, *args):
+    def GetDrawer(self, *args) -> "Handle_MeshVS_Drawer" :
         """
         * Returns custom drawer or default ( from MeshVS_Mesh ) if custom is NULL
 
@@ -5285,7 +5285,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetDrawer(self, *args)
 
-    def SetDrawer(self, *args):
+    def SetDrawer(self, *args) -> "void" :
         """
         * Change custom drawer
 
@@ -5296,7 +5296,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_SetDrawer(self, *args)
 
-    def SetExcluding(self, *args):
+    def SetExcluding(self, *args) -> "void" :
         """
         * Set excluding state. If it is Standard_True, the nodes or elements, processed by current builder will be noted and next builder won't process its.
 
@@ -5307,7 +5307,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_SetExcluding(self, *args)
 
-    def IsExcludingOn(self, *args):
+    def IsExcludingOn(self, *args) -> "Standard_Boolean" :
         """
         * Read excluding state
 
@@ -5316,7 +5316,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_IsExcludingOn(self, *args)
 
-    def SetPresentationManager(self, *args):
+    def SetPresentationManager(self, *args) -> "void" :
         """
         * Set presentation manager for builder
 
@@ -5327,7 +5327,7 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_SetPresentationManager(self, *args)
 
-    def GetPresentationManager(self, *args):
+    def GetPresentationManager(self, *args) -> "Handle_PrsMgr_PresentationManager3d" :
         """
         * Get presentation manager of builder
 
@@ -5336,11 +5336,11 @@ class MeshVS_PrsBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _MeshVS.MeshVS_PrsBuilder_GetPresentationManager(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_PrsBuilder self)"""
         return _MeshVS.MeshVS_PrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_PrsBuilder" :
         """GetHandle(MeshVS_PrsBuilder self) -> Handle_MeshVS_PrsBuilder"""
         return _MeshVS.MeshVS_PrsBuilder_GetHandle(self)
 
@@ -5393,7 +5393,7 @@ Handle_MeshVS_PrsBuilder._kill_pointed = new_instancemethod(_MeshVS.Handle_MeshV
 Handle_MeshVS_PrsBuilder_swigregister = _MeshVS.Handle_MeshVS_PrsBuilder_swigregister
 Handle_MeshVS_PrsBuilder_swigregister(Handle_MeshVS_PrsBuilder)
 
-def Handle_MeshVS_PrsBuilder_DownCast(*args):
+def Handle_MeshVS_PrsBuilder_DownCast(*args) -> "Handle_MeshVS_PrsBuilder const" :
   return _MeshVS.Handle_MeshVS_PrsBuilder_DownCast(*args)
 Handle_MeshVS_PrsBuilder_DownCast = _MeshVS.Handle_MeshVS_PrsBuilder_DownCast
 
@@ -5412,7 +5412,7 @@ class MeshVS_SensitiveFace(OCC.Select3D.Select3D_SensitiveFace):
 
         """
         _MeshVS.MeshVS_SensitiveFace_swiginit(self,_MeshVS.new_MeshVS_SensitiveFace(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         :param XMin:
         :type XMin: float
@@ -5437,11 +5437,11 @@ class MeshVS_SensitiveFace(OCC.Select3D.Select3D_SensitiveFace):
         """
         return _MeshVS.MeshVS_SensitiveFace_Matches(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_SensitiveFace self)"""
         return _MeshVS.MeshVS_SensitiveFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_SensitiveFace" :
         """GetHandle(MeshVS_SensitiveFace self) -> Handle_MeshVS_SensitiveFace"""
         return _MeshVS.MeshVS_SensitiveFace_GetHandle(self)
 
@@ -5480,7 +5480,7 @@ Handle_MeshVS_SensitiveFace._kill_pointed = new_instancemethod(_MeshVS.Handle_Me
 Handle_MeshVS_SensitiveFace_swigregister = _MeshVS.Handle_MeshVS_SensitiveFace_swigregister
 Handle_MeshVS_SensitiveFace_swigregister(Handle_MeshVS_SensitiveFace)
 
-def Handle_MeshVS_SensitiveFace_DownCast(*args):
+def Handle_MeshVS_SensitiveFace_DownCast(*args) -> "Handle_MeshVS_SensitiveFace const" :
   return _MeshVS.Handle_MeshVS_SensitiveFace_DownCast(*args)
 Handle_MeshVS_SensitiveFace_DownCast = _MeshVS.Handle_MeshVS_SensitiveFace_DownCast
 
@@ -5497,14 +5497,14 @@ class MeshVS_SensitiveMesh(OCC.Select3D.Select3D_SensitiveEntity):
 
         """
         _MeshVS.MeshVS_SensitiveMesh_swiginit(self,_MeshVS.new_MeshVS_SensitiveMesh(*args))
-    def GetMode(self, *args):
+    def GetMode(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MeshVS.MeshVS_SensitiveMesh_GetMode(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         :param thePickArgs:
         :type thePickArgs: SelectBasics_PickArgs &
@@ -5537,11 +5537,11 @@ class MeshVS_SensitiveMesh(OCC.Select3D.Select3D_SensitiveEntity):
         """
         return _MeshVS.MeshVS_SensitiveMesh_Matches(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_SensitiveMesh self)"""
         return _MeshVS.MeshVS_SensitiveMesh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_SensitiveMesh" :
         """GetHandle(MeshVS_SensitiveMesh self) -> Handle_MeshVS_SensitiveMesh"""
         return _MeshVS.MeshVS_SensitiveMesh_GetHandle(self)
 
@@ -5581,7 +5581,7 @@ Handle_MeshVS_SensitiveMesh._kill_pointed = new_instancemethod(_MeshVS.Handle_Me
 Handle_MeshVS_SensitiveMesh_swigregister = _MeshVS.Handle_MeshVS_SensitiveMesh_swigregister
 Handle_MeshVS_SensitiveMesh_swigregister(Handle_MeshVS_SensitiveMesh)
 
-def Handle_MeshVS_SensitiveMesh_DownCast(*args):
+def Handle_MeshVS_SensitiveMesh_DownCast(*args) -> "Handle_MeshVS_SensitiveMesh const" :
   return _MeshVS.Handle_MeshVS_SensitiveMesh_DownCast(*args)
 Handle_MeshVS_SensitiveMesh_DownCast = _MeshVS.Handle_MeshVS_SensitiveMesh_DownCast
 
@@ -5600,7 +5600,7 @@ class MeshVS_SensitivePolyhedron(OCC.Select3D.Select3D_SensitiveEntity):
 
         """
         _MeshVS.MeshVS_SensitivePolyhedron_swiginit(self,_MeshVS.new_MeshVS_SensitivePolyhedron(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         :param thePickArgs:
         :type thePickArgs: SelectBasics_PickArgs &
@@ -5633,7 +5633,7 @@ class MeshVS_SensitivePolyhedron(OCC.Select3D.Select3D_SensitiveEntity):
         """
         return _MeshVS.MeshVS_SensitivePolyhedron_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         :param EyeLine:
         :type EyeLine: gp_Lin
@@ -5642,11 +5642,11 @@ class MeshVS_SensitivePolyhedron(OCC.Select3D.Select3D_SensitiveEntity):
         """
         return _MeshVS.MeshVS_SensitivePolyhedron_ComputeDepth(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_SensitivePolyhedron self)"""
         return _MeshVS.MeshVS_SensitivePolyhedron__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_SensitivePolyhedron" :
         """GetHandle(MeshVS_SensitivePolyhedron self) -> Handle_MeshVS_SensitivePolyhedron"""
         return _MeshVS.MeshVS_SensitivePolyhedron_GetHandle(self)
 
@@ -5686,7 +5686,7 @@ Handle_MeshVS_SensitivePolyhedron._kill_pointed = new_instancemethod(_MeshVS.Han
 Handle_MeshVS_SensitivePolyhedron_swigregister = _MeshVS.Handle_MeshVS_SensitivePolyhedron_swigregister
 Handle_MeshVS_SensitivePolyhedron_swigregister(Handle_MeshVS_SensitivePolyhedron)
 
-def Handle_MeshVS_SensitivePolyhedron_DownCast(*args):
+def Handle_MeshVS_SensitivePolyhedron_DownCast(*args) -> "Handle_MeshVS_SensitivePolyhedron const" :
   return _MeshVS.Handle_MeshVS_SensitivePolyhedron_DownCast(*args)
 Handle_MeshVS_SensitivePolyhedron_DownCast = _MeshVS.Handle_MeshVS_SensitivePolyhedron_DownCast
 
@@ -5707,7 +5707,7 @@ class MeshVS_SensitiveSegment(OCC.Select3D.Select3D_SensitiveSegment):
 
         """
         _MeshVS.MeshVS_SensitiveSegment_swiginit(self,_MeshVS.new_MeshVS_SensitiveSegment(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         :param XMin:
         :type XMin: float
@@ -5732,11 +5732,11 @@ class MeshVS_SensitiveSegment(OCC.Select3D.Select3D_SensitiveSegment):
         """
         return _MeshVS.MeshVS_SensitiveSegment_Matches(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_SensitiveSegment self)"""
         return _MeshVS.MeshVS_SensitiveSegment__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_SensitiveSegment" :
         """GetHandle(MeshVS_SensitiveSegment self) -> Handle_MeshVS_SensitiveSegment"""
         return _MeshVS.MeshVS_SensitiveSegment_GetHandle(self)
 
@@ -5775,7 +5775,7 @@ Handle_MeshVS_SensitiveSegment._kill_pointed = new_instancemethod(_MeshVS.Handle
 Handle_MeshVS_SensitiveSegment_swigregister = _MeshVS.Handle_MeshVS_SensitiveSegment_swigregister
 Handle_MeshVS_SensitiveSegment_swigregister(Handle_MeshVS_SensitiveSegment)
 
-def Handle_MeshVS_SensitiveSegment_DownCast(*args):
+def Handle_MeshVS_SensitiveSegment_DownCast(*args) -> "Handle_MeshVS_SensitiveSegment const" :
   return _MeshVS.Handle_MeshVS_SensitiveSegment_DownCast(*args)
 Handle_MeshVS_SensitiveSegment_DownCast = _MeshVS.Handle_MeshVS_SensitiveSegment_DownCast
 
@@ -5794,18 +5794,18 @@ class MeshVS_SequenceNodeOfSequenceOfPrsBuilder(OCC.TCollection.TCollection_SeqN
 
         """
         _MeshVS.MeshVS_SequenceNodeOfSequenceOfPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_SequenceNodeOfSequenceOfPrsBuilder(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_PrsBuilder &" :
         """
         :rtype: Handle_MeshVS_PrsBuilder
 
         """
         return _MeshVS.MeshVS_SequenceNodeOfSequenceOfPrsBuilder_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_SequenceNodeOfSequenceOfPrsBuilder self)"""
         return _MeshVS.MeshVS_SequenceNodeOfSequenceOfPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder" :
         """GetHandle(MeshVS_SequenceNodeOfSequenceOfPrsBuilder self) -> Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder"""
         return _MeshVS.MeshVS_SequenceNodeOfSequenceOfPrsBuilder_GetHandle(self)
 
@@ -5844,7 +5844,7 @@ Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder._kill_pointed = new_instancemet
 Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_swigregister
 Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_swigregister(Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder)
 
-def Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_DownCast(*args):
+def Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_DownCast(*args) -> "Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_DownCast(*args)
 Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_SequenceNodeOfSequenceOfPrsBuilder_DownCast
 
@@ -5857,14 +5857,14 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _MeshVS.MeshVS_SequenceOfPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_SequenceOfPrsBuilder(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MeshVS_SequenceOfPrsBuilder const &" :
         """
         :param Other:
         :type Other: MeshVS_SequenceOfPrsBuilder &
@@ -5873,7 +5873,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MeshVS_SequenceOfPrsBuilder const &" :
         """
         :param Other:
         :type Other: MeshVS_SequenceOfPrsBuilder &
@@ -5882,7 +5882,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MeshVS_PrsBuilder &
@@ -5895,7 +5895,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MeshVS_PrsBuilder &
@@ -5908,7 +5908,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5925,7 +5925,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5942,21 +5942,21 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_MeshVS_PrsBuilder const &" :
         """
         :rtype: Handle_MeshVS_PrsBuilder
 
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_MeshVS_PrsBuilder const &" :
         """
         :rtype: Handle_MeshVS_PrsBuilder
 
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5967,7 +5967,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MeshVS_PrsBuilder const &" :
         """
         :param Index:
         :type Index: int
@@ -5976,7 +5976,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5987,7 +5987,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MeshVS_PrsBuilder &" :
         """
         :param Index:
         :type Index: int
@@ -5996,7 +5996,7 @@ class MeshVS_SequenceOfPrsBuilder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MeshVS.MeshVS_SequenceOfPrsBuilder_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6050,18 +6050,18 @@ class MeshVS_StdMapNodeOfMapOfTwoNodes(OCC.TCollection.TCollection_MapNode):
 
         """
         _MeshVS.MeshVS_StdMapNodeOfMapOfTwoNodes_swiginit(self,_MeshVS.new_MeshVS_StdMapNodeOfMapOfTwoNodes(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "MeshVS_TwoNodes &" :
         """
         :rtype: MeshVS_TwoNodes
 
         """
         return _MeshVS.MeshVS_StdMapNodeOfMapOfTwoNodes_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_StdMapNodeOfMapOfTwoNodes self)"""
         return _MeshVS.MeshVS_StdMapNodeOfMapOfTwoNodes__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_StdMapNodeOfMapOfTwoNodes" :
         """GetHandle(MeshVS_StdMapNodeOfMapOfTwoNodes self) -> Handle_MeshVS_StdMapNodeOfMapOfTwoNodes"""
         return _MeshVS.MeshVS_StdMapNodeOfMapOfTwoNodes_GetHandle(self)
 
@@ -6100,14 +6100,14 @@ Handle_MeshVS_StdMapNodeOfMapOfTwoNodes._kill_pointed = new_instancemethod(_Mesh
 Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_swigregister = _MeshVS.Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_swigregister
 Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_swigregister(Handle_MeshVS_StdMapNodeOfMapOfTwoNodes)
 
-def Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_DownCast(*args):
+def Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_DownCast(*args) -> "Handle_MeshVS_StdMapNodeOfMapOfTwoNodes const" :
   return _MeshVS.Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_DownCast(*args)
 Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_DownCast = _MeshVS.Handle_MeshVS_StdMapNodeOfMapOfTwoNodes_DownCast
 
 class MeshVS_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CreateAspectFillArea3d(*args):
+    def CreateAspectFillArea3d(*args) -> "Handle_Graphic3d_AspectFillArea3d" :
         """
         * Creates fill area aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6131,7 +6131,7 @@ class MeshVS_Tool(object):
         return _MeshVS.MeshVS_Tool_CreateAspectFillArea3d(*args)
 
     CreateAspectFillArea3d = staticmethod(CreateAspectFillArea3d)
-    def CreateAspectLine3d(*args):
+    def CreateAspectLine3d(*args) -> "Handle_Graphic3d_AspectLine3d" :
         """
         * Creates line aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6145,7 +6145,7 @@ class MeshVS_Tool(object):
         return _MeshVS.MeshVS_Tool_CreateAspectLine3d(*args)
 
     CreateAspectLine3d = staticmethod(CreateAspectLine3d)
-    def CreateAspectMarker3d(*args):
+    def CreateAspectMarker3d(*args) -> "Handle_Graphic3d_AspectMarker3d" :
         """
         * Creates marker aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6159,7 +6159,7 @@ class MeshVS_Tool(object):
         return _MeshVS.MeshVS_Tool_CreateAspectMarker3d(*args)
 
     CreateAspectMarker3d = staticmethod(CreateAspectMarker3d)
-    def CreateAspectText3d(*args):
+    def CreateAspectText3d(*args) -> "Handle_Graphic3d_AspectText3d" :
         """
         * Creates text aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6173,7 +6173,7 @@ class MeshVS_Tool(object):
         return _MeshVS.MeshVS_Tool_CreateAspectText3d(*args)
 
     CreateAspectText3d = staticmethod(CreateAspectText3d)
-    def GetNormal(*args):
+    def GetNormal(*args) -> "Standard_Boolean" :
         """
         * Get one of normals to polygon described by these points. If the polygon isn't planar, function returns false
 
@@ -6187,7 +6187,7 @@ class MeshVS_Tool(object):
         return _MeshVS.MeshVS_Tool_GetNormal(*args)
 
     GetNormal = staticmethod(GetNormal)
-    def GetAverageNormal(*args):
+    def GetAverageNormal(*args) -> "Standard_Boolean" :
         """
         * Get an average of normals to non-planar polygon described by these points or compute normal of planar polygon. If the polygon isn't planar, function returns false
 
@@ -6215,7 +6215,7 @@ MeshVS_Tool._kill_pointed = new_instancemethod(_MeshVS.MeshVS_Tool__kill_pointed
 MeshVS_Tool_swigregister = _MeshVS.MeshVS_Tool_swigregister
 MeshVS_Tool_swigregister(MeshVS_Tool)
 
-def MeshVS_Tool_CreateAspectFillArea3d(*args):
+def MeshVS_Tool_CreateAspectFillArea3d(*args) -> "Handle_Graphic3d_AspectFillArea3d" :
   """
     * Creates fill area aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6238,7 +6238,7 @@ def MeshVS_Tool_CreateAspectFillArea3d(*args):
     """
   return _MeshVS.MeshVS_Tool_CreateAspectFillArea3d(*args)
 
-def MeshVS_Tool_CreateAspectLine3d(*args):
+def MeshVS_Tool_CreateAspectLine3d(*args) -> "Handle_Graphic3d_AspectLine3d" :
   """
     * Creates line aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6251,7 +6251,7 @@ def MeshVS_Tool_CreateAspectLine3d(*args):
     """
   return _MeshVS.MeshVS_Tool_CreateAspectLine3d(*args)
 
-def MeshVS_Tool_CreateAspectMarker3d(*args):
+def MeshVS_Tool_CreateAspectMarker3d(*args) -> "Handle_Graphic3d_AspectMarker3d" :
   """
     * Creates marker aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6264,7 +6264,7 @@ def MeshVS_Tool_CreateAspectMarker3d(*args):
     """
   return _MeshVS.MeshVS_Tool_CreateAspectMarker3d(*args)
 
-def MeshVS_Tool_CreateAspectText3d(*args):
+def MeshVS_Tool_CreateAspectText3d(*args) -> "Handle_Graphic3d_AspectText3d" :
   """
     * Creates text aspect with values from Drawer according to keys from DrawerAttribute
 
@@ -6277,7 +6277,7 @@ def MeshVS_Tool_CreateAspectText3d(*args):
     """
   return _MeshVS.MeshVS_Tool_CreateAspectText3d(*args)
 
-def MeshVS_Tool_GetNormal(*args):
+def MeshVS_Tool_GetNormal(*args) -> "Standard_Boolean" :
   """
     * Get one of normals to polygon described by these points. If the polygon isn't planar, function returns false
 
@@ -6290,7 +6290,7 @@ def MeshVS_Tool_GetNormal(*args):
     """
   return _MeshVS.MeshVS_Tool_GetNormal(*args)
 
-def MeshVS_Tool_GetAverageNormal(*args):
+def MeshVS_Tool_GetAverageNormal(*args) -> "Standard_Boolean" :
   """
     * Get an average of normals to non-planar polygon described by these points or compute normal of planar polygon. If the polygon isn't planar, function returns false
 
@@ -6322,7 +6322,7 @@ MeshVS_TwoColors_swigregister(MeshVS_TwoColors)
 class MeshVS_TwoColorsHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: MeshVS_TwoColors &
@@ -6334,7 +6334,7 @@ class MeshVS_TwoColorsHasher(object):
         return _MeshVS.MeshVS_TwoColorsHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: MeshVS_TwoColors &
@@ -6360,7 +6360,7 @@ MeshVS_TwoColorsHasher._kill_pointed = new_instancemethod(_MeshVS.MeshVS_TwoColo
 MeshVS_TwoColorsHasher_swigregister = _MeshVS.MeshVS_TwoColorsHasher_swigregister
 MeshVS_TwoColorsHasher_swigregister(MeshVS_TwoColorsHasher)
 
-def MeshVS_TwoColorsHasher_HashCode(*args):
+def MeshVS_TwoColorsHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: MeshVS_TwoColors &
@@ -6371,7 +6371,7 @@ def MeshVS_TwoColorsHasher_HashCode(*args):
     """
   return _MeshVS.MeshVS_TwoColorsHasher_HashCode(*args)
 
-def MeshVS_TwoColorsHasher_IsEqual(*args):
+def MeshVS_TwoColorsHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: MeshVS_TwoColors &
@@ -6410,7 +6410,7 @@ MeshVS_TwoNodes_swigregister(MeshVS_TwoNodes)
 class MeshVS_TwoNodesHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: MeshVS_TwoNodes &
@@ -6422,7 +6422,7 @@ class MeshVS_TwoNodesHasher(object):
         return _MeshVS.MeshVS_TwoNodesHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: MeshVS_TwoNodes &
@@ -6448,7 +6448,7 @@ MeshVS_TwoNodesHasher._kill_pointed = new_instancemethod(_MeshVS.MeshVS_TwoNodes
 MeshVS_TwoNodesHasher_swigregister = _MeshVS.MeshVS_TwoNodesHasher_swigregister
 MeshVS_TwoNodesHasher_swigregister(MeshVS_TwoNodesHasher)
 
-def MeshVS_TwoNodesHasher_HashCode(*args):
+def MeshVS_TwoNodesHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: MeshVS_TwoNodes &
@@ -6459,7 +6459,7 @@ def MeshVS_TwoNodesHasher_HashCode(*args):
     """
   return _MeshVS.MeshVS_TwoNodesHasher_HashCode(*args)
 
-def MeshVS_TwoNodesHasher_IsEqual(*args):
+def MeshVS_TwoNodesHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: MeshVS_TwoNodes &
@@ -6474,7 +6474,7 @@ class MeshVS_DataSource3D(MeshVS_DataSource):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetPrismTopology(self, *args):
+    def GetPrismTopology(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
         """
         :param BasePoints:
         :type BasePoints: int
@@ -6483,7 +6483,7 @@ class MeshVS_DataSource3D(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DataSource3D_GetPrismTopology(self, *args)
 
-    def GetPyramidTopology(self, *args):
+    def GetPyramidTopology(self, *args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
         """
         :param BasePoints:
         :type BasePoints: int
@@ -6492,7 +6492,7 @@ class MeshVS_DataSource3D(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DataSource3D_GetPyramidTopology(self, *args)
 
-    def CreatePrismTopology(*args):
+    def CreatePrismTopology(*args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
         """
         :param BasePoints:
         :type BasePoints: int
@@ -6502,7 +6502,7 @@ class MeshVS_DataSource3D(MeshVS_DataSource):
         return _MeshVS.MeshVS_DataSource3D_CreatePrismTopology(*args)
 
     CreatePrismTopology = staticmethod(CreatePrismTopology)
-    def CreatePyramidTopology(*args):
+    def CreatePyramidTopology(*args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
         """
         :param BasePoints:
         :type BasePoints: int
@@ -6512,11 +6512,11 @@ class MeshVS_DataSource3D(MeshVS_DataSource):
         return _MeshVS.MeshVS_DataSource3D_CreatePyramidTopology(*args)
 
     CreatePyramidTopology = staticmethod(CreatePyramidTopology)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DataSource3D self)"""
         return _MeshVS.MeshVS_DataSource3D__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DataSource3D" :
         """GetHandle(MeshVS_DataSource3D self) -> Handle_MeshVS_DataSource3D"""
         return _MeshVS.MeshVS_DataSource3D_GetHandle(self)
 
@@ -6535,7 +6535,7 @@ MeshVS_DataSource3D.GetHandle = new_instancemethod(_MeshVS.MeshVS_DataSource3D_G
 MeshVS_DataSource3D_swigregister = _MeshVS.MeshVS_DataSource3D_swigregister
 MeshVS_DataSource3D_swigregister(MeshVS_DataSource3D)
 
-def MeshVS_DataSource3D_CreatePrismTopology(*args):
+def MeshVS_DataSource3D_CreatePrismTopology(*args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
   """
     :param BasePoints:
     :type BasePoints: int
@@ -6544,7 +6544,7 @@ def MeshVS_DataSource3D_CreatePrismTopology(*args):
     """
   return _MeshVS.MeshVS_DataSource3D_CreatePrismTopology(*args)
 
-def MeshVS_DataSource3D_CreatePyramidTopology(*args):
+def MeshVS_DataSource3D_CreatePyramidTopology(*args) -> "Handle_MeshVS_HArray1OfSequenceOfInteger" :
   """
     :param BasePoints:
     :type BasePoints: int
@@ -6574,7 +6574,7 @@ Handle_MeshVS_DataSource3D._kill_pointed = new_instancemethod(_MeshVS.Handle_Mes
 Handle_MeshVS_DataSource3D_swigregister = _MeshVS.Handle_MeshVS_DataSource3D_swigregister
 Handle_MeshVS_DataSource3D_swigregister(Handle_MeshVS_DataSource3D)
 
-def Handle_MeshVS_DataSource3D_DownCast(*args):
+def Handle_MeshVS_DataSource3D_DownCast(*args) -> "Handle_MeshVS_DataSource3D const" :
   return _MeshVS.Handle_MeshVS_DataSource3D_DownCast(*args)
 Handle_MeshVS_DataSource3D_DownCast = _MeshVS.Handle_MeshVS_DataSource3D_DownCast
 
@@ -6593,7 +6593,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
 
         """
         _MeshVS.MeshVS_DeformedDataSource_swiginit(self,_MeshVS.new_MeshVS_DeformedDataSource(*args))
-    def GetVectors(self, *args):
+    def GetVectors(self, *args) -> "MeshVS_DataMapOfIntegerVector const &" :
         """
         * This method returns map of nodal displacement vectors
 
@@ -6602,7 +6602,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_GetVectors(self, *args)
 
-    def SetVectors(self, *args):
+    def SetVectors(self, *args) -> "void" :
         """
         * This method sets map of nodal displacement vectors (Map).
 
@@ -6613,7 +6613,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_SetVectors(self, *args)
 
-    def GetVector(self, *args):
+    def GetVector(self, *args) -> "Standard_Boolean" :
         """
         * This method returns vector ( Vect ) assigned to node number ID.
 
@@ -6626,7 +6626,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_GetVector(self, *args)
 
-    def SetVector(self, *args):
+    def SetVector(self, *args) -> "void" :
         """
         * This method sets vector ( Vect ) assigned to node number ID.
 
@@ -6639,7 +6639,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_SetVector(self, *args)
 
-    def SetNonDeformedDataSource(self, *args):
+    def SetNonDeformedDataSource(self, *args) -> "void" :
         """
         :param theDS:
         :type theDS: Handle_MeshVS_DataSource &
@@ -6648,7 +6648,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_SetNonDeformedDataSource(self, *args)
 
-    def GetNonDeformedDataSource(self, *args):
+    def GetNonDeformedDataSource(self, *args) -> "Handle_MeshVS_DataSource" :
         """
         * With this methods you can read and change internal canonical data source
 
@@ -6657,7 +6657,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_GetNonDeformedDataSource(self, *args)
 
-    def SetMagnify(self, *args):
+    def SetMagnify(self, *args) -> "void" :
         """
         :param theMagnify:
         :type theMagnify: float
@@ -6666,7 +6666,7 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_SetMagnify(self, *args)
 
-    def GetMagnify(self, *args):
+    def GetMagnify(self, *args) -> "Standard_Real" :
         """
         * With this methods you can read and change magnify coefficient of nodal displacements
 
@@ -6675,11 +6675,11 @@ class MeshVS_DeformedDataSource(MeshVS_DataSource):
         """
         return _MeshVS.MeshVS_DeformedDataSource_GetMagnify(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_DeformedDataSource self)"""
         return _MeshVS.MeshVS_DeformedDataSource__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_DeformedDataSource" :
         """GetHandle(MeshVS_DeformedDataSource self) -> Handle_MeshVS_DeformedDataSource"""
         return _MeshVS.MeshVS_DeformedDataSource_GetHandle(self)
 
@@ -6725,7 +6725,7 @@ Handle_MeshVS_DeformedDataSource._kill_pointed = new_instancemethod(_MeshVS.Hand
 Handle_MeshVS_DeformedDataSource_swigregister = _MeshVS.Handle_MeshVS_DeformedDataSource_swigregister
 Handle_MeshVS_DeformedDataSource_swigregister(Handle_MeshVS_DeformedDataSource)
 
-def Handle_MeshVS_DeformedDataSource_DownCast(*args):
+def Handle_MeshVS_DeformedDataSource_DownCast(*args) -> "Handle_MeshVS_DeformedDataSource const" :
   return _MeshVS.Handle_MeshVS_DeformedDataSource_DownCast(*args)
 Handle_MeshVS_DeformedDataSource_DownCast = _MeshVS.Handle_MeshVS_DeformedDataSource_DownCast
 
@@ -6750,7 +6750,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
 
         """
         _MeshVS.MeshVS_ElementalColorPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_ElementalColorPrsBuilder(*args))
-    def GetColors1(self, *args):
+    def GetColors1(self, *args) -> "MeshVS_DataMapOfIntegerColor const &" :
         """
         * Returns map of colors same for front and back side of face.
 
@@ -6759,7 +6759,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_GetColors1(self, *args)
 
-    def SetColors1(self, *args):
+    def SetColors1(self, *args) -> "void" :
         """
         * Sets map of colors same for front and back side of face.
 
@@ -6770,7 +6770,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_SetColors1(self, *args)
 
-    def HasColors1(self, *args):
+    def HasColors1(self, *args) -> "Standard_Boolean" :
         """
         * Returns true, if map of colors isn't empty
 
@@ -6779,7 +6779,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_HasColors1(self, *args)
 
-    def GetColor1(self, *args):
+    def GetColor1(self, *args) -> "Standard_Boolean" :
         """
         * Returns color assigned with element number ID
 
@@ -6792,7 +6792,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_GetColor1(self, *args)
 
-    def SetColor1(self, *args):
+    def SetColor1(self, *args) -> "void" :
         """
         * Sets color assigned with element number ID
 
@@ -6805,7 +6805,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_SetColor1(self, *args)
 
-    def GetColors2(self, *args):
+    def GetColors2(self, *args) -> "MeshVS_DataMapOfIntegerTwoColors const &" :
         """
         * Returns map of different colors for front and back side of face
 
@@ -6814,7 +6814,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_GetColors2(self, *args)
 
-    def SetColors2(self, *args):
+    def SetColors2(self, *args) -> "void" :
         """
         * Sets map of different colors for front and back side of face
 
@@ -6825,7 +6825,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_SetColors2(self, *args)
 
-    def HasColors2(self, *args):
+    def HasColors2(self, *args) -> "Standard_Boolean" :
         """
         * Returns true, if map isn't empty
 
@@ -6834,7 +6834,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_HasColors2(self, *args)
 
-    def GetColor2(self, *args):
+    def GetColor2(self, *args) -> "Standard_Boolean" :
         """
         * Returns colors assigned with element number ID
 
@@ -6857,7 +6857,7 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_GetColor2(self, *args)
 
-    def SetColor2(self, *args):
+    def SetColor2(self, *args) -> "void" :
         """
         * Sets colors assigned with element number ID
 
@@ -6880,11 +6880,11 @@ class MeshVS_ElementalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_SetColor2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_ElementalColorPrsBuilder self)"""
         return _MeshVS.MeshVS_ElementalColorPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_ElementalColorPrsBuilder" :
         """GetHandle(MeshVS_ElementalColorPrsBuilder self) -> Handle_MeshVS_ElementalColorPrsBuilder"""
         return _MeshVS.MeshVS_ElementalColorPrsBuilder_GetHandle(self)
 
@@ -6932,7 +6932,7 @@ Handle_MeshVS_ElementalColorPrsBuilder._kill_pointed = new_instancemethod(_MeshV
 Handle_MeshVS_ElementalColorPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_ElementalColorPrsBuilder_swigregister
 Handle_MeshVS_ElementalColorPrsBuilder_swigregister(Handle_MeshVS_ElementalColorPrsBuilder)
 
-def Handle_MeshVS_ElementalColorPrsBuilder_DownCast(*args):
+def Handle_MeshVS_ElementalColorPrsBuilder_DownCast(*args) -> "Handle_MeshVS_ElementalColorPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_ElementalColorPrsBuilder_DownCast(*args)
 Handle_MeshVS_ElementalColorPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_ElementalColorPrsBuilder_DownCast
 
@@ -6957,7 +6957,7 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
 
         """
         _MeshVS.MeshVS_MeshPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_MeshPrsBuilder(*args))
-    def BuildNodes(self, *args):
+    def BuildNodes(self, *args) -> "void" :
         """
         * Builds nodes presentation
 
@@ -6974,7 +6974,7 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_MeshPrsBuilder_BuildNodes(self, *args)
 
-    def BuildElements(self, *args):
+    def BuildElements(self, *args) -> "void" :
         """
         * Builds elements presentation
 
@@ -6991,7 +6991,7 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_MeshPrsBuilder_BuildElements(self, *args)
 
-    def BuildHilightPrs(self, *args):
+    def BuildHilightPrs(self, *args) -> "void" :
         """
         * Builds presentation of hilighted entity
 
@@ -7006,7 +7006,7 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_MeshPrsBuilder_BuildHilightPrs(self, *args)
 
-    def AddVolumePrs(*args):
+    def AddVolumePrs(*args) -> "void" :
         """
         * Add to array polygons or polylines representing volume
 
@@ -7032,7 +7032,7 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
         return _MeshVS.MeshVS_MeshPrsBuilder_AddVolumePrs(*args)
 
     AddVolumePrs = staticmethod(AddVolumePrs)
-    def HowManyPrimitives(*args):
+    def HowManyPrimitives(*args) -> "Standard_Integer &, Standard_Integer &" :
         """
         * Calculate how many polygons or polylines are necessary to draw passed topology
 
@@ -7054,11 +7054,11 @@ class MeshVS_MeshPrsBuilder(MeshVS_PrsBuilder):
         return _MeshVS.MeshVS_MeshPrsBuilder_HowManyPrimitives(*args)
 
     HowManyPrimitives = staticmethod(HowManyPrimitives)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_MeshPrsBuilder self)"""
         return _MeshVS.MeshVS_MeshPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_MeshPrsBuilder" :
         """GetHandle(MeshVS_MeshPrsBuilder self) -> Handle_MeshVS_MeshPrsBuilder"""
         return _MeshVS.MeshVS_MeshPrsBuilder_GetHandle(self)
 
@@ -7078,7 +7078,7 @@ MeshVS_MeshPrsBuilder.GetHandle = new_instancemethod(_MeshVS.MeshVS_MeshPrsBuild
 MeshVS_MeshPrsBuilder_swigregister = _MeshVS.MeshVS_MeshPrsBuilder_swigregister
 MeshVS_MeshPrsBuilder_swigregister(MeshVS_MeshPrsBuilder)
 
-def MeshVS_MeshPrsBuilder_AddVolumePrs(*args):
+def MeshVS_MeshPrsBuilder_AddVolumePrs(*args) -> "void" :
   """
     * Add to array polygons or polylines representing volume
 
@@ -7103,7 +7103,7 @@ def MeshVS_MeshPrsBuilder_AddVolumePrs(*args):
     """
   return _MeshVS.MeshVS_MeshPrsBuilder_AddVolumePrs(*args)
 
-def MeshVS_MeshPrsBuilder_HowManyPrimitives(*args):
+def MeshVS_MeshPrsBuilder_HowManyPrimitives(*args) -> "Standard_Integer &, Standard_Integer &" :
   """
     * Calculate how many polygons or polylines are necessary to draw passed topology
 
@@ -7145,7 +7145,7 @@ Handle_MeshVS_MeshPrsBuilder._kill_pointed = new_instancemethod(_MeshVS.Handle_M
 Handle_MeshVS_MeshPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_MeshPrsBuilder_swigregister
 Handle_MeshVS_MeshPrsBuilder_swigregister(Handle_MeshVS_MeshPrsBuilder)
 
-def Handle_MeshVS_MeshPrsBuilder_DownCast(*args):
+def Handle_MeshVS_MeshPrsBuilder_DownCast(*args) -> "Handle_MeshVS_MeshPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_MeshPrsBuilder_DownCast(*args)
 Handle_MeshVS_MeshPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_MeshPrsBuilder_DownCast
 
@@ -7168,7 +7168,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
 
         """
         _MeshVS.MeshVS_NodalColorPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_NodalColorPrsBuilder(*args))
-    def GetColors(self, *args):
+    def GetColors(self, *args) -> "MeshVS_DataMapOfIntegerColor const &" :
         """
         * Returns map of colors assigned to nodes.
 
@@ -7177,7 +7177,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetColors(self, *args)
 
-    def SetColors(self, *args):
+    def SetColors(self, *args) -> "void" :
         """
         * Sets map of colors assigned to nodes.
 
@@ -7188,7 +7188,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetColors(self, *args)
 
-    def HasColors(self, *args):
+    def HasColors(self, *args) -> "Standard_Boolean" :
         """
         * Returns true, if map isn't empty
 
@@ -7197,7 +7197,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_HasColors(self, *args)
 
-    def GetColor(self, *args):
+    def GetColor(self, *args) -> "Standard_Boolean" :
         """
         * Returns color assigned to single node
 
@@ -7210,7 +7210,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetColor(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Sets color assigned to single node
 
@@ -7223,7 +7223,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetColor(self, *args)
 
-    def UseTexture(self, *args):
+    def UseTexture(self, *args) -> "void" :
         """
         * Specify whether texture must be used to build presentation
 
@@ -7234,7 +7234,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_UseTexture(self, *args)
 
-    def IsUseTexture(self, *args):
+    def IsUseTexture(self, *args) -> "Standard_Boolean" :
         """
         * Verify whether texture is used to build presentation
 
@@ -7243,7 +7243,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_IsUseTexture(self, *args)
 
-    def SetColorMap(self, *args):
+    def SetColorMap(self, *args) -> "void" :
         """
         * Set colors to be used for texrture presentation theColors - colors for valid coordinates (laying in range [0, 1])
 
@@ -7254,7 +7254,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetColorMap(self, *args)
 
-    def GetColorMap(self, *args):
+    def GetColorMap(self, *args) -> "Aspect_SequenceOfColor const &" :
         """
         * Return colors used for texrture presentation
 
@@ -7263,7 +7263,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetColorMap(self, *args)
 
-    def SetInvalidColor(self, *args):
+    def SetInvalidColor(self, *args) -> "void" :
         """
         * Set color representing invalid texture coordinate (laying outside range [0, 1])
 
@@ -7274,7 +7274,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetInvalidColor(self, *args)
 
-    def GetInvalidColor(self, *args):
+    def GetInvalidColor(self, *args) -> "Quantity_Color" :
         """
         * Return color representing invalid texture coordinate (laying outside range [0, 1])
 
@@ -7283,7 +7283,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetInvalidColor(self, *args)
 
-    def SetTextureCoords(self, *args):
+    def SetTextureCoords(self, *args) -> "void" :
         """
         * Specify correspondence between node IDs and texture coordinates (range [0, 1])
 
@@ -7294,7 +7294,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetTextureCoords(self, *args)
 
-    def GetTextureCoords(self, *args):
+    def GetTextureCoords(self, *args) -> "TColStd_DataMapOfIntegerReal const &" :
         """
         * Get correspondence between node IDs and texture coordinates (range [0, 1])
 
@@ -7303,7 +7303,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetTextureCoords(self, *args)
 
-    def SetTextureCoord(self, *args):
+    def SetTextureCoord(self, *args) -> "void" :
         """
         * Specify correspondence between node ID and texture coordinate (range [0, 1])
 
@@ -7316,7 +7316,7 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_SetTextureCoord(self, *args)
 
-    def GetTextureCoord(self, *args):
+    def GetTextureCoord(self, *args) -> "Standard_Real" :
         """
         * Return correspondence between node IDs and texture coordinate (range [0, 1])
 
@@ -7327,11 +7327,11 @@ class MeshVS_NodalColorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetTextureCoord(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_NodalColorPrsBuilder self)"""
         return _MeshVS.MeshVS_NodalColorPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_NodalColorPrsBuilder" :
         """GetHandle(MeshVS_NodalColorPrsBuilder self) -> Handle_MeshVS_NodalColorPrsBuilder"""
         return _MeshVS.MeshVS_NodalColorPrsBuilder_GetHandle(self)
 
@@ -7384,7 +7384,7 @@ Handle_MeshVS_NodalColorPrsBuilder._kill_pointed = new_instancemethod(_MeshVS.Ha
 Handle_MeshVS_NodalColorPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_NodalColorPrsBuilder_swigregister
 Handle_MeshVS_NodalColorPrsBuilder_swigregister(Handle_MeshVS_NodalColorPrsBuilder)
 
-def Handle_MeshVS_NodalColorPrsBuilder_DownCast(*args):
+def Handle_MeshVS_NodalColorPrsBuilder_DownCast(*args) -> "Handle_MeshVS_NodalColorPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_NodalColorPrsBuilder_DownCast(*args)
 Handle_MeshVS_NodalColorPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_NodalColorPrsBuilder_DownCast
 
@@ -7411,7 +7411,7 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
 
         """
         _MeshVS.MeshVS_TextPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_TextPrsBuilder(*args))
-    def GetTexts(self, *args):
+    def GetTexts(self, *args) -> "MeshVS_DataMapOfIntegerAsciiString const &" :
         """
         * Returns map of text assigned with nodes ( IsElement = False ) or elements ( IsElement = True )
 
@@ -7422,7 +7422,7 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_TextPrsBuilder_GetTexts(self, *args)
 
-    def SetTexts(self, *args):
+    def SetTexts(self, *args) -> "void" :
         """
         * Sets map of text assigned with nodes or elements
 
@@ -7435,7 +7435,7 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_TextPrsBuilder_SetTexts(self, *args)
 
-    def HasTexts(self, *args):
+    def HasTexts(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if map isn't empty
 
@@ -7446,7 +7446,7 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_TextPrsBuilder_HasTexts(self, *args)
 
-    def GetText(self, *args):
+    def GetText(self, *args) -> "Standard_Boolean" :
         """
         * Returns text assigned with single node or element
 
@@ -7461,7 +7461,7 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_TextPrsBuilder_GetText(self, *args)
 
-    def SetText(self, *args):
+    def SetText(self, *args) -> "void" :
         """
         * Sets text assigned with single node or element
 
@@ -7476,11 +7476,11 @@ class MeshVS_TextPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_TextPrsBuilder_SetText(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_TextPrsBuilder self)"""
         return _MeshVS.MeshVS_TextPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_TextPrsBuilder" :
         """GetHandle(MeshVS_TextPrsBuilder self) -> Handle_MeshVS_TextPrsBuilder"""
         return _MeshVS.MeshVS_TextPrsBuilder_GetHandle(self)
 
@@ -7523,7 +7523,7 @@ Handle_MeshVS_TextPrsBuilder._kill_pointed = new_instancemethod(_MeshVS.Handle_M
 Handle_MeshVS_TextPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_TextPrsBuilder_swigregister
 Handle_MeshVS_TextPrsBuilder_swigregister(Handle_MeshVS_TextPrsBuilder)
 
-def Handle_MeshVS_TextPrsBuilder_DownCast(*args):
+def Handle_MeshVS_TextPrsBuilder_DownCast(*args) -> "Handle_MeshVS_TextPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_TextPrsBuilder_DownCast(*args)
 Handle_MeshVS_TextPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_TextPrsBuilder_DownCast
 
@@ -7552,7 +7552,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
 
         """
         _MeshVS.MeshVS_VectorPrsBuilder_swiginit(self,_MeshVS.new_MeshVS_VectorPrsBuilder(*args))
-    def DrawVector(self, *args):
+    def DrawVector(self, *args) -> "void" :
         """
         * Adds to array of polygons and polylines some primitive representing single vector
 
@@ -7575,7 +7575,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_DrawVector(self, *args)
 
-    def calculateArrow(*args):
+    def calculateArrow(*args) -> "Standard_Real" :
         """
         * Calculates points of arrow presentation
 
@@ -7591,7 +7591,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         return _MeshVS.MeshVS_VectorPrsBuilder_calculateArrow(*args)
 
     calculateArrow = staticmethod(calculateArrow)
-    def GetVectors(self, *args):
+    def GetVectors(self, *args) -> "MeshVS_DataMapOfIntegerVector const &" :
         """
         * Returns map of vectors assigned with nodes or elements
 
@@ -7602,7 +7602,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_GetVectors(self, *args)
 
-    def SetVectors(self, *args):
+    def SetVectors(self, *args) -> "void" :
         """
         * Sets map of vectors assigned with nodes or elements
 
@@ -7615,7 +7615,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_SetVectors(self, *args)
 
-    def HasVectors(self, *args):
+    def HasVectors(self, *args) -> "Standard_Boolean" :
         """
         * Returns true, if map isn't empty
 
@@ -7626,7 +7626,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_HasVectors(self, *args)
 
-    def GetVector(self, *args):
+    def GetVector(self, *args) -> "Standard_Boolean" :
         """
         * Returns vector assigned with certain node or element
 
@@ -7641,7 +7641,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_GetVector(self, *args)
 
-    def SetVector(self, *args):
+    def SetVector(self, *args) -> "void" :
         """
         * Sets vector assigned with certain node or element
 
@@ -7656,7 +7656,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_SetVector(self, *args)
 
-    def GetMinMaxVectorValue(self, *args):
+    def GetMinMaxVectorValue(self, *args) -> "void" :
         """
         * Calculates minimal and maximal length of vectors in map ( nodal, if IsElement = False or elemental, if IsElement = True )
 
@@ -7671,7 +7671,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_GetMinMaxVectorValue(self, *args)
 
-    def SetSimplePrsMode(self, *args):
+    def SetSimplePrsMode(self, *args) -> "void" :
         """
         * Sets flag that indicates is simple vector arrow mode uses or not default value is False
 
@@ -7682,7 +7682,7 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_SetSimplePrsMode(self, *args)
 
-    def SetSimplePrsParams(self, *args):
+    def SetSimplePrsParams(self, *args) -> "void" :
         """
         * Sets parameters of simple vector arrwo presentation theLineWidthParam - coefficient of vector line width (to draw line instead of arrow) theStartParam and theEndParam parameters of start and end of thickened ends position of thickening calculates according to parameters and maximum vector length default values are: theLineWidthParam = 2.5 theStartParam = 0.85 theEndParam = 0.95
 
@@ -7697,11 +7697,11 @@ class MeshVS_VectorPrsBuilder(MeshVS_PrsBuilder):
         """
         return _MeshVS.MeshVS_VectorPrsBuilder_SetSimplePrsParams(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MeshVS_VectorPrsBuilder self)"""
         return _MeshVS.MeshVS_VectorPrsBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MeshVS_VectorPrsBuilder" :
         """GetHandle(MeshVS_VectorPrsBuilder self) -> Handle_MeshVS_VectorPrsBuilder"""
         return _MeshVS.MeshVS_VectorPrsBuilder_GetHandle(self)
 
@@ -7727,7 +7727,7 @@ MeshVS_VectorPrsBuilder.GetHandle = new_instancemethod(_MeshVS.MeshVS_VectorPrsB
 MeshVS_VectorPrsBuilder_swigregister = _MeshVS.MeshVS_VectorPrsBuilder_swigregister
 MeshVS_VectorPrsBuilder_swigregister(MeshVS_VectorPrsBuilder)
 
-def MeshVS_VectorPrsBuilder_calculateArrow(*args):
+def MeshVS_VectorPrsBuilder_calculateArrow(*args) -> "Standard_Real" :
   """
     * Calculates points of arrow presentation
 
@@ -7763,7 +7763,7 @@ Handle_MeshVS_VectorPrsBuilder._kill_pointed = new_instancemethod(_MeshVS.Handle
 Handle_MeshVS_VectorPrsBuilder_swigregister = _MeshVS.Handle_MeshVS_VectorPrsBuilder_swigregister
 Handle_MeshVS_VectorPrsBuilder_swigregister(Handle_MeshVS_VectorPrsBuilder)
 
-def Handle_MeshVS_VectorPrsBuilder_DownCast(*args):
+def Handle_MeshVS_VectorPrsBuilder_DownCast(*args) -> "Handle_MeshVS_VectorPrsBuilder const" :
   return _MeshVS.Handle_MeshVS_VectorPrsBuilder_DownCast(*args)
 Handle_MeshVS_VectorPrsBuilder_DownCast = _MeshVS.Handle_MeshVS_VectorPrsBuilder_DownCast
 

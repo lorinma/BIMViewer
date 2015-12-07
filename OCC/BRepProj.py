@@ -142,7 +142,7 @@ class BRepProj_Projection(object):
 
         """
         _BRepProj.BRepProj_Projection_swiginit(self,_BRepProj.new_BRepProj_Projection(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns False if the section failed
 
@@ -151,7 +151,7 @@ class BRepProj_Projection(object):
         """
         return _BRepProj.BRepProj_Projection_IsDone(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Resets the iterator by resulting wires.
 
@@ -160,7 +160,7 @@ class BRepProj_Projection(object):
         """
         return _BRepProj.BRepProj_Projection_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current result wire
 
@@ -169,7 +169,7 @@ class BRepProj_Projection(object):
         """
         return _BRepProj.BRepProj_Projection_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move to the next result wire.
 
@@ -178,7 +178,7 @@ class BRepProj_Projection(object):
         """
         return _BRepProj.BRepProj_Projection_Next(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "TopoDS_Wire" :
         """
         * Returns the current result wire.
 
@@ -187,7 +187,7 @@ class BRepProj_Projection(object):
         """
         return _BRepProj.BRepProj_Projection_Current(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Compound" :
         """
         * Returns the complete result as compound of wires.
 

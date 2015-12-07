@@ -135,7 +135,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
 
         """
         _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_swiginit(self,_Convert.new_Convert_CompBezierCurves2dToBSplineCurve2d(*args))
-    def AddCurve(self, *args):
+    def AddCurve(self, *args) -> "void" :
         """
         * Adds the Bezier curve defined by the table of poles Poles, to the sequence (still contained in this framework) of adjacent Bezier curves to be converted into a BSpline curve. Only polynomial (i.e. non-rational) Bezier curves are converted using this framework. If this is not the first call to the function (i.e. if this framework still contains data in its sequence of Bezier curves), the degree of continuity of the BSpline curve will be increased at the time of computation at the first point of the added Bezier curve (i.e. the first point of the Poles table). This will be the case if the tangent vector of the curve at this point is parallel to the tangent vector at the end point of the preceding Bezier curve in the sequence of Bezier curves still contained in this framework. An angular tolerance given at the time of construction of this framework, will be used to check the parallelism of the two tangent vectors. This checking procedure, and all the relative computations will be performed by the function Perform. When the sequence of adjacent Bezier curves is complete, use the following functions: - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve. Warning The sequence of Bezier curves treated by this framework is automatically initialized with the first Bezier curve when the function is first called. During subsequent use of this function, ensure that the first point of the added Bezier curve (i.e. the first point of the Poles table) is coincident with the last point of the sequence (i.e. the last point of the preceding Bezier curve in the sequence) of Bezier curves still contained in this framework. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above, as this condition is not checked either when defining the sequence of Bezier curves or at the time of computation.
 
@@ -146,7 +146,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_AddCurve(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes all the data needed to build a BSpline curve equivalent to the sequence of adjacent Bezier curves still contained in this framework. A knot is inserted on the computed BSpline curve at the junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. An angular tolerance given at the time of construction of this framework is used to check the parallelism of the two tangent vectors. Use the available consultation functions to access the computed data. This data may then be used to construct the BSpline curve. Warning Ensure that the curves in the sequence of Bezier curves contained in this framework are adjacent. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above as this condition is not checked, either when defining the Bezier curve sequence or at the time of computation.
 
@@ -155,7 +155,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_Perform(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         * Returns the degree of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -164,7 +164,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_Degree(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of poles of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -173,7 +173,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_NbPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         * Loads the Poles table with the poles of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Poles array must be equal to the number of poles of the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above, as these conditions are not checked, and an error may occur.
 
@@ -184,7 +184,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_Poles(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -193,7 +193,7 @@ class Convert_CompBezierCurves2dToBSplineCurve2d(object):
         """
         return _Convert.Convert_CompBezierCurves2dToBSplineCurve2d_NbKnots(self, *args)
 
-    def KnotsAndMults(self, *args):
+    def KnotsAndMults(self, *args) -> "void" :
         """
         * Loads the Knots table with the knots and the Mults table with the corresponding multiplicities of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Knots and Mults arrays must be equal to the number of knots in the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above as these conditions are not checked, and an error may occur.
 
@@ -238,7 +238,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
 
         """
         _Convert.Convert_CompBezierCurvesToBSplineCurve_swiginit(self,_Convert.new_Convert_CompBezierCurvesToBSplineCurve(*args))
-    def AddCurve(self, *args):
+    def AddCurve(self, *args) -> "void" :
         """
         * Adds the Bezier curve defined by the table of poles Poles, to the sequence (still contained in this framework) of adjacent Bezier curves to be converted into a BSpline curve. Only polynomial (i.e. non-rational) Bezier curves are converted using this framework. If this is not the first call to the function (i.e. if this framework still contains data in its Bezier curve sequence), the degree of continuity of the BSpline curve will be increased at the time of computation at the first point of the added Bezier curve (i.e. the first point of the Poles table). This will be the case if the tangent vector of the curve at this point is parallel to the tangent vector at the end point of the preceding Bezier curve in the Bezier curve sequence still contained in this framework. An angular tolerance given at the time of construction of this framework will be used to check the parallelism of the two tangent vectors. This checking procedure and all related computations will be performed by the Perform function. When the adjacent Bezier curve sequence is complete, use the following functions: - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve. Warning The Bezier curve sequence treated by this framework is automatically initialized with the first Bezier curve when the function is first called. During subsequent use of this function, ensure that the first point of the added Bezier curve (i.e. the first point of the Poles table) is coincident with the last point of the Bezier curve sequence (i.e. the last point of the preceding Bezier curve in the sequence) still contained in this framework. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above, as this condition is not checked either when defining the Bezier curve sequence or at the time of computation.
 
@@ -249,7 +249,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_AddCurve(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes all the data needed to build a BSpline curve equivalent to the adjacent Bezier curve sequence still contained in this framework. A knot is inserted on the computed BSpline curve at the junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. An angular tolerance given at the time of construction of this framework is used to check the parallelism of the two tangent vectors. Use the available consultation functions to access the computed data. This data may then be used to construct the BSpline curve. Warning Make sure that the curves in the Bezier curve sequence contained in this framework are adjacent. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above as this condition is not checked, either when defining the Bezier curve sequence or at the time of computation.
 
@@ -258,7 +258,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_Perform(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         * Returns the degree of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -267,7 +267,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_Degree(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of poles of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -276,7 +276,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_NbPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         * Loads the Poles table with the poles of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Poles array must be equal to the number of poles of the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above, as these conditions are not checked, and an error may occur.
 
@@ -287,7 +287,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_Poles(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.
 
@@ -296,7 +296,7 @@ class Convert_CompBezierCurvesToBSplineCurve(object):
         """
         return _Convert.Convert_CompBezierCurvesToBSplineCurve_NbKnots(self, *args)
 
-    def KnotsAndMults(self, *args):
+    def KnotsAndMults(self, *args) -> "void" :
         """
         * - loads the Knots table with the knots, - and loads the Mults table with the corresponding multiplicities of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Knots and Mults arrays must be equal to the number of knots in the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above as these conditions are not checked, and an error may occur.
 
@@ -391,7 +391,7 @@ class Convert_CompPolynomialToPoles(object):
 
         """
         _Convert.Convert_CompPolynomialToPoles_swiginit(self,_Convert.new_Convert_CompPolynomialToPoles(*args))
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * number of poles of the n-dimensional BSpline
 
@@ -400,7 +400,7 @@ class Convert_CompPolynomialToPoles(object):
         """
         return _Convert.Convert_CompPolynomialToPoles_NbPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         * returns the poles of the n-dimensional BSpline in the following format : [1..NumPoles][1..Dimension]
 
@@ -411,14 +411,14 @@ class Convert_CompPolynomialToPoles(object):
         """
         return _Convert.Convert_CompPolynomialToPoles_Poles(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_CompPolynomialToPoles_Degree(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         * Degree of the n-dimensional Bspline
 
@@ -427,7 +427,7 @@ class Convert_CompPolynomialToPoles(object):
         """
         return _Convert.Convert_CompPolynomialToPoles_NbKnots(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "void" :
         """
         * Knots of the n-dimensional Bspline
 
@@ -438,7 +438,7 @@ class Convert_CompPolynomialToPoles(object):
         """
         return _Convert.Convert_CompPolynomialToPoles_Knots(self, *args)
 
-    def Multiplicities(self, *args):
+    def Multiplicities(self, *args) -> "void" :
         """
         * Multiplicities of the knots in the BSpline
 
@@ -449,7 +449,7 @@ class Convert_CompPolynomialToPoles(object):
         """
         return _Convert.Convert_CompPolynomialToPoles_Multiplicities(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -479,7 +479,7 @@ class Convert_ConicToBSplineCurve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         * Returns the degree of the BSpline curve whose data is computed in this framework.
 
@@ -488,7 +488,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_Degree(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of poles of the BSpline curve whose data is computed in this framework.
 
@@ -497,7 +497,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_NbPoles(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots of the BSpline curve whose data is computed in this framework.
 
@@ -506,7 +506,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_NbKnots(self, *args)
 
-    def IsPeriodic(self, *args):
+    def IsPeriodic(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the BSpline curve whose data is computed in this framework is periodic.
 
@@ -515,7 +515,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_IsPeriodic(self, *args)
 
-    def Pole(self, *args):
+    def Pole(self, *args) -> "gp_Pnt2d" :
         """
         * Returns the pole of index Index to the poles table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table of the BSpline curve whose data is computed in this framework.
 
@@ -526,7 +526,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_Pole(self, *args)
 
-    def Weight(self, *args):
+    def Weight(self, *args) -> "Standard_Real" :
         """
         * Returns the weight of the pole of index Index to the poles table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table of the BSpline curve whose data is computed in this framework.
 
@@ -537,7 +537,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_Weight(self, *args)
 
-    def Knot(self, *args):
+    def Knot(self, *args) -> "Standard_Real" :
         """
         * Returns the knot of index Index to the knots table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table of the BSpline curve whose data is computed in this framework.
 
@@ -548,7 +548,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_Knot(self, *args)
 
-    def Multiplicity(self, *args):
+    def Multiplicity(self, *args) -> "Standard_Integer" :
         """
         * Returns the multiplicity of the knot of index Index to the knots table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table of the BSpline curve whose data is computed in this framework.
 
@@ -559,7 +559,7 @@ class Convert_ConicToBSplineCurve(object):
         """
         return _Convert.Convert_ConicToBSplineCurve_Multiplicity(self, *args)
 
-    def BuildCosAndSin(self, *args):
+    def BuildCosAndSin(self, *args) -> "void" :
         """
         :param Parametrisation:
         :type Parametrisation: Convert_ParameterisationType
@@ -625,14 +625,14 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def UDegree(self, *args):
+    def UDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_UDegree(self, *args)
 
-    def VDegree(self, *args):
+    def VDegree(self, *args) -> "Standard_Integer" :
         """
         * Returns the degree for the u or v parametric direction of the BSpline surface whose data is computed in this framework.
 
@@ -641,14 +641,14 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_VDegree(self, *args)
 
-    def NbUPoles(self, *args):
+    def NbUPoles(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_NbUPoles(self, *args)
 
-    def NbVPoles(self, *args):
+    def NbVPoles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of poles for the u or v parametric direction of the BSpline surface whose data is computed in this framework.
 
@@ -657,14 +657,14 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_NbVPoles(self, *args)
 
-    def NbUKnots(self, *args):
+    def NbUKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_NbUKnots(self, *args)
 
-    def NbVKnots(self, *args):
+    def NbVKnots(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of knots for the u or v parametric direction of the BSpline surface whose data is computed in this framework .
 
@@ -673,14 +673,14 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_NbVKnots(self, *args)
 
-    def IsUPeriodic(self, *args):
+    def IsUPeriodic(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_IsUPeriodic(self, *args)
 
-    def IsVPeriodic(self, *args):
+    def IsVPeriodic(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the BSpline surface whose data is computed in this framework is periodic in the u or v parametric direction.
 
@@ -689,7 +689,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_IsVPeriodic(self, *args)
 
-    def Pole(self, *args):
+    def Pole(self, *args) -> "gp_Pnt" :
         """
         * Returns the pole of index (UIndex,VIndex) to the poles table of the BSpline surface whose data is computed in this framework. Exceptions Standard_OutOfRange if, for the BSpline surface whose data is computed in this framework: - UIndex is outside the bounds of the poles table in the u parametric direction, or - VIndex is outside the bounds of the poles table in the v parametric direction.
 
@@ -702,7 +702,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_Pole(self, *args)
 
-    def Weight(self, *args):
+    def Weight(self, *args) -> "Standard_Real" :
         """
         * Returns the weight of the pole of index (UIndex,VIndex) to the poles table of the BSpline surface whose data is computed in this framework. Exceptions Standard_OutOfRange if, for the BSpline surface whose data is computed in this framework: - UIndex is outside the bounds of the poles table in the u parametric direction, or - VIndex is outside the bounds of the poles table in the v parametric direction.
 
@@ -715,7 +715,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_Weight(self, *args)
 
-    def UKnot(self, *args):
+    def UKnot(self, *args) -> "Standard_Real" :
         """
         * Returns the U-knot of range UIndex. Raised if UIndex < 1 or UIndex > NbUKnots.
 
@@ -726,7 +726,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_UKnot(self, *args)
 
-    def VKnot(self, *args):
+    def VKnot(self, *args) -> "Standard_Real" :
         """
         * Returns the V-knot of range VIndex. Raised if VIndex < 1 or VIndex > NbVKnots.
 
@@ -737,7 +737,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_VKnot(self, *args)
 
-    def UMultiplicity(self, *args):
+    def UMultiplicity(self, *args) -> "Standard_Integer" :
         """
         * Returns the multiplicity of the U-knot of range UIndex. Raised if UIndex < 1 or UIndex > NbUKnots.
 
@@ -748,7 +748,7 @@ class Convert_ElementarySurfaceToBSplineSurface(object):
         """
         return _Convert.Convert_ElementarySurfaceToBSplineSurface_UMultiplicity(self, *args)
 
-    def VMultiplicity(self, *args):
+    def VMultiplicity(self, *args) -> "Standard_Integer" :
         """
         * Returns the multiplicity of the V-knot of range VIndex. Raised if VIndex < 1 or VIndex > NbVKnots.
 
@@ -836,7 +836,7 @@ class Convert_GridPolynomialToPoles(object):
 
         """
         _Convert.Convert_GridPolynomialToPoles_swiginit(self,_Convert.new_Convert_GridPolynomialToPoles(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param UContinuity:
         :type UContinuity: int
@@ -863,21 +863,21 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_Perform(self, *args)
 
-    def NbUPoles(self, *args):
+    def NbUPoles(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_NbUPoles(self, *args)
 
-    def NbVPoles(self, *args):
+    def NbVPoles(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_NbVPoles(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "Handle_TColgp_HArray2OfPnt const &" :
         """
         * returns the poles of the BSpline Surface
 
@@ -886,35 +886,35 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_Poles(self, *args)
 
-    def UDegree(self, *args):
+    def UDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_UDegree(self, *args)
 
-    def VDegree(self, *args):
+    def VDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_VDegree(self, *args)
 
-    def NbUKnots(self, *args):
+    def NbUKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_NbUKnots(self, *args)
 
-    def NbVKnots(self, *args):
+    def NbVKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Convert.Convert_GridPolynomialToPoles_NbVKnots(self, *args)
 
-    def UKnots(self, *args):
+    def UKnots(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         * Knots in the U direction
 
@@ -923,7 +923,7 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_UKnots(self, *args)
 
-    def VKnots(self, *args):
+    def VKnots(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         * Knots in the V direction
 
@@ -932,7 +932,7 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_VKnots(self, *args)
 
-    def UMultiplicities(self, *args):
+    def UMultiplicities(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         * Multiplicities of the knots in the U direction
 
@@ -941,7 +941,7 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_UMultiplicities(self, *args)
 
-    def VMultiplicities(self, *args):
+    def VMultiplicities(self, *args) -> "Handle_TColStd_HArray1OfInteger const &" :
         """
         * Multiplicities of the knots in the V direction
 
@@ -950,7 +950,7 @@ class Convert_GridPolynomialToPoles(object):
         """
         return _Convert.Convert_GridPolynomialToPoles_VMultiplicities(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -997,18 +997,18 @@ class Convert_SequenceNodeOfSequenceOfArray1OfPoles(OCC.TCollection.TCollection_
 
         """
         _Convert.Convert_SequenceNodeOfSequenceOfArray1OfPoles_swiginit(self,_Convert.new_Convert_SequenceNodeOfSequenceOfArray1OfPoles(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColgp_HArray1OfPnt &" :
         """
         :rtype: Handle_TColgp_HArray1OfPnt
 
         """
         return _Convert.Convert_SequenceNodeOfSequenceOfArray1OfPoles_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Convert_SequenceNodeOfSequenceOfArray1OfPoles self)"""
         return _Convert.Convert_SequenceNodeOfSequenceOfArray1OfPoles__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles" :
         """GetHandle(Convert_SequenceNodeOfSequenceOfArray1OfPoles self) -> Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles"""
         return _Convert.Convert_SequenceNodeOfSequenceOfArray1OfPoles_GetHandle(self)
 
@@ -1047,7 +1047,7 @@ Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles._kill_pointed = new_instanc
 Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_swigregister = _Convert.Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_swigregister
 Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_swigregister(Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles)
 
-def Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_DownCast(*args):
+def Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_DownCast(*args) -> "Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles const" :
   return _Convert.Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_DownCast(*args)
 Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_DownCast = _Convert.Handle_Convert_SequenceNodeOfSequenceOfArray1OfPoles_DownCast
 
@@ -1060,14 +1060,14 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Convert.Convert_SequenceOfArray1OfPoles_swiginit(self,_Convert.new_Convert_SequenceOfArray1OfPoles(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Convert_SequenceOfArray1OfPoles const &" :
         """
         :param Other:
         :type Other: Convert_SequenceOfArray1OfPoles &
@@ -1076,7 +1076,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Convert_SequenceOfArray1OfPoles const &" :
         """
         :param Other:
         :type Other: Convert_SequenceOfArray1OfPoles &
@@ -1085,7 +1085,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt
@@ -1098,7 +1098,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt
@@ -1111,7 +1111,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1128,7 +1128,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1145,21 +1145,21 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TColgp_HArray1OfPnt const &" :
         """
         :rtype: Handle_TColgp_HArray1OfPnt
 
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TColgp_HArray1OfPnt const &" :
         """
         :rtype: Handle_TColgp_HArray1OfPnt
 
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1170,7 +1170,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColgp_HArray1OfPnt const &" :
         """
         :param Index:
         :type Index: int
@@ -1179,7 +1179,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1190,7 +1190,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColgp_HArray1OfPnt &" :
         """
         :param Index:
         :type Index: int
@@ -1199,7 +1199,7 @@ class Convert_SequenceOfArray1OfPoles(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Convert.Convert_SequenceOfArray1OfPoles_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

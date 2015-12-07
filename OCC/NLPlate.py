@@ -121,7 +121,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetUVFreeSliding(self, *args):
+    def SetUVFreeSliding(self, *args) -> "void" :
         """
         :param UVFree:
         :type UVFree: bool
@@ -130,7 +130,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetUVFreeSliding(self, *args)
 
-    def SetIncrementalLoadAllowed(self, *args):
+    def SetIncrementalLoadAllowed(self, *args) -> "void" :
         """
         :param ILA:
         :type ILA: bool
@@ -139,7 +139,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetIncrementalLoadAllowed(self, *args)
 
-    def SetActiveOrder(self, *args):
+    def SetActiveOrder(self, *args) -> "void" :
         """
         :param ActiveOrder:
         :type ActiveOrder: int
@@ -148,7 +148,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetActiveOrder(self, *args)
 
-    def SetUV(self, *args):
+    def SetUV(self, *args) -> "void" :
         """
         :param UV:
         :type UV: gp_XY
@@ -157,7 +157,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetUV(self, *args)
 
-    def SetOrientation(self, *args):
+    def SetOrientation(self, *args) -> "void" :
         """
         :param Orient: default value is 0
         :type Orient: int
@@ -166,7 +166,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetOrientation(self, *args)
 
-    def SetG0Criterion(self, *args):
+    def SetG0Criterion(self, *args) -> "void" :
         """
         :param TolDist:
         :type TolDist: float
@@ -175,7 +175,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetG0Criterion(self, *args)
 
-    def SetG1Criterion(self, *args):
+    def SetG1Criterion(self, *args) -> "void" :
         """
         :param TolAng:
         :type TolAng: float
@@ -184,7 +184,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetG1Criterion(self, *args)
 
-    def SetG2Criterion(self, *args):
+    def SetG2Criterion(self, *args) -> "void" :
         """
         :param TolCurv:
         :type TolCurv: float
@@ -193,7 +193,7 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetG2Criterion(self, *args)
 
-    def SetG3Criterion(self, *args):
+    def SetG3Criterion(self, *args) -> "void" :
         """
         :param TolG3:
         :type TolG3: float
@@ -202,109 +202,109 @@ class NLPlate_HGPPConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _NLPlate.NLPlate_HGPPConstraint_SetG3Criterion(self, *args)
 
-    def UVFreeSliding(self, *args):
+    def UVFreeSliding(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_UVFreeSliding(self, *args)
 
-    def IncrementalLoadAllowed(self, *args):
+    def IncrementalLoadAllowed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_IncrementalLoadAllowed(self, *args)
 
-    def ActiveOrder(self, *args):
+    def ActiveOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_ActiveOrder(self, *args)
 
-    def UV(self, *args):
+    def UV(self, *args) -> "gp_XY const" :
         """
         :rtype: gp_XY
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_UV(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_Orientation(self, *args)
 
-    def IsG0(self, *args):
+    def IsG0(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_IsG0(self, *args)
 
-    def G0Target(self, *args):
+    def G0Target(self, *args) -> "gp_XYZ const" :
         """
         :rtype: gp_XYZ
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G0Target(self, *args)
 
-    def G1Target(self, *args):
+    def G1Target(self, *args) -> "Plate_D1 const &" :
         """
         :rtype: Plate_D1
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G1Target(self, *args)
 
-    def G2Target(self, *args):
+    def G2Target(self, *args) -> "Plate_D2 const &" :
         """
         :rtype: Plate_D2
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G2Target(self, *args)
 
-    def G3Target(self, *args):
+    def G3Target(self, *args) -> "Plate_D3 const &" :
         """
         :rtype: Plate_D3
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G3Target(self, *args)
 
-    def G0Criterion(self, *args):
+    def G0Criterion(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G0Criterion(self, *args)
 
-    def G1Criterion(self, *args):
+    def G1Criterion(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G1Criterion(self, *args)
 
-    def G2Criterion(self, *args):
+    def G2Criterion(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G2Criterion(self, *args)
 
-    def G3Criterion(self, *args):
+    def G3Criterion(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _NLPlate.NLPlate_HGPPConstraint_G3Criterion(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HGPPConstraint self)"""
         return _NLPlate.NLPlate_HGPPConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HGPPConstraint" :
         """GetHandle(NLPlate_HGPPConstraint self) -> Handle_NLPlate_HGPPConstraint"""
         return _NLPlate.NLPlate_HGPPConstraint_GetHandle(self)
 
@@ -365,7 +365,7 @@ Handle_NLPlate_HGPPConstraint._kill_pointed = new_instancemethod(_NLPlate.Handle
 Handle_NLPlate_HGPPConstraint_swigregister = _NLPlate.Handle_NLPlate_HGPPConstraint_swigregister
 Handle_NLPlate_HGPPConstraint_swigregister(Handle_NLPlate_HGPPConstraint)
 
-def Handle_NLPlate_HGPPConstraint_DownCast(*args):
+def Handle_NLPlate_HGPPConstraint_DownCast(*args) -> "Handle_NLPlate_HGPPConstraint const" :
   return _NLPlate.Handle_NLPlate_HGPPConstraint_DownCast(*args)
 Handle_NLPlate_HGPPConstraint_DownCast = _NLPlate.Handle_NLPlate_HGPPConstraint_DownCast
 
@@ -380,7 +380,7 @@ class NLPlate_NLPlate(object):
 
         """
         _NLPlate.NLPlate_NLPlate_swiginit(self,_NLPlate.new_NLPlate_NLPlate(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         :param GConst:
         :type GConst: Handle_NLPlate_HGPPConstraint &
@@ -389,7 +389,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_Load(self, *args)
 
-    def Solve(self, *args):
+    def Solve(self, *args) -> "void" :
         """
         :param ord: default value is 2
         :type ord: int
@@ -400,7 +400,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_Solve(self, *args)
 
-    def Solve2(self, *args):
+    def Solve2(self, *args) -> "void" :
         """
         :param ord: default value is 2
         :type ord: int
@@ -411,7 +411,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_Solve2(self, *args)
 
-    def IncrementalSolve(self, *args):
+    def IncrementalSolve(self, *args) -> "void" :
         """
         :param ord: default value is 2
         :type ord: int
@@ -426,7 +426,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_IncrementalSolve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns True if all has been correctly done.
 
@@ -435,14 +435,14 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_IsDone(self, *args)
 
-    def destroy(self, *args):
+    def destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _NLPlate.NLPlate_NLPlate_destroy(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * reset the Plate in the initial state ( same as after Create((Surface))
 
@@ -451,7 +451,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_Init(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "gp_XYZ" :
         """
         :param point2d:
         :type point2d: gp_XY
@@ -460,7 +460,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_Evaluate(self, *args)
 
-    def EvaluateDerivative(self, *args):
+    def EvaluateDerivative(self, *args) -> "gp_XYZ" :
         """
         :param point2d:
         :type point2d: gp_XY
@@ -473,14 +473,14 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_EvaluateDerivative(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _NLPlate.NLPlate_NLPlate_Continuity(self, *args)
 
-    def ConstraintsSliding(self, *args):
+    def ConstraintsSliding(self, *args) -> "void" :
         """
         :param NbIterations: default value is 3
         :type NbIterations: int
@@ -489,7 +489,7 @@ class NLPlate_NLPlate(object):
         """
         return _NLPlate.NLPlate_NLPlate_ConstraintsSliding(self, *args)
 
-    def MaxActiveConstraintOrder(self, *args):
+    def MaxActiveConstraintOrder(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -535,18 +535,18 @@ class NLPlate_SequenceNodeOfSequenceOfHGPPConstraint(OCC.TCollection.TCollection
 
         """
         _NLPlate.NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_swiginit(self,_NLPlate.new_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_NLPlate_HGPPConstraint &" :
         """
         :rtype: Handle_NLPlate_HGPPConstraint
 
         """
         return _NLPlate.NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_SequenceNodeOfSequenceOfHGPPConstraint self)"""
         return _NLPlate.NLPlate_SequenceNodeOfSequenceOfHGPPConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint" :
         """GetHandle(NLPlate_SequenceNodeOfSequenceOfHGPPConstraint self) -> Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint"""
         return _NLPlate.NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_GetHandle(self)
 
@@ -585,7 +585,7 @@ Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint._kill_pointed = new_instan
 Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_swigregister = _NLPlate.Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_swigregister
 Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_swigregister(Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint)
 
-def Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_DownCast(*args):
+def Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_DownCast(*args) -> "Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint const" :
   return _NLPlate.Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_DownCast(*args)
 Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_DownCast = _NLPlate.Handle_NLPlate_SequenceNodeOfSequenceOfHGPPConstraint_DownCast
 
@@ -598,14 +598,14 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
 
         """
         _NLPlate.NLPlate_SequenceOfHGPPConstraint_swiginit(self,_NLPlate.new_NLPlate_SequenceOfHGPPConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "NLPlate_SequenceOfHGPPConstraint const &" :
         """
         :param Other:
         :type Other: NLPlate_SequenceOfHGPPConstraint &
@@ -614,7 +614,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "NLPlate_SequenceOfHGPPConstraint const &" :
         """
         :param Other:
         :type Other: NLPlate_SequenceOfHGPPConstraint &
@@ -623,7 +623,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_NLPlate_HGPPConstraint &
@@ -636,7 +636,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_NLPlate_HGPPConstraint &
@@ -649,7 +649,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -666,7 +666,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -683,21 +683,21 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_NLPlate_HGPPConstraint const &" :
         """
         :rtype: Handle_NLPlate_HGPPConstraint
 
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_NLPlate_HGPPConstraint const &" :
         """
         :rtype: Handle_NLPlate_HGPPConstraint
 
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -708,7 +708,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_NLPlate_HGPPConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -717,7 +717,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -728,7 +728,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_NLPlate_HGPPConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -737,7 +737,7 @@ class NLPlate_SequenceOfHGPPConstraint(OCC.TCollection.TCollection_BaseSequence)
         """
         return _NLPlate.NLPlate_SequenceOfHGPPConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -791,7 +791,7 @@ class NLPlate_StackIteratorOfStackOfPlate(object):
 
         """
         _NLPlate.NLPlate_StackIteratorOfStackOfPlate_swiginit(self,_NLPlate.new_NLPlate_StackIteratorOfStackOfPlate(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param S:
         :type S: NLPlate_StackOfPlate &
@@ -800,21 +800,21 @@ class NLPlate_StackIteratorOfStackOfPlate(object):
         """
         return _NLPlate.NLPlate_StackIteratorOfStackOfPlate_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _NLPlate.NLPlate_StackIteratorOfStackOfPlate_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _NLPlate.NLPlate_StackIteratorOfStackOfPlate_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_Plate const &" :
         """
         :rtype: Plate_Plate
 
@@ -850,18 +850,18 @@ class NLPlate_StackNodeOfStackOfPlate(OCC.TCollection.TCollection_MapNode):
 
         """
         _NLPlate.NLPlate_StackNodeOfStackOfPlate_swiginit(self,_NLPlate.new_NLPlate_StackNodeOfStackOfPlate(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_Plate &" :
         """
         :rtype: Plate_Plate
 
         """
         return _NLPlate.NLPlate_StackNodeOfStackOfPlate_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_StackNodeOfStackOfPlate self)"""
         return _NLPlate.NLPlate_StackNodeOfStackOfPlate__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_StackNodeOfStackOfPlate" :
         """GetHandle(NLPlate_StackNodeOfStackOfPlate self) -> Handle_NLPlate_StackNodeOfStackOfPlate"""
         return _NLPlate.NLPlate_StackNodeOfStackOfPlate_GetHandle(self)
 
@@ -900,7 +900,7 @@ Handle_NLPlate_StackNodeOfStackOfPlate._kill_pointed = new_instancemethod(_NLPla
 Handle_NLPlate_StackNodeOfStackOfPlate_swigregister = _NLPlate.Handle_NLPlate_StackNodeOfStackOfPlate_swigregister
 Handle_NLPlate_StackNodeOfStackOfPlate_swigregister(Handle_NLPlate_StackNodeOfStackOfPlate)
 
-def Handle_NLPlate_StackNodeOfStackOfPlate_DownCast(*args):
+def Handle_NLPlate_StackNodeOfStackOfPlate_DownCast(*args) -> "Handle_NLPlate_StackNodeOfStackOfPlate const" :
   return _NLPlate.Handle_NLPlate_StackNodeOfStackOfPlate_DownCast(*args)
 Handle_NLPlate_StackNodeOfStackOfPlate_DownCast = _NLPlate.Handle_NLPlate_StackNodeOfStackOfPlate_DownCast
 
@@ -913,7 +913,7 @@ class NLPlate_StackOfPlate(object):
 
         """
         _NLPlate.NLPlate_StackOfPlate_swiginit(self,_NLPlate.new_NLPlate_StackOfPlate(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "NLPlate_StackOfPlate const &" :
         """
         :param Other:
         :type Other: NLPlate_StackOfPlate &
@@ -922,7 +922,7 @@ class NLPlate_StackOfPlate(object):
         """
         return _NLPlate.NLPlate_StackOfPlate_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "NLPlate_StackOfPlate const &" :
         """
         :param Other:
         :type Other: NLPlate_StackOfPlate &
@@ -931,28 +931,28 @@ class NLPlate_StackOfPlate(object):
         """
         return _NLPlate.NLPlate_StackOfPlate_Set(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _NLPlate.NLPlate_StackOfPlate_IsEmpty(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _NLPlate.NLPlate_StackOfPlate_Depth(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "Plate_Plate const &" :
         """
         :rtype: Plate_Plate
 
         """
         return _NLPlate.NLPlate_StackOfPlate_Top(self, *args)
 
-    def Push(self, *args):
+    def Push(self, *args) -> "void" :
         """
         :param I:
         :type I: Plate_Plate &
@@ -961,21 +961,21 @@ class NLPlate_StackOfPlate(object):
         """
         return _NLPlate.NLPlate_StackOfPlate_Push(self, *args)
 
-    def Pop(self, *args):
+    def Pop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _NLPlate.NLPlate_StackOfPlate_Pop(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _NLPlate.NLPlate_StackOfPlate_Clear(self, *args)
 
-    def ChangeTop(self, *args):
+    def ChangeTop(self, *args) -> "Plate_Plate &" :
         """
         :rtype: Plate_Plate
 
@@ -1016,11 +1016,11 @@ class NLPlate_HPG0Constraint(NLPlate_HGPPConstraint):
 
         """
         _NLPlate.NLPlate_HPG0Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG0Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG0Constraint self)"""
         return _NLPlate.NLPlate_HPG0Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG0Constraint" :
         """GetHandle(NLPlate_HPG0Constraint self) -> Handle_NLPlate_HPG0Constraint"""
         return _NLPlate.NLPlate_HPG0Constraint_GetHandle(self)
 
@@ -1058,7 +1058,7 @@ Handle_NLPlate_HPG0Constraint._kill_pointed = new_instancemethod(_NLPlate.Handle
 Handle_NLPlate_HPG0Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG0Constraint_swigregister
 Handle_NLPlate_HPG0Constraint_swigregister(Handle_NLPlate_HPG0Constraint)
 
-def Handle_NLPlate_HPG0Constraint_DownCast(*args):
+def Handle_NLPlate_HPG0Constraint_DownCast(*args) -> "Handle_NLPlate_HPG0Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG0Constraint_DownCast(*args)
 Handle_NLPlate_HPG0Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG0Constraint_DownCast
 
@@ -1075,11 +1075,11 @@ class NLPlate_HPG1Constraint(NLPlate_HGPPConstraint):
 
         """
         _NLPlate.NLPlate_HPG1Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG1Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG1Constraint self)"""
         return _NLPlate.NLPlate_HPG1Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG1Constraint" :
         """GetHandle(NLPlate_HPG1Constraint self) -> Handle_NLPlate_HPG1Constraint"""
         return _NLPlate.NLPlate_HPG1Constraint_GetHandle(self)
 
@@ -1117,7 +1117,7 @@ Handle_NLPlate_HPG1Constraint._kill_pointed = new_instancemethod(_NLPlate.Handle
 Handle_NLPlate_HPG1Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG1Constraint_swigregister
 Handle_NLPlate_HPG1Constraint_swigregister(Handle_NLPlate_HPG1Constraint)
 
-def Handle_NLPlate_HPG1Constraint_DownCast(*args):
+def Handle_NLPlate_HPG1Constraint_DownCast(*args) -> "Handle_NLPlate_HPG1Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG1Constraint_DownCast(*args)
 Handle_NLPlate_HPG1Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG1Constraint_DownCast
 
@@ -1136,11 +1136,11 @@ class NLPlate_HPG0G1Constraint(NLPlate_HPG0Constraint):
 
         """
         _NLPlate.NLPlate_HPG0G1Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG0G1Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG0G1Constraint self)"""
         return _NLPlate.NLPlate_HPG0G1Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG0G1Constraint" :
         """GetHandle(NLPlate_HPG0G1Constraint self) -> Handle_NLPlate_HPG0G1Constraint"""
         return _NLPlate.NLPlate_HPG0G1Constraint_GetHandle(self)
 
@@ -1178,7 +1178,7 @@ Handle_NLPlate_HPG0G1Constraint._kill_pointed = new_instancemethod(_NLPlate.Hand
 Handle_NLPlate_HPG0G1Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG0G1Constraint_swigregister
 Handle_NLPlate_HPG0G1Constraint_swigregister(Handle_NLPlate_HPG0G1Constraint)
 
-def Handle_NLPlate_HPG0G1Constraint_DownCast(*args):
+def Handle_NLPlate_HPG0G1Constraint_DownCast(*args) -> "Handle_NLPlate_HPG0G1Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG0G1Constraint_DownCast(*args)
 Handle_NLPlate_HPG0G1Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG0G1Constraint_DownCast
 
@@ -1197,11 +1197,11 @@ class NLPlate_HPG2Constraint(NLPlate_HPG1Constraint):
 
         """
         _NLPlate.NLPlate_HPG2Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG2Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG2Constraint self)"""
         return _NLPlate.NLPlate_HPG2Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG2Constraint" :
         """GetHandle(NLPlate_HPG2Constraint self) -> Handle_NLPlate_HPG2Constraint"""
         return _NLPlate.NLPlate_HPG2Constraint_GetHandle(self)
 
@@ -1239,7 +1239,7 @@ Handle_NLPlate_HPG2Constraint._kill_pointed = new_instancemethod(_NLPlate.Handle
 Handle_NLPlate_HPG2Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG2Constraint_swigregister
 Handle_NLPlate_HPG2Constraint_swigregister(Handle_NLPlate_HPG2Constraint)
 
-def Handle_NLPlate_HPG2Constraint_DownCast(*args):
+def Handle_NLPlate_HPG2Constraint_DownCast(*args) -> "Handle_NLPlate_HPG2Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG2Constraint_DownCast(*args)
 Handle_NLPlate_HPG2Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG2Constraint_DownCast
 
@@ -1260,11 +1260,11 @@ class NLPlate_HPG0G2Constraint(NLPlate_HPG0G1Constraint):
 
         """
         _NLPlate.NLPlate_HPG0G2Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG0G2Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG0G2Constraint self)"""
         return _NLPlate.NLPlate_HPG0G2Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG0G2Constraint" :
         """GetHandle(NLPlate_HPG0G2Constraint self) -> Handle_NLPlate_HPG0G2Constraint"""
         return _NLPlate.NLPlate_HPG0G2Constraint_GetHandle(self)
 
@@ -1302,7 +1302,7 @@ Handle_NLPlate_HPG0G2Constraint._kill_pointed = new_instancemethod(_NLPlate.Hand
 Handle_NLPlate_HPG0G2Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG0G2Constraint_swigregister
 Handle_NLPlate_HPG0G2Constraint_swigregister(Handle_NLPlate_HPG0G2Constraint)
 
-def Handle_NLPlate_HPG0G2Constraint_DownCast(*args):
+def Handle_NLPlate_HPG0G2Constraint_DownCast(*args) -> "Handle_NLPlate_HPG0G2Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG0G2Constraint_DownCast(*args)
 Handle_NLPlate_HPG0G2Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG0G2Constraint_DownCast
 
@@ -1323,11 +1323,11 @@ class NLPlate_HPG3Constraint(NLPlate_HPG2Constraint):
 
         """
         _NLPlate.NLPlate_HPG3Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG3Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG3Constraint self)"""
         return _NLPlate.NLPlate_HPG3Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG3Constraint" :
         """GetHandle(NLPlate_HPG3Constraint self) -> Handle_NLPlate_HPG3Constraint"""
         return _NLPlate.NLPlate_HPG3Constraint_GetHandle(self)
 
@@ -1365,7 +1365,7 @@ Handle_NLPlate_HPG3Constraint._kill_pointed = new_instancemethod(_NLPlate.Handle
 Handle_NLPlate_HPG3Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG3Constraint_swigregister
 Handle_NLPlate_HPG3Constraint_swigregister(Handle_NLPlate_HPG3Constraint)
 
-def Handle_NLPlate_HPG3Constraint_DownCast(*args):
+def Handle_NLPlate_HPG3Constraint_DownCast(*args) -> "Handle_NLPlate_HPG3Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG3Constraint_DownCast(*args)
 Handle_NLPlate_HPG3Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG3Constraint_DownCast
 
@@ -1388,11 +1388,11 @@ class NLPlate_HPG0G3Constraint(NLPlate_HPG0G2Constraint):
 
         """
         _NLPlate.NLPlate_HPG0G3Constraint_swiginit(self,_NLPlate.new_NLPlate_HPG0G3Constraint(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(NLPlate_HPG0G3Constraint self)"""
         return _NLPlate.NLPlate_HPG0G3Constraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_NLPlate_HPG0G3Constraint" :
         """GetHandle(NLPlate_HPG0G3Constraint self) -> Handle_NLPlate_HPG0G3Constraint"""
         return _NLPlate.NLPlate_HPG0G3Constraint_GetHandle(self)
 
@@ -1430,7 +1430,7 @@ Handle_NLPlate_HPG0G3Constraint._kill_pointed = new_instancemethod(_NLPlate.Hand
 Handle_NLPlate_HPG0G3Constraint_swigregister = _NLPlate.Handle_NLPlate_HPG0G3Constraint_swigregister
 Handle_NLPlate_HPG0G3Constraint_swigregister(Handle_NLPlate_HPG0G3Constraint)
 
-def Handle_NLPlate_HPG0G3Constraint_DownCast(*args):
+def Handle_NLPlate_HPG0G3Constraint_DownCast(*args) -> "Handle_NLPlate_HPG0G3Constraint const" :
   return _NLPlate.Handle_NLPlate_HPG0G3Constraint_DownCast(*args)
 Handle_NLPlate_HPG0G3Constraint_DownCast = _NLPlate.Handle_NLPlate_HPG0G3Constraint_DownCast
 

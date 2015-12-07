@@ -150,7 +150,7 @@ class Approx_Array1OfAdHSurface(object):
 
         """
         _Approx.Approx_Array1OfAdHSurface_swiginit(self,_Approx.new_Approx_Array1OfAdHSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HSurface &
@@ -159,21 +159,21 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Approx.Approx_Array1OfAdHSurface_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_Array1OfAdHSurface_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Approx_Array1OfAdHSurface const &" :
         """
         :param Other:
         :type Other: Approx_Array1OfAdHSurface &
@@ -182,7 +182,7 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Approx_Array1OfAdHSurface const &" :
         """
         :param Other:
         :type Other: Approx_Array1OfAdHSurface &
@@ -191,28 +191,28 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfAdHSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfAdHSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfAdHSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -223,7 +223,7 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -232,7 +232,7 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HSurface &" :
         """
         :param Index:
         :type Index: int
@@ -285,7 +285,7 @@ class Approx_Array1OfGTrsf2d(object):
 
         """
         _Approx.Approx_Array1OfGTrsf2d_swiginit(self,_Approx.new_Approx_Array1OfGTrsf2d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: gp_GTrsf2d
@@ -294,21 +294,21 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
         """
         :param Other:
         :type Other: Approx_Array1OfGTrsf2d &
@@ -317,7 +317,7 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
         """
         :param Other:
         :type Other: Approx_Array1OfGTrsf2d &
@@ -326,28 +326,28 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -358,7 +358,7 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_GTrsf2d const" :
         """
         :param Index:
         :type Index: int
@@ -367,7 +367,7 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "gp_GTrsf2d" :
         """
         :param Index:
         :type Index: int
@@ -424,35 +424,35 @@ class Approx_Curve2d(object):
 
         """
         _Approx.Approx_Curve2d_swiginit(self,_Approx.new_Approx_Curve2d(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_Curve2d_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_Curve2d_HasResult(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _Approx.Approx_Curve2d_Curve(self, *args)
 
-    def MaxError2dU(self, *args):
+    def MaxError2dU(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_Curve2d_MaxError2dU(self, *args)
 
-    def MaxError2dV(self, *args):
+    def MaxError2dV(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -497,14 +497,14 @@ class Approx_Curve3d(object):
 
         """
         _Approx.Approx_Curve3d_swiginit(self,_Approx.new_Approx_Curve3d(*args))
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom_BSplineCurve" :
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
         return _Approx.Approx_Curve3d_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the approximation has been done within requiered tolerance
 
@@ -513,7 +513,7 @@ class Approx_Curve3d(object):
         """
         return _Approx.Approx_Curve3d_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the approximation did come out with a result that is not NECESSARELY within the required tolerance
 
@@ -522,7 +522,7 @@ class Approx_Curve3d(object):
         """
         return _Approx.Approx_Curve3d_HasResult(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         * returns the Maximum Error (>0 when an approximation has been done, 0 if no approximation)
 
@@ -531,11 +531,11 @@ class Approx_Curve3d(object):
         """
         return _Approx.Approx_Curve3d_MaxError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Approx_Curve3d self) -> std::string"""
         return _Approx.Approx_Curve3d_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_Curve3d self)"""
         return _Approx.Approx_Curve3d__kill_pointed(self)
 
@@ -585,49 +585,49 @@ class Approx_CurveOnSurface(object):
 
         """
         _Approx.Approx_CurveOnSurface_swiginit(self,_Approx.new_Approx_CurveOnSurface(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_CurveOnSurface_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_CurveOnSurface_HasResult(self, *args)
 
-    def Curve3d(self, *args):
+    def Curve3d(self, *args) -> "Handle_Geom_BSplineCurve" :
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
         return _Approx.Approx_CurveOnSurface_Curve3d(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_CurveOnSurface_MaxError3d(self, *args)
 
-    def Curve2d(self, *args):
+    def Curve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _Approx.Approx_CurveOnSurface_Curve2d(self, *args)
 
-    def MaxError2dU(self, *args):
+    def MaxError2dU(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_CurveOnSurface_MaxError2dU(self, *args)
 
-    def MaxError2dV(self, *args):
+    def MaxError2dV(self, *args) -> "Standard_Real" :
         """
         * returns the maximum errors relativly to the U component or the V component of the  2d Curve
 
@@ -712,21 +712,21 @@ class Approx_CurvilinearParameter(object):
 
         """
         _Approx.Approx_CurvilinearParameter_swiginit(self,_Approx.new_Approx_CurvilinearParameter(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_CurvilinearParameter_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_CurvilinearParameter_HasResult(self, *args)
 
-    def Curve3d(self, *args):
+    def Curve3d(self, *args) -> "Handle_Geom_BSplineCurve" :
         """
         * returns the Bspline curve corresponding to the reparametrized 3D curve
 
@@ -735,7 +735,7 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_Curve3d(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error on the reparametrized 3D curve
 
@@ -744,7 +744,7 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_MaxError3d(self, *args)
 
-    def Curve2d1(self, *args):
+    def Curve2d1(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * returns the BsplineCurve representing the reparametrized 2D curve on the first surface (case of a curve on one or two surfaces)
 
@@ -753,7 +753,7 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_Curve2d1(self, *args)
 
-    def MaxError2d1(self, *args):
+    def MaxError2d1(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error on the first reparametrized 2D curve
 
@@ -762,7 +762,7 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_MaxError2d1(self, *args)
 
-    def Curve2d2(self, *args):
+    def Curve2d2(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * returns the BsplineCurve representing the reparametrized 2D curve on the second surface (case of a curve on two surfaces)
 
@@ -771,7 +771,7 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_Curve2d2(self, *args)
 
-    def MaxError2d2(self, *args):
+    def MaxError2d2(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error on the second reparametrized 2D curve
 
@@ -780,11 +780,11 @@ class Approx_CurvilinearParameter(object):
         """
         return _Approx.Approx_CurvilinearParameter_MaxError2d2(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Approx_CurvilinearParameter self) -> std::string"""
         return _Approx.Approx_CurvilinearParameter_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_CurvilinearParameter self)"""
         return _Approx.Approx_CurvilinearParameter__kill_pointed(self)
 
@@ -842,7 +842,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
 
         """
         _Approx.Approx_CurvlinFunc_swiginit(self,_Approx.new_Approx_CurvlinFunc(*args))
-    def SetTol(self, *args):
+    def SetTol(self, *args) -> "void" :
         """
         * //!---Purpose Update the tolerance to used
 
@@ -853,21 +853,21 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_SetTol(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_CurvlinFunc_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_CurvlinFunc_LastParameter(self, *args)
 
-    def NbIntervals(self, *args):
+    def NbIntervals(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -878,7 +878,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_NbIntervals(self, *args)
 
-    def Intervals(self, *args):
+    def Intervals(self, *args) -> "void" :
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -891,7 +891,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Intervals(self, *args)
 
-    def Trim(self, *args):
+    def Trim(self, *args) -> "void" :
         """
         * if First < 0 or Last > 1
 
@@ -906,7 +906,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Trim(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Real" :
         """
         * Computes length of the curve.
 
@@ -925,14 +925,14 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Length(self, *args)
 
-    def GetLength(self, *args):
+    def GetLength(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_CurvlinFunc_GetLength(self, *args)
 
-    def GetUParameter(self, *args):
+    def GetUParameter(self, *args) -> "Standard_Real" :
         """
         * returns original parameter correponding S. if Case == 1 computation is performed on myC2D1 and mySurf1, otherwise it is done on myC2D2 and mySurf2.
 
@@ -947,7 +947,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_GetUParameter(self, *args)
 
-    def GetSParameter(self, *args):
+    def GetSParameter(self, *args) -> "Standard_Real" :
         """
         * returns original parameter correponding S.
 
@@ -958,7 +958,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_GetSParameter(self, *args)
 
-    def EvalCase1(self, *args):
+    def EvalCase1(self, *args) -> "Standard_Boolean" :
         """
         * if myCase != 1
 
@@ -973,7 +973,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase1(self, *args)
 
-    def EvalCase2(self, *args):
+    def EvalCase2(self, *args) -> "Standard_Boolean" :
         """
         * if myCase != 2
 
@@ -988,7 +988,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase2(self, *args)
 
-    def EvalCase3(self, *args):
+    def EvalCase3(self, *args) -> "Standard_Boolean" :
         """
         * if myCase != 3
 
@@ -1003,11 +1003,11 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase3(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_CurvlinFunc self)"""
         return _Approx.Approx_CurvlinFunc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Approx_CurvlinFunc" :
         """GetHandle(Approx_CurvlinFunc self) -> Handle_Approx_CurvlinFunc"""
         return _Approx.Approx_CurvlinFunc_GetHandle(self)
 
@@ -1058,7 +1058,7 @@ Handle_Approx_CurvlinFunc._kill_pointed = new_instancemethod(_Approx.Handle_Appr
 Handle_Approx_CurvlinFunc_swigregister = _Approx.Handle_Approx_CurvlinFunc_swigregister
 Handle_Approx_CurvlinFunc_swigregister(Handle_Approx_CurvlinFunc)
 
-def Handle_Approx_CurvlinFunc_DownCast(*args):
+def Handle_Approx_CurvlinFunc_DownCast(*args) -> "Handle_Approx_CurvlinFunc const" :
   return _Approx.Handle_Approx_CurvlinFunc_DownCast(*args)
 Handle_Approx_CurvlinFunc_DownCast = _Approx.Handle_Approx_CurvlinFunc_DownCast
 
@@ -1103,7 +1103,7 @@ class Approx_FitAndDivide(object):
 
         """
         _Approx.Approx_FitAndDivide_swiginit(self,_Approx.new_Approx_FitAndDivide(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Line:
         :type Line: AppCont_Function &
@@ -1112,7 +1112,7 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_Perform(self, *args)
 
-    def SetDegrees(self, *args):
+    def SetDegrees(self, *args) -> "void" :
         """
         :param degreemin:
         :type degreemin: int
@@ -1123,7 +1123,7 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args):
+    def SetTolerances(self, *args) -> "void" :
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -1134,7 +1134,7 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args):
+    def SetConstraints(self, *args) -> "void" :
         """
         :param FirstC:
         :type FirstC: AppParCurves_Constraint
@@ -1145,21 +1145,21 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args):
+    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_FitAndDivide_IsAllApproximated(self, *args)
 
-    def IsToleranceReached(self, *args):
+    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_FitAndDivide_IsToleranceReached(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1172,14 +1172,14 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_Error(self, *args)
 
-    def NbMultiCurves(self, *args):
+    def NbMultiCurves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_FitAndDivide_NbMultiCurves(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :param Index: default value is 1
         :type Index: int
@@ -1188,7 +1188,7 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_Value(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1264,7 +1264,7 @@ class Approx_FitAndDivide2d(object):
 
         """
         _Approx.Approx_FitAndDivide2d_swiginit(self,_Approx.new_Approx_FitAndDivide2d(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Line:
         :type Line: AppCont_Function2d &
@@ -1273,7 +1273,7 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_Perform(self, *args)
 
-    def SetDegrees(self, *args):
+    def SetDegrees(self, *args) -> "void" :
         """
         :param degreemin:
         :type degreemin: int
@@ -1284,7 +1284,7 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args):
+    def SetTolerances(self, *args) -> "void" :
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -1295,7 +1295,7 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args):
+    def SetConstraints(self, *args) -> "void" :
         """
         :param FirstC:
         :type FirstC: AppParCurves_Constraint
@@ -1306,21 +1306,21 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args):
+    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_FitAndDivide2d_IsAllApproximated(self, *args)
 
-    def IsToleranceReached(self, *args):
+    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_FitAndDivide2d_IsToleranceReached(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1333,14 +1333,14 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_Error(self, *args)
 
-    def NbMultiCurves(self, *args):
+    def NbMultiCurves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_FitAndDivide2d_NbMultiCurves(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :param Index: default value is 1
         :type Index: int
@@ -1349,7 +1349,7 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_Value(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1405,7 +1405,7 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _Approx.Approx_HArray1OfAdHSurface_swiginit(self,_Approx.new_Approx_HArray1OfAdHSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HSurface &
@@ -1414,28 +1414,28 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1446,7 +1446,7 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -1455,7 +1455,7 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HSurface &" :
         """
         :param Index:
         :type Index: int
@@ -1464,25 +1464,25 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "Approx_Array1OfAdHSurface const &" :
         """
         :rtype: Approx_Array1OfAdHSurface
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "Approx_Array1OfAdHSurface &" :
         """
         :rtype: Approx_Array1OfAdHSurface
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_HArray1OfAdHSurface self)"""
         return _Approx.Approx_HArray1OfAdHSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Approx_HArray1OfAdHSurface" :
         """GetHandle(Approx_HArray1OfAdHSurface self) -> Handle_Approx_HArray1OfAdHSurface"""
         return _Approx.Approx_HArray1OfAdHSurface_GetHandle(self)
 
@@ -1529,7 +1529,7 @@ Handle_Approx_HArray1OfAdHSurface._kill_pointed = new_instancemethod(_Approx.Han
 Handle_Approx_HArray1OfAdHSurface_swigregister = _Approx.Handle_Approx_HArray1OfAdHSurface_swigregister
 Handle_Approx_HArray1OfAdHSurface_swigregister(Handle_Approx_HArray1OfAdHSurface)
 
-def Handle_Approx_HArray1OfAdHSurface_DownCast(*args):
+def Handle_Approx_HArray1OfAdHSurface_DownCast(*args) -> "Handle_Approx_HArray1OfAdHSurface const" :
   return _Approx.Handle_Approx_HArray1OfAdHSurface_DownCast(*args)
 Handle_Approx_HArray1OfAdHSurface_DownCast = _Approx.Handle_Approx_HArray1OfAdHSurface_DownCast
 
@@ -1554,7 +1554,7 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
 
         """
         _Approx.Approx_HArray1OfGTrsf2d_swiginit(self,_Approx.new_Approx_HArray1OfGTrsf2d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: gp_GTrsf2d
@@ -1563,28 +1563,28 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1595,7 +1595,7 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_GTrsf2d const" :
         """
         :param Index:
         :type Index: int
@@ -1604,7 +1604,7 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "gp_GTrsf2d" :
         """
         :param Index:
         :type Index: int
@@ -1613,25 +1613,25 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
         """
         :rtype: Approx_Array1OfGTrsf2d
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "Approx_Array1OfGTrsf2d &" :
         """
         :rtype: Approx_Array1OfGTrsf2d
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_HArray1OfGTrsf2d self)"""
         return _Approx.Approx_HArray1OfGTrsf2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Approx_HArray1OfGTrsf2d" :
         """GetHandle(Approx_HArray1OfGTrsf2d self) -> Handle_Approx_HArray1OfGTrsf2d"""
         return _Approx.Approx_HArray1OfGTrsf2d_GetHandle(self)
 
@@ -1678,7 +1678,7 @@ Handle_Approx_HArray1OfGTrsf2d._kill_pointed = new_instancemethod(_Approx.Handle
 Handle_Approx_HArray1OfGTrsf2d_swigregister = _Approx.Handle_Approx_HArray1OfGTrsf2d_swigregister
 Handle_Approx_HArray1OfGTrsf2d_swigregister(Handle_Approx_HArray1OfGTrsf2d)
 
-def Handle_Approx_HArray1OfGTrsf2d_DownCast(*args):
+def Handle_Approx_HArray1OfGTrsf2d_DownCast(*args) -> "Handle_Approx_HArray1OfGTrsf2d const" :
   return _Approx.Handle_Approx_HArray1OfGTrsf2d_DownCast(*args)
 Handle_Approx_HArray1OfGTrsf2d_DownCast = _Approx.Handle_Approx_HArray1OfGTrsf2d_DownCast
 
@@ -1691,14 +1691,14 @@ class Approx_MCurvesToBSpCurve(object):
 
         """
         _Approx.Approx_MCurvesToBSpCurve_swiginit(self,_Approx.new_Approx_MCurvesToBSpCurve(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Approx.Approx_MCurvesToBSpCurve_Reset(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param MC:
         :type MC: AppParCurves_MultiCurve &
@@ -1707,7 +1707,7 @@ class Approx_MCurvesToBSpCurve(object):
         """
         return _Approx.Approx_MCurvesToBSpCurve_Append(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1718,7 +1718,7 @@ class Approx_MCurvesToBSpCurve(object):
         """
         return _Approx.Approx_MCurvesToBSpCurve_Perform(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         * return the composite MultiCurves as a MultiBSpCurve.
 
@@ -1727,7 +1727,7 @@ class Approx_MCurvesToBSpCurve(object):
         """
         return _Approx.Approx_MCurvesToBSpCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         * return the composite MultiCurves as a MultiBSpCurve.
 
@@ -1776,21 +1776,21 @@ class Approx_MyLeastSquareOfFitAndDivide(object):
 
         """
         _Approx.Approx_MyLeastSquareOfFitAndDivide_swiginit(self,_Approx.new_Approx_MyLeastSquareOfFitAndDivide(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_MyLeastSquareOfFitAndDivide_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _Approx.Approx_MyLeastSquareOfFitAndDivide_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -1841,21 +1841,21 @@ class Approx_MyLeastSquareOfFitAndDivide2d(object):
 
         """
         _Approx.Approx_MyLeastSquareOfFitAndDivide2d_swiginit(self,_Approx.new_Approx_MyLeastSquareOfFitAndDivide2d(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -1924,21 +1924,21 @@ class Approx_SameParameter(object):
 
         """
         _Approx.Approx_SameParameter_swiginit(self,_Approx.new_Approx_SameParameter(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Approx.Approx_SameParameter_IsDone(self, *args)
 
-    def TolReached(self, *args):
+    def TolReached(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Approx.Approx_SameParameter_TolReached(self, *args)
 
-    def IsSameParameter(self, *args):
+    def IsSameParameter(self, *args) -> "Standard_Boolean" :
         """
         * Tells whether the original data had already the same parameter up to the tolerance : in that case nothing is done.
 
@@ -1947,7 +1947,7 @@ class Approx_SameParameter(object):
         """
         return _Approx.Approx_SameParameter_IsSameParameter(self, *args)
 
-    def Curve2d(self, *args):
+    def Curve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * Returns the 2D curve that has the same parameter as the 3D curve once evaluated on the surface up to the specified tolerance
 
@@ -1987,18 +1987,18 @@ class Approx_SequenceNodeOfSequenceOfHArray1OfReal(OCC.TCollection.TCollection_S
 
         """
         _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_swiginit(self,_Approx.new_Approx_SequenceNodeOfSequenceOfHArray1OfReal(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_SequenceNodeOfSequenceOfHArray1OfReal self)"""
         return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal" :
         """GetHandle(Approx_SequenceNodeOfSequenceOfHArray1OfReal self) -> Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal"""
         return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_GetHandle(self)
 
@@ -2037,7 +2037,7 @@ Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal._kill_pointed = new_instance
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister = _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister(Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal)
 
-def Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args):
+def Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args) -> "Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal const" :
   return _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args)
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast = _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast
 
@@ -2050,14 +2050,14 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Approx.Approx_SequenceOfHArray1OfReal_swiginit(self,_Approx.new_Approx_SequenceOfHArray1OfReal(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Approx_SequenceOfHArray1OfReal const &" :
         """
         :param Other:
         :type Other: Approx_SequenceOfHArray1OfReal &
@@ -2066,7 +2066,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Approx_SequenceOfHArray1OfReal const &" :
         """
         :param Other:
         :type Other: Approx_SequenceOfHArray1OfReal &
@@ -2075,7 +2075,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
@@ -2088,7 +2088,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
@@ -2101,7 +2101,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2118,7 +2118,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2135,21 +2135,21 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2160,7 +2160,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
         """
         :param Index:
         :type Index: int
@@ -2169,7 +2169,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2180,7 +2180,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
         """
         :param Index:
         :type Index: int
@@ -2189,7 +2189,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2241,7 +2241,7 @@ class Approx_SweepApproximation(object):
 
         """
         _Approx.Approx_SweepApproximation_swiginit(self,_Approx.new_Approx_SweepApproximation(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Perform the Approximation [First, Last] : Approx_SweepApproximation.cdl Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface Warning : The continuity ci can be obtained only if Ft is Ci
 
@@ -2268,7 +2268,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Perform(self, *args)
 
-    def Eval(self, *args):
+    def Eval(self, *args) -> "Standard_Integer" :
         """
         * The EvaluatorFunction from AdvApprox;
 
@@ -2287,7 +2287,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Eval(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns if we have an result
 
@@ -2296,7 +2296,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_IsDone(self, *args)
 
-    def SurfShape(self, *args):
+    def SurfShape(self, *args) -> "void" :
         """
         :param UDegree:
         :type UDegree: int &
@@ -2315,7 +2315,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_SurfShape(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "void" :
         """
         :param TPoles:
         :type TPoles: TColgp_Array2OfPnt
@@ -2334,63 +2334,63 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Surface(self, *args)
 
-    def UDegree(self, *args):
+    def UDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_SweepApproximation_UDegree(self, *args)
 
-    def VDegree(self, *args):
+    def VDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_SweepApproximation_VDegree(self, *args)
 
-    def SurfPoles(self, *args):
+    def SurfPoles(self, *args) -> "TColgp_Array2OfPnt const &" :
         """
         :rtype: TColgp_Array2OfPnt
 
         """
         return _Approx.Approx_SweepApproximation_SurfPoles(self, *args)
 
-    def SurfWeights(self, *args):
+    def SurfWeights(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :rtype: TColStd_Array2OfReal
 
         """
         return _Approx.Approx_SweepApproximation_SurfWeights(self, *args)
 
-    def SurfUKnots(self, *args):
+    def SurfUKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _Approx.Approx_SweepApproximation_SurfUKnots(self, *args)
 
-    def SurfVKnots(self, *args):
+    def SurfVKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _Approx.Approx_SweepApproximation_SurfVKnots(self, *args)
 
-    def SurfUMults(self, *args):
+    def SurfUMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _Approx.Approx_SweepApproximation_SurfUMults(self, *args)
 
-    def SurfVMults(self, *args):
+    def SurfVMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _Approx.Approx_SweepApproximation_SurfVMults(self, *args)
 
-    def MaxErrorOnSurf(self, *args):
+    def MaxErrorOnSurf(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error in the suface approximation.
 
@@ -2399,7 +2399,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_MaxErrorOnSurf(self, *args)
 
-    def AverageErrorOnSurf(self, *args):
+    def AverageErrorOnSurf(self, *args) -> "Standard_Real" :
         """
         * returns the average error in the suface approximation.
 
@@ -2408,14 +2408,14 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_AverageErrorOnSurf(self, *args)
 
-    def NbCurves2d(self, *args):
+    def NbCurves2d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_SweepApproximation_NbCurves2d(self, *args)
 
-    def Curves2dShape(self, *args):
+    def Curves2dShape(self, *args) -> "void" :
         """
         :param Degree:
         :type Degree: int &
@@ -2428,7 +2428,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Curves2dShape(self, *args)
 
-    def Curve2d(self, *args):
+    def Curve2d(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2443,14 +2443,14 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Curve2d(self, *args)
 
-    def Curves2dDegree(self, *args):
+    def Curves2dDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Approx.Approx_SweepApproximation_Curves2dDegree(self, *args)
 
-    def Curve2dPoles(self, *args):
+    def Curve2dPoles(self, *args) -> "TColgp_Array1OfPnt2d const &" :
         """
         :param Index:
         :type Index: int
@@ -2459,21 +2459,21 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Curve2dPoles(self, *args)
 
-    def Curves2dKnots(self, *args):
+    def Curves2dKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _Approx.Approx_SweepApproximation_Curves2dKnots(self, *args)
 
-    def Curves2dMults(self, *args):
+    def Curves2dMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _Approx.Approx_SweepApproximation_Curves2dMults(self, *args)
 
-    def Max2dError(self, *args):
+    def Max2dError(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error of the <Index> 2d curve approximation.
 
@@ -2484,7 +2484,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Max2dError(self, *args)
 
-    def Average2dError(self, *args):
+    def Average2dError(self, *args) -> "Standard_Real" :
         """
         * returns the average error of the <Index> 2d curve approximation.
 
@@ -2495,7 +2495,7 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Average2dError(self, *args)
 
-    def TolCurveOnSurf(self, *args):
+    def TolCurveOnSurf(self, *args) -> "Standard_Real" :
         """
         * returns the maximum 3d error of the <Index> 2d curve approximation on the Surface.
 
@@ -2506,11 +2506,11 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_TolCurveOnSurf(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Approx_SweepApproximation self) -> std::string"""
         return _Approx.Approx_SweepApproximation_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_SweepApproximation self)"""
         return _Approx.Approx_SweepApproximation__kill_pointed(self)
 
@@ -2556,7 +2556,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def D0(self, *args):
+    def D0(self, *args) -> "Standard_Boolean" :
         """
         * compute the section for v = param
 
@@ -2577,7 +2577,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D0(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "Standard_Boolean" :
         """
         * compute the first derivative in v direction of the section for v = param Warning : It used only for C1 or C2 aproximation
 
@@ -2604,7 +2604,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D1(self, *args)
 
-    def D2(self, *args):
+    def D2(self, *args) -> "Standard_Boolean" :
         """
         * compute the second derivative in v direction of the section for v = param Warning : It used only for C2 aproximation
 
@@ -2637,7 +2637,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D2(self, *args)
 
-    def Nb2dCurves(self, *args):
+    def Nb2dCurves(self, *args) -> "Standard_Integer" :
         """
         * get the number of 2d curves to approximate.
 
@@ -2646,7 +2646,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Nb2dCurves(self, *args)
 
-    def SectionShape(self, *args):
+    def SectionShape(self, *args) -> "void" :
         """
         * get the format of an section
 
@@ -2661,7 +2661,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_SectionShape(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "void" :
         """
         * get the Knots of the section
 
@@ -2672,7 +2672,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Knots(self, *args)
 
-    def Mults(self, *args):
+    def Mults(self, *args) -> "void" :
         """
         * get the Multplicities of the section
 
@@ -2683,7 +2683,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Mults(self, *args)
 
-    def IsRational(self, *args):
+    def IsRational(self, *args) -> "Standard_Boolean" :
         """
         * Returns if the sections are rationnal or not
 
@@ -2692,7 +2692,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_IsRational(self, *args)
 
-    def NbIntervals(self, *args):
+    def NbIntervals(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -2703,7 +2703,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_NbIntervals(self, *args)
 
-    def Intervals(self, *args):
+    def Intervals(self, *args) -> "void" :
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -2716,7 +2716,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Intervals(self, *args)
 
-    def SetInterval(self, *args):
+    def SetInterval(self, *args) -> "void" :
         """
         * Sets the bounds of the parametric interval on the fonction This determines the derivatives in these values if the function is not Cn.
 
@@ -2729,7 +2729,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_SetInterval(self, *args)
 
-    def Resolution(self, *args):
+    def Resolution(self, *args) -> "void" :
         """
         * Returns the resolutions in the sub-space 2d <Index> This information is usfull to find an good tolerance in 2d approximation.
 
@@ -2746,7 +2746,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Resolution(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns the tolerance to reach in approximation to satisfy. BoundTol error at the Boundary AngleTol tangent error at the Boundary (in radian) SurfTol error inside the surface.
 
@@ -2763,7 +2763,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_GetTolerance(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Is usefull, if (me) have to run numerical algorithm to perform D0, D1 or D2
 
@@ -2776,7 +2776,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_SetTolerance(self, *args)
 
-    def BarycentreOfSurf(self, *args):
+    def BarycentreOfSurf(self, *args) -> "gp_Pnt" :
         """
         * Get the barycentre of Surface. An very poor estimation is sufficent. This information is usefull to perform well conditioned rational approximation. Warning: Used only if <self> IsRational
 
@@ -2785,7 +2785,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_BarycentreOfSurf(self, *args)
 
-    def MaximalSection(self, *args):
+    def MaximalSection(self, *args) -> "Standard_Real" :
         """
         * Returns the length of the greater section. This information is usefull to G1's control. Warning: With an little value, approximation can be slower.
 
@@ -2794,7 +2794,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_MaximalSection(self, *args)
 
-    def GetMinimalWeight(self, *args):
+    def GetMinimalWeight(self, *args) -> "void" :
         """
         * Compute the minimal value of weight for each poles in all sections. This information is usefull to control error in rational approximation. Warning: Used only if <self> IsRational
 
@@ -2805,11 +2805,11 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_GetMinimalWeight(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Approx_SweepFunction self)"""
         return _Approx.Approx_SweepFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Approx_SweepFunction" :
         """GetHandle(Approx_SweepFunction self) -> Handle_Approx_SweepFunction"""
         return _Approx.Approx_SweepFunction_GetHandle(self)
 
@@ -2864,7 +2864,7 @@ Handle_Approx_SweepFunction._kill_pointed = new_instancemethod(_Approx.Handle_Ap
 Handle_Approx_SweepFunction_swigregister = _Approx.Handle_Approx_SweepFunction_swigregister
 Handle_Approx_SweepFunction_swigregister(Handle_Approx_SweepFunction)
 
-def Handle_Approx_SweepFunction_DownCast(*args):
+def Handle_Approx_SweepFunction_DownCast(*args) -> "Handle_Approx_SweepFunction const" :
   return _Approx.Handle_Approx_SweepFunction_DownCast(*args)
 Handle_Approx_SweepFunction_DownCast = _Approx.Handle_Approx_SweepFunction_DownCast
 

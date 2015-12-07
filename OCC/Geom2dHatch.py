@@ -146,7 +146,7 @@ class Geom2dHatch_ClassifierOfHatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_ClassifierOfHatcher(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param F:
         :type F: Geom2dHatch_ElementsOfHatcher &
@@ -159,42 +159,42 @@ class Geom2dHatch_ClassifierOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_Perform(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         :rtype: TopAbs_State
 
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_State(self, *args)
 
-    def Rejected(self, *args):
+    def Rejected(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_Rejected(self, *args)
 
-    def NoWires(self, *args):
+    def NoWires(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_NoWires(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "Geom2dAdaptor_Curve const &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_Edge(self, *args)
 
-    def EdgeParameter(self, *args):
+    def EdgeParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dHatch.Geom2dHatch_ClassifierOfHatcher_EdgeParameter(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "IntRes2d_Position" :
         """
         :rtype: IntRes2d_Position
 
@@ -233,7 +233,7 @@ class Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher(OCC.TCollection.TCollectio
 
         """
         _Geom2dHatch.Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: Geom2dHatch_HatchingsOfHatcher &
@@ -242,14 +242,14 @@ class Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher(OCC.TCollection.TCollectio
         """
         return _Geom2dHatch.Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Geom2dHatch.Geom2dHatch_DataMapIteratorOfHatchingsOfHatcher_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Geom2dHatch_HatchingOfHatcher const &" :
         """
         :rtype: Geom2dHatch_HatchingOfHatcher
 
@@ -284,7 +284,7 @@ class Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher(OCC.TCollect
 
         """
         _Geom2dHatch.Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: Geom2dHatch_MapOfElementsOfElementsOfHatcher &
@@ -293,14 +293,14 @@ class Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher(OCC.TCollect
         """
         return _Geom2dHatch.Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Geom2dHatch.Geom2dHatch_DataMapIteratorOfMapOfElementsOfElementsOfHatcher_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Geom2dHatch_ElementOfHatcher const &" :
         """
         :rtype: Geom2dHatch_ElementOfHatcher
 
@@ -337,26 +337,26 @@ class Geom2dHatch_DataMapNodeOfHatchingsOfHatcher(OCC.TCollection.TCollection_Ma
 
         """
         _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(Geom2dHatch_DataMapNodeOfHatchingsOfHatcher self) -> Standard_Integer"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(Geom2dHatch_DataMapNodeOfHatchingsOfHatcher self, Standard_Integer value)"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Geom2dHatch_HatchingOfHatcher &" :
         """
         :rtype: Geom2dHatch_HatchingOfHatcher
 
         """
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dHatch_DataMapNodeOfHatchingsOfHatcher self)"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher" :
         """GetHandle(Geom2dHatch_DataMapNodeOfHatchingsOfHatcher self) -> Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_GetHandle(self)
 
@@ -397,7 +397,7 @@ Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher._kill_pointed = new_instancem
 Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_swigregister = _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_swigregister
 Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_swigregister(Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher)
 
-def Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_DownCast(*args):
+def Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_DownCast(*args) -> "Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher const" :
   return _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_DownCast(*args)
 Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_DownCast = _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfHatchingsOfHatcher_DownCast
 
@@ -416,26 +416,26 @@ class Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher(OCC.TCollection.
 
         """
         _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher self) -> Standard_Integer"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher self, Standard_Integer value)"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Geom2dHatch_ElementOfHatcher &" :
         """
         :rtype: Geom2dHatch_ElementOfHatcher
 
         """
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher self)"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher" :
         """GetHandle(Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher self) -> Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher"""
         return _Geom2dHatch.Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_GetHandle(self)
 
@@ -476,7 +476,7 @@ Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher._kill_pointed =
 Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_swigregister = _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_swigregister
 Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_swigregister(Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher)
 
-def Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_DownCast(*args):
+def Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_DownCast(*args) -> "Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher const" :
   return _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_DownCast(*args)
 Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_DownCast = _Geom2dHatch.Handle_Geom2dHatch_DataMapNodeOfMapOfElementsOfElementsOfHatcher_DownCast
 
@@ -499,21 +499,21 @@ class Geom2dHatch_ElementOfHatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_ElementOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_ElementOfHatcher(*args))
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Geom2dAdaptor_Curve const &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementOfHatcher_Curve(self, *args)
 
-    def ChangeCurve(self, *args):
+    def ChangeCurve(self, *args) -> "Geom2dAdaptor_Curve &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementOfHatcher_ChangeCurve(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :param Orientation:
         :type Orientation: TopAbs_Orientation
@@ -552,14 +552,14 @@ class Geom2dHatch_ElementsOfHatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_ElementsOfHatcher(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -570,7 +570,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -579,7 +579,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -588,7 +588,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Geom2dHatch_ElementOfHatcher const &" :
         """
         :param K:
         :type K: int &
@@ -597,7 +597,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Geom2dHatch_ElementOfHatcher &" :
         """
         :param K:
         :type K: int &
@@ -606,7 +606,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_ChangeFind(self, *args)
 
-    def Reject(self, *args):
+    def Reject(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -615,7 +615,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_Reject(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -628,7 +628,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_Segment(self, *args)
 
-    def OtherSegment(self, *args):
+    def OtherSegment(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -641,28 +641,28 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_OtherSegment(self, *args)
 
-    def InitWires(self, *args):
+    def InitWires(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_InitWires(self, *args)
 
-    def MoreWires(self, *args):
+    def MoreWires(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_MoreWires(self, *args)
 
-    def NextWire(self, *args):
+    def NextWire(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_NextWire(self, *args)
 
-    def RejectWire(self, *args):
+    def RejectWire(self, *args) -> "Standard_Boolean" :
         """
         :param L:
         :type L: gp_Lin2d
@@ -673,28 +673,28 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_RejectWire(self, *args)
 
-    def InitEdges(self, *args):
+    def InitEdges(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_InitEdges(self, *args)
 
-    def MoreEdges(self, *args):
+    def MoreEdges(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_MoreEdges(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_NextEdge(self, *args)
 
-    def RejectEdge(self, *args):
+    def RejectEdge(self, *args) -> "Standard_Boolean" :
         """
         :param L:
         :type L: gp_Lin2d
@@ -705,7 +705,7 @@ class Geom2dHatch_ElementsOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_ElementsOfHatcher_RejectEdge(self, *args)
 
-    def CurrentEdge(self, *args):
+    def CurrentEdge(self, *args) -> "void" :
         """
         :param E:
         :type E: Geom2dAdaptor_Curve &
@@ -755,7 +755,7 @@ class Geom2dHatch_FClass2dOfClassifierOfHatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_FClass2dOfClassifierOfHatcher(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin2d
@@ -768,7 +768,7 @@ class Geom2dHatch_FClass2dOfClassifierOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_Reset(self, *args)
 
-    def Compare(self, *args):
+    def Compare(self, *args) -> "void" :
         """
         :param E:
         :type E: Geom2dAdaptor_Curve &
@@ -779,35 +779,35 @@ class Geom2dHatch_FClass2dOfClassifierOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_Compare(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_Parameter(self, *args)
 
-    def Intersector(self, *args):
+    def Intersector(self, *args) -> "Geom2dHatch_Intersector &" :
         """
         :rtype: Geom2dHatch_Intersector
 
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_Intersector(self, *args)
 
-    def ClosestIntersection(self, *args):
+    def ClosestIntersection(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_ClosestIntersection(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         :rtype: TopAbs_State
 
         """
         return _Geom2dHatch.Geom2dHatch_FClass2dOfClassifierOfHatcher_State(self, *args)
 
-    def IsHeadOrEnd(self, *args):
+    def IsHeadOrEnd(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -852,7 +852,7 @@ class Geom2dHatch_Hatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_Hatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_Hatcher(*args))
-    def Intersector(self, *args):
+    def Intersector(self, *args) -> "Geom2dHatch_Intersector const &" :
         """
         :param Intersector:
         :type Intersector: Geom2dHatch_Intersector &
@@ -863,14 +863,14 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Intersector(self, *args)
 
-    def ChangeIntersector(self, *args):
+    def ChangeIntersector(self, *args) -> "Geom2dHatch_Intersector &" :
         """
         :rtype: Geom2dHatch_Intersector
 
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_ChangeIntersector(self, *args)
 
-    def Confusion2d(self, *args):
+    def Confusion2d(self, *args) -> "Standard_Real" :
         """
         :param Confusion:
         :type Confusion: float
@@ -881,7 +881,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Confusion2d(self, *args)
 
-    def Confusion3d(self, *args):
+    def Confusion3d(self, *args) -> "Standard_Real" :
         """
         :param Confusion:
         :type Confusion: float
@@ -892,7 +892,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Confusion3d(self, *args)
 
-    def KeepPoints(self, *args):
+    def KeepPoints(self, *args) -> "Standard_Boolean" :
         """
         :param Keep:
         :type Keep: bool
@@ -903,7 +903,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_KeepPoints(self, *args)
 
-    def KeepSegments(self, *args):
+    def KeepSegments(self, *args) -> "Standard_Boolean" :
         """
         :param Keep:
         :type Keep: bool
@@ -914,14 +914,14 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_KeepSegments(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Clear(self, *args)
 
-    def ElementCurve(self, *args):
+    def ElementCurve(self, *args) -> "Geom2dAdaptor_Curve const &" :
         """
         :param IndE:
         :type IndE: int
@@ -930,7 +930,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_ElementCurve(self, *args)
 
-    def AddElement(self, *args):
+    def AddElement(self, *args) -> "Standard_Integer" :
         """
         :param Curve:
         :type Curve: Geom2dAdaptor_Curve &
@@ -941,7 +941,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_AddElement(self, *args)
 
-    def RemElement(self, *args):
+    def RemElement(self, *args) -> "void" :
         """
         :param IndE:
         :type IndE: int
@@ -950,14 +950,14 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_RemElement(self, *args)
 
-    def ClrElements(self, *args):
+    def ClrElements(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_ClrElements(self, *args)
 
-    def HatchingCurve(self, *args):
+    def HatchingCurve(self, *args) -> "Geom2dAdaptor_Curve const &" :
         """
         :param IndH:
         :type IndH: int
@@ -966,7 +966,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_HatchingCurve(self, *args)
 
-    def AddHatching(self, *args):
+    def AddHatching(self, *args) -> "Standard_Integer" :
         """
         :param Curve:
         :type Curve: Geom2dAdaptor_Curve &
@@ -975,7 +975,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_AddHatching(self, *args)
 
-    def RemHatching(self, *args):
+    def RemHatching(self, *args) -> "void" :
         """
         :param IndH:
         :type IndH: int
@@ -984,14 +984,14 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_RemHatching(self, *args)
 
-    def ClrHatchings(self, *args):
+    def ClrHatchings(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_ClrHatchings(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :param IndH:
         :type IndH: int
@@ -1000,7 +1000,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "HatchGen_PointOnHatching const &" :
         """
         :param IndH:
         :type IndH: int
@@ -1011,7 +1011,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Point(self, *args)
 
-    def Trim(self, *args):
+    def Trim(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1026,7 +1026,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Trim(self, *args)
 
-    def ComputeDomains(self, *args):
+    def ComputeDomains(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1037,7 +1037,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_ComputeDomains(self, *args)
 
-    def TrimDone(self, *args):
+    def TrimDone(self, *args) -> "Standard_Boolean" :
         """
         :param IndH:
         :type IndH: int
@@ -1046,7 +1046,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_TrimDone(self, *args)
 
-    def TrimFailed(self, *args):
+    def TrimFailed(self, *args) -> "Standard_Boolean" :
         """
         :param IndH:
         :type IndH: int
@@ -1055,7 +1055,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_TrimFailed(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "HatchGen_ErrorStatus" :
         """
         :param IndH:
         :type IndH: int
@@ -1064,7 +1064,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Status(self, *args)
 
-    def NbDomains(self, *args):
+    def NbDomains(self, *args) -> "Standard_Integer" :
         """
         :param IndH:
         :type IndH: int
@@ -1073,7 +1073,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_NbDomains(self, *args)
 
-    def Domain(self, *args):
+    def Domain(self, *args) -> "HatchGen_Domain const &" :
         """
         :param IndH:
         :type IndH: int
@@ -1084,7 +1084,7 @@ class Geom2dHatch_Hatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_Hatcher_Domain(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1141,21 +1141,21 @@ class Geom2dHatch_HatchingOfHatcher(object):
 
         """
         _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_HatchingOfHatcher(*args))
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Geom2dAdaptor_Curve const &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_Curve(self, *args)
 
-    def ChangeCurve(self, *args):
+    def ChangeCurve(self, *args) -> "Geom2dAdaptor_Curve &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_ChangeCurve(self, *args)
 
-    def TrimDone(self, *args):
+    def TrimDone(self, *args) -> "Standard_Boolean" :
         """
         :param Flag:
         :type Flag: bool
@@ -1166,7 +1166,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_TrimDone(self, *args)
 
-    def TrimFailed(self, *args):
+    def TrimFailed(self, *args) -> "Standard_Boolean" :
         """
         :param Flag:
         :type Flag: bool
@@ -1177,7 +1177,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_TrimFailed(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :param Flag:
         :type Flag: bool
@@ -1188,7 +1188,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_IsDone(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "HatchGen_ErrorStatus" :
         """
         :param Status:
         :type Status: HatchGen_ErrorStatus
@@ -1199,7 +1199,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_Status(self, *args)
 
-    def AddPoint(self, *args):
+    def AddPoint(self, *args) -> "void" :
         """
         :param Point:
         :type Point: HatchGen_PointOnHatching &
@@ -1210,14 +1210,14 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_AddPoint(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "HatchGen_PointOnHatching const &" :
         """
         :param Index:
         :type Index: int
@@ -1226,7 +1226,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_Point(self, *args)
 
-    def ChangePoint(self, *args):
+    def ChangePoint(self, *args) -> "HatchGen_PointOnHatching &" :
         """
         :param Index:
         :type Index: int
@@ -1235,7 +1235,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_ChangePoint(self, *args)
 
-    def RemPoint(self, *args):
+    def RemPoint(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1244,14 +1244,14 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_RemPoint(self, *args)
 
-    def ClrPoints(self, *args):
+    def ClrPoints(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_ClrPoints(self, *args)
 
-    def AddDomain(self, *args):
+    def AddDomain(self, *args) -> "void" :
         """
         :param Domain:
         :type Domain: HatchGen_Domain &
@@ -1260,14 +1260,14 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_AddDomain(self, *args)
 
-    def NbDomains(self, *args):
+    def NbDomains(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_NbDomains(self, *args)
 
-    def Domain(self, *args):
+    def Domain(self, *args) -> "HatchGen_Domain const &" :
         """
         :param Index:
         :type Index: int
@@ -1276,7 +1276,7 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_Domain(self, *args)
 
-    def RemDomain(self, *args):
+    def RemDomain(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1285,14 +1285,14 @@ class Geom2dHatch_HatchingOfHatcher(object):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_RemDomain(self, *args)
 
-    def ClrDomains(self, *args):
+    def ClrDomains(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingOfHatcher_ClrDomains(self, *args)
 
-    def ClassificationPoint(self, *args):
+    def ClassificationPoint(self, *args) -> "gp_Pnt2d" :
         """
         :rtype: gp_Pnt2d
 
@@ -1340,7 +1340,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
 
         """
         _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_HatchingsOfHatcher(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Geom2dHatch_HatchingsOfHatcher &" :
         """
         :param Other:
         :type Other: Geom2dHatch_HatchingsOfHatcher &
@@ -1349,7 +1349,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Geom2dHatch_HatchingsOfHatcher &" :
         """
         :param Other:
         :type Other: Geom2dHatch_HatchingsOfHatcher &
@@ -1358,7 +1358,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1367,14 +1367,14 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1385,7 +1385,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1394,7 +1394,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1403,7 +1403,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Geom2dHatch_HatchingOfHatcher const &" :
         """
         :param K:
         :type K: int &
@@ -1412,7 +1412,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Geom2dHatch_HatchingOfHatcher &" :
         """
         :param K:
         :type K: int &
@@ -1421,7 +1421,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1430,7 +1430,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1439,7 +1439,7 @@ class Geom2dHatch_HatchingsOfHatcher(OCC.TCollection.TCollection_BasicMap):
         """
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dHatch_HatchingsOfHatcher self)"""
         return _Geom2dHatch.Geom2dHatch_HatchingsOfHatcher__kill_pointed(self)
 
@@ -1469,7 +1469,7 @@ Geom2dHatch_HatchingsOfHatcher_swigregister(Geom2dHatch_HatchingsOfHatcher)
 class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ConfusionTolerance(self, *args):
+    def ConfusionTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the confusion tolerance of the intersector.
 
@@ -1478,7 +1478,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
         """
         return _Geom2dHatch.Geom2dHatch_Intersector_ConfusionTolerance(self, *args)
 
-    def SetConfusionTolerance(self, *args):
+    def SetConfusionTolerance(self, *args) -> "void" :
         """
         * Sets the confusion tolerance of the intersector.
 
@@ -1489,7 +1489,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
         """
         return _Geom2dHatch.Geom2dHatch_Intersector_SetConfusionTolerance(self, *args)
 
-    def TangencyTolerance(self, *args):
+    def TangencyTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the tangency tolerance of the intersector.
 
@@ -1498,7 +1498,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
         """
         return _Geom2dHatch.Geom2dHatch_Intersector_TangencyTolerance(self, *args)
 
-    def SetTangencyTolerance(self, *args):
+    def SetTangencyTolerance(self, *args) -> "void" :
         """
         * Sets the tangency tolerance of the intersector.
 
@@ -1509,7 +1509,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
         """
         return _Geom2dHatch.Geom2dHatch_Intersector_SetTangencyTolerance(self, *args)
 
-    def Intersect(self, *args):
+    def Intersect(self, *args) -> "void" :
         """
         * Intersects the curves C1 and C2. The results are retreived by the usual methods described in IntRes2d_Intersection. Creates an intersector.
 
@@ -1536,7 +1536,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
 
         """
         _Geom2dHatch.Geom2dHatch_Intersector_swiginit(self,_Geom2dHatch.new_Geom2dHatch_Intersector(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the intersection between the 2d line segment (<L>, <P>) and the Curve <E>. The line segment is the part of the 2d line <L> of parameter range [0, <P>] (P is positive and can be RealLast()). Tol is the Tolerance on the segment. The order is relevant, the first argument is the segment, the second the Edge.
 
@@ -1553,7 +1553,7 @@ class Geom2dHatch_Intersector(OCC.Geom2dInt.Geom2dInt_GInter):
         """
         return _Geom2dHatch.Geom2dHatch_Intersector_Perform(self, *args)
 
-    def LocalGeometry(self, *args):
+    def LocalGeometry(self, *args) -> "void" :
         """
         * Returns in <T>, <N> and <C> the tangent, normal and curvature of the edge <E> at parameter value <U>.
 
@@ -1602,7 +1602,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
 
         """
         _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_swiginit(self,_Geom2dHatch.new_Geom2dHatch_MapOfElementsOfElementsOfHatcher(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Geom2dHatch_MapOfElementsOfElementsOfHatcher &" :
         """
         :param Other:
         :type Other: Geom2dHatch_MapOfElementsOfElementsOfHatcher &
@@ -1611,7 +1611,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Geom2dHatch_MapOfElementsOfElementsOfHatcher &" :
         """
         :param Other:
         :type Other: Geom2dHatch_MapOfElementsOfElementsOfHatcher &
@@ -1620,7 +1620,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1629,14 +1629,14 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1647,7 +1647,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1656,7 +1656,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1665,7 +1665,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Geom2dHatch_ElementOfHatcher const &" :
         """
         :param K:
         :type K: int &
@@ -1674,7 +1674,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Geom2dHatch_ElementOfHatcher &" :
         """
         :param K:
         :type K: int &
@@ -1683,7 +1683,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1692,7 +1692,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1701,7 +1701,7 @@ class Geom2dHatch_MapOfElementsOfElementsOfHatcher(OCC.TCollection.TCollection_B
         """
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dHatch_MapOfElementsOfElementsOfHatcher self)"""
         return _Geom2dHatch.Geom2dHatch_MapOfElementsOfElementsOfHatcher__kill_pointed(self)
 

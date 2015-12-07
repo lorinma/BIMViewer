@@ -135,7 +135,7 @@ import OCC.HLRAlgo
 class HLRTopoBRep_DSFiller(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Insert(*args):
+    def Insert(*args) -> "void" :
         """
         * Stores in <DS> the outlines of <S> using the current outliner and stores the isolines in <DS> using a Hatcher.
 
@@ -169,7 +169,7 @@ HLRTopoBRep_DSFiller._kill_pointed = new_instancemethod(_HLRTopoBRep.HLRTopoBRep
 HLRTopoBRep_DSFiller_swigregister = _HLRTopoBRep.HLRTopoBRep_DSFiller_swigregister
 HLRTopoBRep_DSFiller_swigregister(HLRTopoBRep_DSFiller)
 
-def HLRTopoBRep_DSFiller_Insert(*args):
+def HLRTopoBRep_DSFiller_Insert(*args) -> "void" :
   """
     * Stores in <DS> the outlines of <S> using the current outliner and stores the isolines in <DS> using a Hatcher.
 
@@ -197,7 +197,7 @@ class HLRTopoBRep_Data(object):
 
         """
         _HLRTopoBRep.HLRTopoBRep_Data_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_Data(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear of all the maps.
 
@@ -206,7 +206,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_Clear(self, *args)
 
-    def Clean(self, *args):
+    def Clean(self, *args) -> "void" :
         """
         * Clear of all the data not needed during and after the hiding process.
 
@@ -215,7 +215,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_Clean(self, *args)
 
-    def EdgeHasSplE(self, *args):
+    def EdgeHasSplE(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Edge is split.
 
@@ -226,7 +226,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_EdgeHasSplE(self, *args)
 
-    def FaceHasIntL(self, *args):
+    def FaceHasIntL(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Face has internal outline.
 
@@ -237,7 +237,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceHasIntL(self, *args)
 
-    def FaceHasOutL(self, *args):
+    def FaceHasOutL(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Face has outlines on restriction.
 
@@ -248,7 +248,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceHasOutL(self, *args)
 
-    def FaceHasIsoL(self, *args):
+    def FaceHasIsoL(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Face has isolines.
 
@@ -259,7 +259,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceHasIsoL(self, *args)
 
-    def IsSplEEdgeEdge(self, *args):
+    def IsSplEEdgeEdge(self, *args) -> "Standard_Boolean" :
         """
         :param E1:
         :type E1: TopoDS_Edge &
@@ -270,7 +270,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsSplEEdgeEdge(self, *args)
 
-    def IsIntLFaceEdge(self, *args):
+    def IsIntLFaceEdge(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -281,7 +281,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsIntLFaceEdge(self, *args)
 
-    def IsOutLFaceEdge(self, *args):
+    def IsOutLFaceEdge(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -292,7 +292,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsOutLFaceEdge(self, *args)
 
-    def IsIsoLFaceEdge(self, *args):
+    def IsIsoLFaceEdge(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -303,7 +303,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsIsoLFaceEdge(self, *args)
 
-    def NewSOldS(self, *args):
+    def NewSOldS(self, *args) -> "TopoDS_Shape" :
         """
         :param New:
         :type New: TopoDS_Shape &
@@ -312,7 +312,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_NewSOldS(self, *args)
 
-    def EdgeSplE(self, *args):
+    def EdgeSplE(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of the edges.
 
@@ -323,7 +323,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_EdgeSplE(self, *args)
 
-    def FaceIntL(self, *args):
+    def FaceIntL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of the internal OutLines.
 
@@ -334,7 +334,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceIntL(self, *args)
 
-    def FaceOutL(self, *args):
+    def FaceOutL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of the OutLines on restriction.
 
@@ -345,7 +345,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceOutL(self, *args)
 
-    def FaceIsoL(self, *args):
+    def FaceIsoL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of the IsoLines.
 
@@ -356,7 +356,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_FaceIsoL(self, *args)
 
-    def IsOutV(self, *args):
+    def IsOutV(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if V is an outline vertex on a restriction.
 
@@ -367,7 +367,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsOutV(self, *args)
 
-    def IsIntV(self, *args):
+    def IsIntV(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if V is an internal outline vertex.
 
@@ -378,7 +378,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_IsIntV(self, *args)
 
-    def AddOldS(self, *args):
+    def AddOldS(self, *args) -> "void" :
         """
         :param NewS:
         :type NewS: TopoDS_Shape &
@@ -389,7 +389,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddOldS(self, *args)
 
-    def AddSplE(self, *args):
+    def AddSplE(self, *args) -> "TopTools_ListOfShape &" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -398,7 +398,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddSplE(self, *args)
 
-    def AddIntL(self, *args):
+    def AddIntL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -407,7 +407,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddIntL(self, *args)
 
-    def AddOutL(self, *args):
+    def AddOutL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -416,7 +416,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddOutL(self, *args)
 
-    def AddIsoL(self, *args):
+    def AddIsoL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -425,7 +425,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddIsoL(self, *args)
 
-    def AddOutV(self, *args):
+    def AddOutV(self, *args) -> "void" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -434,7 +434,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddOutV(self, *args)
 
-    def AddIntV(self, *args):
+    def AddIntV(self, *args) -> "void" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -443,35 +443,35 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_AddIntV(self, *args)
 
-    def InitEdge(self, *args):
+    def InitEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_InitEdge(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_MoreEdge(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_NextEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_Edge(self, *args)
 
-    def InitVertex(self, *args):
+    def InitVertex(self, *args) -> "void" :
         """
         * Start an iteration on the vertices of E.
 
@@ -482,35 +482,35 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_InitVertex(self, *args)
 
-    def MoreVertex(self, *args):
+    def MoreVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_MoreVertex(self, *args)
 
-    def NextVertex(self, *args):
+    def NextVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_NextVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_Vertex(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_Parameter(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         * Insert before the current position.
 
@@ -523,7 +523,7 @@ class HLRTopoBRep_Data(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_Data_InsertBefore(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -594,7 +594,7 @@ class HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData(OCC.TCollection.TColle
 
         """
         _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: HLRTopoBRep_DataMapOfShapeFaceData &
@@ -603,14 +603,14 @@ class HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData(OCC.TCollection.TColle
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfDataMapOfShapeFaceData_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_FaceData const &" :
         """
         :rtype: HLRTopoBRep_FaceData
 
@@ -645,7 +645,7 @@ class HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData(OCC.TCollection.TCollec
 
         """
         _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: HLRTopoBRep_MapOfShapeListOfVData &
@@ -654,14 +654,14 @@ class HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData(OCC.TCollection.TCollec
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapIteratorOfMapOfShapeListOfVData_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_ListOfVData const &" :
         """
         :rtype: HLRTopoBRep_ListOfVData
 
@@ -698,25 +698,25 @@ class HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData(OCC.TCollection.TCollectio
 
         """
         _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_FaceData &" :
         """
         :rtype: HLRTopoBRep_FaceData
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData self)"""
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData" :
         """GetHandle(HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData self) -> Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData"""
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_GetHandle(self)
 
@@ -756,7 +756,7 @@ Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData._kill_pointed = new_insta
 Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_swigregister = _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_swigregister
 Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_swigregister(Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData)
 
-def Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_DownCast(*args):
+def Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_DownCast(*args) -> "Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData const" :
   return _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_DownCast(*args)
 Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_DownCast = _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfDataMapOfShapeFaceData_DownCast
 
@@ -775,25 +775,25 @@ class HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData(OCC.TCollection.TCollection
 
         """
         _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_ListOfVData &" :
         """
         :rtype: HLRTopoBRep_ListOfVData
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData self)"""
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData" :
         """GetHandle(HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData self) -> Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData"""
         return _HLRTopoBRep.HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_GetHandle(self)
 
@@ -833,7 +833,7 @@ Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData._kill_pointed = new_instan
 Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_swigregister = _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_swigregister
 Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_swigregister(Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData)
 
-def Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_DownCast(*args):
+def Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_DownCast(*args) -> "Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData const" :
   return _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_DownCast(*args)
 Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_DownCast = _HLRTopoBRep.Handle_HLRTopoBRep_DataMapNodeOfMapOfShapeListOfVData_DownCast
 
@@ -848,7 +848,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
 
         """
         _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_DataMapOfShapeFaceData(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRTopoBRep_DataMapOfShapeFaceData &" :
         """
         :param Other:
         :type Other: HLRTopoBRep_DataMapOfShapeFaceData &
@@ -857,7 +857,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRTopoBRep_DataMapOfShapeFaceData &" :
         """
         :param Other:
         :type Other: HLRTopoBRep_DataMapOfShapeFaceData &
@@ -866,7 +866,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -875,14 +875,14 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -893,7 +893,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -902,7 +902,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -911,7 +911,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "HLRTopoBRep_FaceData const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -920,7 +920,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "HLRTopoBRep_FaceData &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -929,7 +929,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -938,7 +938,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -947,7 +947,7 @@ class HLRTopoBRep_DataMapOfShapeFaceData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_DataMapOfShapeFaceData self)"""
         return _HLRTopoBRep.HLRTopoBRep_DataMapOfShapeFaceData__kill_pointed(self)
 
@@ -983,42 +983,42 @@ class HLRTopoBRep_FaceData(object):
 
         """
         _HLRTopoBRep.HLRTopoBRep_FaceData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_FaceData(*args))
-    def FaceIntL(self, *args):
+    def FaceIntL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_FaceData_FaceIntL(self, *args)
 
-    def FaceOutL(self, *args):
+    def FaceOutL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_FaceData_FaceOutL(self, *args)
 
-    def FaceIsoL(self, *args):
+    def FaceIsoL(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_FaceData_FaceIsoL(self, *args)
 
-    def AddIntL(self, *args):
+    def AddIntL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_FaceData_AddIntL(self, *args)
 
-    def AddOutL(self, *args):
+    def AddOutL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _HLRTopoBRep.HLRTopoBRep_FaceData_AddOutL(self, *args)
 
-    def AddIsoL(self, *args):
+    def AddIsoL(self, *args) -> "TopTools_ListOfShape &" :
         """
         :rtype: TopTools_ListOfShape
 
@@ -1046,7 +1046,7 @@ HLRTopoBRep_FaceData_swigregister(HLRTopoBRep_FaceData)
 class HLRTopoBRep_FaceIsoLiner(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Perform(*args):
+    def Perform(*args) -> "void" :
         """
         :param FI:
         :type FI: int
@@ -1062,7 +1062,7 @@ class HLRTopoBRep_FaceIsoLiner(object):
         return _HLRTopoBRep.HLRTopoBRep_FaceIsoLiner_Perform(*args)
 
     Perform = staticmethod(Perform)
-    def MakeVertex(*args):
+    def MakeVertex(*args) -> "TopoDS_Vertex" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1080,7 +1080,7 @@ class HLRTopoBRep_FaceIsoLiner(object):
         return _HLRTopoBRep.HLRTopoBRep_FaceIsoLiner_MakeVertex(*args)
 
     MakeVertex = staticmethod(MakeVertex)
-    def MakeIsoLine(*args):
+    def MakeIsoLine(*args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1118,7 +1118,7 @@ HLRTopoBRep_FaceIsoLiner._kill_pointed = new_instancemethod(_HLRTopoBRep.HLRTopo
 HLRTopoBRep_FaceIsoLiner_swigregister = _HLRTopoBRep.HLRTopoBRep_FaceIsoLiner_swigregister
 HLRTopoBRep_FaceIsoLiner_swigregister(HLRTopoBRep_FaceIsoLiner)
 
-def HLRTopoBRep_FaceIsoLiner_Perform(*args):
+def HLRTopoBRep_FaceIsoLiner_Perform(*args) -> "void" :
   """
     :param FI:
     :type FI: int
@@ -1133,7 +1133,7 @@ def HLRTopoBRep_FaceIsoLiner_Perform(*args):
     """
   return _HLRTopoBRep.HLRTopoBRep_FaceIsoLiner_Perform(*args)
 
-def HLRTopoBRep_FaceIsoLiner_MakeVertex(*args):
+def HLRTopoBRep_FaceIsoLiner_MakeVertex(*args) -> "TopoDS_Vertex" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -1150,7 +1150,7 @@ def HLRTopoBRep_FaceIsoLiner_MakeVertex(*args):
     """
   return _HLRTopoBRep.HLRTopoBRep_FaceIsoLiner_MakeVertex(*args)
 
-def HLRTopoBRep_FaceIsoLiner_MakeIsoLine(*args):
+def HLRTopoBRep_FaceIsoLiner_MakeIsoLine(*args) -> "void" :
   """
     :param F:
     :type F: TopoDS_Face &
@@ -1186,7 +1186,7 @@ class HLRTopoBRep_ListIteratorOfListOfVData(object):
 
         """
         _HLRTopoBRep.HLRTopoBRep_ListIteratorOfListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_ListIteratorOfListOfVData(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: HLRTopoBRep_ListOfVData &
@@ -1195,21 +1195,21 @@ class HLRTopoBRep_ListIteratorOfListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListIteratorOfListOfVData_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListIteratorOfListOfVData_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListIteratorOfListOfVData_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_VData &" :
         """
         :rtype: HLRTopoBRep_VData
 
@@ -1245,18 +1245,18 @@ class HLRTopoBRep_ListNodeOfListOfVData(OCC.TCollection.TCollection_MapNode):
 
         """
         _HLRTopoBRep.HLRTopoBRep_ListNodeOfListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_ListNodeOfListOfVData(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "HLRTopoBRep_VData &" :
         """
         :rtype: HLRTopoBRep_VData
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListNodeOfListOfVData_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_ListNodeOfListOfVData self)"""
         return _HLRTopoBRep.HLRTopoBRep_ListNodeOfListOfVData__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRTopoBRep_ListNodeOfListOfVData" :
         """GetHandle(HLRTopoBRep_ListNodeOfListOfVData self) -> Handle_HLRTopoBRep_ListNodeOfListOfVData"""
         return _HLRTopoBRep.HLRTopoBRep_ListNodeOfListOfVData_GetHandle(self)
 
@@ -1295,7 +1295,7 @@ Handle_HLRTopoBRep_ListNodeOfListOfVData._kill_pointed = new_instancemethod(_HLR
 Handle_HLRTopoBRep_ListNodeOfListOfVData_swigregister = _HLRTopoBRep.Handle_HLRTopoBRep_ListNodeOfListOfVData_swigregister
 Handle_HLRTopoBRep_ListNodeOfListOfVData_swigregister(Handle_HLRTopoBRep_ListNodeOfListOfVData)
 
-def Handle_HLRTopoBRep_ListNodeOfListOfVData_DownCast(*args):
+def Handle_HLRTopoBRep_ListNodeOfListOfVData_DownCast(*args) -> "Handle_HLRTopoBRep_ListNodeOfListOfVData const" :
   return _HLRTopoBRep.Handle_HLRTopoBRep_ListNodeOfListOfVData_DownCast(*args)
 Handle_HLRTopoBRep_ListNodeOfListOfVData_DownCast = _HLRTopoBRep.Handle_HLRTopoBRep_ListNodeOfListOfVData_DownCast
 
@@ -1308,7 +1308,7 @@ class HLRTopoBRep_ListOfVData(object):
 
         """
         _HLRTopoBRep.HLRTopoBRep_ListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_ListOfVData(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRTopoBRep_ListOfVData &
@@ -1317,7 +1317,7 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: HLRTopoBRep_ListOfVData &
@@ -1326,28 +1326,28 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRTopoBRep_VData &
@@ -1366,7 +1366,7 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRTopoBRep_VData &
@@ -1385,28 +1385,28 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "HLRTopoBRep_VData &" :
         """
         :rtype: HLRTopoBRep_VData
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "HLRTopoBRep_VData &" :
         """
         :rtype: HLRTopoBRep_VData
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: HLRTopoBRep_ListIteratorOfListOfVData &
@@ -1415,7 +1415,7 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRTopoBRep_VData &
@@ -1432,7 +1432,7 @@ class HLRTopoBRep_ListOfVData(object):
         """
         return _HLRTopoBRep.HLRTopoBRep_ListOfVData_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: HLRTopoBRep_VData &
@@ -1485,7 +1485,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
 
         """
         _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_MapOfShapeListOfVData(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "HLRTopoBRep_MapOfShapeListOfVData &" :
         """
         :param Other:
         :type Other: HLRTopoBRep_MapOfShapeListOfVData &
@@ -1494,7 +1494,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "HLRTopoBRep_MapOfShapeListOfVData &" :
         """
         :param Other:
         :type Other: HLRTopoBRep_MapOfShapeListOfVData &
@@ -1503,7 +1503,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1512,14 +1512,14 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1530,7 +1530,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1539,7 +1539,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1548,7 +1548,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "HLRTopoBRep_ListOfVData const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1557,7 +1557,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "HLRTopoBRep_ListOfVData &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1566,7 +1566,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1575,7 +1575,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1584,7 +1584,7 @@ class HLRTopoBRep_MapOfShapeListOfVData(OCC.TCollection.TCollection_BasicMap):
         """
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_MapOfShapeListOfVData self)"""
         return _HLRTopoBRep.HLRTopoBRep_MapOfShapeListOfVData__kill_pointed(self)
 
@@ -1630,7 +1630,7 @@ class HLRTopoBRep_OutLiner(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRTopoBRep.HLRTopoBRep_OutLiner_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_OutLiner(*args))
-    def OriginalShape(self, *args):
+    def OriginalShape(self, *args) -> "TopoDS_Shape" :
         """
         :param OriS:
         :type OriS: TopoDS_Shape &
@@ -1641,7 +1641,7 @@ class HLRTopoBRep_OutLiner(OCC.MMgt.MMgt_TShared):
         """
         return _HLRTopoBRep.HLRTopoBRep_OutLiner_OriginalShape(self, *args)
 
-    def OutLinedShape(self, *args):
+    def OutLinedShape(self, *args) -> "TopoDS_Shape" :
         """
         :param OutS:
         :type OutS: TopoDS_Shape &
@@ -1652,14 +1652,14 @@ class HLRTopoBRep_OutLiner(OCC.MMgt.MMgt_TShared):
         """
         return _HLRTopoBRep.HLRTopoBRep_OutLiner_OutLinedShape(self, *args)
 
-    def DataStructure(self, *args):
+    def DataStructure(self, *args) -> "HLRTopoBRep_Data &" :
         """
         :rtype: HLRTopoBRep_Data
 
         """
         return _HLRTopoBRep.HLRTopoBRep_OutLiner_DataStructure(self, *args)
 
-    def Fill(self, *args):
+    def Fill(self, *args) -> "void" :
         """
         :param P:
         :type P: HLRAlgo_Projector &
@@ -1672,11 +1672,11 @@ class HLRTopoBRep_OutLiner(OCC.MMgt.MMgt_TShared):
         """
         return _HLRTopoBRep.HLRTopoBRep_OutLiner_Fill(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(HLRTopoBRep_OutLiner self)"""
         return _HLRTopoBRep.HLRTopoBRep_OutLiner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_HLRTopoBRep_OutLiner" :
         """GetHandle(HLRTopoBRep_OutLiner self) -> Handle_HLRTopoBRep_OutLiner"""
         return _HLRTopoBRep.HLRTopoBRep_OutLiner_GetHandle(self)
 
@@ -1718,7 +1718,7 @@ Handle_HLRTopoBRep_OutLiner._kill_pointed = new_instancemethod(_HLRTopoBRep.Hand
 Handle_HLRTopoBRep_OutLiner_swigregister = _HLRTopoBRep.Handle_HLRTopoBRep_OutLiner_swigregister
 Handle_HLRTopoBRep_OutLiner_swigregister(Handle_HLRTopoBRep_OutLiner)
 
-def Handle_HLRTopoBRep_OutLiner_DownCast(*args):
+def Handle_HLRTopoBRep_OutLiner_DownCast(*args) -> "Handle_HLRTopoBRep_OutLiner const" :
   return _HLRTopoBRep.Handle_HLRTopoBRep_OutLiner_DownCast(*args)
 Handle_HLRTopoBRep_OutLiner_DownCast = _HLRTopoBRep.Handle_HLRTopoBRep_OutLiner_DownCast
 
@@ -1737,14 +1737,14 @@ class HLRTopoBRep_VData(object):
 
         """
         _HLRTopoBRep.HLRTopoBRep_VData_swiginit(self,_HLRTopoBRep.new_HLRTopoBRep_VData(*args))
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _HLRTopoBRep.HLRTopoBRep_VData_Parameter(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 

@@ -719,7 +719,7 @@ class Quantity_Array1OfCoefficient(object):
 
         """
         _Quantity.Quantity_Array1OfCoefficient_swiginit(self,_Quantity.new_Quantity_Array1OfCoefficient(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Quantity_Coefficient &
@@ -728,21 +728,21 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Quantity_Array1OfCoefficient const &" :
         """
         :param Other:
         :type Other: Quantity_Array1OfCoefficient &
@@ -751,7 +751,7 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Quantity_Array1OfCoefficient const &" :
         """
         :param Other:
         :type Other: Quantity_Array1OfCoefficient &
@@ -760,28 +760,28 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -792,7 +792,7 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Coefficient const &" :
         """
         :param Index:
         :type Index: int
@@ -801,7 +801,7 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Quantity_Coefficient &" :
         """
         :param Index:
         :type Index: int
@@ -854,7 +854,7 @@ class Quantity_Array1OfColor(object):
 
         """
         _Quantity.Quantity_Array1OfColor_swiginit(self,_Quantity.new_Quantity_Array1OfColor(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Quantity_Color &
@@ -863,21 +863,21 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Quantity.Quantity_Array1OfColor_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Quantity.Quantity_Array1OfColor_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Quantity_Array1OfColor const &" :
         """
         :param Other:
         :type Other: Quantity_Array1OfColor &
@@ -886,7 +886,7 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Quantity_Array1OfColor const &" :
         """
         :param Other:
         :type Other: Quantity_Array1OfColor &
@@ -895,28 +895,28 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfColor_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfColor_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array1OfColor_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -927,7 +927,7 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Color const &" :
         """
         :param Index:
         :type Index: int
@@ -936,7 +936,7 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Quantity_Color &" :
         """
         :param Index:
         :type Index: int
@@ -997,7 +997,7 @@ class Quantity_Array2OfColor(object):
 
         """
         _Quantity.Quantity_Array2OfColor_swiginit(self,_Quantity.new_Quantity_Array2OfColor(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Quantity_Color &
@@ -1006,14 +1006,14 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Quantity.Quantity_Array2OfColor_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Quantity_Array2OfColor const &" :
         """
         :param Other:
         :type Other: Quantity_Array2OfColor &
@@ -1022,7 +1022,7 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Quantity_Array2OfColor const &" :
         """
         :param Other:
         :type Other: Quantity_Array2OfColor &
@@ -1031,49 +1031,49 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Array2OfColor_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1086,7 +1086,7 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Color const &" :
         """
         :param Row:
         :type Row: int
@@ -1097,7 +1097,7 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Quantity_Color &" :
         """
         :param Row:
         :type Row: int
@@ -1162,7 +1162,7 @@ class Quantity_Color(object):
 
         """
         _Quantity.Quantity_Color_swiginit(self,_Quantity.new_Quantity_Color(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Quantity_Color &" :
         """
         * Updates the colour <self> from the definition of the //!	 colour <Other>.
 
@@ -1173,7 +1173,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Quantity_Color &" :
         """
         :param Other:
         :type Other: Quantity_Color &
@@ -1182,7 +1182,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Set(self, *args)
 
-    def ChangeContrast(self, *args):
+    def ChangeContrast(self, *args) -> "void" :
         """
         * Increases or decreases the contrast by <ADelta>. //!	 <ADelta> is a percentage. Any value greater than zero //!	 will increase the contrast. //!	 The variation is expressed as a percentage of the //!	 current value. //!	 It is a variation of the saturation.
 
@@ -1193,7 +1193,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_ChangeContrast(self, *args)
 
-    def ChangeIntensity(self, *args):
+    def ChangeIntensity(self, *args) -> "void" :
         """
         * Increases or decreases the intensity by <ADelta>. //!	 <ADelta> is a percentage. Any value greater than zero //!	 will increase the intensity. //!	 The variation is expressed as a percentage of the //!	 current value. //!	 It is a variation of the lightness.
 
@@ -1204,7 +1204,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_ChangeIntensity(self, *args)
 
-    def SetValues(self, *args):
+    def SetValues(self, *args) -> "void" :
         """
         * Updates the colour <self> from the definition of the //!	 colour <AName>.
 
@@ -1227,7 +1227,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_SetValues(self, *args)
 
-    def Delta(self, *args):
+    def Delta(self, *args) -> "void" :
         """
         * Returns the percentage change of contrast and intensity //!	 between <self> and <AColor>. //!	 <DC> and <DI> are percentages, either positive or negative. //!	 The calculation is with respect to the current value of <self> //!	 If <DC> is positive then <self> is more contrasty. //!	 If <DI> is positive then <self> is more intense.
 
@@ -1242,7 +1242,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Delta(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         * Returns the distance between two colours. It's a //!	 value between 0 and the square root of 3 //!	 (the black/white distance)
 
@@ -1253,7 +1253,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Distance(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the square of distance between two colours.
 
@@ -1264,7 +1264,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_SquareDistance(self, *args)
 
-    def Blue(self, *args):
+    def Blue(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Blue component (quantity of blue) of the //!	 color <self>.
 
@@ -1273,7 +1273,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Blue(self, *args)
 
-    def Green(self, *args):
+    def Green(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Green component (quantity of green) of the //!	 color <self>.
 
@@ -1282,7 +1282,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Green(self, *args)
 
-    def Hue(self, *args):
+    def Hue(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Hue component (hue angle) of the //!	 color <self>.
 
@@ -1291,7 +1291,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Hue(self, *args)
 
-    def IsDifferent(self, *args):
+    def IsDifferent(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if the distance between <self> and //!	 <Other> is greater than Epsilon ().
 
@@ -1308,7 +1308,7 @@ class Quantity_Color(object):
         except:
             return True
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Other color is - different from, or - equal to this color. Two colors are considered to be equal if their distance is no greater than Epsilon(). These methods are aliases of operator != and operator ==.
 
@@ -1325,7 +1325,7 @@ class Quantity_Color(object):
         except:
             return False
 
-    def Light(self, *args):
+    def Light(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Light component (value of the lightness) of the //!	 color <self>.
 
@@ -1334,7 +1334,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Light(self, *args)
 
-    def Red(self, *args):
+    def Red(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Red component (quantity of red) of the //!	 color <self>.
 
@@ -1343,7 +1343,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Red(self, *args)
 
-    def Saturation(self, *args):
+    def Saturation(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the Saturation component (value of the saturation) //!	 of the color <self>.
 
@@ -1352,7 +1352,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Saturation(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "void" :
         """
         * Returns in R1, R2 and R3 the components of this color according to the color system definition AType. - if AType is Quantity_TOC_RGB R1 is the quantity of red, R2 is the quantity of green and R3 is the quantity of blue in this color. - if AType is Quantity_TOC_HLS R1 is the hue angle in degrees (0 being red), R2 is the lightness and R3 is the saturation of this color.
 
@@ -1369,7 +1369,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Values(self, *args)
 
-    def SetEpsilon(*args):
+    def SetEpsilon(*args) -> "void" :
         """
         * Sets the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods. Warning: The default value is 0.0001
 
@@ -1381,7 +1381,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_SetEpsilon(*args)
 
     SetEpsilon = staticmethod(SetEpsilon)
-    def Epsilon(*args):
+    def Epsilon(*args) -> "Quantity_Parameter" :
         """
         * Returns the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods.
 
@@ -1391,7 +1391,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Epsilon(*args)
 
     Epsilon = staticmethod(Epsilon)
-    def Name(*args):
+    def Name(*args) -> "Quantity_NameOfColor" :
         """
         * Returns the name of the color defined by its quantities of red R, green G and blue B; more precisely this is the nearest color from the Quantity_NameOfColor enumeration. Exceptions Standard_OutOfRange if R, G or B is less than 0. or greater than 1.
 
@@ -1411,7 +1411,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Name(*args)
 
     Name = staticmethod(Name)
-    def StringName(*args):
+    def StringName(*args) -> "char *" :
         """
         * Returns the name of the color identified by AName in the Quantity_NameOfColor enumeration. For example, the name of the color which corresponds to Quantity_NOC_BLACK is 'BLACK'. Exceptions Standard_OutOfRange if AName in not known in the Quantity_NameOfColor enumeration.
 
@@ -1423,7 +1423,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_StringName(*args)
 
     StringName = staticmethod(StringName)
-    def HlsRgb(*args):
+    def HlsRgb(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Converts HLS components into RGB ones.
 
@@ -1445,7 +1445,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_HlsRgb(*args)
 
     HlsRgb = staticmethod(HlsRgb)
-    def RgbHls(*args):
+    def RgbHls(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Converts RGB components into HLS ones.
 
@@ -1467,7 +1467,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_RgbHls(*args)
 
     RgbHls = staticmethod(RgbHls)
-    def Color2argb(*args):
+    def Color2argb(*args) -> "Standard_Integer &" :
         """
         * Convert the Color value to ARGB integer value. theARGB has Alpha equal to zero, so the output is formatted as 0x00RRGGBB
 
@@ -1481,7 +1481,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Color2argb(*args)
 
     Color2argb = staticmethod(Color2argb)
-    def Argb2color(*args):
+    def Argb2color(*args) -> "void" :
         """
         * Convert integer ARGB value to Color. Alpha bits are ignored
 
@@ -1495,7 +1495,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Argb2color(*args)
 
     Argb2color = staticmethod(Argb2color)
-    def Test(*args):
+    def Test(*args) -> "void" :
         """
         * Internal test
 
@@ -1505,14 +1505,14 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Test(*args)
 
     Test = staticmethod(Test)
-    def _CSFDB_GetQuantity_ColorMyRed(self, *args):
+    def _CSFDB_GetQuantity_ColorMyRed(self, *args) -> "Standard_ShortReal" :
         """
         :rtype: Standard_ShortReal
 
         """
         return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyRed(self, *args)
 
-    def _CSFDB_SetQuantity_ColorMyRed(self, *args):
+    def _CSFDB_SetQuantity_ColorMyRed(self, *args) -> "void" :
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1521,14 +1521,14 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color__CSFDB_SetQuantity_ColorMyRed(self, *args)
 
-    def _CSFDB_GetQuantity_ColorMyGreen(self, *args):
+    def _CSFDB_GetQuantity_ColorMyGreen(self, *args) -> "Standard_ShortReal" :
         """
         :rtype: Standard_ShortReal
 
         """
         return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyGreen(self, *args)
 
-    def _CSFDB_SetQuantity_ColorMyGreen(self, *args):
+    def _CSFDB_SetQuantity_ColorMyGreen(self, *args) -> "void" :
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1537,14 +1537,14 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color__CSFDB_SetQuantity_ColorMyGreen(self, *args)
 
-    def _CSFDB_GetQuantity_ColorMyBlue(self, *args):
+    def _CSFDB_GetQuantity_ColorMyBlue(self, *args) -> "Standard_ShortReal" :
         """
         :rtype: Standard_ShortReal
 
         """
         return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyBlue(self, *args)
 
-    def _CSFDB_SetQuantity_ColorMyBlue(self, *args):
+    def _CSFDB_SetQuantity_ColorMyBlue(self, *args) -> "void" :
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1590,7 +1590,7 @@ Quantity_Color._kill_pointed = new_instancemethod(_Quantity.Quantity_Color__kill
 Quantity_Color_swigregister = _Quantity.Quantity_Color_swigregister
 Quantity_Color_swigregister(Quantity_Color)
 
-def Quantity_Color_SetEpsilon(*args):
+def Quantity_Color_SetEpsilon(*args) -> "void" :
   """
     * Sets the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods. Warning: The default value is 0.0001
 
@@ -1601,7 +1601,7 @@ def Quantity_Color_SetEpsilon(*args):
     """
   return _Quantity.Quantity_Color_SetEpsilon(*args)
 
-def Quantity_Color_Epsilon(*args):
+def Quantity_Color_Epsilon(*args) -> "Quantity_Parameter" :
   """
     * Returns the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods.
 
@@ -1610,7 +1610,7 @@ def Quantity_Color_Epsilon(*args):
     """
   return _Quantity.Quantity_Color_Epsilon(*args)
 
-def Quantity_Color_Name(*args):
+def Quantity_Color_Name(*args) -> "Quantity_NameOfColor" :
   """
     * Returns the name of the color defined by its quantities of red R, green G and blue B; more precisely this is the nearest color from the Quantity_NameOfColor enumeration. Exceptions Standard_OutOfRange if R, G or B is less than 0. or greater than 1.
 
@@ -1629,7 +1629,7 @@ def Quantity_Color_Name(*args):
     """
   return _Quantity.Quantity_Color_Name(*args)
 
-def Quantity_Color_StringName(*args):
+def Quantity_Color_StringName(*args) -> "char *" :
   """
     * Returns the name of the color identified by AName in the Quantity_NameOfColor enumeration. For example, the name of the color which corresponds to Quantity_NOC_BLACK is 'BLACK'. Exceptions Standard_OutOfRange if AName in not known in the Quantity_NameOfColor enumeration.
 
@@ -1640,7 +1640,7 @@ def Quantity_Color_StringName(*args):
     """
   return _Quantity.Quantity_Color_StringName(*args)
 
-def Quantity_Color_HlsRgb(*args):
+def Quantity_Color_HlsRgb(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Converts HLS components into RGB ones.
 
@@ -1661,7 +1661,7 @@ def Quantity_Color_HlsRgb(*args):
     """
   return _Quantity.Quantity_Color_HlsRgb(*args)
 
-def Quantity_Color_RgbHls(*args):
+def Quantity_Color_RgbHls(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Converts RGB components into HLS ones.
 
@@ -1682,7 +1682,7 @@ def Quantity_Color_RgbHls(*args):
     """
   return _Quantity.Quantity_Color_RgbHls(*args)
 
-def Quantity_Color_Color2argb(*args):
+def Quantity_Color_Color2argb(*args) -> "Standard_Integer &" :
   """
     * Convert the Color value to ARGB integer value. theARGB has Alpha equal to zero, so the output is formatted as 0x00RRGGBB
 
@@ -1695,7 +1695,7 @@ def Quantity_Color_Color2argb(*args):
     """
   return _Quantity.Quantity_Color_Color2argb(*args)
 
-def Quantity_Color_Argb2color(*args):
+def Quantity_Color_Argb2color(*args) -> "void" :
   """
     * Convert integer ARGB value to Color. Alpha bits are ignored
 
@@ -1708,7 +1708,7 @@ def Quantity_Color_Argb2color(*args):
     """
   return _Quantity.Quantity_Color_Argb2color(*args)
 
-def Quantity_Color_Test(*args):
+def Quantity_Color_Test(*args) -> "void" :
   """
     * Internal test
 
@@ -1728,7 +1728,7 @@ class Quantity_Convert(object):
 
         """
         _Quantity.Quantity_Convert_swiginit(self,_Quantity.new_Quantity_Convert(*args))
-    def SetQuantity(*args):
+    def SetQuantity(*args) -> "void" :
         """
         * Updates the conversion table (correspondances between Quantities and conversion coefficients).
 
@@ -1742,7 +1742,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_SetQuantity(*args)
 
     SetQuantity = staticmethod(SetQuantity)
-    def ConvertUserToSI(*args):
+    def ConvertUserToSI(*args) -> "Standard_Real" :
         """
         * Converts, from the conversion table, the value <aVal> from the user system to the SI system.
 
@@ -1756,7 +1756,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_ConvertUserToSI(*args)
 
     ConvertUserToSI = staticmethod(ConvertUserToSI)
-    def ConvertSIToUser(*args):
+    def ConvertSIToUser(*args) -> "Standard_Real" :
         """
         * Converts, from the conversion table, the value <aVal> from the SI system to the user system.
 
@@ -1770,7 +1770,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_ConvertSIToUser(*args)
 
     ConvertSIToUser = staticmethod(ConvertSIToUser)
-    def IsPhysicalQuantity(*args):
+    def IsPhysicalQuantity(*args) -> "Standard_Boolean" :
         """
         * if (aType is a physical quantity) returns True and the name of the associated PhysicalQuantity . else returns False.
 
@@ -1796,7 +1796,7 @@ Quantity_Convert._kill_pointed = new_instancemethod(_Quantity.Quantity_Convert__
 Quantity_Convert_swigregister = _Quantity.Quantity_Convert_swigregister
 Quantity_Convert_swigregister(Quantity_Convert)
 
-def Quantity_Convert_SetQuantity(*args):
+def Quantity_Convert_SetQuantity(*args) -> "void" :
   """
     * Updates the conversion table (correspondances between Quantities and conversion coefficients).
 
@@ -1809,7 +1809,7 @@ def Quantity_Convert_SetQuantity(*args):
     """
   return _Quantity.Quantity_Convert_SetQuantity(*args)
 
-def Quantity_Convert_ConvertUserToSI(*args):
+def Quantity_Convert_ConvertUserToSI(*args) -> "Standard_Real" :
   """
     * Converts, from the conversion table, the value <aVal> from the user system to the SI system.
 
@@ -1822,7 +1822,7 @@ def Quantity_Convert_ConvertUserToSI(*args):
     """
   return _Quantity.Quantity_Convert_ConvertUserToSI(*args)
 
-def Quantity_Convert_ConvertSIToUser(*args):
+def Quantity_Convert_ConvertSIToUser(*args) -> "Standard_Real" :
   """
     * Converts, from the conversion table, the value <aVal> from the SI system to the user system.
 
@@ -1835,7 +1835,7 @@ def Quantity_Convert_ConvertSIToUser(*args):
     """
   return _Quantity.Quantity_Convert_ConvertSIToUser(*args)
 
-def Quantity_Convert_IsPhysicalQuantity(*args):
+def Quantity_Convert_IsPhysicalQuantity(*args) -> "Standard_Boolean" :
   """
     * if (aType is a physical quantity) returns True and the name of the associated PhysicalQuantity . else returns False.
 
@@ -1879,7 +1879,7 @@ class Quantity_Date(object):
 
         """
         _Quantity.Quantity_Date_swiginit(self,_Quantity.new_Quantity_Date(*args))
-    def Values(self, *args):
+    def Values(self, *args) -> "void" :
         """
         * Gets a complete Date. - in mm - the month, - in dd - the day, - in yyyy - the year, - in hh - the hour, - in mn - the minute, - in ss - the second, - in mis - the millisecond, and - in mics - the microsecond
 
@@ -1904,7 +1904,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Values(self, *args)
 
-    def SetValues(self, *args):
+    def SetValues(self, *args) -> "void" :
         """
         * Assigns to this date the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0). Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not components of a valid date.
 
@@ -1929,7 +1929,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_SetValues(self, *args)
 
-    def Difference(self, *args):
+    def Difference(self, *args) -> "Quantity_Period" :
         """
         * Subtracts one Date from another one to find the period between and returns the value. The result is the absolute value between the difference of two dates.
 
@@ -1940,7 +1940,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Difference(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "Quantity_Date" :
         """
         * Subtracts a period from a Date and returns the new Date. Raises an exception if the result date is anterior to Jan 1, 1979.
 
@@ -1951,7 +1951,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Subtract(self, *args)
 
-    def __sub__(self, *args):
+    def __sub__(self, *args) -> "Quantity_Date" :
         """
         :param aPeriod:
         :type aPeriod: Quantity_Period &
@@ -1960,7 +1960,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___sub__(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Quantity_Date" :
         """
         * Adds a Period to a Date and returns the new Date.
 
@@ -1971,7 +1971,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Add(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "Quantity_Date" :
         """
         :param aPeriod:
         :type aPeriod: Quantity_Period &
@@ -1980,7 +1980,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___add__(self, *args)
 
-    def Year(self, *args):
+    def Year(self, *args) -> "Standard_Integer" :
         """
         * Returns year of a Date.
 
@@ -1989,7 +1989,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Year(self, *args)
 
-    def Month(self, *args):
+    def Month(self, *args) -> "Standard_Integer" :
         """
         * Returns month of a Date.
 
@@ -1998,7 +1998,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Month(self, *args)
 
-    def Day(self, *args):
+    def Day(self, *args) -> "Standard_Integer" :
         """
         * Returns Day of a Date.
 
@@ -2007,7 +2007,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Day(self, *args)
 
-    def Hour(self, *args):
+    def Hour(self, *args) -> "Standard_Integer" :
         """
         * Returns Hour of a Date.
 
@@ -2016,7 +2016,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Hour(self, *args)
 
-    def Minute(self, *args):
+    def Minute(self, *args) -> "Standard_Integer" :
         """
         * Returns minute of a Date.
 
@@ -2025,7 +2025,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Minute(self, *args)
 
-    def Second(self, *args):
+    def Second(self, *args) -> "Standard_Integer" :
         """
         * Returns seconde of a Date.
 
@@ -2034,7 +2034,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Second(self, *args)
 
-    def MilliSecond(self, *args):
+    def MilliSecond(self, *args) -> "Standard_Integer" :
         """
         * Returns millisecond of a Date.
 
@@ -2043,7 +2043,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_MilliSecond(self, *args)
 
-    def MicroSecond(self, *args):
+    def MicroSecond(self, *args) -> "Standard_Integer" :
         """
         * Returns microsecond of a Date.
 
@@ -2052,7 +2052,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_MicroSecond(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if both <self> and <other> are equal. This method is an alias of operator ==.
 
@@ -2069,7 +2069,7 @@ class Quantity_Date(object):
         except:
             return False
 
-    def IsEarlier(self, *args):
+    def IsEarlier(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is earlier than <other>.
 
@@ -2080,7 +2080,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_IsEarlier(self, *args)
 
-    def __lt__(self, *args):
+    def __lt__(self, *args) -> "Standard_Boolean" :
         """
         :param anOther:
         :type anOther: Quantity_Date &
@@ -2089,7 +2089,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___lt__(self, *args)
 
-    def IsLater(self, *args):
+    def IsLater(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is later then <other>.
 
@@ -2100,7 +2100,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_IsLater(self, *args)
 
-    def __gt__(self, *args):
+    def __gt__(self, *args) -> "Standard_Boolean" :
         """
         :param anOther:
         :type anOther: Quantity_Date &
@@ -2109,7 +2109,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___gt__(self, *args)
 
-    def IsValid(*args):
+    def IsValid(*args) -> "Standard_Boolean" :
         """
         * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
 
@@ -2135,7 +2135,7 @@ class Quantity_Date(object):
         return _Quantity.Quantity_Date_IsValid(*args)
 
     IsValid = staticmethod(IsValid)
-    def IsLeap(*args):
+    def IsLeap(*args) -> "Standard_Boolean" :
         """
         * Returns true if a year is a leap year. The leap years are divisable by 4 and not by 100 except the years divisable by 400.
 
@@ -2147,14 +2147,14 @@ class Quantity_Date(object):
         return _Quantity.Quantity_Date_IsLeap(*args)
 
     IsLeap = staticmethod(IsLeap)
-    def _CSFDB_GetQuantity_DatemySec(self, *args):
+    def _CSFDB_GetQuantity_DatemySec(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemySec(self, *args)
 
-    def _CSFDB_SetQuantity_DatemySec(self, *args):
+    def _CSFDB_SetQuantity_DatemySec(self, *args) -> "void" :
         """
         :param p:
         :type p: int
@@ -2163,14 +2163,14 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date__CSFDB_SetQuantity_DatemySec(self, *args)
 
-    def _CSFDB_GetQuantity_DatemyUSec(self, *args):
+    def _CSFDB_GetQuantity_DatemyUSec(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemyUSec(self, *args)
 
-    def _CSFDB_SetQuantity_DatemyUSec(self, *args):
+    def _CSFDB_SetQuantity_DatemyUSec(self, *args) -> "void" :
         """
         :param p:
         :type p: int
@@ -2216,7 +2216,7 @@ Quantity_Date._kill_pointed = new_instancemethod(_Quantity.Quantity_Date__kill_p
 Quantity_Date_swigregister = _Quantity.Quantity_Date_swigregister
 Quantity_Date_swigregister(Quantity_Date)
 
-def Quantity_Date_IsValid(*args):
+def Quantity_Date_IsValid(*args) -> "Standard_Boolean" :
   """
     * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
 
@@ -2241,7 +2241,7 @@ def Quantity_Date_IsValid(*args):
     """
   return _Quantity.Quantity_Date_IsValid(*args)
 
-def Quantity_Date_IsLeap(*args):
+def Quantity_Date_IsLeap(*args) -> "Standard_Boolean" :
   """
     * Returns true if a year is a leap year. The leap years are divisable by 4 and not by 100 except the years divisable by 400.
 
@@ -2273,7 +2273,7 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
 
         """
         _Quantity.Quantity_HArray1OfColor_swiginit(self,_Quantity.new_Quantity_HArray1OfColor(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Quantity_Color &
@@ -2282,28 +2282,28 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_HArray1OfColor_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_HArray1OfColor_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_HArray1OfColor_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2314,7 +2314,7 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Quantity_Color const &" :
         """
         :param Index:
         :type Index: int
@@ -2323,7 +2323,7 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Quantity_Color &" :
         """
         :param Index:
         :type Index: int
@@ -2332,25 +2332,25 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "Quantity_Array1OfColor const &" :
         """
         :rtype: Quantity_Array1OfColor
 
         """
         return _Quantity.Quantity_HArray1OfColor_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "Quantity_Array1OfColor &" :
         """
         :rtype: Quantity_Array1OfColor
 
         """
         return _Quantity.Quantity_HArray1OfColor_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Quantity_HArray1OfColor self)"""
         return _Quantity.Quantity_HArray1OfColor__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Quantity_HArray1OfColor" :
         """GetHandle(Quantity_HArray1OfColor self) -> Handle_Quantity_HArray1OfColor"""
         return _Quantity.Quantity_HArray1OfColor_GetHandle(self)
 
@@ -2397,14 +2397,14 @@ Handle_Quantity_HArray1OfColor._kill_pointed = new_instancemethod(_Quantity.Hand
 Handle_Quantity_HArray1OfColor_swigregister = _Quantity.Handle_Quantity_HArray1OfColor_swigregister
 Handle_Quantity_HArray1OfColor_swigregister(Handle_Quantity_HArray1OfColor)
 
-def Handle_Quantity_HArray1OfColor_DownCast(*args):
+def Handle_Quantity_HArray1OfColor_DownCast(*args) -> "Handle_Quantity_HArray1OfColor const" :
   return _Quantity.Handle_Quantity_HArray1OfColor_DownCast(*args)
 Handle_Quantity_HArray1OfColor_DownCast = _Quantity.Handle_Quantity_HArray1OfColor_DownCast
 
 class Quantity_Period(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Values(self, *args):
+    def Values(self, *args) -> "void" :
         """
         * Decomposes this period into a number of days,hours, minutes,seconds,milliseconds and microseconds Example of return values: 2 days, 15 hours, 0 minute , 0 second 0 millisecond and 0 microsecond
 
@@ -2433,7 +2433,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_Values(self, *args)
 
-    def SetValues(self, *args):
+    def SetValues(self, *args) -> "void" :
         """
         * Assigns to this period the time interval defined - with dd days, hh hours, mn minutes, ss seconds, mis (defaulted to 0) milliseconds and mics (defaulted to 0) microseconds; or
 
@@ -2462,7 +2462,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_SetValues(self, *args)
 
-    def Subtract(self, *args):
+    def Subtract(self, *args) -> "Quantity_Period" :
         """
         * Subtracts one Period from another and returns the difference.
 
@@ -2473,7 +2473,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_Subtract(self, *args)
 
-    def __sub__(self, *args):
+    def __sub__(self, *args) -> "Quantity_Period" :
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2482,7 +2482,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___sub__(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Quantity_Period" :
         """
         * Adds one Period to another one.
 
@@ -2493,7 +2493,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_Add(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "Quantity_Period" :
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2502,7 +2502,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___add__(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if both <self> and <other> are equal.
 
@@ -2519,7 +2519,7 @@ class Quantity_Period(object):
         except:
             return False
 
-    def IsShorter(self, *args):
+    def IsShorter(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is shorter than <other>.
 
@@ -2530,7 +2530,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_IsShorter(self, *args)
 
-    def __lt__(self, *args):
+    def __lt__(self, *args) -> "Standard_Boolean" :
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2539,7 +2539,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___lt__(self, *args)
 
-    def IsLonger(self, *args):
+    def IsLonger(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is longer then <other>.
 
@@ -2550,7 +2550,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_IsLonger(self, *args)
 
-    def __gt__(self, *args):
+    def __gt__(self, *args) -> "Standard_Boolean" :
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2559,7 +2559,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___gt__(self, *args)
 
-    def IsValid(*args):
+    def IsValid(*args) -> "Standard_Boolean" :
         """
         * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
 
@@ -2619,14 +2619,14 @@ class Quantity_Period(object):
 
         """
         _Quantity.Quantity_Period_swiginit(self,_Quantity.new_Quantity_Period(*args))
-    def _CSFDB_GetQuantity_PeriodmySec(self, *args):
+    def _CSFDB_GetQuantity_PeriodmySec(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmySec(self, *args)
 
-    def _CSFDB_SetQuantity_PeriodmySec(self, *args):
+    def _CSFDB_SetQuantity_PeriodmySec(self, *args) -> "void" :
         """
         :param p:
         :type p: int
@@ -2635,14 +2635,14 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period__CSFDB_SetQuantity_PeriodmySec(self, *args)
 
-    def _CSFDB_GetQuantity_PeriodmyUSec(self, *args):
+    def _CSFDB_GetQuantity_PeriodmyUSec(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmyUSec(self, *args)
 
-    def _CSFDB_SetQuantity_PeriodmyUSec(self, *args):
+    def _CSFDB_SetQuantity_PeriodmyUSec(self, *args) -> "void" :
         """
         :param p:
         :type p: int
@@ -2679,7 +2679,7 @@ Quantity_Period._kill_pointed = new_instancemethod(_Quantity.Quantity_Period__ki
 Quantity_Period_swigregister = _Quantity.Quantity_Period_swigregister
 Quantity_Period_swigregister(Quantity_Period)
 
-def Quantity_Period_IsValid(*args):
+def Quantity_Period_IsValid(*args) -> "Standard_Boolean" :
   """
     * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
 

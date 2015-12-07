@@ -135,7 +135,7 @@ import OCC.ShapeBuild
 class shapeprocess(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def RegisterOperator(*args):
+    def RegisterOperator(*args) -> "Standard_Boolean" :
         """
         * Registers operator to make it visible for Performer
 
@@ -149,7 +149,7 @@ class shapeprocess(object):
         return _ShapeProcess.shapeprocess_RegisterOperator(*args)
 
     RegisterOperator = staticmethod(RegisterOperator)
-    def FindOperator(*args):
+    def FindOperator(*args) -> "Standard_Boolean" :
         """
         * Finds operator by its name
 
@@ -163,7 +163,7 @@ class shapeprocess(object):
         return _ShapeProcess.shapeprocess_FindOperator(*args)
 
     FindOperator = staticmethod(FindOperator)
-    def Perform(*args):
+    def Perform(*args) -> "Standard_Boolean" :
         """
         * Performs a specified sequence of operators on Context Resource file and other data should be already loaded to Context (including description of sequence seq)
 
@@ -191,7 +191,7 @@ shapeprocess._kill_pointed = new_instancemethod(_ShapeProcess.shapeprocess__kill
 shapeprocess_swigregister = _ShapeProcess.shapeprocess_swigregister
 shapeprocess_swigregister(shapeprocess)
 
-def shapeprocess_RegisterOperator(*args):
+def shapeprocess_RegisterOperator(*args) -> "Standard_Boolean" :
   """
     * Registers operator to make it visible for Performer
 
@@ -204,7 +204,7 @@ def shapeprocess_RegisterOperator(*args):
     """
   return _ShapeProcess.shapeprocess_RegisterOperator(*args)
 
-def shapeprocess_FindOperator(*args):
+def shapeprocess_FindOperator(*args) -> "Standard_Boolean" :
   """
     * Finds operator by its name
 
@@ -217,7 +217,7 @@ def shapeprocess_FindOperator(*args):
     """
   return _ShapeProcess.shapeprocess_FindOperator(*args)
 
-def shapeprocess_Perform(*args):
+def shapeprocess_Perform(*args) -> "Standard_Boolean" :
   """
     * Performs a specified sequence of operators on Context Resource file and other data should be already loaded to Context (including description of sequence seq)
 
@@ -249,7 +249,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeProcess.ShapeProcess_Context_swiginit(self,_ShapeProcess.new_ShapeProcess_Context(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "Standard_Boolean" :
         """
         * Initialises a tool by loading resource file and (if specified) sets starting scope Returns False if resource file not found
 
@@ -262,7 +262,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_Init(self, *args)
 
-    def LoadResourceManager(self, *args):
+    def LoadResourceManager(self, *args) -> "Handle_Resource_Manager" :
         """
         * Loading Resource_Manager object if this object not equal internal static Resource_Manager object or internal static Resource_Manager object is null
 
@@ -273,7 +273,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_LoadResourceManager(self, *args)
 
-    def ResourceManager(self, *args):
+    def ResourceManager(self, *args) -> "Handle_Resource_Manager const &" :
         """
         * Returns internal Resource_Manager object
 
@@ -282,7 +282,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_ResourceManager(self, *args)
 
-    def SetScope(self, *args):
+    def SetScope(self, *args) -> "void" :
         """
         * Set a new (sub)scope
 
@@ -293,7 +293,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_SetScope(self, *args)
 
-    def UnSetScope(self, *args):
+    def UnSetScope(self, *args) -> "void" :
         """
         * Go out of current scope
 
@@ -302,7 +302,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_UnSetScope(self, *args)
 
-    def IsParamSet(self, *args):
+    def IsParamSet(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if parameter is defined in the resource file
 
@@ -313,7 +313,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_IsParamSet(self, *args)
 
-    def GetReal(self, *args):
+    def GetReal(self, *args) -> "Standard_Boolean" :
         """
         :param param:
         :type param: char *
@@ -324,7 +324,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_GetReal(self, *args)
 
-    def GetInteger(self, *args):
+    def GetInteger(self, *args) -> "Standard_Boolean" :
         """
         :param param:
         :type param: char *
@@ -335,7 +335,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_GetInteger(self, *args)
 
-    def GetBoolean(self, *args):
+    def GetBoolean(self, *args) -> "Standard_Boolean" :
         """
         :param param:
         :type param: char *
@@ -346,7 +346,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_GetBoolean(self, *args)
 
-    def GetString(self, *args):
+    def GetString(self, *args) -> "Standard_Boolean" :
         """
         * Get value of parameter as being of specific type Returns False if parameter is not defined or has a wrong type
 
@@ -359,7 +359,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_GetString(self, *args)
 
-    def RealVal(self, *args):
+    def RealVal(self, *args) -> "Standard_Real" :
         """
         :param param:
         :type param: char *
@@ -370,7 +370,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_RealVal(self, *args)
 
-    def IntegerVal(self, *args):
+    def IntegerVal(self, *args) -> "Standard_Integer" :
         """
         :param param:
         :type param: char *
@@ -381,7 +381,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_IntegerVal(self, *args)
 
-    def BooleanVal(self, *args):
+    def BooleanVal(self, *args) -> "Standard_Boolean" :
         """
         :param param:
         :type param: char *
@@ -392,7 +392,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_BooleanVal(self, *args)
 
-    def StringVal(self, *args):
+    def StringVal(self, *args) -> "char *" :
         """
         * Get value of parameter as being of specific type If parameter is not defined or does not have expected type, returns default value as specified
 
@@ -405,7 +405,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_StringVal(self, *args)
 
-    def SetMessenger(self, *args):
+    def SetMessenger(self, *args) -> "void" :
         """
         * Sets Messenger used for outputting messages.
 
@@ -416,7 +416,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_SetMessenger(self, *args)
 
-    def Messenger(self, *args):
+    def Messenger(self, *args) -> "Handle_Message_Messenger" :
         """
         * Returns Messenger used for outputting messages.
 
@@ -425,7 +425,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_Messenger(self, *args)
 
-    def SetProgress(self, *args):
+    def SetProgress(self, *args) -> "void" :
         """
         * Sets Progress Indicator.
 
@@ -436,7 +436,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_SetProgress(self, *args)
 
-    def Progress(self, *args):
+    def Progress(self, *args) -> "Handle_Message_ProgressIndicator" :
         """
         * Returns Progress Indicator.
 
@@ -445,7 +445,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_Progress(self, *args)
 
-    def SetTraceLevel(self, *args):
+    def SetTraceLevel(self, *args) -> "void" :
         """
         * Sets trace level used for outputting messages - 0: no trace at all - 1: errors - 2: errors and warnings - 3: all messages Default is 1 : Errors traced
 
@@ -456,7 +456,7 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_SetTraceLevel(self, *args)
 
-    def TraceLevel(self, *args):
+    def TraceLevel(self, *args) -> "Standard_Integer" :
         """
         * Returns trace level used for outputting messages.
 
@@ -465,11 +465,11 @@ class ShapeProcess_Context(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Context_TraceLevel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_Context self)"""
         return _ShapeProcess.ShapeProcess_Context__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_Context" :
         """GetHandle(ShapeProcess_Context self) -> Handle_ShapeProcess_Context"""
         return _ShapeProcess.ShapeProcess_Context_GetHandle(self)
 
@@ -527,7 +527,7 @@ Handle_ShapeProcess_Context._kill_pointed = new_instancemethod(_ShapeProcess.Han
 Handle_ShapeProcess_Context_swigregister = _ShapeProcess.Handle_ShapeProcess_Context_swigregister
 Handle_ShapeProcess_Context_swigregister(Handle_ShapeProcess_Context)
 
-def Handle_ShapeProcess_Context_DownCast(*args):
+def Handle_ShapeProcess_Context_DownCast(*args) -> "Handle_ShapeProcess_Context const" :
   return _ShapeProcess.Handle_ShapeProcess_Context_DownCast(*args)
 Handle_ShapeProcess_Context_DownCast = _ShapeProcess.Handle_ShapeProcess_Context_DownCast
 
@@ -540,7 +540,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeProcess.ShapeProcess_DictionaryOfOperator_swiginit(self,_ShapeProcess.new_ShapeProcess_DictionaryOfOperator(*args))
-    def HasItem(self, *args):
+    def HasItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -557,7 +557,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_HasItem(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_ShapeProcess_Operator const &" :
         """
         :param name:
         :type name: char *
@@ -574,7 +574,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_Item(self, *args)
 
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -595,7 +595,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -616,7 +616,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_SetItem(self, *args)
 
-    def NewItem(self, *args):
+    def NewItem(self, *args) -> "Handle_ShapeProcess_Operator &" :
         """
         :param name:
         :type name: char *
@@ -637,7 +637,7 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_NewItem(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -658,35 +658,35 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_RemoveItem(self, *args)
 
-    def Clean(self, *args):
+    def Clean(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_Clean(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_ShapeProcess_DictionaryOfOperator" :
         """
         :rtype: Handle_ShapeProcess_DictionaryOfOperator
 
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_Copy(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param acell:
         :type acell: Handle_ShapeProcess_DictionaryOfOperator &
@@ -695,11 +695,11 @@ class ShapeProcess_DictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_Complete(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_DictionaryOfOperator self)"""
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_DictionaryOfOperator" :
         """GetHandle(ShapeProcess_DictionaryOfOperator self) -> Handle_ShapeProcess_DictionaryOfOperator"""
         return _ShapeProcess.ShapeProcess_DictionaryOfOperator_GetHandle(self)
 
@@ -748,7 +748,7 @@ Handle_ShapeProcess_DictionaryOfOperator._kill_pointed = new_instancemethod(_Sha
 Handle_ShapeProcess_DictionaryOfOperator_swigregister = _ShapeProcess.Handle_ShapeProcess_DictionaryOfOperator_swigregister
 Handle_ShapeProcess_DictionaryOfOperator_swigregister(Handle_ShapeProcess_DictionaryOfOperator)
 
-def Handle_ShapeProcess_DictionaryOfOperator_DownCast(*args):
+def Handle_ShapeProcess_DictionaryOfOperator_DownCast(*args) -> "Handle_ShapeProcess_DictionaryOfOperator const" :
   return _ShapeProcess.Handle_ShapeProcess_DictionaryOfOperator_DownCast(*args)
 Handle_ShapeProcess_DictionaryOfOperator_DownCast = _ShapeProcess.Handle_ShapeProcess_DictionaryOfOperator_DownCast
 
@@ -775,35 +775,35 @@ class ShapeProcess_IteratorOfDictionaryOfOperator(object):
 
         """
         _ShapeProcess.ShapeProcess_IteratorOfDictionaryOfOperator_swiginit(self,_ShapeProcess.new_ShapeProcess_IteratorOfDictionaryOfOperator(*args))
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeProcess.ShapeProcess_IteratorOfDictionaryOfOperator_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeProcess.ShapeProcess_IteratorOfDictionaryOfOperator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeProcess.ShapeProcess_IteratorOfDictionaryOfOperator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ShapeProcess_Operator const &" :
         """
         :rtype: Handle_ShapeProcess_Operator
 
         """
         return _ShapeProcess.ShapeProcess_IteratorOfDictionaryOfOperator_Value(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
@@ -830,7 +830,7 @@ ShapeProcess_IteratorOfDictionaryOfOperator_swigregister(ShapeProcess_IteratorOf
 class ShapeProcess_OperLibrary(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Init(*args):
+    def Init(*args) -> "void" :
         """
         * Registers all the operators
 
@@ -840,7 +840,7 @@ class ShapeProcess_OperLibrary(object):
         return _ShapeProcess.ShapeProcess_OperLibrary_Init(*args)
 
     Init = staticmethod(Init)
-    def ApplyModifier(*args):
+    def ApplyModifier(*args) -> "TopoDS_Shape" :
         """
         * Applies BRepTools_Modification to a shape, taking into account sharing of components of compounds.
 
@@ -872,7 +872,7 @@ ShapeProcess_OperLibrary._kill_pointed = new_instancemethod(_ShapeProcess.ShapeP
 ShapeProcess_OperLibrary_swigregister = _ShapeProcess.ShapeProcess_OperLibrary_swigregister
 ShapeProcess_OperLibrary_swigregister(ShapeProcess_OperLibrary)
 
-def ShapeProcess_OperLibrary_Init(*args):
+def ShapeProcess_OperLibrary_Init(*args) -> "void" :
   """
     * Registers all the operators
 
@@ -881,7 +881,7 @@ def ShapeProcess_OperLibrary_Init(*args):
     """
   return _ShapeProcess.ShapeProcess_OperLibrary_Init(*args)
 
-def ShapeProcess_OperLibrary_ApplyModifier(*args):
+def ShapeProcess_OperLibrary_ApplyModifier(*args) -> "TopoDS_Shape" :
   """
     * Applies BRepTools_Modification to a shape, taking into account sharing of components of compounds.
 
@@ -902,7 +902,7 @@ class ShapeProcess_Operator(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs operation and eventually records changes in the context
 
@@ -913,11 +913,11 @@ class ShapeProcess_Operator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_Operator_Perform(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_Operator self)"""
         return _ShapeProcess.ShapeProcess_Operator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_Operator" :
         """GetHandle(ShapeProcess_Operator self) -> Handle_ShapeProcess_Operator"""
         return _ShapeProcess.ShapeProcess_Operator_GetHandle(self)
 
@@ -956,7 +956,7 @@ Handle_ShapeProcess_Operator._kill_pointed = new_instancemethod(_ShapeProcess.Ha
 Handle_ShapeProcess_Operator_swigregister = _ShapeProcess.Handle_ShapeProcess_Operator_swigregister
 Handle_ShapeProcess_Operator_swigregister(Handle_ShapeProcess_Operator)
 
-def Handle_ShapeProcess_Operator_DownCast(*args):
+def Handle_ShapeProcess_Operator_DownCast(*args) -> "Handle_ShapeProcess_Operator const" :
   return _ShapeProcess.Handle_ShapeProcess_Operator_DownCast(*args)
 Handle_ShapeProcess_Operator_DownCast = _ShapeProcess.Handle_ShapeProcess_Operator_DownCast
 
@@ -973,21 +973,21 @@ class ShapeProcess_StackItemOfDictionaryOfOperator(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator_swiginit(self,_ShapeProcess.new_ShapeProcess_StackItemOfDictionaryOfOperator(*args))
-    def Previous(self, *args):
+    def Previous(self, *args) -> "Handle_ShapeProcess_StackItemOfDictionaryOfOperator" :
         """
         :rtype: Handle_ShapeProcess_StackItemOfDictionaryOfOperator
 
         """
         return _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator_Previous(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_ShapeProcess_DictionaryOfOperator" :
         """
         :rtype: Handle_ShapeProcess_DictionaryOfOperator
 
         """
         return _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param cval:
         :type cval: Handle_ShapeProcess_DictionaryOfOperator &
@@ -996,11 +996,11 @@ class ShapeProcess_StackItemOfDictionaryOfOperator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_StackItemOfDictionaryOfOperator self)"""
         return _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_StackItemOfDictionaryOfOperator" :
         """GetHandle(ShapeProcess_StackItemOfDictionaryOfOperator self) -> Handle_ShapeProcess_StackItemOfDictionaryOfOperator"""
         return _ShapeProcess.ShapeProcess_StackItemOfDictionaryOfOperator_GetHandle(self)
 
@@ -1041,7 +1041,7 @@ Handle_ShapeProcess_StackItemOfDictionaryOfOperator._kill_pointed = new_instance
 Handle_ShapeProcess_StackItemOfDictionaryOfOperator_swigregister = _ShapeProcess.Handle_ShapeProcess_StackItemOfDictionaryOfOperator_swigregister
 Handle_ShapeProcess_StackItemOfDictionaryOfOperator_swigregister(Handle_ShapeProcess_StackItemOfDictionaryOfOperator)
 
-def Handle_ShapeProcess_StackItemOfDictionaryOfOperator_DownCast(*args):
+def Handle_ShapeProcess_StackItemOfDictionaryOfOperator_DownCast(*args) -> "Handle_ShapeProcess_StackItemOfDictionaryOfOperator const" :
   return _ShapeProcess.Handle_ShapeProcess_StackItemOfDictionaryOfOperator_DownCast(*args)
 Handle_ShapeProcess_StackItemOfDictionaryOfOperator_DownCast = _ShapeProcess.Handle_ShapeProcess_StackItemOfDictionaryOfOperator_DownCast
 
@@ -1068,7 +1068,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
 
         """
         _ShapeProcess.ShapeProcess_ShapeContext_swiginit(self,_ShapeProcess.new_ShapeProcess_ShapeContext(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes tool by a new shape and clears all results
 
@@ -1079,7 +1079,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_Init(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns shape being processed
 
@@ -1088,7 +1088,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_Shape(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns current result
 
@@ -1097,7 +1097,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_Result(self, *args)
 
-    def Map(self, *args):
+    def Map(self, *args) -> "TopTools_DataMapOfShapeShape const &" :
         """
         * Returns map of replacements shape -> shape This map is not recursive
 
@@ -1106,14 +1106,14 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_Map(self, *args)
 
-    def Messages(self, *args):
+    def Messages(self, *args) -> "Handle_ShapeExtend_MsgRegistrator const &" :
         """
         :rtype: Handle_ShapeExtend_MsgRegistrator
 
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_Messages(self, *args)
 
-    def SetDetalisation(self, *args):
+    def SetDetalisation(self, *args) -> "void" :
         """
         :param level:
         :type level: TopAbs_ShapeEnum
@@ -1122,7 +1122,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_SetDetalisation(self, *args)
 
-    def GetDetalisation(self, *args):
+    def GetDetalisation(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * Set and get value for detalisation level Only shapes of types from TopoDS_COMPOUND and until specified detalisation level will be recorded in maps To cancel mapping, use TopAbs_SHAPE To force full mapping, use TopAbs_VERTEX The default level is TopAbs_FACE
 
@@ -1131,7 +1131,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_GetDetalisation(self, *args)
 
-    def SetResult(self, *args):
+    def SetResult(self, *args) -> "void" :
         """
         * Sets a new result shape NOTE: this method should be used very carefully to keep consistency of modifications It is recommended to use RecordModification() methods with explicit definition of mapping from current result to a new one
 
@@ -1142,7 +1142,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_SetResult(self, *args)
 
-    def RecordModification(self, *args):
+    def RecordModification(self, *args) -> "void" :
         """
         :param repl:
         :type repl: TopTools_DataMapOfShapeShape &
@@ -1169,7 +1169,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_RecordModification(self, *args)
 
-    def AddMessage(self, *args):
+    def AddMessage(self, *args) -> "void" :
         """
         * Record a message for shape S Shape S should be one of subshapes of original shape (or whole one), but not one of intermediate shapes Records only if Message() is not Null
 
@@ -1184,7 +1184,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_AddMessage(self, *args)
 
-    def GetContinuity(self, *args):
+    def GetContinuity(self, *args) -> "Standard_Boolean" :
         """
         * Get value of parameter as being of the type GeomAbs_Shape Returns False if parameter is not defined or has a wrong type
 
@@ -1197,7 +1197,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_GetContinuity(self, *args)
 
-    def ContinuityVal(self, *args):
+    def ContinuityVal(self, *args) -> "GeomAbs_Shape" :
         """
         * Get value of parameter as being of the type GeomAbs_Shape If parameter is not defined or does not have expected type, returns default value as specified
 
@@ -1210,7 +1210,7 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_ContinuityVal(self, *args)
 
-    def PrintStatistics(self, *args):
+    def PrintStatistics(self, *args) -> "void" :
         """
         * Prints statistics on Shape Processing onto the current Messenger.
 
@@ -1219,11 +1219,11 @@ class ShapeProcess_ShapeContext(ShapeProcess_Context):
         """
         return _ShapeProcess.ShapeProcess_ShapeContext_PrintStatistics(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_ShapeContext self)"""
         return _ShapeProcess.ShapeProcess_ShapeContext__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_ShapeContext" :
         """GetHandle(ShapeProcess_ShapeContext self) -> Handle_ShapeProcess_ShapeContext"""
         return _ShapeProcess.ShapeProcess_ShapeContext_GetHandle(self)
 
@@ -1274,7 +1274,7 @@ Handle_ShapeProcess_ShapeContext._kill_pointed = new_instancemethod(_ShapeProces
 Handle_ShapeProcess_ShapeContext_swigregister = _ShapeProcess.Handle_ShapeProcess_ShapeContext_swigregister
 Handle_ShapeProcess_ShapeContext_swigregister(Handle_ShapeProcess_ShapeContext)
 
-def Handle_ShapeProcess_ShapeContext_DownCast(*args):
+def Handle_ShapeProcess_ShapeContext_DownCast(*args) -> "Handle_ShapeProcess_ShapeContext const" :
   return _ShapeProcess.Handle_ShapeProcess_ShapeContext_DownCast(*args)
 Handle_ShapeProcess_ShapeContext_DownCast = _ShapeProcess.Handle_ShapeProcess_ShapeContext_DownCast
 
@@ -1291,11 +1291,11 @@ class ShapeProcess_UOperator(ShapeProcess_Operator):
 
         """
         _ShapeProcess.ShapeProcess_UOperator_swiginit(self,_ShapeProcess.new_ShapeProcess_UOperator(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeProcess_UOperator self)"""
         return _ShapeProcess.ShapeProcess_UOperator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeProcess_UOperator" :
         """GetHandle(ShapeProcess_UOperator self) -> Handle_ShapeProcess_UOperator"""
         return _ShapeProcess.ShapeProcess_UOperator_GetHandle(self)
 
@@ -1333,7 +1333,7 @@ Handle_ShapeProcess_UOperator._kill_pointed = new_instancemethod(_ShapeProcess.H
 Handle_ShapeProcess_UOperator_swigregister = _ShapeProcess.Handle_ShapeProcess_UOperator_swigregister
 Handle_ShapeProcess_UOperator_swigregister(Handle_ShapeProcess_UOperator)
 
-def Handle_ShapeProcess_UOperator_DownCast(*args):
+def Handle_ShapeProcess_UOperator_DownCast(*args) -> "Handle_ShapeProcess_UOperator const" :
   return _ShapeProcess.Handle_ShapeProcess_UOperator_DownCast(*args)
 Handle_ShapeProcess_UOperator_DownCast = _ShapeProcess.Handle_ShapeProcess_UOperator_DownCast
 

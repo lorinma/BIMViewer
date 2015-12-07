@@ -133,7 +133,7 @@ class BRepMAT2d_BisectingLocus(object):
 
         """
         _BRepMAT2d.BRepMAT2d_BisectingLocus_swiginit(self,_BRepMAT2d.new_BRepMAT2d_BisectingLocus(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         :param anExplo:
         :type anExplo: BRepMAT2d_Explorer &
@@ -146,28 +146,28 @@ class BRepMAT2d_BisectingLocus(object):
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_Compute(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_IsDone(self, *args)
 
-    def Graph(self, *args):
+    def Graph(self, *args) -> "Handle_MAT_Graph" :
         """
         :rtype: Handle_MAT_Graph
 
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_Graph(self, *args)
 
-    def NumberOfContours(self, *args):
+    def NumberOfContours(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_NumberOfContours(self, *args)
 
-    def NumberOfElts(self, *args):
+    def NumberOfElts(self, *args) -> "Standard_Integer" :
         """
         :param IndLine:
         :type IndLine: int
@@ -176,7 +176,7 @@ class BRepMAT2d_BisectingLocus(object):
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_NumberOfElts(self, *args)
 
-    def NumberOfSections(self, *args):
+    def NumberOfSections(self, *args) -> "Standard_Integer" :
         """
         :param IndLine:
         :type IndLine: int
@@ -187,7 +187,7 @@ class BRepMAT2d_BisectingLocus(object):
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_NumberOfSections(self, *args)
 
-    def BasicElt(self, *args):
+    def BasicElt(self, *args) -> "Handle_MAT_BasicElt" :
         """
         :param IndLine:
         :type IndLine: int
@@ -198,7 +198,7 @@ class BRepMAT2d_BisectingLocus(object):
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_BasicElt(self, *args)
 
-    def GeomElt(self, *args):
+    def GeomElt(self, *args) -> "gp_Pnt2d" :
         """
         :param aBasicElt:
         :type aBasicElt: Handle_MAT_BasicElt &
@@ -211,7 +211,7 @@ class BRepMAT2d_BisectingLocus(object):
         """
         return _BRepMAT2d.BRepMAT2d_BisectingLocus_GeomElt(self, *args)
 
-    def GeomBis(self, *args):
+    def GeomBis(self, *args) -> "Bisector_Bisec" :
         """
         :param anArc:
         :type anArc: Handle_MAT_Arc &
@@ -256,7 +256,7 @@ class BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape(OCC.TCollection.TCollect
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMAT2d_DataMapOfBasicEltShape &
@@ -265,14 +265,14 @@ class BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape(OCC.TCollection.TCollect
         """
         return _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfBasicEltShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
@@ -307,7 +307,7 @@ class BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt(OCC.TCollectio
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMAT2d_DataMapOfShapeSequenceOfBasicElt &
@@ -316,14 +316,14 @@ class BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt(OCC.TCollectio
         """
         return _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapIteratorOfDataMapOfShapeSequenceOfBasicElt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMAT2d_SequenceOfBasicElt const &" :
         """
         :rtype: BRepMAT2d_SequenceOfBasicElt
 
@@ -360,25 +360,25 @@ class BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape(OCC.TCollection.TCollection_
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape self)"""
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape" :
         """GetHandle(BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape self) -> Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape"""
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_GetHandle(self)
 
@@ -418,7 +418,7 @@ Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape._kill_pointed = new_instanc
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_swigregister = _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_swigregister
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_swigregister(Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape)
 
-def Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_DownCast(*args):
+def Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_DownCast(*args) -> "Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape const" :
   return _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_DownCast(*args)
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_DownCast = _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfBasicEltShape_DownCast
 
@@ -437,25 +437,25 @@ class BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TC
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMAT2d_SequenceOfBasicElt &" :
         """
         :rtype: BRepMAT2d_SequenceOfBasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt self)"""
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt" :
         """GetHandle(BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt self) -> Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt"""
         return _BRepMAT2d.BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_GetHandle(self)
 
@@ -495,7 +495,7 @@ Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt._kill_pointed = n
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_swigregister = _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_swigregister
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_swigregister(Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt)
 
-def Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_DownCast(*args):
+def Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_DownCast(*args) -> "Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt const" :
   return _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_DownCast(*args)
 Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_DownCast = _BRepMAT2d.Handle_BRepMAT2d_DataMapNodeOfDataMapOfShapeSequenceOfBasicElt_DownCast
 
@@ -510,7 +510,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapOfBasicEltShape(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMAT2d_DataMapOfBasicEltShape &" :
         """
         :param Other:
         :type Other: BRepMAT2d_DataMapOfBasicEltShape &
@@ -519,7 +519,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMAT2d_DataMapOfBasicEltShape &" :
         """
         :param Other:
         :type Other: BRepMAT2d_DataMapOfBasicEltShape &
@@ -528,7 +528,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -537,14 +537,14 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -555,7 +555,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -564,7 +564,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -573,7 +573,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TopoDS_Shape const" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -582,7 +582,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TopoDS_Shape" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -591,7 +591,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -600,7 +600,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_MAT_BasicElt &
@@ -609,7 +609,7 @@ class BRepMAT2d_DataMapOfBasicEltShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMAT2d_DataMapOfBasicEltShape self)"""
         return _BRepMAT2d.BRepMAT2d_DataMapOfBasicEltShape__kill_pointed(self)
 
@@ -647,7 +647,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
 
         """
         _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_swiginit(self,_BRepMAT2d.new_BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMAT2d_DataMapOfShapeSequenceOfBasicElt &" :
         """
         :param Other:
         :type Other: BRepMAT2d_DataMapOfShapeSequenceOfBasicElt &
@@ -656,7 +656,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMAT2d_DataMapOfShapeSequenceOfBasicElt &" :
         """
         :param Other:
         :type Other: BRepMAT2d_DataMapOfShapeSequenceOfBasicElt &
@@ -665,7 +665,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -674,14 +674,14 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -692,7 +692,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -701,7 +701,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -710,7 +710,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "BRepMAT2d_SequenceOfBasicElt const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -719,7 +719,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "BRepMAT2d_SequenceOfBasicElt &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -728,7 +728,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -737,7 +737,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -746,7 +746,7 @@ class BRepMAT2d_DataMapOfShapeSequenceOfBasicElt(OCC.TCollection.TCollection_Bas
         """
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMAT2d_DataMapOfShapeSequenceOfBasicElt self)"""
         return _BRepMAT2d.BRepMAT2d_DataMapOfShapeSequenceOfBasicElt__kill_pointed(self)
 
@@ -786,7 +786,7 @@ class BRepMAT2d_Explorer(object):
 
         """
         _BRepMAT2d.BRepMAT2d_Explorer_swiginit(self,_BRepMAT2d.new_BRepMAT2d_Explorer(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear the contents of <self>.
 
@@ -795,7 +795,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Clear(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param aFace:
         :type aFace: TopoDS_Face &
@@ -804,7 +804,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Perform(self, *args)
 
-    def NumberOfContours(self, *args):
+    def NumberOfContours(self, *args) -> "Standard_Integer" :
         """
         * Returns the Number of contours.
 
@@ -813,7 +813,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_NumberOfContours(self, *args)
 
-    def NumberOfCurves(self, *args):
+    def NumberOfCurves(self, *args) -> "Standard_Integer" :
         """
         * Returns the Number of Curves in the Contour number  <IndexContour>.
 
@@ -824,7 +824,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_NumberOfCurves(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialisation of an Iterator on the curves of  the Contour number <IndexContour>.
 
@@ -835,7 +835,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Return False if there is no more curves on the Contour  initialised by the method Init.
 
@@ -844,7 +844,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move to the next curve of the current Contour.
 
@@ -853,7 +853,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * Returns the current curve on the current Contour.
 
@@ -862,14 +862,14 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Value(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Shape(self, *args)
 
-    def Contour(self, *args):
+    def Contour(self, *args) -> "TColGeom2d_SequenceOfCurve const &" :
         """
         :param IndexContour:
         :type IndexContour: int
@@ -878,7 +878,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_Contour(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -887,7 +887,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_IsModified(self, *args)
 
-    def ModifiedShape(self, *args):
+    def ModifiedShape(self, *args) -> "TopoDS_Shape" :
         """
         * If the shape is not modified, returns the shape itself.
 
@@ -898,7 +898,7 @@ class BRepMAT2d_Explorer(object):
         """
         return _BRepMAT2d.BRepMAT2d_Explorer_ModifiedShape(self, *args)
 
-    def GetIsClosed(self, *args):
+    def GetIsClosed(self, *args) -> "TColStd_SequenceOfBoolean const &" :
         """
         :rtype: TColStd_SequenceOfBoolean
 
@@ -947,7 +947,7 @@ class BRepMAT2d_LinkTopoBilo(object):
 
         """
         _BRepMAT2d.BRepMAT2d_LinkTopoBilo_swiginit(self,_BRepMAT2d.new_BRepMAT2d_LinkTopoBilo(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Constructs the links Between S and BiLo. raises if <S> is not a face or a wire.
 
@@ -960,7 +960,7 @@ class BRepMAT2d_LinkTopoBilo(object):
         """
         return _BRepMAT2d.BRepMAT2d_LinkTopoBilo_Perform(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialise the Iterator on <S> <S> is an edge or a vertex of the initial wire or face. raises if <S> is not an edge or a vertex.
 
@@ -971,7 +971,7 @@ class BRepMAT2d_LinkTopoBilo(object):
         """
         return _BRepMAT2d.BRepMAT2d_LinkTopoBilo_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current BasicElt.
 
@@ -980,7 +980,7 @@ class BRepMAT2d_LinkTopoBilo(object):
         """
         return _BRepMAT2d.BRepMAT2d_LinkTopoBilo_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Proceed to the next BasicElt.
 
@@ -989,7 +989,7 @@ class BRepMAT2d_LinkTopoBilo(object):
         """
         return _BRepMAT2d.BRepMAT2d_LinkTopoBilo_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt" :
         """
         * Returns the current BasicElt.
 
@@ -998,7 +998,7 @@ class BRepMAT2d_LinkTopoBilo(object):
         """
         return _BRepMAT2d.BRepMAT2d_LinkTopoBilo_Value(self, *args)
 
-    def GeneratingShape(self, *args):
+    def GeneratingShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the Shape linked to <aBE>.
 
@@ -1042,18 +1042,18 @@ class BRepMAT2d_SequenceNodeOfSequenceOfBasicElt(OCC.TCollection.TCollection_Seq
 
         """
         _BRepMAT2d.BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_swiginit(self,_BRepMAT2d.new_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMAT2d_SequenceNodeOfSequenceOfBasicElt self)"""
         return _BRepMAT2d.BRepMAT2d_SequenceNodeOfSequenceOfBasicElt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt" :
         """GetHandle(BRepMAT2d_SequenceNodeOfSequenceOfBasicElt self) -> Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt"""
         return _BRepMAT2d.BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_GetHandle(self)
 
@@ -1092,7 +1092,7 @@ Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt._kill_pointed = new_instanceme
 Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_swigregister = _BRepMAT2d.Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_swigregister
 Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_swigregister(Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt)
 
-def Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_DownCast(*args):
+def Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_DownCast(*args) -> "Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt const" :
   return _BRepMAT2d.Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_DownCast(*args)
 Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_DownCast = _BRepMAT2d.Handle_BRepMAT2d_SequenceNodeOfSequenceOfBasicElt_DownCast
 
@@ -1105,14 +1105,14 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_swiginit(self,_BRepMAT2d.new_BRepMAT2d_SequenceOfBasicElt(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMAT2d_SequenceOfBasicElt const &" :
         """
         :param Other:
         :type Other: BRepMAT2d_SequenceOfBasicElt &
@@ -1121,7 +1121,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMAT2d_SequenceOfBasicElt const &" :
         """
         :param Other:
         :type Other: BRepMAT2d_SequenceOfBasicElt &
@@ -1130,7 +1130,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_BasicElt &
@@ -1143,7 +1143,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_BasicElt &
@@ -1156,7 +1156,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1173,7 +1173,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1190,21 +1190,21 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1215,7 +1215,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :param Index:
         :type Index: int
@@ -1224,7 +1224,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1235,7 +1235,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :param Index:
         :type Index: int
@@ -1244,7 +1244,7 @@ class BRepMAT2d_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepMAT2d.BRepMAT2d_SequenceOfBasicElt_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

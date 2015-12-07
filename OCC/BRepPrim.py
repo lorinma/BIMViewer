@@ -142,14 +142,14 @@ class BRepPrim_Builder(object):
 
         """
         _BRepPrim.BRepPrim_Builder_swiginit(self,_BRepPrim.new_BRepPrim_Builder(*args))
-    def Builder(self, *args):
+    def Builder(self, *args) -> "BRep_Builder const &" :
         """
         :rtype: BRep_Builder
 
         """
         return _BRepPrim.BRepPrim_Builder_Builder(self, *args)
 
-    def MakeShell(self, *args):
+    def MakeShell(self, *args) -> "void" :
         """
         * Make a empty Shell.
 
@@ -160,7 +160,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeShell(self, *args)
 
-    def MakeFace(self, *args):
+    def MakeFace(self, *args) -> "void" :
         """
         * Returns in <F> a Face built with the plane equation <P>. Used by all primitives.
 
@@ -173,7 +173,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeFace(self, *args)
 
-    def MakeWire(self, *args):
+    def MakeWire(self, *args) -> "void" :
         """
         * Returns in <W> an empty Wire.
 
@@ -184,7 +184,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeWire(self, *args)
 
-    def MakeDegeneratedEdge(self, *args):
+    def MakeDegeneratedEdge(self, *args) -> "void" :
         """
         * Returns in <E> a degenerated edge.
 
@@ -195,7 +195,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeDegeneratedEdge(self, *args)
 
-    def MakeEdge(self, *args):
+    def MakeEdge(self, *args) -> "void" :
         """
         * Returns in <E> an Edge built with the line equation <L>.
 
@@ -216,7 +216,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeEdge(self, *args)
 
-    def SetPCurve(self, *args):
+    def SetPCurve(self, *args) -> "void" :
         """
         * Sets the line <L> to be the curve representing the edge <E> in the parametric space of the surface of <F>.
 
@@ -253,7 +253,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_SetPCurve(self, *args)
 
-    def MakeVertex(self, *args):
+    def MakeVertex(self, *args) -> "void" :
         """
         * Returns in <V> a Vertex built with the point <P>.
 
@@ -266,7 +266,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_MakeVertex(self, *args)
 
-    def ReverseFace(self, *args):
+    def ReverseFace(self, *args) -> "void" :
         """
         * Reverses the Face <F>.
 
@@ -277,7 +277,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_ReverseFace(self, *args)
 
-    def AddEdgeVertex(self, *args):
+    def AddEdgeVertex(self, *args) -> "void" :
         """
         * Adds the Vertex <V> in the Edge <E>. <P> is the parameter of the vertex on the edge. If direct is False the Vertex is reversed.
 
@@ -306,7 +306,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_AddEdgeVertex(self, *args)
 
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         * <P1,P2> are the parameters of the vertex on the edge. The edge is a closed curve.
 
@@ -323,7 +323,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_SetParameters(self, *args)
 
-    def AddWireEdge(self, *args):
+    def AddWireEdge(self, *args) -> "void" :
         """
         * Adds the Edge <E> in the Wire <W>, if direct is False the Edge is reversed.
 
@@ -338,7 +338,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_AddWireEdge(self, *args)
 
-    def AddFaceWire(self, *args):
+    def AddFaceWire(self, *args) -> "void" :
         """
         * Adds the Wire <W> in the Face <F>.
 
@@ -351,7 +351,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_AddFaceWire(self, *args)
 
-    def AddShellFace(self, *args):
+    def AddShellFace(self, *args) -> "void" :
         """
         * Adds the Face <F> in the Shell <Sh>.
 
@@ -364,7 +364,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_AddShellFace(self, *args)
 
-    def CompleteEdge(self, *args):
+    def CompleteEdge(self, *args) -> "void" :
         """
         * This is called once an edge is completed. It gives the opportunity to perform any post treatment.
 
@@ -375,7 +375,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_CompleteEdge(self, *args)
 
-    def CompleteWire(self, *args):
+    def CompleteWire(self, *args) -> "void" :
         """
         * This is called once a wire is completed. It gives the opportunity to perform any post treatment.
 
@@ -386,7 +386,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_CompleteWire(self, *args)
 
-    def CompleteFace(self, *args):
+    def CompleteFace(self, *args) -> "void" :
         """
         * This is called once a face is completed. It gives the opportunity to perform any post treatment.
 
@@ -397,7 +397,7 @@ class BRepPrim_Builder(object):
         """
         return _BRepPrim.BRepPrim_Builder_CompleteFace(self, *args)
 
-    def CompleteShell(self, *args):
+    def CompleteShell(self, *args) -> "void" :
         """
         * This is called once a shell is completed. It gives the opportunity to perform any post treatment.
 
@@ -467,7 +467,7 @@ class BRepPrim_FaceBuilder(object):
 
         """
         _BRepPrim.BRepPrim_FaceBuilder_swiginit(self,_BRepPrim.new_BRepPrim_FaceBuilder(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param B:
         :type B: BRep_Builder &
@@ -492,14 +492,14 @@ class BRepPrim_FaceBuilder(object):
         """
         return _BRepPrim.BRepPrim_FaceBuilder_Init(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_FaceBuilder_Face(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the edge of index <I> 1 - Edge VMin 2 - Edge UMax 3 - Edge VMax 4 - Edge UMin
 
@@ -510,7 +510,7 @@ class BRepPrim_FaceBuilder(object):
         """
         return _BRepPrim.BRepPrim_FaceBuilder_Edge(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the vertex of index <I> 1 - Vertex UMin,VMin 2 - Vertex UMax,VMin 3 - Vertex UMax,VMax 4 - Vertex UMin,VMax
 
@@ -596,84 +596,84 @@ class BRepPrim_GWedge(object):
 
         """
         _BRepPrim.BRepPrim_GWedge_swiginit(self,_BRepPrim.new_BRepPrim_GWedge(*args))
-    def Axes(self, *args):
+    def Axes(self, *args) -> "gp_Ax2" :
         """
         :rtype: gp_Ax2
 
         """
         return _BRepPrim.BRepPrim_GWedge_Axes(self, *args)
 
-    def GetXMin(self, *args):
+    def GetXMin(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetXMin(self, *args)
 
-    def GetYMin(self, *args):
+    def GetYMin(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetYMin(self, *args)
 
-    def GetZMin(self, *args):
+    def GetZMin(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetZMin(self, *args)
 
-    def GetZ2Min(self, *args):
+    def GetZ2Min(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetZ2Min(self, *args)
 
-    def GetX2Min(self, *args):
+    def GetX2Min(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetX2Min(self, *args)
 
-    def GetXMax(self, *args):
+    def GetXMax(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetXMax(self, *args)
 
-    def GetYMax(self, *args):
+    def GetYMax(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetYMax(self, *args)
 
-    def GetZMax(self, *args):
+    def GetZMax(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetZMax(self, *args)
 
-    def GetZ2Max(self, *args):
+    def GetZ2Max(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetZ2Max(self, *args)
 
-    def GetX2Max(self, *args):
+    def GetX2Max(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepPrim.BRepPrim_GWedge_GetX2Max(self, *args)
 
-    def Open(self, *args):
+    def Open(self, *args) -> "void" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -682,7 +682,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Open(self, *args)
 
-    def Close(self, *args):
+    def Close(self, *args) -> "void" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -691,7 +691,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Close(self, *args)
 
-    def IsInfinite(self, *args):
+    def IsInfinite(self, *args) -> "Standard_Boolean" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -700,14 +700,14 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_IsInfinite(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         :rtype: TopoDS_Shell
 
         """
         return _BRepPrim.BRepPrim_GWedge_Shell(self, *args)
 
-    def HasFace(self, *args):
+    def HasFace(self, *args) -> "Standard_Boolean" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -716,7 +716,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_HasFace(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -725,7 +725,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Face(self, *args)
 
-    def Plane(self, *args):
+    def Plane(self, *args) -> "gp_Pln" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -734,7 +734,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Plane(self, *args)
 
-    def HasWire(self, *args):
+    def HasWire(self, *args) -> "Standard_Boolean" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -743,7 +743,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_HasWire(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire const" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -752,7 +752,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Wire(self, *args)
 
-    def HasEdge(self, *args):
+    def HasEdge(self, *args) -> "Standard_Boolean" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -763,7 +763,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_HasEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -774,7 +774,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Edge(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "gp_Lin" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -785,7 +785,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Line(self, *args)
 
-    def HasVertex(self, *args):
+    def HasVertex(self, *args) -> "Standard_Boolean" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -798,7 +798,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_HasVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -811,7 +811,7 @@ class BRepPrim_GWedge(object):
         """
         return _BRepPrim.BRepPrim_GWedge_Vertex(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         :param d1:
         :type d1: Primitives_Direction
@@ -866,14 +866,14 @@ class BRepPrim_OneAxis(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _BRepPrim.BRepPrim_OneAxis_Delete(self, *args)
 
-    def SetMeridianOffset(self, *args):
+    def SetMeridianOffset(self, *args) -> "void" :
         """
         :param MeridianOffset: default value is 0
         :type MeridianOffset: float
@@ -882,7 +882,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_SetMeridianOffset(self, *args)
 
-    def Axes(self, *args):
+    def Axes(self, *args) -> "void" :
         """
         :rtype: gp_Ax2
 
@@ -893,7 +893,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_Axes(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -904,7 +904,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_Angle(self, *args)
 
-    def VMin(self, *args):
+    def VMin(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -915,7 +915,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_VMin(self, *args)
 
-    def VMax(self, *args):
+    def VMax(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -926,14 +926,14 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_VMax(self, *args)
 
-    def MakeEmptyLateralFace(self, *args):
+    def MakeEmptyLateralFace(self, *args) -> "TopoDS_Face" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_MakeEmptyLateralFace(self, *args)
 
-    def MakeEmptyMeridianEdge(self, *args):
+    def MakeEmptyMeridianEdge(self, *args) -> "TopoDS_Edge" :
         """
         :param Ang:
         :type Ang: float
@@ -942,7 +942,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_MakeEmptyMeridianEdge(self, *args)
 
-    def SetMeridianPCurve(self, *args):
+    def SetMeridianPCurve(self, *args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -953,7 +953,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_SetMeridianPCurve(self, *args)
 
-    def MeridianValue(self, *args):
+    def MeridianValue(self, *args) -> "gp_Pnt2d" :
         """
         :param V:
         :type V: float
@@ -962,7 +962,7 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_MeridianValue(self, *args)
 
-    def MeridianOnAxis(self, *args):
+    def MeridianOnAxis(self, *args) -> "Standard_Boolean" :
         """
         :param V:
         :type V: float
@@ -971,252 +971,252 @@ class BRepPrim_OneAxis(object):
         """
         return _BRepPrim.BRepPrim_OneAxis_MeridianOnAxis(self, *args)
 
-    def MeridianClosed(self, *args):
+    def MeridianClosed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_MeridianClosed(self, *args)
 
-    def VMaxInfinite(self, *args):
+    def VMaxInfinite(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_VMaxInfinite(self, *args)
 
-    def VMinInfinite(self, *args):
+    def VMinInfinite(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_VMinInfinite(self, *args)
 
-    def HasTop(self, *args):
+    def HasTop(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_HasTop(self, *args)
 
-    def HasBottom(self, *args):
+    def HasBottom(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_HasBottom(self, *args)
 
-    def HasSides(self, *args):
+    def HasSides(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepPrim.BRepPrim_OneAxis_HasSides(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         :rtype: TopoDS_Shell
 
         """
         return _BRepPrim.BRepPrim_OneAxis_Shell(self, *args)
 
-    def LateralFace(self, *args):
+    def LateralFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_LateralFace(self, *args)
 
-    def TopFace(self, *args):
+    def TopFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_TopFace(self, *args)
 
-    def BottomFace(self, *args):
+    def BottomFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_BottomFace(self, *args)
 
-    def StartFace(self, *args):
+    def StartFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_StartFace(self, *args)
 
-    def EndFace(self, *args):
+    def EndFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepPrim.BRepPrim_OneAxis_EndFace(self, *args)
 
-    def LateralWire(self, *args):
+    def LateralWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_LateralWire(self, *args)
 
-    def LateralStartWire(self, *args):
+    def LateralStartWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_LateralStartWire(self, *args)
 
-    def LateralEndWire(self, *args):
+    def LateralEndWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_LateralEndWire(self, *args)
 
-    def TopWire(self, *args):
+    def TopWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_TopWire(self, *args)
 
-    def BottomWire(self, *args):
+    def BottomWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_BottomWire(self, *args)
 
-    def StartWire(self, *args):
+    def StartWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_StartWire(self, *args)
 
-    def AxisStartWire(self, *args):
+    def AxisStartWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_AxisStartWire(self, *args)
 
-    def EndWire(self, *args):
+    def EndWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_EndWire(self, *args)
 
-    def AxisEndWire(self, *args):
+    def AxisEndWire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
         """
         return _BRepPrim.BRepPrim_OneAxis_AxisEndWire(self, *args)
 
-    def AxisEdge(self, *args):
+    def AxisEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_AxisEdge(self, *args)
 
-    def StartEdge(self, *args):
+    def StartEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_StartEdge(self, *args)
 
-    def EndEdge(self, *args):
+    def EndEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_EndEdge(self, *args)
 
-    def StartTopEdge(self, *args):
+    def StartTopEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_StartTopEdge(self, *args)
 
-    def StartBottomEdge(self, *args):
+    def StartBottomEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_StartBottomEdge(self, *args)
 
-    def EndTopEdge(self, *args):
+    def EndTopEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_EndTopEdge(self, *args)
 
-    def EndBottomEdge(self, *args):
+    def EndBottomEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_EndBottomEdge(self, *args)
 
-    def TopEdge(self, *args):
+    def TopEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_TopEdge(self, *args)
 
-    def BottomEdge(self, *args):
+    def BottomEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepPrim.BRepPrim_OneAxis_BottomEdge(self, *args)
 
-    def AxisTopVertex(self, *args):
+    def AxisTopVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepPrim.BRepPrim_OneAxis_AxisTopVertex(self, *args)
 
-    def AxisBottomVertex(self, *args):
+    def AxisBottomVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepPrim.BRepPrim_OneAxis_AxisBottomVertex(self, *args)
 
-    def TopStartVertex(self, *args):
+    def TopStartVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepPrim.BRepPrim_OneAxis_TopStartVertex(self, *args)
 
-    def TopEndVertex(self, *args):
+    def TopEndVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepPrim.BRepPrim_OneAxis_TopEndVertex(self, *args)
 
-    def BottomStartVertex(self, *args):
+    def BottomStartVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepPrim.BRepPrim_OneAxis_BottomStartVertex(self, *args)
 
-    def BottomEndVertex(self, *args):
+    def BottomEndVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 

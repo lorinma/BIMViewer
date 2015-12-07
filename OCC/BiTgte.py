@@ -153,7 +153,7 @@ class BiTgte_Blend(object):
 
         """
         _BiTgte.BiTgte_Blend_swiginit(self,_BiTgte.new_BiTgte_Blend(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -168,7 +168,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Init(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear all the Fields.
 
@@ -177,7 +177,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Clear(self, *args)
 
-    def SetFaces(self, *args):
+    def SetFaces(self, *args) -> "void" :
         """
         * Set two faces of <myShape> on which the Sphere  must roll.
 
@@ -190,7 +190,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_SetFaces(self, *args)
 
-    def SetEdge(self, *args):
+    def SetEdge(self, *args) -> "void" :
         """
         * Set an edge of <myShape> to be rounded.
 
@@ -201,7 +201,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_SetEdge(self, *args)
 
-    def SetStoppingFace(self, *args):
+    def SetStoppingFace(self, *args) -> "void" :
         """
         * Set a face on which the fillet must stop.
 
@@ -212,7 +212,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_SetStoppingFace(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Compute the generated surfaces. If <BuildShape> is true, compute the resulting Shape. If false, only the blending surfaces are computed.
 
@@ -223,14 +223,14 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BiTgte.BiTgte_Blend_IsDone(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns the result
 
@@ -239,7 +239,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Shape(self, *args)
 
-    def NbSurfaces(self, *args):
+    def NbSurfaces(self, *args) -> "Standard_Integer" :
         """
         * returns the Number of generated surfaces.
 
@@ -248,7 +248,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_NbSurfaces(self, *args)
 
-    def CenterLines(self, *args):
+    def CenterLines(self, *args) -> "void" :
         """
         * set in <LC> all the center lines
 
@@ -259,7 +259,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_CenterLines(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_Surface" :
         """
         * returns the surface of range Index
 
@@ -276,7 +276,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Surface(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * returns the surface of range Index
 
@@ -293,7 +293,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_Face(self, *args)
 
-    def ContactType(self, *args):
+    def ContactType(self, *args) -> "BiTgte_ContactType" :
         """
         * returns the type of contact
 
@@ -304,7 +304,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_ContactType(self, *args)
 
-    def SupportShape1(self, *args):
+    def SupportShape1(self, *args) -> "TopoDS_Shape const" :
         """
         * gives the first support shape relative to SurfaceFillet(Index);
 
@@ -315,7 +315,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_SupportShape1(self, *args)
 
-    def SupportShape2(self, *args):
+    def SupportShape2(self, *args) -> "TopoDS_Shape const" :
         """
         * gives the second support shape relative to SurfaceFillet(Index);
 
@@ -326,7 +326,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_SupportShape2(self, *args)
 
-    def CurveOnShape1(self, *args):
+    def CurveOnShape1(self, *args) -> "Handle_Geom_Curve" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportShape1(Index)
 
@@ -337,7 +337,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_CurveOnShape1(self, *args)
 
-    def CurveOnShape2(self, *args):
+    def CurveOnShape2(self, *args) -> "Handle_Geom_Curve" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportShape2(Index)
 
@@ -348,7 +348,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_CurveOnShape2(self, *args)
 
-    def PCurveOnFace1(self, *args):
+    def PCurveOnFace1(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * gives the PCurve associated to CurvOnShape1(Index) on the support face Warning: returns a Null Handle if SupportShape1 is not a Face
 
@@ -359,7 +359,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_PCurveOnFace1(self, *args)
 
-    def PCurve1OnFillet(self, *args):
+    def PCurve1OnFillet(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * gives the PCurve associated to CurveOnShape1(Index) on the Fillet
 
@@ -370,7 +370,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_PCurve1OnFillet(self, *args)
 
-    def PCurveOnFace2(self, *args):
+    def PCurveOnFace2(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * gives the PCurve associated to CurveOnShape2(Index) on the support face Warning: returns a Null Handle if SupportShape2 is not a Face
 
@@ -381,7 +381,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_PCurveOnFace2(self, *args)
 
-    def PCurve2OnFillet(self, *args):
+    def PCurve2OnFillet(self, *args) -> "Handle_Geom2d_Curve" :
         """
         * gives the PCurve associated to CurveOnShape2(Index) on the fillet
 
@@ -392,14 +392,14 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_PCurve2OnFillet(self, *args)
 
-    def NbBranches(self, *args):
+    def NbBranches(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BiTgte.BiTgte_Blend_NbBranches(self, *args)
 
-    def IndicesOfBranche(self, *args):
+    def IndicesOfBranche(self, *args) -> "void" :
         """
         * Set in <From>,<To> the indices of the faces of the branche <Index>. i.e: Branche<Index> = Face(From) + Face(From+1) + ..+ Face(To)
 
@@ -414,7 +414,7 @@ class BiTgte_Blend(object):
         """
         return _BiTgte.BiTgte_Blend_IndicesOfBranche(self, *args)
 
-    def ComputeCenters(self, *args):
+    def ComputeCenters(self, *args) -> "void" :
         """
         * Computes the center lines
 
@@ -474,7 +474,7 @@ class BiTgte_CurveOnEdge(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _BiTgte.BiTgte_CurveOnEdge_swiginit(self,_BiTgte.new_BiTgte_CurveOnEdge(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param EonF:
         :type EonF: TopoDS_Edge &
@@ -513,7 +513,7 @@ class BiTgte_CurveOnVertex(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _BiTgte.BiTgte_CurveOnVertex_swiginit(self,_BiTgte.new_BiTgte_CurveOnVertex(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param EonF:
         :type EonF: TopoDS_Edge &
@@ -550,7 +550,7 @@ class BiTgte_DataMapIteratorOfDataMapOfShapeBox(OCC.TCollection.TCollection_Basi
 
         """
         _BiTgte.BiTgte_DataMapIteratorOfDataMapOfShapeBox_swiginit(self,_BiTgte.new_BiTgte_DataMapIteratorOfDataMapOfShapeBox(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BiTgte_DataMapOfShapeBox &
@@ -559,14 +559,14 @@ class BiTgte_DataMapIteratorOfDataMapOfShapeBox(OCC.TCollection.TCollection_Basi
         """
         return _BiTgte.BiTgte_DataMapIteratorOfDataMapOfShapeBox_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BiTgte.BiTgte_DataMapIteratorOfDataMapOfShapeBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
@@ -603,25 +603,25 @@ class BiTgte_DataMapNodeOfDataMapOfShapeBox(OCC.TCollection.TCollection_MapNode)
 
         """
         _BiTgte.BiTgte_DataMapNodeOfDataMapOfShapeBox_swiginit(self,_BiTgte.new_BiTgte_DataMapNodeOfDataMapOfShapeBox(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BiTgte.BiTgte_DataMapNodeOfDataMapOfShapeBox_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bnd_Box &" :
         """
         :rtype: Bnd_Box
 
         """
         return _BiTgte.BiTgte_DataMapNodeOfDataMapOfShapeBox_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BiTgte_DataMapNodeOfDataMapOfShapeBox self)"""
         return _BiTgte.BiTgte_DataMapNodeOfDataMapOfShapeBox__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox" :
         """GetHandle(BiTgte_DataMapNodeOfDataMapOfShapeBox self) -> Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox"""
         return _BiTgte.BiTgte_DataMapNodeOfDataMapOfShapeBox_GetHandle(self)
 
@@ -661,7 +661,7 @@ Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox._kill_pointed = new_instancemethod(
 Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_swigregister = _BiTgte.Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_swigregister
 Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_swigregister(Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox)
 
-def Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_DownCast(*args):
+def Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_DownCast(*args) -> "Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox const" :
   return _BiTgte.Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_DownCast(*args)
 Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_DownCast = _BiTgte.Handle_BiTgte_DataMapNodeOfDataMapOfShapeBox_DownCast
 
@@ -676,7 +676,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BiTgte.BiTgte_DataMapOfShapeBox_swiginit(self,_BiTgte.new_BiTgte_DataMapOfShapeBox(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BiTgte_DataMapOfShapeBox &" :
         """
         :param Other:
         :type Other: BiTgte_DataMapOfShapeBox &
@@ -685,7 +685,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BiTgte_DataMapOfShapeBox &" :
         """
         :param Other:
         :type Other: BiTgte_DataMapOfShapeBox &
@@ -694,7 +694,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -703,14 +703,14 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -721,7 +721,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -730,7 +730,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -739,7 +739,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Bnd_Box const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -748,7 +748,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Bnd_Box &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -757,7 +757,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -766,7 +766,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -775,7 +775,7 @@ class BiTgte_DataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
         """
         return _BiTgte.BiTgte_DataMapOfShapeBox_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BiTgte_DataMapOfShapeBox self)"""
         return _BiTgte.BiTgte_DataMapOfShapeBox__kill_pointed(self)
 
@@ -815,7 +815,7 @@ class BiTgte_HCurveOnEdge(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _BiTgte.BiTgte_HCurveOnEdge_swiginit(self,_BiTgte.new_BiTgte_HCurveOnEdge(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param C:
         :type C: BiTgte_CurveOnEdge &
@@ -824,18 +824,18 @@ class BiTgte_HCurveOnEdge(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _BiTgte.BiTgte_HCurveOnEdge_Set(self, *args)
 
-    def ChangeCurve(self, *args):
+    def ChangeCurve(self, *args) -> "BiTgte_CurveOnEdge &" :
         """
         :rtype: BiTgte_CurveOnEdge
 
         """
         return _BiTgte.BiTgte_HCurveOnEdge_ChangeCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BiTgte_HCurveOnEdge self)"""
         return _BiTgte.BiTgte_HCurveOnEdge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BiTgte_HCurveOnEdge" :
         """GetHandle(BiTgte_HCurveOnEdge self) -> Handle_BiTgte_HCurveOnEdge"""
         return _BiTgte.BiTgte_HCurveOnEdge_GetHandle(self)
 
@@ -875,7 +875,7 @@ Handle_BiTgte_HCurveOnEdge._kill_pointed = new_instancemethod(_BiTgte.Handle_BiT
 Handle_BiTgte_HCurveOnEdge_swigregister = _BiTgte.Handle_BiTgte_HCurveOnEdge_swigregister
 Handle_BiTgte_HCurveOnEdge_swigregister(Handle_BiTgte_HCurveOnEdge)
 
-def Handle_BiTgte_HCurveOnEdge_DownCast(*args):
+def Handle_BiTgte_HCurveOnEdge_DownCast(*args) -> "Handle_BiTgte_HCurveOnEdge const" :
   return _BiTgte.Handle_BiTgte_HCurveOnEdge_DownCast(*args)
 Handle_BiTgte_HCurveOnEdge_DownCast = _BiTgte.Handle_BiTgte_HCurveOnEdge_DownCast
 
@@ -892,7 +892,7 @@ class BiTgte_HCurveOnVertex(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _BiTgte.BiTgte_HCurveOnVertex_swiginit(self,_BiTgte.new_BiTgte_HCurveOnVertex(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param C:
         :type C: BiTgte_CurveOnVertex &
@@ -901,18 +901,18 @@ class BiTgte_HCurveOnVertex(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _BiTgte.BiTgte_HCurveOnVertex_Set(self, *args)
 
-    def ChangeCurve(self, *args):
+    def ChangeCurve(self, *args) -> "BiTgte_CurveOnVertex &" :
         """
         :rtype: BiTgte_CurveOnVertex
 
         """
         return _BiTgte.BiTgte_HCurveOnVertex_ChangeCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BiTgte_HCurveOnVertex self)"""
         return _BiTgte.BiTgte_HCurveOnVertex__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BiTgte_HCurveOnVertex" :
         """GetHandle(BiTgte_HCurveOnVertex self) -> Handle_BiTgte_HCurveOnVertex"""
         return _BiTgte.BiTgte_HCurveOnVertex_GetHandle(self)
 
@@ -952,7 +952,7 @@ Handle_BiTgte_HCurveOnVertex._kill_pointed = new_instancemethod(_BiTgte.Handle_B
 Handle_BiTgte_HCurveOnVertex_swigregister = _BiTgte.Handle_BiTgte_HCurveOnVertex_swigregister
 Handle_BiTgte_HCurveOnVertex_swigregister(Handle_BiTgte_HCurveOnVertex)
 
-def Handle_BiTgte_HCurveOnVertex_DownCast(*args):
+def Handle_BiTgte_HCurveOnVertex_DownCast(*args) -> "Handle_BiTgte_HCurveOnVertex const" :
   return _BiTgte.Handle_BiTgte_HCurveOnVertex_DownCast(*args)
 Handle_BiTgte_HCurveOnVertex_DownCast = _BiTgte.Handle_BiTgte_HCurveOnVertex_DownCast
 

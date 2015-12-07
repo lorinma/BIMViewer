@@ -186,7 +186,7 @@ class FilletSurf_Builder(object):
 
         """
         _FilletSurf.FilletSurf_Builder_swiginit(self,_FilletSurf.new_FilletSurf_Builder(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * //!---Purpose computation of the fillet (list of NUBS)
 
@@ -195,14 +195,14 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_Perform(self, *args)
 
-    def Simulate(self, *args):
+    def Simulate(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FilletSurf.FilletSurf_Builder_Simulate(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "FilletSurf_StatusDone" :
         """
         * gives the status about the computation of the fillet returns: IsOK :no problem during the computation IsNotOk: no result is produced IsPartial: the result is partial
 
@@ -211,7 +211,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_IsDone(self, *args)
 
-    def StatusError(self, *args):
+    def StatusError(self, *args) -> "FilletSurf_ErrorTypeStatus" :
         """
         * gives informations about error status if IsDone=IsNotOk returns EdgeNotG1: the edges are not G1 FacesNotG1 : two connected faces on a same support are not G1 EdgeNotOnShape: the edge is not on shape NotSharpEdge: the edge is not sharp PbFilletCompute: problem during the computation of the fillet
 
@@ -220,7 +220,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_StatusError(self, *args)
 
-    def NbSurface(self, *args):
+    def NbSurface(self, *args) -> "Standard_Integer" :
         """
         * gives the number of NUBS surfaces of the Fillet.
 
@@ -229,7 +229,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_NbSurface(self, *args)
 
-    def SurfaceFillet(self, *args):
+    def SurfaceFillet(self, *args) -> "Handle_Geom_Surface const &" :
         """
         * gives the NUBS surface of index Index.
 
@@ -240,7 +240,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_SurfaceFillet(self, *args)
 
-    def TolApp3d(self, *args):
+    def TolApp3d(self, *args) -> "Standard_Real" :
         """
         * gives the 3d tolerance reached during approximation of surface of index Index
 
@@ -251,7 +251,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_TolApp3d(self, *args)
 
-    def SupportFace1(self, *args):
+    def SupportFace1(self, *args) -> "TopoDS_Face const" :
         """
         * //!gives the first support face relative to SurfaceFillet(Index);
 
@@ -262,7 +262,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_SupportFace1(self, *args)
 
-    def SupportFace2(self, *args):
+    def SupportFace2(self, *args) -> "TopoDS_Face const" :
         """
         * //!gives the second support face relative to SurfaceFillet(Index);
 
@@ -273,7 +273,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_SupportFace2(self, *args)
 
-    def CurveOnFace1(self, *args):
+    def CurveOnFace1(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)
 
@@ -284,7 +284,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_CurveOnFace1(self, *args)
 
-    def CurveOnFace2(self, *args):
+    def CurveOnFace2(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)
 
@@ -295,7 +295,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_CurveOnFace2(self, *args)
 
-    def PCurveOnFace1(self, *args):
+    def PCurveOnFace1(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * //!gives the PCurve associated to CurvOnSup1(Index) on the support face
 
@@ -306,7 +306,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_PCurveOnFace1(self, *args)
 
-    def PCurve1OnFillet(self, *args):
+    def PCurve1OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnFace1(Index) on the Fillet
 
@@ -317,7 +317,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_PCurve1OnFillet(self, *args)
 
-    def PCurveOnFace2(self, *args):
+    def PCurveOnFace2(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the support face
 
@@ -328,7 +328,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_PCurveOnFace2(self, *args)
 
-    def PCurve2OnFillet(self, *args):
+    def PCurve2OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the fillet
 
@@ -339,7 +339,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_PCurve2OnFillet(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * //!gives the parameter of the fillet on the first edge.
 
@@ -348,7 +348,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * gives the parameter of the fillet on the last edge
 
@@ -357,21 +357,21 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_LastParameter(self, *args)
 
-    def StartSectionStatus(self, *args):
+    def StartSectionStatus(self, *args) -> "FilletSurf_StatusType" :
         """
         :rtype: FilletSurf_StatusType
 
         """
         return _FilletSurf.FilletSurf_Builder_StartSectionStatus(self, *args)
 
-    def EndSectionStatus(self, *args):
+    def EndSectionStatus(self, *args) -> "FilletSurf_StatusType" :
         """
         :rtype: FilletSurf_StatusType
 
         """
         return _FilletSurf.FilletSurf_Builder_EndSectionStatus(self, *args)
 
-    def NbSection(self, *args):
+    def NbSection(self, *args) -> "Standard_Integer" :
         """
         :param IndexSurf:
         :type IndexSurf: int
@@ -380,7 +380,7 @@ class FilletSurf_Builder(object):
         """
         return _FilletSurf.FilletSurf_Builder_NbSection(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "void" :
         """
         :param IndexSurf:
         :type IndexSurf: int
@@ -445,7 +445,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
 
         """
         _FilletSurf.FilletSurf_InternalBuilder_swiginit(self,_FilletSurf.new_FilletSurf_InternalBuilder(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         * Initializes the contour with a list of Edges 0 : no problem 1 : empty list 2 : the edges are not G1 3 : two connected faces on a same support are not G1 4 : the edge is not on shape 5 : NotSharpEdge: the edge is not sharp
 
@@ -458,21 +458,21 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_Perform(self, *args)
 
-    def Done(self, *args):
+    def Done(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_Done(self, *args)
 
-    def NbSurface(self, *args):
+    def NbSurface(self, *args) -> "Standard_Integer" :
         """
         * gives the number of NUBS surfaces of the Fillet.
 
@@ -481,7 +481,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_NbSurface(self, *args)
 
-    def SurfaceFillet(self, *args):
+    def SurfaceFillet(self, *args) -> "Handle_Geom_Surface const &" :
         """
         * gives the NUBS surface of index Index.
 
@@ -492,7 +492,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SurfaceFillet(self, *args)
 
-    def TolApp3d(self, *args):
+    def TolApp3d(self, *args) -> "Standard_Real" :
         """
         * gives the 3d tolerance reached during approximation of the surface of index Index
 
@@ -503,7 +503,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_TolApp3d(self, *args)
 
-    def SupportFace1(self, *args):
+    def SupportFace1(self, *args) -> "TopoDS_Face const" :
         """
         * //!gives the first support face relative to SurfaceFillet(Index);
 
@@ -514,7 +514,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SupportFace1(self, *args)
 
-    def SupportFace2(self, *args):
+    def SupportFace2(self, *args) -> "TopoDS_Face const" :
         """
         * //!gives the second support face relative to SurfaceFillet(Index);
 
@@ -525,7 +525,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SupportFace2(self, *args)
 
-    def CurveOnFace1(self, *args):
+    def CurveOnFace1(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)
 
@@ -536,7 +536,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_CurveOnFace1(self, *args)
 
-    def CurveOnFace2(self, *args):
+    def CurveOnFace2(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)
 
@@ -547,7 +547,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_CurveOnFace2(self, *args)
 
-    def PCurveOnFace1(self, *args):
+    def PCurveOnFace1(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * //!gives the PCurve associated to CurvOnSup1(Index) on the support face
 
@@ -558,7 +558,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurveOnFace1(self, *args)
 
-    def PCurve1OnFillet(self, *args):
+    def PCurve1OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnFace1(Index) on the Fillet
 
@@ -569,7 +569,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurve1OnFillet(self, *args)
 
-    def PCurveOnFace2(self, *args):
+    def PCurveOnFace2(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the support face
 
@@ -580,7 +580,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurveOnFace2(self, *args)
 
-    def PCurve2OnFillet(self, *args):
+    def PCurve2OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the fillet
 
@@ -591,7 +591,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurve2OnFillet(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * //!gives the parameter of the fillet on the first edge.
 
@@ -600,7 +600,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_FirstParameter(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * gives the parameter of the fillet on the last edge
 
@@ -609,28 +609,28 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_LastParameter(self, *args)
 
-    def StartSectionStatus(self, *args):
+    def StartSectionStatus(self, *args) -> "FilletSurf_StatusType" :
         """
         :rtype: FilletSurf_StatusType
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_StartSectionStatus(self, *args)
 
-    def EndSectionStatus(self, *args):
+    def EndSectionStatus(self, *args) -> "FilletSurf_StatusType" :
         """
         :rtype: FilletSurf_StatusType
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_EndSectionStatus(self, *args)
 
-    def Simulate(self, *args):
+    def Simulate(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_Simulate(self, *args)
 
-    def NbSection(self, *args):
+    def NbSection(self, *args) -> "Standard_Integer" :
         """
         :param IndexSurf:
         :type IndexSurf: int
@@ -639,7 +639,7 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_NbSection(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "void" :
         """
         :param IndexSurf:
         :type IndexSurf: int

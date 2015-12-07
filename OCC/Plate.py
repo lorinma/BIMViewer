@@ -135,7 +135,7 @@ class Plate_Array1OfPinpointConstraint(object):
 
         """
         _Plate.Plate_Array1OfPinpointConstraint_swiginit(self,_Plate.new_Plate_Array1OfPinpointConstraint(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Plate_PinpointConstraint &
@@ -144,21 +144,21 @@ class Plate_Array1OfPinpointConstraint(object):
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Plate.Plate_Array1OfPinpointConstraint_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Plate_Array1OfPinpointConstraint const &" :
         """
         :param Other:
         :type Other: Plate_Array1OfPinpointConstraint &
@@ -167,7 +167,7 @@ class Plate_Array1OfPinpointConstraint(object):
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Plate_Array1OfPinpointConstraint const &" :
         """
         :param Other:
         :type Other: Plate_Array1OfPinpointConstraint &
@@ -176,28 +176,28 @@ class Plate_Array1OfPinpointConstraint(object):
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -208,7 +208,7 @@ class Plate_Array1OfPinpointConstraint(object):
         """
         return _Plate.Plate_Array1OfPinpointConstraint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -217,7 +217,7 @@ class Plate_Array1OfPinpointConstraint(object):
         """
         return _Plate.Plate_Array1OfPinpointConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Plate_PinpointConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -266,14 +266,14 @@ class Plate_D1(object):
 
         """
         _Plate.Plate_D1_swiginit(self,_Plate.new_Plate_D1(*args))
-    def DU(self, *args):
+    def DU(self, *args) -> "gp_XYZ const" :
         """
         :rtype: gp_XYZ
 
         """
         return _Plate.Plate_D1_DU(self, *args)
 
-    def DV(self, *args):
+    def DV(self, *args) -> "gp_XYZ const" :
         """
         :rtype: gp_XYZ
 
@@ -413,14 +413,14 @@ class Plate_FreeGtoCConstraint(object):
 
         """
         _Plate.Plate_FreeGtoCConstraint_swiginit(self,_Plate.new_Plate_FreeGtoCConstraint(*args))
-    def nb_PPC(self, *args):
+    def nb_PPC(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_FreeGtoCConstraint_nb_PPC(self, *args)
 
-    def GetPPC(self, *args):
+    def GetPPC(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -429,14 +429,14 @@ class Plate_FreeGtoCConstraint(object):
         """
         return _Plate.Plate_FreeGtoCConstraint_GetPPC(self, *args)
 
-    def nb_LSC(self, *args):
+    def nb_LSC(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_FreeGtoCConstraint_nb_LSC(self, *args)
 
-    def LSC(self, *args):
+    def LSC(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -472,7 +472,7 @@ class Plate_GlobalTranslationConstraint(object):
 
         """
         _Plate.Plate_GlobalTranslationConstraint_swiginit(self,_Plate.new_Plate_GlobalTranslationConstraint(*args))
-    def LXYZC(self, *args):
+    def LXYZC(self, *args) -> "Plate_LinearXYZConstraint const &" :
         """
         :rtype: Plate_LinearXYZConstraint
 
@@ -581,14 +581,14 @@ class Plate_GtoCConstraint(object):
 
         """
         _Plate.Plate_GtoCConstraint_swiginit(self,_Plate.new_Plate_GtoCConstraint(*args))
-    def nb_PPC(self, *args):
+    def nb_PPC(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_GtoCConstraint_nb_PPC(self, *args)
 
-    def GetPPC(self, *args):
+    def GetPPC(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -597,7 +597,7 @@ class Plate_GtoCConstraint(object):
         """
         return _Plate.Plate_GtoCConstraint_GetPPC(self, *args)
 
-    def D1SurfInit(self, *args):
+    def D1SurfInit(self, *args) -> "Plate_D1 const &" :
         """
         :rtype: Plate_D1
 
@@ -640,7 +640,7 @@ class Plate_HArray1OfPinpointConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _Plate.Plate_HArray1OfPinpointConstraint_swiginit(self,_Plate.new_Plate_HArray1OfPinpointConstraint(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Plate_PinpointConstraint &
@@ -649,28 +649,28 @@ class Plate_HArray1OfPinpointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -681,7 +681,7 @@ class Plate_HArray1OfPinpointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -690,7 +690,7 @@ class Plate_HArray1OfPinpointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Plate_PinpointConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -699,25 +699,25 @@ class Plate_HArray1OfPinpointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "Plate_Array1OfPinpointConstraint const &" :
         """
         :rtype: Plate_Array1OfPinpointConstraint
 
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "Plate_Array1OfPinpointConstraint &" :
         """
         :rtype: Plate_Array1OfPinpointConstraint
 
         """
         return _Plate.Plate_HArray1OfPinpointConstraint_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Plate_HArray1OfPinpointConstraint self)"""
         return _Plate.Plate_HArray1OfPinpointConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Plate_HArray1OfPinpointConstraint" :
         """GetHandle(Plate_HArray1OfPinpointConstraint self) -> Handle_Plate_HArray1OfPinpointConstraint"""
         return _Plate.Plate_HArray1OfPinpointConstraint_GetHandle(self)
 
@@ -764,7 +764,7 @@ Handle_Plate_HArray1OfPinpointConstraint._kill_pointed = new_instancemethod(_Pla
 Handle_Plate_HArray1OfPinpointConstraint_swigregister = _Plate.Handle_Plate_HArray1OfPinpointConstraint_swigregister
 Handle_Plate_HArray1OfPinpointConstraint_swigregister(Handle_Plate_HArray1OfPinpointConstraint)
 
-def Handle_Plate_HArray1OfPinpointConstraint_DownCast(*args):
+def Handle_Plate_HArray1OfPinpointConstraint_DownCast(*args) -> "Handle_Plate_HArray1OfPinpointConstraint const" :
   return _Plate.Handle_Plate_HArray1OfPinpointConstraint_DownCast(*args)
 Handle_Plate_HArray1OfPinpointConstraint_DownCast = _Plate.Handle_Plate_HArray1OfPinpointConstraint_DownCast
 
@@ -785,7 +785,7 @@ class Plate_LineConstraint(object):
 
         """
         _Plate.Plate_LineConstraint_swiginit(self,_Plate.new_Plate_LineConstraint(*args))
-    def LSC(self, *args):
+    def LSC(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :rtype: Plate_LinearScalarConstraint
 
@@ -838,21 +838,21 @@ class Plate_LinearScalarConstraint(object):
 
         """
         _Plate.Plate_LinearScalarConstraint_swiginit(self,_Plate.new_Plate_LinearScalarConstraint(*args))
-    def GetPPC(self, *args):
+    def GetPPC(self, *args) -> "Plate_Array1OfPinpointConstraint const &" :
         """
         :rtype: Plate_Array1OfPinpointConstraint
 
         """
         return _Plate.Plate_LinearScalarConstraint_GetPPC(self, *args)
 
-    def Coeff(self, *args):
+    def Coeff(self, *args) -> "TColgp_Array2OfXYZ const &" :
         """
         :rtype: TColgp_Array2OfXYZ
 
         """
         return _Plate.Plate_LinearScalarConstraint_Coeff(self, *args)
 
-    def SetPPC(self, *args):
+    def SetPPC(self, *args) -> "void" :
         """
         * Sets the PinPointConstraint of index Index to Value raise if Index is greater than the length of ppc or the Row length of coeff or lower than 1
 
@@ -865,7 +865,7 @@ class Plate_LinearScalarConstraint(object):
         """
         return _Plate.Plate_LinearScalarConstraint_SetPPC(self, *args)
 
-    def SetCoeff(self, *args):
+    def SetCoeff(self, *args) -> "void" :
         """
         * Sets the coeff of index (Row,Col) to Value raise if Row (respectively Col) is greater than the Row (respectively Column) length of coeff
 
@@ -923,21 +923,21 @@ class Plate_LinearXYZConstraint(object):
 
         """
         _Plate.Plate_LinearXYZConstraint_swiginit(self,_Plate.new_Plate_LinearXYZConstraint(*args))
-    def GetPPC(self, *args):
+    def GetPPC(self, *args) -> "Plate_Array1OfPinpointConstraint const &" :
         """
         :rtype: Plate_Array1OfPinpointConstraint
 
         """
         return _Plate.Plate_LinearXYZConstraint_GetPPC(self, *args)
 
-    def Coeff(self, *args):
+    def Coeff(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :rtype: TColStd_Array2OfReal
 
         """
         return _Plate.Plate_LinearXYZConstraint_Coeff(self, *args)
 
-    def SetPPC(self, *args):
+    def SetPPC(self, *args) -> "void" :
         """
         * Sets the PinPointConstraint of index Index to Value raise if Index is greater than the length of ppc or the Row length of coeff or lower than 1
 
@@ -950,7 +950,7 @@ class Plate_LinearXYZConstraint(object):
         """
         return _Plate.Plate_LinearXYZConstraint_SetPPC(self, *args)
 
-    def SetCoeff(self, *args):
+    def SetCoeff(self, *args) -> "void" :
         """
         * Sets the coeff of index (Row,Col) to Value raise if Row (respectively Col) is greater than the Row (respectively Column) length of coeff
 
@@ -1000,28 +1000,28 @@ class Plate_PinpointConstraint(object):
 
         """
         _Plate.Plate_PinpointConstraint_swiginit(self,_Plate.new_Plate_PinpointConstraint(*args))
-    def Pnt2d(self, *args):
+    def Pnt2d(self, *args) -> "gp_XY const" :
         """
         :rtype: gp_XY
 
         """
         return _Plate.Plate_PinpointConstraint_Pnt2d(self, *args)
 
-    def Idu(self, *args):
+    def Idu(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_PinpointConstraint_Idu(self, *args)
 
-    def Idv(self, *args):
+    def Idv(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_PinpointConstraint_Idv(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_XYZ const" :
         """
         :rtype: gp_XYZ
 
@@ -1061,7 +1061,7 @@ class Plate_PlaneConstraint(object):
 
         """
         _Plate.Plate_PlaneConstraint_swiginit(self,_Plate.new_Plate_PlaneConstraint(*args))
-    def LSC(self, *args):
+    def LSC(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :rtype: Plate_LinearScalarConstraint
 
@@ -1094,7 +1094,7 @@ class Plate_Plate(object):
 
         """
         _Plate.Plate_Plate_swiginit(self,_Plate.new_Plate_Plate(*args))
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Plate_Plate &" :
         """
         :param Ref:
         :type Ref: Plate_Plate &
@@ -1103,7 +1103,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_Copy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Plate_Plate &" :
         """
         :param Ref:
         :type Ref: Plate_Plate &
@@ -1112,7 +1112,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_Set(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         :param PConst:
         :type PConst: Plate_PinpointConstraint &
@@ -1153,7 +1153,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_Load(self, *args)
 
-    def SolveTI(self, *args):
+    def SolveTI(self, *args) -> "void" :
         """
         :param ord: default value is 4
         :type ord: int
@@ -1164,7 +1164,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_SolveTI(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns True if all has been correctly done.
 
@@ -1173,14 +1173,14 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_IsDone(self, *args)
 
-    def destroy(self, *args):
+    def destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Plate.Plate_Plate_destroy(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * reset the Plate in the initial state ( same as after Create())
 
@@ -1189,7 +1189,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_Init(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "gp_XYZ" :
         """
         :param point2d:
         :type point2d: gp_XY
@@ -1198,7 +1198,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_Evaluate(self, *args)
 
-    def EvaluateDerivative(self, *args):
+    def EvaluateDerivative(self, *args) -> "gp_XYZ" :
         """
         :param point2d:
         :type point2d: gp_XY
@@ -1211,7 +1211,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_EvaluateDerivative(self, *args)
 
-    def CoefPol(self, *args):
+    def CoefPol(self, *args) -> "void" :
         """
         :param Coefs:
         :type Coefs: Handle_TColgp_HArray2OfXYZ
@@ -1220,7 +1220,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_CoefPol(self, *args)
 
-    def SetPolynomialPartOnly(self, *args):
+    def SetPolynomialPartOnly(self, *args) -> "void" :
         """
         :param PPOnly: default value is Standard_True
         :type PPOnly: bool
@@ -1229,14 +1229,14 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_SetPolynomialPartOnly(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Plate.Plate_Plate_Continuity(self, *args)
 
-    def UVBox(self, *args):
+    def UVBox(self, *args) -> "void" :
         """
         :param UMin:
         :type UMin: float &
@@ -1251,7 +1251,7 @@ class Plate_Plate(object):
         """
         return _Plate.Plate_Plate_UVBox(self, *args)
 
-    def UVConstraints(self, *args):
+    def UVConstraints(self, *args) -> "void" :
         """
         :param Seq:
         :type Seq: TColgp_SequenceOfXY
@@ -1299,7 +1299,7 @@ class Plate_SampledCurveConstraint(object):
 
         """
         _Plate.Plate_SampledCurveConstraint_swiginit(self,_Plate.new_Plate_SampledCurveConstraint(*args))
-    def LXYZC(self, *args):
+    def LXYZC(self, *args) -> "Plate_LinearXYZConstraint const &" :
         """
         :rtype: Plate_LinearXYZConstraint
 
@@ -1334,18 +1334,18 @@ class Plate_SequenceNodeOfSequenceOfLinearScalarConstraint(OCC.TCollection.TColl
 
         """
         _Plate.Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_swiginit(self,_Plate.new_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_LinearScalarConstraint &" :
         """
         :rtype: Plate_LinearScalarConstraint
 
         """
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Plate_SequenceNodeOfSequenceOfLinearScalarConstraint self)"""
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearScalarConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint" :
         """GetHandle(Plate_SequenceNodeOfSequenceOfLinearScalarConstraint self) -> Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint"""
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_GetHandle(self)
 
@@ -1384,7 +1384,7 @@ Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint._kill_pointed = new_
 Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_swigregister = _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_swigregister
 Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_swigregister(Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint)
 
-def Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_DownCast(*args):
+def Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_DownCast(*args) -> "Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint const" :
   return _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_DownCast(*args)
 Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_DownCast = _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearScalarConstraint_DownCast
 
@@ -1403,18 +1403,18 @@ class Plate_SequenceNodeOfSequenceOfLinearXYZConstraint(OCC.TCollection.TCollect
 
         """
         _Plate.Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_swiginit(self,_Plate.new_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_LinearXYZConstraint &" :
         """
         :rtype: Plate_LinearXYZConstraint
 
         """
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Plate_SequenceNodeOfSequenceOfLinearXYZConstraint self)"""
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearXYZConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint" :
         """GetHandle(Plate_SequenceNodeOfSequenceOfLinearXYZConstraint self) -> Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint"""
         return _Plate.Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_GetHandle(self)
 
@@ -1453,7 +1453,7 @@ Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint._kill_pointed = new_ins
 Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_swigregister = _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_swigregister
 Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_swigregister(Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint)
 
-def Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_DownCast(*args):
+def Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_DownCast(*args) -> "Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint const" :
   return _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_DownCast(*args)
 Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_DownCast = _Plate.Handle_Plate_SequenceNodeOfSequenceOfLinearXYZConstraint_DownCast
 
@@ -1472,18 +1472,18 @@ class Plate_SequenceNodeOfSequenceOfPinpointConstraint(OCC.TCollection.TCollecti
 
         """
         _Plate.Plate_SequenceNodeOfSequenceOfPinpointConstraint_swiginit(self,_Plate.new_Plate_SequenceNodeOfSequenceOfPinpointConstraint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_PinpointConstraint &" :
         """
         :rtype: Plate_PinpointConstraint
 
         """
         return _Plate.Plate_SequenceNodeOfSequenceOfPinpointConstraint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Plate_SequenceNodeOfSequenceOfPinpointConstraint self)"""
         return _Plate.Plate_SequenceNodeOfSequenceOfPinpointConstraint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint" :
         """GetHandle(Plate_SequenceNodeOfSequenceOfPinpointConstraint self) -> Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint"""
         return _Plate.Plate_SequenceNodeOfSequenceOfPinpointConstraint_GetHandle(self)
 
@@ -1522,7 +1522,7 @@ Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint._kill_pointed = new_inst
 Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_swigregister = _Plate.Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_swigregister
 Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_swigregister(Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint)
 
-def Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_DownCast(*args):
+def Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_DownCast(*args) -> "Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint const" :
   return _Plate.Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_DownCast(*args)
 Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_DownCast = _Plate.Handle_Plate_SequenceNodeOfSequenceOfPinpointConstraint_DownCast
 
@@ -1535,14 +1535,14 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
 
         """
         _Plate.Plate_SequenceOfLinearScalarConstraint_swiginit(self,_Plate.new_Plate_SequenceOfLinearScalarConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Plate_SequenceOfLinearScalarConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfLinearScalarConstraint &
@@ -1551,7 +1551,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Plate_SequenceOfLinearScalarConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfLinearScalarConstraint &
@@ -1560,7 +1560,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_LinearScalarConstraint &
@@ -1573,7 +1573,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_LinearScalarConstraint &
@@ -1586,7 +1586,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1603,7 +1603,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1620,21 +1620,21 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :rtype: Plate_LinearScalarConstraint
 
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :rtype: Plate_LinearScalarConstraint
 
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1645,7 +1645,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_LinearScalarConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -1654,7 +1654,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1665,7 +1665,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Plate_LinearScalarConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -1674,7 +1674,7 @@ class Plate_SequenceOfLinearScalarConstraint(OCC.TCollection.TCollection_BaseSeq
         """
         return _Plate.Plate_SequenceOfLinearScalarConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1724,14 +1724,14 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
 
         """
         _Plate.Plate_SequenceOfLinearXYZConstraint_swiginit(self,_Plate.new_Plate_SequenceOfLinearXYZConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Plate_SequenceOfLinearXYZConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfLinearXYZConstraint &
@@ -1740,7 +1740,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Plate_SequenceOfLinearXYZConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfLinearXYZConstraint &
@@ -1749,7 +1749,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_LinearXYZConstraint &
@@ -1762,7 +1762,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_LinearXYZConstraint &
@@ -1775,7 +1775,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1792,7 +1792,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1809,21 +1809,21 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Plate_LinearXYZConstraint const &" :
         """
         :rtype: Plate_LinearXYZConstraint
 
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Plate_LinearXYZConstraint const &" :
         """
         :rtype: Plate_LinearXYZConstraint
 
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1834,7 +1834,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_LinearXYZConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -1843,7 +1843,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1854,7 +1854,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Plate_LinearXYZConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -1863,7 +1863,7 @@ class Plate_SequenceOfLinearXYZConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _Plate.Plate_SequenceOfLinearXYZConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1913,14 +1913,14 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _Plate.Plate_SequenceOfPinpointConstraint_swiginit(self,_Plate.new_Plate_SequenceOfPinpointConstraint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Plate_SequenceOfPinpointConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfPinpointConstraint &
@@ -1929,7 +1929,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Plate_SequenceOfPinpointConstraint const &" :
         """
         :param Other:
         :type Other: Plate_SequenceOfPinpointConstraint &
@@ -1938,7 +1938,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_PinpointConstraint &
@@ -1951,7 +1951,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Plate_PinpointConstraint &
@@ -1964,7 +1964,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1981,7 +1981,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1998,21 +1998,21 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :rtype: Plate_PinpointConstraint
 
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :rtype: Plate_PinpointConstraint
 
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2023,7 +2023,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Plate_PinpointConstraint const &" :
         """
         :param Index:
         :type Index: int
@@ -2032,7 +2032,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2043,7 +2043,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Plate_PinpointConstraint &" :
         """
         :param Index:
         :type Index: int
@@ -2052,7 +2052,7 @@ class Plate_SequenceOfPinpointConstraint(OCC.TCollection.TCollection_BaseSequenc
         """
         return _Plate.Plate_SequenceOfPinpointConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

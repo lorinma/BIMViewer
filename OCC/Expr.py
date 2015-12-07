@@ -115,7 +115,7 @@ import OCC.TCollection
 class expr(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CopyShare(*args):
+    def CopyShare(*args) -> "Handle_Expr_GeneralExpression" :
         """
         :param exp:
         :type exp: Handle_Expr_GeneralExpression &
@@ -125,7 +125,7 @@ class expr(object):
         return _Expr.expr_CopyShare(*args)
 
     CopyShare = staticmethod(CopyShare)
-    def NbOfFreeVariables(*args):
+    def NbOfFreeVariables(*args) -> "Standard_Integer" :
         """
         :param exp:
         :type exp: Handle_Expr_GeneralExpression &
@@ -139,7 +139,7 @@ class expr(object):
         return _Expr.expr_NbOfFreeVariables(*args)
 
     NbOfFreeVariables = staticmethod(NbOfFreeVariables)
-    def Sign(*args):
+    def Sign(*args) -> "Standard_Real" :
         """
         :param val:
         :type val: float
@@ -163,7 +163,7 @@ expr._kill_pointed = new_instancemethod(_Expr.expr__kill_pointed,None,expr)
 expr_swigregister = _Expr.expr_swigregister
 expr_swigregister(expr)
 
-def expr_CopyShare(*args):
+def expr_CopyShare(*args) -> "Handle_Expr_GeneralExpression" :
   """
     :param exp:
     :type exp: Handle_Expr_GeneralExpression &
@@ -172,7 +172,7 @@ def expr_CopyShare(*args):
     """
   return _Expr.expr_CopyShare(*args)
 
-def expr_NbOfFreeVariables(*args):
+def expr_NbOfFreeVariables(*args) -> "Standard_Integer" :
   """
     :param exp:
     :type exp: Handle_Expr_GeneralExpression &
@@ -185,7 +185,7 @@ def expr_NbOfFreeVariables(*args):
     """
   return _Expr.expr_NbOfFreeVariables(*args)
 
-def expr_Sign(*args):
+def expr_Sign(*args) -> "Standard_Real" :
   """
     :param val:
     :type val: float
@@ -215,7 +215,7 @@ class Expr_Array1OfGeneralExpression(object):
 
         """
         _Expr.Expr_Array1OfGeneralExpression_swiginit(self,_Expr.new_Expr_Array1OfGeneralExpression(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Expr_GeneralExpression &
@@ -224,21 +224,21 @@ class Expr_Array1OfGeneralExpression(object):
         """
         return _Expr.Expr_Array1OfGeneralExpression_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_Array1OfGeneralExpression_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Expr.Expr_Array1OfGeneralExpression_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_Array1OfGeneralExpression const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfGeneralExpression &
@@ -247,7 +247,7 @@ class Expr_Array1OfGeneralExpression(object):
         """
         return _Expr.Expr_Array1OfGeneralExpression_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_Array1OfGeneralExpression const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfGeneralExpression &
@@ -256,28 +256,28 @@ class Expr_Array1OfGeneralExpression(object):
         """
         return _Expr.Expr_Array1OfGeneralExpression_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfGeneralExpression_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfGeneralExpression_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfGeneralExpression_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -288,7 +288,7 @@ class Expr_Array1OfGeneralExpression(object):
         """
         return _Expr.Expr_Array1OfGeneralExpression_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :param Index:
         :type Index: int
@@ -297,7 +297,7 @@ class Expr_Array1OfGeneralExpression(object):
         """
         return _Expr.Expr_Array1OfGeneralExpression_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_GeneralExpression &" :
         """
         :param Index:
         :type Index: int
@@ -350,7 +350,7 @@ class Expr_Array1OfNamedUnknown(object):
 
         """
         _Expr.Expr_Array1OfNamedUnknown_swiginit(self,_Expr.new_Expr_Array1OfNamedUnknown(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Expr_NamedUnknown &
@@ -359,21 +359,21 @@ class Expr_Array1OfNamedUnknown(object):
         """
         return _Expr.Expr_Array1OfNamedUnknown_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_Array1OfNamedUnknown_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Expr.Expr_Array1OfNamedUnknown_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_Array1OfNamedUnknown const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfNamedUnknown &
@@ -382,7 +382,7 @@ class Expr_Array1OfNamedUnknown(object):
         """
         return _Expr.Expr_Array1OfNamedUnknown_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_Array1OfNamedUnknown const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfNamedUnknown &
@@ -391,28 +391,28 @@ class Expr_Array1OfNamedUnknown(object):
         """
         return _Expr.Expr_Array1OfNamedUnknown_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfNamedUnknown_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfNamedUnknown_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfNamedUnknown_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -423,7 +423,7 @@ class Expr_Array1OfNamedUnknown(object):
         """
         return _Expr.Expr_Array1OfNamedUnknown_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedUnknown const &" :
         """
         :param Index:
         :type Index: int
@@ -432,7 +432,7 @@ class Expr_Array1OfNamedUnknown(object):
         """
         return _Expr.Expr_Array1OfNamedUnknown_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_NamedUnknown &" :
         """
         :param Index:
         :type Index: int
@@ -485,7 +485,7 @@ class Expr_Array1OfSingleRelation(object):
 
         """
         _Expr.Expr_Array1OfSingleRelation_swiginit(self,_Expr.new_Expr_Array1OfSingleRelation(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Expr_SingleRelation &
@@ -494,21 +494,21 @@ class Expr_Array1OfSingleRelation(object):
         """
         return _Expr.Expr_Array1OfSingleRelation_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_Array1OfSingleRelation_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Expr.Expr_Array1OfSingleRelation_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_Array1OfSingleRelation const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfSingleRelation &
@@ -517,7 +517,7 @@ class Expr_Array1OfSingleRelation(object):
         """
         return _Expr.Expr_Array1OfSingleRelation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_Array1OfSingleRelation const &" :
         """
         :param Other:
         :type Other: Expr_Array1OfSingleRelation &
@@ -526,28 +526,28 @@ class Expr_Array1OfSingleRelation(object):
         """
         return _Expr.Expr_Array1OfSingleRelation_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfSingleRelation_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfSingleRelation_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Expr.Expr_Array1OfSingleRelation_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -558,7 +558,7 @@ class Expr_Array1OfSingleRelation(object):
         """
         return _Expr.Expr_Array1OfSingleRelation_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_SingleRelation const &" :
         """
         :param Index:
         :type Index: int
@@ -567,7 +567,7 @@ class Expr_Array1OfSingleRelation(object):
         """
         return _Expr.Expr_Array1OfSingleRelation_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_SingleRelation &" :
         """
         :param Index:
         :type Index: int
@@ -603,7 +603,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbSubExpressions(self, *args):
+    def NbSubExpressions(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of sub-expressions contained in <self> ( >= 0)
 
@@ -612,7 +612,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_NbSubExpressions(self, *args)
 
-    def SubExpression(self, *args):
+    def SubExpression(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         * Returns the <I>-th sub-expression of <self> raises OutOfRange if <I> > NbSubExpressions(me)
 
@@ -623,7 +623,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_SubExpression(self, *args)
 
-    def Simplified(self, *args):
+    def Simplified(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns a GeneralExpression after replacement of NamedUnknowns by an associated expression and after values computation.
 
@@ -632,7 +632,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Simplified(self, *args)
 
-    def ShallowSimplified(self, *args):
+    def ShallowSimplified(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns a GeneralExpression after a simplification of the arguments of <self>.
 
@@ -641,7 +641,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_ShallowSimplified(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns a copy of <self> having the same unknowns and functions.
 
@@ -650,7 +650,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Copy(self, *args)
 
-    def ContainsUnknowns(self, *args):
+    def ContainsUnknowns(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> contains NamedUnknowns.
 
@@ -659,7 +659,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_ContainsUnknowns(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <exp> is contained in <self>.
 
@@ -670,7 +670,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Contains(self, *args)
 
-    def IsLinear(self, *args):
+    def IsLinear(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> is linear on every NamedUnknown it contains.
 
@@ -679,7 +679,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_IsLinear(self, *args)
 
-    def IsShareable(self, *args):
+    def IsShareable(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> can be shared by one or more expressions or must be copied. This method returns False as a default value. To be redefined ( especially for NamedUnknown).
 
@@ -688,7 +688,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_IsShareable(self, *args)
 
-    def IsIdentical(self, *args):
+    def IsIdentical(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> and <Other> define the same expression. Warning: This method does not include any simplification before testing. It could also be very slow; to be used carefully.
 
@@ -699,7 +699,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_IsIdentical(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns the derivative on <X> unknown of <self>
 
@@ -710,7 +710,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Derivative(self, *args)
 
-    def NDerivative(self, *args):
+    def NDerivative(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns the <N>-th derivative on <X> unknown of <self>. Raise OutOfRange if N <= 0
 
@@ -723,7 +723,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_NDerivative(self, *args)
 
-    def Replace(self, *args):
+    def Replace(self, *args) -> "void" :
         """
         * Replaces all occurences of <var> with copies of <with> in <self>. Copies of <with> are made with the Copy() method. Raises InvalidOperand if <with> contains <self>.
 
@@ -736,7 +736,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Replace(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "Standard_Real" :
         """
         * Returns the value of <self> (as a Real) by replacement of <vars> by <vals>. Raises NotEvaluable if <self> contains NamedUnknown not in <vars> or NumericError if result cannot be computed.
 
@@ -749,7 +749,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_Evaluate(self, *args)
 
-    def EvaluateNumeric(self, *args):
+    def EvaluateNumeric(self, *args) -> "Standard_Real" :
         """
         * Returns the value of <self> (as a Real) by replacement of <vars> by <vals>. Raises NotEvaluable if <self> contains NamedUnknown not in <vars> or NumericError if result cannot be computed.
 
@@ -758,7 +758,7 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_EvaluateNumeric(self, *args)
 
-    def String(self, *args):
+    def String(self, *args) -> "TCollection_AsciiString" :
         """
         * returns a string representing <self> in a readable way.
 
@@ -767,11 +767,11 @@ class Expr_GeneralExpression(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralExpression_String(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_GeneralExpression self)"""
         return _Expr.Expr_GeneralExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_GeneralExpression" :
         """GetHandle(Expr_GeneralExpression self) -> Handle_Expr_GeneralExpression"""
         return _Expr.Expr_GeneralExpression_GetHandle(self)
 
@@ -825,7 +825,7 @@ Handle_Expr_GeneralExpression._kill_pointed = new_instancemethod(_Expr.Handle_Ex
 Handle_Expr_GeneralExpression_swigregister = _Expr.Handle_Expr_GeneralExpression_swigregister
 Handle_Expr_GeneralExpression_swigregister(Handle_Expr_GeneralExpression)
 
-def Handle_Expr_GeneralExpression_DownCast(*args):
+def Handle_Expr_GeneralExpression_DownCast(*args) -> "Handle_Expr_GeneralExpression const" :
   return _Expr.Handle_Expr_GeneralExpression_DownCast(*args)
 Handle_Expr_GeneralExpression_DownCast = _Expr.Handle_Expr_GeneralExpression_DownCast
 
@@ -833,7 +833,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbOfVariables(self, *args):
+    def NbOfVariables(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of variables of <self>.
 
@@ -842,7 +842,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_NbOfVariables(self, *args)
 
-    def Variable(self, *args):
+    def Variable(self, *args) -> "Handle_Expr_NamedUnknown" :
         """
         * Returns the variable denoted by <index> in <self>. Raises OutOfRange if index > NbOfVariables.
 
@@ -853,7 +853,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_Variable(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns a copy of <self> with the same form.
 
@@ -862,7 +862,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_Copy(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns Derivative of <self> for variable <var>.
 
@@ -881,7 +881,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_Derivative(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "Standard_Real" :
         """
         * Computes the value of <self> with the given variables. Raises NotEvaluable if <vars> does not match all variables of <self>.
 
@@ -894,7 +894,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_Evaluate(self, *args)
 
-    def IsIdentical(self, *args):
+    def IsIdentical(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> and <func> are similar functions (same name and same used expression).
 
@@ -905,7 +905,7 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_IsIdentical(self, *args)
 
-    def IsLinearOnVariable(self, *args):
+    def IsLinearOnVariable(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> is linear on variable on range <index>
 
@@ -916,18 +916,18 @@ class Expr_GeneralFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralFunction_IsLinearOnVariable(self, *args)
 
-    def GetStringName(self, *args):
+    def GetStringName(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _Expr.Expr_GeneralFunction_GetStringName(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_GeneralFunction self)"""
         return _Expr.Expr_GeneralFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_GeneralFunction" :
         """GetHandle(Expr_GeneralFunction self) -> Handle_Expr_GeneralFunction"""
         return _Expr.Expr_GeneralFunction_GetHandle(self)
 
@@ -973,7 +973,7 @@ Handle_Expr_GeneralFunction._kill_pointed = new_instancemethod(_Expr.Handle_Expr
 Handle_Expr_GeneralFunction_swigregister = _Expr.Handle_Expr_GeneralFunction_swigregister
 Handle_Expr_GeneralFunction_swigregister(Handle_Expr_GeneralFunction)
 
-def Handle_Expr_GeneralFunction_DownCast(*args):
+def Handle_Expr_GeneralFunction_DownCast(*args) -> "Handle_Expr_GeneralFunction const" :
   return _Expr.Handle_Expr_GeneralFunction_DownCast(*args)
 Handle_Expr_GeneralFunction_DownCast = _Expr.Handle_Expr_GeneralFunction_DownCast
 
@@ -981,7 +981,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsSatisfied(self, *args):
+    def IsSatisfied(self, *args) -> "Standard_Boolean" :
         """
         * Returns the current status of the relation
 
@@ -990,7 +990,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_IsSatisfied(self, *args)
 
-    def IsLinear(self, *args):
+    def IsLinear(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <self> is linear between its NamedUnknowns.
 
@@ -999,7 +999,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_IsLinear(self, *args)
 
-    def Simplified(self, *args):
+    def Simplified(self, *args) -> "Handle_Expr_GeneralRelation" :
         """
         * Returns a GeneralRelation after replacement of NamedUnknowns by an associated expression, and after values computation.
 
@@ -1008,7 +1008,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_Simplified(self, *args)
 
-    def Simplify(self, *args):
+    def Simplify(self, *args) -> "void" :
         """
         * Replaces NamedUnknowns by associated expressions, and computes values in <self>.
 
@@ -1017,7 +1017,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_Simplify(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Expr_GeneralRelation" :
         """
         * Returns a copy of <self> having the same unknowns and functions.
 
@@ -1026,7 +1026,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_Copy(self, *args)
 
-    def NbOfSubRelations(self, *args):
+    def NbOfSubRelations(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of relations contained in <self>.
 
@@ -1035,7 +1035,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_NbOfSubRelations(self, *args)
 
-    def NbOfSingleRelations(self, *args):
+    def NbOfSingleRelations(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of SingleRelations contained in <self>.
 
@@ -1044,7 +1044,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_NbOfSingleRelations(self, *args)
 
-    def SubRelation(self, *args):
+    def SubRelation(self, *args) -> "Handle_Expr_GeneralRelation" :
         """
         * Returns the relation denoted by <index> in <self>. An exception is raised if <index> is out of range.
 
@@ -1055,7 +1055,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_SubRelation(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         * Tests if <exp> contains <var>.
 
@@ -1066,7 +1066,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_Contains(self, *args)
 
-    def Replace(self, *args):
+    def Replace(self, *args) -> "void" :
         """
         * Replaces all occurences of <var> with <with> in <self>.
 
@@ -1079,7 +1079,7 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_Replace(self, *args)
 
-    def String(self, *args):
+    def String(self, *args) -> "TCollection_AsciiString" :
         """
         * returns a string representing <self> in a readable way.
 
@@ -1088,11 +1088,11 @@ class Expr_GeneralRelation(OCC.MMgt.MMgt_TShared):
         """
         return _Expr.Expr_GeneralRelation_String(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_GeneralRelation self)"""
         return _Expr.Expr_GeneralRelation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_GeneralRelation" :
         """GetHandle(Expr_GeneralRelation self) -> Handle_Expr_GeneralRelation"""
         return _Expr.Expr_GeneralRelation_GetHandle(self)
 
@@ -1141,7 +1141,7 @@ Handle_Expr_GeneralRelation._kill_pointed = new_instancemethod(_Expr.Handle_Expr
 Handle_Expr_GeneralRelation_swigregister = _Expr.Handle_Expr_GeneralRelation_swigregister
 Handle_Expr_GeneralRelation_swigregister(Handle_Expr_GeneralRelation)
 
-def Handle_Expr_GeneralRelation_DownCast(*args):
+def Handle_Expr_GeneralRelation_DownCast(*args) -> "Handle_Expr_GeneralRelation const" :
   return _Expr.Handle_Expr_GeneralRelation_DownCast(*args)
 Handle_Expr_GeneralRelation_DownCast = _Expr.Handle_Expr_GeneralRelation_DownCast
 
@@ -1162,33 +1162,33 @@ class Expr_IndexedMapNodeOfMapOfNamedUnknown(OCC.TCollection.TCollection_MapNode
 
         """
         _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_swiginit(self,_Expr.new_Expr_IndexedMapNodeOfMapOfNamedUnknown(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_Expr_NamedUnknown &" :
         """
         :rtype: Handle_Expr_NamedUnknown
 
         """
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(Expr_IndexedMapNodeOfMapOfNamedUnknown self) -> Standard_Integer"""
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(Expr_IndexedMapNodeOfMapOfNamedUnknown self, Standard_Integer value)"""
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_IndexedMapNodeOfMapOfNamedUnknown self)"""
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown" :
         """GetHandle(Expr_IndexedMapNodeOfMapOfNamedUnknown self) -> Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown"""
         return _Expr.Expr_IndexedMapNodeOfMapOfNamedUnknown_GetHandle(self)
 
@@ -1230,7 +1230,7 @@ Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown._kill_pointed = new_instancemethod
 Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_swigregister = _Expr.Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_swigregister
 Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_swigregister(Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown)
 
-def Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_DownCast(*args):
+def Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_DownCast(*args) -> "Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown const" :
   return _Expr.Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_DownCast(*args)
 Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_DownCast = _Expr.Handle_Expr_IndexedMapNodeOfMapOfNamedUnknown_DownCast
 
@@ -1245,7 +1245,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
 
         """
         _Expr.Expr_MapOfNamedUnknown_swiginit(self,_Expr.new_Expr_MapOfNamedUnknown(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_MapOfNamedUnknown &" :
         """
         :param Other:
         :type Other: Expr_MapOfNamedUnknown &
@@ -1254,7 +1254,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_MapOfNamedUnknown &" :
         """
         :param Other:
         :type Other: Expr_MapOfNamedUnknown &
@@ -1263,7 +1263,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1272,14 +1272,14 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_MapOfNamedUnknown_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Expr_NamedUnknown &
@@ -1288,7 +1288,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1299,14 +1299,14 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_MapOfNamedUnknown_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Expr_NamedUnknown &
@@ -1315,7 +1315,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_Expr_NamedUnknown const &" :
         """
         :param I:
         :type I: int
@@ -1324,7 +1324,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_Expr_NamedUnknown &
@@ -1333,7 +1333,7 @@ class Expr_MapOfNamedUnknown(OCC.TCollection.TCollection_BasicMap):
         """
         return _Expr.Expr_MapOfNamedUnknown_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_MapOfNamedUnknown self)"""
         return _Expr.Expr_MapOfNamedUnknown__kill_pointed(self)
 
@@ -1372,7 +1372,7 @@ class Expr_RUIterator(object):
 
         """
         _Expr.Expr_RUIterator_swiginit(self,_Expr.new_Expr_RUIterator(*args))
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns False if on other unknown remains.
 
@@ -1381,14 +1381,14 @@ class Expr_RUIterator(object):
         """
         return _Expr.Expr_RUIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_RUIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedUnknown" :
         """
         * Returns current NamedUnknown. Raises exception if no more unknowns remain.
 
@@ -1423,7 +1423,7 @@ class Expr_RelationIterator(object):
 
         """
         _Expr.Expr_RelationIterator_swiginit(self,_Expr.new_Expr_RelationIterator(*args))
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns False if no other relation remains.
 
@@ -1432,14 +1432,14 @@ class Expr_RelationIterator(object):
         """
         return _Expr.Expr_RelationIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_RelationIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_SingleRelation" :
         """
         * Returns current basic relation. Exception is raised if no more relation remains.
 
@@ -1478,18 +1478,18 @@ class Expr_SequenceNodeOfSequenceOfGeneralExpression(OCC.TCollection.TCollection
 
         """
         _Expr.Expr_SequenceNodeOfSequenceOfGeneralExpression_swiginit(self,_Expr.new_Expr_SequenceNodeOfSequenceOfGeneralExpression(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralExpression &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralExpression_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_SequenceNodeOfSequenceOfGeneralExpression self)"""
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression" :
         """GetHandle(Expr_SequenceNodeOfSequenceOfGeneralExpression self) -> Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression"""
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralExpression_GetHandle(self)
 
@@ -1528,7 +1528,7 @@ Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression._kill_pointed = new_instan
 Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_swigregister = _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_swigregister
 Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_swigregister(Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression)
 
-def Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_DownCast(*args):
+def Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_DownCast(*args) -> "Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression const" :
   return _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_DownCast(*args)
 Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_DownCast = _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralExpression_DownCast
 
@@ -1547,18 +1547,18 @@ class Expr_SequenceNodeOfSequenceOfGeneralRelation(OCC.TCollection.TCollection_S
 
         """
         _Expr.Expr_SequenceNodeOfSequenceOfGeneralRelation_swiginit(self,_Expr.new_Expr_SequenceNodeOfSequenceOfGeneralRelation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralRelation &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralRelation_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_SequenceNodeOfSequenceOfGeneralRelation self)"""
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralRelation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation" :
         """GetHandle(Expr_SequenceNodeOfSequenceOfGeneralRelation self) -> Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation"""
         return _Expr.Expr_SequenceNodeOfSequenceOfGeneralRelation_GetHandle(self)
 
@@ -1597,7 +1597,7 @@ Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation._kill_pointed = new_instance
 Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_swigregister = _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_swigregister
 Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_swigregister(Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation)
 
-def Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_DownCast(*args):
+def Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_DownCast(*args) -> "Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation const" :
   return _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_DownCast(*args)
 Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_DownCast = _Expr.Handle_Expr_SequenceNodeOfSequenceOfGeneralRelation_DownCast
 
@@ -1610,14 +1610,14 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
 
         """
         _Expr.Expr_SequenceOfGeneralExpression_swiginit(self,_Expr.new_Expr_SequenceOfGeneralExpression(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_SequenceOfGeneralExpression const &" :
         """
         :param Other:
         :type Other: Expr_SequenceOfGeneralExpression &
@@ -1626,7 +1626,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_SequenceOfGeneralExpression const &" :
         """
         :param Other:
         :type Other: Expr_SequenceOfGeneralExpression &
@@ -1635,7 +1635,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_GeneralExpression &
@@ -1648,7 +1648,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_GeneralExpression &
@@ -1661,7 +1661,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1678,7 +1678,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1695,21 +1695,21 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_SequenceOfGeneralExpression_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1720,7 +1720,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :param Index:
         :type Index: int
@@ -1729,7 +1729,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1740,7 +1740,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_GeneralExpression &" :
         """
         :param Index:
         :type Index: int
@@ -1749,7 +1749,7 @@ class Expr_SequenceOfGeneralExpression(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Expr.Expr_SequenceOfGeneralExpression_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1799,14 +1799,14 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Expr.Expr_SequenceOfGeneralRelation_swiginit(self,_Expr.new_Expr_SequenceOfGeneralRelation(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Expr_SequenceOfGeneralRelation const &" :
         """
         :param Other:
         :type Other: Expr_SequenceOfGeneralRelation &
@@ -1815,7 +1815,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Expr_SequenceOfGeneralRelation const &" :
         """
         :param Other:
         :type Other: Expr_SequenceOfGeneralRelation &
@@ -1824,7 +1824,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_GeneralRelation &
@@ -1837,7 +1837,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Expr_GeneralRelation &
@@ -1850,7 +1850,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1867,7 +1867,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1884,21 +1884,21 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Expr_GeneralRelation const &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _Expr.Expr_SequenceOfGeneralRelation_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Expr_GeneralRelation const &" :
         """
         :rtype: Handle_Expr_GeneralRelation
 
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1909,7 +1909,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_GeneralRelation const &" :
         """
         :param Index:
         :type Index: int
@@ -1918,7 +1918,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1929,7 +1929,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Expr_GeneralRelation &" :
         """
         :param Index:
         :type Index: int
@@ -1938,7 +1938,7 @@ class Expr_SequenceOfGeneralRelation(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Expr.Expr_SequenceOfGeneralRelation_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1990,21 +1990,21 @@ class Expr_UnknownIterator(object):
 
         """
         _Expr.Expr_UnknownIterator_swiginit(self,_Expr.new_Expr_UnknownIterator(*args))
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Expr.Expr_UnknownIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_UnknownIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Expr_NamedUnknown" :
         """
         :rtype: Handle_Expr_NamedUnknown
 
@@ -2030,21 +2030,21 @@ class Expr_BinaryExpression(Expr_GeneralExpression):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstOperand(self, *args):
+    def FirstOperand(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_BinaryExpression_FirstOperand(self, *args)
 
-    def SecondOperand(self, *args):
+    def SecondOperand(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_BinaryExpression_SecondOperand(self, *args)
 
-    def SetFirstOperand(self, *args):
+    def SetFirstOperand(self, *args) -> "void" :
         """
         * Sets first operand of <self> Raises InvalidOperand if exp = me
 
@@ -2055,7 +2055,7 @@ class Expr_BinaryExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_BinaryExpression_SetFirstOperand(self, *args)
 
-    def SetSecondOperand(self, *args):
+    def SetSecondOperand(self, *args) -> "void" :
         """
         * Sets second operand of <self> Raises InvalidOperand if <exp> contains <self>.
 
@@ -2066,11 +2066,11 @@ class Expr_BinaryExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_BinaryExpression_SetSecondOperand(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_BinaryExpression self)"""
         return _Expr.Expr_BinaryExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_BinaryExpression" :
         """GetHandle(Expr_BinaryExpression self) -> Handle_Expr_BinaryExpression"""
         return _Expr.Expr_BinaryExpression_GetHandle(self)
 
@@ -2112,7 +2112,7 @@ Handle_Expr_BinaryExpression._kill_pointed = new_instancemethod(_Expr.Handle_Exp
 Handle_Expr_BinaryExpression_swigregister = _Expr.Handle_Expr_BinaryExpression_swigregister
 Handle_Expr_BinaryExpression_swigregister(Handle_Expr_BinaryExpression)
 
-def Handle_Expr_BinaryExpression_DownCast(*args):
+def Handle_Expr_BinaryExpression_DownCast(*args) -> "Handle_Expr_BinaryExpression const" :
   return _Expr.Handle_Expr_BinaryExpression_DownCast(*args)
 Handle_Expr_BinaryExpression_DownCast = _Expr.Handle_Expr_BinaryExpression_DownCast
 
@@ -2133,7 +2133,7 @@ class Expr_FunctionDerivative(Expr_GeneralFunction):
 
         """
         _Expr.Expr_FunctionDerivative_swiginit(self,_Expr.new_Expr_FunctionDerivative(*args))
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns Derivative of <self> for variable <var>.
 
@@ -2152,7 +2152,7 @@ class Expr_FunctionDerivative(Expr_GeneralFunction):
         """
         return _Expr.Expr_FunctionDerivative_Derivative(self, *args)
 
-    def Function(self, *args):
+    def Function(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns the function of which <self> is the derivative.
 
@@ -2161,7 +2161,7 @@ class Expr_FunctionDerivative(Expr_GeneralFunction):
         """
         return _Expr.Expr_FunctionDerivative_Function(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         * Returns the degree of derivation of <self>.
 
@@ -2170,7 +2170,7 @@ class Expr_FunctionDerivative(Expr_GeneralFunction):
         """
         return _Expr.Expr_FunctionDerivative_Degree(self, *args)
 
-    def DerivVariable(self, *args):
+    def DerivVariable(self, *args) -> "Handle_Expr_NamedUnknown" :
         """
         * Returns the derivation variable of <self>.
 
@@ -2179,25 +2179,25 @@ class Expr_FunctionDerivative(Expr_GeneralFunction):
         """
         return _Expr.Expr_FunctionDerivative_DerivVariable(self, *args)
 
-    def Expression(self, *args):
+    def Expression(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         :rtype: Handle_Expr_GeneralExpression
 
         """
         return _Expr.Expr_FunctionDerivative_Expression(self, *args)
 
-    def UpdateExpression(self, *args):
+    def UpdateExpression(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Expr.Expr_FunctionDerivative_UpdateExpression(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_FunctionDerivative self)"""
         return _Expr.Expr_FunctionDerivative__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_FunctionDerivative" :
         """GetHandle(Expr_FunctionDerivative self) -> Handle_Expr_FunctionDerivative"""
         return _Expr.Expr_FunctionDerivative_GetHandle(self)
 
@@ -2241,7 +2241,7 @@ Handle_Expr_FunctionDerivative._kill_pointed = new_instancemethod(_Expr.Handle_E
 Handle_Expr_FunctionDerivative_swigregister = _Expr.Handle_Expr_FunctionDerivative_swigregister
 Handle_Expr_FunctionDerivative_swigregister(Handle_Expr_FunctionDerivative)
 
-def Handle_Expr_FunctionDerivative_DownCast(*args):
+def Handle_Expr_FunctionDerivative_DownCast(*args) -> "Handle_Expr_FunctionDerivative const" :
   return _Expr.Handle_Expr_FunctionDerivative_DownCast(*args)
 Handle_Expr_FunctionDerivative_DownCast = _Expr.Handle_Expr_FunctionDerivative_DownCast
 
@@ -2249,14 +2249,14 @@ class Expr_NamedExpression(Expr_GeneralExpression):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetName(self, *args):
+    def GetName(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _Expr.Expr_NamedExpression_GetName(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         :param name:
         :type name: TCollection_AsciiString &
@@ -2265,11 +2265,11 @@ class Expr_NamedExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_NamedExpression_SetName(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_NamedExpression self)"""
         return _Expr.Expr_NamedExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_NamedExpression" :
         """GetHandle(Expr_NamedExpression self) -> Handle_Expr_NamedExpression"""
         return _Expr.Expr_NamedExpression_GetHandle(self)
 
@@ -2309,7 +2309,7 @@ Handle_Expr_NamedExpression._kill_pointed = new_instancemethod(_Expr.Handle_Expr
 Handle_Expr_NamedExpression_swigregister = _Expr.Handle_Expr_NamedExpression_swigregister
 Handle_Expr_NamedExpression_swigregister(Handle_Expr_NamedExpression)
 
-def Handle_Expr_NamedExpression_DownCast(*args):
+def Handle_Expr_NamedExpression_DownCast(*args) -> "Handle_Expr_NamedExpression const" :
   return _Expr.Handle_Expr_NamedExpression_DownCast(*args)
 Handle_Expr_NamedExpression_DownCast = _Expr.Handle_Expr_NamedExpression_DownCast
 
@@ -2330,7 +2330,7 @@ class Expr_NamedFunction(Expr_GeneralFunction):
 
         """
         _Expr.Expr_NamedFunction_swiginit(self,_Expr.new_Expr_NamedFunction(*args))
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         * Sets the name <newname> to <self>.
 
@@ -2341,7 +2341,7 @@ class Expr_NamedFunction(Expr_GeneralFunction):
         """
         return _Expr.Expr_NamedFunction_SetName(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name assigned to <self>
 
@@ -2350,7 +2350,7 @@ class Expr_NamedFunction(Expr_GeneralFunction):
         """
         return _Expr.Expr_NamedFunction_GetName(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns Derivative of <self> for variable <var>.
 
@@ -2369,7 +2369,7 @@ class Expr_NamedFunction(Expr_GeneralFunction):
         """
         return _Expr.Expr_NamedFunction_Derivative(self, *args)
 
-    def Expression(self, *args):
+    def Expression(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns equivalent expression of <self>.
 
@@ -2378,7 +2378,7 @@ class Expr_NamedFunction(Expr_GeneralFunction):
         """
         return _Expr.Expr_NamedFunction_Expression(self, *args)
 
-    def SetExpression(self, *args):
+    def SetExpression(self, *args) -> "void" :
         """
         * Modifies expression of <self>. Warning: Beware of derivatives. See FunctionDerivative
 
@@ -2389,11 +2389,11 @@ class Expr_NamedFunction(Expr_GeneralFunction):
         """
         return _Expr.Expr_NamedFunction_SetExpression(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_NamedFunction self)"""
         return _Expr.Expr_NamedFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_NamedFunction" :
         """GetHandle(Expr_NamedFunction self) -> Handle_Expr_NamedFunction"""
         return _Expr.Expr_NamedFunction_GetHandle(self)
 
@@ -2436,7 +2436,7 @@ Handle_Expr_NamedFunction._kill_pointed = new_instancemethod(_Expr.Handle_Expr_N
 Handle_Expr_NamedFunction_swigregister = _Expr.Handle_Expr_NamedFunction_swigregister
 Handle_Expr_NamedFunction_swigregister(Handle_Expr_NamedFunction)
 
-def Handle_Expr_NamedFunction_DownCast(*args):
+def Handle_Expr_NamedFunction_DownCast(*args) -> "Handle_Expr_NamedFunction const" :
   return _Expr.Handle_Expr_NamedFunction_DownCast(*args)
 Handle_Expr_NamedFunction_DownCast = _Expr.Handle_Expr_NamedFunction_DownCast
 
@@ -2451,14 +2451,14 @@ class Expr_NumericValue(Expr_GeneralExpression):
 
         """
         _Expr.Expr_NumericValue_swiginit(self,_Expr.new_Expr_NumericValue(*args))
-    def GetValue(self, *args):
+    def GetValue(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Expr.Expr_NumericValue_GetValue(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param val:
         :type val: float
@@ -2467,11 +2467,11 @@ class Expr_NumericValue(Expr_GeneralExpression):
         """
         return _Expr.Expr_NumericValue_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_NumericValue self)"""
         return _Expr.Expr_NumericValue__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_NumericValue" :
         """GetHandle(Expr_NumericValue self) -> Handle_Expr_NumericValue"""
         return _Expr.Expr_NumericValue_GetHandle(self)
 
@@ -2511,7 +2511,7 @@ Handle_Expr_NumericValue._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Nu
 Handle_Expr_NumericValue_swigregister = _Expr.Handle_Expr_NumericValue_swigregister
 Handle_Expr_NumericValue_swigregister(Handle_Expr_NumericValue)
 
-def Handle_Expr_NumericValue_DownCast(*args):
+def Handle_Expr_NumericValue_DownCast(*args) -> "Handle_Expr_NumericValue const" :
   return _Expr.Handle_Expr_NumericValue_DownCast(*args)
 Handle_Expr_NumericValue_DownCast = _Expr.Handle_Expr_NumericValue_DownCast
 
@@ -2519,7 +2519,7 @@ class Expr_PolyExpression(Expr_GeneralExpression):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbOperands(self, *args):
+    def NbOperands(self, *args) -> "Standard_Integer" :
         """
         * returns the number of operands contained in <self>
 
@@ -2528,7 +2528,7 @@ class Expr_PolyExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_PolyExpression_NbOperands(self, *args)
 
-    def Operand(self, *args):
+    def Operand(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         * Returns the <index>-th operand used in <self>. An exception is raised if index is out of range
 
@@ -2539,7 +2539,7 @@ class Expr_PolyExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_PolyExpression_Operand(self, *args)
 
-    def SetOperand(self, *args):
+    def SetOperand(self, *args) -> "void" :
         """
         * Sets the <index>-th operand used in <self>. An exception is raised if <index> is out of range Raises InvalidOperand if <exp> contains <self>.
 
@@ -2552,11 +2552,11 @@ class Expr_PolyExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_PolyExpression_SetOperand(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_PolyExpression self)"""
         return _Expr.Expr_PolyExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_PolyExpression" :
         """GetHandle(Expr_PolyExpression self) -> Handle_Expr_PolyExpression"""
         return _Expr.Expr_PolyExpression_GetHandle(self)
 
@@ -2597,7 +2597,7 @@ Handle_Expr_PolyExpression._kill_pointed = new_instancemethod(_Expr.Handle_Expr_
 Handle_Expr_PolyExpression_swigregister = _Expr.Handle_Expr_PolyExpression_swigregister
 Handle_Expr_PolyExpression_swigregister(Handle_Expr_PolyExpression)
 
-def Handle_Expr_PolyExpression_DownCast(*args):
+def Handle_Expr_PolyExpression_DownCast(*args) -> "Handle_Expr_PolyExpression const" :
   return _Expr.Handle_Expr_PolyExpression_DownCast(*args)
 Handle_Expr_PolyExpression_DownCast = _Expr.Handle_Expr_PolyExpression_DownCast
 
@@ -2605,7 +2605,7 @@ class Expr_SingleRelation(Expr_GeneralRelation):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetFirstMember(self, *args):
+    def SetFirstMember(self, *args) -> "void" :
         """
         * Defines the first member of the relation
 
@@ -2616,7 +2616,7 @@ class Expr_SingleRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SingleRelation_SetFirstMember(self, *args)
 
-    def SetSecondMember(self, *args):
+    def SetSecondMember(self, *args) -> "void" :
         """
         * Defines the second member of the relation
 
@@ -2627,7 +2627,7 @@ class Expr_SingleRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SingleRelation_SetSecondMember(self, *args)
 
-    def FirstMember(self, *args):
+    def FirstMember(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns the first member of the relation
 
@@ -2636,7 +2636,7 @@ class Expr_SingleRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SingleRelation_FirstMember(self, *args)
 
-    def SecondMember(self, *args):
+    def SecondMember(self, *args) -> "Handle_Expr_GeneralExpression" :
         """
         * Returns the second member of the relation
 
@@ -2645,11 +2645,11 @@ class Expr_SingleRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SingleRelation_SecondMember(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_SingleRelation self)"""
         return _Expr.Expr_SingleRelation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_SingleRelation" :
         """GetHandle(Expr_SingleRelation self) -> Handle_Expr_SingleRelation"""
         return _Expr.Expr_SingleRelation_GetHandle(self)
 
@@ -2691,7 +2691,7 @@ Handle_Expr_SingleRelation._kill_pointed = new_instancemethod(_Expr.Handle_Expr_
 Handle_Expr_SingleRelation_swigregister = _Expr.Handle_Expr_SingleRelation_swigregister
 Handle_Expr_SingleRelation_swigregister(Handle_Expr_SingleRelation)
 
-def Handle_Expr_SingleRelation_DownCast(*args):
+def Handle_Expr_SingleRelation_DownCast(*args) -> "Handle_Expr_SingleRelation const" :
   return _Expr.Handle_Expr_SingleRelation_DownCast(*args)
 Handle_Expr_SingleRelation_DownCast = _Expr.Handle_Expr_SingleRelation_DownCast
 
@@ -2708,7 +2708,7 @@ class Expr_SystemRelation(Expr_GeneralRelation):
 
         """
         _Expr.Expr_SystemRelation_swiginit(self,_Expr.new_Expr_SystemRelation(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Appends <relation> in the list of components of <self>.
 
@@ -2719,7 +2719,7 @@ class Expr_SystemRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SystemRelation_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param relation:
         :type relation: Handle_Expr_GeneralRelation &
@@ -2728,11 +2728,11 @@ class Expr_SystemRelation(Expr_GeneralRelation):
         """
         return _Expr.Expr_SystemRelation_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_SystemRelation self)"""
         return _Expr.Expr_SystemRelation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_SystemRelation" :
         """GetHandle(Expr_SystemRelation self) -> Handle_Expr_SystemRelation"""
         return _Expr.Expr_SystemRelation_GetHandle(self)
 
@@ -2772,7 +2772,7 @@ Handle_Expr_SystemRelation._kill_pointed = new_instancemethod(_Expr.Handle_Expr_
 Handle_Expr_SystemRelation_swigregister = _Expr.Handle_Expr_SystemRelation_swigregister
 Handle_Expr_SystemRelation_swigregister(Handle_Expr_SystemRelation)
 
-def Handle_Expr_SystemRelation_DownCast(*args):
+def Handle_Expr_SystemRelation_DownCast(*args) -> "Handle_Expr_SystemRelation const" :
   return _Expr.Handle_Expr_SystemRelation_DownCast(*args)
 Handle_Expr_SystemRelation_DownCast = _Expr.Handle_Expr_SystemRelation_DownCast
 
@@ -2780,7 +2780,7 @@ class Expr_UnaryExpression(Expr_GeneralExpression):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Operand(self, *args):
+    def Operand(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         * Returns the operand used
 
@@ -2789,7 +2789,7 @@ class Expr_UnaryExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_UnaryExpression_Operand(self, *args)
 
-    def SetOperand(self, *args):
+    def SetOperand(self, *args) -> "void" :
         """
         * Sets the operand used Raises InvalidOperand if <exp> contains <self>.
 
@@ -2800,11 +2800,11 @@ class Expr_UnaryExpression(Expr_GeneralExpression):
         """
         return _Expr.Expr_UnaryExpression_SetOperand(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_UnaryExpression self)"""
         return _Expr.Expr_UnaryExpression__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_UnaryExpression" :
         """GetHandle(Expr_UnaryExpression self) -> Handle_Expr_UnaryExpression"""
         return _Expr.Expr_UnaryExpression_GetHandle(self)
 
@@ -2844,7 +2844,7 @@ Handle_Expr_UnaryExpression._kill_pointed = new_instancemethod(_Expr.Handle_Expr
 Handle_Expr_UnaryExpression_swigregister = _Expr.Handle_Expr_UnaryExpression_swigregister
 Handle_Expr_UnaryExpression_swigregister(Handle_Expr_UnaryExpression)
 
-def Handle_Expr_UnaryExpression_DownCast(*args):
+def Handle_Expr_UnaryExpression_DownCast(*args) -> "Handle_Expr_UnaryExpression const" :
   return _Expr.Handle_Expr_UnaryExpression_DownCast(*args)
 Handle_Expr_UnaryExpression_DownCast = _Expr.Handle_Expr_UnaryExpression_DownCast
 
@@ -2861,11 +2861,11 @@ class Expr_Absolute(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Absolute_swiginit(self,_Expr.new_Expr_Absolute(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Absolute self)"""
         return _Expr.Expr_Absolute__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Absolute" :
         """GetHandle(Expr_Absolute self) -> Handle_Expr_Absolute"""
         return _Expr.Expr_Absolute_GetHandle(self)
 
@@ -2903,7 +2903,7 @@ Handle_Expr_Absolute._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Absolu
 Handle_Expr_Absolute_swigregister = _Expr.Handle_Expr_Absolute_swigregister
 Handle_Expr_Absolute_swigregister(Handle_Expr_Absolute)
 
-def Handle_Expr_Absolute_DownCast(*args):
+def Handle_Expr_Absolute_DownCast(*args) -> "Handle_Expr_Absolute const" :
   return _Expr.Handle_Expr_Absolute_DownCast(*args)
 Handle_Expr_Absolute_DownCast = _Expr.Handle_Expr_Absolute_DownCast
 
@@ -2920,11 +2920,11 @@ class Expr_ArcCosine(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArcCosine_swiginit(self,_Expr.new_Expr_ArcCosine(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArcCosine self)"""
         return _Expr.Expr_ArcCosine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArcCosine" :
         """GetHandle(Expr_ArcCosine self) -> Handle_Expr_ArcCosine"""
         return _Expr.Expr_ArcCosine_GetHandle(self)
 
@@ -2962,7 +2962,7 @@ Handle_Expr_ArcCosine._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArcCo
 Handle_Expr_ArcCosine_swigregister = _Expr.Handle_Expr_ArcCosine_swigregister
 Handle_Expr_ArcCosine_swigregister(Handle_Expr_ArcCosine)
 
-def Handle_Expr_ArcCosine_DownCast(*args):
+def Handle_Expr_ArcCosine_DownCast(*args) -> "Handle_Expr_ArcCosine const" :
   return _Expr.Handle_Expr_ArcCosine_DownCast(*args)
 Handle_Expr_ArcCosine_DownCast = _Expr.Handle_Expr_ArcCosine_DownCast
 
@@ -2979,11 +2979,11 @@ class Expr_ArcSine(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArcSine_swiginit(self,_Expr.new_Expr_ArcSine(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArcSine self)"""
         return _Expr.Expr_ArcSine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArcSine" :
         """GetHandle(Expr_ArcSine self) -> Handle_Expr_ArcSine"""
         return _Expr.Expr_ArcSine_GetHandle(self)
 
@@ -3021,7 +3021,7 @@ Handle_Expr_ArcSine._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArcSine
 Handle_Expr_ArcSine_swigregister = _Expr.Handle_Expr_ArcSine_swigregister
 Handle_Expr_ArcSine_swigregister(Handle_Expr_ArcSine)
 
-def Handle_Expr_ArcSine_DownCast(*args):
+def Handle_Expr_ArcSine_DownCast(*args) -> "Handle_Expr_ArcSine const" :
   return _Expr.Handle_Expr_ArcSine_DownCast(*args)
 Handle_Expr_ArcSine_DownCast = _Expr.Handle_Expr_ArcSine_DownCast
 
@@ -3038,11 +3038,11 @@ class Expr_ArcTangent(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArcTangent_swiginit(self,_Expr.new_Expr_ArcTangent(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArcTangent self)"""
         return _Expr.Expr_ArcTangent__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArcTangent" :
         """GetHandle(Expr_ArcTangent self) -> Handle_Expr_ArcTangent"""
         return _Expr.Expr_ArcTangent_GetHandle(self)
 
@@ -3080,7 +3080,7 @@ Handle_Expr_ArcTangent._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArcT
 Handle_Expr_ArcTangent_swigregister = _Expr.Handle_Expr_ArcTangent_swigregister
 Handle_Expr_ArcTangent_swigregister(Handle_Expr_ArcTangent)
 
-def Handle_Expr_ArcTangent_DownCast(*args):
+def Handle_Expr_ArcTangent_DownCast(*args) -> "Handle_Expr_ArcTangent const" :
   return _Expr.Handle_Expr_ArcTangent_DownCast(*args)
 Handle_Expr_ArcTangent_DownCast = _Expr.Handle_Expr_ArcTangent_DownCast
 
@@ -3097,11 +3097,11 @@ class Expr_ArgCosh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArgCosh_swiginit(self,_Expr.new_Expr_ArgCosh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArgCosh self)"""
         return _Expr.Expr_ArgCosh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArgCosh" :
         """GetHandle(Expr_ArgCosh self) -> Handle_Expr_ArgCosh"""
         return _Expr.Expr_ArgCosh_GetHandle(self)
 
@@ -3139,7 +3139,7 @@ Handle_Expr_ArgCosh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArgCosh
 Handle_Expr_ArgCosh_swigregister = _Expr.Handle_Expr_ArgCosh_swigregister
 Handle_Expr_ArgCosh_swigregister(Handle_Expr_ArgCosh)
 
-def Handle_Expr_ArgCosh_DownCast(*args):
+def Handle_Expr_ArgCosh_DownCast(*args) -> "Handle_Expr_ArgCosh const" :
   return _Expr.Handle_Expr_ArgCosh_DownCast(*args)
 Handle_Expr_ArgCosh_DownCast = _Expr.Handle_Expr_ArgCosh_DownCast
 
@@ -3156,11 +3156,11 @@ class Expr_ArgSinh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArgSinh_swiginit(self,_Expr.new_Expr_ArgSinh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArgSinh self)"""
         return _Expr.Expr_ArgSinh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArgSinh" :
         """GetHandle(Expr_ArgSinh self) -> Handle_Expr_ArgSinh"""
         return _Expr.Expr_ArgSinh_GetHandle(self)
 
@@ -3198,7 +3198,7 @@ Handle_Expr_ArgSinh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArgSinh
 Handle_Expr_ArgSinh_swigregister = _Expr.Handle_Expr_ArgSinh_swigregister
 Handle_Expr_ArgSinh_swigregister(Handle_Expr_ArgSinh)
 
-def Handle_Expr_ArgSinh_DownCast(*args):
+def Handle_Expr_ArgSinh_DownCast(*args) -> "Handle_Expr_ArgSinh const" :
   return _Expr.Handle_Expr_ArgSinh_DownCast(*args)
 Handle_Expr_ArgSinh_DownCast = _Expr.Handle_Expr_ArgSinh_DownCast
 
@@ -3215,11 +3215,11 @@ class Expr_ArgTanh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_ArgTanh_swiginit(self,_Expr.new_Expr_ArgTanh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_ArgTanh self)"""
         return _Expr.Expr_ArgTanh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_ArgTanh" :
         """GetHandle(Expr_ArgTanh self) -> Handle_Expr_ArgTanh"""
         return _Expr.Expr_ArgTanh_GetHandle(self)
 
@@ -3257,7 +3257,7 @@ Handle_Expr_ArgTanh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_ArgTanh
 Handle_Expr_ArgTanh_swigregister = _Expr.Handle_Expr_ArgTanh_swigregister
 Handle_Expr_ArgTanh_swigregister(Handle_Expr_ArgTanh)
 
-def Handle_Expr_ArgTanh_DownCast(*args):
+def Handle_Expr_ArgTanh_DownCast(*args) -> "Handle_Expr_ArgTanh const" :
   return _Expr.Handle_Expr_ArgTanh_DownCast(*args)
 Handle_Expr_ArgTanh_DownCast = _Expr.Handle_Expr_ArgTanh_DownCast
 
@@ -3278,7 +3278,7 @@ class Expr_BinaryFunction(Expr_BinaryExpression):
 
         """
         _Expr.Expr_BinaryFunction_swiginit(self,_Expr.new_Expr_BinaryFunction(*args))
-    def Function(self, *args):
+    def Function(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns the function defining <self>.
 
@@ -3287,11 +3287,11 @@ class Expr_BinaryFunction(Expr_BinaryExpression):
         """
         return _Expr.Expr_BinaryFunction_Function(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_BinaryFunction self)"""
         return _Expr.Expr_BinaryFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_BinaryFunction" :
         """GetHandle(Expr_BinaryFunction self) -> Handle_Expr_BinaryFunction"""
         return _Expr.Expr_BinaryFunction_GetHandle(self)
 
@@ -3330,7 +3330,7 @@ Handle_Expr_BinaryFunction._kill_pointed = new_instancemethod(_Expr.Handle_Expr_
 Handle_Expr_BinaryFunction_swigregister = _Expr.Handle_Expr_BinaryFunction_swigregister
 Handle_Expr_BinaryFunction_swigregister(Handle_Expr_BinaryFunction)
 
-def Handle_Expr_BinaryFunction_DownCast(*args):
+def Handle_Expr_BinaryFunction_DownCast(*args) -> "Handle_Expr_BinaryFunction const" :
   return _Expr.Handle_Expr_BinaryFunction_DownCast(*args)
 Handle_Expr_BinaryFunction_DownCast = _Expr.Handle_Expr_BinaryFunction_DownCast
 
@@ -3347,11 +3347,11 @@ class Expr_Cosh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Cosh_swiginit(self,_Expr.new_Expr_Cosh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Cosh self)"""
         return _Expr.Expr_Cosh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Cosh" :
         """GetHandle(Expr_Cosh self) -> Handle_Expr_Cosh"""
         return _Expr.Expr_Cosh_GetHandle(self)
 
@@ -3389,7 +3389,7 @@ Handle_Expr_Cosh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Cosh__kill
 Handle_Expr_Cosh_swigregister = _Expr.Handle_Expr_Cosh_swigregister
 Handle_Expr_Cosh_swigregister(Handle_Expr_Cosh)
 
-def Handle_Expr_Cosh_DownCast(*args):
+def Handle_Expr_Cosh_DownCast(*args) -> "Handle_Expr_Cosh const" :
   return _Expr.Handle_Expr_Cosh_DownCast(*args)
 Handle_Expr_Cosh_DownCast = _Expr.Handle_Expr_Cosh_DownCast
 
@@ -3406,11 +3406,11 @@ class Expr_Cosine(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Cosine_swiginit(self,_Expr.new_Expr_Cosine(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Cosine self)"""
         return _Expr.Expr_Cosine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Cosine" :
         """GetHandle(Expr_Cosine self) -> Handle_Expr_Cosine"""
         return _Expr.Expr_Cosine_GetHandle(self)
 
@@ -3448,7 +3448,7 @@ Handle_Expr_Cosine._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Cosine__
 Handle_Expr_Cosine_swigregister = _Expr.Handle_Expr_Cosine_swigregister
 Handle_Expr_Cosine_swigregister(Handle_Expr_Cosine)
 
-def Handle_Expr_Cosine_DownCast(*args):
+def Handle_Expr_Cosine_DownCast(*args) -> "Handle_Expr_Cosine const" :
   return _Expr.Handle_Expr_Cosine_DownCast(*args)
 Handle_Expr_Cosine_DownCast = _Expr.Handle_Expr_Cosine_DownCast
 
@@ -3467,11 +3467,11 @@ class Expr_Difference(Expr_BinaryExpression):
 
         """
         _Expr.Expr_Difference_swiginit(self,_Expr.new_Expr_Difference(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Difference self)"""
         return _Expr.Expr_Difference__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Difference" :
         """GetHandle(Expr_Difference self) -> Handle_Expr_Difference"""
         return _Expr.Expr_Difference_GetHandle(self)
 
@@ -3509,7 +3509,7 @@ Handle_Expr_Difference._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Diff
 Handle_Expr_Difference_swigregister = _Expr.Handle_Expr_Difference_swigregister
 Handle_Expr_Difference_swigregister(Handle_Expr_Difference)
 
-def Handle_Expr_Difference_DownCast(*args):
+def Handle_Expr_Difference_DownCast(*args) -> "Handle_Expr_Difference const" :
   return _Expr.Handle_Expr_Difference_DownCast(*args)
 Handle_Expr_Difference_DownCast = _Expr.Handle_Expr_Difference_DownCast
 
@@ -3528,11 +3528,11 @@ class Expr_Different(Expr_SingleRelation):
 
         """
         _Expr.Expr_Different_swiginit(self,_Expr.new_Expr_Different(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Different self)"""
         return _Expr.Expr_Different__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Different" :
         """GetHandle(Expr_Different self) -> Handle_Expr_Different"""
         return _Expr.Expr_Different_GetHandle(self)
 
@@ -3570,7 +3570,7 @@ Handle_Expr_Different._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Diffe
 Handle_Expr_Different_swigregister = _Expr.Handle_Expr_Different_swigregister
 Handle_Expr_Different_swigregister(Handle_Expr_Different)
 
-def Handle_Expr_Different_DownCast(*args):
+def Handle_Expr_Different_DownCast(*args) -> "Handle_Expr_Different const" :
   return _Expr.Handle_Expr_Different_DownCast(*args)
 Handle_Expr_Different_DownCast = _Expr.Handle_Expr_Different_DownCast
 
@@ -3589,11 +3589,11 @@ class Expr_Division(Expr_BinaryExpression):
 
         """
         _Expr.Expr_Division_swiginit(self,_Expr.new_Expr_Division(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Division self)"""
         return _Expr.Expr_Division__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Division" :
         """GetHandle(Expr_Division self) -> Handle_Expr_Division"""
         return _Expr.Expr_Division_GetHandle(self)
 
@@ -3631,7 +3631,7 @@ Handle_Expr_Division._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Divisi
 Handle_Expr_Division_swigregister = _Expr.Handle_Expr_Division_swigregister
 Handle_Expr_Division_swigregister(Handle_Expr_Division)
 
-def Handle_Expr_Division_DownCast(*args):
+def Handle_Expr_Division_DownCast(*args) -> "Handle_Expr_Division const" :
   return _Expr.Handle_Expr_Division_DownCast(*args)
 Handle_Expr_Division_DownCast = _Expr.Handle_Expr_Division_DownCast
 
@@ -3650,11 +3650,11 @@ class Expr_Equal(Expr_SingleRelation):
 
         """
         _Expr.Expr_Equal_swiginit(self,_Expr.new_Expr_Equal(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Equal self)"""
         return _Expr.Expr_Equal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Equal" :
         """GetHandle(Expr_Equal self) -> Handle_Expr_Equal"""
         return _Expr.Expr_Equal_GetHandle(self)
 
@@ -3692,7 +3692,7 @@ Handle_Expr_Equal._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Equal__ki
 Handle_Expr_Equal_swigregister = _Expr.Handle_Expr_Equal_swigregister
 Handle_Expr_Equal_swigregister(Handle_Expr_Equal)
 
-def Handle_Expr_Equal_DownCast(*args):
+def Handle_Expr_Equal_DownCast(*args) -> "Handle_Expr_Equal const" :
   return _Expr.Handle_Expr_Equal_DownCast(*args)
 Handle_Expr_Equal_DownCast = _Expr.Handle_Expr_Equal_DownCast
 
@@ -3709,11 +3709,11 @@ class Expr_Exponential(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Exponential_swiginit(self,_Expr.new_Expr_Exponential(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Exponential self)"""
         return _Expr.Expr_Exponential__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Exponential" :
         """GetHandle(Expr_Exponential self) -> Handle_Expr_Exponential"""
         return _Expr.Expr_Exponential_GetHandle(self)
 
@@ -3751,7 +3751,7 @@ Handle_Expr_Exponential._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Exp
 Handle_Expr_Exponential_swigregister = _Expr.Handle_Expr_Exponential_swigregister
 Handle_Expr_Exponential_swigregister(Handle_Expr_Exponential)
 
-def Handle_Expr_Exponential_DownCast(*args):
+def Handle_Expr_Exponential_DownCast(*args) -> "Handle_Expr_Exponential const" :
   return _Expr.Handle_Expr_Exponential_DownCast(*args)
 Handle_Expr_Exponential_DownCast = _Expr.Handle_Expr_Exponential_DownCast
 
@@ -3770,11 +3770,11 @@ class Expr_Exponentiate(Expr_BinaryExpression):
 
         """
         _Expr.Expr_Exponentiate_swiginit(self,_Expr.new_Expr_Exponentiate(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Exponentiate self)"""
         return _Expr.Expr_Exponentiate__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Exponentiate" :
         """GetHandle(Expr_Exponentiate self) -> Handle_Expr_Exponentiate"""
         return _Expr.Expr_Exponentiate_GetHandle(self)
 
@@ -3812,7 +3812,7 @@ Handle_Expr_Exponentiate._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Ex
 Handle_Expr_Exponentiate_swigregister = _Expr.Handle_Expr_Exponentiate_swigregister
 Handle_Expr_Exponentiate_swigregister(Handle_Expr_Exponentiate)
 
-def Handle_Expr_Exponentiate_DownCast(*args):
+def Handle_Expr_Exponentiate_DownCast(*args) -> "Handle_Expr_Exponentiate const" :
   return _Expr.Handle_Expr_Exponentiate_DownCast(*args)
 Handle_Expr_Exponentiate_DownCast = _Expr.Handle_Expr_Exponentiate_DownCast
 
@@ -3831,11 +3831,11 @@ class Expr_GreaterThan(Expr_SingleRelation):
 
         """
         _Expr.Expr_GreaterThan_swiginit(self,_Expr.new_Expr_GreaterThan(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_GreaterThan self)"""
         return _Expr.Expr_GreaterThan__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_GreaterThan" :
         """GetHandle(Expr_GreaterThan self) -> Handle_Expr_GreaterThan"""
         return _Expr.Expr_GreaterThan_GetHandle(self)
 
@@ -3873,7 +3873,7 @@ Handle_Expr_GreaterThan._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Gre
 Handle_Expr_GreaterThan_swigregister = _Expr.Handle_Expr_GreaterThan_swigregister
 Handle_Expr_GreaterThan_swigregister(Handle_Expr_GreaterThan)
 
-def Handle_Expr_GreaterThan_DownCast(*args):
+def Handle_Expr_GreaterThan_DownCast(*args) -> "Handle_Expr_GreaterThan const" :
   return _Expr.Handle_Expr_GreaterThan_DownCast(*args)
 Handle_Expr_GreaterThan_DownCast = _Expr.Handle_Expr_GreaterThan_DownCast
 
@@ -3892,11 +3892,11 @@ class Expr_GreaterThanOrEqual(Expr_SingleRelation):
 
         """
         _Expr.Expr_GreaterThanOrEqual_swiginit(self,_Expr.new_Expr_GreaterThanOrEqual(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_GreaterThanOrEqual self)"""
         return _Expr.Expr_GreaterThanOrEqual__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_GreaterThanOrEqual" :
         """GetHandle(Expr_GreaterThanOrEqual self) -> Handle_Expr_GreaterThanOrEqual"""
         return _Expr.Expr_GreaterThanOrEqual_GetHandle(self)
 
@@ -3934,7 +3934,7 @@ Handle_Expr_GreaterThanOrEqual._kill_pointed = new_instancemethod(_Expr.Handle_E
 Handle_Expr_GreaterThanOrEqual_swigregister = _Expr.Handle_Expr_GreaterThanOrEqual_swigregister
 Handle_Expr_GreaterThanOrEqual_swigregister(Handle_Expr_GreaterThanOrEqual)
 
-def Handle_Expr_GreaterThanOrEqual_DownCast(*args):
+def Handle_Expr_GreaterThanOrEqual_DownCast(*args) -> "Handle_Expr_GreaterThanOrEqual const" :
   return _Expr.Handle_Expr_GreaterThanOrEqual_DownCast(*args)
 Handle_Expr_GreaterThanOrEqual_DownCast = _Expr.Handle_Expr_GreaterThanOrEqual_DownCast
 
@@ -3953,11 +3953,11 @@ class Expr_LessThan(Expr_SingleRelation):
 
         """
         _Expr.Expr_LessThan_swiginit(self,_Expr.new_Expr_LessThan(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_LessThan self)"""
         return _Expr.Expr_LessThan__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_LessThan" :
         """GetHandle(Expr_LessThan self) -> Handle_Expr_LessThan"""
         return _Expr.Expr_LessThan_GetHandle(self)
 
@@ -3995,7 +3995,7 @@ Handle_Expr_LessThan._kill_pointed = new_instancemethod(_Expr.Handle_Expr_LessTh
 Handle_Expr_LessThan_swigregister = _Expr.Handle_Expr_LessThan_swigregister
 Handle_Expr_LessThan_swigregister(Handle_Expr_LessThan)
 
-def Handle_Expr_LessThan_DownCast(*args):
+def Handle_Expr_LessThan_DownCast(*args) -> "Handle_Expr_LessThan const" :
   return _Expr.Handle_Expr_LessThan_DownCast(*args)
 Handle_Expr_LessThan_DownCast = _Expr.Handle_Expr_LessThan_DownCast
 
@@ -4014,11 +4014,11 @@ class Expr_LessThanOrEqual(Expr_SingleRelation):
 
         """
         _Expr.Expr_LessThanOrEqual_swiginit(self,_Expr.new_Expr_LessThanOrEqual(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_LessThanOrEqual self)"""
         return _Expr.Expr_LessThanOrEqual__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_LessThanOrEqual" :
         """GetHandle(Expr_LessThanOrEqual self) -> Handle_Expr_LessThanOrEqual"""
         return _Expr.Expr_LessThanOrEqual_GetHandle(self)
 
@@ -4056,7 +4056,7 @@ Handle_Expr_LessThanOrEqual._kill_pointed = new_instancemethod(_Expr.Handle_Expr
 Handle_Expr_LessThanOrEqual_swigregister = _Expr.Handle_Expr_LessThanOrEqual_swigregister
 Handle_Expr_LessThanOrEqual_swigregister(Handle_Expr_LessThanOrEqual)
 
-def Handle_Expr_LessThanOrEqual_DownCast(*args):
+def Handle_Expr_LessThanOrEqual_DownCast(*args) -> "Handle_Expr_LessThanOrEqual const" :
   return _Expr.Handle_Expr_LessThanOrEqual_DownCast(*args)
 Handle_Expr_LessThanOrEqual_DownCast = _Expr.Handle_Expr_LessThanOrEqual_DownCast
 
@@ -4073,11 +4073,11 @@ class Expr_LogOf10(Expr_UnaryExpression):
 
         """
         _Expr.Expr_LogOf10_swiginit(self,_Expr.new_Expr_LogOf10(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_LogOf10 self)"""
         return _Expr.Expr_LogOf10__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_LogOf10" :
         """GetHandle(Expr_LogOf10 self) -> Handle_Expr_LogOf10"""
         return _Expr.Expr_LogOf10_GetHandle(self)
 
@@ -4115,7 +4115,7 @@ Handle_Expr_LogOf10._kill_pointed = new_instancemethod(_Expr.Handle_Expr_LogOf10
 Handle_Expr_LogOf10_swigregister = _Expr.Handle_Expr_LogOf10_swigregister
 Handle_Expr_LogOf10_swigregister(Handle_Expr_LogOf10)
 
-def Handle_Expr_LogOf10_DownCast(*args):
+def Handle_Expr_LogOf10_DownCast(*args) -> "Handle_Expr_LogOf10 const" :
   return _Expr.Handle_Expr_LogOf10_DownCast(*args)
 Handle_Expr_LogOf10_DownCast = _Expr.Handle_Expr_LogOf10_DownCast
 
@@ -4132,11 +4132,11 @@ class Expr_LogOfe(Expr_UnaryExpression):
 
         """
         _Expr.Expr_LogOfe_swiginit(self,_Expr.new_Expr_LogOfe(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_LogOfe self)"""
         return _Expr.Expr_LogOfe__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_LogOfe" :
         """GetHandle(Expr_LogOfe self) -> Handle_Expr_LogOfe"""
         return _Expr.Expr_LogOfe_GetHandle(self)
 
@@ -4174,7 +4174,7 @@ Handle_Expr_LogOfe._kill_pointed = new_instancemethod(_Expr.Handle_Expr_LogOfe__
 Handle_Expr_LogOfe_swigregister = _Expr.Handle_Expr_LogOfe_swigregister
 Handle_Expr_LogOfe_swigregister(Handle_Expr_LogOfe)
 
-def Handle_Expr_LogOfe_DownCast(*args):
+def Handle_Expr_LogOfe_DownCast(*args) -> "Handle_Expr_LogOfe const" :
   return _Expr.Handle_Expr_LogOfe_DownCast(*args)
 Handle_Expr_LogOfe_DownCast = _Expr.Handle_Expr_LogOfe_DownCast
 
@@ -4193,18 +4193,18 @@ class Expr_NamedConstant(Expr_NamedExpression):
 
         """
         _Expr.Expr_NamedConstant_swiginit(self,_Expr.new_Expr_NamedConstant(*args))
-    def GetValue(self, *args):
+    def GetValue(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Expr.Expr_NamedConstant_GetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_NamedConstant self)"""
         return _Expr.Expr_NamedConstant__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_NamedConstant" :
         """GetHandle(Expr_NamedConstant self) -> Handle_Expr_NamedConstant"""
         return _Expr.Expr_NamedConstant_GetHandle(self)
 
@@ -4243,7 +4243,7 @@ Handle_Expr_NamedConstant._kill_pointed = new_instancemethod(_Expr.Handle_Expr_N
 Handle_Expr_NamedConstant_swigregister = _Expr.Handle_Expr_NamedConstant_swigregister
 Handle_Expr_NamedConstant_swigregister(Handle_Expr_NamedConstant)
 
-def Handle_Expr_NamedConstant_DownCast(*args):
+def Handle_Expr_NamedConstant_DownCast(*args) -> "Handle_Expr_NamedConstant const" :
   return _Expr.Handle_Expr_NamedConstant_DownCast(*args)
 Handle_Expr_NamedConstant_DownCast = _Expr.Handle_Expr_NamedConstant_DownCast
 
@@ -4258,7 +4258,7 @@ class Expr_NamedUnknown(Expr_NamedExpression):
 
         """
         _Expr.Expr_NamedUnknown_swiginit(self,_Expr.new_Expr_NamedUnknown(*args))
-    def IsAssigned(self, *args):
+    def IsAssigned(self, *args) -> "Standard_Boolean" :
         """
         * Tests if an expression is assigned to <self>.
 
@@ -4267,7 +4267,7 @@ class Expr_NamedUnknown(Expr_NamedExpression):
         """
         return _Expr.Expr_NamedUnknown_IsAssigned(self, *args)
 
-    def AssignedExpression(self, *args):
+    def AssignedExpression(self, *args) -> "Handle_Expr_GeneralExpression const &" :
         """
         * If exists, returns the assigned expression. An exception is raised if the expression does not exist.
 
@@ -4276,7 +4276,7 @@ class Expr_NamedUnknown(Expr_NamedExpression):
         """
         return _Expr.Expr_NamedUnknown_AssignedExpression(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         * Assigns <self> to <exp> expression. Raises exception if <exp> refers to <self>.
 
@@ -4287,7 +4287,7 @@ class Expr_NamedUnknown(Expr_NamedExpression):
         """
         return _Expr.Expr_NamedUnknown_Assign(self, *args)
 
-    def Deassign(self, *args):
+    def Deassign(self, *args) -> "void" :
         """
         * Supresses the assigned expression
 
@@ -4296,11 +4296,11 @@ class Expr_NamedUnknown(Expr_NamedExpression):
         """
         return _Expr.Expr_NamedUnknown_Deassign(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_NamedUnknown self)"""
         return _Expr.Expr_NamedUnknown__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_NamedUnknown" :
         """GetHandle(Expr_NamedUnknown self) -> Handle_Expr_NamedUnknown"""
         return _Expr.Expr_NamedUnknown_GetHandle(self)
 
@@ -4342,7 +4342,7 @@ Handle_Expr_NamedUnknown._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Na
 Handle_Expr_NamedUnknown_swigregister = _Expr.Handle_Expr_NamedUnknown_swigregister
 Handle_Expr_NamedUnknown_swigregister(Handle_Expr_NamedUnknown)
 
-def Handle_Expr_NamedUnknown_DownCast(*args):
+def Handle_Expr_NamedUnknown_DownCast(*args) -> "Handle_Expr_NamedUnknown const" :
   return _Expr.Handle_Expr_NamedUnknown_DownCast(*args)
 Handle_Expr_NamedUnknown_DownCast = _Expr.Handle_Expr_NamedUnknown_DownCast
 
@@ -4361,7 +4361,7 @@ class Expr_PolyFunction(Expr_PolyExpression):
 
         """
         _Expr.Expr_PolyFunction_swiginit(self,_Expr.new_Expr_PolyFunction(*args))
-    def Function(self, *args):
+    def Function(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns the function defining <self>.
 
@@ -4370,11 +4370,11 @@ class Expr_PolyFunction(Expr_PolyExpression):
         """
         return _Expr.Expr_PolyFunction_Function(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_PolyFunction self)"""
         return _Expr.Expr_PolyFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_PolyFunction" :
         """GetHandle(Expr_PolyFunction self) -> Handle_Expr_PolyFunction"""
         return _Expr.Expr_PolyFunction_GetHandle(self)
 
@@ -4413,7 +4413,7 @@ Handle_Expr_PolyFunction._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Po
 Handle_Expr_PolyFunction_swigregister = _Expr.Handle_Expr_PolyFunction_swigregister
 Handle_Expr_PolyFunction_swigregister(Handle_Expr_PolyFunction)
 
-def Handle_Expr_PolyFunction_DownCast(*args):
+def Handle_Expr_PolyFunction_DownCast(*args) -> "Handle_Expr_PolyFunction const" :
   return _Expr.Handle_Expr_PolyFunction_DownCast(*args)
 Handle_Expr_PolyFunction_DownCast = _Expr.Handle_Expr_PolyFunction_DownCast
 
@@ -4438,11 +4438,11 @@ class Expr_Product(Expr_PolyExpression):
 
         """
         _Expr.Expr_Product_swiginit(self,_Expr.new_Expr_Product(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Product self)"""
         return _Expr.Expr_Product__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Product" :
         """GetHandle(Expr_Product self) -> Handle_Expr_Product"""
         return _Expr.Expr_Product_GetHandle(self)
 
@@ -4480,7 +4480,7 @@ Handle_Expr_Product._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Product
 Handle_Expr_Product_swigregister = _Expr.Handle_Expr_Product_swigregister
 Handle_Expr_Product_swigregister(Handle_Expr_Product)
 
-def Handle_Expr_Product_DownCast(*args):
+def Handle_Expr_Product_DownCast(*args) -> "Handle_Expr_Product const" :
   return _Expr.Handle_Expr_Product_DownCast(*args)
 Handle_Expr_Product_DownCast = _Expr.Handle_Expr_Product_DownCast
 
@@ -4497,11 +4497,11 @@ class Expr_Sine(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Sine_swiginit(self,_Expr.new_Expr_Sine(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Sine self)"""
         return _Expr.Expr_Sine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Sine" :
         """GetHandle(Expr_Sine self) -> Handle_Expr_Sine"""
         return _Expr.Expr_Sine_GetHandle(self)
 
@@ -4539,7 +4539,7 @@ Handle_Expr_Sine._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Sine__kill
 Handle_Expr_Sine_swigregister = _Expr.Handle_Expr_Sine_swigregister
 Handle_Expr_Sine_swigregister(Handle_Expr_Sine)
 
-def Handle_Expr_Sine_DownCast(*args):
+def Handle_Expr_Sine_DownCast(*args) -> "Handle_Expr_Sine const" :
   return _Expr.Handle_Expr_Sine_DownCast(*args)
 Handle_Expr_Sine_DownCast = _Expr.Handle_Expr_Sine_DownCast
 
@@ -4556,11 +4556,11 @@ class Expr_Sinh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Sinh_swiginit(self,_Expr.new_Expr_Sinh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Sinh self)"""
         return _Expr.Expr_Sinh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Sinh" :
         """GetHandle(Expr_Sinh self) -> Handle_Expr_Sinh"""
         return _Expr.Expr_Sinh_GetHandle(self)
 
@@ -4598,7 +4598,7 @@ Handle_Expr_Sinh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Sinh__kill
 Handle_Expr_Sinh_swigregister = _Expr.Handle_Expr_Sinh_swigregister
 Handle_Expr_Sinh_swigregister(Handle_Expr_Sinh)
 
-def Handle_Expr_Sinh_DownCast(*args):
+def Handle_Expr_Sinh_DownCast(*args) -> "Handle_Expr_Sinh const" :
   return _Expr.Handle_Expr_Sinh_DownCast(*args)
 Handle_Expr_Sinh_DownCast = _Expr.Handle_Expr_Sinh_DownCast
 
@@ -4615,11 +4615,11 @@ class Expr_Square(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Square_swiginit(self,_Expr.new_Expr_Square(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Square self)"""
         return _Expr.Expr_Square__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Square" :
         """GetHandle(Expr_Square self) -> Handle_Expr_Square"""
         return _Expr.Expr_Square_GetHandle(self)
 
@@ -4657,7 +4657,7 @@ Handle_Expr_Square._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Square__
 Handle_Expr_Square_swigregister = _Expr.Handle_Expr_Square_swigregister
 Handle_Expr_Square_swigregister(Handle_Expr_Square)
 
-def Handle_Expr_Square_DownCast(*args):
+def Handle_Expr_Square_DownCast(*args) -> "Handle_Expr_Square const" :
   return _Expr.Handle_Expr_Square_DownCast(*args)
 Handle_Expr_Square_DownCast = _Expr.Handle_Expr_Square_DownCast
 
@@ -4674,11 +4674,11 @@ class Expr_SquareRoot(Expr_UnaryExpression):
 
         """
         _Expr.Expr_SquareRoot_swiginit(self,_Expr.new_Expr_SquareRoot(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_SquareRoot self)"""
         return _Expr.Expr_SquareRoot__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_SquareRoot" :
         """GetHandle(Expr_SquareRoot self) -> Handle_Expr_SquareRoot"""
         return _Expr.Expr_SquareRoot_GetHandle(self)
 
@@ -4716,7 +4716,7 @@ Handle_Expr_SquareRoot._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Squa
 Handle_Expr_SquareRoot_swigregister = _Expr.Handle_Expr_SquareRoot_swigregister
 Handle_Expr_SquareRoot_swigregister(Handle_Expr_SquareRoot)
 
-def Handle_Expr_SquareRoot_DownCast(*args):
+def Handle_Expr_SquareRoot_DownCast(*args) -> "Handle_Expr_SquareRoot const" :
   return _Expr.Handle_Expr_SquareRoot_DownCast(*args)
 Handle_Expr_SquareRoot_DownCast = _Expr.Handle_Expr_SquareRoot_DownCast
 
@@ -4741,11 +4741,11 @@ class Expr_Sum(Expr_PolyExpression):
 
         """
         _Expr.Expr_Sum_swiginit(self,_Expr.new_Expr_Sum(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Sum self)"""
         return _Expr.Expr_Sum__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Sum" :
         """GetHandle(Expr_Sum self) -> Handle_Expr_Sum"""
         return _Expr.Expr_Sum_GetHandle(self)
 
@@ -4783,7 +4783,7 @@ Handle_Expr_Sum._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Sum__kill_p
 Handle_Expr_Sum_swigregister = _Expr.Handle_Expr_Sum_swigregister
 Handle_Expr_Sum_swigregister(Handle_Expr_Sum)
 
-def Handle_Expr_Sum_DownCast(*args):
+def Handle_Expr_Sum_DownCast(*args) -> "Handle_Expr_Sum const" :
   return _Expr.Handle_Expr_Sum_DownCast(*args)
 Handle_Expr_Sum_DownCast = _Expr.Handle_Expr_Sum_DownCast
 
@@ -4800,11 +4800,11 @@ class Expr_Tangent(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Tangent_swiginit(self,_Expr.new_Expr_Tangent(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Tangent self)"""
         return _Expr.Expr_Tangent__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Tangent" :
         """GetHandle(Expr_Tangent self) -> Handle_Expr_Tangent"""
         return _Expr.Expr_Tangent_GetHandle(self)
 
@@ -4842,7 +4842,7 @@ Handle_Expr_Tangent._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Tangent
 Handle_Expr_Tangent_swigregister = _Expr.Handle_Expr_Tangent_swigregister
 Handle_Expr_Tangent_swigregister(Handle_Expr_Tangent)
 
-def Handle_Expr_Tangent_DownCast(*args):
+def Handle_Expr_Tangent_DownCast(*args) -> "Handle_Expr_Tangent const" :
   return _Expr.Handle_Expr_Tangent_DownCast(*args)
 Handle_Expr_Tangent_DownCast = _Expr.Handle_Expr_Tangent_DownCast
 
@@ -4859,11 +4859,11 @@ class Expr_Tanh(Expr_UnaryExpression):
 
         """
         _Expr.Expr_Tanh_swiginit(self,_Expr.new_Expr_Tanh(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_Tanh self)"""
         return _Expr.Expr_Tanh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_Tanh" :
         """GetHandle(Expr_Tanh self) -> Handle_Expr_Tanh"""
         return _Expr.Expr_Tanh_GetHandle(self)
 
@@ -4901,7 +4901,7 @@ Handle_Expr_Tanh._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Tanh__kill
 Handle_Expr_Tanh_swigregister = _Expr.Handle_Expr_Tanh_swigregister
 Handle_Expr_Tanh_swigregister(Handle_Expr_Tanh)
 
-def Handle_Expr_Tanh_DownCast(*args):
+def Handle_Expr_Tanh_DownCast(*args) -> "Handle_Expr_Tanh const" :
   return _Expr.Handle_Expr_Tanh_DownCast(*args)
 Handle_Expr_Tanh_DownCast = _Expr.Handle_Expr_Tanh_DownCast
 
@@ -4920,7 +4920,7 @@ class Expr_UnaryFunction(Expr_UnaryExpression):
 
         """
         _Expr.Expr_UnaryFunction_swiginit(self,_Expr.new_Expr_UnaryFunction(*args))
-    def Function(self, *args):
+    def Function(self, *args) -> "Handle_Expr_GeneralFunction" :
         """
         * Returns the function defining <self>.
 
@@ -4929,11 +4929,11 @@ class Expr_UnaryFunction(Expr_UnaryExpression):
         """
         return _Expr.Expr_UnaryFunction_Function(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_UnaryFunction self)"""
         return _Expr.Expr_UnaryFunction__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_UnaryFunction" :
         """GetHandle(Expr_UnaryFunction self) -> Handle_Expr_UnaryFunction"""
         return _Expr.Expr_UnaryFunction_GetHandle(self)
 
@@ -4972,7 +4972,7 @@ Handle_Expr_UnaryFunction._kill_pointed = new_instancemethod(_Expr.Handle_Expr_U
 Handle_Expr_UnaryFunction_swigregister = _Expr.Handle_Expr_UnaryFunction_swigregister
 Handle_Expr_UnaryFunction_swigregister(Handle_Expr_UnaryFunction)
 
-def Handle_Expr_UnaryFunction_DownCast(*args):
+def Handle_Expr_UnaryFunction_DownCast(*args) -> "Handle_Expr_UnaryFunction const" :
   return _Expr.Handle_Expr_UnaryFunction_DownCast(*args)
 Handle_Expr_UnaryFunction_DownCast = _Expr.Handle_Expr_UnaryFunction_DownCast
 
@@ -4989,11 +4989,11 @@ class Expr_UnaryMinus(Expr_UnaryExpression):
 
         """
         _Expr.Expr_UnaryMinus_swiginit(self,_Expr.new_Expr_UnaryMinus(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Expr_UnaryMinus self)"""
         return _Expr.Expr_UnaryMinus__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Expr_UnaryMinus" :
         """GetHandle(Expr_UnaryMinus self) -> Handle_Expr_UnaryMinus"""
         return _Expr.Expr_UnaryMinus_GetHandle(self)
 
@@ -5031,7 +5031,7 @@ Handle_Expr_UnaryMinus._kill_pointed = new_instancemethod(_Expr.Handle_Expr_Unar
 Handle_Expr_UnaryMinus_swigregister = _Expr.Handle_Expr_UnaryMinus_swigregister
 Handle_Expr_UnaryMinus_swigregister(Handle_Expr_UnaryMinus)
 
-def Handle_Expr_UnaryMinus_DownCast(*args):
+def Handle_Expr_UnaryMinus_DownCast(*args) -> "Handle_Expr_UnaryMinus const" :
   return _Expr.Handle_Expr_UnaryMinus_DownCast(*args)
 Handle_Expr_UnaryMinus_DownCast = _Expr.Handle_Expr_UnaryMinus_DownCast
 

@@ -113,11 +113,11 @@ class MMgt_TShared(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MMgt_TShared self)"""
         return _MMgt.MMgt_TShared__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MMgt_TShared" :
         """GetHandle(MMgt_TShared self) -> Handle_MMgt_TShared"""
         return _MMgt.MMgt_TShared_GetHandle(self)
 
@@ -155,7 +155,7 @@ Handle_MMgt_TShared._kill_pointed = new_instancemethod(_MMgt.Handle_MMgt_TShared
 Handle_MMgt_TShared_swigregister = _MMgt.Handle_MMgt_TShared_swigregister
 Handle_MMgt_TShared_swigregister(Handle_MMgt_TShared)
 
-def Handle_MMgt_TShared_DownCast(*args):
+def Handle_MMgt_TShared_DownCast(*args) -> "Handle_MMgt_TShared const" :
   return _MMgt.Handle_MMgt_TShared_DownCast(*args)
 Handle_MMgt_TShared_DownCast = _MMgt.Handle_MMgt_TShared_DownCast
 

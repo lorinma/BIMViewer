@@ -154,14 +154,14 @@ class PrsMgr_ModedPresentation(object):
 
         """
         _PrsMgr.PrsMgr_ModedPresentation_swiginit(self,_PrsMgr.new_PrsMgr_ModedPresentation(*args))
-    def Presentation(self, *args):
+    def Presentation(self, *args) -> "Handle_PrsMgr_Presentation" :
         """
         :rtype: Handle_PrsMgr_Presentation
 
         """
         return _PrsMgr.PrsMgr_ModedPresentation_Presentation(self, *args)
 
-    def Mode(self, *args):
+    def Mode(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -186,7 +186,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def TypeOfPresentation3d(self, *args):
+    def TypeOfPresentation3d(self, *args) -> "PrsMgr_TypeOfPresentation3d" :
         """
         * Returns information on whether the object accepts display in HLR mode or not.
 
@@ -195,7 +195,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_TypeOfPresentation3d(self, *args)
 
-    def SetTransformPersistence(self, *args):
+    def SetTransformPersistence(self, *args) -> "void" :
         """
         * Sets up Transform Persistence Mode for this object. This function used to lock in object position, rotation and / or zooming relative to camera position. Object will be drawn in the origin setted by APoint parameter (except Graphic3d_TMF_TriedronPers flag - see description later). aFlag should be: - Graphic3d_TMF_None - no persistence attributes (reset); - Graphic3d_TMF_PanPers - object doesn't move; - Graphic3d_TMF_ZoomPers - object doesn't resize; - Graphic3d_TMF_RotatePers - object doesn't rotate; - Graphic3d_TMF_FullPers - pan, zoom and rotate transform persistence; - Graphic3d_TMF_TriedronPers - object behaves like trihedron; - combination (Graphic3d_TMF_PanPers | Graphic3d_TMF_ZoomPers); - combination (Graphic3d_TMF_PanPers | Graphic3d_TMF_RotatePers); - combination (Graphic3d_TMF_ZoomPers | Graphic3d_TMF_RotatePers). If Graphic3d_TMF_TriedronPers persistence mode selected APoint coordinates X and Y means: - X = 0.0, Y = 0.0 - center of view window; - X > 0.0, Y > 0.0 - right upper corner of view window; - X > 0.0, Y < 0.0 - right lower corner of view window; - X < 0.0, Y > 0.0 - left upper corner of view window; - X < 0.0, Y < 0.0 - left lower corner of view window. And Z coordinate defines the gap from border of view window (except center position).
 
@@ -214,7 +214,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetTransformPersistence(self, *args)
 
-    def GetTransformPersistenceMode(self, *args):
+    def GetTransformPersistenceMode(self, *args) -> "Graphic3d_TransModeFlags" :
         """
         * Gets Transform Persistence Mode for this object
 
@@ -223,7 +223,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_GetTransformPersistenceMode(self, *args)
 
-    def GetTransformPersistencePoint(self, *args):
+    def GetTransformPersistencePoint(self, *args) -> "gp_Pnt" :
         """
         * Gets point of transform persistence for this object
 
@@ -232,7 +232,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_GetTransformPersistencePoint(self, *args)
 
-    def SetTypeOfPresentation(self, *args):
+    def SetTypeOfPresentation(self, *args) -> "void" :
         """
         :param aType:
         :type aType: PrsMgr_TypeOfPresentation3d
@@ -241,7 +241,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetTypeOfPresentation(self, *args)
 
-    def SetToUpdate(self, *args):
+    def SetToUpdate(self, *args) -> "void" :
         """
         * flags the Prs of mode <AMode> to be Updated. the Update will be done when needed.
 
@@ -256,7 +256,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetToUpdate(self, *args)
 
-    def ToBeUpdated(self, *args):
+    def ToBeUpdated(self, *args) -> "void" :
         """
         * gives the list of modes which are flagged 'to be updated'.
 
@@ -267,7 +267,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_ToBeUpdated(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param aLoc:
         :type aLoc: TopLoc_Location &
@@ -276,28 +276,28 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetLocation(self, *args)
 
-    def HasLocation(self, *args):
+    def HasLocation(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _PrsMgr.PrsMgr_PresentableObject_HasLocation(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "TopLoc_Location const &" :
         """
         :rtype: TopLoc_Location
 
         """
         return _PrsMgr.PrsMgr_PresentableObject_Location(self, *args)
 
-    def ResetLocation(self, *args):
+    def ResetLocation(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _PrsMgr.PrsMgr_PresentableObject_ResetLocation(self, *args)
 
-    def UpdateLocation(self, *args):
+    def UpdateLocation(self, *args) -> "void" :
         """
         :rtype: void
 
@@ -308,7 +308,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_UpdateLocation(self, *args)
 
-    def SetZLayer(self, *args):
+    def SetZLayer(self, *args) -> "void" :
         """
         * Set Z layer ID and update all presentations of the presentable object. The layer can be set only for displayed object. If all object presentations are removed, the layer ID will be set to default value when computing presentation. The layers mechanism allows drawing objects in higher layers in overlay of objects in lower layers.
 
@@ -321,7 +321,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetZLayer(self, *args)
 
-    def GetZLayer(self, *args):
+    def GetZLayer(self, *args) -> "Standard_Integer" :
         """
         * Get ID of Z layer. If no presentations of object is displayed, and layer ID is unavailable, the -1 value is returned.
 
@@ -332,7 +332,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_GetZLayer(self, *args)
 
-    def AddClipPlane(self, *args):
+    def AddClipPlane(self, *args) -> "void" :
         """
         * Adds clip plane for graphical clipping for all display mode presentations. The composition of clip planes truncates the rendering space to convex volume. Please be aware that number of supported clip plane is limited. The planes which exceed the limit are ignored. Besides of this, some planes can be already set in view where the object is shown: the number of these planes should be substracted from limit to predict the maximum possible number of object clipping planes. @param thePlane [in] the clip plane to be appended to map of clip planes.
 
@@ -343,7 +343,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_AddClipPlane(self, *args)
 
-    def RemoveClipPlane(self, *args):
+    def RemoveClipPlane(self, *args) -> "void" :
         """
         * Removes previously added clip plane. @param thePlane [in] the clip plane to be removed from map of clip planes.
 
@@ -354,7 +354,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_RemoveClipPlane(self, *args)
 
-    def SetClipPlanes(self, *args):
+    def SetClipPlanes(self, *args) -> "void" :
         """
         * Set clip planes for graphical clipping for all display mode presentations. The composition of clip planes truncates the rendering space to convex volume. Please be aware that number of supported clip plane is limited. The planes which exceed the limit are ignored. Besides of this, some planes can be already set in view where the object is shown: the number of these planes should be substracted from limit to predict the maximum possible number of object clipping planes.
 
@@ -365,7 +365,7 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_SetClipPlanes(self, *args)
 
-    def GetClipPlanes(self, *args):
+    def GetClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane const &" :
         """
         * Get clip planes. returns set of previously added clip planes for all display mode presentations.
 
@@ -374,11 +374,11 @@ class PrsMgr_PresentableObject(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentableObject_GetClipPlanes(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_PresentableObject self)"""
         return _PrsMgr.PrsMgr_PresentableObject__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_PresentableObject" :
         """GetHandle(PrsMgr_PresentableObject self) -> Handle_PrsMgr_PresentableObject"""
         return _PrsMgr.PrsMgr_PresentableObject_GetHandle(self)
 
@@ -434,7 +434,7 @@ Handle_PrsMgr_PresentableObject._kill_pointed = new_instancemethod(_PrsMgr.Handl
 Handle_PrsMgr_PresentableObject_swigregister = _PrsMgr.Handle_PrsMgr_PresentableObject_swigregister
 Handle_PrsMgr_PresentableObject_swigregister(Handle_PrsMgr_PresentableObject)
 
-def Handle_PrsMgr_PresentableObject_DownCast(*args):
+def Handle_PrsMgr_PresentableObject_DownCast(*args) -> "Handle_PrsMgr_PresentableObject const" :
   return _PrsMgr.Handle_PrsMgr_PresentableObject_DownCast(*args)
 Handle_PrsMgr_PresentableObject_DownCast = _PrsMgr.Handle_PrsMgr_PresentableObject_DownCast
 
@@ -442,7 +442,7 @@ class PrsMgr_Presentation(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def KindOfPresentation(self, *args):
+    def KindOfPresentation(self, *args) -> "PrsMgr_KindOfPrs" :
         """
         * 2D or 3D
 
@@ -451,7 +451,7 @@ class PrsMgr_Presentation(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_Presentation_KindOfPresentation(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Destructor
 
@@ -460,7 +460,7 @@ class PrsMgr_Presentation(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_Presentation_Destroy(self, *args)
 
-    def PresentationManager(self, *args):
+    def PresentationManager(self, *args) -> "Handle_PrsMgr_PresentationManager const &" :
         """
         * returns the PresentationManager in which the presentation has been created.
 
@@ -469,7 +469,7 @@ class PrsMgr_Presentation(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_Presentation_PresentationManager(self, *args)
 
-    def SetUpdateStatus(self, *args):
+    def SetUpdateStatus(self, *args) -> "void" :
         """
         :param aStat:
         :type aStat: bool
@@ -478,18 +478,18 @@ class PrsMgr_Presentation(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_Presentation_SetUpdateStatus(self, *args)
 
-    def MustBeUpdated(self, *args):
+    def MustBeUpdated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _PrsMgr.PrsMgr_Presentation_MustBeUpdated(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_Presentation self)"""
         return _PrsMgr.PrsMgr_Presentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_Presentation" :
         """GetHandle(PrsMgr_Presentation self) -> Handle_PrsMgr_Presentation"""
         return _PrsMgr.PrsMgr_Presentation_GetHandle(self)
 
@@ -532,7 +532,7 @@ Handle_PrsMgr_Presentation._kill_pointed = new_instancemethod(_PrsMgr.Handle_Prs
 Handle_PrsMgr_Presentation_swigregister = _PrsMgr.Handle_PrsMgr_Presentation_swigregister
 Handle_PrsMgr_Presentation_swigregister(Handle_PrsMgr_Presentation)
 
-def Handle_PrsMgr_Presentation_DownCast(*args):
+def Handle_PrsMgr_Presentation_DownCast(*args) -> "Handle_PrsMgr_Presentation const" :
   return _PrsMgr.Handle_PrsMgr_Presentation_DownCast(*args)
 Handle_PrsMgr_Presentation_DownCast = _PrsMgr.Handle_PrsMgr_Presentation_DownCast
 
@@ -540,14 +540,14 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Is3D(self, *args):
+    def Is3D(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _PrsMgr.PrsMgr_PresentationManager_Is3D(self, *args)
 
-    def Display(self, *args):
+    def Display(self, *args) -> "void" :
         """
         * Displays the presentation of the object in the given Presentation manager with the given mode. The mode should be enumerated by the object which inherits PresentableObject.
 
@@ -560,7 +560,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Display(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "void" :
         """
         * erases the presentation of the object in the given Presentation manager with the given mode.
 
@@ -573,7 +573,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Erase(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the presentation of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -586,7 +586,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Clear(self, *args)
 
-    def SetVisibility(self, *args):
+    def SetVisibility(self, *args) -> "void" :
         """
         * Sets the visibility of presentable object.
 
@@ -601,7 +601,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_SetVisibility(self, *args)
 
-    def Highlight(self, *args):
+    def Highlight(self, *args) -> "void" :
         """
         * Highlights the presentation of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -614,7 +614,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Highlight(self, *args)
 
-    def Unhighlight(self, *args):
+    def Unhighlight(self, *args) -> "void" :
         """
         * Removes highlighting from the presentation of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -627,7 +627,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Unhighlight(self, *args)
 
-    def SetDisplayPriority(self, *args):
+    def SetDisplayPriority(self, *args) -> "void" :
         """
         * Sets the display priority aNewPrior of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -642,7 +642,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_SetDisplayPriority(self, *args)
 
-    def DisplayPriority(self, *args):
+    def DisplayPriority(self, *args) -> "Standard_Integer" :
         """
         * Returns the display priority of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -655,7 +655,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_DisplayPriority(self, *args)
 
-    def SetZLayer(self, *args):
+    def SetZLayer(self, *args) -> "void" :
         """
         * Set Z layer ID for all presentations of the object.
 
@@ -668,7 +668,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_SetZLayer(self, *args)
 
-    def GetZLayer(self, *args):
+    def GetZLayer(self, *args) -> "Standard_Integer" :
         """
         * Get Z layer ID assigned to all presentations of the object. Method returns -1 value if object has no presentations and is impossible to get layer index.
 
@@ -679,7 +679,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_GetZLayer(self, *args)
 
-    def IsDisplayed(self, *args):
+    def IsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the presentation of the presentable object aPresentableObject in this framework with the display mode aMode is displayed.
 
@@ -692,7 +692,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_IsDisplayed(self, *args)
 
-    def IsHighlighted(self, *args):
+    def IsHighlighted(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the presentation of the presentable object aPresentableObject in this framework with the display mode aMode is highlighted.
 
@@ -705,7 +705,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_IsHighlighted(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Updates the presentation of the presentable object aPresentableObject in this framework with the display mode aMode.
 
@@ -718,7 +718,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Update(self, *args)
 
-    def BeginDraw(self, *args):
+    def BeginDraw(self, *args) -> "void" :
         """
         * initializes the list of Prs to be displayed in transient mode
 
@@ -727,7 +727,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_BeginDraw(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Performs an iteration of the transient objects to look for the presentable objects with the display mode aMode. Appends the presentation of the presentable object aPresentableObject with the mode aMode to the list of objects in immediate mode.
 
@@ -740,7 +740,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Performs an iteration of the transient objects to look for the presentable objects with the display mode aMode. Removes the presentation of the presentable object aPresentableObject with the mode aMode from the list of objects in immediate mode.
 
@@ -753,7 +753,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Remove(self, *args)
 
-    def EndDraw(self, *args):
+    def EndDraw(self, *args) -> "void" :
         """
         * Allows rapid drawing of the view aView by avoiding an update of the whole background. If DoubleBuffer is true, the background is drawn.
 
@@ -766,7 +766,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_EndDraw(self, *args)
 
-    def IsImmediateModeOn(self, *args):
+    def IsImmediateModeOn(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if immediate (transient) mode is on.
 
@@ -775,7 +775,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_IsImmediateModeOn(self, *args)
 
-    def HasPresentation(self, *args):
+    def HasPresentation(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a presentation of the presentable object aPresentableObject in this framework, aPresentableObject having the display mode aMode.
 
@@ -788,7 +788,7 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_HasPresentation(self, *args)
 
-    def Presentation(self, *args):
+    def Presentation(self, *args) -> "Handle_PrsMgr_Presentation" :
         """
         * Returns the presentation Presentation of the presentable object aPresentableObject in this framework. aPresentableObject has the display mode aMode.
 
@@ -801,11 +801,11 @@ class PrsMgr_PresentationManager(OCC.MMgt.MMgt_TShared):
         """
         return _PrsMgr.PrsMgr_PresentationManager_Presentation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_PresentationManager self)"""
         return _PrsMgr.PrsMgr_PresentationManager__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_PresentationManager" :
         """GetHandle(PrsMgr_PresentationManager self) -> Handle_PrsMgr_PresentationManager"""
         return _PrsMgr.PrsMgr_PresentationManager_GetHandle(self)
 
@@ -864,7 +864,7 @@ Handle_PrsMgr_PresentationManager._kill_pointed = new_instancemethod(_PrsMgr.Han
 Handle_PrsMgr_PresentationManager_swigregister = _PrsMgr.Handle_PrsMgr_PresentationManager_swigregister
 Handle_PrsMgr_PresentationManager_swigregister(Handle_PrsMgr_PresentationManager)
 
-def Handle_PrsMgr_PresentationManager_DownCast(*args):
+def Handle_PrsMgr_PresentationManager_DownCast(*args) -> "Handle_PrsMgr_PresentationManager const" :
   return _PrsMgr.Handle_PrsMgr_PresentationManager_DownCast(*args)
 Handle_PrsMgr_PresentationManager_DownCast = _PrsMgr.Handle_PrsMgr_PresentationManager_DownCast
 
@@ -877,14 +877,14 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _PrsMgr.PrsMgr_Presentations_swiginit(self,_PrsMgr.new_PrsMgr_Presentations(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _PrsMgr.PrsMgr_Presentations_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "PrsMgr_Presentations const &" :
         """
         :param Other:
         :type Other: PrsMgr_Presentations &
@@ -893,7 +893,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "PrsMgr_Presentations const &" :
         """
         :param Other:
         :type Other: PrsMgr_Presentations &
@@ -902,7 +902,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: PrsMgr_ModedPresentation &
@@ -915,7 +915,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: PrsMgr_ModedPresentation &
@@ -928,7 +928,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -945,7 +945,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -962,21 +962,21 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "PrsMgr_ModedPresentation const &" :
         """
         :rtype: PrsMgr_ModedPresentation
 
         """
         return _PrsMgr.PrsMgr_Presentations_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "PrsMgr_ModedPresentation const &" :
         """
         :rtype: PrsMgr_ModedPresentation
 
         """
         return _PrsMgr.PrsMgr_Presentations_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -987,7 +987,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "PrsMgr_ModedPresentation const &" :
         """
         :param Index:
         :type Index: int
@@ -996,7 +996,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1007,7 +1007,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "PrsMgr_ModedPresentation &" :
         """
         :param Index:
         :type Index: int
@@ -1016,7 +1016,7 @@ class PrsMgr_Presentations(OCC.TCollection.TCollection_BaseSequence):
         """
         return _PrsMgr.PrsMgr_Presentations_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1072,7 +1072,7 @@ class PrsMgr_Prs(OCC.Prs3d.Prs3d_Presentation):
 
         """
         _PrsMgr.PrsMgr_Prs_swiginit(self,_PrsMgr.new_PrsMgr_Prs(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1109,11 +1109,11 @@ class PrsMgr_Prs(OCC.Prs3d.Prs3d_Presentation):
         """
         return _PrsMgr.PrsMgr_Prs_Compute(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_Prs self)"""
         return _PrsMgr.PrsMgr_Prs__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_Prs" :
         """GetHandle(PrsMgr_Prs self) -> Handle_PrsMgr_Prs"""
         return _PrsMgr.PrsMgr_Prs_GetHandle(self)
 
@@ -1152,7 +1152,7 @@ Handle_PrsMgr_Prs._kill_pointed = new_instancemethod(_PrsMgr.Handle_PrsMgr_Prs__
 Handle_PrsMgr_Prs_swigregister = _PrsMgr.Handle_PrsMgr_Prs_swigregister
 Handle_PrsMgr_Prs_swigregister(Handle_PrsMgr_Prs)
 
-def Handle_PrsMgr_Prs_DownCast(*args):
+def Handle_PrsMgr_Prs_DownCast(*args) -> "Handle_PrsMgr_Prs const" :
   return _PrsMgr.Handle_PrsMgr_Prs_DownCast(*args)
 Handle_PrsMgr_Prs_DownCast = _PrsMgr.Handle_PrsMgr_Prs_DownCast
 
@@ -1171,18 +1171,18 @@ class PrsMgr_SequenceNodeOfPresentations(OCC.TCollection.TCollection_SeqNode):
 
         """
         _PrsMgr.PrsMgr_SequenceNodeOfPresentations_swiginit(self,_PrsMgr.new_PrsMgr_SequenceNodeOfPresentations(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "PrsMgr_ModedPresentation &" :
         """
         :rtype: PrsMgr_ModedPresentation
 
         """
         return _PrsMgr.PrsMgr_SequenceNodeOfPresentations_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_SequenceNodeOfPresentations self)"""
         return _PrsMgr.PrsMgr_SequenceNodeOfPresentations__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_SequenceNodeOfPresentations" :
         """GetHandle(PrsMgr_SequenceNodeOfPresentations self) -> Handle_PrsMgr_SequenceNodeOfPresentations"""
         return _PrsMgr.PrsMgr_SequenceNodeOfPresentations_GetHandle(self)
 
@@ -1221,7 +1221,7 @@ Handle_PrsMgr_SequenceNodeOfPresentations._kill_pointed = new_instancemethod(_Pr
 Handle_PrsMgr_SequenceNodeOfPresentations_swigregister = _PrsMgr.Handle_PrsMgr_SequenceNodeOfPresentations_swigregister
 Handle_PrsMgr_SequenceNodeOfPresentations_swigregister(Handle_PrsMgr_SequenceNodeOfPresentations)
 
-def Handle_PrsMgr_SequenceNodeOfPresentations_DownCast(*args):
+def Handle_PrsMgr_SequenceNodeOfPresentations_DownCast(*args) -> "Handle_PrsMgr_SequenceNodeOfPresentations const" :
   return _PrsMgr.Handle_PrsMgr_SequenceNodeOfPresentations_DownCast(*args)
 Handle_PrsMgr_SequenceNodeOfPresentations_DownCast = _PrsMgr.Handle_PrsMgr_SequenceNodeOfPresentations_DownCast
 
@@ -1229,18 +1229,18 @@ class PrsMgr_Presentation3d(PrsMgr_Presentation):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Presentation(self, *args):
+    def Presentation(self, *args) -> "Handle_Prs3d_Presentation" :
         """
         :rtype: Handle_Prs3d_Presentation
 
         """
         return _PrsMgr.PrsMgr_Presentation3d_Presentation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_Presentation3d self)"""
         return _PrsMgr.PrsMgr_Presentation3d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_Presentation3d" :
         """GetHandle(PrsMgr_Presentation3d self) -> Handle_PrsMgr_Presentation3d"""
         return _PrsMgr.PrsMgr_Presentation3d_GetHandle(self)
 
@@ -1279,7 +1279,7 @@ Handle_PrsMgr_Presentation3d._kill_pointed = new_instancemethod(_PrsMgr.Handle_P
 Handle_PrsMgr_Presentation3d_swigregister = _PrsMgr.Handle_PrsMgr_Presentation3d_swigregister
 Handle_PrsMgr_Presentation3d_swigregister(Handle_PrsMgr_Presentation3d)
 
-def Handle_PrsMgr_Presentation3d_DownCast(*args):
+def Handle_PrsMgr_Presentation3d_DownCast(*args) -> "Handle_PrsMgr_Presentation3d const" :
   return _PrsMgr.Handle_PrsMgr_Presentation3d_DownCast(*args)
 Handle_PrsMgr_Presentation3d_DownCast = _PrsMgr.Handle_PrsMgr_Presentation3d_DownCast
 
@@ -1296,7 +1296,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
 
         """
         _PrsMgr.PrsMgr_PresentationManager3d_swiginit(self,_PrsMgr.new_PrsMgr_PresentationManager3d(*args))
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         * Highlights the graphic object aPresentableObject in the color aColor. aPresentableObject has the display mode aMode; this has the default value of 0, that is, the wireframe display mode.
 
@@ -1311,7 +1311,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Color(self, *args)
 
-    def BoundBox(self, *args):
+    def BoundBox(self, *args) -> "void" :
         """
         * highlights the boundbox of the presentation
 
@@ -1324,7 +1324,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_BoundBox(self, *args)
 
-    def AddToImmediateList(self, *args):
+    def AddToImmediateList(self, *args) -> "void" :
         """
         * stores <aPrs> in a list of structure to be displayed in immediate mode. will be taken in account in EndDraw Method.
 
@@ -1335,7 +1335,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_AddToImmediateList(self, *args)
 
-    def Connect(self, *args):
+    def Connect(self, *args) -> "void" :
         """
         :param aPresentableObject:
         :type aPresentableObject: Handle_PrsMgr_PresentableObject &
@@ -1350,7 +1350,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Connect(self, *args)
 
-    def Transform(self, *args):
+    def Transform(self, *args) -> "void" :
         """
         * Sets the transformation aTransformation for the presentable object aPresentableObject. aPresentableObject has the display mode aMode; this has the default value of 0, that is, the wireframe display mode.
 
@@ -1365,7 +1365,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Transform(self, *args)
 
-    def Place(self, *args):
+    def Place(self, *args) -> "void" :
         """
         * Sets a position to move the presentable object aPresentableObject to. This position is defined by the lengths along the x, y and z axes: X, Y and Z respectively. aPresentableObject has the display mode aMode; this has the default value of 0, that is, the wireframe display mode.
 
@@ -1384,7 +1384,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Place(self, *args)
 
-    def Multiply(self, *args):
+    def Multiply(self, *args) -> "void" :
         """
         * Defines the transformation aTransformation for the presentable object aPresentableObject. aPresentableObject has the display mode aMode; this has the default value of 0, that is, the wireframe display mode.
 
@@ -1399,7 +1399,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Multiply(self, *args)
 
-    def Move(self, *args):
+    def Move(self, *args) -> "void" :
         """
         * Sets a position to move the presentable object aPresentableObject to. This position is defined by the lengths along the x, y and z axes: X, Y and Z respectively. aPresentableObject has the display mode aMode; this has the default value of 0, that is, the wireframe display mode.
 
@@ -1418,7 +1418,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_Move(self, *args)
 
-    def StructureManager(self, *args):
+    def StructureManager(self, *args) -> "Handle_Graphic3d_StructureManager const &" :
         """
         * Returns the structure manager.
 
@@ -1427,7 +1427,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_StructureManager(self, *args)
 
-    def SetShadingAspect(self, *args):
+    def SetShadingAspect(self, *args) -> "void" :
         """
         * this method will change the color and the aspect of the presentations containg shaded structures.
 
@@ -1454,7 +1454,7 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_SetShadingAspect(self, *args)
 
-    def CastPresentation(self, *args):
+    def CastPresentation(self, *args) -> "Handle_PrsMgr_Presentation3d" :
         """
         :param aPresentableObject:
         :type aPresentableObject: Handle_PrsMgr_PresentableObject &
@@ -1465,11 +1465,11 @@ class PrsMgr_PresentationManager3d(PrsMgr_PresentationManager):
         """
         return _PrsMgr.PrsMgr_PresentationManager3d_CastPresentation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(PrsMgr_PresentationManager3d self)"""
         return _PrsMgr.PrsMgr_PresentationManager3d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_PrsMgr_PresentationManager3d" :
         """GetHandle(PrsMgr_PresentationManager3d self) -> Handle_PrsMgr_PresentationManager3d"""
         return _PrsMgr.PrsMgr_PresentationManager3d_GetHandle(self)
 
@@ -1518,7 +1518,7 @@ Handle_PrsMgr_PresentationManager3d._kill_pointed = new_instancemethod(_PrsMgr.H
 Handle_PrsMgr_PresentationManager3d_swigregister = _PrsMgr.Handle_PrsMgr_PresentationManager3d_swigregister
 Handle_PrsMgr_PresentationManager3d_swigregister(Handle_PrsMgr_PresentationManager3d)
 
-def Handle_PrsMgr_PresentationManager3d_DownCast(*args):
+def Handle_PrsMgr_PresentationManager3d_DownCast(*args) -> "Handle_PrsMgr_PresentationManager3d const" :
   return _PrsMgr.Handle_PrsMgr_PresentationManager3d_DownCast(*args)
 Handle_PrsMgr_PresentationManager3d_DownCast = _PrsMgr.Handle_PrsMgr_PresentationManager3d_DownCast
 

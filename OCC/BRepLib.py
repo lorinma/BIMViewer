@@ -150,7 +150,7 @@ BRepLib_NonManifoldWire = _BRepLib.BRepLib_NonManifoldWire
 class breplib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Precision(*args):
+    def Precision(*args) -> "Standard_Real" :
         """
         * Sets the default precision. The current Precision is returned.
 
@@ -166,7 +166,7 @@ class breplib(object):
         return _BRepLib.breplib_Precision(*args)
 
     Precision = staticmethod(Precision)
-    def Plane(*args):
+    def Plane(*args) -> "Handle_Geom_Plane const &" :
         """
         * Sets the current plane to P.
 
@@ -182,7 +182,7 @@ class breplib(object):
         return _BRepLib.breplib_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def CheckSameRange(*args):
+    def CheckSameRange(*args) -> "Standard_Boolean" :
         """
         * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
 
@@ -196,7 +196,7 @@ class breplib(object):
         return _BRepLib.breplib_CheckSameRange(*args)
 
     CheckSameRange = staticmethod(CheckSameRange)
-    def SameRange(*args):
+    def SameRange(*args) -> "void" :
         """
         * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
 
@@ -210,7 +210,7 @@ class breplib(object):
         return _BRepLib.breplib_SameRange(*args)
 
     SameRange = staticmethod(SameRange)
-    def BuildCurve3d(*args):
+    def BuildCurve3d(*args) -> "Standard_Boolean" :
         """
         * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -230,7 +230,7 @@ class breplib(object):
         return _BRepLib.breplib_BuildCurve3d(*args)
 
     BuildCurve3d = staticmethod(BuildCurve3d)
-    def BuildCurves3d(*args):
+    def BuildCurves3d(*args) -> "Standard_Boolean" :
         """
         * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -256,7 +256,7 @@ class breplib(object):
         return _BRepLib.breplib_BuildCurves3d(*args)
 
     BuildCurves3d = staticmethod(BuildCurves3d)
-    def UpdateEdgeTol(*args):
+    def UpdateEdgeTol(*args) -> "Standard_Boolean" :
         """
         * Checks if the edge has a Tolerance smaller than -- -- -- -- MaxToleranceToCheck if so it will compute the radius of -- the cylindrical pipe surface that MinToleranceRequest is the minimum tolerance before it is usefull to start testing. Usually it should be arround 10e-5 contains all -- the curve represenation of the edge returns True if the Edge tolerance had to be updated
 
@@ -272,7 +272,7 @@ class breplib(object):
         return _BRepLib.breplib_UpdateEdgeTol(*args)
 
     UpdateEdgeTol = staticmethod(UpdateEdgeTol)
-    def UpdateEdgeTolerance(*args):
+    def UpdateEdgeTolerance(*args) -> "Standard_Boolean" :
         """
         * -- Checks all the edges of the shape whose -- -- -- Tolerance is smaller than MaxToleranceToCheck -- Returns True if at least one edge was updated -- MinToleranceRequest is the minimum tolerance before -- it -- is usefull to start testing. Usually it should be arround -- 10e-5-- Warning :The method is very slow as it checks all.  Use only in interfaces or processing assimilate batch
 
@@ -288,7 +288,7 @@ class breplib(object):
         return _BRepLib.breplib_UpdateEdgeTolerance(*args)
 
     UpdateEdgeTolerance = staticmethod(UpdateEdgeTolerance)
-    def SameParameter(*args):
+    def SameParameter(*args) -> "void" :
         """
         * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
 
@@ -312,7 +312,7 @@ class breplib(object):
         return _BRepLib.breplib_SameParameter(*args)
 
     SameParameter = staticmethod(SameParameter)
-    def UpdateTolerances(*args):
+    def UpdateTolerances(*args) -> "void" :
         """
         * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
 
@@ -326,7 +326,7 @@ class breplib(object):
         return _BRepLib.breplib_UpdateTolerances(*args)
 
     UpdateTolerances = staticmethod(UpdateTolerances)
-    def OrientClosedSolid(*args):
+    def OrientClosedSolid(*args) -> "Standard_Boolean" :
         """
         * Orients the solid forward and the shell with the orientation to have matter in the solid. Returns False if the solid is unOrientable (open or incoherent)
 
@@ -338,7 +338,7 @@ class breplib(object):
         return _BRepLib.breplib_OrientClosedSolid(*args)
 
     OrientClosedSolid = staticmethod(OrientClosedSolid)
-    def EncodeRegularity(*args):
+    def EncodeRegularity(*args) -> "void" :
         """
         * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
 
@@ -364,7 +364,7 @@ class breplib(object):
         return _BRepLib.breplib_EncodeRegularity(*args)
 
     EncodeRegularity = staticmethod(EncodeRegularity)
-    def SortFaces(*args):
+    def SortFaces(*args) -> "void" :
         """
         * Sorts in LF the Faces of S on the complexity of  their surfaces (Plane,Cylinder,Cone,Sphere,Torus,other)
 
@@ -378,7 +378,7 @@ class breplib(object):
         return _BRepLib.breplib_SortFaces(*args)
 
     SortFaces = staticmethod(SortFaces)
-    def ReverseSortFaces(*args):
+    def ReverseSortFaces(*args) -> "void" :
         """
         * Sorts in LF the Faces of S on the reverse  complexity of their surfaces (other,Torus,Sphere,Cone,Cylinder,Plane)
 
@@ -406,7 +406,7 @@ breplib._kill_pointed = new_instancemethod(_BRepLib.breplib__kill_pointed,None,b
 breplib_swigregister = _BRepLib.breplib_swigregister
 breplib_swigregister(breplib)
 
-def breplib_Precision(*args):
+def breplib_Precision(*args) -> "Standard_Real" :
   """
     * Sets the default precision. The current Precision is returned.
 
@@ -421,7 +421,7 @@ def breplib_Precision(*args):
     """
   return _BRepLib.breplib_Precision(*args)
 
-def breplib_Plane(*args):
+def breplib_Plane(*args) -> "Handle_Geom_Plane const &" :
   """
     * Sets the current plane to P.
 
@@ -436,7 +436,7 @@ def breplib_Plane(*args):
     """
   return _BRepLib.breplib_Plane(*args)
 
-def breplib_CheckSameRange(*args):
+def breplib_CheckSameRange(*args) -> "Standard_Boolean" :
   """
     * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
 
@@ -449,7 +449,7 @@ def breplib_CheckSameRange(*args):
     """
   return _BRepLib.breplib_CheckSameRange(*args)
 
-def breplib_SameRange(*args):
+def breplib_SameRange(*args) -> "void" :
   """
     * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
 
@@ -462,7 +462,7 @@ def breplib_SameRange(*args):
     """
   return _BRepLib.breplib_SameRange(*args)
 
-def breplib_BuildCurve3d(*args):
+def breplib_BuildCurve3d(*args) -> "Standard_Boolean" :
   """
     * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -481,7 +481,7 @@ def breplib_BuildCurve3d(*args):
     """
   return _BRepLib.breplib_BuildCurve3d(*args)
 
-def breplib_BuildCurves3d(*args):
+def breplib_BuildCurves3d(*args) -> "Standard_Boolean" :
   """
     * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -506,7 +506,7 @@ def breplib_BuildCurves3d(*args):
     """
   return _BRepLib.breplib_BuildCurves3d(*args)
 
-def breplib_UpdateEdgeTol(*args):
+def breplib_UpdateEdgeTol(*args) -> "Standard_Boolean" :
   """
     * Checks if the edge has a Tolerance smaller than -- -- -- -- MaxToleranceToCheck if so it will compute the radius of -- the cylindrical pipe surface that MinToleranceRequest is the minimum tolerance before it is usefull to start testing. Usually it should be arround 10e-5 contains all -- the curve represenation of the edge returns True if the Edge tolerance had to be updated
 
@@ -521,7 +521,7 @@ def breplib_UpdateEdgeTol(*args):
     """
   return _BRepLib.breplib_UpdateEdgeTol(*args)
 
-def breplib_UpdateEdgeTolerance(*args):
+def breplib_UpdateEdgeTolerance(*args) -> "Standard_Boolean" :
   """
     * -- Checks all the edges of the shape whose -- -- -- Tolerance is smaller than MaxToleranceToCheck -- Returns True if at least one edge was updated -- MinToleranceRequest is the minimum tolerance before -- it -- is usefull to start testing. Usually it should be arround -- 10e-5-- Warning :The method is very slow as it checks all.  Use only in interfaces or processing assimilate batch
 
@@ -536,7 +536,7 @@ def breplib_UpdateEdgeTolerance(*args):
     """
   return _BRepLib.breplib_UpdateEdgeTolerance(*args)
 
-def breplib_SameParameter(*args):
+def breplib_SameParameter(*args) -> "void" :
   """
     * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
 
@@ -559,7 +559,7 @@ def breplib_SameParameter(*args):
     """
   return _BRepLib.breplib_SameParameter(*args)
 
-def breplib_UpdateTolerances(*args):
+def breplib_UpdateTolerances(*args) -> "void" :
   """
     * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
 
@@ -572,7 +572,7 @@ def breplib_UpdateTolerances(*args):
     """
   return _BRepLib.breplib_UpdateTolerances(*args)
 
-def breplib_OrientClosedSolid(*args):
+def breplib_OrientClosedSolid(*args) -> "Standard_Boolean" :
   """
     * Orients the solid forward and the shell with the orientation to have matter in the solid. Returns False if the solid is unOrientable (open or incoherent)
 
@@ -583,7 +583,7 @@ def breplib_OrientClosedSolid(*args):
     """
   return _BRepLib.breplib_OrientClosedSolid(*args)
 
-def breplib_EncodeRegularity(*args):
+def breplib_EncodeRegularity(*args) -> "void" :
   """
     * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
 
@@ -608,7 +608,7 @@ def breplib_EncodeRegularity(*args):
     """
   return _BRepLib.breplib_EncodeRegularity(*args)
 
-def breplib_SortFaces(*args):
+def breplib_SortFaces(*args) -> "void" :
   """
     * Sorts in LF the Faces of S on the complexity of  their surfaces (Plane,Cylinder,Cone,Sphere,Torus,other)
 
@@ -621,7 +621,7 @@ def breplib_SortFaces(*args):
     """
   return _BRepLib.breplib_SortFaces(*args)
 
-def breplib_ReverseSortFaces(*args):
+def breplib_ReverseSortFaces(*args) -> "void" :
   """
     * Sorts in LF the Faces of S on the reverse  complexity of their surfaces (other,Torus,Sphere,Cone,Cylinder,Plane)
 
@@ -638,21 +638,21 @@ class BRepLib_Command(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _BRepLib.BRepLib_Command_Delete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepLib.BRepLib_Command_IsDone(self, *args)
 
-    def Check(self, *args):
+    def Check(self, *args) -> "void" :
         """
         * Raises NotDone if done is false.
 
@@ -697,7 +697,7 @@ class BRepLib_FindSurface(object):
 
         """
         _BRepLib.BRepLib_FindSurface_swiginit(self,_BRepLib.new_BRepLib_FindSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
 
@@ -714,42 +714,42 @@ class BRepLib_FindSurface(object):
         """
         return _BRepLib.BRepLib_FindSurface_Init(self, *args)
 
-    def Found(self, *args):
+    def Found(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepLib.BRepLib_FindSurface_Found(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_Surface" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _BRepLib.BRepLib_FindSurface_Surface(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepLib.BRepLib_FindSurface_Tolerance(self, *args)
 
-    def ToleranceReached(self, *args):
+    def ToleranceReached(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepLib.BRepLib_FindSurface_ToleranceReached(self, *args)
 
-    def Existed(self, *args):
+    def Existed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepLib.BRepLib_FindSurface_Existed(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "TopLoc_Location" :
         """
         :rtype: TopLoc_Location
 
@@ -790,7 +790,7 @@ class BRepLib_FuseEdges(object):
 
         """
         _BRepLib.BRepLib_FuseEdges_swiginit(self,_BRepLib.new_BRepLib_FuseEdges(*args))
-    def AvoidEdges(self, *args):
+    def AvoidEdges(self, *args) -> "void" :
         """
         * set edges to avoid being fused
 
@@ -801,7 +801,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_AvoidEdges(self, *args)
 
-    def SetConcatBSpl(self, *args):
+    def SetConcatBSpl(self, *args) -> "void" :
         """
         * set mode to enable concatenation G1 BSpline edges in one End Modified by IFV 19.04.07
 
@@ -812,7 +812,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_SetConcatBSpl(self, *args)
 
-    def Edges(self, *args):
+    def Edges(self, *args) -> "void" :
         """
         * returns all the list of edges to be fused each list of the map represent a set of connex edges that can be fused.
 
@@ -823,7 +823,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_Edges(self, *args)
 
-    def ResultEdges(self, *args):
+    def ResultEdges(self, *args) -> "void" :
         """
         * returns all the fused edges. each integer entry in the map corresponds to the integer in the DataMapOfIntegerListOfShape we get in method Edges. That is to say, to the list of edges in theMapLstEdg(i) corresponds the resulting edge theMapEdge(i)
 
@@ -834,7 +834,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_ResultEdges(self, *args)
 
-    def Faces(self, *args):
+    def Faces(self, *args) -> "void" :
         """
         * returns the map of modified faces.
 
@@ -845,7 +845,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_Faces(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape" :
         """
         * returns myShape modified with the list of internal edges removed from it.
 
@@ -854,7 +854,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_Shape(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         * returns the number of vertices candidate to be removed
 
@@ -863,7 +863,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_NbVertices(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Using map of list of connex edges, fuse each list to one edge and then update myShape
 
@@ -896,7 +896,7 @@ class BRepLib_MakeShape(BRepLib_Command):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * This is called by Shape(). It does nothing but may be redefined.
 
@@ -905,14 +905,14 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_Build(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepLib.BRepLib_MakeShape_Shape(self, *args)
 
-    def FaceStatus(self, *args):
+    def FaceStatus(self, *args) -> "BRepLib_ShapeModification" :
         """
         * returns the status of the Face after the shape creation.
 
@@ -923,7 +923,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_FaceStatus(self, *args)
 
-    def HasDescendants(self, *args):
+    def HasDescendants(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Face generates new topology.
 
@@ -934,7 +934,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_HasDescendants(self, *args)
 
-    def DescendantFaces(self, *args):
+    def DescendantFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * returns the list of generated Faces.
 
@@ -945,7 +945,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_DescendantFaces(self, *args)
 
-    def NbSurfaces(self, *args):
+    def NbSurfaces(self, *args) -> "Standard_Integer" :
         """
         * returns the number of surfaces after the shape creation.
 
@@ -954,7 +954,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_NbSurfaces(self, *args)
 
-    def NewFaces(self, *args):
+    def NewFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Return the faces created for surface I.
 
@@ -965,7 +965,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_NewFaces(self, *args)
 
-    def FacesFromEdges(self, *args):
+    def FacesFromEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * returns a list of the created faces from the edge <E>.
 
@@ -1273,7 +1273,7 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeEdge_swiginit(self,_BRepLib.new_BRepLib_MakeEdge(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -1394,7 +1394,7 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge_Init(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "BRepLib_EdgeError" :
         """
         * Returns the error description when NotDone.
 
@@ -1403,14 +1403,14 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge_Error(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepLib.BRepLib_MakeEdge_Edge(self, *args)
 
-    def Vertex1(self, *args):
+    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the first vertex of the edge. May be Null.
 
@@ -1419,7 +1419,7 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge_Vertex1(self, *args)
 
-    def Vertex2(self, *args):
+    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the second vertex of the edge. May be Null.
 
@@ -1656,7 +1656,7 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeEdge2d_swiginit(self,_BRepLib.new_BRepLib_MakeEdge2d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -1713,7 +1713,7 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge2d_Init(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "BRepLib_EdgeError" :
         """
         * Returns the error description when NotDone.
 
@@ -1722,14 +1722,14 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge2d_Error(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepLib.BRepLib_MakeEdge2d_Edge(self, *args)
 
-    def Vertex1(self, *args):
+    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the first vertex of the edge. May be Null.
 
@@ -1738,7 +1738,7 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge2d_Vertex1(self, *args)
 
-    def Vertex2(self, *args):
+    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the second vertex of the edge. May be Null.
 
@@ -1981,7 +1981,7 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeFace_swiginit(self,_BRepLib.new_BRepLib_MakeFace(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Load the face.
 
@@ -2018,7 +2018,7 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeFace_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the wire <W> in the current face.
 
@@ -2029,14 +2029,14 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeFace_Add(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "BRepLib_FaceError" :
         """
         :rtype: BRepLib_FaceError
 
         """
         return _BRepLib.BRepLib_MakeFace_Error(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Returns the new face.
 
@@ -2128,7 +2128,7 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakePolygon_swiginit(self,_BRepLib.new_BRepLib_MakePolygon(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -2141,7 +2141,7 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakePolygon_Add(self, *args)
 
-    def Added(self, *args):
+    def Added(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the last vertex or point was succesfully added.
 
@@ -2150,28 +2150,28 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakePolygon_Added(self, *args)
 
-    def Close(self, *args):
+    def Close(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepLib.BRepLib_MakePolygon_Close(self, *args)
 
-    def FirstVertex(self, *args):
+    def FirstVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepLib.BRepLib_MakePolygon_FirstVertex(self, *args)
 
-    def LastVertex(self, *args):
+    def LastVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepLib.BRepLib_MakePolygon_LastVertex(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the last edge added to the polygon.
 
@@ -2180,7 +2180,7 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakePolygon_Edge(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire const" :
         """
         :rtype: TopoDS_Wire
 
@@ -2237,7 +2237,7 @@ class BRepLib_MakeShell(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeShell_swiginit(self,_BRepLib.new_BRepLib_MakeShell(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Creates the shell from the surface and the min-max values.
 
@@ -2258,14 +2258,14 @@ class BRepLib_MakeShell(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeShell_Init(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "BRepLib_ShellError" :
         """
         :rtype: BRepLib_ShellError
 
         """
         return _BRepLib.BRepLib_MakeShell_Error(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell const" :
         """
         * Returns the new Shell.
 
@@ -2344,7 +2344,7 @@ class BRepLib_MakeSolid(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeSolid_swiginit(self,_BRepLib.new_BRepLib_MakeSolid(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Add the shell to the current solid.
 
@@ -2355,7 +2355,7 @@ class BRepLib_MakeSolid(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeSolid_Add(self, *args)
 
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         * Returns the new Solid.
 
@@ -2389,7 +2389,7 @@ class BRepLib_MakeVertex(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeVertex_swiginit(self,_BRepLib.new_BRepLib_MakeVertex(*args))
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
@@ -2470,7 +2470,7 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeWire_swiginit(self,_BRepLib.new_BRepLib_MakeWire(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Add the edge <E> to the current wire.
 
@@ -2493,14 +2493,14 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeWire_Add(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "BRepLib_WireError" :
         """
         :rtype: BRepLib_WireError
 
         """
         return _BRepLib.BRepLib_MakeWire_Error(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire const" :
         """
         * Returns the new wire.
 
@@ -2509,7 +2509,7 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeWire_Wire(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the last edge added to the wire.
 
@@ -2518,7 +2518,7 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeWire_Edge(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the last connecting vertex.
 

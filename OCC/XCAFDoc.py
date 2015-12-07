@@ -128,7 +128,7 @@ XCAFDoc_ColorCurv = _XCAFDoc.XCAFDoc_ColorCurv
 class xcafdoc(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def AssemblyGUID(*args):
+    def AssemblyGUID(*args) -> "Standard_GUID" :
         """
         * Returns GUID for UAttribute identifying assembly
 
@@ -138,7 +138,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_AssemblyGUID(*args)
 
     AssemblyGUID = staticmethod(AssemblyGUID)
-    def ShapeRefGUID(*args):
+    def ShapeRefGUID(*args) -> "Standard_GUID" :
         """
         * Returns GUID for TreeNode representing assembly link
 
@@ -148,7 +148,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_ShapeRefGUID(*args)
 
     ShapeRefGUID = staticmethod(ShapeRefGUID)
-    def ColorRefGUID(*args):
+    def ColorRefGUID(*args) -> "Standard_GUID" :
         """
         * Return GUIDs for TreeNode representing specified types of colors
 
@@ -160,7 +160,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_ColorRefGUID(*args)
 
     ColorRefGUID = staticmethod(ColorRefGUID)
-    def DimTolRefGUID(*args):
+    def DimTolRefGUID(*args) -> "Standard_GUID" :
         """
         * Return GUIDs for TreeNode representing specified types of DGT
 
@@ -170,7 +170,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_DimTolRefGUID(*args)
 
     DimTolRefGUID = staticmethod(DimTolRefGUID)
-    def DatumRefGUID(*args):
+    def DatumRefGUID(*args) -> "Standard_GUID" :
         """
         * Return GUIDs for TreeNode representing specified types of datum
 
@@ -180,7 +180,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_DatumRefGUID(*args)
 
     DatumRefGUID = staticmethod(DatumRefGUID)
-    def DatumTolRefGUID(*args):
+    def DatumTolRefGUID(*args) -> "Standard_GUID" :
         """
         * Return GUIDs for TreeNode representing connections Datum-Toler
 
@@ -190,7 +190,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_DatumTolRefGUID(*args)
 
     DatumTolRefGUID = staticmethod(DatumTolRefGUID)
-    def LayerRefGUID(*args):
+    def LayerRefGUID(*args) -> "Standard_GUID" :
         """
         :rtype: Standard_GUID
 
@@ -198,7 +198,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_LayerRefGUID(*args)
 
     LayerRefGUID = staticmethod(LayerRefGUID)
-    def MaterialRefGUID(*args):
+    def MaterialRefGUID(*args) -> "Standard_GUID" :
         """
         :rtype: Standard_GUID
 
@@ -206,7 +206,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_MaterialRefGUID(*args)
 
     MaterialRefGUID = staticmethod(MaterialRefGUID)
-    def InvisibleGUID(*args):
+    def InvisibleGUID(*args) -> "Standard_GUID" :
         """
         :rtype: Standard_GUID
 
@@ -214,7 +214,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_InvisibleGUID(*args)
 
     InvisibleGUID = staticmethod(InvisibleGUID)
-    def ExternRefGUID(*args):
+    def ExternRefGUID(*args) -> "Standard_GUID" :
         """
         * Returns GUID for UAttribute identifying external reference on no-step file
 
@@ -224,7 +224,7 @@ class xcafdoc(object):
         return _XCAFDoc.xcafdoc_ExternRefGUID(*args)
 
     ExternRefGUID = staticmethod(ExternRefGUID)
-    def SHUORefGUID(*args):
+    def SHUORefGUID(*args) -> "Standard_GUID" :
         """
         * Returns GUID for UAttribute identifying specified higher usage occurrence
 
@@ -248,7 +248,7 @@ xcafdoc._kill_pointed = new_instancemethod(_XCAFDoc.xcafdoc__kill_pointed,None,x
 xcafdoc_swigregister = _XCAFDoc.xcafdoc_swigregister
 xcafdoc_swigregister(xcafdoc)
 
-def xcafdoc_AssemblyGUID(*args):
+def xcafdoc_AssemblyGUID(*args) -> "Standard_GUID" :
   """
     * Returns GUID for UAttribute identifying assembly
 
@@ -257,7 +257,7 @@ def xcafdoc_AssemblyGUID(*args):
     """
   return _XCAFDoc.xcafdoc_AssemblyGUID(*args)
 
-def xcafdoc_ShapeRefGUID(*args):
+def xcafdoc_ShapeRefGUID(*args) -> "Standard_GUID" :
   """
     * Returns GUID for TreeNode representing assembly link
 
@@ -266,7 +266,7 @@ def xcafdoc_ShapeRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_ShapeRefGUID(*args)
 
-def xcafdoc_ColorRefGUID(*args):
+def xcafdoc_ColorRefGUID(*args) -> "Standard_GUID" :
   """
     * Return GUIDs for TreeNode representing specified types of colors
 
@@ -277,7 +277,7 @@ def xcafdoc_ColorRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_ColorRefGUID(*args)
 
-def xcafdoc_DimTolRefGUID(*args):
+def xcafdoc_DimTolRefGUID(*args) -> "Standard_GUID" :
   """
     * Return GUIDs for TreeNode representing specified types of DGT
 
@@ -286,7 +286,7 @@ def xcafdoc_DimTolRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_DimTolRefGUID(*args)
 
-def xcafdoc_DatumRefGUID(*args):
+def xcafdoc_DatumRefGUID(*args) -> "Standard_GUID" :
   """
     * Return GUIDs for TreeNode representing specified types of datum
 
@@ -295,7 +295,7 @@ def xcafdoc_DatumRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_DatumRefGUID(*args)
 
-def xcafdoc_DatumTolRefGUID(*args):
+def xcafdoc_DatumTolRefGUID(*args) -> "Standard_GUID" :
   """
     * Return GUIDs for TreeNode representing connections Datum-Toler
 
@@ -304,28 +304,28 @@ def xcafdoc_DatumTolRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_DatumTolRefGUID(*args)
 
-def xcafdoc_LayerRefGUID(*args):
+def xcafdoc_LayerRefGUID(*args) -> "Standard_GUID" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.xcafdoc_LayerRefGUID(*args)
 
-def xcafdoc_MaterialRefGUID(*args):
+def xcafdoc_MaterialRefGUID(*args) -> "Standard_GUID" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.xcafdoc_MaterialRefGUID(*args)
 
-def xcafdoc_InvisibleGUID(*args):
+def xcafdoc_InvisibleGUID(*args) -> "Standard_GUID" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.xcafdoc_InvisibleGUID(*args)
 
-def xcafdoc_ExternRefGUID(*args):
+def xcafdoc_ExternRefGUID(*args) -> "Standard_GUID" :
   """
     * Returns GUID for UAttribute identifying external reference on no-step file
 
@@ -334,7 +334,7 @@ def xcafdoc_ExternRefGUID(*args):
     """
   return _XCAFDoc.xcafdoc_ExternRefGUID(*args)
 
-def xcafdoc_SHUORefGUID(*args):
+def xcafdoc_SHUORefGUID(*args) -> "Standard_GUID" :
   """
     * Returns GUID for UAttribute identifying specified higher usage occurrence
 
@@ -354,7 +354,7 @@ class XCAFDoc_Area(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Area_swiginit(self,_XCAFDoc.new_XCAFDoc_Area(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -362,7 +362,7 @@ class XCAFDoc_Area(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Area_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_Area" :
         """
         * Sets a value of volume
 
@@ -382,7 +382,7 @@ class XCAFDoc_Area(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Area_Set(*args)
 
     Set = staticmethod(Set)
-    def Get(*args):
+    def Get(*args) -> "Standard_Real &" :
         """
         :rtype: float
 
@@ -398,15 +398,15 @@ class XCAFDoc_Area(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Area_Get(*args)
 
     Get = staticmethod(Get)
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(XCAFDoc_Area self) -> std::string"""
         return _XCAFDoc.XCAFDoc_Area_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Area self)"""
         return _XCAFDoc.XCAFDoc_Area__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Area" :
         """GetHandle(XCAFDoc_Area self) -> Handle_XCAFDoc_Area"""
         return _XCAFDoc.XCAFDoc_Area_GetHandle(self)
 
@@ -424,14 +424,14 @@ XCAFDoc_Area.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Area_GetHandle,None
 XCAFDoc_Area_swigregister = _XCAFDoc.XCAFDoc_Area_swigregister
 XCAFDoc_Area_swigregister(XCAFDoc_Area)
 
-def XCAFDoc_Area_GetID(*args):
+def XCAFDoc_Area_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_Area_GetID(*args)
 
-def XCAFDoc_Area_Set(*args):
+def XCAFDoc_Area_Set(*args) -> "Handle_XCAFDoc_Area" :
   """
     * Sets a value of volume
 
@@ -450,7 +450,7 @@ def XCAFDoc_Area_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_Area_Set(*args)
 
-def XCAFDoc_Area_Get(*args):
+def XCAFDoc_Area_Get(*args) -> "Standard_Real &" :
   """
     :rtype: float
 
@@ -486,7 +486,7 @@ Handle_XCAFDoc_Area._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFDoc_A
 Handle_XCAFDoc_Area_swigregister = _XCAFDoc.Handle_XCAFDoc_Area_swigregister
 Handle_XCAFDoc_Area_swigregister(Handle_XCAFDoc_Area)
 
-def Handle_XCAFDoc_Area_DownCast(*args):
+def Handle_XCAFDoc_Area_DownCast(*args) -> "Handle_XCAFDoc_Area const" :
   return _XCAFDoc.Handle_XCAFDoc_Area_DownCast(*args)
 Handle_XCAFDoc_Area_DownCast = _XCAFDoc.Handle_XCAFDoc_Area_DownCast
 
@@ -501,7 +501,7 @@ class XCAFDoc_Centroid(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Centroid_swiginit(self,_XCAFDoc.new_XCAFDoc_Centroid(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -509,7 +509,7 @@ class XCAFDoc_Centroid(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Centroid_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Find, or create, a Location attribute and set it's value the Location attribute is returned. Location methods ===============
 
@@ -526,7 +526,7 @@ class XCAFDoc_Centroid(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Centroid_Set(self, *args)
 
-    def Get(*args):
+    def Get(*args) -> "Standard_Boolean" :
         """
         :rtype: gp_Pnt
 
@@ -542,15 +542,15 @@ class XCAFDoc_Centroid(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Centroid_Get(*args)
 
     Get = staticmethod(Get)
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(XCAFDoc_Centroid self) -> std::string"""
         return _XCAFDoc.XCAFDoc_Centroid_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Centroid self)"""
         return _XCAFDoc.XCAFDoc_Centroid__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Centroid" :
         """GetHandle(XCAFDoc_Centroid self) -> Handle_XCAFDoc_Centroid"""
         return _XCAFDoc.XCAFDoc_Centroid_GetHandle(self)
 
@@ -569,14 +569,14 @@ XCAFDoc_Centroid.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Centroid_GetHan
 XCAFDoc_Centroid_swigregister = _XCAFDoc.XCAFDoc_Centroid_swigregister
 XCAFDoc_Centroid_swigregister(XCAFDoc_Centroid)
 
-def XCAFDoc_Centroid_GetID(*args):
+def XCAFDoc_Centroid_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_Centroid_GetID(*args)
 
-def XCAFDoc_Centroid_Get(*args):
+def XCAFDoc_Centroid_Get(*args) -> "Standard_Boolean" :
   """
     :rtype: gp_Pnt
 
@@ -612,7 +612,7 @@ Handle_XCAFDoc_Centroid._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFD
 Handle_XCAFDoc_Centroid_swigregister = _XCAFDoc.Handle_XCAFDoc_Centroid_swigregister
 Handle_XCAFDoc_Centroid_swigregister(Handle_XCAFDoc_Centroid)
 
-def Handle_XCAFDoc_Centroid_DownCast(*args):
+def Handle_XCAFDoc_Centroid_DownCast(*args) -> "Handle_XCAFDoc_Centroid const" :
   return _XCAFDoc.Handle_XCAFDoc_Centroid_DownCast(*args)
 Handle_XCAFDoc_Centroid_DownCast = _XCAFDoc.Handle_XCAFDoc_Centroid_DownCast
 
@@ -625,7 +625,7 @@ class XCAFDoc_Color(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Color_swiginit(self,_XCAFDoc.new_XCAFDoc_Color(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -633,7 +633,7 @@ class XCAFDoc_Color(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Color_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param label:
         :type label: TDF_Label &
@@ -678,21 +678,21 @@ class XCAFDoc_Color(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Color_Set(self, *args)
 
-    def GetColor(self, *args):
+    def GetColor(self, *args) -> "Quantity_Color const &" :
         """
         :rtype: Quantity_Color
 
         """
         return _XCAFDoc.XCAFDoc_Color_GetColor(self, *args)
 
-    def GetNOC(self, *args):
+    def GetNOC(self, *args) -> "Quantity_NameOfColor" :
         """
         :rtype: Quantity_NameOfColor
 
         """
         return _XCAFDoc.XCAFDoc_Color_GetNOC(self, *args)
 
-    def GetRGB(self, *args):
+    def GetRGB(self, *args) -> "void" :
         """
         * Returns True if there is a reference on the same label
 
@@ -707,11 +707,11 @@ class XCAFDoc_Color(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Color_GetRGB(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Color self)"""
         return _XCAFDoc.XCAFDoc_Color__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Color" :
         """GetHandle(XCAFDoc_Color self) -> Handle_XCAFDoc_Color"""
         return _XCAFDoc.XCAFDoc_Color_GetHandle(self)
 
@@ -732,7 +732,7 @@ XCAFDoc_Color.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Color_GetHandle,No
 XCAFDoc_Color_swigregister = _XCAFDoc.XCAFDoc_Color_swigregister
 XCAFDoc_Color_swigregister(XCAFDoc_Color)
 
-def XCAFDoc_Color_GetID(*args):
+def XCAFDoc_Color_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -760,7 +760,7 @@ Handle_XCAFDoc_Color._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFDoc_
 Handle_XCAFDoc_Color_swigregister = _XCAFDoc.Handle_XCAFDoc_Color_swigregister
 Handle_XCAFDoc_Color_swigregister(Handle_XCAFDoc_Color)
 
-def Handle_XCAFDoc_Color_DownCast(*args):
+def Handle_XCAFDoc_Color_DownCast(*args) -> "Handle_XCAFDoc_Color const" :
   return _XCAFDoc.Handle_XCAFDoc_Color_DownCast(*args)
 Handle_XCAFDoc_Color_DownCast = _XCAFDoc.Handle_XCAFDoc_Color_DownCast
 
@@ -773,7 +773,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_ColorTool_swiginit(self,_XCAFDoc.new_XCAFDoc_ColorTool(*args))
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_ColorTool" :
         """
         * Creates (if not exist) ColorTool.
 
@@ -785,7 +785,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ColorTool_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -793,7 +793,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ColorTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def BaseLabel(self, *args):
+    def BaseLabel(self, *args) -> "TDF_Label" :
         """
         * returns the label under which colors are stored
 
@@ -802,7 +802,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_BaseLabel(self, *args)
 
-    def ShapeTool(self, *args):
+    def ShapeTool(self, *args) -> "Handle_XCAFDoc_ShapeTool const &" :
         """
         * Returns internal XCAFDoc_ShapeTool tool
 
@@ -811,7 +811,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_ShapeTool(self, *args)
 
-    def IsColor(self, *args):
+    def IsColor(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label belongs to a colortable and is a color definition
 
@@ -822,7 +822,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_IsColor(self, *args)
 
-    def FindColor(self, *args):
+    def FindColor(self, *args) -> "TDF_Label" :
         """
         * Finds a color definition in a colortable and returns its label if found Returns False if color is not found in colortable
 
@@ -841,7 +841,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_FindColor(self, *args)
 
-    def AddColor(self, *args):
+    def AddColor(self, *args) -> "TDF_Label" :
         """
         * Adds a color definition to a colortable and returns its label (returns existing label if the same color is already defined)
 
@@ -852,7 +852,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_AddColor(self, *args)
 
-    def RemoveColor(self, *args):
+    def RemoveColor(self, *args) -> "void" :
         """
         * Removes color from the colortable
 
@@ -863,7 +863,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_RemoveColor(self, *args)
 
-    def GetColors(self, *args):
+    def GetColors(self, *args) -> "void" :
         """
         * Returns a sequence of colors currently stored in the colortable
 
@@ -874,7 +874,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_GetColors(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "Standard_Boolean" :
         """
         * Sets a link with GUID defined by <type> (see XCAFDoc::ColorRefGUID()) from label <L> to color defined by <colorL>. Color of shape is defined following way in dependance with type of color. If type of color is XCAFDoc_ColorGen - then this color defines default color for surfaces and curves. If for shape color with types XCAFDoc_ColorSurf or XCAFDoc_ColorCurv is specified then such color overrides generic color.
 
@@ -919,7 +919,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_SetColor(self, *args)
 
-    def UnSetColor(self, *args):
+    def UnSetColor(self, *args) -> "Standard_Boolean" :
         """
         * Removes a link with GUID defined by <type> (see XCAFDoc::ColorRefGUID()) from label <L> to color
 
@@ -940,7 +940,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_UnSetColor(self, *args)
 
-    def IsSet(self, *args):
+    def IsSet(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label <L> has a color assignment of the type <type>
 
@@ -961,7 +961,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_IsSet(self, *args)
 
-    def GetColor(self, *args):
+    def GetColor(self, *args) -> "Standard_Boolean" :
         """
         * Returns color defined by label lab Returns False if the label is not in colortable or does not define a color
 
@@ -1014,7 +1014,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_GetColor(self, *args)
 
-    def IsVisible(self, *args):
+    def IsVisible(self, *args) -> "Standard_Boolean" :
         """
         * Return True if object on this label is visible, False if invisible.
 
@@ -1025,7 +1025,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_IsVisible(self, *args)
 
-    def SetVisibility(self, *args):
+    def SetVisibility(self, *args) -> "void" :
         """
         * Set the visibility of object on label. Do nothing if there no any object. Set UAttribute with corresponding GUID.
 
@@ -1038,7 +1038,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_SetVisibility(self, *args)
 
-    def SetInstanceColor(self, *args):
+    def SetInstanceColor(self, *args) -> "Standard_Boolean" :
         """
         * Sets the color of component that styled with SHUO structure Returns False if no sush component found NOTE: create SHUO structeure if it is necessary and if <isCreateSHUO>
 
@@ -1055,7 +1055,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_SetInstanceColor(self, *args)
 
-    def GetInstanceColor(self, *args):
+    def GetInstanceColor(self, *args) -> "Standard_Boolean" :
         """
         * Gets the color of component that styled with SHUO structure Returns False if no sush component or color type
 
@@ -1070,7 +1070,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_GetInstanceColor(self, *args)
 
-    def IsInstanceVisible(self, *args):
+    def IsInstanceVisible(self, *args) -> "Standard_Boolean" :
         """
         * Gets the visibility status of component that styled with SHUO structure Returns False if no sush component
 
@@ -1081,7 +1081,7 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_IsInstanceVisible(self, *args)
 
-    def ReverseChainsOfTreeNodes(self, *args):
+    def ReverseChainsOfTreeNodes(self, *args) -> "Standard_Boolean" :
         """
         * Reverses order in chains of TreeNodes (from Last to First) under each Color Label since we became to use function ::Prepend() instead of ::Append() in method SetColor() for acceleration
 
@@ -1090,11 +1090,11 @@ class XCAFDoc_ColorTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ColorTool_ReverseChainsOfTreeNodes(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_ColorTool self)"""
         return _XCAFDoc.XCAFDoc_ColorTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_ColorTool" :
         """GetHandle(XCAFDoc_ColorTool self) -> Handle_XCAFDoc_ColorTool"""
         return _XCAFDoc.XCAFDoc_ColorTool_GetHandle(self)
 
@@ -1128,7 +1128,7 @@ XCAFDoc_ColorTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_ColorTool_GetH
 XCAFDoc_ColorTool_swigregister = _XCAFDoc.XCAFDoc_ColorTool_swigregister
 XCAFDoc_ColorTool_swigregister(XCAFDoc_ColorTool)
 
-def XCAFDoc_ColorTool_Set(*args):
+def XCAFDoc_ColorTool_Set(*args) -> "Handle_XCAFDoc_ColorTool" :
   """
     * Creates (if not exist) ColorTool.
 
@@ -1139,7 +1139,7 @@ def XCAFDoc_ColorTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_ColorTool_Set(*args)
 
-def XCAFDoc_ColorTool_GetID(*args):
+def XCAFDoc_ColorTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -1167,7 +1167,7 @@ Handle_XCAFDoc_ColorTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAF
 Handle_XCAFDoc_ColorTool_swigregister = _XCAFDoc.Handle_XCAFDoc_ColorTool_swigregister
 Handle_XCAFDoc_ColorTool_swigregister(Handle_XCAFDoc_ColorTool)
 
-def Handle_XCAFDoc_ColorTool_DownCast(*args):
+def Handle_XCAFDoc_ColorTool_DownCast(*args) -> "Handle_XCAFDoc_ColorTool const" :
   return _XCAFDoc.Handle_XCAFDoc_ColorTool_DownCast(*args)
 Handle_XCAFDoc_ColorTool_DownCast = _XCAFDoc.Handle_XCAFDoc_ColorTool_DownCast
 
@@ -1184,7 +1184,7 @@ class XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel(OCC.TCollection.TCollection_B
 
         """
         _XCAFDoc.XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel_swiginit(self,_XCAFDoc.new_XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: XCAFDoc_DataMapOfShapeLabel &
@@ -1193,14 +1193,14 @@ class XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel(OCC.TCollection.TCollection_B
         """
         return _XCAFDoc.XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _XCAFDoc.XCAFDoc_DataMapIteratorOfDataMapOfShapeLabel_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -1237,25 +1237,25 @@ class XCAFDoc_DataMapNodeOfDataMapOfShapeLabel(OCC.TCollection.TCollection_MapNo
 
         """
         _XCAFDoc.XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_swiginit(self,_XCAFDoc.new_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _XCAFDoc.XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _XCAFDoc.XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_DataMapNodeOfDataMapOfShapeLabel self)"""
         return _XCAFDoc.XCAFDoc_DataMapNodeOfDataMapOfShapeLabel__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel" :
         """GetHandle(XCAFDoc_DataMapNodeOfDataMapOfShapeLabel self) -> Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel"""
         return _XCAFDoc.XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_GetHandle(self)
 
@@ -1295,7 +1295,7 @@ Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel._kill_pointed = new_instancemeth
 Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_swigregister = _XCAFDoc.Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_swigregister
 Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_swigregister(Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel)
 
-def Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_DownCast(*args):
+def Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_DownCast(*args) -> "Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel const" :
   return _XCAFDoc.Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_DownCast(*args)
 Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_DownCast = _XCAFDoc.Handle_XCAFDoc_DataMapNodeOfDataMapOfShapeLabel_DownCast
 
@@ -1310,7 +1310,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
 
         """
         _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_swiginit(self,_XCAFDoc.new_XCAFDoc_DataMapOfShapeLabel(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "XCAFDoc_DataMapOfShapeLabel &" :
         """
         :param Other:
         :type Other: XCAFDoc_DataMapOfShapeLabel &
@@ -1319,7 +1319,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "XCAFDoc_DataMapOfShapeLabel &" :
         """
         :param Other:
         :type Other: XCAFDoc_DataMapOfShapeLabel &
@@ -1328,7 +1328,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1337,14 +1337,14 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1355,7 +1355,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1364,7 +1364,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1373,7 +1373,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1382,7 +1382,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TDF_Label &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1391,7 +1391,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1400,7 +1400,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1409,7 +1409,7 @@ class XCAFDoc_DataMapOfShapeLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_DataMapOfShapeLabel self)"""
         return _XCAFDoc.XCAFDoc_DataMapOfShapeLabel__kill_pointed(self)
 
@@ -1445,7 +1445,7 @@ class XCAFDoc_Datum(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Datum_swiginit(self,_XCAFDoc.new_XCAFDoc_Datum(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -1453,7 +1453,7 @@ class XCAFDoc_Datum(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Datum_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param label:
         :type label: TDF_Label &
@@ -1476,32 +1476,32 @@ class XCAFDoc_Datum(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Datum_Set(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Datum_GetName(self, *args)
 
-    def GetDescription(self, *args):
+    def GetDescription(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Datum_GetDescription(self, *args)
 
-    def GetIdentification(self, *args):
+    def GetIdentification(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Datum_GetIdentification(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Datum self)"""
         return _XCAFDoc.XCAFDoc_Datum__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Datum" :
         """GetHandle(XCAFDoc_Datum self) -> Handle_XCAFDoc_Datum"""
         return _XCAFDoc.XCAFDoc_Datum_GetHandle(self)
 
@@ -1522,7 +1522,7 @@ XCAFDoc_Datum.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Datum_GetHandle,No
 XCAFDoc_Datum_swigregister = _XCAFDoc.XCAFDoc_Datum_swigregister
 XCAFDoc_Datum_swigregister(XCAFDoc_Datum)
 
-def XCAFDoc_Datum_GetID(*args):
+def XCAFDoc_Datum_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -1550,7 +1550,7 @@ Handle_XCAFDoc_Datum._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFDoc_
 Handle_XCAFDoc_Datum_swigregister = _XCAFDoc.Handle_XCAFDoc_Datum_swigregister
 Handle_XCAFDoc_Datum_swigregister(Handle_XCAFDoc_Datum)
 
-def Handle_XCAFDoc_Datum_DownCast(*args):
+def Handle_XCAFDoc_Datum_DownCast(*args) -> "Handle_XCAFDoc_Datum const" :
   return _XCAFDoc.Handle_XCAFDoc_Datum_DownCast(*args)
 Handle_XCAFDoc_Datum_DownCast = _XCAFDoc.Handle_XCAFDoc_Datum_DownCast
 
@@ -1563,7 +1563,7 @@ class XCAFDoc_DimTol(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_DimTol_swiginit(self,_XCAFDoc.new_XCAFDoc_DimTol(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -1571,7 +1571,7 @@ class XCAFDoc_DimTol(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DimTol_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param label:
         :type label: TDF_Label &
@@ -1598,39 +1598,39 @@ class XCAFDoc_DimTol(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTol_Set(self, *args)
 
-    def GetKind(self, *args):
+    def GetKind(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _XCAFDoc.XCAFDoc_DimTol_GetKind(self, *args)
 
-    def GetVal(self, *args):
+    def GetVal(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _XCAFDoc.XCAFDoc_DimTol_GetVal(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_DimTol_GetName(self, *args)
 
-    def GetDescription(self, *args):
+    def GetDescription(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_DimTol_GetDescription(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_DimTol self)"""
         return _XCAFDoc.XCAFDoc_DimTol__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_DimTol" :
         """GetHandle(XCAFDoc_DimTol self) -> Handle_XCAFDoc_DimTol"""
         return _XCAFDoc.XCAFDoc_DimTol_GetHandle(self)
 
@@ -1652,7 +1652,7 @@ XCAFDoc_DimTol.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_DimTol_GetHandle,
 XCAFDoc_DimTol_swigregister = _XCAFDoc.XCAFDoc_DimTol_swigregister
 XCAFDoc_DimTol_swigregister(XCAFDoc_DimTol)
 
-def XCAFDoc_DimTol_GetID(*args):
+def XCAFDoc_DimTol_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -1680,7 +1680,7 @@ Handle_XCAFDoc_DimTol._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFDoc
 Handle_XCAFDoc_DimTol_swigregister = _XCAFDoc.Handle_XCAFDoc_DimTol_swigregister
 Handle_XCAFDoc_DimTol_swigregister(Handle_XCAFDoc_DimTol)
 
-def Handle_XCAFDoc_DimTol_DownCast(*args):
+def Handle_XCAFDoc_DimTol_DownCast(*args) -> "Handle_XCAFDoc_DimTol const" :
   return _XCAFDoc.Handle_XCAFDoc_DimTol_DownCast(*args)
 Handle_XCAFDoc_DimTol_DownCast = _XCAFDoc.Handle_XCAFDoc_DimTol_DownCast
 
@@ -1693,7 +1693,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_DimTolTool_swiginit(self,_XCAFDoc.new_XCAFDoc_DimTolTool(*args))
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_DimTolTool" :
         """
         * Creates (if not exist) DimTolTool.
 
@@ -1705,7 +1705,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DimTolTool_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -1713,7 +1713,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DimTolTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def BaseLabel(self, *args):
+    def BaseLabel(self, *args) -> "TDF_Label" :
         """
         * returns the label under which colors are stored
 
@@ -1722,7 +1722,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_BaseLabel(self, *args)
 
-    def ShapeTool(self, *args):
+    def ShapeTool(self, *args) -> "Handle_XCAFDoc_ShapeTool const &" :
         """
         * Returns internal XCAFDoc_ShapeTool tool
 
@@ -1731,7 +1731,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_ShapeTool(self, *args)
 
-    def IsDimTol(self, *args):
+    def IsDimTol(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label belongs to a dimtoltable and is a DimTol definition
 
@@ -1742,7 +1742,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_IsDimTol(self, *args)
 
-    def GetDimTolLabels(self, *args):
+    def GetDimTolLabels(self, *args) -> "void" :
         """
         * Returns a sequence of D&GTs currently stored in the DGTtable
 
@@ -1753,7 +1753,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetDimTolLabels(self, *args)
 
-    def FindDimTol(self, *args):
+    def FindDimTol(self, *args) -> "TDF_Label" :
         """
         * Finds a dimtol definition in a DGTtable and returns its label if found Returns False if dimtol is not found in DGTtable
 
@@ -1784,7 +1784,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_FindDimTol(self, *args)
 
-    def AddDimTol(self, *args):
+    def AddDimTol(self, *args) -> "TDF_Label" :
         """
         * Adds a dimtol definition to a DGTtable and returns its label
 
@@ -1801,7 +1801,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_AddDimTol(self, *args)
 
-    def SetDimTol(self, *args):
+    def SetDimTol(self, *args) -> "TDF_Label" :
         """
         * Sets a link with GUID
 
@@ -1828,7 +1828,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_SetDimTol(self, *args)
 
-    def GetRefShapeLabel(self, *args):
+    def GetRefShapeLabel(self, *args) -> "Standard_Boolean" :
         """
         * Returns ShapeL defined for label DimTolL Returns False if the DimTolL is not in DGTtable
 
@@ -1841,7 +1841,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetRefShapeLabel(self, *args)
 
-    def GetRefDGTLabels(self, *args):
+    def GetRefDGTLabels(self, *args) -> "Standard_Boolean" :
         """
         * Returns all DimTol labels defined for label ShapeL
 
@@ -1854,7 +1854,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetRefDGTLabels(self, *args)
 
-    def GetDimTol(self, *args):
+    def GetDimTol(self, *args) -> "Standard_Boolean" :
         """
         * Returns dimtol assigned to <DimTolL> Returns False if no such dimtol is assigned
 
@@ -1873,7 +1873,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetDimTol(self, *args)
 
-    def IsDatum(self, *args):
+    def IsDatum(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label belongs to a dimtoltable and is a Datum definition
 
@@ -1884,7 +1884,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_IsDatum(self, *args)
 
-    def GetDatumLabels(self, *args):
+    def GetDatumLabels(self, *args) -> "void" :
         """
         * Returns a sequence of Datumss currently stored in the DGTtable
 
@@ -1895,7 +1895,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetDatumLabels(self, *args)
 
-    def FindDatum(self, *args):
+    def FindDatum(self, *args) -> "Standard_Boolean" :
         """
         * Finds a datum and returns its label if found
 
@@ -1912,7 +1912,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_FindDatum(self, *args)
 
-    def AddDatum(self, *args):
+    def AddDatum(self, *args) -> "TDF_Label" :
         """
         * Adds a datum definition to a DGTtable and returns its label
 
@@ -1927,7 +1927,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_AddDatum(self, *args)
 
-    def SetDatum(self, *args):
+    def SetDatum(self, *args) -> "void" :
         """
         * Sets a link with GUID
 
@@ -1954,7 +1954,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_SetDatum(self, *args)
 
-    def GetDatum(self, *args):
+    def GetDatum(self, *args) -> "Standard_Boolean" :
         """
         * Returns datum assigned to <DatumL> Returns False if no such datum is assigned
 
@@ -1971,7 +1971,7 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetDatum(self, *args)
 
-    def GetDatumTolerLabels(self, *args):
+    def GetDatumTolerLabels(self, *args) -> "Standard_Boolean" :
         """
         * Returns all Datum labels defined for label DimTolL
 
@@ -1984,11 +1984,11 @@ class XCAFDoc_DimTolTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DimTolTool_GetDatumTolerLabels(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_DimTolTool self)"""
         return _XCAFDoc.XCAFDoc_DimTolTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_DimTolTool" :
         """GetHandle(XCAFDoc_DimTolTool self) -> Handle_XCAFDoc_DimTolTool"""
         return _XCAFDoc.XCAFDoc_DimTolTool_GetHandle(self)
 
@@ -2022,7 +2022,7 @@ XCAFDoc_DimTolTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_DimTolTool_Ge
 XCAFDoc_DimTolTool_swigregister = _XCAFDoc.XCAFDoc_DimTolTool_swigregister
 XCAFDoc_DimTolTool_swigregister(XCAFDoc_DimTolTool)
 
-def XCAFDoc_DimTolTool_Set(*args):
+def XCAFDoc_DimTolTool_Set(*args) -> "Handle_XCAFDoc_DimTolTool" :
   """
     * Creates (if not exist) DimTolTool.
 
@@ -2033,7 +2033,7 @@ def XCAFDoc_DimTolTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_DimTolTool_Set(*args)
 
-def XCAFDoc_DimTolTool_GetID(*args):
+def XCAFDoc_DimTolTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -2061,14 +2061,14 @@ Handle_XCAFDoc_DimTolTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCA
 Handle_XCAFDoc_DimTolTool_swigregister = _XCAFDoc.Handle_XCAFDoc_DimTolTool_swigregister
 Handle_XCAFDoc_DimTolTool_swigregister(Handle_XCAFDoc_DimTolTool)
 
-def Handle_XCAFDoc_DimTolTool_DownCast(*args):
+def Handle_XCAFDoc_DimTolTool_DownCast(*args) -> "Handle_XCAFDoc_DimTolTool const" :
   return _XCAFDoc.Handle_XCAFDoc_DimTolTool_DownCast(*args)
 Handle_XCAFDoc_DimTolTool_DownCast = _XCAFDoc.Handle_XCAFDoc_DimTolTool_DownCast
 
 class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -2076,7 +2076,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_DocumentTool" :
         """
         * Create (if not exist) DocumentTool attribute on 0.1 label if <IsAcces> is true, else on <L> label. This label will be returned by DocLabel(); If the attribute is already set it won't be reset on <L> even if <IsAcces> is false. ColorTool and ShapeTool attributes are also set by this method.
 
@@ -2090,7 +2090,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_Set(*args)
 
     Set = staticmethod(Set)
-    def IsXCAFDocument(*args):
+    def IsXCAFDocument(*args) -> "Standard_Boolean" :
         """
         :param Doc:
         :type Doc: Handle_TDocStd_Document &
@@ -2100,7 +2100,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_IsXCAFDocument(*args)
 
     IsXCAFDocument = staticmethod(IsXCAFDocument)
-    def DocLabel(*args):
+    def DocLabel(*args) -> "TDF_Label" :
         """
         * Returns label where the DocumentTool attribute is or 0.1 if DocumentTool is not yet set.
 
@@ -2112,7 +2112,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_DocLabel(*args)
 
     DocLabel = staticmethod(DocLabel)
-    def ShapesLabel(*args):
+    def ShapesLabel(*args) -> "TDF_Label" :
         """
         * Returns sub-label of DocLabel() with tag 1.
 
@@ -2124,7 +2124,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_ShapesLabel(*args)
 
     ShapesLabel = staticmethod(ShapesLabel)
-    def ColorsLabel(*args):
+    def ColorsLabel(*args) -> "TDF_Label" :
         """
         * Returns sub-label of DocLabel() with tag 2.
 
@@ -2136,7 +2136,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_ColorsLabel(*args)
 
     ColorsLabel = staticmethod(ColorsLabel)
-    def LayersLabel(*args):
+    def LayersLabel(*args) -> "TDF_Label" :
         """
         * Returns sub-label of DocLabel() with tag 3.
 
@@ -2148,7 +2148,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_LayersLabel(*args)
 
     LayersLabel = staticmethod(LayersLabel)
-    def DGTsLabel(*args):
+    def DGTsLabel(*args) -> "TDF_Label" :
         """
         * Returns sub-label of DocLabel() with tag 4.
 
@@ -2160,7 +2160,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_DGTsLabel(*args)
 
     DGTsLabel = staticmethod(DGTsLabel)
-    def MaterialsLabel(*args):
+    def MaterialsLabel(*args) -> "TDF_Label" :
         """
         * Returns sub-label of DocLabel() with tag 5.
 
@@ -2172,7 +2172,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_MaterialsLabel(*args)
 
     MaterialsLabel = staticmethod(MaterialsLabel)
-    def ShapeTool(*args):
+    def ShapeTool(*args) -> "Handle_XCAFDoc_ShapeTool" :
         """
         * Creates (if it does not exist) ShapeTool attribute on ShapesLabel().
 
@@ -2184,7 +2184,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_ShapeTool(*args)
 
     ShapeTool = staticmethod(ShapeTool)
-    def ColorTool(*args):
+    def ColorTool(*args) -> "Handle_XCAFDoc_ColorTool" :
         """
         * Creates (if it does not exist) ColorTool attribute on ColorsLabel().
 
@@ -2196,7 +2196,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_ColorTool(*args)
 
     ColorTool = staticmethod(ColorTool)
-    def LayerTool(*args):
+    def LayerTool(*args) -> "Handle_XCAFDoc_LayerTool" :
         """
         * Creates (if it does not exist) LayerTool attribute on LayersLabel().
 
@@ -2208,7 +2208,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_LayerTool(*args)
 
     LayerTool = staticmethod(LayerTool)
-    def DimTolTool(*args):
+    def DimTolTool(*args) -> "Handle_XCAFDoc_DimTolTool" :
         """
         * Creates (if it does not exist) DimTolTool attribute on DGTsLabel().
 
@@ -2220,7 +2220,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_DocumentTool_DimTolTool(*args)
 
     DimTolTool = staticmethod(DimTolTool)
-    def MaterialTool(*args):
+    def MaterialTool(*args) -> "Handle_XCAFDoc_MaterialTool" :
         """
         * Creates (if it does not exist) DimTolTool attribute on DGTsLabel().
 
@@ -2238,7 +2238,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_DocumentTool_swiginit(self,_XCAFDoc.new_XCAFDoc_DocumentTool(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * to be called when reading this attribute from file
 
@@ -2247,7 +2247,7 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DocumentTool_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Unregisters the document holding this attribute from an internal global map of XDE documents.
 
@@ -2256,11 +2256,11 @@ class XCAFDoc_DocumentTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_DocumentTool_Destroy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_DocumentTool self)"""
         return _XCAFDoc.XCAFDoc_DocumentTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_DocumentTool" :
         """GetHandle(XCAFDoc_DocumentTool self) -> Handle_XCAFDoc_DocumentTool"""
         return _XCAFDoc.XCAFDoc_DocumentTool_GetHandle(self)
 
@@ -2279,14 +2279,14 @@ XCAFDoc_DocumentTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_DocumentToo
 XCAFDoc_DocumentTool_swigregister = _XCAFDoc.XCAFDoc_DocumentTool_swigregister
 XCAFDoc_DocumentTool_swigregister(XCAFDoc_DocumentTool)
 
-def XCAFDoc_DocumentTool_GetID(*args):
+def XCAFDoc_DocumentTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_GetID(*args)
 
-def XCAFDoc_DocumentTool_Set(*args):
+def XCAFDoc_DocumentTool_Set(*args) -> "Handle_XCAFDoc_DocumentTool" :
   """
     * Create (if not exist) DocumentTool attribute on 0.1 label if <IsAcces> is true, else on <L> label. This label will be returned by DocLabel(); If the attribute is already set it won't be reset on <L> even if <IsAcces> is false. ColorTool and ShapeTool attributes are also set by this method.
 
@@ -2299,7 +2299,7 @@ def XCAFDoc_DocumentTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_Set(*args)
 
-def XCAFDoc_DocumentTool_IsXCAFDocument(*args):
+def XCAFDoc_DocumentTool_IsXCAFDocument(*args) -> "Standard_Boolean" :
   """
     :param Doc:
     :type Doc: Handle_TDocStd_Document &
@@ -2308,7 +2308,7 @@ def XCAFDoc_DocumentTool_IsXCAFDocument(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_IsXCAFDocument(*args)
 
-def XCAFDoc_DocumentTool_DocLabel(*args):
+def XCAFDoc_DocumentTool_DocLabel(*args) -> "TDF_Label" :
   """
     * Returns label where the DocumentTool attribute is or 0.1 if DocumentTool is not yet set.
 
@@ -2319,7 +2319,7 @@ def XCAFDoc_DocumentTool_DocLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_DocLabel(*args)
 
-def XCAFDoc_DocumentTool_ShapesLabel(*args):
+def XCAFDoc_DocumentTool_ShapesLabel(*args) -> "TDF_Label" :
   """
     * Returns sub-label of DocLabel() with tag 1.
 
@@ -2330,7 +2330,7 @@ def XCAFDoc_DocumentTool_ShapesLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_ShapesLabel(*args)
 
-def XCAFDoc_DocumentTool_ColorsLabel(*args):
+def XCAFDoc_DocumentTool_ColorsLabel(*args) -> "TDF_Label" :
   """
     * Returns sub-label of DocLabel() with tag 2.
 
@@ -2341,7 +2341,7 @@ def XCAFDoc_DocumentTool_ColorsLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_ColorsLabel(*args)
 
-def XCAFDoc_DocumentTool_LayersLabel(*args):
+def XCAFDoc_DocumentTool_LayersLabel(*args) -> "TDF_Label" :
   """
     * Returns sub-label of DocLabel() with tag 3.
 
@@ -2352,7 +2352,7 @@ def XCAFDoc_DocumentTool_LayersLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_LayersLabel(*args)
 
-def XCAFDoc_DocumentTool_DGTsLabel(*args):
+def XCAFDoc_DocumentTool_DGTsLabel(*args) -> "TDF_Label" :
   """
     * Returns sub-label of DocLabel() with tag 4.
 
@@ -2363,7 +2363,7 @@ def XCAFDoc_DocumentTool_DGTsLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_DGTsLabel(*args)
 
-def XCAFDoc_DocumentTool_MaterialsLabel(*args):
+def XCAFDoc_DocumentTool_MaterialsLabel(*args) -> "TDF_Label" :
   """
     * Returns sub-label of DocLabel() with tag 5.
 
@@ -2374,7 +2374,7 @@ def XCAFDoc_DocumentTool_MaterialsLabel(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_MaterialsLabel(*args)
 
-def XCAFDoc_DocumentTool_ShapeTool(*args):
+def XCAFDoc_DocumentTool_ShapeTool(*args) -> "Handle_XCAFDoc_ShapeTool" :
   """
     * Creates (if it does not exist) ShapeTool attribute on ShapesLabel().
 
@@ -2385,7 +2385,7 @@ def XCAFDoc_DocumentTool_ShapeTool(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_ShapeTool(*args)
 
-def XCAFDoc_DocumentTool_ColorTool(*args):
+def XCAFDoc_DocumentTool_ColorTool(*args) -> "Handle_XCAFDoc_ColorTool" :
   """
     * Creates (if it does not exist) ColorTool attribute on ColorsLabel().
 
@@ -2396,7 +2396,7 @@ def XCAFDoc_DocumentTool_ColorTool(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_ColorTool(*args)
 
-def XCAFDoc_DocumentTool_LayerTool(*args):
+def XCAFDoc_DocumentTool_LayerTool(*args) -> "Handle_XCAFDoc_LayerTool" :
   """
     * Creates (if it does not exist) LayerTool attribute on LayersLabel().
 
@@ -2407,7 +2407,7 @@ def XCAFDoc_DocumentTool_LayerTool(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_LayerTool(*args)
 
-def XCAFDoc_DocumentTool_DimTolTool(*args):
+def XCAFDoc_DocumentTool_DimTolTool(*args) -> "Handle_XCAFDoc_DimTolTool" :
   """
     * Creates (if it does not exist) DimTolTool attribute on DGTsLabel().
 
@@ -2418,7 +2418,7 @@ def XCAFDoc_DocumentTool_DimTolTool(*args):
     """
   return _XCAFDoc.XCAFDoc_DocumentTool_DimTolTool(*args)
 
-def XCAFDoc_DocumentTool_MaterialTool(*args):
+def XCAFDoc_DocumentTool_MaterialTool(*args) -> "Handle_XCAFDoc_MaterialTool" :
   """
     * Creates (if it does not exist) DimTolTool attribute on DGTsLabel().
 
@@ -2450,14 +2450,14 @@ Handle_XCAFDoc_DocumentTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_X
 Handle_XCAFDoc_DocumentTool_swigregister = _XCAFDoc.Handle_XCAFDoc_DocumentTool_swigregister
 Handle_XCAFDoc_DocumentTool_swigregister(Handle_XCAFDoc_DocumentTool)
 
-def Handle_XCAFDoc_DocumentTool_DownCast(*args):
+def Handle_XCAFDoc_DocumentTool_DownCast(*args) -> "Handle_XCAFDoc_DocumentTool const" :
   return _XCAFDoc.Handle_XCAFDoc_DocumentTool_DownCast(*args)
 Handle_XCAFDoc_DocumentTool_DownCast = _XCAFDoc.Handle_XCAFDoc_DocumentTool_DownCast
 
 class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Find(*args):
+    def Find(*args) -> "Standard_Boolean" :
         """
         * class methods working on the node =================================== Shortcut to search a Graph node attribute with default GraphID. Returns true if found.
 
@@ -2471,7 +2471,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_GraphNode_Find(*args)
 
     Find = staticmethod(Find)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_GraphNode" :
         """
         * Finds or Creates a GraphNode attribute on the label <L> with the default Graph ID, returned by the method <GetDefaultGraphID>. Returns the created/found GraphNode attribute.
 
@@ -2491,7 +2491,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_GraphNode_Set(*args)
 
     Set = staticmethod(Set)
-    def GetDefaultGraphID(*args):
+    def GetDefaultGraphID(*args) -> "Standard_GUID const &" :
         """
         * returns a default Graph ID. this ID is used by the <Set> method without explicit tree ID. Instance methods: ================
 
@@ -2507,7 +2507,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_GraphNode_swiginit(self,_XCAFDoc.new_XCAFDoc_GraphNode(*args))
-    def SetGraphID(self, *args):
+    def SetGraphID(self, *args) -> "void" :
         """
         :param explicitID:
         :type explicitID: Standard_GUID &
@@ -2516,7 +2516,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_SetGraphID(self, *args)
 
-    def SetFather(self, *args):
+    def SetFather(self, *args) -> "Standard_Integer" :
         """
         * Set GraphNode <F> as father of me and returns index of <F> in Sequence that containing Fathers GraphNodes. return index of <F> from GraphNodeSequnece
 
@@ -2527,7 +2527,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_SetFather(self, *args)
 
-    def SetChild(self, *args):
+    def SetChild(self, *args) -> "Standard_Integer" :
         """
         * Set GraphNode <Ch> as child of me and returns index of <Ch> in Sequence that containing Children GraphNodes. return index of <Ch> from GraphNodeSequnece
 
@@ -2538,7 +2538,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_SetChild(self, *args)
 
-    def UnSetFather(self, *args):
+    def UnSetFather(self, *args) -> "void" :
         """
         * Remove <F> from Fathers GraphNodeSequence. and remove link between father and child.
 
@@ -2555,7 +2555,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_UnSetFather(self, *args)
 
-    def UnSetChild(self, *args):
+    def UnSetChild(self, *args) -> "void" :
         """
         * Remove <Ch> from GraphNodeSequence. and remove link between father and child.
 
@@ -2572,7 +2572,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_UnSetChild(self, *args)
 
-    def GetFather(self, *args):
+    def GetFather(self, *args) -> "Handle_XCAFDoc_GraphNode" :
         """
         * Return GraphNode by index from GraphNodeSequence.
 
@@ -2583,7 +2583,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_GetFather(self, *args)
 
-    def GetChild(self, *args):
+    def GetChild(self, *args) -> "Handle_XCAFDoc_GraphNode" :
         """
         * Return GraphNode by index from GraphNodeSequence.
 
@@ -2594,7 +2594,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_GetChild(self, *args)
 
-    def FatherIndex(self, *args):
+    def FatherIndex(self, *args) -> "Standard_Integer" :
         """
         * Return index of <F>, or zero if there is no such Graphnode.
 
@@ -2605,7 +2605,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_FatherIndex(self, *args)
 
-    def ChildIndex(self, *args):
+    def ChildIndex(self, *args) -> "Standard_Integer" :
         """
         * Return index of <Ch>, or zero if there is no such Graphnode.
 
@@ -2616,7 +2616,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_ChildIndex(self, *args)
 
-    def IsFather(self, *args):
+    def IsFather(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <self> is father of <Ch>.
 
@@ -2627,7 +2627,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_IsFather(self, *args)
 
-    def IsChild(self, *args):
+    def IsChild(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <self> is child of <F>.
 
@@ -2638,7 +2638,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_IsChild(self, *args)
 
-    def NbFathers(self, *args):
+    def NbFathers(self, *args) -> "Standard_Integer" :
         """
         * return Number of Fathers GraphNodes.
 
@@ -2647,7 +2647,7 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_NbFathers(self, *args)
 
-    def NbChildren(self, *args):
+    def NbChildren(self, *args) -> "Standard_Integer" :
         """
         * return Number of Childrens GraphNodes. Implementation of Attribute methods: ===================================
 
@@ -2656,15 +2656,15 @@ class XCAFDoc_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_GraphNode_NbChildren(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(XCAFDoc_GraphNode self) -> std::string"""
         return _XCAFDoc.XCAFDoc_GraphNode_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_GraphNode self)"""
         return _XCAFDoc.XCAFDoc_GraphNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_GraphNode" :
         """GetHandle(XCAFDoc_GraphNode self) -> Handle_XCAFDoc_GraphNode"""
         return _XCAFDoc.XCAFDoc_GraphNode_GetHandle(self)
 
@@ -2695,7 +2695,7 @@ XCAFDoc_GraphNode.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_GraphNode_GetH
 XCAFDoc_GraphNode_swigregister = _XCAFDoc.XCAFDoc_GraphNode_swigregister
 XCAFDoc_GraphNode_swigregister(XCAFDoc_GraphNode)
 
-def XCAFDoc_GraphNode_Find(*args):
+def XCAFDoc_GraphNode_Find(*args) -> "Standard_Boolean" :
   """
     * class methods working on the node =================================== Shortcut to search a Graph node attribute with default GraphID. Returns true if found.
 
@@ -2708,7 +2708,7 @@ def XCAFDoc_GraphNode_Find(*args):
     """
   return _XCAFDoc.XCAFDoc_GraphNode_Find(*args)
 
-def XCAFDoc_GraphNode_Set(*args):
+def XCAFDoc_GraphNode_Set(*args) -> "Handle_XCAFDoc_GraphNode" :
   """
     * Finds or Creates a GraphNode attribute on the label <L> with the default Graph ID, returned by the method <GetDefaultGraphID>. Returns the created/found GraphNode attribute.
 
@@ -2727,7 +2727,7 @@ def XCAFDoc_GraphNode_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_GraphNode_Set(*args)
 
-def XCAFDoc_GraphNode_GetDefaultGraphID(*args):
+def XCAFDoc_GraphNode_GetDefaultGraphID(*args) -> "Standard_GUID const &" :
   """
     * returns a default Graph ID. this ID is used by the <Set> method without explicit tree ID. Instance methods: ================
 
@@ -2757,7 +2757,7 @@ Handle_XCAFDoc_GraphNode._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAF
 Handle_XCAFDoc_GraphNode_swigregister = _XCAFDoc.Handle_XCAFDoc_GraphNode_swigregister
 Handle_XCAFDoc_GraphNode_swigregister(Handle_XCAFDoc_GraphNode)
 
-def Handle_XCAFDoc_GraphNode_DownCast(*args):
+def Handle_XCAFDoc_GraphNode_DownCast(*args) -> "Handle_XCAFDoc_GraphNode const" :
   return _XCAFDoc.Handle_XCAFDoc_GraphNode_DownCast(*args)
 Handle_XCAFDoc_GraphNode_DownCast = _XCAFDoc.Handle_XCAFDoc_GraphNode_DownCast
 
@@ -2770,14 +2770,14 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _XCAFDoc.XCAFDoc_GraphNodeSequence_swiginit(self,_XCAFDoc.new_XCAFDoc_GraphNodeSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "XCAFDoc_GraphNodeSequence const &" :
         """
         :param Other:
         :type Other: XCAFDoc_GraphNodeSequence &
@@ -2786,7 +2786,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "XCAFDoc_GraphNodeSequence const &" :
         """
         :param Other:
         :type Other: XCAFDoc_GraphNodeSequence &
@@ -2795,7 +2795,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_XCAFDoc_GraphNode &
@@ -2808,7 +2808,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_XCAFDoc_GraphNode &
@@ -2821,7 +2821,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2838,7 +2838,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2855,21 +2855,21 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_XCAFDoc_GraphNode const &" :
         """
         :rtype: Handle_XCAFDoc_GraphNode
 
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_XCAFDoc_GraphNode const &" :
         """
         :rtype: Handle_XCAFDoc_GraphNode
 
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2880,7 +2880,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_XCAFDoc_GraphNode const &" :
         """
         :param Index:
         :type Index: int
@@ -2889,7 +2889,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2900,7 +2900,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_XCAFDoc_GraphNode &" :
         """
         :param Index:
         :type Index: int
@@ -2909,7 +2909,7 @@ class XCAFDoc_GraphNodeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _XCAFDoc.XCAFDoc_GraphNodeSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2959,7 +2959,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_LayerTool_swiginit(self,_XCAFDoc.new_XCAFDoc_LayerTool(*args))
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_LayerTool" :
         """
         * Creates (if not exist) LayerTool.
 
@@ -2971,7 +2971,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_LayerTool_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -2979,7 +2979,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_LayerTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def BaseLabel(self, *args):
+    def BaseLabel(self, *args) -> "TDF_Label" :
         """
         * returns the label under which Layers are stored
 
@@ -2988,7 +2988,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_BaseLabel(self, *args)
 
-    def ShapeTool(self, *args):
+    def ShapeTool(self, *args) -> "Handle_XCAFDoc_ShapeTool const &" :
         """
         * Returns internal XCAFDoc_ShapeTool tool
 
@@ -2997,7 +2997,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_ShapeTool(self, *args)
 
-    def IsLayer(self, *args):
+    def IsLayer(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label belongs to a Layertable and is a Layer definition
 
@@ -3008,7 +3008,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_IsLayer(self, *args)
 
-    def GetLayer(self, *args):
+    def GetLayer(self, *args) -> "Standard_Boolean" :
         """
         * Returns Layer defined by label lab Returns False if the label is not in Layertable or does not define a Layer
 
@@ -3021,7 +3021,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_GetLayer(self, *args)
 
-    def FindLayer(self, *args):
+    def FindLayer(self, *args) -> "TDF_Label" :
         """
         * Finds a Layer definition in a Layertable and returns its label if found Returns False if Layer is not found in Layertable
 
@@ -3040,7 +3040,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_FindLayer(self, *args)
 
-    def AddLayer(self, *args):
+    def AddLayer(self, *args) -> "TDF_Label" :
         """
         * Adds a Layer definition to a Layertable and returns its label (returns existing label if the same Layer is already defined)
 
@@ -3051,7 +3051,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_AddLayer(self, *args)
 
-    def RemoveLayer(self, *args):
+    def RemoveLayer(self, *args) -> "void" :
         """
         * Removes Layer from the Layertable
 
@@ -3062,7 +3062,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_RemoveLayer(self, *args)
 
-    def GetLayerLabels(self, *args):
+    def GetLayerLabels(self, *args) -> "void" :
         """
         * Returns a sequence of Layers currently stored in the Layertable
 
@@ -3073,7 +3073,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_GetLayerLabels(self, *args)
 
-    def GetShapesOfLayer(self, *args):
+    def GetShapesOfLayer(self, *args) -> "void" :
         """
         * Return sequanese of shape labels that assigned with layers to <ShLabels>.
 
@@ -3086,7 +3086,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_GetShapesOfLayer(self, *args)
 
-    def IsVisible(self, *args):
+    def IsVisible(self, *args) -> "Standard_Boolean" :
         """
         * Return True if layer is visible, False if invisible.
 
@@ -3097,7 +3097,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_IsVisible(self, *args)
 
-    def SetVisibility(self, *args):
+    def SetVisibility(self, *args) -> "void" :
         """
         * Set the visibility of layer. If layer is invisible when on it's layer will set UAttribute with corresponding GUID.
 
@@ -3110,7 +3110,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_SetVisibility(self, *args)
 
-    def SetLayer(self, *args):
+    def SetLayer(self, *args) -> "Standard_Boolean" :
         """
         * Sets a link from label <L> to Layer defined by <LayerL> optional parametr <shapeInOneLayer> show could shape be in number of layers or only in one.
 
@@ -3155,7 +3155,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_SetLayer(self, *args)
 
-    def UnSetLayers(self, *args):
+    def UnSetLayers(self, *args) -> "Standard_Boolean" :
         """
         * Removes a link from label <L> to all layers
 
@@ -3172,7 +3172,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_UnSetLayers(self, *args)
 
-    def UnSetOneLayer(self, *args):
+    def UnSetOneLayer(self, *args) -> "Standard_Boolean" :
         """
         * Remove link from label <L> and Layer <aLayer>. returns False if no such layer.
 
@@ -3209,7 +3209,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_UnSetOneLayer(self, *args)
 
-    def IsSet(self, *args):
+    def IsSet(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label <L> has a Layer assosiated with the <aLayer>.
 
@@ -3246,7 +3246,7 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_IsSet(self, *args)
 
-    def GetLayers(self, *args):
+    def GetLayers(self, *args) -> "Handle_TColStd_HSequenceOfExtendedString" :
         """
         * Return sequence of strings <aLayerS> that assosiated with label <L>.
 
@@ -3295,11 +3295,11 @@ class XCAFDoc_LayerTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_LayerTool_GetLayers(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_LayerTool self)"""
         return _XCAFDoc.XCAFDoc_LayerTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_LayerTool" :
         """GetHandle(XCAFDoc_LayerTool self) -> Handle_XCAFDoc_LayerTool"""
         return _XCAFDoc.XCAFDoc_LayerTool_GetHandle(self)
 
@@ -3332,7 +3332,7 @@ XCAFDoc_LayerTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_LayerTool_GetH
 XCAFDoc_LayerTool_swigregister = _XCAFDoc.XCAFDoc_LayerTool_swigregister
 XCAFDoc_LayerTool_swigregister(XCAFDoc_LayerTool)
 
-def XCAFDoc_LayerTool_Set(*args):
+def XCAFDoc_LayerTool_Set(*args) -> "Handle_XCAFDoc_LayerTool" :
   """
     * Creates (if not exist) LayerTool.
 
@@ -3343,7 +3343,7 @@ def XCAFDoc_LayerTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_LayerTool_Set(*args)
 
-def XCAFDoc_LayerTool_GetID(*args):
+def XCAFDoc_LayerTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -3371,7 +3371,7 @@ Handle_XCAFDoc_LayerTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAF
 Handle_XCAFDoc_LayerTool_swigregister = _XCAFDoc.Handle_XCAFDoc_LayerTool_swigregister
 Handle_XCAFDoc_LayerTool_swigregister(Handle_XCAFDoc_LayerTool)
 
-def Handle_XCAFDoc_LayerTool_DownCast(*args):
+def Handle_XCAFDoc_LayerTool_DownCast(*args) -> "Handle_XCAFDoc_LayerTool const" :
   return _XCAFDoc.Handle_XCAFDoc_LayerTool_DownCast(*args)
 Handle_XCAFDoc_LayerTool_DownCast = _XCAFDoc.Handle_XCAFDoc_LayerTool_DownCast
 
@@ -3386,7 +3386,7 @@ class XCAFDoc_Location(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Location_swiginit(self,_XCAFDoc.new_XCAFDoc_Location(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -3394,7 +3394,7 @@ class XCAFDoc_Location(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Location_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Find, or create, a Location attribute and set it's value the Location attribute is returned. Location methods ===============
 
@@ -3411,7 +3411,7 @@ class XCAFDoc_Location(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Location_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TopLoc_Location const &" :
         """
         * Returns True if there is a reference on the same label
 
@@ -3420,11 +3420,11 @@ class XCAFDoc_Location(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Location_Get(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Location self)"""
         return _XCAFDoc.XCAFDoc_Location__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Location" :
         """GetHandle(XCAFDoc_Location self) -> Handle_XCAFDoc_Location"""
         return _XCAFDoc.XCAFDoc_Location_GetHandle(self)
 
@@ -3443,7 +3443,7 @@ XCAFDoc_Location.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Location_GetHan
 XCAFDoc_Location_swigregister = _XCAFDoc.XCAFDoc_Location_swigregister
 XCAFDoc_Location_swigregister(XCAFDoc_Location)
 
-def XCAFDoc_Location_GetID(*args):
+def XCAFDoc_Location_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -3471,7 +3471,7 @@ Handle_XCAFDoc_Location._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFD
 Handle_XCAFDoc_Location_swigregister = _XCAFDoc.Handle_XCAFDoc_Location_swigregister
 Handle_XCAFDoc_Location_swigregister(Handle_XCAFDoc_Location)
 
-def Handle_XCAFDoc_Location_DownCast(*args):
+def Handle_XCAFDoc_Location_DownCast(*args) -> "Handle_XCAFDoc_Location const" :
   return _XCAFDoc.Handle_XCAFDoc_Location_DownCast(*args)
 Handle_XCAFDoc_Location_DownCast = _XCAFDoc.Handle_XCAFDoc_Location_DownCast
 
@@ -3484,7 +3484,7 @@ class XCAFDoc_Material(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Material_swiginit(self,_XCAFDoc.new_XCAFDoc_Material(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -3492,7 +3492,7 @@ class XCAFDoc_Material(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Material_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param label:
         :type label: TDF_Label &
@@ -3523,46 +3523,46 @@ class XCAFDoc_Material(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_Material_Set(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Material_GetName(self, *args)
 
-    def GetDescription(self, *args):
+    def GetDescription(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Material_GetDescription(self, *args)
 
-    def GetDensity(self, *args):
+    def GetDensity(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _XCAFDoc.XCAFDoc_Material_GetDensity(self, *args)
 
-    def GetDensName(self, *args):
+    def GetDensName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Material_GetDensName(self, *args)
 
-    def GetDensValType(self, *args):
+    def GetDensValType(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _XCAFDoc.XCAFDoc_Material_GetDensValType(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Material self)"""
         return _XCAFDoc.XCAFDoc_Material__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Material" :
         """GetHandle(XCAFDoc_Material self) -> Handle_XCAFDoc_Material"""
         return _XCAFDoc.XCAFDoc_Material_GetHandle(self)
 
@@ -3585,7 +3585,7 @@ XCAFDoc_Material.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Material_GetHan
 XCAFDoc_Material_swigregister = _XCAFDoc.XCAFDoc_Material_swigregister
 XCAFDoc_Material_swigregister(XCAFDoc_Material)
 
-def XCAFDoc_Material_GetID(*args):
+def XCAFDoc_Material_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -3613,7 +3613,7 @@ Handle_XCAFDoc_Material._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFD
 Handle_XCAFDoc_Material_swigregister = _XCAFDoc.Handle_XCAFDoc_Material_swigregister
 Handle_XCAFDoc_Material_swigregister(Handle_XCAFDoc_Material)
 
-def Handle_XCAFDoc_Material_DownCast(*args):
+def Handle_XCAFDoc_Material_DownCast(*args) -> "Handle_XCAFDoc_Material const" :
   return _XCAFDoc.Handle_XCAFDoc_Material_DownCast(*args)
 Handle_XCAFDoc_Material_DownCast = _XCAFDoc.Handle_XCAFDoc_Material_DownCast
 
@@ -3626,7 +3626,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_MaterialTool_swiginit(self,_XCAFDoc.new_XCAFDoc_MaterialTool(*args))
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_MaterialTool" :
         """
         * Creates (if not exist) MaterialTool.
 
@@ -3638,7 +3638,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_MaterialTool_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -3646,7 +3646,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_MaterialTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def BaseLabel(self, *args):
+    def BaseLabel(self, *args) -> "TDF_Label" :
         """
         * returns the label under which colors are stored
 
@@ -3655,7 +3655,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_BaseLabel(self, *args)
 
-    def ShapeTool(self, *args):
+    def ShapeTool(self, *args) -> "Handle_XCAFDoc_ShapeTool const &" :
         """
         * Returns internal XCAFDoc_ShapeTool tool
 
@@ -3664,7 +3664,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_ShapeTool(self, *args)
 
-    def IsMaterial(self, *args):
+    def IsMaterial(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if label belongs to a material table and is a Material definition
 
@@ -3675,7 +3675,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_IsMaterial(self, *args)
 
-    def GetMaterialLabels(self, *args):
+    def GetMaterialLabels(self, *args) -> "void" :
         """
         * Returns a sequence of materials currently stored in the material table
 
@@ -3686,7 +3686,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_GetMaterialLabels(self, *args)
 
-    def AddMaterial(self, *args):
+    def AddMaterial(self, *args) -> "TDF_Label" :
         """
         * Adds a Material definition to a table and returns its label
 
@@ -3705,7 +3705,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_AddMaterial(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         * Sets a link with GUID
 
@@ -3734,7 +3734,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_SetMaterial(self, *args)
 
-    def GetMaterial(self, *args):
+    def GetMaterial(self, *args) -> "Standard_Boolean" :
         """
         * Returns Material assigned to <MatL> Returns False if no such Material is assigned
 
@@ -3755,7 +3755,7 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_MaterialTool_GetMaterial(self, *args)
 
-    def GetDensityForShape(*args):
+    def GetDensityForShape(*args) -> "Standard_Real" :
         """
         * Find referred material and return density from it if no material --> return 0
 
@@ -3767,11 +3767,11 @@ class XCAFDoc_MaterialTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_MaterialTool_GetDensityForShape(*args)
 
     GetDensityForShape = staticmethod(GetDensityForShape)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_MaterialTool self)"""
         return _XCAFDoc.XCAFDoc_MaterialTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_MaterialTool" :
         """GetHandle(XCAFDoc_MaterialTool self) -> Handle_XCAFDoc_MaterialTool"""
         return _XCAFDoc.XCAFDoc_MaterialTool_GetHandle(self)
 
@@ -3795,7 +3795,7 @@ XCAFDoc_MaterialTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_MaterialToo
 XCAFDoc_MaterialTool_swigregister = _XCAFDoc.XCAFDoc_MaterialTool_swigregister
 XCAFDoc_MaterialTool_swigregister(XCAFDoc_MaterialTool)
 
-def XCAFDoc_MaterialTool_Set(*args):
+def XCAFDoc_MaterialTool_Set(*args) -> "Handle_XCAFDoc_MaterialTool" :
   """
     * Creates (if not exist) MaterialTool.
 
@@ -3806,14 +3806,14 @@ def XCAFDoc_MaterialTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_MaterialTool_Set(*args)
 
-def XCAFDoc_MaterialTool_GetID(*args):
+def XCAFDoc_MaterialTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_MaterialTool_GetID(*args)
 
-def XCAFDoc_MaterialTool_GetDensityForShape(*args):
+def XCAFDoc_MaterialTool_GetDensityForShape(*args) -> "Standard_Real" :
   """
     * Find referred material and return density from it if no material --> return 0
 
@@ -3845,7 +3845,7 @@ Handle_XCAFDoc_MaterialTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_X
 Handle_XCAFDoc_MaterialTool_swigregister = _XCAFDoc.Handle_XCAFDoc_MaterialTool_swigregister
 Handle_XCAFDoc_MaterialTool_swigregister(Handle_XCAFDoc_MaterialTool)
 
-def Handle_XCAFDoc_MaterialTool_DownCast(*args):
+def Handle_XCAFDoc_MaterialTool_DownCast(*args) -> "Handle_XCAFDoc_MaterialTool const" :
   return _XCAFDoc.Handle_XCAFDoc_MaterialTool_DownCast(*args)
 Handle_XCAFDoc_MaterialTool_DownCast = _XCAFDoc.Handle_XCAFDoc_MaterialTool_DownCast
 
@@ -3864,18 +3864,18 @@ class XCAFDoc_SequenceNodeOfGraphNodeSequence(OCC.TCollection.TCollection_SeqNod
 
         """
         _XCAFDoc.XCAFDoc_SequenceNodeOfGraphNodeSequence_swiginit(self,_XCAFDoc.new_XCAFDoc_SequenceNodeOfGraphNodeSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_XCAFDoc_GraphNode &" :
         """
         :rtype: Handle_XCAFDoc_GraphNode
 
         """
         return _XCAFDoc.XCAFDoc_SequenceNodeOfGraphNodeSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_SequenceNodeOfGraphNodeSequence self)"""
         return _XCAFDoc.XCAFDoc_SequenceNodeOfGraphNodeSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence" :
         """GetHandle(XCAFDoc_SequenceNodeOfGraphNodeSequence self) -> Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence"""
         return _XCAFDoc.XCAFDoc_SequenceNodeOfGraphNodeSequence_GetHandle(self)
 
@@ -3914,14 +3914,14 @@ Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence._kill_pointed = new_instancemetho
 Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_swigregister = _XCAFDoc.Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_swigregister
 Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_swigregister(Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence)
 
-def Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_DownCast(*args):
+def Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_DownCast(*args) -> "Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence const" :
   return _XCAFDoc.Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_DownCast(*args)
 Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_DownCast = _XCAFDoc.Handle_XCAFDoc_SequenceNodeOfGraphNodeSequence_DownCast
 
 class XCAFDoc_ShapeMapTool(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -3929,7 +3929,7 @@ class XCAFDoc_ShapeMapTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeMapTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_ShapeMapTool" :
         """
         * Create (if not exist) ShapeTool from XCAFDoc on <L>.
 
@@ -3949,7 +3949,7 @@ class XCAFDoc_ShapeMapTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_ShapeMapTool_swiginit(self,_XCAFDoc.new_XCAFDoc_ShapeMapTool(*args))
-    def IsSubShape(self, *args):
+    def IsSubShape(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether shape <sub> is subshape of shape stored on label shapeL
 
@@ -3960,7 +3960,7 @@ class XCAFDoc_ShapeMapTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeMapTool_IsSubShape(self, *args)
 
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         * Sets representation (TopoDS_Shape) for top-level shape
 
@@ -3971,18 +3971,18 @@ class XCAFDoc_ShapeMapTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeMapTool_SetShape(self, *args)
 
-    def GetMap(self, *args):
+    def GetMap(self, *args) -> "TopTools_IndexedMapOfShape const &" :
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
         return _XCAFDoc.XCAFDoc_ShapeMapTool_GetMap(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_ShapeMapTool self)"""
         return _XCAFDoc.XCAFDoc_ShapeMapTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_ShapeMapTool" :
         """GetHandle(XCAFDoc_ShapeMapTool self) -> Handle_XCAFDoc_ShapeMapTool"""
         return _XCAFDoc.XCAFDoc_ShapeMapTool_GetHandle(self)
 
@@ -4002,14 +4002,14 @@ XCAFDoc_ShapeMapTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_ShapeMapToo
 XCAFDoc_ShapeMapTool_swigregister = _XCAFDoc.XCAFDoc_ShapeMapTool_swigregister
 XCAFDoc_ShapeMapTool_swigregister(XCAFDoc_ShapeMapTool)
 
-def XCAFDoc_ShapeMapTool_GetID(*args):
+def XCAFDoc_ShapeMapTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_ShapeMapTool_GetID(*args)
 
-def XCAFDoc_ShapeMapTool_Set(*args):
+def XCAFDoc_ShapeMapTool_Set(*args) -> "Handle_XCAFDoc_ShapeMapTool" :
   """
     * Create (if not exist) ShapeTool from XCAFDoc on <L>.
 
@@ -4041,14 +4041,14 @@ Handle_XCAFDoc_ShapeMapTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_X
 Handle_XCAFDoc_ShapeMapTool_swigregister = _XCAFDoc.Handle_XCAFDoc_ShapeMapTool_swigregister
 Handle_XCAFDoc_ShapeMapTool_swigregister(Handle_XCAFDoc_ShapeMapTool)
 
-def Handle_XCAFDoc_ShapeMapTool_DownCast(*args):
+def Handle_XCAFDoc_ShapeMapTool_DownCast(*args) -> "Handle_XCAFDoc_ShapeMapTool const" :
   return _XCAFDoc.Handle_XCAFDoc_ShapeMapTool_DownCast(*args)
 Handle_XCAFDoc_ShapeMapTool_DownCast = _XCAFDoc.Handle_XCAFDoc_ShapeMapTool_DownCast
 
 class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -4056,7 +4056,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_ShapeTool" :
         """
         * Create (if not exist) ShapeTool from XCAFDoc on <L>.
 
@@ -4076,7 +4076,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_ShapeTool_swiginit(self,_XCAFDoc.new_XCAFDoc_ShapeTool(*args))
-    def IsTopLevel(self, *args):
+    def IsTopLevel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the label is a label of top-level shape, as opposed to component of assembly or subshape
 
@@ -4087,7 +4087,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_IsTopLevel(self, *args)
 
-    def IsFree(*args):
+    def IsFree(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label is not used by any assembly, i.e. contains sublabels which are assembly components This is relevant only if IsShape() is True 	 	 (There is no Father TreeNode on this <L>)
 
@@ -4099,7 +4099,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsFree(*args)
 
     IsFree = staticmethod(IsFree)
-    def IsShape(*args):
+    def IsShape(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label represents a shape (simple shape, assembly or reference)
 
@@ -4111,7 +4111,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsShape(*args)
 
     IsShape = staticmethod(IsShape)
-    def IsSimpleShape(*args):
+    def IsSimpleShape(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label is a label of simple shape
 
@@ -4123,7 +4123,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsSimpleShape(*args)
 
     IsSimpleShape = staticmethod(IsSimpleShape)
-    def IsReference(*args):
+    def IsReference(*args) -> "Standard_Boolean" :
         """
         * Return true if <L> is a located instance of other shape i.e. reference
 
@@ -4135,7 +4135,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsReference(*args)
 
     IsReference = staticmethod(IsReference)
-    def IsAssembly(*args):
+    def IsAssembly(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label is a label of assembly, i.e. contains sublabels which are assembly components This is relevant only if IsShape() is True
 
@@ -4147,7 +4147,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsAssembly(*args)
 
     IsAssembly = staticmethod(IsAssembly)
-    def IsComponent(*args):
+    def IsComponent(*args) -> "Standard_Boolean" :
         """
         * Return true if <L> is reference serving as component of assembly
 
@@ -4159,7 +4159,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsComponent(*args)
 
     IsComponent = staticmethod(IsComponent)
-    def IsCompound(*args):
+    def IsCompound(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label is a label of compound, i.e. contains some sublabels This is relevant only if IsShape() is True
 
@@ -4171,7 +4171,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsCompound(*args)
 
     IsCompound = staticmethod(IsCompound)
-    def IsSubShape(self, *args):
+    def IsSubShape(self, *args) -> "Standard_Boolean" :
         """
         * Return true if <L> is subshape of the top-level shape
 
@@ -4190,7 +4190,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_IsSubShape(self, *args)
 
-    def SearchUsingMap(self, *args):
+    def SearchUsingMap(self, *args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4205,7 +4205,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_SearchUsingMap(self, *args)
 
-    def Search(self, *args):
+    def Search(self, *args) -> "Standard_Boolean" :
         """
         * General tool to find a (sub) shape in the document * If findInstance is True, and S has a non-null location, first tries to find the shape among the top-level shapes with this location * If not found, and findComponent is True, tries to find the shape among the components of assemblies * If not found, tries to find the shape without location among top-level shapes * If not found and findSubshape is True, tries to find a shape as a subshape of top-level simple shapes Returns False if nothing is found
 
@@ -4224,7 +4224,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_Search(self, *args)
 
-    def FindShape(self, *args):
+    def FindShape(self, *args) -> "TDF_Label" :
         """
         * Returns the label corresponding to shape S (searches among top-level shapes, not including subcomponents of assemblies) If findInstance is False (default), searches for the non-located shape (i.e. among original shapes) If findInstance is True, searches for the shape with the same location, including shape instances Return True if <S> is found.
 
@@ -4247,7 +4247,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_FindShape(self, *args)
 
-    def GetShape(*args):
+    def GetShape(*args) -> "TopoDS_Shape" :
         """
         * To get TopoDS_Shape from shape's label For component, returns new shape with correct location Returns False if label does not contain shape
 
@@ -4267,7 +4267,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetShape(*args)
 
     GetShape = staticmethod(GetShape)
-    def NewShape(self, *args):
+    def NewShape(self, *args) -> "TDF_Label" :
         """
         * Creates new (empty) top-level shape. Initially it holds empty TopoDS_Compound
 
@@ -4276,7 +4276,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_NewShape(self, *args)
 
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         * Sets representation (TopoDS_Shape) for top-level shape
 
@@ -4289,7 +4289,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_SetShape(self, *args)
 
-    def AddShape(self, *args):
+    def AddShape(self, *args) -> "TDF_Label" :
         """
         * Adds a new top-level (creates and returns a new label) If makeAssembly is True, treats TopAbs_COMPOUND shapes as assemblies (creates assembly structure). NOTE: <makePrepare> replace components without location in assmebly by located components to avoid some problems. If AutoNaming() is True then automatically attaches names.
 
@@ -4304,7 +4304,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_AddShape(self, *args)
 
-    def RemoveShape(self, *args):
+    def RemoveShape(self, *args) -> "Standard_Boolean" :
         """
         * Removes shape (whole label and all its sublabels) If removeCompletely is true, removes complete shape If removeCompletely is false, removes instance(location) only Returns False (and does nothing) if shape is not free or is not top-level shape
 
@@ -4317,7 +4317,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_RemoveShape(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * set hasComponents into false
 
@@ -4326,7 +4326,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_Init(self, *args)
 
-    def SetAutoNaming(*args):
+    def SetAutoNaming(*args) -> "void" :
         """
         * Sets auto-naming mode to <V>. If True then for added shapes, links, assemblies and SHUO's, the TDataStd_Name attribute is automatically added. For shapes it contains a shape type (e.g. 'SOLID', 'SHELL', etc); for links it has a form '=>[0:1:1:2]' (where a tag is a label containing a shape without a location); for assemblies it is 'ASSEMBLY', and 'SHUO' for SHUO's. This setting is global; it cannot be made a member function as it is used by static methods as well. By default, auto-naming is enabled. See also AutoNaming().
 
@@ -4338,7 +4338,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_SetAutoNaming(*args)
 
     SetAutoNaming = staticmethod(SetAutoNaming)
-    def AutoNaming(*args):
+    def AutoNaming(*args) -> "Standard_Boolean" :
         """
         * Returns current auto-naming mode. See SetAutoNaming() for description.
 
@@ -4348,7 +4348,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_AutoNaming(*args)
 
     AutoNaming = staticmethod(AutoNaming)
-    def ComputeShapes(self, *args):
+    def ComputeShapes(self, *args) -> "void" :
         """
         * recursive
 
@@ -4359,7 +4359,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_ComputeShapes(self, *args)
 
-    def ComputeSimpleShapes(self, *args):
+    def ComputeSimpleShapes(self, *args) -> "void" :
         """
         * Compute a sequence of simple shapes
 
@@ -4368,7 +4368,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_ComputeSimpleShapes(self, *args)
 
-    def GetShapes(self, *args):
+    def GetShapes(self, *args) -> "void" :
         """
         * Returns a sequence of all top-level shapes
 
@@ -4379,7 +4379,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_GetShapes(self, *args)
 
-    def GetFreeShapes(self, *args):
+    def GetFreeShapes(self, *args) -> "void" :
         """
         * Returns a sequence of all top-level shapes which are free (i.e. not referred by any other)
 
@@ -4390,7 +4390,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_GetFreeShapes(self, *args)
 
-    def GetUsers(*args):
+    def GetUsers(*args) -> "Standard_Integer" :
         """
         * Returns list of labels which refer shape L as component Returns number of users (0 if shape is free)
 
@@ -4406,7 +4406,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetUsers(*args)
 
     GetUsers = staticmethod(GetUsers)
-    def GetLocation(*args):
+    def GetLocation(*args) -> "TopLoc_Location" :
         """
         * Returns location of instance
 
@@ -4418,7 +4418,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetLocation(*args)
 
     GetLocation = staticmethod(GetLocation)
-    def GetReferredShape(*args):
+    def GetReferredShape(*args) -> "Standard_Boolean" :
         """
         * Returns label which corresponds to a shape referred by L Returns False if label is not reference
 
@@ -4432,7 +4432,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetReferredShape(*args)
 
     GetReferredShape = staticmethod(GetReferredShape)
-    def NbComponents(*args):
+    def NbComponents(*args) -> "Standard_Integer" :
         """
         * Returns number of Assembles components
 
@@ -4446,7 +4446,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_NbComponents(*args)
 
     NbComponents = staticmethod(NbComponents)
-    def GetComponents(*args):
+    def GetComponents(*args) -> "Standard_Boolean" :
         """
         * Returns list of components of assembly Returns False if label is not assembly
 
@@ -4462,7 +4462,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetComponents(*args)
 
     GetComponents = staticmethod(GetComponents)
-    def AddComponent(self, *args):
+    def AddComponent(self, *args) -> "TDF_Label" :
         """
         * Adds a component given by its label and location to the assembly Note: assembly must be IsAssembly() or IsSimpleShape()
 
@@ -4487,7 +4487,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_AddComponent(self, *args)
 
-    def RemoveComponent(self, *args):
+    def RemoveComponent(self, *args) -> "void" :
         """
         * Removes a component from its assembly
 
@@ -4498,7 +4498,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_RemoveComponent(self, *args)
 
-    def UpdateAssembly(self, *args):
+    def UpdateAssembly(self, *args) -> "void" :
         """
         * Update an assembly at label <L>
 
@@ -4509,7 +4509,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_UpdateAssembly(self, *args)
 
-    def FindSubShape(self, *args):
+    def FindSubShape(self, *args) -> "Standard_Boolean" :
         """
         * Finds a label for subshape <sub> of shape stored on label shapeL Returns Null label if it is not found
 
@@ -4524,7 +4524,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_FindSubShape(self, *args)
 
-    def AddSubShape(self, *args):
+    def AddSubShape(self, *args) -> "TDF_Label" :
         """
         * Adds a label for subshape <sub> of shape stored on label shapeL Returns Null label if it is not subshape
 
@@ -4537,7 +4537,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_AddSubShape(self, *args)
 
-    def FindMainShapeUsingMap(self, *args):
+    def FindMainShapeUsingMap(self, *args) -> "TDF_Label" :
         """
         :param sub:
         :type sub: TopoDS_Shape &
@@ -4546,7 +4546,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_FindMainShapeUsingMap(self, *args)
 
-    def FindMainShape(self, *args):
+    def FindMainShape(self, *args) -> "TDF_Label" :
         """
         * Performs a search among top-level shapes to find the shape containing <sub> as subshape Checks only simple shapes, and returns the first found label (which should be the only one for valid model)
 
@@ -4557,7 +4557,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_FindMainShape(self, *args)
 
-    def GetSubShapes(*args):
+    def GetSubShapes(*args) -> "Standard_Boolean" :
         """
         * Returns list of labels identifying subshapes of the given shape Returns False if no subshapes are placed on that label
 
@@ -4571,7 +4571,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetSubShapes(*args)
 
     GetSubShapes = staticmethod(GetSubShapes)
-    def BaseLabel(self, *args):
+    def BaseLabel(self, *args) -> "TDF_Label" :
         """
         * returns the label under which shapes are stored
 
@@ -4580,7 +4580,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_BaseLabel(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param deep: default value is Standard_False
         :type deep: bool
@@ -4589,7 +4589,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_Dump(self, *args)
 
-    def DumpShape(*args):
+    def DumpShape(*args) -> "void" :
         """
         * Print in cout type of shape found on <L> label and the entry of <L>, with <level> tabs before. If <deep>, print also TShape and Location addresses
 
@@ -4605,7 +4605,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_DumpShape(*args)
 
     DumpShape = staticmethod(DumpShape)
-    def IsExternRef(*args):
+    def IsExternRef(*args) -> "Standard_Boolean" :
         """
         * Returns True if the label is a label of external references, i.e. there are some reference on the no-step files, which are described in document only their names
 
@@ -4617,7 +4617,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_IsExternRef(*args)
 
     IsExternRef = staticmethod(IsExternRef)
-    def SetExternRefs(self, *args):
+    def SetExternRefs(self, *args) -> "void" :
         """
         * Sets the names of references on the no-step files
 
@@ -4636,7 +4636,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_SetExternRefs(self, *args)
 
-    def GetExternRefs(*args):
+    def GetExternRefs(*args) -> "void" :
         """
         * Gets the names of references on the no-step files
 
@@ -4650,7 +4650,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetExternRefs(*args)
 
     GetExternRefs = staticmethod(GetExternRefs)
-    def SetSHUO(self, *args):
+    def SetSHUO(self, *args) -> "Standard_Boolean" :
         """
         * Sets the SHUO structure between upper_usage and next_usage create multy-level (if number of labels > 2) SHUO from first to last Initialise out <MainSHUOAttr> by main upper_usage SHUO attribute. Returns False if some of labels in not component label
 
@@ -4663,7 +4663,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_SetSHUO(self, *args)
 
-    def GetSHUO(*args):
+    def GetSHUO(*args) -> "Standard_Boolean" :
         """
         * Returns founded SHUO GraphNode attribute <aSHUOAttr> Returns false in other case
 
@@ -4677,7 +4677,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUO(*args)
 
     GetSHUO = staticmethod(GetSHUO)
-    def GetAllComponentSHUO(*args):
+    def GetAllComponentSHUO(*args) -> "Standard_Boolean" :
         """
         * Returns founded SHUO GraphNodes of indicated component Returns false in other case
 
@@ -4691,7 +4691,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetAllComponentSHUO(*args)
 
     GetAllComponentSHUO = staticmethod(GetAllComponentSHUO)
-    def GetSHUOUpperUsage(*args):
+    def GetSHUOUpperUsage(*args) -> "Standard_Boolean" :
         """
         * Returns the sequence of labels of SHUO attributes, which is upper_usage for this next_usage SHUO attribute   (that indicated by label) NOTE: returns upper_usages only on one level (not recurse) NOTE: do not clear the sequence before filling
 
@@ -4705,7 +4705,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUOUpperUsage(*args)
 
     GetSHUOUpperUsage = staticmethod(GetSHUOUpperUsage)
-    def GetSHUONextUsage(*args):
+    def GetSHUONextUsage(*args) -> "Standard_Boolean" :
         """
         * Returns the sequence of labels of SHUO attributes, which is next_usage for this upper_usage SHUO attribute   (that indicated by label) NOTE: returns next_usages only on one level (not recurse) NOTE: do not clear the sequence before filling
 
@@ -4719,7 +4719,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUONextUsage(*args)
 
     GetSHUONextUsage = staticmethod(GetSHUONextUsage)
-    def RemoveSHUO(self, *args):
+    def RemoveSHUO(self, *args) -> "Standard_Boolean" :
         """
         * Remove SHUO from component sublabel,  remove all dependencies on other SHUO. Returns False if cannot remove SHUO dependencies. NOTE: remove any styles that associated with this SHUO.
 
@@ -4730,7 +4730,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_RemoveSHUO(self, *args)
 
-    def FindComponent(self, *args):
+    def FindComponent(self, *args) -> "Standard_Boolean" :
         """
         * Serach the path of labels in the document, that corresponds the component from any assembly Try to search the sequence of labels with location that produce this shape as component of any assembly NOTE: Clear sequence of labels before filling
 
@@ -4743,7 +4743,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_FindComponent(self, *args)
 
-    def GetSHUOInstance(self, *args):
+    def GetSHUOInstance(self, *args) -> "TopoDS_Shape" :
         """
         * Search for the component shape that styled by shuo Returns null shape if no any shape is found.
 
@@ -4754,7 +4754,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUOInstance(self, *args)
 
-    def SetInstanceSHUO(self, *args):
+    def SetInstanceSHUO(self, *args) -> "Handle_XCAFDoc_GraphNode" :
         """
         * Search for the component shape by labelks path and set SHUO structure for founded label structure Returns null attribute if no component in any assembly found.
 
@@ -4765,7 +4765,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_SetInstanceSHUO(self, *args)
 
-    def GetAllSHUOInstances(self, *args):
+    def GetAllSHUOInstances(self, *args) -> "Standard_Boolean" :
         """
         * Seaching for component shapes that styled by shuo Returns empty sequence of shape if no any shape is found.
 
@@ -4778,7 +4778,7 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         """
         return _XCAFDoc.XCAFDoc_ShapeTool_GetAllSHUOInstances(self, *args)
 
-    def FindSHUO(*args):
+    def FindSHUO(*args) -> "Standard_Boolean" :
         """
         * Searchs the SHUO by labels of components from upper_usage componet to next_usage Returns null attribute if no SHUO found
 
@@ -4792,11 +4792,11 @@ class XCAFDoc_ShapeTool(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_ShapeTool_FindSHUO(*args)
 
     FindSHUO = staticmethod(FindSHUO)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_ShapeTool self)"""
         return _XCAFDoc.XCAFDoc_ShapeTool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_ShapeTool" :
         """GetHandle(XCAFDoc_ShapeTool self) -> Handle_XCAFDoc_ShapeTool"""
         return _XCAFDoc.XCAFDoc_ShapeTool_GetHandle(self)
 
@@ -4843,14 +4843,14 @@ XCAFDoc_ShapeTool.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_ShapeTool_GetH
 XCAFDoc_ShapeTool_swigregister = _XCAFDoc.XCAFDoc_ShapeTool_swigregister
 XCAFDoc_ShapeTool_swigregister(XCAFDoc_ShapeTool)
 
-def XCAFDoc_ShapeTool_GetID(*args):
+def XCAFDoc_ShapeTool_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetID(*args)
 
-def XCAFDoc_ShapeTool_Set(*args):
+def XCAFDoc_ShapeTool_Set(*args) -> "Handle_XCAFDoc_ShapeTool" :
   """
     * Create (if not exist) ShapeTool from XCAFDoc on <L>.
 
@@ -4861,7 +4861,7 @@ def XCAFDoc_ShapeTool_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_Set(*args)
 
-def XCAFDoc_ShapeTool_IsFree(*args):
+def XCAFDoc_ShapeTool_IsFree(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label is not used by any assembly, i.e. contains sublabels which are assembly components This is relevant only if IsShape() is True 	 	 (There is no Father TreeNode on this <L>)
 
@@ -4872,7 +4872,7 @@ def XCAFDoc_ShapeTool_IsFree(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsFree(*args)
 
-def XCAFDoc_ShapeTool_IsShape(*args):
+def XCAFDoc_ShapeTool_IsShape(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label represents a shape (simple shape, assembly or reference)
 
@@ -4883,7 +4883,7 @@ def XCAFDoc_ShapeTool_IsShape(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsShape(*args)
 
-def XCAFDoc_ShapeTool_IsSimpleShape(*args):
+def XCAFDoc_ShapeTool_IsSimpleShape(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label is a label of simple shape
 
@@ -4894,7 +4894,7 @@ def XCAFDoc_ShapeTool_IsSimpleShape(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsSimpleShape(*args)
 
-def XCAFDoc_ShapeTool_IsReference(*args):
+def XCAFDoc_ShapeTool_IsReference(*args) -> "Standard_Boolean" :
   """
     * Return true if <L> is a located instance of other shape i.e. reference
 
@@ -4905,7 +4905,7 @@ def XCAFDoc_ShapeTool_IsReference(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsReference(*args)
 
-def XCAFDoc_ShapeTool_IsAssembly(*args):
+def XCAFDoc_ShapeTool_IsAssembly(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label is a label of assembly, i.e. contains sublabels which are assembly components This is relevant only if IsShape() is True
 
@@ -4916,7 +4916,7 @@ def XCAFDoc_ShapeTool_IsAssembly(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsAssembly(*args)
 
-def XCAFDoc_ShapeTool_IsComponent(*args):
+def XCAFDoc_ShapeTool_IsComponent(*args) -> "Standard_Boolean" :
   """
     * Return true if <L> is reference serving as component of assembly
 
@@ -4927,7 +4927,7 @@ def XCAFDoc_ShapeTool_IsComponent(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsComponent(*args)
 
-def XCAFDoc_ShapeTool_IsCompound(*args):
+def XCAFDoc_ShapeTool_IsCompound(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label is a label of compound, i.e. contains some sublabels This is relevant only if IsShape() is True
 
@@ -4938,7 +4938,7 @@ def XCAFDoc_ShapeTool_IsCompound(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsCompound(*args)
 
-def XCAFDoc_ShapeTool_GetShape(*args):
+def XCAFDoc_ShapeTool_GetShape(*args) -> "TopoDS_Shape" :
   """
     * To get TopoDS_Shape from shape's label For component, returns new shape with correct location Returns False if label does not contain shape
 
@@ -4957,7 +4957,7 @@ def XCAFDoc_ShapeTool_GetShape(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetShape(*args)
 
-def XCAFDoc_ShapeTool_SetAutoNaming(*args):
+def XCAFDoc_ShapeTool_SetAutoNaming(*args) -> "void" :
   """
     * Sets auto-naming mode to <V>. If True then for added shapes, links, assemblies and SHUO's, the TDataStd_Name attribute is automatically added. For shapes it contains a shape type (e.g. 'SOLID', 'SHELL', etc); for links it has a form '=>[0:1:1:2]' (where a tag is a label containing a shape without a location); for assemblies it is 'ASSEMBLY', and 'SHUO' for SHUO's. This setting is global; it cannot be made a member function as it is used by static methods as well. By default, auto-naming is enabled. See also AutoNaming().
 
@@ -4968,7 +4968,7 @@ def XCAFDoc_ShapeTool_SetAutoNaming(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_SetAutoNaming(*args)
 
-def XCAFDoc_ShapeTool_AutoNaming(*args):
+def XCAFDoc_ShapeTool_AutoNaming(*args) -> "Standard_Boolean" :
   """
     * Returns current auto-naming mode. See SetAutoNaming() for description.
 
@@ -4977,7 +4977,7 @@ def XCAFDoc_ShapeTool_AutoNaming(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_AutoNaming(*args)
 
-def XCAFDoc_ShapeTool_GetUsers(*args):
+def XCAFDoc_ShapeTool_GetUsers(*args) -> "Standard_Integer" :
   """
     * Returns list of labels which refer shape L as component Returns number of users (0 if shape is free)
 
@@ -4992,7 +4992,7 @@ def XCAFDoc_ShapeTool_GetUsers(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetUsers(*args)
 
-def XCAFDoc_ShapeTool_GetLocation(*args):
+def XCAFDoc_ShapeTool_GetLocation(*args) -> "TopLoc_Location" :
   """
     * Returns location of instance
 
@@ -5003,7 +5003,7 @@ def XCAFDoc_ShapeTool_GetLocation(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetLocation(*args)
 
-def XCAFDoc_ShapeTool_GetReferredShape(*args):
+def XCAFDoc_ShapeTool_GetReferredShape(*args) -> "Standard_Boolean" :
   """
     * Returns label which corresponds to a shape referred by L Returns False if label is not reference
 
@@ -5016,7 +5016,7 @@ def XCAFDoc_ShapeTool_GetReferredShape(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetReferredShape(*args)
 
-def XCAFDoc_ShapeTool_NbComponents(*args):
+def XCAFDoc_ShapeTool_NbComponents(*args) -> "Standard_Integer" :
   """
     * Returns number of Assembles components
 
@@ -5029,7 +5029,7 @@ def XCAFDoc_ShapeTool_NbComponents(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_NbComponents(*args)
 
-def XCAFDoc_ShapeTool_GetComponents(*args):
+def XCAFDoc_ShapeTool_GetComponents(*args) -> "Standard_Boolean" :
   """
     * Returns list of components of assembly Returns False if label is not assembly
 
@@ -5044,7 +5044,7 @@ def XCAFDoc_ShapeTool_GetComponents(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetComponents(*args)
 
-def XCAFDoc_ShapeTool_GetSubShapes(*args):
+def XCAFDoc_ShapeTool_GetSubShapes(*args) -> "Standard_Boolean" :
   """
     * Returns list of labels identifying subshapes of the given shape Returns False if no subshapes are placed on that label
 
@@ -5057,7 +5057,7 @@ def XCAFDoc_ShapeTool_GetSubShapes(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetSubShapes(*args)
 
-def XCAFDoc_ShapeTool_DumpShape(*args):
+def XCAFDoc_ShapeTool_DumpShape(*args) -> "void" :
   """
     * Print in cout type of shape found on <L> label and the entry of <L>, with <level> tabs before. If <deep>, print also TShape and Location addresses
 
@@ -5072,7 +5072,7 @@ def XCAFDoc_ShapeTool_DumpShape(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_DumpShape(*args)
 
-def XCAFDoc_ShapeTool_IsExternRef(*args):
+def XCAFDoc_ShapeTool_IsExternRef(*args) -> "Standard_Boolean" :
   """
     * Returns True if the label is a label of external references, i.e. there are some reference on the no-step files, which are described in document only their names
 
@@ -5083,7 +5083,7 @@ def XCAFDoc_ShapeTool_IsExternRef(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_IsExternRef(*args)
 
-def XCAFDoc_ShapeTool_GetExternRefs(*args):
+def XCAFDoc_ShapeTool_GetExternRefs(*args) -> "void" :
   """
     * Gets the names of references on the no-step files
 
@@ -5096,7 +5096,7 @@ def XCAFDoc_ShapeTool_GetExternRefs(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetExternRefs(*args)
 
-def XCAFDoc_ShapeTool_GetSHUO(*args):
+def XCAFDoc_ShapeTool_GetSHUO(*args) -> "Standard_Boolean" :
   """
     * Returns founded SHUO GraphNode attribute <aSHUOAttr> Returns false in other case
 
@@ -5109,7 +5109,7 @@ def XCAFDoc_ShapeTool_GetSHUO(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUO(*args)
 
-def XCAFDoc_ShapeTool_GetAllComponentSHUO(*args):
+def XCAFDoc_ShapeTool_GetAllComponentSHUO(*args) -> "Standard_Boolean" :
   """
     * Returns founded SHUO GraphNodes of indicated component Returns false in other case
 
@@ -5122,7 +5122,7 @@ def XCAFDoc_ShapeTool_GetAllComponentSHUO(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetAllComponentSHUO(*args)
 
-def XCAFDoc_ShapeTool_GetSHUOUpperUsage(*args):
+def XCAFDoc_ShapeTool_GetSHUOUpperUsage(*args) -> "Standard_Boolean" :
   """
     * Returns the sequence of labels of SHUO attributes, which is upper_usage for this next_usage SHUO attribute   (that indicated by label) NOTE: returns upper_usages only on one level (not recurse) NOTE: do not clear the sequence before filling
 
@@ -5135,7 +5135,7 @@ def XCAFDoc_ShapeTool_GetSHUOUpperUsage(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUOUpperUsage(*args)
 
-def XCAFDoc_ShapeTool_GetSHUONextUsage(*args):
+def XCAFDoc_ShapeTool_GetSHUONextUsage(*args) -> "Standard_Boolean" :
   """
     * Returns the sequence of labels of SHUO attributes, which is next_usage for this upper_usage SHUO attribute   (that indicated by label) NOTE: returns next_usages only on one level (not recurse) NOTE: do not clear the sequence before filling
 
@@ -5148,7 +5148,7 @@ def XCAFDoc_ShapeTool_GetSHUONextUsage(*args):
     """
   return _XCAFDoc.XCAFDoc_ShapeTool_GetSHUONextUsage(*args)
 
-def XCAFDoc_ShapeTool_FindSHUO(*args):
+def XCAFDoc_ShapeTool_FindSHUO(*args) -> "Standard_Boolean" :
   """
     * Searchs the SHUO by labels of components from upper_usage componet to next_usage Returns null attribute if no SHUO found
 
@@ -5182,7 +5182,7 @@ Handle_XCAFDoc_ShapeTool._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAF
 Handle_XCAFDoc_ShapeTool_swigregister = _XCAFDoc.Handle_XCAFDoc_ShapeTool_swigregister
 Handle_XCAFDoc_ShapeTool_swigregister(Handle_XCAFDoc_ShapeTool)
 
-def Handle_XCAFDoc_ShapeTool_DownCast(*args):
+def Handle_XCAFDoc_ShapeTool_DownCast(*args) -> "Handle_XCAFDoc_ShapeTool const" :
   return _XCAFDoc.Handle_XCAFDoc_ShapeTool_DownCast(*args)
 Handle_XCAFDoc_ShapeTool_DownCast = _XCAFDoc.Handle_XCAFDoc_ShapeTool_DownCast
 
@@ -5197,7 +5197,7 @@ class XCAFDoc_Volume(OCC.TDF.TDF_Attribute):
 
         """
         _XCAFDoc.XCAFDoc_Volume_swiginit(self,_XCAFDoc.new_XCAFDoc_Volume(*args))
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -5205,7 +5205,7 @@ class XCAFDoc_Volume(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Volume_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_XCAFDoc_Volume" :
         """
         * Sets a value of volume
 
@@ -5225,7 +5225,7 @@ class XCAFDoc_Volume(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Volume_Set(*args)
 
     Set = staticmethod(Set)
-    def Get(*args):
+    def Get(*args) -> "Standard_Real &" :
         """
         :rtype: float
 
@@ -5241,15 +5241,15 @@ class XCAFDoc_Volume(OCC.TDF.TDF_Attribute):
         return _XCAFDoc.XCAFDoc_Volume_Get(*args)
 
     Get = staticmethod(Get)
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(XCAFDoc_Volume self) -> std::string"""
         return _XCAFDoc.XCAFDoc_Volume_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFDoc_Volume self)"""
         return _XCAFDoc.XCAFDoc_Volume__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFDoc_Volume" :
         """GetHandle(XCAFDoc_Volume self) -> Handle_XCAFDoc_Volume"""
         return _XCAFDoc.XCAFDoc_Volume_GetHandle(self)
 
@@ -5267,14 +5267,14 @@ XCAFDoc_Volume.GetHandle = new_instancemethod(_XCAFDoc.XCAFDoc_Volume_GetHandle,
 XCAFDoc_Volume_swigregister = _XCAFDoc.XCAFDoc_Volume_swigregister
 XCAFDoc_Volume_swigregister(XCAFDoc_Volume)
 
-def XCAFDoc_Volume_GetID(*args):
+def XCAFDoc_Volume_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
     """
   return _XCAFDoc.XCAFDoc_Volume_GetID(*args)
 
-def XCAFDoc_Volume_Set(*args):
+def XCAFDoc_Volume_Set(*args) -> "Handle_XCAFDoc_Volume" :
   """
     * Sets a value of volume
 
@@ -5293,7 +5293,7 @@ def XCAFDoc_Volume_Set(*args):
     """
   return _XCAFDoc.XCAFDoc_Volume_Set(*args)
 
-def XCAFDoc_Volume_Get(*args):
+def XCAFDoc_Volume_Get(*args) -> "Standard_Real &" :
   """
     :rtype: float
 
@@ -5329,7 +5329,7 @@ Handle_XCAFDoc_Volume._kill_pointed = new_instancemethod(_XCAFDoc.Handle_XCAFDoc
 Handle_XCAFDoc_Volume_swigregister = _XCAFDoc.Handle_XCAFDoc_Volume_swigregister
 Handle_XCAFDoc_Volume_swigregister(Handle_XCAFDoc_Volume)
 
-def Handle_XCAFDoc_Volume_DownCast(*args):
+def Handle_XCAFDoc_Volume_DownCast(*args) -> "Handle_XCAFDoc_Volume const" :
   return _XCAFDoc.Handle_XCAFDoc_Volume_DownCast(*args)
 Handle_XCAFDoc_Volume_DownCast = _XCAFDoc.Handle_XCAFDoc_Volume_DownCast
 

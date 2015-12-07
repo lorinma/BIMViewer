@@ -130,7 +130,7 @@ import OCC.Geom2d
 class breptools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def UVBounds(*args):
+    def UVBounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Returns in UMin, UMax, VMin, VMax the bounding values in the parametric space of F.
 
@@ -182,7 +182,7 @@ class breptools(object):
         return _BRepTools.breptools_UVBounds(*args)
 
     UVBounds = staticmethod(UVBounds)
-    def AddUVBounds(*args):
+    def AddUVBounds(*args) -> "void" :
         """
         * Adds to the box <B> the bounding values in the parametric space of F.
 
@@ -216,7 +216,7 @@ class breptools(object):
         return _BRepTools.breptools_AddUVBounds(*args)
 
     AddUVBounds = staticmethod(AddUVBounds)
-    def Update(*args):
+    def Update(*args) -> "void" :
         """
         * Update a vertex (nothing is done)
 
@@ -276,7 +276,7 @@ class breptools(object):
         return _BRepTools.breptools_Update(*args)
 
     Update = staticmethod(Update)
-    def UpdateFaceUVPoints(*args):
+    def UpdateFaceUVPoints(*args) -> "void" :
         """
         * For all the edges of the face <F> reset the UV points to ensure that connected faces have the same point at there common extremity.
 
@@ -288,7 +288,7 @@ class breptools(object):
         return _BRepTools.breptools_UpdateFaceUVPoints(*args)
 
     UpdateFaceUVPoints = staticmethod(UpdateFaceUVPoints)
-    def Clean(*args):
+    def Clean(*args) -> "void" :
         """
         * Removes all the triangulations of the faces of <S> and removes all polygons on triangulations of the edges.
 
@@ -300,7 +300,7 @@ class breptools(object):
         return _BRepTools.breptools_Clean(*args)
 
     Clean = staticmethod(Clean)
-    def RemoveUnusedPCurves(*args):
+    def RemoveUnusedPCurves(*args) -> "void" :
         """
         * Removes all the pcurves of the edges of <S> that refer to surfaces not belonging to any face of <S>
 
@@ -312,7 +312,7 @@ class breptools(object):
         return _BRepTools.breptools_RemoveUnusedPCurves(*args)
 
     RemoveUnusedPCurves = staticmethod(RemoveUnusedPCurves)
-    def Triangulation(*args):
+    def Triangulation(*args) -> "Standard_Boolean" :
         """
         * verifies that each face from the shape <S> has got a triangulation with a deflection <= deflec and the edges a discretisation on this triangulation.
 
@@ -326,7 +326,7 @@ class breptools(object):
         return _BRepTools.breptools_Triangulation(*args)
 
     Triangulation = staticmethod(Triangulation)
-    def Compare(*args):
+    def Compare(*args) -> "Standard_Boolean" :
         """
         * Returns True if the distance between the two vertices is lower than their tolerance.
 
@@ -348,7 +348,7 @@ class breptools(object):
         return _BRepTools.breptools_Compare(*args)
 
     Compare = staticmethod(Compare)
-    def OuterWire(*args):
+    def OuterWire(*args) -> "TopoDS_Wire" :
         """
         * Returns the outer most wire of <F>. Returns a Null wire if <F> has no wires.
 
@@ -360,7 +360,7 @@ class breptools(object):
         return _BRepTools.breptools_OuterWire(*args)
 
     OuterWire = staticmethod(OuterWire)
-    def Map3DEdges(*args):
+    def Map3DEdges(*args) -> "void" :
         """
         * Stores in the map <M> all the 3D topology edges of <S>.
 
@@ -374,7 +374,7 @@ class breptools(object):
         return _BRepTools.breptools_Map3DEdges(*args)
 
     Map3DEdges = staticmethod(Map3DEdges)
-    def IsReallyClosed(*args):
+    def IsReallyClosed(*args) -> "Standard_Boolean" :
         """
         * Verifies that the edge <E> is found two times on the face <F> before calling BRep_Tool::IsClosed.
 
@@ -388,7 +388,7 @@ class breptools(object):
         return _BRepTools.breptools_IsReallyClosed(*args)
 
     IsReallyClosed = staticmethod(IsReallyClosed)
-    def Dump(*args):
+    def Dump(*args) -> "void" :
         """
         * Dumps the topological structure and the geometry of <Sh> on the stream <S>.
 
@@ -402,7 +402,7 @@ class breptools(object):
         return _BRepTools.breptools_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def Write(*args):
+    def Write(*args) -> "Standard_Boolean" :
         """
         * Writes <Sh> on <S> in an ASCII format.
 
@@ -428,7 +428,7 @@ class breptools(object):
         return _BRepTools.breptools_Write(*args)
 
     Write = staticmethod(Write)
-    def Read(*args):
+    def Read(*args) -> "Standard_Boolean" :
         """
         * Reads a Shape from <S> in returns it in <Sh>. <B> is used to build the shape.
 
@@ -472,7 +472,7 @@ breptools._kill_pointed = new_instancemethod(_BRepTools.breptools__kill_pointed,
 breptools_swigregister = _BRepTools.breptools_swigregister
 breptools_swigregister(breptools)
 
-def breptools_UVBounds(*args):
+def breptools_UVBounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Returns in UMin, UMax, VMin, VMax the bounding values in the parametric space of F.
 
@@ -523,7 +523,7 @@ def breptools_UVBounds(*args):
     """
   return _BRepTools.breptools_UVBounds(*args)
 
-def breptools_AddUVBounds(*args):
+def breptools_AddUVBounds(*args) -> "void" :
   """
     * Adds to the box <B> the bounding values in the parametric space of F.
 
@@ -556,7 +556,7 @@ def breptools_AddUVBounds(*args):
     """
   return _BRepTools.breptools_AddUVBounds(*args)
 
-def breptools_Update(*args):
+def breptools_Update(*args) -> "void" :
   """
     * Update a vertex (nothing is done)
 
@@ -615,7 +615,7 @@ def breptools_Update(*args):
     """
   return _BRepTools.breptools_Update(*args)
 
-def breptools_UpdateFaceUVPoints(*args):
+def breptools_UpdateFaceUVPoints(*args) -> "void" :
   """
     * For all the edges of the face <F> reset the UV points to ensure that connected faces have the same point at there common extremity.
 
@@ -626,7 +626,7 @@ def breptools_UpdateFaceUVPoints(*args):
     """
   return _BRepTools.breptools_UpdateFaceUVPoints(*args)
 
-def breptools_Clean(*args):
+def breptools_Clean(*args) -> "void" :
   """
     * Removes all the triangulations of the faces of <S> and removes all polygons on triangulations of the edges.
 
@@ -637,7 +637,7 @@ def breptools_Clean(*args):
     """
   return _BRepTools.breptools_Clean(*args)
 
-def breptools_RemoveUnusedPCurves(*args):
+def breptools_RemoveUnusedPCurves(*args) -> "void" :
   """
     * Removes all the pcurves of the edges of <S> that refer to surfaces not belonging to any face of <S>
 
@@ -648,7 +648,7 @@ def breptools_RemoveUnusedPCurves(*args):
     """
   return _BRepTools.breptools_RemoveUnusedPCurves(*args)
 
-def breptools_Triangulation(*args):
+def breptools_Triangulation(*args) -> "Standard_Boolean" :
   """
     * verifies that each face from the shape <S> has got a triangulation with a deflection <= deflec and the edges a discretisation on this triangulation.
 
@@ -661,7 +661,7 @@ def breptools_Triangulation(*args):
     """
   return _BRepTools.breptools_Triangulation(*args)
 
-def breptools_Compare(*args):
+def breptools_Compare(*args) -> "Standard_Boolean" :
   """
     * Returns True if the distance between the two vertices is lower than their tolerance.
 
@@ -682,7 +682,7 @@ def breptools_Compare(*args):
     """
   return _BRepTools.breptools_Compare(*args)
 
-def breptools_OuterWire(*args):
+def breptools_OuterWire(*args) -> "TopoDS_Wire" :
   """
     * Returns the outer most wire of <F>. Returns a Null wire if <F> has no wires.
 
@@ -693,7 +693,7 @@ def breptools_OuterWire(*args):
     """
   return _BRepTools.breptools_OuterWire(*args)
 
-def breptools_Map3DEdges(*args):
+def breptools_Map3DEdges(*args) -> "void" :
   """
     * Stores in the map <M> all the 3D topology edges of <S>.
 
@@ -706,7 +706,7 @@ def breptools_Map3DEdges(*args):
     """
   return _BRepTools.breptools_Map3DEdges(*args)
 
-def breptools_IsReallyClosed(*args):
+def breptools_IsReallyClosed(*args) -> "Standard_Boolean" :
   """
     * Verifies that the edge <E> is found two times on the face <F> before calling BRep_Tool::IsClosed.
 
@@ -719,7 +719,7 @@ def breptools_IsReallyClosed(*args):
     """
   return _BRepTools.breptools_IsReallyClosed(*args)
 
-def breptools_Dump(*args):
+def breptools_Dump(*args) -> "void" :
   """
     * Dumps the topological structure and the geometry of <Sh> on the stream <S>.
 
@@ -732,7 +732,7 @@ def breptools_Dump(*args):
     """
   return _BRepTools.breptools_Dump(*args)
 
-def breptools_Write(*args):
+def breptools_Write(*args) -> "Standard_Boolean" :
   """
     * Writes <Sh> on <S> in an ASCII format.
 
@@ -757,7 +757,7 @@ def breptools_Write(*args):
     """
   return _BRepTools.breptools_Write(*args)
 
-def breptools_Read(*args):
+def breptools_Read(*args) -> "Standard_Boolean" :
   """
     * Reads a Shape from <S> in returns it in <Sh>. <B> is used to build the shape.
 
@@ -799,7 +799,7 @@ class BRepTools_DataMapIteratorOfMapOfVertexPnt2d(OCC.TCollection.TCollection_Ba
 
         """
         _BRepTools.BRepTools_DataMapIteratorOfMapOfVertexPnt2d_swiginit(self,_BRepTools.new_BRepTools_DataMapIteratorOfMapOfVertexPnt2d(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepTools_MapOfVertexPnt2d &
@@ -808,14 +808,14 @@ class BRepTools_DataMapIteratorOfMapOfVertexPnt2d(OCC.TCollection.TCollection_Ba
         """
         return _BRepTools.BRepTools_DataMapIteratorOfMapOfVertexPnt2d_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepTools.BRepTools_DataMapIteratorOfMapOfVertexPnt2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColgp_SequenceOfPnt2d const &" :
         """
         :rtype: TColgp_SequenceOfPnt2d
 
@@ -852,25 +852,25 @@ class BRepTools_DataMapNodeOfMapOfVertexPnt2d(OCC.TCollection.TCollection_MapNod
 
         """
         _BRepTools.BRepTools_DataMapNodeOfMapOfVertexPnt2d_swiginit(self,_BRepTools.new_BRepTools_DataMapNodeOfMapOfVertexPnt2d(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepTools.BRepTools_DataMapNodeOfMapOfVertexPnt2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColgp_SequenceOfPnt2d &" :
         """
         :rtype: TColgp_SequenceOfPnt2d
 
         """
         return _BRepTools.BRepTools_DataMapNodeOfMapOfVertexPnt2d_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_DataMapNodeOfMapOfVertexPnt2d self)"""
         return _BRepTools.BRepTools_DataMapNodeOfMapOfVertexPnt2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d" :
         """GetHandle(BRepTools_DataMapNodeOfMapOfVertexPnt2d self) -> Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d"""
         return _BRepTools.BRepTools_DataMapNodeOfMapOfVertexPnt2d_GetHandle(self)
 
@@ -910,7 +910,7 @@ Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d._kill_pointed = new_instancemetho
 Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_swigregister = _BRepTools.Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_swigregister
 Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_swigregister(Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d)
 
-def Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_DownCast(*args):
+def Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_DownCast(*args) -> "Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d const" :
   return _BRepTools.Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_DownCast(*args)
 Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_DownCast = _BRepTools.Handle_BRepTools_DataMapNodeOfMapOfVertexPnt2d_DownCast
 
@@ -925,7 +925,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepTools.BRepTools_MapOfVertexPnt2d_swiginit(self,_BRepTools.new_BRepTools_MapOfVertexPnt2d(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepTools_MapOfVertexPnt2d &" :
         """
         :param Other:
         :type Other: BRepTools_MapOfVertexPnt2d &
@@ -934,7 +934,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepTools_MapOfVertexPnt2d &" :
         """
         :param Other:
         :type Other: BRepTools_MapOfVertexPnt2d &
@@ -943,7 +943,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -952,14 +952,14 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -970,7 +970,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -979,7 +979,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -988,7 +988,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColgp_SequenceOfPnt2d const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -997,7 +997,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColgp_SequenceOfPnt2d &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1006,7 +1006,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1015,7 +1015,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1024,7 +1024,7 @@ class BRepTools_MapOfVertexPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTools.BRepTools_MapOfVertexPnt2d_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_MapOfVertexPnt2d self)"""
         return _BRepTools.BRepTools_MapOfVertexPnt2d__kill_pointed(self)
 
@@ -1055,7 +1055,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NewSurface(self, *args):
+    def NewSurface(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the face, F, has been modified. If the face has been modified: - S is the new geometry of the face, - L is its new location, and - Tol is the new tolerance. The flag, RevWires, is set to true when the modification reverses the normal of the surface, (i.e. the wires have to be reversed). The flag, RevFace, is set to true if the orientation of the modified face changes in the shells which contain it. If the face has not been modified this function returns false, and the values of S, L, Tol, RevWires and RevFace are not significant.
 
@@ -1076,7 +1076,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_NewSurface(self, *args)
 
-    def NewCurve(self, *args):
+    def NewCurve(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the edge, E, has been modified. If the edge has been modified: - C is the new geometry associated with the edge, - L is its new location, and - Tol is the new tolerance. If the edge has not been modified, this function returns false, and the values of C, L and Tol are not significant.
 
@@ -1093,7 +1093,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_NewCurve(self, *args)
 
-    def NewPoint(self, *args):
+    def NewPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the vertex V has been modified. If V has been modified: - P is the new geometry of the vertex, and - Tol is the new tolerance. If the vertex has not been modified this function returns false, and the values of P and Tol are not significant.
 
@@ -1108,7 +1108,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_NewPoint(self, *args)
 
-    def NewCurve2d(self, *args):
+    def NewCurve2d(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the edge, E, has a new curve on surface on the face, F. If a new curve exists: - C is the new geometry of the edge, - L is the new location, and - Tol is the new tolerance. NewE is the new edge created from E, and NewF is the new face created from F. If there is no new curve on the face, this function returns false, and the values of C, L and Tol are not significant.
 
@@ -1129,7 +1129,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_NewCurve2d(self, *args)
 
-    def NewParameter(self, *args):
+    def NewParameter(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the vertex V has a new parameter on the edge E. If a new parameter exists: - P is the parameter, and - Tol is the new tolerance. If there is no new parameter this function returns false, and the values of P and Tol are not significant.
 
@@ -1146,7 +1146,7 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_NewParameter(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "GeomAbs_Shape" :
         """
         * Returns the continuity of <NewE> between <NewF1> and <NewF2>. <NewE> is the new edge created from <E>. <NewF1> (resp. <NewF2>) is the new face created from <F1> (resp. <F2>).
 
@@ -1167,11 +1167,11 @@ class BRepTools_Modification(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_Modification_Continuity(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_Modification self)"""
         return _BRepTools.BRepTools_Modification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_Modification" :
         """GetHandle(BRepTools_Modification self) -> Handle_BRepTools_Modification"""
         return _BRepTools.BRepTools_Modification_GetHandle(self)
 
@@ -1215,7 +1215,7 @@ Handle_BRepTools_Modification._kill_pointed = new_instancemethod(_BRepTools.Hand
 Handle_BRepTools_Modification_swigregister = _BRepTools.Handle_BRepTools_Modification_swigregister
 Handle_BRepTools_Modification_swigregister(Handle_BRepTools_Modification)
 
-def Handle_BRepTools_Modification_DownCast(*args):
+def Handle_BRepTools_Modification_DownCast(*args) -> "Handle_BRepTools_Modification const" :
   return _BRepTools.Handle_BRepTools_Modification_DownCast(*args)
 Handle_BRepTools_Modification_DownCast = _BRepTools.Handle_BRepTools_Modification_DownCast
 
@@ -1244,7 +1244,7 @@ class BRepTools_Modifier(object):
 
         """
         _BRepTools.BRepTools_Modifier_swiginit(self,_BRepTools.new_BRepTools_Modifier(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the modifier with the shape <S>.
 
@@ -1255,7 +1255,7 @@ class BRepTools_Modifier(object):
         """
         return _BRepTools.BRepTools_Modifier_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the modifications described by <M>.
 
@@ -1266,7 +1266,7 @@ class BRepTools_Modifier(object):
         """
         return _BRepTools.BRepTools_Modifier_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if the modification has been computed successfully.
 
@@ -1275,7 +1275,7 @@ class BRepTools_Modifier(object):
         """
         return _BRepTools.BRepTools_Modifier_IsDone(self, *args)
 
-    def ModifiedShape(self, *args):
+    def ModifiedShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the modified shape corresponding to <S>.
 
@@ -1311,7 +1311,7 @@ class BRepTools_Quilt(object):
 
         """
         _BRepTools.BRepTools_Quilt_swiginit(self,_BRepTools.new_BRepTools_Quilt(*args))
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         * Binds <Enew> to be the new edge instead of <Eold>.  The faces of the added shape containing <Eold> will be copied to substitute <Eold> by <Enew>.  The vertices of <Eold> will be bound to the vertices of <Enew> with the same orientation.  If <Eold> and <Enew> have different orientations the curves are considered to be opposite and the pcurves of <Eold> will be copied and reversed in the new faces.  <Eold> must belong to the next added shape, <Enew> must belong to a Shape added before.
 
@@ -1332,7 +1332,7 @@ class BRepTools_Quilt(object):
         """
         return _BRepTools.BRepTools_Quilt_Bind(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Add the faces of <S> to the Quilt, the faces containing bounded edges are copied.
 
@@ -1343,7 +1343,7 @@ class BRepTools_Quilt(object):
         """
         return _BRepTools.BRepTools_Quilt_Add(self, *args)
 
-    def IsCopied(self, *args):
+    def IsCopied(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <S> has been copied (<S> is a vertex, an edge or a face)
 
@@ -1354,7 +1354,7 @@ class BRepTools_Quilt(object):
         """
         return _BRepTools.BRepTools_Quilt_IsCopied(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape substitued to <S> in the Quilt.
 
@@ -1365,7 +1365,7 @@ class BRepTools_Quilt(object):
         """
         return _BRepTools.BRepTools_Quilt_Copy(self, *args)
 
-    def Shells(self, *args):
+    def Shells(self, *args) -> "TopoDS_Shape" :
         """
         * Returns a Compound of shells made from the current set of faces. The shells will be flagged as closed or not closed.
 
@@ -1402,7 +1402,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepTools.BRepTools_ReShape_swiginit(self,_BRepTools.new_BRepTools_ReShape(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears all substitutions requests
 
@@ -1411,7 +1411,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Clear(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Sets a request to Remove a Shape If <oriented> is True, only for a shape with the SAME orientation. Else, whatever the orientation
 
@@ -1424,7 +1424,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Remove(self, *args)
 
-    def Replace(self, *args):
+    def Replace(self, *args) -> "void" :
         """
         * Sets a request to Replace a Shape by a new one If <oriented> is True, only if the orientation is the same Else, whatever the orientation, and the new shape takes the same orientation as <newshape> if the replaced one has the same as <shape>, else it is reversed
 
@@ -1439,7 +1439,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Replace(self, *args)
 
-    def IsRecorded(self, *args):
+    def IsRecorded(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a shape is recorded for Replace/Remove
 
@@ -1450,7 +1450,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_IsRecorded(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the new value for an individual shape If not recorded, returns the original shape itself If to be Removed, returns a Null Shape Else, returns the replacing item
 
@@ -1461,7 +1461,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Value(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Integer" :
         """
         * Returns a complete substitution status for a shape 0 : not recorded, <newsh> = original <shape> < 0: to be removed, <newsh> is NULL > 0: to be replaced, <newsh> is a new item If <last> is False, returns status and new shape recorded in the map directly for the shape, if True and status > 0 then recursively searches for the last status and new shape.
 
@@ -1476,7 +1476,7 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Status(self, *args)
 
-    def Apply(self, *args):
+    def Apply(self, *args) -> "TopoDS_Shape" :
         """
         * Applies the substitutions requests to a shape  <until> gives the level of type until which requests are taken into account. For subshapes of the type <until> no rebuild and futher exploring are done. ACTUALLY, NOT IMPLEMENTED BELOW TopAbs_FACE  <buildmode> says how to do on a SOLID,SHELL ... if one of its sub-shapes has been changed: 0: at least one Replace or Remove -> COMPOUND, else as such 1: at least one Remove (Replace are ignored) -> COMPOUND 2: Replace and Remove are both ignored If Replace/Remove are ignored or absent, the result as same type as the starting shape
 
@@ -1499,27 +1499,27 @@ class BRepTools_ReShape(OCC.MMgt.MMgt_TShared):
         """
         return _BRepTools.BRepTools_ReShape_Apply(self, *args)
 
-    def GetModeConsiderLocation(self):
+    def GetModeConsiderLocation(self) -> "Standard_Boolean" :
         """GetModeConsiderLocation(BRepTools_ReShape self) -> Standard_Boolean"""
         return _BRepTools.BRepTools_ReShape_GetModeConsiderLocation(self)
 
-    def SetModeConsiderLocation(self, *args):
+    def SetModeConsiderLocation(self, *args) -> "void" :
         """SetModeConsiderLocation(BRepTools_ReShape self, Standard_Boolean value)"""
         return _BRepTools.BRepTools_ReShape_SetModeConsiderLocation(self, *args)
 
-    def GetModeConsiderOrientation(self):
+    def GetModeConsiderOrientation(self) -> "Standard_Boolean" :
         """GetModeConsiderOrientation(BRepTools_ReShape self) -> Standard_Boolean"""
         return _BRepTools.BRepTools_ReShape_GetModeConsiderOrientation(self)
 
-    def SetModeConsiderOrientation(self, *args):
+    def SetModeConsiderOrientation(self, *args) -> "void" :
         """SetModeConsiderOrientation(BRepTools_ReShape self, Standard_Boolean value)"""
         return _BRepTools.BRepTools_ReShape_SetModeConsiderOrientation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_ReShape self)"""
         return _BRepTools.BRepTools_ReShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_ReShape" :
         """GetHandle(BRepTools_ReShape self) -> Handle_BRepTools_ReShape"""
         return _BRepTools.BRepTools_ReShape_GetHandle(self)
 
@@ -1568,7 +1568,7 @@ Handle_BRepTools_ReShape._kill_pointed = new_instancemethod(_BRepTools.Handle_BR
 Handle_BRepTools_ReShape_swigregister = _BRepTools.Handle_BRepTools_ReShape_swigregister
 Handle_BRepTools_ReShape_swigregister(Handle_BRepTools_ReShape)
 
-def Handle_BRepTools_ReShape_DownCast(*args):
+def Handle_BRepTools_ReShape_DownCast(*args) -> "Handle_BRepTools_ReShape const" :
   return _BRepTools.Handle_BRepTools_ReShape_DownCast(*args)
 Handle_BRepTools_ReShape_DownCast = _BRepTools.Handle_BRepTools_ReShape_DownCast
 
@@ -1593,23 +1593,23 @@ class BRepTools_ShapeSet(OCC.TopTools.TopTools_ShapeSet):
 
         """
         _BRepTools.BRepTools_ShapeSet_swiginit(self,_BRepTools.new_BRepTools_ShapeSet(*args))
-    def DumpGeometryToString(self):
+    def DumpGeometryToString(self) -> "std::string" :
         """DumpGeometryToString(BRepTools_ShapeSet self) -> std::string"""
         return _BRepTools.BRepTools_ShapeSet_DumpGeometryToString(self)
 
-    def WriteGeometryToString(self):
+    def WriteGeometryToString(self) -> "std::string" :
         """WriteGeometryToString(BRepTools_ShapeSet self) -> std::string"""
         return _BRepTools.BRepTools_ShapeSet_WriteGeometryToString(self)
 
-    def ReadGeometryFromString(self, *args):
+    def ReadGeometryFromString(self, *args) -> "void" :
         """ReadGeometryFromString(BRepTools_ShapeSet self, std::string src)"""
         return _BRepTools.BRepTools_ShapeSet_ReadGeometryFromString(self, *args)
 
-    def ReadPolygon3DFromString(self, *args):
+    def ReadPolygon3DFromString(self, *args) -> "void" :
         """ReadPolygon3DFromString(BRepTools_ShapeSet self, std::string src)"""
         return _BRepTools.BRepTools_ShapeSet_ReadPolygon3DFromString(self, *args)
 
-    def WritePolygon3D(self, *args):
+    def WritePolygon3D(self, *args) -> "void" :
         """
         * Writes the 3d polygons on the stream <OS> in a format that can be read back by Read.
 
@@ -1622,15 +1622,15 @@ class BRepTools_ShapeSet(OCC.TopTools.TopTools_ShapeSet):
         """
         return _BRepTools.BRepTools_ShapeSet_WritePolygon3D(self, *args)
 
-    def DumpPolygon3DToString(self):
+    def DumpPolygon3DToString(self) -> "std::string" :
         """DumpPolygon3DToString(BRepTools_ShapeSet self) -> std::string"""
         return _BRepTools.BRepTools_ShapeSet_DumpPolygon3DToString(self)
 
-    def ReadTriangulationFromString(self, *args):
+    def ReadTriangulationFromString(self, *args) -> "void" :
         """ReadTriangulationFromString(BRepTools_ShapeSet self, std::string src)"""
         return _BRepTools.BRepTools_ShapeSet_ReadTriangulationFromString(self, *args)
 
-    def WriteTriangulation(self, *args):
+    def WriteTriangulation(self, *args) -> "void" :
         """
         * Writes the triangulation on the stream <OS> in a format that can be read back by Read.
 
@@ -1643,15 +1643,15 @@ class BRepTools_ShapeSet(OCC.TopTools.TopTools_ShapeSet):
         """
         return _BRepTools.BRepTools_ShapeSet_WriteTriangulation(self, *args)
 
-    def DumpTriangulationToString(self):
+    def DumpTriangulationToString(self) -> "std::string" :
         """DumpTriangulationToString(BRepTools_ShapeSet self) -> std::string"""
         return _BRepTools.BRepTools_ShapeSet_DumpTriangulationToString(self)
 
-    def ReadPolygonOnTriangulationFromString(self, *args):
+    def ReadPolygonOnTriangulationFromString(self, *args) -> "void" :
         """ReadPolygonOnTriangulationFromString(BRepTools_ShapeSet self, std::string src)"""
         return _BRepTools.BRepTools_ShapeSet_ReadPolygonOnTriangulationFromString(self, *args)
 
-    def WritePolygonOnTriangulation(self, *args):
+    def WritePolygonOnTriangulation(self, *args) -> "void" :
         """
         * Writes the polygons on triangulation on the stream <OS> in a format that can be read back by Read.
 
@@ -1664,11 +1664,11 @@ class BRepTools_ShapeSet(OCC.TopTools.TopTools_ShapeSet):
         """
         return _BRepTools.BRepTools_ShapeSet_WritePolygonOnTriangulation(self, *args)
 
-    def DumpPolygonOnTriangulationToString(self):
+    def DumpPolygonOnTriangulationToString(self) -> "std::string" :
         """DumpPolygonOnTriangulationToString(BRepTools_ShapeSet self) -> std::string"""
         return _BRepTools.BRepTools_ShapeSet_DumpPolygonOnTriangulationToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_ShapeSet self)"""
         return _BRepTools.BRepTools_ShapeSet__kill_pointed(self)
 
@@ -1705,7 +1705,7 @@ class BRepTools_Substitution(object):
 
         """
         _BRepTools.BRepTools_Substitution_swiginit(self,_BRepTools.new_BRepTools_Substitution(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Reset all the fields.
 
@@ -1714,7 +1714,7 @@ class BRepTools_Substitution(object):
         """
         return _BRepTools.BRepTools_Substitution_Clear(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         * <Oldshape> will be replaced by <NewShapes>.  <NewShapes> can be empty , in this case <OldShape> will disparate from its ancestors.  if an item of <NewShapes> is oriented FORWARD. it will be oriented as <OldShape> in its ancestors. else it will be reversed.
 
@@ -1727,7 +1727,7 @@ class BRepTools_Substitution(object):
         """
         return _BRepTools.BRepTools_Substitution_Substitute(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Build NewShape from <S> if its subshapes has modified.  The methods <IsCopied> and <Copy> allows you to keep the resul of <Build>
 
@@ -1738,7 +1738,7 @@ class BRepTools_Substitution(object):
         """
         return _BRepTools.BRepTools_Substitution_Build(self, *args)
 
-    def IsCopied(self, *args):
+    def IsCopied(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <S> has been replaced .
 
@@ -1749,7 +1749,7 @@ class BRepTools_Substitution(object):
         """
         return _BRepTools.BRepTools_Substitution_IsCopied(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the set of shapes substitued to <S> .
 
@@ -1802,7 +1802,7 @@ class BRepTools_WireExplorer(object):
 
         """
         _BRepTools.BRepTools_WireExplorer_swiginit(self,_BRepTools.new_BRepTools_WireExplorer(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes an exploration of the wire <W>.
 
@@ -1821,7 +1821,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current edge.
 
@@ -1830,7 +1830,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Proceeds to the next edge.
 
@@ -1839,7 +1839,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_Next(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the current edge.
 
@@ -1848,7 +1848,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_Current(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns an Orientation for the current edge.
 
@@ -1857,7 +1857,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_Orientation(self, *args)
 
-    def CurrentVertex(self, *args):
+    def CurrentVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         * Returns the vertex connecting the current edge to the previous one.
 
@@ -1866,7 +1866,7 @@ class BRepTools_WireExplorer(object):
         """
         return _BRepTools.BRepTools_WireExplorer_CurrentVertex(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the content of the explorer.
 
@@ -1905,7 +1905,7 @@ class BRepTools_GTrsfModification(BRepTools_Modification):
 
         """
         _BRepTools.BRepTools_GTrsfModification_swiginit(self,_BRepTools.new_BRepTools_GTrsfModification(*args))
-    def GTrsf(self, *args):
+    def GTrsf(self, *args) -> "gp_GTrsf" :
         """
         * Gives an access on the GTrsf.
 
@@ -1914,11 +1914,11 @@ class BRepTools_GTrsfModification(BRepTools_Modification):
         """
         return _BRepTools.BRepTools_GTrsfModification_GTrsf(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_GTrsfModification self)"""
         return _BRepTools.BRepTools_GTrsfModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_GTrsfModification" :
         """GetHandle(BRepTools_GTrsfModification self) -> Handle_BRepTools_GTrsfModification"""
         return _BRepTools.BRepTools_GTrsfModification_GetHandle(self)
 
@@ -1957,7 +1957,7 @@ Handle_BRepTools_GTrsfModification._kill_pointed = new_instancemethod(_BRepTools
 Handle_BRepTools_GTrsfModification_swigregister = _BRepTools.Handle_BRepTools_GTrsfModification_swigregister
 Handle_BRepTools_GTrsfModification_swigregister(Handle_BRepTools_GTrsfModification)
 
-def Handle_BRepTools_GTrsfModification_DownCast(*args):
+def Handle_BRepTools_GTrsfModification_DownCast(*args) -> "Handle_BRepTools_GTrsfModification const" :
   return _BRepTools.Handle_BRepTools_GTrsfModification_DownCast(*args)
 Handle_BRepTools_GTrsfModification_DownCast = _BRepTools.Handle_BRepTools_GTrsfModification_DownCast
 
@@ -1970,11 +1970,11 @@ class BRepTools_NurbsConvertModification(BRepTools_Modification):
 
         """
         _BRepTools.BRepTools_NurbsConvertModification_swiginit(self,_BRepTools.new_BRepTools_NurbsConvertModification(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_NurbsConvertModification self)"""
         return _BRepTools.BRepTools_NurbsConvertModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_NurbsConvertModification" :
         """GetHandle(BRepTools_NurbsConvertModification self) -> Handle_BRepTools_NurbsConvertModification"""
         return _BRepTools.BRepTools_NurbsConvertModification_GetHandle(self)
 
@@ -2012,7 +2012,7 @@ Handle_BRepTools_NurbsConvertModification._kill_pointed = new_instancemethod(_BR
 Handle_BRepTools_NurbsConvertModification_swigregister = _BRepTools.Handle_BRepTools_NurbsConvertModification_swigregister
 Handle_BRepTools_NurbsConvertModification_swigregister(Handle_BRepTools_NurbsConvertModification)
 
-def Handle_BRepTools_NurbsConvertModification_DownCast(*args):
+def Handle_BRepTools_NurbsConvertModification_DownCast(*args) -> "Handle_BRepTools_NurbsConvertModification const" :
   return _BRepTools.Handle_BRepTools_NurbsConvertModification_DownCast(*args)
 Handle_BRepTools_NurbsConvertModification_DownCast = _BRepTools.Handle_BRepTools_NurbsConvertModification_DownCast
 
@@ -2027,7 +2027,7 @@ class BRepTools_TrsfModification(BRepTools_Modification):
 
         """
         _BRepTools.BRepTools_TrsfModification_swiginit(self,_BRepTools.new_BRepTools_TrsfModification(*args))
-    def Trsf(self, *args):
+    def Trsf(self, *args) -> "gp_Trsf" :
         """
         * Provides access to the gp_Trsf associated with this modification. The transformation can be changed.
 
@@ -2036,11 +2036,11 @@ class BRepTools_TrsfModification(BRepTools_Modification):
         """
         return _BRepTools.BRepTools_TrsfModification_Trsf(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepTools_TrsfModification self)"""
         return _BRepTools.BRepTools_TrsfModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepTools_TrsfModification" :
         """GetHandle(BRepTools_TrsfModification self) -> Handle_BRepTools_TrsfModification"""
         return _BRepTools.BRepTools_TrsfModification_GetHandle(self)
 
@@ -2079,7 +2079,7 @@ Handle_BRepTools_TrsfModification._kill_pointed = new_instancemethod(_BRepTools.
 Handle_BRepTools_TrsfModification_swigregister = _BRepTools.Handle_BRepTools_TrsfModification_swigregister
 Handle_BRepTools_TrsfModification_swigregister(Handle_BRepTools_TrsfModification)
 
-def Handle_BRepTools_TrsfModification_DownCast(*args):
+def Handle_BRepTools_TrsfModification_DownCast(*args) -> "Handle_BRepTools_TrsfModification const" :
   return _BRepTools.Handle_BRepTools_TrsfModification_DownCast(*args)
 Handle_BRepTools_TrsfModification_DownCast = _BRepTools.Handle_BRepTools_TrsfModification_DownCast
 

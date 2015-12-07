@@ -159,14 +159,14 @@ class TopOpeBRepBuild_AreaBuilder(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_AreaBuilder(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_Delete(self, *args)
 
-    def InitAreaBuilder(self, *args):
+    def InitAreaBuilder(self, *args) -> "void" :
         """
         * Sets a AreaBuilder to find the areas on the shapes described by <LS> using the classifier <LC>.
 
@@ -181,7 +181,7 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_InitAreaBuilder(self, *args)
 
-    def InitArea(self, *args):
+    def InitArea(self, *args) -> "Standard_Integer" :
         """
         * Initialize iteration on areas.
 
@@ -190,21 +190,21 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_InitArea(self, *args)
 
-    def MoreArea(self, *args):
+    def MoreArea(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_MoreArea(self, *args)
 
-    def NextArea(self, *args):
+    def NextArea(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_NextArea(self, *args)
 
-    def InitLoop(self, *args):
+    def InitLoop(self, *args) -> "Standard_Integer" :
         """
         * Initialize iteration on loops of current Area.
 
@@ -213,21 +213,21 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_InitLoop(self, *args)
 
-    def MoreLoop(self, *args):
+    def MoreLoop(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_MoreLoop(self, *args)
 
-    def NextLoop(self, *args):
+    def NextLoop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_NextLoop(self, *args)
 
-    def Loop(self, *args):
+    def Loop(self, *args) -> "Handle_TopOpeBRepBuild_Loop const &" :
         """
         * Returns the current Loop in the current area.
 
@@ -236,7 +236,7 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_Loop(self, *args)
 
-    def ADD_Loop_TO_LISTOFLoop(self, *args):
+    def ADD_Loop_TO_LISTOFLoop(self, *args) -> "void" :
         """
         :param L:
         :type L: Handle_TopOpeBRepBuild_Loop &
@@ -249,7 +249,7 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_ADD_Loop_TO_LISTOFLoop(self, *args)
 
-    def REM_Loop_FROM_LISTOFLoop(self, *args):
+    def REM_Loop_FROM_LISTOFLoop(self, *args) -> "void" :
         """
         :param ITLOL:
         :type ITLOL: TopOpeBRepBuild_ListIteratorOfListOfLoop &
@@ -262,7 +262,7 @@ class TopOpeBRepBuild_AreaBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_AreaBuilder_REM_Loop_FROM_LISTOFLoop(self, *args)
 
-    def ADD_LISTOFLoop_TO_LISTOFLoop(self, *args):
+    def ADD_LISTOFLoop_TO_LISTOFLoop(self, *args) -> "void" :
         """
         :param LOL1:
         :type LOL1: TopOpeBRepBuild_ListOfLoop &
@@ -316,7 +316,7 @@ class TopOpeBRepBuild_BlockBuilder(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_BlockBuilder(*args))
-    def MakeBlock(self, *args):
+    def MakeBlock(self, *args) -> "void" :
         """
         :param SS:
         :type SS: TopOpeBRepBuild_ShapeSet &
@@ -325,35 +325,35 @@ class TopOpeBRepBuild_BlockBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_MakeBlock(self, *args)
 
-    def InitBlock(self, *args):
+    def InitBlock(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_InitBlock(self, *args)
 
-    def MoreBlock(self, *args):
+    def MoreBlock(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_MoreBlock(self, *args)
 
-    def NextBlock(self, *args):
+    def NextBlock(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_NextBlock(self, *args)
 
-    def BlockIterator(self, *args):
+    def BlockIterator(self, *args) -> "TopOpeBRepBuild_BlockIterator" :
         """
         :rtype: TopOpeBRepBuild_BlockIterator
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_BlockIterator(self, *args)
 
-    def Element(self, *args):
+    def Element(self, *args) -> "Standard_Integer" :
         """
         * Returns the current element of <BI>.
 
@@ -372,7 +372,7 @@ class TopOpeBRepBuild_BlockBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_Element(self, *args)
 
-    def ElementIsValid(self, *args):
+    def ElementIsValid(self, *args) -> "Standard_Boolean" :
         """
         :param BI:
         :type BI: TopOpeBRepBuild_BlockIterator &
@@ -385,7 +385,7 @@ class TopOpeBRepBuild_BlockBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_ElementIsValid(self, *args)
 
-    def AddElement(self, *args):
+    def AddElement(self, *args) -> "Standard_Integer" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -394,7 +394,7 @@ class TopOpeBRepBuild_BlockBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_AddElement(self, *args)
 
-    def SetValid(self, *args):
+    def SetValid(self, *args) -> "void" :
         """
         :param BI:
         :type BI: TopOpeBRepBuild_BlockIterator &
@@ -411,7 +411,7 @@ class TopOpeBRepBuild_BlockBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockBuilder_SetValid(self, *args)
 
-    def CurrentBlockIsRegular(self, *args):
+    def CurrentBlockIsRegular(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -455,35 +455,35 @@ class TopOpeBRepBuild_BlockIterator(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_BlockIterator_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_BlockIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BlockIterator_Value(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -528,7 +528,7 @@ class TopOpeBRepBuild_BuilderON(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_BuilderON(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param PB:
         :type PB: TopOpeBRepBuild_PBuilder &
@@ -545,7 +545,7 @@ class TopOpeBRepBuild_BuilderON(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_Perform(self, *args)
 
-    def GFillONCheckI(self, *args):
+    def GFillONCheckI(self, *args) -> "Standard_Boolean" :
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -554,7 +554,7 @@ class TopOpeBRepBuild_BuilderON(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_GFillONCheckI(self, *args)
 
-    def GFillONPartsWES1(self, *args):
+    def GFillONPartsWES1(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -563,7 +563,7 @@ class TopOpeBRepBuild_BuilderON(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_GFillONPartsWES1(self, *args)
 
-    def GFillONPartsWES2(self, *args):
+    def GFillONPartsWES2(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -574,7 +574,7 @@ class TopOpeBRepBuild_BuilderON(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_GFillONPartsWES2(self, *args)
 
-    def Perform2d(self, *args):
+    def Perform2d(self, *args) -> "void" :
         """
         :param PB:
         :type PB: TopOpeBRepBuild_PBuilder &
@@ -591,7 +591,7 @@ class TopOpeBRepBuild_BuilderON(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_BuilderON_Perform2d(self, *args)
 
-    def GFillONParts2dWES2(self, *args):
+    def GFillONParts2dWES2(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -637,42 +637,42 @@ class TopOpeBRepBuild_CorrectFace2d(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_CorrectFace2d(*args))
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_Face(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_IsDone(self, *args)
 
-    def ErrorStatus(self, *args):
+    def ErrorStatus(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_ErrorStatus(self, *args)
 
-    def CorrectedFace(self, *args):
+    def CorrectedFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_CorrectedFace(self, *args)
 
-    def SetMapOfTrans2dInfo(self, *args):
+    def SetMapOfTrans2dInfo(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TopTools_IndexedDataMapOfShapeShape &
@@ -681,14 +681,14 @@ class TopOpeBRepBuild_CorrectFace2d(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_SetMapOfTrans2dInfo(self, *args)
 
-    def MapOfTrans2dInfo(self, *args):
+    def MapOfTrans2dInfo(self, *args) -> "TopTools_IndexedDataMapOfShapeShape &" :
         """
         :rtype: TopTools_IndexedDataMapOfShapeShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_MapOfTrans2dInfo(self, *args)
 
-    def GetP2dFL(*args):
+    def GetP2dFL(*args) -> "void" :
         """
         :param aFace:
         :type aFace: TopoDS_Face &
@@ -704,7 +704,7 @@ class TopOpeBRepBuild_CorrectFace2d(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_GetP2dFL(*args)
 
     GetP2dFL = staticmethod(GetP2dFL)
-    def CheckList(*args):
+    def CheckList(*args) -> "void" :
         """
         :param aFace:
         :type aFace: TopoDS_Face &
@@ -735,7 +735,7 @@ TopOpeBRepBuild_CorrectFace2d._kill_pointed = new_instancemethod(_TopOpeBRepBuil
 TopOpeBRepBuild_CorrectFace2d_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_swigregister
 TopOpeBRepBuild_CorrectFace2d_swigregister(TopOpeBRepBuild_CorrectFace2d)
 
-def TopOpeBRepBuild_CorrectFace2d_GetP2dFL(*args):
+def TopOpeBRepBuild_CorrectFace2d_GetP2dFL(*args) -> "void" :
   """
     :param aFace:
     :type aFace: TopoDS_Face &
@@ -750,7 +750,7 @@ def TopOpeBRepBuild_CorrectFace2d_GetP2dFL(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_CorrectFace2d_GetP2dFL(*args)
 
-def TopOpeBRepBuild_CorrectFace2d_CheckList(*args):
+def TopOpeBRepBuild_CorrectFace2d_CheckList(*args) -> "void" :
   """
     :param aFace:
     :type aFace: TopoDS_Face &
@@ -774,7 +774,7 @@ class TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape(OCC.
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape &
@@ -783,14 +783,14 @@ class TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape(OCC.
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapIteratorOfDataMapOfShapeListOfShapeListOfShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ListOfShapeListOfShape const &" :
         """
         :rtype: TopOpeBRepBuild_ListOfShapeListOfShape
 
@@ -827,25 +827,25 @@ class TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape(OCC.TCol
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ListOfShapeListOfShape &" :
         """
         :rtype: TopOpeBRepBuild_ListOfShapeListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape" :
         """GetHandle(TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape self) -> Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_GetHandle(self)
 
@@ -885,7 +885,7 @@ Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape._kill_p
 Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_swigregister
 Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_swigregister(Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape)
 
-def Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_DownCast(*args):
+def Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_DownCast(*args) -> "Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_DownCast(*args)
 Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_DataMapNodeOfDataMapOfShapeListOfShapeListOfShape_DownCast
 
@@ -900,7 +900,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape &" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape &
@@ -909,7 +909,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape &" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape &
@@ -918,7 +918,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -927,14 +927,14 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -945,7 +945,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -954,7 +954,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -963,7 +963,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TopOpeBRepBuild_ListOfShapeListOfShape const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -972,7 +972,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TopOpeBRepBuild_ListOfShapeListOfShape &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -981,7 +981,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -990,7 +990,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -999,7 +999,7 @@ class TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape(OCC.TCollection.TColl
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_DataMapOfShapeListOfShapeListOfShape__kill_pointed(self)
 
@@ -1045,7 +1045,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_FaceBuilder(*args))
-    def InitFaceBuilder(self, *args):
+    def InitFaceBuilder(self, *args) -> "void" :
         """
         :param ES:
         :type ES: TopOpeBRepBuild_WireEdgeSet &
@@ -1058,7 +1058,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_InitFaceBuilder(self, *args)
 
-    def DetectUnclosedWire(self, *args):
+    def DetectUnclosedWire(self, *args) -> "void" :
         """
         * Removes are non 3d-closed wires. Fills up maps <mapVVsameG> and <mapVon1Edge>, in order to correct 3d-closed but unclosed (topologic connexity) wires. modifies myBlockBuilder
 
@@ -1071,7 +1071,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_DetectUnclosedWire(self, *args)
 
-    def CorrectGclosedWire(self, *args):
+    def CorrectGclosedWire(self, *args) -> "void" :
         """
         * Using the given maps, change the topology of the 3d-closed wires, in order to get closed wires.
 
@@ -1084,7 +1084,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_CorrectGclosedWire(self, *args)
 
-    def DetectPseudoInternalEdge(self, *args):
+    def DetectPseudoInternalEdge(self, *args) -> "void" :
         """
         * Removes edges appearing twice (FORWARD,REVERSED) with a bounding vertex not connected to any other edge. mapE contains edges found. modifies myBlockBuilder.
 
@@ -1095,7 +1095,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_DetectPseudoInternalEdge(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Shape const" :
         """
         * return myFace
 
@@ -1104,56 +1104,56 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_Face(self, *args)
 
-    def InitFace(self, *args):
+    def InitFace(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_InitFace(self, *args)
 
-    def MoreFace(self, *args):
+    def MoreFace(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_MoreFace(self, *args)
 
-    def NextFace(self, *args):
+    def NextFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_NextFace(self, *args)
 
-    def InitWire(self, *args):
+    def InitWire(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_InitWire(self, *args)
 
-    def MoreWire(self, *args):
+    def MoreWire(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_MoreWire(self, *args)
 
-    def NextWire(self, *args):
+    def NextWire(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_NextWire(self, *args)
 
-    def IsOldWire(self, *args):
+    def IsOldWire(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_IsOldWire(self, *args)
 
-    def OldWire(self, *args):
+    def OldWire(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns current wire This wire may be : * an old wire OldWire(), which has not been reconstructed; * a new wire made of edges described by ...NewEdge() methods.
 
@@ -1162,7 +1162,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_OldWire(self, *args)
 
-    def FindNextValidElement(self, *args):
+    def FindNextValidElement(self, *args) -> "void" :
         """
         * Iterates on myBlockIterator until finding a valid element
 
@@ -1171,28 +1171,28 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_FindNextValidElement(self, *args)
 
-    def InitEdge(self, *args):
+    def InitEdge(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_InitEdge(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_MoreEdge(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_NextEdge(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns current new edge of current new wire.
 
@@ -1201,7 +1201,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_Edge(self, *args)
 
-    def EdgeConnexity(self, *args):
+    def EdgeConnexity(self, *args) -> "Standard_Integer" :
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -1210,7 +1210,7 @@ class TopOpeBRepBuild_FaceBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FaceBuilder_EdgeConnexity(self, *args)
 
-    def AddEdgeWire(self, *args):
+    def AddEdgeWire(self, *args) -> "Standard_Integer" :
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -1270,7 +1270,7 @@ class TopOpeBRepBuild_FuseFace(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_FuseFace(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param LIF:
         :type LIF: TopTools_ListOfShape &
@@ -1283,91 +1283,91 @@ class TopOpeBRepBuild_FuseFace(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_Init(self, *args)
 
-    def PerformFace(self, *args):
+    def PerformFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_PerformFace(self, *args)
 
-    def PerformEdge(self, *args):
+    def PerformEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_PerformEdge(self, *args)
 
-    def ClearEdge(self, *args):
+    def ClearEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_ClearEdge(self, *args)
 
-    def ClearVertex(self, *args):
+    def ClearVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_ClearVertex(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_IsDone(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_IsModified(self, *args)
 
-    def LFuseFace(self, *args):
+    def LFuseFace(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LFuseFace(self, *args)
 
-    def LInternEdge(self, *args):
+    def LInternEdge(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LInternEdge(self, *args)
 
-    def LExternEdge(self, *args):
+    def LExternEdge(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LExternEdge(self, *args)
 
-    def LModifEdge(self, *args):
+    def LModifEdge(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LModifEdge(self, *args)
 
-    def LInternVertex(self, *args):
+    def LInternVertex(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LInternVertex(self, *args)
 
-    def LExternVertex(self, *args):
+    def LExternVertex(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_FuseFace_LExternVertex(self, *args)
 
-    def LModifVertex(self, *args):
+    def LModifVertex(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
@@ -1413,7 +1413,7 @@ class TopOpeBRepBuild_GIter(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_GIter_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_GIter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1424,21 +1424,21 @@ class TopOpeBRepBuild_GIter(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter_Next(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "void" :
         """
         :param s1:
         :type s1: TopAbs_State &
@@ -1449,11 +1449,11 @@ class TopOpeBRepBuild_GIter(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter_Current(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TopOpeBRepBuild_GIter self) -> std::string"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_GIter self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GIter__kill_pointed(self)
 
@@ -1477,7 +1477,7 @@ TopOpeBRepBuild_GIter_swigregister(TopOpeBRepBuild_GIter)
 class TopOpeBRepBuild_GTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GFusUnsh(*args):
+    def GFusUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1489,7 +1489,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusUnsh(*args)
 
     GFusUnsh = staticmethod(GFusUnsh)
-    def GFusSame(*args):
+    def GFusSame(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1501,7 +1501,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusSame(*args)
 
     GFusSame = staticmethod(GFusSame)
-    def GFusDiff(*args):
+    def GFusDiff(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1513,7 +1513,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusDiff(*args)
 
     GFusDiff = staticmethod(GFusDiff)
-    def GCutUnsh(*args):
+    def GCutUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1525,7 +1525,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutUnsh(*args)
 
     GCutUnsh = staticmethod(GCutUnsh)
-    def GCutSame(*args):
+    def GCutSame(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1537,7 +1537,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutSame(*args)
 
     GCutSame = staticmethod(GCutSame)
-    def GCutDiff(*args):
+    def GCutDiff(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1549,7 +1549,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutDiff(*args)
 
     GCutDiff = staticmethod(GCutDiff)
-    def GComUnsh(*args):
+    def GComUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1561,7 +1561,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GComUnsh(*args)
 
     GComUnsh = staticmethod(GComUnsh)
-    def GComSame(*args):
+    def GComSame(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1573,7 +1573,7 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GComSame(*args)
 
     GComSame = staticmethod(GComSame)
-    def GComDiff(*args):
+    def GComDiff(*args) -> "TopOpeBRepBuild_GTopo" :
         """
         :param s1:
         :type s1: TopAbs_ShapeEnum
@@ -1585,11 +1585,11 @@ class TopOpeBRepBuild_GTool(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GComDiff(*args)
 
     GComDiff = staticmethod(GComDiff)
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TopOpeBRepBuild_GTool self) -> std::string"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_GTool self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTool__kill_pointed(self)
 
@@ -1609,7 +1609,7 @@ TopOpeBRepBuild_GTool._kill_pointed = new_instancemethod(_TopOpeBRepBuild.TopOpe
 TopOpeBRepBuild_GTool_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_GTool_swigregister
 TopOpeBRepBuild_GTool_swigregister(TopOpeBRepBuild_GTool)
 
-def TopOpeBRepBuild_GTool_GFusUnsh(*args):
+def TopOpeBRepBuild_GTool_GFusUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1620,7 +1620,7 @@ def TopOpeBRepBuild_GTool_GFusUnsh(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusUnsh(*args)
 
-def TopOpeBRepBuild_GTool_GFusSame(*args):
+def TopOpeBRepBuild_GTool_GFusSame(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1631,7 +1631,7 @@ def TopOpeBRepBuild_GTool_GFusSame(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusSame(*args)
 
-def TopOpeBRepBuild_GTool_GFusDiff(*args):
+def TopOpeBRepBuild_GTool_GFusDiff(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1642,7 +1642,7 @@ def TopOpeBRepBuild_GTool_GFusDiff(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GFusDiff(*args)
 
-def TopOpeBRepBuild_GTool_GCutUnsh(*args):
+def TopOpeBRepBuild_GTool_GCutUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1653,7 +1653,7 @@ def TopOpeBRepBuild_GTool_GCutUnsh(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutUnsh(*args)
 
-def TopOpeBRepBuild_GTool_GCutSame(*args):
+def TopOpeBRepBuild_GTool_GCutSame(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1664,7 +1664,7 @@ def TopOpeBRepBuild_GTool_GCutSame(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutSame(*args)
 
-def TopOpeBRepBuild_GTool_GCutDiff(*args):
+def TopOpeBRepBuild_GTool_GCutDiff(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1675,7 +1675,7 @@ def TopOpeBRepBuild_GTool_GCutDiff(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GCutDiff(*args)
 
-def TopOpeBRepBuild_GTool_GComUnsh(*args):
+def TopOpeBRepBuild_GTool_GComUnsh(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1686,7 +1686,7 @@ def TopOpeBRepBuild_GTool_GComUnsh(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GComUnsh(*args)
 
-def TopOpeBRepBuild_GTool_GComSame(*args):
+def TopOpeBRepBuild_GTool_GComSame(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1697,7 +1697,7 @@ def TopOpeBRepBuild_GTool_GComSame(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_GTool_GComSame(*args)
 
-def TopOpeBRepBuild_GTool_GComDiff(*args):
+def TopOpeBRepBuild_GTool_GComDiff(*args) -> "TopOpeBRepBuild_GTopo" :
   """
     :param s1:
     :type s1: TopAbs_ShapeEnum
@@ -1745,14 +1745,14 @@ class TopOpeBRepBuild_GTopo(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_GTopo(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Reset(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param II:
         :type II: bool
@@ -1777,7 +1777,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Set(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "void" :
         """
         :param t1:
         :type t1: TopAbs_ShapeEnum &
@@ -1788,7 +1788,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Type(self, *args)
 
-    def ChangeType(self, *args):
+    def ChangeType(self, *args) -> "void" :
         """
         :param t1:
         :type t1: TopAbs_ShapeEnum
@@ -1799,21 +1799,21 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_ChangeType(self, *args)
 
-    def Config1(self, *args):
+    def Config1(self, *args) -> "TopOpeBRepDS_Config" :
         """
         :rtype: TopOpeBRepDS_Config
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Config1(self, *args)
 
-    def Config2(self, *args):
+    def Config2(self, *args) -> "TopOpeBRepDS_Config" :
         """
         :rtype: TopOpeBRepDS_Config
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Config2(self, *args)
 
-    def ChangeConfig(self, *args):
+    def ChangeConfig(self, *args) -> "void" :
         """
         :param C1:
         :type C1: TopOpeBRepDS_Config
@@ -1824,7 +1824,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_ChangeConfig(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param s1:
         :type s1: TopAbs_State
@@ -1845,7 +1845,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "void" :
         """
         :param i1:
         :type i1: int
@@ -1866,7 +1866,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_ChangeValue(self, *args)
 
-    def GIndex(self, *args):
+    def GIndex(self, *args) -> "Standard_Integer" :
         """
         :param S:
         :type S: TopAbs_State
@@ -1875,7 +1875,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_GIndex(self, *args)
 
-    def GState(self, *args):
+    def GState(self, *args) -> "TopAbs_State" :
         """
         :param I:
         :type I: int
@@ -1884,7 +1884,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_GState(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "void" :
         """
         :param II:
         :type II: int
@@ -1897,7 +1897,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Index(self, *args)
 
-    def DumpVal(self, *args):
+    def DumpVal(self, *args) -> "void" :
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -1910,11 +1910,11 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_DumpVal(self, *args)
 
-    def DumpTypeToString(self):
+    def DumpTypeToString(self) -> "std::string" :
         """DumpTypeToString(TopOpeBRepBuild_GTopo self) -> std::string"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_DumpTypeToString(self)
 
-    def DumpSSB(*args):
+    def DumpSSB(*args) -> "void" :
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -1930,7 +1930,7 @@ class TopOpeBRepBuild_GTopo(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_DumpSSB(*args)
 
     DumpSSB = staticmethod(DumpSSB)
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -1941,7 +1941,7 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Dump(self, *args)
 
-    def StatesON(self, *args):
+    def StatesON(self, *args) -> "void" :
         """
         :param s1:
         :type s1: TopAbs_State &
@@ -1952,21 +1952,21 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_StatesON(self, *args)
 
-    def IsToReverse1(self, *args):
+    def IsToReverse1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_IsToReverse1(self, *args)
 
-    def IsToReverse2(self, *args):
+    def IsToReverse2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_IsToReverse2(self, *args)
 
-    def SetReverse(self, *args):
+    def SetReverse(self, *args) -> "void" :
         """
         :param rev:
         :type rev: bool
@@ -1975,21 +1975,21 @@ class TopOpeBRepBuild_GTopo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_SetReverse(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_Reverse(self, *args)
 
-    def CopyPermuted(self, *args):
+    def CopyPermuted(self, *args) -> "TopOpeBRepBuild_GTopo" :
         """
         :rtype: TopOpeBRepBuild_GTopo
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_CopyPermuted(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_GTopo self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_GTopo__kill_pointed(self)
 
@@ -2026,7 +2026,7 @@ TopOpeBRepBuild_GTopo._kill_pointed = new_instancemethod(_TopOpeBRepBuild.TopOpe
 TopOpeBRepBuild_GTopo_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_GTopo_swigregister
 TopOpeBRepBuild_GTopo_swigregister(TopOpeBRepBuild_GTopo)
 
-def TopOpeBRepBuild_GTopo_DumpSSB(*args):
+def TopOpeBRepBuild_GTopo_DumpSSB(*args) -> "void" :
   """
     :param OS:
     :type OS: Standard_OStream &
@@ -2052,14 +2052,14 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_HBuilder(*args))
-    def BuildTool(self, *args):
+    def BuildTool(self, *args) -> "TopOpeBRepDS_BuildTool const &" :
         """
         :rtype: TopOpeBRepDS_BuildTool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_BuildTool(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Stores the data structure <HDS>, Create shapes from the new geometries described in <HDS>.
 
@@ -2080,7 +2080,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_Perform(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all split and merge already performed. 	 Does NOT clear the handled DS.
 
@@ -2089,7 +2089,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_Clear(self, *args)
 
-    def DataStructure(self, *args):
+    def DataStructure(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure" :
         """
         * returns the DS handled by this builder
 
@@ -2098,14 +2098,14 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_DataStructure(self, *args)
 
-    def ChangeBuildTool(self, *args):
+    def ChangeBuildTool(self, *args) -> "TopOpeBRepDS_BuildTool &" :
         """
         :rtype: TopOpeBRepDS_BuildTool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_ChangeBuildTool(self, *args)
 
-    def MergeShapes(self, *args):
+    def MergeShapes(self, *args) -> "void" :
         """
         * Merges the two shapes <S1> and <S2> keeping the parts of states <TB1>,<TB2> in <S1>,<S2>.
 
@@ -2122,7 +2122,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_MergeShapes(self, *args)
 
-    def MergeSolids(self, *args):
+    def MergeSolids(self, *args) -> "void" :
         """
         * Merges the two solids <S1> and <S2> keeping the parts in each solid of states <TB1> and <TB2>.
 
@@ -2139,7 +2139,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_MergeSolids(self, *args)
 
-    def MergeSolid(self, *args):
+    def MergeSolid(self, *args) -> "void" :
         """
         * Merges the solid <S> keeping the parts of state <TB>.
 
@@ -2152,7 +2152,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_MergeSolid(self, *args)
 
-    def IsSplit(self, *args):
+    def IsSplit(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the shape <S> has been split.
 
@@ -2165,7 +2165,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_IsSplit(self, *args)
 
-    def Splits(self, *args):
+    def Splits(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the split parts <ToBuild> of shape <S>.
 
@@ -2178,7 +2178,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_Splits(self, *args)
 
-    def IsMerged(self, *args):
+    def IsMerged(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the shape <S> has been merged.
 
@@ -2191,7 +2191,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_IsMerged(self, *args)
 
-    def Merged(self, *args):
+    def Merged(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the merged parts <ToBuild> of shape <S>.
 
@@ -2204,7 +2204,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_Merged(self, *args)
 
-    def NewVertex(self, *args):
+    def NewVertex(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the vertex created on point <I>.
 
@@ -2215,7 +2215,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_NewVertex(self, *args)
 
-    def NewEdges(self, *args):
+    def NewEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the edges created on curve <I>.
 
@@ -2226,7 +2226,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_NewEdges(self, *args)
 
-    def ChangeNewEdges(self, *args):
+    def ChangeNewEdges(self, *args) -> "TopTools_ListOfShape &" :
         """
         * Returns the edges created on curve <I>.
 
@@ -2237,7 +2237,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_ChangeNewEdges(self, *args)
 
-    def NewFaces(self, *args):
+    def NewFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the faces created on surface <I>.
 
@@ -2248,14 +2248,14 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_NewFaces(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_Section(self, *args)
 
-    def InitExtendedSectionDS(self, *args):
+    def InitExtendedSectionDS(self, *args) -> "void" :
         """
         :param k: default value is 3
         :type k: int
@@ -2264,7 +2264,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_InitExtendedSectionDS(self, *args)
 
-    def InitSection(self, *args):
+    def InitSection(self, *args) -> "void" :
         """
         :param k: default value is 3
         :type k: int
@@ -2273,28 +2273,28 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_InitSection(self, *args)
 
-    def MoreSection(self, *args):
+    def MoreSection(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_MoreSection(self, *args)
 
-    def NextSection(self, *args):
+    def NextSection(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_NextSection(self, *args)
 
-    def CurrentSection(self, *args):
+    def CurrentSection(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_CurrentSection(self, *args)
 
-    def GetDSEdgeFromSectEdge(self, *args):
+    def GetDSEdgeFromSectEdge(self, *args) -> "Standard_Integer" :
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -2305,7 +2305,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetDSEdgeFromSectEdge(self, *args)
 
-    def GetDSFaceFromDSEdge(self, *args):
+    def GetDSFaceFromDSEdge(self, *args) -> "TColStd_ListOfInteger &" :
         """
         :param indexEdg:
         :type indexEdg: int
@@ -2316,7 +2316,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetDSFaceFromDSEdge(self, *args)
 
-    def GetDSCurveFromSectEdge(self, *args):
+    def GetDSCurveFromSectEdge(self, *args) -> "Standard_Integer" :
         """
         :param SectEdge:
         :type SectEdge: TopoDS_Shape &
@@ -2325,7 +2325,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetDSCurveFromSectEdge(self, *args)
 
-    def GetDSFaceFromDSCurve(self, *args):
+    def GetDSFaceFromDSCurve(self, *args) -> "Standard_Integer" :
         """
         :param indexCur:
         :type indexCur: int
@@ -2336,7 +2336,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetDSFaceFromDSCurve(self, *args)
 
-    def GetDSPointFromNewVertex(self, *args):
+    def GetDSPointFromNewVertex(self, *args) -> "Standard_Integer" :
         """
         :param NewVert:
         :type NewVert: TopoDS_Shape &
@@ -2345,7 +2345,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetDSPointFromNewVertex(self, *args)
 
-    def EdgeCurveAncestors(self, *args):
+    def EdgeCurveAncestors(self, *args) -> "Standard_Boolean" :
         """
         * search for the couple of face F1,F2 (from arguments of supra Perform(S1,S2,HDS)) method which intersection gives section edge E built on an intersection curve. returns True if F1,F2 have been valued. returns False if E is not a section edge built on intersection curve IC.
 
@@ -2362,7 +2362,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_EdgeCurveAncestors(self, *args)
 
-    def EdgeSectionAncestors(self, *args):
+    def EdgeSectionAncestors(self, *args) -> "Standard_Boolean" :
         """
         * search for the couple of face F1,F2 (from arguments of supra Perform(S1,S2,HDS)) method which intersection gives section edge E built on at least one edge . returns True if F1,F2 have been valued. returns False if E is not a section edge built on at least one edge of S1 and/or S2. LE1,LE2 are edges of S1,S2 which common part is edge E. LE1 or LE2 may be empty() but not both.
 
@@ -2381,7 +2381,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_EdgeSectionAncestors(self, *args)
 
-    def IsKPart(self, *args):
+    def IsKPart(self, *args) -> "Standard_Integer" :
         """
         * Returns 0 is standard operation, != 0 if particular case
 
@@ -2390,7 +2390,7 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_IsKPart(self, *args)
 
-    def MergeKPart(self, *args):
+    def MergeKPart(self, *args) -> "void" :
         """
         :param TB1:
         :type TB1: TopAbs_State
@@ -2401,18 +2401,18 @@ class TopOpeBRepBuild_HBuilder(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_MergeKPart(self, *args)
 
-    def ChangeBuilder(self, *args):
+    def ChangeBuilder(self, *args) -> "TopOpeBRepBuild_Builder &" :
         """
         :rtype: TopOpeBRepBuild_Builder
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_ChangeBuilder(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_HBuilder self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_HBuilder" :
         """GetHandle(TopOpeBRepBuild_HBuilder self) -> Handle_TopOpeBRepBuild_HBuilder"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_HBuilder_GetHandle(self)
 
@@ -2482,7 +2482,7 @@ Handle_TopOpeBRepBuild_HBuilder._kill_pointed = new_instancemethod(_TopOpeBRepBu
 Handle_TopOpeBRepBuild_HBuilder_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_HBuilder_swigregister
 Handle_TopOpeBRepBuild_HBuilder_swigregister(Handle_TopOpeBRepBuild_HBuilder)
 
-def Handle_TopOpeBRepBuild_HBuilder_DownCast(*args):
+def Handle_TopOpeBRepBuild_HBuilder_DownCast(*args) -> "Handle_TopOpeBRepBuild_HBuilder const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_HBuilder_DownCast(*args)
 Handle_TopOpeBRepBuild_HBuilder_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_HBuilder_DownCast
 
@@ -2505,40 +2505,40 @@ class TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo(OCC.TC
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo self) -> Standard_Integer"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo self, Standard_Integer value)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_VertexInfo &" :
         """
         :rtype: TopOpeBRepBuild_VertexInfo
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo" :
         """GetHandle(TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo self) -> Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_GetHandle(self)
 
@@ -2581,7 +2581,7 @@ Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo._kill
 Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_swigregister
 Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_swigregister(Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo)
 
-def Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_DownCast(*args):
+def Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_DownCast(*args) -> "Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_DownCast(*args)
 Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_IndexedDataMapNodeOfIndexedDataMapOfShapeVertexInfo_DownCast
 
@@ -2596,7 +2596,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &
@@ -2605,7 +2605,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &
@@ -2614,7 +2614,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2623,14 +2623,14 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2641,7 +2641,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -2654,14 +2654,14 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2670,7 +2670,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "TopoDS_Shape const" :
         """
         :param I:
         :type I: int
@@ -2679,7 +2679,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "TopOpeBRepBuild_VertexInfo const &" :
         """
         :param I:
         :type I: int
@@ -2688,7 +2688,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "TopOpeBRepBuild_VertexInfo &" :
         """
         :param I:
         :type I: int
@@ -2697,7 +2697,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2706,7 +2706,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "TopOpeBRepBuild_VertexInfo const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2715,7 +2715,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "TopOpeBRepBuild_VertexInfo &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2724,7 +2724,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2733,7 +2733,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2742,7 +2742,7 @@ class TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo__kill_pointed(self)
 
@@ -2787,7 +2787,7 @@ class TopOpeBRepBuild_ListIteratorOfListOfListOfLoop(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListIteratorOfListOfListOfLoop(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TopOpeBRepBuild_ListOfListOfLoop &
@@ -2796,21 +2796,21 @@ class TopOpeBRepBuild_ListIteratorOfListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfListOfLoop_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfListOfLoop_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfListOfLoop_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ListOfLoop &" :
         """
         :rtype: TopOpeBRepBuild_ListOfLoop
 
@@ -2846,7 +2846,7 @@ class TopOpeBRepBuild_ListIteratorOfListOfLoop(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListIteratorOfListOfLoop(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TopOpeBRepBuild_ListOfLoop &
@@ -2855,21 +2855,21 @@ class TopOpeBRepBuild_ListIteratorOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfLoop_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfLoop_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfLoop_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TopOpeBRepBuild_Loop &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Loop
 
@@ -2905,7 +2905,7 @@ class TopOpeBRepBuild_ListIteratorOfListOfPave(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfPave_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListIteratorOfListOfPave(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TopOpeBRepBuild_ListOfPave &
@@ -2914,21 +2914,21 @@ class TopOpeBRepBuild_ListIteratorOfListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfPave_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfPave_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfPave_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TopOpeBRepBuild_Pave &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Pave
 
@@ -2964,7 +2964,7 @@ class TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TopOpeBRepBuild_ListOfShapeListOfShape &
@@ -2973,21 +2973,21 @@ class TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ShapeListOfShape &" :
         """
         :rtype: TopOpeBRepBuild_ShapeListOfShape
 
@@ -3023,18 +3023,18 @@ class TopOpeBRepBuild_ListNodeOfListOfListOfLoop(OCC.TCollection.TCollection_Map
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListNodeOfListOfListOfLoop(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ListOfLoop &" :
         """
         :rtype: TopOpeBRepBuild_ListOfLoop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfListOfLoop_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_ListNodeOfListOfListOfLoop self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfListOfLoop__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop" :
         """GetHandle(TopOpeBRepBuild_ListNodeOfListOfListOfLoop self) -> Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfListOfLoop_GetHandle(self)
 
@@ -3073,7 +3073,7 @@ Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop._kill_pointed = new_instanceme
 Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_swigregister
 Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_swigregister(Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop)
 
-def Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_DownCast(*args):
+def Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_DownCast(*args) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_DownCast(*args)
 Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfListOfLoop_DownCast
 
@@ -3090,18 +3090,18 @@ class TopOpeBRepBuild_ListNodeOfListOfLoop(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListNodeOfListOfLoop(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TopOpeBRepBuild_Loop &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Loop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfLoop_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_ListNodeOfListOfLoop self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfLoop__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfLoop" :
         """GetHandle(TopOpeBRepBuild_ListNodeOfListOfLoop self) -> Handle_TopOpeBRepBuild_ListNodeOfListOfLoop"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfLoop_GetHandle(self)
 
@@ -3140,7 +3140,7 @@ Handle_TopOpeBRepBuild_ListNodeOfListOfLoop._kill_pointed = new_instancemethod(_
 Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_swigregister
 Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_swigregister(Handle_TopOpeBRepBuild_ListNodeOfListOfLoop)
 
-def Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_DownCast(*args):
+def Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_DownCast(*args) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfLoop const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_DownCast(*args)
 Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfLoop_DownCast
 
@@ -3157,18 +3157,18 @@ class TopOpeBRepBuild_ListNodeOfListOfPave(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfPave_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListNodeOfListOfPave(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TopOpeBRepBuild_Pave &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Pave
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfPave_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_ListNodeOfListOfPave self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfPave__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfPave" :
         """GetHandle(TopOpeBRepBuild_ListNodeOfListOfPave self) -> Handle_TopOpeBRepBuild_ListNodeOfListOfPave"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfPave_GetHandle(self)
 
@@ -3207,7 +3207,7 @@ Handle_TopOpeBRepBuild_ListNodeOfListOfPave._kill_pointed = new_instancemethod(_
 Handle_TopOpeBRepBuild_ListNodeOfListOfPave_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfPave_swigregister
 Handle_TopOpeBRepBuild_ListNodeOfListOfPave_swigregister(Handle_TopOpeBRepBuild_ListNodeOfListOfPave)
 
-def Handle_TopOpeBRepBuild_ListNodeOfListOfPave_DownCast(*args):
+def Handle_TopOpeBRepBuild_ListNodeOfListOfPave_DownCast(*args) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfPave const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfPave_DownCast(*args)
 Handle_TopOpeBRepBuild_ListNodeOfListOfPave_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfPave_DownCast
 
@@ -3224,18 +3224,18 @@ class TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape(OCC.TCollection.TCollecti
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TopOpeBRepBuild_ShapeListOfShape &" :
         """
         :rtype: TopOpeBRepBuild_ShapeListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape" :
         """GetHandle(TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape self) -> Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_GetHandle(self)
 
@@ -3274,7 +3274,7 @@ Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape._kill_pointed = new_inst
 Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_swigregister
 Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_swigregister(Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape)
 
-def Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_DownCast(*args):
+def Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_DownCast(*args) -> "Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_DownCast(*args)
 Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_ListNodeOfListOfShapeListOfShape_DownCast
 
@@ -3287,7 +3287,7 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListOfListOfLoop(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfListOfLoop &
@@ -3296,7 +3296,7 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfListOfLoop &
@@ -3305,28 +3305,28 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ListOfLoop &
@@ -3345,7 +3345,7 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ListOfLoop &
@@ -3364,28 +3364,28 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TopOpeBRepBuild_ListOfLoop &" :
         """
         :rtype: TopOpeBRepBuild_ListOfLoop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TopOpeBRepBuild_ListOfLoop &" :
         """
         :rtype: TopOpeBRepBuild_ListOfLoop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TopOpeBRepBuild_ListIteratorOfListOfListOfLoop &
@@ -3394,7 +3394,7 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ListOfLoop &
@@ -3411,7 +3411,7 @@ class TopOpeBRepBuild_ListOfListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfListOfLoop_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ListOfLoop &
@@ -3462,7 +3462,7 @@ class TopOpeBRepBuild_ListOfLoop(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListOfLoop(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfLoop &
@@ -3471,7 +3471,7 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfLoop &
@@ -3480,28 +3480,28 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Loop &
@@ -3520,7 +3520,7 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Loop &
@@ -3539,28 +3539,28 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TopOpeBRepBuild_Loop &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Loop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TopOpeBRepBuild_Loop &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Loop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TopOpeBRepBuild_ListIteratorOfListOfLoop &
@@ -3569,7 +3569,7 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Loop &
@@ -3586,7 +3586,7 @@ class TopOpeBRepBuild_ListOfLoop(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfLoop_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Loop &
@@ -3637,7 +3637,7 @@ class TopOpeBRepBuild_ListOfPave(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListOfPave(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfPave &
@@ -3646,7 +3646,7 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfPave &
@@ -3655,28 +3655,28 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Pave &
@@ -3695,7 +3695,7 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Pave &
@@ -3714,28 +3714,28 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TopOpeBRepBuild_Pave &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Pave
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TopOpeBRepBuild_Pave &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Pave
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TopOpeBRepBuild_ListIteratorOfListOfPave &
@@ -3744,7 +3744,7 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Pave &
@@ -3761,7 +3761,7 @@ class TopOpeBRepBuild_ListOfPave(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfPave_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TopOpeBRepBuild_Pave &
@@ -3812,7 +3812,7 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ListOfShapeListOfShape(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfShapeListOfShape &
@@ -3821,7 +3821,7 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopOpeBRepBuild_ListOfShapeListOfShape &
@@ -3830,28 +3830,28 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ShapeListOfShape &
@@ -3870,7 +3870,7 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ShapeListOfShape &
@@ -3889,28 +3889,28 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TopOpeBRepBuild_ShapeListOfShape &" :
         """
         :rtype: TopOpeBRepBuild_ShapeListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TopOpeBRepBuild_ShapeListOfShape &" :
         """
         :rtype: TopOpeBRepBuild_ShapeListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TopOpeBRepBuild_ListIteratorOfListOfShapeListOfShape &
@@ -3919,7 +3919,7 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ShapeListOfShape &
@@ -3936,7 +3936,7 @@ class TopOpeBRepBuild_ListOfShapeListOfShape(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ListOfShapeListOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TopOpeBRepBuild_ShapeListOfShape &
@@ -3993,39 +3993,39 @@ class TopOpeBRepBuild_Loop(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_Loop_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_Loop(*args))
-    def IsShape(self, *args):
+    def IsShape(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop_IsShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop_Shape(self, *args)
 
-    def BlockIterator(self, *args):
+    def BlockIterator(self, *args) -> "TopOpeBRepBuild_BlockIterator const &" :
         """
         :rtype: TopOpeBRepBuild_BlockIterator
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop_BlockIterator(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_Loop self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_Loop" :
         """GetHandle(TopOpeBRepBuild_Loop self) -> Handle_TopOpeBRepBuild_Loop"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_Loop_GetHandle(self)
 
@@ -4067,7 +4067,7 @@ Handle_TopOpeBRepBuild_Loop._kill_pointed = new_instancemethod(_TopOpeBRepBuild.
 Handle_TopOpeBRepBuild_Loop_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Loop_swigregister
 Handle_TopOpeBRepBuild_Loop_swigregister(Handle_TopOpeBRepBuild_Loop)
 
-def Handle_TopOpeBRepBuild_Loop_DownCast(*args):
+def Handle_TopOpeBRepBuild_Loop_DownCast(*args) -> "Handle_TopOpeBRepBuild_Loop const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Loop_DownCast(*args)
 Handle_TopOpeBRepBuild_Loop_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Loop_DownCast
 
@@ -4075,14 +4075,14 @@ class TopOpeBRepBuild_LoopClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopClassifier_Delete(self, *args)
 
-    def Compare(self, *args):
+    def Compare(self, *args) -> "TopAbs_State" :
         """
         * Returns the state of loop <L1> compared with loop <L2>.
 
@@ -4118,42 +4118,42 @@ class TopOpeBRepBuild_LoopSet(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_LoopSet(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_Delete(self, *args)
 
-    def ChangeListOfLoop(self, *args):
+    def ChangeListOfLoop(self, *args) -> "TopOpeBRepBuild_ListOfLoop &" :
         """
         :rtype: TopOpeBRepBuild_ListOfLoop
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_ChangeListOfLoop(self, *args)
 
-    def InitLoop(self, *args):
+    def InitLoop(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_InitLoop(self, *args)
 
-    def MoreLoop(self, *args):
+    def MoreLoop(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_MoreLoop(self, *args)
 
-    def NextLoop(self, *args):
+    def NextLoop(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_LoopSet_NextLoop(self, *args)
 
-    def Loop(self, *args):
+    def Loop(self, *args) -> "Handle_TopOpeBRepBuild_Loop const &" :
         """
         :rtype: Handle_TopOpeBRepBuild_Loop
 
@@ -4197,28 +4197,28 @@ class TopOpeBRepBuild_ShapeListOfShape(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ShapeListOfShape_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ShapeListOfShape(*args))
-    def List(self, *args):
+    def List(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeListOfShape_List(self, *args)
 
-    def ChangeList(self, *args):
+    def ChangeList(self, *args) -> "TopTools_ListOfShape &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeListOfShape_ChangeList(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeListOfShape_Shape(self, *args)
 
-    def ChangeShape(self, *args):
+    def ChangeShape(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
@@ -4256,14 +4256,14 @@ class TopOpeBRepBuild_ShapeSet(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ShapeSet(*args))
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_Delete(self, *args)
 
-    def AddShape(self, *args):
+    def AddShape(self, *args) -> "void" :
         """
         * Adds <S> to the list of shapes. (wires or shells).
 
@@ -4274,7 +4274,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_AddShape(self, *args)
 
-    def AddStartElement(self, *args):
+    def AddStartElement(self, *args) -> "void" :
         """
         * (S is a face or edge) Add S to the list of starting shapes used for reconstructions. apply AddElement(S).
 
@@ -4285,7 +4285,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_AddStartElement(self, *args)
 
-    def AddElement(self, *args):
+    def AddElement(self, *args) -> "void" :
         """
         * for each subshape SE of S of type mySubShapeType - Add subshapes of S to the map of subshapes (mySubShapeMap) - Add S to the list of shape incident to subshapes of S.
 
@@ -4296,7 +4296,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_AddElement(self, *args)
 
-    def StartElements(self, *args):
+    def StartElements(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * return a reference on myStartShapes
 
@@ -4305,63 +4305,63 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_StartElements(self, *args)
 
-    def InitShapes(self, *args):
+    def InitShapes(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_InitShapes(self, *args)
 
-    def MoreShapes(self, *args):
+    def MoreShapes(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_MoreShapes(self, *args)
 
-    def NextShape(self, *args):
+    def NextShape(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_NextShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_Shape(self, *args)
 
-    def InitStartElements(self, *args):
+    def InitStartElements(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_InitStartElements(self, *args)
 
-    def MoreStartElements(self, *args):
+    def MoreStartElements(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_MoreStartElements(self, *args)
 
-    def NextStartElement(self, *args):
+    def NextStartElement(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_NextStartElement(self, *args)
 
-    def StartElement(self, *args):
+    def StartElement(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_StartElement(self, *args)
 
-    def InitNeighbours(self, *args):
+    def InitNeighbours(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4370,35 +4370,35 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_InitNeighbours(self, *args)
 
-    def MoreNeighbours(self, *args):
+    def MoreNeighbours(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_MoreNeighbours(self, *args)
 
-    def NextNeighbour(self, *args):
+    def NextNeighbour(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_NextNeighbour(self, *args)
 
-    def Neighbour(self, *args):
+    def Neighbour(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_Neighbour(self, *args)
 
-    def ChangeStartShapes(self, *args):
+    def ChangeStartShapes(self, *args) -> "TopTools_ListOfShape &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_ChangeStartShapes(self, *args)
 
-    def FindNeighbours(self, *args):
+    def FindNeighbours(self, *args) -> "void" :
         """
         * Build the list of neighbour shapes of myCurrentShape (neighbour shapes and myCurrentShapes are of type t) Initialize myIncidentShapesIter on neighbour shapes.
 
@@ -4407,7 +4407,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_FindNeighbours(self, *args)
 
-    def MakeNeighboursList(self, *args):
+    def MakeNeighboursList(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -4418,7 +4418,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_MakeNeighboursList(self, *args)
 
-    def MaxNumberSubShape(self, *args):
+    def MaxNumberSubShape(self, *args) -> "Standard_Integer" :
         """
         :param Shape:
         :type Shape: TopoDS_Shape &
@@ -4427,7 +4427,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_MaxNumberSubShape(self, *args)
 
-    def CheckShape(self, *args):
+    def CheckShape(self, *args) -> "Standard_Boolean" :
         """
         :param checkshape:
         :type checkshape: bool
@@ -4444,7 +4444,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_CheckShape(self, *args)
 
-    def DumpName(self, *args):
+    def DumpName(self, *args) -> "void" :
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -4455,7 +4455,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DumpName(self, *args)
 
-    def DumpCheck(self, *args):
+    def DumpCheck(self, *args) -> "void" :
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -4470,21 +4470,21 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DumpCheck(self, *args)
 
-    def DumpSS(self, *args):
+    def DumpSS(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DumpSS(self, *args)
 
-    def DumpBB(self, *args):
+    def DumpBB(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DumpBB(self, *args)
 
-    def DEBName(self, *args):
+    def DEBName(self, *args) -> "TCollection_AsciiString const &" :
         """
         :param N:
         :type N: TCollection_AsciiString &
@@ -4495,7 +4495,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DEBName(self, *args)
 
-    def DEBNumber(self, *args):
+    def DEBNumber(self, *args) -> "Standard_Integer" :
         """
         :param I:
         :type I: int
@@ -4506,7 +4506,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_DEBNumber(self, *args)
 
-    def SName(self, *args):
+    def SName(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4527,7 +4527,7 @@ class TopOpeBRepBuild_ShapeSet(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShapeSet_SName(self, *args)
 
-    def SNameori(self, *args):
+    def SNameori(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4599,14 +4599,14 @@ class TopOpeBRepBuild_ShellToSolid(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ShellToSolid_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ShellToSolid(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShellToSolid_Init(self, *args)
 
-    def AddShell(self, *args):
+    def AddShell(self, *args) -> "void" :
         """
         :param Sh:
         :type Sh: TopoDS_Shell &
@@ -4615,7 +4615,7 @@ class TopOpeBRepBuild_ShellToSolid(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShellToSolid_AddShell(self, *args)
 
-    def MakeSolids(self, *args):
+    def MakeSolids(self, *args) -> "void" :
         """
         :param So:
         :type So: TopoDS_Solid &
@@ -4658,7 +4658,7 @@ class TopOpeBRepBuild_SolidBuilder(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_SolidBuilder(*args))
-    def InitSolidBuilder(self, *args):
+    def InitSolidBuilder(self, *args) -> "void" :
         """
         :param FS:
         :type FS: TopOpeBRepBuild_ShellFaceSet &
@@ -4669,56 +4669,56 @@ class TopOpeBRepBuild_SolidBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_InitSolidBuilder(self, *args)
 
-    def InitSolid(self, *args):
+    def InitSolid(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_InitSolid(self, *args)
 
-    def MoreSolid(self, *args):
+    def MoreSolid(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_MoreSolid(self, *args)
 
-    def NextSolid(self, *args):
+    def NextSolid(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_NextSolid(self, *args)
 
-    def InitShell(self, *args):
+    def InitShell(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_InitShell(self, *args)
 
-    def MoreShell(self, *args):
+    def MoreShell(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_MoreShell(self, *args)
 
-    def NextShell(self, *args):
+    def NextShell(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_NextShell(self, *args)
 
-    def IsOldShell(self, *args):
+    def IsOldShell(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_IsOldShell(self, *args)
 
-    def OldShell(self, *args):
+    def OldShell(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns current shell This shell may be : * an old shell OldShell(), which has not been reconstructed; * a new shell made of faces described by ...NewFace() methods.
 
@@ -4727,28 +4727,28 @@ class TopOpeBRepBuild_SolidBuilder(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_OldShell(self, *args)
 
-    def InitFace(self, *args):
+    def InitFace(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_InitFace(self, *args)
 
-    def MoreFace(self, *args):
+    def MoreFace(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_MoreFace(self, *args)
 
-    def NextFace(self, *args):
+    def NextFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_SolidBuilder_NextFace(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns current new face of current new shell.
 
@@ -4785,7 +4785,7 @@ TopOpeBRepBuild_SolidBuilder_swigregister(TopOpeBRepBuild_SolidBuilder)
 class TopOpeBRepBuild_Tools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DumpMapOfShapeWithState(*args):
+    def DumpMapOfShapeWithState(*args) -> "void" :
         """
         :param iP:
         :type iP: int
@@ -4797,7 +4797,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_DumpMapOfShapeWithState(*args)
 
     DumpMapOfShapeWithState = staticmethod(DumpMapOfShapeWithState)
-    def FindState(*args):
+    def FindState(*args) -> "void" :
         """
         :param aVertex:
         :type aVertex: TopoDS_Shape &
@@ -4817,7 +4817,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState(*args)
 
     FindState = staticmethod(FindState)
-    def PropagateState(*args):
+    def PropagateState(*args) -> "void" :
         """
         :param aSplEdgesState:
         :type aSplEdgesState: TopOpeBRepDS_DataMapOfShapeState &
@@ -4839,7 +4839,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_PropagateState(*args)
 
     PropagateState = staticmethod(PropagateState)
-    def FindStateThroughVertex(*args):
+    def FindStateThroughVertex(*args) -> "TopAbs_State" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -4855,7 +4855,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindStateThroughVertex(*args)
 
     FindStateThroughVertex = staticmethod(FindStateThroughVertex)
-    def PropagateStateForWires(*args):
+    def PropagateStateForWires(*args) -> "void" :
         """
         :param aFacesToRestMap:
         :type aFacesToRestMap: TopTools_IndexedMapOfShape &
@@ -4867,7 +4867,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_PropagateStateForWires(*args)
 
     PropagateStateForWires = staticmethod(PropagateStateForWires)
-    def SpreadStateToChild(*args):
+    def SpreadStateToChild(*args) -> "void" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -4881,7 +4881,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_SpreadStateToChild(*args)
 
     SpreadStateToChild = staticmethod(SpreadStateToChild)
-    def FindState1(*args):
+    def FindState1(*args) -> "void" :
         """
         :param anEdge:
         :type anEdge: TopoDS_Shape &
@@ -4899,7 +4899,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState1(*args)
 
     FindState1 = staticmethod(FindState1)
-    def FindState2(*args):
+    def FindState2(*args) -> "void" :
         """
         :param anEdge:
         :type anEdge: TopoDS_Shape &
@@ -4917,7 +4917,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState2(*args)
 
     FindState2 = staticmethod(FindState2)
-    def GetAdjacentFace(*args):
+    def GetAdjacentFace(*args) -> "Standard_Boolean" :
         """
         :param aFaceObj:
         :type aFaceObj: TopoDS_Shape &
@@ -4933,7 +4933,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetAdjacentFace(*args)
 
     GetAdjacentFace = staticmethod(GetAdjacentFace)
-    def GetNormalToFaceOnEdge(*args):
+    def GetNormalToFaceOnEdge(*args) -> "void" :
         """
         :param aFObj:
         :type aFObj: TopoDS_Face &
@@ -4947,7 +4947,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetNormalToFaceOnEdge(*args)
 
     GetNormalToFaceOnEdge = staticmethod(GetNormalToFaceOnEdge)
-    def GetNormalInNearestPoint(*args):
+    def GetNormalInNearestPoint(*args) -> "void" :
         """
         * This function used to compute normal in point which is located near the point with param UV (used for computation of normals where the normal in the point UV equal to zero).
 
@@ -4963,7 +4963,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetNormalInNearestPoint(*args)
 
     GetNormalInNearestPoint = staticmethod(GetNormalInNearestPoint)
-    def GetTangentToEdgeEdge(*args):
+    def GetTangentToEdgeEdge(*args) -> "Standard_Boolean" :
         """
         :param aFObj:
         :type aFObj: TopoDS_Face &
@@ -4979,7 +4979,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetTangentToEdgeEdge(*args)
 
     GetTangentToEdgeEdge = staticmethod(GetTangentToEdgeEdge)
-    def GetTangentToEdge(*args):
+    def GetTangentToEdge(*args) -> "Standard_Boolean" :
         """
         :param anEdgeObj:
         :type anEdgeObj: TopoDS_Edge &
@@ -4991,7 +4991,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetTangentToEdge(*args)
 
     GetTangentToEdge = staticmethod(GetTangentToEdge)
-    def UpdatePCurves(*args):
+    def UpdatePCurves(*args) -> "void" :
         """
         * Recompute PCurves of the all edges from the wire on the <toFace>
 
@@ -5007,7 +5007,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdatePCurves(*args)
 
     UpdatePCurves = staticmethod(UpdatePCurves)
-    def UpdateEdgeOnPeriodicalFace(*args):
+    def UpdateEdgeOnPeriodicalFace(*args) -> "void" :
         """
         * recompute PCurves of the closing (SIM , with 2 PCurves) edge on the NewFace
 
@@ -5023,7 +5023,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdateEdgeOnPeriodicalFace(*args)
 
     UpdateEdgeOnPeriodicalFace = staticmethod(UpdateEdgeOnPeriodicalFace)
-    def UpdateEdgeOnFace(*args):
+    def UpdateEdgeOnFace(*args) -> "void" :
         """
         * recompute PCurve of the edge on the NewFace
 
@@ -5039,7 +5039,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdateEdgeOnFace(*args)
 
     UpdateEdgeOnFace = staticmethod(UpdateEdgeOnFace)
-    def IsDegEdgesTheSame(*args):
+    def IsDegEdgesTheSame(*args) -> "Standard_Boolean" :
         """
         :param anE1:
         :type anE1: TopoDS_Shape &
@@ -5051,7 +5051,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_IsDegEdgesTheSame(*args)
 
     IsDegEdgesTheSame = staticmethod(IsDegEdgesTheSame)
-    def NormalizeFace(*args):
+    def NormalizeFace(*args) -> "void" :
         """
         * test if <oldFace> does not contain INTERNAL or EXTERNAL edges  and remove such edges in case of its presence. The result is stored in <corrFace>
 
@@ -5065,7 +5065,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_NormalizeFace(*args)
 
     NormalizeFace = staticmethod(NormalizeFace)
-    def CorrectFace2d(*args):
+    def CorrectFace2d(*args) -> "void" :
         """
         * test if UV representation of <oldFace> is good (i.e. face is closed in 2d). if face is not closed , this method will try to close such face and will return corrected edges in the <aMapOfCorrect2dEdges>. Parameter <aSourceShapes> used to fix the edge (or wires) which should be correct (Corrector used it as a start shapes). NOTE : Parameter corrFace doesn't mean anything. If you want to use this method , rebuild resulting face after by yourself using corrected edges.
 
@@ -5083,7 +5083,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectFace2d(*args)
 
     CorrectFace2d = staticmethod(CorrectFace2d)
-    def CorrectTolerances(*args):
+    def CorrectTolerances(*args) -> "void" :
         """
         :param aS:
         :type aS: TopoDS_Shape &
@@ -5095,7 +5095,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectTolerances(*args)
 
     CorrectTolerances = staticmethod(CorrectTolerances)
-    def CorrectCurveOnSurface(*args):
+    def CorrectCurveOnSurface(*args) -> "void" :
         """
         :param aS:
         :type aS: TopoDS_Shape &
@@ -5107,7 +5107,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectCurveOnSurface(*args)
 
     CorrectCurveOnSurface = staticmethod(CorrectCurveOnSurface)
-    def CorrectPointOnCurve(*args):
+    def CorrectPointOnCurve(*args) -> "void" :
         """
         :param aS:
         :type aS: TopoDS_Shape &
@@ -5119,7 +5119,7 @@ class TopOpeBRepBuild_Tools(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectPointOnCurve(*args)
 
     CorrectPointOnCurve = staticmethod(CorrectPointOnCurve)
-    def CheckFaceClosed2d(*args):
+    def CheckFaceClosed2d(*args) -> "Standard_Boolean" :
         """
         * Checks if <theFace> has the properly closed in 2D boundary(ies)
 
@@ -5145,7 +5145,7 @@ TopOpeBRepBuild_Tools._kill_pointed = new_instancemethod(_TopOpeBRepBuild.TopOpe
 TopOpeBRepBuild_Tools_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_Tools_swigregister
 TopOpeBRepBuild_Tools_swigregister(TopOpeBRepBuild_Tools)
 
-def TopOpeBRepBuild_Tools_DumpMapOfShapeWithState(*args):
+def TopOpeBRepBuild_Tools_DumpMapOfShapeWithState(*args) -> "void" :
   """
     :param iP:
     :type iP: int
@@ -5156,7 +5156,7 @@ def TopOpeBRepBuild_Tools_DumpMapOfShapeWithState(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_DumpMapOfShapeWithState(*args)
 
-def TopOpeBRepBuild_Tools_FindState(*args):
+def TopOpeBRepBuild_Tools_FindState(*args) -> "void" :
   """
     :param aVertex:
     :type aVertex: TopoDS_Shape &
@@ -5175,7 +5175,7 @@ def TopOpeBRepBuild_Tools_FindState(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState(*args)
 
-def TopOpeBRepBuild_Tools_PropagateState(*args):
+def TopOpeBRepBuild_Tools_PropagateState(*args) -> "void" :
   """
     :param aSplEdgesState:
     :type aSplEdgesState: TopOpeBRepDS_DataMapOfShapeState &
@@ -5196,7 +5196,7 @@ def TopOpeBRepBuild_Tools_PropagateState(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_PropagateState(*args)
 
-def TopOpeBRepBuild_Tools_FindStateThroughVertex(*args):
+def TopOpeBRepBuild_Tools_FindStateThroughVertex(*args) -> "TopAbs_State" :
   """
     :param aShape:
     :type aShape: TopoDS_Shape &
@@ -5211,7 +5211,7 @@ def TopOpeBRepBuild_Tools_FindStateThroughVertex(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindStateThroughVertex(*args)
 
-def TopOpeBRepBuild_Tools_PropagateStateForWires(*args):
+def TopOpeBRepBuild_Tools_PropagateStateForWires(*args) -> "void" :
   """
     :param aFacesToRestMap:
     :type aFacesToRestMap: TopTools_IndexedMapOfShape &
@@ -5222,7 +5222,7 @@ def TopOpeBRepBuild_Tools_PropagateStateForWires(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_PropagateStateForWires(*args)
 
-def TopOpeBRepBuild_Tools_SpreadStateToChild(*args):
+def TopOpeBRepBuild_Tools_SpreadStateToChild(*args) -> "void" :
   """
     :param aShape:
     :type aShape: TopoDS_Shape &
@@ -5235,7 +5235,7 @@ def TopOpeBRepBuild_Tools_SpreadStateToChild(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_SpreadStateToChild(*args)
 
-def TopOpeBRepBuild_Tools_FindState1(*args):
+def TopOpeBRepBuild_Tools_FindState1(*args) -> "void" :
   """
     :param anEdge:
     :type anEdge: TopoDS_Shape &
@@ -5252,7 +5252,7 @@ def TopOpeBRepBuild_Tools_FindState1(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState1(*args)
 
-def TopOpeBRepBuild_Tools_FindState2(*args):
+def TopOpeBRepBuild_Tools_FindState2(*args) -> "void" :
   """
     :param anEdge:
     :type anEdge: TopoDS_Shape &
@@ -5269,7 +5269,7 @@ def TopOpeBRepBuild_Tools_FindState2(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_FindState2(*args)
 
-def TopOpeBRepBuild_Tools_GetAdjacentFace(*args):
+def TopOpeBRepBuild_Tools_GetAdjacentFace(*args) -> "Standard_Boolean" :
   """
     :param aFaceObj:
     :type aFaceObj: TopoDS_Shape &
@@ -5284,7 +5284,7 @@ def TopOpeBRepBuild_Tools_GetAdjacentFace(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetAdjacentFace(*args)
 
-def TopOpeBRepBuild_Tools_GetNormalToFaceOnEdge(*args):
+def TopOpeBRepBuild_Tools_GetNormalToFaceOnEdge(*args) -> "void" :
   """
     :param aFObj:
     :type aFObj: TopoDS_Face &
@@ -5297,7 +5297,7 @@ def TopOpeBRepBuild_Tools_GetNormalToFaceOnEdge(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetNormalToFaceOnEdge(*args)
 
-def TopOpeBRepBuild_Tools_GetNormalInNearestPoint(*args):
+def TopOpeBRepBuild_Tools_GetNormalInNearestPoint(*args) -> "void" :
   """
     * This function used to compute normal in point which is located near the point with param UV (used for computation of normals where the normal in the point UV equal to zero).
 
@@ -5312,7 +5312,7 @@ def TopOpeBRepBuild_Tools_GetNormalInNearestPoint(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetNormalInNearestPoint(*args)
 
-def TopOpeBRepBuild_Tools_GetTangentToEdgeEdge(*args):
+def TopOpeBRepBuild_Tools_GetTangentToEdgeEdge(*args) -> "Standard_Boolean" :
   """
     :param aFObj:
     :type aFObj: TopoDS_Face &
@@ -5327,7 +5327,7 @@ def TopOpeBRepBuild_Tools_GetTangentToEdgeEdge(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetTangentToEdgeEdge(*args)
 
-def TopOpeBRepBuild_Tools_GetTangentToEdge(*args):
+def TopOpeBRepBuild_Tools_GetTangentToEdge(*args) -> "Standard_Boolean" :
   """
     :param anEdgeObj:
     :type anEdgeObj: TopoDS_Edge &
@@ -5338,7 +5338,7 @@ def TopOpeBRepBuild_Tools_GetTangentToEdge(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_GetTangentToEdge(*args)
 
-def TopOpeBRepBuild_Tools_UpdatePCurves(*args):
+def TopOpeBRepBuild_Tools_UpdatePCurves(*args) -> "void" :
   """
     * Recompute PCurves of the all edges from the wire on the <toFace>
 
@@ -5353,7 +5353,7 @@ def TopOpeBRepBuild_Tools_UpdatePCurves(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdatePCurves(*args)
 
-def TopOpeBRepBuild_Tools_UpdateEdgeOnPeriodicalFace(*args):
+def TopOpeBRepBuild_Tools_UpdateEdgeOnPeriodicalFace(*args) -> "void" :
   """
     * recompute PCurves of the closing (SIM , with 2 PCurves) edge on the NewFace
 
@@ -5368,7 +5368,7 @@ def TopOpeBRepBuild_Tools_UpdateEdgeOnPeriodicalFace(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdateEdgeOnPeriodicalFace(*args)
 
-def TopOpeBRepBuild_Tools_UpdateEdgeOnFace(*args):
+def TopOpeBRepBuild_Tools_UpdateEdgeOnFace(*args) -> "void" :
   """
     * recompute PCurve of the edge on the NewFace
 
@@ -5383,7 +5383,7 @@ def TopOpeBRepBuild_Tools_UpdateEdgeOnFace(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_UpdateEdgeOnFace(*args)
 
-def TopOpeBRepBuild_Tools_IsDegEdgesTheSame(*args):
+def TopOpeBRepBuild_Tools_IsDegEdgesTheSame(*args) -> "Standard_Boolean" :
   """
     :param anE1:
     :type anE1: TopoDS_Shape &
@@ -5394,7 +5394,7 @@ def TopOpeBRepBuild_Tools_IsDegEdgesTheSame(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_IsDegEdgesTheSame(*args)
 
-def TopOpeBRepBuild_Tools_NormalizeFace(*args):
+def TopOpeBRepBuild_Tools_NormalizeFace(*args) -> "void" :
   """
     * test if <oldFace> does not contain INTERNAL or EXTERNAL edges  and remove such edges in case of its presence. The result is stored in <corrFace>
 
@@ -5407,7 +5407,7 @@ def TopOpeBRepBuild_Tools_NormalizeFace(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_NormalizeFace(*args)
 
-def TopOpeBRepBuild_Tools_CorrectFace2d(*args):
+def TopOpeBRepBuild_Tools_CorrectFace2d(*args) -> "void" :
   """
     * test if UV representation of <oldFace> is good (i.e. face is closed in 2d). if face is not closed , this method will try to close such face and will return corrected edges in the <aMapOfCorrect2dEdges>. Parameter <aSourceShapes> used to fix the edge (or wires) which should be correct (Corrector used it as a start shapes). NOTE : Parameter corrFace doesn't mean anything. If you want to use this method , rebuild resulting face after by yourself using corrected edges.
 
@@ -5424,7 +5424,7 @@ def TopOpeBRepBuild_Tools_CorrectFace2d(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectFace2d(*args)
 
-def TopOpeBRepBuild_Tools_CorrectTolerances(*args):
+def TopOpeBRepBuild_Tools_CorrectTolerances(*args) -> "void" :
   """
     :param aS:
     :type aS: TopoDS_Shape &
@@ -5435,7 +5435,7 @@ def TopOpeBRepBuild_Tools_CorrectTolerances(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectTolerances(*args)
 
-def TopOpeBRepBuild_Tools_CorrectCurveOnSurface(*args):
+def TopOpeBRepBuild_Tools_CorrectCurveOnSurface(*args) -> "void" :
   """
     :param aS:
     :type aS: TopoDS_Shape &
@@ -5446,7 +5446,7 @@ def TopOpeBRepBuild_Tools_CorrectCurveOnSurface(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectCurveOnSurface(*args)
 
-def TopOpeBRepBuild_Tools_CorrectPointOnCurve(*args):
+def TopOpeBRepBuild_Tools_CorrectPointOnCurve(*args) -> "void" :
   """
     :param aS:
     :type aS: TopoDS_Shape &
@@ -5457,7 +5457,7 @@ def TopOpeBRepBuild_Tools_CorrectPointOnCurve(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools_CorrectPointOnCurve(*args)
 
-def TopOpeBRepBuild_Tools_CheckFaceClosed2d(*args):
+def TopOpeBRepBuild_Tools_CheckFaceClosed2d(*args) -> "Standard_Boolean" :
   """
     * Checks if <theFace> has the properly closed in 2D boundary(ies)
 
@@ -5471,7 +5471,7 @@ def TopOpeBRepBuild_Tools_CheckFaceClosed2d(*args):
 class TopOpeBRepBuild_Tools2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MakeMapOfShapeVertexInfo(*args):
+    def MakeMapOfShapeVertexInfo(*args) -> "void" :
         """
         :param aWire:
         :type aWire: TopoDS_Wire &
@@ -5483,7 +5483,7 @@ class TopOpeBRepBuild_Tools2d(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools2d_MakeMapOfShapeVertexInfo(*args)
 
     MakeMapOfShapeVertexInfo = staticmethod(MakeMapOfShapeVertexInfo)
-    def DumpMapOfShapeVertexInfo(*args):
+    def DumpMapOfShapeVertexInfo(*args) -> "void" :
         """
         :param aMap:
         :type aMap: TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &
@@ -5493,7 +5493,7 @@ class TopOpeBRepBuild_Tools2d(object):
         return _TopOpeBRepBuild.TopOpeBRepBuild_Tools2d_DumpMapOfShapeVertexInfo(*args)
 
     DumpMapOfShapeVertexInfo = staticmethod(DumpMapOfShapeVertexInfo)
-    def Path(*args):
+    def Path(*args) -> "void" :
         """
         :param aWire:
         :type aWire: TopoDS_Wire &
@@ -5519,7 +5519,7 @@ TopOpeBRepBuild_Tools2d._kill_pointed = new_instancemethod(_TopOpeBRepBuild.TopO
 TopOpeBRepBuild_Tools2d_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_Tools2d_swigregister
 TopOpeBRepBuild_Tools2d_swigregister(TopOpeBRepBuild_Tools2d)
 
-def TopOpeBRepBuild_Tools2d_MakeMapOfShapeVertexInfo(*args):
+def TopOpeBRepBuild_Tools2d_MakeMapOfShapeVertexInfo(*args) -> "void" :
   """
     :param aWire:
     :type aWire: TopoDS_Wire &
@@ -5530,7 +5530,7 @@ def TopOpeBRepBuild_Tools2d_MakeMapOfShapeVertexInfo(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools2d_MakeMapOfShapeVertexInfo(*args)
 
-def TopOpeBRepBuild_Tools2d_DumpMapOfShapeVertexInfo(*args):
+def TopOpeBRepBuild_Tools2d_DumpMapOfShapeVertexInfo(*args) -> "void" :
   """
     :param aMap:
     :type aMap: TopOpeBRepBuild_IndexedDataMapOfShapeVertexInfo &
@@ -5539,7 +5539,7 @@ def TopOpeBRepBuild_Tools2d_DumpMapOfShapeVertexInfo(*args):
     """
   return _TopOpeBRepBuild.TopOpeBRepBuild_Tools2d_DumpMapOfShapeVertexInfo(*args)
 
-def TopOpeBRepBuild_Tools2d_Path(*args):
+def TopOpeBRepBuild_Tools2d_Path(*args) -> "void" :
   """
     :param aWire:
     :type aWire: TopoDS_Wire &
@@ -5559,7 +5559,7 @@ class TopOpeBRepBuild_VertexInfo(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_VertexInfo(*args))
-    def SetVertex(self, *args):
+    def SetVertex(self, *args) -> "void" :
         """
         :param aV:
         :type aV: TopoDS_Vertex &
@@ -5568,14 +5568,14 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_SetVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_Vertex(self, *args)
 
-    def SetSmart(self, *args):
+    def SetSmart(self, *args) -> "void" :
         """
         :param aFlag:
         :type aFlag: bool
@@ -5584,28 +5584,28 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_SetSmart(self, *args)
 
-    def Smart(self, *args):
+    def Smart(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_Smart(self, *args)
 
-    def NbCases(self, *args):
+    def NbCases(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_NbCases(self, *args)
 
-    def FoundOut(self, *args):
+    def FoundOut(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_FoundOut(self, *args)
 
-    def AddIn(self, *args):
+    def AddIn(self, *args) -> "void" :
         """
         :param anE:
         :type anE: TopoDS_Edge &
@@ -5614,7 +5614,7 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_AddIn(self, *args)
 
-    def AddOut(self, *args):
+    def AddOut(self, *args) -> "void" :
         """
         :param anE:
         :type anE: TopoDS_Edge &
@@ -5623,7 +5623,7 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_AddOut(self, *args)
 
-    def SetCurrentIn(self, *args):
+    def SetCurrentIn(self, *args) -> "void" :
         """
         :param anE:
         :type anE: TopoDS_Edge &
@@ -5632,42 +5632,42 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_SetCurrentIn(self, *args)
 
-    def EdgesIn(self, *args):
+    def EdgesIn(self, *args) -> "TopTools_IndexedMapOfOrientedShape const &" :
         """
         :rtype: TopTools_IndexedMapOfOrientedShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_EdgesIn(self, *args)
 
-    def EdgesOut(self, *args):
+    def EdgesOut(self, *args) -> "TopTools_IndexedMapOfOrientedShape const &" :
         """
         :rtype: TopTools_IndexedMapOfOrientedShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_EdgesOut(self, *args)
 
-    def ChangeEdgesOut(self, *args):
+    def ChangeEdgesOut(self, *args) -> "TopTools_IndexedMapOfOrientedShape &" :
         """
         :rtype: TopTools_IndexedMapOfOrientedShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_ChangeEdgesOut(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_Dump(self, *args)
 
-    def CurrentOut(self, *args):
+    def CurrentOut(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_CurrentOut(self, *args)
 
-    def AppendPassed(self, *args):
+    def AppendPassed(self, *args) -> "void" :
         """
         :param anE:
         :type anE: TopoDS_Edge &
@@ -5676,21 +5676,21 @@ class TopOpeBRepBuild_VertexInfo(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_AppendPassed(self, *args)
 
-    def RemovePassed(self, *args):
+    def RemovePassed(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_RemovePassed(self, *args)
 
-    def ListPassed(self, *args):
+    def ListPassed(self, *args) -> "TopTools_ListOfShape const &" :
         """
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_VertexInfo_ListPassed(self, *args)
 
-    def Prepare(self, *args):
+    def Prepare(self, *args) -> "void" :
         """
         :param aL:
         :type aL: TopTools_ListOfShape &
@@ -5738,14 +5738,14 @@ class TopOpeBRepBuild_WireToFace(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_WireToFace_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_WireToFace(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_WireToFace_Init(self, *args)
 
-    def AddWire(self, *args):
+    def AddWire(self, *args) -> "void" :
         """
         :param W:
         :type W: TopoDS_Wire &
@@ -5754,7 +5754,7 @@ class TopOpeBRepBuild_WireToFace(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_WireToFace_AddWire(self, *args)
 
-    def MakeFaces(self, *args):
+    def MakeFaces(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -5799,7 +5799,7 @@ class TopOpeBRepBuild_Area1dBuilder(TopOpeBRepBuild_AreaBuilder):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_Area1dBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_Area1dBuilder(*args))
-    def DumpList(*args):
+    def DumpList(*args) -> "void" :
         """
         :param L:
         :type L: TopOpeBRepBuild_ListOfLoop &
@@ -5821,7 +5821,7 @@ TopOpeBRepBuild_Area1dBuilder._kill_pointed = new_instancemethod(_TopOpeBRepBuil
 TopOpeBRepBuild_Area1dBuilder_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_Area1dBuilder_swigregister
 TopOpeBRepBuild_Area1dBuilder_swigregister(TopOpeBRepBuild_Area1dBuilder)
 
-def TopOpeBRepBuild_Area1dBuilder_DumpList(*args):
+def TopOpeBRepBuild_Area1dBuilder_DumpList(*args) -> "void" :
   """
     :param L:
     :type L: TopOpeBRepBuild_ListOfLoop &
@@ -5903,14 +5903,14 @@ class TopOpeBRepBuild_Builder1(object):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_Builder1(*args))
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_Destroy(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all splits and merges already performed. Does NOT clear the handled DS (except ShapeWithStatesMaps).
 
@@ -5919,7 +5919,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_Clear(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -5936,7 +5936,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_Perform(self, *args)
 
-    def MergeKPart(self, *args):
+    def MergeKPart(self, *args) -> "void" :
         """
         :rtype: void
 
@@ -5949,7 +5949,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_MergeKPart(self, *args)
 
-    def GFillSolidSFS(self, *args):
+    def GFillSolidSFS(self, *args) -> "void" :
         """
         :param SO1:
         :type SO1: TopoDS_Shape &
@@ -5964,7 +5964,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillSolidSFS(self, *args)
 
-    def GFillShellSFS(self, *args):
+    def GFillShellSFS(self, *args) -> "void" :
         """
         :param SH1:
         :type SH1: TopoDS_Shape &
@@ -5979,7 +5979,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillShellSFS(self, *args)
 
-    def GWESMakeFaces(self, *args):
+    def GWESMakeFaces(self, *args) -> "void" :
         """
         :param FF:
         :type FF: TopoDS_Shape &
@@ -5992,7 +5992,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GWESMakeFaces(self, *args)
 
-    def GFillFaceNotSameDomSFS(self, *args):
+    def GFillFaceNotSameDomSFS(self, *args) -> "void" :
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -6007,7 +6007,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillFaceNotSameDomSFS(self, *args)
 
-    def GFillFaceNotSameDomWES(self, *args):
+    def GFillFaceNotSameDomWES(self, *args) -> "void" :
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -6022,7 +6022,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillFaceNotSameDomWES(self, *args)
 
-    def GFillWireNotSameDomWES(self, *args):
+    def GFillWireNotSameDomWES(self, *args) -> "void" :
         """
         :param W1:
         :type W1: TopoDS_Shape &
@@ -6037,7 +6037,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillWireNotSameDomWES(self, *args)
 
-    def GFillEdgeNotSameDomWES(self, *args):
+    def GFillEdgeNotSameDomWES(self, *args) -> "void" :
         """
         :param E1:
         :type E1: TopoDS_Shape &
@@ -6052,7 +6052,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillEdgeNotSameDomWES(self, *args)
 
-    def GFillFaceSameDomSFS(self, *args):
+    def GFillFaceSameDomSFS(self, *args) -> "void" :
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -6067,7 +6067,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillFaceSameDomSFS(self, *args)
 
-    def GFillFaceSameDomWES(self, *args):
+    def GFillFaceSameDomWES(self, *args) -> "void" :
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -6082,7 +6082,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillFaceSameDomWES(self, *args)
 
-    def GFillWireSameDomWES(self, *args):
+    def GFillWireSameDomWES(self, *args) -> "void" :
         """
         :param W1:
         :type W1: TopoDS_Shape &
@@ -6097,7 +6097,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillWireSameDomWES(self, *args)
 
-    def GFillEdgeSameDomWES(self, *args):
+    def GFillEdgeSameDomWES(self, *args) -> "void" :
         """
         :param E1:
         :type E1: TopoDS_Shape &
@@ -6112,7 +6112,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_GFillEdgeSameDomWES(self, *args)
 
-    def PerformONParts(self, *args):
+    def PerformONParts(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -6127,7 +6127,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_PerformONParts(self, *args)
 
-    def PerformPieceIn2D(self, *args):
+    def PerformPieceIn2D(self, *args) -> "void" :
         """
         :param aPieceToPerform:
         :type aPieceToPerform: TopoDS_Edge &
@@ -6146,7 +6146,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_PerformPieceIn2D(self, *args)
 
-    def PerformPieceOn2D(self, *args):
+    def PerformPieceOn2D(self, *args) -> "Standard_Integer" :
         """
         :param aPieceObj:
         :type aPieceObj: TopoDS_Shape &
@@ -6165,7 +6165,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_PerformPieceOn2D(self, *args)
 
-    def TwoPiecesON(self, *args):
+    def TwoPiecesON(self, *args) -> "Standard_Integer" :
         """
         :param aSeq:
         :type aSeq: TopTools_SequenceOfShape &
@@ -6180,7 +6180,7 @@ class TopOpeBRepBuild_Builder1(object):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Builder1_TwoPiecesON(self, *args)
 
-    def CorrectResult2d(self, *args):
+    def CorrectResult2d(self, *args) -> "Standard_Integer" :
         """
         :param aResult:
         :type aResult: TopoDS_Shape &
@@ -6225,7 +6225,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def CompareShapes(self, *args):
+    def CompareShapes(self, *args) -> "TopAbs_State" :
         """
         * classify shape <B1> with shape <B2>
 
@@ -6238,7 +6238,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CompositeClassifier_CompareShapes(self, *args)
 
-    def CompareElementToShape(self, *args):
+    def CompareElementToShape(self, *args) -> "TopAbs_State" :
         """
         * classify element <E> with shape <B>
 
@@ -6251,7 +6251,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CompositeClassifier_CompareElementToShape(self, *args)
 
-    def ResetShape(self, *args):
+    def ResetShape(self, *args) -> "void" :
         """
         * prepare classification involving shape <B> calls ResetElement on first element of <B>
 
@@ -6262,7 +6262,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CompositeClassifier_ResetShape(self, *args)
 
-    def ResetElement(self, *args):
+    def ResetElement(self, *args) -> "void" :
         """
         * prepare classification involving element <E>.
 
@@ -6273,7 +6273,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CompositeClassifier_ResetElement(self, *args)
 
-    def CompareElement(self, *args):
+    def CompareElement(self, *args) -> "Standard_Boolean" :
         """
         * Add element <E> in the set of elements used in classification. Returns False if the element <E> has been already added to the set of elements, otherwise returns True.
 
@@ -6284,7 +6284,7 @@ class TopOpeBRepBuild_CompositeClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_CompositeClassifier_CompareElement(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         * Returns state of classification of 2D point, defined by ResetElement, with the current set of elements, defined by Compare.
 
@@ -6328,7 +6328,7 @@ class TopOpeBRepBuild_Pave(TopOpeBRepBuild_Loop):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_Pave_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_Pave(*args))
-    def HasSameDomain(self, *args):
+    def HasSameDomain(self, *args) -> "Standard_Boolean" :
         """
         :param b:
         :type b: bool
@@ -6339,7 +6339,7 @@ class TopOpeBRepBuild_Pave(TopOpeBRepBuild_Loop):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_HasSameDomain(self, *args)
 
-    def SameDomain(self, *args):
+    def SameDomain(self, *args) -> "TopoDS_Shape const" :
         """
         :param VSD:
         :type VSD: TopoDS_Shape &
@@ -6350,21 +6350,21 @@ class TopOpeBRepBuild_Pave(TopOpeBRepBuild_Loop):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_SameDomain(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_Vertex(self, *args)
 
-    def ChangeVertex(self, *args):
+    def ChangeVertex(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_ChangeVertex(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -6375,18 +6375,18 @@ class TopOpeBRepBuild_Pave(TopOpeBRepBuild_Loop):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_Parameter(self, *args)
 
-    def InterferenceType(self, *args):
+    def InterferenceType(self, *args) -> "TopOpeBRepDS_Kind &" :
         """
         :rtype: TopOpeBRepDS_Kind
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_InterferenceType(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopOpeBRepBuild_Pave self)"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopOpeBRepBuild_Pave" :
         """GetHandle(TopOpeBRepBuild_Pave self) -> Handle_TopOpeBRepBuild_Pave"""
         return _TopOpeBRepBuild.TopOpeBRepBuild_Pave_GetHandle(self)
 
@@ -6430,7 +6430,7 @@ Handle_TopOpeBRepBuild_Pave._kill_pointed = new_instancemethod(_TopOpeBRepBuild.
 Handle_TopOpeBRepBuild_Pave_swigregister = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Pave_swigregister
 Handle_TopOpeBRepBuild_Pave_swigregister(Handle_TopOpeBRepBuild_Pave)
 
-def Handle_TopOpeBRepBuild_Pave_DownCast(*args):
+def Handle_TopOpeBRepBuild_Pave_DownCast(*args) -> "Handle_TopOpeBRepBuild_Pave const" :
   return _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Pave_DownCast(*args)
 Handle_TopOpeBRepBuild_Pave_DownCast = _TopOpeBRepBuild.Handle_TopOpeBRepBuild_Pave_DownCast
 
@@ -6447,7 +6447,7 @@ class TopOpeBRepBuild_PaveClassifier(TopOpeBRepBuild_LoopClassifier):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_PaveClassifier_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_PaveClassifier(*args))
-    def SetFirstParameter(self, *args):
+    def SetFirstParameter(self, *args) -> "void" :
         """
         :param P:
         :type P: float
@@ -6456,7 +6456,7 @@ class TopOpeBRepBuild_PaveClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveClassifier_SetFirstParameter(self, *args)
 
-    def ClosedVertices(self, *args):
+    def ClosedVertices(self, *args) -> "void" :
         """
         :param B:
         :type B: bool
@@ -6465,7 +6465,7 @@ class TopOpeBRepBuild_PaveClassifier(TopOpeBRepBuild_LoopClassifier):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveClassifier_ClosedVertices(self, *args)
 
-    def AdjustCase(*args):
+    def AdjustCase(*args) -> "Standard_Integer &" :
         """
         :param p1:
         :type p1: float
@@ -6499,7 +6499,7 @@ TopOpeBRepBuild_PaveClassifier._kill_pointed = new_instancemethod(_TopOpeBRepBui
 TopOpeBRepBuild_PaveClassifier_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_PaveClassifier_swigregister
 TopOpeBRepBuild_PaveClassifier_swigregister(TopOpeBRepBuild_PaveClassifier)
 
-def TopOpeBRepBuild_PaveClassifier_AdjustCase(*args):
+def TopOpeBRepBuild_PaveClassifier_AdjustCase(*args) -> "Standard_Integer &" :
   """
     :param p1:
     :type p1: float
@@ -6531,7 +6531,7 @@ class TopOpeBRepBuild_PaveSet(TopOpeBRepBuild_LoopSet):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_PaveSet(*args))
-    def RemovePV(self, *args):
+    def RemovePV(self, *args) -> "void" :
         """
         :param B:
         :type B: bool
@@ -6540,7 +6540,7 @@ class TopOpeBRepBuild_PaveSet(TopOpeBRepBuild_LoopSet):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_RemovePV(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         * Add <PV> in the Pave set.
 
@@ -6551,35 +6551,35 @@ class TopOpeBRepBuild_PaveSet(TopOpeBRepBuild_LoopSet):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_Append(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_Edge(self, *args)
 
-    def HasEqualParameters(self, *args):
+    def HasEqualParameters(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_HasEqualParameters(self, *args)
 
-    def EqualParameters(self, *args):
+    def EqualParameters(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_EqualParameters(self, *args)
 
-    def ClosedVertices(self, *args):
+    def ClosedVertices(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_ClosedVertices(self, *args)
 
-    def SortPave(*args):
+    def SortPave(*args) -> "void" :
         """
         :param Lin:
         :type Lin: TopOpeBRepBuild_ListOfPave &
@@ -6609,7 +6609,7 @@ TopOpeBRepBuild_PaveSet._kill_pointed = new_instancemethod(_TopOpeBRepBuild.TopO
 TopOpeBRepBuild_PaveSet_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_PaveSet_swigregister
 TopOpeBRepBuild_PaveSet_swigregister(TopOpeBRepBuild_PaveSet)
 
-def TopOpeBRepBuild_PaveSet_SortPave(*args):
+def TopOpeBRepBuild_PaveSet_SortPave(*args) -> "void" :
   """
     :param Lin:
     :type Lin: TopOpeBRepBuild_ListOfPave &
@@ -6639,14 +6639,14 @@ class TopOpeBRepBuild_ShellFaceSet(TopOpeBRepBuild_ShapeSet):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ShellFaceSet_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ShellFaceSet(*args))
-    def Solid(self, *args):
+    def Solid(self, *args) -> "TopoDS_Solid const" :
         """
         :rtype: TopoDS_Solid
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShellFaceSet_Solid(self, *args)
 
-    def SName(self, *args):
+    def SName(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6667,7 +6667,7 @@ class TopOpeBRepBuild_ShellFaceSet(TopOpeBRepBuild_ShapeSet):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_ShellFaceSet_SName(self, *args)
 
-    def SNameori(self, *args):
+    def SNameori(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6718,7 +6718,7 @@ class TopOpeBRepBuild_WireEdgeSet(TopOpeBRepBuild_ShapeSet):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeSet_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_WireEdgeSet(*args))
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * value of field myFace
 
@@ -6727,7 +6727,7 @@ class TopOpeBRepBuild_WireEdgeSet(TopOpeBRepBuild_ShapeSet):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeSet_Face(self, *args)
 
-    def IsUVISO(*args):
+    def IsUVISO(*args) -> "Standard_Boolean &, Standard_Boolean &" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -6743,7 +6743,7 @@ class TopOpeBRepBuild_WireEdgeSet(TopOpeBRepBuild_ShapeSet):
         return _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeSet_IsUVISO(*args)
 
     IsUVISO = staticmethod(IsUVISO)
-    def SName(self, *args):
+    def SName(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6764,7 +6764,7 @@ class TopOpeBRepBuild_WireEdgeSet(TopOpeBRepBuild_ShapeSet):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeSet_SName(self, *args)
 
-    def SNameori(self, *args):
+    def SNameori(self, *args) -> "TCollection_AsciiString" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6800,7 +6800,7 @@ TopOpeBRepBuild_WireEdgeSet._kill_pointed = new_instancemethod(_TopOpeBRepBuild.
 TopOpeBRepBuild_WireEdgeSet_swigregister = _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeSet_swigregister
 TopOpeBRepBuild_WireEdgeSet_swigregister(TopOpeBRepBuild_WireEdgeSet)
 
-def TopOpeBRepBuild_WireEdgeSet_IsUVISO(*args):
+def TopOpeBRepBuild_WireEdgeSet_IsUVISO(*args) -> "Standard_Boolean &, Standard_Boolean &" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6834,7 +6834,7 @@ class TopOpeBRepBuild_EdgeBuilder(TopOpeBRepBuild_Area1dBuilder):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_EdgeBuilder(*args))
-    def InitEdgeBuilder(self, *args):
+    def InitEdgeBuilder(self, *args) -> "void" :
         """
         :param LS:
         :type LS: TopOpeBRepBuild_LoopSet &
@@ -6847,56 +6847,56 @@ class TopOpeBRepBuild_EdgeBuilder(TopOpeBRepBuild_Area1dBuilder):
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_InitEdgeBuilder(self, *args)
 
-    def InitEdge(self, *args):
+    def InitEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_InitEdge(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_MoreEdge(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_NextEdge(self, *args)
 
-    def InitVertex(self, *args):
+    def InitVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_InitVertex(self, *args)
 
-    def MoreVertex(self, *args):
+    def MoreVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_MoreVertex(self, *args)
 
-    def NextVertex(self, *args):
+    def NextVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_NextVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepBuild.TopOpeBRepBuild_EdgeBuilder_Vertex(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -6943,7 +6943,7 @@ class TopOpeBRepBuild_FaceAreaBuilder(TopOpeBRepBuild_Area2dBuilder):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_FaceAreaBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_FaceAreaBuilder(*args))
-    def InitFaceAreaBuilder(self, *args):
+    def InitFaceAreaBuilder(self, *args) -> "void" :
         """
         :param LS:
         :type LS: TopOpeBRepBuild_LoopSet &
@@ -6982,7 +6982,7 @@ class TopOpeBRepBuild_ShellFaceClassifier(TopOpeBRepBuild_CompositeClassifier):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_ShellFaceClassifier_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_ShellFaceClassifier(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -7021,7 +7021,7 @@ class TopOpeBRepBuild_SolidAreaBuilder(TopOpeBRepBuild_Area3dBuilder):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_SolidAreaBuilder_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_SolidAreaBuilder(*args))
-    def InitSolidAreaBuilder(self, *args):
+    def InitSolidAreaBuilder(self, *args) -> "void" :
         """
         :param LS:
         :type LS: TopOpeBRepBuild_LoopSet &
@@ -7062,7 +7062,7 @@ class TopOpeBRepBuild_WireEdgeClassifier(TopOpeBRepBuild_CompositeClassifier):
 
         """
         _TopOpeBRepBuild.TopOpeBRepBuild_WireEdgeClassifier_swiginit(self,_TopOpeBRepBuild.new_TopOpeBRepBuild_WireEdgeClassifier(*args))
-    def LoopToShape(self, *args):
+    def LoopToShape(self, *args) -> "TopoDS_Shape" :
         """
         :param L:
         :type L: Handle_TopOpeBRepBuild_Loop &

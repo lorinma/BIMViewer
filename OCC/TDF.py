@@ -119,7 +119,7 @@ TDF_LabelNodeFlagsMsk = _TDF.TDF_LabelNodeFlagsMsk
 class tdf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def LowestID(*args):
+    def LowestID(*args) -> "Standard_GUID const &" :
         """
         * Returns ID '00000000-0000-0000-0000-000000000000', sometimes used as null ID.
 
@@ -129,7 +129,7 @@ class tdf(object):
         return _TDF.tdf_LowestID(*args)
 
     LowestID = staticmethod(LowestID)
-    def UppestID(*args):
+    def UppestID(*args) -> "Standard_GUID const &" :
         """
         * Returns ID 'ffffffff-ffff-ffff-ffff-ffffffffffff'.
 
@@ -139,7 +139,7 @@ class tdf(object):
         return _TDF.tdf_UppestID(*args)
 
     UppestID = staticmethod(UppestID)
-    def AddLinkGUIDToProgID(*args):
+    def AddLinkGUIDToProgID(*args) -> "void" :
         """
         * Sets link between GUID and ProgID in hidden DataMap
 
@@ -153,7 +153,7 @@ class tdf(object):
         return _TDF.tdf_AddLinkGUIDToProgID(*args)
 
     AddLinkGUIDToProgID = staticmethod(AddLinkGUIDToProgID)
-    def GUIDFromProgID(*args):
+    def GUIDFromProgID(*args) -> "Standard_Boolean" :
         """
         * Returns True if there is GUID for given <ProgID> then GUID is returned in <ID>
 
@@ -167,7 +167,7 @@ class tdf(object):
         return _TDF.tdf_GUIDFromProgID(*args)
 
     GUIDFromProgID = staticmethod(GUIDFromProgID)
-    def ProgIDFromGUID(*args):
+    def ProgIDFromGUID(*args) -> "Standard_Boolean" :
         """
         * Returns True if there is ProgID for given <ID> then ProgID is returned in <ProgID>
 
@@ -195,7 +195,7 @@ tdf._kill_pointed = new_instancemethod(_TDF.tdf__kill_pointed,None,tdf)
 tdf_swigregister = _TDF.tdf_swigregister
 tdf_swigregister(tdf)
 
-def tdf_LowestID(*args):
+def tdf_LowestID(*args) -> "Standard_GUID const &" :
   """
     * Returns ID '00000000-0000-0000-0000-000000000000', sometimes used as null ID.
 
@@ -204,7 +204,7 @@ def tdf_LowestID(*args):
     """
   return _TDF.tdf_LowestID(*args)
 
-def tdf_UppestID(*args):
+def tdf_UppestID(*args) -> "Standard_GUID const &" :
   """
     * Returns ID 'ffffffff-ffff-ffff-ffff-ffffffffffff'.
 
@@ -213,7 +213,7 @@ def tdf_UppestID(*args):
     """
   return _TDF.tdf_UppestID(*args)
 
-def tdf_AddLinkGUIDToProgID(*args):
+def tdf_AddLinkGUIDToProgID(*args) -> "void" :
   """
     * Sets link between GUID and ProgID in hidden DataMap
 
@@ -226,7 +226,7 @@ def tdf_AddLinkGUIDToProgID(*args):
     """
   return _TDF.tdf_AddLinkGUIDToProgID(*args)
 
-def tdf_GUIDFromProgID(*args):
+def tdf_GUIDFromProgID(*args) -> "Standard_Boolean" :
   """
     * Returns True if there is GUID for given <ProgID> then GUID is returned in <ID>
 
@@ -239,7 +239,7 @@ def tdf_GUIDFromProgID(*args):
     """
   return _TDF.tdf_GUIDFromProgID(*args)
 
-def tdf_ProgIDFromGUID(*args):
+def tdf_ProgIDFromGUID(*args) -> "Standard_Boolean" :
   """
     * Returns True if there is ProgID for given <ID> then ProgID is returned in <ProgID>
 
@@ -256,7 +256,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ID(self, *args):
+    def ID(self, *args) -> "Standard_GUID const &" :
         """
         * Returns the ID of the attribute.
 
@@ -265,7 +265,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_ID(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TDF_Label const" :
         """
         * Returns the label to which the attribute is attached. If the label is not included in a DF, the label is null. See Label. Warning If the label is not included in a data framework, it is null. This function should not be redefined inline.
 
@@ -274,7 +274,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Label(self, *args)
 
-    def Transaction(self, *args):
+    def Transaction(self, *args) -> "Standard_Integer" :
         """
         * Returns the transaction index in which the attribute has been created or modified.
 
@@ -283,7 +283,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Transaction(self, *args)
 
-    def UntilTransaction(self, *args):
+    def UntilTransaction(self, *args) -> "Standard_Integer" :
         """
         * Returns the upper transaction index until which the attribute is/was valid. This number may vary. A removed attribute validity range is reduced to its transaction index.
 
@@ -292,7 +292,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_UntilTransaction(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute is valid; i.e. not a backuped or removed one.
 
@@ -301,7 +301,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_IsValid(self, *args)
 
-    def IsNew(self, *args):
+    def IsNew(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute has no backup
 
@@ -310,7 +310,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_IsNew(self, *args)
 
-    def IsForgotten(self, *args):
+    def IsForgotten(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute forgotten status is set. ShortCut Methods concerning associated attributes =================================================
 
@@ -319,7 +319,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_IsForgotten(self, *args)
 
-    def IsAttribute(self, *args):
+    def IsAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if it exists an associated attribute of <self> with <anID> as ID.
 
@@ -330,7 +330,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_IsAttribute(self, *args)
 
-    def FindAttribute(self, *args):
+    def FindAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Finds an associated attribute of <self>, according to <anID>. the returned <anAttribute> is a valid one. The method returns True if found, False otherwise. A removed attribute cannot be found using this method.
 
@@ -343,7 +343,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_FindAttribute(self, *args)
 
-    def AddAttribute(self, *args):
+    def AddAttribute(self, *args) -> "void" :
         """
         * Adds an Attribute <other> to the label of <self>.Raises if there is already one of the same GUID fhan <other>.
 
@@ -354,7 +354,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_AddAttribute(self, *args)
 
-    def ForgetAttribute(self, *args):
+    def ForgetAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Forgets the Attribute of GUID <aguid> associated to the label of <self>. Be carefull that if <self> is the attribute of <guid>, <self> will have a null label after this call. If the attribute doesn't exist returns False. Otherwise returns True.
 
@@ -365,7 +365,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_ForgetAttribute(self, *args)
 
-    def ForgetAllAttributes(self, *args):
+    def ForgetAllAttributes(self, *args) -> "void" :
         """
         * Forgets all the attributes attached to the label  of <self>. Does it on the sub-labels if <clearChildren> is set to true. Of course, this method is compatible with Transaction & Delta mecanisms. Be carefull that if <self> will have a null label after this call
 
@@ -376,7 +376,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_ForgetAllAttributes(self, *args)
 
-    def AfterAddition(self, *args):
+    def AfterAddition(self, *args) -> "void" :
         """
         * Something to do after adding an Attribute to a label.
 
@@ -385,7 +385,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_AfterAddition(self, *args)
 
-    def BeforeRemoval(self, *args):
+    def BeforeRemoval(self, *args) -> "void" :
         """
         * Something to do before removing an Attribute from a label.
 
@@ -394,7 +394,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_BeforeRemoval(self, *args)
 
-    def BeforeForget(self, *args):
+    def BeforeForget(self, *args) -> "void" :
         """
         * Something to do before forgetting an Attribute to a label.
 
@@ -403,7 +403,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_BeforeForget(self, *args)
 
-    def AfterResume(self, *args):
+    def AfterResume(self, *args) -> "void" :
         """
         * Something to do after resuming an Attribute from a label.
 
@@ -412,7 +412,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_AfterResume(self, *args)
 
-    def AfterRetrieval(self, *args):
+    def AfterRetrieval(self, *args) -> "Standard_Boolean" :
         """
         * Something to do AFTER creation of an attribute by persistent-transient translation. The returned status says if AfterUndo has been performed (true) or if this callback must be called once again further (false). If <forceIt> is set to true, the method MUST perform and return true. Does nothing by default and returns true.
 
@@ -423,7 +423,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_AfterRetrieval(self, *args)
 
-    def BeforeUndo(self, *args):
+    def BeforeUndo(self, *args) -> "Standard_Boolean" :
         """
         * Something to do before applying <anAttDelta>. The returned status says if AfterUndo has been performed (true) or if this callback must be called once again further (false). If <forceIt> is set to true, the method MUST perform and return true. Does nothing by default and returns true.
 
@@ -436,7 +436,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_BeforeUndo(self, *args)
 
-    def AfterUndo(self, *args):
+    def AfterUndo(self, *args) -> "Standard_Boolean" :
         """
         * Something to do after applying <anAttDelta>. The returned status says if AfterUndo has been performed (true) or if this callback must be called once again further (false). If <forceIt> is set to true, the method MUST perform and return true. Does nothing by default and returns true.
 
@@ -449,7 +449,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_AfterUndo(self, *args)
 
-    def BeforeCommitTransaction(self, *args):
+    def BeforeCommitTransaction(self, *args) -> "void" :
         """
         * A callback. By default does nothing. It is called by TDF_Data::CommitTransaction() method.
 
@@ -458,7 +458,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_BeforeCommitTransaction(self, *args)
 
-    def Backup(self, *args):
+    def Backup(self, *args) -> "void" :
         """
         * Backups the attribute. The backuped attribute is flagged 'Backuped' and not 'Valid'.  The method does nothing:  1) If the attribute transaction number is equal to the current transaction number (the attribute has already been backuped).  2) If the attribute is not attached to a label.
 
@@ -467,7 +467,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Backup(self, *args)
 
-    def IsBackuped(self, *args):
+    def IsBackuped(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the attribute backup status is set. This status is set/unset by the Backup() method.
 
@@ -476,7 +476,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_IsBackuped(self, *args)
 
-    def BackupCopy(self, *args):
+    def BackupCopy(self, *args) -> "Handle_TDF_Attribute" :
         """
         * Copies the attribute contents into a new other attribute. It is used by Backup().
 
@@ -485,7 +485,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_BackupCopy(self, *args)
 
-    def Restore(self, *args):
+    def Restore(self, *args) -> "void" :
         """
         * Restores the backuped contents from <anAttribute> into this one. It is used when aborting a transaction.
 
@@ -496,7 +496,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Restore(self, *args)
 
-    def DeltaOnAddition(self, *args):
+    def DeltaOnAddition(self, *args) -> "Handle_TDF_DeltaOnAddition" :
         """
         * Makes an AttributeDelta because <self>  appeared. The only known use of a redefinition of  this method is to return a null handle (no delta).
 
@@ -505,7 +505,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_DeltaOnAddition(self, *args)
 
-    def DeltaOnForget(self, *args):
+    def DeltaOnForget(self, *args) -> "Handle_TDF_DeltaOnForget" :
         """
         * Makes an AttributeDelta because <self> has been  forgotten.
 
@@ -514,7 +514,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_DeltaOnForget(self, *args)
 
-    def DeltaOnResume(self, *args):
+    def DeltaOnResume(self, *args) -> "Handle_TDF_DeltaOnResume" :
         """
         * Makes an AttributeDelta because <self> has been  resumed.
 
@@ -523,7 +523,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_DeltaOnResume(self, *args)
 
-    def DeltaOnModification(self, *args):
+    def DeltaOnModification(self, *args) -> "void" :
         """
         * Makes a DeltaOnModification between <self> and  <anOldAttribute.
 
@@ -540,7 +540,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_DeltaOnModification(self, *args)
 
-    def DeltaOnRemoval(self, *args):
+    def DeltaOnRemoval(self, *args) -> "Handle_TDF_DeltaOnRemoval" :
         """
         * Makes a DeltaOnRemoval on <self> because <self> has  disappeared from the DS.
 
@@ -549,7 +549,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_DeltaOnRemoval(self, *args)
 
-    def NewEmpty(self, *args):
+    def NewEmpty(self, *args) -> "Handle_TDF_Attribute" :
         """
         * Returns an new empty attribute from the good end type. It is used by the copy algorithm.
 
@@ -558,7 +558,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_NewEmpty(self, *args)
 
-    def Paste(self, *args):
+    def Paste(self, *args) -> "void" :
         """
         * This method is different from the 'Copy' one, because it is used when copying an attribute from a source structure into a target structure. This method may paste the contents of <self> into <intoAttribute>.  The given pasted attribute can be full or empty of its contents. But don't make a NEW! Just set the contents!  It is possible to use <aRelocationTable> to get/set the relocation value of a source attribute.
 
@@ -571,7 +571,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Paste(self, *args)
 
-    def References(self, *args):
+    def References(self, *args) -> "void" :
         """
         * Adds the first level referenced attributes and labels to <aDataSet>.  For this, use the AddLabel or AddAttribute of DataSet.  If there is none, do not implement the method.
 
@@ -582,11 +582,11 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_References(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_Attribute self) -> std::string"""
         return _TDF.TDF_Attribute_DumpToString(self)
 
-    def ExtendedDump(self, *args):
+    def ExtendedDump(self, *args) -> "void" :
         """
         * Dumps the attribute content on <aStream>, using <aMap> like this: if an attribute is not in the map, first put add it to the map and then dump it. Use the map rank instead of dumping each attribute field.
 
@@ -601,7 +601,7 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_ExtendedDump(self, *args)
 
-    def Forget(self, *args):
+    def Forget(self, *args) -> "void" :
         """
         * Forgets the attribute. <aTransaction> is the current transaction in which the forget is done. A forgotten attribute is also flagged not 'Valid'.  A forgotten attribute is invisible. Set also the 'Valid' status to False. Obvioulsy, DF cannot empty an attribute (this has a semantic signification), but can remove it from the structure. So, a forgotten attribute is NOT an empty one, but a soon DEAD one.  Should be private.
 
@@ -612,11 +612,11 @@ class TDF_Attribute(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Attribute_Forget(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_Attribute self)"""
         return _TDF.TDF_Attribute__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_Attribute" :
         """GetHandle(TDF_Attribute self) -> Handle_TDF_Attribute"""
         return _TDF.TDF_Attribute_GetHandle(self)
 
@@ -689,7 +689,7 @@ Handle_TDF_Attribute._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Attribut
 Handle_TDF_Attribute_swigregister = _TDF.Handle_TDF_Attribute_swigregister
 Handle_TDF_Attribute_swigregister(Handle_TDF_Attribute)
 
-def Handle_TDF_Attribute_DownCast(*args):
+def Handle_TDF_Attribute_DownCast(*args) -> "Handle_TDF_Attribute const" :
   return _TDF.Handle_TDF_Attribute_DownCast(*args)
 Handle_TDF_Attribute_DownCast = _TDF.Handle_TDF_Attribute_DownCast
 
@@ -714,7 +714,7 @@ class TDF_AttributeArray1(object):
 
         """
         _TDF.TDF_AttributeArray1_swiginit(self,_TDF.new_TDF_AttributeArray1(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_TDF_Attribute &
@@ -723,21 +723,21 @@ class TDF_AttributeArray1(object):
         """
         return _TDF.TDF_AttributeArray1_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeArray1_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_AttributeArray1_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeArray1 const &" :
         """
         :param Other:
         :type Other: TDF_AttributeArray1 &
@@ -746,7 +746,7 @@ class TDF_AttributeArray1(object):
         """
         return _TDF.TDF_AttributeArray1_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeArray1 const &" :
         """
         :param Other:
         :type Other: TDF_AttributeArray1 &
@@ -755,28 +755,28 @@ class TDF_AttributeArray1(object):
         """
         return _TDF.TDF_AttributeArray1_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_AttributeArray1_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_AttributeArray1_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_AttributeArray1_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -787,7 +787,7 @@ class TDF_AttributeArray1(object):
         """
         return _TDF.TDF_AttributeArray1_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param Index:
         :type Index: int
@@ -796,7 +796,7 @@ class TDF_AttributeArray1(object):
         """
         return _TDF.TDF_AttributeArray1_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :param Index:
         :type Index: int
@@ -839,7 +839,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_AttributeDataMap_swiginit(self,_TDF.new_TDF_AttributeDataMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeDataMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeDataMap &
@@ -848,7 +848,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeDataMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeDataMap &
@@ -857,7 +857,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -866,14 +866,14 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeDataMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -884,7 +884,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -893,7 +893,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -902,7 +902,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -911,7 +911,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -920,7 +920,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -929,7 +929,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -938,7 +938,7 @@ class TDF_AttributeDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDataMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_AttributeDataMap self)"""
         return _TDF.TDF_AttributeDataMap__kill_pointed(self)
 
@@ -969,7 +969,7 @@ class TDF_AttributeDelta(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Apply(self, *args):
+    def Apply(self, *args) -> "void" :
         """
         * Applies the delta to the attribute.
 
@@ -978,7 +978,7 @@ class TDF_AttributeDelta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_AttributeDelta_Apply(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TDF_Label" :
         """
         * Returns the label concerned by <self>.
 
@@ -987,7 +987,7 @@ class TDF_AttributeDelta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_AttributeDelta_Label(self, *args)
 
-    def Attribute(self, *args):
+    def Attribute(self, *args) -> "Handle_TDF_Attribute" :
         """
         * Returns the reference attribute.
 
@@ -996,7 +996,7 @@ class TDF_AttributeDelta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_AttributeDelta_Attribute(self, *args)
 
-    def ID(self, *args):
+    def ID(self, *args) -> "Standard_GUID" :
         """
         * Returns the ID of the attribute concerned by <self>.
 
@@ -1005,15 +1005,15 @@ class TDF_AttributeDelta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_AttributeDelta_ID(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_AttributeDelta self) -> std::string"""
         return _TDF.TDF_AttributeDelta_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_AttributeDelta self)"""
         return _TDF.TDF_AttributeDelta__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_AttributeDelta" :
         """GetHandle(TDF_AttributeDelta self) -> Handle_TDF_AttributeDelta"""
         return _TDF.TDF_AttributeDelta_GetHandle(self)
 
@@ -1056,7 +1056,7 @@ Handle_TDF_AttributeDelta._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Att
 Handle_TDF_AttributeDelta_swigregister = _TDF.Handle_TDF_AttributeDelta_swigregister
 Handle_TDF_AttributeDelta_swigregister(Handle_TDF_AttributeDelta)
 
-def Handle_TDF_AttributeDelta_DownCast(*args):
+def Handle_TDF_AttributeDelta_DownCast(*args) -> "Handle_TDF_AttributeDelta const" :
   return _TDF.Handle_TDF_AttributeDelta_DownCast(*args)
 Handle_TDF_AttributeDelta_DownCast = _TDF.Handle_TDF_AttributeDelta_DownCast
 
@@ -1069,7 +1069,7 @@ class TDF_AttributeDeltaList(object):
 
         """
         _TDF.TDF_AttributeDeltaList_swiginit(self,_TDF.new_TDF_AttributeDeltaList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_AttributeDeltaList &
@@ -1078,7 +1078,7 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_AttributeDeltaList &
@@ -1087,28 +1087,28 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_AttributeDeltaList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeDeltaList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_AttributeDeltaList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_AttributeDelta &
@@ -1127,7 +1127,7 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_AttributeDelta &
@@ -1146,28 +1146,28 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDF_AttributeDelta &" :
         """
         :rtype: Handle_TDF_AttributeDelta
 
         """
         return _TDF.TDF_AttributeDeltaList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDF_AttributeDelta &" :
         """
         :rtype: Handle_TDF_AttributeDelta
 
         """
         return _TDF.TDF_AttributeDeltaList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeDeltaList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDF_ListIteratorOfAttributeDeltaList &
@@ -1176,7 +1176,7 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_AttributeDelta &
@@ -1193,7 +1193,7 @@ class TDF_AttributeDeltaList(object):
         """
         return _TDF.TDF_AttributeDeltaList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_AttributeDelta &
@@ -1246,7 +1246,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_AttributeDoubleMap_swiginit(self,_TDF.new_TDF_AttributeDoubleMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeDoubleMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeDoubleMap &
@@ -1255,7 +1255,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeDoubleMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeDoubleMap &
@@ -1264,7 +1264,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1273,14 +1273,14 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeDoubleMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param K1:
         :type K1: Handle_TDF_Attribute &
@@ -1291,7 +1291,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_Bind(self, *args)
 
-    def AreBound(self, *args):
+    def AreBound(self, *args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: Handle_TDF_Attribute &
@@ -1302,7 +1302,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_AreBound(self, *args)
 
-    def IsBound1(self, *args):
+    def IsBound1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1311,7 +1311,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_IsBound1(self, *args)
 
-    def IsBound2(self, *args):
+    def IsBound2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1320,7 +1320,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_IsBound2(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1329,7 +1329,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_Find1(self, *args)
 
-    def Find2(self, *args):
+    def Find2(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1338,7 +1338,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_Find2(self, *args)
 
-    def UnBind1(self, *args):
+    def UnBind1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1347,7 +1347,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_UnBind1(self, *args)
 
-    def UnBind2(self, *args):
+    def UnBind2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1356,7 +1356,7 @@ class TDF_AttributeDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeDoubleMap_UnBind2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_AttributeDoubleMap self)"""
         return _TDF.TDF_AttributeDoubleMap__kill_pointed(self)
 
@@ -1395,7 +1395,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_AttributeIndexedMap_swiginit(self,_TDF.new_TDF_AttributeIndexedMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeIndexedMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeIndexedMap &
@@ -1404,7 +1404,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeIndexedMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeIndexedMap &
@@ -1413,7 +1413,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1422,14 +1422,14 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeIndexedMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1438,7 +1438,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -1449,14 +1449,14 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeIndexedMap_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1465,7 +1465,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param I:
         :type I: int
@@ -1474,7 +1474,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_TDF_Attribute &
@@ -1483,7 +1483,7 @@ class TDF_AttributeIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeIndexedMap_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_AttributeIndexedMap self)"""
         return _TDF.TDF_AttributeIndexedMap__kill_pointed(self)
 
@@ -1530,7 +1530,7 @@ class TDF_AttributeIterator(object):
 
         """
         _TDF.TDF_AttributeIterator_swiginit(self,_TDF.new_TDF_AttributeIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aLabel:
         :type aLabel: TDF_Label &
@@ -1541,21 +1541,21 @@ class TDF_AttributeIterator(object):
         """
         return _TDF.TDF_AttributeIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: inline bool
 
         """
         return _TDF.TDF_AttributeIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Attribute *" :
         """
         :rtype: inline TDF_Attribute *
 
@@ -1587,7 +1587,7 @@ class TDF_AttributeList(object):
 
         """
         _TDF.TDF_AttributeList_swiginit(self,_TDF.new_TDF_AttributeList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_AttributeList &
@@ -1596,7 +1596,7 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_AttributeList &
@@ -1605,28 +1605,28 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_AttributeList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_AttributeList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Attribute &
@@ -1645,7 +1645,7 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Attribute &
@@ -1664,28 +1664,28 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_AttributeList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_AttributeList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDF_ListIteratorOfAttributeList &
@@ -1694,7 +1694,7 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Attribute &
@@ -1711,7 +1711,7 @@ class TDF_AttributeList(object):
         """
         return _TDF.TDF_AttributeList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Attribute &
@@ -1764,7 +1764,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_AttributeMap_swiginit(self,_TDF.new_TDF_AttributeMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeMap &
@@ -1773,7 +1773,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeMap &" :
         """
         :param Other:
         :type Other: TDF_AttributeMap &
@@ -1782,7 +1782,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1791,14 +1791,14 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_TDF_Attribute &
@@ -1807,7 +1807,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_TDF_Attribute &
@@ -1816,7 +1816,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_TDF_Attribute &
@@ -1825,7 +1825,7 @@ class TDF_AttributeMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_AttributeMap_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_AttributeMap self)"""
         return _TDF.TDF_AttributeMap__kill_pointed(self)
 
@@ -1857,14 +1857,14 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TDF.TDF_AttributeSequence_swiginit(self,_TDF.new_TDF_AttributeSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_AttributeSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_AttributeSequence const &" :
         """
         :param Other:
         :type Other: TDF_AttributeSequence &
@@ -1873,7 +1873,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_AttributeSequence const &" :
         """
         :param Other:
         :type Other: TDF_AttributeSequence &
@@ -1882,7 +1882,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDF_Attribute &
@@ -1895,7 +1895,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDF_Attribute &
@@ -1908,7 +1908,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1925,7 +1925,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1942,21 +1942,21 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_AttributeSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_AttributeSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1967,7 +1967,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param Index:
         :type Index: int
@@ -1976,7 +1976,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1987,7 +1987,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :param Index:
         :type Index: int
@@ -1996,7 +1996,7 @@ class TDF_AttributeSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_AttributeSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2058,7 +2058,7 @@ class TDF_ChildIDIterator(object):
 
         """
         _TDF.TDF_ChildIDIterator_swiginit(self,_TDF.new_TDF_ChildIDIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes the iteration on the children of the given label. If <allLevels> option is set to true, it explores not only the first, but all the sub label levels.
 
@@ -2073,7 +2073,7 @@ class TDF_ChildIDIterator(object):
         """
         return _TDF.TDF_ChildIDIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current Item in the iteration.
 
@@ -2082,7 +2082,7 @@ class TDF_ChildIDIterator(object):
         """
         return _TDF.TDF_ChildIDIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move to the next Item
 
@@ -2091,7 +2091,7 @@ class TDF_ChildIDIterator(object):
         """
         return _TDF.TDF_ChildIDIterator_Next(self, *args)
 
-    def NextBrother(self, *args):
+    def NextBrother(self, *args) -> "void" :
         """
         * Move to the next Brother. If there is none, go up etc. This method is interesting only with 'allLevels' behavior, because it avoids to explore the current label children.
 
@@ -2100,7 +2100,7 @@ class TDF_ChildIDIterator(object):
         """
         return _TDF.TDF_ChildIDIterator_NextBrother(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute" :
         """
         * Returns the current item; a null handle if there is none.
 
@@ -2145,7 +2145,7 @@ class TDF_ChildIterator(object):
 
         """
         _TDF.TDF_ChildIterator_swiginit(self,_TDF.new_TDF_ChildIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes the iteration on the children of the given label. If <allLevels> option is set to true, it explores not only the first, but all the sub label levels. If allLevels is false, only the first level of child labels is explored. In the example below, the label is iterated using Initialize, More and Next and its child labels dumped using TDF_Tool::Entry. Example void DumpChildren(const TDF_Label& aLabel) { TDF_ChildIterator it; TCollection_AsciiString es; for (it.Initialize(aLabel,Standard_True); it.More(); it.Next()){ TDF_Tool::Entry(it.Value(),es); cout << as.ToCString() << endl; } }
 
@@ -2158,7 +2158,7 @@ class TDF_ChildIterator(object):
         """
         return _TDF.TDF_ChildIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if a current label is found in the iteration process.
 
@@ -2167,7 +2167,7 @@ class TDF_ChildIterator(object):
         """
         return _TDF.TDF_ChildIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move the current iteration to the next Item.
 
@@ -2176,7 +2176,7 @@ class TDF_ChildIterator(object):
         """
         return _TDF.TDF_ChildIterator_Next(self, *args)
 
-    def NextBrother(self, *args):
+    def NextBrother(self, *args) -> "void" :
         """
         * Moves this iteration to the next brother label. A brother label is one with the same father as an initial label. Use this function when the non-empty constructor or Initialize has allLevels set to true. The result is that the iteration does not explore the children of the current label. This method is interesting only with 'allLevels' behavior, because it avoids to explore the current label children.
 
@@ -2185,7 +2185,7 @@ class TDF_ChildIterator(object):
         """
         return _TDF.TDF_ChildIterator_NextBrother(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const" :
         """
         * Returns the current label; or, if there is none, a null label.
 
@@ -2224,7 +2224,7 @@ class TDF_ClosureMode(object):
 
         """
         _TDF.TDF_ClosureMode_swiginit(self,_TDF.new_TDF_ClosureMode(*args))
-    def Descendants(self, *args):
+    def Descendants(self, *args) -> "Standard_Boolean" :
         """
         * Sets the mode 'Descendants' to <aStatus>.  'Descendants' mode means we add to the data set the children labels of each USER GIVEN label. We do not do that with the labels found applying UpToFirstLevel option.
 
@@ -2239,7 +2239,7 @@ class TDF_ClosureMode(object):
         """
         return _TDF.TDF_ClosureMode_Descendants(self, *args)
 
-    def References(self, *args):
+    def References(self, *args) -> "Standard_Boolean" :
         """
         * Sets the mode 'References' to <aStatus>.  'References' mode means we add to the data set the descendants of an attribute, by calling the attribute method Descendants().
 
@@ -2271,7 +2271,7 @@ TDF_ClosureMode_swigregister(TDF_ClosureMode)
 class TDF_ClosureTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Closure(*args):
+    def Closure(*args) -> "void" :
         """
         * Builds the transitive closure of label and attribute sets into <aDataSet>.
 
@@ -2321,7 +2321,7 @@ TDF_ClosureTool._kill_pointed = new_instancemethod(_TDF.TDF_ClosureTool__kill_po
 TDF_ClosureTool_swigregister = _TDF.TDF_ClosureTool_swigregister
 TDF_ClosureTool_swigregister(TDF_ClosureTool)
 
-def TDF_ClosureTool_Closure(*args):
+def TDF_ClosureTool_Closure(*args) -> "void" :
   """
     * Builds the transitive closure of label and attribute sets into <aDataSet>.
 
@@ -2359,7 +2359,7 @@ def TDF_ClosureTool_Closure(*args):
 class TDF_ComparisonTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Compare(*args):
+    def Compare(*args) -> "void" :
         """
         * Compares <aSourceDataSet> with <aTargetDataSet>, updating <aRelocationTable> with labels and attributes found in both sets.
 
@@ -2377,7 +2377,7 @@ class TDF_ComparisonTool(object):
         return _TDF.TDF_ComparisonTool_Compare(*args)
 
     Compare = staticmethod(Compare)
-    def SourceUnbound(*args):
+    def SourceUnbound(*args) -> "Standard_Boolean" :
         """
         * Finds from <aRefDataSet> all the keys not bound into <aRelocationTable> and put them into <aDiffDataSet>. Returns True if the difference contains at least one key. (A key is a source object).  <anOption> may take the following values: 1 : labels treatment only; 2 : attributes treatment only (default value); 3 : both labels & attributes treatment.
 
@@ -2397,7 +2397,7 @@ class TDF_ComparisonTool(object):
         return _TDF.TDF_ComparisonTool_SourceUnbound(*args)
 
     SourceUnbound = staticmethod(SourceUnbound)
-    def TargetUnbound(*args):
+    def TargetUnbound(*args) -> "Standard_Boolean" :
         """
         * Substracts from <aRefDataSet> all the items bound into <aRelocationTable>. The result is put into <aDiffDataSet>. Returns True if the difference contains at least one item. (An item is a target object).  <anOption> may take the following values: 1 : labels treatment only; 2 : attributes treatment only(default value); 3 : both labels & attributes treatment.
 
@@ -2417,7 +2417,7 @@ class TDF_ComparisonTool(object):
         return _TDF.TDF_ComparisonTool_TargetUnbound(*args)
 
     TargetUnbound = staticmethod(TargetUnbound)
-    def Cut(*args):
+    def Cut(*args) -> "void" :
         """
         * Removes attributes from <aDataSet>.
 
@@ -2429,7 +2429,7 @@ class TDF_ComparisonTool(object):
         return _TDF.TDF_ComparisonTool_Cut(*args)
 
     Cut = staticmethod(Cut)
-    def IsSelfContained(*args):
+    def IsSelfContained(*args) -> "Standard_Boolean" :
         """
         * Returns true if all the labels of <aDataSet> are descendant of <aLabel>.
 
@@ -2457,7 +2457,7 @@ TDF_ComparisonTool._kill_pointed = new_instancemethod(_TDF.TDF_ComparisonTool__k
 TDF_ComparisonTool_swigregister = _TDF.TDF_ComparisonTool_swigregister
 TDF_ComparisonTool_swigregister(TDF_ComparisonTool)
 
-def TDF_ComparisonTool_Compare(*args):
+def TDF_ComparisonTool_Compare(*args) -> "void" :
   """
     * Compares <aSourceDataSet> with <aTargetDataSet>, updating <aRelocationTable> with labels and attributes found in both sets.
 
@@ -2474,7 +2474,7 @@ def TDF_ComparisonTool_Compare(*args):
     """
   return _TDF.TDF_ComparisonTool_Compare(*args)
 
-def TDF_ComparisonTool_SourceUnbound(*args):
+def TDF_ComparisonTool_SourceUnbound(*args) -> "Standard_Boolean" :
   """
     * Finds from <aRefDataSet> all the keys not bound into <aRelocationTable> and put them into <aDiffDataSet>. Returns True if the difference contains at least one key. (A key is a source object).  <anOption> may take the following values: 1 : labels treatment only; 2 : attributes treatment only (default value); 3 : both labels & attributes treatment.
 
@@ -2493,7 +2493,7 @@ def TDF_ComparisonTool_SourceUnbound(*args):
     """
   return _TDF.TDF_ComparisonTool_SourceUnbound(*args)
 
-def TDF_ComparisonTool_TargetUnbound(*args):
+def TDF_ComparisonTool_TargetUnbound(*args) -> "Standard_Boolean" :
   """
     * Substracts from <aRefDataSet> all the items bound into <aRelocationTable>. The result is put into <aDiffDataSet>. Returns True if the difference contains at least one item. (An item is a target object).  <anOption> may take the following values: 1 : labels treatment only; 2 : attributes treatment only(default value); 3 : both labels & attributes treatment.
 
@@ -2512,7 +2512,7 @@ def TDF_ComparisonTool_TargetUnbound(*args):
     """
   return _TDF.TDF_ComparisonTool_TargetUnbound(*args)
 
-def TDF_ComparisonTool_Cut(*args):
+def TDF_ComparisonTool_Cut(*args) -> "void" :
   """
     * Removes attributes from <aDataSet>.
 
@@ -2523,7 +2523,7 @@ def TDF_ComparisonTool_Cut(*args):
     """
   return _TDF.TDF_ComparisonTool_Cut(*args)
 
-def TDF_ComparisonTool_IsSelfContained(*args):
+def TDF_ComparisonTool_IsSelfContained(*args) -> "Standard_Boolean" :
   """
     * Returns true if all the labels of <aDataSet> are descendant of <aLabel>.
 
@@ -2555,7 +2555,7 @@ class TDF_CopyLabel(object):
 
         """
         _TDF.TDF_CopyLabel_swiginit(self,_TDF.new_TDF_CopyLabel(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Loads src and tgt labels
 
@@ -2568,7 +2568,7 @@ class TDF_CopyLabel(object):
         """
         return _TDF.TDF_CopyLabel_Load(self, *args)
 
-    def UseFilter(self, *args):
+    def UseFilter(self, *args) -> "void" :
         """
         * Sets filter
 
@@ -2579,7 +2579,7 @@ class TDF_CopyLabel(object):
         """
         return _TDF.TDF_CopyLabel_UseFilter(self, *args)
 
-    def ExternalReferences(*args):
+    def ExternalReferences(*args) -> "void" :
         """
         * Check external references and if exist fills the aExternals Map
 
@@ -2609,7 +2609,7 @@ class TDF_CopyLabel(object):
         return _TDF.TDF_CopyLabel_ExternalReferences(*args)
 
     ExternalReferences = staticmethod(ExternalReferences)
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * performs algorithm of selfcontained copy
 
@@ -2618,14 +2618,14 @@ class TDF_CopyLabel(object):
         """
         return _TDF.TDF_CopyLabel_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_CopyLabel_IsDone(self, *args)
 
-    def RelocationTable(self, *args):
+    def RelocationTable(self, *args) -> "Handle_TDF_RelocationTable const &" :
         """
         * returns relocation table
 
@@ -2651,7 +2651,7 @@ TDF_CopyLabel._kill_pointed = new_instancemethod(_TDF.TDF_CopyLabel__kill_pointe
 TDF_CopyLabel_swigregister = _TDF.TDF_CopyLabel_swigregister
 TDF_CopyLabel_swigregister(TDF_CopyLabel)
 
-def TDF_CopyLabel_ExternalReferences(*args):
+def TDF_CopyLabel_ExternalReferences(*args) -> "void" :
   """
     * Check external references and if exist fills the aExternals Map
 
@@ -2683,7 +2683,7 @@ def TDF_CopyLabel_ExternalReferences(*args):
 class TDF_CopyTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Copy(*args):
+    def Copy(*args) -> "void" :
         """
         * Copy <aSourceDataSet> with using and updating <aRelocationTable>. This method ignores target attributes privilege over source ones.
 
@@ -2735,7 +2735,7 @@ TDF_CopyTool._kill_pointed = new_instancemethod(_TDF.TDF_CopyTool__kill_pointed,
 TDF_CopyTool_swigregister = _TDF.TDF_CopyTool_swigregister
 TDF_CopyTool_swigregister(TDF_CopyTool)
 
-def TDF_CopyTool_Copy(*args):
+def TDF_CopyTool_Copy(*args) -> "void" :
   """
     * Copy <aSourceDataSet> with using and updating <aRelocationTable>. This method ignores target attributes privilege over source ones.
 
@@ -2783,7 +2783,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
 
         """
         _TDF.TDF_Data_swiginit(self,_TDF.new_TDF_Data(*args))
-    def Root(self, *args):
+    def Root(self, *args) -> "TDF_Label const" :
         """
         * Returns the root label of the Data structure.
 
@@ -2792,7 +2792,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_Root(self, *args)
 
-    def Transaction(self, *args):
+    def Transaction(self, *args) -> "Standard_Integer" :
         """
         * Returns the current transaction number.
 
@@ -2801,7 +2801,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_Transaction(self, *args)
 
-    def Time(self, *args):
+    def Time(self, *args) -> "Standard_Integer" :
         """
         * Returns the current tick. It is incremented each Commit.
 
@@ -2810,7 +2810,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_Time(self, *args)
 
-    def IsApplicable(self, *args):
+    def IsApplicable(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if <aDelta> is applicable HERE and NOW.
 
@@ -2821,7 +2821,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_IsApplicable(self, *args)
 
-    def Undo(self, *args):
+    def Undo(self, *args) -> "Handle_TDF_Delta" :
         """
         * Apply <aDelta> to undo a set of attribute modifications.  Optionnal <withDelta> set to True indiquates a Delta Set must be generated. (See above)
 
@@ -2834,14 +2834,14 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_Undo(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_Data_Destroy(self, *args)
 
-    def NotUndoMode(self, *args):
+    def NotUndoMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the undo mode status.
 
@@ -2850,11 +2850,11 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_NotUndoMode(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_Data self) -> std::string"""
         return _TDF.TDF_Data_DumpToString(self)
 
-    def AllowModification(self, *args):
+    def AllowModification(self, *args) -> "void" :
         """
         * Sets modification mode.
 
@@ -2865,7 +2865,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_AllowModification(self, *args)
 
-    def IsModificationAllowed(self, *args):
+    def IsModificationAllowed(self, *args) -> "Standard_Boolean" :
         """
         * returns modification mode.
 
@@ -2874,7 +2874,7 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_IsModificationAllowed(self, *args)
 
-    def LabelNodeAllocator(self, *args):
+    def LabelNodeAllocator(self, *args) -> "TDF_HAllocator const &" :
         """
         * Returns TDF_HAllocator, which is an incremental allocator used by TDF_LabelNode. This allocator is used to manage TDF_LabelNode objects, but it can also be used for allocating memory to application-specific data (be careful because this allocator does not release the memory). The benefits of this allocation scheme are noticeable when dealing with large OCAF documents, due to: 1. Very quick allocation of objects (memory heap is not used, the algorithm that replaces it is very simple). 2. Very quick destruction of objects (memory is released not by destructors of TDF_LabelNode, but rather by the destructor of TDF_Data). 3. TDF_LabelNode objects do not fragmentize the memory; they are kept compactly in a number of arrays of 16K each. 4. Swapping is reduced on large data, because each document now occupies a smaller number of memory pages.
 
@@ -2883,11 +2883,11 @@ class TDF_Data(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Data_LabelNodeAllocator(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_Data self)"""
         return _TDF.TDF_Data__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_Data" :
         """GetHandle(TDF_Data self) -> Handle_TDF_Data"""
         return _TDF.TDF_Data_GetHandle(self)
 
@@ -2936,7 +2936,7 @@ Handle_TDF_Data._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Data__kill_po
 Handle_TDF_Data_swigregister = _TDF.Handle_TDF_Data_swigregister
 Handle_TDF_Data_swigregister(Handle_TDF_Data)
 
-def Handle_TDF_Data_DownCast(*args):
+def Handle_TDF_Data_DownCast(*args) -> "Handle_TDF_Data const" :
   return _TDF.Handle_TDF_Data_DownCast(*args)
 Handle_TDF_Data_DownCast = _TDF.Handle_TDF_Data_DownCast
 
@@ -2953,7 +2953,7 @@ class TDF_DataMapIteratorOfAttributeDataMap(OCC.TCollection.TCollection_BasicMap
 
         """
         _TDF.TDF_DataMapIteratorOfAttributeDataMap_swiginit(self,_TDF.new_TDF_DataMapIteratorOfAttributeDataMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_AttributeDataMap &
@@ -2962,14 +2962,14 @@ class TDF_DataMapIteratorOfAttributeDataMap(OCC.TCollection.TCollection_BasicMap
         """
         return _TDF.TDF_DataMapIteratorOfAttributeDataMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DataMapIteratorOfAttributeDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
@@ -3004,7 +3004,7 @@ class TDF_DataMapIteratorOfLabelDataMap(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _TDF.TDF_DataMapIteratorOfLabelDataMap_swiginit(self,_TDF.new_TDF_DataMapIteratorOfLabelDataMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_LabelDataMap &
@@ -3013,14 +3013,14 @@ class TDF_DataMapIteratorOfLabelDataMap(OCC.TCollection.TCollection_BasicMapIter
         """
         return _TDF.TDF_DataMapIteratorOfLabelDataMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapIteratorOfLabelDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -3055,7 +3055,7 @@ class TDF_DataMapIteratorOfLabelIntegerMap(OCC.TCollection.TCollection_BasicMapI
 
         """
         _TDF.TDF_DataMapIteratorOfLabelIntegerMap_swiginit(self,_TDF.new_TDF_DataMapIteratorOfLabelIntegerMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_LabelIntegerMap &
@@ -3064,14 +3064,14 @@ class TDF_DataMapIteratorOfLabelIntegerMap(OCC.TCollection.TCollection_BasicMapI
         """
         return _TDF.TDF_DataMapIteratorOfLabelIntegerMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapIteratorOfLabelIntegerMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -3106,7 +3106,7 @@ class TDF_DataMapIteratorOfLabelLabelMap(OCC.TCollection.TCollection_BasicMapIte
 
         """
         _TDF.TDF_DataMapIteratorOfLabelLabelMap_swiginit(self,_TDF.new_TDF_DataMapIteratorOfLabelLabelMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_LabelLabelMap &
@@ -3115,14 +3115,14 @@ class TDF_DataMapIteratorOfLabelLabelMap(OCC.TCollection.TCollection_BasicMapIte
         """
         return _TDF.TDF_DataMapIteratorOfLabelLabelMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapIteratorOfLabelLabelMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -3159,25 +3159,25 @@ class TDF_DataMapNodeOfAttributeDataMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DataMapNodeOfAttributeDataMap_swiginit(self,_TDF.new_TDF_DataMapNodeOfAttributeDataMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DataMapNodeOfAttributeDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DataMapNodeOfAttributeDataMap_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DataMapNodeOfAttributeDataMap self)"""
         return _TDF.TDF_DataMapNodeOfAttributeDataMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DataMapNodeOfAttributeDataMap" :
         """GetHandle(TDF_DataMapNodeOfAttributeDataMap self) -> Handle_TDF_DataMapNodeOfAttributeDataMap"""
         return _TDF.TDF_DataMapNodeOfAttributeDataMap_GetHandle(self)
 
@@ -3217,7 +3217,7 @@ Handle_TDF_DataMapNodeOfAttributeDataMap._kill_pointed = new_instancemethod(_TDF
 Handle_TDF_DataMapNodeOfAttributeDataMap_swigregister = _TDF.Handle_TDF_DataMapNodeOfAttributeDataMap_swigregister
 Handle_TDF_DataMapNodeOfAttributeDataMap_swigregister(Handle_TDF_DataMapNodeOfAttributeDataMap)
 
-def Handle_TDF_DataMapNodeOfAttributeDataMap_DownCast(*args):
+def Handle_TDF_DataMapNodeOfAttributeDataMap_DownCast(*args) -> "Handle_TDF_DataMapNodeOfAttributeDataMap const" :
   return _TDF.Handle_TDF_DataMapNodeOfAttributeDataMap_DownCast(*args)
 Handle_TDF_DataMapNodeOfAttributeDataMap_DownCast = _TDF.Handle_TDF_DataMapNodeOfAttributeDataMap_DownCast
 
@@ -3236,25 +3236,25 @@ class TDF_DataMapNodeOfLabelDataMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DataMapNodeOfLabelDataMap_swiginit(self,_TDF.new_TDF_DataMapNodeOfLabelDataMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapNodeOfLabelDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapNodeOfLabelDataMap_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DataMapNodeOfLabelDataMap self)"""
         return _TDF.TDF_DataMapNodeOfLabelDataMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DataMapNodeOfLabelDataMap" :
         """GetHandle(TDF_DataMapNodeOfLabelDataMap self) -> Handle_TDF_DataMapNodeOfLabelDataMap"""
         return _TDF.TDF_DataMapNodeOfLabelDataMap_GetHandle(self)
 
@@ -3294,7 +3294,7 @@ Handle_TDF_DataMapNodeOfLabelDataMap._kill_pointed = new_instancemethod(_TDF.Han
 Handle_TDF_DataMapNodeOfLabelDataMap_swigregister = _TDF.Handle_TDF_DataMapNodeOfLabelDataMap_swigregister
 Handle_TDF_DataMapNodeOfLabelDataMap_swigregister(Handle_TDF_DataMapNodeOfLabelDataMap)
 
-def Handle_TDF_DataMapNodeOfLabelDataMap_DownCast(*args):
+def Handle_TDF_DataMapNodeOfLabelDataMap_DownCast(*args) -> "Handle_TDF_DataMapNodeOfLabelDataMap const" :
   return _TDF.Handle_TDF_DataMapNodeOfLabelDataMap_DownCast(*args)
 Handle_TDF_DataMapNodeOfLabelDataMap_DownCast = _TDF.Handle_TDF_DataMapNodeOfLabelDataMap_DownCast
 
@@ -3313,26 +3313,26 @@ class TDF_DataMapNodeOfLabelIntegerMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DataMapNodeOfLabelIntegerMap_swiginit(self,_TDF.new_TDF_DataMapNodeOfLabelIntegerMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapNodeOfLabelIntegerMap_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(TDF_DataMapNodeOfLabelIntegerMap self) -> Standard_Integer"""
         return _TDF.TDF_DataMapNodeOfLabelIntegerMap_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(TDF_DataMapNodeOfLabelIntegerMap self, Standard_Integer value)"""
         return _TDF.TDF_DataMapNodeOfLabelIntegerMap_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DataMapNodeOfLabelIntegerMap self)"""
         return _TDF.TDF_DataMapNodeOfLabelIntegerMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DataMapNodeOfLabelIntegerMap" :
         """GetHandle(TDF_DataMapNodeOfLabelIntegerMap self) -> Handle_TDF_DataMapNodeOfLabelIntegerMap"""
         return _TDF.TDF_DataMapNodeOfLabelIntegerMap_GetHandle(self)
 
@@ -3373,7 +3373,7 @@ Handle_TDF_DataMapNodeOfLabelIntegerMap._kill_pointed = new_instancemethod(_TDF.
 Handle_TDF_DataMapNodeOfLabelIntegerMap_swigregister = _TDF.Handle_TDF_DataMapNodeOfLabelIntegerMap_swigregister
 Handle_TDF_DataMapNodeOfLabelIntegerMap_swigregister(Handle_TDF_DataMapNodeOfLabelIntegerMap)
 
-def Handle_TDF_DataMapNodeOfLabelIntegerMap_DownCast(*args):
+def Handle_TDF_DataMapNodeOfLabelIntegerMap_DownCast(*args) -> "Handle_TDF_DataMapNodeOfLabelIntegerMap const" :
   return _TDF.Handle_TDF_DataMapNodeOfLabelIntegerMap_DownCast(*args)
 Handle_TDF_DataMapNodeOfLabelIntegerMap_DownCast = _TDF.Handle_TDF_DataMapNodeOfLabelIntegerMap_DownCast
 
@@ -3392,25 +3392,25 @@ class TDF_DataMapNodeOfLabelLabelMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DataMapNodeOfLabelLabelMap_swiginit(self,_TDF.new_TDF_DataMapNodeOfLabelLabelMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapNodeOfLabelLabelMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DataMapNodeOfLabelLabelMap_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DataMapNodeOfLabelLabelMap self)"""
         return _TDF.TDF_DataMapNodeOfLabelLabelMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DataMapNodeOfLabelLabelMap" :
         """GetHandle(TDF_DataMapNodeOfLabelLabelMap self) -> Handle_TDF_DataMapNodeOfLabelLabelMap"""
         return _TDF.TDF_DataMapNodeOfLabelLabelMap_GetHandle(self)
 
@@ -3450,7 +3450,7 @@ Handle_TDF_DataMapNodeOfLabelLabelMap._kill_pointed = new_instancemethod(_TDF.Ha
 Handle_TDF_DataMapNodeOfLabelLabelMap_swigregister = _TDF.Handle_TDF_DataMapNodeOfLabelLabelMap_swigregister
 Handle_TDF_DataMapNodeOfLabelLabelMap_swigregister(Handle_TDF_DataMapNodeOfLabelLabelMap)
 
-def Handle_TDF_DataMapNodeOfLabelLabelMap_DownCast(*args):
+def Handle_TDF_DataMapNodeOfLabelLabelMap_DownCast(*args) -> "Handle_TDF_DataMapNodeOfLabelLabelMap const" :
   return _TDF.Handle_TDF_DataMapNodeOfLabelLabelMap_DownCast(*args)
 Handle_TDF_DataMapNodeOfLabelLabelMap_DownCast = _TDF.Handle_TDF_DataMapNodeOfLabelLabelMap_DownCast
 
@@ -3465,7 +3465,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
 
         """
         _TDF.TDF_DataSet_swiginit(self,_TDF.new_TDF_DataSet(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears all information.
 
@@ -3474,7 +3474,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is at least one label or one attribute.
 
@@ -3483,7 +3483,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_IsEmpty(self, *args)
 
-    def AddLabel(self, *args):
+    def AddLabel(self, *args) -> "void" :
         """
         * Adds <aLabel> in the current data set.
 
@@ -3494,7 +3494,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_AddLabel(self, *args)
 
-    def ContainsLabel(self, *args):
+    def ContainsLabel(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the label <alabel> is in the data set.
 
@@ -3505,7 +3505,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_ContainsLabel(self, *args)
 
-    def Labels(self, *args):
+    def Labels(self, *args) -> "TDF_LabelMap &" :
         """
         * Returns the map of labels in this data set. This map can be used directly, or updated.
 
@@ -3514,7 +3514,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_Labels(self, *args)
 
-    def AddAttribute(self, *args):
+    def AddAttribute(self, *args) -> "void" :
         """
         * Adds <anAttribute> into the current data set.
 
@@ -3525,7 +3525,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_AddAttribute(self, *args)
 
-    def ContainsAttribute(self, *args):
+    def ContainsAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if <anAttribute> is in the data set.
 
@@ -3536,7 +3536,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_ContainsAttribute(self, *args)
 
-    def Attributes(self, *args):
+    def Attributes(self, *args) -> "TDF_AttributeMap &" :
         """
         * Returns the map of attributes in the current data set. This map can be used directly, or updated.
 
@@ -3545,7 +3545,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_Attributes(self, *args)
 
-    def AddRoot(self, *args):
+    def AddRoot(self, *args) -> "void" :
         """
         * Adds a root label to <myRootLabels>.
 
@@ -3556,7 +3556,7 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_AddRoot(self, *args)
 
-    def Roots(self, *args):
+    def Roots(self, *args) -> "TDF_LabelList &" :
         """
         * Returns <myRootLabels> to be used or updated.
 
@@ -3565,15 +3565,15 @@ class TDF_DataSet(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_DataSet_Roots(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_DataSet self) -> std::string"""
         return _TDF.TDF_DataSet_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DataSet self)"""
         return _TDF.TDF_DataSet__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DataSet" :
         """GetHandle(TDF_DataSet self) -> Handle_TDF_DataSet"""
         return _TDF.TDF_DataSet_GetHandle(self)
 
@@ -3622,7 +3622,7 @@ Handle_TDF_DataSet._kill_pointed = new_instancemethod(_TDF.Handle_TDF_DataSet__k
 Handle_TDF_DataSet_swigregister = _TDF.Handle_TDF_DataSet_swigregister
 Handle_TDF_DataSet_swigregister(Handle_TDF_DataSet)
 
-def Handle_TDF_DataSet_DownCast(*args):
+def Handle_TDF_DataSet_DownCast(*args) -> "Handle_TDF_DataSet const" :
   return _TDF.Handle_TDF_DataSet_DownCast(*args)
 Handle_TDF_DataSet_DownCast = _TDF.Handle_TDF_DataSet_DownCast
 
@@ -3637,7 +3637,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
 
         """
         _TDF.TDF_Delta_swiginit(self,_TDF.new_TDF_Delta(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is nothing to undo.
 
@@ -3646,7 +3646,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_IsEmpty(self, *args)
 
-    def IsApplicable(self, *args):
+    def IsApplicable(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Undo action of <self> is applicable at <aCurrentTime>.
 
@@ -3657,7 +3657,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_IsApplicable(self, *args)
 
-    def BeginTime(self, *args):
+    def BeginTime(self, *args) -> "Standard_Integer" :
         """
         * Returns the field <myBeginTime>.
 
@@ -3666,7 +3666,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_BeginTime(self, *args)
 
-    def EndTime(self, *args):
+    def EndTime(self, *args) -> "Standard_Integer" :
         """
         * Returns the field <myEndTime>.
 
@@ -3675,7 +3675,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_EndTime(self, *args)
 
-    def Labels(self, *args):
+    def Labels(self, *args) -> "void" :
         """
         * Adds in <aLabelList> the labels of the attribute deltas. Caution: <aLabelList> is not cleared before use.
 
@@ -3686,7 +3686,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_Labels(self, *args)
 
-    def AttributeDeltas(self, *args):
+    def AttributeDeltas(self, *args) -> "TDF_AttributeDeltaList const &" :
         """
         * Returns the field <myAttDeltaList>.
 
@@ -3695,7 +3695,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_AttributeDeltas(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_ExtendedString" :
         """
         * Returns a name associated with this delta.
 
@@ -3704,7 +3704,7 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_Name(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         * Associates a name <theName> with this delta
 
@@ -3715,15 +3715,15 @@ class TDF_Delta(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_Delta_SetName(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_Delta self) -> std::string"""
         return _TDF.TDF_Delta_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_Delta self)"""
         return _TDF.TDF_Delta__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_Delta" :
         """GetHandle(TDF_Delta self) -> Handle_TDF_Delta"""
         return _TDF.TDF_Delta_GetHandle(self)
 
@@ -3770,7 +3770,7 @@ Handle_TDF_Delta._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Delta__kill_
 Handle_TDF_Delta_swigregister = _TDF.Handle_TDF_Delta_swigregister
 Handle_TDF_Delta_swigregister(Handle_TDF_Delta)
 
-def Handle_TDF_Delta_DownCast(*args):
+def Handle_TDF_Delta_DownCast(*args) -> "Handle_TDF_Delta const" :
   return _TDF.Handle_TDF_Delta_DownCast(*args)
 Handle_TDF_Delta_DownCast = _TDF.Handle_TDF_Delta_DownCast
 
@@ -3783,7 +3783,7 @@ class TDF_DeltaList(object):
 
         """
         _TDF.TDF_DeltaList_swiginit(self,_TDF.new_TDF_DeltaList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_DeltaList &
@@ -3792,7 +3792,7 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_DeltaList &
@@ -3801,28 +3801,28 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_DeltaList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_DeltaList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_DeltaList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Delta &
@@ -3841,7 +3841,7 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Delta &
@@ -3860,28 +3860,28 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDF_Delta &" :
         """
         :rtype: Handle_TDF_Delta
 
         """
         return _TDF.TDF_DeltaList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDF_Delta &" :
         """
         :rtype: Handle_TDF_Delta
 
         """
         return _TDF.TDF_DeltaList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_DeltaList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDF_ListIteratorOfDeltaList &
@@ -3890,7 +3890,7 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Delta &
@@ -3907,7 +3907,7 @@ class TDF_DeltaList(object):
         """
         return _TDF.TDF_DeltaList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_TDF_Delta &
@@ -3962,7 +3962,7 @@ class TDF_DoubleMapIteratorOfAttributeDoubleMap(OCC.TCollection.TCollection_Basi
 
         """
         _TDF.TDF_DoubleMapIteratorOfAttributeDoubleMap_swiginit(self,_TDF.new_TDF_DoubleMapIteratorOfAttributeDoubleMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_AttributeDoubleMap &
@@ -3971,14 +3971,14 @@ class TDF_DoubleMapIteratorOfAttributeDoubleMap(OCC.TCollection.TCollection_Basi
         """
         return _TDF.TDF_DoubleMapIteratorOfAttributeDoubleMap_Initialize(self, *args)
 
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DoubleMapIteratorOfAttributeDoubleMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
@@ -4013,7 +4013,7 @@ class TDF_DoubleMapIteratorOfGUIDProgIDMap(OCC.TCollection.TCollection_BasicMapI
 
         """
         _TDF.TDF_DoubleMapIteratorOfGUIDProgIDMap_swiginit(self,_TDF.new_TDF_DoubleMapIteratorOfGUIDProgIDMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_GUIDProgIDMap &
@@ -4022,14 +4022,14 @@ class TDF_DoubleMapIteratorOfGUIDProgIDMap(OCC.TCollection.TCollection_BasicMapI
         """
         return _TDF.TDF_DoubleMapIteratorOfGUIDProgIDMap_Initialize(self, *args)
 
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_DoubleMapIteratorOfGUIDProgIDMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
@@ -4064,7 +4064,7 @@ class TDF_DoubleMapIteratorOfLabelDoubleMap(OCC.TCollection.TCollection_BasicMap
 
         """
         _TDF.TDF_DoubleMapIteratorOfLabelDoubleMap_swiginit(self,_TDF.new_TDF_DoubleMapIteratorOfLabelDoubleMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_LabelDoubleMap &
@@ -4073,14 +4073,14 @@ class TDF_DoubleMapIteratorOfLabelDoubleMap(OCC.TCollection.TCollection_BasicMap
         """
         return _TDF.TDF_DoubleMapIteratorOfLabelDoubleMap_Initialize(self, *args)
 
-    def Key1(self, *args):
+    def Key1(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DoubleMapIteratorOfLabelDoubleMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -4119,32 +4119,32 @@ class TDF_DoubleMapNodeOfAttributeDoubleMap(OCC.TCollection.TCollection_MapNode)
 
         """
         _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap_swiginit(self,_TDF.new_TDF_DoubleMapNodeOfAttributeDoubleMap(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap_Key2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DoubleMapNodeOfAttributeDoubleMap self)"""
         return _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DoubleMapNodeOfAttributeDoubleMap" :
         """GetHandle(TDF_DoubleMapNodeOfAttributeDoubleMap self) -> Handle_TDF_DoubleMapNodeOfAttributeDoubleMap"""
         return _TDF.TDF_DoubleMapNodeOfAttributeDoubleMap_GetHandle(self)
 
@@ -4185,7 +4185,7 @@ Handle_TDF_DoubleMapNodeOfAttributeDoubleMap._kill_pointed = new_instancemethod(
 Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_swigregister = _TDF.Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_swigregister
 Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_swigregister(Handle_TDF_DoubleMapNodeOfAttributeDoubleMap)
 
-def Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_DownCast(*args):
+def Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_DownCast(*args) -> "Handle_TDF_DoubleMapNodeOfAttributeDoubleMap const" :
   return _TDF.Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_DownCast(*args)
 Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_DownCast = _TDF.Handle_TDF_DoubleMapNodeOfAttributeDoubleMap_DownCast
 
@@ -4206,32 +4206,32 @@ class TDF_DoubleMapNodeOfGUIDProgIDMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap_swiginit(self,_TDF.new_TDF_DoubleMapNodeOfGUIDProgIDMap(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TCollection_ExtendedString &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap_Key2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DoubleMapNodeOfGUIDProgIDMap self)"""
         return _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DoubleMapNodeOfGUIDProgIDMap" :
         """GetHandle(TDF_DoubleMapNodeOfGUIDProgIDMap self) -> Handle_TDF_DoubleMapNodeOfGUIDProgIDMap"""
         return _TDF.TDF_DoubleMapNodeOfGUIDProgIDMap_GetHandle(self)
 
@@ -4272,7 +4272,7 @@ Handle_TDF_DoubleMapNodeOfGUIDProgIDMap._kill_pointed = new_instancemethod(_TDF.
 Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_swigregister = _TDF.Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_swigregister
 Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_swigregister(Handle_TDF_DoubleMapNodeOfGUIDProgIDMap)
 
-def Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_DownCast(*args):
+def Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_DownCast(*args) -> "Handle_TDF_DoubleMapNodeOfGUIDProgIDMap const" :
   return _TDF.Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_DownCast(*args)
 Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_DownCast = _TDF.Handle_TDF_DoubleMapNodeOfGUIDProgIDMap_DownCast
 
@@ -4293,32 +4293,32 @@ class TDF_DoubleMapNodeOfLabelDoubleMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_DoubleMapNodeOfLabelDoubleMap_swiginit(self,_TDF.new_TDF_DoubleMapNodeOfLabelDoubleMap(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DoubleMapNodeOfLabelDoubleMap_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_DoubleMapNodeOfLabelDoubleMap_Key2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TDF.TDF_DoubleMapNodeOfLabelDoubleMap_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DoubleMapNodeOfLabelDoubleMap self)"""
         return _TDF.TDF_DoubleMapNodeOfLabelDoubleMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DoubleMapNodeOfLabelDoubleMap" :
         """GetHandle(TDF_DoubleMapNodeOfLabelDoubleMap self) -> Handle_TDF_DoubleMapNodeOfLabelDoubleMap"""
         return _TDF.TDF_DoubleMapNodeOfLabelDoubleMap_GetHandle(self)
 
@@ -4359,7 +4359,7 @@ Handle_TDF_DoubleMapNodeOfLabelDoubleMap._kill_pointed = new_instancemethod(_TDF
 Handle_TDF_DoubleMapNodeOfLabelDoubleMap_swigregister = _TDF.Handle_TDF_DoubleMapNodeOfLabelDoubleMap_swigregister
 Handle_TDF_DoubleMapNodeOfLabelDoubleMap_swigregister(Handle_TDF_DoubleMapNodeOfLabelDoubleMap)
 
-def Handle_TDF_DoubleMapNodeOfLabelDoubleMap_DownCast(*args):
+def Handle_TDF_DoubleMapNodeOfLabelDoubleMap_DownCast(*args) -> "Handle_TDF_DoubleMapNodeOfLabelDoubleMap const" :
   return _TDF.Handle_TDF_DoubleMapNodeOfLabelDoubleMap_DownCast(*args)
 Handle_TDF_DoubleMapNodeOfLabelDoubleMap_DownCast = _TDF.Handle_TDF_DoubleMapNodeOfLabelDoubleMap_DownCast
 
@@ -4374,7 +4374,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_GUIDProgIDMap_swiginit(self,_TDF.new_TDF_GUIDProgIDMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_GUIDProgIDMap &" :
         """
         :param Other:
         :type Other: TDF_GUIDProgIDMap &
@@ -4383,7 +4383,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_GUIDProgIDMap &" :
         """
         :param Other:
         :type Other: TDF_GUIDProgIDMap &
@@ -4392,7 +4392,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -4401,14 +4401,14 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_GUIDProgIDMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param K1:
         :type K1: Standard_GUID &
@@ -4419,7 +4419,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_Bind(self, *args)
 
-    def AreBound(self, *args):
+    def AreBound(self, *args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: Standard_GUID &
@@ -4430,7 +4430,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_AreBound(self, *args)
 
-    def IsBound1(self, *args):
+    def IsBound1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -4439,7 +4439,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_IsBound1(self, *args)
 
-    def IsBound2(self, *args):
+    def IsBound2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -4448,7 +4448,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_IsBound2(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -4457,7 +4457,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_Find1(self, *args)
 
-    def Find2(self, *args):
+    def Find2(self, *args) -> "Standard_GUID const &" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -4466,7 +4466,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_Find2(self, *args)
 
-    def UnBind1(self, *args):
+    def UnBind1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -4475,7 +4475,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_UnBind1(self, *args)
 
-    def UnBind2(self, *args):
+    def UnBind2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TCollection_ExtendedString &
@@ -4484,7 +4484,7 @@ class TDF_GUIDProgIDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_GUIDProgIDMap_UnBind2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_GUIDProgIDMap self)"""
         return _TDF.TDF_GUIDProgIDMap__kill_pointed(self)
 
@@ -4533,7 +4533,7 @@ class TDF_HAttributeArray1(OCC.MMgt.MMgt_TShared):
 
         """
         _TDF.TDF_HAttributeArray1_swiginit(self,_TDF.new_TDF_HAttributeArray1(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_TDF_Attribute &
@@ -4542,28 +4542,28 @@ class TDF_HAttributeArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_HAttributeArray1_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_HAttributeArray1_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_HAttributeArray1_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_HAttributeArray1_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4574,7 +4574,7 @@ class TDF_HAttributeArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_HAttributeArray1_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :param Index:
         :type Index: int
@@ -4583,7 +4583,7 @@ class TDF_HAttributeArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_HAttributeArray1_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :param Index:
         :type Index: int
@@ -4592,25 +4592,25 @@ class TDF_HAttributeArray1(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_HAttributeArray1_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TDF_AttributeArray1 const &" :
         """
         :rtype: TDF_AttributeArray1
 
         """
         return _TDF.TDF_HAttributeArray1_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TDF_AttributeArray1 &" :
         """
         :rtype: TDF_AttributeArray1
 
         """
         return _TDF.TDF_HAttributeArray1_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_HAttributeArray1 self)"""
         return _TDF.TDF_HAttributeArray1__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_HAttributeArray1" :
         """GetHandle(TDF_HAttributeArray1 self) -> Handle_TDF_HAttributeArray1"""
         return _TDF.TDF_HAttributeArray1_GetHandle(self)
 
@@ -4657,7 +4657,7 @@ Handle_TDF_HAttributeArray1._kill_pointed = new_instancemethod(_TDF.Handle_TDF_H
 Handle_TDF_HAttributeArray1_swigregister = _TDF.Handle_TDF_HAttributeArray1_swigregister
 Handle_TDF_HAttributeArray1_swigregister(Handle_TDF_HAttributeArray1)
 
-def Handle_TDF_HAttributeArray1_DownCast(*args):
+def Handle_TDF_HAttributeArray1_DownCast(*args) -> "Handle_TDF_HAttributeArray1 const" :
   return _TDF.Handle_TDF_HAttributeArray1_DownCast(*args)
 Handle_TDF_HAttributeArray1_DownCast = _TDF.Handle_TDF_HAttributeArray1_DownCast
 
@@ -4674,7 +4674,7 @@ class TDF_IDFilter(object):
 
         """
         _TDF.TDF_IDFilter_swiginit(self,_TDF.new_TDF_IDFilter(*args))
-    def IgnoreAll(self, *args):
+    def IgnoreAll(self, *args) -> "Standard_Boolean" :
         """
         * The list of ID is cleared and the filter mode is set to ignore mode if <keep> is true; false otherwise.
 
@@ -4689,7 +4689,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_IgnoreAll(self, *args)
 
-    def Keep(self, *args):
+    def Keep(self, *args) -> "void" :
         """
         * An attribute with <anID> as ID is to be kept and the filter will answer true to the question IsKept(<anID>).
 
@@ -4706,7 +4706,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_Keep(self, *args)
 
-    def Ignore(self, *args):
+    def Ignore(self, *args) -> "void" :
         """
         * An attribute with <anID> as ID is to be ignored and the filter will answer false to the question IsKept(<anID>).
 
@@ -4723,7 +4723,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_Ignore(self, *args)
 
-    def IsKept(self, *args):
+    def IsKept(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the ID is to be kept.
 
@@ -4740,7 +4740,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_IsKept(self, *args)
 
-    def IsIgnored(self, *args):
+    def IsIgnored(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the ID is to be ignored.
 
@@ -4757,7 +4757,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_IsIgnored(self, *args)
 
-    def IDList(self, *args):
+    def IDList(self, *args) -> "void" :
         """
         * Copies the list of ID to be kept or ignored in <anIDList>. <anIDList> is cleared before use.
 
@@ -4768,7 +4768,7 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_IDList(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * Copies into <self> the contents of <fromFilter>. <self> is cleared before copy.
 
@@ -4779,11 +4779,11 @@ class TDF_IDFilter(object):
         """
         return _TDF.TDF_IDFilter_Copy(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_IDFilter self) -> std::string"""
         return _TDF.TDF_IDFilter_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_IDFilter self)"""
         return _TDF.TDF_IDFilter__kill_pointed(self)
 
@@ -4816,7 +4816,7 @@ class TDF_IDList(object):
 
         """
         _TDF.TDF_IDList_swiginit(self,_TDF.new_TDF_IDList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_IDList &
@@ -4825,7 +4825,7 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_IDList &
@@ -4834,28 +4834,28 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_IDList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_IDList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_IDList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_GUID &
@@ -4874,7 +4874,7 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_GUID &
@@ -4893,28 +4893,28 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_IDList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_IDList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_IDList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDF_ListIteratorOfIDList &
@@ -4923,7 +4923,7 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_GUID &
@@ -4940,7 +4940,7 @@ class TDF_IDList(object):
         """
         return _TDF.TDF_IDList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Standard_GUID &
@@ -4993,7 +4993,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_IDMap_swiginit(self,_TDF.new_TDF_IDMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_IDMap &" :
         """
         :param Other:
         :type Other: TDF_IDMap &
@@ -5002,7 +5002,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_IDMap &" :
         """
         :param Other:
         :type Other: TDF_IDMap &
@@ -5011,7 +5011,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5020,14 +5020,14 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_IDMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Standard_GUID &
@@ -5036,7 +5036,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Standard_GUID &
@@ -5045,7 +5045,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Standard_GUID &
@@ -5054,7 +5054,7 @@ class TDF_IDMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_IDMap_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_IDMap self)"""
         return _TDF.TDF_IDMap__kill_pointed(self)
 
@@ -5094,33 +5094,33 @@ class TDF_IndexedMapNodeOfAttributeIndexedMap(OCC.TCollection.TCollection_MapNod
 
         """
         _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_swiginit(self,_TDF.new_TDF_IndexedMapNodeOfAttributeIndexedMap(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TDF_IndexedMapNodeOfAttributeIndexedMap self) -> Standard_Integer"""
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TDF_IndexedMapNodeOfAttributeIndexedMap self, Standard_Integer value)"""
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_IndexedMapNodeOfAttributeIndexedMap self)"""
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_IndexedMapNodeOfAttributeIndexedMap" :
         """GetHandle(TDF_IndexedMapNodeOfAttributeIndexedMap self) -> Handle_TDF_IndexedMapNodeOfAttributeIndexedMap"""
         return _TDF.TDF_IndexedMapNodeOfAttributeIndexedMap_GetHandle(self)
 
@@ -5162,7 +5162,7 @@ Handle_TDF_IndexedMapNodeOfAttributeIndexedMap._kill_pointed = new_instancemetho
 Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_swigregister = _TDF.Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_swigregister
 Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_swigregister(Handle_TDF_IndexedMapNodeOfAttributeIndexedMap)
 
-def Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_DownCast(*args):
+def Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_DownCast(*args) -> "Handle_TDF_IndexedMapNodeOfAttributeIndexedMap const" :
   return _TDF.Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_DownCast(*args)
 Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_DownCast = _TDF.Handle_TDF_IndexedMapNodeOfAttributeIndexedMap_DownCast
 
@@ -5183,33 +5183,33 @@ class TDF_IndexedMapNodeOfLabelIndexedMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_swiginit(self,_TDF.new_TDF_IndexedMapNodeOfLabelIndexedMap(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(TDF_IndexedMapNodeOfLabelIndexedMap self) -> Standard_Integer"""
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(TDF_IndexedMapNodeOfLabelIndexedMap self, Standard_Integer value)"""
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_IndexedMapNodeOfLabelIndexedMap self)"""
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_IndexedMapNodeOfLabelIndexedMap" :
         """GetHandle(TDF_IndexedMapNodeOfLabelIndexedMap self) -> Handle_TDF_IndexedMapNodeOfLabelIndexedMap"""
         return _TDF.TDF_IndexedMapNodeOfLabelIndexedMap_GetHandle(self)
 
@@ -5251,7 +5251,7 @@ Handle_TDF_IndexedMapNodeOfLabelIndexedMap._kill_pointed = new_instancemethod(_T
 Handle_TDF_IndexedMapNodeOfLabelIndexedMap_swigregister = _TDF.Handle_TDF_IndexedMapNodeOfLabelIndexedMap_swigregister
 Handle_TDF_IndexedMapNodeOfLabelIndexedMap_swigregister(Handle_TDF_IndexedMapNodeOfLabelIndexedMap)
 
-def Handle_TDF_IndexedMapNodeOfLabelIndexedMap_DownCast(*args):
+def Handle_TDF_IndexedMapNodeOfLabelIndexedMap_DownCast(*args) -> "Handle_TDF_IndexedMapNodeOfLabelIndexedMap const" :
   return _TDF.Handle_TDF_IndexedMapNodeOfLabelIndexedMap_DownCast(*args)
 Handle_TDF_IndexedMapNodeOfLabelIndexedMap_DownCast = _TDF.Handle_TDF_IndexedMapNodeOfLabelIndexedMap_DownCast
 
@@ -5266,7 +5266,7 @@ class TDF_Label(object):
 
         """
         _TDF.TDF_Label_swiginit(self,_TDF.new_TDF_Label(*args))
-    def Nullify(self, *args):
+    def Nullify(self, *args) -> "void" :
         """
         * Nullifies the label.
 
@@ -5275,7 +5275,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Nullify(self, *args)
 
-    def Data(self, *args):
+    def Data(self, *args) -> "Handle_TDF_Data" :
         """
         * Returns the Data owning <self>.
 
@@ -5284,7 +5284,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Data(self, *args)
 
-    def Tag(self, *args):
+    def Tag(self, *args) -> "Standard_Integer" :
         """
         * Returns the tag of the label. This is the integer assigned randomly to a label in a data framework. This integer is used to identify this label in an entry.
 
@@ -5293,7 +5293,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Tag(self, *args)
 
-    def Father(self, *args):
+    def Father(self, *args) -> "TDF_Label const" :
         """
         * Returns the label father. This label may be null if the label is root.
 
@@ -5302,7 +5302,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Father(self, *args)
 
-    def IsNull(self, *args):
+    def IsNull(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the <aLabel> is null, i.e. it has not been included in the data framework.
 
@@ -5311,7 +5311,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_IsNull(self, *args)
 
-    def Imported(self, *args):
+    def Imported(self, *args) -> "void" :
         """
         * Sets or unsets <self> and all its descendants as imported label, according to <aStatus>.
 
@@ -5322,7 +5322,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Imported(self, *args)
 
-    def IsImported(self, *args):
+    def IsImported(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the <aLabel> is imported.
 
@@ -5331,7 +5331,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_IsImported(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the <aLabel> is equal to me (same LabelNode*).
 
@@ -5348,7 +5348,7 @@ class TDF_Label(object):
         except:
             return False
 
-    def IsDifferent(self, *args):
+    def IsDifferent(self, *args) -> "Standard_Boolean" :
         """
         :param aLabel:
         :type aLabel: TDF_Label &
@@ -5363,14 +5363,14 @@ class TDF_Label(object):
         except:
             return True
 
-    def IsRoot(self, *args):
+    def IsRoot(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_Label_IsRoot(self, *args)
 
-    def IsAttribute(self, *args):
+    def IsAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if <self> owns an attribute with <anID> as ID.
 
@@ -5381,7 +5381,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_IsAttribute(self, *args)
 
-    def AddAttribute(self, *args):
+    def AddAttribute(self, *args) -> "void" :
         """
         * Adds an Attribute to the current label. Raises if there is already one.
 
@@ -5392,7 +5392,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_AddAttribute(self, *args)
 
-    def ForgetAttribute(self, *args):
+    def ForgetAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Forgets an Attribute from the current label, setting its forgotten status true and its valid status false. Raises if the attribute is not in the structure.
 
@@ -5409,7 +5409,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_ForgetAttribute(self, *args)
 
-    def ForgetAllAttributes(self, *args):
+    def ForgetAllAttributes(self, *args) -> "void" :
         """
         * Forgets all the attributes. Does it on also on the sub-labels if <clearChildren> is set to true. Of course, this method is compatible with Transaction & Delta mecanisms.
 
@@ -5420,7 +5420,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_ForgetAllAttributes(self, *args)
 
-    def ResumeAttribute(self, *args):
+    def ResumeAttribute(self, *args) -> "void" :
         """
         * Undo Forget action, setting its forgotten status false and its valid status true. Raises if the attribute is not in the structure.
 
@@ -5431,7 +5431,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_ResumeAttribute(self, *args)
 
-    def FindAttribute(self, *args):
+    def FindAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Finds an attribute of the current label, according to <anID>. If anAttribute is not a valid one, false is returned. The method returns True if found, False otherwise.  A removed attribute cannot be found.
 
@@ -5454,7 +5454,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_FindAttribute(self, *args)
 
-    def MayBeModified(self, *args):
+    def MayBeModified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if <self> or a DESCENDANT of <self> owns attributes not yet available in transaction 0. It means at least one of their attributes is new, modified or deleted.
 
@@ -5463,7 +5463,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_MayBeModified(self, *args)
 
-    def AttributesModified(self, *args):
+    def AttributesModified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if <self> owns attributes not yet available in transaction 0. It means at least one attribute is new, modified or deleted.
 
@@ -5472,7 +5472,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_AttributesModified(self, *args)
 
-    def HasAttribute(self, *args):
+    def HasAttribute(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this label has at least one attribute.
 
@@ -5481,7 +5481,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_HasAttribute(self, *args)
 
-    def NbAttributes(self, *args):
+    def NbAttributes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of attributes.
 
@@ -5490,7 +5490,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_NbAttributes(self, *args)
 
-    def Depth(self, *args):
+    def Depth(self, *args) -> "Standard_Integer" :
         """
         * Returns the depth of the label in the data framework. This corresponds to the number of fathers which this label has, and is used in determining whether a label is root, null or equivalent to another label. Exceptions: Standard_NullObject if this label is null. This is because a null object can have no depth.
 
@@ -5499,7 +5499,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Depth(self, *args)
 
-    def IsDescendant(self, *args):
+    def IsDescendant(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> is a descendant of <aLabel>. Attention: every label is its own descendant.
 
@@ -5510,7 +5510,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_IsDescendant(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "TDF_Label const" :
         """
         * Returns the root label Root of the data structure. This has a depth of 0. Exceptions: Standard_NullObject if this label is null. This is because a null object can have no depth.
 
@@ -5519,7 +5519,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Root(self, *args)
 
-    def HasChild(self, *args):
+    def HasChild(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this label has at least one child.
 
@@ -5528,7 +5528,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_HasChild(self, *args)
 
-    def NbChildren(self, *args):
+    def NbChildren(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of children.
 
@@ -5537,7 +5537,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_NbChildren(self, *args)
 
-    def FindChild(self, *args):
+    def FindChild(self, *args) -> "TDF_Label" :
         """
         * Finds a child label having <aTag> as tag. Creates The tag aTag identifies the label which will be the parent. If create is true and no child label is found, a new one is created. Example: //creating a label with tag 10 at Root TDF_Label lab1 = aDF->Root().FindChild(10); //creating labels 7 and 2 on label 10 TDF_Label lab2 = lab1.FindChild(7); TDF_Label lab3 = lab1.FindChild(2);
 
@@ -5550,7 +5550,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_FindChild(self, *args)
 
-    def NewChild(self, *args):
+    def NewChild(self, *args) -> "TDF_Label" :
         """
         * Create a new child label of me using autoamtic delivery tags provided by TagSource.
 
@@ -5559,7 +5559,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_NewChild(self, *args)
 
-    def Transaction(self, *args):
+    def Transaction(self, *args) -> "Standard_Integer" :
         """
         * Returns the current transaction index.
 
@@ -5568,7 +5568,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_Transaction(self, *args)
 
-    def HasLowerNode(self, *args):
+    def HasLowerNode(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if node address of <self> is lower than <otherLabel> one. Used to quickly sort labels (not on entry criterion). -C++: inline
 
@@ -5579,7 +5579,7 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_HasLowerNode(self, *args)
 
-    def HasGreaterNode(self, *args):
+    def HasGreaterNode(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if node address of <self> is greater than <otherLabel> one. Used to quickly sort labels (not on entry criterion). -C++: inline
 
@@ -5590,11 +5590,11 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_HasGreaterNode(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_Label self) -> std::string"""
         return _TDF.TDF_Label_DumpToString(self)
 
-    def ExtendedDump(self, *args):
+    def ExtendedDump(self, *args) -> "void" :
         """
         * Dumps the label on <aStream> and its attributes rank in <aMap> if their IDs are kept by <IDFilter>.
 
@@ -5609,11 +5609,11 @@ class TDF_Label(object):
         """
         return _TDF.TDF_Label_ExtendedDump(self, *args)
 
-    def EntryDumpToString(self):
+    def EntryDumpToString(self) -> "std::string" :
         """EntryDumpToString(TDF_Label self) -> std::string"""
         return _TDF.TDF_Label_EntryDumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_Label self)"""
         return _TDF.TDF_Label__kill_pointed(self)
 
@@ -5675,7 +5675,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelDataMap_swiginit(self,_TDF.new_TDF_LabelDataMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelDataMap &" :
         """
         :param Other:
         :type Other: TDF_LabelDataMap &
@@ -5684,7 +5684,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelDataMap &" :
         """
         :param Other:
         :type Other: TDF_LabelDataMap &
@@ -5693,7 +5693,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5702,14 +5702,14 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelDataMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5720,7 +5720,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5729,7 +5729,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5738,7 +5738,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5747,7 +5747,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TDF_Label &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5756,7 +5756,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5765,7 +5765,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5774,7 +5774,7 @@ class TDF_LabelDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDataMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelDataMap self)"""
         return _TDF.TDF_LabelDataMap__kill_pointed(self)
 
@@ -5812,7 +5812,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelDoubleMap_swiginit(self,_TDF.new_TDF_LabelDoubleMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelDoubleMap &" :
         """
         :param Other:
         :type Other: TDF_LabelDoubleMap &
@@ -5821,7 +5821,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelDoubleMap &" :
         """
         :param Other:
         :type Other: TDF_LabelDoubleMap &
@@ -5830,7 +5830,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5839,14 +5839,14 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelDoubleMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param K1:
         :type K1: TDF_Label &
@@ -5857,7 +5857,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_Bind(self, *args)
 
-    def AreBound(self, *args):
+    def AreBound(self, *args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: TDF_Label &
@@ -5868,7 +5868,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_AreBound(self, *args)
 
-    def IsBound1(self, *args):
+    def IsBound1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5877,7 +5877,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_IsBound1(self, *args)
 
-    def IsBound2(self, *args):
+    def IsBound2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5886,7 +5886,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_IsBound2(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5895,7 +5895,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_Find1(self, *args)
 
-    def Find2(self, *args):
+    def Find2(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5904,7 +5904,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_Find2(self, *args)
 
-    def UnBind1(self, *args):
+    def UnBind1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5913,7 +5913,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_UnBind1(self, *args)
 
-    def UnBind2(self, *args):
+    def UnBind2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -5922,7 +5922,7 @@ class TDF_LabelDoubleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelDoubleMap_UnBind2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelDoubleMap self)"""
         return _TDF.TDF_LabelDoubleMap__kill_pointed(self)
 
@@ -5961,7 +5961,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelIndexedMap_swiginit(self,_TDF.new_TDF_LabelIndexedMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelIndexedMap &" :
         """
         :param Other:
         :type Other: TDF_LabelIndexedMap &
@@ -5970,7 +5970,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelIndexedMap &" :
         """
         :param Other:
         :type Other: TDF_LabelIndexedMap &
@@ -5979,7 +5979,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5988,14 +5988,14 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelIndexedMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6004,7 +6004,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -6015,14 +6015,14 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelIndexedMap_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6031,7 +6031,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "TDF_Label const &" :
         """
         :param I:
         :type I: int
@@ -6040,7 +6040,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6049,7 +6049,7 @@ class TDF_LabelIndexedMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIndexedMap_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelIndexedMap self)"""
         return _TDF.TDF_LabelIndexedMap__kill_pointed(self)
 
@@ -6086,7 +6086,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelIntegerMap_swiginit(self,_TDF.new_TDF_LabelIntegerMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelIntegerMap &" :
         """
         :param Other:
         :type Other: TDF_LabelIntegerMap &
@@ -6095,7 +6095,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelIntegerMap &" :
         """
         :param Other:
         :type Other: TDF_LabelIntegerMap &
@@ -6104,7 +6104,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -6113,14 +6113,14 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelIntegerMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6131,7 +6131,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6140,7 +6140,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6149,7 +6149,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6158,7 +6158,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6167,7 +6167,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6176,7 +6176,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6185,7 +6185,7 @@ class TDF_LabelIntegerMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelIntegerMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelIntegerMap self)"""
         return _TDF.TDF_LabelIntegerMap__kill_pointed(self)
 
@@ -6223,7 +6223,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelLabelMap_swiginit(self,_TDF.new_TDF_LabelLabelMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelLabelMap &" :
         """
         :param Other:
         :type Other: TDF_LabelLabelMap &
@@ -6232,7 +6232,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelLabelMap &" :
         """
         :param Other:
         :type Other: TDF_LabelLabelMap &
@@ -6241,7 +6241,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -6250,14 +6250,14 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelLabelMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6268,7 +6268,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6277,7 +6277,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6286,7 +6286,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6295,7 +6295,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TDF_Label &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6304,7 +6304,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6313,7 +6313,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -6322,7 +6322,7 @@ class TDF_LabelLabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelLabelMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelLabelMap self)"""
         return _TDF.TDF_LabelLabelMap__kill_pointed(self)
 
@@ -6358,7 +6358,7 @@ class TDF_LabelList(object):
 
         """
         _TDF.TDF_LabelList_swiginit(self,_TDF.new_TDF_LabelList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_LabelList &
@@ -6367,7 +6367,7 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TDF_LabelList &
@@ -6376,28 +6376,28 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_LabelList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_LabelList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TDF_Label &
@@ -6416,7 +6416,7 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TDF_Label &
@@ -6435,28 +6435,28 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_LabelList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_LabelList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TDF_ListIteratorOfLabelList &
@@ -6465,7 +6465,7 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TDF_Label &
@@ -6482,7 +6482,7 @@ class TDF_LabelList(object):
         """
         return _TDF.TDF_LabelList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TDF_Label &
@@ -6535,7 +6535,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDF.TDF_LabelMap_swiginit(self,_TDF.new_TDF_LabelMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelMap &" :
         """
         :param Other:
         :type Other: TDF_LabelMap &
@@ -6544,7 +6544,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelMap &" :
         """
         :param Other:
         :type Other: TDF_LabelMap &
@@ -6553,7 +6553,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -6562,14 +6562,14 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelMap_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TDF_Label &
@@ -6578,7 +6578,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TDF_Label &
@@ -6587,7 +6587,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: TDF_Label &
@@ -6596,7 +6596,7 @@ class TDF_LabelMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDF.TDF_LabelMap_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_LabelMap self)"""
         return _TDF.TDF_LabelMap__kill_pointed(self)
 
@@ -6622,7 +6622,7 @@ TDF_LabelMap_swigregister(TDF_LabelMap)
 class TDF_LabelMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -6636,7 +6636,7 @@ class TDF_LabelMapHasher(object):
         return _TDF.TDF_LabelMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6664,7 +6664,7 @@ TDF_LabelMapHasher._kill_pointed = new_instancemethod(_TDF.TDF_LabelMapHasher__k
 TDF_LabelMapHasher_swigregister = _TDF.TDF_LabelMapHasher_swigregister
 TDF_LabelMapHasher_swigregister(TDF_LabelMapHasher)
 
-def TDF_LabelMapHasher_HashCode(*args):
+def TDF_LabelMapHasher_HashCode(*args) -> "Standard_Integer" :
   """
     * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -6677,7 +6677,7 @@ def TDF_LabelMapHasher_HashCode(*args):
     """
   return _TDF.TDF_LabelMapHasher_HashCode(*args)
 
-def TDF_LabelMapHasher_IsEqual(*args):
+def TDF_LabelMapHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6699,14 +6699,14 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TDF.TDF_LabelSequence_swiginit(self,_TDF.new_TDF_LabelSequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_LabelSequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDF_LabelSequence const &" :
         """
         :param Other:
         :type Other: TDF_LabelSequence &
@@ -6715,7 +6715,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDF_LabelSequence const &" :
         """
         :param Other:
         :type Other: TDF_LabelSequence &
@@ -6724,7 +6724,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TDF_Label &
@@ -6737,7 +6737,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TDF_Label &
@@ -6750,7 +6750,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6767,7 +6767,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6784,21 +6784,21 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_LabelSequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_LabelSequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6809,7 +6809,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label const &" :
         """
         :param Index:
         :type Index: int
@@ -6818,7 +6818,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6829,7 +6829,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TDF_Label &" :
         """
         :param Index:
         :type Index: int
@@ -6838,7 +6838,7 @@ class TDF_LabelSequence(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDF.TDF_LabelSequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6892,7 +6892,7 @@ class TDF_ListIteratorOfAttributeDeltaList(object):
 
         """
         _TDF.TDF_ListIteratorOfAttributeDeltaList_swiginit(self,_TDF.new_TDF_ListIteratorOfAttributeDeltaList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_AttributeDeltaList &
@@ -6901,21 +6901,21 @@ class TDF_ListIteratorOfAttributeDeltaList(object):
         """
         return _TDF.TDF_ListIteratorOfAttributeDeltaList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_ListIteratorOfAttributeDeltaList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_ListIteratorOfAttributeDeltaList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_AttributeDelta &" :
         """
         :rtype: Handle_TDF_AttributeDelta
 
@@ -6951,7 +6951,7 @@ class TDF_ListIteratorOfAttributeList(object):
 
         """
         _TDF.TDF_ListIteratorOfAttributeList_swiginit(self,_TDF.new_TDF_ListIteratorOfAttributeList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_AttributeList &
@@ -6960,21 +6960,21 @@ class TDF_ListIteratorOfAttributeList(object):
         """
         return _TDF.TDF_ListIteratorOfAttributeList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_ListIteratorOfAttributeList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_ListIteratorOfAttributeList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
@@ -7010,7 +7010,7 @@ class TDF_ListIteratorOfDeltaList(object):
 
         """
         _TDF.TDF_ListIteratorOfDeltaList_swiginit(self,_TDF.new_TDF_ListIteratorOfDeltaList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_DeltaList &
@@ -7019,21 +7019,21 @@ class TDF_ListIteratorOfDeltaList(object):
         """
         return _TDF.TDF_ListIteratorOfDeltaList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_ListIteratorOfDeltaList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_ListIteratorOfDeltaList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Delta &" :
         """
         :rtype: Handle_TDF_Delta
 
@@ -7069,7 +7069,7 @@ class TDF_ListIteratorOfIDList(object):
 
         """
         _TDF.TDF_ListIteratorOfIDList_swiginit(self,_TDF.new_TDF_ListIteratorOfIDList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_IDList &
@@ -7078,21 +7078,21 @@ class TDF_ListIteratorOfIDList(object):
         """
         return _TDF.TDF_ListIteratorOfIDList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_ListIteratorOfIDList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_ListIteratorOfIDList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
@@ -7128,7 +7128,7 @@ class TDF_ListIteratorOfLabelList(object):
 
         """
         _TDF.TDF_ListIteratorOfLabelList_swiginit(self,_TDF.new_TDF_ListIteratorOfLabelList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_LabelList &
@@ -7137,21 +7137,21 @@ class TDF_ListIteratorOfLabelList(object):
         """
         return _TDF.TDF_ListIteratorOfLabelList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDF.TDF_ListIteratorOfLabelList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDF.TDF_ListIteratorOfLabelList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
@@ -7187,18 +7187,18 @@ class TDF_ListNodeOfAttributeDeltaList(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_ListNodeOfAttributeDeltaList_swiginit(self,_TDF.new_TDF_ListNodeOfAttributeDeltaList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_AttributeDelta &" :
         """
         :rtype: Handle_TDF_AttributeDelta
 
         """
         return _TDF.TDF_ListNodeOfAttributeDeltaList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_ListNodeOfAttributeDeltaList self)"""
         return _TDF.TDF_ListNodeOfAttributeDeltaList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_ListNodeOfAttributeDeltaList" :
         """GetHandle(TDF_ListNodeOfAttributeDeltaList self) -> Handle_TDF_ListNodeOfAttributeDeltaList"""
         return _TDF.TDF_ListNodeOfAttributeDeltaList_GetHandle(self)
 
@@ -7237,7 +7237,7 @@ Handle_TDF_ListNodeOfAttributeDeltaList._kill_pointed = new_instancemethod(_TDF.
 Handle_TDF_ListNodeOfAttributeDeltaList_swigregister = _TDF.Handle_TDF_ListNodeOfAttributeDeltaList_swigregister
 Handle_TDF_ListNodeOfAttributeDeltaList_swigregister(Handle_TDF_ListNodeOfAttributeDeltaList)
 
-def Handle_TDF_ListNodeOfAttributeDeltaList_DownCast(*args):
+def Handle_TDF_ListNodeOfAttributeDeltaList_DownCast(*args) -> "Handle_TDF_ListNodeOfAttributeDeltaList const" :
   return _TDF.Handle_TDF_ListNodeOfAttributeDeltaList_DownCast(*args)
 Handle_TDF_ListNodeOfAttributeDeltaList_DownCast = _TDF.Handle_TDF_ListNodeOfAttributeDeltaList_DownCast
 
@@ -7254,18 +7254,18 @@ class TDF_ListNodeOfAttributeList(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_ListNodeOfAttributeList_swiginit(self,_TDF.new_TDF_ListNodeOfAttributeList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_ListNodeOfAttributeList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_ListNodeOfAttributeList self)"""
         return _TDF.TDF_ListNodeOfAttributeList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_ListNodeOfAttributeList" :
         """GetHandle(TDF_ListNodeOfAttributeList self) -> Handle_TDF_ListNodeOfAttributeList"""
         return _TDF.TDF_ListNodeOfAttributeList_GetHandle(self)
 
@@ -7304,7 +7304,7 @@ Handle_TDF_ListNodeOfAttributeList._kill_pointed = new_instancemethod(_TDF.Handl
 Handle_TDF_ListNodeOfAttributeList_swigregister = _TDF.Handle_TDF_ListNodeOfAttributeList_swigregister
 Handle_TDF_ListNodeOfAttributeList_swigregister(Handle_TDF_ListNodeOfAttributeList)
 
-def Handle_TDF_ListNodeOfAttributeList_DownCast(*args):
+def Handle_TDF_ListNodeOfAttributeList_DownCast(*args) -> "Handle_TDF_ListNodeOfAttributeList const" :
   return _TDF.Handle_TDF_ListNodeOfAttributeList_DownCast(*args)
 Handle_TDF_ListNodeOfAttributeList_DownCast = _TDF.Handle_TDF_ListNodeOfAttributeList_DownCast
 
@@ -7321,18 +7321,18 @@ class TDF_ListNodeOfDeltaList(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_ListNodeOfDeltaList_swiginit(self,_TDF.new_TDF_ListNodeOfDeltaList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Delta &" :
         """
         :rtype: Handle_TDF_Delta
 
         """
         return _TDF.TDF_ListNodeOfDeltaList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_ListNodeOfDeltaList self)"""
         return _TDF.TDF_ListNodeOfDeltaList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_ListNodeOfDeltaList" :
         """GetHandle(TDF_ListNodeOfDeltaList self) -> Handle_TDF_ListNodeOfDeltaList"""
         return _TDF.TDF_ListNodeOfDeltaList_GetHandle(self)
 
@@ -7371,7 +7371,7 @@ Handle_TDF_ListNodeOfDeltaList._kill_pointed = new_instancemethod(_TDF.Handle_TD
 Handle_TDF_ListNodeOfDeltaList_swigregister = _TDF.Handle_TDF_ListNodeOfDeltaList_swigregister
 Handle_TDF_ListNodeOfDeltaList_swigregister(Handle_TDF_ListNodeOfDeltaList)
 
-def Handle_TDF_ListNodeOfDeltaList_DownCast(*args):
+def Handle_TDF_ListNodeOfDeltaList_DownCast(*args) -> "Handle_TDF_ListNodeOfDeltaList const" :
   return _TDF.Handle_TDF_ListNodeOfDeltaList_DownCast(*args)
 Handle_TDF_ListNodeOfDeltaList_DownCast = _TDF.Handle_TDF_ListNodeOfDeltaList_DownCast
 
@@ -7388,18 +7388,18 @@ class TDF_ListNodeOfIDList(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_ListNodeOfIDList_swiginit(self,_TDF.new_TDF_ListNodeOfIDList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_ListNodeOfIDList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_ListNodeOfIDList self)"""
         return _TDF.TDF_ListNodeOfIDList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_ListNodeOfIDList" :
         """GetHandle(TDF_ListNodeOfIDList self) -> Handle_TDF_ListNodeOfIDList"""
         return _TDF.TDF_ListNodeOfIDList_GetHandle(self)
 
@@ -7438,7 +7438,7 @@ Handle_TDF_ListNodeOfIDList._kill_pointed = new_instancemethod(_TDF.Handle_TDF_L
 Handle_TDF_ListNodeOfIDList_swigregister = _TDF.Handle_TDF_ListNodeOfIDList_swigregister
 Handle_TDF_ListNodeOfIDList_swigregister(Handle_TDF_ListNodeOfIDList)
 
-def Handle_TDF_ListNodeOfIDList_DownCast(*args):
+def Handle_TDF_ListNodeOfIDList_DownCast(*args) -> "Handle_TDF_ListNodeOfIDList const" :
   return _TDF.Handle_TDF_ListNodeOfIDList_DownCast(*args)
 Handle_TDF_ListNodeOfIDList_DownCast = _TDF.Handle_TDF_ListNodeOfIDList_DownCast
 
@@ -7455,18 +7455,18 @@ class TDF_ListNodeOfLabelList(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_ListNodeOfLabelList_swiginit(self,_TDF.new_TDF_ListNodeOfLabelList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_ListNodeOfLabelList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_ListNodeOfLabelList self)"""
         return _TDF.TDF_ListNodeOfLabelList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_ListNodeOfLabelList" :
         """GetHandle(TDF_ListNodeOfLabelList self) -> Handle_TDF_ListNodeOfLabelList"""
         return _TDF.TDF_ListNodeOfLabelList_GetHandle(self)
 
@@ -7505,7 +7505,7 @@ Handle_TDF_ListNodeOfLabelList._kill_pointed = new_instancemethod(_TDF.Handle_TD
 Handle_TDF_ListNodeOfLabelList_swigregister = _TDF.Handle_TDF_ListNodeOfLabelList_swigregister
 Handle_TDF_ListNodeOfLabelList_swigregister(Handle_TDF_ListNodeOfLabelList)
 
-def Handle_TDF_ListNodeOfLabelList_DownCast(*args):
+def Handle_TDF_ListNodeOfLabelList_DownCast(*args) -> "Handle_TDF_ListNodeOfLabelList const" :
   return _TDF.Handle_TDF_ListNodeOfLabelList_DownCast(*args)
 Handle_TDF_ListNodeOfLabelList_DownCast = _TDF.Handle_TDF_ListNodeOfLabelList_DownCast
 
@@ -7522,7 +7522,7 @@ class TDF_MapIteratorOfAttributeMap(OCC.TCollection.TCollection_BasicMapIterator
 
         """
         _TDF.TDF_MapIteratorOfAttributeMap_swiginit(self,_TDF.new_TDF_MapIteratorOfAttributeMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_AttributeMap &
@@ -7531,7 +7531,7 @@ class TDF_MapIteratorOfAttributeMap(OCC.TCollection.TCollection_BasicMapIterator
         """
         return _TDF.TDF_MapIteratorOfAttributeMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_TDF_Attribute const &" :
         """
         :rtype: Handle_TDF_Attribute
 
@@ -7565,7 +7565,7 @@ class TDF_MapIteratorOfIDMap(OCC.TCollection.TCollection_BasicMapIterator):
 
         """
         _TDF.TDF_MapIteratorOfIDMap_swiginit(self,_TDF.new_TDF_MapIteratorOfIDMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_IDMap &
@@ -7574,7 +7574,7 @@ class TDF_MapIteratorOfIDMap(OCC.TCollection.TCollection_BasicMapIterator):
         """
         return _TDF.TDF_MapIteratorOfIDMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -7608,7 +7608,7 @@ class TDF_MapIteratorOfLabelMap(OCC.TCollection.TCollection_BasicMapIterator):
 
         """
         _TDF.TDF_MapIteratorOfLabelMap_swiginit(self,_TDF.new_TDF_MapIteratorOfLabelMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDF_LabelMap &
@@ -7617,7 +7617,7 @@ class TDF_MapIteratorOfLabelMap(OCC.TCollection.TCollection_BasicMapIterator):
         """
         return _TDF.TDF_MapIteratorOfLabelMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -7651,7 +7651,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
 
         """
         _TDF.TDF_RelocationTable_swiginit(self,_TDF.new_TDF_RelocationTable(*args))
-    def SelfRelocate(self, *args):
+    def SelfRelocate(self, *args) -> "Standard_Boolean" :
         """
         * Sets <mySelfRelocate> to <selfRelocate>.  This flag affects the HasRelocation method behavior like this:  <mySelfRelocate> == False:  If no relocation object is found in the map, a null object is returned  <mySelfRelocate> == True:  If no relocation object is found in the map, the method assumes the source object is relocation value; so the source object is returned as target object.
 
@@ -7666,7 +7666,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_SelfRelocate(self, *args)
 
-    def AfterRelocate(self, *args):
+    def AfterRelocate(self, *args) -> "Standard_Boolean" :
         """
         :param afterRelocate:
         :type afterRelocate: bool
@@ -7679,7 +7679,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_AfterRelocate(self, *args)
 
-    def SetRelocation(self, *args):
+    def SetRelocation(self, *args) -> "void" :
         """
         * Sets the relocation value of <aSourceLabel> to <aTargetLabel>.
 
@@ -7700,7 +7700,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_SetRelocation(self, *args)
 
-    def HasRelocation(self, *args):
+    def HasRelocation(self, *args) -> "Standard_Boolean" :
         """
         * Finds the relocation value of <aSourceLabel> and returns it into <aTargetLabel>.  (See above SelfRelocate method for more explanation about the method behavior)
 
@@ -7721,7 +7721,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_HasRelocation(self, *args)
 
-    def SetTransientRelocation(self, *args):
+    def SetTransientRelocation(self, *args) -> "void" :
         """
         * Sets the relocation value of <aSourceTransient> to <aTargetTransient>.
 
@@ -7734,7 +7734,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_SetTransientRelocation(self, *args)
 
-    def HasTransientRelocation(self, *args):
+    def HasTransientRelocation(self, *args) -> "Standard_Boolean" :
         """
         * Finds the relocation value of <aSourceTransient> and returns it into <aTargetTransient>.  (See above SelfRelocate method for more explanation about the method behavior)
 
@@ -7747,7 +7747,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_HasTransientRelocation(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the relocation dictionnary, but lets the self relocation flag to its current value.
 
@@ -7756,7 +7756,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_Clear(self, *args)
 
-    def TargetLabelMap(self, *args):
+    def TargetLabelMap(self, *args) -> "void" :
         """
         * Fills <aLabelMap> with target relocation labels. <aLabelMap> is not cleared before use.
 
@@ -7767,7 +7767,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_TargetLabelMap(self, *args)
 
-    def TargetAttributeMap(self, *args):
+    def TargetAttributeMap(self, *args) -> "void" :
         """
         * Fills <anAttributeMap> with target relocation attributes. <anAttributeMap> is not cleared before use.
 
@@ -7778,7 +7778,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_TargetAttributeMap(self, *args)
 
-    def LabelTable(self, *args):
+    def LabelTable(self, *args) -> "TDF_LabelDataMap &" :
         """
         * Returns <myLabelTable> to be used or updated.
 
@@ -7787,7 +7787,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_LabelTable(self, *args)
 
-    def AttributeTable(self, *args):
+    def AttributeTable(self, *args) -> "TDF_AttributeDataMap &" :
         """
         * Returns <myAttributeTable> to be used or updated.
 
@@ -7796,7 +7796,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_AttributeTable(self, *args)
 
-    def TransientTable(self, *args):
+    def TransientTable(self, *args) -> "TColStd_IndexedDataMapOfTransientTransient &" :
         """
         * Returns <myTransientTable> to be used or updated.
 
@@ -7805,7 +7805,7 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_TransientTable(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "Standard_OStream &" :
         """
         * Dumps the relocation table.
 
@@ -7822,11 +7822,11 @@ class TDF_RelocationTable(OCC.MMgt.MMgt_TShared):
         """
         return _TDF.TDF_RelocationTable_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_RelocationTable self)"""
         return _TDF.TDF_RelocationTable__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_RelocationTable" :
         """GetHandle(TDF_RelocationTable self) -> Handle_TDF_RelocationTable"""
         return _TDF.TDF_RelocationTable_GetHandle(self)
 
@@ -7877,7 +7877,7 @@ Handle_TDF_RelocationTable._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Re
 Handle_TDF_RelocationTable_swigregister = _TDF.Handle_TDF_RelocationTable_swigregister
 Handle_TDF_RelocationTable_swigregister(Handle_TDF_RelocationTable)
 
-def Handle_TDF_RelocationTable_DownCast(*args):
+def Handle_TDF_RelocationTable_DownCast(*args) -> "Handle_TDF_RelocationTable const" :
   return _TDF.Handle_TDF_RelocationTable_DownCast(*args)
 Handle_TDF_RelocationTable_DownCast = _TDF.Handle_TDF_RelocationTable_DownCast
 
@@ -7896,18 +7896,18 @@ class TDF_SequenceNodeOfAttributeSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TDF.TDF_SequenceNodeOfAttributeSequence_swiginit(self,_TDF.new_TDF_SequenceNodeOfAttributeSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_SequenceNodeOfAttributeSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_SequenceNodeOfAttributeSequence self)"""
         return _TDF.TDF_SequenceNodeOfAttributeSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_SequenceNodeOfAttributeSequence" :
         """GetHandle(TDF_SequenceNodeOfAttributeSequence self) -> Handle_TDF_SequenceNodeOfAttributeSequence"""
         return _TDF.TDF_SequenceNodeOfAttributeSequence_GetHandle(self)
 
@@ -7946,7 +7946,7 @@ Handle_TDF_SequenceNodeOfAttributeSequence._kill_pointed = new_instancemethod(_T
 Handle_TDF_SequenceNodeOfAttributeSequence_swigregister = _TDF.Handle_TDF_SequenceNodeOfAttributeSequence_swigregister
 Handle_TDF_SequenceNodeOfAttributeSequence_swigregister(Handle_TDF_SequenceNodeOfAttributeSequence)
 
-def Handle_TDF_SequenceNodeOfAttributeSequence_DownCast(*args):
+def Handle_TDF_SequenceNodeOfAttributeSequence_DownCast(*args) -> "Handle_TDF_SequenceNodeOfAttributeSequence const" :
   return _TDF.Handle_TDF_SequenceNodeOfAttributeSequence_DownCast(*args)
 Handle_TDF_SequenceNodeOfAttributeSequence_DownCast = _TDF.Handle_TDF_SequenceNodeOfAttributeSequence_DownCast
 
@@ -7965,18 +7965,18 @@ class TDF_SequenceNodeOfLabelSequence(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TDF.TDF_SequenceNodeOfLabelSequence_swiginit(self,_TDF.new_TDF_SequenceNodeOfLabelSequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_SequenceNodeOfLabelSequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_SequenceNodeOfLabelSequence self)"""
         return _TDF.TDF_SequenceNodeOfLabelSequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_SequenceNodeOfLabelSequence" :
         """GetHandle(TDF_SequenceNodeOfLabelSequence self) -> Handle_TDF_SequenceNodeOfLabelSequence"""
         return _TDF.TDF_SequenceNodeOfLabelSequence_GetHandle(self)
 
@@ -8015,7 +8015,7 @@ Handle_TDF_SequenceNodeOfLabelSequence._kill_pointed = new_instancemethod(_TDF.H
 Handle_TDF_SequenceNodeOfLabelSequence_swigregister = _TDF.Handle_TDF_SequenceNodeOfLabelSequence_swigregister
 Handle_TDF_SequenceNodeOfLabelSequence_swigregister(Handle_TDF_SequenceNodeOfLabelSequence)
 
-def Handle_TDF_SequenceNodeOfLabelSequence_DownCast(*args):
+def Handle_TDF_SequenceNodeOfLabelSequence_DownCast(*args) -> "Handle_TDF_SequenceNodeOfLabelSequence const" :
   return _TDF.Handle_TDF_SequenceNodeOfLabelSequence_DownCast(*args)
 Handle_TDF_SequenceNodeOfLabelSequence_DownCast = _TDF.Handle_TDF_SequenceNodeOfLabelSequence_DownCast
 
@@ -8032,18 +8032,18 @@ class TDF_StdMapNodeOfAttributeMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_StdMapNodeOfAttributeMap_swiginit(self,_TDF.new_TDF_StdMapNodeOfAttributeMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_TDF_Attribute &" :
         """
         :rtype: Handle_TDF_Attribute
 
         """
         return _TDF.TDF_StdMapNodeOfAttributeMap_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_StdMapNodeOfAttributeMap self)"""
         return _TDF.TDF_StdMapNodeOfAttributeMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_StdMapNodeOfAttributeMap" :
         """GetHandle(TDF_StdMapNodeOfAttributeMap self) -> Handle_TDF_StdMapNodeOfAttributeMap"""
         return _TDF.TDF_StdMapNodeOfAttributeMap_GetHandle(self)
 
@@ -8082,7 +8082,7 @@ Handle_TDF_StdMapNodeOfAttributeMap._kill_pointed = new_instancemethod(_TDF.Hand
 Handle_TDF_StdMapNodeOfAttributeMap_swigregister = _TDF.Handle_TDF_StdMapNodeOfAttributeMap_swigregister
 Handle_TDF_StdMapNodeOfAttributeMap_swigregister(Handle_TDF_StdMapNodeOfAttributeMap)
 
-def Handle_TDF_StdMapNodeOfAttributeMap_DownCast(*args):
+def Handle_TDF_StdMapNodeOfAttributeMap_DownCast(*args) -> "Handle_TDF_StdMapNodeOfAttributeMap const" :
   return _TDF.Handle_TDF_StdMapNodeOfAttributeMap_DownCast(*args)
 Handle_TDF_StdMapNodeOfAttributeMap_DownCast = _TDF.Handle_TDF_StdMapNodeOfAttributeMap_DownCast
 
@@ -8099,18 +8099,18 @@ class TDF_StdMapNodeOfIDMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_StdMapNodeOfIDMap_swiginit(self,_TDF.new_TDF_StdMapNodeOfIDMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TDF.TDF_StdMapNodeOfIDMap_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_StdMapNodeOfIDMap self)"""
         return _TDF.TDF_StdMapNodeOfIDMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_StdMapNodeOfIDMap" :
         """GetHandle(TDF_StdMapNodeOfIDMap self) -> Handle_TDF_StdMapNodeOfIDMap"""
         return _TDF.TDF_StdMapNodeOfIDMap_GetHandle(self)
 
@@ -8149,7 +8149,7 @@ Handle_TDF_StdMapNodeOfIDMap._kill_pointed = new_instancemethod(_TDF.Handle_TDF_
 Handle_TDF_StdMapNodeOfIDMap_swigregister = _TDF.Handle_TDF_StdMapNodeOfIDMap_swigregister
 Handle_TDF_StdMapNodeOfIDMap_swigregister(Handle_TDF_StdMapNodeOfIDMap)
 
-def Handle_TDF_StdMapNodeOfIDMap_DownCast(*args):
+def Handle_TDF_StdMapNodeOfIDMap_DownCast(*args) -> "Handle_TDF_StdMapNodeOfIDMap const" :
   return _TDF.Handle_TDF_StdMapNodeOfIDMap_DownCast(*args)
 Handle_TDF_StdMapNodeOfIDMap_DownCast = _TDF.Handle_TDF_StdMapNodeOfIDMap_DownCast
 
@@ -8166,18 +8166,18 @@ class TDF_StdMapNodeOfLabelMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _TDF.TDF_StdMapNodeOfLabelMap_swiginit(self,_TDF.new_TDF_StdMapNodeOfLabelMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_StdMapNodeOfLabelMap_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_StdMapNodeOfLabelMap self)"""
         return _TDF.TDF_StdMapNodeOfLabelMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_StdMapNodeOfLabelMap" :
         """GetHandle(TDF_StdMapNodeOfLabelMap self) -> Handle_TDF_StdMapNodeOfLabelMap"""
         return _TDF.TDF_StdMapNodeOfLabelMap_GetHandle(self)
 
@@ -8216,14 +8216,14 @@ Handle_TDF_StdMapNodeOfLabelMap._kill_pointed = new_instancemethod(_TDF.Handle_T
 Handle_TDF_StdMapNodeOfLabelMap_swigregister = _TDF.Handle_TDF_StdMapNodeOfLabelMap_swigregister
 Handle_TDF_StdMapNodeOfLabelMap_swigregister(Handle_TDF_StdMapNodeOfLabelMap)
 
-def Handle_TDF_StdMapNodeOfLabelMap_DownCast(*args):
+def Handle_TDF_StdMapNodeOfLabelMap_DownCast(*args) -> "Handle_TDF_StdMapNodeOfLabelMap const" :
   return _TDF.Handle_TDF_StdMapNodeOfLabelMap_DownCast(*args)
 Handle_TDF_StdMapNodeOfLabelMap_DownCast = _TDF.Handle_TDF_StdMapNodeOfLabelMap_DownCast
 
 class TDF_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NbLabels(*args):
+    def NbLabels(*args) -> "Standard_Integer" :
         """
         * Returns the number of labels of the tree, including <aLabel>. aLabel is also included in this figure. This information is useful in setting the size of an array.
 
@@ -8235,7 +8235,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_NbLabels(*args)
 
     NbLabels = staticmethod(NbLabels)
-    def NbAttributes(*args):
+    def NbAttributes(*args) -> "Standard_Integer" :
         """
         * Returns the total number of attributes attached to the labels dependent on the label aLabel. The attributes of aLabel are also included in this figure. This information is useful in setting the size of an array.
 
@@ -8255,7 +8255,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_NbAttributes(*args)
 
     NbAttributes = staticmethod(NbAttributes)
-    def IsSelfContained(*args):
+    def IsSelfContained(*args) -> "Standard_Boolean" :
         """
         * Returns true if <aLabel> and its descendants reference only attributes or labels attached to themselves.
 
@@ -8275,7 +8275,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_IsSelfContained(*args)
 
     IsSelfContained = staticmethod(IsSelfContained)
-    def OutReferers(*args):
+    def OutReferers(*args) -> "void" :
         """
         * Returns in <theAtts> the attributes having out references.  Caution: <theAtts> is not cleared before use!
 
@@ -8301,7 +8301,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_OutReferers(*args)
 
     OutReferers = staticmethod(OutReferers)
-    def OutReferences(*args):
+    def OutReferences(*args) -> "void" :
         """
         * Returns in <atts> the referenced attributes. Caution: <atts> is not cleared before use!
 
@@ -8327,7 +8327,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_OutReferences(*args)
 
     OutReferences = staticmethod(OutReferences)
-    def RelocateLabel(*args):
+    def RelocateLabel(*args) -> "void" :
         """
         * Returns the label having the same sub-entry as <aLabel> but located as descendant as <toRoot> instead of <fromRoot>.  Exemple :  aLabel = 0:3:24:7:2:7 fromRoot = 0:3:24 toRoot = 0:5 returned label = 0:5:7:2:7
 
@@ -8347,7 +8347,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_RelocateLabel(*args)
 
     RelocateLabel = staticmethod(RelocateLabel)
-    def Entry(*args):
+    def Entry(*args) -> "void" :
         """
         * Returns the entry for the label aLabel in the form of the ASCII character string anEntry containing the tag list for aLabel.
 
@@ -8361,7 +8361,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_Entry(*args)
 
     Entry = staticmethod(Entry)
-    def TagList(*args):
+    def TagList(*args) -> "void" :
         """
         * Returns the entry of <aLabel> as list of integers in <aTagList>.
 
@@ -8383,7 +8383,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_TagList(*args)
 
     TagList = staticmethod(TagList)
-    def Label(*args):
+    def Label(*args) -> "void" :
         """
         * Returns the label expressed by <anEntry>; creates the label if it does not exist and if <create> is true.
 
@@ -8425,7 +8425,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_Label(*args)
 
     Label = staticmethod(Label)
-    def CountLabels(*args):
+    def CountLabels(*args) -> "void" :
         """
         * Adds the labels of <aLabelList> to <aLabelMap> if they are unbound, or increases their reference counters. At the end of the process, <aLabelList> contains only the ADDED labels.
 
@@ -8439,7 +8439,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_CountLabels(*args)
 
     CountLabels = staticmethod(CountLabels)
-    def DeductLabels(*args):
+    def DeductLabels(*args) -> "void" :
         """
         * Decreases the reference counters of the labels of <aLabelList> to <aLabelMap>, and removes labels with null counter. At the end of the process, <aLabelList> contains only the SUPPRESSED labels.
 
@@ -8453,7 +8453,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_DeductLabels(*args)
 
     DeductLabels = staticmethod(DeductLabels)
-    def DeepDump(*args):
+    def DeepDump(*args) -> "void" :
         """
         * Dumps <aDF> and its labels and their attributes.
 
@@ -8475,7 +8475,7 @@ class TDF_Tool(object):
         return _TDF.TDF_Tool_DeepDump(*args)
 
     DeepDump = staticmethod(DeepDump)
-    def ExtendedDeepDump(*args):
+    def ExtendedDeepDump(*args) -> "void" :
         """
         * Dumps <aDF> and its labels and their attributes, if their IDs are kept by <aFilter>. Dumps also the attributes content.
 
@@ -8515,7 +8515,7 @@ TDF_Tool._kill_pointed = new_instancemethod(_TDF.TDF_Tool__kill_pointed,None,TDF
 TDF_Tool_swigregister = _TDF.TDF_Tool_swigregister
 TDF_Tool_swigregister(TDF_Tool)
 
-def TDF_Tool_NbLabels(*args):
+def TDF_Tool_NbLabels(*args) -> "Standard_Integer" :
   """
     * Returns the number of labels of the tree, including <aLabel>. aLabel is also included in this figure. This information is useful in setting the size of an array.
 
@@ -8526,7 +8526,7 @@ def TDF_Tool_NbLabels(*args):
     """
   return _TDF.TDF_Tool_NbLabels(*args)
 
-def TDF_Tool_NbAttributes(*args):
+def TDF_Tool_NbAttributes(*args) -> "Standard_Integer" :
   """
     * Returns the total number of attributes attached to the labels dependent on the label aLabel. The attributes of aLabel are also included in this figure. This information is useful in setting the size of an array.
 
@@ -8545,7 +8545,7 @@ def TDF_Tool_NbAttributes(*args):
     """
   return _TDF.TDF_Tool_NbAttributes(*args)
 
-def TDF_Tool_IsSelfContained(*args):
+def TDF_Tool_IsSelfContained(*args) -> "Standard_Boolean" :
   """
     * Returns true if <aLabel> and its descendants reference only attributes or labels attached to themselves.
 
@@ -8564,7 +8564,7 @@ def TDF_Tool_IsSelfContained(*args):
     """
   return _TDF.TDF_Tool_IsSelfContained(*args)
 
-def TDF_Tool_OutReferers(*args):
+def TDF_Tool_OutReferers(*args) -> "void" :
   """
     * Returns in <theAtts> the attributes having out references.  Caution: <theAtts> is not cleared before use!
 
@@ -8589,7 +8589,7 @@ def TDF_Tool_OutReferers(*args):
     """
   return _TDF.TDF_Tool_OutReferers(*args)
 
-def TDF_Tool_OutReferences(*args):
+def TDF_Tool_OutReferences(*args) -> "void" :
   """
     * Returns in <atts> the referenced attributes. Caution: <atts> is not cleared before use!
 
@@ -8614,7 +8614,7 @@ def TDF_Tool_OutReferences(*args):
     """
   return _TDF.TDF_Tool_OutReferences(*args)
 
-def TDF_Tool_RelocateLabel(*args):
+def TDF_Tool_RelocateLabel(*args) -> "void" :
   """
     * Returns the label having the same sub-entry as <aLabel> but located as descendant as <toRoot> instead of <fromRoot>.  Exemple :  aLabel = 0:3:24:7:2:7 fromRoot = 0:3:24 toRoot = 0:5 returned label = 0:5:7:2:7
 
@@ -8633,7 +8633,7 @@ def TDF_Tool_RelocateLabel(*args):
     """
   return _TDF.TDF_Tool_RelocateLabel(*args)
 
-def TDF_Tool_Entry(*args):
+def TDF_Tool_Entry(*args) -> "void" :
   """
     * Returns the entry for the label aLabel in the form of the ASCII character string anEntry containing the tag list for aLabel.
 
@@ -8646,7 +8646,7 @@ def TDF_Tool_Entry(*args):
     """
   return _TDF.TDF_Tool_Entry(*args)
 
-def TDF_Tool_TagList(*args):
+def TDF_Tool_TagList(*args) -> "void" :
   """
     * Returns the entry of <aLabel> as list of integers in <aTagList>.
 
@@ -8667,7 +8667,7 @@ def TDF_Tool_TagList(*args):
     """
   return _TDF.TDF_Tool_TagList(*args)
 
-def TDF_Tool_Label(*args):
+def TDF_Tool_Label(*args) -> "void" :
   """
     * Returns the label expressed by <anEntry>; creates the label if it does not exist and if <create> is true.
 
@@ -8708,7 +8708,7 @@ def TDF_Tool_Label(*args):
     """
   return _TDF.TDF_Tool_Label(*args)
 
-def TDF_Tool_CountLabels(*args):
+def TDF_Tool_CountLabels(*args) -> "void" :
   """
     * Adds the labels of <aLabelList> to <aLabelMap> if they are unbound, or increases their reference counters. At the end of the process, <aLabelList> contains only the ADDED labels.
 
@@ -8721,7 +8721,7 @@ def TDF_Tool_CountLabels(*args):
     """
   return _TDF.TDF_Tool_CountLabels(*args)
 
-def TDF_Tool_DeductLabels(*args):
+def TDF_Tool_DeductLabels(*args) -> "void" :
   """
     * Decreases the reference counters of the labels of <aLabelList> to <aLabelMap>, and removes labels with null counter. At the end of the process, <aLabelList> contains only the SUPPRESSED labels.
 
@@ -8734,7 +8734,7 @@ def TDF_Tool_DeductLabels(*args):
     """
   return _TDF.TDF_Tool_DeductLabels(*args)
 
-def TDF_Tool_DeepDump(*args):
+def TDF_Tool_DeepDump(*args) -> "void" :
   """
     * Dumps <aDF> and its labels and their attributes.
 
@@ -8755,7 +8755,7 @@ def TDF_Tool_DeepDump(*args):
     """
   return _TDF.TDF_Tool_DeepDump(*args)
 
-def TDF_Tool_ExtendedDeepDump(*args):
+def TDF_Tool_ExtendedDeepDump(*args) -> "void" :
   """
     * Dumps <aDF> and its labels and their attributes, if their IDs are kept by <aFilter>. Dumps also the attributes content.
 
@@ -8801,7 +8801,7 @@ class TDF_Transaction(object):
 
         """
         _TDF.TDF_Transaction_swiginit(self,_TDF.new_TDF_Transaction(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Aborts all the transactions on <myDF> and sets <aDF> to build a transaction context on <aDF>, ready to be opened.
 
@@ -8812,7 +8812,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Initialize(self, *args)
 
-    def Open(self, *args):
+    def Open(self, *args) -> "Standard_Integer" :
         """
         * If not yet done, opens a new transaction on <myDF>. Returns the index of the just opened transaction.  It raises DomainError if the transaction is already open, and NullObject if there is no current Data framework.
 
@@ -8821,7 +8821,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Open(self, *args)
 
-    def Commit(self, *args):
+    def Commit(self, *args) -> "Handle_TDF_Delta" :
         """
         * Commits the transactions until AND including the current opened one.
 
@@ -8832,7 +8832,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Commit(self, *args)
 
-    def Abort(self, *args):
+    def Abort(self, *args) -> "void" :
         """
         * Aborts the transactions until AND including the current opened one.
 
@@ -8841,7 +8841,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Abort(self, *args)
 
-    def Data(self, *args):
+    def Data(self, *args) -> "Handle_TDF_Data" :
         """
         * Returns the Data from TDF.
 
@@ -8850,7 +8850,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Data(self, *args)
 
-    def Transaction(self, *args):
+    def Transaction(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of the transaction opened by <self>.
 
@@ -8859,7 +8859,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Transaction(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns the transaction name.
 
@@ -8868,7 +8868,7 @@ class TDF_Transaction(object):
         """
         return _TDF.TDF_Transaction_Name(self, *args)
 
-    def IsOpen(self, *args):
+    def IsOpen(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the transaction is open.
 
@@ -8910,11 +8910,11 @@ class TDF_DeltaOnAddition(TDF_AttributeDelta):
 
         """
         _TDF.TDF_DeltaOnAddition_swiginit(self,_TDF.new_TDF_DeltaOnAddition(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DeltaOnAddition self)"""
         return _TDF.TDF_DeltaOnAddition__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DeltaOnAddition" :
         """GetHandle(TDF_DeltaOnAddition self) -> Handle_TDF_DeltaOnAddition"""
         return _TDF.TDF_DeltaOnAddition_GetHandle(self)
 
@@ -8952,7 +8952,7 @@ Handle_TDF_DeltaOnAddition._kill_pointed = new_instancemethod(_TDF.Handle_TDF_De
 Handle_TDF_DeltaOnAddition_swigregister = _TDF.Handle_TDF_DeltaOnAddition_swigregister
 Handle_TDF_DeltaOnAddition_swigregister(Handle_TDF_DeltaOnAddition)
 
-def Handle_TDF_DeltaOnAddition_DownCast(*args):
+def Handle_TDF_DeltaOnAddition_DownCast(*args) -> "Handle_TDF_DeltaOnAddition const" :
   return _TDF.Handle_TDF_DeltaOnAddition_DownCast(*args)
 Handle_TDF_DeltaOnAddition_DownCast = _TDF.Handle_TDF_DeltaOnAddition_DownCast
 
@@ -8969,11 +8969,11 @@ class TDF_DeltaOnForget(TDF_AttributeDelta):
 
         """
         _TDF.TDF_DeltaOnForget_swiginit(self,_TDF.new_TDF_DeltaOnForget(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DeltaOnForget self)"""
         return _TDF.TDF_DeltaOnForget__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DeltaOnForget" :
         """GetHandle(TDF_DeltaOnForget self) -> Handle_TDF_DeltaOnForget"""
         return _TDF.TDF_DeltaOnForget_GetHandle(self)
 
@@ -9011,7 +9011,7 @@ Handle_TDF_DeltaOnForget._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Delt
 Handle_TDF_DeltaOnForget_swigregister = _TDF.Handle_TDF_DeltaOnForget_swigregister
 Handle_TDF_DeltaOnForget_swigregister(Handle_TDF_DeltaOnForget)
 
-def Handle_TDF_DeltaOnForget_DownCast(*args):
+def Handle_TDF_DeltaOnForget_DownCast(*args) -> "Handle_TDF_DeltaOnForget const" :
   return _TDF.Handle_TDF_DeltaOnForget_DownCast(*args)
 Handle_TDF_DeltaOnForget_DownCast = _TDF.Handle_TDF_DeltaOnForget_DownCast
 
@@ -9019,11 +9019,11 @@ class TDF_DeltaOnModification(TDF_AttributeDelta):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DeltaOnModification self)"""
         return _TDF.TDF_DeltaOnModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DeltaOnModification" :
         """GetHandle(TDF_DeltaOnModification self) -> Handle_TDF_DeltaOnModification"""
         return _TDF.TDF_DeltaOnModification_GetHandle(self)
 
@@ -9061,7 +9061,7 @@ Handle_TDF_DeltaOnModification._kill_pointed = new_instancemethod(_TDF.Handle_TD
 Handle_TDF_DeltaOnModification_swigregister = _TDF.Handle_TDF_DeltaOnModification_swigregister
 Handle_TDF_DeltaOnModification_swigregister(Handle_TDF_DeltaOnModification)
 
-def Handle_TDF_DeltaOnModification_DownCast(*args):
+def Handle_TDF_DeltaOnModification_DownCast(*args) -> "Handle_TDF_DeltaOnModification const" :
   return _TDF.Handle_TDF_DeltaOnModification_DownCast(*args)
 Handle_TDF_DeltaOnModification_DownCast = _TDF.Handle_TDF_DeltaOnModification_DownCast
 
@@ -9069,11 +9069,11 @@ class TDF_DeltaOnRemoval(TDF_AttributeDelta):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DeltaOnRemoval self)"""
         return _TDF.TDF_DeltaOnRemoval__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DeltaOnRemoval" :
         """GetHandle(TDF_DeltaOnRemoval self) -> Handle_TDF_DeltaOnRemoval"""
         return _TDF.TDF_DeltaOnRemoval_GetHandle(self)
 
@@ -9111,7 +9111,7 @@ Handle_TDF_DeltaOnRemoval._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Del
 Handle_TDF_DeltaOnRemoval_swigregister = _TDF.Handle_TDF_DeltaOnRemoval_swigregister
 Handle_TDF_DeltaOnRemoval_swigregister(Handle_TDF_DeltaOnRemoval)
 
-def Handle_TDF_DeltaOnRemoval_DownCast(*args):
+def Handle_TDF_DeltaOnRemoval_DownCast(*args) -> "Handle_TDF_DeltaOnRemoval const" :
   return _TDF.Handle_TDF_DeltaOnRemoval_DownCast(*args)
 Handle_TDF_DeltaOnRemoval_DownCast = _TDF.Handle_TDF_DeltaOnRemoval_DownCast
 
@@ -9128,11 +9128,11 @@ class TDF_DeltaOnResume(TDF_AttributeDelta):
 
         """
         _TDF.TDF_DeltaOnResume_swiginit(self,_TDF.new_TDF_DeltaOnResume(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DeltaOnResume self)"""
         return _TDF.TDF_DeltaOnResume__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DeltaOnResume" :
         """GetHandle(TDF_DeltaOnResume self) -> Handle_TDF_DeltaOnResume"""
         return _TDF.TDF_DeltaOnResume_GetHandle(self)
 
@@ -9170,14 +9170,14 @@ Handle_TDF_DeltaOnResume._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Delt
 Handle_TDF_DeltaOnResume_swigregister = _TDF.Handle_TDF_DeltaOnResume_swigregister
 Handle_TDF_DeltaOnResume_swigregister(Handle_TDF_DeltaOnResume)
 
-def Handle_TDF_DeltaOnResume_DownCast(*args):
+def Handle_TDF_DeltaOnResume_DownCast(*args) -> "Handle_TDF_DeltaOnResume const" :
   return _TDF.Handle_TDF_DeltaOnResume_DownCast(*args)
 Handle_TDF_DeltaOnResume_DownCast = _TDF.Handle_TDF_DeltaOnResume_DownCast
 
 class TDF_Reference(TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
@@ -9185,7 +9185,7 @@ class TDF_Reference(TDF_Attribute):
         return _TDF.TDF_Reference_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param I:
         :type I: TDF_Label &
@@ -9200,14 +9200,14 @@ class TDF_Reference(TDF_Attribute):
         """
         return _TDF.TDF_Reference_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TDF_Label" :
         """
         :rtype: TDF_Label
 
         """
         return _TDF.TDF_Reference_Get(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDF_Reference self) -> std::string"""
         return _TDF.TDF_Reference_DumpToString(self)
 
@@ -9217,11 +9217,11 @@ class TDF_Reference(TDF_Attribute):
 
         """
         _TDF.TDF_Reference_swiginit(self,_TDF.new_TDF_Reference(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_Reference self)"""
         return _TDF.TDF_Reference__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_Reference" :
         """GetHandle(TDF_Reference self) -> Handle_TDF_Reference"""
         return _TDF.TDF_Reference_GetHandle(self)
 
@@ -9241,7 +9241,7 @@ TDF_Reference.GetHandle = new_instancemethod(_TDF.TDF_Reference_GetHandle,None,T
 TDF_Reference_swigregister = _TDF.TDF_Reference_swigregister
 TDF_Reference_swigregister(TDF_Reference)
 
-def TDF_Reference_GetID(*args):
+def TDF_Reference_GetID(*args) -> "Standard_GUID const &" :
   """
     :rtype: Standard_GUID
 
@@ -9269,14 +9269,14 @@ Handle_TDF_Reference._kill_pointed = new_instancemethod(_TDF.Handle_TDF_Referenc
 Handle_TDF_Reference_swigregister = _TDF.Handle_TDF_Reference_swigregister
 Handle_TDF_Reference_swigregister(Handle_TDF_Reference)
 
-def Handle_TDF_Reference_DownCast(*args):
+def Handle_TDF_Reference_DownCast(*args) -> "Handle_TDF_Reference const" :
   return _TDF.Handle_TDF_Reference_DownCast(*args)
 Handle_TDF_Reference_DownCast = _TDF.Handle_TDF_Reference_DownCast
 
 class TDF_TagSource(TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -9292,14 +9292,14 @@ class TDF_TagSource(TDF_Attribute):
 
         """
         _TDF.TDF_TagSource_swiginit(self,_TDF.new_TDF_TagSource(*args))
-    def NewTag(self, *args):
+    def NewTag(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_TagSource_NewTag(self, *args)
 
-    def NewChild(self, *args):
+    def NewChild(self, *args) -> "TDF_Label" :
         """
         * Find (or create) a tagSource attribute located at <L> and make a new child label. TagSource methods =================
 
@@ -9312,14 +9312,14 @@ class TDF_TagSource(TDF_Attribute):
         """
         return _TDF.TDF_TagSource_NewChild(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TDF.TDF_TagSource_Get(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Find, or create, a TagSource attribute. the TagSource attribute is returned.
 
@@ -9336,11 +9336,11 @@ class TDF_TagSource(TDF_Attribute):
         """
         return _TDF.TDF_TagSource_Set(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_TagSource self)"""
         return _TDF.TDF_TagSource__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_TagSource" :
         """GetHandle(TDF_TagSource self) -> Handle_TDF_TagSource"""
         return _TDF.TDF_TagSource_GetHandle(self)
 
@@ -9361,7 +9361,7 @@ TDF_TagSource.GetHandle = new_instancemethod(_TDF.TDF_TagSource_GetHandle,None,T
 TDF_TagSource_swigregister = _TDF.TDF_TagSource_swigregister
 TDF_TagSource_swigregister(TDF_TagSource)
 
-def TDF_TagSource_GetID(*args):
+def TDF_TagSource_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -9391,7 +9391,7 @@ Handle_TDF_TagSource._kill_pointed = new_instancemethod(_TDF.Handle_TDF_TagSourc
 Handle_TDF_TagSource_swigregister = _TDF.Handle_TDF_TagSource_swigregister
 Handle_TDF_TagSource_swigregister(Handle_TDF_TagSource)
 
-def Handle_TDF_TagSource_DownCast(*args):
+def Handle_TDF_TagSource_DownCast(*args) -> "Handle_TDF_TagSource const" :
   return _TDF.Handle_TDF_TagSource_DownCast(*args)
 Handle_TDF_TagSource_DownCast = _TDF.Handle_TDF_TagSource_DownCast
 
@@ -9408,11 +9408,11 @@ class TDF_DefaultDeltaOnModification(TDF_DeltaOnModification):
 
         """
         _TDF.TDF_DefaultDeltaOnModification_swiginit(self,_TDF.new_TDF_DefaultDeltaOnModification(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DefaultDeltaOnModification self)"""
         return _TDF.TDF_DefaultDeltaOnModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DefaultDeltaOnModification" :
         """GetHandle(TDF_DefaultDeltaOnModification self) -> Handle_TDF_DefaultDeltaOnModification"""
         return _TDF.TDF_DefaultDeltaOnModification_GetHandle(self)
 
@@ -9450,7 +9450,7 @@ Handle_TDF_DefaultDeltaOnModification._kill_pointed = new_instancemethod(_TDF.Ha
 Handle_TDF_DefaultDeltaOnModification_swigregister = _TDF.Handle_TDF_DefaultDeltaOnModification_swigregister
 Handle_TDF_DefaultDeltaOnModification_swigregister(Handle_TDF_DefaultDeltaOnModification)
 
-def Handle_TDF_DefaultDeltaOnModification_DownCast(*args):
+def Handle_TDF_DefaultDeltaOnModification_DownCast(*args) -> "Handle_TDF_DefaultDeltaOnModification const" :
   return _TDF.Handle_TDF_DefaultDeltaOnModification_DownCast(*args)
 Handle_TDF_DefaultDeltaOnModification_DownCast = _TDF.Handle_TDF_DefaultDeltaOnModification_DownCast
 
@@ -9467,11 +9467,11 @@ class TDF_DefaultDeltaOnRemoval(TDF_DeltaOnRemoval):
 
         """
         _TDF.TDF_DefaultDeltaOnRemoval_swiginit(self,_TDF.new_TDF_DefaultDeltaOnRemoval(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDF_DefaultDeltaOnRemoval self)"""
         return _TDF.TDF_DefaultDeltaOnRemoval__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDF_DefaultDeltaOnRemoval" :
         """GetHandle(TDF_DefaultDeltaOnRemoval self) -> Handle_TDF_DefaultDeltaOnRemoval"""
         return _TDF.TDF_DefaultDeltaOnRemoval_GetHandle(self)
 
@@ -9509,7 +9509,7 @@ Handle_TDF_DefaultDeltaOnRemoval._kill_pointed = new_instancemethod(_TDF.Handle_
 Handle_TDF_DefaultDeltaOnRemoval_swigregister = _TDF.Handle_TDF_DefaultDeltaOnRemoval_swigregister
 Handle_TDF_DefaultDeltaOnRemoval_swigregister(Handle_TDF_DefaultDeltaOnRemoval)
 
-def Handle_TDF_DefaultDeltaOnRemoval_DownCast(*args):
+def Handle_TDF_DefaultDeltaOnRemoval_DownCast(*args) -> "Handle_TDF_DefaultDeltaOnRemoval const" :
   return _TDF.Handle_TDF_DefaultDeltaOnRemoval_DownCast(*args)
 Handle_TDF_DefaultDeltaOnRemoval_DownCast = _TDF.Handle_TDF_DefaultDeltaOnRemoval_DownCast
 

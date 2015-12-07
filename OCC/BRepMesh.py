@@ -151,7 +151,7 @@ BRepMesh_ReMesh = _BRepMesh.BRepMesh_ReMesh
 class brepmesh(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Mesh(*args):
+    def Mesh(*args) -> "void" :
         """
         * call to incremental mesh.
 
@@ -179,7 +179,7 @@ brepmesh._kill_pointed = new_instancemethod(_BRepMesh.brepmesh__kill_pointed,Non
 brepmesh_swigregister = _BRepMesh.brepmesh_swigregister
 brepmesh_swigregister(brepmesh)
 
-def brepmesh_Mesh(*args):
+def brepmesh_Mesh(*args) -> "void" :
   """
     * call to incremental mesh.
 
@@ -213,7 +213,7 @@ class BRepMesh_Array1OfBiPoint(object):
 
         """
         _BRepMesh.BRepMesh_Array1OfBiPoint_swiginit(self,_BRepMesh.new_BRepMesh_Array1OfBiPoint(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: BRepMesh_BiPoint &
@@ -222,21 +222,21 @@ class BRepMesh_Array1OfBiPoint(object):
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_Array1OfBiPoint const &" :
         """
         :param Other:
         :type Other: BRepMesh_Array1OfBiPoint &
@@ -245,7 +245,7 @@ class BRepMesh_Array1OfBiPoint(object):
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_Array1OfBiPoint const &" :
         """
         :param Other:
         :type Other: BRepMesh_Array1OfBiPoint &
@@ -254,28 +254,28 @@ class BRepMesh_Array1OfBiPoint(object):
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -286,7 +286,7 @@ class BRepMesh_Array1OfBiPoint(object):
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_BiPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -295,7 +295,7 @@ class BRepMesh_Array1OfBiPoint(object):
         """
         return _BRepMesh.BRepMesh_Array1OfBiPoint_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "BRepMesh_BiPoint &" :
         """
         :param Index:
         :type Index: int
@@ -348,7 +348,7 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
 
         """
         _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_Array1OfVertexOfDelaun(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: BRepMesh_Vertex &
@@ -357,21 +357,21 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_Array1OfVertexOfDelaun const &" :
         """
         :param Other:
         :type Other: BRepMesh_Array1OfVertexOfDelaun &
@@ -380,7 +380,7 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_Array1OfVertexOfDelaun const &" :
         """
         :param Other:
         :type Other: BRepMesh_Array1OfVertexOfDelaun &
@@ -389,28 +389,28 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -421,7 +421,7 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_Vertex const &" :
         """
         :param Index:
         :type Index: int
@@ -430,7 +430,7 @@ class BRepMesh_Array1OfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_Array1OfVertexOfDelaun_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "BRepMesh_Vertex &" :
         """
         :param Index:
         :type Index: int
@@ -481,14 +481,14 @@ class BRepMesh_BiPoint(object):
 
         """
         _BRepMesh.BRepMesh_BiPoint_swiginit(self,_BRepMesh.new_BRepMesh_BiPoint(*args))
-    def Indices(self, *args):
+    def Indices(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
         """
         return _BRepMesh.BRepMesh_BiPoint_Indices(self, *args)
 
-    def Coordinates(self, *args):
+    def Coordinates(self, *args) -> "Standard_Address" :
         """
         :rtype: Standard_Address
 
@@ -524,7 +524,7 @@ class BRepMesh_Circ(object):
 
         """
         _BRepMesh.BRepMesh_Circ_swiginit(self,_BRepMesh.new_BRepMesh_Circ(*args))
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param loc:
         :type loc: gp_XY
@@ -533,7 +533,7 @@ class BRepMesh_Circ(object):
         """
         return _BRepMesh.BRepMesh_Circ_SetLocation(self, *args)
 
-    def SetRadius(self, *args):
+    def SetRadius(self, *args) -> "void" :
         """
         :param rad:
         :type rad: float
@@ -542,14 +542,14 @@ class BRepMesh_Circ(object):
         """
         return _BRepMesh.BRepMesh_Circ_SetRadius(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "gp_XY const" :
         """
         :rtype: gp_XY
 
         """
         return _BRepMesh.BRepMesh_Circ_Location(self, *args)
 
-    def Radius(self, *args):
+    def Radius(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -589,7 +589,7 @@ class BRepMesh_CircleInspector(object):
 
         """
         _BRepMesh.BRepMesh_CircleInspector_swiginit(self,_BRepMesh.new_BRepMesh_CircleInspector(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param theInd:
         :type theInd: int
@@ -600,21 +600,21 @@ class BRepMesh_CircleInspector(object):
         """
         return _BRepMesh.BRepMesh_CircleInspector_Add(self, *args)
 
-    def ClerResList(self, *args):
+    def ClerResList(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_CircleInspector_ClerResList(self, *args)
 
-    def MapOfCirc(self, *args):
+    def MapOfCirc(self, *args) -> "CircVector &" :
         """
         :rtype: CircVector
 
         """
         return _BRepMesh.BRepMesh_CircleInspector_MapOfCirc(self, *args)
 
-    def GetCirc(self, *args):
+    def GetCirc(self, *args) -> "BRepMesh_Circ &" :
         """
         :param theInd:
         :type theInd: int
@@ -623,7 +623,7 @@ class BRepMesh_CircleInspector(object):
         """
         return _BRepMesh.BRepMesh_CircleInspector_GetCirc(self, *args)
 
-    def SetCurrent(self, *args):
+    def SetCurrent(self, *args) -> "void" :
         """
         * Set current node to be checked
 
@@ -634,7 +634,7 @@ class BRepMesh_CircleInspector(object):
         """
         return _BRepMesh.BRepMesh_CircleInspector_SetCurrent(self, *args)
 
-    def GetCoincidentInd(self, *args):
+    def GetCoincidentInd(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         * //!Get result index of node
 
@@ -643,7 +643,7 @@ class BRepMesh_CircleInspector(object):
         """
         return _BRepMesh.BRepMesh_CircleInspector_GetCoincidentInd(self, *args)
 
-    def Inspect(self, *args):
+    def Inspect(self, *args) -> "NCollection_CellFilter_Action" :
         """
         * Implementation of inspection method
 
@@ -654,7 +654,7 @@ class BRepMesh_CircleInspector(object):
         """
         return _BRepMesh.BRepMesh_CircleInspector_Inspect(self, *args)
 
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param theIdx:
         :type theIdx: int
@@ -685,7 +685,7 @@ BRepMesh_CircleInspector._kill_pointed = new_instancemethod(_BRepMesh.BRepMesh_C
 BRepMesh_CircleInspector_swigregister = _BRepMesh.BRepMesh_CircleInspector_swigregister
 BRepMesh_CircleInspector_swigregister(BRepMesh_CircleInspector)
 
-def BRepMesh_CircleInspector_IsEqual(*args):
+def BRepMesh_CircleInspector_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param theIdx:
     :type theIdx: int
@@ -715,7 +715,7 @@ class BRepMesh_CircleTool(object):
 
         """
         _BRepMesh.BRepMesh_CircleTool_swiginit(self,_BRepMesh.new_BRepMesh_CircleTool(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Constructs a CircleTool with the maximal dimension of the occuped space and an evaluation of the number of circles.
 
@@ -726,7 +726,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_Initialize(self, *args)
 
-    def SetCellSize(self, *args):
+    def SetCellSize(self, *args) -> "void" :
         """
         * Sets new size for cellfilter
 
@@ -745,7 +745,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_SetCellSize(self, *args)
 
-    def SetMinMaxSize(self, *args):
+    def SetMinMaxSize(self, *args) -> "void" :
         """
         * Sets min and max size for circle
 
@@ -758,7 +758,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_SetMinMaxSize(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         * Adds and binds circle to the tool.
 
@@ -783,7 +783,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_Add(self, *args)
 
-    def MocAdd(self, *args):
+    def MocAdd(self, *args) -> "void" :
         """
         * Adds implicit zero circle
 
@@ -794,7 +794,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_MocAdd(self, *args)
 
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         * Deletes a circle from the tool.
 
@@ -805,7 +805,7 @@ class BRepMesh_CircleTool(object):
         """
         return _BRepMesh.BRepMesh_CircleTool_Delete(self, *args)
 
-    def Select(self, *args):
+    def Select(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         * Select the circles which contains thePnt.
 
@@ -862,7 +862,7 @@ class BRepMesh_Classifier(object):
 
         """
         _BRepMesh.BRepMesh_Classifier_swiginit(self,_BRepMesh.new_BRepMesh_Classifier(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "TopAbs_State" :
         """
         :param thePoint:
         :type thePoint: gp_Pnt2d
@@ -871,14 +871,14 @@ class BRepMesh_Classifier(object):
         """
         return _BRepMesh.BRepMesh_Classifier_Perform(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "BRepMesh_Status" :
         """
         :rtype: BRepMesh_Status
 
         """
         return _BRepMesh.BRepMesh_Classifier_State(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -915,7 +915,7 @@ class BRepMesh_ComparatorOfIndexedVertexOfDelaun(object):
 
         """
         _BRepMesh.BRepMesh_ComparatorOfIndexedVertexOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_ComparatorOfIndexedVertexOfDelaun(*args))
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <Left> is lower than <Right>
 
@@ -928,7 +928,7 @@ class BRepMesh_ComparatorOfIndexedVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_ComparatorOfIndexedVertexOfDelaun_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <Left> is greater than <Right>
 
@@ -941,7 +941,7 @@ class BRepMesh_ComparatorOfIndexedVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_ComparatorOfIndexedVertexOfDelaun_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * returns True when <Right> and <Left> are equal.
 
@@ -980,7 +980,7 @@ class BRepMesh_ComparatorOfVertexOfDelaun(object):
 
         """
         _BRepMesh.BRepMesh_ComparatorOfVertexOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_ComparatorOfVertexOfDelaun(*args))
-    def IsLower(self, *args):
+    def IsLower(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <Left> is lower than <Right>
 
@@ -993,7 +993,7 @@ class BRepMesh_ComparatorOfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_ComparatorOfVertexOfDelaun_IsLower(self, *args)
 
-    def IsGreater(self, *args):
+    def IsGreater(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <Left> is greater than <Right>
 
@@ -1006,7 +1006,7 @@ class BRepMesh_ComparatorOfVertexOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_ComparatorOfVertexOfDelaun_IsGreater(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         * returns True when <Right> and <Left> are equal.
 
@@ -1047,7 +1047,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute(OCC.TCollection.TCollecti
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfFaceAttribute &
@@ -1056,14 +1056,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute(OCC.TCollection.TCollecti
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfFaceAttribute_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRepMesh_FaceAttribute const &" :
         """
         :rtype: Handle_BRepMesh_FaceAttribute
 
@@ -1098,7 +1098,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger(OCC.TCollection.TC
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfIntegerListOfInteger &
@@ -1107,14 +1107,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger(OCC.TCollection.TC
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         :rtype: BRepMesh_ListOfInteger
 
@@ -1149,7 +1149,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY(OCC.TCollection.TCollec
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfIntegerListOfXY &
@@ -1158,14 +1158,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY(OCC.TCollection.TCollec
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerListOfXY_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_ListOfXY const &" :
         """
         :rtype: BRepMesh_ListOfXY
 
@@ -1200,7 +1200,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt(OCC.TCollection.TCollection_
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfIntegerPnt &
@@ -1209,14 +1209,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfIntegerPnt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -1251,7 +1251,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon(OCC.TCollection.TCol
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfShapePairOfPolygon &
@@ -1260,14 +1260,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon(OCC.TCollection.TCol
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapePairOfPolygon_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_PairOfPolygon const &" :
         """
         :rtype: BRepMesh_PairOfPolygon
 
@@ -1302,7 +1302,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfShapeReal(OCC.TCollection.TCollection_B
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapeReal_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfShapeReal(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfShapeReal &
@@ -1311,14 +1311,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfShapeReal(OCC.TCollection.TCollection_B
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapeReal_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfShapeReal_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real const &" :
         """
         :rtype: float
 
@@ -1353,7 +1353,7 @@ class BRepMesh_DataMapIteratorOfDataMapOfVertexInteger(OCC.TCollection.TCollecti
 
         """
         _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfVertexInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapIteratorOfDataMapOfVertexInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: BRepMesh_DataMapOfVertexInteger &
@@ -1362,14 +1362,14 @@ class BRepMesh_DataMapIteratorOfDataMapOfVertexInteger(OCC.TCollection.TCollecti
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfVertexInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepMesh.BRepMesh_DataMapIteratorOfDataMapOfVertexInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -1406,25 +1406,25 @@ class BRepMesh_DataMapNodeOfDataMapOfFaceAttribute(OCC.TCollection.TCollection_M
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Face" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRepMesh_FaceAttribute &" :
         """
         :rtype: Handle_BRepMesh_FaceAttribute
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfFaceAttribute self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfFaceAttribute__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfFaceAttribute self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_GetHandle(self)
 
@@ -1464,7 +1464,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute._kill_pointed = new_instance
 Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfFaceAttribute_DownCast
 
@@ -1483,26 +1483,26 @@ class BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger(OCC.TCollection.TColle
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         :rtype: BRepMesh_ListOfInteger
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_GetHandle(self)
 
@@ -1543,7 +1543,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger._kill_pointed = new_i
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfInteger_DownCast
 
@@ -1562,26 +1562,26 @@ class BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY(OCC.TCollection.TCollection
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_ListOfXY &" :
         """
         :rtype: BRepMesh_ListOfXY
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_GetHandle(self)
 
@@ -1622,7 +1622,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY._kill_pointed = new_instan
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerListOfXY_DownCast
 
@@ -1641,26 +1641,26 @@ class BRepMesh_DataMapNodeOfDataMapOfIntegerPnt(OCC.TCollection.TCollection_MapN
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerPnt self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(BRepMesh_DataMapNodeOfDataMapOfIntegerPnt self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         :rtype: gp_Pnt
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfIntegerPnt self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfIntegerPnt self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_GetHandle(self)
 
@@ -1701,7 +1701,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt._kill_pointed = new_instancemet
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfIntegerPnt_DownCast
 
@@ -1720,25 +1720,25 @@ class BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon(OCC.TCollection.TCollect
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_PairOfPolygon &" :
         """
         :rtype: BRepMesh_PairOfPolygon
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_GetHandle(self)
 
@@ -1778,7 +1778,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon._kill_pointed = new_ins
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapePairOfPolygon_DownCast
 
@@ -1797,26 +1797,26 @@ class BRepMesh_DataMapNodeOfDataMapOfShapeReal(OCC.TCollection.TCollection_MapNo
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfShapeReal(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Real" :
         """GetValue(BRepMesh_DataMapNodeOfDataMapOfShapeReal self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(BRepMesh_DataMapNodeOfDataMapOfShapeReal self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfShapeReal self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfShapeReal self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfShapeReal_GetHandle(self)
 
@@ -1857,7 +1857,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal._kill_pointed = new_instancemeth
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfShapeReal_DownCast
 
@@ -1876,26 +1876,26 @@ class BRepMesh_DataMapNodeOfDataMapOfVertexInteger(OCC.TCollection.TCollection_M
 
         """
         _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapNodeOfDataMapOfVertexInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Vertex" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(BRepMesh_DataMapNodeOfDataMapOfVertexInteger self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(BRepMesh_DataMapNodeOfDataMapOfVertexInteger self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapNodeOfDataMapOfVertexInteger self)"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger" :
         """GetHandle(BRepMesh_DataMapNodeOfDataMapOfVertexInteger self) -> Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger"""
         return _BRepMesh.BRepMesh_DataMapNodeOfDataMapOfVertexInteger_GetHandle(self)
 
@@ -1936,7 +1936,7 @@ Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger._kill_pointed = new_instance
 Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_swigregister = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_swigregister
 Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_swigregister(Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger)
 
-def Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_DownCast(*args):
+def Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_DownCast(*args) -> "Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger const" :
   return _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_DownCast(*args)
 Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_DownCast = _BRepMesh.Handle_BRepMesh_DataMapNodeOfDataMapOfVertexInteger_DownCast
 
@@ -1951,7 +1951,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_DataMapOfFaceAttribute_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfFaceAttribute(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfFaceAttribute &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfFaceAttribute &
@@ -1960,7 +1960,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfFaceAttribute &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfFaceAttribute &
@@ -1969,7 +1969,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1978,14 +1978,14 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -1996,7 +1996,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2005,7 +2005,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2014,7 +2014,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_BRepMesh_FaceAttribute const &" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2023,7 +2023,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_BRepMesh_FaceAttribute &" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2032,7 +2032,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2041,7 +2041,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -2050,7 +2050,7 @@ class BRepMesh_DataMapOfFaceAttribute(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfFaceAttribute self)"""
         return _BRepMesh.BRepMesh_DataMapOfFaceAttribute__kill_pointed(self)
 
@@ -2088,7 +2088,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
 
         """
         _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfIntegerListOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfIntegerListOfInteger &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerListOfInteger &
@@ -2097,7 +2097,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfIntegerListOfInteger &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerListOfInteger &
@@ -2106,7 +2106,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2115,14 +2115,14 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2133,7 +2133,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2142,7 +2142,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2151,7 +2151,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         :param K:
         :type K: int &
@@ -2160,7 +2160,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         :param K:
         :type K: int &
@@ -2169,7 +2169,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2178,7 +2178,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2187,7 +2187,7 @@ class BRepMesh_DataMapOfIntegerListOfInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfIntegerListOfInteger self)"""
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfInteger__kill_pointed(self)
 
@@ -2225,7 +2225,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfIntegerListOfXY(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfIntegerListOfXY &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerListOfXY &
@@ -2234,7 +2234,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfIntegerListOfXY &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerListOfXY &
@@ -2243,7 +2243,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2252,14 +2252,14 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2270,7 +2270,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2279,7 +2279,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2288,7 +2288,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "BRepMesh_ListOfXY const &" :
         """
         :param K:
         :type K: int &
@@ -2297,7 +2297,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "BRepMesh_ListOfXY &" :
         """
         :param K:
         :type K: int &
@@ -2306,7 +2306,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2315,7 +2315,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2324,7 +2324,7 @@ class BRepMesh_DataMapOfIntegerListOfXY(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfIntegerListOfXY self)"""
         return _BRepMesh.BRepMesh_DataMapOfIntegerListOfXY__kill_pointed(self)
 
@@ -2362,7 +2362,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_DataMapOfIntegerPnt_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfIntegerPnt(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfIntegerPnt &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerPnt &
@@ -2371,7 +2371,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfIntegerPnt &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfIntegerPnt &
@@ -2380,7 +2380,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2389,14 +2389,14 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2407,7 +2407,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2416,7 +2416,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2425,7 +2425,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "gp_Pnt const" :
         """
         :param K:
         :type K: int &
@@ -2434,7 +2434,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "gp_Pnt" :
         """
         :param K:
         :type K: int &
@@ -2443,7 +2443,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2452,7 +2452,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2461,7 +2461,7 @@ class BRepMesh_DataMapOfIntegerPnt(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfIntegerPnt self)"""
         return _BRepMesh.BRepMesh_DataMapOfIntegerPnt__kill_pointed(self)
 
@@ -2499,7 +2499,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
 
         """
         _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfShapePairOfPolygon(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfShapePairOfPolygon &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfShapePairOfPolygon &
@@ -2508,7 +2508,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfShapePairOfPolygon &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfShapePairOfPolygon &
@@ -2517,7 +2517,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2526,14 +2526,14 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2544,7 +2544,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2553,7 +2553,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2562,7 +2562,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "BRepMesh_PairOfPolygon const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2571,7 +2571,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "BRepMesh_PairOfPolygon &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2580,7 +2580,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2589,7 +2589,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2598,7 +2598,7 @@ class BRepMesh_DataMapOfShapePairOfPolygon(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfShapePairOfPolygon self)"""
         return _BRepMesh.BRepMesh_DataMapOfShapePairOfPolygon__kill_pointed(self)
 
@@ -2636,7 +2636,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_DataMapOfShapeReal_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfShapeReal(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfShapeReal &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfShapeReal &
@@ -2645,7 +2645,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfShapeReal &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfShapeReal &
@@ -2654,7 +2654,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2663,14 +2663,14 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2681,7 +2681,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2690,7 +2690,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2699,7 +2699,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Real const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2708,7 +2708,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Real &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2717,7 +2717,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2726,7 +2726,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2735,7 +2735,7 @@ class BRepMesh_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfShapeReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfShapeReal self)"""
         return _BRepMesh.BRepMesh_DataMapOfShapeReal__kill_pointed(self)
 
@@ -2773,7 +2773,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_DataMapOfVertexInteger_swiginit(self,_BRepMesh.new_BRepMesh_DataMapOfVertexInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_DataMapOfVertexInteger &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfVertexInteger &
@@ -2782,7 +2782,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_DataMapOfVertexInteger &" :
         """
         :param Other:
         :type Other: BRepMesh_DataMapOfVertexInteger &
@@ -2791,7 +2791,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2800,14 +2800,14 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2818,7 +2818,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2827,7 +2827,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2836,7 +2836,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2845,7 +2845,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2854,7 +2854,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2863,7 +2863,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -2872,7 +2872,7 @@ class BRepMesh_DataMapOfVertexInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataMapOfVertexInteger self)"""
         return _BRepMesh.BRepMesh_DataMapOfVertexInteger__kill_pointed(self)
 
@@ -2914,7 +2914,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepMesh.BRepMesh_DataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_DataStructureOfDelaun(*args))
-    def AddNode(self, *args):
+    def AddNode(self, *args) -> "Standard_Integer" :
         """
         * Adds a node to the mesh if the node is not already in the Mesh. Returns the index of the node in the structure.
 
@@ -2925,7 +2925,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_AddNode(self, *args)
 
-    def GetNode(self, *args):
+    def GetNode(self, *args) -> "BRepMesh_Vertex const &" :
         """
         * Get the value of node <Index>.
 
@@ -2936,7 +2936,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_GetNode(self, *args)
 
-    def GetNodeList(self, *args):
+    def GetNodeList(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         * Get the list of node <Index>.
 
@@ -2947,7 +2947,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_GetNodeList(self, *args)
 
-    def ForceRemoveNode(self, *args):
+    def ForceRemoveNode(self, *args) -> "void" :
         """
         * Removes the node of index <index> from the mesh.
 
@@ -2958,7 +2958,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ForceRemoveNode(self, *args)
 
-    def ForceRemoveLink(self, *args):
+    def ForceRemoveLink(self, *args) -> "void" :
         """
         * Removes the link of index <index> from the mesh.
 
@@ -2969,7 +2969,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ForceRemoveLink(self, *args)
 
-    def ReplaceNodes(self, *args):
+    def ReplaceNodes(self, *args) -> "void" :
         """
         * Removes the all nodes and sets new map of nodes from the mesh. For internal use only.
 
@@ -2980,7 +2980,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ReplaceNodes(self, *args)
 
-    def RemoveNode(self, *args):
+    def RemoveNode(self, *args) -> "void" :
         """
         * Removes the node of index <index> from the mesh.
 
@@ -2991,7 +2991,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_RemoveNode(self, *args)
 
-    def MoveNode(self, *args):
+    def MoveNode(self, *args) -> "Standard_Boolean" :
         """
         * Changes the UV value of node of index <Index> by <newNode>. Returns false if <newnode> is already in the structure.
 
@@ -3004,7 +3004,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_MoveNode(self, *args)
 
-    def NbNodes(self, *args):
+    def NbNodes(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of nodes in this mesh.
 
@@ -3013,7 +3013,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_NbNodes(self, *args)
 
-    def AddLink(self, *args):
+    def AddLink(self, *args) -> "Standard_Integer" :
         """
         * Adds a Link to the mesh if the Link is not already in the structure. Returns the index of the link in the structure.
 
@@ -3024,7 +3024,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_AddLink(self, *args)
 
-    def GetLink(self, *args):
+    def GetLink(self, *args) -> "BRepMesh_Edge const &" :
         """
         * Get the value of Link <Index>.
 
@@ -3035,7 +3035,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_GetLink(self, *args)
 
-    def RemoveLink(self, *args):
+    def RemoveLink(self, *args) -> "void" :
         """
         * Removes the Link of index <Index> from the mesh.
 
@@ -3046,7 +3046,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_RemoveLink(self, *args)
 
-    def SubstituteLink(self, *args):
+    def SubstituteLink(self, *args) -> "Standard_Boolean" :
         """
         * Substitutes the Link of index <Index> by <newLink> clear the connectivity.
 
@@ -3059,7 +3059,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_SubstituteLink(self, *args)
 
-    def NbLinks(self, *args):
+    def NbLinks(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of elements in this mesh.
 
@@ -3068,7 +3068,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_NbLinks(self, *args)
 
-    def AddElement(self, *args):
+    def AddElement(self, *args) -> "Standard_Integer" :
         """
         * Adds an element to the mesh if it is not already in the Mesh. Returns the index of the element in the structure.
 
@@ -3079,7 +3079,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_AddElement(self, *args)
 
-    def GetElement(self, *args):
+    def GetElement(self, *args) -> "BRepMesh_Triangle const &" :
         """
         * Get the value of Element <Index>.
 
@@ -3090,7 +3090,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_GetElement(self, *args)
 
-    def RemoveElement(self, *args):
+    def RemoveElement(self, *args) -> "void" :
         """
         * Removes the element of index <Index> in the mesh.
 
@@ -3101,7 +3101,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_RemoveElement(self, *args)
 
-    def SubstituteElement(self, *args):
+    def SubstituteElement(self, *args) -> "Standard_Boolean" :
         """
         * Substitutes the element of index <Index> by <newElement>. The links connectivity is updated.
 
@@ -3114,7 +3114,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_SubstituteElement(self, *args)
 
-    def NbElements(self, *args):
+    def NbElements(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of elements in this mesh.
 
@@ -3123,7 +3123,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_NbElements(self, *args)
 
-    def ClearDomain(self, *args):
+    def ClearDomain(self, *args) -> "void" :
         """
         * Removes all elements
 
@@ -3132,7 +3132,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ClearDomain(self, *args)
 
-    def IndexOf(self, *args):
+    def IndexOf(self, *args) -> "Standard_Integer" :
         """
         * Finds the index of the node. Returns 0 if the node is not in the mesh.
 
@@ -3155,7 +3155,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_IndexOf(self, *args)
 
-    def LinkNeighboursOf(self, *args):
+    def LinkNeighboursOf(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         * Gives the list of Link's indices handling the node <theNode>.
 
@@ -3166,7 +3166,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_LinkNeighboursOf(self, *args)
 
-    def ElemConnectedTo(self, *args):
+    def ElemConnectedTo(self, *args) -> "BRepMesh_PairOfIndex const &" :
         """
         * Gives the element's indices conected to <theLink>.
 
@@ -3177,7 +3177,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ElemConnectedTo(self, *args)
 
-    def ElemOfDomain(self, *args):
+    def ElemOfDomain(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         * Gives the list of element's indices
 
@@ -3186,7 +3186,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ElemOfDomain(self, *args)
 
-    def LinkOfDomain(self, *args):
+    def LinkOfDomain(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         * Gives the list of link's indices
 
@@ -3195,7 +3195,7 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_LinkOfDomain(self, *args)
 
-    def ClearDeleted(self, *args):
+    def ClearDeleted(self, *args) -> "void" :
         """
         * This method substitute the deleted items by the last in Indexed Data Maps to have only non-deleted elements, links or nodes in the structure.
 
@@ -3204,18 +3204,18 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_ClearDeleted(self, *args)
 
-    def StatisticsToString(self):
+    def StatisticsToString(self) -> "std::string" :
         """StatisticsToString(BRepMesh_DataStructureOfDelaun self) -> std::string"""
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_StatisticsToString(self)
 
-    def Allocator(self, *args):
+    def Allocator(self, *args) -> "BRepMesh_BaseAllocator const &" :
         """
         :rtype: BRepMesh_BaseAllocator
 
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_Allocator(self, *args)
 
-    def Data(self, *args):
+    def Data(self, *args) -> "BRepMesh_VertexTool &" :
         """
         * Give the data structure for cell size and tolerance initialization.
 
@@ -3224,11 +3224,11 @@ class BRepMesh_DataStructureOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_Data(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_DataStructureOfDelaun__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DataStructureOfDelaun" :
         """GetHandle(BRepMesh_DataStructureOfDelaun self) -> Handle_BRepMesh_DataStructureOfDelaun"""
         return _BRepMesh.BRepMesh_DataStructureOfDelaun_GetHandle(self)
 
@@ -3295,7 +3295,7 @@ Handle_BRepMesh_DataStructureOfDelaun._kill_pointed = new_instancemethod(_BRepMe
 Handle_BRepMesh_DataStructureOfDelaun_swigregister = _BRepMesh.Handle_BRepMesh_DataStructureOfDelaun_swigregister
 Handle_BRepMesh_DataStructureOfDelaun_swigregister(Handle_BRepMesh_DataStructureOfDelaun)
 
-def Handle_BRepMesh_DataStructureOfDelaun_DownCast(*args):
+def Handle_BRepMesh_DataStructureOfDelaun_DownCast(*args) -> "Handle_BRepMesh_DataStructureOfDelaun const" :
   return _BRepMesh.Handle_BRepMesh_DataStructureOfDelaun_DownCast(*args)
 Handle_BRepMesh_DataStructureOfDelaun_DownCast = _BRepMesh.Handle_BRepMesh_DataStructureOfDelaun_DownCast
 
@@ -3334,7 +3334,7 @@ class BRepMesh_Delaun(object):
 
         """
         _BRepMesh.BRepMesh_Delaun_swiginit(self,_BRepMesh.new_BRepMesh_Delaun(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the triangulation with an array of vertices.
 
@@ -3345,7 +3345,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_Init(self, *args)
 
-    def RemoveVertex(self, *args):
+    def RemoveVertex(self, *args) -> "void" :
         """
         * Removes a vertex from the triangulation.
 
@@ -3356,7 +3356,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_RemoveVertex(self, *args)
 
-    def AddVertices(self, *args):
+    def AddVertices(self, *args) -> "void" :
         """
         * Adds some vertices into the triangulation.
 
@@ -3367,7 +3367,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_AddVertices(self, *args)
 
-    def UseEdge(self, *args):
+    def UseEdge(self, *args) -> "Standard_Boolean" :
         """
         * Modify mesh to use the edge. Return True if done.
 
@@ -3378,7 +3378,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_UseEdge(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "Handle_BRepMesh_DataStructureOfDelaun const &" :
         """
         * Gives the Mesh data structure.
 
@@ -3387,7 +3387,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_Result(self, *args)
 
-    def Frontier(self, *args):
+    def Frontier(self, *args) -> "Handle_BRepMesh_MapOfInteger" :
         """
         * Gives the list of frontier edges
 
@@ -3396,7 +3396,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_Frontier(self, *args)
 
-    def InternalEdges(self, *args):
+    def InternalEdges(self, *args) -> "Handle_BRepMesh_MapOfInteger" :
         """
         * Gives the list of internal edges
 
@@ -3405,7 +3405,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_InternalEdges(self, *args)
 
-    def FreeEdges(self, *args):
+    def FreeEdges(self, *args) -> "Handle_BRepMesh_MapOfInteger" :
         """
         * Gives the list of free edges used only one time
 
@@ -3414,7 +3414,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_FreeEdges(self, *args)
 
-    def GetVertex(self, *args):
+    def GetVertex(self, *args) -> "BRepMesh_Vertex const &" :
         """
         * Gives vertex with the given index
 
@@ -3425,7 +3425,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_GetVertex(self, *args)
 
-    def GetEdge(self, *args):
+    def GetEdge(self, *args) -> "BRepMesh_Edge const &" :
         """
         * Gives edge with the given index
 
@@ -3436,7 +3436,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_GetEdge(self, *args)
 
-    def GetTriangle(self, *args):
+    def GetTriangle(self, *args) -> "BRepMesh_Triangle const &" :
         """
         * Gives triangle with the given index
 
@@ -3447,7 +3447,7 @@ class BRepMesh_Delaun(object):
         """
         return _BRepMesh.BRepMesh_Delaun_GetTriangle(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         * Test is the given triangle contains the given vertex. If <theEdgeOn> != 0 the vertex lies onto the edge index returned through this parameter.
 
@@ -3490,7 +3490,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetDeflection(self, *args):
+    def SetDeflection(self, *args) -> "void" :
         """
         * Setup linear deflection.
 
@@ -3501,7 +3501,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_SetDeflection(self, *args)
 
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         * Returns linear deflection.
 
@@ -3510,7 +3510,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_Deflection(self, *args)
 
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         * Setup angular deflection.
 
@@ -3521,7 +3521,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_SetAngle(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Standard_Real" :
         """
         * Returns angular deflection.
 
@@ -3530,7 +3530,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_Angle(self, *args)
 
-    def SetShape(self, *args):
+    def SetShape(self, *args) -> "void" :
         """
         * Set the shape to triangulate.
 
@@ -3541,14 +3541,14 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_SetShape(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _BRepMesh.BRepMesh_DiscretRoot_Shape(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Compute triangulation for set shape.
 
@@ -3557,7 +3557,7 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if triangualtion was performed and has success.
 
@@ -3566,11 +3566,11 @@ class BRepMesh_DiscretRoot(OCC.Standard.Standard_Transient):
         """
         return _BRepMesh.BRepMesh_DiscretRoot_IsDone(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_DiscretRoot self)"""
         return _BRepMesh.BRepMesh_DiscretRoot__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_DiscretRoot" :
         """GetHandle(BRepMesh_DiscretRoot self) -> Handle_BRepMesh_DiscretRoot"""
         return _BRepMesh.BRepMesh_DiscretRoot_GetHandle(self)
 
@@ -3616,7 +3616,7 @@ Handle_BRepMesh_DiscretRoot._kill_pointed = new_instancemethod(_BRepMesh.Handle_
 Handle_BRepMesh_DiscretRoot_swigregister = _BRepMesh.Handle_BRepMesh_DiscretRoot_swigregister
 Handle_BRepMesh_DiscretRoot_swigregister(Handle_BRepMesh_DiscretRoot)
 
-def Handle_BRepMesh_DiscretRoot_DownCast(*args):
+def Handle_BRepMesh_DiscretRoot_DownCast(*args) -> "Handle_BRepMesh_DiscretRoot const" :
   return _BRepMesh.Handle_BRepMesh_DiscretRoot_DownCast(*args)
 Handle_BRepMesh_DiscretRoot_DownCast = _BRepMesh.Handle_BRepMesh_DiscretRoot_DownCast
 
@@ -3639,7 +3639,7 @@ class BRepMesh_Edge(object):
 
         """
         _BRepMesh.BRepMesh_Edge_swiginit(self,_BRepMesh.new_BRepMesh_Edge(*args))
-    def FirstNode(self, *args):
+    def FirstNode(self, *args) -> "Standard_Integer" :
         """
         * Give the index of first node of the Link.
 
@@ -3648,7 +3648,7 @@ class BRepMesh_Edge(object):
         """
         return _BRepMesh.BRepMesh_Edge_FirstNode(self, *args)
 
-    def LastNode(self, *args):
+    def LastNode(self, *args) -> "Standard_Integer" :
         """
         * Give the index of Last node of the Link.
 
@@ -3657,14 +3657,14 @@ class BRepMesh_Edge(object):
         """
         return _BRepMesh.BRepMesh_Edge_LastNode(self, *args)
 
-    def Movability(self, *args):
+    def Movability(self, *args) -> "BRepMesh_DegreeOfFreedom" :
         """
         :rtype: BRepMesh_DegreeOfFreedom
 
         """
         return _BRepMesh.BRepMesh_Edge_Movability(self, *args)
 
-    def SetMovability(self, *args):
+    def SetMovability(self, *args) -> "void" :
         """
         :param Move:
         :type Move: BRepMesh_DegreeOfFreedom
@@ -3673,7 +3673,7 @@ class BRepMesh_Edge(object):
         """
         return _BRepMesh.BRepMesh_Edge_SetMovability(self, *args)
 
-    def HashCode(self, *args):
+    def HashCode(self, *args) -> "Standard_Integer" :
         """
         :param Upper:
         :type Upper: int
@@ -3682,7 +3682,7 @@ class BRepMesh_Edge(object):
         """
         return _BRepMesh.BRepMesh_Edge_HashCode(self, *args)
 
-    def SameOrientation(self, *args):
+    def SameOrientation(self, *args) -> "Standard_Boolean" :
         """
         :param Other:
         :type Other: BRepMesh_Edge &
@@ -3691,7 +3691,7 @@ class BRepMesh_Edge(object):
         """
         return _BRepMesh.BRepMesh_Edge_SameOrientation(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Other:
         :type Other: BRepMesh_Edge &
@@ -3730,7 +3730,7 @@ BRepMesh_Edge_swigregister(BRepMesh_Edge)
 class BRepMesh_ElemHasherOfDataStructureOfDelaun(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Triangle &
@@ -3742,7 +3742,7 @@ class BRepMesh_ElemHasherOfDataStructureOfDelaun(object):
         return _BRepMesh.BRepMesh_ElemHasherOfDataStructureOfDelaun_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: BRepMesh_Triangle &
@@ -3768,7 +3768,7 @@ BRepMesh_ElemHasherOfDataStructureOfDelaun._kill_pointed = new_instancemethod(_B
 BRepMesh_ElemHasherOfDataStructureOfDelaun_swigregister = _BRepMesh.BRepMesh_ElemHasherOfDataStructureOfDelaun_swigregister
 BRepMesh_ElemHasherOfDataStructureOfDelaun_swigregister(BRepMesh_ElemHasherOfDataStructureOfDelaun)
 
-def BRepMesh_ElemHasherOfDataStructureOfDelaun_HashCode(*args):
+def BRepMesh_ElemHasherOfDataStructureOfDelaun_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: BRepMesh_Triangle &
@@ -3779,7 +3779,7 @@ def BRepMesh_ElemHasherOfDataStructureOfDelaun_HashCode(*args):
     """
   return _BRepMesh.BRepMesh_ElemHasherOfDataStructureOfDelaun_HashCode(*args)
 
-def BRepMesh_ElemHasherOfDataStructureOfDelaun_IsEqual(*args):
+def BRepMesh_ElemHasherOfDataStructureOfDelaun_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: BRepMesh_Triangle &
@@ -3799,90 +3799,90 @@ class BRepMesh_FaceAttribute(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepMesh.BRepMesh_FaceAttribute_swiginit(self,_BRepMesh.new_BRepMesh_FaceAttribute(*args))
-    def GetGetDefFace(self):
+    def GetGetDefFace(self) -> "Standard_Real" :
         """GetGetDefFace(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetDefFace(self)
 
-    def SetGetDefFace(self, *args):
+    def SetGetDefFace(self, *args) -> "void" :
         """SetGetDefFace(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetDefFace(self, *args)
 
-    def GetGetUMin(self):
+    def GetGetUMin(self) -> "Standard_Real" :
         """GetGetUMin(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetUMin(self)
 
-    def SetGetUMin(self, *args):
+    def SetGetUMin(self, *args) -> "void" :
         """SetGetUMin(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetUMin(self, *args)
 
-    def GetGetVMin(self):
+    def GetGetVMin(self) -> "Standard_Real" :
         """GetGetVMin(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetVMin(self)
 
-    def SetGetVMin(self, *args):
+    def SetGetVMin(self, *args) -> "void" :
         """SetGetVMin(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetVMin(self, *args)
 
-    def GetGetUMax(self):
+    def GetGetUMax(self) -> "Standard_Real" :
         """GetGetUMax(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetUMax(self)
 
-    def SetGetUMax(self, *args):
+    def SetGetUMax(self, *args) -> "void" :
         """SetGetUMax(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetUMax(self, *args)
 
-    def GetGetVMax(self):
+    def GetGetVMax(self) -> "Standard_Real" :
         """GetGetVMax(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetVMax(self)
 
-    def SetGetVMax(self, *args):
+    def SetGetVMax(self, *args) -> "void" :
         """SetGetVMax(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetVMax(self, *args)
 
-    def GetGetDeltaX(self):
+    def GetGetDeltaX(self) -> "Standard_Real" :
         """GetGetDeltaX(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetDeltaX(self)
 
-    def SetGetDeltaX(self, *args):
+    def SetGetDeltaX(self, *args) -> "void" :
         """SetGetDeltaX(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetDeltaX(self, *args)
 
-    def GetGetDeltaY(self):
+    def GetGetDeltaY(self) -> "Standard_Real" :
         """GetGetDeltaY(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetDeltaY(self)
 
-    def SetGetDeltaY(self, *args):
+    def SetGetDeltaY(self, *args) -> "void" :
         """SetGetDeltaY(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetDeltaY(self, *args)
 
-    def GetGetMinX(self):
+    def GetGetMinX(self) -> "Standard_Real" :
         """GetGetMinX(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetMinX(self)
 
-    def SetGetMinX(self, *args):
+    def SetGetMinX(self, *args) -> "void" :
         """SetGetMinX(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetMinX(self, *args)
 
-    def GetGetMinY(self):
+    def GetGetMinY(self) -> "Standard_Real" :
         """GetGetMinY(BRepMesh_FaceAttribute self) -> Standard_Real"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetGetMinY(self)
 
-    def SetGetMinY(self, *args):
+    def SetGetMinY(self, *args) -> "void" :
         """SetGetMinY(BRepMesh_FaceAttribute self, Standard_Real value)"""
         return _BRepMesh.BRepMesh_FaceAttribute_SetGetMinY(self, *args)
 
-    def GetClassifier(self, *args):
+    def GetClassifier(self, *args) -> "BRepMesh_ClassifierPtr &" :
         """
         :rtype: BRepMesh_ClassifierPtr
 
         """
         return _BRepMesh.BRepMesh_FaceAttribute_GetClassifier(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_FaceAttribute self)"""
         return _BRepMesh.BRepMesh_FaceAttribute__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_FaceAttribute" :
         """GetHandle(BRepMesh_FaceAttribute self) -> Handle_BRepMesh_FaceAttribute"""
         return _BRepMesh.BRepMesh_FaceAttribute_GetHandle(self)
 
@@ -3939,7 +3939,7 @@ Handle_BRepMesh_FaceAttribute._kill_pointed = new_instancemethod(_BRepMesh.Handl
 Handle_BRepMesh_FaceAttribute_swigregister = _BRepMesh.Handle_BRepMesh_FaceAttribute_swigregister
 Handle_BRepMesh_FaceAttribute_swigregister(Handle_BRepMesh_FaceAttribute)
 
-def Handle_BRepMesh_FaceAttribute_DownCast(*args):
+def Handle_BRepMesh_FaceAttribute_DownCast(*args) -> "Handle_BRepMesh_FaceAttribute const" :
   return _BRepMesh.Handle_BRepMesh_FaceAttribute_DownCast(*args)
 Handle_BRepMesh_FaceAttribute_DownCast = _BRepMesh.Handle_BRepMesh_FaceAttribute_DownCast
 
@@ -3986,7 +3986,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepMesh.BRepMesh_FastDiscret_swiginit(self,_BRepMesh.new_BRepMesh_FastDiscret(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Build triangulation on the whole shape
 
@@ -3997,7 +3997,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Perform(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Record a face for further processing.
 
@@ -4010,7 +4010,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Add(self, *args)
 
-    def Process(self, *args):
+    def Process(self, *args) -> "void" :
         """
         * Triangulate a face previously recorded for processing by call to Add(). Can be executed in parallel threads.
 
@@ -4021,14 +4021,14 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Process(self, *args)
 
-    def CurrentFaceStatus(self, *args):
+    def CurrentFaceStatus(self, *args) -> "BRepMesh_Status" :
         """
         :rtype: BRepMesh_Status
 
         """
         return _BRepMesh.BRepMesh_FastDiscret_CurrentFaceStatus(self, *args)
 
-    def RelativeEdgeDeflection(*args):
+    def RelativeEdgeDeflection(*args) -> "Standard_Real &" :
         """
         * Returns computed relative deflection for edge
 
@@ -4046,7 +4046,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         return _BRepMesh.BRepMesh_FastDiscret_RelativeEdgeDeflection(*args)
 
     RelativeEdgeDeflection = staticmethod(RelativeEdgeDeflection)
-    def BoxMaxDimension(*args):
+    def BoxMaxDimension(*args) -> "Standard_Real &" :
         """
         * Returns the maximal dimension of Bnd_Box
 
@@ -4060,7 +4060,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         return _BRepMesh.BRepMesh_FastDiscret_BoxMaxDimension(*args)
 
     BoxMaxDimension = staticmethod(BoxMaxDimension)
-    def SetParallel(self, *args):
+    def SetParallel(self, *args) -> "void" :
         """
         * Request algorithm to launch in multiple threads to improve performance (should be supported by plugin).
 
@@ -4071,7 +4071,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_SetParallel(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns the multi-threading usage flag.
 
@@ -4080,7 +4080,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_IsParallel(self, *args)
 
-    def CreateMutexesForSubShapes(self, *args):
+    def CreateMutexesForSubShapes(self, *args) -> "void" :
         """
         * Creates mutexes for each sub-shape of type theType in theShape. Used to avoid data races.
 
@@ -4093,7 +4093,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_CreateMutexesForSubShapes(self, *args)
 
-    def RemoveAllMutexes(self, *args):
+    def RemoveAllMutexes(self, *args) -> "void" :
         """
         * Removes all created mutexes
 
@@ -4102,7 +4102,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_RemoveAllMutexes(self, *args)
 
-    def NbTriangles(self, *args):
+    def NbTriangles(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of built triangles.
 
@@ -4111,7 +4111,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_NbTriangles(self, *args)
 
-    def Triangle(self, *args):
+    def Triangle(self, *args) -> "BRepMesh_Triangle const &" :
         """
         * Gives the triangle of <Index>.
 
@@ -4122,7 +4122,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Triangle(self, *args)
 
-    def NbEdges(self, *args):
+    def NbEdges(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of built Edges
 
@@ -4131,7 +4131,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_NbEdges(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "BRepMesh_Edge const &" :
         """
         * Gives the edge of index <Index>.
 
@@ -4142,7 +4142,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Edge(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of built Vertices.
 
@@ -4151,7 +4151,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_NbVertices(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "BRepMesh_Vertex const &" :
         """
         * Gives the vertex of <Index>.
 
@@ -4162,7 +4162,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Vertex(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Gives the location3d of the vertex of <Index>.
 
@@ -4173,7 +4173,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Pnt(self, *args)
 
-    def VerticesOfDomain(self, *args):
+    def VerticesOfDomain(self, *args) -> "void" :
         """
         * Gives the list of indices of the vertices
 
@@ -4184,7 +4184,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_VerticesOfDomain(self, *args)
 
-    def EdgesOfDomain(self, *args):
+    def EdgesOfDomain(self, *args) -> "void" :
         """
         * Gives the list of indices of the edges
 
@@ -4195,7 +4195,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_EdgesOfDomain(self, *args)
 
-    def TrianglesOfDomain(self, *args):
+    def TrianglesOfDomain(self, *args) -> "void" :
         """
         * Gives the list of indices of the triangles
 
@@ -4206,7 +4206,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_TrianglesOfDomain(self, *args)
 
-    def NbPoint3d(self, *args):
+    def NbPoint3d(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of different location in 3d space. It is different of the number of vertices if there is more than one surface. Even for one surface, the number can be different if an edge is shared.
 
@@ -4215,7 +4215,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_NbPoint3d(self, *args)
 
-    def Point3d(self, *args):
+    def Point3d(self, *args) -> "gp_Pnt const" :
         """
         * Gives the 3d space location of the vertex <Index>.
 
@@ -4226,7 +4226,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_Point3d(self, *args)
 
-    def GetDeflection(self, *args):
+    def GetDeflection(self, *args) -> "Standard_Real" :
         """
         * returns the deflection value.
 
@@ -4235,7 +4235,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_GetDeflection(self, *args)
 
-    def GetAngle(self, *args):
+    def GetAngle(self, *args) -> "Standard_Real" :
         """
         * returns the deflection value.
 
@@ -4244,28 +4244,28 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_GetAngle(self, *args)
 
-    def WithShare(self, *args):
+    def WithShare(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_FastDiscret_WithShare(self, *args)
 
-    def InShape(self, *args):
+    def InShape(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_FastDiscret_InShape(self, *args)
 
-    def ShapeTrigu(self, *args):
+    def ShapeTrigu(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_FastDiscret_ShapeTrigu(self, *args)
 
-    def GetFaceAttribute(self, *args):
+    def GetFaceAttribute(self, *args) -> "Standard_Boolean" :
         """
         * returns the face deflection value.
 
@@ -4278,7 +4278,7 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_GetFaceAttribute(self, *args)
 
-    def RemoveFaceAttribute(self, *args):
+    def RemoveFaceAttribute(self, *args) -> "void" :
         """
         * remove face attribute as useless to free locate memory
 
@@ -4289,18 +4289,18 @@ class BRepMesh_FastDiscret(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscret_RemoveFaceAttribute(self, *args)
 
-    def GetMapOfDefEdge(self, *args):
+    def GetMapOfDefEdge(self, *args) -> "TopTools_DataMapOfShapeReal const &" :
         """
         :rtype: TopTools_DataMapOfShapeReal
 
         """
         return _BRepMesh.BRepMesh_FastDiscret_GetMapOfDefEdge(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_FastDiscret self)"""
         return _BRepMesh.BRepMesh_FastDiscret__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_FastDiscret" :
         """GetHandle(BRepMesh_FastDiscret self) -> Handle_BRepMesh_FastDiscret"""
         return _BRepMesh.BRepMesh_FastDiscret_GetHandle(self)
 
@@ -4345,7 +4345,7 @@ BRepMesh_FastDiscret.GetHandle = new_instancemethod(_BRepMesh.BRepMesh_FastDiscr
 BRepMesh_FastDiscret_swigregister = _BRepMesh.BRepMesh_FastDiscret_swigregister
 BRepMesh_FastDiscret_swigregister(BRepMesh_FastDiscret)
 
-def BRepMesh_FastDiscret_RelativeEdgeDeflection(*args):
+def BRepMesh_FastDiscret_RelativeEdgeDeflection(*args) -> "Standard_Real &" :
   """
     * Returns computed relative deflection for edge
 
@@ -4362,7 +4362,7 @@ def BRepMesh_FastDiscret_RelativeEdgeDeflection(*args):
     """
   return _BRepMesh.BRepMesh_FastDiscret_RelativeEdgeDeflection(*args)
 
-def BRepMesh_FastDiscret_BoxMaxDimension(*args):
+def BRepMesh_FastDiscret_BoxMaxDimension(*args) -> "Standard_Real &" :
   """
     * Returns the maximal dimension of Bnd_Box
 
@@ -4396,7 +4396,7 @@ Handle_BRepMesh_FastDiscret._kill_pointed = new_instancemethod(_BRepMesh.Handle_
 Handle_BRepMesh_FastDiscret_swigregister = _BRepMesh.Handle_BRepMesh_FastDiscret_swigregister
 Handle_BRepMesh_FastDiscret_swigregister(Handle_BRepMesh_FastDiscret)
 
-def Handle_BRepMesh_FastDiscret_DownCast(*args):
+def Handle_BRepMesh_FastDiscret_DownCast(*args) -> "Handle_BRepMesh_FastDiscret const" :
   return _BRepMesh.Handle_BRepMesh_FastDiscret_DownCast(*args)
 Handle_BRepMesh_FastDiscret_DownCast = _BRepMesh.Handle_BRepMesh_FastDiscret_DownCast
 
@@ -4413,7 +4413,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepMesh.BRepMesh_FastDiscretFace_swiginit(self,_BRepMesh.new_BRepMesh_FastDiscretFace(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param theFace:
         :type theFace: TopoDS_Face &
@@ -4428,7 +4428,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Add(self, *args)
 
-    def Control(self, *args):
+    def Control(self, *args) -> "Standard_Real" :
         """
         :param theCaro:
         :type theCaro: Handle_BRepAdaptor_HSurface &
@@ -4449,7 +4449,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Control(self, *args)
 
-    def FindUV(*args):
+    def FindUV(*args) -> "gp_XY" :
         """
         :param theV:
         :type theV: TopoDS_Vertex &
@@ -4471,7 +4471,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         return _BRepMesh.BRepMesh_FastDiscretFace_FindUV(*args)
 
     FindUV = staticmethod(FindUV)
-    def Triangle(self, *args):
+    def Triangle(self, *args) -> "BRepMesh_Triangle const &" :
         """
         * Gives the triangle of <Index>.
 
@@ -4482,7 +4482,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Triangle(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "BRepMesh_Edge const &" :
         """
         * Gives the edge of index <Index>.
 
@@ -4493,7 +4493,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Edge(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "BRepMesh_Vertex const &" :
         """
         * Gives the vertex of <Index>.
 
@@ -4504,7 +4504,7 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Vertex(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Gives the location3d of the vertex of <Index>.
 
@@ -4515,11 +4515,11 @@ class BRepMesh_FastDiscretFace(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_FastDiscretFace_Pnt(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_FastDiscretFace self)"""
         return _BRepMesh.BRepMesh_FastDiscretFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_FastDiscretFace" :
         """GetHandle(BRepMesh_FastDiscretFace self) -> Handle_BRepMesh_FastDiscretFace"""
         return _BRepMesh.BRepMesh_FastDiscretFace_GetHandle(self)
 
@@ -4542,7 +4542,7 @@ BRepMesh_FastDiscretFace.GetHandle = new_instancemethod(_BRepMesh.BRepMesh_FastD
 BRepMesh_FastDiscretFace_swigregister = _BRepMesh.BRepMesh_FastDiscretFace_swigregister
 BRepMesh_FastDiscretFace_swigregister(BRepMesh_FastDiscretFace)
 
-def BRepMesh_FastDiscretFace_FindUV(*args):
+def BRepMesh_FastDiscretFace_FindUV(*args) -> "gp_XY" :
   """
     :param theV:
     :type theV: TopoDS_Vertex &
@@ -4584,7 +4584,7 @@ Handle_BRepMesh_FastDiscretFace._kill_pointed = new_instancemethod(_BRepMesh.Han
 Handle_BRepMesh_FastDiscretFace_swigregister = _BRepMesh.Handle_BRepMesh_FastDiscretFace_swigregister
 Handle_BRepMesh_FastDiscretFace_swigregister(Handle_BRepMesh_FastDiscretFace)
 
-def Handle_BRepMesh_FastDiscretFace_DownCast(*args):
+def Handle_BRepMesh_FastDiscretFace_DownCast(*args) -> "Handle_BRepMesh_FastDiscretFace const" :
   return _BRepMesh.Handle_BRepMesh_FastDiscretFace_DownCast(*args)
 Handle_BRepMesh_FastDiscretFace_DownCast = _BRepMesh.Handle_BRepMesh_FastDiscretFace_DownCast
 
@@ -4627,7 +4627,7 @@ class BRepMesh_GeomTool(object):
 
         """
         _BRepMesh.BRepMesh_GeomTool_swiginit(self,_BRepMesh.new_BRepMesh_GeomTool(*args))
-    def AddPoint(self, *args):
+    def AddPoint(self, *args) -> "Standard_Integer" :
         """
         * Add point to already calculated points (or replace existing) Returns index of new added point or founded with parametric tolerance (replaced if theIsReplace is true)
 
@@ -4642,14 +4642,14 @@ class BRepMesh_GeomTool(object):
         """
         return _BRepMesh.BRepMesh_GeomTool_AddPoint(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_GeomTool_NbPoints(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         :param IsoParam:
         :type IsoParam: float
@@ -4680,7 +4680,7 @@ class BRepMesh_GeomTool(object):
         """
         return _BRepMesh.BRepMesh_GeomTool_Value(self, *args)
 
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param F:
         :type F: Handle_BRepAdaptor_HSurface &
@@ -4696,7 +4696,7 @@ class BRepMesh_GeomTool(object):
         return _BRepMesh.BRepMesh_GeomTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def Normal(*args):
+    def Normal(*args) -> "Standard_Boolean" :
         """
         * return false if the normal can not be computed
 
@@ -4731,7 +4731,7 @@ BRepMesh_GeomTool._kill_pointed = new_instancemethod(_BRepMesh.BRepMesh_GeomTool
 BRepMesh_GeomTool_swigregister = _BRepMesh.BRepMesh_GeomTool_swigregister
 BRepMesh_GeomTool_swigregister(BRepMesh_GeomTool)
 
-def BRepMesh_GeomTool_D0(*args):
+def BRepMesh_GeomTool_D0(*args) -> "void" :
   """
     :param F:
     :type F: Handle_BRepAdaptor_HSurface &
@@ -4746,7 +4746,7 @@ def BRepMesh_GeomTool_D0(*args):
     """
   return _BRepMesh.BRepMesh_GeomTool_D0(*args)
 
-def BRepMesh_GeomTool_Normal(*args):
+def BRepMesh_GeomTool_Normal(*args) -> "Standard_Boolean" :
   """
     * return false if the normal can not be computed
 
@@ -4786,7 +4786,7 @@ class BRepMesh_HArray1OfVertexOfDelaun(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_HArray1OfVertexOfDelaun(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: BRepMesh_Vertex &
@@ -4795,28 +4795,28 @@ class BRepMesh_HArray1OfVertexOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4827,7 +4827,7 @@ class BRepMesh_HArray1OfVertexOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_Vertex const &" :
         """
         :param Index:
         :type Index: int
@@ -4836,7 +4836,7 @@ class BRepMesh_HArray1OfVertexOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "BRepMesh_Vertex &" :
         """
         :param Index:
         :type Index: int
@@ -4845,25 +4845,25 @@ class BRepMesh_HArray1OfVertexOfDelaun(OCC.MMgt.MMgt_TShared):
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "BRepMesh_Array1OfVertexOfDelaun const &" :
         """
         :rtype: BRepMesh_Array1OfVertexOfDelaun
 
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "BRepMesh_Array1OfVertexOfDelaun &" :
         """
         :rtype: BRepMesh_Array1OfVertexOfDelaun
 
         """
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_HArray1OfVertexOfDelaun self)"""
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_HArray1OfVertexOfDelaun" :
         """GetHandle(BRepMesh_HArray1OfVertexOfDelaun self) -> Handle_BRepMesh_HArray1OfVertexOfDelaun"""
         return _BRepMesh.BRepMesh_HArray1OfVertexOfDelaun_GetHandle(self)
 
@@ -4910,14 +4910,14 @@ Handle_BRepMesh_HArray1OfVertexOfDelaun._kill_pointed = new_instancemethod(_BRep
 Handle_BRepMesh_HArray1OfVertexOfDelaun_swigregister = _BRepMesh.Handle_BRepMesh_HArray1OfVertexOfDelaun_swigregister
 Handle_BRepMesh_HArray1OfVertexOfDelaun_swigregister(Handle_BRepMesh_HArray1OfVertexOfDelaun)
 
-def Handle_BRepMesh_HArray1OfVertexOfDelaun_DownCast(*args):
+def Handle_BRepMesh_HArray1OfVertexOfDelaun_DownCast(*args) -> "Handle_BRepMesh_HArray1OfVertexOfDelaun const" :
   return _BRepMesh.Handle_BRepMesh_HArray1OfVertexOfDelaun_DownCast(*args)
 Handle_BRepMesh_HArray1OfVertexOfDelaun_DownCast = _BRepMesh.Handle_BRepMesh_HArray1OfVertexOfDelaun_DownCast
 
 class BRepMesh_HeapSortIndexedVertexOfDelaun(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -4943,7 +4943,7 @@ BRepMesh_HeapSortIndexedVertexOfDelaun._kill_pointed = new_instancemethod(_BRepM
 BRepMesh_HeapSortIndexedVertexOfDelaun_swigregister = _BRepMesh.BRepMesh_HeapSortIndexedVertexOfDelaun_swigregister
 BRepMesh_HeapSortIndexedVertexOfDelaun_swigregister(BRepMesh_HeapSortIndexedVertexOfDelaun)
 
-def BRepMesh_HeapSortIndexedVertexOfDelaun_Sort(*args):
+def BRepMesh_HeapSortIndexedVertexOfDelaun_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -4957,7 +4957,7 @@ def BRepMesh_HeapSortIndexedVertexOfDelaun_Sort(*args):
 class BRepMesh_HeapSortVertexOfDelaun(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: BRepMesh_Array1OfVertexOfDelaun &
@@ -4983,7 +4983,7 @@ BRepMesh_HeapSortVertexOfDelaun._kill_pointed = new_instancemethod(_BRepMesh.BRe
 BRepMesh_HeapSortVertexOfDelaun_swigregister = _BRepMesh.BRepMesh_HeapSortVertexOfDelaun_swigregister
 BRepMesh_HeapSortVertexOfDelaun_swigregister(BRepMesh_HeapSortVertexOfDelaun)
 
-def BRepMesh_HeapSortVertexOfDelaun_Sort(*args):
+def BRepMesh_HeapSortVertexOfDelaun_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: BRepMesh_Array1OfVertexOfDelaun &
@@ -5005,7 +5005,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
 
         """
         _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_IDMapOfLinkOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IDMapOfLinkOfDataStructureOfDelaun &
@@ -5014,7 +5014,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_IDMapOfLinkOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IDMapOfLinkOfDataStructureOfDelaun &
@@ -5023,7 +5023,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5032,14 +5032,14 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5050,7 +5050,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -5063,14 +5063,14 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5079,7 +5079,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "BRepMesh_Edge const &" :
         """
         :param I:
         :type I: int
@@ -5088,7 +5088,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "BRepMesh_PairOfIndex const &" :
         """
         :param I:
         :type I: int
@@ -5097,7 +5097,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "BRepMesh_PairOfIndex &" :
         """
         :param I:
         :type I: int
@@ -5106,7 +5106,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5115,7 +5115,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "BRepMesh_PairOfIndex const &" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5124,7 +5124,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "BRepMesh_PairOfIndex &" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5133,7 +5133,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5142,7 +5142,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -5151,7 +5151,7 @@ class BRepMesh_IDMapOfLinkOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IDMapOfLinkOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IDMapOfLinkOfDataStructureOfDelaun__kill_pointed(self)
 
@@ -5194,7 +5194,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
 
         """
         _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_IDMapOfNodeOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IDMapOfNodeOfDataStructureOfDelaun &
@@ -5203,7 +5203,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_IDMapOfNodeOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IDMapOfNodeOfDataStructureOfDelaun &
@@ -5212,7 +5212,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5221,14 +5221,14 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5239,7 +5239,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -5252,14 +5252,14 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5268,7 +5268,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "BRepMesh_Vertex const &" :
         """
         :param I:
         :type I: int
@@ -5277,7 +5277,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         :param I:
         :type I: int
@@ -5286,7 +5286,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         :param I:
         :type I: int
@@ -5295,7 +5295,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5304,7 +5304,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5313,7 +5313,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5322,7 +5322,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5331,7 +5331,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5340,7 +5340,7 @@ class BRepMesh_IDMapOfNodeOfDataStructureOfDelaun(OCC.TCollection.TCollection_Ba
         """
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IDMapOfNodeOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IDMapOfNodeOfDataStructureOfDelaun__kill_pointed(self)
 
@@ -5383,7 +5383,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
 
         """
         _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IMapOfElementOfDataStructureOfDelaun(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_IMapOfElementOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IMapOfElementOfDataStructureOfDelaun &
@@ -5392,7 +5392,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_IMapOfElementOfDataStructureOfDelaun &" :
         """
         :param Other:
         :type Other: BRepMesh_IMapOfElementOfDataStructureOfDelaun &
@@ -5401,7 +5401,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5410,14 +5410,14 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Triangle &
@@ -5426,7 +5426,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -5437,14 +5437,14 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: BRepMesh_Triangle &
@@ -5453,7 +5453,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "BRepMesh_Triangle const &" :
         """
         :param I:
         :type I: int
@@ -5462,7 +5462,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Triangle &
@@ -5471,7 +5471,7 @@ class BRepMesh_IMapOfElementOfDataStructureOfDelaun(OCC.TCollection.TCollection_
         """
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IMapOfElementOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IMapOfElementOfDataStructureOfDelaun__kill_pointed(self)
 
@@ -5516,40 +5516,40 @@ class BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun(OCC.TColle
 
         """
         _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "BRepMesh_Edge &" :
         """
         :rtype: BRepMesh_Edge
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_PairOfIndex &" :
         """
         :rtype: BRepMesh_PairOfIndex
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun" :
         """GetHandle(BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun self) -> Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_GetHandle(self)
 
@@ -5592,7 +5592,7 @@ Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun._kill_poi
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_swigregister = _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_swigregister
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_swigregister(Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun)
 
-def Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_DownCast(*args):
+def Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_DownCast(*args) -> "Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun const" :
   return _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_DownCast(*args)
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_DownCast = _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfLinkOfDataStructureOfDelaun_DownCast
 
@@ -5615,40 +5615,40 @@ class BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun(OCC.TColle
 
         """
         _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         :rtype: BRepMesh_ListOfInteger
 
         """
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun" :
         """GetHandle(BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun self) -> Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun"""
         return _BRepMesh.BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_GetHandle(self)
 
@@ -5691,7 +5691,7 @@ Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun._kill_poi
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_swigregister = _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_swigregister
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_swigregister(Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun)
 
-def Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_DownCast(*args):
+def Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_DownCast(*args) -> "Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun const" :
   return _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_DownCast(*args)
 Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_DownCast = _BRepMesh.Handle_BRepMesh_IndexedDataMapNodeOfIDMapOfNodeOfDataStructureOfDelaun_DownCast
 
@@ -5712,33 +5712,33 @@ class BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun(OCC.TCollect
 
         """
         _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "BRepMesh_Triangle &" :
         """
         :rtype: BRepMesh_Triangle
 
         """
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun self)"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun" :
         """GetHandle(BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun self) -> Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_GetHandle(self)
 
@@ -5780,7 +5780,7 @@ Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun._kill_point
 Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_swigregister = _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_swigregister
 Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_swigregister(Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun)
 
-def Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_DownCast(*args):
+def Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_DownCast(*args) -> "Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun const" :
   return _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_DownCast(*args)
 Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_DownCast = _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIMapOfElementOfDataStructureOfDelaun_DownCast
 
@@ -5801,33 +5801,33 @@ class BRepMesh_IndexedMapNodeOfIndexedMapOfVertex(OCC.TCollection.TCollection_Ma
 
         """
         _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_swiginit(self,_BRepMesh.new_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
         """
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(BRepMesh_IndexedMapNodeOfIndexedMapOfVertex self) -> Standard_Integer"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(BRepMesh_IndexedMapNodeOfIndexedMapOfVertex self, Standard_Integer value)"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IndexedMapNodeOfIndexedMapOfVertex self)"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex" :
         """GetHandle(BRepMesh_IndexedMapNodeOfIndexedMapOfVertex self) -> Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex"""
         return _BRepMesh.BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_GetHandle(self)
 
@@ -5869,7 +5869,7 @@ Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex._kill_pointed = new_instancem
 Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_swigregister = _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_swigregister
 Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_swigregister(Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex)
 
-def Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_DownCast(*args):
+def Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_DownCast(*args) -> "Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex const" :
   return _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_DownCast(*args)
 Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_DownCast = _BRepMesh.Handle_BRepMesh_IndexedMapNodeOfIndexedMapOfVertex_DownCast
 
@@ -5884,7 +5884,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
 
         """
         _BRepMesh.BRepMesh_IndexedMapOfVertex_swiginit(self,_BRepMesh.new_BRepMesh_IndexedMapOfVertex(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepMesh_IndexedMapOfVertex &" :
         """
         :param Other:
         :type Other: BRepMesh_IndexedMapOfVertex &
@@ -5893,7 +5893,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepMesh_IndexedMapOfVertex &" :
         """
         :param Other:
         :type Other: BRepMesh_IndexedMapOfVertex &
@@ -5902,7 +5902,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -5911,14 +5911,14 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5927,7 +5927,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -5938,14 +5938,14 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5954,7 +5954,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "BRepMesh_Vertex const &" :
         """
         :param I:
         :type I: int
@@ -5963,7 +5963,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -5972,7 +5972,7 @@ class BRepMesh_IndexedMapOfVertex(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepMesh.BRepMesh_IndexedMapOfVertex_FindIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IndexedMapOfVertex self)"""
         return _BRepMesh.BRepMesh_IndexedMapOfVertex__kill_pointed(self)
 
@@ -6001,7 +6001,7 @@ BRepMesh_IndexedMapOfVertex_swigregister(BRepMesh_IndexedMapOfVertex)
 class BRepMesh_LinkHasherOfDataStructureOfDelaun(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Edge &
@@ -6013,7 +6013,7 @@ class BRepMesh_LinkHasherOfDataStructureOfDelaun(object):
         return _BRepMesh.BRepMesh_LinkHasherOfDataStructureOfDelaun_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: BRepMesh_Edge &
@@ -6039,7 +6039,7 @@ BRepMesh_LinkHasherOfDataStructureOfDelaun._kill_pointed = new_instancemethod(_B
 BRepMesh_LinkHasherOfDataStructureOfDelaun_swigregister = _BRepMesh.BRepMesh_LinkHasherOfDataStructureOfDelaun_swigregister
 BRepMesh_LinkHasherOfDataStructureOfDelaun_swigregister(BRepMesh_LinkHasherOfDataStructureOfDelaun)
 
-def BRepMesh_LinkHasherOfDataStructureOfDelaun_HashCode(*args):
+def BRepMesh_LinkHasherOfDataStructureOfDelaun_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: BRepMesh_Edge &
@@ -6050,7 +6050,7 @@ def BRepMesh_LinkHasherOfDataStructureOfDelaun_HashCode(*args):
     """
   return _BRepMesh.BRepMesh_LinkHasherOfDataStructureOfDelaun_HashCode(*args)
 
-def BRepMesh_LinkHasherOfDataStructureOfDelaun_IsEqual(*args):
+def BRepMesh_LinkHasherOfDataStructureOfDelaun_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: BRepMesh_Edge &
@@ -6074,7 +6074,7 @@ class BRepMesh_ListIteratorOfListOfVertex(object):
 
         """
         _BRepMesh.BRepMesh_ListIteratorOfListOfVertex_swiginit(self,_BRepMesh.new_BRepMesh_ListIteratorOfListOfVertex(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: BRepMesh_ListOfVertex &
@@ -6083,21 +6083,21 @@ class BRepMesh_ListIteratorOfListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfVertex_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfVertex_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfVertex_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
@@ -6133,7 +6133,7 @@ class BRepMesh_ListIteratorOfListOfXY(object):
 
         """
         _BRepMesh.BRepMesh_ListIteratorOfListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_ListIteratorOfListOfXY(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: BRepMesh_ListOfXY &
@@ -6142,21 +6142,21 @@ class BRepMesh_ListIteratorOfListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfXY_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfXY_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListIteratorOfListOfXY_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_XY" :
         """
         :rtype: gp_XY
 
@@ -6192,18 +6192,18 @@ class BRepMesh_ListNodeOfListOfVertex(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepMesh.BRepMesh_ListNodeOfListOfVertex_swiginit(self,_BRepMesh.new_BRepMesh_ListNodeOfListOfVertex(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
         """
         return _BRepMesh.BRepMesh_ListNodeOfListOfVertex_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_ListNodeOfListOfVertex self)"""
         return _BRepMesh.BRepMesh_ListNodeOfListOfVertex__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_ListNodeOfListOfVertex" :
         """GetHandle(BRepMesh_ListNodeOfListOfVertex self) -> Handle_BRepMesh_ListNodeOfListOfVertex"""
         return _BRepMesh.BRepMesh_ListNodeOfListOfVertex_GetHandle(self)
 
@@ -6242,7 +6242,7 @@ Handle_BRepMesh_ListNodeOfListOfVertex._kill_pointed = new_instancemethod(_BRepM
 Handle_BRepMesh_ListNodeOfListOfVertex_swigregister = _BRepMesh.Handle_BRepMesh_ListNodeOfListOfVertex_swigregister
 Handle_BRepMesh_ListNodeOfListOfVertex_swigregister(Handle_BRepMesh_ListNodeOfListOfVertex)
 
-def Handle_BRepMesh_ListNodeOfListOfVertex_DownCast(*args):
+def Handle_BRepMesh_ListNodeOfListOfVertex_DownCast(*args) -> "Handle_BRepMesh_ListNodeOfListOfVertex const" :
   return _BRepMesh.Handle_BRepMesh_ListNodeOfListOfVertex_DownCast(*args)
 Handle_BRepMesh_ListNodeOfListOfVertex_DownCast = _BRepMesh.Handle_BRepMesh_ListNodeOfListOfVertex_DownCast
 
@@ -6259,18 +6259,18 @@ class BRepMesh_ListNodeOfListOfXY(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepMesh.BRepMesh_ListNodeOfListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_ListNodeOfListOfXY(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_XY" :
         """
         :rtype: gp_XY
 
         """
         return _BRepMesh.BRepMesh_ListNodeOfListOfXY_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_ListNodeOfListOfXY self)"""
         return _BRepMesh.BRepMesh_ListNodeOfListOfXY__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_ListNodeOfListOfXY" :
         """GetHandle(BRepMesh_ListNodeOfListOfXY self) -> Handle_BRepMesh_ListNodeOfListOfXY"""
         return _BRepMesh.BRepMesh_ListNodeOfListOfXY_GetHandle(self)
 
@@ -6309,7 +6309,7 @@ Handle_BRepMesh_ListNodeOfListOfXY._kill_pointed = new_instancemethod(_BRepMesh.
 Handle_BRepMesh_ListNodeOfListOfXY_swigregister = _BRepMesh.Handle_BRepMesh_ListNodeOfListOfXY_swigregister
 Handle_BRepMesh_ListNodeOfListOfXY_swigregister(Handle_BRepMesh_ListNodeOfListOfXY)
 
-def Handle_BRepMesh_ListNodeOfListOfXY_DownCast(*args):
+def Handle_BRepMesh_ListNodeOfListOfXY_DownCast(*args) -> "Handle_BRepMesh_ListNodeOfListOfXY const" :
   return _BRepMesh.Handle_BRepMesh_ListNodeOfListOfXY_DownCast(*args)
 Handle_BRepMesh_ListNodeOfListOfXY_DownCast = _BRepMesh.Handle_BRepMesh_ListNodeOfListOfXY_DownCast
 
@@ -6322,7 +6322,7 @@ class BRepMesh_ListOfVertex(object):
 
         """
         _BRepMesh.BRepMesh_ListOfVertex_swiginit(self,_BRepMesh.new_BRepMesh_ListOfVertex(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRepMesh_ListOfVertex &
@@ -6331,7 +6331,7 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRepMesh_ListOfVertex &
@@ -6340,28 +6340,28 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: BRepMesh_Vertex &
@@ -6380,7 +6380,7 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: BRepMesh_Vertex &
@@ -6399,28 +6399,28 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "BRepMesh_Vertex &" :
         """
         :rtype: BRepMesh_Vertex
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListOfVertex_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: BRepMesh_ListIteratorOfListOfVertex &
@@ -6429,7 +6429,7 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: BRepMesh_Vertex &
@@ -6446,7 +6446,7 @@ class BRepMesh_ListOfVertex(object):
         """
         return _BRepMesh.BRepMesh_ListOfVertex_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: BRepMesh_Vertex &
@@ -6497,7 +6497,7 @@ class BRepMesh_ListOfXY(object):
 
         """
         _BRepMesh.BRepMesh_ListOfXY_swiginit(self,_BRepMesh.new_BRepMesh_ListOfXY(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRepMesh_ListOfXY &
@@ -6506,7 +6506,7 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRepMesh_ListOfXY &
@@ -6515,28 +6515,28 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: gp_XY
@@ -6555,7 +6555,7 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: gp_XY
@@ -6574,28 +6574,28 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "gp_XY" :
         """
         :rtype: gp_XY
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "gp_XY" :
         """
         :rtype: gp_XY
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ListOfXY_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: BRepMesh_ListIteratorOfListOfXY &
@@ -6604,7 +6604,7 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: gp_XY
@@ -6621,7 +6621,7 @@ class BRepMesh_ListOfXY(object):
         """
         return _BRepMesh.BRepMesh_ListOfXY_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: gp_XY
@@ -6666,7 +6666,7 @@ BRepMesh_ListOfXY_swigregister(BRepMesh_ListOfXY)
 class BRepMesh_NodeHasherOfDataStructureOfDelaun(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -6678,7 +6678,7 @@ class BRepMesh_NodeHasherOfDataStructureOfDelaun(object):
         return _BRepMesh.BRepMesh_NodeHasherOfDataStructureOfDelaun_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: BRepMesh_Vertex &
@@ -6704,7 +6704,7 @@ BRepMesh_NodeHasherOfDataStructureOfDelaun._kill_pointed = new_instancemethod(_B
 BRepMesh_NodeHasherOfDataStructureOfDelaun_swigregister = _BRepMesh.BRepMesh_NodeHasherOfDataStructureOfDelaun_swigregister
 BRepMesh_NodeHasherOfDataStructureOfDelaun_swigregister(BRepMesh_NodeHasherOfDataStructureOfDelaun)
 
-def BRepMesh_NodeHasherOfDataStructureOfDelaun_HashCode(*args):
+def BRepMesh_NodeHasherOfDataStructureOfDelaun_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: BRepMesh_Vertex &
@@ -6715,7 +6715,7 @@ def BRepMesh_NodeHasherOfDataStructureOfDelaun_HashCode(*args):
     """
   return _BRepMesh.BRepMesh_NodeHasherOfDataStructureOfDelaun_HashCode(*args)
 
-def BRepMesh_NodeHasherOfDataStructureOfDelaun_IsEqual(*args):
+def BRepMesh_NodeHasherOfDataStructureOfDelaun_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: BRepMesh_Vertex &
@@ -6739,7 +6739,7 @@ class BRepMesh_PairOfIndex(object):
 
         """
         _BRepMesh.BRepMesh_PairOfIndex_swiginit(self,_BRepMesh.new_BRepMesh_PairOfIndex(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear indices
 
@@ -6748,7 +6748,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         * append index (store first of last index of pair)
 
@@ -6759,7 +6759,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         * prepend index (store first index)
 
@@ -6770,7 +6770,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_Prepend(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * returns is pair not initialized by index
 
@@ -6779,7 +6779,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_IsEmpty(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         * returns numner of initialized indeces
 
@@ -6788,7 +6788,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_Extent(self, *args)
 
-    def FirstIndex(self, *args):
+    def FirstIndex(self, *args) -> "Standard_Integer" :
         """
         * returns first index from pair
 
@@ -6797,7 +6797,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_FirstIndex(self, *args)
 
-    def LastIndex(self, *args):
+    def LastIndex(self, *args) -> "Standard_Integer" :
         """
         * returns last index
 
@@ -6806,7 +6806,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_LastIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         :param theNum:
         :type theNum: int
@@ -6815,7 +6815,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_Index(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         :param theNum:
         :type theNum: int
@@ -6826,7 +6826,7 @@ class BRepMesh_PairOfIndex(object):
         """
         return _BRepMesh.BRepMesh_PairOfIndex_SetIndex(self, *args)
 
-    def RemoveIndex(self, *args):
+    def RemoveIndex(self, *args) -> "void" :
         """
         * remove indicated
 
@@ -6870,7 +6870,7 @@ class BRepMesh_PairOfPolygon(object):
 
         """
         _BRepMesh.BRepMesh_PairOfPolygon_swiginit(self,_BRepMesh.new_BRepMesh_PairOfPolygon(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear pair handles
 
@@ -6879,7 +6879,7 @@ class BRepMesh_PairOfPolygon(object):
         """
         return _BRepMesh.BRepMesh_PairOfPolygon_Clear(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param thePoly:
         :type thePoly: Handle_Poly_PolygonOnTriangulation &
@@ -6888,7 +6888,7 @@ class BRepMesh_PairOfPolygon(object):
         """
         return _BRepMesh.BRepMesh_PairOfPolygon_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param thePoly:
         :type thePoly: Handle_Poly_PolygonOnTriangulation &
@@ -6897,7 +6897,7 @@ class BRepMesh_PairOfPolygon(object):
         """
         return _BRepMesh.BRepMesh_PairOfPolygon_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Poly_PolygonOnTriangulation const &" :
         """
         * Returns first polygon on triangulation
 
@@ -6906,7 +6906,7 @@ class BRepMesh_PairOfPolygon(object):
         """
         return _BRepMesh.BRepMesh_PairOfPolygon_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Poly_PolygonOnTriangulation const &" :
         """
         * Returns last polygon on triangulation
 
@@ -6945,7 +6945,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
 
         """
         _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_swiginit(self,_BRepMesh.new_BRepMesh_SelectorOfDataStructureOfDelaun(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param theMesh:
         :type theMesh: Handle_BRepMesh_DataStructureOfDelaun &
@@ -6954,7 +6954,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_Initialize(self, *args)
 
-    def NeighboursOfNode(self, *args):
+    def NeighboursOfNode(self, *args) -> "void" :
         """
         :param indexNode:
         :type indexNode: int
@@ -6963,7 +6963,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_NeighboursOfNode(self, *args)
 
-    def NeighboursOfLink(self, *args):
+    def NeighboursOfLink(self, *args) -> "void" :
         """
         :param indexLink:
         :type indexLink: int
@@ -6972,7 +6972,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_NeighboursOfLink(self, *args)
 
-    def NeighboursOfElement(self, *args):
+    def NeighboursOfElement(self, *args) -> "void" :
         """
         * All Neighbours Of the Element. By edge or by vertices.
 
@@ -6983,7 +6983,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_NeighboursOfElement(self, *args)
 
-    def NeighboursByEdgeOf(self, *args):
+    def NeighboursByEdgeOf(self, *args) -> "void" :
         """
         * Neighbours by edge Of the Element.
 
@@ -6994,7 +6994,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_NeighboursByEdgeOf(self, *args)
 
-    def NeighboursOf(self, *args):
+    def NeighboursOf(self, *args) -> "void" :
         """
         :param theNode:
         :type theNode: BRepMesh_Vertex &
@@ -7017,7 +7017,7 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_NeighboursOf(self, *args)
 
-    def AddNeighbours(self, *args):
+    def AddNeighbours(self, *args) -> "void" :
         """
         * Adds a level of Neighbours by edge to the selector <self>.
 
@@ -7026,28 +7026,28 @@ class BRepMesh_SelectorOfDataStructureOfDelaun(object):
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_AddNeighbours(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         :rtype: BRepMesh_MapOfInteger
 
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_Nodes(self, *args)
 
-    def Links(self, *args):
+    def Links(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         :rtype: BRepMesh_MapOfInteger
 
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_Links(self, *args)
 
-    def Elements(self, *args):
+    def Elements(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         :rtype: BRepMesh_MapOfInteger
 
         """
         return _BRepMesh.BRepMesh_SelectorOfDataStructureOfDelaun_Elements(self, *args)
 
-    def FrontierLinks(self, *args):
+    def FrontierLinks(self, *args) -> "BRepMesh_MapOfInteger const &" :
         """
         * Gives the list of links incices frontier of the selector <self>.
 
@@ -7088,49 +7088,49 @@ class BRepMesh_ShapeTool(object):
 
         """
         _BRepMesh.BRepMesh_ShapeTool_swiginit(self,_BRepMesh.new_BRepMesh_ShapeTool(*args))
-    def MoreFace(self, *args):
+    def MoreFace(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_MoreFace(self, *args)
 
-    def NextFace(self, *args):
+    def NextFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_NextFace(self, *args)
 
-    def CurrentFace(self, *args):
+    def CurrentFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_CurrentFace(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_MoreEdge(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_NextEdge(self, *args)
 
-    def CurrentEdge(self, *args):
+    def CurrentEdge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_CurrentEdge(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -7147,28 +7147,28 @@ class BRepMesh_ShapeTool(object):
         """
         return _BRepMesh.BRepMesh_ShapeTool_Init(self, *args)
 
-    def MoreInternalVertex(self, *args):
+    def MoreInternalVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_MoreInternalVertex(self, *args)
 
-    def NextInternalVertex(self, *args):
+    def NextInternalVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_NextInternalVertex(self, *args)
 
-    def CurrentInternalVertex(self, *args):
+    def CurrentInternalVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _BRepMesh.BRepMesh_ShapeTool_CurrentInternalVertex(self, *args)
 
-    def Orientation(*args):
+    def Orientation(*args) -> "TopAbs_Orientation" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -7182,7 +7182,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Orientation(*args)
 
     Orientation = staticmethod(Orientation)
-    def Bound(*args):
+    def Bound(*args) -> "Bnd_Box" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -7196,7 +7196,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Bound(*args)
 
     Bound = staticmethod(Bound)
-    def FirstVertex(*args):
+    def FirstVertex(*args) -> "TopoDS_Vertex" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7206,7 +7206,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_FirstVertex(*args)
 
     FirstVertex = staticmethod(FirstVertex)
-    def LastVertex(*args):
+    def LastVertex(*args) -> "TopoDS_Vertex" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7216,7 +7216,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_LastVertex(*args)
 
     LastVertex = staticmethod(LastVertex)
-    def Vertices(*args):
+    def Vertices(*args) -> "void" :
         """
         * If there is not First or Last vertex (infinite or semi-infinite edge) return null shapes.
 
@@ -7232,7 +7232,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Vertices(*args)
 
     Vertices = staticmethod(Vertices)
-    def Range(*args):
+    def Range(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7248,7 +7248,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Range(*args)
 
     Range = staticmethod(Range)
-    def UVPoints(*args):
+    def UVPoints(*args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7264,7 +7264,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_UVPoints(*args)
 
     UVPoints = staticmethod(UVPoints)
-    def Degenerated(*args):
+    def Degenerated(*args) -> "Standard_Boolean" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7274,7 +7274,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Degenerated(*args)
 
     Degenerated = staticmethod(Degenerated)
-    def Tolerance(*args):
+    def Tolerance(*args) -> "Standard_Real" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -7284,7 +7284,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Tolerance(*args)
 
     Tolerance = staticmethod(Tolerance)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -7298,7 +7298,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def Parameters(*args):
+    def Parameters(*args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7314,7 +7314,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Parameters(*args)
 
     Parameters = staticmethod(Parameters)
-    def Locate(*args):
+    def Locate(*args) -> "Standard_Real &" :
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -7332,7 +7332,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Locate(*args)
 
     Locate = staticmethod(Locate)
-    def Pnt(*args):
+    def Pnt(*args) -> "gp_Pnt" :
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -7342,7 +7342,7 @@ class BRepMesh_ShapeTool(object):
         return _BRepMesh.BRepMesh_ShapeTool_Pnt(*args)
 
     Pnt = staticmethod(Pnt)
-    def AddInFace(*args):
+    def AddInFace(*args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -7376,7 +7376,7 @@ BRepMesh_ShapeTool._kill_pointed = new_instancemethod(_BRepMesh.BRepMesh_ShapeTo
 BRepMesh_ShapeTool_swigregister = _BRepMesh.BRepMesh_ShapeTool_swigregister
 BRepMesh_ShapeTool_swigregister(BRepMesh_ShapeTool)
 
-def BRepMesh_ShapeTool_Orientation(*args):
+def BRepMesh_ShapeTool_Orientation(*args) -> "TopAbs_Orientation" :
   """
     :param F:
     :type F: TopoDS_Face &
@@ -7389,7 +7389,7 @@ def BRepMesh_ShapeTool_Orientation(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Orientation(*args)
 
-def BRepMesh_ShapeTool_Bound(*args):
+def BRepMesh_ShapeTool_Bound(*args) -> "Bnd_Box" :
   """
     :param F:
     :type F: TopoDS_Face &
@@ -7402,7 +7402,7 @@ def BRepMesh_ShapeTool_Bound(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Bound(*args)
 
-def BRepMesh_ShapeTool_FirstVertex(*args):
+def BRepMesh_ShapeTool_FirstVertex(*args) -> "TopoDS_Vertex" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7411,7 +7411,7 @@ def BRepMesh_ShapeTool_FirstVertex(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_FirstVertex(*args)
 
-def BRepMesh_ShapeTool_LastVertex(*args):
+def BRepMesh_ShapeTool_LastVertex(*args) -> "TopoDS_Vertex" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7420,7 +7420,7 @@ def BRepMesh_ShapeTool_LastVertex(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_LastVertex(*args)
 
-def BRepMesh_ShapeTool_Vertices(*args):
+def BRepMesh_ShapeTool_Vertices(*args) -> "void" :
   """
     * If there is not First or Last vertex (infinite or semi-infinite edge) return null shapes.
 
@@ -7435,7 +7435,7 @@ def BRepMesh_ShapeTool_Vertices(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Vertices(*args)
 
-def BRepMesh_ShapeTool_Range(*args):
+def BRepMesh_ShapeTool_Range(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7450,7 +7450,7 @@ def BRepMesh_ShapeTool_Range(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Range(*args)
 
-def BRepMesh_ShapeTool_UVPoints(*args):
+def BRepMesh_ShapeTool_UVPoints(*args) -> "void" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7465,7 +7465,7 @@ def BRepMesh_ShapeTool_UVPoints(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_UVPoints(*args)
 
-def BRepMesh_ShapeTool_Degenerated(*args):
+def BRepMesh_ShapeTool_Degenerated(*args) -> "Standard_Boolean" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7474,7 +7474,7 @@ def BRepMesh_ShapeTool_Degenerated(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Degenerated(*args)
 
-def BRepMesh_ShapeTool_Tolerance(*args):
+def BRepMesh_ShapeTool_Tolerance(*args) -> "Standard_Real" :
   """
     :param V:
     :type V: TopoDS_Vertex &
@@ -7483,7 +7483,7 @@ def BRepMesh_ShapeTool_Tolerance(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Tolerance(*args)
 
-def BRepMesh_ShapeTool_Parameter(*args):
+def BRepMesh_ShapeTool_Parameter(*args) -> "Standard_Real" :
   """
     :param V:
     :type V: TopoDS_Vertex &
@@ -7496,7 +7496,7 @@ def BRepMesh_ShapeTool_Parameter(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Parameter(*args)
 
-def BRepMesh_ShapeTool_Parameters(*args):
+def BRepMesh_ShapeTool_Parameters(*args) -> "void" :
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -7511,7 +7511,7 @@ def BRepMesh_ShapeTool_Parameters(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Parameters(*args)
 
-def BRepMesh_ShapeTool_Locate(*args):
+def BRepMesh_ShapeTool_Locate(*args) -> "Standard_Real &" :
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -7528,7 +7528,7 @@ def BRepMesh_ShapeTool_Locate(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Locate(*args)
 
-def BRepMesh_ShapeTool_Pnt(*args):
+def BRepMesh_ShapeTool_Pnt(*args) -> "gp_Pnt" :
   """
     :param V:
     :type V: TopoDS_Vertex &
@@ -7537,7 +7537,7 @@ def BRepMesh_ShapeTool_Pnt(*args):
     """
   return _BRepMesh.BRepMesh_ShapeTool_Pnt(*args)
 
-def BRepMesh_ShapeTool_AddInFace(*args):
+def BRepMesh_ShapeTool_AddInFace(*args) -> "void" :
   """
     :param F:
     :type F: TopoDS_Face &
@@ -7573,7 +7573,7 @@ class BRepMesh_Triangle(object):
 
         """
         _BRepMesh.BRepMesh_Triangle_swiginit(self,_BRepMesh.new_BRepMesh_Triangle(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param theEdge1:
         :type theEdge1: int
@@ -7594,7 +7594,7 @@ class BRepMesh_Triangle(object):
         """
         return _BRepMesh.BRepMesh_Triangle_Initialize(self, *args)
 
-    def Edges(self, *args):
+    def Edges(self, *args) -> "void" :
         """
         :param theEdge1:
         :type theEdge1: int &
@@ -7613,14 +7613,14 @@ class BRepMesh_Triangle(object):
         """
         return _BRepMesh.BRepMesh_Triangle_Edges(self, *args)
 
-    def Movability(self, *args):
+    def Movability(self, *args) -> "BRepMesh_DegreeOfFreedom" :
         """
         :rtype: inline BRepMesh_DegreeOfFreedom
 
         """
         return _BRepMesh.BRepMesh_Triangle_Movability(self, *args)
 
-    def SetMovability(self, *args):
+    def SetMovability(self, *args) -> "void" :
         """
         :param theMovability:
         :type theMovability: BRepMesh_DegreeOfFreedom
@@ -7629,7 +7629,7 @@ class BRepMesh_Triangle(object):
         """
         return _BRepMesh.BRepMesh_Triangle_SetMovability(self, *args)
 
-    def HashCode(self, *args):
+    def HashCode(self, *args) -> "Standard_Integer" :
         """
         :param theUpper:
         :type theUpper: int
@@ -7638,7 +7638,7 @@ class BRepMesh_Triangle(object):
         """
         return _BRepMesh.BRepMesh_Triangle_HashCode(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param theOther:
         :type theOther: BRepMesh_Triangle &
@@ -7698,7 +7698,7 @@ class BRepMesh_Vertex(object):
 
         """
         _BRepMesh.BRepMesh_Vertex_swiginit(self,_BRepMesh.new_BRepMesh_Vertex(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param UV:
         :type UV: gp_XY
@@ -7711,28 +7711,28 @@ class BRepMesh_Vertex(object):
         """
         return _BRepMesh.BRepMesh_Vertex_Initialize(self, *args)
 
-    def Coord(self, *args):
+    def Coord(self, *args) -> "gp_XY const" :
         """
         :rtype: gp_XY
 
         """
         return _BRepMesh.BRepMesh_Vertex_Coord(self, *args)
 
-    def Location3d(self, *args):
+    def Location3d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_Vertex_Location3d(self, *args)
 
-    def Movability(self, *args):
+    def Movability(self, *args) -> "BRepMesh_DegreeOfFreedom" :
         """
         :rtype: BRepMesh_DegreeOfFreedom
 
         """
         return _BRepMesh.BRepMesh_Vertex_Movability(self, *args)
 
-    def SetMovability(self, *args):
+    def SetMovability(self, *args) -> "void" :
         """
         :param Move:
         :type Move: BRepMesh_DegreeOfFreedom
@@ -7741,7 +7741,7 @@ class BRepMesh_Vertex(object):
         """
         return _BRepMesh.BRepMesh_Vertex_SetMovability(self, *args)
 
-    def HashCode(self, *args):
+    def HashCode(self, *args) -> "Standard_Integer" :
         """
         :param Upper:
         :type Upper: int
@@ -7750,7 +7750,7 @@ class BRepMesh_Vertex(object):
         """
         return _BRepMesh.BRepMesh_Vertex_HashCode(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param Other:
         :type Other: BRepMesh_Vertex &
@@ -7789,7 +7789,7 @@ BRepMesh_Vertex_swigregister(BRepMesh_Vertex)
 class BRepMesh_VertexHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param K:
         :type K: BRepMesh_Vertex &
@@ -7801,7 +7801,7 @@ class BRepMesh_VertexHasher(object):
         return _BRepMesh.BRepMesh_VertexHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: BRepMesh_Vertex &
@@ -7827,7 +7827,7 @@ BRepMesh_VertexHasher._kill_pointed = new_instancemethod(_BRepMesh.BRepMesh_Vert
 BRepMesh_VertexHasher_swigregister = _BRepMesh.BRepMesh_VertexHasher_swigregister
 BRepMesh_VertexHasher_swigregister(BRepMesh_VertexHasher)
 
-def BRepMesh_VertexHasher_HashCode(*args):
+def BRepMesh_VertexHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param K:
     :type K: BRepMesh_Vertex &
@@ -7838,7 +7838,7 @@ def BRepMesh_VertexHasher_HashCode(*args):
     """
   return _BRepMesh.BRepMesh_VertexHasher_HashCode(*args)
 
-def BRepMesh_VertexHasher_IsEqual(*args):
+def BRepMesh_VertexHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param K1:
     :type K1: BRepMesh_Vertex &
@@ -7882,7 +7882,7 @@ class BRepMesh_VertexInspector(object):
 
         """
         _BRepMesh.BRepMesh_VertexInspector_swiginit(self,_BRepMesh.new_BRepMesh_VertexInspector(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param theVertex:
         :type theVertex: BRepMesh_Vertex &
@@ -7891,7 +7891,7 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_Add(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         :param theTol:
         :type theTol: float
@@ -7906,14 +7906,14 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_SetTolerance(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepMesh.BRepMesh_VertexInspector_Clear(self, *args)
 
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :param theIndex:
         :type theIndex: int
@@ -7922,14 +7922,14 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_Delete(self, *args)
 
-    def GetNbVertices(self, *args):
+    def GetNbVertices(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_VertexInspector_GetNbVertices(self, *args)
 
-    def GetVertex(self, *args):
+    def GetVertex(self, *args) -> "BRepMesh_Vertex &" :
         """
         :param theInd:
         :type theInd: int
@@ -7938,7 +7938,7 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_GetVertex(self, *args)
 
-    def SetCurrent(self, *args):
+    def SetCurrent(self, *args) -> "void" :
         """
         * Set current node to be checked
 
@@ -7951,7 +7951,7 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_SetCurrent(self, *args)
 
-    def GetCoincidentInd(self, *args):
+    def GetCoincidentInd(self, *args) -> "Standard_Integer" :
         """
         * //!Get result index of node
 
@@ -7960,14 +7960,14 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_GetCoincidentInd(self, *args)
 
-    def GetListOfDelNodes(self, *args):
+    def GetListOfDelNodes(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         :rtype: BRepMesh_ListOfInteger
 
         """
         return _BRepMesh.BRepMesh_VertexInspector_GetListOfDelNodes(self, *args)
 
-    def Inspect(self, *args):
+    def Inspect(self, *args) -> "NCollection_CellFilter_Action" :
         """
         * Implementation of inspection method
 
@@ -7978,7 +7978,7 @@ class BRepMesh_VertexInspector(object):
         """
         return _BRepMesh.BRepMesh_VertexInspector_Inspect(self, *args)
 
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param theIdx:
         :type theIdx: int
@@ -8012,7 +8012,7 @@ BRepMesh_VertexInspector._kill_pointed = new_instancemethod(_BRepMesh.BRepMesh_V
 BRepMesh_VertexInspector_swigregister = _BRepMesh.BRepMesh_VertexInspector_swigregister
 BRepMesh_VertexInspector_swigregister(BRepMesh_VertexInspector)
 
-def BRepMesh_VertexInspector_IsEqual(*args):
+def BRepMesh_VertexInspector_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param theIdx:
     :type theIdx: int
@@ -8042,7 +8042,7 @@ class BRepMesh_VertexTool(object):
 
         """
         _BRepMesh.BRepMesh_VertexTool_swiginit(self,_BRepMesh.new_BRepMesh_VertexTool(*args))
-    def SetCellSize(self, *args):
+    def SetCellSize(self, *args) -> "void" :
         """
         * Sets new size for cellfilter.
 
@@ -8061,7 +8061,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_SetCellSize(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets new size for cellfilter.
 
@@ -8080,7 +8080,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_SetTolerance(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         * Adds a vertex to the tool.
 
@@ -8099,7 +8099,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_Add(self, *args)
 
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         * Deletes a vertex from the tool.
 
@@ -8110,7 +8110,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_Delete(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "BRepMesh_ListOfInteger &" :
         """
         * Returns data assigned to theIndex.
 
@@ -8121,7 +8121,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_FindFromIndex(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "BRepMesh_Vertex const &" :
         """
         * Selects the vertex by theIndex.
 
@@ -8132,7 +8132,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_FindKey(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         * Returns an index of theVertex.
 
@@ -8143,7 +8143,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_FindIndex(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         * Returns a number of vertices.
 
@@ -8152,7 +8152,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_Extent(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when the map contains no keys.
 
@@ -8161,7 +8161,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_IsEmpty(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         * Substitutes vertex with Index on theVertex with attributes theData.
 
@@ -8176,7 +8176,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         * Remove last node from the structure.
 
@@ -8185,7 +8185,7 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_RemoveLast(self, *args)
 
-    def GetListOfDelNodes(self, *args):
+    def GetListOfDelNodes(self, *args) -> "BRepMesh_ListOfInteger const &" :
         """
         * Returns the list with indexes of vertices that have Movability attribute equal to BRepMesh_Deleted and can be replaced with another node.
 
@@ -8194,11 +8194,11 @@ class BRepMesh_VertexTool(object):
         """
         return _BRepMesh.BRepMesh_VertexTool_GetListOfDelNodes(self, *args)
 
-    def StatisticsToString(self):
+    def StatisticsToString(self) -> "std::string" :
         """StatisticsToString(BRepMesh_VertexTool self) -> std::string"""
         return _BRepMesh.BRepMesh_VertexTool_StatisticsToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_VertexTool self)"""
         return _BRepMesh.BRepMesh_VertexTool__kill_pointed(self)
 
@@ -8250,7 +8250,7 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
 
         """
         _BRepMesh.BRepMesh_IncrementalMesh_swiginit(self,_BRepMesh.new_BRepMesh_IncrementalMesh(*args))
-    def SetRelative(self, *args):
+    def SetRelative(self, *args) -> "void" :
         """
         :param theFlag:
         :type theFlag: bool
@@ -8259,14 +8259,14 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_SetRelative(self, *args)
 
-    def Relative(self, *args):
+    def Relative(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_Relative(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Builds the incremental mesh of the shape
 
@@ -8277,21 +8277,21 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_Update(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_IsModified(self, *args)
 
-    def GetStatusFlags(self, *args):
+    def GetStatusFlags(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_GetStatusFlags(self, *args)
 
-    def SetParallel(self, *args):
+    def SetParallel(self, *args) -> "void" :
         """
         * Request algorithm to launch in multiple threads to improve performance.
 
@@ -8302,7 +8302,7 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_SetParallel(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns the multi-threading usage flag.
 
@@ -8311,7 +8311,7 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         """
         return _BRepMesh.BRepMesh_IncrementalMesh_IsParallel(self, *args)
 
-    def Discret(*args):
+    def Discret(*args) -> "Standard_Integer" :
         """
         * Plugin interface for the Mesh Factories.
 
@@ -8329,7 +8329,7 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         return _BRepMesh.BRepMesh_IncrementalMesh_Discret(*args)
 
     Discret = staticmethod(Discret)
-    def IsParallelDefault(*args):
+    def IsParallelDefault(*args) -> "Standard_Boolean" :
         """
         * Returns multi-threading usage flag set by default in Discret() static method (thus applied only to Mesh Factories).
 
@@ -8339,7 +8339,7 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         return _BRepMesh.BRepMesh_IncrementalMesh_IsParallelDefault(*args)
 
     IsParallelDefault = staticmethod(IsParallelDefault)
-    def SetParallelDefault(*args):
+    def SetParallelDefault(*args) -> "void" :
         """
         * Setup multi-threading usage flag set by default in Discret() static method (thus applied only to Mesh Factories).
 
@@ -8351,11 +8351,11 @@ class BRepMesh_IncrementalMesh(BRepMesh_DiscretRoot):
         return _BRepMesh.BRepMesh_IncrementalMesh_SetParallelDefault(*args)
 
     SetParallelDefault = staticmethod(SetParallelDefault)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepMesh_IncrementalMesh self)"""
         return _BRepMesh.BRepMesh_IncrementalMesh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepMesh_IncrementalMesh" :
         """GetHandle(BRepMesh_IncrementalMesh self) -> Handle_BRepMesh_IncrementalMesh"""
         return _BRepMesh.BRepMesh_IncrementalMesh_GetHandle(self)
 
@@ -8379,7 +8379,7 @@ BRepMesh_IncrementalMesh.GetHandle = new_instancemethod(_BRepMesh.BRepMesh_Incre
 BRepMesh_IncrementalMesh_swigregister = _BRepMesh.BRepMesh_IncrementalMesh_swigregister
 BRepMesh_IncrementalMesh_swigregister(BRepMesh_IncrementalMesh)
 
-def BRepMesh_IncrementalMesh_Discret(*args):
+def BRepMesh_IncrementalMesh_Discret(*args) -> "Standard_Integer" :
   """
     * Plugin interface for the Mesh Factories.
 
@@ -8396,7 +8396,7 @@ def BRepMesh_IncrementalMesh_Discret(*args):
     """
   return _BRepMesh.BRepMesh_IncrementalMesh_Discret(*args)
 
-def BRepMesh_IncrementalMesh_IsParallelDefault(*args):
+def BRepMesh_IncrementalMesh_IsParallelDefault(*args) -> "Standard_Boolean" :
   """
     * Returns multi-threading usage flag set by default in Discret() static method (thus applied only to Mesh Factories).
 
@@ -8405,7 +8405,7 @@ def BRepMesh_IncrementalMesh_IsParallelDefault(*args):
     """
   return _BRepMesh.BRepMesh_IncrementalMesh_IsParallelDefault(*args)
 
-def BRepMesh_IncrementalMesh_SetParallelDefault(*args):
+def BRepMesh_IncrementalMesh_SetParallelDefault(*args) -> "void" :
   """
     * Setup multi-threading usage flag set by default in Discret() static method (thus applied only to Mesh Factories).
 
@@ -8437,7 +8437,7 @@ Handle_BRepMesh_IncrementalMesh._kill_pointed = new_instancemethod(_BRepMesh.Han
 Handle_BRepMesh_IncrementalMesh_swigregister = _BRepMesh.Handle_BRepMesh_IncrementalMesh_swigregister
 Handle_BRepMesh_IncrementalMesh_swigregister(Handle_BRepMesh_IncrementalMesh)
 
-def Handle_BRepMesh_IncrementalMesh_DownCast(*args):
+def Handle_BRepMesh_IncrementalMesh_DownCast(*args) -> "Handle_BRepMesh_IncrementalMesh const" :
   return _BRepMesh.Handle_BRepMesh_IncrementalMesh_DownCast(*args)
 Handle_BRepMesh_IncrementalMesh_DownCast = _BRepMesh.Handle_BRepMesh_IncrementalMesh_DownCast
 

@@ -125,7 +125,7 @@ class GraphTools_ListIteratorOfListOfSequenceOfInteger(object):
 
         """
         _GraphTools.GraphTools_ListIteratorOfListOfSequenceOfInteger_swiginit(self,_GraphTools.new_GraphTools_ListIteratorOfListOfSequenceOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: GraphTools_ListOfSequenceOfInteger &
@@ -134,21 +134,21 @@ class GraphTools_ListIteratorOfListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListIteratorOfListOfSequenceOfInteger_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GraphTools.GraphTools_ListIteratorOfListOfSequenceOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_ListIteratorOfListOfSequenceOfInteger_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
@@ -184,7 +184,7 @@ class GraphTools_ListIteratorOfSCList(object):
 
         """
         _GraphTools.GraphTools_ListIteratorOfSCList_swiginit(self,_GraphTools.new_GraphTools_ListIteratorOfSCList(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: GraphTools_SCList &
@@ -193,21 +193,21 @@ class GraphTools_ListIteratorOfSCList(object):
         """
         return _GraphTools.GraphTools_ListIteratorOfSCList_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GraphTools.GraphTools_ListIteratorOfSCList_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_ListIteratorOfSCList_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GraphTools_SC &" :
         """
         :rtype: Handle_GraphTools_SC
 
@@ -243,18 +243,18 @@ class GraphTools_ListNodeOfListOfSequenceOfInteger(OCC.TCollection.TCollection_M
 
         """
         _GraphTools.GraphTools_ListNodeOfListOfSequenceOfInteger_swiginit(self,_GraphTools.new_GraphTools_ListNodeOfListOfSequenceOfInteger(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _GraphTools.GraphTools_ListNodeOfListOfSequenceOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GraphTools_ListNodeOfListOfSequenceOfInteger self)"""
         return _GraphTools.GraphTools_ListNodeOfListOfSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GraphTools_ListNodeOfListOfSequenceOfInteger" :
         """GetHandle(GraphTools_ListNodeOfListOfSequenceOfInteger self) -> Handle_GraphTools_ListNodeOfListOfSequenceOfInteger"""
         return _GraphTools.GraphTools_ListNodeOfListOfSequenceOfInteger_GetHandle(self)
 
@@ -293,7 +293,7 @@ Handle_GraphTools_ListNodeOfListOfSequenceOfInteger._kill_pointed = new_instance
 Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_swigregister = _GraphTools.Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_swigregister
 Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_swigregister(Handle_GraphTools_ListNodeOfListOfSequenceOfInteger)
 
-def Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_DownCast(*args):
+def Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_DownCast(*args) -> "Handle_GraphTools_ListNodeOfListOfSequenceOfInteger const" :
   return _GraphTools.Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_DownCast(*args)
 Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_DownCast = _GraphTools.Handle_GraphTools_ListNodeOfListOfSequenceOfInteger_DownCast
 
@@ -310,18 +310,18 @@ class GraphTools_ListNodeOfSCList(OCC.TCollection.TCollection_MapNode):
 
         """
         _GraphTools.GraphTools_ListNodeOfSCList_swiginit(self,_GraphTools.new_GraphTools_ListNodeOfSCList(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_GraphTools_SC &" :
         """
         :rtype: Handle_GraphTools_SC
 
         """
         return _GraphTools.GraphTools_ListNodeOfSCList_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GraphTools_ListNodeOfSCList self)"""
         return _GraphTools.GraphTools_ListNodeOfSCList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GraphTools_ListNodeOfSCList" :
         """GetHandle(GraphTools_ListNodeOfSCList self) -> Handle_GraphTools_ListNodeOfSCList"""
         return _GraphTools.GraphTools_ListNodeOfSCList_GetHandle(self)
 
@@ -360,7 +360,7 @@ Handle_GraphTools_ListNodeOfSCList._kill_pointed = new_instancemethod(_GraphTool
 Handle_GraphTools_ListNodeOfSCList_swigregister = _GraphTools.Handle_GraphTools_ListNodeOfSCList_swigregister
 Handle_GraphTools_ListNodeOfSCList_swigregister(Handle_GraphTools_ListNodeOfSCList)
 
-def Handle_GraphTools_ListNodeOfSCList_DownCast(*args):
+def Handle_GraphTools_ListNodeOfSCList_DownCast(*args) -> "Handle_GraphTools_ListNodeOfSCList const" :
   return _GraphTools.Handle_GraphTools_ListNodeOfSCList_DownCast(*args)
 Handle_GraphTools_ListNodeOfSCList_DownCast = _GraphTools.Handle_GraphTools_ListNodeOfSCList_DownCast
 
@@ -373,7 +373,7 @@ class GraphTools_ListOfSequenceOfInteger(object):
 
         """
         _GraphTools.GraphTools_ListOfSequenceOfInteger_swiginit(self,_GraphTools.new_GraphTools_ListOfSequenceOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: GraphTools_ListOfSequenceOfInteger &
@@ -382,7 +382,7 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: GraphTools_ListOfSequenceOfInteger &
@@ -391,28 +391,28 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TColStd_SequenceOfInteger &
@@ -431,7 +431,7 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TColStd_SequenceOfInteger &
@@ -450,28 +450,28 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: GraphTools_ListIteratorOfListOfSequenceOfInteger &
@@ -480,7 +480,7 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TColStd_SequenceOfInteger &
@@ -497,7 +497,7 @@ class GraphTools_ListOfSequenceOfInteger(object):
         """
         return _GraphTools.GraphTools_ListOfSequenceOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TColStd_SequenceOfInteger &
@@ -548,14 +548,14 @@ class GraphTools_RGNode(object):
 
         """
         _GraphTools.GraphTools_RGNode_swiginit(self,_GraphTools.new_GraphTools_RGNode(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_RGNode_Reset(self, *args)
 
-    def SetVisited(self, *args):
+    def SetVisited(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -564,14 +564,14 @@ class GraphTools_RGNode(object):
         """
         return _GraphTools.GraphTools_RGNode_SetVisited(self, *args)
 
-    def GetVisited(self, *args):
+    def GetVisited(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_RGNode_GetVisited(self, *args)
 
-    def AddAdj(self, *args):
+    def AddAdj(self, *args) -> "void" :
         """
         :param adj:
         :type adj: int
@@ -580,14 +580,14 @@ class GraphTools_RGNode(object):
         """
         return _GraphTools.GraphTools_RGNode_AddAdj(self, *args)
 
-    def NbAdj(self, *args):
+    def NbAdj(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_RGNode_NbAdj(self, *args)
 
-    def GetAdj(self, *args):
+    def GetAdj(self, *args) -> "Standard_Integer" :
         """
         :param index:
         :type index: int
@@ -596,7 +596,7 @@ class GraphTools_RGNode(object):
         """
         return _GraphTools.GraphTools_RGNode_GetAdj(self, *args)
 
-    def SetSC(self, *args):
+    def SetSC(self, *args) -> "void" :
         """
         :param SC:
         :type SC: Handle_GraphTools_SC &
@@ -605,7 +605,7 @@ class GraphTools_RGNode(object):
         """
         return _GraphTools.GraphTools_RGNode_SetSC(self, *args)
 
-    def GetSC(self, *args):
+    def GetSC(self, *args) -> "Handle_GraphTools_SC" :
         """
         :rtype: Handle_GraphTools_SC
 
@@ -641,14 +641,14 @@ class GraphTools_SC(OCC.MMgt.MMgt_TShared):
 
         """
         _GraphTools.GraphTools_SC_swiginit(self,_GraphTools.new_GraphTools_SC(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_SC_Reset(self, *args)
 
-    def AddVertex(self, *args):
+    def AddVertex(self, *args) -> "void" :
         """
         :param V:
         :type V: int
@@ -657,14 +657,14 @@ class GraphTools_SC(OCC.MMgt.MMgt_TShared):
         """
         return _GraphTools.GraphTools_SC_AddVertex(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_SC_NbVertices(self, *args)
 
-    def GetVertex(self, *args):
+    def GetVertex(self, *args) -> "Standard_Integer" :
         """
         :param index:
         :type index: int
@@ -673,7 +673,7 @@ class GraphTools_SC(OCC.MMgt.MMgt_TShared):
         """
         return _GraphTools.GraphTools_SC_GetVertex(self, *args)
 
-    def AddFrontSC(self, *args):
+    def AddFrontSC(self, *args) -> "void" :
         """
         :param SC:
         :type SC: Handle_GraphTools_SC &
@@ -682,14 +682,14 @@ class GraphTools_SC(OCC.MMgt.MMgt_TShared):
         """
         return _GraphTools.GraphTools_SC_AddFrontSC(self, *args)
 
-    def GetFrontSC(self, *args):
+    def GetFrontSC(self, *args) -> "GraphTools_SCList const &" :
         """
         :rtype: GraphTools_SCList
 
         """
         return _GraphTools.GraphTools_SC_GetFrontSC(self, *args)
 
-    def AddBackSC(self, *args):
+    def AddBackSC(self, *args) -> "void" :
         """
         :param SC:
         :type SC: Handle_GraphTools_SC &
@@ -698,18 +698,18 @@ class GraphTools_SC(OCC.MMgt.MMgt_TShared):
         """
         return _GraphTools.GraphTools_SC_AddBackSC(self, *args)
 
-    def GetBackSC(self, *args):
+    def GetBackSC(self, *args) -> "GraphTools_SCList const &" :
         """
         :rtype: GraphTools_SCList
 
         """
         return _GraphTools.GraphTools_SC_GetBackSC(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GraphTools_SC self)"""
         return _GraphTools.GraphTools_SC__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GraphTools_SC" :
         """GetHandle(GraphTools_SC self) -> Handle_GraphTools_SC"""
         return _GraphTools.GraphTools_SC_GetHandle(self)
 
@@ -755,7 +755,7 @@ Handle_GraphTools_SC._kill_pointed = new_instancemethod(_GraphTools.Handle_Graph
 Handle_GraphTools_SC_swigregister = _GraphTools.Handle_GraphTools_SC_swigregister
 Handle_GraphTools_SC_swigregister(Handle_GraphTools_SC)
 
-def Handle_GraphTools_SC_DownCast(*args):
+def Handle_GraphTools_SC_DownCast(*args) -> "Handle_GraphTools_SC const" :
   return _GraphTools.Handle_GraphTools_SC_DownCast(*args)
 Handle_GraphTools_SC_DownCast = _GraphTools.Handle_GraphTools_SC_DownCast
 
@@ -768,7 +768,7 @@ class GraphTools_SCList(object):
 
         """
         _GraphTools.GraphTools_SCList_swiginit(self,_GraphTools.new_GraphTools_SCList(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: GraphTools_SCList &
@@ -777,7 +777,7 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: GraphTools_SCList &
@@ -786,28 +786,28 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_SCList_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_SCList_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GraphTools.GraphTools_SCList_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_GraphTools_SC &
@@ -826,7 +826,7 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_GraphTools_SC &
@@ -845,28 +845,28 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_GraphTools_SC &" :
         """
         :rtype: Handle_GraphTools_SC
 
         """
         return _GraphTools.GraphTools_SCList_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_GraphTools_SC &" :
         """
         :rtype: Handle_GraphTools_SC
 
         """
         return _GraphTools.GraphTools_SCList_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_SCList_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: GraphTools_ListIteratorOfSCList &
@@ -875,7 +875,7 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_GraphTools_SC &
@@ -892,7 +892,7 @@ class GraphTools_SCList(object):
         """
         return _GraphTools.GraphTools_SCList_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_GraphTools_SC &
@@ -943,35 +943,35 @@ class GraphTools_TSNode(object):
 
         """
         _GraphTools.GraphTools_TSNode_swiginit(self,_GraphTools.new_GraphTools_TSNode(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_TSNode_Reset(self, *args)
 
-    def IncreaseRef(self, *args):
+    def IncreaseRef(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_TSNode_IncreaseRef(self, *args)
 
-    def DecreaseRef(self, *args):
+    def DecreaseRef(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphTools.GraphTools_TSNode_DecreaseRef(self, *args)
 
-    def NbRef(self, *args):
+    def NbRef(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_TSNode_NbRef(self, *args)
 
-    def AddSuccessor(self, *args):
+    def AddSuccessor(self, *args) -> "void" :
         """
         :param s:
         :type s: int
@@ -980,14 +980,14 @@ class GraphTools_TSNode(object):
         """
         return _GraphTools.GraphTools_TSNode_AddSuccessor(self, *args)
 
-    def NbSuccessors(self, *args):
+    def NbSuccessors(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _GraphTools.GraphTools_TSNode_NbSuccessors(self, *args)
 
-    def GetSuccessor(self, *args):
+    def GetSuccessor(self, *args) -> "Standard_Integer" :
         """
         :param index:
         :type index: int

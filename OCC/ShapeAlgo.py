@@ -143,7 +143,7 @@ import OCC.IntRes2d
 class shapealgo(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Init(*args):
+    def Init(*args) -> "void" :
         """
         * Provides initerface to the algorithms from Shape Healing. Creates and initializes default AlgoContainer.
 
@@ -153,7 +153,7 @@ class shapealgo(object):
         return _ShapeAlgo.shapealgo_Init(*args)
 
     Init = staticmethod(Init)
-    def SetAlgoContainer(*args):
+    def SetAlgoContainer(*args) -> "void" :
         """
         * Sets default AlgoContainer
 
@@ -165,7 +165,7 @@ class shapealgo(object):
         return _ShapeAlgo.shapealgo_SetAlgoContainer(*args)
 
     SetAlgoContainer = staticmethod(SetAlgoContainer)
-    def AlgoContainer(*args):
+    def AlgoContainer(*args) -> "Handle_ShapeAlgo_AlgoContainer" :
         """
         * Returns default AlgoContainer
 
@@ -189,7 +189,7 @@ shapealgo._kill_pointed = new_instancemethod(_ShapeAlgo.shapealgo__kill_pointed,
 shapealgo_swigregister = _ShapeAlgo.shapealgo_swigregister
 shapealgo_swigregister(shapealgo)
 
-def shapealgo_Init(*args):
+def shapealgo_Init(*args) -> "void" :
   """
     * Provides initerface to the algorithms from Shape Healing. Creates and initializes default AlgoContainer.
 
@@ -198,7 +198,7 @@ def shapealgo_Init(*args):
     """
   return _ShapeAlgo.shapealgo_Init(*args)
 
-def shapealgo_SetAlgoContainer(*args):
+def shapealgo_SetAlgoContainer(*args) -> "void" :
   """
     * Sets default AlgoContainer
 
@@ -209,7 +209,7 @@ def shapealgo_SetAlgoContainer(*args):
     """
   return _ShapeAlgo.shapealgo_SetAlgoContainer(*args)
 
-def shapealgo_AlgoContainer(*args):
+def shapealgo_AlgoContainer(*args) -> "Handle_ShapeAlgo_AlgoContainer" :
   """
     * Returns default AlgoContainer
 
@@ -229,7 +229,7 @@ class ShapeAlgo_ToolContainer(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeAlgo.ShapeAlgo_ToolContainer_swiginit(self,_ShapeAlgo.new_ShapeAlgo_ToolContainer(*args))
-    def FixShape(self, *args):
+    def FixShape(self, *args) -> "Handle_ShapeFix_Shape" :
         """
         * Returns ShapeFix_Shape
 
@@ -238,7 +238,7 @@ class ShapeAlgo_ToolContainer(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAlgo.ShapeAlgo_ToolContainer_FixShape(self, *args)
 
-    def EdgeProjAux(self, *args):
+    def EdgeProjAux(self, *args) -> "Handle_ShapeFix_EdgeProjAux" :
         """
         * Returns ShapeFix_EdgeProjAux
 
@@ -247,11 +247,11 @@ class ShapeAlgo_ToolContainer(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeAlgo.ShapeAlgo_ToolContainer_EdgeProjAux(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeAlgo_ToolContainer self)"""
         return _ShapeAlgo.ShapeAlgo_ToolContainer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeAlgo_ToolContainer" :
         """GetHandle(ShapeAlgo_ToolContainer self) -> Handle_ShapeAlgo_ToolContainer"""
         return _ShapeAlgo.ShapeAlgo_ToolContainer_GetHandle(self)
 
@@ -291,7 +291,7 @@ Handle_ShapeAlgo_ToolContainer._kill_pointed = new_instancemethod(_ShapeAlgo.Han
 Handle_ShapeAlgo_ToolContainer_swigregister = _ShapeAlgo.Handle_ShapeAlgo_ToolContainer_swigregister
 Handle_ShapeAlgo_ToolContainer_swigregister(Handle_ShapeAlgo_ToolContainer)
 
-def Handle_ShapeAlgo_ToolContainer_DownCast(*args):
+def Handle_ShapeAlgo_ToolContainer_DownCast(*args) -> "Handle_ShapeAlgo_ToolContainer const" :
   return _ShapeAlgo.Handle_ShapeAlgo_ToolContainer_DownCast(*args)
 Handle_ShapeAlgo_ToolContainer_DownCast = _ShapeAlgo.Handle_ShapeAlgo_ToolContainer_DownCast
 

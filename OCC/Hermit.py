@@ -120,7 +120,7 @@ import OCC.Geom2d
 class hermit(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Solution(*args):
+    def Solution(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * //!returns the correct spline a(u) which will  be multiplicated with BS later.
 
@@ -146,7 +146,7 @@ class hermit(object):
         return _Hermit.hermit_Solution(*args)
 
     Solution = staticmethod(Solution)
-    def Solutionbis(*args):
+    def Solutionbis(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
 
@@ -180,7 +180,7 @@ hermit._kill_pointed = new_instancemethod(_Hermit.hermit__kill_pointed,None,herm
 hermit_swigregister = _Hermit.hermit_swigregister
 hermit_swigregister(hermit)
 
-def hermit_Solution(*args):
+def hermit_Solution(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     * //!returns the correct spline a(u) which will  be multiplicated with BS later.
 
@@ -205,7 +205,7 @@ def hermit_Solution(*args):
     """
   return _Hermit.hermit_Solution(*args)
 
-def hermit_Solutionbis(*args):
+def hermit_Solutionbis(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
 

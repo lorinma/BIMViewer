@@ -182,7 +182,7 @@ class AdvApprox_ApproxAFunction(object):
 
         """
         _AdvApprox.AdvApprox_ApproxAFunction_swiginit(self,_AdvApprox.new_AdvApprox_ApproxAFunction(*args))
-    def Approximation(*args):
+    def Approximation(*args) -> "Standard_Integer &, Standard_Integer &" :
         """
         :param TotalDimension:
         :type TotalDimension: int
@@ -228,21 +228,21 @@ class AdvApprox_ApproxAFunction(object):
         return _AdvApprox.AdvApprox_ApproxAFunction_Approximation(*args)
 
     Approximation = staticmethod(Approximation)
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_HasResult(self, *args)
 
-    def NbPoles(self, *args):
+    def NbPoles(self, *args) -> "Standard_Integer" :
         """
         * as the name says
 
@@ -251,7 +251,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_NbPoles(self, *args)
 
-    def Poles1d(self, *args):
+    def Poles1d(self, *args) -> "void" :
         """
         * returns the poles from the algorithms as is
 
@@ -268,7 +268,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles1d(self, *args)
 
-    def Poles2d(self, *args):
+    def Poles2d(self, *args) -> "void" :
         """
         * returns the poles from the algorithms as is
 
@@ -285,7 +285,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles2d(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "void" :
         """
         * -- returns the poles from the algorithms as is
 
@@ -302,21 +302,21 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Degree(self, *args)
 
-    def NbKnots(self, *args):
+    def NbKnots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_NbKnots(self, *args)
 
-    def NumSubSpaces(self, *args):
+    def NumSubSpaces(self, *args) -> "Standard_Integer" :
         """
         :param Dimension:
         :type Dimension: int
@@ -325,21 +325,21 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_NumSubSpaces(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Knots(self, *args)
 
-    def Multiplicities(self, *args):
+    def Multiplicities(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
         """
         :rtype: Handle_TColStd_HArray1OfInteger
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Multiplicities(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         * returns the error as is in the algorithms
 
@@ -356,7 +356,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_MaxError(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         * returns the error as is in the algorithms
 
@@ -373,11 +373,11 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_AverageError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(AdvApprox_ApproxAFunction self) -> std::string"""
         return _AdvApprox.AdvApprox_ApproxAFunction_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApprox_ApproxAFunction self)"""
         return _AdvApprox.AdvApprox_ApproxAFunction__kill_pointed(self)
 
@@ -407,7 +407,7 @@ AdvApprox_ApproxAFunction._kill_pointed = new_instancemethod(_AdvApprox.AdvAppro
 AdvApprox_ApproxAFunction_swigregister = _AdvApprox.AdvApprox_ApproxAFunction_swigregister
 AdvApprox_ApproxAFunction_swigregister(AdvApprox_ApproxAFunction)
 
-def AdvApprox_ApproxAFunction_Approximation(*args):
+def AdvApprox_ApproxAFunction_Approximation(*args) -> "Standard_Integer &, Standard_Integer &" :
   """
     :param TotalDimension:
     :type TotalDimension: int
@@ -456,14 +456,14 @@ class AdvApprox_Cutting(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AdvApprox.AdvApprox_Cutting_Delete(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param a:
         :type a: float
@@ -513,7 +513,7 @@ class AdvApprox_SimpleApprox(object):
 
         """
         _AdvApprox.AdvApprox_SimpleApprox_swiginit(self,_AdvApprox.new_AdvApprox_SimpleApprox(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Constructs approximator tool. Warning: the Func should be valid reference to object of type inherited from class EvaluatorFunction from Approx with life time longer than that of the approximator tool;
 
@@ -532,21 +532,21 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_IsDone(self, *args)
 
-    def Degree(self, *args):
+    def Degree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_Degree(self, *args)
 
-    def Coefficients(self, *args):
+    def Coefficients(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * returns the coefficients in the Jacobi Base
 
@@ -555,7 +555,7 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_Coefficients(self, *args)
 
-    def FirstConstr(self, *args):
+    def FirstConstr(self, *args) -> "Handle_TColStd_HArray2OfReal" :
         """
         * returns the constraints at First
 
@@ -564,7 +564,7 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_FirstConstr(self, *args)
 
-    def LastConstr(self, *args):
+    def LastConstr(self, *args) -> "Handle_TColStd_HArray2OfReal" :
         """
         * returns the constraints at Last
 
@@ -573,21 +573,21 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_LastConstr(self, *args)
 
-    def SomTab(self, *args):
+    def SomTab(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_SomTab(self, *args)
 
-    def DifTab(self, *args):
+    def DifTab(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_DifTab(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -596,7 +596,7 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_MaxError(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -605,11 +605,11 @@ class AdvApprox_SimpleApprox(object):
         """
         return _AdvApprox.AdvApprox_SimpleApprox_AverageError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(AdvApprox_SimpleApprox self) -> std::string"""
         return _AdvApprox.AdvApprox_SimpleApprox_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AdvApprox_SimpleApprox self)"""
         return _AdvApprox.AdvApprox_SimpleApprox__kill_pointed(self)
 

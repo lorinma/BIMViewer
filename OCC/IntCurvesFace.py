@@ -142,7 +142,7 @@ class IntCurvesFace_Intersector(object):
 
         """
         _IntCurvesFace.IntCurvesFace_Intersector_swiginit(self,_IntCurvesFace.new_IntCurvesFace_Intersector(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Perform the intersection between the segment L and the loaded face.  PInf is the smallest parameter on the line PSup is the highest parmaeter on the line  For an infinite line PInf and PSup can be +/- RealLast.
 
@@ -167,7 +167,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_Perform(self, *args)
 
-    def SurfaceType(self, *args):
+    def SurfaceType(self, *args) -> "GeomAbs_SurfaceType" :
         """
         * Return the surface type
 
@@ -176,7 +176,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_SurfaceType(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True is returned when the intersection have been computed.
 
@@ -185,14 +185,14 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_IsDone(self, *args)
 
-    def NbPnt(self, *args):
+    def NbPnt(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_NbPnt(self, *args)
 
-    def UParameter(self, *args):
+    def UParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the U parameter of the ith intersection point on the surface.
 
@@ -203,7 +203,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_UParameter(self, *args)
 
-    def VParameter(self, *args):
+    def VParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the V parameter of the ith intersection point on the surface.
 
@@ -214,7 +214,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_VParameter(self, *args)
 
-    def WParameter(self, *args):
+    def WParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the ith intersection point on the line.
 
@@ -225,7 +225,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_WParameter(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Returns the geometric point of the ith intersection between the line and the surface.
 
@@ -236,7 +236,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_Pnt(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
         """
         * Returns the ith transition of the line on the surface.
 
@@ -247,7 +247,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_Transition(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         * Returns the ith state of the point on the face. The values can be either TopAbs_IN ( the point is in the face) or TopAbs_ON ( the point is on a boudary of the face).
 
@@ -258,7 +258,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_State(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Returns the significant face used to determine the intersection.
 
@@ -267,7 +267,7 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_Face(self, *args)
 
-    def ClassifyUVPoint(self, *args):
+    def ClassifyUVPoint(self, *args) -> "TopAbs_State" :
         """
         :param Puv:
         :type Puv: gp_Pnt2d
@@ -276,14 +276,14 @@ class IntCurvesFace_Intersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_ClassifyUVPoint(self, *args)
 
-    def Bounding(self, *args):
+    def Bounding(self, *args) -> "Bnd_Box" :
         """
         :rtype: Bnd_Box
 
         """
         return _IntCurvesFace.IntCurvesFace_Intersector_Bounding(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -325,7 +325,7 @@ class IntCurvesFace_ShapeIntersector(object):
 
         """
         _IntCurvesFace.IntCurvesFace_ShapeIntersector_swiginit(self,_IntCurvesFace.new_IntCurvesFace_ShapeIntersector(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         :param Sh:
         :type Sh: TopoDS_Shape &
@@ -336,7 +336,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_Load(self, *args)
 
-    def PerformNearest(self, *args):
+    def PerformNearest(self, *args) -> "void" :
         """
         * Perform the intersection between the segment L and the loaded shape.  PInf is the smallest parameter on the line PSup is the highest parammter on the line  For an infinite line PInf and PSup can be +/- RealLast.
 
@@ -351,7 +351,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_PerformNearest(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Perform the intersection between the segment L and the loaded shape.  PInf is the smallest parameter on the line PSup is the highest parammter on the line  For an infinite line PInf and PSup can be +/- RealLast.
 
@@ -376,7 +376,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * True is returned when the intersection have been computed.
 
@@ -385,14 +385,14 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_IsDone(self, *args)
 
-    def NbPnt(self, *args):
+    def NbPnt(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_NbPnt(self, *args)
 
-    def UParameter(self, *args):
+    def UParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the U parameter of the ith intersection point on the surface.
 
@@ -403,7 +403,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_UParameter(self, *args)
 
-    def VParameter(self, *args):
+    def VParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the V parameter of the ith intersection point on the surface.
 
@@ -414,7 +414,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_VParameter(self, *args)
 
-    def WParameter(self, *args):
+    def WParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the ith intersection point on the line.
 
@@ -425,7 +425,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_WParameter(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * Returns the geometric point of the ith intersection between the line and the surface.
 
@@ -436,7 +436,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_Pnt(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
         """
         * Returns the ith transition of the line on the surface.
 
@@ -447,7 +447,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_Transition(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         * Returns the ith state of the point on the face. The values can be either TopAbs_IN ( the point is in the face) or TopAbs_ON ( the point is on a boudary of the face).
 
@@ -458,7 +458,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_State(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * Returns the significant face used to determine the intersection.
 
@@ -469,7 +469,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_Face(self, *args)
 
-    def SortResult(self, *args):
+    def SortResult(self, *args) -> "void" :
         """
         * Internal method. Sort the result on the Curve parameter.
 
@@ -478,7 +478,7 @@ class IntCurvesFace_ShapeIntersector(object):
         """
         return _IntCurvesFace.IntCurvesFace_ShapeIntersector_SortResult(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 

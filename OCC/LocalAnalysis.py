@@ -126,7 +126,7 @@ LocalAnalysis_CurvatureNotDefined = _LocalAnalysis.LocalAnalysis_CurvatureNotDef
 class localanalysis(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Dump(*args):
+    def Dump(*args) -> "void" :
         """
         * This class compute s and gives tools to check the local continuity between two points situated on 2 curves) This fonction gives informations about a variable CurveContinuity
 
@@ -162,7 +162,7 @@ localanalysis._kill_pointed = new_instancemethod(_LocalAnalysis.localanalysis__k
 localanalysis_swigregister = _LocalAnalysis.localanalysis_swigregister
 localanalysis_swigregister(localanalysis)
 
-def localanalysis_Dump(*args):
+def localanalysis_Dump(*args) -> "void" :
   """
     * This class compute s and gives tools to check the local continuity between two points situated on 2 curves) This fonction gives informations about a variable CurveContinuity
 
@@ -220,112 +220,112 @@ class LocalAnalysis_CurveContinuity(object):
 
         """
         _LocalAnalysis.LocalAnalysis_CurveContinuity_swiginit(self,_LocalAnalysis.new_LocalAnalysis_CurveContinuity(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsDone(self, *args)
 
-    def StatusError(self, *args):
+    def StatusError(self, *args) -> "LocalAnalysis_StatusErrorType" :
         """
         :rtype: LocalAnalysis_StatusErrorType
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_StatusError(self, *args)
 
-    def ContinuityStatus(self, *args):
+    def ContinuityStatus(self, *args) -> "GeomAbs_Shape" :
         """
         :rtype: GeomAbs_Shape
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_ContinuityStatus(self, *args)
 
-    def C0Value(self, *args):
+    def C0Value(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_C0Value(self, *args)
 
-    def C1Angle(self, *args):
+    def C1Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Angle(self, *args)
 
-    def C1Ratio(self, *args):
+    def C1Ratio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Ratio(self, *args)
 
-    def C2Angle(self, *args):
+    def C2Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Angle(self, *args)
 
-    def C2Ratio(self, *args):
+    def C2Ratio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Ratio(self, *args)
 
-    def G1Angle(self, *args):
+    def G1Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_G1Angle(self, *args)
 
-    def G2Angle(self, *args):
+    def G2Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2Angle(self, *args)
 
-    def G2CurvatureVariation(self, *args):
+    def G2CurvatureVariation(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2CurvatureVariation(self, *args)
 
-    def IsC0(self, *args):
+    def IsC0(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC0(self, *args)
 
-    def IsC1(self, *args):
+    def IsC1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC1(self, *args)
 
-    def IsC2(self, *args):
+    def IsC2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC2(self, *args)
 
-    def IsG1(self, *args):
+    def IsG1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsG1(self, *args)
 
-    def IsG2(self, *args):
+    def IsG2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -445,7 +445,7 @@ class LocalAnalysis_SurfaceContinuity(object):
 
         """
         _LocalAnalysis.LocalAnalysis_SurfaceContinuity_swiginit(self,_LocalAnalysis.new_LocalAnalysis_SurfaceContinuity(*args))
-    def ComputeAnalysis(self, *args):
+    def ComputeAnalysis(self, *args) -> "void" :
         """
         :param Surf1:
         :type Surf1: GeomLProp_SLProps &
@@ -458,133 +458,133 @@ class LocalAnalysis_SurfaceContinuity(object):
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_ComputeAnalysis(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsDone(self, *args)
 
-    def ContinuityStatus(self, *args):
+    def ContinuityStatus(self, *args) -> "GeomAbs_Shape" :
         """
         :rtype: GeomAbs_Shape
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_ContinuityStatus(self, *args)
 
-    def StatusError(self, *args):
+    def StatusError(self, *args) -> "LocalAnalysis_StatusErrorType" :
         """
         :rtype: LocalAnalysis_StatusErrorType
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_StatusError(self, *args)
 
-    def C0Value(self, *args):
+    def C0Value(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C0Value(self, *args)
 
-    def C1UAngle(self, *args):
+    def C1UAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1UAngle(self, *args)
 
-    def C1URatio(self, *args):
+    def C1URatio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1URatio(self, *args)
 
-    def C1VAngle(self, *args):
+    def C1VAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VAngle(self, *args)
 
-    def C1VRatio(self, *args):
+    def C1VRatio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VRatio(self, *args)
 
-    def C2UAngle(self, *args):
+    def C2UAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2UAngle(self, *args)
 
-    def C2URatio(self, *args):
+    def C2URatio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2URatio(self, *args)
 
-    def C2VAngle(self, *args):
+    def C2VAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VAngle(self, *args)
 
-    def C2VRatio(self, *args):
+    def C2VRatio(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VRatio(self, *args)
 
-    def G1Angle(self, *args):
+    def G1Angle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G1Angle(self, *args)
 
-    def G2CurvatureGap(self, *args):
+    def G2CurvatureGap(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G2CurvatureGap(self, *args)
 
-    def IsC0(self, *args):
+    def IsC0(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC0(self, *args)
 
-    def IsC1(self, *args):
+    def IsC1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC1(self, *args)
 
-    def IsC2(self, *args):
+    def IsC2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC2(self, *args)
 
-    def IsG1(self, *args):
+    def IsG1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsG1(self, *args)
 
-    def IsG2(self, *args):
+    def IsG2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 

@@ -135,7 +135,7 @@ class Sweep_NumShape(object):
 
         """
         _Sweep.Sweep_NumShape_swiginit(self,_Sweep.new_Sweep_NumShape(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Reinitialize a simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, Closed is true if it is the vertex of a closed edge, all the other fields have no meanning.
 
@@ -154,42 +154,42 @@ class Sweep_NumShape(object):
         """
         return _Sweep.Sweep_NumShape_Init(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Sweep.Sweep_NumShape_Index(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "TopAbs_ShapeEnum" :
         """
         :rtype: TopAbs_ShapeEnum
 
         """
         return _Sweep.Sweep_NumShape_Type(self, *args)
 
-    def Closed(self, *args):
+    def Closed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Sweep.Sweep_NumShape_Closed(self, *args)
 
-    def BegInfinite(self, *args):
+    def BegInfinite(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Sweep.Sweep_NumShape_BegInfinite(self, *args)
 
-    def EndInfinite(self, *args):
+    def EndInfinite(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Sweep.Sweep_NumShape_EndInfinite(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :rtype: TopAbs_Orientation
 
@@ -224,7 +224,7 @@ class Sweep_NumShapeIterator(object):
 
         """
         _Sweep.Sweep_NumShapeIterator_swiginit(self,_Sweep.new_Sweep_NumShapeIterator(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Resest the NumShapeIterator on sub-shapes of <aShape>.
 
@@ -235,7 +235,7 @@ class Sweep_NumShapeIterator(object):
         """
         return _Sweep.Sweep_NumShapeIterator_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current sub-shape.
 
@@ -244,7 +244,7 @@ class Sweep_NumShapeIterator(object):
         """
         return _Sweep.Sweep_NumShapeIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Moves to the next sub-shape.
 
@@ -253,7 +253,7 @@ class Sweep_NumShapeIterator(object):
         """
         return _Sweep.Sweep_NumShapeIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Sweep_NumShape const &" :
         """
         * Returns the current sub-shape.
 
@@ -262,7 +262,7 @@ class Sweep_NumShapeIterator(object):
         """
         return _Sweep.Sweep_NumShapeIterator_Value(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the orientation of the current sub-shape.
 
@@ -301,7 +301,7 @@ class Sweep_NumShapeTool(object):
 
         """
         _Sweep.Sweep_NumShapeTool_swiginit(self,_Sweep.new_Sweep_NumShapeTool(*args))
-    def NbShapes(self, *args):
+    def NbShapes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of subshapes in the shape.
 
@@ -310,7 +310,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_NbShapes(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of <aShape>.
 
@@ -321,7 +321,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Index(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "Sweep_NumShape" :
         """
         * Returns the Shape at index anIndex
 
@@ -332,7 +332,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Shape(self, *args)
 
-    def Type(self, *args):
+    def Type(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * Returns the type of <aShape>.
 
@@ -343,7 +343,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Type(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the orientation of <aShape>.
 
@@ -354,7 +354,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Orientation(self, *args)
 
-    def HasFirstVertex(self, *args):
+    def HasFirstVertex(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a First Vertex in the Shape.
 
@@ -363,7 +363,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_HasFirstVertex(self, *args)
 
-    def HasLastVertex(self, *args):
+    def HasLastVertex(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a Last Vertex in the Shape.
 
@@ -372,7 +372,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_HasLastVertex(self, *args)
 
-    def FirstVertex(self, *args):
+    def FirstVertex(self, *args) -> "Sweep_NumShape" :
         """
         * Returns the first vertex.
 
@@ -381,7 +381,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_FirstVertex(self, *args)
 
-    def LastVertex(self, *args):
+    def LastVertex(self, *args) -> "Sweep_NumShape" :
         """
         * Returns the last vertex.
 

@@ -148,7 +148,7 @@ class ShapeProcessAPI_ApplySequence(object):
 
         """
         _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_swiginit(self,_ShapeProcessAPI.new_ShapeProcessAPI_ApplySequence(*args))
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_ShapeProcess_ShapeContext &" :
         """
         * Returns object for managing resource file and sequence of operators.
 
@@ -157,7 +157,7 @@ class ShapeProcessAPI_ApplySequence(object):
         """
         return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Context(self, *args)
 
-    def PrepareShape(self, *args):
+    def PrepareShape(self, *args) -> "TopoDS_Shape" :
         """
         * Performs sequence of operators stored in myRsc. If <fillmap> is True adds history 'shape-shape' into myMap for shape and its subshapes until level <until> (included). If <until> is TopAbs_SHAPE, all the subshapes are considered.
 
@@ -172,7 +172,7 @@ class ShapeProcessAPI_ApplySequence(object):
         """
         return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_PrepareShape(self, *args)
 
-    def ClearMap(self, *args):
+    def ClearMap(self, *args) -> "void" :
         """
         * Clears myMap with accumulated history.
 
@@ -181,7 +181,7 @@ class ShapeProcessAPI_ApplySequence(object):
         """
         return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_ClearMap(self, *args)
 
-    def Map(self, *args):
+    def Map(self, *args) -> "TopTools_DataMapOfShapeShape const &" :
         """
         * Returns myMap with accumulated history.
 
@@ -190,7 +190,7 @@ class ShapeProcessAPI_ApplySequence(object):
         """
         return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Map(self, *args)
 
-    def PrintPreparationResult(self, *args):
+    def PrintPreparationResult(self, *args) -> "void" :
         """
         * Prints result of preparation onto the messenger of the context. Note that results can be accumulated from previous preparations it method ClearMap was not called before PrepareShape.
 

@@ -130,7 +130,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Arc_swiginit(self,_MAT.new_MAT_Arc(*args))
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of <self> in Graph.theArcs.
 
@@ -139,7 +139,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_Index(self, *args)
 
-    def GeomIndex(self, *args):
+    def GeomIndex(self, *args) -> "Standard_Integer" :
         """
         * Returns the index associated of the geometric  representation of <self>.
 
@@ -148,7 +148,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_GeomIndex(self, *args)
 
-    def FirstElement(self, *args):
+    def FirstElement(self, *args) -> "Handle_MAT_BasicElt" :
         """
         * Returns one of the BasicElt equidistant from <self>.
 
@@ -157,7 +157,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_FirstElement(self, *args)
 
-    def SecondElement(self, *args):
+    def SecondElement(self, *args) -> "Handle_MAT_BasicElt" :
         """
         * Returns the other BasicElt equidistant from <self>.
 
@@ -166,7 +166,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SecondElement(self, *args)
 
-    def FirstNode(self, *args):
+    def FirstNode(self, *args) -> "Handle_MAT_Node" :
         """
         * Returns one Node extremity of <self>.
 
@@ -175,7 +175,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_FirstNode(self, *args)
 
-    def SecondNode(self, *args):
+    def SecondNode(self, *args) -> "Handle_MAT_Node" :
         """
         * Returns the other Node extremity of <self>.
 
@@ -184,7 +184,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SecondNode(self, *args)
 
-    def TheOtherNode(self, *args):
+    def TheOtherNode(self, *args) -> "Handle_MAT_Node" :
         """
         * an Arc has two Node, if <aNode> egal one  Returns the other. if <aNode> is not oh <self>
 
@@ -195,7 +195,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_TheOtherNode(self, *args)
 
-    def HasNeighbour(self, *args):
+    def HasNeighbour(self, *args) -> "Standard_Boolean" :
         """
         * Returnst True is there is an arc linked to  the Node <aNode> located on the side <aSide> of <self>; if <aNode> is not on <self>
 
@@ -208,7 +208,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_HasNeighbour(self, *args)
 
-    def Neighbour(self, *args):
+    def Neighbour(self, *args) -> "Handle_MAT_Arc" :
         """
         * Returns the first arc linked to the Node <aNode>  located on the side <aSide> of <self>; if HasNeighbour() returns False.
 
@@ -221,7 +221,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_Neighbour(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         :param anInteger:
         :type anInteger: int
@@ -230,7 +230,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetIndex(self, *args)
 
-    def SetGeomIndex(self, *args):
+    def SetGeomIndex(self, *args) -> "void" :
         """
         :param anInteger:
         :type anInteger: int
@@ -239,7 +239,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetGeomIndex(self, *args)
 
-    def SetFirstElement(self, *args):
+    def SetFirstElement(self, *args) -> "void" :
         """
         :param aBasicElt:
         :type aBasicElt: Handle_MAT_BasicElt &
@@ -248,7 +248,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetFirstElement(self, *args)
 
-    def SetSecondElement(self, *args):
+    def SetSecondElement(self, *args) -> "void" :
         """
         :param aBasicElt:
         :type aBasicElt: Handle_MAT_BasicElt &
@@ -257,7 +257,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetSecondElement(self, *args)
 
-    def SetFirstNode(self, *args):
+    def SetFirstNode(self, *args) -> "void" :
         """
         :param aNode:
         :type aNode: Handle_MAT_Node &
@@ -266,7 +266,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetFirstNode(self, *args)
 
-    def SetSecondNode(self, *args):
+    def SetSecondNode(self, *args) -> "void" :
         """
         :param aNode:
         :type aNode: Handle_MAT_Node &
@@ -275,7 +275,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetSecondNode(self, *args)
 
-    def SetFirstArc(self, *args):
+    def SetFirstArc(self, *args) -> "void" :
         """
         :param aSide:
         :type aSide: MAT_Side
@@ -286,7 +286,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetFirstArc(self, *args)
 
-    def SetSecondArc(self, *args):
+    def SetSecondArc(self, *args) -> "void" :
         """
         :param aSide:
         :type aSide: MAT_Side
@@ -297,7 +297,7 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetSecondArc(self, *args)
 
-    def SetNeighbour(self, *args):
+    def SetNeighbour(self, *args) -> "void" :
         """
         :param aSide:
         :type aSide: MAT_Side
@@ -310,11 +310,11 @@ class MAT_Arc(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Arc_SetNeighbour(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Arc self)"""
         return _MAT.MAT_Arc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Arc" :
         """GetHandle(MAT_Arc self) -> Handle_MAT_Arc"""
         return _MAT.MAT_Arc_GetHandle(self)
 
@@ -370,7 +370,7 @@ Handle_MAT_Arc._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Arc__kill_poin
 Handle_MAT_Arc_swigregister = _MAT.Handle_MAT_Arc_swigregister
 Handle_MAT_Arc_swigregister(Handle_MAT_Arc)
 
-def Handle_MAT_Arc_DownCast(*args):
+def Handle_MAT_Arc_DownCast(*args) -> "Handle_MAT_Arc const" :
   return _MAT.Handle_MAT_Arc_DownCast(*args)
 Handle_MAT_Arc_DownCast = _MAT.Handle_MAT_Arc_DownCast
 
@@ -387,7 +387,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_BasicElt_swiginit(self,_MAT.new_MAT_BasicElt(*args))
-    def StartArc(self, *args):
+    def StartArc(self, *args) -> "Handle_MAT_Arc" :
         """
         * Return <startArcLeft> or <startArcRight> corresponding  to <aSide>.
 
@@ -396,7 +396,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_StartArc(self, *args)
 
-    def EndArc(self, *args):
+    def EndArc(self, *args) -> "Handle_MAT_Arc" :
         """
         * Return <endArcLeft> or <endArcRight> corresponding  to <aSide>.
 
@@ -405,7 +405,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_EndArc(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Return the <index> of <self> in Graph.TheBasicElts.
 
@@ -414,7 +414,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_Index(self, *args)
 
-    def GeomIndex(self, *args):
+    def GeomIndex(self, *args) -> "Standard_Integer" :
         """
         * Return the <GeomIndex> of <self>.
 
@@ -423,7 +423,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_GeomIndex(self, *args)
 
-    def SetStartArc(self, *args):
+    def SetStartArc(self, *args) -> "void" :
         """
         :param anArc:
         :type anArc: Handle_MAT_Arc &
@@ -432,7 +432,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_SetStartArc(self, *args)
 
-    def SetEndArc(self, *args):
+    def SetEndArc(self, *args) -> "void" :
         """
         :param anArc:
         :type anArc: Handle_MAT_Arc &
@@ -441,7 +441,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_SetEndArc(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         :param anInteger:
         :type anInteger: int
@@ -450,7 +450,7 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_SetIndex(self, *args)
 
-    def SetGeomIndex(self, *args):
+    def SetGeomIndex(self, *args) -> "void" :
         """
         :param anInteger:
         :type anInteger: int
@@ -459,11 +459,11 @@ class MAT_BasicElt(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_BasicElt_SetGeomIndex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_BasicElt self)"""
         return _MAT.MAT_BasicElt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_BasicElt" :
         """GetHandle(MAT_BasicElt self) -> Handle_MAT_BasicElt"""
         return _MAT.MAT_BasicElt_GetHandle(self)
 
@@ -509,7 +509,7 @@ Handle_MAT_BasicElt._kill_pointed = new_instancemethod(_MAT.Handle_MAT_BasicElt_
 Handle_MAT_BasicElt_swigregister = _MAT.Handle_MAT_BasicElt_swigregister
 Handle_MAT_BasicElt_swigregister(Handle_MAT_BasicElt)
 
-def Handle_MAT_BasicElt_DownCast(*args):
+def Handle_MAT_BasicElt_DownCast(*args) -> "Handle_MAT_BasicElt const" :
   return _MAT.Handle_MAT_BasicElt_DownCast(*args)
 Handle_MAT_BasicElt_DownCast = _MAT.Handle_MAT_BasicElt_DownCast
 
@@ -522,7 +522,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Bisector_swiginit(self,_MAT.new_MAT_Bisector(*args))
-    def AddBisector(self, *args):
+    def AddBisector(self, *args) -> "void" :
         """
         :param abisector:
         :type abisector: Handle_MAT_Bisector &
@@ -531,28 +531,28 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_AddBisector(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "Handle_MAT_ListOfBisector" :
         """
         :rtype: Handle_MAT_ListOfBisector
 
         """
         return _MAT.MAT_Bisector_List(self, *args)
 
-    def FirstBisector(self, *args):
+    def FirstBisector(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_Bisector_FirstBisector(self, *args)
 
-    def LastBisector(self, *args):
+    def LastBisector(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_Bisector_LastBisector(self, *args)
 
-    def BisectorNumber(self, *args):
+    def BisectorNumber(self, *args) -> "Standard_Integer" :
         """
         :param anumber:
         :type anumber: int
@@ -563,7 +563,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_BisectorNumber(self, *args)
 
-    def IndexNumber(self, *args):
+    def IndexNumber(self, *args) -> "Standard_Integer" :
         """
         :param anumber:
         :type anumber: int
@@ -574,7 +574,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_IndexNumber(self, *args)
 
-    def FirstEdge(self, *args):
+    def FirstEdge(self, *args) -> "Handle_MAT_Edge" :
         """
         :param anedge:
         :type anedge: Handle_MAT_Edge &
@@ -585,7 +585,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_FirstEdge(self, *args)
 
-    def SecondEdge(self, *args):
+    def SecondEdge(self, *args) -> "Handle_MAT_Edge" :
         """
         :param anedge:
         :type anedge: Handle_MAT_Edge &
@@ -596,7 +596,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_SecondEdge(self, *args)
 
-    def IssuePoint(self, *args):
+    def IssuePoint(self, *args) -> "Standard_Integer" :
         """
         :param apoint:
         :type apoint: int
@@ -607,7 +607,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_IssuePoint(self, *args)
 
-    def EndPoint(self, *args):
+    def EndPoint(self, *args) -> "Standard_Integer" :
         """
         :param apoint:
         :type apoint: int
@@ -618,7 +618,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_EndPoint(self, *args)
 
-    def DistIssuePoint(self, *args):
+    def DistIssuePoint(self, *args) -> "Standard_Real" :
         """
         :param areal:
         :type areal: float
@@ -629,7 +629,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_DistIssuePoint(self, *args)
 
-    def FirstVector(self, *args):
+    def FirstVector(self, *args) -> "Standard_Integer" :
         """
         :param avector:
         :type avector: int
@@ -640,7 +640,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_FirstVector(self, *args)
 
-    def SecondVector(self, *args):
+    def SecondVector(self, *args) -> "Standard_Integer" :
         """
         :param avector:
         :type avector: int
@@ -651,7 +651,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_SecondVector(self, *args)
 
-    def Sense(self, *args):
+    def Sense(self, *args) -> "Standard_Real" :
         """
         :param asense:
         :type asense: float
@@ -662,7 +662,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_Sense(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         :param aparameter:
         :type aparameter: float
@@ -673,7 +673,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_FirstParameter(self, *args)
 
-    def SecondParameter(self, *args):
+    def SecondParameter(self, *args) -> "Standard_Real" :
         """
         :param aparameter:
         :type aparameter: float
@@ -684,7 +684,7 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_SecondParameter(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param ashift:
         :type ashift: int
@@ -695,11 +695,11 @@ class MAT_Bisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Bisector_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Bisector self)"""
         return _MAT.MAT_Bisector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Bisector" :
         """GetHandle(MAT_Bisector self) -> Handle_MAT_Bisector"""
         return _MAT.MAT_Bisector_GetHandle(self)
 
@@ -754,7 +754,7 @@ Handle_MAT_Bisector._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Bisector_
 Handle_MAT_Bisector_swigregister = _MAT.Handle_MAT_Bisector_swigregister
 Handle_MAT_Bisector_swigregister(Handle_MAT_Bisector)
 
-def Handle_MAT_Bisector_DownCast(*args):
+def Handle_MAT_Bisector_DownCast(*args) -> "Handle_MAT_Bisector const" :
   return _MAT.Handle_MAT_Bisector_DownCast(*args)
 Handle_MAT_Bisector_DownCast = _MAT.Handle_MAT_Bisector_DownCast
 
@@ -771,7 +771,7 @@ class MAT_DataMapIteratorOfDataMapOfIntegerArc(OCC.TCollection.TCollection_Basic
 
         """
         _MAT.MAT_DataMapIteratorOfDataMapOfIntegerArc_swiginit(self,_MAT.new_MAT_DataMapIteratorOfDataMapOfIntegerArc(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT_DataMapOfIntegerArc &
@@ -780,14 +780,14 @@ class MAT_DataMapIteratorOfDataMapOfIntegerArc(OCC.TCollection.TCollection_Basic
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerArc_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerArc_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Arc const &" :
         """
         :rtype: Handle_MAT_Arc
 
@@ -822,7 +822,7 @@ class MAT_DataMapIteratorOfDataMapOfIntegerBasicElt(OCC.TCollection.TCollection_
 
         """
         _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBasicElt_swiginit(self,_MAT.new_MAT_DataMapIteratorOfDataMapOfIntegerBasicElt(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT_DataMapOfIntegerBasicElt &
@@ -831,14 +831,14 @@ class MAT_DataMapIteratorOfDataMapOfIntegerBasicElt(OCC.TCollection.TCollection_
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBasicElt_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBasicElt_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
@@ -873,7 +873,7 @@ class MAT_DataMapIteratorOfDataMapOfIntegerBisector(OCC.TCollection.TCollection_
 
         """
         _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBisector_swiginit(self,_MAT.new_MAT_DataMapIteratorOfDataMapOfIntegerBisector(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT_DataMapOfIntegerBisector &
@@ -882,14 +882,14 @@ class MAT_DataMapIteratorOfDataMapOfIntegerBisector(OCC.TCollection.TCollection_
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBisector_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerBisector_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Bisector const &" :
         """
         :rtype: Handle_MAT_Bisector
 
@@ -924,7 +924,7 @@ class MAT_DataMapIteratorOfDataMapOfIntegerNode(OCC.TCollection.TCollection_Basi
 
         """
         _MAT.MAT_DataMapIteratorOfDataMapOfIntegerNode_swiginit(self,_MAT.new_MAT_DataMapIteratorOfDataMapOfIntegerNode(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT_DataMapOfIntegerNode &
@@ -933,14 +933,14 @@ class MAT_DataMapIteratorOfDataMapOfIntegerNode(OCC.TCollection.TCollection_Basi
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerNode_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_DataMapIteratorOfDataMapOfIntegerNode_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Node const &" :
         """
         :rtype: Handle_MAT_Node
 
@@ -977,26 +977,26 @@ class MAT_DataMapNodeOfDataMapOfIntegerArc(OCC.TCollection.TCollection_MapNode):
 
         """
         _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc_swiginit(self,_MAT.new_MAT_DataMapNodeOfDataMapOfIntegerArc(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT_DataMapNodeOfDataMapOfIntegerArc self) -> Standard_Integer"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT_DataMapNodeOfDataMapOfIntegerArc self, Standard_Integer value)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Arc &" :
         """
         :rtype: Handle_MAT_Arc
 
         """
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapNodeOfDataMapOfIntegerArc self)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerArc" :
         """GetHandle(MAT_DataMapNodeOfDataMapOfIntegerArc self) -> Handle_MAT_DataMapNodeOfDataMapOfIntegerArc"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerArc_GetHandle(self)
 
@@ -1037,7 +1037,7 @@ Handle_MAT_DataMapNodeOfDataMapOfIntegerArc._kill_pointed = new_instancemethod(_
 Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_swigregister = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_swigregister
 Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_swigregister(Handle_MAT_DataMapNodeOfDataMapOfIntegerArc)
 
-def Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_DownCast(*args):
+def Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_DownCast(*args) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerArc const" :
   return _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_DownCast(*args)
 Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_DownCast = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerArc_DownCast
 
@@ -1056,26 +1056,26 @@ class MAT_DataMapNodeOfDataMapOfIntegerBasicElt(OCC.TCollection.TCollection_MapN
 
         """
         _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt_swiginit(self,_MAT.new_MAT_DataMapNodeOfDataMapOfIntegerBasicElt(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT_DataMapNodeOfDataMapOfIntegerBasicElt self) -> Standard_Integer"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT_DataMapNodeOfDataMapOfIntegerBasicElt self, Standard_Integer value)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapNodeOfDataMapOfIntegerBasicElt self)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt" :
         """GetHandle(MAT_DataMapNodeOfDataMapOfIntegerBasicElt self) -> Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBasicElt_GetHandle(self)
 
@@ -1116,7 +1116,7 @@ Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt._kill_pointed = new_instancemet
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_swigregister = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_swigregister
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_swigregister(Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt)
 
-def Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_DownCast(*args):
+def Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_DownCast(*args) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt const" :
   return _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_DownCast(*args)
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_DownCast = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBasicElt_DownCast
 
@@ -1135,26 +1135,26 @@ class MAT_DataMapNodeOfDataMapOfIntegerBisector(OCC.TCollection.TCollection_MapN
 
         """
         _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector_swiginit(self,_MAT.new_MAT_DataMapNodeOfDataMapOfIntegerBisector(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT_DataMapNodeOfDataMapOfIntegerBisector self) -> Standard_Integer"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT_DataMapNodeOfDataMapOfIntegerBisector self, Standard_Integer value)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Bisector &" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapNodeOfDataMapOfIntegerBisector self)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector" :
         """GetHandle(MAT_DataMapNodeOfDataMapOfIntegerBisector self) -> Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerBisector_GetHandle(self)
 
@@ -1195,7 +1195,7 @@ Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector._kill_pointed = new_instancemet
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_swigregister = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_swigregister
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_swigregister(Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector)
 
-def Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_DownCast(*args):
+def Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_DownCast(*args) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector const" :
   return _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_DownCast(*args)
 Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_DownCast = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerBisector_DownCast
 
@@ -1214,26 +1214,26 @@ class MAT_DataMapNodeOfDataMapOfIntegerNode(OCC.TCollection.TCollection_MapNode)
 
         """
         _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode_swiginit(self,_MAT.new_MAT_DataMapNodeOfDataMapOfIntegerNode(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT_DataMapNodeOfDataMapOfIntegerNode self) -> Standard_Integer"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT_DataMapNodeOfDataMapOfIntegerNode self, Standard_Integer value)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Node &" :
         """
         :rtype: Handle_MAT_Node
 
         """
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapNodeOfDataMapOfIntegerNode self)"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerNode" :
         """GetHandle(MAT_DataMapNodeOfDataMapOfIntegerNode self) -> Handle_MAT_DataMapNodeOfDataMapOfIntegerNode"""
         return _MAT.MAT_DataMapNodeOfDataMapOfIntegerNode_GetHandle(self)
 
@@ -1274,7 +1274,7 @@ Handle_MAT_DataMapNodeOfDataMapOfIntegerNode._kill_pointed = new_instancemethod(
 Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_swigregister = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_swigregister
 Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_swigregister(Handle_MAT_DataMapNodeOfDataMapOfIntegerNode)
 
-def Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_DownCast(*args):
+def Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_DownCast(*args) -> "Handle_MAT_DataMapNodeOfDataMapOfIntegerNode const" :
   return _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_DownCast(*args)
 Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_DownCast = _MAT.Handle_MAT_DataMapNodeOfDataMapOfIntegerNode_DownCast
 
@@ -1289,7 +1289,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT.MAT_DataMapOfIntegerArc_swiginit(self,_MAT.new_MAT_DataMapOfIntegerArc(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_DataMapOfIntegerArc &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerArc &
@@ -1298,7 +1298,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_DataMapOfIntegerArc &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerArc &
@@ -1307,7 +1307,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1316,14 +1316,14 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_DataMapOfIntegerArc_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1334,7 +1334,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1343,7 +1343,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1352,7 +1352,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MAT_Arc const &" :
         """
         :param K:
         :type K: int &
@@ -1361,7 +1361,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MAT_Arc &" :
         """
         :param K:
         :type K: int &
@@ -1370,7 +1370,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1379,7 +1379,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1388,7 +1388,7 @@ class MAT_DataMapOfIntegerArc(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerArc_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapOfIntegerArc self)"""
         return _MAT.MAT_DataMapOfIntegerArc__kill_pointed(self)
 
@@ -1426,7 +1426,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT.MAT_DataMapOfIntegerBasicElt_swiginit(self,_MAT.new_MAT_DataMapOfIntegerBasicElt(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_DataMapOfIntegerBasicElt &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerBasicElt &
@@ -1435,7 +1435,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_DataMapOfIntegerBasicElt &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerBasicElt &
@@ -1444,7 +1444,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1453,14 +1453,14 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1471,7 +1471,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1480,7 +1480,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1489,7 +1489,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :param K:
         :type K: int &
@@ -1498,7 +1498,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :param K:
         :type K: int &
@@ -1507,7 +1507,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1516,7 +1516,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1525,7 +1525,7 @@ class MAT_DataMapOfIntegerBasicElt(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBasicElt_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapOfIntegerBasicElt self)"""
         return _MAT.MAT_DataMapOfIntegerBasicElt__kill_pointed(self)
 
@@ -1563,7 +1563,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT.MAT_DataMapOfIntegerBisector_swiginit(self,_MAT.new_MAT_DataMapOfIntegerBisector(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_DataMapOfIntegerBisector &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerBisector &
@@ -1572,7 +1572,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_DataMapOfIntegerBisector &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerBisector &
@@ -1581,7 +1581,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1590,14 +1590,14 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1608,7 +1608,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1617,7 +1617,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1626,7 +1626,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MAT_Bisector const &" :
         """
         :param K:
         :type K: int &
@@ -1635,7 +1635,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MAT_Bisector &" :
         """
         :param K:
         :type K: int &
@@ -1644,7 +1644,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1653,7 +1653,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1662,7 +1662,7 @@ class MAT_DataMapOfIntegerBisector(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerBisector_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapOfIntegerBisector self)"""
         return _MAT.MAT_DataMapOfIntegerBisector__kill_pointed(self)
 
@@ -1700,7 +1700,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT.MAT_DataMapOfIntegerNode_swiginit(self,_MAT.new_MAT_DataMapOfIntegerNode(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_DataMapOfIntegerNode &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerNode &
@@ -1709,7 +1709,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_DataMapOfIntegerNode &" :
         """
         :param Other:
         :type Other: MAT_DataMapOfIntegerNode &
@@ -1718,7 +1718,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1727,14 +1727,14 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_DataMapOfIntegerNode_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1745,7 +1745,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1754,7 +1754,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1763,7 +1763,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MAT_Node const &" :
         """
         :param K:
         :type K: int &
@@ -1772,7 +1772,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MAT_Node &" :
         """
         :param K:
         :type K: int &
@@ -1781,7 +1781,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1790,7 +1790,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -1799,7 +1799,7 @@ class MAT_DataMapOfIntegerNode(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT.MAT_DataMapOfIntegerNode_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_DataMapOfIntegerNode self)"""
         return _MAT.MAT_DataMapOfIntegerNode__kill_pointed(self)
 
@@ -1835,7 +1835,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Edge_swiginit(self,_MAT.new_MAT_Edge(*args))
-    def EdgeNumber(self, *args):
+    def EdgeNumber(self, *args) -> "Standard_Integer" :
         """
         :param anumber:
         :type anumber: int
@@ -1846,7 +1846,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_EdgeNumber(self, *args)
 
-    def FirstBisector(self, *args):
+    def FirstBisector(self, *args) -> "Handle_MAT_Bisector" :
         """
         :param abisector:
         :type abisector: Handle_MAT_Bisector &
@@ -1857,7 +1857,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_FirstBisector(self, *args)
 
-    def SecondBisector(self, *args):
+    def SecondBisector(self, *args) -> "Handle_MAT_Bisector" :
         """
         :param abisector:
         :type abisector: Handle_MAT_Bisector &
@@ -1868,7 +1868,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_SecondBisector(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         :param adistance:
         :type adistance: float
@@ -1879,7 +1879,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_Distance(self, *args)
 
-    def IntersectionPoint(self, *args):
+    def IntersectionPoint(self, *args) -> "Standard_Integer" :
         """
         :param apoint:
         :type apoint: int
@@ -1890,7 +1890,7 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_IntersectionPoint(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param ashift:
         :type ashift: int
@@ -1901,11 +1901,11 @@ class MAT_Edge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Edge_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Edge self)"""
         return _MAT.MAT_Edge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Edge" :
         """GetHandle(MAT_Edge self) -> Handle_MAT_Edge"""
         return _MAT.MAT_Edge_GetHandle(self)
 
@@ -1949,7 +1949,7 @@ Handle_MAT_Edge._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Edge__kill_po
 Handle_MAT_Edge_swigregister = _MAT.Handle_MAT_Edge_swigregister
 Handle_MAT_Edge_swigregister(Handle_MAT_Edge)
 
-def Handle_MAT_Edge_DownCast(*args):
+def Handle_MAT_Edge_DownCast(*args) -> "Handle_MAT_Edge const" :
   return _MAT.Handle_MAT_Edge_DownCast(*args)
 Handle_MAT_Edge_DownCast = _MAT.Handle_MAT_Edge_DownCast
 
@@ -1964,7 +1964,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Graph_swiginit(self,_MAT.new_MAT_Graph(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Construct <self> from the result of the method  <CreateMat> of the class <MAT> from <MAT>. <SemiInfinite> : if some bisector are infinites.  <TheRoots> : Set of the bisectors.  <NbBasicElts> : Number of Basic Elements.  <NbArcs> : Number of Arcs = Number of Bisectors.
 
@@ -1981,7 +1981,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_Perform(self, *args)
 
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_MAT_Arc" :
         """
         * Return the Arc of index <Index> in <theArcs>.
 
@@ -1992,7 +1992,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_Arc(self, *args)
 
-    def BasicElt(self, *args):
+    def BasicElt(self, *args) -> "Handle_MAT_BasicElt" :
         """
         * Return the BasicElt of index <Index> in <theBasicElts>.
 
@@ -2003,7 +2003,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_BasicElt(self, *args)
 
-    def Node(self, *args):
+    def Node(self, *args) -> "Handle_MAT_Node" :
         """
         * Return the Node of index <Index> in <theNodes>.
 
@@ -2014,7 +2014,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_Node(self, *args)
 
-    def NumberOfArcs(self, *args):
+    def NumberOfArcs(self, *args) -> "Standard_Integer" :
         """
         * Return the number of arcs of <self>.
 
@@ -2023,7 +2023,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_NumberOfArcs(self, *args)
 
-    def NumberOfNodes(self, *args):
+    def NumberOfNodes(self, *args) -> "Standard_Integer" :
         """
         * Return the number of nodes of <self>.
 
@@ -2032,7 +2032,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_NumberOfNodes(self, *args)
 
-    def NumberOfBasicElts(self, *args):
+    def NumberOfBasicElts(self, *args) -> "Standard_Integer" :
         """
         * Return the number of basic elements of <self>.
 
@@ -2041,7 +2041,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_NumberOfBasicElts(self, *args)
 
-    def NumberOfInfiniteNodes(self, *args):
+    def NumberOfInfiniteNodes(self, *args) -> "Standard_Integer" :
         """
         * Return the number of infinites nodes of <self>.
 
@@ -2050,7 +2050,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_NumberOfInfiniteNodes(self, *args)
 
-    def FusionOfBasicElts(self, *args):
+    def FusionOfBasicElts(self, *args) -> "void" :
         """
         * Merge two BasicElts. The End of the BasicElt Elt1 of IndexElt1 becomes The End of the BasicElt Elt2 of IndexElt2. Elt2 is replaced in the arcs by Elt1, Elt2 is eliminated.  <MergeArc1> is True if the fusion of the BasicElts => a fusion of two Arcs which separated the same elements. In this case <GeomIndexArc1> and <GeomIndexArc2> are the Geometric Index of this arcs.  If the BasicElt corresponds to a close line , the StartArc and the EndArc of Elt1 can separate the same elements . In this case there is a fusion of this arcs, <MergeArc2> is true and <GeomIndexArc3> and <GeomIndexArc4> are the Geometric Index of this arcs.
 
@@ -2075,21 +2075,21 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_FusionOfBasicElts(self, *args)
 
-    def CompactArcs(self, *args):
+    def CompactArcs(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_Graph_CompactArcs(self, *args)
 
-    def CompactNodes(self, *args):
+    def CompactNodes(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_Graph_CompactNodes(self, *args)
 
-    def ChangeBasicElts(self, *args):
+    def ChangeBasicElts(self, *args) -> "void" :
         """
         :param NewMap:
         :type NewMap: MAT_DataMapOfIntegerBasicElt &
@@ -2098,7 +2098,7 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_ChangeBasicElts(self, *args)
 
-    def ChangeBasicElt(self, *args):
+    def ChangeBasicElt(self, *args) -> "Handle_MAT_BasicElt" :
         """
         :param Index:
         :type Index: int
@@ -2107,11 +2107,11 @@ class MAT_Graph(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Graph_ChangeBasicElt(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Graph self)"""
         return _MAT.MAT_Graph__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Graph" :
         """GetHandle(MAT_Graph self) -> Handle_MAT_Graph"""
         return _MAT.MAT_Graph_GetHandle(self)
 
@@ -2162,7 +2162,7 @@ Handle_MAT_Graph._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Graph__kill_
 Handle_MAT_Graph_swigregister = _MAT.Handle_MAT_Graph_swigregister
 Handle_MAT_Graph_swigregister(Handle_MAT_Graph)
 
-def Handle_MAT_Graph_DownCast(*args):
+def Handle_MAT_Graph_DownCast(*args) -> "Handle_MAT_Graph const" :
   return _MAT.Handle_MAT_Graph_DownCast(*args)
 Handle_MAT_Graph_DownCast = _MAT.Handle_MAT_Graph_DownCast
 
@@ -2175,21 +2175,21 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_ListOfBisector_swiginit(self,_MAT.new_MAT_ListOfBisector(*args))
-    def First(self, *args):
+    def First(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Last(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param aniten:
         :type aniten: Handle_MAT_Bisector &
@@ -2198,28 +2198,28 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_Init(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Next(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Previous(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT.MAT_ListOfBisector_More(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_Bisector
 
@@ -2230,49 +2230,49 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_Current(self, *args)
 
-    def FirstItem(self, *args):
+    def FirstItem(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_ListOfBisector_FirstItem(self, *args)
 
-    def LastItem(self, *args):
+    def LastItem(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_ListOfBisector_LastItem(self, *args)
 
-    def PreviousItem(self, *args):
+    def PreviousItem(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_ListOfBisector_PreviousItem(self, *args)
 
-    def NextItem(self, *args):
+    def NextItem(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_ListOfBisector_NextItem(self, *args)
 
-    def Number(self, *args):
+    def Number(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_ListOfBisector_Number(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_ListOfBisector_Index(self, *args)
 
-    def Brackets(self, *args):
+    def Brackets(self, *args) -> "Handle_MAT_Bisector" :
         """
         :param anindex:
         :type anindex: int
@@ -2281,14 +2281,14 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_Brackets(self, *args)
 
-    def Unlink(self, *args):
+    def Unlink(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Unlink(self, *args)
 
-    def LinkBefore(self, *args):
+    def LinkBefore(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Bisector &
@@ -2297,7 +2297,7 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_LinkBefore(self, *args)
 
-    def LinkAfter(self, *args):
+    def LinkAfter(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Bisector &
@@ -2306,7 +2306,7 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_LinkAfter(self, *args)
 
-    def FrontAdd(self, *args):
+    def FrontAdd(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Bisector &
@@ -2315,7 +2315,7 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_FrontAdd(self, *args)
 
-    def BackAdd(self, *args):
+    def BackAdd(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Bisector &
@@ -2324,28 +2324,28 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_BackAdd(self, *args)
 
-    def Permute(self, *args):
+    def Permute(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Permute(self, *args)
 
-    def Loop(self, *args):
+    def Loop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfBisector_Loop(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT.MAT_ListOfBisector_IsEmpty(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param ashift:
         :type ashift: int
@@ -2356,11 +2356,11 @@ class MAT_ListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfBisector_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_ListOfBisector self)"""
         return _MAT.MAT_ListOfBisector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_ListOfBisector" :
         """GetHandle(MAT_ListOfBisector self) -> Handle_MAT_ListOfBisector"""
         return _MAT.MAT_ListOfBisector_GetHandle(self)
 
@@ -2421,7 +2421,7 @@ Handle_MAT_ListOfBisector._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Lis
 Handle_MAT_ListOfBisector_swigregister = _MAT.Handle_MAT_ListOfBisector_swigregister
 Handle_MAT_ListOfBisector_swigregister(Handle_MAT_ListOfBisector)
 
-def Handle_MAT_ListOfBisector_DownCast(*args):
+def Handle_MAT_ListOfBisector_DownCast(*args) -> "Handle_MAT_ListOfBisector const" :
   return _MAT.Handle_MAT_ListOfBisector_DownCast(*args)
 Handle_MAT_ListOfBisector_DownCast = _MAT.Handle_MAT_ListOfBisector_DownCast
 
@@ -2434,21 +2434,21 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_ListOfEdge_swiginit(self,_MAT.new_MAT_ListOfEdge(*args))
-    def First(self, *args):
+    def First(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Last(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param aniten:
         :type aniten: Handle_MAT_Edge &
@@ -2457,28 +2457,28 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_Init(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Next(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Previous(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT.MAT_ListOfEdge_More(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_Edge
 
@@ -2489,49 +2489,49 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_Current(self, *args)
 
-    def FirstItem(self, *args):
+    def FirstItem(self, *args) -> "Handle_MAT_Edge" :
         """
         :rtype: Handle_MAT_Edge
 
         """
         return _MAT.MAT_ListOfEdge_FirstItem(self, *args)
 
-    def LastItem(self, *args):
+    def LastItem(self, *args) -> "Handle_MAT_Edge" :
         """
         :rtype: Handle_MAT_Edge
 
         """
         return _MAT.MAT_ListOfEdge_LastItem(self, *args)
 
-    def PreviousItem(self, *args):
+    def PreviousItem(self, *args) -> "Handle_MAT_Edge" :
         """
         :rtype: Handle_MAT_Edge
 
         """
         return _MAT.MAT_ListOfEdge_PreviousItem(self, *args)
 
-    def NextItem(self, *args):
+    def NextItem(self, *args) -> "Handle_MAT_Edge" :
         """
         :rtype: Handle_MAT_Edge
 
         """
         return _MAT.MAT_ListOfEdge_NextItem(self, *args)
 
-    def Number(self, *args):
+    def Number(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_ListOfEdge_Number(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT.MAT_ListOfEdge_Index(self, *args)
 
-    def Brackets(self, *args):
+    def Brackets(self, *args) -> "Handle_MAT_Edge" :
         """
         :param anindex:
         :type anindex: int
@@ -2540,14 +2540,14 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_Brackets(self, *args)
 
-    def Unlink(self, *args):
+    def Unlink(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Unlink(self, *args)
 
-    def LinkBefore(self, *args):
+    def LinkBefore(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Edge &
@@ -2556,7 +2556,7 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_LinkBefore(self, *args)
 
-    def LinkAfter(self, *args):
+    def LinkAfter(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Edge &
@@ -2565,7 +2565,7 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_LinkAfter(self, *args)
 
-    def FrontAdd(self, *args):
+    def FrontAdd(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Edge &
@@ -2574,7 +2574,7 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_FrontAdd(self, *args)
 
-    def BackAdd(self, *args):
+    def BackAdd(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Edge &
@@ -2583,28 +2583,28 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_BackAdd(self, *args)
 
-    def Permute(self, *args):
+    def Permute(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Permute(self, *args)
 
-    def Loop(self, *args):
+    def Loop(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_ListOfEdge_Loop(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT.MAT_ListOfEdge_IsEmpty(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param ashift:
         :type ashift: int
@@ -2615,11 +2615,11 @@ class MAT_ListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_ListOfEdge_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_ListOfEdge self)"""
         return _MAT.MAT_ListOfEdge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_ListOfEdge" :
         """GetHandle(MAT_ListOfEdge self) -> Handle_MAT_ListOfEdge"""
         return _MAT.MAT_ListOfEdge_GetHandle(self)
 
@@ -2680,7 +2680,7 @@ Handle_MAT_ListOfEdge._kill_pointed = new_instancemethod(_MAT.Handle_MAT_ListOfE
 Handle_MAT_ListOfEdge_swigregister = _MAT.Handle_MAT_ListOfEdge_swigregister
 Handle_MAT_ListOfEdge_swigregister(Handle_MAT_ListOfEdge)
 
-def Handle_MAT_ListOfEdge_DownCast(*args):
+def Handle_MAT_ListOfEdge_DownCast(*args) -> "Handle_MAT_ListOfEdge const" :
   return _MAT.Handle_MAT_ListOfEdge_DownCast(*args)
 Handle_MAT_ListOfEdge_DownCast = _MAT.Handle_MAT_ListOfEdge_DownCast
 
@@ -2699,7 +2699,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Node_swiginit(self,_MAT.new_MAT_Node(*args))
-    def GeomIndex(self, *args):
+    def GeomIndex(self, *args) -> "Standard_Integer" :
         """
         * Returns the index associated of the geometric  representation of <self>.
 
@@ -2708,7 +2708,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_GeomIndex(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "Standard_Integer" :
         """
         * Returns the index associated of the node
 
@@ -2717,7 +2717,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_Index(self, *args)
 
-    def LinkedArcs(self, *args):
+    def LinkedArcs(self, *args) -> "void" :
         """
         * Returns in <S> the Arcs linked to <self>.
 
@@ -2728,7 +2728,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_LinkedArcs(self, *args)
 
-    def NearElts(self, *args):
+    def NearElts(self, *args) -> "void" :
         """
         * Returns in <S> the BasicElts equidistant to <self>.
 
@@ -2739,14 +2739,14 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_NearElts(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _MAT.MAT_Node_Distance(self, *args)
 
-    def PendingNode(self, *args):
+    def PendingNode(self, *args) -> "Standard_Boolean" :
         """
         * //!Returns True if <self> is a pending Node. (ie : the number of Arc Linked = 1)
 
@@ -2755,7 +2755,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_PendingNode(self, *args)
 
-    def OnBasicElt(self, *args):
+    def OnBasicElt(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <self> belongs to the figure.
 
@@ -2764,7 +2764,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_OnBasicElt(self, *args)
 
-    def Infinite(self, *args):
+    def Infinite(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the distance of <self> is Infinite
 
@@ -2773,7 +2773,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_Infinite(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * Set the index associated of the node
 
@@ -2784,7 +2784,7 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_SetIndex(self, *args)
 
-    def SetLinkedArc(self, *args):
+    def SetLinkedArc(self, *args) -> "void" :
         """
         :param anArc:
         :type anArc: Handle_MAT_Arc &
@@ -2793,11 +2793,11 @@ class MAT_Node(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Node_SetLinkedArc(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Node self)"""
         return _MAT.MAT_Node__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Node" :
         """GetHandle(MAT_Node self) -> Handle_MAT_Node"""
         return _MAT.MAT_Node_GetHandle(self)
 
@@ -2845,7 +2845,7 @@ Handle_MAT_Node._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Node__kill_po
 Handle_MAT_Node_swigregister = _MAT.Handle_MAT_Node_swigregister
 Handle_MAT_Node_swigregister(Handle_MAT_Node)
 
-def Handle_MAT_Node_DownCast(*args):
+def Handle_MAT_Node_DownCast(*args) -> "Handle_MAT_Node const" :
   return _MAT.Handle_MAT_Node_DownCast(*args)
 Handle_MAT_Node_DownCast = _MAT.Handle_MAT_Node_DownCast
 
@@ -2864,18 +2864,18 @@ class MAT_SequenceNodeOfSequenceOfArc(OCC.TCollection.TCollection_SeqNode):
 
         """
         _MAT.MAT_SequenceNodeOfSequenceOfArc_swiginit(self,_MAT.new_MAT_SequenceNodeOfSequenceOfArc(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Arc &" :
         """
         :rtype: Handle_MAT_Arc
 
         """
         return _MAT.MAT_SequenceNodeOfSequenceOfArc_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_SequenceNodeOfSequenceOfArc self)"""
         return _MAT.MAT_SequenceNodeOfSequenceOfArc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_SequenceNodeOfSequenceOfArc" :
         """GetHandle(MAT_SequenceNodeOfSequenceOfArc self) -> Handle_MAT_SequenceNodeOfSequenceOfArc"""
         return _MAT.MAT_SequenceNodeOfSequenceOfArc_GetHandle(self)
 
@@ -2914,7 +2914,7 @@ Handle_MAT_SequenceNodeOfSequenceOfArc._kill_pointed = new_instancemethod(_MAT.H
 Handle_MAT_SequenceNodeOfSequenceOfArc_swigregister = _MAT.Handle_MAT_SequenceNodeOfSequenceOfArc_swigregister
 Handle_MAT_SequenceNodeOfSequenceOfArc_swigregister(Handle_MAT_SequenceNodeOfSequenceOfArc)
 
-def Handle_MAT_SequenceNodeOfSequenceOfArc_DownCast(*args):
+def Handle_MAT_SequenceNodeOfSequenceOfArc_DownCast(*args) -> "Handle_MAT_SequenceNodeOfSequenceOfArc const" :
   return _MAT.Handle_MAT_SequenceNodeOfSequenceOfArc_DownCast(*args)
 Handle_MAT_SequenceNodeOfSequenceOfArc_DownCast = _MAT.Handle_MAT_SequenceNodeOfSequenceOfArc_DownCast
 
@@ -2933,18 +2933,18 @@ class MAT_SequenceNodeOfSequenceOfBasicElt(OCC.TCollection.TCollection_SeqNode):
 
         """
         _MAT.MAT_SequenceNodeOfSequenceOfBasicElt_swiginit(self,_MAT.new_MAT_SequenceNodeOfSequenceOfBasicElt(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _MAT.MAT_SequenceNodeOfSequenceOfBasicElt_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_SequenceNodeOfSequenceOfBasicElt self)"""
         return _MAT.MAT_SequenceNodeOfSequenceOfBasicElt__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_SequenceNodeOfSequenceOfBasicElt" :
         """GetHandle(MAT_SequenceNodeOfSequenceOfBasicElt self) -> Handle_MAT_SequenceNodeOfSequenceOfBasicElt"""
         return _MAT.MAT_SequenceNodeOfSequenceOfBasicElt_GetHandle(self)
 
@@ -2983,7 +2983,7 @@ Handle_MAT_SequenceNodeOfSequenceOfBasicElt._kill_pointed = new_instancemethod(_
 Handle_MAT_SequenceNodeOfSequenceOfBasicElt_swigregister = _MAT.Handle_MAT_SequenceNodeOfSequenceOfBasicElt_swigregister
 Handle_MAT_SequenceNodeOfSequenceOfBasicElt_swigregister(Handle_MAT_SequenceNodeOfSequenceOfBasicElt)
 
-def Handle_MAT_SequenceNodeOfSequenceOfBasicElt_DownCast(*args):
+def Handle_MAT_SequenceNodeOfSequenceOfBasicElt_DownCast(*args) -> "Handle_MAT_SequenceNodeOfSequenceOfBasicElt const" :
   return _MAT.Handle_MAT_SequenceNodeOfSequenceOfBasicElt_DownCast(*args)
 Handle_MAT_SequenceNodeOfSequenceOfBasicElt_DownCast = _MAT.Handle_MAT_SequenceNodeOfSequenceOfBasicElt_DownCast
 
@@ -2996,14 +2996,14 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _MAT.MAT_SequenceOfArc_swiginit(self,_MAT.new_MAT_SequenceOfArc(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_SequenceOfArc_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_SequenceOfArc const &" :
         """
         :param Other:
         :type Other: MAT_SequenceOfArc &
@@ -3012,7 +3012,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_SequenceOfArc const &" :
         """
         :param Other:
         :type Other: MAT_SequenceOfArc &
@@ -3021,7 +3021,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_Arc &
@@ -3034,7 +3034,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_Arc &
@@ -3047,7 +3047,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3064,7 +3064,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3081,21 +3081,21 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_MAT_Arc const &" :
         """
         :rtype: Handle_MAT_Arc
 
         """
         return _MAT.MAT_SequenceOfArc_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_MAT_Arc const &" :
         """
         :rtype: Handle_MAT_Arc
 
         """
         return _MAT.MAT_SequenceOfArc_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3106,7 +3106,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_Arc const &" :
         """
         :param Index:
         :type Index: int
@@ -3115,7 +3115,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3126,7 +3126,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MAT_Arc &" :
         """
         :param Index:
         :type Index: int
@@ -3135,7 +3135,7 @@ class MAT_SequenceOfArc(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfArc_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3185,14 +3185,14 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _MAT.MAT_SequenceOfBasicElt_swiginit(self,_MAT.new_MAT_SequenceOfBasicElt(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_SequenceOfBasicElt_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT_SequenceOfBasicElt const &" :
         """
         :param Other:
         :type Other: MAT_SequenceOfBasicElt &
@@ -3201,7 +3201,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT_SequenceOfBasicElt const &" :
         """
         :param Other:
         :type Other: MAT_SequenceOfBasicElt &
@@ -3210,7 +3210,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_BasicElt &
@@ -3223,7 +3223,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT_BasicElt &
@@ -3236,7 +3236,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3253,7 +3253,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3270,21 +3270,21 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _MAT.MAT_SequenceOfBasicElt_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :rtype: Handle_MAT_BasicElt
 
         """
         return _MAT.MAT_SequenceOfBasicElt_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3295,7 +3295,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT_BasicElt const &" :
         """
         :param Index:
         :type Index: int
@@ -3304,7 +3304,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3315,7 +3315,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MAT_BasicElt &" :
         """
         :param Index:
         :type Index: int
@@ -3324,7 +3324,7 @@ class MAT_SequenceOfBasicElt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT.MAT_SequenceOfBasicElt_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3378,14 +3378,14 @@ class MAT_TListNodeOfListOfBisector(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_TListNodeOfListOfBisector_swiginit(self,_MAT.new_MAT_TListNodeOfListOfBisector(*args))
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT.MAT_TListNodeOfListOfBisector_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Bisector &
@@ -3394,7 +3394,7 @@ class MAT_TListNodeOfListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfBisector_SetItem(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_TListNodeOfListOfBisector
 
@@ -3405,7 +3405,7 @@ class MAT_TListNodeOfListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfBisector_Next(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_TListNodeOfListOfBisector
 
@@ -3416,18 +3416,18 @@ class MAT_TListNodeOfListOfBisector(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfBisector_Previous(self, *args)
 
-    def Dummy(self, *args):
+    def Dummy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_TListNodeOfListOfBisector_Dummy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_TListNodeOfListOfBisector self)"""
         return _MAT.MAT_TListNodeOfListOfBisector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_TListNodeOfListOfBisector" :
         """GetHandle(MAT_TListNodeOfListOfBisector self) -> Handle_MAT_TListNodeOfListOfBisector"""
         return _MAT.MAT_TListNodeOfListOfBisector_GetHandle(self)
 
@@ -3470,7 +3470,7 @@ Handle_MAT_TListNodeOfListOfBisector._kill_pointed = new_instancemethod(_MAT.Han
 Handle_MAT_TListNodeOfListOfBisector_swigregister = _MAT.Handle_MAT_TListNodeOfListOfBisector_swigregister
 Handle_MAT_TListNodeOfListOfBisector_swigregister(Handle_MAT_TListNodeOfListOfBisector)
 
-def Handle_MAT_TListNodeOfListOfBisector_DownCast(*args):
+def Handle_MAT_TListNodeOfListOfBisector_DownCast(*args) -> "Handle_MAT_TListNodeOfListOfBisector const" :
   return _MAT.Handle_MAT_TListNodeOfListOfBisector_DownCast(*args)
 Handle_MAT_TListNodeOfListOfBisector_DownCast = _MAT.Handle_MAT_TListNodeOfListOfBisector_DownCast
 
@@ -3487,14 +3487,14 @@ class MAT_TListNodeOfListOfEdge(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_TListNodeOfListOfEdge_swiginit(self,_MAT.new_MAT_TListNodeOfListOfEdge(*args))
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Handle_MAT_Edge" :
         """
         :rtype: Handle_MAT_Edge
 
         """
         return _MAT.MAT_TListNodeOfListOfEdge_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param anitem:
         :type anitem: Handle_MAT_Edge &
@@ -3503,7 +3503,7 @@ class MAT_TListNodeOfListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfEdge_SetItem(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_TListNodeOfListOfEdge
 
@@ -3514,7 +3514,7 @@ class MAT_TListNodeOfListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfEdge_Next(self, *args)
 
-    def Previous(self, *args):
+    def Previous(self, *args) -> "void" :
         """
         :rtype: Handle_MAT_TListNodeOfListOfEdge
 
@@ -3525,18 +3525,18 @@ class MAT_TListNodeOfListOfEdge(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_TListNodeOfListOfEdge_Previous(self, *args)
 
-    def Dummy(self, *args):
+    def Dummy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT.MAT_TListNodeOfListOfEdge_Dummy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_TListNodeOfListOfEdge self)"""
         return _MAT.MAT_TListNodeOfListOfEdge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_TListNodeOfListOfEdge" :
         """GetHandle(MAT_TListNodeOfListOfEdge self) -> Handle_MAT_TListNodeOfListOfEdge"""
         return _MAT.MAT_TListNodeOfListOfEdge_GetHandle(self)
 
@@ -3579,7 +3579,7 @@ Handle_MAT_TListNodeOfListOfEdge._kill_pointed = new_instancemethod(_MAT.Handle_
 Handle_MAT_TListNodeOfListOfEdge_swigregister = _MAT.Handle_MAT_TListNodeOfListOfEdge_swigregister
 Handle_MAT_TListNodeOfListOfEdge_swigregister(Handle_MAT_TListNodeOfListOfEdge)
 
-def Handle_MAT_TListNodeOfListOfEdge_DownCast(*args):
+def Handle_MAT_TListNodeOfListOfEdge_DownCast(*args) -> "Handle_MAT_TListNodeOfListOfEdge const" :
   return _MAT.Handle_MAT_TListNodeOfListOfEdge_DownCast(*args)
 Handle_MAT_TListNodeOfListOfEdge_DownCast = _MAT.Handle_MAT_TListNodeOfListOfEdge_DownCast
 
@@ -3598,7 +3598,7 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT.MAT_Zone_swiginit(self,_MAT.new_MAT_Zone(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Compute the frontier of the Zone of proximity.
 
@@ -3609,7 +3609,7 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Zone_Perform(self, *args)
 
-    def NumberOfArcs(self, *args):
+    def NumberOfArcs(self, *args) -> "Standard_Integer" :
         """
         * Return the number Of Arcs On the frontier of <self>.
 
@@ -3618,7 +3618,7 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Zone_NumberOfArcs(self, *args)
 
-    def ArcOnFrontier(self, *args):
+    def ArcOnFrontier(self, *args) -> "Handle_MAT_Arc" :
         """
         * Return the Arc number <Index> on the frontier. of <self>.
 
@@ -3629,7 +3629,7 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Zone_ArcOnFrontier(self, *args)
 
-    def NoEmptyZone(self, *args):
+    def NoEmptyZone(self, *args) -> "Standard_Boolean" :
         """
         * Return True if <self> is not empty .
 
@@ -3638,7 +3638,7 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Zone_NoEmptyZone(self, *args)
 
-    def Limited(self, *args):
+    def Limited(self, *args) -> "Standard_Boolean" :
         """
         * Return True if <self> is Limited.
 
@@ -3647,11 +3647,11 @@ class MAT_Zone(OCC.MMgt.MMgt_TShared):
         """
         return _MAT.MAT_Zone_Limited(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT_Zone self)"""
         return _MAT.MAT_Zone__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT_Zone" :
         """GetHandle(MAT_Zone self) -> Handle_MAT_Zone"""
         return _MAT.MAT_Zone_GetHandle(self)
 
@@ -3694,7 +3694,7 @@ Handle_MAT_Zone._kill_pointed = new_instancemethod(_MAT.Handle_MAT_Zone__kill_po
 Handle_MAT_Zone_swigregister = _MAT.Handle_MAT_Zone_swigregister
 Handle_MAT_Zone_swigregister(Handle_MAT_Zone)
 
-def Handle_MAT_Zone_DownCast(*args):
+def Handle_MAT_Zone_DownCast(*args) -> "Handle_MAT_Zone const" :
   return _MAT.Handle_MAT_Zone_DownCast(*args)
 Handle_MAT_Zone_DownCast = _MAT.Handle_MAT_Zone_DownCast
 

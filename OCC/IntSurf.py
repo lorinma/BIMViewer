@@ -123,7 +123,7 @@ IntSurf_Undecided = _IntSurf.IntSurf_Undecided
 class intsurf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MakeTransition(*args):
+    def MakeTransition(*args) -> "void" :
         """
         * Computes the transition of the intersection point between the two lines. TgFirst is the tangent vector of the first line. TgSecond is the tangent vector of the second line. Normal is the direction used to orientate the cross product TgFirst^TgSecond. TFirst is the transition of the point on the first line. TSecond is the transition of the point on the second line.
 
@@ -157,7 +157,7 @@ intsurf._kill_pointed = new_instancemethod(_IntSurf.intsurf__kill_pointed,None,i
 intsurf_swigregister = _IntSurf.intsurf_swigregister
 intsurf_swigregister(intsurf)
 
-def intsurf_MakeTransition(*args):
+def intsurf_MakeTransition(*args) -> "void" :
   """
     * Computes the transition of the intersection point between the two lines. TgFirst is the tangent vector of the first line. TgSecond is the tangent vector of the second line. Normal is the direction used to orientate the cross product TgFirst^TgSecond. TFirst is the transition of the point on the first line. TSecond is the transition of the point on the second line.
 
@@ -191,7 +191,7 @@ class IntSurf_Couple(object):
 
         """
         _IntSurf.IntSurf_Couple_swiginit(self,_IntSurf.new_IntSurf_Couple(*args))
-    def First(self, *args):
+    def First(self, *args) -> "Standard_Integer" :
         """
         * returns the first element
 
@@ -200,7 +200,7 @@ class IntSurf_Couple(object):
         """
         return _IntSurf.IntSurf_Couple_First(self, *args)
 
-    def Second(self, *args):
+    def Second(self, *args) -> "Standard_Integer" :
         """
         * returns the Second element
 
@@ -244,7 +244,7 @@ class IntSurf_InteriorPoint(object):
 
         """
         _IntSurf.IntSurf_InteriorPoint_swiginit(self,_IntSurf.new_IntSurf_InteriorPoint(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -261,7 +261,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         * Returns the 3d coordinates of the interior point.
 
@@ -270,7 +270,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_Value(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters of the interior point on the parametric surface.
 
@@ -283,7 +283,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_Parameters(self, *args)
 
-    def UParameter(self, *args):
+    def UParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the first parameter of the interior point on the parametric surface.
 
@@ -292,7 +292,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_UParameter(self, *args)
 
-    def VParameter(self, *args):
+    def VParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the second parameter of the interior point on the parametric surface.
 
@@ -301,7 +301,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_VParameter(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent at the intersection in 3d space associated to the interior point.
 
@@ -310,7 +310,7 @@ class IntSurf_InteriorPoint(object):
         """
         return _IntSurf.IntSurf_InteriorPoint_Direction(self, *args)
 
-    def Direction2d(self, *args):
+    def Direction2d(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent at the intersection in the parametric space of the parametric surface.
 
@@ -341,7 +341,7 @@ IntSurf_InteriorPoint_swigregister(IntSurf_InteriorPoint)
 class IntSurf_InteriorPointTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Value3d(*args):
+    def Value3d(*args) -> "gp_Pnt" :
         """
         * Returns the 3d coordinates of the starting point.
 
@@ -353,7 +353,7 @@ class IntSurf_InteriorPointTool(object):
         return _IntSurf.IntSurf_InteriorPointTool_Value3d(*args)
 
     Value3d = staticmethod(Value3d)
-    def Value2d(*args):
+    def Value2d(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Returns the <U,V> parameters which are associated with <P> it's the parameters which start the marching algorithm
 
@@ -369,7 +369,7 @@ class IntSurf_InteriorPointTool(object):
         return _IntSurf.IntSurf_InteriorPointTool_Value2d(*args)
 
     Value2d = staticmethod(Value2d)
-    def Direction3d(*args):
+    def Direction3d(*args) -> "gp_Vec" :
         """
         * returns the tangent at the intersectin in 3d space associated to <P>
 
@@ -381,7 +381,7 @@ class IntSurf_InteriorPointTool(object):
         return _IntSurf.IntSurf_InteriorPointTool_Direction3d(*args)
 
     Direction3d = staticmethod(Direction3d)
-    def Direction2d(*args):
+    def Direction2d(*args) -> "gp_Dir2d" :
         """
         * returns the tangent at the intersectin in the parametric space of the parametrized surface.This tangent is associated to the value2d
 
@@ -407,7 +407,7 @@ IntSurf_InteriorPointTool._kill_pointed = new_instancemethod(_IntSurf.IntSurf_In
 IntSurf_InteriorPointTool_swigregister = _IntSurf.IntSurf_InteriorPointTool_swigregister
 IntSurf_InteriorPointTool_swigregister(IntSurf_InteriorPointTool)
 
-def IntSurf_InteriorPointTool_Value3d(*args):
+def IntSurf_InteriorPointTool_Value3d(*args) -> "gp_Pnt" :
   """
     * Returns the 3d coordinates of the starting point.
 
@@ -418,7 +418,7 @@ def IntSurf_InteriorPointTool_Value3d(*args):
     """
   return _IntSurf.IntSurf_InteriorPointTool_Value3d(*args)
 
-def IntSurf_InteriorPointTool_Value2d(*args):
+def IntSurf_InteriorPointTool_Value2d(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Returns the <U,V> parameters which are associated with <P> it's the parameters which start the marching algorithm
 
@@ -433,7 +433,7 @@ def IntSurf_InteriorPointTool_Value2d(*args):
     """
   return _IntSurf.IntSurf_InteriorPointTool_Value2d(*args)
 
-def IntSurf_InteriorPointTool_Direction3d(*args):
+def IntSurf_InteriorPointTool_Direction3d(*args) -> "gp_Vec" :
   """
     * returns the tangent at the intersectin in 3d space associated to <P>
 
@@ -444,7 +444,7 @@ def IntSurf_InteriorPointTool_Direction3d(*args):
     """
   return _IntSurf.IntSurf_InteriorPointTool_Direction3d(*args)
 
-def IntSurf_InteriorPointTool_Direction2d(*args):
+def IntSurf_InteriorPointTool_Direction2d(*args) -> "gp_Dir2d" :
   """
     * returns the tangent at the intersectin in the parametric space of the parametrized surface.This tangent is associated to the value2d
 
@@ -466,7 +466,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
 
         """
         _IntSurf.IntSurf_LineOn2S_swiginit(self,_IntSurf.new_IntSurf_LineOn2S(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds a point in the line.
 
@@ -477,7 +477,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_Add(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of points in the line.
 
@@ -486,7 +486,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_NbPoints(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         * Reverses the order of points of the line.
 
@@ -495,7 +495,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_Reverse(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_IntSurf_LineOn2S" :
         """
         * Keeps in <self> the points 1 to Index-1, and returns the items Index to the end.
 
@@ -506,7 +506,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         * Returns the point of range Index in the line.
 
@@ -525,7 +525,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_Value(self, *args)
 
-    def SetUV(self, *args):
+    def SetUV(self, *args) -> "void" :
         """
         * Sets the parametric coordinates on one of the surfaces of the point of range Index in the line.
 
@@ -542,14 +542,14 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_SetUV(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_LineOn2S_Clear(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -560,7 +560,7 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_InsertBefore(self, *args)
 
-    def RemovePoint(self, *args):
+    def RemovePoint(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -569,11 +569,11 @@ class IntSurf_LineOn2S(OCC.MMgt.MMgt_TShared):
         """
         return _IntSurf.IntSurf_LineOn2S_RemovePoint(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntSurf_LineOn2S self)"""
         return _IntSurf.IntSurf_LineOn2S__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntSurf_LineOn2S" :
         """GetHandle(IntSurf_LineOn2S self) -> Handle_IntSurf_LineOn2S"""
         return _IntSurf.IntSurf_LineOn2S_GetHandle(self)
 
@@ -620,7 +620,7 @@ Handle_IntSurf_LineOn2S._kill_pointed = new_instancemethod(_IntSurf.Handle_IntSu
 Handle_IntSurf_LineOn2S_swigregister = _IntSurf.Handle_IntSurf_LineOn2S_swigregister
 Handle_IntSurf_LineOn2S_swigregister(Handle_IntSurf_LineOn2S)
 
-def Handle_IntSurf_LineOn2S_DownCast(*args):
+def Handle_IntSurf_LineOn2S_DownCast(*args) -> "Handle_IntSurf_LineOn2S const" :
   return _IntSurf.Handle_IntSurf_LineOn2S_DownCast(*args)
 Handle_IntSurf_LineOn2S_DownCast = _IntSurf.Handle_IntSurf_LineOn2S_DownCast
 
@@ -637,7 +637,7 @@ class IntSurf_ListIteratorOfListOfPntOn2S(object):
 
         """
         _IntSurf.IntSurf_ListIteratorOfListOfPntOn2S_swiginit(self,_IntSurf.new_IntSurf_ListIteratorOfListOfPntOn2S(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: IntSurf_ListOfPntOn2S &
@@ -646,21 +646,21 @@ class IntSurf_ListIteratorOfListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListIteratorOfListOfPntOn2S_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntSurf.IntSurf_ListIteratorOfListOfPntOn2S_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_ListIteratorOfListOfPntOn2S_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_PntOn2S &" :
         """
         :rtype: IntSurf_PntOn2S
 
@@ -696,18 +696,18 @@ class IntSurf_ListNodeOfListOfPntOn2S(OCC.TCollection.TCollection_MapNode):
 
         """
         _IntSurf.IntSurf_ListNodeOfListOfPntOn2S_swiginit(self,_IntSurf.new_IntSurf_ListNodeOfListOfPntOn2S(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_PntOn2S &" :
         """
         :rtype: IntSurf_PntOn2S
 
         """
         return _IntSurf.IntSurf_ListNodeOfListOfPntOn2S_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntSurf_ListNodeOfListOfPntOn2S self)"""
         return _IntSurf.IntSurf_ListNodeOfListOfPntOn2S__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntSurf_ListNodeOfListOfPntOn2S" :
         """GetHandle(IntSurf_ListNodeOfListOfPntOn2S self) -> Handle_IntSurf_ListNodeOfListOfPntOn2S"""
         return _IntSurf.IntSurf_ListNodeOfListOfPntOn2S_GetHandle(self)
 
@@ -746,7 +746,7 @@ Handle_IntSurf_ListNodeOfListOfPntOn2S._kill_pointed = new_instancemethod(_IntSu
 Handle_IntSurf_ListNodeOfListOfPntOn2S_swigregister = _IntSurf.Handle_IntSurf_ListNodeOfListOfPntOn2S_swigregister
 Handle_IntSurf_ListNodeOfListOfPntOn2S_swigregister(Handle_IntSurf_ListNodeOfListOfPntOn2S)
 
-def Handle_IntSurf_ListNodeOfListOfPntOn2S_DownCast(*args):
+def Handle_IntSurf_ListNodeOfListOfPntOn2S_DownCast(*args) -> "Handle_IntSurf_ListNodeOfListOfPntOn2S const" :
   return _IntSurf.Handle_IntSurf_ListNodeOfListOfPntOn2S_DownCast(*args)
 Handle_IntSurf_ListNodeOfListOfPntOn2S_DownCast = _IntSurf.Handle_IntSurf_ListNodeOfListOfPntOn2S_DownCast
 
@@ -759,7 +759,7 @@ class IntSurf_ListOfPntOn2S(object):
 
         """
         _IntSurf.IntSurf_ListOfPntOn2S_swiginit(self,_IntSurf.new_IntSurf_ListOfPntOn2S(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntSurf_ListOfPntOn2S &
@@ -768,7 +768,7 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntSurf_ListOfPntOn2S &
@@ -777,28 +777,28 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: IntSurf_PntOn2S &
@@ -817,7 +817,7 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: IntSurf_PntOn2S &
@@ -836,28 +836,28 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntSurf_PntOn2S &" :
         """
         :rtype: IntSurf_PntOn2S
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntSurf_PntOn2S &" :
         """
         :rtype: IntSurf_PntOn2S
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: IntSurf_ListIteratorOfListOfPntOn2S &
@@ -866,7 +866,7 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: IntSurf_PntOn2S &
@@ -883,7 +883,7 @@ class IntSurf_ListOfPntOn2S(object):
         """
         return _IntSurf.IntSurf_ListOfPntOn2S_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: IntSurf_PntOn2S &
@@ -942,7 +942,7 @@ class IntSurf_PathPoint(object):
 
         """
         _IntSurf.IntSurf_PathPoint_swiginit(self,_IntSurf.new_IntSurf_PathPoint(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -955,7 +955,7 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_SetValue(self, *args)
 
-    def AddUV(self, *args):
+    def AddUV(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -966,7 +966,7 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_AddUV(self, *args)
 
-    def SetDirections(self, *args):
+    def SetDirections(self, *args) -> "void" :
         """
         :param V:
         :type V: gp_Vec
@@ -977,7 +977,7 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_SetDirections(self, *args)
 
-    def SetTangency(self, *args):
+    def SetTangency(self, *args) -> "void" :
         """
         :param Tang:
         :type Tang: bool
@@ -986,7 +986,7 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_SetTangency(self, *args)
 
-    def SetPassing(self, *args):
+    def SetPassing(self, *args) -> "void" :
         """
         :param Pass:
         :type Pass: bool
@@ -995,14 +995,14 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_SetPassing(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _IntSurf.IntSurf_PathPoint_Value(self, *args)
 
-    def Value2d(self, *args):
+    def Value2d(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -1013,42 +1013,42 @@ class IntSurf_PathPoint(object):
         """
         return _IntSurf.IntSurf_PathPoint_Value2d(self, *args)
 
-    def IsPassingPnt(self, *args):
+    def IsPassingPnt(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntSurf.IntSurf_PathPoint_IsPassingPnt(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntSurf.IntSurf_PathPoint_IsTangent(self, *args)
 
-    def Direction3d(self, *args):
+    def Direction3d(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _IntSurf.IntSurf_PathPoint_Direction3d(self, *args)
 
-    def Direction2d(self, *args):
+    def Direction2d(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
         """
         return _IntSurf.IntSurf_PathPoint_Direction2d(self, *args)
 
-    def Multiplicity(self, *args):
+    def Multiplicity(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntSurf.IntSurf_PathPoint_Multiplicity(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1089,7 +1089,7 @@ IntSurf_PathPoint_swigregister(IntSurf_PathPoint)
 class IntSurf_PathPointTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Value3d(*args):
+    def Value3d(*args) -> "gp_Pnt" :
         """
         * Returns the 3d coordinates of the starting point.
 
@@ -1101,7 +1101,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_Value3d(*args)
 
     Value3d = staticmethod(Value3d)
-    def Value2d(*args):
+    def Value2d(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Returns the <U, V> parameters which are associated with <P> it's the parameters which start the marching algorithm
 
@@ -1117,7 +1117,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_Value2d(*args)
 
     Value2d = staticmethod(Value2d)
-    def IsPassingPnt(*args):
+    def IsPassingPnt(*args) -> "Standard_Boolean" :
         """
         * Returns True if the point is a point on a non-oriented arc, which means that the intersection line does not stop at such a point but just go through such a point. IsPassingPnt is True when IsOnArc is True
 
@@ -1129,7 +1129,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_IsPassingPnt(*args)
 
     IsPassingPnt = staticmethod(IsPassingPnt)
-    def IsTangent(*args):
+    def IsTangent(*args) -> "Standard_Boolean" :
         """
         * Returns True if the surfaces are tangent at this point. IsTangent can be True when IsOnArc is True if IsPassingPnt is True and IsTangent is True,this point is a stopped point.
 
@@ -1141,7 +1141,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_IsTangent(*args)
 
     IsTangent = staticmethod(IsTangent)
-    def Direction3d(*args):
+    def Direction3d(*args) -> "gp_Vec" :
         """
         * returns the tangent at the intersection in 3d space associated to <P>  an exception is raised if IsTangent is true.
 
@@ -1153,7 +1153,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_Direction3d(*args)
 
     Direction3d = staticmethod(Direction3d)
-    def Direction2d(*args):
+    def Direction2d(*args) -> "gp_Dir2d" :
         """
         * returns the tangent at the intersection in the parametric space of the parametrized surface.This tangent is associated to the value2d la tangente a un sens signifiant (indique le sens de chemin ement) an exception is raised if IsTangent is true.
 
@@ -1165,7 +1165,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_Direction2d(*args)
 
     Direction2d = staticmethod(Direction2d)
-    def Multiplicity(*args):
+    def Multiplicity(*args) -> "Standard_Integer" :
         """
         * Returns the multiplicity of the point i-e the number of auxillar parameters associated to the point which the principal parameters are given by Value2d
 
@@ -1177,7 +1177,7 @@ class IntSurf_PathPointTool(object):
         return _IntSurf.IntSurf_PathPointTool_Multiplicity(*args)
 
     Multiplicity = staticmethod(Multiplicity)
-    def Parameters(*args):
+    def Parameters(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Parametric coordinates associated to the multiplicity. An exception is raised if Mult<=0 or Mult>multiplicity.
 
@@ -1209,7 +1209,7 @@ IntSurf_PathPointTool._kill_pointed = new_instancemethod(_IntSurf.IntSurf_PathPo
 IntSurf_PathPointTool_swigregister = _IntSurf.IntSurf_PathPointTool_swigregister
 IntSurf_PathPointTool_swigregister(IntSurf_PathPointTool)
 
-def IntSurf_PathPointTool_Value3d(*args):
+def IntSurf_PathPointTool_Value3d(*args) -> "gp_Pnt" :
   """
     * Returns the 3d coordinates of the starting point.
 
@@ -1220,7 +1220,7 @@ def IntSurf_PathPointTool_Value3d(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_Value3d(*args)
 
-def IntSurf_PathPointTool_Value2d(*args):
+def IntSurf_PathPointTool_Value2d(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Returns the <U, V> parameters which are associated with <P> it's the parameters which start the marching algorithm
 
@@ -1235,7 +1235,7 @@ def IntSurf_PathPointTool_Value2d(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_Value2d(*args)
 
-def IntSurf_PathPointTool_IsPassingPnt(*args):
+def IntSurf_PathPointTool_IsPassingPnt(*args) -> "Standard_Boolean" :
   """
     * Returns True if the point is a point on a non-oriented arc, which means that the intersection line does not stop at such a point but just go through such a point. IsPassingPnt is True when IsOnArc is True
 
@@ -1246,7 +1246,7 @@ def IntSurf_PathPointTool_IsPassingPnt(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_IsPassingPnt(*args)
 
-def IntSurf_PathPointTool_IsTangent(*args):
+def IntSurf_PathPointTool_IsTangent(*args) -> "Standard_Boolean" :
   """
     * Returns True if the surfaces are tangent at this point. IsTangent can be True when IsOnArc is True if IsPassingPnt is True and IsTangent is True,this point is a stopped point.
 
@@ -1257,7 +1257,7 @@ def IntSurf_PathPointTool_IsTangent(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_IsTangent(*args)
 
-def IntSurf_PathPointTool_Direction3d(*args):
+def IntSurf_PathPointTool_Direction3d(*args) -> "gp_Vec" :
   """
     * returns the tangent at the intersection in 3d space associated to <P>  an exception is raised if IsTangent is true.
 
@@ -1268,7 +1268,7 @@ def IntSurf_PathPointTool_Direction3d(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_Direction3d(*args)
 
-def IntSurf_PathPointTool_Direction2d(*args):
+def IntSurf_PathPointTool_Direction2d(*args) -> "gp_Dir2d" :
   """
     * returns the tangent at the intersection in the parametric space of the parametrized surface.This tangent is associated to the value2d la tangente a un sens signifiant (indique le sens de chemin ement) an exception is raised if IsTangent is true.
 
@@ -1279,7 +1279,7 @@ def IntSurf_PathPointTool_Direction2d(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_Direction2d(*args)
 
-def IntSurf_PathPointTool_Multiplicity(*args):
+def IntSurf_PathPointTool_Multiplicity(*args) -> "Standard_Integer" :
   """
     * Returns the multiplicity of the point i-e the number of auxillar parameters associated to the point which the principal parameters are given by Value2d
 
@@ -1290,7 +1290,7 @@ def IntSurf_PathPointTool_Multiplicity(*args):
     """
   return _IntSurf.IntSurf_PathPointTool_Multiplicity(*args)
 
-def IntSurf_PathPointTool_Parameters(*args):
+def IntSurf_PathPointTool_Parameters(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Parametric coordinates associated to the multiplicity. An exception is raised if Mult<=0 or Mult>multiplicity.
 
@@ -1318,7 +1318,7 @@ class IntSurf_PntOn2S(object):
 
         """
         _IntSurf.IntSurf_PntOn2S_swiginit(self,_IntSurf.new_IntSurf_PntOn2S(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the value of the point in 3d space.
 
@@ -1377,7 +1377,7 @@ class IntSurf_PntOn2S(object):
         """
         return _IntSurf.IntSurf_PntOn2S_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point in 3d space.
 
@@ -1386,7 +1386,7 @@ class IntSurf_PntOn2S(object):
         """
         return _IntSurf.IntSurf_PntOn2S_Value(self, *args)
 
-    def ParametersOnS1(self, *args):
+    def ParametersOnS1(self, *args) -> "void" :
         """
         * Returns the parameters of the point on the first surface.
 
@@ -1399,7 +1399,7 @@ class IntSurf_PntOn2S(object):
         """
         return _IntSurf.IntSurf_PntOn2S_ParametersOnS1(self, *args)
 
-    def ParametersOnS2(self, *args):
+    def ParametersOnS2(self, *args) -> "void" :
         """
         * Returns the parameters of the point on the second surface.
 
@@ -1412,7 +1412,7 @@ class IntSurf_PntOn2S(object):
         """
         return _IntSurf.IntSurf_PntOn2S_ParametersOnS2(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters of the point on both surfaces.
 
@@ -1475,7 +1475,7 @@ class IntSurf_Quadric(object):
 
         """
         _IntSurf.IntSurf_Quadric_swiginit(self,_IntSurf.new_IntSurf_Quadric(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pln
@@ -1500,7 +1500,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_SetValue(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1509,7 +1509,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_Distance(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "gp_Vec" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1518,7 +1518,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_Gradient(self, *args)
 
-    def ValAndGrad(self, *args):
+    def ValAndGrad(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1531,49 +1531,49 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_ValAndGrad(self, *args)
 
-    def TypeQuadric(self, *args):
+    def TypeQuadric(self, *args) -> "GeomAbs_SurfaceType" :
         """
         :rtype: GeomAbs_SurfaceType
 
         """
         return _IntSurf.IntSurf_Quadric_TypeQuadric(self, *args)
 
-    def Plane(self, *args):
+    def Plane(self, *args) -> "gp_Pln" :
         """
         :rtype: gp_Pln
 
         """
         return _IntSurf.IntSurf_Quadric_Plane(self, *args)
 
-    def Sphere(self, *args):
+    def Sphere(self, *args) -> "gp_Sphere" :
         """
         :rtype: gp_Sphere
 
         """
         return _IntSurf.IntSurf_Quadric_Sphere(self, *args)
 
-    def Cylinder(self, *args):
+    def Cylinder(self, *args) -> "gp_Cylinder" :
         """
         :rtype: gp_Cylinder
 
         """
         return _IntSurf.IntSurf_Quadric_Cylinder(self, *args)
 
-    def Cone(self, *args):
+    def Cone(self, *args) -> "gp_Cone" :
         """
         :rtype: gp_Cone
 
         """
         return _IntSurf.IntSurf_Quadric_Cone(self, *args)
 
-    def Torus(self, *args):
+    def Torus(self, *args) -> "gp_Torus" :
         """
         :rtype: gp_Torus
 
         """
         return _IntSurf.IntSurf_Quadric_Torus(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         :param U:
         :type U: float
@@ -1584,7 +1584,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_Value(self, *args)
 
-    def D1(self, *args):
+    def D1(self, *args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1601,7 +1601,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_D1(self, *args)
 
-    def DN(self, *args):
+    def DN(self, *args) -> "gp_Vec" :
         """
         :param U:
         :type U: float
@@ -1616,7 +1616,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_DN(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1629,7 +1629,7 @@ class IntSurf_Quadric(object):
         """
         return _IntSurf.IntSurf_Quadric_Parameters(self, *args)
 
-    def Normale(self, *args):
+    def Normale(self, *args) -> "gp_Vec" :
         """
         :param U:
         :type U: float
@@ -1674,7 +1674,7 @@ IntSurf_Quadric_swigregister(IntSurf_Quadric)
 class IntSurf_QuadricTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Value(*args):
+    def Value(*args) -> "Standard_Real" :
         """
         * Returns the value of the function.
 
@@ -1692,7 +1692,7 @@ class IntSurf_QuadricTool(object):
         return _IntSurf.IntSurf_QuadricTool_Value(*args)
 
     Value = staticmethod(Value)
-    def Gradient(*args):
+    def Gradient(*args) -> "void" :
         """
         * Returns the gradient of the function.
 
@@ -1712,7 +1712,7 @@ class IntSurf_QuadricTool(object):
         return _IntSurf.IntSurf_QuadricTool_Gradient(*args)
 
     Gradient = staticmethod(Gradient)
-    def ValueAndGradient(*args):
+    def ValueAndGradient(*args) -> "Standard_Real &" :
         """
         * Returns the value and the gradient.
 
@@ -1734,7 +1734,7 @@ class IntSurf_QuadricTool(object):
         return _IntSurf.IntSurf_QuadricTool_ValueAndGradient(*args)
 
     ValueAndGradient = staticmethod(ValueAndGradient)
-    def Tolerance(*args):
+    def Tolerance(*args) -> "Standard_Real" :
         """
         * returns the tolerance of the zero of the implicit function
 
@@ -1760,7 +1760,7 @@ IntSurf_QuadricTool._kill_pointed = new_instancemethod(_IntSurf.IntSurf_QuadricT
 IntSurf_QuadricTool_swigregister = _IntSurf.IntSurf_QuadricTool_swigregister
 IntSurf_QuadricTool_swigregister(IntSurf_QuadricTool)
 
-def IntSurf_QuadricTool_Value(*args):
+def IntSurf_QuadricTool_Value(*args) -> "Standard_Real" :
   """
     * Returns the value of the function.
 
@@ -1777,7 +1777,7 @@ def IntSurf_QuadricTool_Value(*args):
     """
   return _IntSurf.IntSurf_QuadricTool_Value(*args)
 
-def IntSurf_QuadricTool_Gradient(*args):
+def IntSurf_QuadricTool_Gradient(*args) -> "void" :
   """
     * Returns the gradient of the function.
 
@@ -1796,7 +1796,7 @@ def IntSurf_QuadricTool_Gradient(*args):
     """
   return _IntSurf.IntSurf_QuadricTool_Gradient(*args)
 
-def IntSurf_QuadricTool_ValueAndGradient(*args):
+def IntSurf_QuadricTool_ValueAndGradient(*args) -> "Standard_Real &" :
   """
     * Returns the value and the gradient.
 
@@ -1817,7 +1817,7 @@ def IntSurf_QuadricTool_ValueAndGradient(*args):
     """
   return _IntSurf.IntSurf_QuadricTool_ValueAndGradient(*args)
 
-def IntSurf_QuadricTool_Tolerance(*args):
+def IntSurf_QuadricTool_Tolerance(*args) -> "Standard_Real" :
   """
     * returns the tolerance of the zero of the implicit function
 
@@ -1843,18 +1843,18 @@ class IntSurf_SequenceNodeOfSequenceOfCouple(OCC.TCollection.TCollection_SeqNode
 
         """
         _IntSurf.IntSurf_SequenceNodeOfSequenceOfCouple_swiginit(self,_IntSurf.new_IntSurf_SequenceNodeOfSequenceOfCouple(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_Couple &" :
         """
         :rtype: IntSurf_Couple
 
         """
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfCouple_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntSurf_SequenceNodeOfSequenceOfCouple self)"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfCouple__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntSurf_SequenceNodeOfSequenceOfCouple" :
         """GetHandle(IntSurf_SequenceNodeOfSequenceOfCouple self) -> Handle_IntSurf_SequenceNodeOfSequenceOfCouple"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfCouple_GetHandle(self)
 
@@ -1893,7 +1893,7 @@ Handle_IntSurf_SequenceNodeOfSequenceOfCouple._kill_pointed = new_instancemethod
 Handle_IntSurf_SequenceNodeOfSequenceOfCouple_swigregister = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfCouple_swigregister
 Handle_IntSurf_SequenceNodeOfSequenceOfCouple_swigregister(Handle_IntSurf_SequenceNodeOfSequenceOfCouple)
 
-def Handle_IntSurf_SequenceNodeOfSequenceOfCouple_DownCast(*args):
+def Handle_IntSurf_SequenceNodeOfSequenceOfCouple_DownCast(*args) -> "Handle_IntSurf_SequenceNodeOfSequenceOfCouple const" :
   return _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfCouple_DownCast(*args)
 Handle_IntSurf_SequenceNodeOfSequenceOfCouple_DownCast = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfCouple_DownCast
 
@@ -1912,18 +1912,18 @@ class IntSurf_SequenceNodeOfSequenceOfInteriorPoint(OCC.TCollection.TCollection_
 
         """
         _IntSurf.IntSurf_SequenceNodeOfSequenceOfInteriorPoint_swiginit(self,_IntSurf.new_IntSurf_SequenceNodeOfSequenceOfInteriorPoint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_InteriorPoint &" :
         """
         :rtype: IntSurf_InteriorPoint
 
         """
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfInteriorPoint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntSurf_SequenceNodeOfSequenceOfInteriorPoint self)"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfInteriorPoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint" :
         """GetHandle(IntSurf_SequenceNodeOfSequenceOfInteriorPoint self) -> Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfInteriorPoint_GetHandle(self)
 
@@ -1962,7 +1962,7 @@ Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint._kill_pointed = new_instanc
 Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_swigregister = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_swigregister
 Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_swigregister(Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint)
 
-def Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_DownCast(*args):
+def Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_DownCast(*args) -> "Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint const" :
   return _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_DownCast(*args)
 Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_DownCast = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfInteriorPoint_DownCast
 
@@ -1981,18 +1981,18 @@ class IntSurf_SequenceNodeOfSequenceOfPathPoint(OCC.TCollection.TCollection_SeqN
 
         """
         _IntSurf.IntSurf_SequenceNodeOfSequenceOfPathPoint_swiginit(self,_IntSurf.new_IntSurf_SequenceNodeOfSequenceOfPathPoint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_PathPoint &" :
         """
         :rtype: IntSurf_PathPoint
 
         """
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfPathPoint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntSurf_SequenceNodeOfSequenceOfPathPoint self)"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfPathPoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint" :
         """GetHandle(IntSurf_SequenceNodeOfSequenceOfPathPoint self) -> Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint"""
         return _IntSurf.IntSurf_SequenceNodeOfSequenceOfPathPoint_GetHandle(self)
 
@@ -2031,7 +2031,7 @@ Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint._kill_pointed = new_instancemet
 Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_swigregister = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_swigregister
 Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_swigregister(Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint)
 
-def Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_DownCast(*args):
+def Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_DownCast(*args) -> "Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint const" :
   return _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_DownCast(*args)
 Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_DownCast = _IntSurf.Handle_IntSurf_SequenceNodeOfSequenceOfPathPoint_DownCast
 
@@ -2044,14 +2044,14 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntSurf.IntSurf_SequenceOfCouple_swiginit(self,_IntSurf.new_IntSurf_SequenceOfCouple(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntSurf_SequenceOfCouple const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfCouple &
@@ -2060,7 +2060,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntSurf_SequenceOfCouple const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfCouple &
@@ -2069,7 +2069,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_Couple &
@@ -2082,7 +2082,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_Couple &
@@ -2095,7 +2095,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2112,7 +2112,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2129,21 +2129,21 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntSurf_Couple const &" :
         """
         :rtype: IntSurf_Couple
 
         """
         return _IntSurf.IntSurf_SequenceOfCouple_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntSurf_Couple const &" :
         """
         :rtype: IntSurf_Couple
 
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2154,7 +2154,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_Couple const &" :
         """
         :param Index:
         :type Index: int
@@ -2163,7 +2163,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2174,7 +2174,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntSurf_Couple &" :
         """
         :param Index:
         :type Index: int
@@ -2183,7 +2183,7 @@ class IntSurf_SequenceOfCouple(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfCouple_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2233,14 +2233,14 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntSurf.IntSurf_SequenceOfInteriorPoint_swiginit(self,_IntSurf.new_IntSurf_SequenceOfInteriorPoint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntSurf_SequenceOfInteriorPoint const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfInteriorPoint &
@@ -2249,7 +2249,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntSurf_SequenceOfInteriorPoint const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfInteriorPoint &
@@ -2258,7 +2258,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_InteriorPoint &
@@ -2271,7 +2271,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_InteriorPoint &
@@ -2284,7 +2284,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2301,7 +2301,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2318,21 +2318,21 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntSurf_InteriorPoint const &" :
         """
         :rtype: IntSurf_InteriorPoint
 
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntSurf_InteriorPoint const &" :
         """
         :rtype: IntSurf_InteriorPoint
 
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2343,7 +2343,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_InteriorPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -2352,7 +2352,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2363,7 +2363,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntSurf_InteriorPoint &" :
         """
         :param Index:
         :type Index: int
@@ -2372,7 +2372,7 @@ class IntSurf_SequenceOfInteriorPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfInteriorPoint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2422,14 +2422,14 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntSurf.IntSurf_SequenceOfPathPoint_swiginit(self,_IntSurf.new_IntSurf_SequenceOfPathPoint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntSurf_SequenceOfPathPoint const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfPathPoint &
@@ -2438,7 +2438,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntSurf_SequenceOfPathPoint const &" :
         """
         :param Other:
         :type Other: IntSurf_SequenceOfPathPoint &
@@ -2447,7 +2447,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_PathPoint &
@@ -2460,7 +2460,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntSurf_PathPoint &
@@ -2473,7 +2473,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2490,7 +2490,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2507,21 +2507,21 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :rtype: IntSurf_PathPoint
 
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :rtype: IntSurf_PathPoint
 
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2532,7 +2532,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntSurf_PathPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -2541,7 +2541,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2552,7 +2552,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntSurf_PathPoint &" :
         """
         :param Index:
         :type Index: int
@@ -2561,7 +2561,7 @@ class IntSurf_SequenceOfPathPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntSurf.IntSurf_SequenceOfPathPoint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2631,7 +2631,7 @@ class IntSurf_Transition(object):
 
         """
         _IntSurf.IntSurf_Transition_swiginit(self,_IntSurf.new_IntSurf_Transition(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Set the values of an IN or OUT transition.
 
@@ -2658,7 +2658,7 @@ class IntSurf_Transition(object):
         """
         return _IntSurf.IntSurf_Transition_SetValue(self, *args)
 
-    def TransitionType(self, *args):
+    def TransitionType(self, *args) -> "IntSurf_TypeTrans" :
         """
         * Returns the type of Transition (in/out/touch/undecided) for the arc given by value. This the transition of the intersection line compared to the Arc of restriction, i-e when the function returns INSIDE for example, it means that the intersection line goes inside the part of plane limited by the arc of restriction.
 
@@ -2667,7 +2667,7 @@ class IntSurf_Transition(object):
         """
         return _IntSurf.IntSurf_Transition_TransitionType(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the point is tangent to the arc given by Value. An exception is raised if TransitionType returns UNDECIDED.
 
@@ -2676,7 +2676,7 @@ class IntSurf_Transition(object):
         """
         return _IntSurf.IntSurf_Transition_IsTangent(self, *args)
 
-    def Situation(self, *args):
+    def Situation(self, *args) -> "IntSurf_Situation" :
         """
         * Returns a significant value if TransitionType returns TOUCH. In this case, the function returns : INSIDE when the intersection line remains inside the Arc, OUTSIDE when it remains outside the Arc, UNKNOWN when the calsulus cannot give results. If TransitionType returns IN, or OUT, or UNDECIDED, a exception is raised.
 
@@ -2685,7 +2685,7 @@ class IntSurf_Transition(object):
         """
         return _IntSurf.IntSurf_Transition_Situation(self, *args)
 
-    def IsOpposite(self, *args):
+    def IsOpposite(self, *args) -> "Standard_Boolean" :
         """
         * returns a significant value if TransitionType returns TOUCH. In this case, the function returns true when the 2 curves locally define two different parts of the space. If TransitionType returns IN or OUT or UNDECIDED, an exception is raised.
 

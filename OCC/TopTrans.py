@@ -140,7 +140,7 @@ class TopTrans_Array2OfOrientation(object):
 
         """
         _TopTrans.TopTrans_Array2OfOrientation_swiginit(self,_TopTrans.new_TopTrans_Array2OfOrientation(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TopAbs_Orientation &
@@ -149,14 +149,14 @@ class TopTrans_Array2OfOrientation(object):
         """
         return _TopTrans.TopTrans_Array2OfOrientation_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TopTrans_Array2OfOrientation const &" :
         """
         :param Other:
         :type Other: TopTrans_Array2OfOrientation &
@@ -165,7 +165,7 @@ class TopTrans_Array2OfOrientation(object):
         """
         return _TopTrans.TopTrans_Array2OfOrientation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TopTrans_Array2OfOrientation const &" :
         """
         :param Other:
         :type Other: TopTrans_Array2OfOrientation &
@@ -174,49 +174,49 @@ class TopTrans_Array2OfOrientation(object):
         """
         return _TopTrans.TopTrans_Array2OfOrientation_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopTrans.TopTrans_Array2OfOrientation_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -229,7 +229,7 @@ class TopTrans_Array2OfOrientation(object):
         """
         return _TopTrans.TopTrans_Array2OfOrientation_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopAbs_Orientation const &" :
         """
         :param Row:
         :type Row: int
@@ -240,7 +240,7 @@ class TopTrans_Array2OfOrientation(object):
         """
         return _TopTrans.TopTrans_Array2OfOrientation_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TopAbs_Orientation &" :
         """
         :param Row:
         :type Row: int
@@ -287,7 +287,7 @@ class TopTrans_CurveTransition(object):
 
         """
         _TopTrans.TopTrans_CurveTransition_swiginit(self,_TopTrans.new_TopTrans_CurveTransition(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Initialize a Transition with the local description of a Curve.
 
@@ -308,7 +308,7 @@ class TopTrans_CurveTransition(object):
         """
         return _TopTrans.TopTrans_CurveTransition_Reset(self, *args)
 
-    def Compare(self, *args):
+    def Compare(self, *args) -> "void" :
         """
         * Add a curve element to the boundary. If Or is REVERSED the curve is before the intersection, else if Or is FORWARD the curv is after the intersection and if Or is INTERNAL the intersection is in the middle of the curv.
 
@@ -329,7 +329,7 @@ class TopTrans_CurveTransition(object):
         """
         return _TopTrans.TopTrans_CurveTransition_Compare(self, *args)
 
-    def StateBefore(self, *args):
+    def StateBefore(self, *args) -> "TopAbs_State" :
         """
         * returns the state of the curve before the intersection, this is the position relative to the boundary of a point very close to the intersection on the negative side of the tangent.
 
@@ -338,7 +338,7 @@ class TopTrans_CurveTransition(object):
         """
         return _TopTrans.TopTrans_CurveTransition_StateBefore(self, *args)
 
-    def StateAfter(self, *args):
+    def StateAfter(self, *args) -> "TopAbs_State" :
         """
         * returns the state of the curve after the intersection, this is the position relative to the boundary of a point very close to the intersection on the positive side of the tangent.
 
@@ -374,7 +374,7 @@ class TopTrans_SurfaceTransition(object):
 
         """
         _TopTrans.TopTrans_SurfaceTransition_swiginit(self,_TopTrans.new_TopTrans_SurfaceTransition(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Initialize a Surface Transition with the local description of the intersection curve and of the reference surface. PREQUESITORY : Norm oriented OUTSIDE 'geometric matter'
 
@@ -403,7 +403,7 @@ class TopTrans_SurfaceTransition(object):
         """
         return _TopTrans.TopTrans_SurfaceTransition_Reset(self, *args)
 
-    def Compare(self, *args):
+    def Compare(self, *args) -> "void" :
         """
         * Add a face element to the boundary.  - S defines topological orientation for the face : S FORWARD means: along the intersection curve on the reference surface, transition states while crossing the face are OUT,IN. S REVERSED means states are IN,OUT. S INTERNAL means states are IN,IN.  - O defines curve's position on face : O FORWARD means the face is before the intersection O REVERSED means the face is AFTER O INTERNAL means the curve intersection is in the face. PREQUESITORY : Norm oriented OUTSIDE 'geometric matter'
 
@@ -440,7 +440,7 @@ class TopTrans_SurfaceTransition(object):
         """
         return _TopTrans.TopTrans_SurfaceTransition_Compare(self, *args)
 
-    def StateBefore(self, *args):
+    def StateBefore(self, *args) -> "TopAbs_State" :
         """
         * Returns the state of the reference surface before the interference, this is the position relative to the surface of a point very close to the intersection on the negative side of the tangent.
 
@@ -449,7 +449,7 @@ class TopTrans_SurfaceTransition(object):
         """
         return _TopTrans.TopTrans_SurfaceTransition_StateBefore(self, *args)
 
-    def StateAfter(self, *args):
+    def StateAfter(self, *args) -> "TopAbs_State" :
         """
         * Returns the state of the reference surface after interference, this is the position relative to the surface of a point very close to the intersection on the positive side of the tangent.
 
@@ -458,7 +458,7 @@ class TopTrans_SurfaceTransition(object):
         """
         return _TopTrans.TopTrans_SurfaceTransition_StateAfter(self, *args)
 
-    def GetBefore(*args):
+    def GetBefore(*args) -> "TopAbs_State" :
         """
         :param Tran:
         :type Tran: TopAbs_Orientation
@@ -468,7 +468,7 @@ class TopTrans_SurfaceTransition(object):
         return _TopTrans.TopTrans_SurfaceTransition_GetBefore(*args)
 
     GetBefore = staticmethod(GetBefore)
-    def GetAfter(*args):
+    def GetAfter(*args) -> "TopAbs_State" :
         """
         :param Tran:
         :type Tran: TopAbs_Orientation
@@ -494,7 +494,7 @@ TopTrans_SurfaceTransition._kill_pointed = new_instancemethod(_TopTrans.TopTrans
 TopTrans_SurfaceTransition_swigregister = _TopTrans.TopTrans_SurfaceTransition_swigregister
 TopTrans_SurfaceTransition_swigregister(TopTrans_SurfaceTransition)
 
-def TopTrans_SurfaceTransition_GetBefore(*args):
+def TopTrans_SurfaceTransition_GetBefore(*args) -> "TopAbs_State" :
   """
     :param Tran:
     :type Tran: TopAbs_Orientation
@@ -503,7 +503,7 @@ def TopTrans_SurfaceTransition_GetBefore(*args):
     """
   return _TopTrans.TopTrans_SurfaceTransition_GetBefore(*args)
 
-def TopTrans_SurfaceTransition_GetAfter(*args):
+def TopTrans_SurfaceTransition_GetAfter(*args) -> "TopAbs_State" :
   """
     :param Tran:
     :type Tran: TopAbs_Orientation

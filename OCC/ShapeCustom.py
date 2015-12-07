@@ -131,7 +131,7 @@ import OCC.Geom2d
 class shapecustom(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ApplyModifier(*args):
+    def ApplyModifier(*args) -> "TopoDS_Shape" :
         """
         * Applies modifier to shape and checks sharing in the case assemblies.
 
@@ -149,7 +149,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_ApplyModifier(*args)
 
     ApplyModifier = staticmethod(ApplyModifier)
-    def DirectFaces(*args):
+    def DirectFaces(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape without indirect surfaces.
 
@@ -161,7 +161,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_DirectFaces(*args)
 
     DirectFaces = staticmethod(DirectFaces)
-    def ScaleShape(*args):
+    def ScaleShape(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape which is scaled original
 
@@ -175,7 +175,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_ScaleShape(*args)
 
     ScaleShape = staticmethod(ScaleShape)
-    def BSplineRestriction(*args):
+    def BSplineRestriction(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape with all surfaces, curves and pcurves which type is BSpline/Bezier or based on them converted having Degree less than <MaxDegree> or number of spans less than <NbMaxSegment> in dependence on parameter priority <Degree>. <GmaxDegree> and <GMaxSegments> are maximum possible degree and number of spans correspondingly. These values will be used in those cases when approximation with specified parameters is impossible and one of GmaxDegree or GMaxSegments is selected in dependence on priority. Note that even if approximation is impossible with <GMaxDegree> then number of spans can exceed specified <GMaxSegment> <Rational> specifies if to convert Rational BSpline/Bezier into polynomial B-Spline. If flags ConvOffSurf,ConvOffCurve3d,ConvOffCurve2d are Standard_True there are means that Offset surfaces , Offset curves 3d and Offset curves 2d are converted to BSPline correspondingly.
 
@@ -205,7 +205,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_BSplineRestriction(*args)
 
     BSplineRestriction = staticmethod(BSplineRestriction)
-    def ConvertToRevolution(*args):
+    def ConvertToRevolution(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape with all elementary periodic surfaces converted to Geom_SurfaceOfRevolution
 
@@ -217,7 +217,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_ConvertToRevolution(*args)
 
     ConvertToRevolution = staticmethod(ConvertToRevolution)
-    def SweptToElementary(*args):
+    def SweptToElementary(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape with all surfaces of revolution and linear extrusion convert to elementary periodic surfaces
 
@@ -229,7 +229,7 @@ class shapecustom(object):
         return _ShapeCustom.shapecustom_SweptToElementary(*args)
 
     SweptToElementary = staticmethod(SweptToElementary)
-    def ConvertToBSpline(*args):
+    def ConvertToBSpline(*args) -> "TopoDS_Shape" :
         """
         * Returns a new shape with all surfaces of linear extrusion, revolution, offset, and planar surfaces converted according to flags to Geom_BSplineSurface (with same parameterisation).
 
@@ -263,7 +263,7 @@ shapecustom._kill_pointed = new_instancemethod(_ShapeCustom.shapecustom__kill_po
 shapecustom_swigregister = _ShapeCustom.shapecustom_swigregister
 shapecustom_swigregister(shapecustom)
 
-def shapecustom_ApplyModifier(*args):
+def shapecustom_ApplyModifier(*args) -> "TopoDS_Shape" :
   """
     * Applies modifier to shape and checks sharing in the case assemblies.
 
@@ -280,7 +280,7 @@ def shapecustom_ApplyModifier(*args):
     """
   return _ShapeCustom.shapecustom_ApplyModifier(*args)
 
-def shapecustom_DirectFaces(*args):
+def shapecustom_DirectFaces(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape without indirect surfaces.
 
@@ -291,7 +291,7 @@ def shapecustom_DirectFaces(*args):
     """
   return _ShapeCustom.shapecustom_DirectFaces(*args)
 
-def shapecustom_ScaleShape(*args):
+def shapecustom_ScaleShape(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape which is scaled original
 
@@ -304,7 +304,7 @@ def shapecustom_ScaleShape(*args):
     """
   return _ShapeCustom.shapecustom_ScaleShape(*args)
 
-def shapecustom_BSplineRestriction(*args):
+def shapecustom_BSplineRestriction(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape with all surfaces, curves and pcurves which type is BSpline/Bezier or based on them converted having Degree less than <MaxDegree> or number of spans less than <NbMaxSegment> in dependence on parameter priority <Degree>. <GmaxDegree> and <GMaxSegments> are maximum possible degree and number of spans correspondingly. These values will be used in those cases when approximation with specified parameters is impossible and one of GmaxDegree or GMaxSegments is selected in dependence on priority. Note that even if approximation is impossible with <GMaxDegree> then number of spans can exceed specified <GMaxSegment> <Rational> specifies if to convert Rational BSpline/Bezier into polynomial B-Spline. If flags ConvOffSurf,ConvOffCurve3d,ConvOffCurve2d are Standard_True there are means that Offset surfaces , Offset curves 3d and Offset curves 2d are converted to BSPline correspondingly.
 
@@ -333,7 +333,7 @@ def shapecustom_BSplineRestriction(*args):
     """
   return _ShapeCustom.shapecustom_BSplineRestriction(*args)
 
-def shapecustom_ConvertToRevolution(*args):
+def shapecustom_ConvertToRevolution(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape with all elementary periodic surfaces converted to Geom_SurfaceOfRevolution
 
@@ -344,7 +344,7 @@ def shapecustom_ConvertToRevolution(*args):
     """
   return _ShapeCustom.shapecustom_ConvertToRevolution(*args)
 
-def shapecustom_SweptToElementary(*args):
+def shapecustom_SweptToElementary(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape with all surfaces of revolution and linear extrusion convert to elementary periodic surfaces
 
@@ -355,7 +355,7 @@ def shapecustom_SweptToElementary(*args):
     """
   return _ShapeCustom.shapecustom_SweptToElementary(*args)
 
-def shapecustom_ConvertToBSpline(*args):
+def shapecustom_ConvertToBSpline(*args) -> "TopoDS_Shape" :
   """
     * Returns a new shape with all surfaces of linear extrusion, revolution, offset, and planar surfaces converted according to flags to Geom_BSplineSurface (with same parameterisation).
 
@@ -383,7 +383,7 @@ class ShapeCustom_ConvertToBSpline(OCC.BRepTools.BRepTools_Modification):
 
         """
         _ShapeCustom.ShapeCustom_ConvertToBSpline_swiginit(self,_ShapeCustom.new_ShapeCustom_ConvertToBSpline(*args))
-    def SetExtrusionMode(self, *args):
+    def SetExtrusionMode(self, *args) -> "void" :
         """
         * Sets mode for convertion of Surfaces of Linear extrusion.
 
@@ -394,7 +394,7 @@ class ShapeCustom_ConvertToBSpline(OCC.BRepTools.BRepTools_Modification):
         """
         return _ShapeCustom.ShapeCustom_ConvertToBSpline_SetExtrusionMode(self, *args)
 
-    def SetRevolutionMode(self, *args):
+    def SetRevolutionMode(self, *args) -> "void" :
         """
         * Sets mode for convertion of Surfaces of Revolution.
 
@@ -405,7 +405,7 @@ class ShapeCustom_ConvertToBSpline(OCC.BRepTools.BRepTools_Modification):
         """
         return _ShapeCustom.ShapeCustom_ConvertToBSpline_SetRevolutionMode(self, *args)
 
-    def SetOffsetMode(self, *args):
+    def SetOffsetMode(self, *args) -> "void" :
         """
         * Sets mode for convertion of Offset surfaces.
 
@@ -416,7 +416,7 @@ class ShapeCustom_ConvertToBSpline(OCC.BRepTools.BRepTools_Modification):
         """
         return _ShapeCustom.ShapeCustom_ConvertToBSpline_SetOffsetMode(self, *args)
 
-    def SetPlaneMode(self, *args):
+    def SetPlaneMode(self, *args) -> "void" :
         """
         * Sets mode for convertion of Plane surfaces.
 
@@ -427,11 +427,11 @@ class ShapeCustom_ConvertToBSpline(OCC.BRepTools.BRepTools_Modification):
         """
         return _ShapeCustom.ShapeCustom_ConvertToBSpline_SetPlaneMode(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeCustom_ConvertToBSpline self)"""
         return _ShapeCustom.ShapeCustom_ConvertToBSpline__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeCustom_ConvertToBSpline" :
         """GetHandle(ShapeCustom_ConvertToBSpline self) -> Handle_ShapeCustom_ConvertToBSpline"""
         return _ShapeCustom.ShapeCustom_ConvertToBSpline_GetHandle(self)
 
@@ -473,7 +473,7 @@ Handle_ShapeCustom_ConvertToBSpline._kill_pointed = new_instancemethod(_ShapeCus
 Handle_ShapeCustom_ConvertToBSpline_swigregister = _ShapeCustom.Handle_ShapeCustom_ConvertToBSpline_swigregister
 Handle_ShapeCustom_ConvertToBSpline_swigregister(Handle_ShapeCustom_ConvertToBSpline)
 
-def Handle_ShapeCustom_ConvertToBSpline_DownCast(*args):
+def Handle_ShapeCustom_ConvertToBSpline_DownCast(*args) -> "Handle_ShapeCustom_ConvertToBSpline const" :
   return _ShapeCustom.Handle_ShapeCustom_ConvertToBSpline_DownCast(*args)
 Handle_ShapeCustom_ConvertToBSpline_DownCast = _ShapeCustom.Handle_ShapeCustom_ConvertToBSpline_DownCast
 
@@ -490,7 +490,7 @@ class ShapeCustom_Curve(object):
 
         """
         _ShapeCustom.ShapeCustom_Curve_swiginit(self,_ShapeCustom.new_ShapeCustom_Curve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -499,7 +499,7 @@ class ShapeCustom_Curve(object):
         """
         return _ShapeCustom.ShapeCustom_Curve_Init(self, *args)
 
-    def ConvertToPeriodic(self, *args):
+    def ConvertToPeriodic(self, *args) -> "Handle_Geom_Curve" :
         """
         * Tries to convert the Curve to the Periodic form Returns the resulting curve Works only if the Curve is BSpline and is closed with Precision::Confusion() Else, or in case of failure, returns a Null Handle
 
@@ -529,7 +529,7 @@ ShapeCustom_Curve_swigregister(ShapeCustom_Curve)
 class ShapeCustom_Curve2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IsLinear(*args):
+    def IsLinear(*args) -> "Standard_Real &" :
         """
         * Check if poleses is in the plane with given precision Returns false if no.
 
@@ -545,7 +545,7 @@ class ShapeCustom_Curve2d(object):
         return _ShapeCustom.ShapeCustom_Curve2d_IsLinear(*args)
 
     IsLinear = staticmethod(IsLinear)
-    def ConvertToLine2d(*args):
+    def ConvertToLine2d(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         * Try to convert BSpline2d or Bezier2d to line 2d only if it is linear. Recalculate first and last parameters. Returns line2d or null curve2d.
 
@@ -569,7 +569,7 @@ class ShapeCustom_Curve2d(object):
         return _ShapeCustom.ShapeCustom_Curve2d_ConvertToLine2d(*args)
 
     ConvertToLine2d = staticmethod(ConvertToLine2d)
-    def SimplifyBSpline2d(*args):
+    def SimplifyBSpline2d(*args) -> "Standard_Boolean" :
         """
         * Try to remove knots from bspline where local derivatives are the same. Remove knots with given precision. Returns false if Bsplien was not modified
 
@@ -597,7 +597,7 @@ ShapeCustom_Curve2d._kill_pointed = new_instancemethod(_ShapeCustom.ShapeCustom_
 ShapeCustom_Curve2d_swigregister = _ShapeCustom.ShapeCustom_Curve2d_swigregister
 ShapeCustom_Curve2d_swigregister(ShapeCustom_Curve2d)
 
-def ShapeCustom_Curve2d_IsLinear(*args):
+def ShapeCustom_Curve2d_IsLinear(*args) -> "Standard_Real &" :
   """
     * Check if poleses is in the plane with given precision Returns false if no.
 
@@ -612,7 +612,7 @@ def ShapeCustom_Curve2d_IsLinear(*args):
     """
   return _ShapeCustom.ShapeCustom_Curve2d_IsLinear(*args)
 
-def ShapeCustom_Curve2d_ConvertToLine2d(*args):
+def ShapeCustom_Curve2d_ConvertToLine2d(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     * Try to convert BSpline2d or Bezier2d to line 2d only if it is linear. Recalculate first and last parameters. Returns line2d or null curve2d.
 
@@ -635,7 +635,7 @@ def ShapeCustom_Curve2d_ConvertToLine2d(*args):
     """
   return _ShapeCustom.ShapeCustom_Curve2d_ConvertToLine2d(*args)
 
-def ShapeCustom_Curve2d_SimplifyBSpline2d(*args):
+def ShapeCustom_Curve2d_SimplifyBSpline2d(*args) -> "Standard_Boolean" :
   """
     * Try to remove knots from bspline where local derivatives are the same. Remove knots with given precision. Returns false if Bsplien was not modified
 
@@ -657,11 +657,11 @@ class ShapeCustom_DirectModification(OCC.BRepTools.BRepTools_Modification):
 
         """
         _ShapeCustom.ShapeCustom_DirectModification_swiginit(self,_ShapeCustom.new_ShapeCustom_DirectModification(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeCustom_DirectModification self)"""
         return _ShapeCustom.ShapeCustom_DirectModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeCustom_DirectModification" :
         """GetHandle(ShapeCustom_DirectModification self) -> Handle_ShapeCustom_DirectModification"""
         return _ShapeCustom.ShapeCustom_DirectModification_GetHandle(self)
 
@@ -699,7 +699,7 @@ Handle_ShapeCustom_DirectModification._kill_pointed = new_instancemethod(_ShapeC
 Handle_ShapeCustom_DirectModification_swigregister = _ShapeCustom.Handle_ShapeCustom_DirectModification_swigregister
 Handle_ShapeCustom_DirectModification_swigregister(Handle_ShapeCustom_DirectModification)
 
-def Handle_ShapeCustom_DirectModification_DownCast(*args):
+def Handle_ShapeCustom_DirectModification_DownCast(*args) -> "Handle_ShapeCustom_DirectModification const" :
   return _ShapeCustom.Handle_ShapeCustom_DirectModification_DownCast(*args)
 Handle_ShapeCustom_DirectModification_DownCast = _ShapeCustom.Handle_ShapeCustom_DirectModification_DownCast
 
@@ -714,139 +714,139 @@ class ShapeCustom_RestrictionParameters(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeCustom.ShapeCustom_RestrictionParameters_swiginit(self,_ShapeCustom.new_ShapeCustom_RestrictionParameters(*args))
-    def GetGMaxDegree(self):
+    def GetGMaxDegree(self) -> "Standard_Integer" :
         """GetGMaxDegree(ShapeCustom_RestrictionParameters self) -> Standard_Integer"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetGMaxDegree(self)
 
-    def SetGMaxDegree(self, *args):
+    def SetGMaxDegree(self, *args) -> "void" :
         """SetGMaxDegree(ShapeCustom_RestrictionParameters self, Standard_Integer value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetGMaxDegree(self, *args)
 
-    def GetGMaxSeg(self):
+    def GetGMaxSeg(self) -> "Standard_Integer" :
         """GetGMaxSeg(ShapeCustom_RestrictionParameters self) -> Standard_Integer"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetGMaxSeg(self)
 
-    def SetGMaxSeg(self, *args):
+    def SetGMaxSeg(self, *args) -> "void" :
         """SetGMaxSeg(ShapeCustom_RestrictionParameters self, Standard_Integer value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetGMaxSeg(self, *args)
 
-    def GetConvertPlane(self):
+    def GetConvertPlane(self) -> "Standard_Boolean" :
         """GetConvertPlane(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertPlane(self)
 
-    def SetConvertPlane(self, *args):
+    def SetConvertPlane(self, *args) -> "void" :
         """SetConvertPlane(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertPlane(self, *args)
 
-    def GetConvertBezierSurf(self):
+    def GetConvertBezierSurf(self) -> "Standard_Boolean" :
         """GetConvertBezierSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertBezierSurf(self)
 
-    def SetConvertBezierSurf(self, *args):
+    def SetConvertBezierSurf(self, *args) -> "void" :
         """SetConvertBezierSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertBezierSurf(self, *args)
 
-    def GetConvertRevolutionSurf(self):
+    def GetConvertRevolutionSurf(self) -> "Standard_Boolean" :
         """GetConvertRevolutionSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertRevolutionSurf(self)
 
-    def SetConvertRevolutionSurf(self, *args):
+    def SetConvertRevolutionSurf(self, *args) -> "void" :
         """SetConvertRevolutionSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertRevolutionSurf(self, *args)
 
-    def GetConvertExtrusionSurf(self):
+    def GetConvertExtrusionSurf(self) -> "Standard_Boolean" :
         """GetConvertExtrusionSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertExtrusionSurf(self)
 
-    def SetConvertExtrusionSurf(self, *args):
+    def SetConvertExtrusionSurf(self, *args) -> "void" :
         """SetConvertExtrusionSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertExtrusionSurf(self, *args)
 
-    def GetConvertOffsetSurf(self):
+    def GetConvertOffsetSurf(self) -> "Standard_Boolean" :
         """GetConvertOffsetSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertOffsetSurf(self)
 
-    def SetConvertOffsetSurf(self, *args):
+    def SetConvertOffsetSurf(self, *args) -> "void" :
         """SetConvertOffsetSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertOffsetSurf(self, *args)
 
-    def GetConvertCylindricalSurf(self):
+    def GetConvertCylindricalSurf(self) -> "Standard_Boolean" :
         """GetConvertCylindricalSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertCylindricalSurf(self)
 
-    def SetConvertCylindricalSurf(self, *args):
+    def SetConvertCylindricalSurf(self, *args) -> "void" :
         """SetConvertCylindricalSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertCylindricalSurf(self, *args)
 
-    def GetConvertConicalSurf(self):
+    def GetConvertConicalSurf(self) -> "Standard_Boolean" :
         """GetConvertConicalSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertConicalSurf(self)
 
-    def SetConvertConicalSurf(self, *args):
+    def SetConvertConicalSurf(self, *args) -> "void" :
         """SetConvertConicalSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertConicalSurf(self, *args)
 
-    def GetConvertToroidalSurf(self):
+    def GetConvertToroidalSurf(self) -> "Standard_Boolean" :
         """GetConvertToroidalSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertToroidalSurf(self)
 
-    def SetConvertToroidalSurf(self, *args):
+    def SetConvertToroidalSurf(self, *args) -> "void" :
         """SetConvertToroidalSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertToroidalSurf(self, *args)
 
-    def GetConvertSphericalSurf(self):
+    def GetConvertSphericalSurf(self) -> "Standard_Boolean" :
         """GetConvertSphericalSurf(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertSphericalSurf(self)
 
-    def SetConvertSphericalSurf(self, *args):
+    def SetConvertSphericalSurf(self, *args) -> "void" :
         """SetConvertSphericalSurf(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertSphericalSurf(self, *args)
 
-    def GetSegmentSurfaceMode(self):
+    def GetSegmentSurfaceMode(self) -> "Standard_Boolean" :
         """GetSegmentSurfaceMode(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetSegmentSurfaceMode(self)
 
-    def SetSegmentSurfaceMode(self, *args):
+    def SetSegmentSurfaceMode(self, *args) -> "void" :
         """SetSegmentSurfaceMode(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetSegmentSurfaceMode(self, *args)
 
-    def GetConvertCurve3d(self):
+    def GetConvertCurve3d(self) -> "Standard_Boolean" :
         """GetConvertCurve3d(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertCurve3d(self)
 
-    def SetConvertCurve3d(self, *args):
+    def SetConvertCurve3d(self, *args) -> "void" :
         """SetConvertCurve3d(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertCurve3d(self, *args)
 
-    def GetConvertOffsetCurv3d(self):
+    def GetConvertOffsetCurv3d(self) -> "Standard_Boolean" :
         """GetConvertOffsetCurv3d(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertOffsetCurv3d(self)
 
-    def SetConvertOffsetCurv3d(self, *args):
+    def SetConvertOffsetCurv3d(self, *args) -> "void" :
         """SetConvertOffsetCurv3d(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertOffsetCurv3d(self, *args)
 
-    def GetConvertCurve2d(self):
+    def GetConvertCurve2d(self) -> "Standard_Boolean" :
         """GetConvertCurve2d(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertCurve2d(self)
 
-    def SetConvertCurve2d(self, *args):
+    def SetConvertCurve2d(self, *args) -> "void" :
         """SetConvertCurve2d(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertCurve2d(self, *args)
 
-    def GetConvertOffsetCurv2d(self):
+    def GetConvertOffsetCurv2d(self) -> "Standard_Boolean" :
         """GetConvertOffsetCurv2d(ShapeCustom_RestrictionParameters self) -> Standard_Boolean"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetConvertOffsetCurv2d(self)
 
-    def SetConvertOffsetCurv2d(self, *args):
+    def SetConvertOffsetCurv2d(self, *args) -> "void" :
         """SetConvertOffsetCurv2d(ShapeCustom_RestrictionParameters self, Standard_Boolean value)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_SetConvertOffsetCurv2d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeCustom_RestrictionParameters self)"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeCustom_RestrictionParameters" :
         """GetHandle(ShapeCustom_RestrictionParameters self) -> Handle_ShapeCustom_RestrictionParameters"""
         return _ShapeCustom.ShapeCustom_RestrictionParameters_GetHandle(self)
 
@@ -916,7 +916,7 @@ Handle_ShapeCustom_RestrictionParameters._kill_pointed = new_instancemethod(_Sha
 Handle_ShapeCustom_RestrictionParameters_swigregister = _ShapeCustom.Handle_ShapeCustom_RestrictionParameters_swigregister
 Handle_ShapeCustom_RestrictionParameters_swigregister(Handle_ShapeCustom_RestrictionParameters)
 
-def Handle_ShapeCustom_RestrictionParameters_DownCast(*args):
+def Handle_ShapeCustom_RestrictionParameters_DownCast(*args) -> "Handle_ShapeCustom_RestrictionParameters const" :
   return _ShapeCustom.Handle_ShapeCustom_RestrictionParameters_DownCast(*args)
 Handle_ShapeCustom_RestrictionParameters_DownCast = _ShapeCustom.Handle_ShapeCustom_RestrictionParameters_DownCast
 
@@ -933,7 +933,7 @@ class ShapeCustom_Surface(object):
 
         """
         _ShapeCustom.ShapeCustom_Surface_swiginit(self,_ShapeCustom.new_ShapeCustom_Surface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -942,7 +942,7 @@ class ShapeCustom_Surface(object):
         """
         return _ShapeCustom.ShapeCustom_Surface_Init(self, *args)
 
-    def Gap(self, *args):
+    def Gap(self, *args) -> "Standard_Real" :
         """
         * Returns maximal deviation of converted surface from the original one computed by last call to ConvertToAnalytical
 
@@ -951,7 +951,7 @@ class ShapeCustom_Surface(object):
         """
         return _ShapeCustom.ShapeCustom_Surface_Gap(self, *args)
 
-    def ConvertToAnalytical(self, *args):
+    def ConvertToAnalytical(self, *args) -> "Handle_Geom_Surface" :
         """
         * Tries to convert the Surface to an Analytic form Returns the result Works only if the Surface is BSpline or Bezier. Else, or in case of failure, returns a Null Handle  If <substitute> is True, the new surface replaces the actual one in <self>  It works by analysing the case which can apply, creating the corresponding analytic surface, then checking coincidence Warning: Parameter laws are not kept, hence PCurves should be redone
 
@@ -964,7 +964,7 @@ class ShapeCustom_Surface(object):
         """
         return _ShapeCustom.ShapeCustom_Surface_ConvertToAnalytical(self, *args)
 
-    def ConvertToPeriodic(self, *args):
+    def ConvertToPeriodic(self, *args) -> "Handle_Geom_Surface" :
         """
         * Tries to convert the Surface to the Periodic form Returns the resulting surface Works only if the Surface is BSpline and is closed with Precision::Confusion() Else, or in case of failure, returns a Null Handle
 
@@ -1006,11 +1006,11 @@ class ShapeCustom_TrsfModification(OCC.BRepTools.BRepTools_TrsfModification):
 
         """
         _ShapeCustom.ShapeCustom_TrsfModification_swiginit(self,_ShapeCustom.new_ShapeCustom_TrsfModification(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeCustom_TrsfModification self)"""
         return _ShapeCustom.ShapeCustom_TrsfModification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeCustom_TrsfModification" :
         """GetHandle(ShapeCustom_TrsfModification self) -> Handle_ShapeCustom_TrsfModification"""
         return _ShapeCustom.ShapeCustom_TrsfModification_GetHandle(self)
 
@@ -1048,7 +1048,7 @@ Handle_ShapeCustom_TrsfModification._kill_pointed = new_instancemethod(_ShapeCus
 Handle_ShapeCustom_TrsfModification_swigregister = _ShapeCustom.Handle_ShapeCustom_TrsfModification_swigregister
 Handle_ShapeCustom_TrsfModification_swigregister(Handle_ShapeCustom_TrsfModification)
 
-def Handle_ShapeCustom_TrsfModification_DownCast(*args):
+def Handle_ShapeCustom_TrsfModification_DownCast(*args) -> "Handle_ShapeCustom_TrsfModification const" :
   return _ShapeCustom.Handle_ShapeCustom_TrsfModification_DownCast(*args)
 Handle_ShapeCustom_TrsfModification_DownCast = _ShapeCustom.Handle_ShapeCustom_TrsfModification_DownCast
 

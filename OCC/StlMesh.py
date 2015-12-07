@@ -116,7 +116,7 @@ import OCC.TCollection
 class stlmesh(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Merge(*args):
+    def Merge(*args) -> "Handle_StlMesh_Mesh" :
         """
         * Sequence of meshes Make a merge of two Mesh and returns a new Mesh. Very useful if you want to merge partMesh and CheckSurfaceMesh for example
 
@@ -144,7 +144,7 @@ stlmesh._kill_pointed = new_instancemethod(_StlMesh.stlmesh__kill_pointed,None,s
 stlmesh_swigregister = _StlMesh.stlmesh_swigregister
 stlmesh_swigregister(stlmesh)
 
-def stlmesh_Merge(*args):
+def stlmesh_Merge(*args) -> "Handle_StlMesh_Mesh" :
   """
     * Sequence of meshes Make a merge of two Mesh and returns a new Mesh. Very useful if you want to merge partMesh and CheckSurfaceMesh for example
 
@@ -168,7 +168,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
 
         """
         _StlMesh.StlMesh_Mesh_swiginit(self,_StlMesh.new_StlMesh_Mesh(*args))
-    def AddDomain(self, *args):
+    def AddDomain(self, *args) -> "void" :
         """
         * Adds a new mesh domain. The mesh deflection is defaulted to Confusion from package Precision.
 
@@ -183,7 +183,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_AddDomain(self, *args)
 
-    def AddTriangle(self, *args):
+    def AddTriangle(self, *args) -> "Standard_Integer" :
         """
         * Build a triangle with the triplet of vertices (V1, V2, V3). This triplet defines the indexes of the vertex in the current domain The coordinates Xn, Yn, Zn defines the normal direction to the triangle. Returns the range of the triangle in the current domain.
 
@@ -204,7 +204,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_AddTriangle(self, *args)
 
-    def AddVertex(self, *args):
+    def AddVertex(self, *args) -> "Standard_Integer" :
         """
         * Returns the range of the vertex in the current domain.
 
@@ -219,7 +219,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_AddVertex(self, *args)
 
-    def AddOnlyNewVertex(self, *args):
+    def AddOnlyNewVertex(self, *args) -> "Standard_Integer" :
         """
         * Returns the range of the vertex in the current domain. The current vertex is not inserted in the mesh if it already exist.
 
@@ -234,7 +234,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_AddOnlyNewVertex(self, *args)
 
-    def Bounds(self, *args):
+    def Bounds(self, *args) -> "void" :
         """
         * Each vertex of the mesh verifies the following relations : XYZMin.X() <= X <= XYZMax.X() XYZMin.Y() <= Y <= XYZMax.y() XYZMin.Z() <= Z <= XYZMax.Z()
 
@@ -247,14 +247,14 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_Bounds(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _StlMesh.StlMesh_Mesh_Clear(self, *args)
 
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         * Returns the deflection of the mesh of the domain of range <DomainIndex>. Raised if <DomainIndex> is lower than 1 or greater than the number of domains.
 
@@ -265,14 +265,14 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_Deflection(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _StlMesh.StlMesh_Mesh_IsEmpty(self, *args)
 
-    def NbDomains(self, *args):
+    def NbDomains(self, *args) -> "Standard_Integer" :
         """
         * Number of domains in the mesh.
 
@@ -281,7 +281,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_NbDomains(self, *args)
 
-    def NbTriangles(self, *args):
+    def NbTriangles(self, *args) -> "Standard_Integer" :
         """
         * Cumulative Number of triangles in the mesh.
 
@@ -296,7 +296,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_NbTriangles(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         * Cumulative Number of vertices in the mesh.
 
@@ -311,7 +311,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_NbVertices(self, *args)
 
-    def Triangles(self, *args):
+    def Triangles(self, *args) -> "StlMesh_SequenceOfMeshTriangle const &" :
         """
         * Returns the set of triangle of the mesh domain of range <DomainIndex>. Raised if <DomainIndex> is lower than 1 or greater than the number of domains.
 
@@ -322,7 +322,7 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_Triangles(self, *args)
 
-    def Vertices(self, *args):
+    def Vertices(self, *args) -> "TColgp_SequenceOfXYZ const &" :
         """
         * Returns the coordinates of the vertices of the mesh domain of range <DomainIndex>. {XV1, YV1, ZV1, XV2, YV2, ZV2, XV3,.....} Raised if <DomainIndex> is lower than 1 or greater than the number of domains.
 
@@ -333,11 +333,11 @@ class StlMesh_Mesh(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_Mesh_Vertices(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_Mesh self)"""
         return _StlMesh.StlMesh_Mesh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_Mesh" :
         """GetHandle(StlMesh_Mesh self) -> Handle_StlMesh_Mesh"""
         return _StlMesh.StlMesh_Mesh_GetHandle(self)
 
@@ -388,7 +388,7 @@ Handle_StlMesh_Mesh._kill_pointed = new_instancemethod(_StlMesh.Handle_StlMesh_M
 Handle_StlMesh_Mesh_swigregister = _StlMesh.Handle_StlMesh_Mesh_swigregister
 Handle_StlMesh_Mesh_swigregister(Handle_StlMesh_Mesh)
 
-def Handle_StlMesh_Mesh_DownCast(*args):
+def Handle_StlMesh_Mesh_DownCast(*args) -> "Handle_StlMesh_Mesh const" :
   return _StlMesh.Handle_StlMesh_Mesh_DownCast(*args)
 Handle_StlMesh_Mesh_DownCast = _StlMesh.Handle_StlMesh_Mesh_DownCast
 
@@ -409,7 +409,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
 
         """
         _StlMesh.StlMesh_MeshDomain_swiginit(self,_StlMesh.new_StlMesh_MeshDomain(*args))
-    def AddTriangle(self, *args):
+    def AddTriangle(self, *args) -> "Standard_Integer" :
         """
         * Build a triangle with the triplet of vertices (V1, V2, V3). This triplet defines the indexes of the vertex in the current domain The coordinates Xn, Yn, Zn defines the normal direction to the triangle. Returns the range of the triangle in the current domain.
 
@@ -430,7 +430,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_AddTriangle(self, *args)
 
-    def AddVertex(self, *args):
+    def AddVertex(self, *args) -> "Standard_Integer" :
         """
         * Returns the range of the vertex in the current domain.
 
@@ -445,7 +445,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_AddVertex(self, *args)
 
-    def AddOnlyNewVertex(self, *args):
+    def AddOnlyNewVertex(self, *args) -> "Standard_Integer" :
         """
         * Returns the range of the vertex in the current domain. The current vertex is not inserted in the mesh if it already exist.
 
@@ -462,14 +462,14 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_AddOnlyNewVertex(self, *args)
 
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _StlMesh.StlMesh_MeshDomain_Deflection(self, *args)
 
-    def NbTriangles(self, *args):
+    def NbTriangles(self, *args) -> "Standard_Integer" :
         """
         * Number of triangles in the mesh.
 
@@ -478,7 +478,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_NbTriangles(self, *args)
 
-    def NbVertices(self, *args):
+    def NbVertices(self, *args) -> "Standard_Integer" :
         """
         * Number of vertices in the mesh.
 
@@ -487,7 +487,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_NbVertices(self, *args)
 
-    def Triangles(self, *args):
+    def Triangles(self, *args) -> "StlMesh_SequenceOfMeshTriangle const &" :
         """
         * Returns the set of triangles of the current mesh domain
 
@@ -496,7 +496,7 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_Triangles(self, *args)
 
-    def Vertices(self, *args):
+    def Vertices(self, *args) -> "TColgp_SequenceOfXYZ const &" :
         """
         * Returns the coordinates of the vertices of the mesh domain of range <DomainIndex>. {XV1, YV1, ZV1, XV2, YV2, ZV2, XV3,.....}
 
@@ -505,11 +505,11 @@ class StlMesh_MeshDomain(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshDomain_Vertices(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_MeshDomain self)"""
         return _StlMesh.StlMesh_MeshDomain__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_MeshDomain" :
         """GetHandle(StlMesh_MeshDomain self) -> Handle_StlMesh_MeshDomain"""
         return _StlMesh.StlMesh_MeshDomain_GetHandle(self)
 
@@ -555,7 +555,7 @@ Handle_StlMesh_MeshDomain._kill_pointed = new_instancemethod(_StlMesh.Handle_Stl
 Handle_StlMesh_MeshDomain_swigregister = _StlMesh.Handle_StlMesh_MeshDomain_swigregister
 Handle_StlMesh_MeshDomain_swigregister(Handle_StlMesh_MeshDomain)
 
-def Handle_StlMesh_MeshDomain_DownCast(*args):
+def Handle_StlMesh_MeshDomain_DownCast(*args) -> "Handle_StlMesh_MeshDomain const" :
   return _StlMesh.Handle_StlMesh_MeshDomain_DownCast(*args)
 Handle_StlMesh_MeshDomain_DownCast = _StlMesh.Handle_StlMesh_MeshDomain_DownCast
 
@@ -570,7 +570,7 @@ class StlMesh_MeshExplorer(object):
 
         """
         _StlMesh.StlMesh_MeshExplorer_swiginit(self,_StlMesh.new_StlMesh_MeshExplorer(*args))
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "Standard_Real" :
         """
         * Returns the mesh deflection of the current domain.
 
@@ -579,7 +579,7 @@ class StlMesh_MeshExplorer(object):
         """
         return _StlMesh.StlMesh_MeshExplorer_Deflection(self, *args)
 
-    def InitTriangle(self, *args):
+    def InitTriangle(self, *args) -> "void" :
         """
         * Initializes the exploration of the triangles of the mesh domain of range <DomainIndex>. Raised if <DomainIndex> is lower than 1 or greater than the number of domains.
 
@@ -590,14 +590,14 @@ class StlMesh_MeshExplorer(object):
         """
         return _StlMesh.StlMesh_MeshExplorer_InitTriangle(self, *args)
 
-    def MoreTriangle(self, *args):
+    def MoreTriangle(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _StlMesh.StlMesh_MeshExplorer_MoreTriangle(self, *args)
 
-    def NextTriangle(self, *args):
+    def NextTriangle(self, *args) -> "void" :
         """
         * Raised if there is no more triangle in the current domain.
 
@@ -606,7 +606,7 @@ class StlMesh_MeshExplorer(object):
         """
         return _StlMesh.StlMesh_MeshExplorer_NextTriangle(self, *args)
 
-    def TriangleVertices(self, *args):
+    def TriangleVertices(self, *args) -> "void" :
         """
         * Raised if there is no more triangle in the current domain.
 
@@ -633,7 +633,7 @@ class StlMesh_MeshExplorer(object):
         """
         return _StlMesh.StlMesh_MeshExplorer_TriangleVertices(self, *args)
 
-    def TriangleOrientation(self, *args):
+    def TriangleOrientation(self, *args) -> "void" :
         """
         * Raised if there is no more triangle in the current domain.
 
@@ -693,7 +693,7 @@ class StlMesh_MeshTriangle(OCC.MMgt.MMgt_TShared):
 
         """
         _StlMesh.StlMesh_MeshTriangle_swiginit(self,_StlMesh.new_StlMesh_MeshTriangle(*args))
-    def GetVertexAndOrientation(self, *args):
+    def GetVertexAndOrientation(self, *args) -> "void" :
         """
         * get indexes of the three vertices (V1,V2,V3) and the orientation
 
@@ -714,7 +714,7 @@ class StlMesh_MeshTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshTriangle_GetVertexAndOrientation(self, *args)
 
-    def SetVertexAndOrientation(self, *args):
+    def SetVertexAndOrientation(self, *args) -> "void" :
         """
         * set indexes of the three vertices (V1,V2,V3) and the orientation Raised if V1, V2 or V3 is lower than zero
 
@@ -735,7 +735,7 @@ class StlMesh_MeshTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshTriangle_SetVertexAndOrientation(self, *args)
 
-    def GetVertex(self, *args):
+    def GetVertex(self, *args) -> "void" :
         """
         * get indexes of the three vertices (V1,V2,V3)
 
@@ -750,7 +750,7 @@ class StlMesh_MeshTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshTriangle_GetVertex(self, *args)
 
-    def SetVertex(self, *args):
+    def SetVertex(self, *args) -> "void" :
         """
         * set indexes of the three vertices (V1,V2,V3) Raised if V1, V2 or V3 is lower than zero
 
@@ -765,11 +765,11 @@ class StlMesh_MeshTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _StlMesh.StlMesh_MeshTriangle_SetVertex(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_MeshTriangle self)"""
         return _StlMesh.StlMesh_MeshTriangle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_MeshTriangle" :
         """GetHandle(StlMesh_MeshTriangle self) -> Handle_StlMesh_MeshTriangle"""
         return _StlMesh.StlMesh_MeshTriangle_GetHandle(self)
 
@@ -811,7 +811,7 @@ Handle_StlMesh_MeshTriangle._kill_pointed = new_instancemethod(_StlMesh.Handle_S
 Handle_StlMesh_MeshTriangle_swigregister = _StlMesh.Handle_StlMesh_MeshTriangle_swigregister
 Handle_StlMesh_MeshTriangle_swigregister(Handle_StlMesh_MeshTriangle)
 
-def Handle_StlMesh_MeshTriangle_DownCast(*args):
+def Handle_StlMesh_MeshTriangle_DownCast(*args) -> "Handle_StlMesh_MeshTriangle const" :
   return _StlMesh.Handle_StlMesh_MeshTriangle_DownCast(*args)
 Handle_StlMesh_MeshTriangle_DownCast = _StlMesh.Handle_StlMesh_MeshTriangle_DownCast
 
@@ -830,18 +830,18 @@ class StlMesh_SequenceNodeOfSequenceOfMesh(OCC.TCollection.TCollection_SeqNode):
 
         """
         _StlMesh.StlMesh_SequenceNodeOfSequenceOfMesh_swiginit(self,_StlMesh.new_StlMesh_SequenceNodeOfSequenceOfMesh(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_Mesh &" :
         """
         :rtype: Handle_StlMesh_Mesh
 
         """
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMesh_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_SequenceNodeOfSequenceOfMesh self)"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMesh__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMesh" :
         """GetHandle(StlMesh_SequenceNodeOfSequenceOfMesh self) -> Handle_StlMesh_SequenceNodeOfSequenceOfMesh"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMesh_GetHandle(self)
 
@@ -880,7 +880,7 @@ Handle_StlMesh_SequenceNodeOfSequenceOfMesh._kill_pointed = new_instancemethod(_
 Handle_StlMesh_SequenceNodeOfSequenceOfMesh_swigregister = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMesh_swigregister
 Handle_StlMesh_SequenceNodeOfSequenceOfMesh_swigregister(Handle_StlMesh_SequenceNodeOfSequenceOfMesh)
 
-def Handle_StlMesh_SequenceNodeOfSequenceOfMesh_DownCast(*args):
+def Handle_StlMesh_SequenceNodeOfSequenceOfMesh_DownCast(*args) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMesh const" :
   return _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMesh_DownCast(*args)
 Handle_StlMesh_SequenceNodeOfSequenceOfMesh_DownCast = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMesh_DownCast
 
@@ -899,18 +899,18 @@ class StlMesh_SequenceNodeOfSequenceOfMeshDomain(OCC.TCollection.TCollection_Seq
 
         """
         _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshDomain_swiginit(self,_StlMesh.new_StlMesh_SequenceNodeOfSequenceOfMeshDomain(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_MeshDomain &" :
         """
         :rtype: Handle_StlMesh_MeshDomain
 
         """
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshDomain_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_SequenceNodeOfSequenceOfMeshDomain self)"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshDomain__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain" :
         """GetHandle(StlMesh_SequenceNodeOfSequenceOfMeshDomain self) -> Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshDomain_GetHandle(self)
 
@@ -949,7 +949,7 @@ Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain._kill_pointed = new_instanceme
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_swigregister = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_swigregister
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_swigregister(Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain)
 
-def Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_DownCast(*args):
+def Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_DownCast(*args) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain const" :
   return _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_DownCast(*args)
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_DownCast = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshDomain_DownCast
 
@@ -968,18 +968,18 @@ class StlMesh_SequenceNodeOfSequenceOfMeshTriangle(OCC.TCollection.TCollection_S
 
         """
         _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshTriangle_swiginit(self,_StlMesh.new_StlMesh_SequenceNodeOfSequenceOfMeshTriangle(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_MeshTriangle &" :
         """
         :rtype: Handle_StlMesh_MeshTriangle
 
         """
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshTriangle_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlMesh_SequenceNodeOfSequenceOfMeshTriangle self)"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshTriangle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle" :
         """GetHandle(StlMesh_SequenceNodeOfSequenceOfMeshTriangle self) -> Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle"""
         return _StlMesh.StlMesh_SequenceNodeOfSequenceOfMeshTriangle_GetHandle(self)
 
@@ -1018,7 +1018,7 @@ Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle._kill_pointed = new_instance
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_swigregister = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_swigregister
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_swigregister(Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle)
 
-def Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_DownCast(*args):
+def Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_DownCast(*args) -> "Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle const" :
   return _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_DownCast(*args)
 Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_DownCast = _StlMesh.Handle_StlMesh_SequenceNodeOfSequenceOfMeshTriangle_DownCast
 
@@ -1031,14 +1031,14 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _StlMesh.StlMesh_SequenceOfMesh_swiginit(self,_StlMesh.new_StlMesh_SequenceOfMesh(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "StlMesh_SequenceOfMesh const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMesh &
@@ -1047,7 +1047,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "StlMesh_SequenceOfMesh const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMesh &
@@ -1056,7 +1056,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_Mesh &
@@ -1069,7 +1069,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_Mesh &
@@ -1082,7 +1082,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1099,7 +1099,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1116,21 +1116,21 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_StlMesh_Mesh const &" :
         """
         :rtype: Handle_StlMesh_Mesh
 
         """
         return _StlMesh.StlMesh_SequenceOfMesh_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_StlMesh_Mesh const &" :
         """
         :rtype: Handle_StlMesh_Mesh
 
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1141,7 +1141,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_Mesh const &" :
         """
         :param Index:
         :type Index: int
@@ -1150,7 +1150,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1161,7 +1161,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_StlMesh_Mesh &" :
         """
         :param Index:
         :type Index: int
@@ -1170,7 +1170,7 @@ class StlMesh_SequenceOfMesh(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMesh_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1220,14 +1220,14 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _StlMesh.StlMesh_SequenceOfMeshDomain_swiginit(self,_StlMesh.new_StlMesh_SequenceOfMeshDomain(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "StlMesh_SequenceOfMeshDomain const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMeshDomain &
@@ -1236,7 +1236,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "StlMesh_SequenceOfMeshDomain const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMeshDomain &
@@ -1245,7 +1245,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_MeshDomain &
@@ -1258,7 +1258,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_MeshDomain &
@@ -1271,7 +1271,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1288,7 +1288,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1305,21 +1305,21 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_StlMesh_MeshDomain const &" :
         """
         :rtype: Handle_StlMesh_MeshDomain
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_StlMesh_MeshDomain const &" :
         """
         :rtype: Handle_StlMesh_MeshDomain
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1330,7 +1330,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_MeshDomain const &" :
         """
         :param Index:
         :type Index: int
@@ -1339,7 +1339,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1350,7 +1350,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_StlMesh_MeshDomain &" :
         """
         :param Index:
         :type Index: int
@@ -1359,7 +1359,7 @@ class StlMesh_SequenceOfMeshDomain(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshDomain_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1409,14 +1409,14 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _StlMesh.StlMesh_SequenceOfMeshTriangle_swiginit(self,_StlMesh.new_StlMesh_SequenceOfMeshTriangle(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "StlMesh_SequenceOfMeshTriangle const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMeshTriangle &
@@ -1425,7 +1425,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "StlMesh_SequenceOfMeshTriangle const &" :
         """
         :param Other:
         :type Other: StlMesh_SequenceOfMeshTriangle &
@@ -1434,7 +1434,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_MeshTriangle &
@@ -1447,7 +1447,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_StlMesh_MeshTriangle &
@@ -1460,7 +1460,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1477,7 +1477,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1494,21 +1494,21 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_StlMesh_MeshTriangle const &" :
         """
         :rtype: Handle_StlMesh_MeshTriangle
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_StlMesh_MeshTriangle const &" :
         """
         :rtype: Handle_StlMesh_MeshTriangle
 
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1519,7 +1519,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StlMesh_MeshTriangle const &" :
         """
         :param Index:
         :type Index: int
@@ -1528,7 +1528,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1539,7 +1539,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_StlMesh_MeshTriangle &" :
         """
         :param Index:
         :type Index: int
@@ -1548,7 +1548,7 @@ class StlMesh_SequenceOfMeshTriangle(OCC.TCollection.TCollection_BaseSequence):
         """
         return _StlMesh.StlMesh_SequenceOfMeshTriangle_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

@@ -134,7 +134,7 @@ class Blend_AppFunction(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * returns the number of variables of the function.
 
@@ -143,7 +143,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -152,7 +152,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -165,7 +165,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -178,7 +178,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -193,7 +193,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Values(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.
 
@@ -212,7 +212,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Set(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "void" :
         """
         * Returns in the vector InfBound the lowest values allowed for each of the 4 variables. Returns in the vector SupBound the greatest values allowed for each of the 4 variables.
 
@@ -225,7 +225,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetBounds(self, *args)
 
-    def IsSolution(self, *args):
+    def IsSolution(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if Sol is a zero of the function. Tol is the tolerance used in 3d space. The computation is made at the current value of the parameter on the guide line.
 
@@ -238,7 +238,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_IsSolution(self, *args)
 
-    def GetMinimalDistance(self, *args):
+    def GetMinimalDistance(self, *args) -> "Standard_Real" :
         """
         * Returns the minimal Distance beetween two extremitys of calculed sections.
 
@@ -247,7 +247,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetMinimalDistance(self, *args)
 
-    def Pnt1(self, *args):
+    def Pnt1(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the first support.
 
@@ -256,7 +256,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Pnt1(self, *args)
 
-    def Pnt2(self, *args):
+    def Pnt2(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the first support.
 
@@ -265,7 +265,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Pnt2(self, *args)
 
-    def IsRational(self, *args):
+    def IsRational(self, *args) -> "Standard_Boolean" :
         """
         * Returns if the section is rationnal
 
@@ -274,7 +274,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_IsRational(self, *args)
 
-    def GetSectionSize(self, *args):
+    def GetSectionSize(self, *args) -> "Standard_Real" :
         """
         * Returns the length of the maximum section
 
@@ -283,7 +283,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetSectionSize(self, *args)
 
-    def GetMinimalWeight(self, *args):
+    def GetMinimalWeight(self, *args) -> "void" :
         """
         * Compute the minimal value of weight for each poles of all sections.
 
@@ -294,7 +294,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetMinimalWeight(self, *args)
 
-    def NbIntervals(self, *args):
+    def NbIntervals(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -305,7 +305,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_NbIntervals(self, *args)
 
-    def Intervals(self, *args):
+    def Intervals(self, *args) -> "void" :
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals() raises 	OutOfRange from Standard
 
@@ -318,7 +318,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Intervals(self, *args)
 
-    def GetShape(self, *args):
+    def GetShape(self, *args) -> "void" :
         """
         :param NbPoles:
         :type NbPoles: int &
@@ -333,7 +333,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetShape(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 4 variables; Tol is the tolerance used in 3d space.
 
@@ -360,7 +360,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_GetTolerance(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "void" :
         """
         :param TKnots:
         :type TKnots: TColStd_Array1OfReal &
@@ -369,7 +369,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Knots(self, *args)
 
-    def Mults(self, *args):
+    def Mults(self, *args) -> "void" :
         """
         :param TMults:
         :type TMults: TColStd_Array1OfInteger &
@@ -378,7 +378,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Mults(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         * Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.
 
@@ -435,7 +435,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Section(self, *args)
 
-    def Resolution(self, *args):
+    def Resolution(self, *args) -> "void" :
         """
         :param IC2d:
         :type IC2d: int
@@ -450,7 +450,7 @@ class Blend_AppFunction(object):
         """
         return _Blend.Blend_AppFunction_Resolution(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the point P. Used to impose the parameters in the approximation.
 
@@ -500,7 +500,7 @@ class Blend_CurvPointFuncInv(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * Returns 3.
 
@@ -509,7 +509,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -518,7 +518,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -531,7 +531,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -544,7 +544,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -559,7 +559,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_Values(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Set the Point on which a solution has to be found.
 
@@ -570,7 +570,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 3 variables; Tol is the tolerance used in 3d space.
 
@@ -583,7 +583,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_GetTolerance(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "void" :
         """
         * Returns in the vector InfBound the lowest values allowed for each of the 3 variables. Returns in the vector SupBound the greatest values allowed for each of the 3 variables.
 
@@ -596,7 +596,7 @@ class Blend_CurvPointFuncInv(object):
         """
         return _Blend.Blend_CurvPointFuncInv_GetBounds(self, *args)
 
-    def IsSolution(self, *args):
+    def IsSolution(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if Sol is a zero of the function. Tol is the tolerance used in 3d space.
 
@@ -634,7 +634,7 @@ class Blend_FuncInv(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * Returns 4.
 
@@ -643,7 +643,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -652,7 +652,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -665,7 +665,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -678,7 +678,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -693,7 +693,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_Values(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the CurveOnSurface on which a solution has to be found. If <OnFirst> is set to Standard_True, the curve will be on the first surface, otherwise the curve is on the second one.
 
@@ -706,7 +706,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 4 variables; Tol is the tolerance used in 3d space.
 
@@ -719,7 +719,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_GetTolerance(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "void" :
         """
         * Returns in the vector InfBound the lowest values allowed for each of the 4 variables. Returns in the vector SupBound the greatest values allowed for each of the 4 variables.
 
@@ -732,7 +732,7 @@ class Blend_FuncInv(object):
         """
         return _Blend.Blend_FuncInv_GetBounds(self, *args)
 
-    def IsSolution(self, *args):
+    def IsSolution(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if Sol is a zero of the function. Tol is the tolerance used in 3d space.
 
@@ -957,7 +957,7 @@ class Blend_Point(object):
 
         """
         _Blend.Blend_Point_swiginit(self,_Blend.new_Blend_Point(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Set the values for a point on 2 surfaces, with tangents.
 
@@ -1158,14 +1158,14 @@ class Blend_Point(object):
         """
         return _Blend.Blend_Point_SetValue(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Blend.Blend_Point_Parameter(self, *args)
 
-    def IsTangencyPoint(self, *args):
+    def IsTangencyPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if it was not possible to compute the tangent vectors at PointOnS1 and/or PointOnS2.
 
@@ -1174,21 +1174,21 @@ class Blend_Point(object):
         """
         return _Blend.Blend_Point_IsTangencyPoint(self, *args)
 
-    def PointOnS1(self, *args):
+    def PointOnS1(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnS1(self, *args)
 
-    def PointOnS2(self, *args):
+    def PointOnS2(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnS2(self, *args)
 
-    def ParametersOnS1(self, *args):
+    def ParametersOnS1(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -1199,7 +1199,7 @@ class Blend_Point(object):
         """
         return _Blend.Blend_Point_ParametersOnS1(self, *args)
 
-    def ParametersOnS2(self, *args):
+    def ParametersOnS2(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -1210,49 +1210,49 @@ class Blend_Point(object):
         """
         return _Blend.Blend_Point_ParametersOnS2(self, *args)
 
-    def TangentOnS1(self, *args):
+    def TangentOnS1(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Blend.Blend_Point_TangentOnS1(self, *args)
 
-    def TangentOnS2(self, *args):
+    def TangentOnS2(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Blend.Blend_Point_TangentOnS2(self, *args)
 
-    def Tangent2dOnS1(self, *args):
+    def Tangent2dOnS1(self, *args) -> "gp_Vec2d" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Blend.Blend_Point_Tangent2dOnS1(self, *args)
 
-    def Tangent2dOnS2(self, *args):
+    def Tangent2dOnS2(self, *args) -> "gp_Vec2d" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Blend.Blend_Point_Tangent2dOnS2(self, *args)
 
-    def PointOnS(self, *args):
+    def PointOnS(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnS(self, *args)
 
-    def PointOnC(self, *args):
+    def PointOnC(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnC(self, *args)
 
-    def ParametersOnS(self, *args):
+    def ParametersOnS(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -1263,70 +1263,70 @@ class Blend_Point(object):
         """
         return _Blend.Blend_Point_ParametersOnS(self, *args)
 
-    def ParameterOnC(self, *args):
+    def ParameterOnC(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Blend.Blend_Point_ParameterOnC(self, *args)
 
-    def TangentOnS(self, *args):
+    def TangentOnS(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Blend.Blend_Point_TangentOnS(self, *args)
 
-    def TangentOnC(self, *args):
+    def TangentOnC(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Blend.Blend_Point_TangentOnC(self, *args)
 
-    def Tangent2d(self, *args):
+    def Tangent2d(self, *args) -> "gp_Vec2d" :
         """
         :rtype: gp_Vec2d
 
         """
         return _Blend.Blend_Point_Tangent2d(self, *args)
 
-    def PointOnC1(self, *args):
+    def PointOnC1(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnC1(self, *args)
 
-    def PointOnC2(self, *args):
+    def PointOnC2(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Blend.Blend_Point_PointOnC2(self, *args)
 
-    def ParameterOnC1(self, *args):
+    def ParameterOnC1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Blend.Blend_Point_ParameterOnC1(self, *args)
 
-    def ParameterOnC2(self, *args):
+    def ParameterOnC2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Blend.Blend_Point_ParameterOnC2(self, *args)
 
-    def TangentOnC1(self, *args):
+    def TangentOnC1(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _Blend.Blend_Point_TangentOnC1(self, *args)
 
-    def TangentOnC2(self, *args):
+    def TangentOnC2(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
@@ -1384,18 +1384,18 @@ class Blend_SequenceNodeOfSequenceOfPoint(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Blend.Blend_SequenceNodeOfSequenceOfPoint_swiginit(self,_Blend.new_Blend_SequenceNodeOfSequenceOfPoint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Blend_Point &" :
         """
         :rtype: Blend_Point
 
         """
         return _Blend.Blend_SequenceNodeOfSequenceOfPoint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Blend_SequenceNodeOfSequenceOfPoint self)"""
         return _Blend.Blend_SequenceNodeOfSequenceOfPoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Blend_SequenceNodeOfSequenceOfPoint" :
         """GetHandle(Blend_SequenceNodeOfSequenceOfPoint self) -> Handle_Blend_SequenceNodeOfSequenceOfPoint"""
         return _Blend.Blend_SequenceNodeOfSequenceOfPoint_GetHandle(self)
 
@@ -1434,7 +1434,7 @@ Handle_Blend_SequenceNodeOfSequenceOfPoint._kill_pointed = new_instancemethod(_B
 Handle_Blend_SequenceNodeOfSequenceOfPoint_swigregister = _Blend.Handle_Blend_SequenceNodeOfSequenceOfPoint_swigregister
 Handle_Blend_SequenceNodeOfSequenceOfPoint_swigregister(Handle_Blend_SequenceNodeOfSequenceOfPoint)
 
-def Handle_Blend_SequenceNodeOfSequenceOfPoint_DownCast(*args):
+def Handle_Blend_SequenceNodeOfSequenceOfPoint_DownCast(*args) -> "Handle_Blend_SequenceNodeOfSequenceOfPoint const" :
   return _Blend.Handle_Blend_SequenceNodeOfSequenceOfPoint_DownCast(*args)
 Handle_Blend_SequenceNodeOfSequenceOfPoint_DownCast = _Blend.Handle_Blend_SequenceNodeOfSequenceOfPoint_DownCast
 
@@ -1447,14 +1447,14 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _Blend.Blend_SequenceOfPoint_swiginit(self,_Blend.new_Blend_SequenceOfPoint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Blend.Blend_SequenceOfPoint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Blend_SequenceOfPoint const &" :
         """
         :param Other:
         :type Other: Blend_SequenceOfPoint &
@@ -1463,7 +1463,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Blend_SequenceOfPoint const &" :
         """
         :param Other:
         :type Other: Blend_SequenceOfPoint &
@@ -1472,7 +1472,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Blend_Point &
@@ -1485,7 +1485,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Blend_Point &
@@ -1498,7 +1498,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1515,7 +1515,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1532,21 +1532,21 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Blend_Point const &" :
         """
         :rtype: Blend_Point
 
         """
         return _Blend.Blend_SequenceOfPoint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Blend_Point const &" :
         """
         :rtype: Blend_Point
 
         """
         return _Blend.Blend_SequenceOfPoint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1557,7 +1557,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Blend_Point const &" :
         """
         :param Index:
         :type Index: int
@@ -1566,7 +1566,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1577,7 +1577,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Blend_Point &" :
         """
         :param Index:
         :type Index: int
@@ -1586,7 +1586,7 @@ class Blend_SequenceOfPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Blend.Blend_SequenceOfPoint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1631,7 +1631,7 @@ class Blend_SurfCurvFuncInv(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * Returns 3.
 
@@ -1640,7 +1640,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -1649,7 +1649,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1662,7 +1662,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1675,7 +1675,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1690,7 +1690,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_Values(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Set the Point on which a solution has to be found.
 
@@ -1701,7 +1701,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 3 variables; Tol is the tolerance used in 3d space.
 
@@ -1714,7 +1714,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_GetTolerance(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "void" :
         """
         * Returns in the vector InfBound the lowest values allowed for each of the 3 variables. Returns in the vector SupBound the greatest values allowed for each of the 3 variables.
 
@@ -1727,7 +1727,7 @@ class Blend_SurfCurvFuncInv(object):
         """
         return _Blend.Blend_SurfCurvFuncInv_GetBounds(self, *args)
 
-    def IsSolution(self, *args):
+    def IsSolution(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if Sol is a zero of the function. Tol is the tolerance used in 3d space.
 
@@ -1765,7 +1765,7 @@ class Blend_SurfPointFuncInv(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         * Returns 3.
 
@@ -1774,7 +1774,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         * returns the number of equations of the function.
 
@@ -1783,7 +1783,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1796,7 +1796,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1809,7 +1809,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -1824,7 +1824,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_Values(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Set the Point on which a solution has to be found.
 
@@ -1835,7 +1835,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 3 variables; Tol is the tolerance used in 3d space.
 
@@ -1848,7 +1848,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_GetTolerance(self, *args)
 
-    def GetBounds(self, *args):
+    def GetBounds(self, *args) -> "void" :
         """
         * Returns in the vector InfBound the lowest values allowed for each of the 3 variables. Returns in the vector SupBound the greatest values allowed for each of the 3 variables.
 
@@ -1861,7 +1861,7 @@ class Blend_SurfPointFuncInv(object):
         """
         return _Blend.Blend_SurfPointFuncInv_GetBounds(self, *args)
 
-    def IsSolution(self, *args):
+    def IsSolution(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if Sol is a zero of the function. Tol is the tolerance used in 3d space.
 
@@ -1899,7 +1899,7 @@ class Blend_CSFunction(Blend_AppFunction):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.
 
@@ -1918,7 +1918,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_Set(self, *args)
 
-    def PointOnS(self, *args):
+    def PointOnS(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the surface.
 
@@ -1927,7 +1927,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_PointOnS(self, *args)
 
-    def PointOnC(self, *args):
+    def PointOnC(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the curve.
 
@@ -1936,7 +1936,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_PointOnC(self, *args)
 
-    def Pnt2d(self, *args):
+    def Pnt2d(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns U,V coordinates of the point on the surface.
 
@@ -1945,7 +1945,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_Pnt2d(self, *args)
 
-    def ParameterOnC(self, *args):
+    def ParameterOnC(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of the point on the curve.
 
@@ -1954,7 +1954,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_ParameterOnC(self, *args)
 
-    def IsTangencyPoint(self, *args):
+    def IsTangencyPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when it is not possible to compute the tangent vectors at PointOnS and/or PointOnC.
 
@@ -1963,7 +1963,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_IsTangencyPoint(self, *args)
 
-    def TangentOnS(self, *args):
+    def TangentOnS(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnS, in 3d space.
 
@@ -1972,7 +1972,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_TangentOnS(self, *args)
 
-    def Tangent2d(self, *args):
+    def Tangent2d(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnS, in the parametric space of the first surface.
 
@@ -1981,7 +1981,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_Tangent2d(self, *args)
 
-    def TangentOnC(self, *args):
+    def TangentOnC(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnC, in 3d space.
 
@@ -1990,7 +1990,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_TangentOnC(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "void" :
         """
         * Returns the tangent vector at the section, at the beginning and the end of the section, and returns the normal (of the surfaces) at these points.
 
@@ -2007,7 +2007,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_Tangent(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 3 variables; Tol is the tolerance used in 3d space.
 
@@ -2034,7 +2034,7 @@ class Blend_CSFunction(Blend_AppFunction):
         """
         return _Blend.Blend_CSFunction_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         * Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.
 
@@ -2119,7 +2119,7 @@ class Blend_Function(Blend_AppFunction):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.
 
@@ -2138,7 +2138,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_Set(self, *args)
 
-    def PointOnS1(self, *args):
+    def PointOnS1(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the first surface, at parameter Sol(1),Sol(2) (Sol is the vector used in the call of IsSolution.
 
@@ -2147,7 +2147,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_PointOnS1(self, *args)
 
-    def PointOnS2(self, *args):
+    def PointOnS2(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the second surface, at parameter Sol(3),Sol(4) (Sol is the vector used in the call of IsSolution.
 
@@ -2156,7 +2156,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_PointOnS2(self, *args)
 
-    def IsTangencyPoint(self, *args):
+    def IsTangencyPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when it is not possible to compute the tangent vectors at PointOnS1 and/or PointOnS2.
 
@@ -2165,7 +2165,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_IsTangencyPoint(self, *args)
 
-    def TangentOnS1(self, *args):
+    def TangentOnS1(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnS1, in 3d space.
 
@@ -2174,7 +2174,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_TangentOnS1(self, *args)
 
-    def Tangent2dOnS1(self, *args):
+    def Tangent2dOnS1(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnS1, in the parametric space of the first surface.
 
@@ -2183,7 +2183,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_Tangent2dOnS1(self, *args)
 
-    def TangentOnS2(self, *args):
+    def TangentOnS2(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnS2, in 3d space.
 
@@ -2192,7 +2192,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_TangentOnS2(self, *args)
 
-    def Tangent2dOnS2(self, *args):
+    def Tangent2dOnS2(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnS2, in the parametric space of the second surface.
 
@@ -2201,7 +2201,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_Tangent2dOnS2(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "void" :
         """
         * Returns the tangent vector at the section, at the beginning and the end of the section, and returns the normal (of the surfaces) at these points.
 
@@ -2226,21 +2226,21 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_Tangent(self, *args)
 
-    def TwistOnS1(self, *args):
+    def TwistOnS1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Blend.Blend_Function_TwistOnS1(self, *args)
 
-    def TwistOnS2(self, *args):
+    def TwistOnS2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Blend.Blend_Function_TwistOnS2(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each of the 4 variables; Tol is the tolerance used in 3d space.
 
@@ -2267,7 +2267,7 @@ class Blend_Function(Blend_AppFunction):
         """
         return _Blend.Blend_Function_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         * Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.
 
@@ -2353,7 +2353,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.
 
@@ -2372,7 +2372,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Set(self, *args)
 
-    def PointOnRst1(self, *args):
+    def PointOnRst1(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the surface.
 
@@ -2381,7 +2381,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_PointOnRst1(self, *args)
 
-    def PointOnRst2(self, *args):
+    def PointOnRst2(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the curve.
 
@@ -2390,7 +2390,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_PointOnRst2(self, *args)
 
-    def Pnt2dOnRst1(self, *args):
+    def Pnt2dOnRst1(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns U,V coordinates of the point on the surface.
 
@@ -2399,7 +2399,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Pnt2dOnRst1(self, *args)
 
-    def Pnt2dOnRst2(self, *args):
+    def Pnt2dOnRst2(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns U,V coordinates of the point on the curve on surface.
 
@@ -2408,7 +2408,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Pnt2dOnRst2(self, *args)
 
-    def ParameterOnRst1(self, *args):
+    def ParameterOnRst1(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of the point on the curve.
 
@@ -2417,7 +2417,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_ParameterOnRst1(self, *args)
 
-    def ParameterOnRst2(self, *args):
+    def ParameterOnRst2(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of the point on the curve.
 
@@ -2426,7 +2426,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_ParameterOnRst2(self, *args)
 
-    def IsTangencyPoint(self, *args):
+    def IsTangencyPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when it is not possible to compute the tangent vectors at PointOnS and/or PointOnRst.
 
@@ -2435,7 +2435,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_IsTangencyPoint(self, *args)
 
-    def TangentOnRst1(self, *args):
+    def TangentOnRst1(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnS, in 3d space.
 
@@ -2444,7 +2444,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_TangentOnRst1(self, *args)
 
-    def Tangent2dOnRst1(self, *args):
+    def Tangent2dOnRst1(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnS, in the parametric space of the first surface.
 
@@ -2453,7 +2453,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Tangent2dOnRst1(self, *args)
 
-    def TangentOnRst2(self, *args):
+    def TangentOnRst2(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnC, in 3d space.
 
@@ -2462,7 +2462,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_TangentOnRst2(self, *args)
 
-    def Tangent2dOnRst2(self, *args):
+    def Tangent2dOnRst2(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnRst, in the parametric space of the second surface.
 
@@ -2471,7 +2471,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Tangent2dOnRst2(self, *args)
 
-    def Decroch(self, *args):
+    def Decroch(self, *args) -> "Blend_DecrochStatus" :
         """
         * Enables to implement a criterion of decrochage specific to the function. Warning: Can be called without previous call of issolution but the values calculated can be senseless.
 
@@ -2490,7 +2490,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_Decroch(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each variable; Tol is the tolerance used in 3d space.
 
@@ -2517,7 +2517,7 @@ class Blend_RstRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_RstRstFunction_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: Blend_Point &
@@ -2605,7 +2605,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.
 
@@ -2624,7 +2624,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Set(self, *args)
 
-    def PointOnS(self, *args):
+    def PointOnS(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the surface.
 
@@ -2633,7 +2633,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_PointOnS(self, *args)
 
-    def PointOnRst(self, *args):
+    def PointOnRst(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point on the curve.
 
@@ -2642,7 +2642,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_PointOnRst(self, *args)
 
-    def Pnt2dOnS(self, *args):
+    def Pnt2dOnS(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns U,V coordinates of the point on the surface.
 
@@ -2651,7 +2651,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Pnt2dOnS(self, *args)
 
-    def Pnt2dOnRst(self, *args):
+    def Pnt2dOnRst(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns U,V coordinates of the point on the curve on surface.
 
@@ -2660,7 +2660,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Pnt2dOnRst(self, *args)
 
-    def ParameterOnRst(self, *args):
+    def ParameterOnRst(self, *args) -> "Standard_Real" :
         """
         * Returns parameter of the point on the curve.
 
@@ -2669,7 +2669,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_ParameterOnRst(self, *args)
 
-    def IsTangencyPoint(self, *args):
+    def IsTangencyPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when it is not possible to compute the tangent vectors at PointOnS and/or PointOnRst.
 
@@ -2678,7 +2678,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_IsTangencyPoint(self, *args)
 
-    def TangentOnS(self, *args):
+    def TangentOnS(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnS, in 3d space.
 
@@ -2687,7 +2687,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_TangentOnS(self, *args)
 
-    def Tangent2dOnS(self, *args):
+    def Tangent2dOnS(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnS, in the parametric space of the first surface.
 
@@ -2696,7 +2696,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Tangent2dOnS(self, *args)
 
-    def TangentOnRst(self, *args):
+    def TangentOnRst(self, *args) -> "gp_Vec const" :
         """
         * Returns the tangent vector at PointOnC, in 3d space.
 
@@ -2705,7 +2705,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_TangentOnRst(self, *args)
 
-    def Tangent2dOnRst(self, *args):
+    def Tangent2dOnRst(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the tangent vector at PointOnRst, in the parametric space of the second surface.
 
@@ -2714,7 +2714,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Tangent2dOnRst(self, *args)
 
-    def Decroch(self, *args):
+    def Decroch(self, *args) -> "Standard_Boolean" :
         """
         * Enables implementation of a criterion of decrochage specific to the function.
 
@@ -2729,7 +2729,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_Decroch(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         * Returns in the vector Tolerance the parametric tolerance for each variable; Tol is the tolerance used in 3d space.
 
@@ -2756,7 +2756,7 @@ class Blend_SurfRstFunction(Blend_AppFunction):
         """
         return _Blend.Blend_SurfRstFunction_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "void" :
         """
         * Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.
 

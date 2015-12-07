@@ -118,7 +118,7 @@ import OCC.TopAbs
 class stlapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Write(*args):
+    def Write(*args) -> "void" :
         """
         * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
 
@@ -134,7 +134,7 @@ class stlapi(object):
         return _StlAPI.stlapi_Write(*args)
 
     Write = staticmethod(Write)
-    def Read(*args):
+    def Read(*args) -> "void" :
         """
         * Create a shape from a STL format.
 
@@ -162,7 +162,7 @@ stlapi._kill_pointed = new_instancemethod(_StlAPI.stlapi__kill_pointed,None,stla
 stlapi_swigregister = _StlAPI.stlapi_swigregister
 stlapi_swigregister(stlapi)
 
-def stlapi_Write(*args):
+def stlapi_Write(*args) -> "void" :
   """
     * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
 
@@ -177,7 +177,7 @@ def stlapi_Write(*args):
     """
   return _StlAPI.stlapi_Write(*args)
 
-def stlapi_Read(*args):
+def stlapi_Read(*args) -> "void" :
   """
     * Create a shape from a STL format.
 
@@ -199,7 +199,7 @@ class StlAPI_Reader(object):
 
         """
         _StlAPI.StlAPI_Reader_swiginit(self,_StlAPI.new_StlAPI_Reader(*args))
-    def Read(self, *args):
+    def Read(self, *args) -> "void" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -234,7 +234,7 @@ class StlAPI_Writer(object):
 
         """
         _StlAPI.StlAPI_Writer_swiginit(self,_StlAPI.new_StlAPI_Writer(*args))
-    def SetDeflection(self, *args):
+    def SetDeflection(self, *args) -> "void" :
         """
         * Sets the deflection of the meshing algorithm. Deflection is used, only if relative mode is false
 
@@ -245,7 +245,7 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_SetDeflection(self, *args)
 
-    def SetCoefficient(self, *args):
+    def SetCoefficient(self, *args) -> "void" :
         """
         * Sets the coeffiecient for computation of deflection through relative size of shape. Default value = 0.001
 
@@ -256,23 +256,23 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_SetCoefficient(self, *args)
 
-    def GetRelativeMode(self):
+    def GetRelativeMode(self) -> "Standard_Boolean" :
         """GetRelativeMode(StlAPI_Writer self) -> Standard_Boolean"""
         return _StlAPI.StlAPI_Writer_GetRelativeMode(self)
 
-    def SetRelativeMode(self, *args):
+    def SetRelativeMode(self, *args) -> "void" :
         """SetRelativeMode(StlAPI_Writer self, Standard_Boolean value)"""
         return _StlAPI.StlAPI_Writer_SetRelativeMode(self, *args)
 
-    def GetASCIIMode(self):
+    def GetASCIIMode(self) -> "Standard_Boolean" :
         """GetASCIIMode(StlAPI_Writer self) -> Standard_Boolean"""
         return _StlAPI.StlAPI_Writer_GetASCIIMode(self)
 
-    def SetASCIIMode(self, *args):
+    def SetASCIIMode(self, *args) -> "void" :
         """SetASCIIMode(StlAPI_Writer self, Standard_Boolean value)"""
         return _StlAPI.StlAPI_Writer_SetASCIIMode(self, *args)
 
-    def Write(self, *args):
+    def Write(self, *args) -> "void" :
         """
         * Converts a given shape to STL format and writes it to file with a given filename.
 
@@ -287,7 +287,7 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_Write(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(StlAPI_Writer self)"""
         return _StlAPI.StlAPI_Writer__kill_pointed(self)
 

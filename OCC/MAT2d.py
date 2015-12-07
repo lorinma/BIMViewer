@@ -150,7 +150,7 @@ class MAT2d_Array2OfConnexion(object):
 
         """
         _MAT2d.MAT2d_Array2OfConnexion_swiginit(self,_MAT2d.new_MAT2d_Array2OfConnexion(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_MAT2d_Connexion &
@@ -159,14 +159,14 @@ class MAT2d_Array2OfConnexion(object):
         """
         return _MAT2d.MAT2d_Array2OfConnexion_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_Array2OfConnexion const &" :
         """
         :param Other:
         :type Other: MAT2d_Array2OfConnexion &
@@ -175,7 +175,7 @@ class MAT2d_Array2OfConnexion(object):
         """
         return _MAT2d.MAT2d_Array2OfConnexion_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_Array2OfConnexion const &" :
         """
         :param Other:
         :type Other: MAT2d_Array2OfConnexion &
@@ -184,49 +184,49 @@ class MAT2d_Array2OfConnexion(object):
         """
         return _MAT2d.MAT2d_Array2OfConnexion_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_Array2OfConnexion_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -239,7 +239,7 @@ class MAT2d_Array2OfConnexion(object):
         """
         return _MAT2d.MAT2d_Array2OfConnexion_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :param Row:
         :type Row: int
@@ -250,7 +250,7 @@ class MAT2d_Array2OfConnexion(object):
         """
         return _MAT2d.MAT2d_Array2OfConnexion_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MAT2d_Connexion &" :
         """
         :param Row:
         :type Row: int
@@ -299,7 +299,7 @@ class MAT2d_BiInt(object):
 
         """
         _MAT2d.MAT2d_BiInt_swiginit(self,_MAT2d.new_MAT2d_BiInt(*args))
-    def FirstIndex(self, *args):
+    def FirstIndex(self, *args) -> "void" :
         """
         :rtype: int
 
@@ -310,7 +310,7 @@ class MAT2d_BiInt(object):
         """
         return _MAT2d.MAT2d_BiInt_FirstIndex(self, *args)
 
-    def SecondIndex(self, *args):
+    def SecondIndex(self, *args) -> "void" :
         """
         :rtype: int
 
@@ -321,7 +321,7 @@ class MAT2d_BiInt(object):
         """
         return _MAT2d.MAT2d_BiInt_SecondIndex(self, *args)
 
-    def IsEqual(self, *args):
+    def IsEqual(self, *args) -> "Standard_Boolean" :
         """
         :param B:
         :type B: MAT2d_BiInt &
@@ -361,7 +361,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT2d.MAT2d_Circuit_swiginit(self,_MAT2d.new_MAT2d_Circuit(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param aFigure:
         :type aFigure: MAT2d_SequenceOfSequenceOfGeometry &
@@ -376,7 +376,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_Perform(self, *args)
 
-    def NumberOfItems(self, *args):
+    def NumberOfItems(self, *args) -> "Standard_Integer" :
         """
         * Returns the Number of Items .
 
@@ -385,7 +385,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_NumberOfItems(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom2d_Geometry" :
         """
         * Returns the item at position <Index> in <self>.
 
@@ -396,7 +396,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_Value(self, *args)
 
-    def LineLength(self, *args):
+    def LineLength(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of items on the line <IndexLine>.
 
@@ -407,7 +407,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_LineLength(self, *args)
 
-    def RefToEqui(self, *args):
+    def RefToEqui(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         * Returns the set of index of the items in <self>corresponding to the curve <IndCurve> on the line <IndLine> from the initial figure.
 
@@ -420,7 +420,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_RefToEqui(self, *args)
 
-    def Connexion(self, *args):
+    def Connexion(self, *args) -> "Handle_MAT2d_Connexion" :
         """
         * Returns the Connexion on the item <Index> in me.
 
@@ -431,7 +431,7 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_Connexion(self, *args)
 
-    def ConnexionOn(self, *args):
+    def ConnexionOn(self, *args) -> "Standard_Boolean" :
         """
         * Returns <True> is there is a connexion on the item <Index> in <self>.
 
@@ -442,11 +442,11 @@ class MAT2d_Circuit(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Circuit_ConnexionOn(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_Circuit self)"""
         return _MAT2d.MAT2d_Circuit__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_Circuit" :
         """GetHandle(MAT2d_Circuit self) -> Handle_MAT2d_Circuit"""
         return _MAT2d.MAT2d_Circuit_GetHandle(self)
 
@@ -491,7 +491,7 @@ Handle_MAT2d_Circuit._kill_pointed = new_instancemethod(_MAT2d.Handle_MAT2d_Circ
 Handle_MAT2d_Circuit_swigregister = _MAT2d.Handle_MAT2d_Circuit_swigregister
 Handle_MAT2d_Circuit_swigregister(Handle_MAT2d_Circuit)
 
-def Handle_MAT2d_Circuit_DownCast(*args):
+def Handle_MAT2d_Circuit_DownCast(*args) -> "Handle_MAT2d_Circuit const" :
   return _MAT2d.Handle_MAT2d_Circuit_DownCast(*args)
 Handle_MAT2d_Circuit_DownCast = _MAT2d.Handle_MAT2d_Circuit_DownCast
 
@@ -524,7 +524,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
 
         """
         _MAT2d.MAT2d_Connexion_swiginit(self,_MAT2d.new_MAT2d_Connexion(*args))
-    def IndexFirstLine(self, *args):
+    def IndexFirstLine(self, *args) -> "void" :
         """
         * Returns the Index on the first line.
 
@@ -537,7 +537,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_IndexFirstLine(self, *args)
 
-    def IndexSecondLine(self, *args):
+    def IndexSecondLine(self, *args) -> "void" :
         """
         * Returns the Index on the Second line.
 
@@ -550,7 +550,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_IndexSecondLine(self, *args)
 
-    def IndexItemOnFirst(self, *args):
+    def IndexItemOnFirst(self, *args) -> "void" :
         """
         * Returns the Index of the item on the first line.
 
@@ -563,7 +563,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_IndexItemOnFirst(self, *args)
 
-    def IndexItemOnSecond(self, *args):
+    def IndexItemOnSecond(self, *args) -> "void" :
         """
         * Returns the Index of the item on the second line.
 
@@ -576,7 +576,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_IndexItemOnSecond(self, *args)
 
-    def ParameterOnFirst(self, *args):
+    def ParameterOnFirst(self, *args) -> "void" :
         """
         * Returns the parameter of the point on the firstline.
 
@@ -589,7 +589,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_ParameterOnFirst(self, *args)
 
-    def ParameterOnSecond(self, *args):
+    def ParameterOnSecond(self, *args) -> "void" :
         """
         * Returns the parameter of the point on the secondline.
 
@@ -602,7 +602,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_ParameterOnSecond(self, *args)
 
-    def PointOnFirst(self, *args):
+    def PointOnFirst(self, *args) -> "void" :
         """
         * Returns the point on the firstline.
 
@@ -615,7 +615,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_PointOnFirst(self, *args)
 
-    def PointOnSecond(self, *args):
+    def PointOnSecond(self, *args) -> "void" :
         """
         * Returns the point on the secondline.
 
@@ -628,7 +628,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_PointOnSecond(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "void" :
         """
         * Returns the distance between the two points.
 
@@ -641,7 +641,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_Distance(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "Handle_MAT2d_Connexion" :
         """
         * Returns the reverse connexion of <self>. the firstpoint is the secondpoint. the secondpoint is the firstpoint.
 
@@ -650,7 +650,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_Reverse(self, *args)
 
-    def IsAfter(self, *args):
+    def IsAfter(self, *args) -> "Standard_Boolean" :
         """
         * Returns <True> if my firstPoint is on the same line than the firstpoint of <aConnexion> and my firstpoint is after the firstpoint of <aConnexion> on the line. <aSense> = 1 if <aConnexion> is on the Left of its firstline, else <aSense> = -1.
 
@@ -663,7 +663,7 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_IsAfter(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Print <self>.
 
@@ -676,11 +676,11 @@ class MAT2d_Connexion(OCC.MMgt.MMgt_TShared):
         """
         return _MAT2d.MAT2d_Connexion_Dump(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_Connexion self)"""
         return _MAT2d.MAT2d_Connexion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_Connexion" :
         """GetHandle(MAT2d_Connexion self) -> Handle_MAT2d_Connexion"""
         return _MAT2d.MAT2d_Connexion_GetHandle(self)
 
@@ -730,7 +730,7 @@ Handle_MAT2d_Connexion._kill_pointed = new_instancemethod(_MAT2d.Handle_MAT2d_Co
 Handle_MAT2d_Connexion_swigregister = _MAT2d.Handle_MAT2d_Connexion_swigregister
 Handle_MAT2d_Connexion_swigregister(Handle_MAT2d_Connexion)
 
-def Handle_MAT2d_Connexion_DownCast(*args):
+def Handle_MAT2d_Connexion_DownCast(*args) -> "Handle_MAT2d_Connexion const" :
   return _MAT2d.Handle_MAT2d_Connexion_DownCast(*args)
 Handle_MAT2d_Connexion_DownCast = _MAT2d.Handle_MAT2d_Connexion_DownCast
 
@@ -747,7 +747,7 @@ class MAT2d_DataMapIteratorOfDataMapOfBiIntInteger(OCC.TCollection.TCollection_B
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfBiIntInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfBiIntInteger &
@@ -756,14 +756,14 @@ class MAT2d_DataMapIteratorOfDataMapOfBiIntInteger(OCC.TCollection.TCollection_B
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "MAT2d_BiInt const &" :
         """
         :rtype: MAT2d_BiInt
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
@@ -798,7 +798,7 @@ class MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCo
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfBiIntSequenceOfInteger &
@@ -807,14 +807,14 @@ class MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCo
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "MAT2d_BiInt const &" :
         """
         :rtype: MAT2d_BiInt
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfBiIntSequenceOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
@@ -849,7 +849,7 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerBisec(OCC.TCollection.TCollection_B
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerBisec_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfIntegerBisec(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfIntegerBisec &
@@ -858,14 +858,14 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerBisec(OCC.TCollection.TCollection_B
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerBisec_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerBisec_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bisector_Bisec const &" :
         """
         :rtype: Bisector_Bisec
 
@@ -900,7 +900,7 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion(OCC.TCollection.TCollecti
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfIntegerConnexion &
@@ -909,14 +909,14 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion(OCC.TCollection.TCollecti
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerConnexion_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :rtype: Handle_MAT2d_Connexion
 
@@ -951,7 +951,7 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d(OCC.TCollection.TCollection_B
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfIntegerPnt2d &
@@ -960,14 +960,14 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d(OCC.TCollection.TCollection_B
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerPnt2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d const" :
         """
         :rtype: gp_Pnt2d
 
@@ -1002,7 +1002,7 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion(OCC.TCollection
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfIntegerSequenceOfConnexion &
@@ -1011,14 +1011,14 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion(OCC.TCollection
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerSequenceOfConnexion_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "MAT2d_SequenceOfConnexion const &" :
         """
         :rtype: MAT2d_SequenceOfConnexion
 
@@ -1053,7 +1053,7 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d(OCC.TCollection.TCollection_B
 
         """
         _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d_swiginit(self,_MAT2d.new_MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: MAT2d_DataMapOfIntegerVec2d &
@@ -1062,14 +1062,14 @@ class MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d(OCC.TCollection.TCollection_B
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _MAT2d.MAT2d_DataMapIteratorOfDataMapOfIntegerVec2d_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Vec2d const" :
         """
         :rtype: gp_Vec2d
 
@@ -1106,26 +1106,26 @@ class MAT2d_DataMapNodeOfDataMapOfBiIntInteger(OCC.TCollection.TCollection_MapNo
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfBiIntInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "MAT2d_BiInt &" :
         """
         :rtype: MAT2d_BiInt
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger_Key(self, *args)
 
-    def GetValue(self):
+    def GetValue(self) -> "Standard_Integer" :
         """GetValue(MAT2d_DataMapNodeOfDataMapOfBiIntInteger self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger_GetValue(self)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """SetValue(MAT2d_DataMapNodeOfDataMapOfBiIntInteger self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfBiIntInteger self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfBiIntInteger self) -> Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntInteger_GetHandle(self)
 
@@ -1166,7 +1166,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger._kill_pointed = new_instancemeth
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntInteger_DownCast
 
@@ -1185,25 +1185,25 @@ class MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollec
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "MAT2d_BiInt &" :
         """
         :rtype: MAT2d_BiInt
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger self) -> Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_GetHandle(self)
 
@@ -1243,7 +1243,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger._kill_pointed = new_in
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfBiIntSequenceOfInteger_DownCast
 
@@ -1262,26 +1262,26 @@ class MAT2d_DataMapNodeOfDataMapOfIntegerBisec(OCC.TCollection.TCollection_MapNo
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfIntegerBisec(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT2d_DataMapNodeOfDataMapOfIntegerBisec self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT2d_DataMapNodeOfDataMapOfIntegerBisec self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Bisector_Bisec &" :
         """
         :rtype: Bisector_Bisec
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfIntegerBisec self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfIntegerBisec self) -> Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerBisec_GetHandle(self)
 
@@ -1322,7 +1322,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec._kill_pointed = new_instancemeth
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerBisec_DownCast
 
@@ -1341,26 +1341,26 @@ class MAT2d_DataMapNodeOfDataMapOfIntegerConnexion(OCC.TCollection.TCollection_M
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT2d_DataMapNodeOfDataMapOfIntegerConnexion self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT2d_DataMapNodeOfDataMapOfIntegerConnexion self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT2d_Connexion &" :
         """
         :rtype: Handle_MAT2d_Connexion
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfIntegerConnexion self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfIntegerConnexion self) -> Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_GetHandle(self)
 
@@ -1401,7 +1401,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion._kill_pointed = new_instance
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerConnexion_DownCast
 
@@ -1420,26 +1420,26 @@ class MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d(OCC.TCollection.TCollection_MapNo
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d" :
         """
         :rtype: gp_Pnt2d
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d self) -> Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_GetHandle(self)
 
@@ -1480,7 +1480,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d._kill_pointed = new_instancemeth
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerPnt2d_DownCast
 
@@ -1499,26 +1499,26 @@ class MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCo
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "MAT2d_SequenceOfConnexion &" :
         """
         :rtype: MAT2d_SequenceOfConnexion
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion self) -> Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_GetHandle(self)
 
@@ -1559,7 +1559,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion._kill_pointed = ne
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerSequenceOfConnexion_DownCast
 
@@ -1578,26 +1578,26 @@ class MAT2d_DataMapNodeOfDataMapOfIntegerVec2d(OCC.TCollection.TCollection_MapNo
 
         """
         _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_swiginit(self,_MAT2d.new_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(MAT2d_DataMapNodeOfDataMapOfIntegerVec2d self) -> Standard_Integer"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(MAT2d_DataMapNodeOfDataMapOfIntegerVec2d self, Standard_Integer value)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Vec2d" :
         """
         :rtype: gp_Vec2d
 
         """
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapNodeOfDataMapOfIntegerVec2d self)"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d" :
         """GetHandle(MAT2d_DataMapNodeOfDataMapOfIntegerVec2d self) -> Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d"""
         return _MAT2d.MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_GetHandle(self)
 
@@ -1638,7 +1638,7 @@ Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d._kill_pointed = new_instancemeth
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_swigregister = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_swigregister
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_swigregister(Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d)
 
-def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_DownCast(*args):
+def Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_DownCast(*args) -> "Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d const" :
   return _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_DownCast(*args)
 Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_DownCast = _MAT2d.Handle_MAT2d_DataMapNodeOfDataMapOfIntegerVec2d_DownCast
 
@@ -1653,7 +1653,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT2d.MAT2d_DataMapOfBiIntInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapOfBiIntInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfBiIntInteger &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfBiIntInteger &
@@ -1662,7 +1662,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfBiIntInteger &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfBiIntInteger &
@@ -1671,7 +1671,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1680,14 +1680,14 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1698,7 +1698,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1707,7 +1707,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1716,7 +1716,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1725,7 +1725,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Standard_Integer &" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1734,7 +1734,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1743,7 +1743,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1752,7 +1752,7 @@ class MAT2d_DataMapOfBiIntInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfBiIntInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfBiIntInteger self)"""
         return _MAT2d.MAT2d_DataMapOfBiIntInteger__kill_pointed(self)
 
@@ -1790,7 +1790,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
 
         """
         _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_swiginit(self,_MAT2d.new_MAT2d_DataMapOfBiIntSequenceOfInteger(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfBiIntSequenceOfInteger &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfBiIntSequenceOfInteger &
@@ -1799,7 +1799,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfBiIntSequenceOfInteger &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfBiIntSequenceOfInteger &
@@ -1808,7 +1808,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1817,14 +1817,14 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1835,7 +1835,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1844,7 +1844,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1853,7 +1853,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TColStd_SequenceOfInteger const &" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1862,7 +1862,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TColStd_SequenceOfInteger &" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1871,7 +1871,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1880,7 +1880,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: MAT2d_BiInt &
@@ -1889,7 +1889,7 @@ class MAT2d_DataMapOfBiIntSequenceOfInteger(OCC.TCollection.TCollection_BasicMap
         """
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfBiIntSequenceOfInteger self)"""
         return _MAT2d.MAT2d_DataMapOfBiIntSequenceOfInteger__kill_pointed(self)
 
@@ -1927,7 +1927,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT2d.MAT2d_DataMapOfIntegerBisec_swiginit(self,_MAT2d.new_MAT2d_DataMapOfIntegerBisec(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfIntegerBisec &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerBisec &
@@ -1936,7 +1936,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfIntegerBisec &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerBisec &
@@ -1945,7 +1945,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1954,14 +1954,14 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1972,7 +1972,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1981,7 +1981,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1990,7 +1990,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Bisector_Bisec const &" :
         """
         :param K:
         :type K: int &
@@ -1999,7 +1999,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Bisector_Bisec &" :
         """
         :param K:
         :type K: int &
@@ -2008,7 +2008,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2017,7 +2017,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2026,7 +2026,7 @@ class MAT2d_DataMapOfIntegerBisec(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerBisec_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfIntegerBisec self)"""
         return _MAT2d.MAT2d_DataMapOfIntegerBisec__kill_pointed(self)
 
@@ -2064,7 +2064,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT2d.MAT2d_DataMapOfIntegerConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapOfIntegerConnexion(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfIntegerConnexion &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerConnexion &
@@ -2073,7 +2073,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfIntegerConnexion &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerConnexion &
@@ -2082,7 +2082,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2091,14 +2091,14 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2109,7 +2109,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2118,7 +2118,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2127,7 +2127,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :param K:
         :type K: int &
@@ -2136,7 +2136,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_MAT2d_Connexion &" :
         """
         :param K:
         :type K: int &
@@ -2145,7 +2145,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2154,7 +2154,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2163,7 +2163,7 @@ class MAT2d_DataMapOfIntegerConnexion(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfIntegerConnexion self)"""
         return _MAT2d.MAT2d_DataMapOfIntegerConnexion__kill_pointed(self)
 
@@ -2201,7 +2201,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT2d.MAT2d_DataMapOfIntegerPnt2d_swiginit(self,_MAT2d.new_MAT2d_DataMapOfIntegerPnt2d(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfIntegerPnt2d &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerPnt2d &
@@ -2210,7 +2210,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfIntegerPnt2d &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerPnt2d &
@@ -2219,7 +2219,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2228,14 +2228,14 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2246,7 +2246,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2255,7 +2255,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2264,7 +2264,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "gp_Pnt2d const" :
         """
         :param K:
         :type K: int &
@@ -2273,7 +2273,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "gp_Pnt2d" :
         """
         :param K:
         :type K: int &
@@ -2282,7 +2282,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2291,7 +2291,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2300,7 +2300,7 @@ class MAT2d_DataMapOfIntegerPnt2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfIntegerPnt2d self)"""
         return _MAT2d.MAT2d_DataMapOfIntegerPnt2d__kill_pointed(self)
 
@@ -2338,7 +2338,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
 
         """
         _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_swiginit(self,_MAT2d.new_MAT2d_DataMapOfIntegerSequenceOfConnexion(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfIntegerSequenceOfConnexion &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerSequenceOfConnexion &
@@ -2347,7 +2347,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfIntegerSequenceOfConnexion &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerSequenceOfConnexion &
@@ -2356,7 +2356,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2365,14 +2365,14 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2383,7 +2383,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2392,7 +2392,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2401,7 +2401,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "MAT2d_SequenceOfConnexion const &" :
         """
         :param K:
         :type K: int &
@@ -2410,7 +2410,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "MAT2d_SequenceOfConnexion &" :
         """
         :param K:
         :type K: int &
@@ -2419,7 +2419,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2428,7 +2428,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2437,7 +2437,7 @@ class MAT2d_DataMapOfIntegerSequenceOfConnexion(OCC.TCollection.TCollection_Basi
         """
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfIntegerSequenceOfConnexion self)"""
         return _MAT2d.MAT2d_DataMapOfIntegerSequenceOfConnexion__kill_pointed(self)
 
@@ -2475,7 +2475,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
 
         """
         _MAT2d.MAT2d_DataMapOfIntegerVec2d_swiginit(self,_MAT2d.new_MAT2d_DataMapOfIntegerVec2d(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_DataMapOfIntegerVec2d &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerVec2d &
@@ -2484,7 +2484,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_DataMapOfIntegerVec2d &" :
         """
         :param Other:
         :type Other: MAT2d_DataMapOfIntegerVec2d &
@@ -2493,7 +2493,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2502,14 +2502,14 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2520,7 +2520,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2529,7 +2529,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2538,7 +2538,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "gp_Vec2d const" :
         """
         :param K:
         :type K: int &
@@ -2547,7 +2547,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "gp_Vec2d" :
         """
         :param K:
         :type K: int &
@@ -2556,7 +2556,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2565,7 +2565,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2574,7 +2574,7 @@ class MAT2d_DataMapOfIntegerVec2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_DataMapOfIntegerVec2d self)"""
         return _MAT2d.MAT2d_DataMapOfIntegerVec2d__kill_pointed(self)
 
@@ -2604,7 +2604,7 @@ MAT2d_DataMapOfIntegerVec2d_swigregister(MAT2d_DataMapOfIntegerVec2d)
 class MAT2d_MapBiIntHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         :param Key1:
         :type Key1: MAT2d_BiInt &
@@ -2616,7 +2616,7 @@ class MAT2d_MapBiIntHasher(object):
         return _MAT2d.MAT2d_MapBiIntHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         :param Key1:
         :type Key1: MAT2d_BiInt &
@@ -2642,7 +2642,7 @@ MAT2d_MapBiIntHasher._kill_pointed = new_instancemethod(_MAT2d.MAT2d_MapBiIntHas
 MAT2d_MapBiIntHasher_swigregister = _MAT2d.MAT2d_MapBiIntHasher_swigregister
 MAT2d_MapBiIntHasher_swigregister(MAT2d_MapBiIntHasher)
 
-def MAT2d_MapBiIntHasher_HashCode(*args):
+def MAT2d_MapBiIntHasher_HashCode(*args) -> "Standard_Integer" :
   """
     :param Key1:
     :type Key1: MAT2d_BiInt &
@@ -2653,7 +2653,7 @@ def MAT2d_MapBiIntHasher_HashCode(*args):
     """
   return _MAT2d.MAT2d_MapBiIntHasher_HashCode(*args)
 
-def MAT2d_MapBiIntHasher_IsEqual(*args):
+def MAT2d_MapBiIntHasher_IsEqual(*args) -> "Standard_Boolean" :
   """
     :param Key1:
     :type Key1: MAT2d_BiInt &
@@ -2673,7 +2673,7 @@ class MAT2d_Mat2d(object):
 
         """
         _MAT2d.MAT2d_Mat2d_swiginit(self,_MAT2d.new_MAT2d_Mat2d(*args))
-    def CreateMat(self, *args):
+    def CreateMat(self, *args) -> "void" :
         """
         :param aTool:
         :type aTool: MAT2d_Tool2d &
@@ -2682,49 +2682,49 @@ class MAT2d_Mat2d(object):
         """
         return _MAT2d.MAT2d_Mat2d_CreateMat(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT2d.MAT2d_Mat2d_IsDone(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_Mat2d_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT2d.MAT2d_Mat2d_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_Mat2d_Next(self, *args)
 
-    def bisector(self, *args):
+    def bisector(self, *args) -> "Handle_MAT_Bisector" :
         """
         :rtype: Handle_MAT_Bisector
 
         """
         return _MAT2d.MAT2d_Mat2d_bisector(self, *args)
 
-    def SemiInfinite(self, *args):
+    def SemiInfinite(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _MAT2d.MAT2d_Mat2d_SemiInfinite(self, *args)
 
-    def NumberOfBisectors(self, *args):
+    def NumberOfBisectors(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -2760,7 +2760,7 @@ class MAT2d_MiniPath(object):
 
         """
         _MAT2d.MAT2d_MiniPath_swiginit(self,_MAT2d.new_MAT2d_MiniPath(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the path to link the lines in <Figure>. the path starts on the line of index <IndStart> <Sense> = True if the Circuit turns in the trigonometric sense.
 
@@ -2775,7 +2775,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_Perform(self, *args)
 
-    def RunOnConnexions(self, *args):
+    def RunOnConnexions(self, *args) -> "void" :
         """
         * Run on the set of connexions to compute the path. the path is an exploration of the tree which contains the connexions and their reverses. if the tree of connexions is  A  / B E  / \ C D F  the path is A->B, B->C, C->B, B->D, D->B, B->A, A->E, E->F, F->E, E->A.
 
@@ -2784,7 +2784,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_RunOnConnexions(self, *args)
 
-    def Path(self, *args):
+    def Path(self, *args) -> "MAT2d_SequenceOfConnexion const &" :
         """
         * Returns the sequence of connexions corresponding to the path.
 
@@ -2793,7 +2793,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_Path(self, *args)
 
-    def IsConnexionsFrom(self, *args):
+    def IsConnexionsFrom(self, *args) -> "Standard_Boolean" :
         """
         * Returns <True> if there is one Connexion which starts on line designed by <Index>.
 
@@ -2804,7 +2804,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_IsConnexionsFrom(self, *args)
 
-    def ConnexionsFrom(self, *args):
+    def ConnexionsFrom(self, *args) -> "MAT2d_SequenceOfConnexion &" :
         """
         * Returns the connexions which start on line designed by <Index>.
 
@@ -2815,7 +2815,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_ConnexionsFrom(self, *args)
 
-    def IsRoot(self, *args):
+    def IsRoot(self, *args) -> "Standard_Boolean" :
         """
         * Returns <True> if the line designed by <Index> is the root.
 
@@ -2826,7 +2826,7 @@ class MAT2d_MiniPath(object):
         """
         return _MAT2d.MAT2d_MiniPath_IsRoot(self, *args)
 
-    def Father(self, *args):
+    def Father(self, *args) -> "Handle_MAT2d_Connexion" :
         """
         * Returns the connexion which ends on line designed by <Index>.
 
@@ -2871,18 +2871,18 @@ class MAT2d_SequenceNodeOfSequenceOfConnexion(OCC.TCollection.TCollection_SeqNod
 
         """
         _MAT2d.MAT2d_SequenceNodeOfSequenceOfConnexion_swiginit(self,_MAT2d.new_MAT2d_SequenceNodeOfSequenceOfConnexion(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT2d_Connexion &" :
         """
         :rtype: Handle_MAT2d_Connexion
 
         """
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfConnexion_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_SequenceNodeOfSequenceOfConnexion self)"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfConnexion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_SequenceNodeOfSequenceOfConnexion" :
         """GetHandle(MAT2d_SequenceNodeOfSequenceOfConnexion self) -> Handle_MAT2d_SequenceNodeOfSequenceOfConnexion"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfConnexion_GetHandle(self)
 
@@ -2921,7 +2921,7 @@ Handle_MAT2d_SequenceNodeOfSequenceOfConnexion._kill_pointed = new_instancemetho
 Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_swigregister = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_swigregister
 Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_swigregister(Handle_MAT2d_SequenceNodeOfSequenceOfConnexion)
 
-def Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_DownCast(*args):
+def Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_DownCast(*args) -> "Handle_MAT2d_SequenceNodeOfSequenceOfConnexion const" :
   return _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_DownCast(*args)
 Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_DownCast = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfConnexion_DownCast
 
@@ -2940,18 +2940,18 @@ class MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve(OCC.TCollection.TCollection_
 
         """
         _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_swiginit(self,_MAT2d.new_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TColGeom2d_SequenceOfCurve &" :
         """
         :rtype: TColGeom2d_SequenceOfCurve
 
         """
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve self)"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve" :
         """GetHandle(MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve self) -> Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_GetHandle(self)
 
@@ -2990,7 +2990,7 @@ Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve._kill_pointed = new_instanc
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_swigregister = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_swigregister
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_swigregister(Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve)
 
-def Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_DownCast(*args):
+def Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_DownCast(*args) -> "Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve const" :
   return _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_DownCast(*args)
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_DownCast = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfCurve_DownCast
 
@@ -3009,18 +3009,18 @@ class MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry(OCC.TCollection.TCollecti
 
         """
         _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_swiginit(self,_MAT2d.new_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TColGeom2d_SequenceOfGeometry &" :
         """
         :rtype: TColGeom2d_SequenceOfGeometry
 
         """
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry self)"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry" :
         """GetHandle(MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry self) -> Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry"""
         return _MAT2d.MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_GetHandle(self)
 
@@ -3059,7 +3059,7 @@ Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry._kill_pointed = new_inst
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_swigregister = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_swigregister
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_swigregister(Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry)
 
-def Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_DownCast(*args):
+def Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_DownCast(*args) -> "Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry const" :
   return _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_DownCast(*args)
 Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_DownCast = _MAT2d.Handle_MAT2d_SequenceNodeOfSequenceOfSequenceOfGeometry_DownCast
 
@@ -3072,14 +3072,14 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _MAT2d.MAT2d_SequenceOfConnexion_swiginit(self,_MAT2d.new_MAT2d_SequenceOfConnexion(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_SequenceOfConnexion const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfConnexion &
@@ -3088,7 +3088,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_SequenceOfConnexion const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfConnexion &
@@ -3097,7 +3097,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT2d_Connexion &
@@ -3110,7 +3110,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_MAT2d_Connexion &
@@ -3123,7 +3123,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3140,7 +3140,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3157,21 +3157,21 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :rtype: Handle_MAT2d_Connexion
 
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :rtype: Handle_MAT2d_Connexion
 
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3182,7 +3182,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_MAT2d_Connexion const &" :
         """
         :param Index:
         :type Index: int
@@ -3191,7 +3191,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3202,7 +3202,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_MAT2d_Connexion &" :
         """
         :param Index:
         :type Index: int
@@ -3211,7 +3211,7 @@ class MAT2d_SequenceOfConnexion(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfConnexion_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3261,14 +3261,14 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _MAT2d.MAT2d_SequenceOfSequenceOfCurve_swiginit(self,_MAT2d.new_MAT2d_SequenceOfSequenceOfCurve(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_SequenceOfSequenceOfCurve const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfSequenceOfCurve &
@@ -3277,7 +3277,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_SequenceOfSequenceOfCurve const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfSequenceOfCurve &
@@ -3286,7 +3286,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TColGeom2d_SequenceOfCurve &
@@ -3299,7 +3299,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TColGeom2d_SequenceOfCurve &
@@ -3312,7 +3312,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3329,7 +3329,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3346,21 +3346,21 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TColGeom2d_SequenceOfCurve const &" :
         """
         :rtype: TColGeom2d_SequenceOfCurve
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TColGeom2d_SequenceOfCurve const &" :
         """
         :rtype: TColGeom2d_SequenceOfCurve
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3371,7 +3371,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColGeom2d_SequenceOfCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -3380,7 +3380,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3391,7 +3391,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColGeom2d_SequenceOfCurve &" :
         """
         :param Index:
         :type Index: int
@@ -3400,7 +3400,7 @@ class MAT2d_SequenceOfSequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfCurve_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3450,14 +3450,14 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_swiginit(self,_MAT2d.new_MAT2d_SequenceOfSequenceOfGeometry(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "MAT2d_SequenceOfSequenceOfGeometry const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfSequenceOfGeometry &
@@ -3466,7 +3466,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "MAT2d_SequenceOfSequenceOfGeometry const &" :
         """
         :param Other:
         :type Other: MAT2d_SequenceOfSequenceOfGeometry &
@@ -3475,7 +3475,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TColGeom2d_SequenceOfGeometry &
@@ -3488,7 +3488,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TColGeom2d_SequenceOfGeometry &
@@ -3501,7 +3501,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3518,7 +3518,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3535,21 +3535,21 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TColGeom2d_SequenceOfGeometry const &" :
         """
         :rtype: TColGeom2d_SequenceOfGeometry
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TColGeom2d_SequenceOfGeometry const &" :
         """
         :rtype: TColGeom2d_SequenceOfGeometry
 
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3560,7 +3560,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColGeom2d_SequenceOfGeometry const &" :
         """
         :param Index:
         :type Index: int
@@ -3569,7 +3569,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3580,7 +3580,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColGeom2d_SequenceOfGeometry &" :
         """
         :param Index:
         :type Index: int
@@ -3589,7 +3589,7 @@ class MAT2d_SequenceOfSequenceOfGeometry(OCC.TCollection.TCollection_BaseSequenc
         """
         return _MAT2d.MAT2d_SequenceOfSequenceOfGeometry_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3641,7 +3641,7 @@ class MAT2d_Tool2d(object):
 
         """
         _MAT2d.MAT2d_Tool2d_swiginit(self,_MAT2d.new_MAT2d_Tool2d(*args))
-    def Sense(self, *args):
+    def Sense(self, *args) -> "void" :
         """
         * //!<aSide> defines the side of the computation of the map.
 
@@ -3652,7 +3652,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_Sense(self, *args)
 
-    def InitItems(self, *args):
+    def InitItems(self, *args) -> "void" :
         """
         * InitItems cuts the line in Items.  this Items are the geometrics representations of  the BasicElts from MAT.
 
@@ -3663,7 +3663,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_InitItems(self, *args)
 
-    def NumberOfItems(self, *args):
+    def NumberOfItems(self, *args) -> "Standard_Integer" :
         """
         * Returns the Number of Items .
 
@@ -3672,7 +3672,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_NumberOfItems(self, *args)
 
-    def ToleranceOfConfusion(self, *args):
+    def ToleranceOfConfusion(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance to test the confusion of two points.
 
@@ -3681,7 +3681,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_ToleranceOfConfusion(self, *args)
 
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "Standard_Integer" :
         """
         * Creates the point at the origin of the bisector between  anitem and the previous item.  dist is the distance from the FirstPoint to <anitem>.  Returns the index of this point in <theGeomPnts>.
 
@@ -3694,7 +3694,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_FirstPoint(self, *args)
 
-    def TangentBefore(self, *args):
+    def TangentBefore(self, *args) -> "Standard_Integer" :
         """
         * Creates the Tangent at the end of the Item defined  by <anitem>. Returns the index of this vector in  <theGeomVecs>
 
@@ -3705,7 +3705,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_TangentBefore(self, *args)
 
-    def TangentAfter(self, *args):
+    def TangentAfter(self, *args) -> "Standard_Integer" :
         """
         * Creates the Reversed Tangent at the origin of the Item  defined by <anitem>. Returns the index of this vector in  <theGeomVecs>
 
@@ -3716,7 +3716,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_TangentAfter(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "Standard_Integer" :
         """
         * Creates the Tangent at the end of the bisector defined  by <bisector>. Returns the index of this vector in  <theGeomVecs>
 
@@ -3727,7 +3727,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_Tangent(self, *args)
 
-    def CreateBisector(self, *args):
+    def CreateBisector(self, *args) -> "void" :
         """
         * Creates the geometric bisector defined by <abisector>.
 
@@ -3738,7 +3738,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_CreateBisector(self, *args)
 
-    def TrimBisector(self, *args):
+    def TrimBisector(self, *args) -> "Standard_Boolean" :
         """
         * Trims the geometric bisector by the <firstparameter>  of <abisector>.  If the parameter is out of the bisector, Return False.  else Return True.
 
@@ -3757,7 +3757,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_TrimBisector(self, *args)
 
-    def IntersectBisector(self, *args):
+    def IntersectBisector(self, *args) -> "Standard_Real" :
         """
         * Computes the point of intersection between the bisectors defined by <bisectorone> and <bisectortwo> . If this point exists, <intpnt> is its index in <theGeomPnts> and Return the distance of the point from the bisector else Return <RealLast>.
 
@@ -3772,7 +3772,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_IntersectBisector(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Standard_Real" :
         """
         * Returns the distance between the two points designed by their parameters on <abisector>.
 
@@ -3787,7 +3787,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_Distance(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * displays informations about the bisector defined by  <bisector>.
 
@@ -3800,7 +3800,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_Dump(self, *args)
 
-    def GeomBis(self, *args):
+    def GeomBis(self, *args) -> "Bisector_Bisec const &" :
         """
         * Returns the <Bisec> of index <Index> in  <theGeomBisectors>.
 
@@ -3811,7 +3811,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_GeomBis(self, *args)
 
-    def GeomElt(self, *args):
+    def GeomElt(self, *args) -> "Handle_Geom2d_Geometry" :
         """
         * Returns the Geometry of index <Index> in <theGeomElts>.
 
@@ -3822,7 +3822,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_GeomElt(self, *args)
 
-    def GeomPnt(self, *args):
+    def GeomPnt(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the point of index <Index> in the <theGeomPnts>.
 
@@ -3833,7 +3833,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_GeomPnt(self, *args)
 
-    def GeomVec(self, *args):
+    def GeomVec(self, *args) -> "gp_Vec2d const" :
         """
         * Returns the vector of index <Index> in the  <theGeomVecs>.
 
@@ -3844,7 +3844,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_GeomVec(self, *args)
 
-    def Circuit(self, *args):
+    def Circuit(self, *args) -> "Handle_MAT2d_Circuit" :
         """
         * 
 
@@ -3853,7 +3853,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_Circuit(self, *args)
 
-    def BisecFusion(self, *args):
+    def BisecFusion(self, *args) -> "void" :
         """
         :param Index1:
         :type Index1: int
@@ -3864,7 +3864,7 @@ class MAT2d_Tool2d(object):
         """
         return _MAT2d.MAT2d_Tool2d_BisecFusion(self, *args)
 
-    def ChangeGeomBis(self, *args):
+    def ChangeGeomBis(self, *args) -> "Bisector_Bisec &" :
         """
         * Returns the <Bisec> of index <Index> in  <theGeomBisectors>.
 

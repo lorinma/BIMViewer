@@ -110,23 +110,23 @@ class Display3d(object):
         """__init__(Display3d self) -> Display3d"""
         _Visualization.Display3d_swiginit(self,_Visualization.new_Display3d())
     __swig_destroy__ = _Visualization.delete_Display3d
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """Init(Display3d self, long const handle)"""
         return _Visualization.Display3d_Init(self, *args)
 
-    def GetView(self):
+    def GetView(self) -> "Handle_V3d_View &" :
         """GetView(Display3d self) -> Handle_V3d_View &"""
         return _Visualization.Display3d_GetView(self)
 
-    def GetViewer(self):
+    def GetViewer(self) -> "Handle_V3d_Viewer &" :
         """GetViewer(Display3d self) -> Handle_V3d_Viewer &"""
         return _Visualization.Display3d_GetViewer(self)
 
-    def GetContext(self):
+    def GetContext(self) -> "Handle_AIS_InteractiveContext" :
         """GetContext(Display3d self) -> Handle_AIS_InteractiveContext"""
         return _Visualization.Display3d_GetContext(self)
 
-    def Test(self):
+    def Test(self) -> "void" :
         """Test(Display3d self)"""
         return _Visualization.Display3d_Test(self)
 

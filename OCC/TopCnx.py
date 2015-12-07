@@ -122,7 +122,7 @@ class TopCnx_EdgeFaceTransition(object):
 
         """
         _TopCnx.TopCnx_EdgeFaceTransition_swiginit(self,_TopCnx.new_TopCnx_EdgeFaceTransition(*args))
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Initialize the algorithm with the local description of the edge.
 
@@ -143,7 +143,7 @@ class TopCnx_EdgeFaceTransition(object):
         """
         return _TopCnx.TopCnx_EdgeFaceTransition_Reset(self, *args)
 
-    def AddInterference(self, *args):
+    def AddInterference(self, *args) -> "void" :
         """
         * Add a curve element to the boundary. Or is the orientation of the interference on the boundary curve. Tr is the transition of the interference. BTr is the boundary transition of the interference.
 
@@ -166,7 +166,7 @@ class TopCnx_EdgeFaceTransition(object):
         """
         return _TopCnx.TopCnx_EdgeFaceTransition_AddInterference(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the current cumulated transition.
 
@@ -175,7 +175,7 @@ class TopCnx_EdgeFaceTransition(object):
         """
         return _TopCnx.TopCnx_EdgeFaceTransition_Transition(self, *args)
 
-    def BoundaryTransition(self, *args):
+    def BoundaryTransition(self, *args) -> "TopAbs_Orientation" :
         """
         * Returns the current cumulated BoundaryTransition.
 

@@ -139,7 +139,7 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
 
         """
         _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_swiginit(self,_TFunction.new_TFunction_Array1OfDataMapOfGUIDDriver(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TFunction_DataMapOfGUIDDriver &
@@ -148,21 +148,21 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TFunction_Array1OfDataMapOfGUIDDriver const &" :
         """
         :param Other:
         :type Other: TFunction_Array1OfDataMapOfGUIDDriver &
@@ -171,7 +171,7 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TFunction_Array1OfDataMapOfGUIDDriver const &" :
         """
         :param Other:
         :type Other: TFunction_Array1OfDataMapOfGUIDDriver &
@@ -180,28 +180,28 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -212,7 +212,7 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TFunction_DataMapOfGUIDDriver const &" :
         """
         :param Index:
         :type Index: int
@@ -221,7 +221,7 @@ class TFunction_Array1OfDataMapOfGUIDDriver(object):
         """
         return _TFunction.TFunction_Array1OfDataMapOfGUIDDriver_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TFunction_DataMapOfGUIDDriver &" :
         """
         :param Index:
         :type Index: int
@@ -266,7 +266,7 @@ class TFunction_DataMapIteratorOfDataMapOfGUIDDriver(OCC.TCollection.TCollection
 
         """
         _TFunction.TFunction_DataMapIteratorOfDataMapOfGUIDDriver_swiginit(self,_TFunction.new_TFunction_DataMapIteratorOfDataMapOfGUIDDriver(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TFunction_DataMapOfGUIDDriver &
@@ -275,14 +275,14 @@ class TFunction_DataMapIteratorOfDataMapOfGUIDDriver(OCC.TCollection.TCollection
         """
         return _TFunction.TFunction_DataMapIteratorOfDataMapOfGUIDDriver_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_GUID const &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TFunction.TFunction_DataMapIteratorOfDataMapOfGUIDDriver_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TFunction_Driver const &" :
         """
         :rtype: Handle_TFunction_Driver
 
@@ -317,7 +317,7 @@ class TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel(OCC.TCollection.TColl
 
         """
         _TFunction.TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel_swiginit(self,_TFunction.new_TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TFunction_DataMapOfLabelListOfLabel &
@@ -326,14 +326,14 @@ class TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel(OCC.TCollection.TColl
         """
         return _TFunction.TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TFunction.TFunction_DataMapIteratorOfDataMapOfLabelListOfLabel_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_LabelList const &" :
         """
         :rtype: TDF_LabelList
 
@@ -370,25 +370,25 @@ class TFunction_DataMapNodeOfDataMapOfGUIDDriver(OCC.TCollection.TCollection_Map
 
         """
         _TFunction.TFunction_DataMapNodeOfDataMapOfGUIDDriver_swiginit(self,_TFunction.new_TFunction_DataMapNodeOfDataMapOfGUIDDriver(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_GUID &" :
         """
         :rtype: Standard_GUID
 
         """
         return _TFunction.TFunction_DataMapNodeOfDataMapOfGUIDDriver_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TFunction_Driver &" :
         """
         :rtype: Handle_TFunction_Driver
 
         """
         return _TFunction.TFunction_DataMapNodeOfDataMapOfGUIDDriver_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DataMapNodeOfDataMapOfGUIDDriver self)"""
         return _TFunction.TFunction_DataMapNodeOfDataMapOfGUIDDriver__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver" :
         """GetHandle(TFunction_DataMapNodeOfDataMapOfGUIDDriver self) -> Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver"""
         return _TFunction.TFunction_DataMapNodeOfDataMapOfGUIDDriver_GetHandle(self)
 
@@ -428,7 +428,7 @@ Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver._kill_pointed = new_instanceme
 Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_swigregister = _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_swigregister
 Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_swigregister(Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver)
 
-def Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_DownCast(*args):
+def Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_DownCast(*args) -> "Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver const" :
   return _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_DownCast(*args)
 Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_DownCast = _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfGUIDDriver_DownCast
 
@@ -447,25 +447,25 @@ class TFunction_DataMapNodeOfDataMapOfLabelListOfLabel(OCC.TCollection.TCollecti
 
         """
         _TFunction.TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_swiginit(self,_TFunction.new_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TFunction.TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_LabelList &" :
         """
         :rtype: TDF_LabelList
 
         """
         return _TFunction.TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DataMapNodeOfDataMapOfLabelListOfLabel self)"""
         return _TFunction.TFunction_DataMapNodeOfDataMapOfLabelListOfLabel__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel" :
         """GetHandle(TFunction_DataMapNodeOfDataMapOfLabelListOfLabel self) -> Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel"""
         return _TFunction.TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_GetHandle(self)
 
@@ -505,7 +505,7 @@ Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel._kill_pointed = new_inst
 Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_swigregister = _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_swigregister
 Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_swigregister(Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel)
 
-def Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_DownCast(*args):
+def Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_DownCast(*args) -> "Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel const" :
   return _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_DownCast(*args)
 Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_DownCast = _TFunction.Handle_TFunction_DataMapNodeOfDataMapOfLabelListOfLabel_DownCast
 
@@ -520,7 +520,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TFunction.TFunction_DataMapOfGUIDDriver_swiginit(self,_TFunction.new_TFunction_DataMapOfGUIDDriver(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TFunction_DataMapOfGUIDDriver &" :
         """
         :param Other:
         :type Other: TFunction_DataMapOfGUIDDriver &
@@ -529,7 +529,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TFunction_DataMapOfGUIDDriver &" :
         """
         :param Other:
         :type Other: TFunction_DataMapOfGUIDDriver &
@@ -538,7 +538,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -547,14 +547,14 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -565,7 +565,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -574,7 +574,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -583,7 +583,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_TFunction_Driver const &" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -592,7 +592,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_TFunction_Driver &" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -601,7 +601,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -610,7 +610,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Standard_GUID &
@@ -619,7 +619,7 @@ class TFunction_DataMapOfGUIDDriver(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfGUIDDriver_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DataMapOfGUIDDriver self)"""
         return _TFunction.TFunction_DataMapOfGUIDDriver__kill_pointed(self)
 
@@ -657,7 +657,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TFunction.TFunction_DataMapOfLabelListOfLabel_swiginit(self,_TFunction.new_TFunction_DataMapOfLabelListOfLabel(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TFunction_DataMapOfLabelListOfLabel &" :
         """
         :param Other:
         :type Other: TFunction_DataMapOfLabelListOfLabel &
@@ -666,7 +666,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TFunction_DataMapOfLabelListOfLabel &" :
         """
         :param Other:
         :type Other: TFunction_DataMapOfLabelListOfLabel &
@@ -675,7 +675,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -684,14 +684,14 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -702,7 +702,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -711,7 +711,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -720,7 +720,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TDF_LabelList const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -729,7 +729,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TDF_LabelList &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -738,7 +738,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -747,7 +747,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -756,7 +756,7 @@ class TFunction_DataMapOfLabelListOfLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DataMapOfLabelListOfLabel_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DataMapOfLabelListOfLabel self)"""
         return _TFunction.TFunction_DataMapOfLabelListOfLabel__kill_pointed(self)
 
@@ -796,7 +796,7 @@ class TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel(OCC.TCollection.TColl
 
         """
         _TFunction.TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel_swiginit(self,_TFunction.new_TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TFunction_DoubleMapOfIntegerLabel &
@@ -805,14 +805,14 @@ class TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel(OCC.TCollection.TColl
         """
         return _TFunction.TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel_Initialize(self, *args)
 
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_DoubleMapIteratorOfDoubleMapOfIntegerLabel_Key1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
@@ -851,33 +851,33 @@ class TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel(OCC.TCollection.TCollecti
 
         """
         _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_swiginit(self,_TFunction.new_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel(*args))
-    def GetKey1(self):
+    def GetKey1(self) -> "Standard_Integer" :
         """GetKey1(TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel self) -> Standard_Integer"""
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_GetKey1(self)
 
-    def SetKey1(self, *args):
+    def SetKey1(self, *args) -> "void" :
         """SetKey1(TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel self, Standard_Integer value)"""
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_SetKey1(self, *args)
 
-    def Key2(self, *args):
+    def Key2(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_Key2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_Next2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel self)"""
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel" :
         """GetHandle(TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel self) -> Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel"""
         return _TFunction.TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_GetHandle(self)
 
@@ -919,7 +919,7 @@ Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel._kill_pointed = new_inst
 Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_swigregister = _TFunction.Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_swigregister
 Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_swigregister(Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel)
 
-def Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_DownCast(*args):
+def Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_DownCast(*args) -> "Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel const" :
   return _TFunction.Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_DownCast(*args)
 Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_DownCast = _TFunction.Handle_TFunction_DoubleMapNodeOfDoubleMapOfIntegerLabel_DownCast
 
@@ -934,7 +934,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TFunction.TFunction_DoubleMapOfIntegerLabel_swiginit(self,_TFunction.new_TFunction_DoubleMapOfIntegerLabel(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TFunction_DoubleMapOfIntegerLabel &" :
         """
         :param Other:
         :type Other: TFunction_DoubleMapOfIntegerLabel &
@@ -943,7 +943,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TFunction_DoubleMapOfIntegerLabel &" :
         """
         :param Other:
         :type Other: TFunction_DoubleMapOfIntegerLabel &
@@ -952,7 +952,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -961,14 +961,14 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "void" :
         """
         :param K1:
         :type K1: int &
@@ -979,7 +979,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Bind(self, *args)
 
-    def AreBound(self, *args):
+    def AreBound(self, *args) -> "Standard_Boolean" :
         """
         :param K1:
         :type K1: int &
@@ -990,7 +990,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_AreBound(self, *args)
 
-    def IsBound1(self, *args):
+    def IsBound1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -999,7 +999,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_IsBound1(self, *args)
 
-    def IsBound2(self, *args):
+    def IsBound2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1008,7 +1008,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_IsBound2(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "TDF_Label const &" :
         """
         :param K:
         :type K: int &
@@ -1017,7 +1017,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Find1(self, *args)
 
-    def Find2(self, *args):
+    def Find2(self, *args) -> "Standard_Integer const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1026,7 +1026,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_Find2(self, *args)
 
-    def UnBind1(self, *args):
+    def UnBind1(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -1035,7 +1035,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_UnBind1(self, *args)
 
-    def UnBind2(self, *args):
+    def UnBind2(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1044,7 +1044,7 @@ class TFunction_DoubleMapOfIntegerLabel(OCC.TCollection.TCollection_BasicMap):
         """
         return _TFunction.TFunction_DoubleMapOfIntegerLabel_UnBind2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DoubleMapOfIntegerLabel self)"""
         return _TFunction.TFunction_DoubleMapOfIntegerLabel__kill_pointed(self)
 
@@ -1076,7 +1076,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the label L for this function prior to its execution.
 
@@ -1087,7 +1087,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Init(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TDF_Label" :
         """
         * Returns the label of the driver for this function.
 
@@ -1096,7 +1096,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Label(self, *args)
 
-    def Validate(self, *args):
+    def Validate(self, *args) -> "void" :
         """
         * Validates labels of a function in <log>. This function is the one initialized in this function driver. Warning In regeneration mode, the solver must call this method even if the function is not executed. execution of function =====================
 
@@ -1107,7 +1107,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Validate(self, *args)
 
-    def MustExecute(self, *args):
+    def MustExecute(self, *args) -> "Standard_Boolean" :
         """
         * Analyzes the labels in the logbook log. Returns true if attributes have been modified. If the function label itself has been modified, the function must be executed.
 
@@ -1118,7 +1118,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_MustExecute(self, *args)
 
-    def Execute(self, *args):
+    def Execute(self, *args) -> "Standard_Integer" :
         """
         * Executes the function in this function driver and puts the impacted labels in the logbook log. arguments & results of functions ================================
 
@@ -1129,7 +1129,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Execute(self, *args)
 
-    def Arguments(self, *args):
+    def Arguments(self, *args) -> "void" :
         """
         * The method fills-in the list by labels, where the arguments of the function are located.
 
@@ -1140,7 +1140,7 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Arguments(self, *args)
 
-    def Results(self, *args):
+    def Results(self, *args) -> "void" :
         """
         * The method fills-in the list by labels, where the results of the function are located.
 
@@ -1151,11 +1151,11 @@ class TFunction_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_Driver_Results(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_Driver self)"""
         return _TFunction.TFunction_Driver__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_Driver" :
         """GetHandle(TFunction_Driver self) -> Handle_TFunction_Driver"""
         return _TFunction.TFunction_Driver_GetHandle(self)
 
@@ -1200,14 +1200,14 @@ Handle_TFunction_Driver._kill_pointed = new_instancemethod(_TFunction.Handle_TFu
 Handle_TFunction_Driver_swigregister = _TFunction.Handle_TFunction_Driver_swigregister
 Handle_TFunction_Driver_swigregister(Handle_TFunction_Driver)
 
-def Handle_TFunction_Driver_DownCast(*args):
+def Handle_TFunction_Driver_DownCast(*args) -> "Handle_TFunction_Driver const" :
   return _TFunction.Handle_TFunction_Driver_DownCast(*args)
 Handle_TFunction_Driver_DownCast = _TFunction.Handle_TFunction_Driver_DownCast
 
 class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Get(*args):
+    def Get(*args) -> "Handle_TFunction_DriverTable" :
         """
         * Returns the driver table. If a driver does not exist, creates it.
 
@@ -1225,7 +1225,7 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
 
         """
         _TFunction.TFunction_DriverTable_swiginit(self,_TFunction.new_TFunction_DriverTable(*args))
-    def AddDriver(self, *args):
+    def AddDriver(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the driver has been added successfully to the driver table.
 
@@ -1240,7 +1240,7 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_DriverTable_AddDriver(self, *args)
 
-    def HasDriver(self, *args):
+    def HasDriver(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the driver exists in the driver table.
 
@@ -1253,7 +1253,7 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_DriverTable_HasDriver(self, *args)
 
-    def FindDriver(self, *args):
+    def FindDriver(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the driver was found.
 
@@ -1268,11 +1268,11 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_DriverTable_FindDriver(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_DriverTable self) -> std::string"""
         return _TFunction.TFunction_DriverTable_DumpToString(self)
 
-    def RemoveDriver(self, *args):
+    def RemoveDriver(self, *args) -> "Standard_Boolean" :
         """
         * Removes a driver with the given GUID. Returns true if the driver has been removed successfully.
 
@@ -1285,7 +1285,7 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_DriverTable_RemoveDriver(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all drivers. Returns true if the driver has been removed successfully.
 
@@ -1294,11 +1294,11 @@ class TFunction_DriverTable(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_DriverTable_Clear(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_DriverTable self)"""
         return _TFunction.TFunction_DriverTable__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_DriverTable" :
         """GetHandle(TFunction_DriverTable self) -> Handle_TFunction_DriverTable"""
         return _TFunction.TFunction_DriverTable_GetHandle(self)
 
@@ -1321,7 +1321,7 @@ TFunction_DriverTable.GetHandle = new_instancemethod(_TFunction.TFunction_Driver
 TFunction_DriverTable_swigregister = _TFunction.TFunction_DriverTable_swigregister
 TFunction_DriverTable_swigregister(TFunction_DriverTable)
 
-def TFunction_DriverTable_Get(*args):
+def TFunction_DriverTable_Get(*args) -> "Handle_TFunction_DriverTable" :
   """
     * Returns the driver table. If a driver does not exist, creates it.
 
@@ -1351,14 +1351,14 @@ Handle_TFunction_DriverTable._kill_pointed = new_instancemethod(_TFunction.Handl
 Handle_TFunction_DriverTable_swigregister = _TFunction.Handle_TFunction_DriverTable_swigregister
 Handle_TFunction_DriverTable_swigregister(Handle_TFunction_DriverTable)
 
-def Handle_TFunction_DriverTable_DownCast(*args):
+def Handle_TFunction_DriverTable_DownCast(*args) -> "Handle_TFunction_DriverTable const" :
   return _TFunction.Handle_TFunction_DriverTable_DownCast(*args)
 Handle_TFunction_DriverTable_DownCast = _TFunction.Handle_TFunction_DriverTable_DownCast
 
 class TFunction_Function(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Set(*args):
+    def Set(*args) -> "Handle_TFunction_Function" :
         """
         * Static methods: ============== Finds or Creates a function attribute on the label <L>. Returns the function attribute.
 
@@ -1378,7 +1378,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         return _TFunction.TFunction_Function_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Returns the GUID for functions. Returns a function found on the label. Instance methods: ================
 
@@ -1394,7 +1394,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
 
         """
         _TFunction.TFunction_Function_swiginit(self,_TFunction.new_TFunction_Function(*args))
-    def GetDriverGUID(self, *args):
+    def GetDriverGUID(self, *args) -> "Standard_GUID const &" :
         """
         * Returns the GUID for this function's driver.
 
@@ -1403,7 +1403,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Function_GetDriverGUID(self, *args)
 
-    def SetDriverGUID(self, *args):
+    def SetDriverGUID(self, *args) -> "void" :
         """
         * Sets the driver for this function as that indentified by the GUID guid.
 
@@ -1414,7 +1414,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Function_SetDriverGUID(self, *args)
 
-    def Failed(self, *args):
+    def Failed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the execution failed
 
@@ -1423,7 +1423,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Function_Failed(self, *args)
 
-    def SetFailure(self, *args):
+    def SetFailure(self, *args) -> "void" :
         """
         * Sets the failed index.
 
@@ -1434,7 +1434,7 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Function_SetFailure(self, *args)
 
-    def GetFailure(self, *args):
+    def GetFailure(self, *args) -> "Standard_Integer" :
         """
         * Returns an index of failure if the execution of this function failed. If this integer value is 0, no failure has occurred. Implementation of Attribute methods: ===================================
 
@@ -1443,15 +1443,15 @@ class TFunction_Function(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Function_GetFailure(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_Function self) -> std::string"""
         return _TFunction.TFunction_Function_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_Function self)"""
         return _TFunction.TFunction_Function__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_Function" :
         """GetHandle(TFunction_Function self) -> Handle_TFunction_Function"""
         return _TFunction.TFunction_Function_GetHandle(self)
 
@@ -1474,7 +1474,7 @@ TFunction_Function.GetHandle = new_instancemethod(_TFunction.TFunction_Function_
 TFunction_Function_swigregister = _TFunction.TFunction_Function_swigregister
 TFunction_Function_swigregister(TFunction_Function)
 
-def TFunction_Function_Set(*args):
+def TFunction_Function_Set(*args) -> "Handle_TFunction_Function" :
   """
     * Static methods: ============== Finds or Creates a function attribute on the label <L>. Returns the function attribute.
 
@@ -1493,7 +1493,7 @@ def TFunction_Function_Set(*args):
     """
   return _TFunction.TFunction_Function_Set(*args)
 
-def TFunction_Function_GetID(*args):
+def TFunction_Function_GetID(*args) -> "Standard_GUID const &" :
   """
     * Returns the GUID for functions. Returns a function found on the label. Instance methods: ================
 
@@ -1523,14 +1523,14 @@ Handle_TFunction_Function._kill_pointed = new_instancemethod(_TFunction.Handle_T
 Handle_TFunction_Function_swigregister = _TFunction.Handle_TFunction_Function_swigregister
 Handle_TFunction_Function_swigregister(Handle_TFunction_Function)
 
-def Handle_TFunction_Function_DownCast(*args):
+def Handle_TFunction_Function_DownCast(*args) -> "Handle_TFunction_Function const" :
   return _TFunction.Handle_TFunction_Function_DownCast(*args)
 Handle_TFunction_Function_DownCast = _TFunction.Handle_TFunction_Function_DownCast
 
 class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Set(*args):
+    def Set(*args) -> "Handle_TFunction_GraphNode" :
         """
         * Static methods ============== Finds or Creates a graph node attribute at the label <L>. Returns the attribute.
 
@@ -1542,7 +1542,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         return _TFunction.TFunction_GraphNode_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Returns the GUID for GraphNode attribute. Instant methods =============== Constructor (empty).
 
@@ -1558,7 +1558,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
 
         """
         _TFunction.TFunction_GraphNode_swiginit(self,_TFunction.new_TFunction_GraphNode(*args))
-    def AddPrevious(self, *args):
+    def AddPrevious(self, *args) -> "Standard_Boolean" :
         """
         * Defines a reference to the function as a previous one.
 
@@ -1575,7 +1575,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_AddPrevious(self, *args)
 
-    def RemovePrevious(self, *args):
+    def RemovePrevious(self, *args) -> "Standard_Boolean" :
         """
         * Removes a reference to the function as a previous one.
 
@@ -1592,7 +1592,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_RemovePrevious(self, *args)
 
-    def GetPrevious(self, *args):
+    def GetPrevious(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         * Returns a map of previous functions.
 
@@ -1601,7 +1601,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_GetPrevious(self, *args)
 
-    def RemoveAllPrevious(self, *args):
+    def RemoveAllPrevious(self, *args) -> "void" :
         """
         * Clears a map of previous functions.
 
@@ -1610,7 +1610,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_RemoveAllPrevious(self, *args)
 
-    def AddNext(self, *args):
+    def AddNext(self, *args) -> "Standard_Boolean" :
         """
         * Defines a reference to the function as a next one.
 
@@ -1627,7 +1627,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_AddNext(self, *args)
 
-    def RemoveNext(self, *args):
+    def RemoveNext(self, *args) -> "Standard_Boolean" :
         """
         * Removes a reference to the function as a next one.
 
@@ -1644,7 +1644,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_RemoveNext(self, *args)
 
-    def GetNext(self, *args):
+    def GetNext(self, *args) -> "TColStd_MapOfInteger const &" :
         """
         * Returns a map of next functions.
 
@@ -1653,7 +1653,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_GetNext(self, *args)
 
-    def RemoveAllNext(self, *args):
+    def RemoveAllNext(self, *args) -> "void" :
         """
         * Clears a map of next functions.
 
@@ -1662,7 +1662,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_RemoveAllNext(self, *args)
 
-    def GetStatus(self, *args):
+    def GetStatus(self, *args) -> "TFunction_ExecutionStatus" :
         """
         * Returns the execution status of the function.
 
@@ -1671,7 +1671,7 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_GetStatus(self, *args)
 
-    def SetStatus(self, *args):
+    def SetStatus(self, *args) -> "void" :
         """
         * Defines an execution status for a function. Implementation of Attribute methods ===================================
 
@@ -1682,15 +1682,15 @@ class TFunction_GraphNode(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_GraphNode_SetStatus(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_GraphNode self) -> std::string"""
         return _TFunction.TFunction_GraphNode_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_GraphNode self)"""
         return _TFunction.TFunction_GraphNode__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_GraphNode" :
         """GetHandle(TFunction_GraphNode self) -> Handle_TFunction_GraphNode"""
         return _TFunction.TFunction_GraphNode_GetHandle(self)
 
@@ -1718,7 +1718,7 @@ TFunction_GraphNode.GetHandle = new_instancemethod(_TFunction.TFunction_GraphNod
 TFunction_GraphNode_swigregister = _TFunction.TFunction_GraphNode_swigregister
 TFunction_GraphNode_swigregister(TFunction_GraphNode)
 
-def TFunction_GraphNode_Set(*args):
+def TFunction_GraphNode_Set(*args) -> "Handle_TFunction_GraphNode" :
   """
     * Static methods ============== Finds or Creates a graph node attribute at the label <L>. Returns the attribute.
 
@@ -1729,7 +1729,7 @@ def TFunction_GraphNode_Set(*args):
     """
   return _TFunction.TFunction_GraphNode_Set(*args)
 
-def TFunction_GraphNode_GetID(*args):
+def TFunction_GraphNode_GetID(*args) -> "Standard_GUID const &" :
   """
     * Returns the GUID for GraphNode attribute. Instant methods =============== Constructor (empty).
 
@@ -1759,7 +1759,7 @@ Handle_TFunction_GraphNode._kill_pointed = new_instancemethod(_TFunction.Handle_
 Handle_TFunction_GraphNode_swigregister = _TFunction.Handle_TFunction_GraphNode_swigregister
 Handle_TFunction_GraphNode_swigregister(Handle_TFunction_GraphNode)
 
-def Handle_TFunction_GraphNode_DownCast(*args):
+def Handle_TFunction_GraphNode_DownCast(*args) -> "Handle_TFunction_GraphNode const" :
   return _TFunction.Handle_TFunction_GraphNode_DownCast(*args)
 Handle_TFunction_GraphNode_DownCast = _TFunction.Handle_TFunction_GraphNode_DownCast
 
@@ -1784,7 +1784,7 @@ class TFunction_HArray1OfDataMapOfGUIDDriver(OCC.MMgt.MMgt_TShared):
 
         """
         _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_swiginit(self,_TFunction.new_TFunction_HArray1OfDataMapOfGUIDDriver(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: TFunction_DataMapOfGUIDDriver &
@@ -1793,28 +1793,28 @@ class TFunction_HArray1OfDataMapOfGUIDDriver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1825,7 +1825,7 @@ class TFunction_HArray1OfDataMapOfGUIDDriver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TFunction_DataMapOfGUIDDriver const &" :
         """
         :param Index:
         :type Index: int
@@ -1834,7 +1834,7 @@ class TFunction_HArray1OfDataMapOfGUIDDriver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TFunction_DataMapOfGUIDDriver &" :
         """
         :param Index:
         :type Index: int
@@ -1843,25 +1843,25 @@ class TFunction_HArray1OfDataMapOfGUIDDriver(OCC.MMgt.MMgt_TShared):
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TFunction_Array1OfDataMapOfGUIDDriver const &" :
         """
         :rtype: TFunction_Array1OfDataMapOfGUIDDriver
 
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TFunction_Array1OfDataMapOfGUIDDriver &" :
         """
         :rtype: TFunction_Array1OfDataMapOfGUIDDriver
 
         """
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_HArray1OfDataMapOfGUIDDriver self)"""
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_HArray1OfDataMapOfGUIDDriver" :
         """GetHandle(TFunction_HArray1OfDataMapOfGUIDDriver self) -> Handle_TFunction_HArray1OfDataMapOfGUIDDriver"""
         return _TFunction.TFunction_HArray1OfDataMapOfGUIDDriver_GetHandle(self)
 
@@ -1908,14 +1908,14 @@ Handle_TFunction_HArray1OfDataMapOfGUIDDriver._kill_pointed = new_instancemethod
 Handle_TFunction_HArray1OfDataMapOfGUIDDriver_swigregister = _TFunction.Handle_TFunction_HArray1OfDataMapOfGUIDDriver_swigregister
 Handle_TFunction_HArray1OfDataMapOfGUIDDriver_swigregister(Handle_TFunction_HArray1OfDataMapOfGUIDDriver)
 
-def Handle_TFunction_HArray1OfDataMapOfGUIDDriver_DownCast(*args):
+def Handle_TFunction_HArray1OfDataMapOfGUIDDriver_DownCast(*args) -> "Handle_TFunction_HArray1OfDataMapOfGUIDDriver const" :
   return _TFunction.Handle_TFunction_HArray1OfDataMapOfGUIDDriver_DownCast(*args)
 Handle_TFunction_HArray1OfDataMapOfGUIDDriver_DownCast = _TFunction.Handle_TFunction_HArray1OfDataMapOfGUIDDriver_DownCast
 
 class TFunction_IFunction(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NewFunction(*args):
+    def NewFunction(*args) -> "Standard_Boolean" :
         """
         * Sets a new function attached to a label <L> with <ID>. It creates a new TFunction_Function attribute initialized by the <ID>, a new TFunction_GraphNode with an empty list of dependencies and the status equal to TFunction_ES_WrongDefinition. It registers the function in the scope of functions for this document.
 
@@ -1929,7 +1929,7 @@ class TFunction_IFunction(object):
         return _TFunction.TFunction_IFunction_NewFunction(*args)
 
     NewFunction = staticmethod(NewFunction)
-    def DeleteFunction(*args):
+    def DeleteFunction(*args) -> "Standard_Boolean" :
         """
         * Deletes a function attached to a label <L>. It deletes a TFunction_Function attribute and a TFunction_GraphNode. It deletes the functions from the scope of function of this document.
 
@@ -1953,7 +1953,7 @@ class TFunction_IFunction(object):
 
         """
         _TFunction.TFunction_IFunction_swiginit(self,_TFunction.new_TFunction_IFunction(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the interface by the label of function.
 
@@ -1964,7 +1964,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_Init(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TDF_Label const &" :
         """
         * Returns a label of the function.
 
@@ -1973,7 +1973,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_Label(self, *args)
 
-    def UpdateDependencies(self, *args):
+    def UpdateDependencies(self, *args) -> "Standard_Boolean" :
         """
         * Updates dependencies for all functions of the scope. It returns false in case of an error. An empty constructor.
 
@@ -1988,7 +1988,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_UpdateDependencies(self, *args)
 
-    def Arguments(self, *args):
+    def Arguments(self, *args) -> "void" :
         """
         * The method fills-in the list by labels, where the arguments of the function are located.
 
@@ -1999,7 +1999,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_Arguments(self, *args)
 
-    def Results(self, *args):
+    def Results(self, *args) -> "void" :
         """
         * The method fills-in the list by labels, where the results of the function are located.
 
@@ -2010,7 +2010,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_Results(self, *args)
 
-    def GetPrevious(self, *args):
+    def GetPrevious(self, *args) -> "void" :
         """
         * Returns a list of previous functions.
 
@@ -2021,7 +2021,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetPrevious(self, *args)
 
-    def GetNext(self, *args):
+    def GetNext(self, *args) -> "void" :
         """
         * Returns a list of next functions.
 
@@ -2032,7 +2032,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetNext(self, *args)
 
-    def GetStatus(self, *args):
+    def GetStatus(self, *args) -> "TFunction_ExecutionStatus" :
         """
         * Returns the execution status of the function.
 
@@ -2041,7 +2041,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetStatus(self, *args)
 
-    def SetStatus(self, *args):
+    def SetStatus(self, *args) -> "void" :
         """
         * Defines an execution status for a function.
 
@@ -2052,7 +2052,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_SetStatus(self, *args)
 
-    def GetAllFunctions(self, *args):
+    def GetAllFunctions(self, *args) -> "TFunction_DoubleMapOfIntegerLabel const &" :
         """
         * Returns the scope of all functions.
 
@@ -2061,7 +2061,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetAllFunctions(self, *args)
 
-    def GetLogbook(self, *args):
+    def GetLogbook(self, *args) -> "TFunction_Logbook &" :
         """
         * Returns the Logbook - keeper of modifications.
 
@@ -2070,7 +2070,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetLogbook(self, *args)
 
-    def GetDriver(self, *args):
+    def GetDriver(self, *args) -> "Handle_TFunction_Driver" :
         """
         * Returns a driver of the function.
 
@@ -2081,7 +2081,7 @@ class TFunction_IFunction(object):
         """
         return _TFunction.TFunction_IFunction_GetDriver(self, *args)
 
-    def GetGraphNode(self, *args):
+    def GetGraphNode(self, *args) -> "Handle_TFunction_GraphNode" :
         """
         * Returns a graph node of the function.
 
@@ -2115,7 +2115,7 @@ TFunction_IFunction._kill_pointed = new_instancemethod(_TFunction.TFunction_IFun
 TFunction_IFunction_swigregister = _TFunction.TFunction_IFunction_swigregister
 TFunction_IFunction_swigregister(TFunction_IFunction)
 
-def TFunction_IFunction_NewFunction(*args):
+def TFunction_IFunction_NewFunction(*args) -> "Standard_Boolean" :
   """
     * Sets a new function attached to a label <L> with <ID>. It creates a new TFunction_Function attribute initialized by the <ID>, a new TFunction_GraphNode with an empty list of dependencies and the status equal to TFunction_ES_WrongDefinition. It registers the function in the scope of functions for this document.
 
@@ -2128,7 +2128,7 @@ def TFunction_IFunction_NewFunction(*args):
     """
   return _TFunction.TFunction_IFunction_NewFunction(*args)
 
-def TFunction_IFunction_DeleteFunction(*args):
+def TFunction_IFunction_DeleteFunction(*args) -> "Standard_Boolean" :
   """
     * Deletes a function attached to a label <L>. It deletes a TFunction_Function attribute and a TFunction_GraphNode. It deletes the functions from the scope of function of this document.
 
@@ -2156,7 +2156,7 @@ class TFunction_Iterator(object):
 
         """
         _TFunction.TFunction_Iterator_swiginit(self,_TFunction.new_TFunction_Iterator(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the Iterator.
 
@@ -2167,7 +2167,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_Init(self, *args)
 
-    def SetUsageOfExecutionStatus(self, *args):
+    def SetUsageOfExecutionStatus(self, *args) -> "void" :
         """
         * Defines the mode of iteration - usage or not of the execution status. If the iterator takes into account the execution status, the method ::Current() returns only 'not executed' functions while their status is not changed. If the iterator ignores the execution status, the method ::Current() returns the functions following their dependencies and ignoring the execution status.
 
@@ -2178,7 +2178,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_SetUsageOfExecutionStatus(self, *args)
 
-    def GetUsageOfExecutionStatus(self, *args):
+    def GetUsageOfExecutionStatus(self, *args) -> "Standard_Boolean" :
         """
         * Returns usage of execution status by the iterator.
 
@@ -2187,7 +2187,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_GetUsageOfExecutionStatus(self, *args)
 
-    def GetMaxNbThreads(self, *args):
+    def GetMaxNbThreads(self, *args) -> "Standard_Integer" :
         """
         * Analyses the graph of dependencies and returns maximum number of threads may be used to calculate the model.
 
@@ -2196,7 +2196,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_GetMaxNbThreads(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "TDF_LabelList const &" :
         """
         * Returns the current list of functions. If the iterator uses the execution status, the returned list contains only the functions with 'not executed' status.
 
@@ -2205,7 +2205,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_Current(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns false if the graph of functions is fully iterated.
 
@@ -2214,7 +2214,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Switches the iterator to the next list of current functions.
 
@@ -2223,7 +2223,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_Next(self, *args)
 
-    def GetStatus(self, *args):
+    def GetStatus(self, *args) -> "TFunction_ExecutionStatus" :
         """
         * A help-function aimed to help the user to check the status of retrurned function. It calls TFunction_GraphNode::GetStatus() inside.
 
@@ -2234,7 +2234,7 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_GetStatus(self, *args)
 
-    def SetStatus(self, *args):
+    def SetStatus(self, *args) -> "void" :
         """
         * A help-function aimed to help the user to change the execution status of a function. It calls TFunction_GraphNode::SetStatus() inside.
 
@@ -2247,11 +2247,11 @@ class TFunction_Iterator(object):
         """
         return _TFunction.TFunction_Iterator_SetStatus(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_Iterator self) -> std::string"""
         return _TFunction.TFunction_Iterator_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_Iterator self)"""
         return _TFunction.TFunction_Iterator__kill_pointed(self)
 
@@ -2288,7 +2288,7 @@ class TFunction_Logbook(object):
 
         """
         _TFunction.TFunction_Logbook_swiginit(self,_TFunction.new_TFunction_Logbook(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears this logbook to its default, empty state.
 
@@ -2297,14 +2297,14 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TFunction.TFunction_Logbook_IsEmpty(self, *args)
 
-    def SetTouched(self, *args):
+    def SetTouched(self, *args) -> "void" :
         """
         * Sets the label L as a touched label in this logbook. In other words, L is understood to have been modified by the end user.
 
@@ -2315,7 +2315,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_SetTouched(self, *args)
 
-    def SetImpacted(self, *args):
+    def SetImpacted(self, *args) -> "void" :
         """
         * Sets the label L as an impacted label in this logbook. This method is called by execution of the function driver.
 
@@ -2328,7 +2328,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_SetImpacted(self, *args)
 
-    def SetValid(self, *args):
+    def SetValid(self, *args) -> "void" :
         """
         * Sets the label L as a valid label in this logbook.
 
@@ -2341,14 +2341,14 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_SetValid(self, *args)
 
-    def ChangeValid(self, *args):
+    def ChangeValid(self, *args) -> "TDF_LabelMap &" :
         """
         :rtype: TDF_LabelMap
 
         """
         return _TFunction.TFunction_Logbook_ChangeValid(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the label L is touched or impacted. This method is called by <TFunction_FunctionDriver::MustExecute>. If <WithChildren> is set to true, the method checks all the sublabels of <L> too. next method to consult solving result =====================================
 
@@ -2361,7 +2361,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_IsModified(self, *args)
 
-    def GetTouched(self, *args):
+    def GetTouched(self, *args) -> "TDF_LabelMap const &" :
         """
         * Returns the map of touched labels in this logbook. A touched label is the one modified by the end user.
 
@@ -2370,7 +2370,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_GetTouched(self, *args)
 
-    def GetImpacted(self, *args):
+    def GetImpacted(self, *args) -> "TDF_LabelMap const &" :
         """
         * Returns the map of impacted labels contained in this logbook.
 
@@ -2379,7 +2379,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_GetImpacted(self, *args)
 
-    def GetValid(self, *args):
+    def GetValid(self, *args) -> "TDF_LabelMap const &" :
         """
         * Returns the map of valid labels in this logbook.
 
@@ -2388,7 +2388,7 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_GetValid(self, *args)
 
-    def Done(self, *args):
+    def Done(self, *args) -> "void" :
         """
         * Sets if the execution failed
 
@@ -2399,18 +2399,18 @@ class TFunction_Logbook(object):
         """
         return _TFunction.TFunction_Logbook_Done(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TFunction.TFunction_Logbook_IsDone(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_Logbook self) -> std::string"""
         return _TFunction.TFunction_Logbook_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_Logbook self)"""
         return _TFunction.TFunction_Logbook__kill_pointed(self)
 
@@ -2442,7 +2442,7 @@ TFunction_Logbook_swigregister(TFunction_Logbook)
 class TFunction_Scope(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Set(*args):
+    def Set(*args) -> "Handle_TFunction_Scope" :
         """
         * Static methods ============== Finds or Creates a TFunction_Scope attribute at the root label accessed by <Access>. Returns the attribute.
 
@@ -2454,7 +2454,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         return _TFunction.TFunction_Scope_Set(*args)
 
     Set = staticmethod(Set)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Returns the GUID for Scope attribute. Instant methods =============== Constructor (empty).
 
@@ -2470,7 +2470,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
 
         """
         _TFunction.TFunction_Scope_swiginit(self,_TFunction.new_TFunction_Scope(*args))
-    def AddFunction(self, *args):
+    def AddFunction(self, *args) -> "Standard_Boolean" :
         """
         * Adds a function to the scope of functions.
 
@@ -2481,7 +2481,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_AddFunction(self, *args)
 
-    def RemoveFunction(self, *args):
+    def RemoveFunction(self, *args) -> "Standard_Boolean" :
         """
         * Removes a function from the scope of functions.
 
@@ -2498,7 +2498,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_RemoveFunction(self, *args)
 
-    def RemoveAllFunctions(self, *args):
+    def RemoveAllFunctions(self, *args) -> "void" :
         """
         * Removes all functions from the scope of functions.
 
@@ -2507,7 +2507,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_RemoveAllFunctions(self, *args)
 
-    def HasFunction(self, *args):
+    def HasFunction(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the function exists with such an ID.
 
@@ -2524,7 +2524,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_HasFunction(self, *args)
 
-    def GetFunction(self, *args):
+    def GetFunction(self, *args) -> "TDF_Label const &" :
         """
         * Returns an ID of the function.
 
@@ -2541,7 +2541,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_GetFunction(self, *args)
 
-    def GetLogbook(self, *args):
+    def GetLogbook(self, *args) -> "TFunction_Logbook &" :
         """
         * Returns the Logbook used in TFunction_Driver methods. Implementation of Attribute methods ===================================
 
@@ -2550,11 +2550,11 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_GetLogbook(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TFunction_Scope self) -> std::string"""
         return _TFunction.TFunction_Scope_DumpToString(self)
 
-    def GetFunctions(self, *args):
+    def GetFunctions(self, *args) -> "TFunction_DoubleMapOfIntegerLabel const &" :
         """
         * Returns the scope of functions.
 
@@ -2563,7 +2563,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_GetFunctions(self, *args)
 
-    def ChangeFunctions(self, *args):
+    def ChangeFunctions(self, *args) -> "TFunction_DoubleMapOfIntegerLabel &" :
         """
         * Returns the scope of functions for modification. Warning: Don't use this method if You are not sure what You do!
 
@@ -2572,7 +2572,7 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_ChangeFunctions(self, *args)
 
-    def SetFreeID(self, *args):
+    def SetFreeID(self, *args) -> "void" :
         """
         :param ID:
         :type ID: int
@@ -2581,18 +2581,18 @@ class TFunction_Scope(OCC.TDF.TDF_Attribute):
         """
         return _TFunction.TFunction_Scope_SetFreeID(self, *args)
 
-    def GetFreeID(self, *args):
+    def GetFreeID(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TFunction.TFunction_Scope_GetFreeID(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TFunction_Scope self)"""
         return _TFunction.TFunction_Scope__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TFunction_Scope" :
         """GetHandle(TFunction_Scope self) -> Handle_TFunction_Scope"""
         return _TFunction.TFunction_Scope_GetHandle(self)
 
@@ -2620,7 +2620,7 @@ TFunction_Scope.GetHandle = new_instancemethod(_TFunction.TFunction_Scope_GetHan
 TFunction_Scope_swigregister = _TFunction.TFunction_Scope_swigregister
 TFunction_Scope_swigregister(TFunction_Scope)
 
-def TFunction_Scope_Set(*args):
+def TFunction_Scope_Set(*args) -> "Handle_TFunction_Scope" :
   """
     * Static methods ============== Finds or Creates a TFunction_Scope attribute at the root label accessed by <Access>. Returns the attribute.
 
@@ -2631,7 +2631,7 @@ def TFunction_Scope_Set(*args):
     """
   return _TFunction.TFunction_Scope_Set(*args)
 
-def TFunction_Scope_GetID(*args):
+def TFunction_Scope_GetID(*args) -> "Standard_GUID const &" :
   """
     * Returns the GUID for Scope attribute. Instant methods =============== Constructor (empty).
 
@@ -2661,7 +2661,7 @@ Handle_TFunction_Scope._kill_pointed = new_instancemethod(_TFunction.Handle_TFun
 Handle_TFunction_Scope_swigregister = _TFunction.Handle_TFunction_Scope_swigregister
 Handle_TFunction_Scope_swigregister(Handle_TFunction_Scope)
 
-def Handle_TFunction_Scope_DownCast(*args):
+def Handle_TFunction_Scope_DownCast(*args) -> "Handle_TFunction_Scope const" :
   return _TFunction.Handle_TFunction_Scope_DownCast(*args)
 Handle_TFunction_Scope_DownCast = _TFunction.Handle_TFunction_Scope_DownCast
 

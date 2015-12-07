@@ -136,7 +136,7 @@ import OCC.TShort
 class xbrepmesh(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Discret(*args):
+    def Discret(*args) -> "Standard_Integer" :
         """
         :param theShape:
         :type theShape: TopoDS_Shape &
@@ -166,7 +166,7 @@ xbrepmesh._kill_pointed = new_instancemethod(_XBRepMesh.xbrepmesh__kill_pointed,
 xbrepmesh_swigregister = _XBRepMesh.xbrepmesh_swigregister
 xbrepmesh_swigregister(xbrepmesh)
 
-def xbrepmesh_Discret(*args):
+def xbrepmesh_Discret(*args) -> "Standard_Integer" :
   """
     :param theShape:
     :type theShape: TopoDS_Shape &

@@ -135,7 +135,7 @@ Draft_VertexRecomputation = _Draft.Draft_VertexRecomputation
 class draft(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Angle(*args):
+    def Angle(*args) -> "Standard_Real" :
         """
         * Returns the draft angle of the face <F> using the direction <Direction>. The method is valid for : - Plane faces, - Cylindrical or conical faces, when the direction of the axis of the surface is colinear with the direction. Otherwise, the exception DomainError is raised.
 
@@ -163,7 +163,7 @@ draft._kill_pointed = new_instancemethod(_Draft.draft__kill_pointed,None,draft)
 draft_swigregister = _Draft.draft_swigregister
 draft_swigregister(draft)
 
-def draft_Angle(*args):
+def draft_Angle(*args) -> "Standard_Real" :
   """
     * Returns the draft angle of the face <F> using the direction <Direction>. The method is valid for : - Plane faces, - Cylindrical or conical faces, when the direction of the axis of the surface is colinear with the direction. Otherwise, the exception DomainError is raised.
 
@@ -189,7 +189,7 @@ class Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_B
 
         """
         _Draft.Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo_swiginit(self,_Draft.new_Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: Draft_DataMapOfEdgeEdgeInfo &
@@ -198,14 +198,14 @@ class Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_B
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfEdgeEdgeInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_EdgeInfo const &" :
         """
         :rtype: Draft_EdgeInfo
 
@@ -240,7 +240,7 @@ class Draft_DataMapIteratorOfDataMapOfFaceFaceInfo(OCC.TCollection.TCollection_B
 
         """
         _Draft.Draft_DataMapIteratorOfDataMapOfFaceFaceInfo_swiginit(self,_Draft.new_Draft_DataMapIteratorOfDataMapOfFaceFaceInfo(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: Draft_DataMapOfFaceFaceInfo &
@@ -249,14 +249,14 @@ class Draft_DataMapIteratorOfDataMapOfFaceFaceInfo(OCC.TCollection.TCollection_B
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfFaceFaceInfo_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfFaceFaceInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_FaceInfo const &" :
         """
         :rtype: Draft_FaceInfo
 
@@ -291,7 +291,7 @@ class Draft_DataMapIteratorOfDataMapOfVertexVertexInfo(OCC.TCollection.TCollecti
 
         """
         _Draft.Draft_DataMapIteratorOfDataMapOfVertexVertexInfo_swiginit(self,_Draft.new_Draft_DataMapIteratorOfDataMapOfVertexVertexInfo(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: Draft_DataMapOfVertexVertexInfo &
@@ -300,14 +300,14 @@ class Draft_DataMapIteratorOfDataMapOfVertexVertexInfo(OCC.TCollection.TCollecti
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfVertexVertexInfo_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _Draft.Draft_DataMapIteratorOfDataMapOfVertexVertexInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_VertexInfo const &" :
         """
         :rtype: Draft_VertexInfo
 
@@ -344,25 +344,25 @@ class Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_MapNo
 
         """
         _Draft.Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_swiginit(self,_Draft.new_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Edge" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_EdgeInfo &" :
         """
         :rtype: Draft_EdgeInfo
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo self)"""
         return _Draft.Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo" :
         """GetHandle(Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo self) -> Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo"""
         return _Draft.Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_GetHandle(self)
 
@@ -402,7 +402,7 @@ Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo._kill_pointed = new_instancemeth
 Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_swigregister = _Draft.Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_swigregister
 Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_swigregister(Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo)
 
-def Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_DownCast(*args):
+def Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_DownCast(*args) -> "Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo const" :
   return _Draft.Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_DownCast(*args)
 Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_DownCast = _Draft.Handle_Draft_DataMapNodeOfDataMapOfEdgeEdgeInfo_DownCast
 
@@ -421,25 +421,25 @@ class Draft_DataMapNodeOfDataMapOfFaceFaceInfo(OCC.TCollection.TCollection_MapNo
 
         """
         _Draft.Draft_DataMapNodeOfDataMapOfFaceFaceInfo_swiginit(self,_Draft.new_Draft_DataMapNodeOfDataMapOfFaceFaceInfo(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Face" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfFaceFaceInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_FaceInfo &" :
         """
         :rtype: Draft_FaceInfo
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfFaceFaceInfo_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapNodeOfDataMapOfFaceFaceInfo self)"""
         return _Draft.Draft_DataMapNodeOfDataMapOfFaceFaceInfo__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo" :
         """GetHandle(Draft_DataMapNodeOfDataMapOfFaceFaceInfo self) -> Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo"""
         return _Draft.Draft_DataMapNodeOfDataMapOfFaceFaceInfo_GetHandle(self)
 
@@ -479,7 +479,7 @@ Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo._kill_pointed = new_instancemeth
 Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_swigregister = _Draft.Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_swigregister
 Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_swigregister(Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo)
 
-def Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_DownCast(*args):
+def Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_DownCast(*args) -> "Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo const" :
   return _Draft.Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_DownCast(*args)
 Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_DownCast = _Draft.Handle_Draft_DataMapNodeOfDataMapOfFaceFaceInfo_DownCast
 
@@ -498,25 +498,25 @@ class Draft_DataMapNodeOfDataMapOfVertexVertexInfo(OCC.TCollection.TCollection_M
 
         """
         _Draft.Draft_DataMapNodeOfDataMapOfVertexVertexInfo_swiginit(self,_Draft.new_Draft_DataMapNodeOfDataMapOfVertexVertexInfo(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Vertex" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfVertexVertexInfo_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Draft_VertexInfo &" :
         """
         :rtype: Draft_VertexInfo
 
         """
         return _Draft.Draft_DataMapNodeOfDataMapOfVertexVertexInfo_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapNodeOfDataMapOfVertexVertexInfo self)"""
         return _Draft.Draft_DataMapNodeOfDataMapOfVertexVertexInfo__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo" :
         """GetHandle(Draft_DataMapNodeOfDataMapOfVertexVertexInfo self) -> Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo"""
         return _Draft.Draft_DataMapNodeOfDataMapOfVertexVertexInfo_GetHandle(self)
 
@@ -556,7 +556,7 @@ Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo._kill_pointed = new_instance
 Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_swigregister = _Draft.Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_swigregister
 Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_swigregister(Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo)
 
-def Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_DownCast(*args):
+def Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_DownCast(*args) -> "Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo const" :
   return _Draft.Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_DownCast(*args)
 Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_DownCast = _Draft.Handle_Draft_DataMapNodeOfDataMapOfVertexVertexInfo_DownCast
 
@@ -571,7 +571,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
 
         """
         _Draft.Draft_DataMapOfEdgeEdgeInfo_swiginit(self,_Draft.new_Draft_DataMapOfEdgeEdgeInfo(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Draft_DataMapOfEdgeEdgeInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfEdgeEdgeInfo &
@@ -580,7 +580,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Draft_DataMapOfEdgeEdgeInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfEdgeEdgeInfo &
@@ -589,7 +589,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -598,14 +598,14 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -616,7 +616,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -625,7 +625,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -634,7 +634,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Draft_EdgeInfo const &" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -643,7 +643,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Draft_EdgeInfo &" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -652,7 +652,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -661,7 +661,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Edge &
@@ -670,7 +670,7 @@ class Draft_DataMapOfEdgeEdgeInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfEdgeEdgeInfo_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapOfEdgeEdgeInfo self)"""
         return _Draft.Draft_DataMapOfEdgeEdgeInfo__kill_pointed(self)
 
@@ -708,7 +708,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
 
         """
         _Draft.Draft_DataMapOfFaceFaceInfo_swiginit(self,_Draft.new_Draft_DataMapOfFaceFaceInfo(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Draft_DataMapOfFaceFaceInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfFaceFaceInfo &
@@ -717,7 +717,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Draft_DataMapOfFaceFaceInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfFaceFaceInfo &
@@ -726,7 +726,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -735,14 +735,14 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -753,7 +753,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -762,7 +762,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -771,7 +771,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Draft_FaceInfo const &" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -780,7 +780,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Draft_FaceInfo &" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -789,7 +789,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -798,7 +798,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Face &
@@ -807,7 +807,7 @@ class Draft_DataMapOfFaceFaceInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfFaceFaceInfo_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapOfFaceFaceInfo self)"""
         return _Draft.Draft_DataMapOfFaceFaceInfo__kill_pointed(self)
 
@@ -845,7 +845,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
 
         """
         _Draft.Draft_DataMapOfVertexVertexInfo_swiginit(self,_Draft.new_Draft_DataMapOfVertexVertexInfo(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Draft_DataMapOfVertexVertexInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfVertexVertexInfo &
@@ -854,7 +854,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Draft_DataMapOfVertexVertexInfo &" :
         """
         :param Other:
         :type Other: Draft_DataMapOfVertexVertexInfo &
@@ -863,7 +863,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -872,14 +872,14 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -890,7 +890,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -899,7 +899,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -908,7 +908,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Draft_VertexInfo const &" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -917,7 +917,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Draft_VertexInfo &" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -926,7 +926,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -935,7 +935,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -944,7 +944,7 @@ class Draft_DataMapOfVertexVertexInfo(OCC.TCollection.TCollection_BasicMap):
         """
         return _Draft.Draft_DataMapOfVertexVertexInfo_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_DataMapOfVertexVertexInfo self)"""
         return _Draft.Draft_DataMapOfVertexVertexInfo__kill_pointed(self)
 
@@ -984,7 +984,7 @@ class Draft_EdgeInfo(object):
 
         """
         _Draft.Draft_EdgeInfo_swiginit(self,_Draft.new_Draft_EdgeInfo(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -993,7 +993,7 @@ class Draft_EdgeInfo(object):
         """
         return _Draft.Draft_EdgeInfo_Add(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1002,7 +1002,7 @@ class Draft_EdgeInfo(object):
         """
         return _Draft.Draft_EdgeInfo_Tangent(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1011,14 +1011,14 @@ class Draft_EdgeInfo(object):
         """
         return _Draft.Draft_EdgeInfo_IsTangent(self, *args)
 
-    def NewGeometry(self, *args):
+    def NewGeometry(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Draft.Draft_EdgeInfo_NewGeometry(self, *args)
 
-    def SetNewGeometry(self, *args):
+    def SetNewGeometry(self, *args) -> "void" :
         """
         :param NewGeom:
         :type NewGeom: bool
@@ -1027,63 +1027,63 @@ class Draft_EdgeInfo(object):
         """
         return _Draft.Draft_EdgeInfo_SetNewGeometry(self, *args)
 
-    def Geometry(self, *args):
+    def Geometry(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _Draft.Draft_EdgeInfo_Geometry(self, *args)
 
-    def FirstFace(self, *args):
+    def FirstFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_EdgeInfo_FirstFace(self, *args)
 
-    def SecondFace(self, *args):
+    def SecondFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_EdgeInfo_SecondFace(self, *args)
 
-    def FirstPC(self, *args):
+    def FirstPC(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         :rtype: Handle_Geom2d_Curve
 
         """
         return _Draft.Draft_EdgeInfo_FirstPC(self, *args)
 
-    def SecondPC(self, *args):
+    def SecondPC(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         :rtype: Handle_Geom2d_Curve
 
         """
         return _Draft.Draft_EdgeInfo_SecondPC(self, *args)
 
-    def ChangeGeometry(self, *args):
+    def ChangeGeometry(self, *args) -> "Handle_Geom_Curve &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _Draft.Draft_EdgeInfo_ChangeGeometry(self, *args)
 
-    def ChangeFirstPC(self, *args):
+    def ChangeFirstPC(self, *args) -> "Handle_Geom2d_Curve &" :
         """
         :rtype: Handle_Geom2d_Curve
 
         """
         return _Draft.Draft_EdgeInfo_ChangeFirstPC(self, *args)
 
-    def ChangeSecondPC(self, *args):
+    def ChangeSecondPC(self, *args) -> "Handle_Geom2d_Curve &" :
         """
         :rtype: Handle_Geom2d_Curve
 
         """
         return _Draft.Draft_EdgeInfo_ChangeSecondPC(self, *args)
 
-    def RootFace(self, *args):
+    def RootFace(self, *args) -> "TopoDS_Face const" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1094,7 +1094,7 @@ class Draft_EdgeInfo(object):
         """
         return _Draft.Draft_EdgeInfo_RootFace(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :param tol:
         :type tol: float
@@ -1147,14 +1147,14 @@ class Draft_FaceInfo(object):
 
         """
         _Draft.Draft_FaceInfo_swiginit(self,_Draft.new_Draft_FaceInfo(*args))
-    def NewGeometry(self, *args):
+    def NewGeometry(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Draft.Draft_FaceInfo_NewGeometry(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1163,35 +1163,35 @@ class Draft_FaceInfo(object):
         """
         return _Draft.Draft_FaceInfo_Add(self, *args)
 
-    def FirstFace(self, *args):
+    def FirstFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_FaceInfo_FirstFace(self, *args)
 
-    def SecondFace(self, *args):
+    def SecondFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Draft.Draft_FaceInfo_SecondFace(self, *args)
 
-    def Geometry(self, *args):
+    def Geometry(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _Draft.Draft_FaceInfo_Geometry(self, *args)
 
-    def ChangeGeometry(self, *args):
+    def ChangeGeometry(self, *args) -> "Handle_Geom_Surface &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _Draft.Draft_FaceInfo_ChangeGeometry(self, *args)
 
-    def RootFace(self, *args):
+    def RootFace(self, *args) -> "TopoDS_Face const" :
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1202,14 +1202,14 @@ class Draft_FaceInfo(object):
         """
         return _Draft.Draft_FaceInfo_RootFace(self, *args)
 
-    def ChangeCurve(self, *args):
+    def ChangeCurve(self, *args) -> "Handle_Geom_Curve &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _Draft.Draft_FaceInfo_ChangeCurve(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -1248,7 +1248,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
 
         """
         _Draft.Draft_Modification_swiginit(self,_Draft.new_Draft_Modification(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Resets on the same shape.
 
@@ -1257,7 +1257,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_Clear(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Changes the basis shape and resets.
 
@@ -1268,7 +1268,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         * Adds the face F and propagates the draft modification to its neighbour faces if they are tangent. If an error occurs, will return False and ProblematicShape will return the 'bad' face.
 
@@ -1287,7 +1287,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Removes the face F and the neighbour faces if they are tangent. It will be necessary to call this method if the method Add returns Standard_False, to unset ProblematicFace.
 
@@ -1298,7 +1298,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_Remove(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the draft angle modification and sets the value returned by the method IsDone. If an error occurs, IsDone will return Standard_False, and an error status will be given by the method Error, and the shape on which the problem appeared will be given by ProblematicShape
 
@@ -1307,7 +1307,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if Perform has been succesfully called. Otherwise more information can be obtained using the methods Error() and ProblematicShape().
 
@@ -1316,14 +1316,14 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_IsDone(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Draft_ErrorStatus" :
         """
         :rtype: Draft_ErrorStatus
 
         """
         return _Draft.Draft_Modification_Error(self, *args)
 
-    def ProblematicShape(self, *args):
+    def ProblematicShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape (Face, Edge or Vertex) on which an error occured.
 
@@ -1332,7 +1332,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_ProblematicShape(self, *args)
 
-    def ConnectedFaces(self, *args):
+    def ConnectedFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns all the faces which have been added together with the face <F>.
 
@@ -1343,7 +1343,7 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_ConnectedFaces(self, *args)
 
-    def ModifiedFaces(self, *args):
+    def ModifiedFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns all the faces on which a modification has been given.
 
@@ -1352,11 +1352,11 @@ class Draft_Modification(OCC.BRepTools.BRepTools_Modification):
         """
         return _Draft.Draft_Modification_ModifiedFaces(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Draft_Modification self)"""
         return _Draft.Draft_Modification__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Draft_Modification" :
         """GetHandle(Draft_Modification self) -> Handle_Draft_Modification"""
         return _Draft.Draft_Modification_GetHandle(self)
 
@@ -1404,7 +1404,7 @@ Handle_Draft_Modification._kill_pointed = new_instancemethod(_Draft.Handle_Draft
 Handle_Draft_Modification_swigregister = _Draft.Handle_Draft_Modification_swigregister
 Handle_Draft_Modification_swigregister(Handle_Draft_Modification)
 
-def Handle_Draft_Modification_DownCast(*args):
+def Handle_Draft_Modification_DownCast(*args) -> "Handle_Draft_Modification const" :
   return _Draft.Handle_Draft_Modification_DownCast(*args)
 Handle_Draft_Modification_DownCast = _Draft.Handle_Draft_Modification_DownCast
 
@@ -1417,7 +1417,7 @@ class Draft_VertexInfo(object):
 
         """
         _Draft.Draft_VertexInfo_swiginit(self,_Draft.new_Draft_VertexInfo(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1426,14 +1426,14 @@ class Draft_VertexInfo(object):
         """
         return _Draft.Draft_VertexInfo_Add(self, *args)
 
-    def Geometry(self, *args):
+    def Geometry(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _Draft.Draft_VertexInfo_Geometry(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1442,42 +1442,42 @@ class Draft_VertexInfo(object):
         """
         return _Draft.Draft_VertexInfo_Parameter(self, *args)
 
-    def InitEdgeIterator(self, *args):
+    def InitEdgeIterator(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Draft.Draft_VertexInfo_InitEdgeIterator(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _Draft.Draft_VertexInfo_Edge(self, *args)
 
-    def NextEdge(self, *args):
+    def NextEdge(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Draft.Draft_VertexInfo_NextEdge(self, *args)
 
-    def MoreEdge(self, *args):
+    def MoreEdge(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Draft.Draft_VertexInfo_MoreEdge(self, *args)
 
-    def ChangeGeometry(self, *args):
+    def ChangeGeometry(self, *args) -> "gp_Pnt" :
         """
         :rtype: gp_Pnt
 
         """
         return _Draft.Draft_VertexInfo_ChangeGeometry(self, *args)
 
-    def ChangeParameter(self, *args):
+    def ChangeParameter(self, *args) -> "Standard_Real &" :
         """
         :param E:
         :type E: TopoDS_Edge &

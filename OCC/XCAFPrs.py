@@ -146,7 +146,7 @@ import OCC.DsgPrs
 class xcafprs(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CollectStyleSettings(*args):
+    def CollectStyleSettings(*args) -> "void" :
         """
         * Collect styles defined for shape on label L and its components and subshapes and fills a map of shape - style correspondence The location <loc> is for internal use, it should be Null location for external call
 
@@ -162,7 +162,7 @@ class xcafprs(object):
         return _XCAFPrs.xcafprs_CollectStyleSettings(*args)
 
     CollectStyleSettings = staticmethod(CollectStyleSettings)
-    def DispatchStyles(*args):
+    def DispatchStyles(*args) -> "Standard_Boolean" :
         """
         * Iterates on shape (recursively) and splits it on parts each of which has its own style (basing on settings collected by CollectStyleSettings()) The DefStyle is default style applied to a shape if no specific style assignment is applied to it If force is True, the <shape> is added to a map even if no styles are redefined for it or its subshapes The context is for internal use, it indicates the type of the shape to which <shape> belongs
 
@@ -184,7 +184,7 @@ class xcafprs(object):
         return _XCAFPrs.xcafprs_DispatchStyles(*args)
 
     DispatchStyles = staticmethod(DispatchStyles)
-    def SetViewNameMode(*args):
+    def SetViewNameMode(*args) -> "void" :
         """
         * Set ViewNameMode for indicate display names or not.
 
@@ -196,7 +196,7 @@ class xcafprs(object):
         return _XCAFPrs.xcafprs_SetViewNameMode(*args)
 
     SetViewNameMode = staticmethod(SetViewNameMode)
-    def GetViewNameMode(*args):
+    def GetViewNameMode(*args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -218,7 +218,7 @@ xcafprs._kill_pointed = new_instancemethod(_XCAFPrs.xcafprs__kill_pointed,None,x
 xcafprs_swigregister = _XCAFPrs.xcafprs_swigregister
 xcafprs_swigregister(xcafprs)
 
-def xcafprs_CollectStyleSettings(*args):
+def xcafprs_CollectStyleSettings(*args) -> "void" :
   """
     * Collect styles defined for shape on label L and its components and subshapes and fills a map of shape - style correspondence The location <loc> is for internal use, it should be Null location for external call
 
@@ -233,7 +233,7 @@ def xcafprs_CollectStyleSettings(*args):
     """
   return _XCAFPrs.xcafprs_CollectStyleSettings(*args)
 
-def xcafprs_DispatchStyles(*args):
+def xcafprs_DispatchStyles(*args) -> "Standard_Boolean" :
   """
     * Iterates on shape (recursively) and splits it on parts each of which has its own style (basing on settings collected by CollectStyleSettings()) The DefStyle is default style applied to a shape if no specific style assignment is applied to it If force is True, the <shape> is added to a map even if no styles are redefined for it or its subshapes The context is for internal use, it indicates the type of the shape to which <shape> belongs
 
@@ -254,7 +254,7 @@ def xcafprs_DispatchStyles(*args):
     """
   return _XCAFPrs.xcafprs_DispatchStyles(*args)
 
-def xcafprs_SetViewNameMode(*args):
+def xcafprs_SetViewNameMode(*args) -> "void" :
   """
     * Set ViewNameMode for indicate display names or not.
 
@@ -265,7 +265,7 @@ def xcafprs_SetViewNameMode(*args):
     """
   return _XCAFPrs.xcafprs_SetViewNameMode(*args)
 
-def xcafprs_GetViewNameMode(*args):
+def xcafprs_GetViewNameMode(*args) -> "Standard_Boolean" :
   """
     :rtype: bool
 
@@ -285,7 +285,7 @@ class XCAFPrs_AISObject(OCC.AIS.AIS_Shape):
 
         """
         _XCAFPrs.XCAFPrs_AISObject_swiginit(self,_XCAFPrs.new_XCAFPrs_AISObject(*args))
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         :param aName:
         :type aName: Graphic3d_NameOfMaterial
@@ -333,7 +333,7 @@ Handle_XCAFPrs_AISObject._kill_pointed = new_instancemethod(_XCAFPrs.Handle_XCAF
 Handle_XCAFPrs_AISObject_swigregister = _XCAFPrs.Handle_XCAFPrs_AISObject_swigregister
 Handle_XCAFPrs_AISObject_swigregister(Handle_XCAFPrs_AISObject)
 
-def Handle_XCAFPrs_AISObject_DownCast(*args):
+def Handle_XCAFPrs_AISObject_DownCast(*args) -> "Handle_XCAFPrs_AISObject const" :
   return _XCAFPrs.Handle_XCAFPrs_AISObject_DownCast(*args)
 Handle_XCAFPrs_AISObject_DownCast = _XCAFPrs.Handle_XCAFPrs_AISObject_DownCast
 
@@ -350,7 +350,7 @@ class XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle(OCC.TCollection.TCollection_B
 
         """
         _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: XCAFPrs_DataMapOfShapeStyle &
@@ -359,14 +359,14 @@ class XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle(OCC.TCollection.TCollection_B
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfShapeStyle_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "XCAFPrs_Style const &" :
         """
         :rtype: XCAFPrs_Style
 
@@ -401,7 +401,7 @@ class XCAFPrs_DataMapIteratorOfDataMapOfStyleShape(OCC.TCollection.TCollection_B
 
         """
         _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleShape_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapIteratorOfDataMapOfStyleShape(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: XCAFPrs_DataMapOfStyleShape &
@@ -410,14 +410,14 @@ class XCAFPrs_DataMapIteratorOfDataMapOfStyleShape(OCC.TCollection.TCollection_B
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleShape_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "XCAFPrs_Style const &" :
         """
         :rtype: XCAFPrs_Style
 
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
@@ -452,7 +452,7 @@ class XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient(OCC.TCollection.TCollecti
 
         """
         _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: XCAFPrs_DataMapOfStyleTransient &
@@ -461,14 +461,14 @@ class XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient(OCC.TCollection.TCollecti
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "XCAFPrs_Style const &" :
         """
         :rtype: XCAFPrs_Style
 
         """
         return _XCAFPrs.XCAFPrs_DataMapIteratorOfDataMapOfStyleTransient_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
@@ -505,25 +505,25 @@ class XCAFPrs_DataMapNodeOfDataMapOfShapeStyle(OCC.TCollection.TCollection_MapNo
 
         """
         _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "XCAFPrs_Style &" :
         """
         :rtype: XCAFPrs_Style
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapNodeOfDataMapOfShapeStyle self)"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfShapeStyle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle" :
         """GetHandle(XCAFPrs_DataMapNodeOfDataMapOfShapeStyle self) -> Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_GetHandle(self)
 
@@ -563,7 +563,7 @@ Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle._kill_pointed = new_instancemeth
 Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_swigregister = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_swigregister
 Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_swigregister(Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle)
 
-def Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_DownCast(*args):
+def Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_DownCast(*args) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle const" :
   return _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_DownCast(*args)
 Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_DownCast = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfShapeStyle_DownCast
 
@@ -582,25 +582,25 @@ class XCAFPrs_DataMapNodeOfDataMapOfStyleShape(OCC.TCollection.TCollection_MapNo
 
         """
         _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleShape_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapNodeOfDataMapOfStyleShape(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "XCAFPrs_Style &" :
         """
         :rtype: XCAFPrs_Style
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapNodeOfDataMapOfStyleShape self)"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape" :
         """GetHandle(XCAFPrs_DataMapNodeOfDataMapOfStyleShape self) -> Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleShape_GetHandle(self)
 
@@ -640,7 +640,7 @@ Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape._kill_pointed = new_instancemeth
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_swigregister = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_swigregister
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_swigregister(Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape)
 
-def Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_DownCast(*args):
+def Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_DownCast(*args) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape const" :
   return _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_DownCast(*args)
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_DownCast = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleShape_DownCast
 
@@ -659,25 +659,25 @@ class XCAFPrs_DataMapNodeOfDataMapOfStyleTransient(OCC.TCollection.TCollection_M
 
         """
         _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "XCAFPrs_Style &" :
         """
         :rtype: XCAFPrs_Style
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapNodeOfDataMapOfStyleTransient self)"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient" :
         """GetHandle(XCAFPrs_DataMapNodeOfDataMapOfStyleTransient self) -> Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient"""
         return _XCAFPrs.XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_GetHandle(self)
 
@@ -717,7 +717,7 @@ Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient._kill_pointed = new_instance
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_swigregister = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_swigregister
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_swigregister(Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient)
 
-def Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_DownCast(*args):
+def Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_DownCast(*args) -> "Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient const" :
   return _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_DownCast(*args)
 Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_DownCast = _XCAFPrs.Handle_XCAFPrs_DataMapNodeOfDataMapOfStyleTransient_DownCast
 
@@ -732,7 +732,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
 
         """
         _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapOfShapeStyle(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "XCAFPrs_DataMapOfShapeStyle &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfShapeStyle &
@@ -741,7 +741,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "XCAFPrs_DataMapOfShapeStyle &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfShapeStyle &
@@ -750,7 +750,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -759,14 +759,14 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -777,7 +777,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -786,7 +786,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -795,7 +795,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "XCAFPrs_Style const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -804,7 +804,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "XCAFPrs_Style &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -813,7 +813,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -822,7 +822,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -831,7 +831,7 @@ class XCAFPrs_DataMapOfShapeStyle(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapOfShapeStyle self)"""
         return _XCAFPrs.XCAFPrs_DataMapOfShapeStyle__kill_pointed(self)
 
@@ -869,7 +869,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
 
         """
         _XCAFPrs.XCAFPrs_DataMapOfStyleShape_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapOfStyleShape(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "XCAFPrs_DataMapOfStyleShape &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfStyleShape &
@@ -878,7 +878,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "XCAFPrs_DataMapOfStyleShape &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfStyleShape &
@@ -887,7 +887,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -896,14 +896,14 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -914,7 +914,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -923,7 +923,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -932,7 +932,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TopoDS_Shape const" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -941,7 +941,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TopoDS_Shape" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -950,7 +950,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -959,7 +959,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -968,7 +968,7 @@ class XCAFPrs_DataMapOfStyleShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapOfStyleShape self)"""
         return _XCAFPrs.XCAFPrs_DataMapOfStyleShape__kill_pointed(self)
 
@@ -1006,7 +1006,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
 
         """
         _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_swiginit(self,_XCAFPrs.new_XCAFPrs_DataMapOfStyleTransient(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "XCAFPrs_DataMapOfStyleTransient &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfStyleTransient &
@@ -1015,7 +1015,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "XCAFPrs_DataMapOfStyleTransient &" :
         """
         :param Other:
         :type Other: XCAFPrs_DataMapOfStyleTransient &
@@ -1024,7 +1024,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1033,14 +1033,14 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1051,7 +1051,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1060,7 +1060,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1069,7 +1069,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1078,7 +1078,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1087,7 +1087,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1096,7 +1096,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: XCAFPrs_Style &
@@ -1105,7 +1105,7 @@ class XCAFPrs_DataMapOfStyleTransient(OCC.TCollection.TCollection_BasicMap):
         """
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(XCAFPrs_DataMapOfStyleTransient self)"""
         return _XCAFPrs.XCAFPrs_DataMapOfStyleTransient__kill_pointed(self)
 
@@ -1136,7 +1136,7 @@ class XCAFPrs_Driver(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Update(self, *args):
+    def Update(self, *args) -> "Standard_Boolean" :
         """
         :param L:
         :type L: TDF_Label &
@@ -1147,7 +1147,7 @@ class XCAFPrs_Driver(object):
         """
         return _XCAFPrs.XCAFPrs_Driver_Update(self, *args)
 
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * returns GUID of the driver
 
@@ -1171,7 +1171,7 @@ XCAFPrs_Driver.GetHandle = new_instancemethod(_XCAFPrs.XCAFPrs_Driver_GetHandle,
 XCAFPrs_Driver_swigregister = _XCAFPrs.XCAFPrs_Driver_swigregister
 XCAFPrs_Driver_swigregister(XCAFPrs_Driver)
 
-def XCAFPrs_Driver_GetID(*args):
+def XCAFPrs_Driver_GetID(*args) -> "Standard_GUID const &" :
   """
     * returns GUID of the driver
 
@@ -1201,7 +1201,7 @@ Handle_XCAFPrs_Driver._kill_pointed = new_instancemethod(_XCAFPrs.Handle_XCAFPrs
 Handle_XCAFPrs_Driver_swigregister = _XCAFPrs.Handle_XCAFPrs_Driver_swigregister
 Handle_XCAFPrs_Driver_swigregister(Handle_XCAFPrs_Driver)
 
-def Handle_XCAFPrs_Driver_DownCast(*args):
+def Handle_XCAFPrs_Driver_DownCast(*args) -> "Handle_XCAFPrs_Driver const" :
   return _XCAFPrs.Handle_XCAFPrs_Driver_DownCast(*args)
 Handle_XCAFPrs_Driver_DownCast = _XCAFPrs.Handle_XCAFPrs_Driver_DownCast
 
@@ -1214,21 +1214,21 @@ class XCAFPrs_Style(object):
 
         """
         _XCAFPrs.XCAFPrs_Style_swiginit(self,_XCAFPrs.new_XCAFPrs_Style(*args))
-    def IsSetColorSurf(self, *args):
+    def IsSetColorSurf(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _XCAFPrs.XCAFPrs_Style_IsSetColorSurf(self, *args)
 
-    def GetColorSurf(self, *args):
+    def GetColorSurf(self, *args) -> "Quantity_Color" :
         """
         :rtype: Quantity_Color
 
         """
         return _XCAFPrs.XCAFPrs_Style_GetColorSurf(self, *args)
 
-    def SetColorSurf(self, *args):
+    def SetColorSurf(self, *args) -> "void" :
         """
         :param col:
         :type col: Quantity_Color &
@@ -1237,7 +1237,7 @@ class XCAFPrs_Style(object):
         """
         return _XCAFPrs.XCAFPrs_Style_SetColorSurf(self, *args)
 
-    def UnSetColorSurf(self, *args):
+    def UnSetColorSurf(self, *args) -> "void" :
         """
         * Manage surface color setting
 
@@ -1246,21 +1246,21 @@ class XCAFPrs_Style(object):
         """
         return _XCAFPrs.XCAFPrs_Style_UnSetColorSurf(self, *args)
 
-    def IsSetColorCurv(self, *args):
+    def IsSetColorCurv(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _XCAFPrs.XCAFPrs_Style_IsSetColorCurv(self, *args)
 
-    def GetColorCurv(self, *args):
+    def GetColorCurv(self, *args) -> "Quantity_Color" :
         """
         :rtype: Quantity_Color
 
         """
         return _XCAFPrs.XCAFPrs_Style_GetColorCurv(self, *args)
 
-    def SetColorCurv(self, *args):
+    def SetColorCurv(self, *args) -> "void" :
         """
         :param col:
         :type col: Quantity_Color &
@@ -1269,7 +1269,7 @@ class XCAFPrs_Style(object):
         """
         return _XCAFPrs.XCAFPrs_Style_SetColorCurv(self, *args)
 
-    def UnSetColorCurv(self, *args):
+    def UnSetColorCurv(self, *args) -> "void" :
         """
         * Manage curve color setting
 
@@ -1278,7 +1278,7 @@ class XCAFPrs_Style(object):
         """
         return _XCAFPrs.XCAFPrs_Style_UnSetColorCurv(self, *args)
 
-    def SetVisibility(self, *args):
+    def SetVisibility(self, *args) -> "void" :
         """
         :param visibility:
         :type visibility: bool
@@ -1287,7 +1287,7 @@ class XCAFPrs_Style(object):
         """
         return _XCAFPrs.XCAFPrs_Style_SetVisibility(self, *args)
 
-    def IsVisible(self, *args):
+    def IsVisible(self, *args) -> "Standard_Boolean" :
         """
         * Manage visibility Note: Setting visibility to False makes colors undefined This is necessary for HashCode
 
@@ -1302,7 +1302,7 @@ class XCAFPrs_Style(object):
         except:
             return False
 
-    def HashCode(*args):
+    def HashCode(*args) -> "Standard_Integer" :
         """
         * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -1316,7 +1316,7 @@ class XCAFPrs_Style(object):
         return _XCAFPrs.XCAFPrs_Style_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args):
+    def IsEqual(*args) -> "Standard_Boolean" :
         """
         * Returs True if styles are the same Methods for using Style as key in maps
 
@@ -1359,7 +1359,7 @@ XCAFPrs_Style._kill_pointed = new_instancemethod(_XCAFPrs.XCAFPrs_Style__kill_po
 XCAFPrs_Style_swigregister = _XCAFPrs.XCAFPrs_Style_swigregister
 XCAFPrs_Style_swigregister(XCAFPrs_Style)
 
-def XCAFPrs_Style_HashCode(*args):
+def XCAFPrs_Style_HashCode(*args) -> "Standard_Integer" :
   """
     * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
@@ -1372,7 +1372,7 @@ def XCAFPrs_Style_HashCode(*args):
     """
   return _XCAFPrs.XCAFPrs_Style_HashCode(*args)
 
-def XCAFPrs_Style_IsEqual(*args):
+def XCAFPrs_Style_IsEqual(*args) -> "Standard_Boolean" :
   """
     * Returs True if styles are the same Methods for using Style as key in maps
 

@@ -143,7 +143,7 @@ class Select3D_Box2d(object):
 
         """
         _Select3D.Select3D_Box2d_swiginit(self,_Select3D.new_Select3D_Box2d(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "Select3D_Box2d" :
         """
         :param theBox:
         :type theBox: Bnd_Box2d &
@@ -152,7 +152,7 @@ class Select3D_Box2d(object):
         """
         return _Select3D.Select3D_Box2d_Set(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         :param thePnt:
         :type thePnt: gp_Pnt2d
@@ -161,14 +161,14 @@ class Select3D_Box2d(object):
         """
         return _Select3D.Select3D_Box2d_Update(self, *args)
 
-    def SetVoid(self, *args):
+    def SetVoid(self, *args) -> "void" :
         """
         :rtype: inline void
 
         """
         return _Select3D.Select3D_Box2d_SetVoid(self, *args)
 
-    def IsVoid(self, *args):
+    def IsVoid(self, *args) -> "Standard_Boolean" :
         """
         :rtype: inline bool
 
@@ -204,7 +204,7 @@ class Select3D_ListIteratorOfListOfSensitive(object):
 
         """
         _Select3D.Select3D_ListIteratorOfListOfSensitive_swiginit(self,_Select3D.new_Select3D_ListIteratorOfListOfSensitive(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: Select3D_ListOfSensitive &
@@ -213,21 +213,21 @@ class Select3D_ListIteratorOfListOfSensitive(object):
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitive_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitive_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitive_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
@@ -263,7 +263,7 @@ class Select3D_ListIteratorOfListOfSensitiveTriangle(object):
 
         """
         _Select3D.Select3D_ListIteratorOfListOfSensitiveTriangle_swiginit(self,_Select3D.new_Select3D_ListIteratorOfListOfSensitiveTriangle(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: Select3D_ListOfSensitiveTriangle &
@@ -272,21 +272,21 @@ class Select3D_ListIteratorOfListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitiveTriangle_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitiveTriangle_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListIteratorOfListOfSensitiveTriangle_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveTriangle &" :
         """
         :rtype: Handle_Select3D_SensitiveTriangle
 
@@ -322,18 +322,18 @@ class Select3D_ListNodeOfListOfSensitive(OCC.TCollection.TCollection_MapNode):
 
         """
         _Select3D.Select3D_ListNodeOfListOfSensitive_swiginit(self,_Select3D.new_Select3D_ListNodeOfListOfSensitive(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_ListNodeOfListOfSensitive_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_ListNodeOfListOfSensitive self)"""
         return _Select3D.Select3D_ListNodeOfListOfSensitive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_ListNodeOfListOfSensitive" :
         """GetHandle(Select3D_ListNodeOfListOfSensitive self) -> Handle_Select3D_ListNodeOfListOfSensitive"""
         return _Select3D.Select3D_ListNodeOfListOfSensitive_GetHandle(self)
 
@@ -372,7 +372,7 @@ Handle_Select3D_ListNodeOfListOfSensitive._kill_pointed = new_instancemethod(_Se
 Handle_Select3D_ListNodeOfListOfSensitive_swigregister = _Select3D.Handle_Select3D_ListNodeOfListOfSensitive_swigregister
 Handle_Select3D_ListNodeOfListOfSensitive_swigregister(Handle_Select3D_ListNodeOfListOfSensitive)
 
-def Handle_Select3D_ListNodeOfListOfSensitive_DownCast(*args):
+def Handle_Select3D_ListNodeOfListOfSensitive_DownCast(*args) -> "Handle_Select3D_ListNodeOfListOfSensitive const" :
   return _Select3D.Handle_Select3D_ListNodeOfListOfSensitive_DownCast(*args)
 Handle_Select3D_ListNodeOfListOfSensitive_DownCast = _Select3D.Handle_Select3D_ListNodeOfListOfSensitive_DownCast
 
@@ -389,18 +389,18 @@ class Select3D_ListNodeOfListOfSensitiveTriangle(OCC.TCollection.TCollection_Map
 
         """
         _Select3D.Select3D_ListNodeOfListOfSensitiveTriangle_swiginit(self,_Select3D.new_Select3D_ListNodeOfListOfSensitiveTriangle(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveTriangle &" :
         """
         :rtype: Handle_Select3D_SensitiveTriangle
 
         """
         return _Select3D.Select3D_ListNodeOfListOfSensitiveTriangle_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_ListNodeOfListOfSensitiveTriangle self)"""
         return _Select3D.Select3D_ListNodeOfListOfSensitiveTriangle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_ListNodeOfListOfSensitiveTriangle" :
         """GetHandle(Select3D_ListNodeOfListOfSensitiveTriangle self) -> Handle_Select3D_ListNodeOfListOfSensitiveTriangle"""
         return _Select3D.Select3D_ListNodeOfListOfSensitiveTriangle_GetHandle(self)
 
@@ -439,7 +439,7 @@ Handle_Select3D_ListNodeOfListOfSensitiveTriangle._kill_pointed = new_instanceme
 Handle_Select3D_ListNodeOfListOfSensitiveTriangle_swigregister = _Select3D.Handle_Select3D_ListNodeOfListOfSensitiveTriangle_swigregister
 Handle_Select3D_ListNodeOfListOfSensitiveTriangle_swigregister(Handle_Select3D_ListNodeOfListOfSensitiveTriangle)
 
-def Handle_Select3D_ListNodeOfListOfSensitiveTriangle_DownCast(*args):
+def Handle_Select3D_ListNodeOfListOfSensitiveTriangle_DownCast(*args) -> "Handle_Select3D_ListNodeOfListOfSensitiveTriangle const" :
   return _Select3D.Handle_Select3D_ListNodeOfListOfSensitiveTriangle_DownCast(*args)
 Handle_Select3D_ListNodeOfListOfSensitiveTriangle_DownCast = _Select3D.Handle_Select3D_ListNodeOfListOfSensitiveTriangle_DownCast
 
@@ -452,7 +452,7 @@ class Select3D_ListOfSensitive(object):
 
         """
         _Select3D.Select3D_ListOfSensitive_swiginit(self,_Select3D.new_Select3D_ListOfSensitive(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Select3D_ListOfSensitive &
@@ -461,7 +461,7 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Select3D_ListOfSensitive &
@@ -470,28 +470,28 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Select3D.Select3D_ListOfSensitive_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListOfSensitive_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Select3D.Select3D_ListOfSensitive_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveEntity &
@@ -510,7 +510,7 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveEntity &
@@ -529,28 +529,28 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_ListOfSensitive_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_ListOfSensitive_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListOfSensitive_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: Select3D_ListIteratorOfListOfSensitive &
@@ -559,7 +559,7 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveEntity &
@@ -576,7 +576,7 @@ class Select3D_ListOfSensitive(object):
         """
         return _Select3D.Select3D_ListOfSensitive_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveEntity &
@@ -627,7 +627,7 @@ class Select3D_ListOfSensitiveTriangle(object):
 
         """
         _Select3D.Select3D_ListOfSensitiveTriangle_swiginit(self,_Select3D.new_Select3D_ListOfSensitiveTriangle(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Select3D_ListOfSensitiveTriangle &
@@ -636,7 +636,7 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: Select3D_ListOfSensitiveTriangle &
@@ -645,28 +645,28 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveTriangle &
@@ -685,7 +685,7 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveTriangle &
@@ -704,28 +704,28 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Select3D_SensitiveTriangle &" :
         """
         :rtype: Handle_Select3D_SensitiveTriangle
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Select3D_SensitiveTriangle &" :
         """
         :rtype: Handle_Select3D_SensitiveTriangle
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: Select3D_ListIteratorOfListOfSensitiveTriangle &
@@ -734,7 +734,7 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveTriangle &
@@ -751,7 +751,7 @@ class Select3D_ListOfSensitiveTriangle(object):
         """
         return _Select3D.Select3D_ListOfSensitiveTriangle_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_Select3D_SensitiveTriangle &
@@ -797,7 +797,7 @@ class Select3D_Pnt(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "gp_Pnt" :
         """
         :param thePnt:
         :type thePnt: gp_Pnt
@@ -823,7 +823,7 @@ class Select3D_Pnt2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Set(self, *args):
+    def Set(self, *args) -> "gp_Pnt2d" :
         """
         :param thePnt:
         :type thePnt: gp_Pnt2d
@@ -856,7 +856,7 @@ class Select3D_PointData(object):
 
         """
         _Select3D.Select3D_PointData_swiginit(self,_Select3D.new_Select3D_PointData(*args))
-    def SetPnt(self, *args):
+    def SetPnt(self, *args) -> "void" :
         """
         :param theIndex:
         :type theIndex: int
@@ -873,7 +873,7 @@ class Select3D_PointData(object):
         """
         return _Select3D.Select3D_PointData_SetPnt(self, *args)
 
-    def SetPnt2d(self, *args):
+    def SetPnt2d(self, *args) -> "void" :
         """
         :param theIndex:
         :type theIndex: int
@@ -890,7 +890,7 @@ class Select3D_PointData(object):
         """
         return _Select3D.Select3D_PointData_SetPnt2d(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "Select3D_Pnt" :
         """
         :param theIndex:
         :type theIndex: int
@@ -899,7 +899,7 @@ class Select3D_PointData(object):
         """
         return _Select3D.Select3D_PointData_Pnt(self, *args)
 
-    def Pnt2d(self, *args):
+    def Pnt2d(self, *args) -> "Select3D_Pnt2d" :
         """
         :param theIndex:
         :type theIndex: int
@@ -908,7 +908,7 @@ class Select3D_PointData(object):
         """
         return _Select3D.Select3D_PointData_Pnt2d(self, *args)
 
-    def Size(self, *args):
+    def Size(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -981,7 +981,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
 
         """
         _Select3D.Select3D_Projector_swiginit(self,_Select3D.new_Select3D_Projector(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param T:
         :type T: gp_Trsf
@@ -994,7 +994,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Set(self, *args)
 
-    def SetView(self, *args):
+    def SetView(self, *args) -> "void" :
         """
         * Sets the 3D view V used at the time of construction.
 
@@ -1005,7 +1005,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_SetView(self, *args)
 
-    def View(self, *args):
+    def View(self, *args) -> "Handle_V3d_View const &" :
         """
         * Returns the 3D view used at the time of construction.
 
@@ -1014,7 +1014,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_View(self, *args)
 
-    def Scaled(self, *args):
+    def Scaled(self, *args) -> "void" :
         """
         * to compute with the given scale and translation.
 
@@ -1025,7 +1025,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Scaled(self, *args)
 
-    def Perspective(self, *args):
+    def Perspective(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a perspective transformation.
 
@@ -1034,7 +1034,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Perspective(self, *args)
 
-    def Transformation(self, *args):
+    def Transformation(self, *args) -> "gp_GTrsf const" :
         """
         * Returns the active transformation.
 
@@ -1043,7 +1043,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Transformation(self, *args)
 
-    def InvertedTransformation(self, *args):
+    def InvertedTransformation(self, *args) -> "gp_GTrsf const" :
         """
         * Returns the active inverted transformation.
 
@@ -1052,7 +1052,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_InvertedTransformation(self, *args)
 
-    def FullTransformation(self, *args):
+    def FullTransformation(self, *args) -> "gp_Trsf const" :
         """
         * Returns the original transformation.
 
@@ -1061,7 +1061,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_FullTransformation(self, *args)
 
-    def Focus(self, *args):
+    def Focus(self, *args) -> "Standard_Real" :
         """
         * Returns the focal length.
 
@@ -1070,7 +1070,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Focus(self, *args)
 
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         * Transform and apply perspective if needed.
 
@@ -1107,7 +1107,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Project(self, *args)
 
-    def Shoot(self, *args):
+    def Shoot(self, *args) -> "gp_Lin" :
         """
         * return a line going through the eye towards the 2d point <X,Y>.
 
@@ -1120,7 +1120,7 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Shoot(self, *args)
 
-    def Transform(self, *args):
+    def Transform(self, *args) -> "void" :
         """
         :param D:
         :type D: gp_Vec
@@ -1145,11 +1145,11 @@ class Select3D_Projector(OCC.Standard.Standard_Transient):
         """
         return _Select3D.Select3D_Projector_Transform(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_Projector self)"""
         return _Select3D.Select3D_Projector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_Projector" :
         """GetHandle(Select3D_Projector self) -> Handle_Select3D_Projector"""
         return _Select3D.Select3D_Projector_GetHandle(self)
 
@@ -1199,7 +1199,7 @@ Handle_Select3D_Projector._kill_pointed = new_instancemethod(_Select3D.Handle_Se
 Handle_Select3D_Projector_swigregister = _Select3D.Handle_Select3D_Projector_swigregister
 Handle_Select3D_Projector_swigregister(Handle_Select3D_Projector)
 
-def Handle_Select3D_Projector_DownCast(*args):
+def Handle_Select3D_Projector_DownCast(*args) -> "Handle_Select3D_Projector const" :
   return _Select3D.Handle_Select3D_Projector_DownCast(*args)
 Handle_Select3D_Projector_DownCast = _Select3D.Handle_Select3D_Projector_DownCast
 
@@ -1207,7 +1207,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Project(self, *args):
+    def Project(self, *args) -> "void" :
         """
         * In classes inheriting this framework, you must redefine this function in order to get a sensitive 2D rectangle from a 3D entity. This rectangle is the sensitive zone which makes the 3D entity selectable.
 
@@ -1218,7 +1218,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_Project(self, *args)
 
-    def GetConnected(self, *args):
+    def GetConnected(self, *args) -> "Handle_Select3D_SensitiveEntity" :
         """
         * Originally this method intended to return sensitive entity with new location aLocation, but currently sensitive entities do not hold a location, instead HasLocation() and Location() methods call corresponding entity owner's methods. Thus all entities returned by GetConnected() share the same location propagated from corresponding selectable object. You must redefine this function for any type of sensitive entity which can accept another connected sensitive entity.//can be connected to another sensitive entity.
 
@@ -1229,7 +1229,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_GetConnected(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Matches the box defined by the coordinates Xmin, Ymin, Xmax, Ymax with the entity found at that point within the tolerance aTol. Xmin, YMin define the minimum point in the lower left hand corner of the box, and XMax, YMax define the maximum point in the upper right hand corner of the box. You must redefine this function for every inheriting entity. You will have to call this framework inside the redefined function.
 
@@ -1258,7 +1258,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_Matches(self, *args)
 
-    def HasLocation(self, *args):
+    def HasLocation(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this framework has a location defined.
 
@@ -1267,14 +1267,14 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_HasLocation(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "TopLoc_Location const &" :
         """
         :rtype: TopLoc_Location
 
         """
         return _Select3D.Select3D_SensitiveEntity_Location(self, *args)
 
-    def ResetLocation(self, *args):
+    def ResetLocation(self, *args) -> "void" :
         """
         * sets the location to Identity
 
@@ -1283,7 +1283,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_ResetLocation(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param aLoc:
         :type aLoc: TopLoc_Location &
@@ -1292,7 +1292,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_SetLocation(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * 2 options : <FullDump> = False -> general information //!	 <FullDump> = True -> whole informtion 3D +2d ...
 
@@ -1305,7 +1305,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_Dump(self, *args)
 
-    def DumpBox(*args):
+    def DumpBox(*args) -> "void" :
         """
         :param S:
         :type S: Standard_OStream &
@@ -1317,7 +1317,7 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         return _Select3D.Select3D_SensitiveEntity_DumpBox(*args)
 
     DumpBox = staticmethod(DumpBox)
-    def UpdateLocation(self, *args):
+    def UpdateLocation(self, *args) -> "void" :
         """
         :param aLoc:
         :type aLoc: TopLoc_Location &
@@ -1326,11 +1326,11 @@ class Select3D_SensitiveEntity(OCC.SelectBasics.SelectBasics_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveEntity_UpdateLocation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveEntity self)"""
         return _Select3D.Select3D_SensitiveEntity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveEntity" :
         """GetHandle(Select3D_SensitiveEntity self) -> Handle_Select3D_SensitiveEntity"""
         return _Select3D.Select3D_SensitiveEntity_GetHandle(self)
 
@@ -1356,7 +1356,7 @@ Select3D_SensitiveEntity.GetHandle = new_instancemethod(_Select3D.Select3D_Sensi
 Select3D_SensitiveEntity_swigregister = _Select3D.Select3D_SensitiveEntity_swigregister
 Select3D_SensitiveEntity_swigregister(Select3D_SensitiveEntity)
 
-def Select3D_SensitiveEntity_DumpBox(*args):
+def Select3D_SensitiveEntity_DumpBox(*args) -> "void" :
   """
     :param S:
     :type S: Standard_OStream &
@@ -1388,7 +1388,7 @@ Handle_Select3D_SensitiveEntity._kill_pointed = new_instancemethod(_Select3D.Han
 Handle_Select3D_SensitiveEntity_swigregister = _Select3D.Handle_Select3D_SensitiveEntity_swigregister
 Handle_Select3D_SensitiveEntity_swigregister(Handle_Select3D_SensitiveEntity)
 
-def Handle_Select3D_SensitiveEntity_DownCast(*args):
+def Handle_Select3D_SensitiveEntity_DownCast(*args) -> "Handle_Select3D_SensitiveEntity const" :
   return _Select3D.Handle_Select3D_SensitiveEntity_DownCast(*args)
 Handle_Select3D_SensitiveEntity_DownCast = _Select3D.Handle_Select3D_SensitiveEntity_DownCast
 
@@ -1401,14 +1401,14 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
 
         """
         _Select3D.Select3D_SensitiveEntitySequence_swiginit(self,_Select3D.new_Select3D_SensitiveEntitySequence(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Select3D_SensitiveEntitySequence const &" :
         """
         :param Other:
         :type Other: Select3D_SensitiveEntitySequence &
@@ -1417,7 +1417,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Select3D_SensitiveEntitySequence const &" :
         """
         :param Other:
         :type Other: Select3D_SensitiveEntitySequence &
@@ -1426,7 +1426,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Select3D_SensitiveEntity &
@@ -1439,7 +1439,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Select3D_SensitiveEntity &
@@ -1452,7 +1452,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1469,7 +1469,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1486,21 +1486,21 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Select3D_SensitiveEntity const &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_SensitiveEntitySequence_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Select3D_SensitiveEntity const &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1511,7 +1511,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveEntity const &" :
         """
         :param Index:
         :type Index: int
@@ -1520,7 +1520,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1531,7 +1531,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :param Index:
         :type Index: int
@@ -1540,7 +1540,7 @@ class Select3D_SensitiveEntitySequence(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Select3D.Select3D_SensitiveEntitySequence_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1596,18 +1596,18 @@ class Select3D_SequenceNodeOfSensitiveEntitySequence(OCC.TCollection.TCollection
 
         """
         _Select3D.Select3D_SequenceNodeOfSensitiveEntitySequence_swiginit(self,_Select3D.new_Select3D_SequenceNodeOfSensitiveEntitySequence(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Select3D_SensitiveEntity &" :
         """
         :rtype: Handle_Select3D_SensitiveEntity
 
         """
         return _Select3D.Select3D_SequenceNodeOfSensitiveEntitySequence_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SequenceNodeOfSensitiveEntitySequence self)"""
         return _Select3D.Select3D_SequenceNodeOfSensitiveEntitySequence__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SequenceNodeOfSensitiveEntitySequence" :
         """GetHandle(Select3D_SequenceNodeOfSensitiveEntitySequence self) -> Handle_Select3D_SequenceNodeOfSensitiveEntitySequence"""
         return _Select3D.Select3D_SequenceNodeOfSensitiveEntitySequence_GetHandle(self)
 
@@ -1646,7 +1646,7 @@ Handle_Select3D_SequenceNodeOfSensitiveEntitySequence._kill_pointed = new_instan
 Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_swigregister = _Select3D.Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_swigregister
 Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_swigregister(Handle_Select3D_SequenceNodeOfSensitiveEntitySequence)
 
-def Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_DownCast(*args):
+def Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_DownCast(*args) -> "Handle_Select3D_SequenceNodeOfSensitiveEntitySequence const" :
   return _Select3D.Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_DownCast(*args)
 Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_DownCast = _Select3D.Handle_Select3D_SequenceNodeOfSensitiveEntitySequence_DownCast
 
@@ -1683,7 +1683,7 @@ class Select3D_SensitiveBox(Select3D_SensitiveEntity):
 
         """
         _Select3D.Select3D_SensitiveBox_swiginit(self,_Select3D.new_Select3D_SensitiveBox(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -1718,7 +1718,7 @@ class Select3D_SensitiveBox(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveBox_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         :param EyeLine:
         :type EyeLine: gp_Lin
@@ -1727,7 +1727,7 @@ class Select3D_SensitiveBox(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveBox_ComputeDepth(self, *args)
 
-    def Box(self, *args):
+    def Box(self, *args) -> "Bnd_Box const &" :
         """
         * Returns the sensitive 3D box used at the time of construction.
 
@@ -1736,11 +1736,11 @@ class Select3D_SensitiveBox(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveBox_Box(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveBox self)"""
         return _Select3D.Select3D_SensitiveBox__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveBox" :
         """GetHandle(Select3D_SensitiveBox self) -> Handle_Select3D_SensitiveBox"""
         return _Select3D.Select3D_SensitiveBox_GetHandle(self)
 
@@ -1781,7 +1781,7 @@ Handle_Select3D_SensitiveBox._kill_pointed = new_instancemethod(_Select3D.Handle
 Handle_Select3D_SensitiveBox_swigregister = _Select3D.Handle_Select3D_SensitiveBox_swigregister
 Handle_Select3D_SensitiveBox_swigregister(Handle_Select3D_SensitiveBox)
 
-def Handle_Select3D_SensitiveBox_DownCast(*args):
+def Handle_Select3D_SensitiveBox_DownCast(*args) -> "Handle_Select3D_SensitiveBox const" :
   return _Select3D.Handle_Select3D_SensitiveBox_DownCast(*args)
 Handle_Select3D_SensitiveBox_DownCast = _Select3D.Handle_Select3D_SensitiveBox_DownCast
 
@@ -1810,7 +1810,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
 
         """
         _Select3D.Select3D_SensitiveGroup_swiginit(self,_Select3D.new_Select3D_SensitiveGroup(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the list of sensitive entities LL to the empty sensitive group object created at construction time.
 
@@ -1827,7 +1827,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param aSensitive:
         :type aSensitive: Handle_Select3D_SensitiveEntity &
@@ -1836,7 +1836,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes all sensitive entities from the list used at the time of construction, or added using the function Add.
 
@@ -1845,7 +1845,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_Clear(self, *args)
 
-    def IsIn(self, *args):
+    def IsIn(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the sensitive entity aSensitive is in the list used at the time of construction, or added using the function Add.
 
@@ -1856,7 +1856,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_IsIn(self, *args)
 
-    def MustMatchAll(self, *args):
+    def MustMatchAll(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if all sensitive entities in the list used at the time of construction, or added using the function Add must be matched.
 
@@ -1865,7 +1865,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_MustMatchAll(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -1900,7 +1900,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_Matches(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the requirement that all sensitive entities in the list used at the time of construction, or added using the function Add must be matched.
 
@@ -1917,7 +1917,7 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_Set(self, *args)
 
-    def GetEntities(self, *args):
+    def GetEntities(self, *args) -> "Select3D_ListOfSensitive const &" :
         """
         * Gets group content
 
@@ -1926,11 +1926,11 @@ class Select3D_SensitiveGroup(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveGroup_GetEntities(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveGroup self)"""
         return _Select3D.Select3D_SensitiveGroup__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveGroup" :
         """GetHandle(Select3D_SensitiveGroup self) -> Handle_Select3D_SensitiveGroup"""
         return _Select3D.Select3D_SensitiveGroup_GetHandle(self)
 
@@ -1976,7 +1976,7 @@ Handle_Select3D_SensitiveGroup._kill_pointed = new_instancemethod(_Select3D.Hand
 Handle_Select3D_SensitiveGroup_swigregister = _Select3D.Handle_Select3D_SensitiveGroup_swigregister
 Handle_Select3D_SensitiveGroup_swigregister(Handle_Select3D_SensitiveGroup)
 
-def Handle_Select3D_SensitiveGroup_DownCast(*args):
+def Handle_Select3D_SensitiveGroup_DownCast(*args) -> "Handle_Select3D_SensitiveGroup const" :
   return _Select3D.Handle_Select3D_SensitiveGroup_DownCast(*args)
 Handle_Select3D_SensitiveGroup_DownCast = _Select3D.Handle_Select3D_SensitiveGroup_DownCast
 
@@ -1995,7 +1995,7 @@ class Select3D_SensitivePoint(Select3D_SensitiveEntity):
 
         """
         _Select3D.Select3D_SensitivePoint_swiginit(self,_Select3D.new_Select3D_SensitivePoint(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2030,7 +2030,7 @@ class Select3D_SensitivePoint(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitivePoint_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         :param EyeLine:
         :type EyeLine: gp_Lin
@@ -2039,7 +2039,7 @@ class Select3D_SensitivePoint(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitivePoint_ComputeDepth(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the point used at the time of construction.
 
@@ -2048,11 +2048,11 @@ class Select3D_SensitivePoint(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitivePoint_Point(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitivePoint self)"""
         return _Select3D.Select3D_SensitivePoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitivePoint" :
         """GetHandle(Select3D_SensitivePoint self) -> Handle_Select3D_SensitivePoint"""
         return _Select3D.Select3D_SensitivePoint_GetHandle(self)
 
@@ -2093,7 +2093,7 @@ Handle_Select3D_SensitivePoint._kill_pointed = new_instancemethod(_Select3D.Hand
 Handle_Select3D_SensitivePoint_swigregister = _Select3D.Handle_Select3D_SensitivePoint_swigregister
 Handle_Select3D_SensitivePoint_swigregister(Handle_Select3D_SensitivePoint)
 
-def Handle_Select3D_SensitivePoint_DownCast(*args):
+def Handle_Select3D_SensitivePoint_DownCast(*args) -> "Handle_Select3D_SensitivePoint const" :
   return _Select3D.Handle_Select3D_SensitivePoint_DownCast(*args)
 Handle_Select3D_SensitivePoint_DownCast = _Select3D.Handle_Select3D_SensitivePoint_DownCast
 
@@ -2101,7 +2101,7 @@ class Select3D_SensitivePoly(Select3D_SensitiveEntity):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Points3D(self, *args):
+    def Points3D(self, *args) -> "void" :
         """
         * Returns the 3D points of the array used at construction time.
 
@@ -2112,7 +2112,7 @@ class Select3D_SensitivePoly(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitivePoly_Points3D(self, *args)
 
-    def Points2D(self, *args):
+    def Points2D(self, *args) -> "void" :
         """
         * Returns the 2D points of the array used at construction time.
 
@@ -2123,11 +2123,11 @@ class Select3D_SensitivePoly(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitivePoly_Points2D(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitivePoly self)"""
         return _Select3D.Select3D_SensitivePoly__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitivePoly" :
         """GetHandle(Select3D_SensitivePoly self) -> Handle_Select3D_SensitivePoly"""
         return _Select3D.Select3D_SensitivePoly_GetHandle(self)
 
@@ -2167,7 +2167,7 @@ Handle_Select3D_SensitivePoly._kill_pointed = new_instancemethod(_Select3D.Handl
 Handle_Select3D_SensitivePoly_swigregister = _Select3D.Handle_Select3D_SensitivePoly_swigregister
 Handle_Select3D_SensitivePoly_swigregister(Handle_Select3D_SensitivePoly)
 
-def Handle_Select3D_SensitivePoly_DownCast(*args):
+def Handle_Select3D_SensitivePoly_DownCast(*args) -> "Handle_Select3D_SensitivePoly const" :
   return _Select3D.Handle_Select3D_SensitivePoly_DownCast(*args)
 Handle_Select3D_SensitivePoly_DownCast = _Select3D.Handle_Select3D_SensitivePoly_DownCast
 
@@ -2190,7 +2190,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
 
         """
         _Select3D.Select3D_SensitiveSegment_swiginit(self,_Select3D.new_Select3D_SensitiveSegment(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the maximum number of sensitive rectangles MaxRect.
 
@@ -2201,7 +2201,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_Set(self, *args)
 
-    def StartPoint(self, *args):
+    def StartPoint(self, *args) -> "gp_Pnt" :
         """
         * changes the start Point of the Segment;
 
@@ -2216,7 +2216,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_StartPoint(self, *args)
 
-    def EndPoint(self, *args):
+    def EndPoint(self, *args) -> "gp_Pnt" :
         """
         * changes the end point of the segment
 
@@ -2231,7 +2231,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_EndPoint(self, *args)
 
-    def StartPoint2d(self, *args):
+    def StartPoint2d(self, *args) -> "gp_Pnt2d" :
         """
         * gives the 3D start Point of the Segment
 
@@ -2240,7 +2240,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_StartPoint2d(self, *args)
 
-    def EndPoint2d(self, *args):
+    def EndPoint2d(self, *args) -> "gp_Pnt2d" :
         """
         * gives the 3D End Point of the Segment
 
@@ -2249,7 +2249,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_EndPoint2d(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2284,7 +2284,7 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         :param EyeLine:
         :type EyeLine: gp_Lin
@@ -2293,11 +2293,11 @@ class Select3D_SensitiveSegment(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveSegment_ComputeDepth(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveSegment self)"""
         return _Select3D.Select3D_SensitiveSegment__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveSegment" :
         """GetHandle(Select3D_SensitiveSegment self) -> Handle_Select3D_SensitiveSegment"""
         return _Select3D.Select3D_SensitiveSegment_GetHandle(self)
 
@@ -2342,7 +2342,7 @@ Handle_Select3D_SensitiveSegment._kill_pointed = new_instancemethod(_Select3D.Ha
 Handle_Select3D_SensitiveSegment_swigregister = _Select3D.Handle_Select3D_SensitiveSegment_swigregister
 Handle_Select3D_SensitiveSegment_swigregister(Handle_Select3D_SensitiveSegment)
 
-def Handle_Select3D_SensitiveSegment_DownCast(*args):
+def Handle_Select3D_SensitiveSegment_DownCast(*args) -> "Handle_Select3D_SensitiveSegment const" :
   return _Select3D.Handle_Select3D_SensitiveSegment_DownCast(*args)
 Handle_Select3D_SensitiveSegment_DownCast = _Select3D.Handle_Select3D_SensitiveSegment_DownCast
 
@@ -2361,7 +2361,7 @@ class Select3D_SensitiveWire(Select3D_SensitiveEntity):
 
         """
         _Select3D.Select3D_SensitiveWire_swiginit(self,_Select3D.new_Select3D_SensitiveWire(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the sensitive entity aSensitive to this framework.
 
@@ -2372,7 +2372,7 @@ class Select3D_SensitiveWire(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveWire_Add(self, *args)
 
-    def GetEdges(self, *args):
+    def GetEdges(self, *args) -> "void" :
         """
         * returns the sensitive edges stored in this wire
 
@@ -2383,7 +2383,7 @@ class Select3D_SensitiveWire(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveWire_GetEdges(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2418,7 +2418,7 @@ class Select3D_SensitiveWire(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveWire_Matches(self, *args)
 
-    def GetLastDetected(self, *args):
+    def GetLastDetected(self, *args) -> "Handle_Select3D_SensitiveEntity" :
         """
         * //!returns <mymaxrect>
 
@@ -2427,11 +2427,11 @@ class Select3D_SensitiveWire(Select3D_SensitiveEntity):
         """
         return _Select3D.Select3D_SensitiveWire_GetLastDetected(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveWire self)"""
         return _Select3D.Select3D_SensitiveWire__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveWire" :
         """GetHandle(Select3D_SensitiveWire self) -> Handle_Select3D_SensitiveWire"""
         return _Select3D.Select3D_SensitiveWire_GetHandle(self)
 
@@ -2473,7 +2473,7 @@ Handle_Select3D_SensitiveWire._kill_pointed = new_instancemethod(_Select3D.Handl
 Handle_Select3D_SensitiveWire_swigregister = _Select3D.Handle_Select3D_SensitiveWire_swigregister
 Handle_Select3D_SensitiveWire_swigregister(Handle_Select3D_SensitiveWire)
 
-def Handle_Select3D_SensitiveWire_DownCast(*args):
+def Handle_Select3D_SensitiveWire_DownCast(*args) -> "Handle_Select3D_SensitiveWire const" :
   return _Select3D.Handle_Select3D_SensitiveWire_DownCast(*args)
 Handle_Select3D_SensitiveWire_DownCast = _Select3D.Handle_Select3D_SensitiveWire_DownCast
 
@@ -2532,7 +2532,7 @@ class Select3D_SensitiveCircle(Select3D_SensitivePoly):
 
         """
         _Select3D.Select3D_SensitiveCircle_swiginit(self,_Select3D.new_Select3D_SensitiveCircle(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2567,7 +2567,7 @@ class Select3D_SensitiveCircle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCircle_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         * Compute depth of sensitive circle for the detected sub-part. @param thePickLine [in] the picking line. @param theDetectedIndex [in] index of the detected sub-part. returns depth on the picking line.
 
@@ -2580,7 +2580,7 @@ class Select3D_SensitiveCircle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCircle_ComputeDepth(self, *args)
 
-    def ArrayBounds(self, *args):
+    def ArrayBounds(self, *args) -> "void" :
         """
         :param Low:
         :type Low: int &
@@ -2591,7 +2591,7 @@ class Select3D_SensitiveCircle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCircle_ArrayBounds(self, *args)
 
-    def GetPoint3d(self, *args):
+    def GetPoint3d(self, *args) -> "gp_Pnt" :
         """
         :param rank:
         :type rank: int
@@ -2600,11 +2600,11 @@ class Select3D_SensitiveCircle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCircle_GetPoint3d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveCircle self)"""
         return _Select3D.Select3D_SensitiveCircle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveCircle" :
         """GetHandle(Select3D_SensitiveCircle self) -> Handle_Select3D_SensitiveCircle"""
         return _Select3D.Select3D_SensitiveCircle_GetHandle(self)
 
@@ -2646,7 +2646,7 @@ Handle_Select3D_SensitiveCircle._kill_pointed = new_instancemethod(_Select3D.Han
 Handle_Select3D_SensitiveCircle_swigregister = _Select3D.Handle_Select3D_SensitiveCircle_swigregister
 Handle_Select3D_SensitiveCircle_swigregister(Handle_Select3D_SensitiveCircle)
 
-def Handle_Select3D_SensitiveCircle_DownCast(*args):
+def Handle_Select3D_SensitiveCircle_DownCast(*args) -> "Handle_Select3D_SensitiveCircle const" :
   return _Select3D.Handle_Select3D_SensitiveCircle_DownCast(*args)
 Handle_Select3D_SensitiveCircle_DownCast = _Select3D.Handle_Select3D_SensitiveCircle_DownCast
 
@@ -2683,7 +2683,7 @@ class Select3D_SensitiveCurve(Select3D_SensitivePoly):
 
         """
         _Select3D.Select3D_SensitiveCurve_swiginit(self,_Select3D.new_Select3D_SensitiveCurve(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2718,7 +2718,7 @@ class Select3D_SensitiveCurve(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCurve_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         * Compute depth of sensitive circle for the detected sub-part. @param thePickLine [in] the picking line. @param theDetectedIndex [in] index of the detected sub-part. returns depth on the picking line.
 
@@ -2731,7 +2731,7 @@ class Select3D_SensitiveCurve(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCurve_ComputeDepth(self, *args)
 
-    def GetLastDetected(self, *args):
+    def GetLastDetected(self, *args) -> "Standard_Integer" :
         """
         * Gets index of last detected segment
 
@@ -2740,11 +2740,11 @@ class Select3D_SensitiveCurve(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveCurve_GetLastDetected(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveCurve self)"""
         return _Select3D.Select3D_SensitiveCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveCurve" :
         """GetHandle(Select3D_SensitiveCurve self) -> Handle_Select3D_SensitiveCurve"""
         return _Select3D.Select3D_SensitiveCurve_GetHandle(self)
 
@@ -2785,7 +2785,7 @@ Handle_Select3D_SensitiveCurve._kill_pointed = new_instancemethod(_Select3D.Hand
 Handle_Select3D_SensitiveCurve_swigregister = _Select3D.Handle_Select3D_SensitiveCurve_swigregister
 Handle_Select3D_SensitiveCurve_swigregister(Handle_Select3D_SensitiveCurve)
 
-def Handle_Select3D_SensitiveCurve_DownCast(*args):
+def Handle_Select3D_SensitiveCurve_DownCast(*args) -> "Handle_Select3D_SensitiveCurve const" :
   return _Select3D.Handle_Select3D_SensitiveCurve_DownCast(*args)
 Handle_Select3D_SensitiveCurve_DownCast = _Select3D.Handle_Select3D_SensitiveCurve_DownCast
 
@@ -2816,7 +2816,7 @@ class Select3D_SensitiveFace(Select3D_SensitivePoly):
 
         """
         _Select3D.Select3D_SensitiveFace_swiginit(self,_Select3D.new_Select3D_SensitiveFace(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2851,7 +2851,7 @@ class Select3D_SensitiveFace(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveFace_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         * Computes the depth values for all 3D points defining this face and returns the minimal value among them. If the 'minimal depth' approach is not suitable and gives wrong detection results in some particular case, a custom sensitive face class can redefine this method.
 
@@ -2866,11 +2866,11 @@ class Select3D_SensitiveFace(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveFace_ComputeDepth(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveFace self)"""
         return _Select3D.Select3D_SensitiveFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveFace" :
         """GetHandle(Select3D_SensitiveFace self) -> Handle_Select3D_SensitiveFace"""
         return _Select3D.Select3D_SensitiveFace_GetHandle(self)
 
@@ -2910,7 +2910,7 @@ Handle_Select3D_SensitiveFace._kill_pointed = new_instancemethod(_Select3D.Handl
 Handle_Select3D_SensitiveFace_swigregister = _Select3D.Handle_Select3D_SensitiveFace_swigregister
 Handle_Select3D_SensitiveFace_swigregister(Handle_Select3D_SensitiveFace)
 
-def Handle_Select3D_SensitiveFace_DownCast(*args):
+def Handle_Select3D_SensitiveFace_DownCast(*args) -> "Handle_Select3D_SensitiveFace const" :
   return _Select3D.Handle_Select3D_SensitiveFace_DownCast(*args)
 Handle_Select3D_SensitiveFace_DownCast = _Select3D.Handle_Select3D_SensitiveFace_DownCast
 
@@ -2935,7 +2935,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
 
         """
         _Select3D.Select3D_SensitiveTriangle_swiginit(self,_Select3D.new_Select3D_SensitiveTriangle(*args))
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the sensitive entity matches the picking detection area (close to the picking line). For details please refer to base class declaration.
 
@@ -2970,7 +2970,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveTriangle_Matches(self, *args)
 
-    def ComputeDepth(self, *args):
+    def ComputeDepth(self, *args) -> "Standard_Real" :
         """
         :param EyeLine:
         :type EyeLine: gp_Lin
@@ -2979,7 +2979,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveTriangle_ComputeDepth(self, *args)
 
-    def Points3D(self, *args):
+    def Points3D(self, *args) -> "void" :
         """
         * Returns the 3D points P1, P2, P3 used at the time of construction.
 
@@ -2994,7 +2994,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveTriangle_Points3D(self, *args)
 
-    def Center3D(self, *args):
+    def Center3D(self, *args) -> "gp_Pnt" :
         """
         * Returns the center point of the sensitive triangle created at construction time.
 
@@ -3003,7 +3003,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveTriangle_Center3D(self, *args)
 
-    def Center2D(self, *args):
+    def Center2D(self, *args) -> "gp_XY" :
         """
         * WARNING : the returned Values are the original values without the stored location (if there's one). To get the genuine value, One must apply this location (Method Location() )
 
@@ -3012,7 +3012,7 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         """
         return _Select3D.Select3D_SensitiveTriangle_Center2D(self, *args)
 
-    def Status(*args):
+    def Status(*args) -> "Standard_Real &" :
         """
         :param X:
         :type X: float
@@ -3044,11 +3044,11 @@ class Select3D_SensitiveTriangle(Select3D_SensitivePoly):
         return _Select3D.Select3D_SensitiveTriangle_Status(*args)
 
     Status = staticmethod(Status)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Select3D_SensitiveTriangle self)"""
         return _Select3D.Select3D_SensitiveTriangle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Select3D_SensitiveTriangle" :
         """GetHandle(Select3D_SensitiveTriangle self) -> Handle_Select3D_SensitiveTriangle"""
         return _Select3D.Select3D_SensitiveTriangle_GetHandle(self)
 
@@ -3070,7 +3070,7 @@ Select3D_SensitiveTriangle.GetHandle = new_instancemethod(_Select3D.Select3D_Sen
 Select3D_SensitiveTriangle_swigregister = _Select3D.Select3D_SensitiveTriangle_swigregister
 Select3D_SensitiveTriangle_swigregister(Select3D_SensitiveTriangle)
 
-def Select3D_SensitiveTriangle_Status(*args):
+def Select3D_SensitiveTriangle_Status(*args) -> "Standard_Real &" :
   """
     :param X:
     :type X: float
@@ -3122,7 +3122,7 @@ Handle_Select3D_SensitiveTriangle._kill_pointed = new_instancemethod(_Select3D.H
 Handle_Select3D_SensitiveTriangle_swigregister = _Select3D.Handle_Select3D_SensitiveTriangle_swigregister
 Handle_Select3D_SensitiveTriangle_swigregister(Handle_Select3D_SensitiveTriangle)
 
-def Handle_Select3D_SensitiveTriangle_DownCast(*args):
+def Handle_Select3D_SensitiveTriangle_DownCast(*args) -> "Handle_Select3D_SensitiveTriangle const" :
   return _Select3D.Handle_Select3D_SensitiveTriangle_DownCast(*args)
 Handle_Select3D_SensitiveTriangle_DownCast = _Select3D.Handle_Select3D_SensitiveTriangle_DownCast
 

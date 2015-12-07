@@ -126,7 +126,7 @@ import OCC.Geom2d
 class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MakeFace(self, *args):
+    def MakeFace(self, *args) -> "void" :
         """
         * Makes an undefined Face.
 
@@ -167,7 +167,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_MakeFace(self, *args)
 
-    def UpdateFace(self, *args):
+    def UpdateFace(self, *args) -> "void" :
         """
         * Updates the face F using the tolerance value Tol, surface S and location Location.
 
@@ -200,7 +200,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_UpdateFace(self, *args)
 
-    def NaturalRestriction(self, *args):
+    def NaturalRestriction(self, *args) -> "void" :
         """
         * Sets the NaturalRestriction flag of the face.
 
@@ -213,7 +213,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_NaturalRestriction(self, *args)
 
-    def MakeEdge(self, *args):
+    def MakeEdge(self, *args) -> "void" :
         """
         * Makes an undefined Edge (no geometry).
 
@@ -276,7 +276,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_MakeEdge(self, *args)
 
-    def UpdateEdge(self, *args):
+    def UpdateEdge(self, *args) -> "void" :
         """
         * Sets a 3D curve for the edge. If <C> is a null handle, remove any existing 3d curve.
 
@@ -519,7 +519,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_UpdateEdge(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "void" :
         """
         * Sets the geometric continuity on the edge.
 
@@ -552,7 +552,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_Continuity(self, *args)
 
-    def SameParameter(self, *args):
+    def SameParameter(self, *args) -> "void" :
         """
         * Sets the same parameter flag for the edge <E>.
 
@@ -565,7 +565,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_SameParameter(self, *args)
 
-    def SameRange(self, *args):
+    def SameRange(self, *args) -> "void" :
         """
         * Sets the same range flag for the edge <E>.
 
@@ -578,7 +578,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_SameRange(self, *args)
 
-    def Degenerated(self, *args):
+    def Degenerated(self, *args) -> "void" :
         """
         * Sets the degenerated flag for the edge <E>.
 
@@ -591,7 +591,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_Degenerated(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "void" :
         """
         * Sets the range of the 3d curve if Only3d=True, otherwise sets the range to all the representations
 
@@ -634,7 +634,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_Range(self, *args)
 
-    def MakeVertex(self, *args):
+    def MakeVertex(self, *args) -> "void" :
         """
         * Makes an udefined vertex without geometry.
 
@@ -655,7 +655,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_MakeVertex(self, *args)
 
-    def UpdateVertex(self, *args):
+    def UpdateVertex(self, *args) -> "void" :
         """
         * Sets a 3D point on the vertex.
 
@@ -734,7 +734,7 @@ class BRep_Builder(OCC.TopoDS.TopoDS_Builder):
         """
         return _BRep.BRep_Builder_UpdateVertex(self, *args)
 
-    def Transfert(self, *args):
+    def Transfert(self, *args) -> "void" :
         """
         * Add to <Eout> the geometric representations of <Ein>.
 
@@ -790,7 +790,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsCurve3D(self, *args):
+    def IsCurve3D(self, *args) -> "Standard_Boolean" :
         """
         * A 3D curve representation.
 
@@ -799,7 +799,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsCurve3D(self, *args)
 
-    def IsCurveOnClosedSurface(self, *args):
+    def IsCurveOnClosedSurface(self, *args) -> "Standard_Boolean" :
         """
         * A curve with two parametric curves on the same surface.
 
@@ -808,7 +808,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsCurveOnClosedSurface(self, *args)
 
-    def IsCurveOnSurface(self, *args):
+    def IsCurveOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * A curve in the parametric space of a surface.
 
@@ -825,7 +825,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsCurveOnSurface(self, *args)
 
-    def IsRegularity(self, *args):
+    def IsRegularity(self, *args) -> "Standard_Boolean" :
         """
         * A continuity between two surfaces.
 
@@ -846,7 +846,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsRegularity(self, *args)
 
-    def IsPolygon3D(self, *args):
+    def IsPolygon3D(self, *args) -> "Standard_Boolean" :
         """
         * A 3D polygon representation.
 
@@ -855,7 +855,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsPolygon3D(self, *args)
 
-    def IsPolygonOnTriangulation(self, *args):
+    def IsPolygonOnTriangulation(self, *args) -> "Standard_Boolean" :
         """
         * A representation by an array of nodes on a triangulation.
 
@@ -872,7 +872,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsPolygonOnTriangulation(self, *args)
 
-    def IsPolygonOnClosedTriangulation(self, *args):
+    def IsPolygonOnClosedTriangulation(self, *args) -> "Standard_Boolean" :
         """
         * A representation by two arrays of nodes on a triangulation.
 
@@ -881,7 +881,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsPolygonOnClosedTriangulation(self, *args)
 
-    def IsPolygonOnSurface(self, *args):
+    def IsPolygonOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * A polygon in the parametric space of a surface.
 
@@ -898,7 +898,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsPolygonOnSurface(self, *args)
 
-    def IsPolygonOnClosedSurface(self, *args):
+    def IsPolygonOnClosedSurface(self, *args) -> "Standard_Boolean" :
         """
         * Two 2D polygon representations in the parametric space of a surface.
 
@@ -907,7 +907,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_IsPolygonOnClosedSurface(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "void" :
         """
         :rtype: TopLoc_Location
 
@@ -918,7 +918,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Location(self, *args)
 
-    def Curve3D(self, *args):
+    def Curve3D(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -929,14 +929,14 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Curve3D(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _BRep.BRep_CurveRepresentation_Surface(self, *args)
 
-    def PCurve(self, *args):
+    def PCurve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -947,7 +947,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_PCurve(self, *args)
 
-    def PCurve2(self, *args):
+    def PCurve2(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -958,7 +958,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_PCurve2(self, *args)
 
-    def Polygon3D(self, *args):
+    def Polygon3D(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon3D
 
@@ -969,7 +969,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Polygon3D(self, *args)
 
-    def Polygon(self, *args):
+    def Polygon(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon2D
 
@@ -980,7 +980,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Polygon(self, *args)
 
-    def Polygon2(self, *args):
+    def Polygon2(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon2D
 
@@ -991,14 +991,14 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Polygon2(self, *args)
 
-    def Triangulation(self, *args):
+    def Triangulation(self, *args) -> "Handle_Poly_Triangulation const &" :
         """
         :rtype: Handle_Poly_Triangulation
 
         """
         return _BRep.BRep_CurveRepresentation_Triangulation(self, *args)
 
-    def PolygonOnTriangulation(self, *args):
+    def PolygonOnTriangulation(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_PolygonOnTriangulation
 
@@ -1009,7 +1009,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_PolygonOnTriangulation(self, *args)
 
-    def PolygonOnTriangulation2(self, *args):
+    def PolygonOnTriangulation2(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_PolygonOnTriangulation
 
@@ -1020,21 +1020,21 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_PolygonOnTriangulation2(self, *args)
 
-    def Surface2(self, *args):
+    def Surface2(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _BRep.BRep_CurveRepresentation_Surface2(self, *args)
 
-    def Location2(self, *args):
+    def Location2(self, *args) -> "TopLoc_Location const &" :
         """
         :rtype: TopLoc_Location
 
         """
         return _BRep.BRep_CurveRepresentation_Location2(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "void" :
         """
         :rtype: GeomAbs_Shape
 
@@ -1045,7 +1045,7 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Continuity(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_BRep_CurveRepresentation" :
         """
         * Return a copy of this representation.
 
@@ -1054,11 +1054,11 @@ class BRep_CurveRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_CurveRepresentation_Copy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_CurveRepresentation self)"""
         return _BRep.BRep_CurveRepresentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_CurveRepresentation" :
         """GetHandle(BRep_CurveRepresentation self) -> Handle_BRep_CurveRepresentation"""
         return _BRep.BRep_CurveRepresentation_GetHandle(self)
 
@@ -1120,7 +1120,7 @@ Handle_BRep_CurveRepresentation._kill_pointed = new_instancemethod(_BRep.Handle_
 Handle_BRep_CurveRepresentation_swigregister = _BRep.Handle_BRep_CurveRepresentation_swigregister
 Handle_BRep_CurveRepresentation_swigregister(Handle_BRep_CurveRepresentation)
 
-def Handle_BRep_CurveRepresentation_DownCast(*args):
+def Handle_BRep_CurveRepresentation_DownCast(*args) -> "Handle_BRep_CurveRepresentation const" :
   return _BRep.Handle_BRep_CurveRepresentation_DownCast(*args)
 Handle_BRep_CurveRepresentation_DownCast = _BRep.Handle_BRep_CurveRepresentation_DownCast
 
@@ -1137,7 +1137,7 @@ class BRep_ListIteratorOfListOfCurveRepresentation(object):
 
         """
         _BRep.BRep_ListIteratorOfListOfCurveRepresentation_swiginit(self,_BRep.new_BRep_ListIteratorOfListOfCurveRepresentation(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: BRep_ListOfCurveRepresentation &
@@ -1146,21 +1146,21 @@ class BRep_ListIteratorOfListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListIteratorOfListOfCurveRepresentation_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRep.BRep_ListIteratorOfListOfCurveRepresentation_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListIteratorOfListOfCurveRepresentation_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRep_CurveRepresentation &" :
         """
         :rtype: Handle_BRep_CurveRepresentation
 
@@ -1196,7 +1196,7 @@ class BRep_ListIteratorOfListOfPointRepresentation(object):
 
         """
         _BRep.BRep_ListIteratorOfListOfPointRepresentation_swiginit(self,_BRep.new_BRep_ListIteratorOfListOfPointRepresentation(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: BRep_ListOfPointRepresentation &
@@ -1205,21 +1205,21 @@ class BRep_ListIteratorOfListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListIteratorOfListOfPointRepresentation_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRep.BRep_ListIteratorOfListOfPointRepresentation_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListIteratorOfListOfPointRepresentation_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRep_PointRepresentation &" :
         """
         :rtype: Handle_BRep_PointRepresentation
 
@@ -1255,18 +1255,18 @@ class BRep_ListNodeOfListOfCurveRepresentation(OCC.TCollection.TCollection_MapNo
 
         """
         _BRep.BRep_ListNodeOfListOfCurveRepresentation_swiginit(self,_BRep.new_BRep_ListNodeOfListOfCurveRepresentation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRep_CurveRepresentation &" :
         """
         :rtype: Handle_BRep_CurveRepresentation
 
         """
         return _BRep.BRep_ListNodeOfListOfCurveRepresentation_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_ListNodeOfListOfCurveRepresentation self)"""
         return _BRep.BRep_ListNodeOfListOfCurveRepresentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_ListNodeOfListOfCurveRepresentation" :
         """GetHandle(BRep_ListNodeOfListOfCurveRepresentation self) -> Handle_BRep_ListNodeOfListOfCurveRepresentation"""
         return _BRep.BRep_ListNodeOfListOfCurveRepresentation_GetHandle(self)
 
@@ -1305,7 +1305,7 @@ Handle_BRep_ListNodeOfListOfCurveRepresentation._kill_pointed = new_instancemeth
 Handle_BRep_ListNodeOfListOfCurveRepresentation_swigregister = _BRep.Handle_BRep_ListNodeOfListOfCurveRepresentation_swigregister
 Handle_BRep_ListNodeOfListOfCurveRepresentation_swigregister(Handle_BRep_ListNodeOfListOfCurveRepresentation)
 
-def Handle_BRep_ListNodeOfListOfCurveRepresentation_DownCast(*args):
+def Handle_BRep_ListNodeOfListOfCurveRepresentation_DownCast(*args) -> "Handle_BRep_ListNodeOfListOfCurveRepresentation const" :
   return _BRep.Handle_BRep_ListNodeOfListOfCurveRepresentation_DownCast(*args)
 Handle_BRep_ListNodeOfListOfCurveRepresentation_DownCast = _BRep.Handle_BRep_ListNodeOfListOfCurveRepresentation_DownCast
 
@@ -1322,18 +1322,18 @@ class BRep_ListNodeOfListOfPointRepresentation(OCC.TCollection.TCollection_MapNo
 
         """
         _BRep.BRep_ListNodeOfListOfPointRepresentation_swiginit(self,_BRep.new_BRep_ListNodeOfListOfPointRepresentation(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRep_PointRepresentation &" :
         """
         :rtype: Handle_BRep_PointRepresentation
 
         """
         return _BRep.BRep_ListNodeOfListOfPointRepresentation_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_ListNodeOfListOfPointRepresentation self)"""
         return _BRep.BRep_ListNodeOfListOfPointRepresentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_ListNodeOfListOfPointRepresentation" :
         """GetHandle(BRep_ListNodeOfListOfPointRepresentation self) -> Handle_BRep_ListNodeOfListOfPointRepresentation"""
         return _BRep.BRep_ListNodeOfListOfPointRepresentation_GetHandle(self)
 
@@ -1372,7 +1372,7 @@ Handle_BRep_ListNodeOfListOfPointRepresentation._kill_pointed = new_instancemeth
 Handle_BRep_ListNodeOfListOfPointRepresentation_swigregister = _BRep.Handle_BRep_ListNodeOfListOfPointRepresentation_swigregister
 Handle_BRep_ListNodeOfListOfPointRepresentation_swigregister(Handle_BRep_ListNodeOfListOfPointRepresentation)
 
-def Handle_BRep_ListNodeOfListOfPointRepresentation_DownCast(*args):
+def Handle_BRep_ListNodeOfListOfPointRepresentation_DownCast(*args) -> "Handle_BRep_ListNodeOfListOfPointRepresentation const" :
   return _BRep.Handle_BRep_ListNodeOfListOfPointRepresentation_DownCast(*args)
 Handle_BRep_ListNodeOfListOfPointRepresentation_DownCast = _BRep.Handle_BRep_ListNodeOfListOfPointRepresentation_DownCast
 
@@ -1385,7 +1385,7 @@ class BRep_ListOfCurveRepresentation(object):
 
         """
         _BRep.BRep_ListOfCurveRepresentation_swiginit(self,_BRep.new_BRep_ListOfCurveRepresentation(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRep_ListOfCurveRepresentation &
@@ -1394,7 +1394,7 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRep_ListOfCurveRepresentation &
@@ -1403,28 +1403,28 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_CurveRepresentation &
@@ -1443,7 +1443,7 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_CurveRepresentation &
@@ -1462,28 +1462,28 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_BRep_CurveRepresentation &" :
         """
         :rtype: Handle_BRep_CurveRepresentation
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_BRep_CurveRepresentation &" :
         """
         :rtype: Handle_BRep_CurveRepresentation
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListOfCurveRepresentation_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: BRep_ListIteratorOfListOfCurveRepresentation &
@@ -1492,7 +1492,7 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_CurveRepresentation &
@@ -1509,7 +1509,7 @@ class BRep_ListOfCurveRepresentation(object):
         """
         return _BRep.BRep_ListOfCurveRepresentation_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_CurveRepresentation &
@@ -1560,7 +1560,7 @@ class BRep_ListOfPointRepresentation(object):
 
         """
         _BRep.BRep_ListOfPointRepresentation_swiginit(self,_BRep.new_BRep_ListOfPointRepresentation(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRep_ListOfPointRepresentation &
@@ -1569,7 +1569,7 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: BRep_ListOfPointRepresentation &
@@ -1578,28 +1578,28 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRep.BRep_ListOfPointRepresentation_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListOfPointRepresentation_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRep.BRep_ListOfPointRepresentation_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_PointRepresentation &
@@ -1618,7 +1618,7 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_PointRepresentation &
@@ -1637,28 +1637,28 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_BRep_PointRepresentation &" :
         """
         :rtype: Handle_BRep_PointRepresentation
 
         """
         return _BRep.BRep_ListOfPointRepresentation_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_BRep_PointRepresentation &" :
         """
         :rtype: Handle_BRep_PointRepresentation
 
         """
         return _BRep.BRep_ListOfPointRepresentation_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRep.BRep_ListOfPointRepresentation_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: BRep_ListIteratorOfListOfPointRepresentation &
@@ -1667,7 +1667,7 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_PointRepresentation &
@@ -1684,7 +1684,7 @@ class BRep_ListOfPointRepresentation(object):
         """
         return _BRep.BRep_ListOfPointRepresentation_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_BRep_PointRepresentation &
@@ -1730,7 +1730,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsPointOnCurve(self, *args):
+    def IsPointOnCurve(self, *args) -> "Standard_Boolean" :
         """
         * A point on a 3d curve.
 
@@ -1747,7 +1747,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_IsPointOnCurve(self, *args)
 
-    def IsPointOnCurveOnSurface(self, *args):
+    def IsPointOnCurveOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * A point on a 2d curve on a surface.
 
@@ -1766,7 +1766,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_IsPointOnCurveOnSurface(self, *args)
 
-    def IsPointOnSurface(self, *args):
+    def IsPointOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * A point on a surface.
 
@@ -1783,7 +1783,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_IsPointOnSurface(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "void" :
         """
         :rtype: TopLoc_Location
 
@@ -1794,7 +1794,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_Location(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -1805,7 +1805,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_Parameter(self, *args)
 
-    def Parameter2(self, *args):
+    def Parameter2(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -1816,7 +1816,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_Parameter2(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -1827,7 +1827,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_Curve(self, *args)
 
-    def PCurve(self, *args):
+    def PCurve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -1838,7 +1838,7 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_PCurve(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Surface
 
@@ -1849,11 +1849,11 @@ class BRep_PointRepresentation(OCC.MMgt.MMgt_TShared):
         """
         return _BRep.BRep_PointRepresentation_Surface(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PointRepresentation self)"""
         return _BRep.BRep_PointRepresentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PointRepresentation" :
         """GetHandle(BRep_PointRepresentation self) -> Handle_BRep_PointRepresentation"""
         return _BRep.BRep_PointRepresentation_GetHandle(self)
 
@@ -1900,7 +1900,7 @@ Handle_BRep_PointRepresentation._kill_pointed = new_instancemethod(_BRep.Handle_
 Handle_BRep_PointRepresentation_swigregister = _BRep.Handle_BRep_PointRepresentation_swigregister
 Handle_BRep_PointRepresentation_swigregister(Handle_BRep_PointRepresentation)
 
-def Handle_BRep_PointRepresentation_DownCast(*args):
+def Handle_BRep_PointRepresentation_DownCast(*args) -> "Handle_BRep_PointRepresentation const" :
   return _BRep.Handle_BRep_PointRepresentation_DownCast(*args)
 Handle_BRep_PointRepresentation_DownCast = _BRep.Handle_BRep_PointRepresentation_DownCast
 
@@ -1915,7 +1915,7 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
 
         """
         _BRep.BRep_TEdge_swiginit(self,_BRep.new_BRep_TEdge(*args))
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -1926,7 +1926,7 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
         """
         return _BRep.BRep_TEdge_Tolerance(self, *args)
 
-    def UpdateTolerance(self, *args):
+    def UpdateTolerance(self, *args) -> "void" :
         """
         * Sets the tolerance to the max of <T> and the current tolerance.
 
@@ -1937,7 +1937,7 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
         """
         return _BRep.BRep_TEdge_UpdateTolerance(self, *args)
 
-    def SameParameter(self, *args):
+    def SameParameter(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1948,7 +1948,7 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
         """
         return _BRep.BRep_TEdge_SameParameter(self, *args)
 
-    def SameRange(self, *args):
+    def SameRange(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1959,7 +1959,7 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
         """
         return _BRep.BRep_TEdge_SameRange(self, *args)
 
-    def Degenerated(self, *args):
+    def Degenerated(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -1970,25 +1970,25 @@ class BRep_TEdge(OCC.TopoDS.TopoDS_TEdge):
         """
         return _BRep.BRep_TEdge_Degenerated(self, *args)
 
-    def Curves(self, *args):
+    def Curves(self, *args) -> "BRep_ListOfCurveRepresentation const &" :
         """
         :rtype: BRep_ListOfCurveRepresentation
 
         """
         return _BRep.BRep_TEdge_Curves(self, *args)
 
-    def ChangeCurves(self, *args):
+    def ChangeCurves(self, *args) -> "BRep_ListOfCurveRepresentation &" :
         """
         :rtype: BRep_ListOfCurveRepresentation
 
         """
         return _BRep.BRep_TEdge_ChangeCurves(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_TEdge self)"""
         return _BRep.BRep_TEdge__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_TEdge" :
         """GetHandle(BRep_TEdge self) -> Handle_BRep_TEdge"""
         return _BRep.BRep_TEdge_GetHandle(self)
 
@@ -2033,7 +2033,7 @@ Handle_BRep_TEdge._kill_pointed = new_instancemethod(_BRep.Handle_BRep_TEdge__ki
 Handle_BRep_TEdge_swigregister = _BRep.Handle_BRep_TEdge_swigregister
 Handle_BRep_TEdge_swigregister(Handle_BRep_TEdge)
 
-def Handle_BRep_TEdge_DownCast(*args):
+def Handle_BRep_TEdge_DownCast(*args) -> "Handle_BRep_TEdge const" :
   return _BRep.Handle_BRep_TEdge_DownCast(*args)
 Handle_BRep_TEdge_DownCast = _BRep.Handle_BRep_TEdge_DownCast
 
@@ -2048,7 +2048,7 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
 
         """
         _BRep.BRep_TFace_swiginit(self,_BRep.new_BRep_TFace(*args))
-    def Surface(self, *args):
+    def Surface(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Surface
 
@@ -2059,7 +2059,7 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
         """
         return _BRep.BRep_TFace_Surface(self, *args)
 
-    def Triangulation(self, *args):
+    def Triangulation(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Triangulation
 
@@ -2070,7 +2070,7 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
         """
         return _BRep.BRep_TFace_Triangulation(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "void" :
         """
         :rtype: TopLoc_Location
 
@@ -2081,7 +2081,7 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
         """
         return _BRep.BRep_TFace_Location(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -2092,7 +2092,7 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
         """
         return _BRep.BRep_TFace_Tolerance(self, *args)
 
-    def NaturalRestriction(self, *args):
+    def NaturalRestriction(self, *args) -> "void" :
         """
         :rtype: bool
 
@@ -2103,11 +2103,11 @@ class BRep_TFace(OCC.TopoDS.TopoDS_TFace):
         """
         return _BRep.BRep_TFace_NaturalRestriction(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_TFace self)"""
         return _BRep.BRep_TFace__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_TFace" :
         """GetHandle(BRep_TFace self) -> Handle_BRep_TFace"""
         return _BRep.BRep_TFace_GetHandle(self)
 
@@ -2150,7 +2150,7 @@ Handle_BRep_TFace._kill_pointed = new_instancemethod(_BRep.Handle_BRep_TFace__ki
 Handle_BRep_TFace_swigregister = _BRep.Handle_BRep_TFace_swigregister
 Handle_BRep_TFace_swigregister(Handle_BRep_TFace)
 
-def Handle_BRep_TFace_DownCast(*args):
+def Handle_BRep_TFace_DownCast(*args) -> "Handle_BRep_TFace const" :
   return _BRep.Handle_BRep_TFace_DownCast(*args)
 Handle_BRep_TFace_DownCast = _BRep.Handle_BRep_TFace_DownCast
 
@@ -2163,7 +2163,7 @@ class BRep_TVertex(OCC.TopoDS.TopoDS_TVertex):
 
         """
         _BRep.BRep_TVertex_swiginit(self,_BRep.new_BRep_TVertex(*args))
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -2174,7 +2174,7 @@ class BRep_TVertex(OCC.TopoDS.TopoDS_TVertex):
         """
         return _BRep.BRep_TVertex_Tolerance(self, *args)
 
-    def UpdateTolerance(self, *args):
+    def UpdateTolerance(self, *args) -> "void" :
         """
         * Sets the tolerance to the max of <T> and the current tolerance.
 
@@ -2185,7 +2185,7 @@ class BRep_TVertex(OCC.TopoDS.TopoDS_TVertex):
         """
         return _BRep.BRep_TVertex_UpdateTolerance(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "void" :
         """
         :rtype: gp_Pnt
 
@@ -2196,25 +2196,25 @@ class BRep_TVertex(OCC.TopoDS.TopoDS_TVertex):
         """
         return _BRep.BRep_TVertex_Pnt(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "BRep_ListOfPointRepresentation const &" :
         """
         :rtype: BRep_ListOfPointRepresentation
 
         """
         return _BRep.BRep_TVertex_Points(self, *args)
 
-    def ChangePoints(self, *args):
+    def ChangePoints(self, *args) -> "BRep_ListOfPointRepresentation &" :
         """
         :rtype: BRep_ListOfPointRepresentation
 
         """
         return _BRep.BRep_TVertex_ChangePoints(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_TVertex self)"""
         return _BRep.BRep_TVertex__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_TVertex" :
         """GetHandle(BRep_TVertex self) -> Handle_BRep_TVertex"""
         return _BRep.BRep_TVertex_GetHandle(self)
 
@@ -2257,14 +2257,14 @@ Handle_BRep_TVertex._kill_pointed = new_instancemethod(_BRep.Handle_BRep_TVertex
 Handle_BRep_TVertex_swigregister = _BRep.Handle_BRep_TVertex_swigregister
 Handle_BRep_TVertex_swigregister(Handle_BRep_TVertex)
 
-def Handle_BRep_TVertex_DownCast(*args):
+def Handle_BRep_TVertex_DownCast(*args) -> "Handle_BRep_TVertex const" :
   return _BRep.Handle_BRep_TVertex_DownCast(*args)
 Handle_BRep_TVertex_DownCast = _BRep.Handle_BRep_TVertex_DownCast
 
 class BRep_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Surface(*args):
+    def Surface(*args) -> "Handle_Geom_Surface" :
         """
         * Returns the geometric surface of the face. Returns in <L> the location for the surface.
 
@@ -2284,7 +2284,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Surface(*args)
 
     Surface = staticmethod(Surface)
-    def Triangulation(*args):
+    def Triangulation(*args) -> "Handle_Poly_Triangulation const &" :
         """
         * Returns the Triangulation of the face. It is a null handle if there is no triangulation.
 
@@ -2298,7 +2298,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Triangulation(*args)
 
     Triangulation = staticmethod(Triangulation)
-    def NaturalRestriction(*args):
+    def NaturalRestriction(*args) -> "Standard_Boolean" :
         """
         * Returns the NaturalRestriction flag of the face.
 
@@ -2310,7 +2310,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_NaturalRestriction(*args)
 
     NaturalRestriction = staticmethod(NaturalRestriction)
-    def IsGeometric(*args):
+    def IsGeometric(*args) -> "Standard_Boolean" :
         """
         * Returns True if <E> is a 3d curve or a curve on surface.
 
@@ -2322,7 +2322,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_IsGeometric(*args)
 
     IsGeometric = staticmethod(IsGeometric)
-    def Curve(*args):
+    def Curve(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Returns the 3D curve of the edge. May be a Null handle. Returns in <L> the location for the curve. In <First> and <Last> the parameter range.
 
@@ -2350,7 +2350,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Curve(*args)
 
     Curve = staticmethod(Curve)
-    def Polygon3D(*args):
+    def Polygon3D(*args) -> "Handle_Poly_Polygon3D const &" :
         """
         * Returns the 3D polygon of the edge. May be a Null handle. Returns in <L> the location for the polygon.
 
@@ -2364,7 +2364,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Polygon3D(*args)
 
     Polygon3D = staticmethod(Polygon3D)
-    def CurveOnSurface(*args):
+    def CurveOnSurface(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Returns the curve associated to the edge in the parametric space of the face. Returns a NULL handle if this curve does not exist. Returns in <First> and <Last> the parameter range.
 
@@ -2430,7 +2430,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_CurveOnSurface(*args)
 
     CurveOnSurface = staticmethod(CurveOnSurface)
-    def PolygonOnSurface(*args):
+    def PolygonOnSurface(*args) -> "void" :
         """
         * Returns the polygon associated to the edge in the parametric space of the face. Returns a NULL handle if this polygon does not exist.
 
@@ -2480,7 +2480,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_PolygonOnSurface(*args)
 
     PolygonOnSurface = staticmethod(PolygonOnSurface)
-    def PolygonOnTriangulation(*args):
+    def PolygonOnTriangulation(*args) -> "void" :
         """
         * Returns the polygon associated to the edge in the parametric space of the face. Returns a NULL handle if this polygon does not exist.
 
@@ -2522,7 +2522,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_PolygonOnTriangulation(*args)
 
     PolygonOnTriangulation = staticmethod(PolygonOnTriangulation)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         * Returns <True> if S if flaged Closed, if S is a Solid,Shell or Compound returns <True> is S has no free boundaries.
 
@@ -2560,7 +2560,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def SameParameter(*args):
+    def SameParameter(*args) -> "Standard_Boolean" :
         """
         * Returns the SameParameter flag for the edge.
 
@@ -2572,7 +2572,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_SameParameter(*args)
 
     SameParameter = staticmethod(SameParameter)
-    def SameRange(*args):
+    def SameRange(*args) -> "Standard_Boolean" :
         """
         * Returns the SameRange flag for the edge.
 
@@ -2584,7 +2584,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_SameRange(*args)
 
     SameRange = staticmethod(SameRange)
-    def Degenerated(*args):
+    def Degenerated(*args) -> "Standard_Boolean" :
         """
         * Returns True if the edge is degenerated.
 
@@ -2596,7 +2596,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Degenerated(*args)
 
     Degenerated = staticmethod(Degenerated)
-    def Range(*args):
+    def Range(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Gets the range of the 3d curve.
 
@@ -2638,7 +2638,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Range(*args)
 
     Range = staticmethod(Range)
-    def UVPoints(*args):
+    def UVPoints(*args) -> "void" :
         """
         * Gets the UV locations of the extremities of the edge.
 
@@ -2670,7 +2670,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_UVPoints(*args)
 
     UVPoints = staticmethod(UVPoints)
-    def SetUVPoints(*args):
+    def SetUVPoints(*args) -> "void" :
         """
         * Sets the UV locations of the extremities of the edge.
 
@@ -2702,7 +2702,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_SetUVPoints(*args)
 
     SetUVPoints = staticmethod(SetUVPoints)
-    def Continuity(*args):
+    def Continuity(*args) -> "GeomAbs_Shape" :
         """
         * Returns the continuity.
 
@@ -2732,7 +2732,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def HasContinuity(*args):
+    def HasContinuity(*args) -> "Standard_Boolean" :
         """
         * Returns True if the edge is on the surfaces of the two faces.
 
@@ -2768,7 +2768,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_HasContinuity(*args)
 
     HasContinuity = staticmethod(HasContinuity)
-    def Pnt(*args):
+    def Pnt(*args) -> "gp_Pnt" :
         """
         * Returns the 3d point.
 
@@ -2780,7 +2780,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Pnt(*args)
 
     Pnt = staticmethod(Pnt)
-    def Tolerance(*args):
+    def Tolerance(*args) -> "Standard_Real" :
         """
         * Returns the tolerance of the face.
 
@@ -2804,7 +2804,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Tolerance(*args)
 
     Tolerance = staticmethod(Tolerance)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real" :
         """
         * Returns the parameter of <V> on <E>.
 
@@ -2840,7 +2840,7 @@ class BRep_Tool(object):
         return _BRep.BRep_Tool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def Parameters(*args):
+    def Parameters(*args) -> "gp_Pnt2d" :
         """
         * Returns the parameters of the vertex on the face.
 
@@ -2868,7 +2868,7 @@ BRep_Tool._kill_pointed = new_instancemethod(_BRep.BRep_Tool__kill_pointed,None,
 BRep_Tool_swigregister = _BRep.BRep_Tool_swigregister
 BRep_Tool_swigregister(BRep_Tool)
 
-def BRep_Tool_Surface(*args):
+def BRep_Tool_Surface(*args) -> "Handle_Geom_Surface" :
   """
     * Returns the geometric surface of the face. Returns in <L> the location for the surface.
 
@@ -2887,7 +2887,7 @@ def BRep_Tool_Surface(*args):
     """
   return _BRep.BRep_Tool_Surface(*args)
 
-def BRep_Tool_Triangulation(*args):
+def BRep_Tool_Triangulation(*args) -> "Handle_Poly_Triangulation const &" :
   """
     * Returns the Triangulation of the face. It is a null handle if there is no triangulation.
 
@@ -2900,7 +2900,7 @@ def BRep_Tool_Triangulation(*args):
     """
   return _BRep.BRep_Tool_Triangulation(*args)
 
-def BRep_Tool_NaturalRestriction(*args):
+def BRep_Tool_NaturalRestriction(*args) -> "Standard_Boolean" :
   """
     * Returns the NaturalRestriction flag of the face.
 
@@ -2911,7 +2911,7 @@ def BRep_Tool_NaturalRestriction(*args):
     """
   return _BRep.BRep_Tool_NaturalRestriction(*args)
 
-def BRep_Tool_IsGeometric(*args):
+def BRep_Tool_IsGeometric(*args) -> "Standard_Boolean" :
   """
     * Returns True if <E> is a 3d curve or a curve on surface.
 
@@ -2922,7 +2922,7 @@ def BRep_Tool_IsGeometric(*args):
     """
   return _BRep.BRep_Tool_IsGeometric(*args)
 
-def BRep_Tool_Curve(*args):
+def BRep_Tool_Curve(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Returns the 3D curve of the edge. May be a Null handle. Returns in <L> the location for the curve. In <First> and <Last> the parameter range.
 
@@ -2949,7 +2949,7 @@ def BRep_Tool_Curve(*args):
     """
   return _BRep.BRep_Tool_Curve(*args)
 
-def BRep_Tool_Polygon3D(*args):
+def BRep_Tool_Polygon3D(*args) -> "Handle_Poly_Polygon3D const &" :
   """
     * Returns the 3D polygon of the edge. May be a Null handle. Returns in <L> the location for the polygon.
 
@@ -2962,7 +2962,7 @@ def BRep_Tool_Polygon3D(*args):
     """
   return _BRep.BRep_Tool_Polygon3D(*args)
 
-def BRep_Tool_CurveOnSurface(*args):
+def BRep_Tool_CurveOnSurface(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Returns the curve associated to the edge in the parametric space of the face. Returns a NULL handle if this curve does not exist. Returns in <First> and <Last> the parameter range.
 
@@ -3027,7 +3027,7 @@ def BRep_Tool_CurveOnSurface(*args):
     """
   return _BRep.BRep_Tool_CurveOnSurface(*args)
 
-def BRep_Tool_PolygonOnSurface(*args):
+def BRep_Tool_PolygonOnSurface(*args) -> "void" :
   """
     * Returns the polygon associated to the edge in the parametric space of the face. Returns a NULL handle if this polygon does not exist.
 
@@ -3076,7 +3076,7 @@ def BRep_Tool_PolygonOnSurface(*args):
     """
   return _BRep.BRep_Tool_PolygonOnSurface(*args)
 
-def BRep_Tool_PolygonOnTriangulation(*args):
+def BRep_Tool_PolygonOnTriangulation(*args) -> "void" :
   """
     * Returns the polygon associated to the edge in the parametric space of the face. Returns a NULL handle if this polygon does not exist.
 
@@ -3117,7 +3117,7 @@ def BRep_Tool_PolygonOnTriangulation(*args):
     """
   return _BRep.BRep_Tool_PolygonOnTriangulation(*args)
 
-def BRep_Tool_IsClosed(*args):
+def BRep_Tool_IsClosed(*args) -> "Standard_Boolean" :
   """
     * Returns <True> if S if flaged Closed, if S is a Solid,Shell or Compound returns <True> is S has no free boundaries.
 
@@ -3154,7 +3154,7 @@ def BRep_Tool_IsClosed(*args):
     """
   return _BRep.BRep_Tool_IsClosed(*args)
 
-def BRep_Tool_SameParameter(*args):
+def BRep_Tool_SameParameter(*args) -> "Standard_Boolean" :
   """
     * Returns the SameParameter flag for the edge.
 
@@ -3165,7 +3165,7 @@ def BRep_Tool_SameParameter(*args):
     """
   return _BRep.BRep_Tool_SameParameter(*args)
 
-def BRep_Tool_SameRange(*args):
+def BRep_Tool_SameRange(*args) -> "Standard_Boolean" :
   """
     * Returns the SameRange flag for the edge.
 
@@ -3176,7 +3176,7 @@ def BRep_Tool_SameRange(*args):
     """
   return _BRep.BRep_Tool_SameRange(*args)
 
-def BRep_Tool_Degenerated(*args):
+def BRep_Tool_Degenerated(*args) -> "Standard_Boolean" :
   """
     * Returns True if the edge is degenerated.
 
@@ -3187,7 +3187,7 @@ def BRep_Tool_Degenerated(*args):
     """
   return _BRep.BRep_Tool_Degenerated(*args)
 
-def BRep_Tool_Range(*args):
+def BRep_Tool_Range(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Gets the range of the 3d curve.
 
@@ -3228,7 +3228,7 @@ def BRep_Tool_Range(*args):
     """
   return _BRep.BRep_Tool_Range(*args)
 
-def BRep_Tool_UVPoints(*args):
+def BRep_Tool_UVPoints(*args) -> "void" :
   """
     * Gets the UV locations of the extremities of the edge.
 
@@ -3259,7 +3259,7 @@ def BRep_Tool_UVPoints(*args):
     """
   return _BRep.BRep_Tool_UVPoints(*args)
 
-def BRep_Tool_SetUVPoints(*args):
+def BRep_Tool_SetUVPoints(*args) -> "void" :
   """
     * Sets the UV locations of the extremities of the edge.
 
@@ -3290,7 +3290,7 @@ def BRep_Tool_SetUVPoints(*args):
     """
   return _BRep.BRep_Tool_SetUVPoints(*args)
 
-def BRep_Tool_Continuity(*args):
+def BRep_Tool_Continuity(*args) -> "GeomAbs_Shape" :
   """
     * Returns the continuity.
 
@@ -3319,7 +3319,7 @@ def BRep_Tool_Continuity(*args):
     """
   return _BRep.BRep_Tool_Continuity(*args)
 
-def BRep_Tool_HasContinuity(*args):
+def BRep_Tool_HasContinuity(*args) -> "Standard_Boolean" :
   """
     * Returns True if the edge is on the surfaces of the two faces.
 
@@ -3354,7 +3354,7 @@ def BRep_Tool_HasContinuity(*args):
     """
   return _BRep.BRep_Tool_HasContinuity(*args)
 
-def BRep_Tool_Pnt(*args):
+def BRep_Tool_Pnt(*args) -> "gp_Pnt" :
   """
     * Returns the 3d point.
 
@@ -3365,7 +3365,7 @@ def BRep_Tool_Pnt(*args):
     """
   return _BRep.BRep_Tool_Pnt(*args)
 
-def BRep_Tool_Tolerance(*args):
+def BRep_Tool_Tolerance(*args) -> "Standard_Real" :
   """
     * Returns the tolerance of the face.
 
@@ -3388,7 +3388,7 @@ def BRep_Tool_Tolerance(*args):
     """
   return _BRep.BRep_Tool_Tolerance(*args)
 
-def BRep_Tool_Parameter(*args):
+def BRep_Tool_Parameter(*args) -> "Standard_Real" :
   """
     * Returns the parameter of <V> on <E>.
 
@@ -3423,7 +3423,7 @@ def BRep_Tool_Parameter(*args):
     """
   return _BRep.BRep_Tool_Parameter(*args)
 
-def BRep_Tool_Parameters(*args):
+def BRep_Tool_Parameters(*args) -> "gp_Pnt2d" :
   """
     * Returns the parameters of the vertex on the face.
 
@@ -3455,7 +3455,7 @@ class BRep_CurveOn2Surfaces(BRep_CurveRepresentation):
 
         """
         _BRep.BRep_CurveOn2Surfaces_swiginit(self,_BRep.new_BRep_CurveOn2Surfaces(*args))
-    def IsRegularity(self, *args):
+    def IsRegularity(self, *args) -> "Standard_Boolean" :
         """
         * Returns True.
 
@@ -3476,7 +3476,7 @@ class BRep_CurveOn2Surfaces(BRep_CurveRepresentation):
         """
         return _BRep.BRep_CurveOn2Surfaces_IsRegularity(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         * Raises an error.
 
@@ -3489,7 +3489,7 @@ class BRep_CurveOn2Surfaces(BRep_CurveRepresentation):
         """
         return _BRep.BRep_CurveOn2Surfaces_D0(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "void" :
         """
         :rtype: GeomAbs_Shape
 
@@ -3500,11 +3500,11 @@ class BRep_CurveOn2Surfaces(BRep_CurveRepresentation):
         """
         return _BRep.BRep_CurveOn2Surfaces_Continuity(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_CurveOn2Surfaces self)"""
         return _BRep.BRep_CurveOn2Surfaces__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_CurveOn2Surfaces" :
         """GetHandle(BRep_CurveOn2Surfaces self) -> Handle_BRep_CurveOn2Surfaces"""
         return _BRep.BRep_CurveOn2Surfaces_GetHandle(self)
 
@@ -3545,7 +3545,7 @@ Handle_BRep_CurveOn2Surfaces._kill_pointed = new_instancemethod(_BRep.Handle_BRe
 Handle_BRep_CurveOn2Surfaces_swigregister = _BRep.Handle_BRep_CurveOn2Surfaces_swigregister
 Handle_BRep_CurveOn2Surfaces_swigregister(Handle_BRep_CurveOn2Surfaces)
 
-def Handle_BRep_CurveOn2Surfaces_DownCast(*args):
+def Handle_BRep_CurveOn2Surfaces_DownCast(*args) -> "Handle_BRep_CurveOn2Surfaces const" :
   return _BRep.Handle_BRep_CurveOn2Surfaces_DownCast(*args)
 Handle_BRep_CurveOn2Surfaces_DownCast = _BRep.Handle_BRep_CurveOn2Surfaces_DownCast
 
@@ -3553,7 +3553,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         :param First:
         :type First: float
@@ -3564,7 +3564,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_SetRange(self, *args)
 
-    def Range(self, *args):
+    def Range(self, *args) -> "void" :
         """
         :param First:
         :type First: float &
@@ -3575,7 +3575,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_Range(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -3586,7 +3586,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -3597,7 +3597,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_Last(self, *args)
 
-    def D0(self, *args):
+    def D0(self, *args) -> "void" :
         """
         * Computes the point at parameter U.
 
@@ -3610,7 +3610,7 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_D0(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Recomputes any derived data after a modification. This is called when the range is modified.
 
@@ -3619,11 +3619,11 @@ class BRep_GCurve(BRep_CurveRepresentation):
         """
         return _BRep.BRep_GCurve_Update(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_GCurve self)"""
         return _BRep.BRep_GCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_GCurve" :
         """GetHandle(BRep_GCurve self) -> Handle_BRep_GCurve"""
         return _BRep.BRep_GCurve_GetHandle(self)
 
@@ -3667,7 +3667,7 @@ Handle_BRep_GCurve._kill_pointed = new_instancemethod(_BRep.Handle_BRep_GCurve__
 Handle_BRep_GCurve_swigregister = _BRep.Handle_BRep_GCurve_swigregister
 Handle_BRep_GCurve_swigregister(Handle_BRep_GCurve)
 
-def Handle_BRep_GCurve_DownCast(*args):
+def Handle_BRep_GCurve_DownCast(*args) -> "Handle_BRep_GCurve const" :
   return _BRep.Handle_BRep_GCurve_DownCast(*args)
 Handle_BRep_GCurve_DownCast = _BRep.Handle_BRep_GCurve_DownCast
 
@@ -3686,7 +3686,7 @@ class BRep_PointOnCurve(BRep_PointRepresentation):
 
         """
         _BRep.BRep_PointOnCurve_swiginit(self,_BRep.new_BRep_PointOnCurve(*args))
-    def IsPointOnCurve(self, *args):
+    def IsPointOnCurve(self, *args) -> "Standard_Boolean" :
         """
         * Returns True
 
@@ -3701,7 +3701,7 @@ class BRep_PointOnCurve(BRep_PointRepresentation):
         """
         return _BRep.BRep_PointOnCurve_IsPointOnCurve(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -3712,11 +3712,11 @@ class BRep_PointOnCurve(BRep_PointRepresentation):
         """
         return _BRep.BRep_PointOnCurve_Curve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PointOnCurve self)"""
         return _BRep.BRep_PointOnCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PointOnCurve" :
         """GetHandle(BRep_PointOnCurve self) -> Handle_BRep_PointOnCurve"""
         return _BRep.BRep_PointOnCurve_GetHandle(self)
 
@@ -3756,7 +3756,7 @@ Handle_BRep_PointOnCurve._kill_pointed = new_instancemethod(_BRep.Handle_BRep_Po
 Handle_BRep_PointOnCurve_swigregister = _BRep.Handle_BRep_PointOnCurve_swigregister
 Handle_BRep_PointOnCurve_swigregister(Handle_BRep_PointOnCurve)
 
-def Handle_BRep_PointOnCurve_DownCast(*args):
+def Handle_BRep_PointOnCurve_DownCast(*args) -> "Handle_BRep_PointOnCurve const" :
   return _BRep.Handle_BRep_PointOnCurve_DownCast(*args)
 Handle_BRep_PointOnCurve_DownCast = _BRep.Handle_BRep_PointOnCurve_DownCast
 
@@ -3764,7 +3764,7 @@ class BRep_PointsOnSurface(BRep_PointRepresentation):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Surface(self, *args):
+    def Surface(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Surface
 
@@ -3775,11 +3775,11 @@ class BRep_PointsOnSurface(BRep_PointRepresentation):
         """
         return _BRep.BRep_PointsOnSurface_Surface(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PointsOnSurface self)"""
         return _BRep.BRep_PointsOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PointsOnSurface" :
         """GetHandle(BRep_PointsOnSurface self) -> Handle_BRep_PointsOnSurface"""
         return _BRep.BRep_PointsOnSurface_GetHandle(self)
 
@@ -3818,7 +3818,7 @@ Handle_BRep_PointsOnSurface._kill_pointed = new_instancemethod(_BRep.Handle_BRep
 Handle_BRep_PointsOnSurface_swigregister = _BRep.Handle_BRep_PointsOnSurface_swigregister
 Handle_BRep_PointsOnSurface_swigregister(Handle_BRep_PointsOnSurface)
 
-def Handle_BRep_PointsOnSurface_DownCast(*args):
+def Handle_BRep_PointsOnSurface_DownCast(*args) -> "Handle_BRep_PointsOnSurface const" :
   return _BRep.Handle_BRep_PointsOnSurface_DownCast(*args)
 Handle_BRep_PointsOnSurface_DownCast = _BRep.Handle_BRep_PointsOnSurface_DownCast
 
@@ -3835,7 +3835,7 @@ class BRep_Polygon3D(BRep_CurveRepresentation):
 
         """
         _BRep.BRep_Polygon3D_swiginit(self,_BRep.new_BRep_Polygon3D(*args))
-    def Polygon3D(self, *args):
+    def Polygon3D(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon3D
 
@@ -3846,11 +3846,11 @@ class BRep_Polygon3D(BRep_CurveRepresentation):
         """
         return _BRep.BRep_Polygon3D_Polygon3D(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_Polygon3D self)"""
         return _BRep.BRep_Polygon3D__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_Polygon3D" :
         """GetHandle(BRep_Polygon3D self) -> Handle_BRep_Polygon3D"""
         return _BRep.BRep_Polygon3D_GetHandle(self)
 
@@ -3889,7 +3889,7 @@ Handle_BRep_Polygon3D._kill_pointed = new_instancemethod(_BRep.Handle_BRep_Polyg
 Handle_BRep_Polygon3D_swigregister = _BRep.Handle_BRep_Polygon3D_swigregister
 Handle_BRep_Polygon3D_swigregister(Handle_BRep_Polygon3D)
 
-def Handle_BRep_Polygon3D_DownCast(*args):
+def Handle_BRep_Polygon3D_DownCast(*args) -> "Handle_BRep_Polygon3D const" :
   return _BRep.Handle_BRep_Polygon3D_DownCast(*args)
 Handle_BRep_Polygon3D_DownCast = _BRep.Handle_BRep_Polygon3D_DownCast
 
@@ -3908,7 +3908,7 @@ class BRep_PolygonOnSurface(BRep_CurveRepresentation):
 
         """
         _BRep.BRep_PolygonOnSurface_swiginit(self,_BRep.new_BRep_PolygonOnSurface(*args))
-    def IsPolygonOnSurface(self, *args):
+    def IsPolygonOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * A 2D polygon representation in the parametric space of a surface.
 
@@ -3925,7 +3925,7 @@ class BRep_PolygonOnSurface(BRep_CurveRepresentation):
         """
         return _BRep.BRep_PolygonOnSurface_IsPolygonOnSurface(self, *args)
 
-    def Polygon(self, *args):
+    def Polygon(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon2D
 
@@ -3936,11 +3936,11 @@ class BRep_PolygonOnSurface(BRep_CurveRepresentation):
         """
         return _BRep.BRep_PolygonOnSurface_Polygon(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PolygonOnSurface self)"""
         return _BRep.BRep_PolygonOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PolygonOnSurface" :
         """GetHandle(BRep_PolygonOnSurface self) -> Handle_BRep_PolygonOnSurface"""
         return _BRep.BRep_PolygonOnSurface_GetHandle(self)
 
@@ -3980,7 +3980,7 @@ Handle_BRep_PolygonOnSurface._kill_pointed = new_instancemethod(_BRep.Handle_BRe
 Handle_BRep_PolygonOnSurface_swigregister = _BRep.Handle_BRep_PolygonOnSurface_swigregister
 Handle_BRep_PolygonOnSurface_swigregister(Handle_BRep_PolygonOnSurface)
 
-def Handle_BRep_PolygonOnSurface_DownCast(*args):
+def Handle_BRep_PolygonOnSurface_DownCast(*args) -> "Handle_BRep_PolygonOnSurface const" :
   return _BRep.Handle_BRep_PolygonOnSurface_DownCast(*args)
 Handle_BRep_PolygonOnSurface_DownCast = _BRep.Handle_BRep_PolygonOnSurface_DownCast
 
@@ -3999,7 +3999,7 @@ class BRep_PolygonOnTriangulation(BRep_CurveRepresentation):
 
         """
         _BRep.BRep_PolygonOnTriangulation_swiginit(self,_BRep.new_BRep_PolygonOnTriangulation(*args))
-    def IsPolygonOnTriangulation(self, *args):
+    def IsPolygonOnTriangulation(self, *args) -> "Standard_Boolean" :
         """
         * returns True.
 
@@ -4016,7 +4016,7 @@ class BRep_PolygonOnTriangulation(BRep_CurveRepresentation):
         """
         return _BRep.BRep_PolygonOnTriangulation_IsPolygonOnTriangulation(self, *args)
 
-    def PolygonOnTriangulation(self, *args):
+    def PolygonOnTriangulation(self, *args) -> "Handle_Poly_PolygonOnTriangulation const &" :
         """
         * returns True.
 
@@ -4029,11 +4029,11 @@ class BRep_PolygonOnTriangulation(BRep_CurveRepresentation):
         """
         return _BRep.BRep_PolygonOnTriangulation_PolygonOnTriangulation(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PolygonOnTriangulation self)"""
         return _BRep.BRep_PolygonOnTriangulation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PolygonOnTriangulation" :
         """GetHandle(BRep_PolygonOnTriangulation self) -> Handle_BRep_PolygonOnTriangulation"""
         return _BRep.BRep_PolygonOnTriangulation_GetHandle(self)
 
@@ -4073,7 +4073,7 @@ Handle_BRep_PolygonOnTriangulation._kill_pointed = new_instancemethod(_BRep.Hand
 Handle_BRep_PolygonOnTriangulation_swigregister = _BRep.Handle_BRep_PolygonOnTriangulation_swigregister
 Handle_BRep_PolygonOnTriangulation_swigregister(Handle_BRep_PolygonOnTriangulation)
 
-def Handle_BRep_PolygonOnTriangulation_DownCast(*args):
+def Handle_BRep_PolygonOnTriangulation_DownCast(*args) -> "Handle_BRep_PolygonOnTriangulation const" :
   return _BRep.Handle_BRep_PolygonOnTriangulation_DownCast(*args)
 Handle_BRep_PolygonOnTriangulation_DownCast = _BRep.Handle_BRep_PolygonOnTriangulation_DownCast
 
@@ -4090,7 +4090,7 @@ class BRep_Curve3D(BRep_GCurve):
 
         """
         _BRep.BRep_Curve3D_swiginit(self,_BRep.new_BRep_Curve3D(*args))
-    def Curve3D(self, *args):
+    def Curve3D(self, *args) -> "void" :
         """
         :rtype: Handle_Geom_Curve
 
@@ -4101,11 +4101,11 @@ class BRep_Curve3D(BRep_GCurve):
         """
         return _BRep.BRep_Curve3D_Curve3D(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_Curve3D self)"""
         return _BRep.BRep_Curve3D__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_Curve3D" :
         """GetHandle(BRep_Curve3D self) -> Handle_BRep_Curve3D"""
         return _BRep.BRep_Curve3D_GetHandle(self)
 
@@ -4144,7 +4144,7 @@ Handle_BRep_Curve3D._kill_pointed = new_instancemethod(_BRep.Handle_BRep_Curve3D
 Handle_BRep_Curve3D_swigregister = _BRep.Handle_BRep_Curve3D_swigregister
 Handle_BRep_Curve3D_swigregister(Handle_BRep_Curve3D)
 
-def Handle_BRep_Curve3D_DownCast(*args):
+def Handle_BRep_Curve3D_DownCast(*args) -> "Handle_BRep_Curve3D const" :
   return _BRep.Handle_BRep_Curve3D_DownCast(*args)
 Handle_BRep_Curve3D_DownCast = _BRep.Handle_BRep_Curve3D_DownCast
 
@@ -4163,7 +4163,7 @@ class BRep_CurveOnSurface(BRep_GCurve):
 
         """
         _BRep.BRep_CurveOnSurface_swiginit(self,_BRep.new_BRep_CurveOnSurface(*args))
-    def SetUVPoints(self, *args):
+    def SetUVPoints(self, *args) -> "void" :
         """
         :param P1:
         :type P1: gp_Pnt2d
@@ -4174,7 +4174,7 @@ class BRep_CurveOnSurface(BRep_GCurve):
         """
         return _BRep.BRep_CurveOnSurface_SetUVPoints(self, *args)
 
-    def UVPoints(self, *args):
+    def UVPoints(self, *args) -> "void" :
         """
         :param P1:
         :type P1: gp_Pnt2d
@@ -4185,7 +4185,7 @@ class BRep_CurveOnSurface(BRep_GCurve):
         """
         return _BRep.BRep_CurveOnSurface_UVPoints(self, *args)
 
-    def IsCurveOnSurface(self, *args):
+    def IsCurveOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * Returns True.
 
@@ -4202,7 +4202,7 @@ class BRep_CurveOnSurface(BRep_GCurve):
         """
         return _BRep.BRep_CurveOnSurface_IsCurveOnSurface(self, *args)
 
-    def PCurve(self, *args):
+    def PCurve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -4213,11 +4213,11 @@ class BRep_CurveOnSurface(BRep_GCurve):
         """
         return _BRep.BRep_CurveOnSurface_PCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_CurveOnSurface self)"""
         return _BRep.BRep_CurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_CurveOnSurface" :
         """GetHandle(BRep_CurveOnSurface self) -> Handle_BRep_CurveOnSurface"""
         return _BRep.BRep_CurveOnSurface_GetHandle(self)
 
@@ -4259,7 +4259,7 @@ Handle_BRep_CurveOnSurface._kill_pointed = new_instancemethod(_BRep.Handle_BRep_
 Handle_BRep_CurveOnSurface_swigregister = _BRep.Handle_BRep_CurveOnSurface_swigregister
 Handle_BRep_CurveOnSurface_swigregister(Handle_BRep_CurveOnSurface)
 
-def Handle_BRep_CurveOnSurface_DownCast(*args):
+def Handle_BRep_CurveOnSurface_DownCast(*args) -> "Handle_BRep_CurveOnSurface const" :
   return _BRep.Handle_BRep_CurveOnSurface_DownCast(*args)
 Handle_BRep_CurveOnSurface_DownCast = _BRep.Handle_BRep_CurveOnSurface_DownCast
 
@@ -4280,7 +4280,7 @@ class BRep_PointOnCurveOnSurface(BRep_PointsOnSurface):
 
         """
         _BRep.BRep_PointOnCurveOnSurface_swiginit(self,_BRep.new_BRep_PointOnCurveOnSurface(*args))
-    def IsPointOnCurveOnSurface(self, *args):
+    def IsPointOnCurveOnSurface(self, *args) -> "Standard_Boolean" :
         """
         * Returns True
 
@@ -4297,7 +4297,7 @@ class BRep_PointOnCurveOnSurface(BRep_PointsOnSurface):
         """
         return _BRep.BRep_PointOnCurveOnSurface_IsPointOnCurveOnSurface(self, *args)
 
-    def PCurve(self, *args):
+    def PCurve(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -4308,11 +4308,11 @@ class BRep_PointOnCurveOnSurface(BRep_PointsOnSurface):
         """
         return _BRep.BRep_PointOnCurveOnSurface_PCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PointOnCurveOnSurface self)"""
         return _BRep.BRep_PointOnCurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PointOnCurveOnSurface" :
         """GetHandle(BRep_PointOnCurveOnSurface self) -> Handle_BRep_PointOnCurveOnSurface"""
         return _BRep.BRep_PointOnCurveOnSurface_GetHandle(self)
 
@@ -4352,7 +4352,7 @@ Handle_BRep_PointOnCurveOnSurface._kill_pointed = new_instancemethod(_BRep.Handl
 Handle_BRep_PointOnCurveOnSurface_swigregister = _BRep.Handle_BRep_PointOnCurveOnSurface_swigregister
 Handle_BRep_PointOnCurveOnSurface_swigregister(Handle_BRep_PointOnCurveOnSurface)
 
-def Handle_BRep_PointOnCurveOnSurface_DownCast(*args):
+def Handle_BRep_PointOnCurveOnSurface_DownCast(*args) -> "Handle_BRep_PointOnCurveOnSurface const" :
   return _BRep.Handle_BRep_PointOnCurveOnSurface_DownCast(*args)
 Handle_BRep_PointOnCurveOnSurface_DownCast = _BRep.Handle_BRep_PointOnCurveOnSurface_DownCast
 
@@ -4373,7 +4373,7 @@ class BRep_PointOnSurface(BRep_PointsOnSurface):
 
         """
         _BRep.BRep_PointOnSurface_swiginit(self,_BRep.new_BRep_PointOnSurface(*args))
-    def IsPointOnSurface(self, *args):
+    def IsPointOnSurface(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -4386,7 +4386,7 @@ class BRep_PointOnSurface(BRep_PointsOnSurface):
         """
         return _BRep.BRep_PointOnSurface_IsPointOnSurface(self, *args)
 
-    def Parameter2(self, *args):
+    def Parameter2(self, *args) -> "void" :
         """
         :rtype: float
 
@@ -4397,11 +4397,11 @@ class BRep_PointOnSurface(BRep_PointsOnSurface):
         """
         return _BRep.BRep_PointOnSurface_Parameter2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PointOnSurface self)"""
         return _BRep.BRep_PointOnSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PointOnSurface" :
         """GetHandle(BRep_PointOnSurface self) -> Handle_BRep_PointOnSurface"""
         return _BRep.BRep_PointOnSurface_GetHandle(self)
 
@@ -4441,7 +4441,7 @@ Handle_BRep_PointOnSurface._kill_pointed = new_instancemethod(_BRep.Handle_BRep_
 Handle_BRep_PointOnSurface_swigregister = _BRep.Handle_BRep_PointOnSurface_swigregister
 Handle_BRep_PointOnSurface_swigregister(Handle_BRep_PointOnSurface)
 
-def Handle_BRep_PointOnSurface_DownCast(*args):
+def Handle_BRep_PointOnSurface_DownCast(*args) -> "Handle_BRep_PointOnSurface const" :
   return _BRep.Handle_BRep_PointOnSurface_DownCast(*args)
 Handle_BRep_PointOnSurface_DownCast = _BRep.Handle_BRep_PointOnSurface_DownCast
 
@@ -4462,7 +4462,7 @@ class BRep_PolygonOnClosedSurface(BRep_PolygonOnSurface):
 
         """
         _BRep.BRep_PolygonOnClosedSurface_swiginit(self,_BRep.new_BRep_PolygonOnClosedSurface(*args))
-    def Polygon2(self, *args):
+    def Polygon2(self, *args) -> "void" :
         """
         :rtype: Handle_Poly_Polygon2D
 
@@ -4473,11 +4473,11 @@ class BRep_PolygonOnClosedSurface(BRep_PolygonOnSurface):
         """
         return _BRep.BRep_PolygonOnClosedSurface_Polygon2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PolygonOnClosedSurface self)"""
         return _BRep.BRep_PolygonOnClosedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PolygonOnClosedSurface" :
         """GetHandle(BRep_PolygonOnClosedSurface self) -> Handle_BRep_PolygonOnClosedSurface"""
         return _BRep.BRep_PolygonOnClosedSurface_GetHandle(self)
 
@@ -4516,7 +4516,7 @@ Handle_BRep_PolygonOnClosedSurface._kill_pointed = new_instancemethod(_BRep.Hand
 Handle_BRep_PolygonOnClosedSurface_swigregister = _BRep.Handle_BRep_PolygonOnClosedSurface_swigregister
 Handle_BRep_PolygonOnClosedSurface_swigregister(Handle_BRep_PolygonOnClosedSurface)
 
-def Handle_BRep_PolygonOnClosedSurface_DownCast(*args):
+def Handle_BRep_PolygonOnClosedSurface_DownCast(*args) -> "Handle_BRep_PolygonOnClosedSurface const" :
   return _BRep.Handle_BRep_PolygonOnClosedSurface_DownCast(*args)
 Handle_BRep_PolygonOnClosedSurface_DownCast = _BRep.Handle_BRep_PolygonOnClosedSurface_DownCast
 
@@ -4537,7 +4537,7 @@ class BRep_PolygonOnClosedTriangulation(BRep_PolygonOnTriangulation):
 
         """
         _BRep.BRep_PolygonOnClosedTriangulation_swiginit(self,_BRep.new_BRep_PolygonOnClosedTriangulation(*args))
-    def PolygonOnTriangulation2(self, *args):
+    def PolygonOnTriangulation2(self, *args) -> "Handle_Poly_PolygonOnTriangulation const &" :
         """
         :param P2:
         :type P2: Handle_Poly_PolygonOnTriangulation &
@@ -4548,11 +4548,11 @@ class BRep_PolygonOnClosedTriangulation(BRep_PolygonOnTriangulation):
         """
         return _BRep.BRep_PolygonOnClosedTriangulation_PolygonOnTriangulation2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_PolygonOnClosedTriangulation self)"""
         return _BRep.BRep_PolygonOnClosedTriangulation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_PolygonOnClosedTriangulation" :
         """GetHandle(BRep_PolygonOnClosedTriangulation self) -> Handle_BRep_PolygonOnClosedTriangulation"""
         return _BRep.BRep_PolygonOnClosedTriangulation_GetHandle(self)
 
@@ -4591,7 +4591,7 @@ Handle_BRep_PolygonOnClosedTriangulation._kill_pointed = new_instancemethod(_BRe
 Handle_BRep_PolygonOnClosedTriangulation_swigregister = _BRep.Handle_BRep_PolygonOnClosedTriangulation_swigregister
 Handle_BRep_PolygonOnClosedTriangulation_swigregister(Handle_BRep_PolygonOnClosedTriangulation)
 
-def Handle_BRep_PolygonOnClosedTriangulation_DownCast(*args):
+def Handle_BRep_PolygonOnClosedTriangulation_DownCast(*args) -> "Handle_BRep_PolygonOnClosedTriangulation const" :
   return _BRep.Handle_BRep_PolygonOnClosedTriangulation_DownCast(*args)
 Handle_BRep_PolygonOnClosedTriangulation_DownCast = _BRep.Handle_BRep_PolygonOnClosedTriangulation_DownCast
 
@@ -4614,7 +4614,7 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
 
         """
         _BRep.BRep_CurveOnClosedSurface_swiginit(self,_BRep.new_BRep_CurveOnClosedSurface(*args))
-    def SetUVPoints2(self, *args):
+    def SetUVPoints2(self, *args) -> "void" :
         """
         :param P1:
         :type P1: gp_Pnt2d
@@ -4625,7 +4625,7 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
         """
         return _BRep.BRep_CurveOnClosedSurface_SetUVPoints2(self, *args)
 
-    def UVPoints2(self, *args):
+    def UVPoints2(self, *args) -> "void" :
         """
         :param P1:
         :type P1: gp_Pnt2d
@@ -4636,7 +4636,7 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
         """
         return _BRep.BRep_CurveOnClosedSurface_UVPoints2(self, *args)
 
-    def IsRegularity(self, *args):
+    def IsRegularity(self, *args) -> "Standard_Boolean" :
         """
         * Returns True
 
@@ -4657,7 +4657,7 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
         """
         return _BRep.BRep_CurveOnClosedSurface_IsRegularity(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "void" :
         """
         :rtype: GeomAbs_Shape
 
@@ -4668,7 +4668,7 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
         """
         return _BRep.BRep_CurveOnClosedSurface_Continuity(self, *args)
 
-    def PCurve2(self, *args):
+    def PCurve2(self, *args) -> "void" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -4679,11 +4679,11 @@ class BRep_CurveOnClosedSurface(BRep_CurveOnSurface):
         """
         return _BRep.BRep_CurveOnClosedSurface_PCurve2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRep_CurveOnClosedSurface self)"""
         return _BRep.BRep_CurveOnClosedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRep_CurveOnClosedSurface" :
         """GetHandle(BRep_CurveOnClosedSurface self) -> Handle_BRep_CurveOnClosedSurface"""
         return _BRep.BRep_CurveOnClosedSurface_GetHandle(self)
 
@@ -4726,7 +4726,7 @@ Handle_BRep_CurveOnClosedSurface._kill_pointed = new_instancemethod(_BRep.Handle
 Handle_BRep_CurveOnClosedSurface_swigregister = _BRep.Handle_BRep_CurveOnClosedSurface_swigregister
 Handle_BRep_CurveOnClosedSurface_swigregister(Handle_BRep_CurveOnClosedSurface)
 
-def Handle_BRep_CurveOnClosedSurface_DownCast(*args):
+def Handle_BRep_CurveOnClosedSurface_DownCast(*args) -> "Handle_BRep_CurveOnClosedSurface const" :
   return _BRep.Handle_BRep_CurveOnClosedSurface_DownCast(*args)
 Handle_BRep_CurveOnClosedSurface_DownCast = _BRep.Handle_BRep_CurveOnClosedSurface_DownCast
 

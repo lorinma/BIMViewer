@@ -115,7 +115,7 @@ import OCC.MMgt
 class SortTools_HeapSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -141,7 +141,7 @@ SortTools_HeapSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortTo
 SortTools_HeapSortOfInteger_swigregister = _SortTools.SortTools_HeapSortOfInteger_swigregister
 SortTools_HeapSortOfInteger_swigregister(SortTools_HeapSortOfInteger)
 
-def SortTools_HeapSortOfInteger_Sort(*args):
+def SortTools_HeapSortOfInteger_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -155,7 +155,7 @@ def SortTools_HeapSortOfInteger_Sort(*args):
 class SortTools_HeapSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -181,7 +181,7 @@ SortTools_HeapSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTools
 SortTools_HeapSortOfReal_swigregister = _SortTools.SortTools_HeapSortOfReal_swigregister
 SortTools_HeapSortOfReal_swigregister(SortTools_HeapSortOfReal)
 
-def SortTools_HeapSortOfReal_Sort(*args):
+def SortTools_HeapSortOfReal_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -195,7 +195,7 @@ def SortTools_HeapSortOfReal_Sort(*args):
 class SortTools_QuickSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -221,7 +221,7 @@ SortTools_QuickSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortT
 SortTools_QuickSortOfInteger_swigregister = _SortTools.SortTools_QuickSortOfInteger_swigregister
 SortTools_QuickSortOfInteger_swigregister(SortTools_QuickSortOfInteger)
 
-def SortTools_QuickSortOfInteger_Sort(*args):
+def SortTools_QuickSortOfInteger_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -235,7 +235,7 @@ def SortTools_QuickSortOfInteger_Sort(*args):
 class SortTools_QuickSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -261,7 +261,7 @@ SortTools_QuickSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTool
 SortTools_QuickSortOfReal_swigregister = _SortTools.SortTools_QuickSortOfReal_swigregister
 SortTools_QuickSortOfReal_swigregister(SortTools_QuickSortOfReal)
 
-def SortTools_QuickSortOfReal_Sort(*args):
+def SortTools_QuickSortOfReal_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -275,7 +275,7 @@ def SortTools_QuickSortOfReal_Sort(*args):
 class SortTools_ShellSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -301,7 +301,7 @@ SortTools_ShellSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortT
 SortTools_ShellSortOfInteger_swigregister = _SortTools.SortTools_ShellSortOfInteger_swigregister
 SortTools_ShellSortOfInteger_swigregister(SortTools_ShellSortOfInteger)
 
-def SortTools_ShellSortOfInteger_Sort(*args):
+def SortTools_ShellSortOfInteger_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -315,7 +315,7 @@ def SortTools_ShellSortOfInteger_Sort(*args):
 class SortTools_ShellSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -341,7 +341,7 @@ SortTools_ShellSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTool
 SortTools_ShellSortOfReal_swigregister = _SortTools.SortTools_ShellSortOfReal_swigregister
 SortTools_ShellSortOfReal_swigregister(SortTools_ShellSortOfReal)
 
-def SortTools_ShellSortOfReal_Sort(*args):
+def SortTools_ShellSortOfReal_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -355,7 +355,7 @@ def SortTools_ShellSortOfReal_Sort(*args):
 class SortTools_StraightInsertionSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -381,7 +381,7 @@ SortTools_StraightInsertionSortOfInteger._kill_pointed = new_instancemethod(_Sor
 SortTools_StraightInsertionSortOfInteger_swigregister = _SortTools.SortTools_StraightInsertionSortOfInteger_swigregister
 SortTools_StraightInsertionSortOfInteger_swigregister(SortTools_StraightInsertionSortOfInteger)
 
-def SortTools_StraightInsertionSortOfInteger_Sort(*args):
+def SortTools_StraightInsertionSortOfInteger_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -395,7 +395,7 @@ def SortTools_StraightInsertionSortOfInteger_Sort(*args):
 class SortTools_StraightInsertionSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Sort(*args):
+    def Sort(*args) -> "void" :
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -421,7 +421,7 @@ SortTools_StraightInsertionSortOfReal._kill_pointed = new_instancemethod(_SortTo
 SortTools_StraightInsertionSortOfReal_swigregister = _SortTools.SortTools_StraightInsertionSortOfReal_swigregister
 SortTools_StraightInsertionSortOfReal_swigregister(SortTools_StraightInsertionSortOfReal)
 
-def SortTools_StraightInsertionSortOfReal_Sort(*args):
+def SortTools_StraightInsertionSortOfReal_Sort(*args) -> "void" :
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &

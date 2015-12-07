@@ -161,7 +161,7 @@ class IntRes2d_Domain(object):
 
         """
         _IntRes2d.IntRes2d_Domain_swiginit(self,_IntRes2d.new_IntRes2d_Domain(*args))
-    def SetValues(self, *args):
+    def SetValues(self, *args) -> "void" :
         """
         * Sets the values for a bounded domain.
 
@@ -198,7 +198,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_SetValues(self, *args)
 
-    def SetEquivalentParameters(self, *args):
+    def SetEquivalentParameters(self, *args) -> "void" :
         """
         * Defines a closed domain.
 
@@ -211,7 +211,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_SetEquivalentParameters(self, *args)
 
-    def HasFirstPoint(self, *args):
+    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the domain has a first point, i-e a point defining the lowest admitted parameter on the curve.
 
@@ -220,7 +220,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_HasFirstPoint(self, *args)
 
-    def FirstParameter(self, *args):
+    def FirstParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the first point of the domain The exception DomainError is raised if HasFirstPoint returns False.
 
@@ -229,7 +229,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_FirstParameter(self, *args)
 
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the first point of the domain. The exception DomainError is raised if HasFirstPoint returns False.
 
@@ -238,7 +238,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_FirstPoint(self, *args)
 
-    def FirstTolerance(self, *args):
+    def FirstTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the tolerance of the first (left) bound. The exception DomainError is raised if HasFirstPoint returns False.
 
@@ -247,7 +247,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_FirstTolerance(self, *args)
 
-    def HasLastPoint(self, *args):
+    def HasLastPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the domain has a last point, i-e a point defining the highest admitted parameter on the curve.
 
@@ -256,7 +256,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_HasLastPoint(self, *args)
 
-    def LastParameter(self, *args):
+    def LastParameter(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter of the last point of the domain. The exception DomainError is raised if HasLastPoint returns False.
 
@@ -265,7 +265,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_LastParameter(self, *args)
 
-    def LastPoint(self, *args):
+    def LastPoint(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the last point of the domain. The exception DomainError is raised if HasLastPoint returns False.
 
@@ -274,7 +274,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_LastPoint(self, *args)
 
-    def LastTolerance(self, *args):
+    def LastTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns the tolerance of the last (right) bound. The exception DomainError is raised if HasLastPoint returns False.
 
@@ -283,7 +283,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_LastTolerance(self, *args)
 
-    def IsClosed(self, *args):
+    def IsClosed(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the domain is closed.
 
@@ -292,7 +292,7 @@ class IntRes2d_Domain(object):
         """
         return _IntRes2d.IntRes2d_Domain_IsClosed(self, *args)
 
-    def EquivalentParameters(self, *args):
+    def EquivalentParameters(self, *args) -> "void" :
         """
         * Returns Equivalent parameters if the domain is closed. Otherwise, the exception DomainError is raised.
 
@@ -333,7 +333,7 @@ class IntRes2d_Intersection(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns True when the computation was successful.
 
@@ -342,7 +342,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_IsDone(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is no intersection between the given arguments. The exception NotDone is raised if IsDone returns False.
 
@@ -351,7 +351,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_IsEmpty(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * This function returns the number of intersection points between the 2 curves. The exception NotDone is raised if IsDone returns False.
 
@@ -360,7 +360,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         * This function returns the intersection point of range N; The exception NotDone is raised if IsDone returns False. The exception OutOfRange is raised if (N <= 0) or (N > NbPoints).
 
@@ -371,7 +371,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_Point(self, *args)
 
-    def NbSegments(self, *args):
+    def NbSegments(self, *args) -> "Standard_Integer" :
         """
         * This function returns the number of intersection segments between the two curves. The exception NotDone is raised if IsDone returns False.
 
@@ -380,7 +380,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_NbSegments(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "IntRes2d_IntersectionSegment const &" :
         """
         * This function returns the intersection segment of range N; The exception NotDone is raised if IsDone returns False. The exception OutOfRange is raised if (N <= 0) or (N > NbPoints).
 
@@ -391,7 +391,7 @@ class IntRes2d_Intersection(object):
         """
         return _IntRes2d.IntRes2d_Intersection_Segment(self, *args)
 
-    def SetReversedParameters(self, *args):
+    def SetReversedParameters(self, *args) -> "void" :
         """
         :param Reverseflag:
         :type Reverseflag: bool
@@ -446,7 +446,7 @@ class IntRes2d_IntersectionPoint(object):
 
         """
         _IntRes2d.IntRes2d_IntersectionPoint_swiginit(self,_IntRes2d.new_IntRes2d_IntersectionPoint(*args))
-    def SetValues(self, *args):
+    def SetValues(self, *args) -> "void" :
         """
         * Sets the values for an existing intersection point. The meaning of the parameters are the same as for the Create.
 
@@ -467,7 +467,7 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_SetValues(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt2d const" :
         """
         * Returns the value of the coordinates of the intersection point in the 2D space.
 
@@ -476,7 +476,7 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_Value(self, *args)
 
-    def ParamOnFirst(self, *args):
+    def ParamOnFirst(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the first curve.
 
@@ -485,7 +485,7 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_ParamOnFirst(self, *args)
 
-    def ParamOnSecond(self, *args):
+    def ParamOnSecond(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the second curve.
 
@@ -494,7 +494,7 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_ParamOnSecond(self, *args)
 
-    def TransitionOfFirst(self, *args):
+    def TransitionOfFirst(self, *args) -> "IntRes2d_Transition const &" :
         """
         * Returns the transition of the 1st curve compared to the 2nd one.
 
@@ -503,7 +503,7 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_TransitionOfFirst(self, *args)
 
-    def TransitionOfSecond(self, *args):
+    def TransitionOfSecond(self, *args) -> "IntRes2d_Transition const &" :
         """
         * returns the transition of the 2nd curve compared to the 1st one.
 
@@ -512,21 +512,21 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint_TransitionOfSecond(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionPointpt(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionPointpt(self, *args) -> "gp_Pnt2d const" :
         """
         :rtype: gp_Pnt2d
 
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_GetIntRes2d_IntersectionPointpt(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionPointp1(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionPointp1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_GetIntRes2d_IntersectionPointp1(self, *args)
 
-    def _CSFDB_SetIntRes2d_IntersectionPointp1(self, *args):
+    def _CSFDB_SetIntRes2d_IntersectionPointp1(self, *args) -> "void" :
         """
         :param p:
         :type p: float
@@ -535,14 +535,14 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_SetIntRes2d_IntersectionPointp1(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionPointp2(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionPointp2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_GetIntRes2d_IntersectionPointp2(self, *args)
 
-    def _CSFDB_SetIntRes2d_IntersectionPointp2(self, *args):
+    def _CSFDB_SetIntRes2d_IntersectionPointp2(self, *args) -> "void" :
         """
         :param p:
         :type p: float
@@ -551,14 +551,14 @@ class IntRes2d_IntersectionPoint(object):
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_SetIntRes2d_IntersectionPointp2(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionPointtrans1(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionPointtrans1(self, *args) -> "IntRes2d_Transition const &" :
         """
         :rtype: IntRes2d_Transition
 
         """
         return _IntRes2d.IntRes2d_IntersectionPoint__CSFDB_GetIntRes2d_IntersectionPointtrans1(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionPointtrans2(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionPointtrans2(self, *args) -> "IntRes2d_Transition const &" :
         """
         :rtype: IntRes2d_Transition
 
@@ -627,7 +627,7 @@ class IntRes2d_IntersectionSegment(object):
 
         """
         _IntRes2d.IntRes2d_IntersectionSegment_swiginit(self,_IntRes2d.new_IntRes2d_IntersectionSegment(*args))
-    def IsOpposite(self, *args):
+    def IsOpposite(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the intersection segment has got the same orientation on both curves.
 
@@ -636,7 +636,7 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment_IsOpposite(self, *args)
 
-    def HasFirstPoint(self, *args):
+    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the segment is limited by a first point. This point defines the lowest parameter admitted on the first curve for the segment. If IsOpposite returns False, it defines the lowest parameter on the second curve, otherwise, it is the highest parameter on the second curve.
 
@@ -645,7 +645,7 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment_HasFirstPoint(self, *args)
 
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         * Returns the first point of the segment as an IntersectionPoint (with a transition). The exception DomainError is raised if HasFirstPoint returns False.
 
@@ -654,7 +654,7 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment_FirstPoint(self, *args)
 
-    def HasLastPoint(self, *args):
+    def HasLastPoint(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the segment is limited by a last point. This point defines the highest parameter admitted on the first curve for the segment. If IsOpposite returns False, it defines the highest parameter on the second curve, otherwise, it is the lowest parameter on the second curve.
 
@@ -663,7 +663,7 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment_HasLastPoint(self, *args)
 
-    def LastPoint(self, *args):
+    def LastPoint(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         * Returns the last point of the segment as an IntersectionPoint (with a transition). The exception DomainError is raised if HasLastExtremity returns False.
 
@@ -672,14 +672,14 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment_LastPoint(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionSegmentoppos(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionSegmentoppos(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_GetIntRes2d_IntersectionSegmentoppos(self, *args)
 
-    def _CSFDB_SetIntRes2d_IntersectionSegmentoppos(self, *args):
+    def _CSFDB_SetIntRes2d_IntersectionSegmentoppos(self, *args) -> "void" :
         """
         :param p:
         :type p: bool
@@ -688,14 +688,14 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_SetIntRes2d_IntersectionSegmentoppos(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionSegmentfirst(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionSegmentfirst(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_GetIntRes2d_IntersectionSegmentfirst(self, *args)
 
-    def _CSFDB_SetIntRes2d_IntersectionSegmentfirst(self, *args):
+    def _CSFDB_SetIntRes2d_IntersectionSegmentfirst(self, *args) -> "void" :
         """
         :param p:
         :type p: bool
@@ -704,14 +704,14 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_SetIntRes2d_IntersectionSegmentfirst(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionSegmentlast(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionSegmentlast(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_GetIntRes2d_IntersectionSegmentlast(self, *args)
 
-    def _CSFDB_SetIntRes2d_IntersectionSegmentlast(self, *args):
+    def _CSFDB_SetIntRes2d_IntersectionSegmentlast(self, *args) -> "void" :
         """
         :param p:
         :type p: bool
@@ -720,14 +720,14 @@ class IntRes2d_IntersectionSegment(object):
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_SetIntRes2d_IntersectionSegmentlast(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionSegmentptfirst(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionSegmentptfirst(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         :rtype: IntRes2d_IntersectionPoint
 
         """
         return _IntRes2d.IntRes2d_IntersectionSegment__CSFDB_GetIntRes2d_IntersectionSegmentptfirst(self, *args)
 
-    def _CSFDB_GetIntRes2d_IntersectionSegmentptlast(self, *args):
+    def _CSFDB_GetIntRes2d_IntersectionSegmentptlast(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         :rtype: IntRes2d_IntersectionPoint
 
@@ -774,18 +774,18 @@ class IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint(OCC.TCollection.TCollec
 
         """
         _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_swiginit(self,_IntRes2d.new_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntRes2d_IntersectionPoint &" :
         """
         :rtype: IntRes2d_IntersectionPoint
 
         """
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint self)"""
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint" :
         """GetHandle(IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint self) -> Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint"""
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_GetHandle(self)
 
@@ -824,7 +824,7 @@ Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint._kill_pointed = new_in
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_swigregister = _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_swigregister
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_swigregister(Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint)
 
-def Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_DownCast(*args):
+def Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_DownCast(*args) -> "Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint const" :
   return _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_DownCast(*args)
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_DownCast = _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint_DownCast
 
@@ -843,18 +843,18 @@ class IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment(OCC.TCollection.TColl
 
         """
         _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_swiginit(self,_IntRes2d.new_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntRes2d_IntersectionSegment &" :
         """
         :rtype: IntRes2d_IntersectionSegment
 
         """
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment self)"""
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment" :
         """GetHandle(IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment self) -> Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment"""
         return _IntRes2d.IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_GetHandle(self)
 
@@ -893,7 +893,7 @@ Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment._kill_pointed = new_
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_swigregister = _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_swigregister
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_swigregister(Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment)
 
-def Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_DownCast(*args):
+def Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_DownCast(*args) -> "Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment const" :
   return _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_DownCast(*args)
 Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_DownCast = _IntRes2d.Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment_DownCast
 
@@ -906,14 +906,14 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
 
         """
         _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_swiginit(self,_IntRes2d.new_IntRes2d_SequenceOfIntersectionPoint(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntRes2d_SequenceOfIntersectionPoint const &" :
         """
         :param Other:
         :type Other: IntRes2d_SequenceOfIntersectionPoint &
@@ -922,7 +922,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntRes2d_SequenceOfIntersectionPoint const &" :
         """
         :param Other:
         :type Other: IntRes2d_SequenceOfIntersectionPoint &
@@ -931,7 +931,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntRes2d_IntersectionPoint &
@@ -944,7 +944,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntRes2d_IntersectionPoint &
@@ -957,7 +957,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -974,7 +974,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -991,21 +991,21 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         :rtype: IntRes2d_IntersectionPoint
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         :rtype: IntRes2d_IntersectionPoint
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1016,7 +1016,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntRes2d_IntersectionPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -1025,7 +1025,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1036,7 +1036,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntRes2d_IntersectionPoint &" :
         """
         :param Index:
         :type Index: int
@@ -1045,7 +1045,7 @@ class IntRes2d_SequenceOfIntersectionPoint(OCC.TCollection.TCollection_BaseSeque
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionPoint_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1095,14 +1095,14 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
 
         """
         _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_swiginit(self,_IntRes2d.new_IntRes2d_SequenceOfIntersectionSegment(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntRes2d_SequenceOfIntersectionSegment const &" :
         """
         :param Other:
         :type Other: IntRes2d_SequenceOfIntersectionSegment &
@@ -1111,7 +1111,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntRes2d_SequenceOfIntersectionSegment const &" :
         """
         :param Other:
         :type Other: IntRes2d_SequenceOfIntersectionSegment &
@@ -1120,7 +1120,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntRes2d_IntersectionSegment &
@@ -1133,7 +1133,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntRes2d_IntersectionSegment &
@@ -1146,7 +1146,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1163,7 +1163,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1180,21 +1180,21 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntRes2d_IntersectionSegment const &" :
         """
         :rtype: IntRes2d_IntersectionSegment
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntRes2d_IntersectionSegment const &" :
         """
         :rtype: IntRes2d_IntersectionSegment
 
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1205,7 +1205,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntRes2d_IntersectionSegment const &" :
         """
         :param Index:
         :type Index: int
@@ -1214,7 +1214,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1225,7 +1225,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntRes2d_IntersectionSegment &" :
         """
         :param Index:
         :type Index: int
@@ -1234,7 +1234,7 @@ class IntRes2d_SequenceOfIntersectionSegment(OCC.TCollection.TCollection_BaseSeq
         """
         return _IntRes2d.IntRes2d_SequenceOfIntersectionSegment_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1314,7 +1314,7 @@ class IntRes2d_Transition(object):
 
         """
         _IntRes2d.IntRes2d_Transition_swiginit(self,_IntRes2d.new_IntRes2d_Transition(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets the values of an IN or OUT transition.
 
@@ -1347,7 +1347,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_SetValue(self, *args)
 
-    def SetPosition(self, *args):
+    def SetPosition(self, *args) -> "void" :
         """
         * Sets the value of the position.
 
@@ -1358,7 +1358,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_SetPosition(self, *args)
 
-    def PositionOnCurve(self, *args):
+    def PositionOnCurve(self, *args) -> "IntRes2d_Position" :
         """
         * Indicates if the intersection is at the beginning (IntRes2d_Head), at the end (IntRes2d_End), or in the middle (IntRes2d_Middle) of the curve.
 
@@ -1367,7 +1367,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_PositionOnCurve(self, *args)
 
-    def TransitionType(self, *args):
+    def TransitionType(self, *args) -> "IntRes2d_TypeTrans" :
         """
         * Returns the type of transition at the intersection. It may be IN or OUT or TOUCH, or UNDECIDED if the two first derivatives are not enough to give the tangent to one of the two curves.
 
@@ -1376,7 +1376,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_TransitionType(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when the 2 curves are tangent at the intersection point. Theexception DomainError is raised if the type of transition is UNDECIDED.
 
@@ -1385,7 +1385,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_IsTangent(self, *args)
 
-    def Situation(self, *args):
+    def Situation(self, *args) -> "IntRes2d_Situation" :
         """
         * returns a significant value if TransitionType returns TOUCH. In this case, the function returns : INSIDE when the curve remains inside the other one, OUTSIDE when it remains outside the other one, UNKNOWN when the calculus, based on the second derivatives cannot give the result. If TransitionType returns IN or OUT or UNDECIDED, the exception DomainError is raised.
 
@@ -1394,7 +1394,7 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_Situation(self, *args)
 
-    def IsOpposite(self, *args):
+    def IsOpposite(self, *args) -> "Standard_Boolean" :
         """
         * returns a significant value if TransitionType returns TOUCH. In this case, the function returns true when the 2 curves locally define two different parts of the space. If TransitionType returns IN or OUT or UNDECIDED, the exception DomainError is raised.
 
@@ -1403,14 +1403,14 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition_IsOpposite(self, *args)
 
-    def _CSFDB_GetIntRes2d_Transitiontangent(self, *args):
+    def _CSFDB_GetIntRes2d_Transitiontangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_GetIntRes2d_Transitiontangent(self, *args)
 
-    def _CSFDB_SetIntRes2d_Transitiontangent(self, *args):
+    def _CSFDB_SetIntRes2d_Transitiontangent(self, *args) -> "void" :
         """
         :param p:
         :type p: bool
@@ -1419,14 +1419,14 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_SetIntRes2d_Transitiontangent(self, *args)
 
-    def _CSFDB_GetIntRes2d_Transitionposit(self, *args):
+    def _CSFDB_GetIntRes2d_Transitionposit(self, *args) -> "IntRes2d_Position" :
         """
         :rtype: IntRes2d_Position
 
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_GetIntRes2d_Transitionposit(self, *args)
 
-    def _CSFDB_SetIntRes2d_Transitionposit(self, *args):
+    def _CSFDB_SetIntRes2d_Transitionposit(self, *args) -> "void" :
         """
         :param p:
         :type p: IntRes2d_Position
@@ -1435,14 +1435,14 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_SetIntRes2d_Transitionposit(self, *args)
 
-    def _CSFDB_GetIntRes2d_Transitiontypetra(self, *args):
+    def _CSFDB_GetIntRes2d_Transitiontypetra(self, *args) -> "IntRes2d_TypeTrans" :
         """
         :rtype: IntRes2d_TypeTrans
 
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_GetIntRes2d_Transitiontypetra(self, *args)
 
-    def _CSFDB_SetIntRes2d_Transitiontypetra(self, *args):
+    def _CSFDB_SetIntRes2d_Transitiontypetra(self, *args) -> "void" :
         """
         :param p:
         :type p: IntRes2d_TypeTrans
@@ -1451,14 +1451,14 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_SetIntRes2d_Transitiontypetra(self, *args)
 
-    def _CSFDB_GetIntRes2d_Transitionsituat(self, *args):
+    def _CSFDB_GetIntRes2d_Transitionsituat(self, *args) -> "IntRes2d_Situation" :
         """
         :rtype: IntRes2d_Situation
 
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_GetIntRes2d_Transitionsituat(self, *args)
 
-    def _CSFDB_SetIntRes2d_Transitionsituat(self, *args):
+    def _CSFDB_SetIntRes2d_Transitionsituat(self, *args) -> "void" :
         """
         :param p:
         :type p: IntRes2d_Situation
@@ -1467,14 +1467,14 @@ class IntRes2d_Transition(object):
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_SetIntRes2d_Transitionsituat(self, *args)
 
-    def _CSFDB_GetIntRes2d_Transitionoppos(self, *args):
+    def _CSFDB_GetIntRes2d_Transitionoppos(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntRes2d.IntRes2d_Transition__CSFDB_GetIntRes2d_Transitionoppos(self, *args)
 
-    def _CSFDB_SetIntRes2d_Transitionoppos(self, *args):
+    def _CSFDB_SetIntRes2d_Transitionoppos(self, *args) -> "void" :
         """
         :param p:
         :type p: bool

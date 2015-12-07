@@ -253,7 +253,7 @@ AIS_TOPL_YZPlane = _AIS.AIS_TOPL_YZPlane
 class ais(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Nearest(*args):
+    def Nearest(*args) -> "Standard_Boolean" :
         """
         * Returns the nearest point in a shape. This is used by several classes in calculation of dimensions.
 
@@ -289,7 +289,7 @@ class ais(object):
         return _AIS.ais_Nearest(*args)
 
     Nearest = staticmethod(Nearest)
-    def Farest(*args):
+    def Farest(*args) -> "gp_Pnt" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -301,7 +301,7 @@ class ais(object):
         return _AIS.ais_Farest(*args)
 
     Farest = staticmethod(Farest)
-    def ComputeGeomCurve(*args):
+    def ComputeGeomCurve(*args) -> "Standard_Boolean &" :
         """
         * Checks if aCurve belongs to aPlane; if not, projects aCurve in aPlane and returns aCurve; Return True if ok
 
@@ -325,7 +325,7 @@ class ais(object):
         return _AIS.ais_ComputeGeomCurve(*args)
 
     ComputeGeomCurve = staticmethod(ComputeGeomCurve)
-    def ComputeGeometry(*args):
+    def ComputeGeometry(*args) -> "Standard_Boolean &" :
         """
         * Used by 2d Relation only Computes the 3d geometry of <anEdge> in the current WorkingPlane and the extremities if any Return True if ok.
 
@@ -463,7 +463,7 @@ class ais(object):
         return _AIS.ais_ComputeGeometry(*args)
 
     ComputeGeometry = staticmethod(ComputeGeometry)
-    def GetPlaneFromFace(*args):
+    def GetPlaneFromFace(*args) -> "Standard_Real &" :
         """
         * Tryes to get Plane from Face. Returns Surface of Face in aSurf. Returns Standard_True and Plane of Face in aPlane in following cases: Face is Plane, Offset of Plane,  Extrusion of Line and Offset of Extrusion of Line Returns pure type of Surface which can be: Plane, Cylinder, Cone, Sphere, Torus, SurfaceOfRevolution, SurfaceOfExtrusion
 
@@ -483,7 +483,7 @@ class ais(object):
         return _AIS.ais_GetPlaneFromFace(*args)
 
     GetPlaneFromFace = staticmethod(GetPlaneFromFace)
-    def InitFaceLength(*args):
+    def InitFaceLength(*args) -> "Standard_Real &" :
         """
         :param aFace:
         :type aFace: TopoDS_Face &
@@ -501,7 +501,7 @@ class ais(object):
         return _AIS.ais_InitFaceLength(*args)
 
     InitFaceLength = staticmethod(InitFaceLength)
-    def InitLengthBetweenCurvilinearFaces(*args):
+    def InitLengthBetweenCurvilinearFaces(*args) -> "void" :
         """
         * Finds attachment points on two curvilinear faces for length dimension. @param thePlaneDir [in] the direction on the dimension plane to compute the plane automatically. It will not be taken into account if plane is defined by user.
 
@@ -525,7 +525,7 @@ class ais(object):
         return _AIS.ais_InitLengthBetweenCurvilinearFaces(*args)
 
     InitLengthBetweenCurvilinearFaces = staticmethod(InitLengthBetweenCurvilinearFaces)
-    def InitAngleBetweenPlanarFaces(*args):
+    def InitAngleBetweenPlanarFaces(*args) -> "Standard_Boolean" :
         """
         * Finds three points for the angle dimension between two planes.
 
@@ -547,7 +547,7 @@ class ais(object):
         return _AIS.ais_InitAngleBetweenPlanarFaces(*args)
 
     InitAngleBetweenPlanarFaces = staticmethod(InitAngleBetweenPlanarFaces)
-    def InitAngleBetweenCurvilinearFaces(*args):
+    def InitAngleBetweenCurvilinearFaces(*args) -> "Standard_Boolean" :
         """
         * Finds three points for the angle dimension between two curvilinear surfaces.
 
@@ -573,7 +573,7 @@ class ais(object):
         return _AIS.ais_InitAngleBetweenCurvilinearFaces(*args)
 
     InitAngleBetweenCurvilinearFaces = staticmethod(InitAngleBetweenCurvilinearFaces)
-    def ProjectPointOnPlane(*args):
+    def ProjectPointOnPlane(*args) -> "gp_Pnt" :
         """
         :param aPoint:
         :type aPoint: gp_Pnt
@@ -585,7 +585,7 @@ class ais(object):
         return _AIS.ais_ProjectPointOnPlane(*args)
 
     ProjectPointOnPlane = staticmethod(ProjectPointOnPlane)
-    def ProjectPointOnLine(*args):
+    def ProjectPointOnLine(*args) -> "gp_Pnt" :
         """
         :param aPoint:
         :type aPoint: gp_Pnt
@@ -597,7 +597,7 @@ class ais(object):
         return _AIS.ais_ProjectPointOnLine(*args)
 
     ProjectPointOnLine = staticmethod(ProjectPointOnLine)
-    def TranslatePointToBound(*args):
+    def TranslatePointToBound(*args) -> "gp_Pnt" :
         """
         :param aPoint:
         :type aPoint: gp_Pnt
@@ -611,7 +611,7 @@ class ais(object):
         return _AIS.ais_TranslatePointToBound(*args)
 
     TranslatePointToBound = staticmethod(TranslatePointToBound)
-    def InDomain(*args):
+    def InDomain(*args) -> "Standard_Boolean" :
         """
         * returns True if point with anAttachPar is in domain of arc
 
@@ -627,7 +627,7 @@ class ais(object):
         return _AIS.ais_InDomain(*args)
 
     InDomain = staticmethod(InDomain)
-    def NearestApex(*args):
+    def NearestApex(*args) -> "Standard_Boolean &" :
         """
         * computes nearest to ellipse arc apex
 
@@ -649,7 +649,7 @@ class ais(object):
         return _AIS.ais_NearestApex(*args)
 
     NearestApex = staticmethod(NearestApex)
-    def DistanceFromApex(*args):
+    def DistanceFromApex(*args) -> "Standard_Real" :
         """
         * computes length of ellipse arc in parametric units
 
@@ -665,7 +665,7 @@ class ais(object):
         return _AIS.ais_DistanceFromApex(*args)
 
     DistanceFromApex = staticmethod(DistanceFromApex)
-    def ComputeProjEdgePresentation(*args):
+    def ComputeProjEdgePresentation(*args) -> "void" :
         """
         :param aPres:
         :type aPres: Handle_Prs3d_Presentation &
@@ -693,7 +693,7 @@ class ais(object):
         return _AIS.ais_ComputeProjEdgePresentation(*args)
 
     ComputeProjEdgePresentation = staticmethod(ComputeProjEdgePresentation)
-    def ComputeProjVertexPresentation(*args):
+    def ComputeProjVertexPresentation(*args) -> "void" :
         """
         :param aPres:
         :type aPres: Handle_Prs3d_Presentation &
@@ -731,7 +731,7 @@ ais._kill_pointed = new_instancemethod(_AIS.ais__kill_pointed,None,ais)
 ais_swigregister = _AIS.ais_swigregister
 ais_swigregister(ais)
 
-def ais_Nearest(*args):
+def ais_Nearest(*args) -> "Standard_Boolean" :
   """
     * Returns the nearest point in a shape. This is used by several classes in calculation of dimensions.
 
@@ -766,7 +766,7 @@ def ais_Nearest(*args):
     """
   return _AIS.ais_Nearest(*args)
 
-def ais_Farest(*args):
+def ais_Farest(*args) -> "gp_Pnt" :
   """
     :param aShape:
     :type aShape: TopoDS_Shape &
@@ -777,7 +777,7 @@ def ais_Farest(*args):
     """
   return _AIS.ais_Farest(*args)
 
-def ais_ComputeGeomCurve(*args):
+def ais_ComputeGeomCurve(*args) -> "Standard_Boolean &" :
   """
     * Checks if aCurve belongs to aPlane; if not, projects aCurve in aPlane and returns aCurve; Return True if ok
 
@@ -800,7 +800,7 @@ def ais_ComputeGeomCurve(*args):
     """
   return _AIS.ais_ComputeGeomCurve(*args)
 
-def ais_ComputeGeometry(*args):
+def ais_ComputeGeometry(*args) -> "Standard_Boolean &" :
   """
     * Used by 2d Relation only Computes the 3d geometry of <anEdge> in the current WorkingPlane and the extremities if any Return True if ok.
 
@@ -937,7 +937,7 @@ def ais_ComputeGeometry(*args):
     """
   return _AIS.ais_ComputeGeometry(*args)
 
-def ais_GetPlaneFromFace(*args):
+def ais_GetPlaneFromFace(*args) -> "Standard_Real &" :
   """
     * Tryes to get Plane from Face. Returns Surface of Face in aSurf. Returns Standard_True and Plane of Face in aPlane in following cases: Face is Plane, Offset of Plane,  Extrusion of Line and Offset of Extrusion of Line Returns pure type of Surface which can be: Plane, Cylinder, Cone, Sphere, Torus, SurfaceOfRevolution, SurfaceOfExtrusion
 
@@ -956,7 +956,7 @@ def ais_GetPlaneFromFace(*args):
     """
   return _AIS.ais_GetPlaneFromFace(*args)
 
-def ais_InitFaceLength(*args):
+def ais_InitFaceLength(*args) -> "Standard_Real &" :
   """
     :param aFace:
     :type aFace: TopoDS_Face &
@@ -973,7 +973,7 @@ def ais_InitFaceLength(*args):
     """
   return _AIS.ais_InitFaceLength(*args)
 
-def ais_InitLengthBetweenCurvilinearFaces(*args):
+def ais_InitLengthBetweenCurvilinearFaces(*args) -> "void" :
   """
     * Finds attachment points on two curvilinear faces for length dimension. @param thePlaneDir [in] the direction on the dimension plane to compute the plane automatically. It will not be taken into account if plane is defined by user.
 
@@ -996,7 +996,7 @@ def ais_InitLengthBetweenCurvilinearFaces(*args):
     """
   return _AIS.ais_InitLengthBetweenCurvilinearFaces(*args)
 
-def ais_InitAngleBetweenPlanarFaces(*args):
+def ais_InitAngleBetweenPlanarFaces(*args) -> "Standard_Boolean" :
   """
     * Finds three points for the angle dimension between two planes.
 
@@ -1017,7 +1017,7 @@ def ais_InitAngleBetweenPlanarFaces(*args):
     """
   return _AIS.ais_InitAngleBetweenPlanarFaces(*args)
 
-def ais_InitAngleBetweenCurvilinearFaces(*args):
+def ais_InitAngleBetweenCurvilinearFaces(*args) -> "Standard_Boolean" :
   """
     * Finds three points for the angle dimension between two curvilinear surfaces.
 
@@ -1042,7 +1042,7 @@ def ais_InitAngleBetweenCurvilinearFaces(*args):
     """
   return _AIS.ais_InitAngleBetweenCurvilinearFaces(*args)
 
-def ais_ProjectPointOnPlane(*args):
+def ais_ProjectPointOnPlane(*args) -> "gp_Pnt" :
   """
     :param aPoint:
     :type aPoint: gp_Pnt
@@ -1053,7 +1053,7 @@ def ais_ProjectPointOnPlane(*args):
     """
   return _AIS.ais_ProjectPointOnPlane(*args)
 
-def ais_ProjectPointOnLine(*args):
+def ais_ProjectPointOnLine(*args) -> "gp_Pnt" :
   """
     :param aPoint:
     :type aPoint: gp_Pnt
@@ -1064,7 +1064,7 @@ def ais_ProjectPointOnLine(*args):
     """
   return _AIS.ais_ProjectPointOnLine(*args)
 
-def ais_TranslatePointToBound(*args):
+def ais_TranslatePointToBound(*args) -> "gp_Pnt" :
   """
     :param aPoint:
     :type aPoint: gp_Pnt
@@ -1077,7 +1077,7 @@ def ais_TranslatePointToBound(*args):
     """
   return _AIS.ais_TranslatePointToBound(*args)
 
-def ais_InDomain(*args):
+def ais_InDomain(*args) -> "Standard_Boolean" :
   """
     * returns True if point with anAttachPar is in domain of arc
 
@@ -1092,7 +1092,7 @@ def ais_InDomain(*args):
     """
   return _AIS.ais_InDomain(*args)
 
-def ais_NearestApex(*args):
+def ais_NearestApex(*args) -> "Standard_Boolean &" :
   """
     * computes nearest to ellipse arc apex
 
@@ -1113,7 +1113,7 @@ def ais_NearestApex(*args):
     """
   return _AIS.ais_NearestApex(*args)
 
-def ais_DistanceFromApex(*args):
+def ais_DistanceFromApex(*args) -> "Standard_Real" :
   """
     * computes length of ellipse arc in parametric units
 
@@ -1128,7 +1128,7 @@ def ais_DistanceFromApex(*args):
     """
   return _AIS.ais_DistanceFromApex(*args)
 
-def ais_ComputeProjEdgePresentation(*args):
+def ais_ComputeProjEdgePresentation(*args) -> "void" :
   """
     :param aPres:
     :type aPres: Handle_Prs3d_Presentation &
@@ -1155,7 +1155,7 @@ def ais_ComputeProjEdgePresentation(*args):
     """
   return _AIS.ais_ComputeProjEdgePresentation(*args)
 
-def ais_ComputeProjVertexPresentation(*args):
+def ais_ComputeProjVertexPresentation(*args) -> "void" :
   """
     :param aPres:
     :type aPres: Handle_Prs3d_Presentation &
@@ -1201,7 +1201,7 @@ class AIS_AttributeFilter(object):
 
         """
         _AIS.AIS_AttributeFilter_swiginit(self,_AIS.new_AIS_AttributeFilter(*args))
-    def HasColor(self, *args):
+    def HasColor(self, *args) -> "Standard_Boolean" :
         """
         * Indicates that the Interactive Object has the color setting specified by the argument aCol at construction time.
 
@@ -1210,7 +1210,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_HasColor(self, *args)
 
-    def HasWidth(self, *args):
+    def HasWidth(self, *args) -> "Standard_Boolean" :
         """
         * Indicates that the Interactive Object has the width setting specified by the argument aWidth at construction time.
 
@@ -1219,7 +1219,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_HasWidth(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Sets the color aCol. This must be chosen from the list of colors in Quantity_NameOfColor.
 
@@ -1230,7 +1230,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_SetColor(self, *args)
 
-    def SetWidth(self, *args):
+    def SetWidth(self, *args) -> "void" :
         """
         * Sets the line width aWidth.
 
@@ -1241,7 +1241,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_SetWidth(self, *args)
 
-    def UnsetColor(self, *args):
+    def UnsetColor(self, *args) -> "void" :
         """
         * Removes the setting for color from the filter.
 
@@ -1250,7 +1250,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_UnsetColor(self, *args)
 
-    def UnsetWidth(self, *args):
+    def UnsetWidth(self, *args) -> "void" :
         """
         * Removes the setting for width from the filter.
 
@@ -1259,7 +1259,7 @@ class AIS_AttributeFilter(object):
         """
         return _AIS.AIS_AttributeFilter_UnsetWidth(self, *args)
 
-    def IsOk(self, *args):
+    def IsOk(self, *args) -> "Standard_Boolean" :
         """
         * Indicates that the selected Interactive Object passes the filter. The owner, anObj, can be either direct or user. A direct owner is the corresponding construction element, whereas a user is the compound shape of which the entity forms a part. If the Interactive Object returns Standard_True when detected by the Local Context selector through the mouse, the object is kept; if not, it is rejected.
 
@@ -1311,7 +1311,7 @@ Handle_AIS_AttributeFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS_At
 Handle_AIS_AttributeFilter_swigregister = _AIS.Handle_AIS_AttributeFilter_swigregister
 Handle_AIS_AttributeFilter_swigregister(Handle_AIS_AttributeFilter)
 
-def Handle_AIS_AttributeFilter_DownCast(*args):
+def Handle_AIS_AttributeFilter_DownCast(*args) -> "Handle_AIS_AttributeFilter const" :
   return _AIS.Handle_AIS_AttributeFilter_DownCast(*args)
 Handle_AIS_AttributeFilter_DownCast = _AIS.Handle_AIS_AttributeFilter_DownCast
 
@@ -1326,7 +1326,7 @@ class AIS_BadEdgeFilter(object):
 
         """
         _AIS.AIS_BadEdgeFilter_swiginit(self,_AIS.new_AIS_BadEdgeFilter(*args))
-    def ActsOn(self, *args):
+    def ActsOn(self, *args) -> "Standard_Boolean" :
         """
         :param aType:
         :type aType: TopAbs_ShapeEnum
@@ -1335,7 +1335,7 @@ class AIS_BadEdgeFilter(object):
         """
         return _AIS.AIS_BadEdgeFilter_ActsOn(self, *args)
 
-    def IsOk(self, *args):
+    def IsOk(self, *args) -> "Standard_Boolean" :
         """
         :param EO:
         :type EO: Handle_SelectMgr_EntityOwner &
@@ -1344,7 +1344,7 @@ class AIS_BadEdgeFilter(object):
         """
         return _AIS.AIS_BadEdgeFilter_IsOk(self, *args)
 
-    def SetContour(self, *args):
+    def SetContour(self, *args) -> "void" :
         """
         * sets <myContour> with current contour. used by IsOk.
 
@@ -1355,7 +1355,7 @@ class AIS_BadEdgeFilter(object):
         """
         return _AIS.AIS_BadEdgeFilter_SetContour(self, *args)
 
-    def AddEdge(self, *args):
+    def AddEdge(self, *args) -> "void" :
         """
         * Adds an edge to the list of non-selectionnable edges.
 
@@ -1368,7 +1368,7 @@ class AIS_BadEdgeFilter(object):
         """
         return _AIS.AIS_BadEdgeFilter_AddEdge(self, *args)
 
-    def RemoveEdges(self, *args):
+    def RemoveEdges(self, *args) -> "void" :
         """
         * removes from the list of non-selectionnable edges all edges in the contour <Index>.
 
@@ -1418,7 +1418,7 @@ Handle_AIS_BadEdgeFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS_BadE
 Handle_AIS_BadEdgeFilter_swigregister = _AIS.Handle_AIS_BadEdgeFilter_swigregister
 Handle_AIS_BadEdgeFilter_swigregister(Handle_AIS_BadEdgeFilter)
 
-def Handle_AIS_BadEdgeFilter_DownCast(*args):
+def Handle_AIS_BadEdgeFilter_DownCast(*args) -> "Handle_AIS_BadEdgeFilter const" :
   return _AIS.Handle_AIS_BadEdgeFilter_DownCast(*args)
 Handle_AIS_BadEdgeFilter_DownCast = _AIS.Handle_AIS_BadEdgeFilter_DownCast
 
@@ -1433,7 +1433,7 @@ class AIS_C0RegularityFilter(object):
 
         """
         _AIS.AIS_C0RegularityFilter_swiginit(self,_AIS.new_AIS_C0RegularityFilter(*args))
-    def ActsOn(self, *args):
+    def ActsOn(self, *args) -> "Standard_Boolean" :
         """
         :param aType:
         :type aType: TopAbs_ShapeEnum
@@ -1442,7 +1442,7 @@ class AIS_C0RegularityFilter(object):
         """
         return _AIS.AIS_C0RegularityFilter_ActsOn(self, *args)
 
-    def IsOk(self, *args):
+    def IsOk(self, *args) -> "Standard_Boolean" :
         """
         :param EO:
         :type EO: Handle_SelectMgr_EntityOwner &
@@ -1487,7 +1487,7 @@ Handle_AIS_C0RegularityFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS
 Handle_AIS_C0RegularityFilter_swigregister = _AIS.Handle_AIS_C0RegularityFilter_swigregister
 Handle_AIS_C0RegularityFilter_swigregister(Handle_AIS_C0RegularityFilter)
 
-def Handle_AIS_C0RegularityFilter_DownCast(*args):
+def Handle_AIS_C0RegularityFilter_DownCast(*args) -> "Handle_AIS_C0RegularityFilter const" :
   return _AIS.Handle_AIS_C0RegularityFilter_DownCast(*args)
 Handle_AIS_C0RegularityFilter_DownCast = _AIS.Handle_AIS_C0RegularityFilter_DownCast
 
@@ -1504,7 +1504,7 @@ class AIS_DataMapIteratorOfDataMapOfILC(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _AIS.AIS_DataMapIteratorOfDataMapOfILC_swiginit(self,_AIS.new_AIS_DataMapIteratorOfDataMapOfILC(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: AIS_DataMapOfILC &
@@ -1513,14 +1513,14 @@ class AIS_DataMapIteratorOfDataMapOfILC(OCC.TCollection.TCollection_BasicMapIter
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfILC_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfILC_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_LocalContext const &" :
         """
         :rtype: Handle_AIS_LocalContext
 
@@ -1555,7 +1555,7 @@ class AIS_DataMapIteratorOfDataMapOfIOStatus(OCC.TCollection.TCollection_BasicMa
 
         """
         _AIS.AIS_DataMapIteratorOfDataMapOfIOStatus_swiginit(self,_AIS.new_AIS_DataMapIteratorOfDataMapOfIOStatus(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: AIS_DataMapOfIOStatus &
@@ -1564,14 +1564,14 @@ class AIS_DataMapIteratorOfDataMapOfIOStatus(OCC.TCollection.TCollection_BasicMa
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfIOStatus_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfIOStatus_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_GlobalStatus const &" :
         """
         :rtype: Handle_AIS_GlobalStatus
 
@@ -1606,7 +1606,7 @@ class AIS_DataMapIteratorOfDataMapOfSelStat(OCC.TCollection.TCollection_BasicMap
 
         """
         _AIS.AIS_DataMapIteratorOfDataMapOfSelStat_swiginit(self,_AIS.new_AIS_DataMapIteratorOfDataMapOfSelStat(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: AIS_DataMapOfSelStat &
@@ -1615,14 +1615,14 @@ class AIS_DataMapIteratorOfDataMapOfSelStat(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfSelStat_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_SelectMgr_SelectableObject const &" :
         """
         :rtype: Handle_SelectMgr_SelectableObject
 
         """
         return _AIS.AIS_DataMapIteratorOfDataMapOfSelStat_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_LocalStatus const &" :
         """
         :rtype: Handle_AIS_LocalStatus
 
@@ -1657,7 +1657,7 @@ class AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive(OCC.TCollection.TCo
 
         """
         _AIS.AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive_swiginit(self,_AIS.new_AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: AIS_DataMapofIntegerListOfinteractive &
@@ -1666,14 +1666,14 @@ class AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive(OCC.TCollection.TCo
         """
         return _AIS.AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_DataMapIteratorOfDataMapofIntegerListOfinteractive_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AIS_ListOfInteractive const &" :
         """
         :rtype: AIS_ListOfInteractive
 
@@ -1710,26 +1710,26 @@ class AIS_DataMapNodeOfDataMapOfILC(OCC.TCollection.TCollection_MapNode):
 
         """
         _AIS.AIS_DataMapNodeOfDataMapOfILC_swiginit(self,_AIS.new_AIS_DataMapNodeOfDataMapOfILC(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(AIS_DataMapNodeOfDataMapOfILC self) -> Standard_Integer"""
         return _AIS.AIS_DataMapNodeOfDataMapOfILC_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(AIS_DataMapNodeOfDataMapOfILC self, Standard_Integer value)"""
         return _AIS.AIS_DataMapNodeOfDataMapOfILC_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_LocalContext &" :
         """
         :rtype: Handle_AIS_LocalContext
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapOfILC_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapNodeOfDataMapOfILC self)"""
         return _AIS.AIS_DataMapNodeOfDataMapOfILC__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_DataMapNodeOfDataMapOfILC" :
         """GetHandle(AIS_DataMapNodeOfDataMapOfILC self) -> Handle_AIS_DataMapNodeOfDataMapOfILC"""
         return _AIS.AIS_DataMapNodeOfDataMapOfILC_GetHandle(self)
 
@@ -1770,7 +1770,7 @@ Handle_AIS_DataMapNodeOfDataMapOfILC._kill_pointed = new_instancemethod(_AIS.Han
 Handle_AIS_DataMapNodeOfDataMapOfILC_swigregister = _AIS.Handle_AIS_DataMapNodeOfDataMapOfILC_swigregister
 Handle_AIS_DataMapNodeOfDataMapOfILC_swigregister(Handle_AIS_DataMapNodeOfDataMapOfILC)
 
-def Handle_AIS_DataMapNodeOfDataMapOfILC_DownCast(*args):
+def Handle_AIS_DataMapNodeOfDataMapOfILC_DownCast(*args) -> "Handle_AIS_DataMapNodeOfDataMapOfILC const" :
   return _AIS.Handle_AIS_DataMapNodeOfDataMapOfILC_DownCast(*args)
 Handle_AIS_DataMapNodeOfDataMapOfILC_DownCast = _AIS.Handle_AIS_DataMapNodeOfDataMapOfILC_DownCast
 
@@ -1789,25 +1789,25 @@ class AIS_DataMapNodeOfDataMapOfIOStatus(OCC.TCollection.TCollection_MapNode):
 
         """
         _AIS.AIS_DataMapNodeOfDataMapOfIOStatus_swiginit(self,_AIS.new_AIS_DataMapNodeOfDataMapOfIOStatus(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapOfIOStatus_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_GlobalStatus &" :
         """
         :rtype: Handle_AIS_GlobalStatus
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapOfIOStatus_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapNodeOfDataMapOfIOStatus self)"""
         return _AIS.AIS_DataMapNodeOfDataMapOfIOStatus__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_DataMapNodeOfDataMapOfIOStatus" :
         """GetHandle(AIS_DataMapNodeOfDataMapOfIOStatus self) -> Handle_AIS_DataMapNodeOfDataMapOfIOStatus"""
         return _AIS.AIS_DataMapNodeOfDataMapOfIOStatus_GetHandle(self)
 
@@ -1847,7 +1847,7 @@ Handle_AIS_DataMapNodeOfDataMapOfIOStatus._kill_pointed = new_instancemethod(_AI
 Handle_AIS_DataMapNodeOfDataMapOfIOStatus_swigregister = _AIS.Handle_AIS_DataMapNodeOfDataMapOfIOStatus_swigregister
 Handle_AIS_DataMapNodeOfDataMapOfIOStatus_swigregister(Handle_AIS_DataMapNodeOfDataMapOfIOStatus)
 
-def Handle_AIS_DataMapNodeOfDataMapOfIOStatus_DownCast(*args):
+def Handle_AIS_DataMapNodeOfDataMapOfIOStatus_DownCast(*args) -> "Handle_AIS_DataMapNodeOfDataMapOfIOStatus const" :
   return _AIS.Handle_AIS_DataMapNodeOfDataMapOfIOStatus_DownCast(*args)
 Handle_AIS_DataMapNodeOfDataMapOfIOStatus_DownCast = _AIS.Handle_AIS_DataMapNodeOfDataMapOfIOStatus_DownCast
 
@@ -1866,25 +1866,25 @@ class AIS_DataMapNodeOfDataMapOfSelStat(OCC.TCollection.TCollection_MapNode):
 
         """
         _AIS.AIS_DataMapNodeOfDataMapOfSelStat_swiginit(self,_AIS.new_AIS_DataMapNodeOfDataMapOfSelStat(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_SelectMgr_SelectableObject &" :
         """
         :rtype: Handle_SelectMgr_SelectableObject
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapOfSelStat_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_LocalStatus &" :
         """
         :rtype: Handle_AIS_LocalStatus
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapOfSelStat_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapNodeOfDataMapOfSelStat self)"""
         return _AIS.AIS_DataMapNodeOfDataMapOfSelStat__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_DataMapNodeOfDataMapOfSelStat" :
         """GetHandle(AIS_DataMapNodeOfDataMapOfSelStat self) -> Handle_AIS_DataMapNodeOfDataMapOfSelStat"""
         return _AIS.AIS_DataMapNodeOfDataMapOfSelStat_GetHandle(self)
 
@@ -1924,7 +1924,7 @@ Handle_AIS_DataMapNodeOfDataMapOfSelStat._kill_pointed = new_instancemethod(_AIS
 Handle_AIS_DataMapNodeOfDataMapOfSelStat_swigregister = _AIS.Handle_AIS_DataMapNodeOfDataMapOfSelStat_swigregister
 Handle_AIS_DataMapNodeOfDataMapOfSelStat_swigregister(Handle_AIS_DataMapNodeOfDataMapOfSelStat)
 
-def Handle_AIS_DataMapNodeOfDataMapOfSelStat_DownCast(*args):
+def Handle_AIS_DataMapNodeOfDataMapOfSelStat_DownCast(*args) -> "Handle_AIS_DataMapNodeOfDataMapOfSelStat const" :
   return _AIS.Handle_AIS_DataMapNodeOfDataMapOfSelStat_DownCast(*args)
 Handle_AIS_DataMapNodeOfDataMapOfSelStat_DownCast = _AIS.Handle_AIS_DataMapNodeOfDataMapOfSelStat_DownCast
 
@@ -1943,26 +1943,26 @@ class AIS_DataMapNodeOfDataMapofIntegerListOfinteractive(OCC.TCollection.TCollec
 
         """
         _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_swiginit(self,_AIS.new_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive(*args))
-    def GetKey(self):
+    def GetKey(self) -> "Standard_Integer" :
         """GetKey(AIS_DataMapNodeOfDataMapofIntegerListOfinteractive self) -> Standard_Integer"""
         return _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_GetKey(self)
 
-    def SetKey(self, *args):
+    def SetKey(self, *args) -> "void" :
         """SetKey(AIS_DataMapNodeOfDataMapofIntegerListOfinteractive self, Standard_Integer value)"""
         return _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_SetKey(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AIS_ListOfInteractive &" :
         """
         :rtype: AIS_ListOfInteractive
 
         """
         return _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapNodeOfDataMapofIntegerListOfinteractive self)"""
         return _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive" :
         """GetHandle(AIS_DataMapNodeOfDataMapofIntegerListOfinteractive self) -> Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive"""
         return _AIS.AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_GetHandle(self)
 
@@ -2003,7 +2003,7 @@ Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive._kill_pointed = new_in
 Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_swigregister = _AIS.Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_swigregister
 Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_swigregister(Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive)
 
-def Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_DownCast(*args):
+def Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_DownCast(*args) -> "Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive const" :
   return _AIS.Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_DownCast(*args)
 Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_DownCast = _AIS.Handle_AIS_DataMapNodeOfDataMapofIntegerListOfinteractive_DownCast
 
@@ -2018,7 +2018,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
 
         """
         _AIS.AIS_DataMapOfILC_swiginit(self,_AIS.new_AIS_DataMapOfILC(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_DataMapOfILC &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfILC &
@@ -2027,7 +2027,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_DataMapOfILC &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfILC &
@@ -2036,7 +2036,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2045,14 +2045,14 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_DataMapOfILC_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2063,7 +2063,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2072,7 +2072,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2081,7 +2081,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_AIS_LocalContext const &" :
         """
         :param K:
         :type K: int &
@@ -2090,7 +2090,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_AIS_LocalContext &" :
         """
         :param K:
         :type K: int &
@@ -2099,7 +2099,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2108,7 +2108,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2117,7 +2117,7 @@ class AIS_DataMapOfILC(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfILC_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapOfILC self)"""
         return _AIS.AIS_DataMapOfILC__kill_pointed(self)
 
@@ -2155,7 +2155,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
 
         """
         _AIS.AIS_DataMapOfIOStatus_swiginit(self,_AIS.new_AIS_DataMapOfIOStatus(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_DataMapOfIOStatus &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfIOStatus &
@@ -2164,7 +2164,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_DataMapOfIOStatus &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfIOStatus &
@@ -2173,7 +2173,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2182,14 +2182,14 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_DataMapOfIOStatus_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2200,7 +2200,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2209,7 +2209,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2218,7 +2218,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_AIS_GlobalStatus const &" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2227,7 +2227,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_AIS_GlobalStatus &" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2236,7 +2236,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2245,7 +2245,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_AIS_InteractiveObject &
@@ -2254,7 +2254,7 @@ class AIS_DataMapOfIOStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfIOStatus_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapOfIOStatus self)"""
         return _AIS.AIS_DataMapOfIOStatus__kill_pointed(self)
 
@@ -2292,7 +2292,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
 
         """
         _AIS.AIS_DataMapOfSelStat_swiginit(self,_AIS.new_AIS_DataMapOfSelStat(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_DataMapOfSelStat &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfSelStat &
@@ -2301,7 +2301,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_DataMapOfSelStat &" :
         """
         :param Other:
         :type Other: AIS_DataMapOfSelStat &
@@ -2310,7 +2310,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2319,14 +2319,14 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_DataMapOfSelStat_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2337,7 +2337,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2346,7 +2346,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2355,7 +2355,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_AIS_LocalStatus const &" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2364,7 +2364,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_AIS_LocalStatus &" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2373,7 +2373,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2382,7 +2382,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_SelectMgr_SelectableObject &
@@ -2391,7 +2391,7 @@ class AIS_DataMapOfSelStat(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_DataMapOfSelStat_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapOfSelStat self)"""
         return _AIS.AIS_DataMapOfSelStat__kill_pointed(self)
 
@@ -2429,7 +2429,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
 
         """
         _AIS.AIS_DataMapofIntegerListOfinteractive_swiginit(self,_AIS.new_AIS_DataMapofIntegerListOfinteractive(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_DataMapofIntegerListOfinteractive &" :
         """
         :param Other:
         :type Other: AIS_DataMapofIntegerListOfinteractive &
@@ -2438,7 +2438,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_DataMapofIntegerListOfinteractive &" :
         """
         :param Other:
         :type Other: AIS_DataMapofIntegerListOfinteractive &
@@ -2447,7 +2447,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -2456,14 +2456,14 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2474,7 +2474,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2483,7 +2483,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: int &
@@ -2492,7 +2492,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "AIS_ListOfInteractive const &" :
         """
         :param K:
         :type K: int &
@@ -2501,7 +2501,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "AIS_ListOfInteractive &" :
         """
         :param K:
         :type K: int &
@@ -2510,7 +2510,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2519,7 +2519,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: int &
@@ -2528,7 +2528,7 @@ class AIS_DataMapofIntegerListOfinteractive(OCC.TCollection.TCollection_BasicMap
         """
         return _AIS.AIS_DataMapofIntegerListOfinteractive_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_DataMapofIntegerListOfinteractive self)"""
         return _AIS.AIS_DataMapofIntegerListOfinteractive__kill_pointed(self)
 
@@ -2572,14 +2572,14 @@ class AIS_DimensionOwner(object):
 
         """
         _AIS.AIS_DimensionOwner_swiginit(self,_AIS.new_AIS_DimensionOwner(*args))
-    def SelectionMode(self, *args):
+    def SelectionMode(self, *args) -> "AIS_DimensionSelectionMode" :
         """
         :rtype: AIS_DimensionSelectionMode
 
         """
         return _AIS.AIS_DimensionOwner_SelectionMode(self, *args)
 
-    def HilightWithColor(self, *args):
+    def HilightWithColor(self, *args) -> "void" :
         """
         :param thePM:
         :type thePM: Handle_PrsMgr_PresentationManager3d &
@@ -2592,7 +2592,7 @@ class AIS_DimensionOwner(object):
         """
         return _AIS.AIS_DimensionOwner_HilightWithColor(self, *args)
 
-    def IsHilighted(self, *args):
+    def IsHilighted(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if an object with the selection mode aMode is highlighted in the presentation manager aPM.
 
@@ -2605,7 +2605,7 @@ class AIS_DimensionOwner(object):
         """
         return _AIS.AIS_DimensionOwner_IsHilighted(self, *args)
 
-    def Hilight(self, *args):
+    def Hilight(self, *args) -> "void" :
         """
         :param thePM:
         :type thePM: Handle_PrsMgr_PresentationManager &
@@ -2616,7 +2616,7 @@ class AIS_DimensionOwner(object):
         """
         return _AIS.AIS_DimensionOwner_Hilight(self, *args)
 
-    def Unhilight(self, *args):
+    def Unhilight(self, *args) -> "void" :
         """
         * Removes highlighting from the selected part of dimension.
 
@@ -2668,7 +2668,7 @@ Handle_AIS_DimensionOwner._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Dim
 Handle_AIS_DimensionOwner_swigregister = _AIS.Handle_AIS_DimensionOwner_swigregister
 Handle_AIS_DimensionOwner_swigregister(Handle_AIS_DimensionOwner)
 
-def Handle_AIS_DimensionOwner_DownCast(*args):
+def Handle_AIS_DimensionOwner_DownCast(*args) -> "Handle_AIS_DimensionOwner const" :
   return _AIS.Handle_AIS_DimensionOwner_DownCast(*args)
 Handle_AIS_DimensionOwner_DownCast = _AIS.Handle_AIS_DimensionOwner_DownCast
 
@@ -2683,7 +2683,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
 
         """
         _AIS.AIS_Drawer_swiginit(self,_AIS.new_AIS_Drawer(*args))
-    def SetDeviationCoefficient(self, *args):
+    def SetDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the hasOwnDeviationCoefficient flag to Standard_False
 
@@ -2698,7 +2698,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_SetDeviationCoefficient(self, *args)
 
-    def SetHLRDeviationCoefficient(self, *args):
+    def SetHLRDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the deviation coefficient aCoefficient for removal of hidden lines created by different viewpoints in different presentations. The Default value is 0.02.
 
@@ -2713,7 +2713,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_SetHLRDeviationCoefficient(self, *args)
 
-    def SetDeviationAngle(self, *args):
+    def SetDeviationAngle(self, *args) -> "void" :
         """
         * Sets the hasOwnDeviationAngle flag to Standard_False
 
@@ -2728,7 +2728,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_SetDeviationAngle(self, *args)
 
-    def SetHLRAngle(self, *args):
+    def SetHLRAngle(self, *args) -> "void" :
         """
         * Sets the angle of maximum chordal deviation for removal of hidden lines created by different viewpoints in different presentations. The default value is 20*PI/180.
 
@@ -2743,7 +2743,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_SetHLRAngle(self, *args)
 
-    def PreviousDeviationCoefficient(self, *args):
+    def PreviousDeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * Saves the previous value used for the chordal deviation coefficient. The default value is 0.1.
 
@@ -2752,7 +2752,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_PreviousDeviationCoefficient(self, *args)
 
-    def PreviousHLRDeviationCoefficient(self, *args):
+    def PreviousHLRDeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * returns myPreviousHLRDeviationCoefficient
 
@@ -2761,7 +2761,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_PreviousHLRDeviationCoefficient(self, *args)
 
-    def PreviousDeviationAngle(self, *args):
+    def PreviousDeviationAngle(self, *args) -> "Standard_Real" :
         """
         * returns myPreviousDeviationAngle
 
@@ -2770,7 +2770,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_PreviousDeviationAngle(self, *args)
 
-    def PreviousHLRDeviationAngle(self, *args):
+    def PreviousHLRDeviationAngle(self, *args) -> "Standard_Real" :
         """
         * returns myPreviousHLRDeviationAngle
 
@@ -2779,7 +2779,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_PreviousHLRDeviationAngle(self, *args)
 
-    def IsOwnDeviationCoefficient(self, *args):
+    def IsOwnDeviationCoefficient(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the there is a local setting for deviation coefficient in this framework for a specific interactive object.
 
@@ -2788,7 +2788,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnDeviationCoefficient(self, *args)
 
-    def IsOwnHLRDeviationCoefficient(self, *args):
+    def IsOwnHLRDeviationCoefficient(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the there is a setting for HLR deviation coefficient in this framework for a specific interactive object.
 
@@ -2797,7 +2797,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnHLRDeviationCoefficient(self, *args)
 
-    def IsOwnDeviationAngle(self, *args):
+    def IsOwnDeviationAngle(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the there is a local setting for deviation angle in this framework for a specific interactive object.
 
@@ -2806,7 +2806,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnDeviationAngle(self, *args)
 
-    def IsOwnHLRDeviationAngle(self, *args):
+    def IsOwnHLRDeviationAngle(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the there is a setting for HLR deviation angle in this framework for a specific interactive object.
 
@@ -2815,7 +2815,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnHLRDeviationAngle(self, *args)
 
-    def HasLineAspect(self, *args):
+    def HasLineAspect(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object has a line visualization aspect.
 
@@ -2824,7 +2824,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_HasLineAspect(self, *args)
 
-    def HasWireAspect(self, *args):
+    def HasWireAspect(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Drawer has a wire aspect setting active.
 
@@ -2833,14 +2833,14 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_HasWireAspect(self, *args)
 
-    def HasTextAspect(self, *args):
+    def HasTextAspect(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Drawer_HasTextAspect(self, *args)
 
-    def HasPointAspect(self, *args):
+    def HasPointAspect(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Drawer has a point aspect setting active.
 
@@ -2849,7 +2849,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_HasPointAspect(self, *args)
 
-    def HasShadingAspect(self, *args):
+    def HasShadingAspect(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Drawer has shading aspect active.
 
@@ -2858,14 +2858,14 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_HasShadingAspect(self, *args)
 
-    def HasPlaneAspect(self, *args):
+    def HasPlaneAspect(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Drawer_HasPlaneAspect(self, *args)
 
-    def IsOwnFaceBoundaryDraw(self, *args):
+    def IsOwnFaceBoundaryDraw(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the drawer has its own attribute for 'draw face boundaries' flag that overrides the one in the link.
 
@@ -2874,7 +2874,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnFaceBoundaryDraw(self, *args)
 
-    def IsOwnFaceBoundaryAspect(self, *args):
+    def IsOwnFaceBoundaryAspect(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the drawer has its own attribute for face boundaries aspect that overrides the one in the link.
 
@@ -2883,28 +2883,28 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_IsOwnFaceBoundaryAspect(self, *args)
 
-    def HasDatumAspect(self, *args):
+    def HasDatumAspect(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Drawer_HasDatumAspect(self, *args)
 
-    def HasDimensionAspect(self, *args):
+    def HasDimensionAspect(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Drawer_HasDimensionAspect(self, *args)
 
-    def HasLink(self, *args):
+    def HasLink(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Drawer_HasLink(self, *args)
 
-    def Link(self, *args):
+    def Link(self, *args) -> "void" :
         """
         :rtype: Handle_Prs3d_Drawer
 
@@ -2915,7 +2915,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_Link(self, *args)
 
-    def ClearLocalAttributes(self, *args):
+    def ClearLocalAttributes(self, *args) -> "void" :
         """
         * Removes attributes stored in a Local Context.
 
@@ -2924,7 +2924,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_ClearLocalAttributes(self, *args)
 
-    def WasLastLocal(self, *args):
+    def WasLastLocal(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the last called attribute was local; false if it was global.
 
@@ -2933,7 +2933,7 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_WasLastLocal(self, *args)
 
-    def HasLocalAttributes(self, *args):
+    def HasLocalAttributes(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if a Local Context has stored attributes for Interactive Objects.
 
@@ -2942,11 +2942,11 @@ class AIS_Drawer(OCC.Prs3d.Prs3d_Drawer):
         """
         return _AIS.AIS_Drawer_HasLocalAttributes(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_Drawer self)"""
         return _AIS.AIS_Drawer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_Drawer" :
         """GetHandle(AIS_Drawer self) -> Handle_AIS_Drawer"""
         return _AIS.AIS_Drawer_GetHandle(self)
 
@@ -3011,7 +3011,7 @@ Handle_AIS_Drawer._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Drawer__kil
 Handle_AIS_Drawer_swigregister = _AIS.Handle_AIS_Drawer_swigregister
 Handle_AIS_Drawer_swigregister(Handle_AIS_Drawer)
 
-def Handle_AIS_Drawer_DownCast(*args):
+def Handle_AIS_Drawer_DownCast(*args) -> "Handle_AIS_Drawer const" :
   return _AIS.Handle_AIS_Drawer_DownCast(*args)
 Handle_AIS_Drawer_DownCast = _AIS.Handle_AIS_Drawer_DownCast
 
@@ -3046,7 +3046,7 @@ class AIS_ExclusionFilter(object):
 
         """
         _AIS.AIS_ExclusionFilter_swiginit(self,_AIS.new_AIS_ExclusionFilter(*args))
-    def IsOk(self, *args):
+    def IsOk(self, *args) -> "Standard_Boolean" :
         """
         :param anObj:
         :type anObj: Handle_SelectMgr_EntityOwner &
@@ -3055,7 +3055,7 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_IsOk(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         * Adds the type TypeToExclude to the list of types.
 
@@ -3072,7 +3072,7 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param TypeToExclude:
         :type TypeToExclude: AIS_KindOfInteractive
@@ -3087,21 +3087,21 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_Remove(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_ExclusionFilter_Clear(self, *args)
 
-    def IsExclusionFlagOn(self, *args):
+    def IsExclusionFlagOn(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_ExclusionFilter_IsExclusionFlagOn(self, *args)
 
-    def SetExclusionFlag(self, *args):
+    def SetExclusionFlag(self, *args) -> "void" :
         """
         :param Status:
         :type Status: bool
@@ -3110,7 +3110,7 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_SetExclusionFlag(self, *args)
 
-    def IsStored(self, *args):
+    def IsStored(self, *args) -> "Standard_Boolean" :
         """
         :param aType:
         :type aType: AIS_KindOfInteractive
@@ -3119,7 +3119,7 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_IsStored(self, *args)
 
-    def ListOfStoredTypes(self, *args):
+    def ListOfStoredTypes(self, *args) -> "void" :
         """
         :param TheList:
         :type TheList: TColStd_ListOfInteger &
@@ -3128,7 +3128,7 @@ class AIS_ExclusionFilter(object):
         """
         return _AIS.AIS_ExclusionFilter_ListOfStoredTypes(self, *args)
 
-    def ListOfSignature(self, *args):
+    def ListOfSignature(self, *args) -> "void" :
         """
         :param aType:
         :type aType: AIS_KindOfInteractive
@@ -3182,7 +3182,7 @@ Handle_AIS_ExclusionFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Ex
 Handle_AIS_ExclusionFilter_swigregister = _AIS.Handle_AIS_ExclusionFilter_swigregister
 Handle_AIS_ExclusionFilter_swigregister(Handle_AIS_ExclusionFilter)
 
-def Handle_AIS_ExclusionFilter_DownCast(*args):
+def Handle_AIS_ExclusionFilter_DownCast(*args) -> "Handle_AIS_ExclusionFilter const" :
   return _AIS.Handle_AIS_ExclusionFilter_DownCast(*args)
 Handle_AIS_ExclusionFilter_DownCast = _AIS.Handle_AIS_ExclusionFilter_DownCast
 
@@ -3209,7 +3209,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
 
         """
         _AIS.AIS_GlobalStatus_swiginit(self,_AIS.new_AIS_GlobalStatus(*args))
-    def SetGraphicStatus(self, *args):
+    def SetGraphicStatus(self, *args) -> "void" :
         """
         :param aStat:
         :type aStat: AIS_DisplayStatus
@@ -3218,7 +3218,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_SetGraphicStatus(self, *args)
 
-    def AddDisplayMode(self, *args):
+    def AddDisplayMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -3227,7 +3227,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_AddDisplayMode(self, *args)
 
-    def AddSelectionMode(self, *args):
+    def AddSelectionMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -3236,7 +3236,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_AddSelectionMode(self, *args)
 
-    def SetLayerIndex(self, *args):
+    def SetLayerIndex(self, *args) -> "void" :
         """
         :param AnIndex:
         :type AnIndex: int
@@ -3245,7 +3245,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_SetLayerIndex(self, *args)
 
-    def SetHilightStatus(self, *args):
+    def SetHilightStatus(self, *args) -> "void" :
         """
         :param aStat:
         :type aStat: bool
@@ -3254,7 +3254,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_SetHilightStatus(self, *args)
 
-    def SetHilightColor(self, *args):
+    def SetHilightColor(self, *args) -> "void" :
         """
         :param aHiCol:
         :type aHiCol: Quantity_NameOfColor
@@ -3263,28 +3263,28 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_SetHilightColor(self, *args)
 
-    def IsSubIntensityOn(self, *args):
+    def IsSubIntensityOn(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_GlobalStatus_IsSubIntensityOn(self, *args)
 
-    def SubIntensityOn(self, *args):
+    def SubIntensityOn(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_GlobalStatus_SubIntensityOn(self, *args)
 
-    def SubIntensityOff(self, *args):
+    def SubIntensityOff(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_GlobalStatus_SubIntensityOff(self, *args)
 
-    def RemoveDisplayMode(self, *args):
+    def RemoveDisplayMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -3293,7 +3293,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_RemoveDisplayMode(self, *args)
 
-    def RemoveSelectionMode(self, *args):
+    def RemoveSelectionMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -3302,21 +3302,21 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_RemoveSelectionMode(self, *args)
 
-    def ClearSelectionModes(self, *args):
+    def ClearSelectionModes(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_GlobalStatus_ClearSelectionModes(self, *args)
 
-    def GraphicStatus(self, *args):
+    def GraphicStatus(self, *args) -> "AIS_DisplayStatus" :
         """
         :rtype: AIS_DisplayStatus
 
         """
         return _AIS.AIS_GlobalStatus_GraphicStatus(self, *args)
 
-    def DisplayedModes(self, *args):
+    def DisplayedModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         * keeps the information of displayed modes in the main viewer.
 
@@ -3325,7 +3325,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_DisplayedModes(self, *args)
 
-    def SelectionModes(self, *args):
+    def SelectionModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         * keeps the active selection modes of the object in the main viewer.
 
@@ -3334,21 +3334,21 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_SelectionModes(self, *args)
 
-    def IsHilighted(self, *args):
+    def IsHilighted(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_GlobalStatus_IsHilighted(self, *args)
 
-    def HilightColor(self, *args):
+    def HilightColor(self, *args) -> "Quantity_NameOfColor" :
         """
         :rtype: Quantity_NameOfColor
 
         """
         return _AIS.AIS_GlobalStatus_HilightColor(self, *args)
 
-    def IsDModeIn(self, *args):
+    def IsDModeIn(self, *args) -> "Standard_Boolean" :
         """
         :param aMode:
         :type aMode: int
@@ -3357,7 +3357,7 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_IsDModeIn(self, *args)
 
-    def IsSModeIn(self, *args):
+    def IsSModeIn(self, *args) -> "Standard_Boolean" :
         """
         :param aMode:
         :type aMode: int
@@ -3366,11 +3366,11 @@ class AIS_GlobalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_GlobalStatus_IsSModeIn(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_GlobalStatus self)"""
         return _AIS.AIS_GlobalStatus__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_GlobalStatus" :
         """GetHandle(AIS_GlobalStatus self) -> Handle_AIS_GlobalStatus"""
         return _AIS.AIS_GlobalStatus_GetHandle(self)
 
@@ -3427,14 +3427,14 @@ Handle_AIS_GlobalStatus._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Globa
 Handle_AIS_GlobalStatus_swigregister = _AIS.Handle_AIS_GlobalStatus_swigregister
 Handle_AIS_GlobalStatus_swigregister(Handle_AIS_GlobalStatus)
 
-def Handle_AIS_GlobalStatus_DownCast(*args):
+def Handle_AIS_GlobalStatus_DownCast(*args) -> "Handle_AIS_GlobalStatus const" :
   return _AIS.Handle_AIS_GlobalStatus_DownCast(*args)
 Handle_AIS_GlobalStatus_DownCast = _AIS.Handle_AIS_GlobalStatus_DownCast
 
 class AIS_GraphicTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetLineColor(*args):
+    def GetLineColor(*args) -> "void" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3454,7 +3454,7 @@ class AIS_GraphicTool(object):
         return _AIS.AIS_GraphicTool_GetLineColor(*args)
 
     GetLineColor = staticmethod(GetLineColor)
-    def GetLineWidth(*args):
+    def GetLineWidth(*args) -> "Standard_Real" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3466,7 +3466,7 @@ class AIS_GraphicTool(object):
         return _AIS.AIS_GraphicTool_GetLineWidth(*args)
 
     GetLineWidth = staticmethod(GetLineWidth)
-    def GetLineType(*args):
+    def GetLineType(*args) -> "Aspect_TypeOfLine" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3478,7 +3478,7 @@ class AIS_GraphicTool(object):
         return _AIS.AIS_GraphicTool_GetLineType(*args)
 
     GetLineType = staticmethod(GetLineType)
-    def GetLineAtt(*args):
+    def GetLineAtt(*args) -> "Standard_Real &" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3496,7 +3496,7 @@ class AIS_GraphicTool(object):
         return _AIS.AIS_GraphicTool_GetLineAtt(*args)
 
     GetLineAtt = staticmethod(GetLineAtt)
-    def GetInteriorColor(*args):
+    def GetInteriorColor(*args) -> "void" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3512,7 +3512,7 @@ class AIS_GraphicTool(object):
         return _AIS.AIS_GraphicTool_GetInteriorColor(*args)
 
     GetInteriorColor = staticmethod(GetInteriorColor)
-    def GetMaterial(*args):
+    def GetMaterial(*args) -> "Graphic3d_MaterialAspect" :
         """
         :param aDrawer:
         :type aDrawer: Handle_Prs3d_Drawer &
@@ -3536,7 +3536,7 @@ AIS_GraphicTool._kill_pointed = new_instancemethod(_AIS.AIS_GraphicTool__kill_po
 AIS_GraphicTool_swigregister = _AIS.AIS_GraphicTool_swigregister
 AIS_GraphicTool_swigregister(AIS_GraphicTool)
 
-def AIS_GraphicTool_GetLineColor(*args):
+def AIS_GraphicTool_GetLineColor(*args) -> "void" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3555,7 +3555,7 @@ def AIS_GraphicTool_GetLineColor(*args):
     """
   return _AIS.AIS_GraphicTool_GetLineColor(*args)
 
-def AIS_GraphicTool_GetLineWidth(*args):
+def AIS_GraphicTool_GetLineWidth(*args) -> "Standard_Real" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3566,7 +3566,7 @@ def AIS_GraphicTool_GetLineWidth(*args):
     """
   return _AIS.AIS_GraphicTool_GetLineWidth(*args)
 
-def AIS_GraphicTool_GetLineType(*args):
+def AIS_GraphicTool_GetLineType(*args) -> "Aspect_TypeOfLine" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3577,7 +3577,7 @@ def AIS_GraphicTool_GetLineType(*args):
     """
   return _AIS.AIS_GraphicTool_GetLineType(*args)
 
-def AIS_GraphicTool_GetLineAtt(*args):
+def AIS_GraphicTool_GetLineAtt(*args) -> "Standard_Real &" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3594,7 +3594,7 @@ def AIS_GraphicTool_GetLineAtt(*args):
     """
   return _AIS.AIS_GraphicTool_GetLineAtt(*args)
 
-def AIS_GraphicTool_GetInteriorColor(*args):
+def AIS_GraphicTool_GetInteriorColor(*args) -> "void" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3609,7 +3609,7 @@ def AIS_GraphicTool_GetInteriorColor(*args):
     """
   return _AIS.AIS_GraphicTool_GetInteriorColor(*args)
 
-def AIS_GraphicTool_GetMaterial(*args):
+def AIS_GraphicTool_GetMaterial(*args) -> "Graphic3d_MaterialAspect" :
   """
     :param aDrawer:
     :type aDrawer: Handle_Prs3d_Drawer &
@@ -3637,40 +3637,40 @@ class AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs(OCC.TCollection.TCollecti
 
         """
         _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_swiginit(self,_AIS.new_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs(*args))
-    def Key1(self, *args):
+    def Key1(self, *args) -> "Handle_SelectMgr_EntityOwner &" :
         """
         :rtype: Handle_SelectMgr_EntityOwner
 
         """
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_Key1(self, *args)
 
-    def GetKey2(self):
+    def GetKey2(self) -> "Standard_Integer" :
         """GetKey2(AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs self) -> Standard_Integer"""
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_GetKey2(self)
 
-    def SetKey2(self, *args):
+    def SetKey2(self, *args) -> "void" :
         """SetKey2(AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs self, Standard_Integer value)"""
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_SetKey2(self, *args)
 
-    def Next2(self, *args):
+    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
         """
         :rtype: TCollection_MapNodePtr
 
         """
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_Next2(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Prs3d_Presentation &" :
         """
         :rtype: Handle_Prs3d_Presentation
 
         """
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs self)"""
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs" :
         """GetHandle(AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs self) -> Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs"""
         return _AIS.AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_GetHandle(self)
 
@@ -3713,7 +3713,7 @@ Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs._kill_pointed = new_inst
 Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_swigregister = _AIS.Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_swigregister
 Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_swigregister(Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs)
 
-def Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_DownCast(*args):
+def Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_DownCast(*args) -> "Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs const" :
   return _AIS.Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_DownCast(*args)
 Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_DownCast = _AIS.Handle_AIS_IndexedDataMapNodeOfIndexedDataMapOfOwnerPrs_DownCast
 
@@ -3728,7 +3728,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
 
         """
         _AIS.AIS_IndexedDataMapOfOwnerPrs_swiginit(self,_AIS.new_AIS_IndexedDataMapOfOwnerPrs(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_IndexedDataMapOfOwnerPrs &" :
         """
         :param Other:
         :type Other: AIS_IndexedDataMapOfOwnerPrs &
@@ -3737,7 +3737,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_IndexedDataMapOfOwnerPrs &" :
         """
         :param Other:
         :type Other: AIS_IndexedDataMapOfOwnerPrs &
@@ -3746,7 +3746,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -3755,14 +3755,14 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3773,7 +3773,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Add(self, *args)
 
-    def Substitute(self, *args):
+    def Substitute(self, *args) -> "void" :
         """
         :param I:
         :type I: int
@@ -3786,14 +3786,14 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Substitute(self, *args)
 
-    def RemoveLast(self, *args):
+    def RemoveLast(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_RemoveLast(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3802,7 +3802,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_Contains(self, *args)
 
-    def FindKey(self, *args):
+    def FindKey(self, *args) -> "Handle_SelectMgr_EntityOwner const &" :
         """
         :param I:
         :type I: int
@@ -3811,7 +3811,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_FindKey(self, *args)
 
-    def FindFromIndex(self, *args):
+    def FindFromIndex(self, *args) -> "Handle_Prs3d_Presentation const &" :
         """
         :param I:
         :type I: int
@@ -3820,7 +3820,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args):
+    def ChangeFromIndex(self, *args) -> "Handle_Prs3d_Presentation &" :
         """
         :param I:
         :type I: int
@@ -3829,7 +3829,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args):
+    def FindIndex(self, *args) -> "Standard_Integer" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3838,7 +3838,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_FindIndex(self, *args)
 
-    def FindFromKey(self, *args):
+    def FindFromKey(self, *args) -> "Handle_Prs3d_Presentation const &" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3847,7 +3847,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args):
+    def ChangeFromKey(self, *args) -> "Handle_Prs3d_Presentation &" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3856,7 +3856,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args):
+    def FindFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3865,7 +3865,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args):
+    def ChangeFromKey1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_SelectMgr_EntityOwner &
@@ -3874,7 +3874,7 @@ class AIS_IndexedDataMapOfOwnerPrs(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_IndexedDataMapOfOwnerPrs_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_IndexedDataMapOfOwnerPrs self)"""
         return _AIS.AIS_IndexedDataMapOfOwnerPrs__kill_pointed(self)
 
@@ -3919,7 +3919,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
 
         """
         _AIS.AIS_InteractiveContext_swiginit(self,_AIS.new_AIS_InteractiveContext(*args))
-    def SetAutoActivateSelection(self, *args):
+    def SetAutoActivateSelection(self, *args) -> "void" :
         """
         :param Auto:
         :type Auto: bool
@@ -3928,14 +3928,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetAutoActivateSelection(self, *args)
 
-    def GetAutoActivateSelection(self, *args):
+    def GetAutoActivateSelection(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_InteractiveContext_GetAutoActivateSelection(self, *args)
 
-    def Display(self, *args):
+    def Display(self, *args) -> "void" :
         """
         * Controls the choice between the using the display and selection modes of open local context which you have defined and activating those available by default. If a local context is open and if updateviewer equals Standard_False, the Interactive Object anIobj is displayed in the default active mode. This will be the object's default display mode, if there is one. Otherwise, it will be the context mode. The Interactive Object's default selection mode is activated. In general, this is 0. This syntax has the same behavior as local context, open or closed. If you want to view the object in open local context without selection, use the syntax below, setting aSelectionMode to -1.
 
@@ -3962,7 +3962,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Display(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Allows you to load the Interactive Object aniobj with a given selection mode SelectionMode, and/or with the desired decomposition option, whether the object is visualized or not. If AllowDecomp = Standard_True and, if the interactive object is of the 'Shape' type, these 'standard' selection modes will be automatically activated as a function of the modes present in the Local Context. The loaded objects will be selectable but displayable in highlighting only when detected by the Selector. This method is available only when Local Contexts are open.
 
@@ -3977,7 +3977,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Load(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "void" :
         """
         * Hides the object. The object's presentations are simply flagged as invisible and therefore excluded from redrawing. To show hidden objects, use Display().
 
@@ -3990,7 +3990,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Erase(self, *args)
 
-    def EraseAll(self, *args):
+    def EraseAll(self, *args) -> "void" :
         """
         * Hides all objects. The object's presentations are simply flagged as invisible and therefore excluded from redrawing. To show all hidden objects, use DisplayAll().
 
@@ -4001,7 +4001,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_EraseAll(self, *args)
 
-    def DisplayAll(self, *args):
+    def DisplayAll(self, *args) -> "void" :
         """
         * Displays all hidden objects.
 
@@ -4012,7 +4012,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayAll(self, *args)
 
-    def EraseSelected(self, *args):
+    def EraseSelected(self, *args) -> "void" :
         """
         * Hides selected objects. The object's presentations are simply flagged as invisible and therefore excluded from redrawing. To show hidden objects, use Display().
 
@@ -4023,7 +4023,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_EraseSelected(self, *args)
 
-    def DisplaySelected(self, *args):
+    def DisplaySelected(self, *args) -> "void" :
         """
         * Displays selected objects if a local context is open. Displays current objects if there is no active local context. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4034,7 +4034,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplaySelected(self, *args)
 
-    def KeepTemporary(self, *args):
+    def KeepTemporary(self, *args) -> "Standard_Boolean" :
         """
         * Changes the status of a temporary object. It will be kept at the neutral point, i.e. put in the list of displayed objects along withwith its temporary attributes. These include display mode and selection mode, for example. Returns true if done. inWhichLocal gives the local context in which anIObj is displayed. By default, the index -1 refers to the last Local Context opened.
 
@@ -4047,7 +4047,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_KeepTemporary(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes the interactive object aniobj from all viewers. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4060,7 +4060,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Clear(self, *args)
 
-    def ClearPrs(self, *args):
+    def ClearPrs(self, *args) -> "void" :
         """
         * Empties the graphic presentation of the mode indexed by aMode. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated. Warning Removes anIobj. anIobj is still active if it was previously activated.
 
@@ -4075,7 +4075,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearPrs(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Removes aniobj from every viewer. aniobj is no longer referenced in the Context. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4088,7 +4088,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Remove(self, *args)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         * Removes all the objects from all opened Local Contexts and from the Neutral Point
 
@@ -4099,7 +4099,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_RemoveAll(self, *args)
 
-    def Hilight(self, *args):
+    def Hilight(self, *args) -> "void" :
         """
         * Updates the display in the viewer to take dynamic detection into account. On dynamic detection by the mouse cursor, sensitive primitives are highlighted. The highlight color of entities detected by mouse movement is white by default. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4112,7 +4112,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Hilight(self, *args)
 
-    def HilightWithColor(self, *args):
+    def HilightWithColor(self, *args) -> "void" :
         """
         * Changes the color of all the lines of the object in view, aniobj. It paints these lines the color passed as the argument, aCol. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4127,7 +4127,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightWithColor(self, *args)
 
-    def Unhilight(self, *args):
+    def Unhilight(self, *args) -> "void" :
         """
         * Removes hilighting from the entity aniobj. Updates the viewer. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4140,7 +4140,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Unhilight(self, *args)
 
-    def SetDisplayPriority(self, *args):
+    def SetDisplayPriority(self, *args) -> "void" :
         """
         * Sets the display priority aPriority of the seen parts presentation of the entity anIobj.
 
@@ -4153,7 +4153,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetDisplayPriority(self, *args)
 
-    def SetZLayer(self, *args):
+    def SetZLayer(self, *args) -> "void" :
         """
         * Set Z layer id for interactive object. The layer can be specified for displayed object only. The Z layers can be used to display temporarily presentations of some object in front of the other objects in the scene. The ids for Z layers are generated by V3d_Viewer. Note that Z layers differ from under-/overlayer in V3d_View: under-/overlayer are intended for specific 2D drawings that appear behind/in front of all 3D presentations, while SetZLayer() method applies to regular 3D presentations and does not imply any specific drawing methods.
 
@@ -4166,7 +4166,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetZLayer(self, *args)
 
-    def GetZLayer(self, *args):
+    def GetZLayer(self, *args) -> "Standard_Integer" :
         """
         * Get Z layer id set for displayed interactive object. If the object doesn't exists in context or has no computed presentations, the method returns -1.
 
@@ -4177,7 +4177,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_GetZLayer(self, *args)
 
-    def Redisplay(self, *args):
+    def Redisplay(self, *args) -> "void" :
         """
         * Recomputes the seen parts presentation of the entity aniobj. If allmodes equals true, all presentations are present in the object even if unseen. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4202,7 +4202,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Redisplay(self, *args)
 
-    def RecomputePrsOnly(self, *args):
+    def RecomputePrsOnly(self, *args) -> "void" :
         """
         * Recomputes the displayed presentations, flags the others Doesn't update presentations
 
@@ -4217,7 +4217,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_RecomputePrsOnly(self, *args)
 
-    def RecomputeSelectionOnly(self, *args):
+    def RecomputeSelectionOnly(self, *args) -> "void" :
         """
         * Recomputes the active selections, flags the others Doesn't update presentations
 
@@ -4228,7 +4228,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_RecomputeSelectionOnly(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Updates displayed interactive object by checking and recomputing its flagged as 'to be recomputed' presentation and selection structures. This method does not force any recomputation on its own. The method recomputes selections even if they are loaded without activation in particular selector.
 
@@ -4241,7 +4241,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Update(self, *args)
 
-    def UnsetDisplayMode(self, *args):
+    def UnsetDisplayMode(self, *args) -> "void" :
         """
         * Unsets the display mode of seen Interactive Objects. aMode provides the display mode index of the entity aniobj. If updateviewer equals Standard_True, the predominant mode aMode will overule the context mode. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object returns to the default selection mode; the object is displayed but no viewer will be updated.
 
@@ -4254,7 +4254,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetDisplayMode(self, *args)
 
-    def SetSelectionMode(self, *args):
+    def SetSelectionMode(self, *args) -> "void" :
         """
         * Sets the selection mode of Interactive Objects. aMode provides the selection mode index of the entity aniobj.
 
@@ -4267,7 +4267,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSelectionMode(self, *args)
 
-    def UnsetSelectionMode(self, *args):
+    def UnsetSelectionMode(self, *args) -> "void" :
         """
         * Removes selection mode from Interactive Objects. aMode provides the selection mode index of the entity aniobj.
 
@@ -4278,7 +4278,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetSelectionMode(self, *args)
 
-    def SetSensitivityMode(self, *args):
+    def SetSensitivityMode(self, *args) -> "void" :
         """
         * Sets the selection sensitivity mode. SM_WINDOW mode uses the specified pixel tolerance to compute the sensitivity value, SM_VIEW mode allows to define the sensitivity manually.
 
@@ -4289,7 +4289,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSensitivityMode(self, *args)
 
-    def SensitivityMode(self, *args):
+    def SensitivityMode(self, *args) -> "StdSelect_SensitivityMode" :
         """
         * Returns the selection sensitivity mode.
 
@@ -4298,7 +4298,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SensitivityMode(self, *args)
 
-    def SetSensitivity(self, *args):
+    def SetSensitivity(self, *args) -> "void" :
         """
         * Sets the sensitivity aPrecision according to the view size for the current context or local context if any is activated. Sets the sensitivity aPrecision in pixels for the current context or local context if any is activated. By default, this sensitivity is equal to 4 pixels. When a local context is open, the defined sensitivity applies to this local context instead of the main context.
 
@@ -4309,7 +4309,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSensitivity(self, *args)
 
-    def Sensitivity(self, *args):
+    def Sensitivity(self, *args) -> "Standard_Real" :
         """
         * Returns the selection sensitivity value.
 
@@ -4318,7 +4318,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Sensitivity(self, *args)
 
-    def SetPixelTolerance(self, *args):
+    def SetPixelTolerance(self, *args) -> "void" :
         """
         * Define the current selection pixel sensitivity //!		for this context or local context if any one is activated. Warning: When a local context is open the sensitivity is apply on it instead on the main context.
 
@@ -4329,7 +4329,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetPixelTolerance(self, *args)
 
-    def PixelTolerance(self, *args):
+    def PixelTolerance(self, *args) -> "Standard_Integer" :
         """
         * Returns the pixel tolerance.
 
@@ -4338,7 +4338,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_PixelTolerance(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         * Puts the location aLocation on the initial graphic representation and the selection for the entity aniobj. In other words, aniobj is visible and selectable at a position other than initial position. Graphic and selection primitives are not recomputed. To clean the view correctly, you must reset the previous location.
 
@@ -4351,7 +4351,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetLocation(self, *args)
 
-    def ResetLocation(self, *args):
+    def ResetLocation(self, *args) -> "void" :
         """
         * Puts the entity aniobj back into its initial position.
 
@@ -4362,7 +4362,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ResetLocation(self, *args)
 
-    def HasLocation(self, *args):
+    def HasLocation(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the entity aniobj has a location.
 
@@ -4373,7 +4373,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasLocation(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "TopLoc_Location const &" :
         """
         * Returns the location of the entity aniobj.
 
@@ -4384,7 +4384,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Location(self, *args)
 
-    def SetCurrentFacingModel(self, *args):
+    def SetCurrentFacingModel(self, *args) -> "void" :
         """
         * change the current facing model apply on polygons for SetColor(), SetTransparency(), SetMaterial() methods default facing model is Aspect_TOFM_TWO_SIDE. This mean that attributes is applying both on the front and back face.
 
@@ -4397,7 +4397,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetCurrentFacingModel(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -4420,7 +4420,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetColor(self, *args)
 
-    def UnsetColor(self, *args):
+    def UnsetColor(self, *args) -> "void" :
         """
         * Removes the color selection for the selected entity. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4433,7 +4433,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetColor(self, *args)
 
-    def SetWidth(self, *args):
+    def SetWidth(self, *args) -> "void" :
         """
         * Sets the width of the entity aniobj. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4448,7 +4448,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetWidth(self, *args)
 
-    def UnsetWidth(self, *args):
+    def UnsetWidth(self, *args) -> "void" :
         """
         * Removes the width setting of the entity aniobj. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4461,7 +4461,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetWidth(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         * Provides the type of material setting for the view of the entity aniobj. The range of settings includes: BRASS, BRONZE, GOLD, PEWTER, SILVER, STONE. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4476,7 +4476,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetMaterial(self, *args)
 
-    def UnsetMaterial(self, *args):
+    def UnsetMaterial(self, *args) -> "void" :
         """
         * Removes the type of material setting for viewing the entity aniobj. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4489,7 +4489,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetMaterial(self, *args)
 
-    def SetTransparency(self, *args):
+    def SetTransparency(self, *args) -> "void" :
         """
         * Provides the transparency settings for viewing the entity aniobj. The transparency value aValue may be between 0.0, opaque, and 1.0, fully transparent. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4504,7 +4504,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetTransparency(self, *args)
 
-    def UnsetTransparency(self, *args):
+    def UnsetTransparency(self, *args) -> "void" :
         """
         * Removes the transparency settings for viewing the entity aniobj. The transparency value aValue may be between 0.0, opaque, and 1.0, fully transparent. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4517,7 +4517,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetTransparency(self, *args)
 
-    def SetLocalAttributes(self, *args):
+    def SetLocalAttributes(self, *args) -> "void" :
         """
         * Sets the attributes of the interactive object aniobj by plugging the attribute manager aDrawer into the local context. The graphic attributes of aDrawer such as visualization mode, color, and material, are then used to display aniobj. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4532,7 +4532,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetLocalAttributes(self, *args)
 
-    def UnsetLocalAttributes(self, *args):
+    def UnsetLocalAttributes(self, *args) -> "void" :
         """
         * Removes the settings for local attributes of the entity anObj and returns to the Neutral Point attributes or those of the previous local context. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4545,7 +4545,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnsetLocalAttributes(self, *args)
 
-    def SetPolygonOffsets(self, *args):
+    def SetPolygonOffsets(self, *args) -> "void" :
         """
         * Sets up polygon offsets for the given AIS_InteractiveObject. It simply calls anObj->SetPolygonOffsets()
 
@@ -4564,7 +4564,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetPolygonOffsets(self, *args)
 
-    def HasPolygonOffsets(self, *args):
+    def HasPolygonOffsets(self, *args) -> "Standard_Boolean" :
         """
         * simply calls anObj->HasPolygonOffsets()
 
@@ -4575,7 +4575,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasPolygonOffsets(self, *args)
 
-    def PolygonOffsets(self, *args):
+    def PolygonOffsets(self, *args) -> "void" :
         """
         * Retrieves current polygon offsets settings for <anObj>.
 
@@ -4592,7 +4592,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_PolygonOffsets(self, *args)
 
-    def SetTrihedronSize(self, *args):
+    def SetTrihedronSize(self, *args) -> "void" :
         """
         * Sets the size aSize of the trihedron. Is used to change the default value 100 mm for display of trihedra. Use of this function in one of your own interactive objects requires a call to the Compute function of the new class. This will recalculate the presentation for every trihedron displayed. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4605,7 +4605,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetTrihedronSize(self, *args)
 
-    def TrihedronSize(self, *args):
+    def TrihedronSize(self, *args) -> "Standard_Real" :
         """
         * returns the current value of trihedron size.
 
@@ -4614,7 +4614,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_TrihedronSize(self, *args)
 
-    def SetPlaneSize(self, *args):
+    def SetPlaneSize(self, *args) -> "void" :
         """
         * Sets the plane size defined by the length in the X direction XSize and that in the Y direction YSize. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -4637,7 +4637,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetPlaneSize(self, *args)
 
-    def PlaneSize(self, *args):
+    def PlaneSize(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the length in the X direction XSize is the same as that in the Y direction YSize.
 
@@ -4650,7 +4650,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_PlaneSize(self, *args)
 
-    def DisplayStatus(self, *args):
+    def DisplayStatus(self, *args) -> "AIS_DisplayStatus" :
         """
         * Returns the display status of the entity anIobj. This will be one of the following: - DS_Displayed displayed in main viewer - DS_Erased hidden in main viewer - DS_Temporary temporarily displayed - DS_None nowhere displayed.
 
@@ -4661,7 +4661,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayStatus(self, *args)
 
-    def DisplayedModes(self, *args):
+    def DisplayedModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         * Returns the list of active display modes for the entity aniobj.
 
@@ -4672,7 +4672,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayedModes(self, *args)
 
-    def IsDisplayed(self, *args):
+    def IsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if anIobj is displayed in the interactive context.
 
@@ -4689,7 +4689,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsDisplayed(self, *args)
 
-    def IsHilighted(self, *args):
+    def IsHilighted(self, *args) -> "Standard_Boolean" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -4708,7 +4708,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsHilighted(self, *args)
 
-    def DisplayPriority(self, *args):
+    def DisplayPriority(self, *args) -> "Standard_Integer" :
         """
         * Returns the display priority of the entity anIobj. This will be display mode of anIobj if it is in the main viewer.
 
@@ -4719,7 +4719,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayPriority(self, *args)
 
-    def HasColor(self, *args):
+    def HasColor(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if a view of the Interactive Object aniobj has color.
 
@@ -4730,7 +4730,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasColor(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -4747,7 +4747,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Color(self, *args)
 
-    def Width(self, *args):
+    def Width(self, *args) -> "Standard_Real" :
         """
         * Returns the width of the Interactive Object aniobj in the interactive context.
 
@@ -4758,7 +4758,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Width(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "void" :
         """
         * Returns the status astatus of the Interactive Context for the view of the Interactive Object anObj.
 
@@ -4771,7 +4771,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Status(self, *args)
 
-    def UpdateCurrentViewer(self, *args):
+    def UpdateCurrentViewer(self, *args) -> "void" :
         """
         * Updates the current viewer, the viewer in Neutral Point. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -4780,7 +4780,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UpdateCurrentViewer(self, *args)
 
-    def DisplayMode(self, *args):
+    def DisplayMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the display mode setting. Note that mode 3 is only used.
 
@@ -4789,7 +4789,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayMode(self, *args)
 
-    def HilightColor(self, *args):
+    def HilightColor(self, *args) -> "Quantity_NameOfColor" :
         """
         * Returns the name of the color used to show highlighted entities, that is, entities picked out by the mouse.
 
@@ -4798,7 +4798,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightColor(self, *args)
 
-    def PreSelectionColor(self, *args):
+    def PreSelectionColor(self, *args) -> "Quantity_NameOfColor" :
         """
         * Returns the name of the color used to show preselection. By default, this is Quantity_NOC_GREEN.
 
@@ -4807,7 +4807,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_PreSelectionColor(self, *args)
 
-    def DefaultColor(self, *args):
+    def DefaultColor(self, *args) -> "Quantity_NameOfColor" :
         """
         * Returns the name of the color used by default. By default, this is Quantity_NOC_GOLDENROD.
 
@@ -4816,7 +4816,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DefaultColor(self, *args)
 
-    def SubIntensityColor(self, *args):
+    def SubIntensityColor(self, *args) -> "Quantity_NameOfColor" :
         """
         * Returns the name of the color used to show that an object is not currently selected. By default, this is Quantity_NOC_GRAY40.
 
@@ -4825,7 +4825,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SubIntensityColor(self, *args)
 
-    def SetHilightColor(self, *args):
+    def SetHilightColor(self, *args) -> "void" :
         """
         * Sets the color used to show highlighted entities, that is, entities picked by the mouse. By default, this is Quantity_NOC_CYAN1.
 
@@ -4836,7 +4836,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHilightColor(self, *args)
 
-    def SelectionColor(self, *args):
+    def SelectionColor(self, *args) -> "void" :
         """
         * Returns the name of the color used to show selected entities. By default, this is Quantity_NOC_GRAY80.
 
@@ -4851,7 +4851,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SelectionColor(self, *args)
 
-    def SetPreselectionColor(self, *args):
+    def SetPreselectionColor(self, *args) -> "void" :
         """
         * Allows you to set the color used to show preselection. By default, this is Quantity_NOC_GREEN. A preselected entity is one which has been selected as the domain of application of a function such as a fillet.
 
@@ -4862,7 +4862,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetPreselectionColor(self, *args)
 
-    def SetSubIntensityColor(self, *args):
+    def SetSubIntensityColor(self, *args) -> "void" :
         """
         * Sets the color used to show that an object is not currently selected. By default, this is Quantity_NOC_GRAY40.
 
@@ -4873,7 +4873,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSubIntensityColor(self, *args)
 
-    def SetDisplayMode(self, *args):
+    def SetDisplayMode(self, *args) -> "void" :
         """
         * Sets the display mode of seen Interactive Objects. aMode provides the display mode index of the entity aniobj. If updateviewer equals Standard_True, the predominant mode aMode will overule the context mode. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object returns to the default selection mode; the object is displayed but no viewer will be updated. Note that display mode 3 is only used if you have an AIS_Textured Shape.
 
@@ -4896,7 +4896,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetDisplayMode(self, *args)
 
-    def SetAngleAndDeviation(self, *args):
+    def SetAngleAndDeviation(self, *args) -> "void" :
         """
         * Calls the AIS_Shape SetAngleAndDeviation to set both Angle and Deviation coefficients
 
@@ -4911,7 +4911,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetAngleAndDeviation(self, *args)
 
-    def SetHLRDeviationAngle(self, *args):
+    def SetHLRDeviationAngle(self, *args) -> "void" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -4924,7 +4924,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHLRDeviationAngle(self, *args)
 
-    def SetDeviationCoefficient(self, *args):
+    def SetDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the deviation coefficient aCoefficient. Drawings of curves or patches are made with respect to a maximal chordal deviation. A Deviation coefficient is used in the shading display mode. The shape is seen decomposed into triangles. These are used to calculate reflection of light from the surface of the object. The triangles are formed from chords of the curves in the shape. The deviation coefficient aCoefficient gives the highest value of the angle with which a chord can deviate from a tangent to a curve. If this limit is reached, a new triangle is begun. This deviation is absolute and is set through the method: SetMaximalChordialDeviation. The default value is 0.001. In drawing shapes, however, you are allowed to ask for a relative deviation. This deviation will be: SizeOfObject * DeviationCoefficient. default 0.001
 
@@ -4945,7 +4945,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetDeviationCoefficient(self, *args)
 
-    def DeviationCoefficient(self, *args):
+    def DeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * Returns the deviation coefficient. Drawings of curves or patches are made with respect to a maximal chordal deviation. A Deviation coefficient is used in the shading display mode. The shape is seen decomposed into triangles. These are used to calculate reflection of light from the surface of the object. The triangles are formed from chords of the curves in the shape. The deviation coefficient gives the highest value of the angle with which a chord can deviate from a tangent to a curve. If this limit is reached, a new triangle is begun. This deviation is absolute and is set through AIS_Drawer::SetMaximalChordialDeviation. The default value is 0.001. In drawing shapes, however, you are allowed to ask for a relative deviation. This deviation will be: SizeOfObject * DeviationCoefficient.
 
@@ -4954,7 +4954,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DeviationCoefficient(self, *args)
 
-    def SetDeviationAngle(self, *args):
+    def SetDeviationAngle(self, *args) -> "void" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -4973,14 +4973,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetDeviationAngle(self, *args)
 
-    def DeviationAngle(self, *args):
+    def DeviationAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AIS.AIS_InteractiveContext_DeviationAngle(self, *args)
 
-    def SetHLRDeviationCoefficient(self, *args):
+    def SetHLRDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the deviation coefficient aCoefficient for removal of hidden lines created by different viewpoints in different presentations. The Default value is 0.02.
 
@@ -5001,7 +5001,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHLRDeviationCoefficient(self, *args)
 
-    def HLRDeviationCoefficient(self, *args):
+    def HLRDeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * Returns the real number value of the hidden line removal deviation coefficient. A Deviation coefficient is used in the shading display mode. The shape is seen decomposed into triangles. These are used to calculate reflection of light from the surface of the object. The triangles are formed from chords of the curves in the shape. The deviation coefficient give the highest value of the angle with which a chord can deviate from a tangent to a curve. If this limit is reached, a new triangle is begun. To find the hidden lines, hidden line display mode entails recalculation of the view at each different projector perspective. Because hidden lines entail calculations of more than usual complexity to decompose them into these triangles, a deviation coefficient allowing greater tolerance is used. This increases efficiency in calculation. The Default value is 0.02.
 
@@ -5010,7 +5010,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HLRDeviationCoefficient(self, *args)
 
-    def SetHLRAngle(self, *args):
+    def SetHLRAngle(self, *args) -> "void" :
         """
         * Sets the HLR angle anAngle.
 
@@ -5021,7 +5021,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHLRAngle(self, *args)
 
-    def HLRAngle(self, *args):
+    def HLRAngle(self, *args) -> "Standard_Real" :
         """
         * Returns the real number value of the deviation angle in hidden line removal views in this interactive context. The default value is 20*PI/180.
 
@@ -5030,7 +5030,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HLRAngle(self, *args)
 
-    def SetHLRAngleAndDeviation(self, *args):
+    def SetHLRAngleAndDeviation(self, *args) -> "void" :
         """
         * Computes a HLRAngle and a HLRDeviationCoefficient by means of the angle anAngle and sets the corresponding methods in the default drawing tool with these values.
 
@@ -5051,7 +5051,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHLRAngleAndDeviation(self, *args)
 
-    def HiddenLineAspect(self, *args):
+    def HiddenLineAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Initializes hidden line aspect in the default drawing tool, or Drawer. The default values are: Color: Quantity_NOC_YELLOW Type of line: Aspect_TOL_DASH Width: 1.
 
@@ -5060,7 +5060,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HiddenLineAspect(self, *args)
 
-    def SetHiddenLineAspect(self, *args):
+    def SetHiddenLineAspect(self, *args) -> "void" :
         """
         * Sets the hidden line aspect anAspect. anAspect defines display attributes for hidden lines in HLR projections.
 
@@ -5071,7 +5071,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetHiddenLineAspect(self, *args)
 
-    def DrawHiddenLine(self, *args):
+    def DrawHiddenLine(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the hidden lines are to be drawn. By default the hidden lines are not drawn.
 
@@ -5080,21 +5080,21 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DrawHiddenLine(self, *args)
 
-    def EnableDrawHiddenLine(self, *args):
+    def EnableDrawHiddenLine(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_EnableDrawHiddenLine(self, *args)
 
-    def DisableDrawHiddenLine(self, *args):
+    def DisableDrawHiddenLine(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_DisableDrawHiddenLine(self, *args)
 
-    def SetIsoNumber(self, *args):
+    def SetIsoNumber(self, *args) -> "void" :
         """
         * Sets the number of U and V isoparameters displayed.
 
@@ -5107,7 +5107,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetIsoNumber(self, *args)
 
-    def IsoNumber(self, *args):
+    def IsoNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of U and V isoparameters displayed.
 
@@ -5118,7 +5118,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsoNumber(self, *args)
 
-    def IsoOnPlane(self, *args):
+    def IsoOnPlane(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if drawing isoparameters on planes is enabled.
 
@@ -5133,7 +5133,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsoOnPlane(self, *args)
 
-    def SetSelectedAspect(self, *args):
+    def SetSelectedAspect(self, *args) -> "void" :
         """
         * Sets the graphic basic aspect to the current presentation of //!		ALL selected objects. When <globalChange> is True , the full object presentation is changed. When <globalChange> is False , only the current group of the object presentation is changed. //!	 	Updates the viewer when <updateViewer> is True
 
@@ -5148,7 +5148,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSelectedAspect(self, *args)
 
-    def MoveTo(self, *args):
+    def MoveTo(self, *args) -> "AIS_StatusOfDetection" :
         """
         * Relays mouse position in pixels XPix and YPix to the interactive context selectors. This is done by the view aView passing this position to the main viewer and updating it. Functions in both Neutral Point and local contexts.
 
@@ -5163,7 +5163,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_MoveTo(self, *args)
 
-    def HasNextDetected(self, *args):
+    def HasNextDetected(self, *args) -> "Standard_Boolean" :
         """
         * returns True if other entities were detected in the last mouse detection
 
@@ -5172,7 +5172,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasNextDetected(self, *args)
 
-    def HilightNextDetected(self, *args):
+    def HilightNextDetected(self, *args) -> "Standard_Integer" :
         """
         * if more than 1 object is detected by the selector, only the 'best' owner is hilighted at the mouse position. This Method allows the user to hilight one after another the other detected entities. if The method select is called, the selected entity will be the hilighted one! returns the Rank of hilighted entity WARNING : Loop Method. When all the detected entities  have been hilighted , the next call will hilight  the first one again
 
@@ -5183,7 +5183,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightNextDetected(self, *args)
 
-    def HilightPreviousDetected(self, *args):
+    def HilightPreviousDetected(self, *args) -> "Standard_Integer" :
         """
         * Same as previous methods in reverse direction...
 
@@ -5194,7 +5194,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightPreviousDetected(self, *args)
 
-    def Select(self, *args):
+    def Select(self, *args) -> "AIS_StatusOfPick" :
         """
         * Selects everything found in the bounding rectangle defined by the pixel minima and maxima, XPMin, YPMin, XPMax, and YPMax in the view, aView The objects detected are passed to the main viewer, which is then updated.
 
@@ -5231,7 +5231,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Select(self, *args)
 
-    def ShiftSelect(self, *args):
+    def ShiftSelect(self, *args) -> "AIS_StatusOfPick" :
         """
         * adds the last detected to the list of previous picked. if the last detected was already declared as picked, removes it from the Picked List.
 
@@ -5268,7 +5268,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ShiftSelect(self, *args)
 
-    def SetToHilightSelected(self, *args):
+    def SetToHilightSelected(self, *args) -> "void" :
         """
         * Specify whether selected object must be hilighted when mouse cursor is moved above it (in MoveTo method). By default this value is false and selected object is not hilighted in this case.
 
@@ -5279,7 +5279,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetToHilightSelected(self, *args)
 
-    def ToHilightSelected(self, *args):
+    def ToHilightSelected(self, *args) -> "Standard_Boolean" :
         """
         * Return value specified whether selected object must be hilighted when mouse cursor is moved above it
 
@@ -5288,7 +5288,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ToHilightSelected(self, *args)
 
-    def SetCurrentObject(self, *args):
+    def SetCurrentObject(self, *args) -> "void" :
         """
         * Updates the view of the current object in open context. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5301,7 +5301,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetCurrentObject(self, *args)
 
-    def AddOrRemoveCurrentObject(self, *args):
+    def AddOrRemoveCurrentObject(self, *args) -> "void" :
         """
         * Allows you to add a current object to the list of current objects or remove it from that list. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5314,7 +5314,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_AddOrRemoveCurrentObject(self, *args)
 
-    def UpdateCurrent(self, *args):
+    def UpdateCurrent(self, *args) -> "void" :
         """
         * Updates the list of current objects, i.e. hilights new current objects, removes hilighting from former current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5323,7 +5323,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UpdateCurrent(self, *args)
 
-    def WasCurrentTouched(self, *args):
+    def WasCurrentTouched(self, *args) -> "Standard_Boolean" :
         """
         * Returns the current selection touched by the cursor. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5332,14 +5332,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_WasCurrentTouched(self, *args)
 
-    def SetOkCurrent(self, *args):
+    def SetOkCurrent(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_SetOkCurrent(self, *args)
 
-    def IsCurrent(self, *args):
+    def IsCurrent(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a non-null interactive object in Neutral Point. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5350,7 +5350,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsCurrent(self, *args)
 
-    def InitCurrent(self, *args):
+    def InitCurrent(self, *args) -> "void" :
         """
         * Initializes a scan of the current selected objects in Neutral Point. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5359,7 +5359,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_InitCurrent(self, *args)
 
-    def MoreCurrent(self, *args):
+    def MoreCurrent(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is another object found by the scan of the list of current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5368,7 +5368,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_MoreCurrent(self, *args)
 
-    def NextCurrent(self, *args):
+    def NextCurrent(self, *args) -> "void" :
         """
         * Continues the scan to the next object in the list of current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5377,7 +5377,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_NextCurrent(self, *args)
 
-    def Current(self, *args):
+    def Current(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         * Returns the current interactive object. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5386,14 +5386,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Current(self, *args)
 
-    def NbCurrents(self, *args):
+    def NbCurrents(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_InteractiveContext_NbCurrents(self, *args)
 
-    def FirstCurrentObject(self, *args):
+    def FirstCurrentObject(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         * Returns the first current object in the list of current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5402,7 +5402,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_FirstCurrentObject(self, *args)
 
-    def HilightCurrents(self, *args):
+    def HilightCurrents(self, *args) -> "void" :
         """
         * Highlights current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5413,7 +5413,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightCurrents(self, *args)
 
-    def UnhilightCurrents(self, *args):
+    def UnhilightCurrents(self, *args) -> "void" :
         """
         * Removes highlighting from current objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5424,7 +5424,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnhilightCurrents(self, *args)
 
-    def ClearCurrents(self, *args):
+    def ClearCurrents(self, *args) -> "void" :
         """
         * Empties previous current objects in order to get the current objects detected by the selector using UpdateCurrent. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5435,7 +5435,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearCurrents(self, *args)
 
-    def SetSelected(self, *args):
+    def SetSelected(self, *args) -> "void" :
         """
         * Puts the interactive object aniObj in the list of selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5448,7 +5448,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSelected(self, *args)
 
-    def SetSelectedCurrent(self, *args):
+    def SetSelectedCurrent(self, *args) -> "void" :
         """
         * puts the selected list in the current objects List.
 
@@ -5457,7 +5457,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetSelectedCurrent(self, *args)
 
-    def UpdateSelected(self, *args):
+    def UpdateSelected(self, *args) -> "void" :
         """
         * updates the list of selected objects i.e. hilights the new selected unhilights old selected objects
 
@@ -5468,7 +5468,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UpdateSelected(self, *args)
 
-    def HilightSelected(self, *args):
+    def HilightSelected(self, *args) -> "void" :
         """
         * Highlights selected objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5479,7 +5479,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HilightSelected(self, *args)
 
-    def UnhilightSelected(self, *args):
+    def UnhilightSelected(self, *args) -> "void" :
         """
         * Removes highlighting from selected objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5490,7 +5490,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_UnhilightSelected(self, *args)
 
-    def ClearSelected(self, *args):
+    def ClearSelected(self, *args) -> "void" :
         """
         * Empties previous selected objects in order to get the selected objects detected by the selector using UpdateSelected. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5501,7 +5501,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearSelected(self, *args)
 
-    def AddOrRemoveSelected(self, *args):
+    def AddOrRemoveSelected(self, *args) -> "void" :
         """
         * //!Allows you to add a selected object to the list of selected objects or remove it from that list. This entity can be an Interactive Object aniobj or its owner aShape as can be seen in the two syntaxes above. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5530,7 +5530,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_AddOrRemoveSelected(self, *args)
 
-    def IsSelected(self, *args):
+    def IsSelected(self, *args) -> "Standard_Boolean" :
         """
         * Finds the selected object aniobj in local context and returns its name. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5541,7 +5541,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsSelected(self, *args)
 
-    def InitSelected(self, *args):
+    def InitSelected(self, *args) -> "void" :
         """
         * Initializes a scan of the selected objects in local context. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5550,7 +5550,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_InitSelected(self, *args)
 
-    def MoreSelected(self, *args):
+    def MoreSelected(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is another object found by the scan of the list of selected objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5559,7 +5559,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_MoreSelected(self, *args)
 
-    def NextSelected(self, *args):
+    def NextSelected(self, *args) -> "void" :
         """
         * Continues the scan to the next object in the list of selected objects. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5568,14 +5568,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_NextSelected(self, *args)
 
-    def NbSelected(self, *args):
+    def NbSelected(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_InteractiveContext_NbSelected(self, *args)
 
-    def HasSelectedShape(self, *args):
+    def HasSelectedShape(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the interactive context has a shape selected in it which results from the decomposition of another entity in local context. If HasSelectedShape returns true, SelectedShape returns the shape which has been shown to be selected. Interactive returns the Interactive Object from which the shape has been selected. If HasSelectedShape returns false, Interactive returns the interactive entity selected by the click of the mouse.
 
@@ -5584,7 +5584,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasSelectedShape(self, *args)
 
-    def SelectedShape(self, *args):
+    def SelectedShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns the selected shape in the open local context. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -5593,7 +5593,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SelectedShape(self, *args)
 
-    def SelectedOwner(self, *args):
+    def SelectedOwner(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         * Returns the owner of the selected entity resulting from the decomposition of another entity in local context.
 
@@ -5602,7 +5602,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SelectedOwner(self, *args)
 
-    def EntityOwners(self, *args):
+    def EntityOwners(self, *args) -> "void" :
         """
         * Returns a collection containing all entity owners  created for the interactive object <theIObj> in  the selection mode theMode (in all active modes  if the Mode == -1)
 
@@ -5617,7 +5617,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_EntityOwners(self, *args)
 
-    def Interactive(self, *args):
+    def Interactive(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         * Returns the location of the selected Interactive Object.
 
@@ -5626,14 +5626,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Interactive(self, *args)
 
-    def SelectedInteractive(self, *args):
+    def SelectedInteractive(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_InteractiveContext_SelectedInteractive(self, *args)
 
-    def HasApplicative(self, *args):
+    def HasApplicative(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the applicative object has an owner from Interactive attributed to it.
 
@@ -5642,7 +5642,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasApplicative(self, *args)
 
-    def Applicative(self, *args):
+    def Applicative(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the owner of the applicative entity detected in interactive context. The owner can be a shape for a set of sub-shapes or a sub-shape for sub-shapes which it is composed of.
 
@@ -5651,7 +5651,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Applicative(self, *args)
 
-    def HasDetected(self, *args):
+    def HasDetected(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a mouse-detected entity in local context. If there is no open local context, the objects selected are called current objects; selected objects if there is one. Iterators allow entities to be recovered in either case. This method is one of a set which allows you to manipulate the objects which have been placed in these two lists.
 
@@ -5660,7 +5660,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasDetected(self, *args)
 
-    def HasDetectedShape(self, *args):
+    def HasDetectedShape(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a detected shape in local context. If there is no open local context, the objects selected are called current objects; selected objects if there is one. Iterators allow entities to be recovered in either case. This method is one of a set which allows you to manipulate the objects which have been placed in these two lists.
 
@@ -5669,7 +5669,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasDetectedShape(self, *args)
 
-    def DetectedShape(self, *args):
+    def DetectedShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape detected in local context. If there is no open local context, the objects selected are called current objects; selected objects if there is one. Iterators allow entities to be recovered in either case. This method is one of a set which allows you to manipulate the objects which have been placed in these two lists.
 
@@ -5678,7 +5678,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DetectedShape(self, *args)
 
-    def DetectedInteractive(self, *args):
+    def DetectedInteractive(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         * Returns the interactive objects last detected in open context. If there is no open local context, the objects selected are called current objects; selected objects if there is one. Iterators allow entities to be recovered in either case. This method is one of a set which allows you to manipulate the objects which have been placed in these two lists.
 
@@ -5687,7 +5687,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DetectedInteractive(self, *args)
 
-    def DetectedOwner(self, *args):
+    def DetectedOwner(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         * returns the owner of the detected sensitive primitive.
 
@@ -5696,42 +5696,42 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DetectedOwner(self, *args)
 
-    def InitDetected(self, *args):
+    def InitDetected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_InitDetected(self, *args)
 
-    def MoreDetected(self, *args):
+    def MoreDetected(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_InteractiveContext_MoreDetected(self, *args)
 
-    def NextDetected(self, *args):
+    def NextDetected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_NextDetected(self, *args)
 
-    def DetectedCurrentShape(self, *args):
+    def DetectedCurrentShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_InteractiveContext_DetectedCurrentShape(self, *args)
 
-    def DetectedCurrentObject(self, *args):
+    def DetectedCurrentObject(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_InteractiveContext_DetectedCurrentObject(self, *args)
 
-    def OpenLocalContext(self, *args):
+    def OpenLocalContext(self, *args) -> "Standard_Integer" :
         """
         * Opens local contexts and specifies how this is to be done. The options listed above function in the following manner: - UseDisplayedObjects -allows you to load or not load the interactive objects visualized at Neutral Point in the local context which you open. If false, the local context is empty after being opened. If true, the objects at Neutral Point are loaded by their default selection mode. - AllowShapeDecomposition -AIS_Shape allows or prevents decomposition in standard shape location mode of objects at Neutral Point which are type-'privileged'. This Flag is only taken into account when UseDisplayedObjects is true. - AcceptEraseOfObjects -authorises other local contexts to erase the interactive objects present in this context. This option is rarely used. - BothViewers - Has no use currently defined. This method returns the index of the created local context. It should be kept and used to close the context. Opening a local context allows you to prepare an environment for temporary presentations and selections which will disappear once the local context is closed. You can open several local contexts, but only the last one will be active.
 
@@ -5748,7 +5748,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_OpenLocalContext(self, *args)
 
-    def CloseLocalContext(self, *args):
+    def CloseLocalContext(self, *args) -> "void" :
         """
         * Allows you to close local contexts. For greater security, you should close the context with the index Index given on opening. When you close a local context, the one before, which is still on the stack, reactivates. If none is left, you return to Neutral Point. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated. Warning When the index isn't specified, the current context is closed. This option can be dangerous, as other Interactive Functions can open local contexts without necessarily warning the user.
 
@@ -5761,7 +5761,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_CloseLocalContext(self, *args)
 
-    def IndexOfCurrentLocal(self, *args):
+    def IndexOfCurrentLocal(self, *args) -> "Standard_Integer" :
         """
         * returns -1 if no opened local context.
 
@@ -5770,7 +5770,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IndexOfCurrentLocal(self, *args)
 
-    def CloseAllContexts(self, *args):
+    def CloseAllContexts(self, *args) -> "void" :
         """
         * Allows you to close all local contexts at one go and return to Neutral Point. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -5781,7 +5781,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_CloseAllContexts(self, *args)
 
-    def ResetOriginalState(self, *args):
+    def ResetOriginalState(self, *args) -> "void" :
         """
         * to be used only with no opened local context.. displays and activates objects in their original state before local contexts were opened...
 
@@ -5792,7 +5792,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ResetOriginalState(self, *args)
 
-    def ClearLocalContext(self, *args):
+    def ClearLocalContext(self, *args) -> "void" :
         """
         * clears Objects/Filters/Activated Modes list in the current opened local context.
 
@@ -5803,14 +5803,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearLocalContext(self, *args)
 
-    def UseDisplayedObjects(self, *args):
+    def UseDisplayedObjects(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveContext_UseDisplayedObjects(self, *args)
 
-    def NotUseDisplayedObjects(self, *args):
+    def NotUseDisplayedObjects(self, *args) -> "void" :
         """
         * when a local Context is opened, one is able to use/not use the displayed objects at neutral point at anytime.
 
@@ -5819,7 +5819,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_NotUseDisplayedObjects(self, *args)
 
-    def BeginImmediateDraw(self, *args):
+    def BeginImmediateDraw(self, *args) -> "Standard_Boolean" :
         """
         * initializes the list of presentations to be displayed returns False if No Local COnte
 
@@ -5828,7 +5828,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_BeginImmediateDraw(self, *args)
 
-    def ImmediateAdd(self, *args):
+    def ImmediateAdd(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <anIObj> has been stored in the list.
 
@@ -5841,7 +5841,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ImmediateAdd(self, *args)
 
-    def ImmediateRemove(self, *args):
+    def ImmediateRemove(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <anIObj> has been removed from the list.
 
@@ -5854,7 +5854,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ImmediateRemove(self, *args)
 
-    def EndImmediateDraw(self, *args):
+    def EndImmediateDraw(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the immediate display has been done.
 
@@ -5873,14 +5873,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_EndImmediateDraw(self, *args)
 
-    def IsImmediateModeOn(self, *args):
+    def IsImmediateModeOn(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_InteractiveContext_IsImmediateModeOn(self, *args)
 
-    def Drag(self, *args):
+    def Drag(self, *args) -> "void" :
         """
         * Transforms the current presentation of the object <anObject> using the transient graphic space of the view <aView> in immediat mode graphics.
 
@@ -5901,7 +5901,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Drag(self, *args)
 
-    def SetAutomaticHilight(self, *args):
+    def SetAutomaticHilight(self, *args) -> "void" :
         """
         * Sets the highlighting status aStatus of detected and selected entities. Whether you are in Neutral Point or local context, this is automatically managed by the Interactive Context. This function allows you to disconnect the automatic mode.
 
@@ -5912,7 +5912,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetAutomaticHilight(self, *args)
 
-    def AutomaticHilight(self, *args):
+    def AutomaticHilight(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the automatic highlight mode is active in an open context.
 
@@ -5921,7 +5921,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_AutomaticHilight(self, *args)
 
-    def SetZDetection(self, *args):
+    def SetZDetection(self, *args) -> "void" :
         """
         * Enables/Disables the Z detection. //!		If True the detection echo can be partially hidden by the //!		detected object.
 
@@ -5932,7 +5932,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetZDetection(self, *args)
 
-    def ZDetection(self, *args):
+    def ZDetection(self, *args) -> "Standard_Boolean" :
         """
         * Retrieves the Z detection state.
 
@@ -5941,7 +5941,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ZDetection(self, *args)
 
-    def Activate(self, *args):
+    def Activate(self, *args) -> "void" :
         """
         * Activates the selection mode aMode whose index is given, for the given interactive entity anIobj.
 
@@ -5954,7 +5954,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Activate(self, *args)
 
-    def Deactivate(self, *args):
+    def Deactivate(self, *args) -> "void" :
         """
         * Deactivates all the activated selection modes of an object.
 
@@ -5973,7 +5973,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Deactivate(self, *args)
 
-    def ActivatedModes(self, *args):
+    def ActivatedModes(self, *args) -> "void" :
         """
         * Returns the list of activated selection modes in an open context.
 
@@ -5986,7 +5986,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ActivatedModes(self, *args)
 
-    def SetShapeDecomposition(self, *args):
+    def SetShapeDecomposition(self, *args) -> "void" :
         """
         * to be Used only with opened local context and if <anIobj> is of type shape... if <aStatus> = True <anIobj> will be sensitive to  shape selection modes activation.  = False, <anIobj> will not be senstive  any more.
 
@@ -5999,7 +5999,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetShapeDecomposition(self, *args)
 
-    def SetTemporaryAttributes(self, *args):
+    def SetTemporaryAttributes(self, *args) -> "void" :
         """
         * Sets the temporary graphic attributes of the entity anObj. These are provided by the attribute manager aDrawer and are valid for a particular local context only. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -6014,7 +6014,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SetTemporaryAttributes(self, *args)
 
-    def SubIntensityOn(self, *args):
+    def SubIntensityOn(self, *args) -> "void" :
         """
         * Highlights, and removes highlights from, the displayed object aniobj which is displayed at Neutral Point with subintensity color; available only for active local context. There is no effect if there is no local context. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -6033,7 +6033,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SubIntensityOn(self, *args)
 
-    def SubIntensityOff(self, *args):
+    def SubIntensityOff(self, *args) -> "void" :
         """
         * Removes the subintensity option for the entity aniobj. If a local context is open and if updateviewer equals Standard_False, the presentation of the Interactive Object activates the selection mode; the object is displayed but no viewer will be updated.
 
@@ -6052,7 +6052,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SubIntensityOff(self, *args)
 
-    def AddFilter(self, *args):
+    def AddFilter(self, *args) -> "void" :
         """
         * Allows you to add the filter aFilter to Neutral Point or to a local context if one or more selection modes have been activated. Only type filters may be active in Neutral Point.
 
@@ -6063,7 +6063,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_AddFilter(self, *args)
 
-    def RemoveFilter(self, *args):
+    def RemoveFilter(self, *args) -> "void" :
         """
         * Removes a filter from Neutral Point or a local context if one or more selection modes have been activated. Only type filters are activated in Neutral Point.
 
@@ -6074,7 +6074,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_RemoveFilter(self, *args)
 
-    def RemoveFilters(self, *args):
+    def RemoveFilters(self, *args) -> "void" :
         """
         * Remove a filter to Neutral Point or a local context if one or more selection modes have been activated. Only type filters are active in Neutral Point.
 
@@ -6083,7 +6083,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_RemoveFilters(self, *args)
 
-    def ActivateStandardMode(self, *args):
+    def ActivateStandardMode(self, *args) -> "void" :
         """
         * Provides an alternative to the Display methods when activating specific selection modes. This has the effect of activating the corresponding selection mode aStandardActivation for all objects in Local Context which accept decomposition into sub-shapes. Every new Object which has been loaded into the interactive context and which answers these decomposition criteria is automatically activated according to these modes. Warning If you have opened a local context by loading an object with the default options (<AllowShapeDecomposition >= Standard_True), all objects of the 'Shape' type are also activated with the same modes. You can act on the state of these 'Standard' objects by using SetShapeDecomposition(Status).
 
@@ -6094,7 +6094,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ActivateStandardMode(self, *args)
 
-    def DeactivateStandardMode(self, *args):
+    def DeactivateStandardMode(self, *args) -> "void" :
         """
         * Provides an alternative to the Display methods when deactivating specific selection modes. This has the effect of deactivating the corresponding selection mode aStandardActivation for all objects in Local Context which accept decomposition into sub-shapes.
 
@@ -6105,7 +6105,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DeactivateStandardMode(self, *args)
 
-    def ActivatedStandardModes(self, *args):
+    def ActivatedStandardModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         * Returns the list of activated standard selection modes available in a local context.
 
@@ -6114,7 +6114,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ActivatedStandardModes(self, *args)
 
-    def Filters(self, *args):
+    def Filters(self, *args) -> "SelectMgr_ListOfFilter const &" :
         """
         * Returns the list of filters active in a local context.
 
@@ -6123,7 +6123,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_Filters(self, *args)
 
-    def DefaultDrawer(self, *args):
+    def DefaultDrawer(self, *args) -> "Handle_Prs3d_Drawer const &" :
         """
         * Returns the default attribute manager. This contains all the color and line attributes which can be used by interactive objects which do not have their own attributes.
 
@@ -6132,7 +6132,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DefaultDrawer(self, *args)
 
-    def CurrentViewer(self, *args):
+    def CurrentViewer(self, *args) -> "Handle_V3d_Viewer const &" :
         """
         * Returns the current viewer.
 
@@ -6141,7 +6141,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_CurrentViewer(self, *args)
 
-    def DisplayedObjects(self, *args):
+    def DisplayedObjects(self, *args) -> "void" :
         """
         * Returns the list of displayed objects of a particular Type WhichKind and Signature WhichSignature. By Default, WhichSignature equals -1. This means that there is a check on type only.
 
@@ -6166,7 +6166,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayedObjects(self, *args)
 
-    def ErasedObjects(self, *args):
+    def ErasedObjects(self, *args) -> "void" :
         """
         * Returns the list theListOfIO of erased objects (hidden objects) particular Type WhichKind and Signature WhichSignature. By Default, WhichSignature equals 1. This means that there is a check on type only.
 
@@ -6187,7 +6187,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ErasedObjects(self, *args)
 
-    def ObjectsByDisplayStatus(self, *args):
+    def ObjectsByDisplayStatus(self, *args) -> "void" :
         """
         * Returns the list theListOfIO of objects with indicated display status particular Type WhichKind and Signature WhichSignature. By Default, WhichSignature equals 1. This means that there is a check on type only.
 
@@ -6212,7 +6212,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ObjectsByDisplayStatus(self, *args)
 
-    def ObjectsInside(self, *args):
+    def ObjectsInside(self, *args) -> "void" :
         """
         * fills <aListOfIO> with objects of a particular Type and Signature with no consideration of display status. by Default, <WhichSignature> = -1 means control only on <WhichKind>. if <WhichKind> = AIS_KOI_None and <WhichSignature> = -1, all the objects are put into the list.
 
@@ -6227,7 +6227,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ObjectsInside(self, *args)
 
-    def HasOpenedContext(self, *args):
+    def HasOpenedContext(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is an open context.
 
@@ -6236,7 +6236,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_HasOpenedContext(self, *args)
 
-    def CurrentName(self, *args):
+    def CurrentName(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns the name of the current selected entity in Neutral Point. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -6245,7 +6245,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_CurrentName(self, *args)
 
-    def SelectionName(self, *args):
+    def SelectionName(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns the name of the current selected entity in open local context. Objects selected when there is no open local context are called current objects; those selected in open local context, selected objects.
 
@@ -6254,7 +6254,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_SelectionName(self, *args)
 
-    def DomainOfMainViewer(self, *args):
+    def DomainOfMainViewer(self, *args) -> "char *" :
         """
         * Returns the domain name of the main viewer.
 
@@ -6263,7 +6263,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DomainOfMainViewer(self, *args)
 
-    def LocalContext(self, *args):
+    def LocalContext(self, *args) -> "Handle_AIS_LocalContext" :
         """
         * This method is only intended for advanced operation, particularly with the aim to improve performance when many objects have to be selected together. Otherwise, you should use other (non-internal) methods of class AIS_InteractiveContext without trying to obtain an instance of AIS_LocalContext.
 
@@ -6272,35 +6272,35 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_LocalContext(self, *args)
 
-    def SelectionManager(self, *args):
+    def SelectionManager(self, *args) -> "Handle_SelectMgr_SelectionManager const &" :
         """
         :rtype: Handle_SelectMgr_SelectionManager
 
         """
         return _AIS.AIS_InteractiveContext_SelectionManager(self, *args)
 
-    def MainPrsMgr(self, *args):
+    def MainPrsMgr(self, *args) -> "Handle_PrsMgr_PresentationManager3d const &" :
         """
         :rtype: Handle_PrsMgr_PresentationManager3d
 
         """
         return _AIS.AIS_InteractiveContext_MainPrsMgr(self, *args)
 
-    def MainSelector(self, *args):
+    def MainSelector(self, *args) -> "Handle_StdSelect_ViewerSelector3d const &" :
         """
         :rtype: Handle_StdSelect_ViewerSelector3d
 
         """
         return _AIS.AIS_InteractiveContext_MainSelector(self, *args)
 
-    def LocalSelector(self, *args):
+    def LocalSelector(self, *args) -> "Handle_StdSelect_ViewerSelector3d" :
         """
         :rtype: Handle_StdSelect_ViewerSelector3d
 
         """
         return _AIS.AIS_InteractiveContext_LocalSelector(self, *args)
 
-    def PurgeDisplay(self, *args):
+    def PurgeDisplay(self, *args) -> "Standard_Integer" :
         """
         * Clears all the structures which don't belong to objects displayed at neutral point only effective when no Local Context is opened... returns the number of removed structures from the viewers.
 
@@ -6309,14 +6309,14 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_PurgeDisplay(self, *args)
 
-    def HighestIndex(self, *args):
+    def HighestIndex(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_InteractiveContext_HighestIndex(self, *args)
 
-    def ClearActiveAreas(self, *args):
+    def ClearActiveAreas(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -6325,7 +6325,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearActiveAreas(self, *args)
 
-    def ClearActiveSensitive(self, *args):
+    def ClearActiveSensitive(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -6334,7 +6334,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_ClearActiveSensitive(self, *args)
 
-    def DisplayActiveSensitive(self, *args):
+    def DisplayActiveSensitive(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -6349,7 +6349,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayActiveSensitive(self, *args)
 
-    def DisplayActiveAreas(self, *args):
+    def DisplayActiveAreas(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -6364,7 +6364,7 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_DisplayActiveAreas(self, *args)
 
-    def IsInLocal(self, *args):
+    def IsInLocal(self, *args) -> "Standard_Boolean" :
         """
         * returns if possible, the first local context where the object is seen
 
@@ -6377,11 +6377,11 @@ class AIS_InteractiveContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_InteractiveContext_IsInLocal(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_InteractiveContext self)"""
         return _AIS.AIS_InteractiveContext__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_InteractiveContext" :
         """GetHandle(AIS_InteractiveContext self) -> Handle_AIS_InteractiveContext"""
         return _AIS.AIS_InteractiveContext_GetHandle(self)
 
@@ -6621,7 +6621,7 @@ Handle_AIS_InteractiveContext._kill_pointed = new_instancemethod(_AIS.Handle_AIS
 Handle_AIS_InteractiveContext_swigregister = _AIS.Handle_AIS_InteractiveContext_swigregister
 Handle_AIS_InteractiveContext_swigregister(Handle_AIS_InteractiveContext)
 
-def Handle_AIS_InteractiveContext_DownCast(*args):
+def Handle_AIS_InteractiveContext_DownCast(*args) -> "Handle_AIS_InteractiveContext const" :
   return _AIS.Handle_AIS_InteractiveContext_DownCast(*args)
 Handle_AIS_InteractiveContext_DownCast = _AIS.Handle_AIS_InteractiveContext_DownCast
 
@@ -6629,7 +6629,7 @@ class AIS_InteractiveObject(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Type(self, *args):
+    def Type(self, *args) -> "AIS_KindOfInteractive" :
         """
         * Returns the kind of Interactive Object: - None - Datum - Relation - Object By default, the interactive object has a None type. Because specific shapes entail different behavior according to their sub-shapes, you may need to create a Local Context. This will allow you to specify the additional characteristics which you need to handle these shapes.
 
@@ -6638,7 +6638,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Type(self, *args)
 
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Standard_Integer" :
         """
         * Specifies additional characteristics of Interactive Objects. A signature is, in fact, an index with integer values assigned different properties. This method is frequently used in conjuction with Type to give a particular type and signature to an Interactive Object. By default, the Interactive Object has a None type and a signature of 0. Among the datums, this signature is attributed to the shape The remaining datums have the following default signatures: - Point  signature 1 - Axis signature 2 - Trihedron signature 3 - PlaneTrihedron signature 4 - Line signature 5 - Circle signature 6 - Plane  signature 7.
 
@@ -6647,7 +6647,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Signature(self, *args)
 
-    def AcceptShapeDecomposition(self, *args):
+    def AcceptShapeDecomposition(self, *args) -> "Standard_Boolean" :
         """
         * Informs the graphic context that the interactive Object may be decomposed into sub-shapes for dynamic selection. The most used Interactive Object is AIS_Shape. Activation methods for standard selection modes are proposed in the Interactive Context. These include selection by vertex or by edges. For datums with the same behavior as AIS_Shape, such as vetices and edges, we must redefine the virtual method so that AcceptShapeDecomposition returns false. Rule for selection : Mode 0 : Selection of the interactive Object itself Mode 1 : Selection of vertices Mode 2 : Selection Of Edges Mode 3 : Selection Of Wires Mode 4 : Selection Of Faces ...
 
@@ -6656,7 +6656,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_AcceptShapeDecomposition(self, *args)
 
-    def SetCurrentFacingModel(self, *args):
+    def SetCurrentFacingModel(self, *args) -> "void" :
         """
         * change the current facing model apply on polygons for SetColor(), SetTransparency(), SetMaterial() methods default facing model is Aspect_TOFM_TWO_SIDE. This mean that attributes is applying both on the front and back face.
 
@@ -6667,7 +6667,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetCurrentFacingModel(self, *args)
 
-    def CurrentFacingModel(self, *args):
+    def CurrentFacingModel(self, *args) -> "Aspect_TypeOfFacingModel" :
         """
         * Returns the current facing model which is in effect.
 
@@ -6676,7 +6676,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_CurrentFacingModel(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -6691,7 +6691,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetColor(self, *args)
 
-    def UnsetColor(self, *args):
+    def UnsetColor(self, *args) -> "void" :
         """
         * Removes color settings. Only the Interactive Object knows which Drawer attribute is affected by the color setting. For a wire, for example, wire aspect is the attribute affected. For a vertex, however, only point aspect is affected by the color setting.
 
@@ -6700,7 +6700,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetColor(self, *args)
 
-    def SetWidth(self, *args):
+    def SetWidth(self, *args) -> "void" :
         """
         * Allows you to provide the setting aValue for width. Only the Interactive Object knows which Drawer attribute is affected by the width setting.
 
@@ -6711,14 +6711,14 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetWidth(self, *args)
 
-    def UnsetWidth(self, *args):
+    def UnsetWidth(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AIS.AIS_InteractiveObject_UnsetWidth(self, *args)
 
-    def AcceptDisplayMode(self, *args):
+    def AcceptDisplayMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the class of objects accepts the display mode aMode. The interactive context can have a default mode of representation for the set of Interactive Objects. This mode may not be accepted by a given class of objects. Consequently, this virtual method allowing us to get information about the class in question must be implemented.
 
@@ -6729,7 +6729,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_AcceptDisplayMode(self, *args)
 
-    def DefaultDisplayMode(self, *args):
+    def DefaultDisplayMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the default display mode. This method is to be implemented when the main mode is not mode 0.
 
@@ -6738,7 +6738,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_DefaultDisplayMode(self, *args)
 
-    def Redisplay(self, *args):
+    def Redisplay(self, *args) -> "void" :
         """
         * Updates the active presentation; if <AllModes> = Standard_True all the presentations inside are recomputed.
 
@@ -6749,7 +6749,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Redisplay(self, *args)
 
-    def SetInfiniteState(self, *args):
+    def SetInfiniteState(self, *args) -> "void" :
         """
         * Sets the infinite state flag aFlage. if <aFlag> = True , the interactiveObject is considered as infinite, i.e. its graphic presentations are not taken in account for View FitAll...
 
@@ -6760,7 +6760,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetInfiniteState(self, *args)
 
-    def IsInfinite(self, *args):
+    def IsInfinite(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the interactive object is infinite. In this case, its graphic presentations are not taken into account in the fit-all view.
 
@@ -6769,7 +6769,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_IsInfinite(self, *args)
 
-    def HasInteractiveContext(self, *args):
+    def HasInteractiveContext(self, *args) -> "Standard_Boolean" :
         """
         * Indicates whether the Interactive Object has a pointer to an interactive context.
 
@@ -6778,7 +6778,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasInteractiveContext(self, *args)
 
-    def GetContext(self, *args):
+    def GetContext(self, *args) -> "Handle_AIS_InteractiveContext" :
         """
         * Returns the context pointer to the interactive context.
 
@@ -6787,7 +6787,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_GetContext(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets the interactive context aCtx and provides a link to the default drawing tool or 'Drawer' if there is none.
 
@@ -6798,7 +6798,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetContext(self, *args)
 
-    def HasOwner(self, *args):
+    def HasOwner(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the object has an owner attributed to it. The owner can be a shape for a set of sub-shapes or a sub-shape for sub-shapes which it is composed of, and takes the form of a transient.
 
@@ -6807,7 +6807,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasOwner(self, *args)
 
-    def GetOwner(self, *args):
+    def GetOwner(self, *args) -> "Handle_Standard_Transient const &" :
         """
         * Returns the owner of the Interactive Object. The owner can be a shape for a set of sub-shapes or a sub-shape for sub-shapes which it is composed of, and takes the form of a transient. There are two types of owners: - Direct owners, decomposition shapes such as edges, wires, and faces. - Users, presentable objects connecting to sensitive primitives, or a shape which has been decomposed.
 
@@ -6816,7 +6816,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_GetOwner(self, *args)
 
-    def SetOwner(self, *args):
+    def SetOwner(self, *args) -> "void" :
         """
         * Allows you to attribute the owner ApplicativeEntity to an Interactive Object. This can be a shape for a set of sub-shapes or a sub-shape for sub-shapes which it is composed of. The owner takes the form of a transient.
 
@@ -6827,7 +6827,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetOwner(self, *args)
 
-    def ClearOwner(self, *args):
+    def ClearOwner(self, *args) -> "void" :
         """
         * Each Interactive Object has methods which allow us to attribute an Owner to it in the form of a Transient. This method removes the owner from the graphic entity.
 
@@ -6836,21 +6836,21 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_ClearOwner(self, *args)
 
-    def HasUsers(self, *args):
+    def HasUsers(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_InteractiveObject_HasUsers(self, *args)
 
-    def Users(self, *args):
+    def Users(self, *args) -> "TColStd_ListOfTransient const &" :
         """
         :rtype: TColStd_ListOfTransient
 
         """
         return _AIS.AIS_InteractiveObject_Users(self, *args)
 
-    def AddUser(self, *args):
+    def AddUser(self, *args) -> "void" :
         """
         :param aUser:
         :type aUser: Handle_Standard_Transient &
@@ -6859,14 +6859,14 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_AddUser(self, *args)
 
-    def ClearUsers(self, *args):
+    def ClearUsers(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_InteractiveObject_ClearUsers(self, *args)
 
-    def HasDisplayMode(self, *args):
+    def HasDisplayMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object has a display mode setting. Otherwise, it is displayed in Neutral Point.
 
@@ -6875,7 +6875,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasDisplayMode(self, *args)
 
-    def SetDisplayMode(self, *args):
+    def SetDisplayMode(self, *args) -> "void" :
         """
         * Sets the display mode aMode for the interactive object. An object can have its own temporary display mode, which is different from that proposed by the interactive context. The range of possibilities currently proposed is the following: - AIS_WireFrame - AIS_Shaded This range can, however, be extended through the creation of new display modes.
 
@@ -6886,7 +6886,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetDisplayMode(self, *args)
 
-    def UnsetDisplayMode(self, *args):
+    def UnsetDisplayMode(self, *args) -> "void" :
         """
         * Removes display mode settings from the interactive object.
 
@@ -6895,7 +6895,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetDisplayMode(self, *args)
 
-    def DisplayMode(self, *args):
+    def DisplayMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the display mode setting of the Interactive Object. The range of possibilities is the following: - AIS_WireFrame - AIS_Shaded This range can, however, be extended through the creation of new display modes.
 
@@ -6904,7 +6904,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_DisplayMode(self, *args)
 
-    def HasSelectionMode(self, *args):
+    def HasSelectionMode(self, *args) -> "Standard_Boolean" :
         """
         * Allows you to change the selection mode of an Interactive Object. The default selection mode setting is 0. For shapes, for example, the selection modes are as follows: - mode 0 - selection of the shape itself - mode 1 - selection of vertices - mode 2 - selection of edges - mode 3 - selection of wires - mode 4 - selection of faces - mode 5 - selection of shells - mode 6 - selection of solids - mode 7 - selection of compounds For trihedra, on the other hand, the selection modes are the following four: - mode 0 - selection of a trihedron - mode 1 - selection of its origin - mode 2 - selection of its axes - mode 3 - selection of its planes
 
@@ -6913,7 +6913,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasSelectionMode(self, *args)
 
-    def SelectionMode(self, *args):
+    def SelectionMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the selection mode of the interactive object.
 
@@ -6922,7 +6922,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SelectionMode(self, *args)
 
-    def SetSelectionMode(self, *args):
+    def SetSelectionMode(self, *args) -> "void" :
         """
         * You can change the default selection mode index aMode of an Interactive Object. This is only of interest if you decide that mode 0 adopted by convention will not do.
 
@@ -6933,7 +6933,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetSelectionMode(self, *args)
 
-    def UnsetSelectionMode(self, *args):
+    def UnsetSelectionMode(self, *args) -> "void" :
         """
         * You can change the default selection mode index of an Interactive Object. This is only of interest if you decide that the 0 mode adopted by convention will not do.
 
@@ -6942,7 +6942,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetSelectionMode(self, *args)
 
-    def SelectionPriority(self, *args):
+    def SelectionPriority(self, *args) -> "Standard_Integer" :
         """
         * Returns the selection priority setting. -1 indicates that there is none. You can modify the selection priority of an owner to make one entity more selectionable than another one. The default selection priority for an owner is 5, for example. To increase selection priority, choose a setting between 5 and 10. An entity with priority 7 will take priority over one with a setting of 6 if both objects are selected at the same time. You could give vertices priority 8, edges priority 7, faces priority 6, and shapes priority 5. If a vertex, an edge and a face are simultaneously detected during selection, only the vertex will then be highlighted. For trihedra, for example, the default priorities are the following four: - priority 1 - a trihedron - priority 5 - its origin - priority 3 - its axes - priority 2 - its planes
 
@@ -6951,7 +6951,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SelectionPriority(self, *args)
 
-    def SetSelectionPriority(self, *args):
+    def SetSelectionPriority(self, *args) -> "void" :
         """
         * Allows you to provide a setting aPriority for selection priority. You can modify selection priority of an owner to make one entity more selectionable than another one. The default selection priority for an owner is 5, for example. To increase selection priority, choose a setting between 5 and 10. An entity with priority 7 will take priority over one with a setting of 6.
 
@@ -6962,7 +6962,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetSelectionPriority(self, *args)
 
-    def UnsetSelectionPriority(self, *args):
+    def UnsetSelectionPriority(self, *args) -> "void" :
         """
         * Removes the setting for selection priority. SelectionPriority then returns -1.
 
@@ -6971,7 +6971,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetSelectionPriority(self, *args)
 
-    def HasSelectionPriority(self, *args):
+    def HasSelectionPriority(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a setting for selection priority. You can modify selection priority of an owner to make one entity more selectionable than another one. The default selection priority for an owner is 5, for example. To increase selection priority, choose a setting between 5 and 10. An entity with priority 7 will take priority over one with a setting of 6.
 
@@ -6980,7 +6980,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasSelectionPriority(self, *args)
 
-    def HasHilightMode(self, *args):
+    def HasHilightMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object is in highlight mode.
 
@@ -6989,7 +6989,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasHilightMode(self, *args)
 
-    def HilightMode(self, *args):
+    def HilightMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the setting for highlight mode. At dynamic detection, the presentation echoed by the Interactive Context, is by default the presentation already on the screen. You can specify a Highlight presentation mode which is valid no matter what the active representation of the object. It makes no difference whether this choice is temporary or definitive. To do this, we use the following functions: - SetHilightMode - UnSetHilightMode In the case of a shape, whether it is visualized in wireframe presentation or with shading, we want to systematically highlight the wireframe presentation. Consequently, we set the highlight mode to 0.
 
@@ -6998,7 +6998,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HilightMode(self, *args)
 
-    def SetHilightMode(self, *args):
+    def SetHilightMode(self, *args) -> "void" :
         """
         * Sets the highlight mode anIndex for the interactive object. If, for example, you want to systematically highlight the wireframe presentation of a shape - whether visualized in wireframe presentation or with shading - you set the highlight mode to 0.
 
@@ -7009,7 +7009,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetHilightMode(self, *args)
 
-    def UnsetHilightMode(self, *args):
+    def UnsetHilightMode(self, *args) -> "void" :
         """
         * Allows the user to take a given Prs for hilight ex : for a shape which would be displayed in shading mode the hilight Prs is the wireframe mode. if No specific hilight mode is defined, the displayed Prs will be the hilighted one.
 
@@ -7018,7 +7018,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetHilightMode(self, *args)
 
-    def HasColor(self, *args):
+    def HasColor(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object has color.
 
@@ -7027,7 +7027,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasColor(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         * Returns the color setting of the Interactive Object.
 
@@ -7040,7 +7040,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Color(self, *args)
 
-    def HasWidth(self, *args):
+    def HasWidth(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object has width.
 
@@ -7049,7 +7049,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasWidth(self, *args)
 
-    def Width(self, *args):
+    def Width(self, *args) -> "Standard_Real" :
         """
         * Returns the width setting of the Interactive Object.
 
@@ -7058,7 +7058,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Width(self, *args)
 
-    def HasMaterial(self, *args):
+    def HasMaterial(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object has a setting for material.
 
@@ -7067,7 +7067,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasMaterial(self, *args)
 
-    def Material(self, *args):
+    def Material(self, *args) -> "Graphic3d_NameOfMaterial" :
         """
         * Returns the current material setting. This will be on of the following materials: - Brass - Bronze - Gold - Pewter - Silver - Stone.
 
@@ -7076,7 +7076,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Material(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         * Sets the name aName for material defining this display attribute for the interactive object. Material aspect determines shading aspect, color and transparency of visible entities.
 
@@ -7093,7 +7093,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetMaterial(self, *args)
 
-    def UnsetMaterial(self, *args):
+    def UnsetMaterial(self, *args) -> "void" :
         """
         * Removes the setting for material.
 
@@ -7102,7 +7102,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetMaterial(self, *args)
 
-    def SetTransparency(self, *args):
+    def SetTransparency(self, *args) -> "void" :
         """
         * Attributes a setting aValue for transparency. The transparency value should be between 0.0 and 1.0. At 0.0 an object will be totally opaque, and at 1.0, fully transparent. Warning At a value of 1.0, there may be nothing visible.
 
@@ -7113,7 +7113,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetTransparency(self, *args)
 
-    def IsTransparent(self, *args):
+    def IsTransparent(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a transparency setting.
 
@@ -7122,7 +7122,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_IsTransparent(self, *args)
 
-    def Transparency(self, *args):
+    def Transparency(self, *args) -> "Standard_Real" :
         """
         * Returns the transparency setting. This will be between 0.0 and 1.0. At 0.0 an object will be totally opaque, and at 1.0, fully transparent.
 
@@ -7131,7 +7131,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Transparency(self, *args)
 
-    def UnsetTransparency(self, *args):
+    def UnsetTransparency(self, *args) -> "void" :
         """
         * Removes the transparency setting. The object is opaque by default.
 
@@ -7140,7 +7140,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetTransparency(self, *args)
 
-    def SetAttributes(self, *args):
+    def SetAttributes(self, *args) -> "void" :
         """
         * Initializes the drawing tool aDrawer.
 
@@ -7151,7 +7151,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetAttributes(self, *args)
 
-    def Attributes(self, *args):
+    def Attributes(self, *args) -> "Handle_AIS_Drawer const &" :
         """
         * Returns the attributes settings.
 
@@ -7160,7 +7160,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Attributes(self, *args)
 
-    def UnsetAttributes(self, *args):
+    def UnsetAttributes(self, *args) -> "void" :
         """
         * Clears settings provided by the drawing tool aDrawer.
 
@@ -7169,7 +7169,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetAttributes(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "Standard_Integer" :
         """
         :param theState:
         :type theState: int
@@ -7180,7 +7180,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_State(self, *args)
 
-    def SetTransformation(self, *args):
+    def SetTransformation(self, *args) -> "void" :
         """
         * Transforms all presentations of the object and replace the actual transformation matrix if <postConcatenate> is False. Note that the selection must be updated only at the end of object animation when <updateSelection> is True
 
@@ -7195,7 +7195,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetTransformation(self, *args)
 
-    def UnsetTransformation(self, *args):
+    def UnsetTransformation(self, *args) -> "void" :
         """
         * Deactivate the current transformation
 
@@ -7204,7 +7204,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_UnsetTransformation(self, *args)
 
-    def Transformation(self, *args):
+    def Transformation(self, *args) -> "Handle_Geom_Transformation" :
         """
         * Returns the current transformation associated to the first available presentation of this object.
 
@@ -7213,7 +7213,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Transformation(self, *args)
 
-    def HasTransformation(self, *args):
+    def HasTransformation(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when this object is transformed
 
@@ -7222,7 +7222,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasTransformation(self, *args)
 
-    def HasPresentation(self, *args):
+    def HasPresentation(self, *args) -> "Standard_Boolean" :
         """
         * Returns True when this object has a presentation in the current DisplayMode()
 
@@ -7231,7 +7231,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasPresentation(self, *args)
 
-    def Presentation(self, *args):
+    def Presentation(self, *args) -> "Handle_Prs3d_Presentation" :
         """
         * Returns the current presentation of this object according to the current DisplayMode()
 
@@ -7240,7 +7240,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_Presentation(self, *args)
 
-    def SetAspect(self, *args):
+    def SetAspect(self, *args) -> "void" :
         """
         * Sets the graphic basic aspect to the current presentation. When <globalChange> is True , the full object presentation is changed. When <globalChange> is False , only the current group of the object presentation is changed.
 
@@ -7253,7 +7253,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetAspect(self, *args)
 
-    def SetPolygonOffsets(self, *args):
+    def SetPolygonOffsets(self, *args) -> "void" :
         """
         * Sets up polygon offsets for this object. It modifies all existing presentations of <anObj> (if any), so it is reasonable to call this method after <anObj> has been displayed. Otherwise, Compute() method should pass Graphic3d_AspectFillArea3d aspect from <myDrawer> to Graphic3d_Group to make polygon offsets work.  <aMode> parameter can contain various combinations of Aspect_PolygonOffsetMode enumeration elements (Aspect_POM_None means that polygon offsets are not changed). If <aMode> is different from Aspect_POM_Off and Aspect_POM_None, then <aFactor> and <aUnits> arguments are used by graphic renderer to calculate a depth offset value:  offset = <aFactor> * m + <aUnits> * r, where m - maximum depth slope for the polygon currently being displayed, r - minimum window coordinates depth resolution (implementation-specific).  Deafult settings for OCC 3D viewer: mode = Aspect_POM_Fill, factor = 1., units = 0.  Negative offset values move polygons closer to the viewport, while positive values shift polygons away. Consult OpenGL reference for details (glPolygonOffset function description).  NOTE: This method has a side effect - it creates own shading aspect if not yet created, so it is better to set up object material, color, etc. first.
 
@@ -7268,7 +7268,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_SetPolygonOffsets(self, *args)
 
-    def HasPolygonOffsets(self, *args):
+    def HasPolygonOffsets(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if <myDrawer> has non-null shading aspect
 
@@ -7277,7 +7277,7 @@ class AIS_InteractiveObject(object):
         """
         return _AIS.AIS_InteractiveObject_HasPolygonOffsets(self, *args)
 
-    def PolygonOffsets(self, *args):
+    def PolygonOffsets(self, *args) -> "void" :
         """
         * Retrieves current polygon offsets settings from <myDrawer>.
 
@@ -7393,7 +7393,7 @@ Handle_AIS_InteractiveObject._kill_pointed = new_instancemethod(_AIS.Handle_AIS_
 Handle_AIS_InteractiveObject_swigregister = _AIS.Handle_AIS_InteractiveObject_swigregister
 Handle_AIS_InteractiveObject_swigregister(Handle_AIS_InteractiveObject)
 
-def Handle_AIS_InteractiveObject_DownCast(*args):
+def Handle_AIS_InteractiveObject_DownCast(*args) -> "Handle_AIS_InteractiveObject const" :
   return _AIS.Handle_AIS_InteractiveObject_DownCast(*args)
 Handle_AIS_InteractiveObject_DownCast = _AIS.Handle_AIS_InteractiveObject_DownCast
 
@@ -7410,7 +7410,7 @@ class AIS_ListIteratorOfListOfInteractive(object):
 
         """
         _AIS.AIS_ListIteratorOfListOfInteractive_swiginit(self,_AIS.new_AIS_ListIteratorOfListOfInteractive(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: AIS_ListOfInteractive &
@@ -7419,21 +7419,21 @@ class AIS_ListIteratorOfListOfInteractive(object):
         """
         return _AIS.AIS_ListIteratorOfListOfInteractive_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_ListIteratorOfListOfInteractive_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_ListIteratorOfListOfInteractive_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
@@ -7469,18 +7469,18 @@ class AIS_ListNodeOfListOfInteractive(OCC.TCollection.TCollection_MapNode):
 
         """
         _AIS.AIS_ListNodeOfListOfInteractive_swiginit(self,_AIS.new_AIS_ListNodeOfListOfInteractive(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_ListNodeOfListOfInteractive_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_ListNodeOfListOfInteractive self)"""
         return _AIS.AIS_ListNodeOfListOfInteractive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_ListNodeOfListOfInteractive" :
         """GetHandle(AIS_ListNodeOfListOfInteractive self) -> Handle_AIS_ListNodeOfListOfInteractive"""
         return _AIS.AIS_ListNodeOfListOfInteractive_GetHandle(self)
 
@@ -7519,7 +7519,7 @@ Handle_AIS_ListNodeOfListOfInteractive._kill_pointed = new_instancemethod(_AIS.H
 Handle_AIS_ListNodeOfListOfInteractive_swigregister = _AIS.Handle_AIS_ListNodeOfListOfInteractive_swigregister
 Handle_AIS_ListNodeOfListOfInteractive_swigregister(Handle_AIS_ListNodeOfListOfInteractive)
 
-def Handle_AIS_ListNodeOfListOfInteractive_DownCast(*args):
+def Handle_AIS_ListNodeOfListOfInteractive_DownCast(*args) -> "Handle_AIS_ListNodeOfListOfInteractive const" :
   return _AIS.Handle_AIS_ListNodeOfListOfInteractive_DownCast(*args)
 Handle_AIS_ListNodeOfListOfInteractive_DownCast = _AIS.Handle_AIS_ListNodeOfListOfInteractive_DownCast
 
@@ -7532,7 +7532,7 @@ class AIS_ListOfInteractive(object):
 
         """
         _AIS.AIS_ListOfInteractive_swiginit(self,_AIS.new_AIS_ListOfInteractive(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: AIS_ListOfInteractive &
@@ -7541,7 +7541,7 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: AIS_ListOfInteractive &
@@ -7550,28 +7550,28 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_ListOfInteractive_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_ListOfInteractive_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_ListOfInteractive_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_AIS_InteractiveObject &
@@ -7590,7 +7590,7 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_AIS_InteractiveObject &
@@ -7609,28 +7609,28 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_ListOfInteractive_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_ListOfInteractive_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_ListOfInteractive_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: AIS_ListIteratorOfListOfInteractive &
@@ -7639,7 +7639,7 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_AIS_InteractiveObject &
@@ -7656,7 +7656,7 @@ class AIS_ListOfInteractive(object):
         """
         return _AIS.AIS_ListOfInteractive_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: Handle_AIS_InteractiveObject &
@@ -7723,7 +7723,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
 
         """
         _AIS.AIS_LocalContext_swiginit(self,_AIS.new_AIS_LocalContext(*args))
-    def AcceptErase(self, *args):
+    def AcceptErase(self, *args) -> "Standard_Boolean" :
         """
         * authorize or not others contexts to erase temporary displayed objects here;
 
@@ -7736,7 +7736,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_AcceptErase(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         :param aCtx:
         :type aCtx: Handle_AIS_InteractiveContext &
@@ -7745,14 +7745,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetContext(self, *args)
 
-    def SelectionName(self, *args):
+    def SelectionName(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _AIS.AIS_LocalContext_SelectionName(self, *args)
 
-    def Terminate(self, *args):
+    def Terminate(self, *args) -> "void" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -7761,7 +7761,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Terminate(self, *args)
 
-    def HasSameProjector(self, *args):
+    def HasSameProjector(self, *args) -> "Standard_Boolean" :
         """
         * compares the current projector of the localContext with <aPrj> returns True if the projectors are identical. (no need to update projection of selection primitives when closing the local context)....
 
@@ -7772,7 +7772,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HasSameProjector(self, *args)
 
-    def Display(self, *args):
+    def Display(self, *args) -> "Standard_Boolean" :
         """
         * returns true if done...
 
@@ -7789,7 +7789,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Display(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "Standard_Boolean" :
         """
         * loads <anInteractive> with nodisplay... returns true if done
 
@@ -7804,7 +7804,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Load(self, *args)
 
-    def Erase(self, *args):
+    def Erase(self, *args) -> "Standard_Boolean" :
         """
         * returns true if done...
 
@@ -7815,7 +7815,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Erase(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aSelectable:
         :type aSelectable: Handle_AIS_InteractiveObject &
@@ -7824,7 +7824,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Remove(self, *args)
 
-    def ClearPrs(self, *args):
+    def ClearPrs(self, *args) -> "Standard_Boolean" :
         """
         :param anInteractive:
         :type anInteractive: Handle_AIS_InteractiveObject &
@@ -7835,7 +7835,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ClearPrs(self, *args)
 
-    def SetShapeDecomposition(self, *args):
+    def SetShapeDecomposition(self, *args) -> "void" :
         """
         * allows or forbids the shape decomposition into Activated Standard Mode for <aStoredObject> does nothing if the object doesn't inherits BasicShape from AIS
 
@@ -7848,7 +7848,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetShapeDecomposition(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * according to <atype> , clears the different parts of the selector (filters, modeof activation, objects...)
 
@@ -7859,7 +7859,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Clear(self, *args)
 
-    def ActivateMode(self, *args):
+    def ActivateMode(self, *args) -> "void" :
         """
         * optional : activation of a mode which is not 0 for a selectable...
 
@@ -7872,7 +7872,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ActivateMode(self, *args)
 
-    def DeactivateMode(self, *args):
+    def DeactivateMode(self, *args) -> "void" :
         """
         :param aSelectable:
         :type aSelectable: Handle_AIS_InteractiveObject &
@@ -7883,7 +7883,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_DeactivateMode(self, *args)
 
-    def Deactivate(self, *args):
+    def Deactivate(self, *args) -> "void" :
         """
         :param aSelectable:
         :type aSelectable: Handle_AIS_InteractiveObject &
@@ -7892,7 +7892,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Deactivate(self, *args)
 
-    def ActivateStandardMode(self, *args):
+    def ActivateStandardMode(self, *args) -> "void" :
         """
         * decomposition of shapes into <aType>
 
@@ -7903,7 +7903,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ActivateStandardMode(self, *args)
 
-    def DeactivateStandardMode(self, *args):
+    def DeactivateStandardMode(self, *args) -> "void" :
         """
         :param aType:
         :type aType: TopAbs_ShapeEnum
@@ -7912,14 +7912,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_DeactivateStandardMode(self, *args)
 
-    def StandardModes(self, *args):
+    def StandardModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :rtype: TColStd_ListOfInteger
 
         """
         return _AIS.AIS_LocalContext_StandardModes(self, *args)
 
-    def AddFilter(self, *args):
+    def AddFilter(self, *args) -> "void" :
         """
         :param aFilter:
         :type aFilter: Handle_SelectMgr_Filter &
@@ -7928,7 +7928,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_AddFilter(self, *args)
 
-    def RemoveFilter(self, *args):
+    def RemoveFilter(self, *args) -> "void" :
         """
         :param aFilter:
         :type aFilter: Handle_SelectMgr_Filter &
@@ -7937,21 +7937,21 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_RemoveFilter(self, *args)
 
-    def ListOfFilter(self, *args):
+    def ListOfFilter(self, *args) -> "SelectMgr_ListOfFilter const &" :
         """
         :rtype: SelectMgr_ListOfFilter
 
         """
         return _AIS.AIS_LocalContext_ListOfFilter(self, *args)
 
-    def Filter(self, *args):
+    def Filter(self, *args) -> "Handle_SelectMgr_OrFilter const &" :
         """
         :rtype: Handle_SelectMgr_OrFilter
 
         """
         return _AIS.AIS_LocalContext_Filter(self, *args)
 
-    def SetAutomaticHilight(self, *args):
+    def SetAutomaticHilight(self, *args) -> "void" :
         """
         * if <aStatus> = True , the shapes or subshapes detected by the selector will be automatically hilighted in the main viewer. Else the user has to manage the detected shape outside the Shape Selector....
 
@@ -7962,14 +7962,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetAutomaticHilight(self, *args)
 
-    def AutomaticHilight(self, *args):
+    def AutomaticHilight(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_AutomaticHilight(self, *args)
 
-    def MoveTo(self, *args):
+    def MoveTo(self, *args) -> "AIS_StatusOfDetection" :
         """
         :param Xpix:
         :type Xpix: int
@@ -7982,7 +7982,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_MoveTo(self, *args)
 
-    def HasNextDetected(self, *args):
+    def HasNextDetected(self, *args) -> "Standard_Boolean" :
         """
         * returns True if more than one entity was detected at the last Mouse position.
 
@@ -7991,7 +7991,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HasNextDetected(self, *args)
 
-    def HilightNextDetected(self, *args):
+    def HilightNextDetected(self, *args) -> "Standard_Integer" :
         """
         * returns True if last detected. the next detected will be first one (endless loop)
 
@@ -8002,7 +8002,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HilightNextDetected(self, *args)
 
-    def HilightPreviousDetected(self, *args):
+    def HilightPreviousDetected(self, *args) -> "Standard_Integer" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -8011,7 +8011,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HilightPreviousDetected(self, *args)
 
-    def UnhilightLastDetected(self, *args):
+    def UnhilightLastDetected(self, *args) -> "Standard_Boolean" :
         """
         * returns True if something was done...
 
@@ -8022,7 +8022,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_UnhilightLastDetected(self, *args)
 
-    def Select(self, *args):
+    def Select(self, *args) -> "AIS_StatusOfPick" :
         """
         * returns the number of selected
 
@@ -8055,7 +8055,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Select(self, *args)
 
-    def ShiftSelect(self, *args):
+    def ShiftSelect(self, *args) -> "AIS_StatusOfPick" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -8086,7 +8086,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ShiftSelect(self, *args)
 
-    def HilightPicked(self, *args):
+    def HilightPicked(self, *args) -> "void" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -8095,7 +8095,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HilightPicked(self, *args)
 
-    def UnhilightPicked(self, *args):
+    def UnhilightPicked(self, *args) -> "void" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -8104,7 +8104,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_UnhilightPicked(self, *args)
 
-    def UpdateSelected(self, *args):
+    def UpdateSelected(self, *args) -> "void" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -8121,7 +8121,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_UpdateSelected(self, *args)
 
-    def SetSelected(self, *args):
+    def SetSelected(self, *args) -> "void" :
         """
         * useful to update selection with objects coming from Collector or stack
 
@@ -8134,7 +8134,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetSelected(self, *args)
 
-    def AddOrRemoveSelected(self, *args):
+    def AddOrRemoveSelected(self, *args) -> "void" :
         """
         * useful to update selection with objects coming from Collector or stack
 
@@ -8159,7 +8159,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_AddOrRemoveSelected(self, *args)
 
-    def ClearSelected(self, *args):
+    def ClearSelected(self, *args) -> "void" :
         """
         :param updateviewer: default value is Standard_True
         :type updateviewer: bool
@@ -8168,98 +8168,98 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ClearSelected(self, *args)
 
-    def HasDetected(self, *args):
+    def HasDetected(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_HasDetected(self, *args)
 
-    def InitDetected(self, *args):
+    def InitDetected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_InitDetected(self, *args)
 
-    def MoreDetected(self, *args):
+    def MoreDetected(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_MoreDetected(self, *args)
 
-    def NextDetected(self, *args):
+    def NextDetected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_NextDetected(self, *args)
 
-    def DetectedCurrentShape(self, *args):
+    def DetectedCurrentShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_LocalContext_DetectedCurrentShape(self, *args)
 
-    def DetectedCurrentObject(self, *args):
+    def DetectedCurrentObject(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_LocalContext_DetectedCurrentObject(self, *args)
 
-    def HasDetectedShape(self, *args):
+    def HasDetectedShape(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_HasDetectedShape(self, *args)
 
-    def DetectedShape(self, *args):
+    def DetectedShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_LocalContext_DetectedShape(self, *args)
 
-    def DetectedInteractive(self, *args):
+    def DetectedInteractive(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_LocalContext_DetectedInteractive(self, *args)
 
-    def DetectedOwner(self, *args):
+    def DetectedOwner(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         :rtype: Handle_SelectMgr_EntityOwner
 
         """
         return _AIS.AIS_LocalContext_DetectedOwner(self, *args)
 
-    def InitSelected(self, *args):
+    def InitSelected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_InitSelected(self, *args)
 
-    def MoreSelected(self, *args):
+    def MoreSelected(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_MoreSelected(self, *args)
 
-    def NextSelected(self, *args):
+    def NextSelected(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_NextSelected(self, *args)
 
-    def HasShape(self, *args):
+    def HasShape(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the detected entity is a shape coming from a Decomposition of an element.
 
@@ -8268,21 +8268,21 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HasShape(self, *args)
 
-    def SelectedShape(self, *args):
+    def SelectedShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_LocalContext_SelectedShape(self, *args)
 
-    def SelectedOwner(self, *args):
+    def SelectedOwner(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         :rtype: Handle_SelectMgr_EntityOwner
 
         """
         return _AIS.AIS_LocalContext_SelectedOwner(self, *args)
 
-    def IsSelected(self, *args):
+    def IsSelected(self, *args) -> "Standard_Boolean" :
         """
         :param aniobj:
         :type aniobj: Handle_AIS_InteractiveObject &
@@ -8295,14 +8295,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_IsSelected(self, *args)
 
-    def SelectedInteractive(self, *args):
+    def SelectedInteractive(self, *args) -> "Handle_AIS_InteractiveObject" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_LocalContext_SelectedInteractive(self, *args)
 
-    def HasApplicative(self, *args):
+    def HasApplicative(self, *args) -> "Standard_Boolean" :
         """
         * returns True if an interactive element was associated with the current picked entity.
 
@@ -8311,14 +8311,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_HasApplicative(self, *args)
 
-    def SelectedApplicative(self, *args):
+    def SelectedApplicative(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _AIS.AIS_LocalContext_SelectedApplicative(self, *args)
 
-    def SetDisplayPriority(self, *args):
+    def SetDisplayPriority(self, *args) -> "void" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8329,7 +8329,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetDisplayPriority(self, *args)
 
-    def SetZLayer(self, *args):
+    def SetZLayer(self, *args) -> "void" :
         """
         * Set Z layer id for interactive object. The layer can be specified for displayed object only. The Z layers can be used to display temporarily presentations of some object in front of the other objects in the scene. The ids for Z layers are generated by V3d_Viewer. Note that Z layers differ from under-/overlayer in V3d_View: under-/overlayer are intended for specific 2D drawings that appear behind/in front of all 3D presentations, while SetZLayer() method applies to regular 3D presentations and does not imply any specific drawing methods.
 
@@ -8342,7 +8342,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetZLayer(self, *args)
 
-    def GetZLayer(self, *args):
+    def GetZLayer(self, *args) -> "Standard_Integer" :
         """
         * Get Z layer id set for displayed interactive object. If the object doesn't exists in context or has no computed presentations, the method returns -1.
 
@@ -8353,7 +8353,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_GetZLayer(self, *args)
 
-    def DisplayedObjects(self, *args):
+    def DisplayedObjects(self, *args) -> "Standard_Integer" :
         """
         :param theMapToFill:
         :type theMapToFill: TColStd_MapOfTransient &
@@ -8362,7 +8362,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_DisplayedObjects(self, *args)
 
-    def IsIn(self, *args):
+    def IsIn(self, *args) -> "Standard_Boolean" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8371,7 +8371,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_IsIn(self, *args)
 
-    def IsDisplayed(self, *args):
+    def IsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8386,7 +8386,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_IsDisplayed(self, *args)
 
-    def SelectionModes(self, *args):
+    def SelectionModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8395,7 +8395,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SelectionModes(self, *args)
 
-    def SubIntensityOn(self, *args):
+    def SubIntensityOn(self, *args) -> "void" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8404,7 +8404,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SubIntensityOn(self, *args)
 
-    def SubIntensityOff(self, *args):
+    def SubIntensityOff(self, *args) -> "void" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8413,7 +8413,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SubIntensityOff(self, *args)
 
-    def Hilight(self, *args):
+    def Hilight(self, *args) -> "void" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8428,7 +8428,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Hilight(self, *args)
 
-    def Unhilight(self, *args):
+    def Unhilight(self, *args) -> "void" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8437,7 +8437,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Unhilight(self, *args)
 
-    def IsHilighted(self, *args):
+    def IsHilighted(self, *args) -> "Standard_Boolean" :
         """
         :param anObject:
         :type anObject: Handle_AIS_InteractiveObject &
@@ -8454,7 +8454,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_IsHilighted(self, *args)
 
-    def SetSensitivityMode(self, *args):
+    def SetSensitivityMode(self, *args) -> "void" :
         """
         * Sets the selection sensitivity mode. SM_WINDOW mode uses the specified pixel tolerance to compute the sensitivity value, SM_VIEW mode allows to define the sensitivity manually.
 
@@ -8465,7 +8465,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetSensitivityMode(self, *args)
 
-    def SensitivityMode(self, *args):
+    def SensitivityMode(self, *args) -> "StdSelect_SensitivityMode" :
         """
         * Returns the selection sensitivity mode.
 
@@ -8474,7 +8474,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SensitivityMode(self, *args)
 
-    def SetSensitivity(self, *args):
+    def SetSensitivity(self, *args) -> "void" :
         """
         * Define the current selection sensitivity for this local context according to the view size.
 
@@ -8485,7 +8485,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetSensitivity(self, *args)
 
-    def Sensitivity(self, *args):
+    def Sensitivity(self, *args) -> "Standard_Real" :
         """
         * Returns the selection sensitivity value.
 
@@ -8494,7 +8494,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_Sensitivity(self, *args)
 
-    def SetPixelTolerance(self, *args):
+    def SetPixelTolerance(self, *args) -> "void" :
         """
         * Define the current selection sensitivity for this local context according to the view size.
 
@@ -8505,7 +8505,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_SetPixelTolerance(self, *args)
 
-    def PixelTolerance(self, *args):
+    def PixelTolerance(self, *args) -> "Standard_Integer" :
         """
         * Returns the pixel tolerance.
 
@@ -8514,7 +8514,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_PixelTolerance(self, *args)
 
-    def BeginImmediateDraw(self, *args):
+    def BeginImmediateDraw(self, *args) -> "Standard_Boolean" :
         """
         * initializes the list of presentations to be displayed returns False if No Local COnte
 
@@ -8523,7 +8523,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_BeginImmediateDraw(self, *args)
 
-    def ImmediateAdd(self, *args):
+    def ImmediateAdd(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <anIObj> has been stored in the list.
 
@@ -8536,7 +8536,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ImmediateAdd(self, *args)
 
-    def ImmediateRemove(self, *args):
+    def ImmediateRemove(self, *args) -> "Standard_Boolean" :
         """
         * returns True if <anIObj> has been removed from the list.
 
@@ -8549,7 +8549,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ImmediateRemove(self, *args)
 
-    def EndImmediateDraw(self, *args):
+    def EndImmediateDraw(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the immediate display has been done.
 
@@ -8562,42 +8562,42 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_EndImmediateDraw(self, *args)
 
-    def IsImmediateModeOn(self, *args):
+    def IsImmediateModeOn(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalContext_IsImmediateModeOn(self, *args)
 
-    def UpdateConversion(self, *args):
+    def UpdateConversion(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_UpdateConversion(self, *args)
 
-    def UpdateSort(self, *args):
+    def UpdateSort(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_UpdateSort(self, *args)
 
-    def LoadContextObjects(self, *args):
+    def LoadContextObjects(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_LoadContextObjects(self, *args)
 
-    def UnloadContextObjects(self, *args):
+    def UnloadContextObjects(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalContext_UnloadContextObjects(self, *args)
 
-    def DisplayAreas(self, *args):
+    def DisplayAreas(self, *args) -> "void" :
         """
         :param aviou:
         :type aviou: Handle_V3d_View &
@@ -8606,7 +8606,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_DisplayAreas(self, *args)
 
-    def ClearAreas(self, *args):
+    def ClearAreas(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -8615,7 +8615,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ClearAreas(self, *args)
 
-    def DisplaySensitive(self, *args):
+    def DisplaySensitive(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -8624,7 +8624,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_DisplaySensitive(self, *args)
 
-    def ClearSensitive(self, *args):
+    def ClearSensitive(self, *args) -> "void" :
         """
         :param aView:
         :type aView: Handle_V3d_View &
@@ -8633,14 +8633,14 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_ClearSensitive(self, *args)
 
-    def MainSelector(self, *args):
+    def MainSelector(self, *args) -> "Handle_StdSelect_ViewerSelector3d const &" :
         """
         :rtype: Handle_StdSelect_ViewerSelector3d
 
         """
         return _AIS.AIS_LocalContext_MainSelector(self, *args)
 
-    def FindSelectedOwnerFromIO(self, *args):
+    def FindSelectedOwnerFromIO(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         :param anIObj:
         :type anIObj: Handle_AIS_InteractiveObject &
@@ -8649,7 +8649,7 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_FindSelectedOwnerFromIO(self, *args)
 
-    def FindSelectedOwnerFromShape(self, *args):
+    def FindSelectedOwnerFromShape(self, *args) -> "Handle_SelectMgr_EntityOwner" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -8658,11 +8658,11 @@ class AIS_LocalContext(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalContext_FindSelectedOwnerFromShape(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_LocalContext self)"""
         return _AIS.AIS_LocalContext__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_LocalContext" :
         """GetHandle(AIS_LocalContext self) -> Handle_AIS_LocalContext"""
         return _AIS.AIS_LocalContext_GetHandle(self)
 
@@ -8791,7 +8791,7 @@ Handle_AIS_LocalContext._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Local
 Handle_AIS_LocalContext_swigregister = _AIS.Handle_AIS_LocalContext_swigregister
 Handle_AIS_LocalContext_swigregister(Handle_AIS_LocalContext)
 
-def Handle_AIS_LocalContext_DownCast(*args):
+def Handle_AIS_LocalContext_DownCast(*args) -> "Handle_AIS_LocalContext const" :
   return _AIS.Handle_AIS_LocalContext_DownCast(*args)
 Handle_AIS_LocalContext_DownCast = _AIS.Handle_AIS_LocalContext_DownCast
 
@@ -8818,35 +8818,35 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
 
         """
         _AIS.AIS_LocalStatus_swiginit(self,_AIS.new_AIS_LocalStatus(*args))
-    def Decomposed(self, *args):
+    def Decomposed(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalStatus_Decomposed(self, *args)
 
-    def IsTemporary(self, *args):
+    def IsTemporary(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalStatus_IsTemporary(self, *args)
 
-    def DisplayMode(self, *args):
+    def DisplayMode(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_LocalStatus_DisplayMode(self, *args)
 
-    def SelectionModes(self, *args):
+    def SelectionModes(self, *args) -> "TColStd_ListOfInteger const &" :
         """
         :rtype: TColStd_ListOfInteger
 
         """
         return _AIS.AIS_LocalStatus_SelectionModes(self, *args)
 
-    def IsActivated(self, *args):
+    def IsActivated(self, *args) -> "Standard_Boolean" :
         """
         :param aSelMode:
         :type aSelMode: int
@@ -8855,28 +8855,28 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_IsActivated(self, *args)
 
-    def HilightMode(self, *args):
+    def HilightMode(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_LocalStatus_HilightMode(self, *args)
 
-    def IsSubIntensityOn(self, *args):
+    def IsSubIntensityOn(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalStatus_IsSubIntensityOn(self, *args)
 
-    def HilightColor(self, *args):
+    def HilightColor(self, *args) -> "Quantity_NameOfColor" :
         """
         :rtype: Quantity_NameOfColor
 
         """
         return _AIS.AIS_LocalStatus_HilightColor(self, *args)
 
-    def SetDecomposition(self, *args):
+    def SetDecomposition(self, *args) -> "void" :
         """
         :param astatus:
         :type astatus: bool
@@ -8885,7 +8885,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetDecomposition(self, *args)
 
-    def SetTemporary(self, *args):
+    def SetTemporary(self, *args) -> "void" :
         """
         :param astatus:
         :type astatus: bool
@@ -8894,7 +8894,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetTemporary(self, *args)
 
-    def SetDisplayMode(self, *args):
+    def SetDisplayMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -8903,7 +8903,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetDisplayMode(self, *args)
 
-    def SetFirstDisplay(self, *args):
+    def SetFirstDisplay(self, *args) -> "void" :
         """
         :param aStatus:
         :type aStatus: bool
@@ -8912,14 +8912,14 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetFirstDisplay(self, *args)
 
-    def IsFirstDisplay(self, *args):
+    def IsFirstDisplay(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_LocalStatus_IsFirstDisplay(self, *args)
 
-    def AddSelectionMode(self, *args):
+    def AddSelectionMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -8928,7 +8928,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_AddSelectionMode(self, *args)
 
-    def RemoveSelectionMode(self, *args):
+    def RemoveSelectionMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -8937,14 +8937,14 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_RemoveSelectionMode(self, *args)
 
-    def ClearSelectionModes(self, *args):
+    def ClearSelectionModes(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalStatus_ClearSelectionModes(self, *args)
 
-    def IsSelModeIn(self, *args):
+    def IsSelModeIn(self, *args) -> "Standard_Boolean" :
         """
         :param aMode:
         :type aMode: int
@@ -8953,7 +8953,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_IsSelModeIn(self, *args)
 
-    def SetHilightMode(self, *args):
+    def SetHilightMode(self, *args) -> "void" :
         """
         :param aMode:
         :type aMode: int
@@ -8962,7 +8962,7 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetHilightMode(self, *args)
 
-    def SetHilightColor(self, *args):
+    def SetHilightColor(self, *args) -> "void" :
         """
         :param aHiCol:
         :type aHiCol: Quantity_NameOfColor
@@ -8971,21 +8971,21 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetHilightColor(self, *args)
 
-    def SubIntensityOn(self, *args):
+    def SubIntensityOn(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalStatus_SubIntensityOn(self, *args)
 
-    def SubIntensityOff(self, *args):
+    def SubIntensityOff(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_LocalStatus_SubIntensityOff(self, *args)
 
-    def SetPreviousState(self, *args):
+    def SetPreviousState(self, *args) -> "void" :
         """
         :param aStatus:
         :type aStatus: Handle_Standard_Transient &
@@ -8994,18 +8994,18 @@ class AIS_LocalStatus(OCC.MMgt.MMgt_TShared):
         """
         return _AIS.AIS_LocalStatus_SetPreviousState(self, *args)
 
-    def PreviousState(self, *args):
+    def PreviousState(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _AIS.AIS_LocalStatus_PreviousState(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_LocalStatus self)"""
         return _AIS.AIS_LocalStatus__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_LocalStatus" :
         """GetHandle(AIS_LocalStatus self) -> Handle_AIS_LocalStatus"""
         return _AIS.AIS_LocalStatus_GetHandle(self)
 
@@ -9066,7 +9066,7 @@ Handle_AIS_LocalStatus._kill_pointed = new_instancemethod(_AIS.Handle_AIS_LocalS
 Handle_AIS_LocalStatus_swigregister = _AIS.Handle_AIS_LocalStatus_swigregister
 Handle_AIS_LocalStatus_swigregister(Handle_AIS_LocalStatus)
 
-def Handle_AIS_LocalStatus_DownCast(*args):
+def Handle_AIS_LocalStatus_DownCast(*args) -> "Handle_AIS_LocalStatus const" :
   return _AIS.Handle_AIS_LocalStatus_DownCast(*args)
 Handle_AIS_LocalStatus_DownCast = _AIS.Handle_AIS_LocalStatus_DownCast
 
@@ -9083,7 +9083,7 @@ class AIS_MapIteratorOfMapOfInteractive(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _AIS.AIS_MapIteratorOfMapOfInteractive_swiginit(self,_AIS.new_AIS_MapIteratorOfMapOfInteractive(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: AIS_MapOfInteractive &
@@ -9092,7 +9092,7 @@ class AIS_MapIteratorOfMapOfInteractive(OCC.TCollection.TCollection_BasicMapIter
         """
         return _AIS.AIS_MapIteratorOfMapOfInteractive_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
@@ -9124,7 +9124,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
 
         """
         _AIS.AIS_MapOfInteractive_swiginit(self,_AIS.new_AIS_MapOfInteractive(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_MapOfInteractive &" :
         """
         :param Other:
         :type Other: AIS_MapOfInteractive &
@@ -9133,7 +9133,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_MapOfInteractive &" :
         """
         :param Other:
         :type Other: AIS_MapOfInteractive &
@@ -9142,7 +9142,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -9151,14 +9151,14 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_MapOfInteractive_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_AIS_InteractiveObject &
@@ -9167,7 +9167,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_Add(self, *args)
 
-    def Contains(self, *args):
+    def Contains(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_AIS_InteractiveObject &
@@ -9176,7 +9176,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_Contains(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         :param aKey:
         :type aKey: Handle_AIS_InteractiveObject &
@@ -9185,7 +9185,7 @@ class AIS_MapOfInteractive(OCC.TCollection.TCollection_BasicMap):
         """
         return _AIS.AIS_MapOfInteractive_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_MapOfInteractive self)"""
         return _AIS.AIS_MapOfInteractive__kill_pointed(self)
 
@@ -9221,7 +9221,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
 
         """
         _AIS.AIS_Selection_swiginit(self,_AIS.new_AIS_Selection(*args))
-    def Remove(*args):
+    def Remove(*args) -> "void" :
         """
         :param aName:
         :type aName: char *
@@ -9231,7 +9231,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Remove(*args)
 
     Remove = staticmethod(Remove)
-    def Find(*args):
+    def Find(*args) -> "Standard_Boolean" :
         """
         * returns True if a selection having this name exsits.
 
@@ -9243,7 +9243,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Find(*args)
 
     Find = staticmethod(Find)
-    def CreateSelection(*args):
+    def CreateSelection(*args) -> "Standard_Boolean" :
         """
         * calls the private constructor and puts the new Selection in the list of existing selections. returns False if the selection exists.
 
@@ -9255,7 +9255,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_CreateSelection(*args)
 
     CreateSelection = staticmethod(CreateSelection)
-    def Selection(*args):
+    def Selection(*args) -> "Handle_AIS_Selection" :
         """
         :param aName:
         :type aName: char *
@@ -9265,7 +9265,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Selection(*args)
 
     Selection = staticmethod(Selection)
-    def SetCurrentSelection(*args):
+    def SetCurrentSelection(*args) -> "Standard_Boolean" :
         """
         * returns False if There is no selection of name <aName>
 
@@ -9277,7 +9277,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_SetCurrentSelection(*args)
 
     SetCurrentSelection = staticmethod(SetCurrentSelection)
-    def CurrentSelection(*args):
+    def CurrentSelection(*args) -> "Handle_AIS_Selection" :
         """
         :rtype: Handle_AIS_Selection
 
@@ -9285,7 +9285,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_CurrentSelection(*args)
 
     CurrentSelection = staticmethod(CurrentSelection)
-    def ClearCurrentSelection(*args):
+    def ClearCurrentSelection(*args) -> "void" :
         """
         * Clears selection.
 
@@ -9295,7 +9295,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_ClearCurrentSelection(*args)
 
     ClearCurrentSelection = staticmethod(ClearCurrentSelection)
-    def Select(*args):
+    def Select(*args) -> "AIS_SelectStatus" :
         """
         * removes all the object of the currentselection.
 
@@ -9311,7 +9311,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Select(*args)
 
     Select = staticmethod(Select)
-    def AddSelect(*args):
+    def AddSelect(*args) -> "AIS_SelectStatus" :
         """
         * the object is always add int the selection. faster when the number of objects selected is great.
 
@@ -9323,7 +9323,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_AddSelect(*args)
 
     AddSelect = staticmethod(AddSelect)
-    def ClearAndSelect(*args):
+    def ClearAndSelect(*args) -> "void" :
         """
         * clears the selection and adds the object in the selection.
 
@@ -9335,7 +9335,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_ClearAndSelect(*args)
 
     ClearAndSelect = staticmethod(ClearAndSelect)
-    def IsSelected(*args):
+    def IsSelected(*args) -> "Standard_Boolean" :
         """
         :param anObject:
         :type anObject: Handle_Standard_Transient &
@@ -9345,7 +9345,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_IsSelected(*args)
 
     IsSelected = staticmethod(IsSelected)
-    def Extent(*args):
+    def Extent(*args) -> "Standard_Integer" :
         """
         * returns the number of objects selected.
 
@@ -9355,7 +9355,7 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Extent(*args)
 
     Extent = staticmethod(Extent)
-    def Single(*args):
+    def Single(*args) -> "Handle_Standard_Transient" :
         """
         * returns the single object selected. Warning: raises TypeMismatch from Standard if Extent is not equal to 1.
 
@@ -9365,49 +9365,49 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Single(*args)
 
     Single = staticmethod(Single)
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_Selection_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Selection_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_Selection_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _AIS.AIS_Selection_Value(self, *args)
 
-    def NbStored(self, *args):
+    def NbStored(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AIS.AIS_Selection_NbStored(self, *args)
 
-    def Objects(self, *args):
+    def Objects(self, *args) -> "AIS_NListTransient const &" :
         """
         :rtype: AIS_NListTransient
 
         """
         return _AIS.AIS_Selection_Objects(self, *args)
 
-    def Index(*args):
+    def Index(*args) -> "Standard_Integer" :
         """
         :param aName:
         :type aName: char *
@@ -9417,11 +9417,11 @@ class AIS_Selection(OCC.MMgt.MMgt_TShared):
         return _AIS.AIS_Selection_Index(*args)
 
     Index = staticmethod(Index)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_Selection self)"""
         return _AIS.AIS_Selection__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_Selection" :
         """GetHandle(AIS_Selection self) -> Handle_AIS_Selection"""
         return _AIS.AIS_Selection_GetHandle(self)
 
@@ -9444,7 +9444,7 @@ AIS_Selection.GetHandle = new_instancemethod(_AIS.AIS_Selection_GetHandle,None,A
 AIS_Selection_swigregister = _AIS.AIS_Selection_swigregister
 AIS_Selection_swigregister(AIS_Selection)
 
-def AIS_Selection_Remove(*args):
+def AIS_Selection_Remove(*args) -> "void" :
   """
     :param aName:
     :type aName: char *
@@ -9453,7 +9453,7 @@ def AIS_Selection_Remove(*args):
     """
   return _AIS.AIS_Selection_Remove(*args)
 
-def AIS_Selection_Find(*args):
+def AIS_Selection_Find(*args) -> "Standard_Boolean" :
   """
     * returns True if a selection having this name exsits.
 
@@ -9464,7 +9464,7 @@ def AIS_Selection_Find(*args):
     """
   return _AIS.AIS_Selection_Find(*args)
 
-def AIS_Selection_CreateSelection(*args):
+def AIS_Selection_CreateSelection(*args) -> "Standard_Boolean" :
   """
     * calls the private constructor and puts the new Selection in the list of existing selections. returns False if the selection exists.
 
@@ -9475,7 +9475,7 @@ def AIS_Selection_CreateSelection(*args):
     """
   return _AIS.AIS_Selection_CreateSelection(*args)
 
-def AIS_Selection_Selection(*args):
+def AIS_Selection_Selection(*args) -> "Handle_AIS_Selection" :
   """
     :param aName:
     :type aName: char *
@@ -9484,7 +9484,7 @@ def AIS_Selection_Selection(*args):
     """
   return _AIS.AIS_Selection_Selection(*args)
 
-def AIS_Selection_SetCurrentSelection(*args):
+def AIS_Selection_SetCurrentSelection(*args) -> "Standard_Boolean" :
   """
     * returns False if There is no selection of name <aName>
 
@@ -9495,14 +9495,14 @@ def AIS_Selection_SetCurrentSelection(*args):
     """
   return _AIS.AIS_Selection_SetCurrentSelection(*args)
 
-def AIS_Selection_CurrentSelection(*args):
+def AIS_Selection_CurrentSelection(*args) -> "Handle_AIS_Selection" :
   """
     :rtype: Handle_AIS_Selection
 
     """
   return _AIS.AIS_Selection_CurrentSelection(*args)
 
-def AIS_Selection_ClearCurrentSelection(*args):
+def AIS_Selection_ClearCurrentSelection(*args) -> "void" :
   """
     * Clears selection.
 
@@ -9511,7 +9511,7 @@ def AIS_Selection_ClearCurrentSelection(*args):
     """
   return _AIS.AIS_Selection_ClearCurrentSelection(*args)
 
-def AIS_Selection_Select(*args):
+def AIS_Selection_Select(*args) -> "AIS_SelectStatus" :
   """
     * removes all the object of the currentselection.
 
@@ -9526,7 +9526,7 @@ def AIS_Selection_Select(*args):
     """
   return _AIS.AIS_Selection_Select(*args)
 
-def AIS_Selection_AddSelect(*args):
+def AIS_Selection_AddSelect(*args) -> "AIS_SelectStatus" :
   """
     * the object is always add int the selection. faster when the number of objects selected is great.
 
@@ -9537,7 +9537,7 @@ def AIS_Selection_AddSelect(*args):
     """
   return _AIS.AIS_Selection_AddSelect(*args)
 
-def AIS_Selection_ClearAndSelect(*args):
+def AIS_Selection_ClearAndSelect(*args) -> "void" :
   """
     * clears the selection and adds the object in the selection.
 
@@ -9548,7 +9548,7 @@ def AIS_Selection_ClearAndSelect(*args):
     """
   return _AIS.AIS_Selection_ClearAndSelect(*args)
 
-def AIS_Selection_IsSelected(*args):
+def AIS_Selection_IsSelected(*args) -> "Standard_Boolean" :
   """
     :param anObject:
     :type anObject: Handle_Standard_Transient &
@@ -9557,7 +9557,7 @@ def AIS_Selection_IsSelected(*args):
     """
   return _AIS.AIS_Selection_IsSelected(*args)
 
-def AIS_Selection_Extent(*args):
+def AIS_Selection_Extent(*args) -> "Standard_Integer" :
   """
     * returns the number of objects selected.
 
@@ -9566,7 +9566,7 @@ def AIS_Selection_Extent(*args):
     """
   return _AIS.AIS_Selection_Extent(*args)
 
-def AIS_Selection_Single(*args):
+def AIS_Selection_Single(*args) -> "Handle_Standard_Transient" :
   """
     * returns the single object selected. Warning: raises TypeMismatch from Standard if Extent is not equal to 1.
 
@@ -9575,7 +9575,7 @@ def AIS_Selection_Single(*args):
     """
   return _AIS.AIS_Selection_Single(*args)
 
-def AIS_Selection_Index(*args):
+def AIS_Selection_Index(*args) -> "Standard_Integer" :
   """
     :param aName:
     :type aName: char *
@@ -9605,7 +9605,7 @@ Handle_AIS_Selection._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Selectio
 Handle_AIS_Selection_swigregister = _AIS.Handle_AIS_Selection_swigregister
 Handle_AIS_Selection_swigregister(Handle_AIS_Selection)
 
-def Handle_AIS_Selection_DownCast(*args):
+def Handle_AIS_Selection_DownCast(*args) -> "Handle_AIS_Selection const" :
   return _AIS.Handle_AIS_Selection_DownCast(*args)
 Handle_AIS_Selection_DownCast = _AIS.Handle_AIS_Selection_DownCast
 
@@ -9624,18 +9624,18 @@ class AIS_SequenceNodeOfSequenceOfDimension(OCC.TCollection.TCollection_SeqNode)
 
         """
         _AIS.AIS_SequenceNodeOfSequenceOfDimension_swiginit(self,_AIS.new_AIS_SequenceNodeOfSequenceOfDimension(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_Relation &" :
         """
         :rtype: Handle_AIS_Relation
 
         """
         return _AIS.AIS_SequenceNodeOfSequenceOfDimension_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_SequenceNodeOfSequenceOfDimension self)"""
         return _AIS.AIS_SequenceNodeOfSequenceOfDimension__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_SequenceNodeOfSequenceOfDimension" :
         """GetHandle(AIS_SequenceNodeOfSequenceOfDimension self) -> Handle_AIS_SequenceNodeOfSequenceOfDimension"""
         return _AIS.AIS_SequenceNodeOfSequenceOfDimension_GetHandle(self)
 
@@ -9674,7 +9674,7 @@ Handle_AIS_SequenceNodeOfSequenceOfDimension._kill_pointed = new_instancemethod(
 Handle_AIS_SequenceNodeOfSequenceOfDimension_swigregister = _AIS.Handle_AIS_SequenceNodeOfSequenceOfDimension_swigregister
 Handle_AIS_SequenceNodeOfSequenceOfDimension_swigregister(Handle_AIS_SequenceNodeOfSequenceOfDimension)
 
-def Handle_AIS_SequenceNodeOfSequenceOfDimension_DownCast(*args):
+def Handle_AIS_SequenceNodeOfSequenceOfDimension_DownCast(*args) -> "Handle_AIS_SequenceNodeOfSequenceOfDimension const" :
   return _AIS.Handle_AIS_SequenceNodeOfSequenceOfDimension_DownCast(*args)
 Handle_AIS_SequenceNodeOfSequenceOfDimension_DownCast = _AIS.Handle_AIS_SequenceNodeOfSequenceOfDimension_DownCast
 
@@ -9693,18 +9693,18 @@ class AIS_SequenceNodeOfSequenceOfInteractive(OCC.TCollection.TCollection_SeqNod
 
         """
         _AIS.AIS_SequenceNodeOfSequenceOfInteractive_swiginit(self,_AIS.new_AIS_SequenceNodeOfSequenceOfInteractive(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_SequenceNodeOfSequenceOfInteractive_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_SequenceNodeOfSequenceOfInteractive self)"""
         return _AIS.AIS_SequenceNodeOfSequenceOfInteractive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_SequenceNodeOfSequenceOfInteractive" :
         """GetHandle(AIS_SequenceNodeOfSequenceOfInteractive self) -> Handle_AIS_SequenceNodeOfSequenceOfInteractive"""
         return _AIS.AIS_SequenceNodeOfSequenceOfInteractive_GetHandle(self)
 
@@ -9743,7 +9743,7 @@ Handle_AIS_SequenceNodeOfSequenceOfInteractive._kill_pointed = new_instancemetho
 Handle_AIS_SequenceNodeOfSequenceOfInteractive_swigregister = _AIS.Handle_AIS_SequenceNodeOfSequenceOfInteractive_swigregister
 Handle_AIS_SequenceNodeOfSequenceOfInteractive_swigregister(Handle_AIS_SequenceNodeOfSequenceOfInteractive)
 
-def Handle_AIS_SequenceNodeOfSequenceOfInteractive_DownCast(*args):
+def Handle_AIS_SequenceNodeOfSequenceOfInteractive_DownCast(*args) -> "Handle_AIS_SequenceNodeOfSequenceOfInteractive const" :
   return _AIS.Handle_AIS_SequenceNodeOfSequenceOfInteractive_DownCast(*args)
 Handle_AIS_SequenceNodeOfSequenceOfInteractive_DownCast = _AIS.Handle_AIS_SequenceNodeOfSequenceOfInteractive_DownCast
 
@@ -9756,14 +9756,14 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AIS.AIS_SequenceOfDimension_swiginit(self,_AIS.new_AIS_SequenceOfDimension(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_SequenceOfDimension_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_SequenceOfDimension const &" :
         """
         :param Other:
         :type Other: AIS_SequenceOfDimension &
@@ -9772,7 +9772,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_SequenceOfDimension const &" :
         """
         :param Other:
         :type Other: AIS_SequenceOfDimension &
@@ -9781,7 +9781,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_AIS_Relation &
@@ -9794,7 +9794,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_AIS_Relation &
@@ -9807,7 +9807,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -9824,7 +9824,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -9841,21 +9841,21 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_AIS_Relation const &" :
         """
         :rtype: Handle_AIS_Relation
 
         """
         return _AIS.AIS_SequenceOfDimension_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_AIS_Relation const &" :
         """
         :rtype: Handle_AIS_Relation
 
         """
         return _AIS.AIS_SequenceOfDimension_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -9866,7 +9866,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_Relation const &" :
         """
         :param Index:
         :type Index: int
@@ -9875,7 +9875,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -9886,7 +9886,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_AIS_Relation &" :
         """
         :param Index:
         :type Index: int
@@ -9895,7 +9895,7 @@ class AIS_SequenceOfDimension(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfDimension_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -9945,14 +9945,14 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _AIS.AIS_SequenceOfInteractive_swiginit(self,_AIS.new_AIS_SequenceOfInteractive(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_SequenceOfInteractive_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "AIS_SequenceOfInteractive const &" :
         """
         :param Other:
         :type Other: AIS_SequenceOfInteractive &
@@ -9961,7 +9961,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "AIS_SequenceOfInteractive const &" :
         """
         :param Other:
         :type Other: AIS_SequenceOfInteractive &
@@ -9970,7 +9970,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_AIS_InteractiveObject &
@@ -9983,7 +9983,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_AIS_InteractiveObject &
@@ -9996,7 +9996,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -10013,7 +10013,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -10030,21 +10030,21 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_SequenceOfInteractive_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_SequenceOfInteractive_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -10055,7 +10055,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         :param Index:
         :type Index: int
@@ -10064,7 +10064,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -10075,7 +10075,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :param Index:
         :type Index: int
@@ -10084,7 +10084,7 @@ class AIS_SequenceOfInteractive(OCC.TCollection.TCollection_BaseSequence):
         """
         return _AIS.AIS_SequenceOfInteractive_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -10138,18 +10138,18 @@ class AIS_StdMapNodeOfMapOfInteractive(OCC.TCollection.TCollection_MapNode):
 
         """
         _AIS.AIS_StdMapNodeOfMapOfInteractive_swiginit(self,_AIS.new_AIS_StdMapNodeOfMapOfInteractive(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_AIS_InteractiveObject &" :
         """
         :rtype: Handle_AIS_InteractiveObject
 
         """
         return _AIS.AIS_StdMapNodeOfMapOfInteractive_Key(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(AIS_StdMapNodeOfMapOfInteractive self)"""
         return _AIS.AIS_StdMapNodeOfMapOfInteractive__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_AIS_StdMapNodeOfMapOfInteractive" :
         """GetHandle(AIS_StdMapNodeOfMapOfInteractive self) -> Handle_AIS_StdMapNodeOfMapOfInteractive"""
         return _AIS.AIS_StdMapNodeOfMapOfInteractive_GetHandle(self)
 
@@ -10188,7 +10188,7 @@ Handle_AIS_StdMapNodeOfMapOfInteractive._kill_pointed = new_instancemethod(_AIS.
 Handle_AIS_StdMapNodeOfMapOfInteractive_swigregister = _AIS.Handle_AIS_StdMapNodeOfMapOfInteractive_swigregister
 Handle_AIS_StdMapNodeOfMapOfInteractive_swigregister(Handle_AIS_StdMapNodeOfMapOfInteractive)
 
-def Handle_AIS_StdMapNodeOfMapOfInteractive_DownCast(*args):
+def Handle_AIS_StdMapNodeOfMapOfInteractive_DownCast(*args) -> "Handle_AIS_StdMapNodeOfMapOfInteractive const" :
   return _AIS.Handle_AIS_StdMapNodeOfMapOfInteractive_DownCast(*args)
 Handle_AIS_StdMapNodeOfMapOfInteractive_DownCast = _AIS.Handle_AIS_StdMapNodeOfMapOfInteractive_DownCast
 
@@ -10205,7 +10205,7 @@ class AIS_TypeFilter(object):
 
         """
         _AIS.AIS_TypeFilter_swiginit(self,_AIS.new_AIS_TypeFilter(*args))
-    def IsOk(self, *args):
+    def IsOk(self, *args) -> "Standard_Boolean" :
         """
         * Returns False if the transient is not an Interactive Object, or if the type of the Interactive Object is not the same as that stored in the filter.
 
@@ -10251,7 +10251,7 @@ Handle_AIS_TypeFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS_TypeFil
 Handle_AIS_TypeFilter_swigregister = _AIS.Handle_AIS_TypeFilter_swigregister
 Handle_AIS_TypeFilter_swigregister(Handle_AIS_TypeFilter)
 
-def Handle_AIS_TypeFilter_DownCast(*args):
+def Handle_AIS_TypeFilter_DownCast(*args) -> "Handle_AIS_TypeFilter const" :
   return _AIS.Handle_AIS_TypeFilter_DownCast(*args)
 Handle_AIS_TypeFilter_DownCast = _AIS.Handle_AIS_TypeFilter_DownCast
 
@@ -10282,7 +10282,7 @@ class AIS_Axis(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Axis_swiginit(self,_AIS.new_AIS_Axis(*args))
-    def Component(self, *args):
+    def Component(self, *args) -> "Handle_Geom_Line const &" :
         """
         * Returns the axis entity aComponent and identifies it as a component of a shape.
 
@@ -10291,7 +10291,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_Component(self, *args)
 
-    def SetComponent(self, *args):
+    def SetComponent(self, *args) -> "void" :
         """
         * Sets the coordinates of the lin aComponent.
 
@@ -10302,7 +10302,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_SetComponent(self, *args)
 
-    def Axis2Placement(self, *args):
+    def Axis2Placement(self, *args) -> "Handle_Geom_Axis2Placement const &" :
         """
         * Returns the position of axis2 and positions it by identifying it as the x, y, or z axis and giving its direction in 3D space. The coordinate system used is right-handed.
 
@@ -10311,7 +10311,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_Axis2Placement(self, *args)
 
-    def SetAxis2Placement(self, *args):
+    def SetAxis2Placement(self, *args) -> "void" :
         """
         * Allows you to provide settings for aComponent:the position and direction of an axis in 3D space. The coordinate system used is right-handed.
 
@@ -10324,7 +10324,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_SetAxis2Placement(self, *args)
 
-    def SetAxis1Placement(self, *args):
+    def SetAxis1Placement(self, *args) -> "void" :
         """
         * Constructs a new line to serve as the axis anAxis in 3D space.
 
@@ -10335,7 +10335,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_SetAxis1Placement(self, *args)
 
-    def TypeOfAxis(self, *args):
+    def TypeOfAxis(self, *args) -> "AIS_TypeOfAxis" :
         """
         * Returns the type of axis.
 
@@ -10344,7 +10344,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_TypeOfAxis(self, *args)
 
-    def SetTypeOfAxis(self, *args):
+    def SetTypeOfAxis(self, *args) -> "void" :
         """
         * Constructs the entity aTypeAxis to stock information concerning type of axis.
 
@@ -10355,7 +10355,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_SetTypeOfAxis(self, *args)
 
-    def IsXYZAxis(self, *args):
+    def IsXYZAxis(self, *args) -> "Standard_Boolean" :
         """
         * Returns a signature of 2 for axis datums. When you activate mode 2 by a signature, you pick AIS objects of type AIS_Axis.
 
@@ -10364,7 +10364,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_IsXYZAxis(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -10379,7 +10379,7 @@ class AIS_Axis(AIS_InteractiveObject):
         """
         return _AIS.AIS_Axis_Compute(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_NameOfColor
@@ -10436,7 +10436,7 @@ Handle_AIS_Axis._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Axis__kill_po
 Handle_AIS_Axis_swigregister = _AIS.Handle_AIS_Axis_swigregister
 Handle_AIS_Axis_swigregister(Handle_AIS_Axis)
 
-def Handle_AIS_Axis_DownCast(*args):
+def Handle_AIS_Axis_DownCast(*args) -> "Handle_AIS_Axis const" :
   return _AIS.Handle_AIS_Axis_DownCast(*args)
 Handle_AIS_Axis_DownCast = _AIS.Handle_AIS_Axis_DownCast
 
@@ -10465,7 +10465,7 @@ class AIS_Circle(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Circle_swiginit(self,_AIS.new_AIS_Circle(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -10480,7 +10480,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_Compute(self, *args)
 
-    def Circle(self, *args):
+    def Circle(self, *args) -> "Handle_Geom_Circle const &" :
         """
         * Returns the circle component defined in SetCircle.
 
@@ -10489,7 +10489,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_Circle(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Constructs instances of the starting point and the end point parameters, u1 and u2.
 
@@ -10502,7 +10502,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_Parameters(self, *args)
 
-    def SetCircle(self, *args):
+    def SetCircle(self, *args) -> "void" :
         """
         * Allows you to provide settings for the circle datum aCircle.
 
@@ -10513,7 +10513,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_SetCircle(self, *args)
 
-    def SetFirstParam(self, *args):
+    def SetFirstParam(self, *args) -> "void" :
         """
         * Allows you to set the parameter u for the starting point of an arc.
 
@@ -10524,7 +10524,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_SetFirstParam(self, *args)
 
-    def SetLastParam(self, *args):
+    def SetLastParam(self, *args) -> "void" :
         """
         * Allows you to provide the parameter u for the end point of an arc.
 
@@ -10535,7 +10535,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_SetLastParam(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Assigns the color aColor to the solid line boundary of the circle datum.
 
@@ -10550,7 +10550,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_SetColor(self, *args)
 
-    def IsFilledCircleSens(self, *args):
+    def IsFilledCircleSens(self, *args) -> "Standard_Boolean" :
         """
         * Returns the type of sensitivity for the circle;
 
@@ -10559,7 +10559,7 @@ class AIS_Circle(AIS_InteractiveObject):
         """
         return _AIS.AIS_Circle_IsFilledCircleSens(self, *args)
 
-    def SetFilledCircleSens(self, *args):
+    def SetFilledCircleSens(self, *args) -> "void" :
         """
         * Sets the type of sensitivity for the circle. If theIsFilledCircleSens set to Standard_True then the whole circle will be detectable, otherwise only the boundary of the circle.
 
@@ -10613,7 +10613,7 @@ Handle_AIS_Circle._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Circle__kil
 Handle_AIS_Circle_swigregister = _AIS.Handle_AIS_Circle_swigregister
 Handle_AIS_Circle_swigregister(Handle_AIS_Circle)
 
-def Handle_AIS_Circle_DownCast(*args):
+def Handle_AIS_Circle_DownCast(*args) -> "Handle_AIS_Circle const" :
   return _AIS.Handle_AIS_Circle_DownCast(*args)
 Handle_AIS_Circle_DownCast = _AIS.Handle_AIS_Circle_DownCast
 
@@ -10630,7 +10630,7 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
 
         """
         _AIS.AIS_ConnectedInteractive_swiginit(self,_AIS.new_AIS_ConnectedInteractive(*args))
-    def Connect(self, *args):
+    def Connect(self, *args) -> "void" :
         """
         * Establishes the connection between the Connected Interactive Object, anotherIobj, and its reference entity. If a previous connection with an Interactive Object already exists, it is removed by Disconnect. The second syntax also initiates the location of the Connected Interactive Object.
 
@@ -10647,7 +10647,7 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_ConnectedInteractive_Connect(self, *args)
 
-    def HasConnection(self, *args):
+    def HasConnection(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is a connection established between the presentation and its source reference.
 
@@ -10656,7 +10656,7 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_ConnectedInteractive_HasConnection(self, *args)
 
-    def ConnectedTo(self, *args):
+    def ConnectedTo(self, *args) -> "Handle_AIS_InteractiveObject const &" :
         """
         * Returns the connection with the reference Interactive Object.
 
@@ -10665,7 +10665,7 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_ConnectedInteractive_ConnectedTo(self, *args)
 
-    def Disconnect(self, *args):
+    def Disconnect(self, *args) -> "void" :
         """
         * Clears the connection with a source reference. The presentation will no longer be displayed. Warning Must be done before deleting the presentation.
 
@@ -10674,7 +10674,7 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_ConnectedInteractive_Disconnect(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -10695,14 +10695,14 @@ class AIS_ConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_ConnectedInteractive_Compute(self, *args)
 
-    def AcceptShapeDecomposition(self, *args):
+    def AcceptShapeDecomposition(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_ConnectedInteractive_AcceptShapeDecomposition(self, *args)
 
-    def UpdateLocation(self, *args):
+    def UpdateLocation(self, *args) -> "void" :
         """
         :rtype: void
 
@@ -10756,7 +10756,7 @@ Handle_AIS_ConnectedInteractive._kill_pointed = new_instancemethod(_AIS.Handle_A
 Handle_AIS_ConnectedInteractive_swigregister = _AIS.Handle_AIS_ConnectedInteractive_swigregister
 Handle_AIS_ConnectedInteractive_swigregister(Handle_AIS_ConnectedInteractive)
 
-def Handle_AIS_ConnectedInteractive_DownCast(*args):
+def Handle_AIS_ConnectedInteractive_DownCast(*args) -> "Handle_AIS_ConnectedInteractive const" :
   return _AIS.Handle_AIS_ConnectedInteractive_DownCast(*args)
 Handle_AIS_ConnectedInteractive_DownCast = _AIS.Handle_AIS_ConnectedInteractive_DownCast
 
@@ -10773,7 +10773,7 @@ class AIS_Dimension(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Dimension_swiginit(self,_AIS.new_AIS_Dimension(*args))
-    def GetValue(self, *args):
+    def GetValue(self, *args) -> "Standard_Real" :
         """
         * Gets dimension measurement value. If the value to display is not specified by user, then the dimension object is responsible to compute it on its own in model space coordinates. returns the dimension value (in model units) which is used during display of the presentation.
 
@@ -10782,7 +10782,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_GetValue(self, *args)
 
-    def SetCustomValue(self, *args):
+    def SetCustomValue(self, *args) -> "void" :
         """
         * Sets user-defined dimension value. The user-defined dimension value is specified in model space, and affect by unit conversion during the display. @param theValue [in] the user-defined value to display.
 
@@ -10793,7 +10793,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetCustomValue(self, *args)
 
-    def GetPlane(self, *args):
+    def GetPlane(self, *args) -> "gp_Pln const" :
         """
         * Get the dimension plane in which the 2D dimension presentation is computed. By default, if plane is not defined by user, it is computed automatically after dimension geometry is computed. If computed dimension geometry (points) can't be placed on the user-defined plane, dimension geometry was set as invalid (validity flag is set to false) and dimension presentation will not be computed. If user-defined plane allow geometry placement on it, it will be used for computing of the dimension presentation. returns dimension plane used for presentation computing.
 
@@ -10802,7 +10802,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_GetPlane(self, *args)
 
-    def GetGeometryType(self, *args):
+    def GetGeometryType(self, *args) -> "Standard_Integer" :
         """
         * Geometry type defines type of shapes on which the dimension is to be built. returns type of geometry on which the dimension will be built.
 
@@ -10811,7 +10811,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_GetGeometryType(self, *args)
 
-    def SetCustomPlane(self, *args):
+    def SetCustomPlane(self, *args) -> "void" :
         """
         * Sets user-defined plane where the 2D dimension presentation will be placed. Checks validity of this plane if geometry has been set already. Validity of the plane is checked according to the geometry set and has different criteria for different kinds of dimensions.
 
@@ -10822,7 +10822,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetCustomPlane(self, *args)
 
-    def UnsetCustomPlane(self, *args):
+    def UnsetCustomPlane(self, *args) -> "void" :
         """
         * Unsets user-defined plane. Therefore the plane for dimension will be computed automatically.
 
@@ -10831,7 +10831,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_UnsetCustomPlane(self, *args)
 
-    def IsTextPositionCustom(self, *args):
+    def IsTextPositionCustom(self, *args) -> "Standard_Boolean" :
         """
         * returns True if text position is set by user with method SetTextPosition().
 
@@ -10840,7 +10840,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_IsTextPositionCustom(self, *args)
 
-    def SetTextPosition(self, *args):
+    def SetTextPosition(self, *args) -> "void" :
         """
         * Fixes the absolute text position and adjusts flyout, plane and text alignment according to it. Updates presentation if the text position is valid. ATTENTION! It does not change vertical text alignment. @param theTextPos [in] the point of text position.
 
@@ -10851,7 +10851,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetTextPosition(self, *args)
 
-    def GetTextPosition(self, *args):
+    def GetTextPosition(self, *args) -> "gp_Pnt const" :
         """
         * Computes absolute text position from dimension parameters (flyout, plane and text alignment).
 
@@ -10860,7 +10860,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_GetTextPosition(self, *args)
 
-    def DimensionAspect(self, *args):
+    def DimensionAspect(self, *args) -> "Handle_Prs3d_DimensionAspect" :
         """
         * Gets the dimension aspect from AIS object drawer. Dimension aspect contains aspects of line, text and arrows for dimension presentation.
 
@@ -10869,7 +10869,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_DimensionAspect(self, *args)
 
-    def SetDimensionAspect(self, *args):
+    def SetDimensionAspect(self, *args) -> "void" :
         """
         * Sets new dimension aspect for the interactive object drawer. The dimension aspect provides dynamic properties which are generally used during computation of dimension presentations.
 
@@ -10880,7 +10880,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetDimensionAspect(self, *args)
 
-    def KindOfDimension(self, *args):
+    def KindOfDimension(self, *args) -> "AIS_KindOfDimension" :
         """
         * returns the kind of dimension.
 
@@ -10889,7 +10889,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_KindOfDimension(self, *args)
 
-    def DisplaySpecialSymbol(self, *args):
+    def DisplaySpecialSymbol(self, *args) -> "AIS_DisplaySpecialSymbol" :
         """
         * returns dimension special symbol display options.
 
@@ -10898,7 +10898,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_DisplaySpecialSymbol(self, *args)
 
-    def SetDisplaySpecialSymbol(self, *args):
+    def SetDisplaySpecialSymbol(self, *args) -> "void" :
         """
         * Specifies whether to display special symbol or not.
 
@@ -10909,7 +10909,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetDisplaySpecialSymbol(self, *args)
 
-    def SpecialSymbol(self, *args):
+    def SpecialSymbol(self, *args) -> "Standard_ExtCharacter" :
         """
         * returns special symbol.
 
@@ -10918,7 +10918,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SpecialSymbol(self, *args)
 
-    def SetSpecialSymbol(self, *args):
+    def SetSpecialSymbol(self, *args) -> "void" :
         """
         * Specifies special symbol.
 
@@ -10929,21 +10929,21 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetSpecialSymbol(self, *args)
 
-    def GetDisplayUnits(self, *args):
+    def GetDisplayUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _AIS.AIS_Dimension_GetDisplayUnits(self, *args)
 
-    def GetModelUnits(self, *args):
+    def GetModelUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         :rtype: TCollection_AsciiString
 
         """
         return _AIS.AIS_Dimension_GetModelUnits(self, *args)
 
-    def SetDisplayUnits(self, *args):
+    def SetDisplayUnits(self, *args) -> "void" :
         """
         :param &:
         :type &: TCollection_AsciiString
@@ -10952,7 +10952,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetDisplayUnits(self, *args)
 
-    def SetModelUnits(self, *args):
+    def SetModelUnits(self, *args) -> "void" :
         """
         :param &:
         :type &: TCollection_AsciiString
@@ -10961,7 +10961,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetModelUnits(self, *args)
 
-    def UnsetFixedTextPosition(self, *args):
+    def UnsetFixedTextPosition(self, *args) -> "void" :
         """
         * Unsets user defined text positioning and enables text positioning by other parameters: text alignment, extension size, flyout and custom plane.
 
@@ -10970,7 +10970,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_UnsetFixedTextPosition(self, *args)
 
-    def SelToleranceForText2d(self, *args):
+    def SelToleranceForText2d(self, *args) -> "Standard_Real" :
         """
         * Returns selection tolerance for text2d: For 2d text selection detection sensitive point with tolerance is used Important! Only for 2d text.
 
@@ -10979,7 +10979,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SelToleranceForText2d(self, *args)
 
-    def SetSelToleranceForText2d(self, *args):
+    def SetSelToleranceForText2d(self, *args) -> "void" :
         """
         * Sets selection tolerance for text2d: For 2d text selection detection sensitive point with tolerance is used to change this tolerance use this method Important! Only for 2d text.
 
@@ -10990,7 +10990,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetSelToleranceForText2d(self, *args)
 
-    def GetFlyout(self, *args):
+    def GetFlyout(self, *args) -> "Standard_Real" :
         """
         * returns flyout value for dimension.
 
@@ -10999,7 +10999,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_GetFlyout(self, *args)
 
-    def SetFlyout(self, *args):
+    def SetFlyout(self, *args) -> "void" :
         """
         * Sets flyout value for dimension.
 
@@ -11010,7 +11010,7 @@ class AIS_Dimension(AIS_InteractiveObject):
         """
         return _AIS.AIS_Dimension_SetFlyout(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Check that the input geometry for dimension is valid and the presentation can be successfully computed. returns True if dimension geometry is ok.
 
@@ -11078,7 +11078,7 @@ class AIS_Line(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Line_swiginit(self,_AIS.new_AIS_Line(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -11093,7 +11093,7 @@ class AIS_Line(AIS_InteractiveObject):
         """
         return _AIS.AIS_Line_Compute(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_Geom_Line const &" :
         """
         * Constructs an infinite line.
 
@@ -11102,7 +11102,7 @@ class AIS_Line(AIS_InteractiveObject):
         """
         return _AIS.AIS_Line_Line(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * Returns the starting point PStart and the end point PEnd of the line set by SetPoints.
 
@@ -11115,7 +11115,7 @@ class AIS_Line(AIS_InteractiveObject):
         """
         return _AIS.AIS_Line_Points(self, *args)
 
-    def SetLine(self, *args):
+    def SetLine(self, *args) -> "void" :
         """
         * instantiates an infinite line.
 
@@ -11126,7 +11126,7 @@ class AIS_Line(AIS_InteractiveObject):
         """
         return _AIS.AIS_Line_SetLine(self, *args)
 
-    def SetPoints(self, *args):
+    def SetPoints(self, *args) -> "void" :
         """
         * Sets the starting point P1 and ending point P2 of the infinite line to create a finite line segment.
 
@@ -11139,7 +11139,7 @@ class AIS_Line(AIS_InteractiveObject):
         """
         return _AIS.AIS_Line_SetPoints(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Provides a new color setting aColor for the line in the drawing tool, or 'Drawer'.
 
@@ -11194,7 +11194,7 @@ Handle_AIS_Line._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Line__kill_po
 Handle_AIS_Line_swigregister = _AIS.Handle_AIS_Line_swigregister
 Handle_AIS_Line_swigregister(Handle_AIS_Line)
 
-def Handle_AIS_Line_DownCast(*args):
+def Handle_AIS_Line_DownCast(*args) -> "Handle_AIS_Line const" :
   return _AIS.Handle_AIS_Line_DownCast(*args)
 Handle_AIS_Line_DownCast = _AIS.Handle_AIS_Line_DownCast
 
@@ -11211,7 +11211,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
 
         """
         _AIS.AIS_MultipleConnectedInteractive_swiginit(self,_AIS.new_AIS_MultipleConnectedInteractive(*args))
-    def Connect(self, *args):
+    def Connect(self, *args) -> "void" :
         """
         * Add anotherIObj in the presentation of me
 
@@ -11222,7 +11222,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_MultipleConnectedInteractive_Connect(self, *args)
 
-    def HasConnection(self, *args):
+    def HasConnection(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the object is connected to others.
 
@@ -11231,7 +11231,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_MultipleConnectedInteractive_HasConnection(self, *args)
 
-    def ConnectedTo(self, *args):
+    def ConnectedTo(self, *args) -> "AIS_SequenceOfInteractive const &" :
         """
         * Returns the connection references of the previous Interactive Objects in view.
 
@@ -11240,7 +11240,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_MultipleConnectedInteractive_ConnectedTo(self, *args)
 
-    def Disconnect(self, *args):
+    def Disconnect(self, *args) -> "void" :
         """
         * Removes the connection anotherIObj to an entity.
 
@@ -11251,7 +11251,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_MultipleConnectedInteractive_Disconnect(self, *args)
 
-    def DisconnectAll(self, *args):
+    def DisconnectAll(self, *args) -> "void" :
         """
         * Clears all the connections to objects.
 
@@ -11260,7 +11260,7 @@ class AIS_MultipleConnectedInteractive(AIS_InteractiveObject):
         """
         return _AIS.AIS_MultipleConnectedInteractive_DisconnectAll(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -11321,7 +11321,7 @@ Handle_AIS_MultipleConnectedInteractive._kill_pointed = new_instancemethod(_AIS.
 Handle_AIS_MultipleConnectedInteractive_swigregister = _AIS.Handle_AIS_MultipleConnectedInteractive_swigregister
 Handle_AIS_MultipleConnectedInteractive_swigregister(Handle_AIS_MultipleConnectedInteractive)
 
-def Handle_AIS_MultipleConnectedInteractive_DownCast(*args):
+def Handle_AIS_MultipleConnectedInteractive_DownCast(*args) -> "Handle_AIS_MultipleConnectedInteractive const" :
   return _AIS.Handle_AIS_MultipleConnectedInteractive_DownCast(*args)
 Handle_AIS_MultipleConnectedInteractive_DownCast = _AIS.Handle_AIS_MultipleConnectedInteractive_DownCast
 
@@ -11372,7 +11372,7 @@ class AIS_Plane(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Plane_swiginit(self,_AIS.new_AIS_Plane(*args))
-    def SetSize(self, *args):
+    def SetSize(self, *args) -> "void" :
         """
         * Same value for x and y directions
 
@@ -11391,14 +11391,14 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetSize(self, *args)
 
-    def UnsetSize(self, *args):
+    def UnsetSize(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_Plane_UnsetSize(self, *args)
 
-    def Size(self, *args):
+    def Size(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: float &
@@ -11409,14 +11409,14 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_Size(self, *args)
 
-    def HasOwnSize(self, *args):
+    def HasOwnSize(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Plane_HasOwnSize(self, *args)
 
-    def Component(self, *args):
+    def Component(self, *args) -> "Handle_Geom_Plane const &" :
         """
         * Returns the component specified in SetComponent.
 
@@ -11425,7 +11425,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_Component(self, *args)
 
-    def SetComponent(self, *args):
+    def SetComponent(self, *args) -> "void" :
         """
         * Creates an instance of the plane aComponent.
 
@@ -11436,7 +11436,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetComponent(self, *args)
 
-    def PlaneAttributes(self, *args):
+    def PlaneAttributes(self, *args) -> "Standard_Boolean" :
         """
         * Returns the settings for the selected plane aComponent, provided in SetPlaneAttributes. These include the points aCenter, aPmin, and aPmax
 
@@ -11453,7 +11453,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_PlaneAttributes(self, *args)
 
-    def SetPlaneAttributes(self, *args):
+    def SetPlaneAttributes(self, *args) -> "void" :
         """
         * Allows you to provide settings other than default ones for the selected plane. These include: center point aCenter, maximum aPmax and minimum aPmin.
 
@@ -11470,7 +11470,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetPlaneAttributes(self, *args)
 
-    def Center(self, *args):
+    def Center(self, *args) -> "gp_Pnt const" :
         """
         * Returns the coordinates of the center point.
 
@@ -11479,7 +11479,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_Center(self, *args)
 
-    def SetCenter(self, *args):
+    def SetCenter(self, *args) -> "void" :
         """
         * Provides settings for the center aCenter other than (0, 0, 0).
 
@@ -11490,7 +11490,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetCenter(self, *args)
 
-    def SetAxis2Placement(self, *args):
+    def SetAxis2Placement(self, *args) -> "void" :
         """
         * Allows you to provide settings for the position and direction of one of the plane's axes, aComponent, in 3D space. The coordinate system used is right-handed, and the type of plane aPlaneType is one of: - AIS_ TOPL_Unknown - AIS_ TOPL_XYPlane - AIS_ TOPL_XZPlane - AIS_ TOPL_YZPlane}.
 
@@ -11503,7 +11503,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetAxis2Placement(self, *args)
 
-    def Axis2Placement(self, *args):
+    def Axis2Placement(self, *args) -> "Handle_Geom_Axis2Placement" :
         """
         * Returns the position of the plane's axis2 system identifying the x, y, or z axis and giving the plane a direction in 3D space. An axis2 system is a right-handed coordinate system.
 
@@ -11512,7 +11512,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_Axis2Placement(self, *args)
 
-    def TypeOfPlane(self, *args):
+    def TypeOfPlane(self, *args) -> "AIS_TypeOfPlane" :
         """
         * Returns the type of plane - xy, yz, xz or unknown.
 
@@ -11521,7 +11521,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_TypeOfPlane(self, *args)
 
-    def IsXYZPlane(self, *args):
+    def IsXYZPlane(self, *args) -> "Standard_Boolean" :
         """
         * Returns the type of plane - xy, yz, or xz.
 
@@ -11530,7 +11530,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_IsXYZPlane(self, *args)
 
-    def CurrentMode(self, *args):
+    def CurrentMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the non-default current display mode set by SetCurrentMode.
 
@@ -11539,7 +11539,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_CurrentMode(self, *args)
 
-    def SetCurrentMode(self, *args):
+    def SetCurrentMode(self, *args) -> "void" :
         """
         * Allows you to provide settings for a non-default current display mode.
 
@@ -11550,7 +11550,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetCurrentMode(self, *args)
 
-    def TypeOfSensitivity(self, *args):
+    def TypeOfSensitivity(self, *args) -> "Select3D_TypeOfSensitivity" :
         """
         * Returns the type of sensitivity for the plane;
 
@@ -11559,7 +11559,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_TypeOfSensitivity(self, *args)
 
-    def SetTypeOfSensitivity(self, *args):
+    def SetTypeOfSensitivity(self, *args) -> "void" :
         """
         * Sets the type of sensitivity for the plane.
 
@@ -11570,7 +11570,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_SetTypeOfSensitivity(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -11585,7 +11585,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_Compute(self, *args)
 
-    def ComputeSelection(self, *args):
+    def ComputeSelection(self, *args) -> "void" :
         """
         :param theSelection:
         :type theSelection: Handle_SelectMgr_Selection &
@@ -11596,7 +11596,7 @@ class AIS_Plane(AIS_InteractiveObject):
         """
         return _AIS.AIS_Plane_ComputeSelection(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_NameOfColor
@@ -11664,7 +11664,7 @@ Handle_AIS_Plane._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Plane__kill_
 Handle_AIS_Plane_swigregister = _AIS.Handle_AIS_Plane_swigregister
 Handle_AIS_Plane_swigregister(Handle_AIS_Plane)
 
-def Handle_AIS_Plane_DownCast(*args):
+def Handle_AIS_Plane_DownCast(*args) -> "Handle_AIS_Plane const" :
   return _AIS.Handle_AIS_Plane_DownCast(*args)
 Handle_AIS_Plane_DownCast = _AIS.Handle_AIS_Plane_DownCast
 
@@ -11681,7 +11681,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
 
         """
         _AIS.AIS_PlaneTrihedron_swiginit(self,_AIS.new_AIS_PlaneTrihedron(*args))
-    def Component(self, *args):
+    def Component(self, *args) -> "Handle_Geom_Plane" :
         """
         * Returns the component specified in SetComponent.
 
@@ -11690,7 +11690,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_Component(self, *args)
 
-    def SetComponent(self, *args):
+    def SetComponent(self, *args) -> "void" :
         """
         * Creates an instance of the component object aPlane.
 
@@ -11701,7 +11701,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_SetComponent(self, *args)
 
-    def XAxis(self, *args):
+    def XAxis(self, *args) -> "Handle_AIS_Line" :
         """
         * Returns the 'XAxis'.
 
@@ -11710,7 +11710,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_XAxis(self, *args)
 
-    def YAxis(self, *args):
+    def YAxis(self, *args) -> "Handle_AIS_Line" :
         """
         * Returns the 'YAxis'.
 
@@ -11719,7 +11719,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_YAxis(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "Handle_AIS_Point" :
         """
         * Returns the point of origin of the plane trihedron.
 
@@ -11728,7 +11728,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_Position(self, *args)
 
-    def SetLength(self, *args):
+    def SetLength(self, *args) -> "void" :
         """
         * Sets the length of the X and Y axes.
 
@@ -11739,7 +11739,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_SetLength(self, *args)
 
-    def GetLength(self, *args):
+    def GetLength(self, *args) -> "Standard_Real" :
         """
         * Returns the length of X and Y axes.
 
@@ -11748,7 +11748,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_GetLength(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -11763,7 +11763,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_Compute(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Allows you to provide settings for the color aColor.
 
@@ -11778,7 +11778,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_SetColor(self, *args)
 
-    def SetXLabel(self, *args):
+    def SetXLabel(self, *args) -> "void" :
         """
         :param aLabel:
         :type aLabel: TCollection_AsciiString &
@@ -11787,7 +11787,7 @@ class AIS_PlaneTrihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_PlaneTrihedron_SetXLabel(self, *args)
 
-    def SetYLabel(self, *args):
+    def SetYLabel(self, *args) -> "void" :
         """
         :param aLabel:
         :type aLabel: TCollection_AsciiString &
@@ -11841,7 +11841,7 @@ Handle_AIS_PlaneTrihedron._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Pla
 Handle_AIS_PlaneTrihedron_swigregister = _AIS.Handle_AIS_PlaneTrihedron_swigregister
 Handle_AIS_PlaneTrihedron_swigregister(Handle_AIS_PlaneTrihedron)
 
-def Handle_AIS_PlaneTrihedron_DownCast(*args):
+def Handle_AIS_PlaneTrihedron_DownCast(*args) -> "Handle_AIS_PlaneTrihedron const" :
   return _AIS.Handle_AIS_PlaneTrihedron_DownCast(*args)
 Handle_AIS_PlaneTrihedron_DownCast = _AIS.Handle_AIS_PlaneTrihedron_DownCast
 
@@ -11858,7 +11858,7 @@ class AIS_Point(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Point_swiginit(self,_AIS.new_AIS_Point(*args))
-    def Component(self, *args):
+    def Component(self, *args) -> "Handle_Geom_Point" :
         """
         * Returns the component specified in SetComponent.
 
@@ -11867,7 +11867,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_Component(self, *args)
 
-    def SetComponent(self, *args):
+    def SetComponent(self, *args) -> "void" :
         """
         * Constructs an instance of the point aComponent.
 
@@ -11878,7 +11878,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_SetComponent(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -11893,7 +11893,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_Compute(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Allows you to provide settings for the cp;pr aColor.
 
@@ -11908,7 +11908,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_SetColor(self, *args)
 
-    def SetMarker(self, *args):
+    def SetMarker(self, *args) -> "void" :
         """
         * Allows you to provide settings for a marker. These include - type of marker, - marker color, - scale factor.
 
@@ -11919,7 +11919,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_SetMarker(self, *args)
 
-    def UnsetMarker(self, *args):
+    def UnsetMarker(self, *args) -> "void" :
         """
         * Removes the marker settings.
 
@@ -11928,7 +11928,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_UnsetMarker(self, *args)
 
-    def HasMarker(self, *args):
+    def HasMarker(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the point datum has a marker.
 
@@ -11937,7 +11937,7 @@ class AIS_Point(AIS_InteractiveObject):
         """
         return _AIS.AIS_Point_HasMarker(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "TopoDS_Vertex" :
         """
         * Converts a point into a vertex.
 
@@ -11988,7 +11988,7 @@ Handle_AIS_Point._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Point__kill_
 Handle_AIS_Point_swigregister = _AIS.Handle_AIS_Point_swigregister
 Handle_AIS_Point_swigregister(Handle_AIS_Point)
 
-def Handle_AIS_Point_DownCast(*args):
+def Handle_AIS_Point_DownCast(*args) -> "Handle_AIS_Point const" :
   return _AIS.Handle_AIS_Point_DownCast(*args)
 Handle_AIS_Point_DownCast = _AIS.Handle_AIS_Point_DownCast
 
@@ -11996,7 +11996,7 @@ class AIS_Relation(AIS_InteractiveObject):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Allows you to provide settings for the color aColor of the lines representing the relation between the two shapes.
 
@@ -12011,7 +12011,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetColor(self, *args)
 
-    def KindOfDimension(self, *args):
+    def KindOfDimension(self, *args) -> "AIS_KindOfDimension" :
         """
         * Indicates that the type of dimension is unknown.
 
@@ -12020,7 +12020,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_KindOfDimension(self, *args)
 
-    def IsMovable(self, *args):
+    def IsMovable(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the interactive object is movable.
 
@@ -12029,14 +12029,14 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_IsMovable(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_Relation_FirstShape(self, *args)
 
-    def SetFirstShape(self, *args):
+    def SetFirstShape(self, *args) -> "void" :
         """
         :param aFShape:
         :type aFShape: TopoDS_Shape &
@@ -12045,7 +12045,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetFirstShape(self, *args)
 
-    def SecondShape(self, *args):
+    def SecondShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the second shape.
 
@@ -12054,7 +12054,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SecondShape(self, *args)
 
-    def SetSecondShape(self, *args):
+    def SetSecondShape(self, *args) -> "void" :
         """
         * Allows you to identify the second shape aSShape relative to the first.
 
@@ -12065,7 +12065,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetSecondShape(self, *args)
 
-    def SetBndBox(self, *args):
+    def SetBndBox(self, *args) -> "void" :
         """
         :param Xmin:
         :type Xmin: float
@@ -12084,14 +12084,14 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetBndBox(self, *args)
 
-    def UnsetBndBox(self, *args):
+    def UnsetBndBox(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _AIS.AIS_Relation_UnsetBndBox(self, *args)
 
-    def Plane(self, *args):
+    def Plane(self, *args) -> "Handle_Geom_Plane const &" :
         """
         * Returns the plane.
 
@@ -12100,7 +12100,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_Plane(self, *args)
 
-    def SetPlane(self, *args):
+    def SetPlane(self, *args) -> "void" :
         """
         * Allows you to set the plane aPlane. This is used to define relations and dimensions in several daughter classes.
 
@@ -12111,7 +12111,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetPlane(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Real" :
         """
         * Returns the value of each object in the relation.
 
@@ -12120,7 +12120,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Allows you to provide settings for the value aVal for each object in the relation.
 
@@ -12131,7 +12131,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetValue(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "gp_Pnt const" :
         """
         * Returns the position set using SetPosition.
 
@@ -12140,7 +12140,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_Position(self, *args)
 
-    def SetPosition(self, *args):
+    def SetPosition(self, *args) -> "void" :
         """
         * Allows you to provide the objects in the relation with settings for a non-default position.
 
@@ -12151,7 +12151,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetPosition(self, *args)
 
-    def Text(self, *args):
+    def Text(self, *args) -> "TCollection_ExtendedString const &" :
         """
         * Returns settings for text aspect.
 
@@ -12160,7 +12160,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_Text(self, *args)
 
-    def SetText(self, *args):
+    def SetText(self, *args) -> "void" :
         """
         * Allows you to provide the settings aText for text aspect.
 
@@ -12171,7 +12171,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetText(self, *args)
 
-    def ArrowSize(self, *args):
+    def ArrowSize(self, *args) -> "Standard_Real" :
         """
         * Returns the value for the size of the arrow identifying the relation between the two shapes.
 
@@ -12180,7 +12180,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_ArrowSize(self, *args)
 
-    def SetArrowSize(self, *args):
+    def SetArrowSize(self, *args) -> "void" :
         """
         * Allows you to provide settings for the size of the arrow anArrowsize identifying the relation between the two shapes.
 
@@ -12191,7 +12191,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetArrowSize(self, *args)
 
-    def SymbolPrs(self, *args):
+    def SymbolPrs(self, *args) -> "DsgPrs_ArrowSide" :
         """
         * Returns the value of the symbol presentation. This will be one of: - AS_NONE - none - AS_FIRSTAR - first arrow - AS_LASTAR - last arrow - AS_BOTHAR - both arrows - AS_FIRSTPT - first point - AS_LASTPT - last point - AS_BOTHPT - both points - AS_FIRSTAR_LASTPT - first arrow, last point - AS_FIRSTPT_LASTAR - first point, last arrow
 
@@ -12200,7 +12200,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SymbolPrs(self, *args)
 
-    def SetSymbolPrs(self, *args):
+    def SetSymbolPrs(self, *args) -> "void" :
         """
         * Allows you to provide settings for the symbol presentation.
 
@@ -12211,7 +12211,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetSymbolPrs(self, *args)
 
-    def SetExtShape(self, *args):
+    def SetExtShape(self, *args) -> "void" :
         """
         * Allows you to set the status of the extension shape by the index aIndex. The status will be one of the following: - 0 - there is no connection to a shape; - 1 - there is a connection to the first shape; - 2 - there is a connection to the second shape.
 
@@ -12222,7 +12222,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetExtShape(self, *args)
 
-    def ExtShape(self, *args):
+    def ExtShape(self, *args) -> "Standard_Integer" :
         """
         * Returns the status index of the extension shape.
 
@@ -12231,7 +12231,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_ExtShape(self, *args)
 
-    def SetAutomaticPosition(self, *args):
+    def SetAutomaticPosition(self, *args) -> "void" :
         """
         :param aStatus:
         :type aStatus: bool
@@ -12240,7 +12240,7 @@ class AIS_Relation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Relation_SetAutomaticPosition(self, *args)
 
-    def AutomaticPosition(self, *args):
+    def AutomaticPosition(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -12306,7 +12306,7 @@ Handle_AIS_Relation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Relation_
 Handle_AIS_Relation_swigregister = _AIS.Handle_AIS_Relation_swigregister
 Handle_AIS_Relation_swigregister(Handle_AIS_Relation)
 
-def Handle_AIS_Relation_DownCast(*args):
+def Handle_AIS_Relation_DownCast(*args) -> "Handle_AIS_Relation const" :
   return _AIS.Handle_AIS_Relation_DownCast(*args)
 Handle_AIS_Relation_DownCast = _AIS.Handle_AIS_Relation_DownCast
 
@@ -12323,7 +12323,7 @@ class AIS_Shape(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Shape_swiginit(self,_AIS.new_AIS_Shape(*args))
-    def AcceptShapeDecomposition(self, *args):
+    def AcceptShapeDecomposition(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the Interactive Object accepts shape decomposition.
 
@@ -12332,7 +12332,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_AcceptShapeDecomposition(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Constructs an instance of the shape object ashape.
 
@@ -12343,7 +12343,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_Set(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns this shape object.
 
@@ -12352,7 +12352,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_Shape(self, *args)
 
-    def SetOwnDeviationCoefficient(self, *args):
+    def SetOwnDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets a local value for deviation coefficient for this specific shape.
 
@@ -12367,7 +12367,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetOwnDeviationCoefficient(self, *args)
 
-    def SetOwnHLRDeviationCoefficient(self, *args):
+    def SetOwnHLRDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets a local value for HLR deviation coefficient for this specific shape.
 
@@ -12382,7 +12382,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetOwnHLRDeviationCoefficient(self, *args)
 
-    def SetAngleAndDeviation(self, *args):
+    def SetAngleAndDeviation(self, *args) -> "void" :
         """
         * this compute a new angle and Deviation from the value anAngle and set the values stored in myDrawer with these that become local to the shape
 
@@ -12393,7 +12393,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetAngleAndDeviation(self, *args)
 
-    def UserAngle(self, *args):
+    def UserAngle(self, *args) -> "Standard_Real" :
         """
         * gives back the angle initial value put by the User.
 
@@ -12402,7 +12402,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_UserAngle(self, *args)
 
-    def SetOwnDeviationAngle(self, *args):
+    def SetOwnDeviationAngle(self, *args) -> "void" :
         """
         * Sets a local value for deviation angle for this specific shape.
 
@@ -12417,7 +12417,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetOwnDeviationAngle(self, *args)
 
-    def SetHLRAngleAndDeviation(self, *args):
+    def SetHLRAngleAndDeviation(self, *args) -> "void" :
         """
         * this compute a new Angle and Deviation from the value anAngle for HLR and set the values stored in myDrawer for with these that become local to the shape
 
@@ -12428,7 +12428,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetHLRAngleAndDeviation(self, *args)
 
-    def SetOwnHLRDeviationAngle(self, *args):
+    def SetOwnHLRDeviationAngle(self, *args) -> "void" :
         """
         * Sets a local value for HLR deviation angle for this specific shape.
 
@@ -12443,7 +12443,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetOwnHLRDeviationAngle(self, *args)
 
-    def OwnDeviationCoefficient(self, *args):
+    def OwnDeviationCoefficient(self, *args) -> "Standard_Boolean" :
         """
         * Returns true and the values of the deviation coefficient aCoefficient and the previous deviation coefficient aPreviousCoefficient. If these values are not already set, false is returned.
 
@@ -12456,7 +12456,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_OwnDeviationCoefficient(self, *args)
 
-    def OwnHLRDeviationCoefficient(self, *args):
+    def OwnHLRDeviationCoefficient(self, *args) -> "Standard_Boolean" :
         """
         * Returns true and the values of the HLR deviation coefficient aCoefficient and the previous HLR deviation coefficient aPreviousCoefficient. If these values are not already set, false is returned.
 
@@ -12469,7 +12469,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_OwnHLRDeviationCoefficient(self, *args)
 
-    def OwnDeviationAngle(self, *args):
+    def OwnDeviationAngle(self, *args) -> "Standard_Boolean" :
         """
         * Returns true and the values of the deviation angle anAngle and the previous deviation angle aPreviousAngle. If these values are not already set, false is returned.
 
@@ -12482,7 +12482,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_OwnDeviationAngle(self, *args)
 
-    def OwnHLRDeviationAngle(self, *args):
+    def OwnHLRDeviationAngle(self, *args) -> "Standard_Boolean" :
         """
         * Returns true and the values of the HLR deviation angle anAngle and of the previous HLR deviation angle aPreviousAngle. If these values are not already set, false is returned.
 
@@ -12495,7 +12495,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_OwnHLRDeviationAngle(self, *args)
 
-    def SetTypeOfHLR(self, *args):
+    def SetTypeOfHLR(self, *args) -> "void" :
         """
         * Sets the type of HLR algorithm used by the shape
 
@@ -12506,7 +12506,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetTypeOfHLR(self, *args)
 
-    def TypeOfHLR(self, *args):
+    def TypeOfHLR(self, *args) -> "Prs3d_TypeOfHLR" :
         """
         * Gets the type of HLR algorithm
 
@@ -12515,7 +12515,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_TypeOfHLR(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Sets the color aColor in the reconstructed compound shape. Acts via the Drawer methods below on the appearance of: - free boundaries: AIS_Drawer_FreeBoundaryAspect, - isos: AIS_Drawer_UIsoAspect, AIS_Drawer_VIsoAspect, - shared boundaries: AIS_Drawer_UnFreeBoundaryAspect, - shading: AIS_Drawer_ShadingAspect, - visible line color in hidden line mode: AIS_Drawer_SeenLineAspect - hidden line color in hidden line mode: AIS_Drawer_HiddenLineAspect.
 
@@ -12530,7 +12530,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetColor(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         :param aName:
         :type aName: Graphic3d_NameOfMaterial
@@ -12545,7 +12545,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_SetMaterial(self, *args)
 
-    def BoundingBox(self, *args):
+    def BoundingBox(self, *args) -> "Bnd_Box const &" :
         """
         * Constructs a bounding box with which to reconstruct compound topological shapes for presentation.
 
@@ -12554,7 +12554,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_BoundingBox(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         * Returns the NameOfColor attributes of the shape accordingly to the current facing model;
 
@@ -12569,7 +12569,7 @@ class AIS_Shape(AIS_InteractiveObject):
         """
         return _AIS.AIS_Shape_Color(self, *args)
 
-    def SelectionType(*args):
+    def SelectionType(*args) -> "TopAbs_ShapeEnum" :
         """
         * Activates the same TopAbs shape enumerations as those used by SelectionMode assigning a type to the mode aDecompositionMode.
 
@@ -12581,7 +12581,7 @@ class AIS_Shape(AIS_InteractiveObject):
         return _AIS.AIS_Shape_SelectionType(*args)
 
     SelectionType = staticmethod(SelectionType)
-    def SelectionMode(*args):
+    def SelectionMode(*args) -> "Standard_Integer" :
         """
         * Establishes an equivalence between a mode and the type, aShapeType, of selection. The correspondences are as follows: - mode 0 - Shape - mode 1 - Vertex - mode 2 - Edge - mode 3 - Wire - mode 4 - Face - mode 5 - Shell - mode 6 - Solid - mode 7 - Compsolid - mode 8 - Compound
 
@@ -12593,7 +12593,7 @@ class AIS_Shape(AIS_InteractiveObject):
         return _AIS.AIS_Shape_SelectionMode(*args)
 
     SelectionMode = staticmethod(SelectionMode)
-    def GetDeflection(*args):
+    def GetDeflection(*args) -> "Standard_Real" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -12638,7 +12638,7 @@ AIS_Shape.GetHandle = new_instancemethod(_AIS.AIS_Shape_GetHandle,None,AIS_Shape
 AIS_Shape_swigregister = _AIS.AIS_Shape_swigregister
 AIS_Shape_swigregister(AIS_Shape)
 
-def AIS_Shape_SelectionType(*args):
+def AIS_Shape_SelectionType(*args) -> "TopAbs_ShapeEnum" :
   """
     * Activates the same TopAbs shape enumerations as those used by SelectionMode assigning a type to the mode aDecompositionMode.
 
@@ -12649,7 +12649,7 @@ def AIS_Shape_SelectionType(*args):
     """
   return _AIS.AIS_Shape_SelectionType(*args)
 
-def AIS_Shape_SelectionMode(*args):
+def AIS_Shape_SelectionMode(*args) -> "Standard_Integer" :
   """
     * Establishes an equivalence between a mode and the type, aShapeType, of selection. The correspondences are as follows: - mode 0 - Shape - mode 1 - Vertex - mode 2 - Edge - mode 3 - Wire - mode 4 - Face - mode 5 - Shell - mode 6 - Solid - mode 7 - Compsolid - mode 8 - Compound
 
@@ -12660,7 +12660,7 @@ def AIS_Shape_SelectionMode(*args):
     """
   return _AIS.AIS_Shape_SelectionMode(*args)
 
-def AIS_Shape_GetDeflection(*args):
+def AIS_Shape_GetDeflection(*args) -> "Standard_Real" :
   """
     :param aShape:
     :type aShape: TopoDS_Shape &
@@ -12692,7 +12692,7 @@ Handle_AIS_Shape._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Shape__kill_
 Handle_AIS_Shape_swigregister = _AIS.Handle_AIS_Shape_swigregister
 Handle_AIS_Shape_swigregister(Handle_AIS_Shape)
 
-def Handle_AIS_Shape_DownCast(*args):
+def Handle_AIS_Shape_DownCast(*args) -> "Handle_AIS_Shape const" :
   return _AIS.Handle_AIS_Shape_DownCast(*args)
 Handle_AIS_Shape_DownCast = _AIS.Handle_AIS_Shape_DownCast
 
@@ -12745,7 +12745,7 @@ Handle_AIS_SignatureFilter._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Si
 Handle_AIS_SignatureFilter_swigregister = _AIS.Handle_AIS_SignatureFilter_swigregister
 Handle_AIS_SignatureFilter_swigregister(Handle_AIS_SignatureFilter)
 
-def Handle_AIS_SignatureFilter_DownCast(*args):
+def Handle_AIS_SignatureFilter_DownCast(*args) -> "Handle_AIS_SignatureFilter const" :
   return _AIS.Handle_AIS_SignatureFilter_DownCast(*args)
 Handle_AIS_SignatureFilter_DownCast = _AIS.Handle_AIS_SignatureFilter_DownCast
 
@@ -12762,7 +12762,7 @@ class AIS_Triangulation(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Triangulation_swiginit(self,_AIS.new_AIS_Triangulation(*args))
-    def SetColors(self, *args):
+    def SetColors(self, *args) -> "void" :
         """
         * Set the color for each node. Each 32-bit color is Alpha << 24 + Blue << 16 + Green << 8 + Red Order of color components is essential for further usage by OpenGL
 
@@ -12773,7 +12773,7 @@ class AIS_Triangulation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Triangulation_SetColors(self, *args)
 
-    def GetColors(self, *args):
+    def GetColors(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
         """
         * Get the color for each node. Each 32-bit color is Alpha << 24 + Blue << 16 + Green << 8 + Red
 
@@ -12782,7 +12782,7 @@ class AIS_Triangulation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Triangulation_GetColors(self, *args)
 
-    def SetTriangulation(self, *args):
+    def SetTriangulation(self, *args) -> "void" :
         """
         :param aTriangulation:
         :type aTriangulation: Handle_Poly_Triangulation &
@@ -12791,7 +12791,7 @@ class AIS_Triangulation(AIS_InteractiveObject):
         """
         return _AIS.AIS_Triangulation_SetTriangulation(self, *args)
 
-    def GetTriangulation(self, *args):
+    def GetTriangulation(self, *args) -> "Handle_Poly_Triangulation" :
         """
         * Returns Poly_Triangulation .
 
@@ -12838,7 +12838,7 @@ Handle_AIS_Triangulation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Tria
 Handle_AIS_Triangulation_swigregister = _AIS.Handle_AIS_Triangulation_swigregister
 Handle_AIS_Triangulation_swigregister(Handle_AIS_Triangulation)
 
-def Handle_AIS_Triangulation_DownCast(*args):
+def Handle_AIS_Triangulation_DownCast(*args) -> "Handle_AIS_Triangulation const" :
   return _AIS.Handle_AIS_Triangulation_DownCast(*args)
 Handle_AIS_Triangulation_DownCast = _AIS.Handle_AIS_Triangulation_DownCast
 
@@ -12855,7 +12855,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
 
         """
         _AIS.AIS_Trihedron_swiginit(self,_AIS.new_AIS_Trihedron(*args))
-    def Component(self, *args):
+    def Component(self, *args) -> "Handle_Geom_Axis2Placement const &" :
         """
         * Returns the right-handed coordinate system set in SetComponent.
 
@@ -12864,7 +12864,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_Component(self, *args)
 
-    def SetComponent(self, *args):
+    def SetComponent(self, *args) -> "void" :
         """
         * Constructs the right-handed coordinate system aComponent.
 
@@ -12875,7 +12875,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetComponent(self, *args)
 
-    def HasOwnSize(self, *args):
+    def HasOwnSize(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the trihedron object has a size other than the default size of 100 mm. along each axis.
 
@@ -12884,7 +12884,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_HasOwnSize(self, *args)
 
-    def SetSize(self, *args):
+    def SetSize(self, *args) -> "void" :
         """
         * Sets the size aValue for the trihedron object. The default value is 100 mm.
 
@@ -12895,7 +12895,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetSize(self, *args)
 
-    def UnsetSize(self, *args):
+    def UnsetSize(self, *args) -> "void" :
         """
         * Removes any non-default settings for size of this trihedron object.
 
@@ -12904,14 +12904,14 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_UnsetSize(self, *args)
 
-    def Size(self, *args):
+    def Size(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _AIS.AIS_Trihedron_Size(self, *args)
 
-    def XAxis(self, *args):
+    def XAxis(self, *args) -> "Handle_AIS_Axis" :
         """
         * Returns the 'XAxis'.
 
@@ -12920,7 +12920,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_XAxis(self, *args)
 
-    def YAxis(self, *args):
+    def YAxis(self, *args) -> "Handle_AIS_Axis" :
         """
         * Returns the 'YAxis'.
 
@@ -12929,7 +12929,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_YAxis(self, *args)
 
-    def Axis(self, *args):
+    def Axis(self, *args) -> "Handle_AIS_Axis" :
         """
         * Returns the main Axis.
 
@@ -12938,7 +12938,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_Axis(self, *args)
 
-    def Position(self, *args):
+    def Position(self, *args) -> "Handle_AIS_Point" :
         """
         * Returns the origine.
 
@@ -12947,7 +12947,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_Position(self, *args)
 
-    def XYPlane(self, *args):
+    def XYPlane(self, *args) -> "Handle_AIS_Plane" :
         """
         * Returns the 'XYPlane'.
 
@@ -12956,7 +12956,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_XYPlane(self, *args)
 
-    def XZPlane(self, *args):
+    def XZPlane(self, *args) -> "Handle_AIS_Plane" :
         """
         * Returns the 'XZPlane'.
 
@@ -12965,7 +12965,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_XZPlane(self, *args)
 
-    def YZPlane(self, *args):
+    def YZPlane(self, *args) -> "Handle_AIS_Plane" :
         """
         * Returns the 'YZPlane'.
 
@@ -12974,7 +12974,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_YZPlane(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -12989,7 +12989,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_Compute(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param aLoc:
         :type aLoc: TopLoc_Location &
@@ -12998,7 +12998,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetLocation(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_NameOfColor
@@ -13013,7 +13013,7 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetColor(self, *args)
 
-    def SetTextColor(self, *args):
+    def SetTextColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_NameOfColor
@@ -13022,21 +13022,21 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetTextColor(self, *args)
 
-    def HasTextColor(self, *args):
+    def HasTextColor(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Trihedron_HasTextColor(self, *args)
 
-    def TextColor(self, *args):
+    def TextColor(self, *args) -> "Quantity_NameOfColor" :
         """
         :rtype: Quantity_NameOfColor
 
         """
         return _AIS.AIS_Trihedron_TextColor(self, *args)
 
-    def SetArrowColor(self, *args):
+    def SetArrowColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_NameOfColor
@@ -13045,21 +13045,21 @@ class AIS_Trihedron(AIS_InteractiveObject):
         """
         return _AIS.AIS_Trihedron_SetArrowColor(self, *args)
 
-    def HasArrowColor(self, *args):
+    def HasArrowColor(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_Trihedron_HasArrowColor(self, *args)
 
-    def ArrowColor(self, *args):
+    def ArrowColor(self, *args) -> "Quantity_NameOfColor" :
         """
         :rtype: Quantity_NameOfColor
 
         """
         return _AIS.AIS_Trihedron_ArrowColor(self, *args)
 
-    def ExtremityPoints(self, *args):
+    def ExtremityPoints(self, *args) -> "void" :
         """
         * Returns the four extremities of the trihedron from the array of points, TheExtrem.
 
@@ -13127,7 +13127,7 @@ Handle_AIS_Trihedron._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Trihedro
 Handle_AIS_Trihedron_swigregister = _AIS.Handle_AIS_Trihedron_swigregister
 Handle_AIS_Trihedron_swigregister(Handle_AIS_Trihedron)
 
-def Handle_AIS_Trihedron_DownCast(*args):
+def Handle_AIS_Trihedron_DownCast(*args) -> "Handle_AIS_Trihedron const" :
   return _AIS.Handle_AIS_Trihedron_DownCast(*args)
 Handle_AIS_Trihedron_DownCast = _AIS.Handle_AIS_Trihedron_DownCast
 
@@ -13190,7 +13190,7 @@ class AIS_AngleDimension(AIS_Dimension):
 
         """
         _AIS.AIS_AngleDimension_swiginit(self,_AIS.new_AIS_AngleDimension(*args))
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns first point forming the angle.
 
@@ -13199,7 +13199,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_FirstPoint(self, *args)
 
-    def SecondPoint(self, *args):
+    def SecondPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns second point forming the angle.
 
@@ -13208,7 +13208,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_SecondPoint(self, *args)
 
-    def CenterPoint(self, *args):
+    def CenterPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns center point forming the angle.
 
@@ -13217,7 +13217,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_CenterPoint(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns first argument shape.
 
@@ -13226,7 +13226,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_FirstShape(self, *args)
 
-    def SecondShape(self, *args):
+    def SecondShape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns second argument shape.
 
@@ -13235,7 +13235,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_SecondShape(self, *args)
 
-    def ThirdShape(self, *args):
+    def ThirdShape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns third argument shape.
 
@@ -13244,7 +13244,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_ThirdShape(self, *args)
 
-    def SetMeasuredGeometry(self, *args):
+    def SetMeasuredGeometry(self, *args) -> "void" :
         """
         * Measures minimum angle dimension between two linear edges. These two edges should be intersected by each other. Otherwise the geometry is not valid. @param theFirstEdge [in] the first edge. @param theSecondEdge [in] the second edge.
 
@@ -13301,7 +13301,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_SetMeasuredGeometry(self, *args)
 
-    def SetTextPosition(self, *args):
+    def SetTextPosition(self, *args) -> "void" :
         """
         * Principle of horizontal text alignment settings: - divide circle into two halves according to attachment points - if aTextPos is between attach points -> Center + positive flyout - if aTextPos is not between attach points but in this half -> Left or Right + positive flyout - if aTextPos is between reflections of attach points -> Center + negative flyout - if aTextPos is not between reflections of attach points -> Left or Right + negative flyout
 
@@ -13312,7 +13312,7 @@ class AIS_AngleDimension(AIS_Dimension):
         """
         return _AIS.AIS_AngleDimension_SetTextPosition(self, *args)
 
-    def GetTextPosition(self, *args):
+    def GetTextPosition(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -13377,7 +13377,7 @@ class AIS_Chamf2dDimension(AIS_Relation):
 
         """
         _AIS.AIS_Chamf2dDimension_swiginit(self,_AIS.new_AIS_Chamf2dDimension(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -13427,7 +13427,7 @@ Handle_AIS_Chamf2dDimension._kill_pointed = new_instancemethod(_AIS.Handle_AIS_C
 Handle_AIS_Chamf2dDimension_swigregister = _AIS.Handle_AIS_Chamf2dDimension_swigregister
 Handle_AIS_Chamf2dDimension_swigregister(Handle_AIS_Chamf2dDimension)
 
-def Handle_AIS_Chamf2dDimension_DownCast(*args):
+def Handle_AIS_Chamf2dDimension_DownCast(*args) -> "Handle_AIS_Chamf2dDimension const" :
   return _AIS.Handle_AIS_Chamf2dDimension_DownCast(*args)
 Handle_AIS_Chamf2dDimension_DownCast = _AIS.Handle_AIS_Chamf2dDimension_DownCast
 
@@ -13464,7 +13464,7 @@ class AIS_Chamf3dDimension(AIS_Relation):
 
         """
         _AIS.AIS_Chamf3dDimension_swiginit(self,_AIS.new_AIS_Chamf3dDimension(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -13514,7 +13514,7 @@ Handle_AIS_Chamf3dDimension._kill_pointed = new_instancemethod(_AIS.Handle_AIS_C
 Handle_AIS_Chamf3dDimension_swigregister = _AIS.Handle_AIS_Chamf3dDimension_swigregister
 Handle_AIS_Chamf3dDimension_swigregister(Handle_AIS_Chamf3dDimension)
 
-def Handle_AIS_Chamf3dDimension_DownCast(*args):
+def Handle_AIS_Chamf3dDimension_DownCast(*args) -> "Handle_AIS_Chamf3dDimension const" :
   return _AIS.Handle_AIS_Chamf3dDimension_DownCast(*args)
 Handle_AIS_Chamf3dDimension_DownCast = _AIS.Handle_AIS_Chamf3dDimension_DownCast
 
@@ -13535,7 +13535,7 @@ class AIS_ConcentricRelation(AIS_Relation):
 
         """
         _AIS.AIS_ConcentricRelation_swiginit(self,_AIS.new_AIS_ConcentricRelation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -13585,7 +13585,7 @@ Handle_AIS_ConcentricRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS
 Handle_AIS_ConcentricRelation_swigregister = _AIS.Handle_AIS_ConcentricRelation_swigregister
 Handle_AIS_ConcentricRelation_swigregister(Handle_AIS_ConcentricRelation)
 
-def Handle_AIS_ConcentricRelation_DownCast(*args):
+def Handle_AIS_ConcentricRelation_DownCast(*args) -> "Handle_AIS_ConcentricRelation const" :
   return _AIS.Handle_AIS_ConcentricRelation_DownCast(*args)
 Handle_AIS_ConcentricRelation_DownCast = _AIS.Handle_AIS_ConcentricRelation_DownCast
 
@@ -13618,14 +13618,14 @@ class AIS_ConnectedShape(AIS_ConnectedInteractive):
 
         """
         _AIS.AIS_ConnectedShape_swiginit(self,_AIS.new_AIS_ConnectedShape(*args))
-    def AcceptShapeDecomposition(self, *args):
+    def AcceptShapeDecomposition(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AIS.AIS_ConnectedShape_AcceptShapeDecomposition(self, *args)
 
-    def Connect(self, *args):
+    def Connect(self, *args) -> "void" :
         """
         * Establishes the connection between the Connected Interactive Object, anotherIobj, and its reference entity. If there is already a previous connection with an Interactive Object, this connection is removed.
 
@@ -13644,7 +13644,7 @@ class AIS_ConnectedShape(AIS_ConnectedInteractive):
         """
         return _AIS.AIS_ConnectedShape_Connect(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the topological shape which is the reference for the connected shape. Sets hilight mode to index 0. This returns a wireframe presentation.
 
@@ -13690,7 +13690,7 @@ Handle_AIS_ConnectedShape._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Con
 Handle_AIS_ConnectedShape_swigregister = _AIS.Handle_AIS_ConnectedShape_swigregister
 Handle_AIS_ConnectedShape_swigregister(Handle_AIS_ConnectedShape)
 
-def Handle_AIS_ConnectedShape_DownCast(*args):
+def Handle_AIS_ConnectedShape_DownCast(*args) -> "Handle_AIS_ConnectedShape const" :
   return _AIS.Handle_AIS_ConnectedShape_DownCast(*args)
 Handle_AIS_ConnectedShape_DownCast = _AIS.Handle_AIS_ConnectedShape_DownCast
 
@@ -13729,7 +13729,7 @@ class AIS_DiameterDimension(AIS_Dimension):
 
         """
         _AIS.AIS_DiameterDimension_swiginit(self,_AIS.new_AIS_DiameterDimension(*args))
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ const" :
         """
         * returns measured geometry circle.
 
@@ -13738,7 +13738,7 @@ class AIS_DiameterDimension(AIS_Dimension):
         """
         return _AIS.AIS_DiameterDimension_Circle(self, *args)
 
-    def AnchorPoint(self, *args):
+    def AnchorPoint(self, *args) -> "gp_Pnt" :
         """
         * returns anchor point on circle for diameter dimension.
 
@@ -13747,7 +13747,7 @@ class AIS_DiameterDimension(AIS_Dimension):
         """
         return _AIS.AIS_DiameterDimension_AnchorPoint(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns the measured shape.
 
@@ -13756,7 +13756,7 @@ class AIS_DiameterDimension(AIS_Dimension):
         """
         return _AIS.AIS_DiameterDimension_Shape(self, *args)
 
-    def SetMeasuredGeometry(self, *args):
+    def SetMeasuredGeometry(self, *args) -> "void" :
         """
         * Measure diameter of the circle. The actual dimension plane is used for determining anchor points on the circle to attach the dimension lines to. The dimension will become invalid if the diameter of the circle is less than Precision::Confusion(). @param theCircle [in] the circle to measure.
 
@@ -13773,7 +13773,7 @@ class AIS_DiameterDimension(AIS_Dimension):
         """
         return _AIS.AIS_DiameterDimension_SetMeasuredGeometry(self, *args)
 
-    def SetTextPosition(self, *args):
+    def SetTextPosition(self, *args) -> "void" :
         """
         :param theTextPos:
         :type theTextPos: gp_Pnt
@@ -13782,7 +13782,7 @@ class AIS_DiameterDimension(AIS_Dimension):
         """
         return _AIS.AIS_DiameterDimension_SetTextPosition(self, *args)
 
-    def GetTextPosition(self, *args):
+    def GetTextPosition(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -13811,7 +13811,7 @@ class AIS_EllipseRadiusDimension(AIS_Relation):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ComputeGeometry(self, *args):
+    def ComputeGeometry(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -13853,7 +13853,7 @@ Handle_AIS_EllipseRadiusDimension._kill_pointed = new_instancemethod(_AIS.Handle
 Handle_AIS_EllipseRadiusDimension_swigregister = _AIS.Handle_AIS_EllipseRadiusDimension_swigregister
 Handle_AIS_EllipseRadiusDimension_swigregister(Handle_AIS_EllipseRadiusDimension)
 
-def Handle_AIS_EllipseRadiusDimension_DownCast(*args):
+def Handle_AIS_EllipseRadiusDimension_DownCast(*args) -> "Handle_AIS_EllipseRadiusDimension const" :
   return _AIS.Handle_AIS_EllipseRadiusDimension_DownCast(*args)
 Handle_AIS_EllipseRadiusDimension_DownCast = _AIS.Handle_AIS_EllipseRadiusDimension_DownCast
 
@@ -13878,7 +13878,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
 
         """
         _AIS.AIS_EqualDistanceRelation_swiginit(self,_AIS.new_AIS_EqualDistanceRelation(*args))
-    def SetShape3(self, *args):
+    def SetShape3(self, *args) -> "void" :
         """
         * Sets the shape aShape to be used as the shape aShape3 in the framework created at construction time.
 
@@ -13889,7 +13889,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         """
         return _AIS.AIS_EqualDistanceRelation_SetShape3(self, *args)
 
-    def Shape3(self, *args):
+    def Shape3(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape aShape3 from the framework created at construction time.
 
@@ -13898,7 +13898,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         """
         return _AIS.AIS_EqualDistanceRelation_Shape3(self, *args)
 
-    def SetShape4(self, *args):
+    def SetShape4(self, *args) -> "void" :
         """
         * Sets the shape aShape to be used as the shape aShape4 in the framework created at construction time.
 
@@ -13909,7 +13909,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         """
         return _AIS.AIS_EqualDistanceRelation_SetShape4(self, *args)
 
-    def Shape4(self, *args):
+    def Shape4(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape aShape4 from the framework created at construction time.
 
@@ -13918,7 +13918,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         """
         return _AIS.AIS_EqualDistanceRelation_Shape4(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -13933,7 +13933,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         """
         return _AIS.AIS_EqualDistanceRelation_Compute(self, *args)
 
-    def ComputeTwoEdgesLength(*args):
+    def ComputeTwoEdgesLength(*args) -> "void" :
         """
         * Computes the location of an intreval between between two edges. FirstAttach , SecondAttach are the returned extreme points of the interval.
 
@@ -13973,7 +13973,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         return _AIS.AIS_EqualDistanceRelation_ComputeTwoEdgesLength(*args)
 
     ComputeTwoEdgesLength = staticmethod(ComputeTwoEdgesLength)
-    def ComputeTwoVerticesLength(*args):
+    def ComputeTwoVerticesLength(*args) -> "void" :
         """
         * Computes the interval position between two vertexs. FirstAttach, SecondAttach are the returned extreme points of the interval.
 
@@ -14015,7 +14015,7 @@ class AIS_EqualDistanceRelation(AIS_Relation):
         return _AIS.AIS_EqualDistanceRelation_ComputeTwoVerticesLength(*args)
 
     ComputeTwoVerticesLength = staticmethod(ComputeTwoVerticesLength)
-    def ComputeOneEdgeOneVertexLength(*args):
+    def ComputeOneEdgeOneVertexLength(*args) -> "void" :
         """
         * Compute the interval location between a vertex and an edge. Edge may be a line or a circle.
 
@@ -14073,7 +14073,7 @@ AIS_EqualDistanceRelation.GetHandle = new_instancemethod(_AIS.AIS_EqualDistanceR
 AIS_EqualDistanceRelation_swigregister = _AIS.AIS_EqualDistanceRelation_swigregister
 AIS_EqualDistanceRelation_swigregister(AIS_EqualDistanceRelation)
 
-def AIS_EqualDistanceRelation_ComputeTwoEdgesLength(*args):
+def AIS_EqualDistanceRelation_ComputeTwoEdgesLength(*args) -> "void" :
   """
     * Computes the location of an intreval between between two edges. FirstAttach , SecondAttach are the returned extreme points of the interval.
 
@@ -14112,7 +14112,7 @@ def AIS_EqualDistanceRelation_ComputeTwoEdgesLength(*args):
     """
   return _AIS.AIS_EqualDistanceRelation_ComputeTwoEdgesLength(*args)
 
-def AIS_EqualDistanceRelation_ComputeTwoVerticesLength(*args):
+def AIS_EqualDistanceRelation_ComputeTwoVerticesLength(*args) -> "void" :
   """
     * Computes the interval position between two vertexs. FirstAttach, SecondAttach are the returned extreme points of the interval.
 
@@ -14153,7 +14153,7 @@ def AIS_EqualDistanceRelation_ComputeTwoVerticesLength(*args):
     """
   return _AIS.AIS_EqualDistanceRelation_ComputeTwoVerticesLength(*args)
 
-def AIS_EqualDistanceRelation_ComputeOneEdgeOneVertexLength(*args):
+def AIS_EqualDistanceRelation_ComputeOneEdgeOneVertexLength(*args) -> "void" :
   """
     * Compute the interval location between a vertex and an edge. Edge may be a line or a circle.
 
@@ -14213,7 +14213,7 @@ Handle_AIS_EqualDistanceRelation._kill_pointed = new_instancemethod(_AIS.Handle_
 Handle_AIS_EqualDistanceRelation_swigregister = _AIS.Handle_AIS_EqualDistanceRelation_swigregister
 Handle_AIS_EqualDistanceRelation_swigregister(Handle_AIS_EqualDistanceRelation)
 
-def Handle_AIS_EqualDistanceRelation_DownCast(*args):
+def Handle_AIS_EqualDistanceRelation_DownCast(*args) -> "Handle_AIS_EqualDistanceRelation const" :
   return _AIS.Handle_AIS_EqualDistanceRelation_DownCast(*args)
 Handle_AIS_EqualDistanceRelation_DownCast = _AIS.Handle_AIS_EqualDistanceRelation_DownCast
 
@@ -14234,7 +14234,7 @@ class AIS_EqualRadiusRelation(AIS_Relation):
 
         """
         _AIS.AIS_EqualRadiusRelation_swiginit(self,_AIS.new_AIS_EqualRadiusRelation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -14284,7 +14284,7 @@ Handle_AIS_EqualRadiusRelation._kill_pointed = new_instancemethod(_AIS.Handle_AI
 Handle_AIS_EqualRadiusRelation_swigregister = _AIS.Handle_AIS_EqualRadiusRelation_swigregister
 Handle_AIS_EqualRadiusRelation_swigregister(Handle_AIS_EqualRadiusRelation)
 
-def Handle_AIS_EqualRadiusRelation_DownCast(*args):
+def Handle_AIS_EqualRadiusRelation_DownCast(*args) -> "Handle_AIS_EqualRadiusRelation const" :
   return _AIS.Handle_AIS_EqualRadiusRelation_DownCast(*args)
 Handle_AIS_EqualRadiusRelation_DownCast = _AIS.Handle_AIS_EqualRadiusRelation_DownCast
 
@@ -14339,7 +14339,7 @@ class AIS_FixRelation(AIS_Relation):
 
         """
         _AIS.AIS_FixRelation_swiginit(self,_AIS.new_AIS_FixRelation(*args))
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire" :
         """
         * Returns the wire which connects vertices in a fixed relation.
 
@@ -14348,7 +14348,7 @@ class AIS_FixRelation(AIS_Relation):
         """
         return _AIS.AIS_FixRelation_Wire(self, *args)
 
-    def SetWire(self, *args):
+    def SetWire(self, *args) -> "void" :
         """
         * Constructs the wire aWire. This connects vertices which are in a fixed relation.
 
@@ -14359,7 +14359,7 @@ class AIS_FixRelation(AIS_Relation):
         """
         return _AIS.AIS_FixRelation_SetWire(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -14411,7 +14411,7 @@ Handle_AIS_FixRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_FixRel
 Handle_AIS_FixRelation_swigregister = _AIS.Handle_AIS_FixRelation_swigregister
 Handle_AIS_FixRelation_swigregister(Handle_AIS_FixRelation)
 
-def Handle_AIS_FixRelation_DownCast(*args):
+def Handle_AIS_FixRelation_DownCast(*args) -> "Handle_AIS_FixRelation const" :
   return _AIS.Handle_AIS_FixRelation_DownCast(*args)
 Handle_AIS_FixRelation_DownCast = _AIS.Handle_AIS_FixRelation_DownCast
 
@@ -14432,7 +14432,7 @@ class AIS_IdenticRelation(AIS_Relation):
 
         """
         _AIS.AIS_IdenticRelation_swiginit(self,_AIS.new_AIS_IdenticRelation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -14482,7 +14482,7 @@ Handle_AIS_IdenticRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Id
 Handle_AIS_IdenticRelation_swigregister = _AIS.Handle_AIS_IdenticRelation_swigregister
 Handle_AIS_IdenticRelation_swigregister(Handle_AIS_IdenticRelation)
 
-def Handle_AIS_IdenticRelation_DownCast(*args):
+def Handle_AIS_IdenticRelation_DownCast(*args) -> "Handle_AIS_IdenticRelation const" :
   return _AIS.Handle_AIS_IdenticRelation_DownCast(*args)
 Handle_AIS_IdenticRelation_DownCast = _AIS.Handle_AIS_IdenticRelation_DownCast
 
@@ -14537,7 +14537,7 @@ class AIS_LengthDimension(AIS_Dimension):
 
         """
         _AIS.AIS_LengthDimension_swiginit(self,_AIS.new_AIS_LengthDimension(*args))
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns first attachement point.
 
@@ -14546,7 +14546,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_FirstPoint(self, *args)
 
-    def SecondPoint(self, *args):
+    def SecondPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns second attachement point.
 
@@ -14555,7 +14555,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_SecondPoint(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns first attachement shape.
 
@@ -14564,7 +14564,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_FirstShape(self, *args)
 
-    def SecondShape(self, *args):
+    def SecondShape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns second attachement shape.
 
@@ -14573,7 +14573,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_SecondShape(self, *args)
 
-    def SetMeasuredGeometry(self, *args):
+    def SetMeasuredGeometry(self, *args) -> "void" :
         """
         * Measure distance between two points. The dimension will become invalid if the new distance between attachement points is less than Precision::Confusion(). @param theFirstPoint [in] the first point. @param theSecondPoint [in] the second point. @param thePlane [in] the user-defined plane
 
@@ -14612,7 +14612,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_SetMeasuredGeometry(self, *args)
 
-    def SetMeasuredShapes(self, *args):
+    def SetMeasuredShapes(self, *args) -> "void" :
         """
         * Measure distance between generic pair of shapes (edges, vertices, length), where measuring is applicable. @param theFirstShape [in] the first shape. @param theSecondShape [in] the second shape.
 
@@ -14625,7 +14625,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_SetMeasuredShapes(self, *args)
 
-    def SetTextPosition(self, *args):
+    def SetTextPosition(self, *args) -> "void" :
         """
         :param theTextPos:
         :type theTextPos: gp_Pnt
@@ -14634,7 +14634,7 @@ class AIS_LengthDimension(AIS_Dimension):
         """
         return _AIS.AIS_LengthDimension_SetTextPosition(self, *args)
 
-    def GetTextPosition(self, *args):
+    def GetTextPosition(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -14678,7 +14678,7 @@ class AIS_MidPointRelation(AIS_Relation):
 
         """
         _AIS.AIS_MidPointRelation_swiginit(self,_AIS.new_AIS_MidPointRelation(*args))
-    def SetTool(self, *args):
+    def SetTool(self, *args) -> "void" :
         """
         :param aMidPointTool:
         :type aMidPointTool: TopoDS_Shape &
@@ -14687,14 +14687,14 @@ class AIS_MidPointRelation(AIS_Relation):
         """
         return _AIS.AIS_MidPointRelation_SetTool(self, *args)
 
-    def GetTool(self, *args):
+    def GetTool(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _AIS.AIS_MidPointRelation_GetTool(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -14746,7 +14746,7 @@ Handle_AIS_MidPointRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_M
 Handle_AIS_MidPointRelation_swigregister = _AIS.Handle_AIS_MidPointRelation_swigregister
 Handle_AIS_MidPointRelation_swigregister(Handle_AIS_MidPointRelation)
 
-def Handle_AIS_MidPointRelation_DownCast(*args):
+def Handle_AIS_MidPointRelation_DownCast(*args) -> "Handle_AIS_MidPointRelation const" :
   return _AIS.Handle_AIS_MidPointRelation_DownCast(*args)
 Handle_AIS_MidPointRelation_DownCast = _AIS.Handle_AIS_MidPointRelation_DownCast
 
@@ -14763,7 +14763,7 @@ class AIS_MultipleConnectedShape(AIS_MultipleConnectedInteractive):
 
         """
         _AIS.AIS_MultipleConnectedShape_swiginit(self,_AIS.new_AIS_MultipleConnectedShape(*args))
-    def AcceptShapeDecomposition(self, *args):
+    def AcceptShapeDecomposition(self, *args) -> "Standard_Boolean" :
         """
         * Returns true is shape decomposition is accepted.
 
@@ -14772,7 +14772,7 @@ class AIS_MultipleConnectedShape(AIS_MultipleConnectedInteractive):
         """
         return _AIS.AIS_MultipleConnectedShape_AcceptShapeDecomposition(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Constructs the reference shape ashap.
 
@@ -14783,7 +14783,7 @@ class AIS_MultipleConnectedShape(AIS_MultipleConnectedInteractive):
         """
         return _AIS.AIS_MultipleConnectedShape_Set(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape which is constructed in Set.
 
@@ -14829,7 +14829,7 @@ Handle_AIS_MultipleConnectedShape._kill_pointed = new_instancemethod(_AIS.Handle
 Handle_AIS_MultipleConnectedShape_swigregister = _AIS.Handle_AIS_MultipleConnectedShape_swigregister
 Handle_AIS_MultipleConnectedShape_swigregister(Handle_AIS_MultipleConnectedShape)
 
-def Handle_AIS_MultipleConnectedShape_DownCast(*args):
+def Handle_AIS_MultipleConnectedShape_DownCast(*args) -> "Handle_AIS_MultipleConnectedShape const" :
   return _AIS.Handle_AIS_MultipleConnectedShape_DownCast(*args)
 Handle_AIS_MultipleConnectedShape_DownCast = _AIS.Handle_AIS_MultipleConnectedShape_DownCast
 
@@ -14852,7 +14852,7 @@ class AIS_OffsetDimension(AIS_Relation):
 
         """
         _AIS.AIS_OffsetDimension_swiginit(self,_AIS.new_AIS_OffsetDimension(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -14867,7 +14867,7 @@ class AIS_OffsetDimension(AIS_Relation):
         """
         return _AIS.AIS_OffsetDimension_Compute(self, *args)
 
-    def SetRelativePos(self, *args):
+    def SetRelativePos(self, *args) -> "void" :
         """
         * Sets a transformation aTrsf for presentation and selection to a relative position.
 
@@ -14914,7 +14914,7 @@ Handle_AIS_OffsetDimension._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Of
 Handle_AIS_OffsetDimension_swigregister = _AIS.Handle_AIS_OffsetDimension_swigregister
 Handle_AIS_OffsetDimension_swigregister(Handle_AIS_OffsetDimension)
 
-def Handle_AIS_OffsetDimension_DownCast(*args):
+def Handle_AIS_OffsetDimension_DownCast(*args) -> "Handle_AIS_OffsetDimension const" :
   return _AIS.Handle_AIS_OffsetDimension_DownCast(*args)
 Handle_AIS_OffsetDimension_DownCast = _AIS.Handle_AIS_OffsetDimension_DownCast
 
@@ -14951,7 +14951,7 @@ class AIS_ParallelRelation(AIS_Relation):
 
         """
         _AIS.AIS_ParallelRelation_swiginit(self,_AIS.new_AIS_ParallelRelation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15001,7 +15001,7 @@ Handle_AIS_ParallelRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_P
 Handle_AIS_ParallelRelation_swigregister = _AIS.Handle_AIS_ParallelRelation_swigregister
 Handle_AIS_ParallelRelation_swigregister(Handle_AIS_ParallelRelation)
 
-def Handle_AIS_ParallelRelation_DownCast(*args):
+def Handle_AIS_ParallelRelation_DownCast(*args) -> "Handle_AIS_ParallelRelation const" :
   return _AIS.Handle_AIS_ParallelRelation_DownCast(*args)
 Handle_AIS_ParallelRelation_DownCast = _AIS.Handle_AIS_ParallelRelation_DownCast
 
@@ -15030,7 +15030,7 @@ class AIS_PerpendicularRelation(AIS_Relation):
 
         """
         _AIS.AIS_PerpendicularRelation_swiginit(self,_AIS.new_AIS_PerpendicularRelation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15080,7 +15080,7 @@ Handle_AIS_PerpendicularRelation._kill_pointed = new_instancemethod(_AIS.Handle_
 Handle_AIS_PerpendicularRelation_swigregister = _AIS.Handle_AIS_PerpendicularRelation_swigregister
 Handle_AIS_PerpendicularRelation_swigregister(Handle_AIS_PerpendicularRelation)
 
-def Handle_AIS_PerpendicularRelation_DownCast(*args):
+def Handle_AIS_PerpendicularRelation_DownCast(*args) -> "Handle_AIS_PerpendicularRelation const" :
   return _AIS.Handle_AIS_PerpendicularRelation_DownCast(*args)
 Handle_AIS_PerpendicularRelation_DownCast = _AIS.Handle_AIS_PerpendicularRelation_DownCast
 
@@ -15111,7 +15111,7 @@ class AIS_RadiusDimension(AIS_Dimension):
 
         """
         _AIS.AIS_RadiusDimension_swiginit(self,_AIS.new_AIS_RadiusDimension(*args))
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ const" :
         """
         * returns measured geometry circle.
 
@@ -15120,7 +15120,7 @@ class AIS_RadiusDimension(AIS_Dimension):
         """
         return _AIS.AIS_RadiusDimension_Circle(self, *args)
 
-    def AnchorPoint(self, *args):
+    def AnchorPoint(self, *args) -> "gp_Pnt const" :
         """
         * returns anchor point on circle for radius dimension.
 
@@ -15129,7 +15129,7 @@ class AIS_RadiusDimension(AIS_Dimension):
         """
         return _AIS.AIS_RadiusDimension_AnchorPoint(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * returns the measured shape.
 
@@ -15138,7 +15138,7 @@ class AIS_RadiusDimension(AIS_Dimension):
         """
         return _AIS.AIS_RadiusDimension_Shape(self, *args)
 
-    def SetMeasuredGeometry(self, *args):
+    def SetMeasuredGeometry(self, *args) -> "void" :
         """
         * Measure radius of the circle. The dimension will become invalid if the radius of the circle is less than Precision::Confusion(). @param theCircle [in] the circle to measure.
 
@@ -15163,7 +15163,7 @@ class AIS_RadiusDimension(AIS_Dimension):
         """
         return _AIS.AIS_RadiusDimension_SetMeasuredGeometry(self, *args)
 
-    def SetTextPosition(self, *args):
+    def SetTextPosition(self, *args) -> "void" :
         """
         :param theTextPos:
         :type theTextPos: gp_Pnt
@@ -15172,7 +15172,7 @@ class AIS_RadiusDimension(AIS_Dimension):
         """
         return _AIS.AIS_RadiusDimension_SetTextPosition(self, *args)
 
-    def GetTextPosition(self, *args):
+    def GetTextPosition(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -15216,7 +15216,7 @@ class AIS_SymmetricRelation(AIS_Relation):
 
         """
         _AIS.AIS_SymmetricRelation_swiginit(self,_AIS.new_AIS_SymmetricRelation(*args))
-    def SetTool(self, *args):
+    def SetTool(self, *args) -> "void" :
         """
         * Sets the tool aSymmetricTool composed of a first shape, a second shape, and a plane. This tool is initially created at construction time.
 
@@ -15227,7 +15227,7 @@ class AIS_SymmetricRelation(AIS_Relation):
         """
         return _AIS.AIS_SymmetricRelation_SetTool(self, *args)
 
-    def GetTool(self, *args):
+    def GetTool(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the tool composed of a first shape, a second shape, and a plane. This tool is created at construction time.
 
@@ -15236,7 +15236,7 @@ class AIS_SymmetricRelation(AIS_Relation):
         """
         return _AIS.AIS_SymmetricRelation_GetTool(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15288,7 +15288,7 @@ Handle_AIS_SymmetricRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_
 Handle_AIS_SymmetricRelation_swigregister = _AIS.Handle_AIS_SymmetricRelation_swigregister
 Handle_AIS_SymmetricRelation_swigregister(Handle_AIS_SymmetricRelation)
 
-def Handle_AIS_SymmetricRelation_DownCast(*args):
+def Handle_AIS_SymmetricRelation_DownCast(*args) -> "Handle_AIS_SymmetricRelation const" :
   return _AIS.Handle_AIS_SymmetricRelation_DownCast(*args)
 Handle_AIS_SymmetricRelation_DownCast = _AIS.Handle_AIS_SymmetricRelation_DownCast
 
@@ -15311,7 +15311,7 @@ class AIS_TangentRelation(AIS_Relation):
 
         """
         _AIS.AIS_TangentRelation_swiginit(self,_AIS.new_AIS_TangentRelation(*args))
-    def ExternRef(self, *args):
+    def ExternRef(self, *args) -> "Standard_Integer" :
         """
         * Returns the external reference for tangency. The values are as follows: - 0 - there is no connection; - 1 - there is a connection to the first shape; - 2 - there is a connection to the second shape. This reference is defined at construction time.
 
@@ -15320,7 +15320,7 @@ class AIS_TangentRelation(AIS_Relation):
         """
         return _AIS.AIS_TangentRelation_ExternRef(self, *args)
 
-    def SetExternRef(self, *args):
+    def SetExternRef(self, *args) -> "void" :
         """
         * Sets the external reference for tangency, aRef. The values are as follows: - 0 - there is no connection; - 1 - there is a connection to the first shape; - 2 - there is a connection to the second shape. This reference is initially defined at construction time.
 
@@ -15331,7 +15331,7 @@ class AIS_TangentRelation(AIS_Relation):
         """
         return _AIS.AIS_TangentRelation_SetExternRef(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15383,7 +15383,7 @@ Handle_AIS_TangentRelation._kill_pointed = new_instancemethod(_AIS.Handle_AIS_Ta
 Handle_AIS_TangentRelation_swigregister = _AIS.Handle_AIS_TangentRelation_swigregister
 Handle_AIS_TangentRelation_swigregister(Handle_AIS_TangentRelation)
 
-def Handle_AIS_TangentRelation_DownCast(*args):
+def Handle_AIS_TangentRelation_DownCast(*args) -> "Handle_AIS_TangentRelation const" :
   return _AIS.Handle_AIS_TangentRelation_DownCast(*args)
 Handle_AIS_TangentRelation_DownCast = _AIS.Handle_AIS_TangentRelation_DownCast
 
@@ -15400,7 +15400,7 @@ class AIS_TexturedShape(AIS_Shape):
 
         """
         _AIS.AIS_TexturedShape_swiginit(self,_AIS.new_AIS_TexturedShape(*args))
-    def SetTextureFileName(self, *args):
+    def SetTextureFileName(self, *args) -> "void" :
         """
         * Sets the texture source. <theTextureFileName> can specify path to texture image or one of the standard predefined textures. The accepted file types are those used in Image_AlienPixMap with extensions such as rgb, png, jpg and more. To specify the standard predefined texture, the <theTextureFileName> should contain integer - the Graphic3d_NameOfTexture2D enumeration index. Setting texture source using this method resets the source pixmap (if was set previously).
 
@@ -15411,7 +15411,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureFileName(self, *args)
 
-    def SetTexturePixMap(self, *args):
+    def SetTexturePixMap(self, *args) -> "void" :
         """
         * Sets the texture source. <theTexturePixMap> specifies image data. Please note that the data should be in Bottom-Up order, the flag of Image_PixMap::IsTopDown() will be ignored by graphic driver. Setting texture source using this method resets the source by filename (if was set previously).
 
@@ -15422,7 +15422,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTexturePixMap(self, *args)
 
-    def TextureMapState(self, *args):
+    def TextureMapState(self, *args) -> "Standard_Boolean" :
         """
         * returns flag to control texture mapping (for presentation mode 3)
 
@@ -15431,7 +15431,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureMapState(self, *args)
 
-    def SetTextureMapOn(self, *args):
+    def SetTextureMapOn(self, *args) -> "void" :
         """
         * Enables texture mapping
 
@@ -15440,7 +15440,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureMapOn(self, *args)
 
-    def SetTextureMapOff(self, *args):
+    def SetTextureMapOff(self, *args) -> "void" :
         """
         * Disables texture mapping
 
@@ -15449,7 +15449,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureMapOff(self, *args)
 
-    def TextureFile(self, *args):
+    def TextureFile(self, *args) -> "char *" :
         """
         * returns path to the texture file
 
@@ -15458,7 +15458,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureFile(self, *args)
 
-    def TexturePixMap(self, *args):
+    def TexturePixMap(self, *args) -> "Handle_Image_PixMap const &" :
         """
         * returns the source pixmap for texture map
 
@@ -15467,7 +15467,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TexturePixMap(self, *args)
 
-    def UpdateAttributes(self, *args):
+    def UpdateAttributes(self, *args) -> "void" :
         """
         * @name methods to alter texture mapping properties Use this method to display the textured shape without recomputing the whole presentation. Use this method when ONLY the texture content has been changed. If other parameters (ie: scale factors, texture origin, texture repeat...) have changed, the whole presentation has to be recomputed: @code if (myShape->DisplayMode() == 3) { myAISContext->RecomputePrsOnly (myShape); } else { myAISContext->SetDisplayMode (myShape, 3, Standard_False); myAISContext->Display (myShape, Standard_True); } @endcode
 
@@ -15476,7 +15476,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_UpdateAttributes(self, *args)
 
-    def EnableTextureModulate(self, *args):
+    def EnableTextureModulate(self, *args) -> "void" :
         """
         * Enables texture modulation
 
@@ -15485,7 +15485,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_EnableTextureModulate(self, *args)
 
-    def DisableTextureModulate(self, *args):
+    def DisableTextureModulate(self, *args) -> "void" :
         """
         * Disables texture modulation
 
@@ -15494,7 +15494,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_DisableTextureModulate(self, *args)
 
-    def TextureRepeat(self, *args):
+    def TextureRepeat(self, *args) -> "Standard_Boolean" :
         """
         * returns texture repeat flag
 
@@ -15503,7 +15503,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureRepeat(self, *args)
 
-    def URepeat(self, *args):
+    def URepeat(self, *args) -> "Standard_Real" :
         """
         * returns texture repeat U value
 
@@ -15512,7 +15512,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_URepeat(self, *args)
 
-    def VRepeat(self, *args):
+    def VRepeat(self, *args) -> "Standard_Real" :
         """
         * returns texture repeat V value
 
@@ -15521,7 +15521,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_VRepeat(self, *args)
 
-    def SetTextureRepeat(self, *args):
+    def SetTextureRepeat(self, *args) -> "void" :
         """
         * Sets the number of occurrences of the texture on each face. The texture itself is parameterized in (0,1) by (0,1). Each face of the shape to be textured is parameterized in UV space (Umin,Umax) by (Vmin,Vmax). If RepeatYN is set to false, texture coordinates are clamped in the range (0,1)x(0,1) of the face.
 
@@ -15536,7 +15536,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureRepeat(self, *args)
 
-    def TextureOrigin(self, *args):
+    def TextureOrigin(self, *args) -> "Standard_Boolean" :
         """
         * returns true if texture UV origin has been modified
 
@@ -15545,7 +15545,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureOrigin(self, *args)
 
-    def TextureUOrigin(self, *args):
+    def TextureUOrigin(self, *args) -> "Standard_Real" :
         """
         * returns texture origin U position (0.0 by default)
 
@@ -15554,7 +15554,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureUOrigin(self, *args)
 
-    def TextureVOrigin(self, *args):
+    def TextureVOrigin(self, *args) -> "Standard_Real" :
         """
         * returns texture origin V position (0.0 by default)
 
@@ -15563,7 +15563,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureVOrigin(self, *args)
 
-    def SetTextureOrigin(self, *args):
+    def SetTextureOrigin(self, *args) -> "void" :
         """
         * Use this method to change the origin of the texture. The texel (0,0) will be mapped to the surface (UOrigin,VOrigin)
 
@@ -15578,7 +15578,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureOrigin(self, *args)
 
-    def TextureScale(self, *args):
+    def TextureScale(self, *args) -> "Standard_Boolean" :
         """
         * returns true if scale factor should be applied to texture mapping
 
@@ -15587,7 +15587,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureScale(self, *args)
 
-    def TextureScaleU(self, *args):
+    def TextureScaleU(self, *args) -> "Standard_Real" :
         """
         * returns scale factor for U coordinate (1.0 by default)
 
@@ -15596,7 +15596,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureScaleU(self, *args)
 
-    def TextureScaleV(self, *args):
+    def TextureScaleV(self, *args) -> "Standard_Real" :
         """
         * returns scale factor for V coordinate (1.0 by default)
 
@@ -15605,7 +15605,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_TextureScaleV(self, *args)
 
-    def SetTextureScale(self, *args):
+    def SetTextureScale(self, *args) -> "void" :
         """
         * Use this method to scale the texture (percent of the face). You can specify a scale factor for both U and V. Example: if you set ScaleU and ScaleV to 0.5 and you enable texture repeat, the texture will appear twice on the face in each direction.
 
@@ -15620,7 +15620,7 @@ class AIS_TexturedShape(AIS_Shape):
         """
         return _AIS.AIS_TexturedShape_SetTextureScale(self, *args)
 
-    def TextureModulate(self, *args):
+    def TextureModulate(self, *args) -> "Standard_Boolean" :
         """
         * returns true if texture color modulation is turned on
 
@@ -15697,7 +15697,7 @@ class AIS_MaxRadiusDimension(AIS_EllipseRadiusDimension):
 
         """
         _AIS.AIS_MaxRadiusDimension_swiginit(self,_AIS.new_AIS_MaxRadiusDimension(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15747,7 +15747,7 @@ Handle_AIS_MaxRadiusDimension._kill_pointed = new_instancemethod(_AIS.Handle_AIS
 Handle_AIS_MaxRadiusDimension_swigregister = _AIS.Handle_AIS_MaxRadiusDimension_swigregister
 Handle_AIS_MaxRadiusDimension_swigregister(Handle_AIS_MaxRadiusDimension)
 
-def Handle_AIS_MaxRadiusDimension_DownCast(*args):
+def Handle_AIS_MaxRadiusDimension_DownCast(*args) -> "Handle_AIS_MaxRadiusDimension const" :
   return _AIS.Handle_AIS_MaxRadiusDimension_DownCast(*args)
 Handle_AIS_MaxRadiusDimension_DownCast = _AIS.Handle_AIS_MaxRadiusDimension_DownCast
 
@@ -15784,7 +15784,7 @@ class AIS_MinRadiusDimension(AIS_EllipseRadiusDimension):
 
         """
         _AIS.AIS_MinRadiusDimension_swiginit(self,_AIS.new_AIS_MinRadiusDimension(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * computes the presentation according to a point of view given by <aProjector>. To be Used when the associated degenerated Presentations have been transformed by <aTrsf> which is not a Pure Translation. The HLR Prs can't be deducted automatically WARNING :<aTrsf> must be applied to the object to display before computation !!!
 
@@ -15834,7 +15834,7 @@ Handle_AIS_MinRadiusDimension._kill_pointed = new_instancemethod(_AIS.Handle_AIS
 Handle_AIS_MinRadiusDimension_swigregister = _AIS.Handle_AIS_MinRadiusDimension_swigregister
 Handle_AIS_MinRadiusDimension_swigregister(Handle_AIS_MinRadiusDimension)
 
-def Handle_AIS_MinRadiusDimension_DownCast(*args):
+def Handle_AIS_MinRadiusDimension_DownCast(*args) -> "Handle_AIS_MinRadiusDimension const" :
   return _AIS.Handle_AIS_MinRadiusDimension_DownCast(*args)
 Handle_AIS_MinRadiusDimension_DownCast = _AIS.Handle_AIS_MinRadiusDimension_DownCast
 

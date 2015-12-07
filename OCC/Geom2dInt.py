@@ -141,7 +141,7 @@ class Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter(object):
 
         """
         _Geom2dInt.Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Poly1:
         :type Poly1: Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter &
@@ -174,14 +174,14 @@ class Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter_Perform(self, *args)
 
-    def NbRoots(self, *args):
+    def NbRoots(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dInt.Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter_NbRoots(self, *args)
 
-    def Roots(self, *args):
+    def Roots(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -192,7 +192,7 @@ class Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_ExactIntersectionPointOfTheIntPCurvePCurveOfGInter_Roots(self, *args)
 
-    def AnErrorOccurred(self, *args):
+    def AnErrorOccurred(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -290,7 +290,7 @@ class Geom2dInt_GInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _Geom2dInt.Geom2dInt_GInter_swiginit(self,_Geom2dInt.new_Geom2dInt_GInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param C1:
         :type C1: Adaptor2d_Curve2d &
@@ -361,7 +361,7 @@ class Geom2dInt_GInter(OCC.IntRes2d.IntRes2d_Intersection):
         """
         return _Geom2dInt.Geom2dInt_GInter_Perform(self, *args)
 
-    def ComputeDomain(self, *args):
+    def ComputeDomain(self, *args) -> "IntRes2d_Domain" :
         """
         :param C1:
         :type C1: Adaptor2d_Curve2d &
@@ -389,7 +389,7 @@ Geom2dInt_GInter_swigregister(Geom2dInt_GInter)
 class Geom2dInt_Geom2dCurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetType(*args):
+    def GetType(*args) -> "GeomAbs_CurveType" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -399,7 +399,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args):
+    def Line(*args) -> "gp_Lin2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -409,7 +409,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args):
+    def Circle(*args) -> "gp_Circ2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -419,7 +419,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args):
+    def Ellipse(*args) -> "gp_Elips2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -429,7 +429,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Parabola(*args):
+    def Parabola(*args) -> "gp_Parab2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -439,7 +439,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Hyperbola(*args):
+    def Hyperbola(*args) -> "gp_Hypr2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -449,7 +449,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def EpsX(*args):
+    def EpsX(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -465,7 +465,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_EpsX(*args)
 
     EpsX = staticmethod(EpsX)
-    def NbSamples(*args):
+    def NbSamples(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -483,7 +483,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -493,7 +493,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -503,7 +503,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -515,7 +515,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -529,7 +529,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -545,7 +545,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -563,7 +563,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -583,7 +583,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec2d" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -597,7 +597,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def NbIntervals(*args):
+    def NbIntervals(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -607,7 +607,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args):
+    def Intervals(*args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -619,7 +619,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def GetInterval(*args):
+    def GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -637,7 +637,7 @@ class Geom2dInt_Geom2dCurveTool(object):
         return _Geom2dInt.Geom2dInt_Geom2dCurveTool_GetInterval(*args)
 
     GetInterval = staticmethod(GetInterval)
-    def Degree(*args):
+    def Degree(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -661,7 +661,7 @@ Geom2dInt_Geom2dCurveTool._kill_pointed = new_instancemethod(_Geom2dInt.Geom2dIn
 Geom2dInt_Geom2dCurveTool_swigregister = _Geom2dInt.Geom2dInt_Geom2dCurveTool_swigregister
 Geom2dInt_Geom2dCurveTool_swigregister(Geom2dInt_Geom2dCurveTool)
 
-def Geom2dInt_Geom2dCurveTool_GetType(*args):
+def Geom2dInt_Geom2dCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -670,7 +670,7 @@ def Geom2dInt_Geom2dCurveTool_GetType(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_GetType(*args)
 
-def Geom2dInt_Geom2dCurveTool_Line(*args):
+def Geom2dInt_Geom2dCurveTool_Line(*args) -> "gp_Lin2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -679,7 +679,7 @@ def Geom2dInt_Geom2dCurveTool_Line(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Line(*args)
 
-def Geom2dInt_Geom2dCurveTool_Circle(*args):
+def Geom2dInt_Geom2dCurveTool_Circle(*args) -> "gp_Circ2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -688,7 +688,7 @@ def Geom2dInt_Geom2dCurveTool_Circle(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Circle(*args)
 
-def Geom2dInt_Geom2dCurveTool_Ellipse(*args):
+def Geom2dInt_Geom2dCurveTool_Ellipse(*args) -> "gp_Elips2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -697,7 +697,7 @@ def Geom2dInt_Geom2dCurveTool_Ellipse(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Ellipse(*args)
 
-def Geom2dInt_Geom2dCurveTool_Parabola(*args):
+def Geom2dInt_Geom2dCurveTool_Parabola(*args) -> "gp_Parab2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -706,7 +706,7 @@ def Geom2dInt_Geom2dCurveTool_Parabola(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Parabola(*args)
 
-def Geom2dInt_Geom2dCurveTool_Hyperbola(*args):
+def Geom2dInt_Geom2dCurveTool_Hyperbola(*args) -> "gp_Hypr2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -715,7 +715,7 @@ def Geom2dInt_Geom2dCurveTool_Hyperbola(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Hyperbola(*args)
 
-def Geom2dInt_Geom2dCurveTool_EpsX(*args):
+def Geom2dInt_Geom2dCurveTool_EpsX(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -730,7 +730,7 @@ def Geom2dInt_Geom2dCurveTool_EpsX(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_EpsX(*args)
 
-def Geom2dInt_Geom2dCurveTool_NbSamples(*args):
+def Geom2dInt_Geom2dCurveTool_NbSamples(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -747,7 +747,7 @@ def Geom2dInt_Geom2dCurveTool_NbSamples(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_NbSamples(*args)
 
-def Geom2dInt_Geom2dCurveTool_FirstParameter(*args):
+def Geom2dInt_Geom2dCurveTool_FirstParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -756,7 +756,7 @@ def Geom2dInt_Geom2dCurveTool_FirstParameter(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_FirstParameter(*args)
 
-def Geom2dInt_Geom2dCurveTool_LastParameter(*args):
+def Geom2dInt_Geom2dCurveTool_LastParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -765,7 +765,7 @@ def Geom2dInt_Geom2dCurveTool_LastParameter(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_LastParameter(*args)
 
-def Geom2dInt_Geom2dCurveTool_Value(*args):
+def Geom2dInt_Geom2dCurveTool_Value(*args) -> "gp_Pnt2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -776,7 +776,7 @@ def Geom2dInt_Geom2dCurveTool_Value(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Value(*args)
 
-def Geom2dInt_Geom2dCurveTool_D0(*args):
+def Geom2dInt_Geom2dCurveTool_D0(*args) -> "void" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -789,7 +789,7 @@ def Geom2dInt_Geom2dCurveTool_D0(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D0(*args)
 
-def Geom2dInt_Geom2dCurveTool_D1(*args):
+def Geom2dInt_Geom2dCurveTool_D1(*args) -> "void" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -804,7 +804,7 @@ def Geom2dInt_Geom2dCurveTool_D1(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D1(*args)
 
-def Geom2dInt_Geom2dCurveTool_D2(*args):
+def Geom2dInt_Geom2dCurveTool_D2(*args) -> "void" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -821,7 +821,7 @@ def Geom2dInt_Geom2dCurveTool_D2(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D2(*args)
 
-def Geom2dInt_Geom2dCurveTool_D3(*args):
+def Geom2dInt_Geom2dCurveTool_D3(*args) -> "void" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -840,7 +840,7 @@ def Geom2dInt_Geom2dCurveTool_D3(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_D3(*args)
 
-def Geom2dInt_Geom2dCurveTool_DN(*args):
+def Geom2dInt_Geom2dCurveTool_DN(*args) -> "gp_Vec2d" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -853,7 +853,7 @@ def Geom2dInt_Geom2dCurveTool_DN(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_DN(*args)
 
-def Geom2dInt_Geom2dCurveTool_NbIntervals(*args):
+def Geom2dInt_Geom2dCurveTool_NbIntervals(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -862,7 +862,7 @@ def Geom2dInt_Geom2dCurveTool_NbIntervals(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_NbIntervals(*args)
 
-def Geom2dInt_Geom2dCurveTool_Intervals(*args):
+def Geom2dInt_Geom2dCurveTool_Intervals(*args) -> "void" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -873,7 +873,7 @@ def Geom2dInt_Geom2dCurveTool_Intervals(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_Intervals(*args)
 
-def Geom2dInt_Geom2dCurveTool_GetInterval(*args):
+def Geom2dInt_Geom2dCurveTool_GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -890,7 +890,7 @@ def Geom2dInt_Geom2dCurveTool_GetInterval(*args):
     """
   return _Geom2dInt.Geom2dInt_Geom2dCurveTool_GetInterval(*args)
 
-def Geom2dInt_Geom2dCurveTool_Degree(*args):
+def Geom2dInt_Geom2dCurveTool_Degree(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -978,7 +978,7 @@ class Geom2dInt_IntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _Geom2dInt.Geom2dInt_IntConicCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_IntConicCurveOfGInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin2d
@@ -1079,7 +1079,7 @@ class Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter(object):
 
         """
         _Geom2dInt.Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -1090,7 +1090,7 @@ class Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -1101,7 +1101,7 @@ class Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfGInter_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -1144,7 +1144,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
 
         """
         _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -1153,7 +1153,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Initialize(self, *args)
 
-    def SetPoint(self, *args):
+    def SetPoint(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1162,7 +1162,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_SetPoint(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param U:
         :type U: float
@@ -1173,7 +1173,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Value(self, *args)
 
-    def Derivative(self, *args):
+    def Derivative(self, *args) -> "Standard_Boolean" :
         """
         :param U:
         :type U: float
@@ -1184,7 +1184,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Derivative(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param U:
         :type U: float
@@ -1197,21 +1197,21 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Values(self, *args)
 
-    def GetStateNumber(self, *args):
+    def GetStateNumber(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_GetStateNumber(self, *args)
 
-    def NbExt(self, *args):
+    def NbExt(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_NbExt(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         :param N:
         :type N: int
@@ -1220,7 +1220,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_SquareDistance(self, *args)
 
-    def IsMin(self, *args):
+    def IsMin(self, *args) -> "Standard_Boolean" :
         """
         :param N:
         :type N: int
@@ -1229,7 +1229,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_IsMin(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
         """
         :param N:
         :type N: int
@@ -1238,7 +1238,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args):
+    def SubIntervalInitialize(self, *args) -> "void" :
         """
         :param theUfirst:
         :type theUfirst: float
@@ -1249,7 +1249,7 @@ class Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_PCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args):
+    def SearchOfTolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1289,14 +1289,14 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
 
         """
         _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter const &" :
         """
         :param Other:
         :type Other: Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter &
@@ -1305,7 +1305,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter const &" :
         """
         :param Other:
         :type Other: Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter &
@@ -1314,7 +1314,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -1327,7 +1327,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -1340,7 +1340,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1357,7 +1357,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1374,21 +1374,21 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Extrema_POnCurv2d const &" :
         """
         :rtype: Extrema_POnCurv2d
 
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
         """
         :rtype: Extrema_POnCurv2d
 
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1399,7 +1399,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
         """
         :param Index:
         :type Index: int
@@ -1408,7 +1408,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1419,7 +1419,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
         """
         :param Index:
         :type Index: int
@@ -1428,7 +1428,7 @@ class Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(OCC.TCollecti
         """
         return _Geom2dInt.Geom2dInt_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1484,18 +1484,18 @@ class Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter
 
         """
         _Geom2dInt.Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Extrema_POnCurv2d &" :
         """
         :rtype: Extrema_POnCurv2d
 
         """
         return _Geom2dInt.Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter self)"""
         return _Geom2dInt.Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter" :
         """GetHandle(Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter self) -> Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter"""
         return _Geom2dInt.Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_GetHandle(self)
 
@@ -1534,7 +1534,7 @@ Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInte
 Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swigregister = _Geom2dInt.Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swigregister
 Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_swigregister(Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter)
 
-def Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_DownCast(*args):
+def Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_DownCast(*args) -> "Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter const" :
   return _Geom2dInt.Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_DownCast(*args)
 Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_DownCast = _Geom2dInt.Handle_Geom2dInt_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfGInter_DownCast
 
@@ -1568,21 +1568,21 @@ class Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter(object):
 
         """
         _Geom2dInt.Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dInt.Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Geom2dInt.Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1593,7 +1593,7 @@ class Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1604,7 +1604,7 @@ class Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfGInter_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1713,7 +1713,7 @@ class Geom2dInt_TheIntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _Geom2dInt.Geom2dInt_TheIntConicCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_TheIntConicCurveOfGInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param L:
         :type L: gp_Lin2d
@@ -1810,7 +1810,7 @@ class Geom2dInt_TheIntPCurvePCurveOfGInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _Geom2dInt.Geom2dInt_TheIntPCurvePCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_TheIntPCurvePCurveOfGInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Curve1:
         :type Curve1: Adaptor2d_Curve2d &
@@ -1875,7 +1875,7 @@ class Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_I
 
         """
         _Geom2dInt.Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param ITool:
         :type ITool: IntCurve_IConicTool &
@@ -1894,7 +1894,7 @@ class Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_I
         """
         return _Geom2dInt.Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter_Perform(self, *args)
 
-    def FindU(self, *args):
+    def FindU(self, *args) -> "Standard_Real" :
         """
         :param parameter:
         :type parameter: float
@@ -1909,7 +1909,7 @@ class Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_I
         """
         return _Geom2dInt.Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter_FindU(self, *args)
 
-    def FindV(self, *args):
+    def FindV(self, *args) -> "Standard_Real" :
         """
         :param parameter:
         :type parameter: float
@@ -1932,7 +1932,7 @@ class Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter(OCC.IntRes2d.IntRes2d_I
         """
         return _Geom2dInt.Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter_FindV(self, *args)
 
-    def And_Domaine_Objet1_Intersections(self, *args):
+    def And_Domaine_Objet1_Intersections(self, *args) -> "void" :
         """
         :param TheImpTool:
         :type TheImpTool: IntCurve_IConicTool &
@@ -2008,7 +2008,7 @@ class Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter(object):
 
         """
         _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2023,7 +2023,7 @@ class Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_Initialize(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt2d
@@ -2034,28 +2034,28 @@ class Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter(object):
         """
         return _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_IsDone(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_SquareDistance(self, *args)
 
-    def IsMin(self, *args):
+    def IsMin(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dInt.Geom2dInt_TheLocateExtPCOfTheProjPCurOfGInter_IsMin(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
         """
         :rtype: Extrema_POnCurv2d
 
@@ -2109,7 +2109,7 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
 
         """
         _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_swiginit(self,_Geom2dInt.new_Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(*args))
-    def ComputeWithBox(self, *args):
+    def ComputeWithBox(self, *args) -> "void" :
         """
         :param Curve:
         :type Curve: Adaptor2d_Curve2d &
@@ -2120,7 +2120,7 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_ComputeWithBox(self, *args)
 
-    def SetDeflectionOverEstimation(self, *args):
+    def SetDeflectionOverEstimation(self, *args) -> "void" :
         """
         :param x:
         :type x: float
@@ -2129,7 +2129,7 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_SetDeflectionOverEstimation(self, *args)
 
-    def Closed(self, *args):
+    def Closed(self, *args) -> "void" :
         """
         :param clos:
         :type clos: bool
@@ -2138,28 +2138,28 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_Closed(self, *args)
 
-    def InfParameter(self, *args):
+    def InfParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_InfParameter(self, *args)
 
-    def SupParameter(self, *args):
+    def SupParameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_SupParameter(self, *args)
 
-    def AutoIntersectionIsPossible(self, *args):
+    def AutoIntersectionIsPossible(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_AutoIntersectionIsPossible(self, *args)
 
-    def ApproxParamOnCurve(self, *args):
+    def ApproxParamOnCurve(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -2170,7 +2170,7 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_ApproxParamOnCurve(self, *args)
 
-    def CalculRegion(self, *args):
+    def CalculRegion(self, *args) -> "Standard_Integer" :
         """
         :param x:
         :type x: float
@@ -2189,7 +2189,7 @@ class Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter(OCC.Intf.Intf_Polygon2d
         """
         return _Geom2dInt.Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_CalculRegion(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -2220,7 +2220,7 @@ Geom2dInt_ThePolygon2dOfTheIntPCurvePCurveOfGInter_swigregister(Geom2dInt_ThePol
 class Geom2dInt_TheProjPCurOfGInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FindParameter(*args):
+    def FindParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2260,7 +2260,7 @@ Geom2dInt_TheProjPCurOfGInter._kill_pointed = new_instancemethod(_Geom2dInt.Geom
 Geom2dInt_TheProjPCurOfGInter_swigregister = _Geom2dInt.Geom2dInt_TheProjPCurOfGInter_swigregister
 Geom2dInt_TheProjPCurOfGInter_swigregister(Geom2dInt_TheProjPCurOfGInter)
 
-def Geom2dInt_TheProjPCurOfGInter_FindParameter(*args):
+def Geom2dInt_TheProjPCurOfGInter_FindParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Adaptor2d_Curve2d &

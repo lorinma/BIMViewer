@@ -131,7 +131,7 @@ class IGESControl_ActorWrite(object):
 
         """
         _IGESControl.IGESControl_ActorWrite_swiginit(self,_IGESControl.new_IGESControl_ActorWrite(*args))
-    def Recognize(self, *args):
+    def Recognize(self, *args) -> "Standard_Boolean" :
         """
         * Recognizes a ShapeMapper
 
@@ -142,7 +142,7 @@ class IGESControl_ActorWrite(object):
         """
         return _IGESControl.IGESControl_ActorWrite_Recognize(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Handle_Transfer_Binder" :
         """
         * Transfers Shape to IGES Entities ModeTrans may be : 0 -> groups of Faces or 1 -> BRep
 
@@ -191,7 +191,7 @@ Handle_IGESControl_ActorWrite._kill_pointed = new_instancemethod(_IGESControl.Ha
 Handle_IGESControl_ActorWrite_swigregister = _IGESControl.Handle_IGESControl_ActorWrite_swigregister
 Handle_IGESControl_ActorWrite_swigregister(Handle_IGESControl_ActorWrite)
 
-def Handle_IGESControl_ActorWrite_DownCast(*args):
+def Handle_IGESControl_ActorWrite_DownCast(*args) -> "Handle_IGESControl_ActorWrite const" :
   return _IGESControl.Handle_IGESControl_ActorWrite_DownCast(*args)
 Handle_IGESControl_ActorWrite_DownCast = _IGESControl.Handle_IGESControl_ActorWrite_DownCast
 
@@ -240,7 +240,7 @@ Handle_IGESControl_AlgoContainer._kill_pointed = new_instancemethod(_IGESControl
 Handle_IGESControl_AlgoContainer_swigregister = _IGESControl.Handle_IGESControl_AlgoContainer_swigregister
 Handle_IGESControl_AlgoContainer_swigregister(Handle_IGESControl_AlgoContainer)
 
-def Handle_IGESControl_AlgoContainer_DownCast(*args):
+def Handle_IGESControl_AlgoContainer_DownCast(*args) -> "Handle_IGESControl_AlgoContainer const" :
   return _IGESControl.Handle_IGESControl_AlgoContainer_DownCast(*args)
 Handle_IGESControl_AlgoContainer_DownCast = _IGESControl.Handle_IGESControl_AlgoContainer_DownCast
 
@@ -257,7 +257,7 @@ class IGESControl_Controller(OCC.XSControl.XSControl_Controller):
 
         """
         _IGESControl.IGESControl_Controller_swiginit(self,_IGESControl.new_IGESControl_Controller(*args))
-    def Init(*args):
+    def Init(*args) -> "Standard_Boolean" :
         """
         * Standard Initialisation. It creates a Controller for IGES and records it to various names, available to select it later Returns True when done, False if could not be done Also, it creates and records an Adaptor for FNES
 
@@ -267,11 +267,11 @@ class IGESControl_Controller(OCC.XSControl.XSControl_Controller):
         return _IGESControl.IGESControl_Controller_Init(*args)
 
     Init = staticmethod(Init)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IGESControl_Controller self)"""
         return _IGESControl.IGESControl_Controller__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IGESControl_Controller" :
         """GetHandle(IGESControl_Controller self) -> Handle_IGESControl_Controller"""
         return _IGESControl.IGESControl_Controller_GetHandle(self)
 
@@ -288,7 +288,7 @@ IGESControl_Controller.GetHandle = new_instancemethod(_IGESControl.IGESControl_C
 IGESControl_Controller_swigregister = _IGESControl.IGESControl_Controller_swigregister
 IGESControl_Controller_swigregister(IGESControl_Controller)
 
-def IGESControl_Controller_Init(*args):
+def IGESControl_Controller_Init(*args) -> "Standard_Boolean" :
   """
     * Standard Initialisation. It creates a Controller for IGES and records it to various names, available to select it later Returns True when done, False if could not be done Also, it creates and records an Adaptor for FNES
 
@@ -318,7 +318,7 @@ Handle_IGESControl_Controller._kill_pointed = new_instancemethod(_IGESControl.Ha
 Handle_IGESControl_Controller_swigregister = _IGESControl.Handle_IGESControl_Controller_swigregister
 Handle_IGESControl_Controller_swigregister(Handle_IGESControl_Controller)
 
-def Handle_IGESControl_Controller_DownCast(*args):
+def Handle_IGESControl_Controller_DownCast(*args) -> "Handle_IGESControl_Controller const" :
   return _IGESControl.Handle_IGESControl_Controller_DownCast(*args)
 Handle_IGESControl_Controller_DownCast = _IGESControl.Handle_IGESControl_Controller_DownCast
 
@@ -339,7 +339,7 @@ class IGESControl_IGESBoundary(object):
 
         """
         _IGESControl.IGESControl_IGESBoundary_swiginit(self,_IGESControl.new_IGESControl_IGESBoundary(*args))
-    def Check(self, *args):
+    def Check(self, *args) -> "void" :
         """
         * Checks result of translation of IGES boundary entities (types 141, 142 or 508). Checks consistency of 2D and 3D representations and keeps only one if they are inconsistent. Checks the closure of resulting wire and if it is not closed, checks 2D and 3D representation and updates the resulting wire to contain only closed representation.
 
@@ -391,7 +391,7 @@ Handle_IGESControl_IGESBoundary._kill_pointed = new_instancemethod(_IGESControl.
 Handle_IGESControl_IGESBoundary_swigregister = _IGESControl.Handle_IGESControl_IGESBoundary_swigregister
 Handle_IGESControl_IGESBoundary_swigregister(Handle_IGESControl_IGESBoundary)
 
-def Handle_IGESControl_IGESBoundary_DownCast(*args):
+def Handle_IGESControl_IGESBoundary_DownCast(*args) -> "Handle_IGESControl_IGESBoundary const" :
   return _IGESControl.Handle_IGESControl_IGESBoundary_DownCast(*args)
 Handle_IGESControl_IGESBoundary_DownCast = _IGESControl.Handle_IGESControl_IGESBoundary_DownCast
 
@@ -414,7 +414,7 @@ class IGESControl_Reader(OCC.XSControl.XSControl_Reader):
 
         """
         _IGESControl.IGESControl_Reader_swiginit(self,_IGESControl.new_IGESControl_Reader(*args))
-    def SetReadVisible(self, *args):
+    def SetReadVisible(self, *args) -> "void" :
         """
         * Set the transion of ALL Roots (if theReadOnlyVisible is False) or of Visible Roots (if theReadOnlyVisible is True)
 
@@ -425,14 +425,14 @@ class IGESControl_Reader(OCC.XSControl.XSControl_Reader):
         """
         return _IGESControl.IGESControl_Reader_SetReadVisible(self, *args)
 
-    def GetReadVisible(self, *args):
+    def GetReadVisible(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IGESControl.IGESControl_Reader_GetReadVisible(self, *args)
 
-    def IGESModel(self, *args):
+    def IGESModel(self, *args) -> "Handle_IGESData_IGESModel" :
         """
         * Returns the model as a IGESModel. It can then be consulted (header, product)
 
@@ -441,7 +441,7 @@ class IGESControl_Reader(OCC.XSControl.XSControl_Reader):
         """
         return _IGESControl.IGESControl_Reader_IGESModel(self, *args)
 
-    def PrintTransferInfo(self, *args):
+    def PrintTransferInfo(self, *args) -> "void" :
         """
         * Prints Statistics and check list for Transfer
 
@@ -481,7 +481,7 @@ class IGESControl_ToolContainer(object):
 
         """
         _IGESControl.IGESControl_ToolContainer_swiginit(self,_IGESControl.new_IGESControl_ToolContainer(*args))
-    def IGESBoundary(self, *args):
+    def IGESBoundary(self, *args) -> "Handle_IGESToBRep_IGESBoundary" :
         """
         * Returns IGESControl_IGESBoundary
 
@@ -525,7 +525,7 @@ Handle_IGESControl_ToolContainer._kill_pointed = new_instancemethod(_IGESControl
 Handle_IGESControl_ToolContainer_swigregister = _IGESControl.Handle_IGESControl_ToolContainer_swigregister
 Handle_IGESControl_ToolContainer_swigregister(Handle_IGESControl_ToolContainer)
 
-def Handle_IGESControl_ToolContainer_DownCast(*args):
+def Handle_IGESControl_ToolContainer_DownCast(*args) -> "Handle_IGESControl_ToolContainer const" :
   return _IGESControl.Handle_IGESControl_ToolContainer_DownCast(*args)
 Handle_IGESControl_ToolContainer_DownCast = _IGESControl.Handle_IGESControl_ToolContainer_DownCast
 
@@ -556,7 +556,7 @@ class IGESControl_Writer(object):
 
         """
         _IGESControl.IGESControl_Writer_swiginit(self,_IGESControl.new_IGESControl_Writer(*args))
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_IGESData_IGESModel" :
         """
         * Returns the IGES model to be written in output.
 
@@ -565,14 +565,14 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_Model(self, *args)
 
-    def TransferProcess(self, *args):
+    def TransferProcess(self, *args) -> "Handle_Transfer_FinderProcess" :
         """
         :rtype: Handle_Transfer_FinderProcess
 
         """
         return _IGESControl.IGESControl_Writer_TransferProcess(self, *args)
 
-    def SetTransferProcess(self, *args):
+    def SetTransferProcess(self, *args) -> "void" :
         """
         * Returns/Sets the TransferProcess : it contains final results and if some, check messages
 
@@ -583,7 +583,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_SetTransferProcess(self, *args)
 
-    def AddShape(self, *args):
+    def AddShape(self, *args) -> "Standard_Boolean" :
         """
         * Translates a Shape to IGES Entities and adds them to the model Returns True if done, False if Shape not suitable for IGES or null
 
@@ -594,7 +594,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddShape(self, *args)
 
-    def AddGeom(self, *args):
+    def AddGeom(self, *args) -> "Standard_Boolean" :
         """
         * Translates a Geometry (Surface or Curve) to IGES Entities and adds them to the model Returns True if done, False if geom is neither a Surface or a Curve suitable for IGES or is null
 
@@ -605,7 +605,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddGeom(self, *args)
 
-    def AddEntity(self, *args):
+    def AddEntity(self, *args) -> "Standard_Boolean" :
         """
         * Adds an IGES entity (and the ones it references) to the model
 
@@ -616,7 +616,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddEntity(self, *args)
 
-    def ComputeModel(self, *args):
+    def ComputeModel(self, *args) -> "void" :
         """
         * Computes the entities found in the model, which is ready to be written. This contrasts with the default computation of headers only.
 
@@ -625,7 +625,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_ComputeModel(self, *args)
 
-    def Write(self, *args):
+    def Write(self, *args) -> "Standard_Boolean" :
         """
         * Computes then writes the model to an OStream Returns True when done, false in case of error
 
@@ -646,7 +646,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_Write(self, *args)
 
-    def PrintStatsTransfer(self, *args):
+    def PrintStatsTransfer(self, *args) -> "void" :
         """
         * Prints Statistics about Transfer
 

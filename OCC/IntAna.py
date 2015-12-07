@@ -133,7 +133,7 @@ class IntAna_Curve(object):
 
         """
         _IntAna.IntAna_Curve_swiginit(self,_IntAna.new_IntAna_Curve(*args))
-    def SetCylinderQuadValues(self, *args):
+    def SetCylinderQuadValues(self, *args) -> "void" :
         """
         * Sets the parameters used to compute Points and Derivative on the curve.
 
@@ -174,7 +174,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_SetCylinderQuadValues(self, *args)
 
-    def SetConeQuadValues(self, *args):
+    def SetConeQuadValues(self, *args) -> "void" :
         """
         * Sets the parameters used to compute Points and Derivative on the curve.
 
@@ -215,7 +215,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_SetConeQuadValues(self, *args)
 
-    def IsOpen(self, *args):
+    def IsOpen(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the curve is not infinite at the last parameter or at the first parameter of the domain.
 
@@ -224,7 +224,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_IsOpen(self, *args)
 
-    def Domain(self, *args):
+    def Domain(self, *args) -> "void" :
         """
         * Returns the paramatric domain of the curve.
 
@@ -237,7 +237,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_Domain(self, *args)
 
-    def IsConstant(self, *args):
+    def IsConstant(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the function is constant.
 
@@ -246,7 +246,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_IsConstant(self, *args)
 
-    def IsFirstOpen(self, *args):
+    def IsFirstOpen(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the domain is open at the beginning.
 
@@ -255,7 +255,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_IsFirstOpen(self, *args)
 
-    def IsLastOpen(self, *args):
+    def IsLastOpen(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the domain is open at the end.
 
@@ -264,7 +264,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_IsLastOpen(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt" :
         """
         * Returns the point at parameter Theta on the curve.
 
@@ -275,7 +275,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_Value(self, *args)
 
-    def D1u(self, *args):
+    def D1u(self, *args) -> "Standard_Boolean" :
         """
         * Returns the point and the first derivative at parameter Theta on the curve.
 
@@ -290,7 +290,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_D1u(self, *args)
 
-    def FindParameter(self, *args):
+    def FindParameter(self, *args) -> "Standard_Boolean" :
         """
         * Tries to find the parameter of the point P on the curve. If the method returns False, the 'projection' is impossible, and the value of Para is not significant. If the method returns True, Para is the parameter of the nearest intersection between the curve and the iso-theta containing P.
 
@@ -303,7 +303,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_FindParameter(self, *args)
 
-    def SetIsFirstOpen(self, *args):
+    def SetIsFirstOpen(self, *args) -> "void" :
         """
         * If flag is True, the Curve is not defined at the first parameter of its domain.
 
@@ -314,7 +314,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_SetIsFirstOpen(self, *args)
 
-    def SetIsLastOpen(self, *args):
+    def SetIsLastOpen(self, *args) -> "void" :
         """
         * If flag is True, the Curve is not defined at the first parameter of its domain.
 
@@ -325,7 +325,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_SetIsLastOpen(self, *args)
 
-    def InternalUVValue(self, *args):
+    def InternalUVValue(self, *args) -> "void" :
         """
         * Protected function.
 
@@ -352,7 +352,7 @@ class IntAna_Curve(object):
         """
         return _IntAna.IntAna_Curve_InternalUVValue(self, *args)
 
-    def SetDomain(self, *args):
+    def SetDomain(self, *args) -> "void" :
         """
         :param Theta1:
         :type Theta1: float
@@ -408,7 +408,7 @@ class IntAna_Int3Pln(object):
 
         """
         _IntAna.IntAna_Int3Pln_swiginit(self,_IntAna.new_IntAna_Int3Pln(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Determination of the intersection point between 3 planes.
 
@@ -423,7 +423,7 @@ class IntAna_Int3Pln(object):
         """
         return _IntAna.IntAna_Int3Pln_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the computation was successful.
 
@@ -432,7 +432,7 @@ class IntAna_Int3Pln(object):
         """
         return _IntAna.IntAna_Int3Pln_IsDone(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is no intersection POINT. If 2 planes are identical or parallel, IsEmpty will return True.
 
@@ -441,7 +441,7 @@ class IntAna_Int3Pln(object):
         """
         return _IntAna.IntAna_Int3Pln_IsEmpty(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         * Returns the intersection point.
 
@@ -575,7 +575,7 @@ class IntAna_IntConicQuad(object):
 
         """
         _IntAna.IntAna_IntConicQuad_swiginit(self,_IntAna.new_IntAna_IntConicQuad(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersects a line and a quadric.
 
@@ -678,7 +678,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the creation completed.
 
@@ -687,7 +687,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_IsDone(self, *args)
 
-    def IsInQuadric(self, *args):
+    def IsInQuadric(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the conic is in the quadric.
 
@@ -696,7 +696,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_IsInQuadric(self, *args)
 
-    def IsParallel(self, *args):
+    def IsParallel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the line is in a quadric which is parallel to the quadric.
 
@@ -705,7 +705,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_IsParallel(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersection point.
 
@@ -714,7 +714,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point of range N.
 
@@ -725,7 +725,7 @@ class IntAna_IntConicQuad(object):
         """
         return _IntAna.IntAna_IntConicQuad_Point(self, *args)
 
-    def ParamOnConic(self, *args):
+    def ParamOnConic(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the line of the intersection point of range N.
 
@@ -772,7 +772,7 @@ class IntAna_IntLinTorus(object):
 
         """
         _IntAna.IntAna_IntLinTorus_swiginit(self,_IntAna.new_IntAna_IntLinTorus(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersects a line and a torus.
 
@@ -785,7 +785,7 @@ class IntAna_IntLinTorus(object):
         """
         return _IntAna.IntAna_IntLinTorus_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the computation was successful.
 
@@ -794,7 +794,7 @@ class IntAna_IntLinTorus(object):
         """
         return _IntAna.IntAna_IntLinTorus_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of intersection points.
 
@@ -803,7 +803,7 @@ class IntAna_IntLinTorus(object):
         """
         return _IntAna.IntAna_IntLinTorus_NbPoints(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         * Returns the intersection point of range Index.
 
@@ -814,7 +814,7 @@ class IntAna_IntLinTorus(object):
         """
         return _IntAna.IntAna_IntLinTorus_Value(self, *args)
 
-    def ParamOnLine(self, *args):
+    def ParamOnLine(self, *args) -> "Standard_Real" :
         """
         * Returns the parameter on the line of the intersection point of range Index.
 
@@ -825,7 +825,7 @@ class IntAna_IntLinTorus(object):
         """
         return _IntAna.IntAna_IntLinTorus_ParamOnLine(self, *args)
 
-    def ParamOnTorus(self, *args):
+    def ParamOnTorus(self, *args) -> "void" :
         """
         * Returns the parameters on the torus of the intersection point of range Index.
 
@@ -889,7 +889,7 @@ class IntAna_IntQuadQuad(object):
 
         """
         _IntAna.IntAna_IntQuadQuad_swiginit(self,_IntAna.new_IntAna_IntQuadQuad(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersects a cylinder and a quadric . Tol est a definir plus precisemment.
 
@@ -914,7 +914,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the computation was successful.
 
@@ -923,7 +923,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_IsDone(self, *args)
 
-    def IdenticalElements(self, *args):
+    def IdenticalElements(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the cylinder, the cone or the sphere is identical to the quadric.
 
@@ -932,7 +932,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_IdenticalElements(self, *args)
 
-    def NbCurve(self, *args):
+    def NbCurve(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of curves solution.
 
@@ -941,7 +941,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_NbCurve(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "IntAna_Curve const &" :
         """
         * Returns the curve of range N.
 
@@ -952,7 +952,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_Curve(self, *args)
 
-    def NbPnt(self, *args):
+    def NbPnt(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of contact point.
 
@@ -961,7 +961,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_NbPnt(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         * Returns the point of range N.
 
@@ -972,7 +972,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_Point(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the paramaters on the 'explicit quadric' (i.e the cylinder or the cone, the first argument given to the constructor) of the point of range N.
 
@@ -987,7 +987,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_Parameters(self, *args)
 
-    def HasNextCurve(self, *args):
+    def HasNextCurve(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Curve I shares its last bound with another curve.
 
@@ -998,7 +998,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_HasNextCurve(self, *args)
 
-    def NextCurve(self, *args):
+    def NextCurve(self, *args) -> "Standard_Integer" :
         """
         * If HasNextCurve(I) returns True, this function returns the Index J of the curve which has a common bound with the curve I. If Opposite == True , then the last parameter of the curve I, and the last parameter of the curve J give the same point. Else the last parameter of the curve I and the first parameter of the curve J are the same point.
 
@@ -1011,7 +1011,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_NextCurve(self, *args)
 
-    def HasPreviousCurve(self, *args):
+    def HasPreviousCurve(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Curve I shares its first bound with another curve.
 
@@ -1022,7 +1022,7 @@ class IntAna_IntQuadQuad(object):
         """
         return _IntAna.IntAna_IntQuadQuad_HasPreviousCurve(self, *args)
 
-    def PreviousCurve(self, *args):
+    def PreviousCurve(self, *args) -> "Standard_Integer" :
         """
         * if HasPreviousCurve(I) returns True, this function returns the Index J of the curve which has a common bound with the curve I. If Opposite == True , then the first parameter of the curve I, and the first parameter of the curve J give the same point. Else the first parameter of the curve I and the last parameter of the curve J are the same point.
 
@@ -1072,7 +1072,7 @@ class IntAna_ListIteratorOfListOfCurve(object):
 
         """
         _IntAna.IntAna_ListIteratorOfListOfCurve_swiginit(self,_IntAna.new_IntAna_ListIteratorOfListOfCurve(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: IntAna_ListOfCurve &
@@ -1081,21 +1081,21 @@ class IntAna_ListIteratorOfListOfCurve(object):
         """
         return _IntAna.IntAna_ListIteratorOfListOfCurve_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntAna.IntAna_ListIteratorOfListOfCurve_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntAna.IntAna_ListIteratorOfListOfCurve_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntAna_Curve &" :
         """
         :rtype: IntAna_Curve
 
@@ -1131,18 +1131,18 @@ class IntAna_ListNodeOfListOfCurve(OCC.TCollection.TCollection_MapNode):
 
         """
         _IntAna.IntAna_ListNodeOfListOfCurve_swiginit(self,_IntAna.new_IntAna_ListNodeOfListOfCurve(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntAna_Curve &" :
         """
         :rtype: IntAna_Curve
 
         """
         return _IntAna.IntAna_ListNodeOfListOfCurve_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntAna_ListNodeOfListOfCurve self)"""
         return _IntAna.IntAna_ListNodeOfListOfCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntAna_ListNodeOfListOfCurve" :
         """GetHandle(IntAna_ListNodeOfListOfCurve self) -> Handle_IntAna_ListNodeOfListOfCurve"""
         return _IntAna.IntAna_ListNodeOfListOfCurve_GetHandle(self)
 
@@ -1181,7 +1181,7 @@ Handle_IntAna_ListNodeOfListOfCurve._kill_pointed = new_instancemethod(_IntAna.H
 Handle_IntAna_ListNodeOfListOfCurve_swigregister = _IntAna.Handle_IntAna_ListNodeOfListOfCurve_swigregister
 Handle_IntAna_ListNodeOfListOfCurve_swigregister(Handle_IntAna_ListNodeOfListOfCurve)
 
-def Handle_IntAna_ListNodeOfListOfCurve_DownCast(*args):
+def Handle_IntAna_ListNodeOfListOfCurve_DownCast(*args) -> "Handle_IntAna_ListNodeOfListOfCurve const" :
   return _IntAna.Handle_IntAna_ListNodeOfListOfCurve_DownCast(*args)
 Handle_IntAna_ListNodeOfListOfCurve_DownCast = _IntAna.Handle_IntAna_ListNodeOfListOfCurve_DownCast
 
@@ -1194,7 +1194,7 @@ class IntAna_ListOfCurve(object):
 
         """
         _IntAna.IntAna_ListOfCurve_swiginit(self,_IntAna.new_IntAna_ListOfCurve(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntAna_ListOfCurve &
@@ -1203,7 +1203,7 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: IntAna_ListOfCurve &
@@ -1212,28 +1212,28 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntAna.IntAna_ListOfCurve_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntAna.IntAna_ListOfCurve_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntAna.IntAna_ListOfCurve_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: IntAna_Curve &
@@ -1252,7 +1252,7 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: IntAna_Curve &
@@ -1271,28 +1271,28 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntAna_Curve &" :
         """
         :rtype: IntAna_Curve
 
         """
         return _IntAna.IntAna_ListOfCurve_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntAna_Curve &" :
         """
         :rtype: IntAna_Curve
 
         """
         return _IntAna.IntAna_ListOfCurve_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntAna.IntAna_ListOfCurve_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: IntAna_ListIteratorOfListOfCurve &
@@ -1301,7 +1301,7 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: IntAna_Curve &
@@ -1318,7 +1318,7 @@ class IntAna_ListOfCurve(object):
         """
         return _IntAna.IntAna_ListOfCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: IntAna_Curve &
@@ -1527,7 +1527,7 @@ class IntAna_QuadQuadGeo(object):
 
         """
         _IntAna.IntAna_QuadQuadGeo_swiginit(self,_IntAna.new_IntAna_QuadQuadGeo(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Intersects two planes. TolAng is the angular tolerance used to determine if the planes are parallel. Tol is the tolerance used to determine if the planes are identical (only when they are parallel).
 
@@ -1688,7 +1688,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if the computation was successful.
 
@@ -1697,7 +1697,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_IsDone(self, *args)
 
-    def TypeInter(self, *args):
+    def TypeInter(self, *args) -> "IntAna_ResultType" :
         """
         * Returns the type of intersection.
 
@@ -1706,7 +1706,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_TypeInter(self, *args)
 
-    def NbSolutions(self, *args):
+    def NbSolutions(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of interesections. The possible intersections are : - 1 point - 1 or 2 line(s) - 1 Point and 1 Line - 1 circle - 1 ellipse - 1 parabola - 1 or 2 hyperbola(s).
 
@@ -1715,7 +1715,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_NbSolutions(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the point solution of range Num.
 
@@ -1726,7 +1726,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Point(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "gp_Lin" :
         """
         * Returns the line solution of range Num.
 
@@ -1737,7 +1737,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Line(self, *args)
 
-    def Circle(self, *args):
+    def Circle(self, *args) -> "gp_Circ" :
         """
         * Returns the circle solution of range Num.
 
@@ -1748,7 +1748,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Circle(self, *args)
 
-    def Ellipse(self, *args):
+    def Ellipse(self, *args) -> "gp_Elips" :
         """
         * Returns the ellipse solution of range Num.
 
@@ -1759,7 +1759,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Ellipse(self, *args)
 
-    def Parabola(self, *args):
+    def Parabola(self, *args) -> "gp_Parab" :
         """
         * Returns the parabola solution of range Num.
 
@@ -1770,7 +1770,7 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Parabola(self, *args)
 
-    def Hyperbola(self, *args):
+    def Hyperbola(self, *args) -> "gp_Hypr" :
         """
         * Returns the hyperbola solution of range Num.
 
@@ -1781,14 +1781,14 @@ class IntAna_QuadQuadGeo(object):
         """
         return _IntAna.IntAna_QuadQuadGeo_Hyperbola(self, *args)
 
-    def HasCommonGen(self, *args):
+    def HasCommonGen(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntAna.IntAna_QuadQuadGeo_HasCommonGen(self, *args)
 
-    def PChar(self, *args):
+    def PChar(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
@@ -1854,7 +1854,7 @@ class IntAna_Quadric(object):
 
         """
         _IntAna.IntAna_Quadric_swiginit(self,_IntAna.new_IntAna_Quadric(*args))
-    def SetQuadric(self, *args):
+    def SetQuadric(self, *args) -> "void" :
         """
         * Initializes the quadric with a Pln
 
@@ -1883,7 +1883,7 @@ class IntAna_Quadric(object):
         """
         return _IntAna.IntAna_Quadric_SetQuadric(self, *args)
 
-    def Coefficients(self, *args):
+    def Coefficients(self, *args) -> "void" :
         """
         * Returns the coefficients of the polynomial equation which define the quadric: xCXX x**2 + xCYY y**2 + xCZZ z**2 + 2 ( xCXY x y + xCXZ x z + xCYZ y z ) + 2 ( xCX x + xCY y + xCZ z ) + xCCte
 
@@ -1912,7 +1912,7 @@ class IntAna_Quadric(object):
         """
         return _IntAna.IntAna_Quadric_Coefficients(self, *args)
 
-    def NewCoefficients(self, *args):
+    def NewCoefficients(self, *args) -> "void" :
         """
         * Returns the coefficients of the polynomial equation ( written in the natural coordinates system ) in the local coordinates system defined by Axis
 

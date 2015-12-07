@@ -130,7 +130,7 @@ class GraphDS_DataMapIteratorOfEntityRoleMap(OCC.TCollection.TCollection_BasicMa
 
         """
         _GraphDS.GraphDS_DataMapIteratorOfEntityRoleMap_swiginit(self,_GraphDS.new_GraphDS_DataMapIteratorOfEntityRoleMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: GraphDS_EntityRoleMap &
@@ -139,14 +139,14 @@ class GraphDS_DataMapIteratorOfEntityRoleMap(OCC.TCollection.TCollection_BasicMa
         """
         return _GraphDS.GraphDS_DataMapIteratorOfEntityRoleMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _GraphDS.GraphDS_DataMapIteratorOfEntityRoleMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "GraphDS_EntityRole const &" :
         """
         :rtype: GraphDS_EntityRole
 
@@ -183,25 +183,25 @@ class GraphDS_DataMapNodeOfEntityRoleMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _GraphDS.GraphDS_DataMapNodeOfEntityRoleMap_swiginit(self,_GraphDS.new_GraphDS_DataMapNodeOfEntityRoleMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_Standard_Transient &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _GraphDS.GraphDS_DataMapNodeOfEntityRoleMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "GraphDS_EntityRole &" :
         """
         :rtype: GraphDS_EntityRole
 
         """
         return _GraphDS.GraphDS_DataMapNodeOfEntityRoleMap_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GraphDS_DataMapNodeOfEntityRoleMap self)"""
         return _GraphDS.GraphDS_DataMapNodeOfEntityRoleMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_GraphDS_DataMapNodeOfEntityRoleMap" :
         """GetHandle(GraphDS_DataMapNodeOfEntityRoleMap self) -> Handle_GraphDS_DataMapNodeOfEntityRoleMap"""
         return _GraphDS.GraphDS_DataMapNodeOfEntityRoleMap_GetHandle(self)
 
@@ -241,7 +241,7 @@ Handle_GraphDS_DataMapNodeOfEntityRoleMap._kill_pointed = new_instancemethod(_Gr
 Handle_GraphDS_DataMapNodeOfEntityRoleMap_swigregister = _GraphDS.Handle_GraphDS_DataMapNodeOfEntityRoleMap_swigregister
 Handle_GraphDS_DataMapNodeOfEntityRoleMap_swigregister(Handle_GraphDS_DataMapNodeOfEntityRoleMap)
 
-def Handle_GraphDS_DataMapNodeOfEntityRoleMap_DownCast(*args):
+def Handle_GraphDS_DataMapNodeOfEntityRoleMap_DownCast(*args) -> "Handle_GraphDS_DataMapNodeOfEntityRoleMap const" :
   return _GraphDS.Handle_GraphDS_DataMapNodeOfEntityRoleMap_DownCast(*args)
 Handle_GraphDS_DataMapNodeOfEntityRoleMap_DownCast = _GraphDS.Handle_GraphDS_DataMapNodeOfEntityRoleMap_DownCast
 
@@ -256,7 +256,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _GraphDS.GraphDS_EntityRoleMap_swiginit(self,_GraphDS.new_GraphDS_EntityRoleMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "GraphDS_EntityRoleMap &" :
         """
         :param Other:
         :type Other: GraphDS_EntityRoleMap &
@@ -265,7 +265,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "GraphDS_EntityRoleMap &" :
         """
         :param Other:
         :type Other: GraphDS_EntityRoleMap &
@@ -274,7 +274,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -283,14 +283,14 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _GraphDS.GraphDS_EntityRoleMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -301,7 +301,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -310,7 +310,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -319,7 +319,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "GraphDS_EntityRole const &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -328,7 +328,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "GraphDS_EntityRole &" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -337,7 +337,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -346,7 +346,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -355,7 +355,7 @@ class GraphDS_EntityRoleMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _GraphDS.GraphDS_EntityRoleMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(GraphDS_EntityRoleMap self)"""
         return _GraphDS.GraphDS_EntityRoleMap__kill_pointed(self)
 

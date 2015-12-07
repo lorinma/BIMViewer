@@ -190,7 +190,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_DraftAngle(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Cancels the results of all taper-adding transformations performed by this algorithm on the initial shape. These results will have been defined by successive calls to the function Add.
 
@@ -199,7 +199,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_Clear(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes, or reinitializes this taper-adding algorithm with the shape S. S will be referred to as the initial shape of this algorithm.
 
@@ -210,7 +210,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the face F, the direction Direction, the angle Angle, the plane NeutralPlane, and the flag Flag to the framework created at construction time, and with this data, defines the taper-adding transformation. F is a face, which belongs to the initial shape of this algorithm or to the shape loaded by the function Init. Only planar, cylindrical or conical faces can be tapered: - If the face F is planar, it is tapered by inclining it through the angle Angle about the line of intersection between the plane NeutralPlane and F. Direction indicates the side of NeutralPlane from which matter is removed if Angle is positive or added if Angle is negative. - If F is cylindrical or conical, it is transformed in the same way on a single face, resulting in a conical face if F is cylindrical, and a conical or cylindrical face if it is already conical. The taper-adding transformation is propagated from the face F along the series of planar, cylindrical or conical faces containing F, which are tangential to one another. Use the function AddDone to check if this taper-adding transformation is successful. Warning Nothing is done if: - the face F does not belong to the initial shape of this algorithm, or - the face F is not planar, cylindrical or conical. Exceptions - Standard_NullObject if the initial shape is not defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function. - Standard_ConstructionError if the previous call to Add has failed. The function AddDone ought to have been used to check for this, and the function Remove to cancel the results of the unsuccessful taper-adding transformation and to retrieve the previous shape.
 
@@ -229,7 +229,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_Add(self, *args)
 
-    def AddDone(self, *args):
+    def AddDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the previous taper-adding transformation performed by this algorithm in the last call to Add, was successful. If AddDone returns false: - the function ProblematicShape returns the face on which the error occurred, - the function Remove has to be used to cancel the results of the unsuccessful taper-adding transformation and to retrieve the previous shape. Exceptions Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the .Init function.
 
@@ -238,7 +238,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_AddDone(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         * Cancels the taper-adding transformation previously performed by this algorithm on the face F and the series of tangential faces which contain F, and retrieves the shape before the last taper-adding transformation. Warning You will have to use this function if the previous call to Add fails. Use the function AddDone to check it. Exceptions - Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function. - Standard_NoSuchObject if F has not been added or has already been removed.
 
@@ -249,7 +249,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_Remove(self, *args)
 
-    def ProblematicShape(self, *args):
+    def ProblematicShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the shape on which an error occurred after an unsuccessful call to Add or when IsDone returns false. Exceptions Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function.
 
@@ -258,7 +258,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_ProblematicShape(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Draft_ErrorStatus" :
         """
         * Returns an error status when an error has occured (Face, Edge or Vertex recomputaion problem). Otherwise returns Draft_NoError. The method may be called if AddDone returns Standard_False, or when IsDone returns Standard_False.
 
@@ -267,7 +267,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_Status(self, *args)
 
-    def ConnectedFaces(self, *args):
+    def ConnectedFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns all the faces which have been added together with the face <F>.
 
@@ -278,7 +278,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_ConnectedFaces(self, *args)
 
-    def ModifiedFaces(self, *args):
+    def ModifiedFaces(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns all the faces on which a modification has been given.
 
@@ -287,7 +287,7 @@ class BRepOffsetAPI_DraftAngle(OCC.BRepBuilderAPI.BRepBuilderAPI_ModifyShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_DraftAngle_ModifiedFaces(self, *args)
 
-    def CorrectWires(self, *args):
+    def CorrectWires(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -331,7 +331,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_FindContigousEdges(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm for identifying contiguous edges on shapes using the tolerance of contiguity tolerance. This tolerance value is used to determine whether two edges or sections of edges are coincident. Use the function Add to define the shapes to be checked. Sets <option> to false.
 
@@ -344,7 +344,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the shape shape to the list of shapes to be checked by this algorithm. Once all the shapes to be checked have been added, use the function Perform to find the contiguous edges and the function ContigousEdge to return these edges.
 
@@ -355,7 +355,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_Add(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Finds coincident parts of edges of two or more shapes added to this algorithm and breaks down these edges into contiguous and non-contiguous sections on copies of the initial shapes. The function ContigousEdge returns contiguous edges. The function Modified can be used to return modified copies of the initial shapes where one or more edges were broken down into contiguous and non-contiguous sections. Warning This function must be used once all the shapes to be checked have been added. It is not possible to add further shapes subsequently and then to repeat the call to Perform.
 
@@ -364,7 +364,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_Perform(self, *args)
 
-    def NbContigousEdges(self, *args):
+    def NbContigousEdges(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of contiguous edges found by the function Perform on the shapes added to this algorithm.
 
@@ -373,7 +373,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_NbContigousEdges(self, *args)
 
-    def ContigousEdge(self, *args):
+    def ContigousEdge(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the contiguous edge of index index found by the function Perform on the shapes added to this algorithm. Exceptions Standard_OutOfRange if: - index is less than 1, or - index is greater than the number of contiguous edges found by the function Perform on the shapes added to this algorithm.
 
@@ -384,7 +384,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_ContigousEdge(self, *args)
 
-    def ContigousEdgeCouple(self, *args):
+    def ContigousEdgeCouple(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of edges coincident with the contiguous edge of index index found by the function Perform. There are as many edges in the list as there are faces adjacent to this contiguous edge. Exceptions Standard_OutOfRange if: - index is less than 1, or - index is greater than the number of contiguous edges found by the function Perform on the shapes added to this algorithm.
 
@@ -395,7 +395,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_ContigousEdgeCouple(self, *args)
 
-    def SectionToBoundary(self, *args):
+    def SectionToBoundary(self, *args) -> "TopoDS_Edge const" :
         """
         * Returns the edge on the initial shape, of which the modified copy contains the edge section. section is coincident with a contiguous edge found by the function Perform. Use the function ContigousEdgeCouple to obtain a valid section. This information is useful for verification purposes, since it provides a means of determining the surface to which the contiguous edge belongs. Exceptions Standard_NoSuchObject if section is not coincident with a contiguous edge. Use the function ContigousEdgeCouple to obtain a valid section.
 
@@ -406,7 +406,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_SectionToBoundary(self, *args)
 
-    def NbDegeneratedShapes(self, *args):
+    def NbDegeneratedShapes(self, *args) -> "Standard_Integer" :
         """
         * Gives the number of degenerated shapes
 
@@ -415,7 +415,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_NbDegeneratedShapes(self, *args)
 
-    def DegeneratedShape(self, *args):
+    def DegeneratedShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Gives a degenerated shape
 
@@ -426,7 +426,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_DegeneratedShape(self, *args)
 
-    def IsDegenerated(self, *args):
+    def IsDegenerated(self, *args) -> "Standard_Boolean" :
         """
         * Indicates if a input shape is degenerated
 
@@ -437,7 +437,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_IsDegenerated(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the copy of the initial shape shape was modified by the function Perform (i.e. if one or more of its edges was broken down into contiguous and non-contiguous sections). Warning Returns false if shape is not one of the initial shapes added to this algorithm.
 
@@ -448,7 +448,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_IsModified(self, *args)
 
-    def Modified(self, *args):
+    def Modified(self, *args) -> "TopoDS_Shape const" :
         """
         * Gives a modifieded shape Raises NoSuchObject if shape has not been modified
 
@@ -459,7 +459,7 @@ class BRepOffsetAPI_FindContigousEdges(object):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges_Modified(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         * Dump properties of resulting shape.
 
@@ -510,7 +510,7 @@ class BRepOffsetAPI_MakeDraft(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakeDraft_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakeDraft(*args))
-    def SetOptions(self, *args):
+    def SetOptions(self, *args) -> "void" :
         """
         * Sets the options of this draft tool. If a transition has to be performed, it can be defined by the mode Style as RightCorner or RoundCorner, RightCorner being a corner defined by a sharp angle, and RoundCorner being a rounded corner. AngleMin is an angular tolerance used to detect whether a transition has to be performed or not. AngleMax sets the maximum value within which a RightCorner transition can be performed. AngleMin and AngleMax are expressed in radians.
 
@@ -525,7 +525,7 @@ class BRepOffsetAPI_MakeDraft(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeDraft_SetOptions(self, *args)
 
-    def SetDraft(self, *args):
+    def SetDraft(self, *args) -> "void" :
         """
         * Sets the direction of the draft for this object. If IsInternal is true, the draft is internal to the argument Shape used in the constructor.
 
@@ -536,7 +536,7 @@ class BRepOffsetAPI_MakeDraft(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeDraft_SetDraft(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the draft using the length LengthMax as the maximum length for the corner edge between two draft faces.
 
@@ -563,7 +563,7 @@ class BRepOffsetAPI_MakeDraft(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeDraft_Perform(self, *args)
 
-    def Shell(self, *args):
+    def Shell(self, *args) -> "TopoDS_Shell" :
         """
         * Returns the shell resulting from performance of the draft along the wire.
 
@@ -631,14 +631,14 @@ class BRepOffsetAPI_MakeEvolved(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakeEvolved_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakeEvolved(*args))
-    def Evolved(self, *args):
+    def Evolved(self, *args) -> "BRepFill_Evolved const &" :
         """
         :rtype: BRepFill_Evolved
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeEvolved_Evolved(self, *args)
 
-    def GeneratedShapes(self, *args):
+    def GeneratedShapes(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the shapes created from a subshape <SpineShape> of the spine and a subshape <ProfShape> on the profile.
 
@@ -651,7 +651,7 @@ class BRepOffsetAPI_MakeEvolved(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeEvolved_GeneratedShapes(self, *args)
 
-    def Top(self, *args):
+    def Top(self, *args) -> "TopoDS_Shape const" :
         """
         * Return the face Top if <Solid> is True in the constructor.
 
@@ -660,7 +660,7 @@ class BRepOffsetAPI_MakeEvolved(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeEvolved_Top(self, *args)
 
-    def Bottom(self, *args):
+    def Bottom(self, *args) -> "TopoDS_Shape const" :
         """
         * Return the face Bottom if <Solid> is True in the constructor.
 
@@ -716,7 +716,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakeFilling(*args))
-    def SetConstrParam(self, *args):
+    def SetConstrParam(self, *args) -> "void" :
         """
         * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
 
@@ -733,7 +733,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_SetConstrParam(self, *args)
 
-    def SetResolParam(self, *args):
+    def SetResolParam(self, *args) -> "void" :
         """
         * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
 
@@ -750,7 +750,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_SetResolParam(self, *args)
 
-    def SetApproxParam(self, *args):
+    def SetApproxParam(self, *args) -> "void" :
         """
         * Sets the parameters used to approximate the filling surface. These include: - MaxDeg - the highest degree which the polynomial defining the filling surface can have - MaxSegments - the greatest number of segments which the filling surface can have.
 
@@ -763,7 +763,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_SetApproxParam(self, *args)
 
-    def LoadInitSurface(self, *args):
+    def LoadInitSurface(self, *args) -> "void" :
         """
         * Loads the initial surface Surf to begin the construction of the surface. This optional function is useful if the surface resulting from construction for the algorithm is likely to be complex. The support surface of the face under construction is computed by a deformation of Surf which satisfies the given constraints. The set of bounding edges defines the wire of the face. If no initial surface is given, the algorithm computes it automatically. If the set of edges is not connected (Free constraint), missing edges are automatically computed.
 
@@ -774,7 +774,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_LoadInitSurface(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Integer" :
         """
         * Adds a new constraint which also defines an edge of the wire //!	 of the face //!	Order: Order of the constraint: //!	 GeomAbs_C0 : the surface has to pass by 3D representation //!	  of the edge //!	 GeomAbs_G1 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency with the first //!	  face of the edge //!	 GeomAbs_G2 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency and curvature //!	  with the first face of the edge. Raises ConstructionError if the edge has no representation on a face and Order is GeomAbs_G1 or GeomAbs_G2.
 
@@ -827,7 +827,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_Add(self, *args)
 
-    def G0Error(self, *args):
+    def G0Error(self, *args) -> "Standard_Real" :
         """
         * Returns the maximum distance between the result and the constraints. This is set at construction time.
 
@@ -842,7 +842,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_G0Error(self, *args)
 
-    def G1Error(self, *args):
+    def G1Error(self, *args) -> "Standard_Real" :
         """
         * Returns the maximum angle between the result and the constraints. This is set at construction time.
 
@@ -857,7 +857,7 @@ class BRepOffsetAPI_MakeFilling(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeFilling_G1Error(self, *args)
 
-    def G2Error(self, *args):
+    def G2Error(self, *args) -> "Standard_Real" :
         """
         * Returns the maximum angle between the result and the constraints. This is set at construction time.
 
@@ -917,7 +917,7 @@ class BRepOffsetAPI_MakeOffset(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakeOffset_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakeOffset(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the algorithm to construct parallels to the spine Spine. Join defines the type of parallel generated by the salient vertices of the spine. The default type is GeomAbs_Arc where the vertices generate sections of a circle. At present, this is the only construction type implemented.
 
@@ -936,7 +936,7 @@ class BRepOffsetAPI_MakeOffset(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeOffset_Init(self, *args)
 
-    def AddWire(self, *args):
+    def AddWire(self, *args) -> "void" :
         """
         * Initializes the algorithm to construct parallels to the wire Spine.
 
@@ -947,7 +947,7 @@ class BRepOffsetAPI_MakeOffset(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeOffset_AddWire(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes a parallel to the spine at distance Offset and at an altitude Alt from the plane of the spine in relation to the normal to the spine. Exceptions: StdFail_NotDone if the offset is not built.
 
@@ -1002,14 +1002,14 @@ class BRepOffsetAPI_MakeOffsetShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape)
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakeOffsetShape(*args))
-    def MakeOffset(self, *args):
+    def MakeOffset(self, *args) -> "BRepOffset_MakeOffset const &" :
         """
         :rtype: BRepOffset_MakeOffset
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape_MakeOffset(self, *args)
 
-    def GeneratedEdge(self, *args):
+    def GeneratedEdge(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns the list of edges generated from the shape <S>.
 
@@ -1020,7 +1020,7 @@ class BRepOffsetAPI_MakeOffsetShape(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape)
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape_GeneratedEdge(self, *args)
 
-    def GetJoinType(self, *args):
+    def GetJoinType(self, *args) -> "GeomAbs_JoinType" :
         """
         * Returns offset join type.
 
@@ -1071,14 +1071,14 @@ class BRepOffsetAPI_MakePipe(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakePipe_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakePipe(*args))
-    def Pipe(self, *args):
+    def Pipe(self, *args) -> "BRepFill_Pipe const &" :
         """
         :rtype: BRepFill_Pipe
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipe_Pipe(self, *args)
 
-    def Generated(self, *args):
+    def Generated(self, *args) -> "TopoDS_Shape" :
         """
         :param SSpine:
         :type SSpine: TopoDS_Shape &
@@ -1116,7 +1116,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_MakePipeShell(*args))
-    def SetDiscreteMode(self, *args):
+    def SetDiscreteMode(self, *args) -> "void" :
         """
         * Sets a Discrete trihedron to perform the sweeping
 
@@ -1125,7 +1125,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetDiscreteMode(self, *args)
 
-    def SetMode(self, *args):
+    def SetMode(self, *args) -> "void" :
         """
         * Sets a Frenet or a CorrectedFrenet trihedron to perform the sweeping //!	 If IsFrenet is false, a corrected Frenet trihedron is used.
 
@@ -1164,7 +1164,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetMode(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the section Profile to this framework. First and last sections may be punctual, so the shape Profile may be both wire and vertex. Correspondent point on spine is computed automatically. If WithContact is true, the section is translated to be in contact with the spine. If WithCorrection is true, the section is rotated to be orthogonal to the spine?s tangent in the correspondent point. This option has no sense if the section is punctual (Profile is of type TopoDS_Vertex).
 
@@ -1191,7 +1191,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_Add(self, *args)
 
-    def SetLaw(self, *args):
+    def SetLaw(self, *args) -> "void" :
         """
         * Sets the evolution law defined by the wire Profile with its position (Location, WithContact, WithCorrection are the same options as in methods Add) and a homotetic law defined by the function L. Warning: To be effective, it is not recommended to combine methods Add and SetLaw.
 
@@ -1222,7 +1222,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetLaw(self, *args)
 
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         * Removes the section Profile from this framework.
 
@@ -1233,7 +1233,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_Delete(self, *args)
 
-    def IsReady(self, *args):
+    def IsReady(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if this tool object is ready to build the shape, i.e. has a definition for the wire section Profile.
 
@@ -1242,7 +1242,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_IsReady(self, *args)
 
-    def GetStatus(self, *args):
+    def GetStatus(self, *args) -> "BRepBuilderAPI_PipeError" :
         """
         * Get a status, when Simulate or Build failed. It can be BRepBuilderAPI_PipeDone, BRepBuilderAPI_PipeNotDone, BRepBuilderAPI_PlaneNotIntersectGuide, BRepBuilderAPI_ImpossibleContact.
 
@@ -1251,7 +1251,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_GetStatus(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets the following tolerance values - 3D tolerance Tol3d - boundary tolerance BoundTol - angular tolerance TolAngular.
 
@@ -1266,7 +1266,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetTolerance(self, *args)
 
-    def SetForceApproxC1(self, *args):
+    def SetForceApproxC1(self, *args) -> "void" :
         """
         * Set the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0.
 
@@ -1277,7 +1277,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetForceApproxC1(self, *args)
 
-    def SetTransitionMode(self, *args):
+    def SetTransitionMode(self, *args) -> "void" :
         """
         * Sets the transition mode to manage discontinuities on the swept shape caused by fractures on the spine. The transition mode can be BRepBuilderAPI_Transformed (default value), BRepBuilderAPI_RightCorner, BRepBuilderAPI_RoundCorner: -  RepBuilderAPI_Transformed: discontinuities are treated by modification of the sweeping mode. The pipe is 'transformed' at the fractures of the spine. This mode assumes building a self-intersected shell. -  BRepBuilderAPI_RightCorner: discontinuities are treated like right corner. Two pieces of the pipe corresponding to two adjacent segments of the spine are extended and intersected at a fracture of the spine. -  BRepBuilderAPI_RoundCorner: discontinuities are treated like round corner. The corner is treated as rotation of the profile around an axis which passes through the point of the spine?s fracture. This axis is based on cross product of directions tangent to the adjacent segments of the spine at their common point. Warnings The mode BRepBuilderAPI_RightCorner provides a valid result if intersection of two pieces of the pipe (corresponding to two adjacent segments of the spine) in the neighborhood of the spine?s fracture is connected and planar. This condition can be violated if the spine is non-linear in some neighborhood of the fracture or if the profile was set with a scaling law. The last mode, BRepBuilderAPI_RoundCorner, will assuredly provide a good result only if a profile was set with option WithCorrection = True, i.e. it is strictly orthogonal to the spine.
 
@@ -1288,7 +1288,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_SetTransitionMode(self, *args)
 
-    def Simulate(self, *args):
+    def Simulate(self, *args) -> "void" :
         """
         * Simulates the resulting shape by calculating its cross-sections. The spine is devided by this cross-sections into (NumberOfSection - 1) equal parts, the number of cross-sections is NumberOfSection. The cross-sections are wires and they are returned in the list Result. This gives a rapid preview of the resulting shape, which will be obtained using the settings you have provided. Raises NotDone if <self> it is not Ready
 
@@ -1301,7 +1301,7 @@ class BRepOffsetAPI_MakePipeShell(OCC.BRepPrimAPI.BRepPrimAPI_MakeSweep):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_MakePipeShell_Simulate(self, *args)
 
-    def MakeSolid(self, *args):
+    def MakeSolid(self, *args) -> "Standard_Boolean" :
         """
         * Transforms the sweeping Shell in Solid. If a propfile is not closed returns False
 
@@ -1380,7 +1380,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_NormalProjection(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes the empty constructor framework with the shape S.
 
@@ -1391,7 +1391,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Init(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds the shape ToProj to the framework for calculation of the projection by Compute3d. ToProj is an edge or a wire and will be projected onto the basis shape. Exceptions Standard_ConstructionError if ToProj is not added.
 
@@ -1402,7 +1402,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Add(self, *args)
 
-    def SetParams(self, *args):
+    def SetParams(self, *args) -> "void" :
         """
         * Sets the parameters used for computation Tol3 is the requiered tolerance between the 3d projected curve and its 2d representation InternalContinuity is the order of constraints used for approximation MaxDeg and MaxSeg are the maximum degree and the maximum number of segment for BSpline resulting of an approximation.
 
@@ -1421,7 +1421,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_SetParams(self, *args)
 
-    def SetMaxDistance(self, *args):
+    def SetMaxDistance(self, *args) -> "void" :
         """
         * Sets the maximum distance between target shape and shape to project. If this condition is not satisfied then corresponding part of solution is discarded. if MaxDist < 0 then this method does not affect the algorithm
 
@@ -1432,7 +1432,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_SetMaxDistance(self, *args)
 
-    def SetLimit(self, *args):
+    def SetLimit(self, *args) -> "void" :
         """
         * Manage limitation of projected edges.
 
@@ -1443,7 +1443,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_SetLimit(self, *args)
 
-    def Compute3d(self, *args):
+    def Compute3d(self, *args) -> "void" :
         """
         * Returns true if a 3D curve is computed. If not, false is returned and an initial 3D curve is kept to build the resulting edges.
 
@@ -1454,7 +1454,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Compute3d(self, *args)
 
-    def Projection(self, *args):
+    def Projection(self, *args) -> "TopoDS_Shape const" :
         """
         * Performs the projection. The construction of the result is performed by Build. Exceptions StdFail_NotDone if the projection was not performed.
 
@@ -1463,7 +1463,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Projection(self, *args)
 
-    def Couple(self, *args):
+    def Couple(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the initial face corresponding to the projected edge E. Exceptions StdFail_NotDone if no face was found. Standard_NoSuchObject if if a face corresponding to E has already been found.
 
@@ -1474,7 +1474,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Couple(self, *args)
 
-    def Ancestor(self, *args):
+    def Ancestor(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the initial edge corresponding to the edge E resulting from the computation of the projection. Exceptions StdFail_NotDone if no edge was found. Standard_NoSuchObject if an edge corresponding to E has already been found.
 
@@ -1485,7 +1485,7 @@ class BRepOffsetAPI_NormalProjection(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape
         """
         return _BRepOffsetAPI.BRepOffsetAPI_NormalProjection_Ancestor(self, *args)
 
-    def BuildWire(self, *args):
+    def BuildWire(self, *args) -> "Standard_Boolean" :
         """
         * build the result as a list of wire if possible in -- a first returns a wire only if there is only a wire.
 
@@ -1533,18 +1533,18 @@ class BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal(OCC.TCollection.TColl
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfReal &" :
         """
         :rtype: TColStd_SequenceOfReal
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal self)"""
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal" :
         """GetHandle(BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal self) -> Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal"""
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_GetHandle(self)
 
@@ -1583,7 +1583,7 @@ Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal._kill_pointed = new_
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_swigregister = _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_swigregister
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_swigregister(Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal)
 
-def Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_DownCast(*args):
+def Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_DownCast(*args) -> "Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal const" :
   return _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_DownCast(*args)
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_DownCast = _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfReal_DownCast
 
@@ -1602,18 +1602,18 @@ class BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape(OCC.TCollection.TCol
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TopTools_SequenceOfShape &" :
         """
         :rtype: TopTools_SequenceOfShape
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape self)"""
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape" :
         """GetHandle(BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape self) -> Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape"""
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_GetHandle(self)
 
@@ -1652,7 +1652,7 @@ Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape._kill_pointed = new
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_swigregister = _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_swigregister
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_swigregister(Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape)
 
-def Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_DownCast(*args):
+def Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_DownCast(*args) -> "Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape const" :
   return _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_DownCast(*args)
 Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_DownCast = _BRepOffsetAPI.Handle_BRepOffsetAPI_SequenceNodeOfSequenceOfSequenceOfShape_DownCast
 
@@ -1665,14 +1665,14 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_SequenceOfSequenceOfReal(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepOffsetAPI_SequenceOfSequenceOfReal const &" :
         """
         :param Other:
         :type Other: BRepOffsetAPI_SequenceOfSequenceOfReal &
@@ -1681,7 +1681,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepOffsetAPI_SequenceOfSequenceOfReal const &" :
         """
         :param Other:
         :type Other: BRepOffsetAPI_SequenceOfSequenceOfReal &
@@ -1690,7 +1690,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TColStd_SequenceOfReal &
@@ -1703,7 +1703,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TColStd_SequenceOfReal &
@@ -1716,7 +1716,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1733,7 +1733,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1750,21 +1750,21 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :rtype: TColStd_SequenceOfReal
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :rtype: TColStd_SequenceOfReal
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1775,7 +1775,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
         """
         :param Index:
         :type Index: int
@@ -1784,7 +1784,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1795,7 +1795,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TColStd_SequenceOfReal &" :
         """
         :param Index:
         :type Index: int
@@ -1804,7 +1804,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfReal(OCC.TCollection.TCollection_BaseSeq
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1854,14 +1854,14 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_SequenceOfSequenceOfShape(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepOffsetAPI_SequenceOfSequenceOfShape const &" :
         """
         :param Other:
         :type Other: BRepOffsetAPI_SequenceOfSequenceOfShape &
@@ -1870,7 +1870,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepOffsetAPI_SequenceOfSequenceOfShape const &" :
         """
         :param Other:
         :type Other: BRepOffsetAPI_SequenceOfSequenceOfShape &
@@ -1879,7 +1879,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: TopTools_SequenceOfShape &
@@ -1892,7 +1892,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: TopTools_SequenceOfShape &
@@ -1905,7 +1905,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1922,7 +1922,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1939,21 +1939,21 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TopTools_SequenceOfShape const &" :
         """
         :rtype: TopTools_SequenceOfShape
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TopTools_SequenceOfShape const &" :
         """
         :rtype: TopTools_SequenceOfShape
 
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1964,7 +1964,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopTools_SequenceOfShape const &" :
         """
         :param Index:
         :type Index: int
@@ -1973,7 +1973,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1984,7 +1984,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "TopTools_SequenceOfShape &" :
         """
         :param Index:
         :type Index: int
@@ -1993,7 +1993,7 @@ class BRepOffsetAPI_SequenceOfSequenceOfShape(OCC.TCollection.TCollection_BaseSe
         """
         return _BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2051,7 +2051,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepOffsetAPI.BRepOffsetAPI_ThruSections_swiginit(self,_BRepOffsetAPI.new_BRepOffsetAPI_ThruSections(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm for building a shell or a solid passing through a set of sections, where: - isSolid is set to true if this construction algorithm is required to build a solid or to false if it is required to build a shell. false is the default value; - ruled is set to true if the faces generated between the edges of two consecutive wires are ruled surfaces or to false (the default value) if they are smoothed out by approximation, - pres3d defines the precision criterion used by the approximation algorithm; the default value is 1.0e-6. Use AddWire and AddVertex to define the successive sections of the shell or solid to be built.
 
@@ -2066,7 +2066,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_Init(self, *args)
 
-    def AddWire(self, *args):
+    def AddWire(self, *args) -> "void" :
         """
         * Adds the wire wire to the set of sections through which the shell or solid is built. Use the Build function to construct the shape.
 
@@ -2077,7 +2077,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_AddWire(self, *args)
 
-    def AddVertex(self, *args):
+    def AddVertex(self, *args) -> "void" :
         """
         * Adds the vertex Vertex (punctual section) to the set of sections through which the shell or solid is built. A vertex may be added to the set of sections only as first or last section. At least one wire must be added to the set of sections by the method AddWire. Use the Build function to construct the shape.
 
@@ -2088,7 +2088,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_AddVertex(self, *args)
 
-    def CheckCompatibility(self, *args):
+    def CheckCompatibility(self, *args) -> "void" :
         """
         :param check: default value is Standard_True
         :type check: bool
@@ -2097,7 +2097,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_CheckCompatibility(self, *args)
 
-    def SetSmoothing(self, *args):
+    def SetSmoothing(self, *args) -> "void" :
         """
         * Define the approximation algorithm
 
@@ -2108,7 +2108,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_SetSmoothing(self, *args)
 
-    def SetParType(self, *args):
+    def SetParType(self, *args) -> "void" :
         """
         * Define the type of parametrization used in the approximation
 
@@ -2119,7 +2119,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_SetParType(self, *args)
 
-    def SetContinuity(self, *args):
+    def SetContinuity(self, *args) -> "void" :
         """
         * Define the Continuity used in the approximation
 
@@ -2130,7 +2130,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_SetContinuity(self, *args)
 
-    def SetCriteriumWeight(self, *args):
+    def SetCriteriumWeight(self, *args) -> "void" :
         """
         * define the Weights associed to the criterium used in the optimization. if Wi <= 0
 
@@ -2145,7 +2145,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_SetCriteriumWeight(self, *args)
 
-    def SetMaxDegree(self, *args):
+    def SetMaxDegree(self, *args) -> "void" :
         """
         * Define the maximal U degree of result surface
 
@@ -2156,7 +2156,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_SetMaxDegree(self, *args)
 
-    def ParType(self, *args):
+    def ParType(self, *args) -> "Approx_ParametrizationType" :
         """
         * returns the type of parametrization used in the approximation
 
@@ -2165,7 +2165,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_ParType(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "GeomAbs_Shape" :
         """
         * returns the Continuity used in the approximation
 
@@ -2174,7 +2174,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_Continuity(self, *args)
 
-    def MaxDegree(self, *args):
+    def MaxDegree(self, *args) -> "Standard_Integer" :
         """
         * returns the maximal U degree of result surface
 
@@ -2183,7 +2183,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_MaxDegree(self, *args)
 
-    def UseSmoothing(self, *args):
+    def UseSmoothing(self, *args) -> "Standard_Boolean" :
         """
         * Define the approximation algorithm
 
@@ -2192,7 +2192,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_UseSmoothing(self, *args)
 
-    def CriteriumWeight(self, *args):
+    def CriteriumWeight(self, *args) -> "void" :
         """
         * returns the Weights associed to the criterium used in the optimization.
 
@@ -2207,7 +2207,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_CriteriumWeight(self, *args)
 
-    def FirstShape(self, *args):
+    def FirstShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the TopoDS Shape of the bottom of the loft if solid
 
@@ -2216,7 +2216,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_FirstShape(self, *args)
 
-    def LastShape(self, *args):
+    def LastShape(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the TopoDS Shape of the top of the loft if solid
 
@@ -2225,7 +2225,7 @@ class BRepOffsetAPI_ThruSections(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepOffsetAPI.BRepOffsetAPI_ThruSections_LastShape(self, *args)
 
-    def GeneratedFace(self, *args):
+    def GeneratedFace(self, *args) -> "TopoDS_Shape" :
         """
         * if Ruled  Returns the Face generated by each edge  except the last wire if smoothed  Returns the Face generated by each edge of the first wire
 

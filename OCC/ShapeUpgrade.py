@@ -141,7 +141,7 @@ import OCC.IntRes2d
 class shapeupgrade(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def C0BSplineToSequenceOfC1BSplineCurve(*args):
+    def C0BSplineToSequenceOfC1BSplineCurve(*args) -> "Standard_Boolean" :
         """
         * Unifies same domain faces and edges of specified shape
 
@@ -177,7 +177,7 @@ shapeupgrade._kill_pointed = new_instancemethod(_ShapeUpgrade.shapeupgrade__kill
 shapeupgrade_swigregister = _ShapeUpgrade.shapeupgrade_swigregister
 shapeupgrade_swigregister(shapeupgrade)
 
-def shapeupgrade_C0BSplineToSequenceOfC1BSplineCurve(*args):
+def shapeupgrade_C0BSplineToSequenceOfC1BSplineCurve(*args) -> "Standard_Boolean" :
   """
     * Unifies same domain faces and edges of specified shape
 
@@ -209,7 +209,7 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeUpgrade.ShapeUpgrade_RemoveLocations_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_RemoveLocations(*args))
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * //!Removes all location correspodingly to RemoveLevel.
 
@@ -220,7 +220,7 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_Remove(self, *args)
 
-    def GetResult(self, *args):
+    def GetResult(self, *args) -> "TopoDS_Shape" :
         """
         * //!Returns shape with removed locatins.
 
@@ -229,7 +229,7 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_GetResult(self, *args)
 
-    def SetRemoveLevel(self, *args):
+    def SetRemoveLevel(self, *args) -> "void" :
         """
         * //!sets level starting with that location will be removed,  by default TopAbs_SHAPE. In this case locations will be kept for specified shape  and if specified shape is TopAbs_COMPOUND for sub-shapes of first level.
 
@@ -240,7 +240,7 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_SetRemoveLevel(self, *args)
 
-    def RemoveLevel(self, *args):
+    def RemoveLevel(self, *args) -> "TopAbs_ShapeEnum" :
         """
         * //!sets level starting with that location will be removed.Value of level can be set to  TopAbs_SHAPE,TopAbs_COMPOUND,TopAbs_SOLID,TopAbs_SHELL,TopAbs_FACE.By default TopAbs_SHAPE.  In this case location will be removed for all shape types for exception of compound.
 
@@ -249,7 +249,7 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_RemoveLevel(self, *args)
 
-    def ModifiedShape(self, *args):
+    def ModifiedShape(self, *args) -> "TopoDS_Shape" :
         """
         * Returns modified shape obtained from initial shape.
 
@@ -260,11 +260,11 @@ class ShapeUpgrade_RemoveLocations(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_ModifiedShape(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_RemoveLocations self)"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_RemoveLocations" :
         """GetHandle(ShapeUpgrade_RemoveLocations self) -> Handle_ShapeUpgrade_RemoveLocations"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveLocations_GetHandle(self)
 
@@ -307,7 +307,7 @@ Handle_ShapeUpgrade_RemoveLocations._kill_pointed = new_instancemethod(_ShapeUpg
 Handle_ShapeUpgrade_RemoveLocations_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_RemoveLocations_swigregister
 Handle_ShapeUpgrade_RemoveLocations_swigregister(Handle_ShapeUpgrade_RemoveLocations)
 
-def Handle_ShapeUpgrade_RemoveLocations_DownCast(*args):
+def Handle_ShapeUpgrade_RemoveLocations_DownCast(*args) -> "Handle_ShapeUpgrade_RemoveLocations const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_RemoveLocations_DownCast(*args)
 Handle_ShapeUpgrade_RemoveLocations_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_RemoveLocations_DownCast
 
@@ -326,7 +326,7 @@ class ShapeUpgrade_ShapeDivide(object):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivide(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize by a Shape.
 
@@ -337,14 +337,14 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_Init(self, *args)
 
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_Delete(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         * Defines the spatial precision used for splitting
 
@@ -355,7 +355,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetPrecision(self, *args)
 
-    def SetMaxTolerance(self, *args):
+    def SetMaxTolerance(self, *args) -> "void" :
         """
         * Sets maximal allowed tolerance
 
@@ -366,7 +366,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetMaxTolerance(self, *args)
 
-    def SetMinTolerance(self, *args):
+    def SetMinTolerance(self, *args) -> "void" :
         """
         * Sets minimal allowed tolerance
 
@@ -377,7 +377,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetMinTolerance(self, *args)
 
-    def SetSurfaceSegmentMode(self, *args):
+    def SetSurfaceSegmentMode(self, *args) -> "void" :
         """
         * Purpose sets mode for trimming (segment) surface by wire UV bounds.
 
@@ -388,7 +388,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetSurfaceSegmentMode(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs splitting and computes the resulting shape If newContext is True (default), the internal context will be cleared at start, else previous substitutions will be acting.
 
@@ -399,7 +399,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_Perform(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopoDS_Shape" :
         """
         * Gives the resulting Shape, or Null shape if not done.
 
@@ -408,7 +408,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_Result(self, *args)
 
-    def GetContext(self, *args):
+    def GetContext(self, *args) -> "Handle_ShapeBuild_ReShape" :
         """
         * Returns context with all the modifications made during last call(s) to Perform() recorded
 
@@ -417,7 +417,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_GetContext(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets context with recorded modifications to be applied during next call(s) to Perform(shape,Standard_False)
 
@@ -428,7 +428,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetContext(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Queries the status of last call to Perform OK : no splitting was done (or no call to Perform) DONE1: some edges were splitted DONE2: surface was splitted FAIL1: some errors occured
 
@@ -439,7 +439,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_Status(self, *args)
 
-    def SetSplitFaceTool(self, *args):
+    def SetSplitFaceTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting faces.
 
@@ -450,7 +450,7 @@ class ShapeUpgrade_ShapeDivide(object):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivide_SetSplitFaceTool(self, *args)
 
-    def SetEdgeMode(self, *args):
+    def SetEdgeMode(self, *args) -> "void" :
         """
         * //!Sets mode for splitting 3d curves from edges. 0 - only curve 3d from free edges. 1 - only curve 3d from shared edges. 2 - all curve 3d.
 
@@ -497,7 +497,7 @@ class ShapeUpgrade_ShellSewing(object):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShellSewing_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShellSewing(*args))
-    def ApplySewing(self, *args):
+    def ApplySewing(self, *args) -> "TopoDS_Shape" :
         """
         * Builds a new shape from a former one, by calling Sewing from BRepOffsetAPI. Rebuilt solids are oriented to be 'not infinite'  If <tol> is not given (i.e. value 0. by default), it is computed as the mean tolerance recorded in <shape>  If no shell has been sewed, this method returns the input shape
 
@@ -534,7 +534,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitCurve_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes with curve first and last parameters.
 
@@ -547,7 +547,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_Init(self, *args)
 
-    def SetSplitValues(self, *args):
+    def SetSplitValues(self, *args) -> "void" :
         """
         * Sets the parameters where splitting has to be done.
 
@@ -558,7 +558,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_SetSplitValues(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * If Segment is True, the result is composed with segments of the curve bounded by the SplitValues. If Segment is False, the result is composed with trimmed Curves all based on the same complete curve.
 
@@ -569,7 +569,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_Build(self, *args)
 
-    def SplitValues(self, *args):
+    def SplitValues(self, *args) -> "Handle_TColStd_HSequenceOfReal const &" :
         """
         * returns all the splitting values including the First and Last parameters of the input curve Merges input split values and new ones into myGlobalKnots
 
@@ -578,7 +578,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_SplitValues(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Calculates points for correction/splitting of the curve
 
@@ -587,7 +587,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_Compute(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs correction/splitting of the curve.  First defines splitting values by method Compute(), then calls method Build().
 
@@ -598,7 +598,7 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_Perform(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status OK - no splitting is needed DONE1 - splitting required and gives more than one segment DONE2 - splitting is required, but gives only one segment (initial) DONE3 - geometric form of the curve or parametrisation is modified
 
@@ -609,11 +609,11 @@ class ShapeUpgrade_SplitCurve(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_Status(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitCurve self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitCurve" :
         """GetHandle(ShapeUpgrade_SplitCurve self) -> Handle_ShapeUpgrade_SplitCurve"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve_GetHandle(self)
 
@@ -658,7 +658,7 @@ Handle_ShapeUpgrade_SplitCurve._kill_pointed = new_instancemethod(_ShapeUpgrade.
 Handle_ShapeUpgrade_SplitCurve_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve_swigregister
 Handle_ShapeUpgrade_SplitCurve_swigregister(Handle_ShapeUpgrade_SplitCurve)
 
-def Handle_ShapeUpgrade_SplitCurve_DownCast(*args):
+def Handle_ShapeUpgrade_SplitCurve_DownCast(*args) -> "Handle_ShapeUpgrade_SplitCurve const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve_DownCast(*args)
 Handle_ShapeUpgrade_SplitCurve_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve_DownCast
 
@@ -673,7 +673,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitSurface_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes with single supporting surface.
 
@@ -698,7 +698,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_Init(self, *args)
 
-    def SetUSplitValues(self, *args):
+    def SetUSplitValues(self, *args) -> "void" :
         """
         * Sets U parameters where splitting has to be done
 
@@ -709,7 +709,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_SetUSplitValues(self, *args)
 
-    def SetVSplitValues(self, *args):
+    def SetVSplitValues(self, *args) -> "void" :
         """
         * Sets V parameters where splitting has to be done
 
@@ -720,7 +720,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_SetVSplitValues(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Performs splitting of the supporting surface. If resulting surface is B-Spline and Segment is True, the result is composed with segments of the surface bounded by the U and V SplitValues (method Geom_BSplineSurface::Segment is used). If Segment is False, the result is composed with Geom_RectangularTrimmedSurface all based on the same complete surface. Fields myNbResultingRow and myNbResultingCol must be set to specify the size of resulting grid of surfaces.
 
@@ -731,7 +731,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_Build(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         * Calculates points for correction/splitting of the surface.
 
@@ -742,7 +742,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_Compute(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs correction/splitting of the surface. First defines splitting values by method Compute(), then calls method Build().
 
@@ -753,7 +753,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_Perform(self, *args)
 
-    def USplitValues(self, *args):
+    def USplitValues(self, *args) -> "Handle_TColStd_HSequenceOfReal const &" :
         """
         * returns all the U splitting values including the First and Last parameters of the input surface
 
@@ -762,7 +762,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_USplitValues(self, *args)
 
-    def VSplitValues(self, *args):
+    def VSplitValues(self, *args) -> "Handle_TColStd_HSequenceOfReal const &" :
         """
         * returns all the splitting V values including the First and Last parameters of the input surface
 
@@ -771,7 +771,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_VSplitValues(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Returns the status OK - no splitting is needed DONE1 - splitting required and gives more than one patch DONE2 - splitting is required, but gives only single patch (initial) DONE3 - geometric form of the surface or parametrisation is modified
 
@@ -782,7 +782,7 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_Status(self, *args)
 
-    def ResSurfaces(self, *args):
+    def ResSurfaces(self, *args) -> "Handle_ShapeExtend_CompositeSurface const &" :
         """
         * Returns obtained surfaces after splitting as CompositeSurface
 
@@ -791,11 +791,11 @@ class ShapeUpgrade_SplitSurface(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_ResSurfaces(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitSurface self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitSurface" :
         """GetHandle(ShapeUpgrade_SplitSurface self) -> Handle_ShapeUpgrade_SplitSurface"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurface_GetHandle(self)
 
@@ -843,7 +843,7 @@ Handle_ShapeUpgrade_SplitSurface._kill_pointed = new_instancemethod(_ShapeUpgrad
 Handle_ShapeUpgrade_SplitSurface_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurface_swigregister
 Handle_ShapeUpgrade_SplitSurface_swigregister(Handle_ShapeUpgrade_SplitSurface)
 
-def Handle_ShapeUpgrade_SplitSurface_DownCast(*args):
+def Handle_ShapeUpgrade_SplitSurface_DownCast(*args) -> "Handle_ShapeUpgrade_SplitSurface const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurface_DownCast(*args)
 Handle_ShapeUpgrade_SplitSurface_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurface_DownCast
 
@@ -858,7 +858,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeUpgrade.ShapeUpgrade_Tool_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_Tool(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Copy all fields from another Root object
 
@@ -869,7 +869,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_Set(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         * Sets context
 
@@ -880,7 +880,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_ShapeBuild_ReShape" :
         """
         * Returns context
 
@@ -889,7 +889,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_Context(self, *args)
 
-    def SetPrecision(self, *args):
+    def SetPrecision(self, *args) -> "void" :
         """
         * Sets basic precision value
 
@@ -900,7 +900,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_SetPrecision(self, *args)
 
-    def Precision(self, *args):
+    def Precision(self, *args) -> "Standard_Real" :
         """
         * Returns basic precision value
 
@@ -909,7 +909,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_Precision(self, *args)
 
-    def SetMinTolerance(self, *args):
+    def SetMinTolerance(self, *args) -> "void" :
         """
         * Sets minimal allowed tolerance
 
@@ -920,7 +920,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_SetMinTolerance(self, *args)
 
-    def MinTolerance(self, *args):
+    def MinTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns minimal allowed tolerance
 
@@ -929,7 +929,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_MinTolerance(self, *args)
 
-    def SetMaxTolerance(self, *args):
+    def SetMaxTolerance(self, *args) -> "void" :
         """
         * Sets maximal allowed tolerance
 
@@ -940,7 +940,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_SetMaxTolerance(self, *args)
 
-    def MaxTolerance(self, *args):
+    def MaxTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns maximal allowed tolerance
 
@@ -949,7 +949,7 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_MaxTolerance(self, *args)
 
-    def LimitTolerance(self, *args):
+    def LimitTolerance(self, *args) -> "Standard_Real" :
         """
         * Returns tolerance limited by [myMinTol,myMaxTol]
 
@@ -960,11 +960,11 @@ class ShapeUpgrade_Tool(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_Tool_LimitTolerance(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_Tool self)"""
         return _ShapeUpgrade.ShapeUpgrade_Tool__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_Tool" :
         """GetHandle(ShapeUpgrade_Tool self) -> Handle_ShapeUpgrade_Tool"""
         return _ShapeUpgrade.ShapeUpgrade_Tool_GetHandle(self)
 
@@ -1012,7 +1012,7 @@ Handle_ShapeUpgrade_Tool._kill_pointed = new_instancemethod(_ShapeUpgrade.Handle
 Handle_ShapeUpgrade_Tool_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_Tool_swigregister
 Handle_ShapeUpgrade_Tool_swigregister(Handle_ShapeUpgrade_Tool)
 
-def Handle_ShapeUpgrade_Tool_DownCast(*args):
+def Handle_ShapeUpgrade_Tool_DownCast(*args) -> "Handle_ShapeUpgrade_Tool const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_Tool_DownCast(*args)
 Handle_ShapeUpgrade_Tool_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_Tool_DownCast
 
@@ -1037,7 +1037,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
 
         """
         _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_UnifySameDomain(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -1052,7 +1052,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_Initialize(self, *args)
 
-    def Build(self, *args):
+    def Build(self, *args) -> "void" :
         """
         * Builds the resulting shape
 
@@ -1061,7 +1061,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_Build(self, *args)
 
-    def Shape(self, *args):
+    def Shape(self, *args) -> "TopoDS_Shape const" :
         """
         * Gives the resulting shape
 
@@ -1070,7 +1070,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_Shape(self, *args)
 
-    def Generated(self, *args):
+    def Generated(self, *args) -> "TopoDS_Shape" :
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -1079,7 +1079,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_Generated(self, *args)
 
-    def UnifyFaces(self, *args):
+    def UnifyFaces(self, *args) -> "void" :
         """
         * this method makes if possible a common face from each group of faces lying on coincident surfaces
 
@@ -1088,7 +1088,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_UnifyFaces(self, *args)
 
-    def UnifyEdges(self, *args):
+    def UnifyEdges(self, *args) -> "void" :
         """
         * this method makes if possible a common edge from each group of edges connecting common couple of faces
 
@@ -1097,7 +1097,7 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_UnifyEdges(self, *args)
 
-    def UnifyFacesAndEdges(self, *args):
+    def UnifyFacesAndEdges(self, *args) -> "void" :
         """
         * this method unifies same domain faces and edges
 
@@ -1106,11 +1106,11 @@ class ShapeUpgrade_UnifySameDomain(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_UnifyFacesAndEdges(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_UnifySameDomain self)"""
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_UnifySameDomain" :
         """GetHandle(ShapeUpgrade_UnifySameDomain self) -> Handle_ShapeUpgrade_UnifySameDomain"""
         return _ShapeUpgrade.ShapeUpgrade_UnifySameDomain_GetHandle(self)
 
@@ -1155,7 +1155,7 @@ Handle_ShapeUpgrade_UnifySameDomain._kill_pointed = new_instancemethod(_ShapeUpg
 Handle_ShapeUpgrade_UnifySameDomain_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_UnifySameDomain_swigregister
 Handle_ShapeUpgrade_UnifySameDomain_swigregister(Handle_ShapeUpgrade_UnifySameDomain)
 
-def Handle_ShapeUpgrade_UnifySameDomain_DownCast(*args):
+def Handle_ShapeUpgrade_UnifySameDomain_DownCast(*args) -> "Handle_ShapeUpgrade_UnifySameDomain const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_UnifySameDomain_DownCast(*args)
 Handle_ShapeUpgrade_UnifySameDomain_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_UnifySameDomain_DownCast
 
@@ -1170,7 +1170,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ConvertSurfaceToBezierBasis(*args))
-    def Segments(self, *args):
+    def Segments(self, *args) -> "Handle_ShapeExtend_CompositeSurface" :
         """
         * Returns the grid of bezier based surfaces correspondent to original surface.
 
@@ -1179,7 +1179,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_Segments(self, *args)
 
-    def SetPlaneMode(self, *args):
+    def SetPlaneMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Plane to Bezier
 
@@ -1190,7 +1190,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_SetPlaneMode(self, *args)
 
-    def GetPlaneMode(self, *args):
+    def GetPlaneMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Pline conversion mode.
 
@@ -1199,7 +1199,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_GetPlaneMode(self, *args)
 
-    def SetRevolutionMode(self, *args):
+    def SetRevolutionMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_SurfaceOfRevolution to Bezier
 
@@ -1210,7 +1210,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_SetRevolutionMode(self, *args)
 
-    def GetRevolutionMode(self, *args):
+    def GetRevolutionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_SurfaceOfRevolution conversion mode.
 
@@ -1219,7 +1219,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_GetRevolutionMode(self, *args)
 
-    def SetExtrusionMode(self, *args):
+    def SetExtrusionMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_SurfaceOfLinearExtrusion to Bezier
 
@@ -1230,7 +1230,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_SetExtrusionMode(self, *args)
 
-    def GetExtrusionMode(self, *args):
+    def GetExtrusionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_SurfaceOfLinearExtrusion conversion mode.
 
@@ -1239,7 +1239,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_GetExtrusionMode(self, *args)
 
-    def SetBSplineMode(self, *args):
+    def SetBSplineMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_BSplineSurface to Bezier
 
@@ -1250,7 +1250,7 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_SetBSplineMode(self, *args)
 
-    def GetBSplineMode(self, *args):
+    def GetBSplineMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_BSplineSurface conversion mode.
 
@@ -1259,11 +1259,11 @@ class ShapeUpgrade_ConvertSurfaceToBezierBasis(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_GetBSplineMode(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ConvertSurfaceToBezierBasis self)"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis" :
         """GetHandle(ShapeUpgrade_ConvertSurfaceToBezierBasis self) -> Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertSurfaceToBezierBasis_GetHandle(self)
 
@@ -1310,7 +1310,7 @@ Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis._kill_pointed = new_instancemeth
 Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_swigregister
 Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_swigregister(Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis)
 
-def Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_DownCast(*args):
+def Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_DownCast(*args) -> "Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_DownCast(*args)
 Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertSurfaceToBezierBasis_DownCast
 
@@ -1325,14 +1325,14 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
 
         """
         _ShapeUpgrade.ShapeUpgrade_EdgeDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_EdgeDivide(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_Clear(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Sets supporting surface by face
 
@@ -1343,7 +1343,7 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_SetFace(self, *args)
 
-    def Compute(self, *args):
+    def Compute(self, *args) -> "Standard_Boolean" :
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1352,35 +1352,35 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_Compute(self, *args)
 
-    def HasCurve2d(self, *args):
+    def HasCurve2d(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_HasCurve2d(self, *args)
 
-    def HasCurve3d(self, *args):
+    def HasCurve3d(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_HasCurve3d(self, *args)
 
-    def Knots2d(self, *args):
+    def Knots2d(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         :rtype: Handle_TColStd_HSequenceOfReal
 
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_Knots2d(self, *args)
 
-    def Knots3d(self, *args):
+    def Knots3d(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         :rtype: Handle_TColStd_HSequenceOfReal
 
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_Knots3d(self, *args)
 
-    def SetSplitCurve2dTool(self, *args):
+    def SetSplitCurve2dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting pcurves.
 
@@ -1391,7 +1391,7 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_SetSplitCurve2dTool(self, *args)
 
-    def SetSplitCurve3dTool(self, *args):
+    def SetSplitCurve3dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting 3D curves.
 
@@ -1402,7 +1402,7 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_SetSplitCurve3dTool(self, *args)
 
-    def GetSplitCurve2dTool(self, *args):
+    def GetSplitCurve2dTool(self, *args) -> "Handle_ShapeUpgrade_SplitCurve2d" :
         """
         * Returns the tool for splitting pcurves.
 
@@ -1411,7 +1411,7 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_GetSplitCurve2dTool(self, *args)
 
-    def GetSplitCurve3dTool(self, *args):
+    def GetSplitCurve3dTool(self, *args) -> "Handle_ShapeUpgrade_SplitCurve3d" :
         """
         * Returns the tool for splitting 3D curves.
 
@@ -1420,11 +1420,11 @@ class ShapeUpgrade_EdgeDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_GetSplitCurve3dTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_EdgeDivide self)"""
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_EdgeDivide" :
         """GetHandle(ShapeUpgrade_EdgeDivide self) -> Handle_ShapeUpgrade_EdgeDivide"""
         return _ShapeUpgrade.ShapeUpgrade_EdgeDivide_GetHandle(self)
 
@@ -1473,7 +1473,7 @@ Handle_ShapeUpgrade_EdgeDivide._kill_pointed = new_instancemethod(_ShapeUpgrade.
 Handle_ShapeUpgrade_EdgeDivide_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_EdgeDivide_swigregister
 Handle_ShapeUpgrade_EdgeDivide_swigregister(Handle_ShapeUpgrade_EdgeDivide)
 
-def Handle_ShapeUpgrade_EdgeDivide_DownCast(*args):
+def Handle_ShapeUpgrade_EdgeDivide_DownCast(*args) -> "Handle_ShapeUpgrade_EdgeDivide const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_EdgeDivide_DownCast(*args)
 Handle_ShapeUpgrade_EdgeDivide_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_EdgeDivide_DownCast
 
@@ -1494,7 +1494,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
 
         """
         _ShapeUpgrade.ShapeUpgrade_FaceDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_FaceDivide(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize by a Face.
 
@@ -1505,7 +1505,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_Init(self, *args)
 
-    def SetSurfaceSegmentMode(self, *args):
+    def SetSurfaceSegmentMode(self, *args) -> "void" :
         """
         * Purpose sets mode for trimming (segment) surface by wire UV bounds.
 
@@ -1516,7 +1516,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_SetSurfaceSegmentMode(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs splitting and computes the resulting shell The context is used to keep track of former splittings in order to keep sharings. It is updated according to modifications made.
 
@@ -1525,7 +1525,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_Perform(self, *args)
 
-    def SplitSurface(self, *args):
+    def SplitSurface(self, *args) -> "Standard_Boolean" :
         """
         * Performs splitting of surface and computes the shell from source face.
 
@@ -1534,7 +1534,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_SplitSurface(self, *args)
 
-    def SplitCurves(self, *args):
+    def SplitCurves(self, *args) -> "Standard_Boolean" :
         """
         * Performs splitting of curves of all the edges in the shape and divides these edges.
 
@@ -1543,7 +1543,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_SplitCurves(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "TopoDS_Shape" :
         """
         * Gives the resulting Shell, or Face, or Null shape if not done.
 
@@ -1552,7 +1552,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_Result(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Queries the status of last call to Perform OK : no splitting was done (or no call to Perform) DONE1: some edges were splitted DONE2: surface was splitted DONE3: surface was modified without splitting FAIL1: some fails encountered during splitting wires FAIL2: face cannot be splitted
 
@@ -1563,7 +1563,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_Status(self, *args)
 
-    def SetSplitSurfaceTool(self, *args):
+    def SetSplitSurfaceTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting surfaces.
 
@@ -1574,7 +1574,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_SetSplitSurfaceTool(self, *args)
 
-    def SetWireDivideTool(self, *args):
+    def SetWireDivideTool(self, *args) -> "void" :
         """
         * Sets the tool for dividing edges on Face.
 
@@ -1585,7 +1585,7 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_SetWireDivideTool(self, *args)
 
-    def GetWireDivideTool(self, *args):
+    def GetWireDivideTool(self, *args) -> "Handle_ShapeUpgrade_WireDivide" :
         """
         * Returns the tool for dividing edges on Face. This tool must be already initialized.
 
@@ -1594,11 +1594,11 @@ class ShapeUpgrade_FaceDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_GetWireDivideTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_FaceDivide self)"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_FaceDivide" :
         """GetHandle(ShapeUpgrade_FaceDivide self) -> Handle_ShapeUpgrade_FaceDivide"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivide_GetHandle(self)
 
@@ -1646,7 +1646,7 @@ Handle_ShapeUpgrade_FaceDivide._kill_pointed = new_instancemethod(_ShapeUpgrade.
 Handle_ShapeUpgrade_FaceDivide_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivide_swigregister
 Handle_ShapeUpgrade_FaceDivide_swigregister(Handle_ShapeUpgrade_FaceDivide)
 
-def Handle_ShapeUpgrade_FaceDivide_DownCast(*args):
+def Handle_ShapeUpgrade_FaceDivide_DownCast(*args) -> "Handle_ShapeUpgrade_FaceDivide const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivide_DownCast(*args)
 Handle_ShapeUpgrade_FaceDivide_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivide_DownCast
 
@@ -1659,7 +1659,7 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
 
         """
         _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_FixSmallCurves(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param theEdge:
         :type theEdge: TopoDS_Edge &
@@ -1670,7 +1670,7 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_Init(self, *args)
 
-    def Approx(self, *args):
+    def Approx(self, *args) -> "Standard_Boolean" :
         """
         :param Curve3d:
         :type Curve3d: Handle_Geom_Curve &
@@ -1687,7 +1687,7 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_Approx(self, *args)
 
-    def SetSplitCurve3dTool(self, *args):
+    def SetSplitCurve3dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting 3D curves.
 
@@ -1698,7 +1698,7 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_SetSplitCurve3dTool(self, *args)
 
-    def SetSplitCurve2dTool(self, *args):
+    def SetSplitCurve2dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting pcurves.
 
@@ -1709,7 +1709,7 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_SetSplitCurve2dTool(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Queries the status of last call to Perform OK : DONE1: DONE2: FAIL1:
 
@@ -1720,11 +1720,11 @@ class ShapeUpgrade_FixSmallCurves(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_Status(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_FixSmallCurves self)"""
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_FixSmallCurves" :
         """GetHandle(ShapeUpgrade_FixSmallCurves self) -> Handle_ShapeUpgrade_FixSmallCurves"""
         return _ShapeUpgrade.ShapeUpgrade_FixSmallCurves_GetHandle(self)
 
@@ -1767,7 +1767,7 @@ Handle_ShapeUpgrade_FixSmallCurves._kill_pointed = new_instancemethod(_ShapeUpgr
 Handle_ShapeUpgrade_FixSmallCurves_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallCurves_swigregister
 Handle_ShapeUpgrade_FixSmallCurves_swigregister(Handle_ShapeUpgrade_FixSmallCurves)
 
-def Handle_ShapeUpgrade_FixSmallCurves_DownCast(*args):
+def Handle_ShapeUpgrade_FixSmallCurves_DownCast(*args) -> "Handle_ShapeUpgrade_FixSmallCurves const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallCurves_DownCast(*args)
 Handle_ShapeUpgrade_FixSmallCurves_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallCurves_DownCast
 
@@ -1786,7 +1786,7 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
 
         """
         _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_RemoveInternalWires(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initialize by a Shape.
 
@@ -1797,7 +1797,7 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * //!Removes all internal wires having area less than area specified as minimal allowed area
 
@@ -1812,7 +1812,7 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_Perform(self, *args)
 
-    def GetResult(self, *args):
+    def GetResult(self, *args) -> "TopoDS_Shape" :
         """
         * //!Get result shape
 
@@ -1821,23 +1821,23 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_GetResult(self, *args)
 
-    def GetMinArea(self):
+    def GetMinArea(self) -> "Standard_Real" :
         """GetMinArea(ShapeUpgrade_RemoveInternalWires self) -> Standard_Real"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_GetMinArea(self)
 
-    def SetMinArea(self, *args):
+    def SetMinArea(self, *args) -> "void" :
         """SetMinArea(ShapeUpgrade_RemoveInternalWires self, Standard_Real value)"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_SetMinArea(self, *args)
 
-    def GetRemoveFaceMode(self):
+    def GetRemoveFaceMode(self) -> "Standard_Boolean" :
         """GetRemoveFaceMode(ShapeUpgrade_RemoveInternalWires self) -> Standard_Boolean"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_GetRemoveFaceMode(self)
 
-    def SetRemoveFaceMode(self, *args):
+    def SetRemoveFaceMode(self, *args) -> "void" :
         """SetRemoveFaceMode(ShapeUpgrade_RemoveInternalWires self, Standard_Boolean value)"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_SetRemoveFaceMode(self, *args)
 
-    def RemovedFaces(self, *args):
+    def RemovedFaces(self, *args) -> "TopTools_SequenceOfShape const &" :
         """
         * //!Returns sequence of removed faces.
 
@@ -1846,7 +1846,7 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_RemovedFaces(self, *args)
 
-    def RemovedWires(self, *args):
+    def RemovedWires(self, *args) -> "TopTools_SequenceOfShape const &" :
         """
         * //!Returns sequence of removed faces.
 
@@ -1855,7 +1855,7 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_RemovedWires(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * //!Queries status of last call to Perform() : OK - nothing was done :DONE1 - internal wires were removed :DONE2 - small faces were removed. :FAIL1 - initial shape is not specified :FAIL2 - specified sub-shape is not belonged to inotial shape.
 
@@ -1866,11 +1866,11 @@ class ShapeUpgrade_RemoveInternalWires(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_Status(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_RemoveInternalWires self)"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_RemoveInternalWires" :
         """GetHandle(ShapeUpgrade_RemoveInternalWires self) -> Handle_ShapeUpgrade_RemoveInternalWires"""
         return _ShapeUpgrade.ShapeUpgrade_RemoveInternalWires_GetHandle(self)
 
@@ -1918,7 +1918,7 @@ Handle_ShapeUpgrade_RemoveInternalWires._kill_pointed = new_instancemethod(_Shap
 Handle_ShapeUpgrade_RemoveInternalWires_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_RemoveInternalWires_swigregister
 Handle_ShapeUpgrade_RemoveInternalWires_swigregister(Handle_ShapeUpgrade_RemoveInternalWires)
 
-def Handle_ShapeUpgrade_RemoveInternalWires_DownCast(*args):
+def Handle_ShapeUpgrade_RemoveInternalWires_DownCast(*args) -> "Handle_ShapeUpgrade_RemoveInternalWires const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_RemoveInternalWires_DownCast(*args)
 Handle_ShapeUpgrade_RemoveInternalWires_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_RemoveInternalWires_DownCast
 
@@ -1939,7 +1939,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeConvertToBezier(*args))
-    def Set2dConversion(self, *args):
+    def Set2dConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion 2D curves to bezier.
 
@@ -1950,7 +1950,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Set2dConversion(self, *args)
 
-    def Get2dConversion(self, *args):
+    def Get2dConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the 2D conversion mode.
 
@@ -1959,7 +1959,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Get2dConversion(self, *args)
 
-    def Set3dConversion(self, *args):
+    def Set3dConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion 3d curves to bezier.
 
@@ -1970,7 +1970,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Set3dConversion(self, *args)
 
-    def Get3dConversion(self, *args):
+    def Get3dConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the 3D conversion mode.
 
@@ -1979,7 +1979,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Get3dConversion(self, *args)
 
-    def SetSurfaceConversion(self, *args):
+    def SetSurfaceConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion surfaces curves to bezier basis.
 
@@ -1990,7 +1990,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_SetSurfaceConversion(self, *args)
 
-    def GetSurfaceConversion(self, *args):
+    def GetSurfaceConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the surface conversion mode.
 
@@ -1999,7 +1999,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_GetSurfaceConversion(self, *args)
 
-    def Set3dLineConversion(self, *args):
+    def Set3dLineConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Line to bezier.
 
@@ -2010,7 +2010,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Set3dLineConversion(self, *args)
 
-    def Get3dLineConversion(self, *args):
+    def Get3dLineConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Line conversion mode.
 
@@ -2019,7 +2019,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Get3dLineConversion(self, *args)
 
-    def Set3dCircleConversion(self, *args):
+    def Set3dCircleConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Circle to bezier.
 
@@ -2030,7 +2030,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Set3dCircleConversion(self, *args)
 
-    def Get3dCircleConversion(self, *args):
+    def Get3dCircleConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Circle conversion mode.
 
@@ -2039,7 +2039,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Get3dCircleConversion(self, *args)
 
-    def Set3dConicConversion(self, *args):
+    def Set3dConicConversion(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Conic to bezier.
 
@@ -2050,7 +2050,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Set3dConicConversion(self, *args)
 
-    def Get3dConicConversion(self, *args):
+    def Get3dConicConversion(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Conic conversion mode.
 
@@ -2059,7 +2059,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_Get3dConicConversion(self, *args)
 
-    def SetPlaneMode(self, *args):
+    def SetPlaneMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Plane to Bezier
 
@@ -2070,7 +2070,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_SetPlaneMode(self, *args)
 
-    def GetPlaneMode(self, *args):
+    def GetPlaneMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Pline conversion mode.
 
@@ -2079,7 +2079,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_GetPlaneMode(self, *args)
 
-    def SetRevolutionMode(self, *args):
+    def SetRevolutionMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_SurfaceOfRevolution to Bezier
 
@@ -2090,7 +2090,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_SetRevolutionMode(self, *args)
 
-    def GetRevolutionMode(self, *args):
+    def GetRevolutionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_SurfaceOfRevolution conversion mode.
 
@@ -2099,7 +2099,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_GetRevolutionMode(self, *args)
 
-    def SetExtrusionMode(self, *args):
+    def SetExtrusionMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_SurfaceOfLinearExtrusion to Bezier
 
@@ -2110,7 +2110,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_SetExtrusionMode(self, *args)
 
-    def GetExtrusionMode(self, *args):
+    def GetExtrusionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_SurfaceOfLinearExtrusion conversion mode.
 
@@ -2119,7 +2119,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_GetExtrusionMode(self, *args)
 
-    def SetBSplineMode(self, *args):
+    def SetBSplineMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_BSplineSurface to Bezier
 
@@ -2130,7 +2130,7 @@ class ShapeUpgrade_ShapeConvertToBezier(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeConvertToBezier_SetBSplineMode(self, *args)
 
-    def GetBSplineMode(self, *args):
+    def GetBSplineMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_BSplineSurface conversion mode.
 
@@ -2192,7 +2192,7 @@ class ShapeUpgrade_ShapeDivideAngle(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivideAngle_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivideAngle(*args))
-    def InitTool(self, *args):
+    def InitTool(self, *args) -> "void" :
         """
         * Resets tool for splitting face with given angle
 
@@ -2203,7 +2203,7 @@ class ShapeUpgrade_ShapeDivideAngle(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideAngle_InitTool(self, *args)
 
-    def SetMaxAngle(self, *args):
+    def SetMaxAngle(self, *args) -> "void" :
         """
         * Set maximal angle (calls InitTool)
 
@@ -2214,7 +2214,7 @@ class ShapeUpgrade_ShapeDivideAngle(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideAngle_SetMaxAngle(self, *args)
 
-    def MaxAngle(self, *args):
+    def MaxAngle(self, *args) -> "Standard_Real" :
         """
         * Returns maximal angle
 
@@ -2253,15 +2253,15 @@ class ShapeUpgrade_ShapeDivideArea(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivideArea_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivideArea(*args))
-    def GetMaxArea(self):
+    def GetMaxArea(self) -> "Standard_Real" :
         """GetMaxArea(ShapeUpgrade_ShapeDivideArea self) -> Standard_Real"""
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideArea_GetMaxArea(self)
 
-    def SetMaxArea(self, *args):
+    def SetMaxArea(self, *args) -> "void" :
         """SetMaxArea(ShapeUpgrade_ShapeDivideArea self, Standard_Real value)"""
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideArea_SetMaxArea(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ShapeDivideArea self)"""
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideArea__kill_pointed(self)
 
@@ -2292,7 +2292,7 @@ class ShapeUpgrade_ShapeDivideClosed(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivideClosed_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivideClosed(*args))
-    def SetNbSplitPoints(self, *args):
+    def SetNbSplitPoints(self, *args) -> "void" :
         """
         * Sets the number of cuts applied to divide closed faces. The number of resulting faces will be num+1.
 
@@ -2329,7 +2329,7 @@ class ShapeUpgrade_ShapeDivideClosedEdges(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivideClosedEdges_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivideClosedEdges(*args))
-    def SetNbSplitPoints(self, *args):
+    def SetNbSplitPoints(self, *args) -> "void" :
         """
         * Sets the number of cuts applied to divide closed edges. The number of resulting faces will be num+1.
 
@@ -2368,7 +2368,7 @@ class ShapeUpgrade_ShapeDivideContinuity(ShapeUpgrade_ShapeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ShapeDivideContinuity_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ShapeDivideContinuity(*args))
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets tolerance.
 
@@ -2379,7 +2379,7 @@ class ShapeUpgrade_ShapeDivideContinuity(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideContinuity_SetTolerance(self, *args)
 
-    def SetTolerance2d(self, *args):
+    def SetTolerance2d(self, *args) -> "void" :
         """
         * Sets tolerance.
 
@@ -2390,7 +2390,7 @@ class ShapeUpgrade_ShapeDivideContinuity(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideContinuity_SetTolerance2d(self, *args)
 
-    def SetBoundaryCriterion(self, *args):
+    def SetBoundaryCriterion(self, *args) -> "void" :
         """
         * Defines a criterion of continuity for the boundary (all the Wires) The possible values are C0, G1, C1, G2, C2, C3, CN The default is C1 to respect the Cas.Cade Shape Validity. G1 and G2 are not authorized.
 
@@ -2401,7 +2401,7 @@ class ShapeUpgrade_ShapeDivideContinuity(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideContinuity_SetBoundaryCriterion(self, *args)
 
-    def SetPCurveCriterion(self, *args):
+    def SetPCurveCriterion(self, *args) -> "void" :
         """
         * Defines a criterion of continuity for the boundary (all the pcurves of Wires) The possible values are C0, G1, C1, G2, C2, C3, CN The default is C1 to respect the Cas.Cade Shape Validity. G1 and G2 are not authorized.
 
@@ -2412,7 +2412,7 @@ class ShapeUpgrade_ShapeDivideContinuity(ShapeUpgrade_ShapeDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ShapeDivideContinuity_SetPCurveCriterion(self, *args)
 
-    def SetSurfaceCriterion(self, *args):
+    def SetSurfaceCriterion(self, *args) -> "void" :
         """
         * Defines a criterion of continuity for the boundary (all the Wires) The possible values are C0, G1, C1, G2, C2, C3, CN The default is C1 to respect the Cas.Cade Shape Validity. G1 and G2 are not authorized.
 
@@ -2451,7 +2451,7 @@ class ShapeUpgrade_SplitCurve2d(ShapeUpgrade_SplitCurve):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitCurve2d_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitCurve2d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes with pcurve with its first and last parameters.
 
@@ -2472,18 +2472,18 @@ class ShapeUpgrade_SplitCurve2d(ShapeUpgrade_SplitCurve):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2d_Init(self, *args)
 
-    def GetCurves(self, *args):
+    def GetCurves(self, *args) -> "Handle_TColGeom2d_HArray1OfCurve const &" :
         """
         :rtype: Handle_TColGeom2d_HArray1OfCurve
 
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2d_GetCurves(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitCurve2d self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitCurve2d" :
         """GetHandle(ShapeUpgrade_SplitCurve2d self) -> Handle_ShapeUpgrade_SplitCurve2d"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2d_GetHandle(self)
 
@@ -2523,7 +2523,7 @@ Handle_ShapeUpgrade_SplitCurve2d._kill_pointed = new_instancemethod(_ShapeUpgrad
 Handle_ShapeUpgrade_SplitCurve2d_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2d_swigregister
 Handle_ShapeUpgrade_SplitCurve2d_swigregister(Handle_ShapeUpgrade_SplitCurve2d)
 
-def Handle_ShapeUpgrade_SplitCurve2d_DownCast(*args):
+def Handle_ShapeUpgrade_SplitCurve2d_DownCast(*args) -> "Handle_ShapeUpgrade_SplitCurve2d const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2d_DownCast(*args)
 Handle_ShapeUpgrade_SplitCurve2d_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2d_DownCast
 
@@ -2538,7 +2538,7 @@ class ShapeUpgrade_SplitCurve3d(ShapeUpgrade_SplitCurve):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitCurve3d_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitCurve3d(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes with curve with its first and last parameters.
 
@@ -2559,18 +2559,18 @@ class ShapeUpgrade_SplitCurve3d(ShapeUpgrade_SplitCurve):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3d_Init(self, *args)
 
-    def GetCurves(self, *args):
+    def GetCurves(self, *args) -> "Handle_TColGeom_HArray1OfCurve const &" :
         """
         :rtype: Handle_TColGeom_HArray1OfCurve
 
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3d_GetCurves(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitCurve3d self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3d__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitCurve3d" :
         """GetHandle(ShapeUpgrade_SplitCurve3d self) -> Handle_ShapeUpgrade_SplitCurve3d"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3d_GetHandle(self)
 
@@ -2610,7 +2610,7 @@ Handle_ShapeUpgrade_SplitCurve3d._kill_pointed = new_instancemethod(_ShapeUpgrad
 Handle_ShapeUpgrade_SplitCurve3d_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3d_swigregister
 Handle_ShapeUpgrade_SplitCurve3d_swigregister(Handle_ShapeUpgrade_SplitCurve3d)
 
-def Handle_ShapeUpgrade_SplitCurve3d_DownCast(*args):
+def Handle_ShapeUpgrade_SplitCurve3d_DownCast(*args) -> "Handle_ShapeUpgrade_SplitCurve3d const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3d_DownCast(*args)
 Handle_ShapeUpgrade_SplitCurve3d_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3d_DownCast
 
@@ -2627,7 +2627,7 @@ class ShapeUpgrade_SplitSurfaceAngle(ShapeUpgrade_SplitSurface):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitSurfaceAngle_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitSurfaceAngle(*args))
-    def SetMaxAngle(self, *args):
+    def SetMaxAngle(self, *args) -> "void" :
         """
         * Set maximal angle
 
@@ -2638,7 +2638,7 @@ class ShapeUpgrade_SplitSurfaceAngle(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceAngle_SetMaxAngle(self, *args)
 
-    def MaxAngle(self, *args):
+    def MaxAngle(self, *args) -> "Standard_Real" :
         """
         * Returns maximal angle
 
@@ -2647,11 +2647,11 @@ class ShapeUpgrade_SplitSurfaceAngle(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceAngle_MaxAngle(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitSurfaceAngle self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceAngle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitSurfaceAngle" :
         """GetHandle(ShapeUpgrade_SplitSurfaceAngle self) -> Handle_ShapeUpgrade_SplitSurfaceAngle"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceAngle_GetHandle(self)
 
@@ -2691,7 +2691,7 @@ Handle_ShapeUpgrade_SplitSurfaceAngle._kill_pointed = new_instancemethod(_ShapeU
 Handle_ShapeUpgrade_SplitSurfaceAngle_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceAngle_swigregister
 Handle_ShapeUpgrade_SplitSurfaceAngle_swigregister(Handle_ShapeUpgrade_SplitSurfaceAngle)
 
-def Handle_ShapeUpgrade_SplitSurfaceAngle_DownCast(*args):
+def Handle_ShapeUpgrade_SplitSurfaceAngle_DownCast(*args) -> "Handle_ShapeUpgrade_SplitSurfaceAngle const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceAngle_DownCast(*args)
 Handle_ShapeUpgrade_SplitSurfaceAngle_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceAngle_DownCast
 
@@ -2706,19 +2706,19 @@ class ShapeUpgrade_SplitSurfaceArea(ShapeUpgrade_SplitSurface):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitSurfaceArea_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitSurfaceArea(*args))
-    def GetNbParts(self):
+    def GetNbParts(self) -> "Standard_Integer" :
         """GetNbParts(ShapeUpgrade_SplitSurfaceArea self) -> Standard_Integer"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceArea_GetNbParts(self)
 
-    def SetNbParts(self, *args):
+    def SetNbParts(self, *args) -> "void" :
         """SetNbParts(ShapeUpgrade_SplitSurfaceArea self, Standard_Integer value)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceArea_SetNbParts(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitSurfaceArea self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceArea__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitSurfaceArea" :
         """GetHandle(ShapeUpgrade_SplitSurfaceArea self) -> Handle_ShapeUpgrade_SplitSurfaceArea"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceArea_GetHandle(self)
 
@@ -2758,7 +2758,7 @@ Handle_ShapeUpgrade_SplitSurfaceArea._kill_pointed = new_instancemethod(_ShapeUp
 Handle_ShapeUpgrade_SplitSurfaceArea_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceArea_swigregister
 Handle_ShapeUpgrade_SplitSurfaceArea_swigregister(Handle_ShapeUpgrade_SplitSurfaceArea)
 
-def Handle_ShapeUpgrade_SplitSurfaceArea_DownCast(*args):
+def Handle_ShapeUpgrade_SplitSurfaceArea_DownCast(*args) -> "Handle_ShapeUpgrade_SplitSurfaceArea const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceArea_DownCast(*args)
 Handle_ShapeUpgrade_SplitSurfaceArea_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceArea_DownCast
 
@@ -2773,7 +2773,7 @@ class ShapeUpgrade_SplitSurfaceContinuity(ShapeUpgrade_SplitSurface):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitSurfaceContinuity_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitSurfaceContinuity(*args))
-    def SetCriterion(self, *args):
+    def SetCriterion(self, *args) -> "void" :
         """
         * Sets criterion for splitting.
 
@@ -2784,7 +2784,7 @@ class ShapeUpgrade_SplitSurfaceContinuity(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceContinuity_SetCriterion(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets tolerance.
 
@@ -2795,11 +2795,11 @@ class ShapeUpgrade_SplitSurfaceContinuity(ShapeUpgrade_SplitSurface):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceContinuity_SetTolerance(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitSurfaceContinuity self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceContinuity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitSurfaceContinuity" :
         """GetHandle(ShapeUpgrade_SplitSurfaceContinuity self) -> Handle_ShapeUpgrade_SplitSurfaceContinuity"""
         return _ShapeUpgrade.ShapeUpgrade_SplitSurfaceContinuity_GetHandle(self)
 
@@ -2839,7 +2839,7 @@ Handle_ShapeUpgrade_SplitSurfaceContinuity._kill_pointed = new_instancemethod(_S
 Handle_ShapeUpgrade_SplitSurfaceContinuity_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceContinuity_swigregister
 Handle_ShapeUpgrade_SplitSurfaceContinuity_swigregister(Handle_ShapeUpgrade_SplitSurfaceContinuity)
 
-def Handle_ShapeUpgrade_SplitSurfaceContinuity_DownCast(*args):
+def Handle_ShapeUpgrade_SplitSurfaceContinuity_DownCast(*args) -> "Handle_ShapeUpgrade_SplitSurfaceContinuity const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceContinuity_DownCast(*args)
 Handle_ShapeUpgrade_SplitSurfaceContinuity_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitSurfaceContinuity_DownCast
 
@@ -2854,7 +2854,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
 
         """
         _ShapeUpgrade.ShapeUpgrade_WireDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_WireDivide(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes by wire and face
 
@@ -2875,7 +2875,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_Init(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Loads working wire
 
@@ -2892,7 +2892,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_Load(self, *args)
 
-    def SetFace(self, *args):
+    def SetFace(self, *args) -> "void" :
         """
         * Sets supporting surface by face
 
@@ -2903,7 +2903,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetFace(self, *args)
 
-    def SetSurface(self, *args):
+    def SetSurface(self, *args) -> "void" :
         """
         * Sets supporting surface
 
@@ -2922,7 +2922,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetSurface(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the resulting wire by splitting all the edges according to splitting criteria. All the modifications made are recorded in context (ShapeBuild_ReShape). This tool is applied to all edges before splitting them in order to keep sharings. If no supporting face or surface is defined, only 3d splitting criteria are used.
 
@@ -2931,7 +2931,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_Perform(self, *args)
 
-    def Wire(self, *args):
+    def Wire(self, *args) -> "TopoDS_Wire const" :
         """
         * Gives the resulting Wire (equal to initial one if not done or Null if not loaded)
 
@@ -2940,7 +2940,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_Wire(self, *args)
 
-    def Status(self, *args):
+    def Status(self, *args) -> "Standard_Boolean" :
         """
         * Queries status of last call to Perform() OK - no edges were splitted, wire left untouched DONE1 - some edges were splitted FAIL1 - some edges have no 3d curve (skipped) FAIL2 - some edges have no pcurve (skipped)
 
@@ -2951,7 +2951,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_Status(self, *args)
 
-    def SetSplitCurve3dTool(self, *args):
+    def SetSplitCurve3dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting 3D curves.
 
@@ -2962,7 +2962,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetSplitCurve3dTool(self, *args)
 
-    def SetSplitCurve2dTool(self, *args):
+    def SetSplitCurve2dTool(self, *args) -> "void" :
         """
         * Sets the tool for splitting pcurves.
 
@@ -2973,7 +2973,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetSplitCurve2dTool(self, *args)
 
-    def SetTransferParamTool(self, *args):
+    def SetTransferParamTool(self, *args) -> "void" :
         """
         * Sets the tool for Transfer parameters between curves and pcurves.
 
@@ -2984,7 +2984,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetTransferParamTool(self, *args)
 
-    def SetEdgeDivideTool(self, *args):
+    def SetEdgeDivideTool(self, *args) -> "void" :
         """
         * Sets tool for splitting edge
 
@@ -2995,7 +2995,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetEdgeDivideTool(self, *args)
 
-    def GetEdgeDivideTool(self, *args):
+    def GetEdgeDivideTool(self, *args) -> "Handle_ShapeUpgrade_EdgeDivide" :
         """
         * returns tool for splitting edges
 
@@ -3004,7 +3004,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_GetEdgeDivideTool(self, *args)
 
-    def GetTransferParamTool(self, *args):
+    def GetTransferParamTool(self, *args) -> "Handle_ShapeAnalysis_TransferParameters" :
         """
         * Returns the tool for Transfer of parameters.
 
@@ -3013,7 +3013,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_GetTransferParamTool(self, *args)
 
-    def SetEdgeMode(self, *args):
+    def SetEdgeMode(self, *args) -> "void" :
         """
         * //!Sets mode for splitting 3d curves from edges. 0 - only curve 3d from free edges. 1 - only curve 3d from shared edges. 2 - all curve 3d.
 
@@ -3024,7 +3024,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetEdgeMode(self, *args)
 
-    def SetFixSmallCurveTool(self, *args):
+    def SetFixSmallCurveTool(self, *args) -> "void" :
         """
         * //!Sets tool for fixing small curves with specified min tolerance;
 
@@ -3035,7 +3035,7 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_SetFixSmallCurveTool(self, *args)
 
-    def GetFixSmallCurveTool(self, *args):
+    def GetFixSmallCurveTool(self, *args) -> "Handle_ShapeUpgrade_FixSmallCurves" :
         """
         * //!Returns tool for fixing small curves
 
@@ -3044,11 +3044,11 @@ class ShapeUpgrade_WireDivide(ShapeUpgrade_Tool):
         """
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_GetFixSmallCurveTool(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_WireDivide self)"""
         return _ShapeUpgrade.ShapeUpgrade_WireDivide__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_WireDivide" :
         """GetHandle(ShapeUpgrade_WireDivide self) -> Handle_ShapeUpgrade_WireDivide"""
         return _ShapeUpgrade.ShapeUpgrade_WireDivide_GetHandle(self)
 
@@ -3102,7 +3102,7 @@ Handle_ShapeUpgrade_WireDivide._kill_pointed = new_instancemethod(_ShapeUpgrade.
 Handle_ShapeUpgrade_WireDivide_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_WireDivide_swigregister
 Handle_ShapeUpgrade_WireDivide_swigregister(Handle_ShapeUpgrade_WireDivide)
 
-def Handle_ShapeUpgrade_WireDivide_DownCast(*args):
+def Handle_ShapeUpgrade_WireDivide_DownCast(*args) -> "Handle_ShapeUpgrade_WireDivide const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_WireDivide_DownCast(*args)
 Handle_ShapeUpgrade_WireDivide_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_WireDivide_DownCast
 
@@ -3117,11 +3117,11 @@ class ShapeUpgrade_ClosedEdgeDivide(ShapeUpgrade_EdgeDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ClosedEdgeDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ClosedEdgeDivide(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ClosedEdgeDivide self)"""
         return _ShapeUpgrade.ShapeUpgrade_ClosedEdgeDivide__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_ClosedEdgeDivide" :
         """GetHandle(ShapeUpgrade_ClosedEdgeDivide self) -> Handle_ShapeUpgrade_ClosedEdgeDivide"""
         return _ShapeUpgrade.ShapeUpgrade_ClosedEdgeDivide_GetHandle(self)
 
@@ -3159,7 +3159,7 @@ Handle_ShapeUpgrade_ClosedEdgeDivide._kill_pointed = new_instancemethod(_ShapeUp
 Handle_ShapeUpgrade_ClosedEdgeDivide_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_ClosedEdgeDivide_swigregister
 Handle_ShapeUpgrade_ClosedEdgeDivide_swigregister(Handle_ShapeUpgrade_ClosedEdgeDivide)
 
-def Handle_ShapeUpgrade_ClosedEdgeDivide_DownCast(*args):
+def Handle_ShapeUpgrade_ClosedEdgeDivide_DownCast(*args) -> "Handle_ShapeUpgrade_ClosedEdgeDivide const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_ClosedEdgeDivide_DownCast(*args)
 Handle_ShapeUpgrade_ClosedEdgeDivide_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_ClosedEdgeDivide_DownCast
 
@@ -3180,7 +3180,7 @@ class ShapeUpgrade_ClosedFaceDivide(ShapeUpgrade_FaceDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ClosedFaceDivide_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ClosedFaceDivide(*args))
-    def SetNbSplitPoints(self, *args):
+    def SetNbSplitPoints(self, *args) -> "void" :
         """
         * Sets the number of cutting lines by which closed face will be splitted. The resulting faces will be num+1.
 
@@ -3191,7 +3191,7 @@ class ShapeUpgrade_ClosedFaceDivide(ShapeUpgrade_FaceDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ClosedFaceDivide_SetNbSplitPoints(self, *args)
 
-    def GetNbSplitPoints(self, *args):
+    def GetNbSplitPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of splitting points
 
@@ -3200,11 +3200,11 @@ class ShapeUpgrade_ClosedFaceDivide(ShapeUpgrade_FaceDivide):
         """
         return _ShapeUpgrade.ShapeUpgrade_ClosedFaceDivide_GetNbSplitPoints(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ClosedFaceDivide self)"""
         return _ShapeUpgrade.ShapeUpgrade_ClosedFaceDivide__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_ClosedFaceDivide" :
         """GetHandle(ShapeUpgrade_ClosedFaceDivide self) -> Handle_ShapeUpgrade_ClosedFaceDivide"""
         return _ShapeUpgrade.ShapeUpgrade_ClosedFaceDivide_GetHandle(self)
 
@@ -3244,7 +3244,7 @@ Handle_ShapeUpgrade_ClosedFaceDivide._kill_pointed = new_instancemethod(_ShapeUp
 Handle_ShapeUpgrade_ClosedFaceDivide_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_ClosedFaceDivide_swigregister
 Handle_ShapeUpgrade_ClosedFaceDivide_swigregister(Handle_ShapeUpgrade_ClosedFaceDivide)
 
-def Handle_ShapeUpgrade_ClosedFaceDivide_DownCast(*args):
+def Handle_ShapeUpgrade_ClosedFaceDivide_DownCast(*args) -> "Handle_ShapeUpgrade_ClosedFaceDivide const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_ClosedFaceDivide_DownCast(*args)
 Handle_ShapeUpgrade_ClosedFaceDivide_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_ClosedFaceDivide_DownCast
 
@@ -3259,7 +3259,7 @@ class ShapeUpgrade_ConvertCurve2dToBezier(ShapeUpgrade_SplitCurve2d):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ConvertCurve2dToBezier_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ConvertCurve2dToBezier(*args))
-    def SplitParams(self, *args):
+    def SplitParams(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         * Returns the list of splitted parameters in original curve parametrisation.
 
@@ -3268,11 +3268,11 @@ class ShapeUpgrade_ConvertCurve2dToBezier(ShapeUpgrade_SplitCurve2d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve2dToBezier_SplitParams(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ConvertCurve2dToBezier self)"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve2dToBezier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_ConvertCurve2dToBezier" :
         """GetHandle(ShapeUpgrade_ConvertCurve2dToBezier self) -> Handle_ShapeUpgrade_ConvertCurve2dToBezier"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve2dToBezier_GetHandle(self)
 
@@ -3311,7 +3311,7 @@ Handle_ShapeUpgrade_ConvertCurve2dToBezier._kill_pointed = new_instancemethod(_S
 Handle_ShapeUpgrade_ConvertCurve2dToBezier_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve2dToBezier_swigregister
 Handle_ShapeUpgrade_ConvertCurve2dToBezier_swigregister(Handle_ShapeUpgrade_ConvertCurve2dToBezier)
 
-def Handle_ShapeUpgrade_ConvertCurve2dToBezier_DownCast(*args):
+def Handle_ShapeUpgrade_ConvertCurve2dToBezier_DownCast(*args) -> "Handle_ShapeUpgrade_ConvertCurve2dToBezier const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve2dToBezier_DownCast(*args)
 Handle_ShapeUpgrade_ConvertCurve2dToBezier_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve2dToBezier_DownCast
 
@@ -3326,7 +3326,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
 
         """
         _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_ConvertCurve3dToBezier(*args))
-    def SetLineMode(self, *args):
+    def SetLineMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Line to bezier.
 
@@ -3337,7 +3337,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_SetLineMode(self, *args)
 
-    def GetLineMode(self, *args):
+    def GetLineMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Line conversion mode.
 
@@ -3346,7 +3346,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_GetLineMode(self, *args)
 
-    def SetCircleMode(self, *args):
+    def SetCircleMode(self, *args) -> "void" :
         """
         * Sets mode for conversion Geom_Circle to bezier.
 
@@ -3357,7 +3357,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_SetCircleMode(self, *args)
 
-    def GetCircleMode(self, *args):
+    def GetCircleMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Geom_Circle conversion mode.
 
@@ -3366,7 +3366,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_GetCircleMode(self, *args)
 
-    def SetConicMode(self, *args):
+    def SetConicMode(self, *args) -> "void" :
         """
         * Returns the Geom_Conic conversion mode.
 
@@ -3377,7 +3377,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_SetConicMode(self, *args)
 
-    def GetConicMode(self, *args):
+    def GetConicMode(self, *args) -> "Standard_Boolean" :
         """
         * Performs converting and computes the resulting shape.
 
@@ -3386,7 +3386,7 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_GetConicMode(self, *args)
 
-    def SplitParams(self, *args):
+    def SplitParams(self, *args) -> "Handle_TColStd_HSequenceOfReal" :
         """
         * Returns the list of splitted parameters in original curve parametrisation.
 
@@ -3395,11 +3395,11 @@ class ShapeUpgrade_ConvertCurve3dToBezier(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_SplitParams(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_ConvertCurve3dToBezier self)"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_ConvertCurve3dToBezier" :
         """GetHandle(ShapeUpgrade_ConvertCurve3dToBezier self) -> Handle_ShapeUpgrade_ConvertCurve3dToBezier"""
         return _ShapeUpgrade.ShapeUpgrade_ConvertCurve3dToBezier_GetHandle(self)
 
@@ -3444,7 +3444,7 @@ Handle_ShapeUpgrade_ConvertCurve3dToBezier._kill_pointed = new_instancemethod(_S
 Handle_ShapeUpgrade_ConvertCurve3dToBezier_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve3dToBezier_swigregister
 Handle_ShapeUpgrade_ConvertCurve3dToBezier_swigregister(Handle_ShapeUpgrade_ConvertCurve3dToBezier)
 
-def Handle_ShapeUpgrade_ConvertCurve3dToBezier_DownCast(*args):
+def Handle_ShapeUpgrade_ConvertCurve3dToBezier_DownCast(*args) -> "Handle_ShapeUpgrade_ConvertCurve3dToBezier const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve3dToBezier_DownCast(*args)
 Handle_ShapeUpgrade_ConvertCurve3dToBezier_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_ConvertCurve3dToBezier_DownCast
 
@@ -3463,19 +3463,19 @@ class ShapeUpgrade_FaceDivideArea(ShapeUpgrade_FaceDivide):
 
         """
         _ShapeUpgrade.ShapeUpgrade_FaceDivideArea_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_FaceDivideArea(*args))
-    def GetMaxArea(self):
+    def GetMaxArea(self) -> "Standard_Real" :
         """GetMaxArea(ShapeUpgrade_FaceDivideArea self) -> Standard_Real"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivideArea_GetMaxArea(self)
 
-    def SetMaxArea(self, *args):
+    def SetMaxArea(self, *args) -> "void" :
         """SetMaxArea(ShapeUpgrade_FaceDivideArea self, Standard_Real value)"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivideArea_SetMaxArea(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_FaceDivideArea self)"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivideArea__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_FaceDivideArea" :
         """GetHandle(ShapeUpgrade_FaceDivideArea self) -> Handle_ShapeUpgrade_FaceDivideArea"""
         return _ShapeUpgrade.ShapeUpgrade_FaceDivideArea_GetHandle(self)
 
@@ -3515,7 +3515,7 @@ Handle_ShapeUpgrade_FaceDivideArea._kill_pointed = new_instancemethod(_ShapeUpgr
 Handle_ShapeUpgrade_FaceDivideArea_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivideArea_swigregister
 Handle_ShapeUpgrade_FaceDivideArea_swigregister(Handle_ShapeUpgrade_FaceDivideArea)
 
-def Handle_ShapeUpgrade_FaceDivideArea_DownCast(*args):
+def Handle_ShapeUpgrade_FaceDivideArea_DownCast(*args) -> "Handle_ShapeUpgrade_FaceDivideArea const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivideArea_DownCast(*args)
 Handle_ShapeUpgrade_FaceDivideArea_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_FaceDivideArea_DownCast
 
@@ -3528,11 +3528,11 @@ class ShapeUpgrade_FixSmallBezierCurves(ShapeUpgrade_FixSmallCurves):
 
         """
         _ShapeUpgrade.ShapeUpgrade_FixSmallBezierCurves_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_FixSmallBezierCurves(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_FixSmallBezierCurves self)"""
         return _ShapeUpgrade.ShapeUpgrade_FixSmallBezierCurves__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_FixSmallBezierCurves" :
         """GetHandle(ShapeUpgrade_FixSmallBezierCurves self) -> Handle_ShapeUpgrade_FixSmallBezierCurves"""
         return _ShapeUpgrade.ShapeUpgrade_FixSmallBezierCurves_GetHandle(self)
 
@@ -3570,7 +3570,7 @@ Handle_ShapeUpgrade_FixSmallBezierCurves._kill_pointed = new_instancemethod(_Sha
 Handle_ShapeUpgrade_FixSmallBezierCurves_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallBezierCurves_swigregister
 Handle_ShapeUpgrade_FixSmallBezierCurves_swigregister(Handle_ShapeUpgrade_FixSmallBezierCurves)
 
-def Handle_ShapeUpgrade_FixSmallBezierCurves_DownCast(*args):
+def Handle_ShapeUpgrade_FixSmallBezierCurves_DownCast(*args) -> "Handle_ShapeUpgrade_FixSmallBezierCurves const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallBezierCurves_DownCast(*args)
 Handle_ShapeUpgrade_FixSmallBezierCurves_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_FixSmallBezierCurves_DownCast
 
@@ -3585,7 +3585,7 @@ class ShapeUpgrade_SplitCurve2dContinuity(ShapeUpgrade_SplitCurve2d):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitCurve2dContinuity_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitCurve2dContinuity(*args))
-    def SetCriterion(self, *args):
+    def SetCriterion(self, *args) -> "void" :
         """
         * Sets criterion for splitting.
 
@@ -3596,7 +3596,7 @@ class ShapeUpgrade_SplitCurve2dContinuity(ShapeUpgrade_SplitCurve2d):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2dContinuity_SetCriterion(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets tolerance.
 
@@ -3607,11 +3607,11 @@ class ShapeUpgrade_SplitCurve2dContinuity(ShapeUpgrade_SplitCurve2d):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2dContinuity_SetTolerance(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitCurve2dContinuity self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2dContinuity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitCurve2dContinuity" :
         """GetHandle(ShapeUpgrade_SplitCurve2dContinuity self) -> Handle_ShapeUpgrade_SplitCurve2dContinuity"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve2dContinuity_GetHandle(self)
 
@@ -3651,7 +3651,7 @@ Handle_ShapeUpgrade_SplitCurve2dContinuity._kill_pointed = new_instancemethod(_S
 Handle_ShapeUpgrade_SplitCurve2dContinuity_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2dContinuity_swigregister
 Handle_ShapeUpgrade_SplitCurve2dContinuity_swigregister(Handle_ShapeUpgrade_SplitCurve2dContinuity)
 
-def Handle_ShapeUpgrade_SplitCurve2dContinuity_DownCast(*args):
+def Handle_ShapeUpgrade_SplitCurve2dContinuity_DownCast(*args) -> "Handle_ShapeUpgrade_SplitCurve2dContinuity const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2dContinuity_DownCast(*args)
 Handle_ShapeUpgrade_SplitCurve2dContinuity_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve2dContinuity_DownCast
 
@@ -3666,7 +3666,7 @@ class ShapeUpgrade_SplitCurve3dContinuity(ShapeUpgrade_SplitCurve3d):
 
         """
         _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity_swiginit(self,_ShapeUpgrade.new_ShapeUpgrade_SplitCurve3dContinuity(*args))
-    def SetCriterion(self, *args):
+    def SetCriterion(self, *args) -> "void" :
         """
         * Sets criterion for splitting.
 
@@ -3677,7 +3677,7 @@ class ShapeUpgrade_SplitCurve3dContinuity(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity_SetCriterion(self, *args)
 
-    def SetTolerance(self, *args):
+    def SetTolerance(self, *args) -> "void" :
         """
         * Sets tolerance.
 
@@ -3688,18 +3688,18 @@ class ShapeUpgrade_SplitCurve3dContinuity(ShapeUpgrade_SplitCurve3d):
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity_SetTolerance(self, *args)
 
-    def GetCurve(self, *args):
+    def GetCurve(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity_GetCurve(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(ShapeUpgrade_SplitCurve3dContinuity self)"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_ShapeUpgrade_SplitCurve3dContinuity" :
         """GetHandle(ShapeUpgrade_SplitCurve3dContinuity self) -> Handle_ShapeUpgrade_SplitCurve3dContinuity"""
         return _ShapeUpgrade.ShapeUpgrade_SplitCurve3dContinuity_GetHandle(self)
 
@@ -3740,7 +3740,7 @@ Handle_ShapeUpgrade_SplitCurve3dContinuity._kill_pointed = new_instancemethod(_S
 Handle_ShapeUpgrade_SplitCurve3dContinuity_swigregister = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3dContinuity_swigregister
 Handle_ShapeUpgrade_SplitCurve3dContinuity_swigregister(Handle_ShapeUpgrade_SplitCurve3dContinuity)
 
-def Handle_ShapeUpgrade_SplitCurve3dContinuity_DownCast(*args):
+def Handle_ShapeUpgrade_SplitCurve3dContinuity_DownCast(*args) -> "Handle_ShapeUpgrade_SplitCurve3dContinuity const" :
   return _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3dContinuity_DownCast(*args)
 Handle_ShapeUpgrade_SplitCurve3dContinuity_DownCast = _ShapeUpgrade.Handle_ShapeUpgrade_SplitCurve3dContinuity_DownCast
 

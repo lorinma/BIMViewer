@@ -120,7 +120,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_DictionaryOfInteger_swiginit(self,_Dico.new_Dico_DictionaryOfInteger(*args))
-    def HasItem(self, *args):
+    def HasItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -137,7 +137,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_HasItem(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Standard_Integer const &" :
         """
         :param name:
         :type name: char *
@@ -154,7 +154,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_Item(self, *args)
 
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -175,7 +175,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -196,7 +196,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_SetItem(self, *args)
 
-    def NewItem(self, *args):
+    def NewItem(self, *args) -> "Standard_Integer &" :
         """
         :param name:
         :type name: char *
@@ -217,7 +217,7 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_NewItem(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -238,35 +238,35 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_RemoveItem(self, *args)
 
-    def Clean(self, *args):
+    def Clean(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_DictionaryOfInteger_Clean(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Dico.Dico_DictionaryOfInteger_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_DictionaryOfInteger_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Dico_DictionaryOfInteger" :
         """
         :rtype: Handle_Dico_DictionaryOfInteger
 
         """
         return _Dico.Dico_DictionaryOfInteger_Copy(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param acell:
         :type acell: Handle_Dico_DictionaryOfInteger &
@@ -275,11 +275,11 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_Complete(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Dico_DictionaryOfInteger self)"""
         return _Dico.Dico_DictionaryOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Dico_DictionaryOfInteger" :
         """GetHandle(Dico_DictionaryOfInteger self) -> Handle_Dico_DictionaryOfInteger"""
         return _Dico.Dico_DictionaryOfInteger_GetHandle(self)
 
@@ -328,7 +328,7 @@ Handle_Dico_DictionaryOfInteger._kill_pointed = new_instancemethod(_Dico.Handle_
 Handle_Dico_DictionaryOfInteger_swigregister = _Dico.Handle_Dico_DictionaryOfInteger_swigregister
 Handle_Dico_DictionaryOfInteger_swigregister(Handle_Dico_DictionaryOfInteger)
 
-def Handle_Dico_DictionaryOfInteger_DownCast(*args):
+def Handle_Dico_DictionaryOfInteger_DownCast(*args) -> "Handle_Dico_DictionaryOfInteger const" :
   return _Dico.Handle_Dico_DictionaryOfInteger_DownCast(*args)
 Handle_Dico_DictionaryOfInteger_DownCast = _Dico.Handle_Dico_DictionaryOfInteger_DownCast
 
@@ -341,7 +341,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_DictionaryOfTransient_swiginit(self,_Dico.new_Dico_DictionaryOfTransient(*args))
-    def HasItem(self, *args):
+    def HasItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -358,7 +358,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_HasItem(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :param name:
         :type name: char *
@@ -375,7 +375,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_Item(self, *args)
 
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -396,7 +396,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -417,7 +417,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_SetItem(self, *args)
 
-    def NewItem(self, *args):
+    def NewItem(self, *args) -> "Handle_Standard_Transient &" :
         """
         :param name:
         :type name: char *
@@ -438,7 +438,7 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_NewItem(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -459,35 +459,35 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_RemoveItem(self, *args)
 
-    def Clean(self, *args):
+    def Clean(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_DictionaryOfTransient_Clean(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Dico.Dico_DictionaryOfTransient_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_DictionaryOfTransient_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_Dico_DictionaryOfTransient" :
         """
         :rtype: Handle_Dico_DictionaryOfTransient
 
         """
         return _Dico.Dico_DictionaryOfTransient_Copy(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param acell:
         :type acell: Handle_Dico_DictionaryOfTransient &
@@ -496,11 +496,11 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_Complete(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Dico_DictionaryOfTransient self)"""
         return _Dico.Dico_DictionaryOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Dico_DictionaryOfTransient" :
         """GetHandle(Dico_DictionaryOfTransient self) -> Handle_Dico_DictionaryOfTransient"""
         return _Dico.Dico_DictionaryOfTransient_GetHandle(self)
 
@@ -549,7 +549,7 @@ Handle_Dico_DictionaryOfTransient._kill_pointed = new_instancemethod(_Dico.Handl
 Handle_Dico_DictionaryOfTransient_swigregister = _Dico.Handle_Dico_DictionaryOfTransient_swigregister
 Handle_Dico_DictionaryOfTransient_swigregister(Handle_Dico_DictionaryOfTransient)
 
-def Handle_Dico_DictionaryOfTransient_DownCast(*args):
+def Handle_Dico_DictionaryOfTransient_DownCast(*args) -> "Handle_Dico_DictionaryOfTransient const" :
   return _Dico.Handle_Dico_DictionaryOfTransient_DownCast(*args)
 Handle_Dico_DictionaryOfTransient_DownCast = _Dico.Handle_Dico_DictionaryOfTransient_DownCast
 
@@ -576,35 +576,35 @@ class Dico_IteratorOfDictionaryOfInteger(object):
 
         """
         _Dico.Dico_IteratorOfDictionaryOfInteger_swiginit(self,_Dico.new_Dico_IteratorOfDictionaryOfInteger(*args))
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfInteger_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfInteger_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfInteger_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer const &" :
         """
         :rtype: int
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfInteger_Value(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
@@ -651,35 +651,35 @@ class Dico_IteratorOfDictionaryOfTransient(object):
 
         """
         _Dico.Dico_IteratorOfDictionaryOfTransient_swiginit(self,_Dico.new_Dico_IteratorOfDictionaryOfTransient(*args))
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfTransient_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfTransient_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfTransient_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient const &" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _Dico.Dico_IteratorOfDictionaryOfTransient_Value(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
@@ -716,21 +716,21 @@ class Dico_StackItemOfDictionaryOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_StackItemOfDictionaryOfInteger_swiginit(self,_Dico.new_Dico_StackItemOfDictionaryOfInteger(*args))
-    def Previous(self, *args):
+    def Previous(self, *args) -> "Handle_Dico_StackItemOfDictionaryOfInteger" :
         """
         :rtype: Handle_Dico_StackItemOfDictionaryOfInteger
 
         """
         return _Dico.Dico_StackItemOfDictionaryOfInteger_Previous(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Dico_DictionaryOfInteger" :
         """
         :rtype: Handle_Dico_DictionaryOfInteger
 
         """
         return _Dico.Dico_StackItemOfDictionaryOfInteger_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param cval:
         :type cval: Handle_Dico_DictionaryOfInteger &
@@ -739,11 +739,11 @@ class Dico_StackItemOfDictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_StackItemOfDictionaryOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Dico_StackItemOfDictionaryOfInteger self)"""
         return _Dico.Dico_StackItemOfDictionaryOfInteger__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Dico_StackItemOfDictionaryOfInteger" :
         """GetHandle(Dico_StackItemOfDictionaryOfInteger self) -> Handle_Dico_StackItemOfDictionaryOfInteger"""
         return _Dico.Dico_StackItemOfDictionaryOfInteger_GetHandle(self)
 
@@ -784,7 +784,7 @@ Handle_Dico_StackItemOfDictionaryOfInteger._kill_pointed = new_instancemethod(_D
 Handle_Dico_StackItemOfDictionaryOfInteger_swigregister = _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_swigregister
 Handle_Dico_StackItemOfDictionaryOfInteger_swigregister(Handle_Dico_StackItemOfDictionaryOfInteger)
 
-def Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args):
+def Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args) -> "Handle_Dico_StackItemOfDictionaryOfInteger const" :
   return _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args)
 Handle_Dico_StackItemOfDictionaryOfInteger_DownCast = _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_DownCast
 
@@ -801,21 +801,21 @@ class Dico_StackItemOfDictionaryOfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_StackItemOfDictionaryOfTransient_swiginit(self,_Dico.new_Dico_StackItemOfDictionaryOfTransient(*args))
-    def Previous(self, *args):
+    def Previous(self, *args) -> "Handle_Dico_StackItemOfDictionaryOfTransient" :
         """
         :rtype: Handle_Dico_StackItemOfDictionaryOfTransient
 
         """
         return _Dico.Dico_StackItemOfDictionaryOfTransient_Previous(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Dico_DictionaryOfTransient" :
         """
         :rtype: Handle_Dico_DictionaryOfTransient
 
         """
         return _Dico.Dico_StackItemOfDictionaryOfTransient_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param cval:
         :type cval: Handle_Dico_DictionaryOfTransient &
@@ -824,11 +824,11 @@ class Dico_StackItemOfDictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_StackItemOfDictionaryOfTransient_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Dico_StackItemOfDictionaryOfTransient self)"""
         return _Dico.Dico_StackItemOfDictionaryOfTransient__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Dico_StackItemOfDictionaryOfTransient" :
         """GetHandle(Dico_StackItemOfDictionaryOfTransient self) -> Handle_Dico_StackItemOfDictionaryOfTransient"""
         return _Dico.Dico_StackItemOfDictionaryOfTransient_GetHandle(self)
 
@@ -869,7 +869,7 @@ Handle_Dico_StackItemOfDictionaryOfTransient._kill_pointed = new_instancemethod(
 Handle_Dico_StackItemOfDictionaryOfTransient_swigregister = _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_swigregister
 Handle_Dico_StackItemOfDictionaryOfTransient_swigregister(Handle_Dico_StackItemOfDictionaryOfTransient)
 
-def Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args):
+def Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args) -> "Handle_Dico_StackItemOfDictionaryOfTransient const" :
   return _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args)
 Handle_Dico_StackItemOfDictionaryOfTransient_DownCast = _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_DownCast
 

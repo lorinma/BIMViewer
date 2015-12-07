@@ -117,7 +117,7 @@ import OCC.Resource
 class tdocstd(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def IDList(*args):
+    def IDList(*args) -> "void" :
         """
         * specific GUID of this package ============================= Appends to <anIDList> the list of the attributes IDs of this package. CAUTION: <anIDList> is NOT cleared before use.
 
@@ -143,7 +143,7 @@ tdocstd._kill_pointed = new_instancemethod(_TDocStd.tdocstd__kill_pointed,None,t
 tdocstd_swigregister = _TDocStd.tdocstd_swigregister
 tdocstd_swigregister(tdocstd)
 
-def tdocstd_IDList(*args):
+def tdocstd_IDList(*args) -> "void" :
   """
     * specific GUID of this package ============================= Appends to <anIDList> the list of the attributes IDs of this package. CAUTION: <anIDList> is NOT cleared before use.
 
@@ -158,7 +158,7 @@ class TDocStd_Application(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDriverLoaded(self, *args):
+    def IsDriverLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Check if meta data driver was successfully loaded by the application constructor
 
@@ -167,7 +167,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_IsDriverLoaded(self, *args)
 
-    def Resources(self, *args):
+    def Resources(self, *args) -> "Handle_Resource_Manager" :
         """
         * create (if not done) a Manager using ResourcesName method.
 
@@ -176,7 +176,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_Resources(self, *args)
 
-    def ResourcesName(self, *args):
+    def ResourcesName(self, *args) -> "char *" :
         """
         * Returns the name of the file containing the resources of this application. In a resource file, the application associates the schema name of the document with the storage and retrieval plug-ins that are to be loaded for each document. On retrieval, the application reads the schema name in the heading of the CSF file and loads the plug-in indicated in the resource file. This plug-in instantiates the actual driver for transient-persistent conversion. Your application can bring this process into play by defining a class which inherits CDF_Application and redefines the function which returns the appropriate resources file. At this point, the function Retrieve and the class CDF_Store can be called. This allows you to deal with storage and retrieval of - as well as copying and pasting - documents. To implement a class like this, several virtual functions should be redefined. In particular, you must redefine the abstract function Resources inherited from the superclass CDM_Application.
 
@@ -185,7 +185,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_ResourcesName(self, *args)
 
-    def NbDocuments(self, *args):
+    def NbDocuments(self, *args) -> "Standard_Integer" :
         """
         * returns the number of documents handled by the current applicative session.
 
@@ -194,7 +194,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_NbDocuments(self, *args)
 
-    def GetDocument(self, *args):
+    def GetDocument(self, *args) -> "void" :
         """
         * Constructs the new document aDoc. aDoc is identified by the index index which is any integer between 1 and n where n is the number of documents returned by NbDocument. Example Handle_TDocStd_Application anApp; if (!CafTest::Find(A)) return 1; Handle_TDocStd aDoc; Standard_Integer nbdoc = anApp->NbDocuments(); for (Standard_Integer i = 1; i <= nbdoc; i++) { aApp->GetDocument(i,aDoc);
 
@@ -207,7 +207,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_GetDocument(self, *args)
 
-    def Formats(self, *args):
+    def Formats(self, *args) -> "void" :
         """
         * Returns the format name Formats representing the format supported for application documents. This virtual function is to be redefined for each specific application.
 
@@ -218,7 +218,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_Formats(self, *args)
 
-    def NewDocument(self, *args):
+    def NewDocument(self, *args) -> "void" :
         """
         * Constructs the empty new document aDoc. This document will have the format format. If InitDocument is redefined for a specific application, the new document is handled by the applicative session.
 
@@ -231,7 +231,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_NewDocument(self, *args)
 
-    def InitDocument(self, *args):
+    def InitDocument(self, *args) -> "void" :
         """
         * Initialize the document aDoc for the applicative session. This virtual function is called by NewDocument and is to be redefined for each specific application. Modified flag (different of disk version) ============= to open/save a document =======================
 
@@ -242,7 +242,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_InitDocument(self, *args)
 
-    def Close(self, *args):
+    def Close(self, *args) -> "void" :
         """
         * Close the given document. the document is not any more handled by the applicative session.
 
@@ -253,7 +253,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_Close(self, *args)
 
-    def IsInSession(self, *args):
+    def IsInSession(self, *args) -> "Standard_Integer" :
         """
         * Returns an index for the document found in the path path in this applicative session. If the returned value is 0, the document is not present in the applicative session. This method can be used for the interactive part of an application. For instance, on a call to Open, the document to be opened may already be in memory. IsInSession checks to see if this is the case. Open can be made to depend on the value of the index returned: if IsInSession returns 0, the document is opened; if it returns another value, a message is displayed asking the user if he wants to override the version of the document in memory. Example: Standard_Integer insession = A->IsInSession(aDoc); if (insession > 0) { cout << 'document ' << insession << ' is already in session' << endl; return 0; }
 
@@ -264,7 +264,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_IsInSession(self, *args)
 
-    def Open(self, *args):
+    def Open(self, *args) -> "PCDM_ReaderStatus" :
         """
         * Retrieves the document aDoc stored under the name aName in the directory directory. In order not to override a version of aDoc which is already in memory, this method can be made to depend on the value returned by IsInSession.
 
@@ -277,7 +277,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_Open(self, *args)
 
-    def SaveAs(self, *args):
+    def SaveAs(self, *args) -> "PCDM_StoreStatus" :
         """
         * Save the active document in the file <name> in the path <path> ; o verwrites the file if it already exists.
 
@@ -300,7 +300,7 @@ class TDocStd_Application(object):
         """
         return _TDocStd.TDocStd_Application_SaveAs(self, *args)
 
-    def Save(self, *args):
+    def Save(self, *args) -> "PCDM_StoreStatus" :
         """
         * Save aDoc active document. Exceptions: Standard_NotImplemented if the document was not retrieved in the applicative session by using Open.
 
@@ -366,7 +366,7 @@ Handle_TDocStd_Application._kill_pointed = new_instancemethod(_TDocStd.Handle_TD
 Handle_TDocStd_Application_swigregister = _TDocStd.Handle_TDocStd_Application_swigregister
 Handle_TDocStd_Application_swigregister(Handle_TDocStd_Application)
 
-def Handle_TDocStd_Application_DownCast(*args):
+def Handle_TDocStd_Application_DownCast(*args) -> "Handle_TDocStd_Application const" :
   return _TDocStd.Handle_TDocStd_Application_DownCast(*args)
 Handle_TDocStd_Application_DownCast = _TDocStd.Handle_TDocStd_Application_DownCast
 
@@ -379,21 +379,21 @@ class TDocStd_ApplicationDelta(OCC.MMgt.MMgt_TShared):
 
         """
         _TDocStd.TDocStd_ApplicationDelta_swiginit(self,_TDocStd.new_TDocStd_ApplicationDelta(*args))
-    def GetDocuments(self, *args):
+    def GetDocuments(self, *args) -> "TDocStd_SequenceOfDocument &" :
         """
         :rtype: TDocStd_SequenceOfDocument
 
         """
         return _TDocStd.TDocStd_ApplicationDelta_GetDocuments(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "TCollection_ExtendedString const &" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_ApplicationDelta_GetName(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         :param theName:
         :type theName: TCollection_ExtendedString &
@@ -402,15 +402,15 @@ class TDocStd_ApplicationDelta(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_ApplicationDelta_SetName(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDocStd_ApplicationDelta self) -> std::string"""
         return _TDocStd.TDocStd_ApplicationDelta_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_ApplicationDelta self)"""
         return _TDocStd.TDocStd_ApplicationDelta__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_ApplicationDelta" :
         """GetHandle(TDocStd_ApplicationDelta self) -> Handle_TDocStd_ApplicationDelta"""
         return _TDocStd.TDocStd_ApplicationDelta_GetHandle(self)
 
@@ -452,7 +452,7 @@ Handle_TDocStd_ApplicationDelta._kill_pointed = new_instancemethod(_TDocStd.Hand
 Handle_TDocStd_ApplicationDelta_swigregister = _TDocStd.Handle_TDocStd_ApplicationDelta_swigregister
 Handle_TDocStd_ApplicationDelta_swigregister(Handle_TDocStd_ApplicationDelta)
 
-def Handle_TDocStd_ApplicationDelta_DownCast(*args):
+def Handle_TDocStd_ApplicationDelta_DownCast(*args) -> "Handle_TDocStd_ApplicationDelta const" :
   return _TDocStd.Handle_TDocStd_ApplicationDelta_DownCast(*args)
 Handle_TDocStd_ApplicationDelta_DownCast = _TDocStd.Handle_TDocStd_ApplicationDelta_DownCast
 
@@ -467,11 +467,11 @@ class TDocStd_CompoundDelta(OCC.TDF.TDF_Delta):
 
         """
         _TDocStd.TDocStd_CompoundDelta_swiginit(self,_TDocStd.new_TDocStd_CompoundDelta(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_CompoundDelta self)"""
         return _TDocStd.TDocStd_CompoundDelta__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_CompoundDelta" :
         """GetHandle(TDocStd_CompoundDelta self) -> Handle_TDocStd_CompoundDelta"""
         return _TDocStd.TDocStd_CompoundDelta_GetHandle(self)
 
@@ -509,7 +509,7 @@ Handle_TDocStd_CompoundDelta._kill_pointed = new_instancemethod(_TDocStd.Handle_
 Handle_TDocStd_CompoundDelta_swigregister = _TDocStd.Handle_TDocStd_CompoundDelta_swigregister
 Handle_TDocStd_CompoundDelta_swigregister(Handle_TDocStd_CompoundDelta)
 
-def Handle_TDocStd_CompoundDelta_DownCast(*args):
+def Handle_TDocStd_CompoundDelta_DownCast(*args) -> "Handle_TDocStd_CompoundDelta const" :
   return _TDocStd.Handle_TDocStd_CompoundDelta_DownCast(*args)
 Handle_TDocStd_CompoundDelta_DownCast = _TDocStd.Handle_TDocStd_CompoundDelta_DownCast
 
@@ -522,7 +522,7 @@ class TDocStd_Context(object):
 
         """
         _TDocStd.TDocStd_Context_swiginit(self,_TDocStd.new_TDocStd_Context(*args))
-    def SetModifiedReferences(self, *args):
+    def SetModifiedReferences(self, *args) -> "void" :
         """
         :param Mod:
         :type Mod: bool
@@ -531,7 +531,7 @@ class TDocStd_Context(object):
         """
         return _TDocStd.TDocStd_Context_SetModifiedReferences(self, *args)
 
-    def ModifiedReferences(self, *args):
+    def ModifiedReferences(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -565,7 +565,7 @@ class TDocStd_DataMapIteratorOfLabelIDMapDataMap(OCC.TCollection.TCollection_Bas
 
         """
         _TDocStd.TDocStd_DataMapIteratorOfLabelIDMapDataMap_swiginit(self,_TDocStd.new_TDocStd_DataMapIteratorOfLabelIDMapDataMap(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: TDocStd_LabelIDMapDataMap &
@@ -574,14 +574,14 @@ class TDocStd_DataMapIteratorOfLabelIDMapDataMap(OCC.TCollection.TCollection_Bas
         """
         return _TDocStd.TDocStd_DataMapIteratorOfLabelIDMapDataMap_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDocStd.TDocStd_DataMapIteratorOfLabelIDMapDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_IDMap const &" :
         """
         :rtype: TDF_IDMap
 
@@ -618,25 +618,25 @@ class TDocStd_DataMapNodeOfLabelIDMapDataMap(OCC.TCollection.TCollection_MapNode
 
         """
         _TDocStd.TDocStd_DataMapNodeOfLabelIDMapDataMap_swiginit(self,_TDocStd.new_TDocStd_DataMapNodeOfLabelIDMapDataMap(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _TDocStd.TDocStd_DataMapNodeOfLabelIDMapDataMap_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDF_IDMap &" :
         """
         :rtype: TDF_IDMap
 
         """
         return _TDocStd.TDocStd_DataMapNodeOfLabelIDMapDataMap_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_DataMapNodeOfLabelIDMapDataMap self)"""
         return _TDocStd.TDocStd_DataMapNodeOfLabelIDMapDataMap__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap" :
         """GetHandle(TDocStd_DataMapNodeOfLabelIDMapDataMap self) -> Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap"""
         return _TDocStd.TDocStd_DataMapNodeOfLabelIDMapDataMap_GetHandle(self)
 
@@ -676,14 +676,14 @@ Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap._kill_pointed = new_instancemethod
 Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_swigregister = _TDocStd.Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_swigregister
 Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_swigregister(Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap)
 
-def Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_DownCast(*args):
+def Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_DownCast(*args) -> "Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap const" :
   return _TDocStd.Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_DownCast(*args)
 Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_DownCast = _TDocStd.Handle_TDocStd_DataMapNodeOfLabelIDMapDataMap_DownCast
 
 class TDocStd_Document(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Get(*args):
+    def Get(*args) -> "Handle_TDocStd_Document" :
         """
         * Will Abort any execution, clear fields returns the document which contains <L>. raises an exception if the document is not found.
 
@@ -705,7 +705,7 @@ class TDocStd_Document(object):
 
         """
         _TDocStd.TDocStd_Document_swiginit(self,_TDocStd.new_TDocStd_Document(*args))
-    def IsSaved(self, *args):
+    def IsSaved(self, *args) -> "Standard_Boolean" :
         """
         * the document is saved in a file.
 
@@ -714,7 +714,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_IsSaved(self, *args)
 
-    def IsChanged(self, *args):
+    def IsChanged(self, *args) -> "Standard_Boolean" :
         """
         * returns True if document differs from the state of last saving. this method have to be called only wroking in the transaction mode
 
@@ -723,7 +723,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_IsChanged(self, *args)
 
-    def SetSaved(self, *args):
+    def SetSaved(self, *args) -> "void" :
         """
         * This method have to be called to show document that it has been saved
 
@@ -732,7 +732,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetSaved(self, *args)
 
-    def SetSavedTime(self, *args):
+    def SetSavedTime(self, *args) -> "void" :
         """
         * Say to document what it is not saved. Use value, returned earlier by GetSavedTime().
 
@@ -743,7 +743,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetSavedTime(self, *args)
 
-    def GetSavedTime(self, *args):
+    def GetSavedTime(self, *args) -> "Standard_Integer" :
         """
         * Returns value of <mySavedTime> to be used later in SetSavedTime()
 
@@ -752,7 +752,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetSavedTime(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "TCollection_ExtendedString" :
         """
         * raise if <self> is not saved.
 
@@ -761,7 +761,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetName(self, *args)
 
-    def GetPath(self, *args):
+    def GetPath(self, *args) -> "TCollection_ExtendedString" :
         """
         * returns the OS path of the file, in wich one <self> is saved. Raise an exception if <self> is not saved.
 
@@ -770,7 +770,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetPath(self, *args)
 
-    def SetData(self, *args):
+    def SetData(self, *args) -> "void" :
         """
         :param data:
         :type data: Handle_TDF_Data &
@@ -779,14 +779,14 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetData(self, *args)
 
-    def GetData(self, *args):
+    def GetData(self, *args) -> "Handle_TDF_Data" :
         """
         :rtype: Handle_TDF_Data
 
         """
         return _TDocStd.TDocStd_Document_GetData(self, *args)
 
-    def Main(self, *args):
+    def Main(self, *args) -> "TDF_Label" :
         """
         * Returns the main label in this data framework. By definition, this is the label with the entry 0:1.
 
@@ -795,7 +795,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_Main(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the main label has no attributes
 
@@ -804,7 +804,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_IsEmpty(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Returns False if the document has been modified but not recomputed.
 
@@ -813,7 +813,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_IsValid(self, *args)
 
-    def SetModified(self, *args):
+    def SetModified(self, *args) -> "void" :
         """
         * Notify the label as modified, the Document becomes UnValid. returns True if <L> has been notified as modified.
 
@@ -824,7 +824,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetModified(self, *args)
 
-    def PurgeModified(self, *args):
+    def PurgeModified(self, *args) -> "void" :
         """
         * Remove all modifications. After this call The document becomesagain Valid.
 
@@ -833,7 +833,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_PurgeModified(self, *args)
 
-    def GetModified(self, *args):
+    def GetModified(self, *args) -> "TDF_LabelMap const &" :
         """
         * Returns the labels which have been modified in this document.
 
@@ -842,7 +842,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetModified(self, *args)
 
-    def NewCommand(self, *args):
+    def NewCommand(self, *args) -> "void" :
         """
         * Launches a new command. This command may be undone.
 
@@ -851,7 +851,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_NewCommand(self, *args)
 
-    def HasOpenCommand(self, *args):
+    def HasOpenCommand(self, *args) -> "Standard_Boolean" :
         """
         * returns True if a Command transaction is open in the curret .
 
@@ -860,7 +860,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_HasOpenCommand(self, *args)
 
-    def OpenCommand(self, *args):
+    def OpenCommand(self, *args) -> "void" :
         """
         * Opens a new command transaction in this document. You can use HasOpenCommand to see whether a command is already open. Exceptions Standard_DomainError if a command is already open in this document.
 
@@ -869,7 +869,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_OpenCommand(self, *args)
 
-    def CommitCommand(self, *args):
+    def CommitCommand(self, *args) -> "Standard_Boolean" :
         """
         * Commits documents transactions and fills the transaction manager with documents that have been changed during the transaction. If no command transaction is open, nothing is done. Returns True if a new delta has been added to myUndos.
 
@@ -878,7 +878,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_CommitCommand(self, *args)
 
-    def AbortCommand(self, *args):
+    def AbortCommand(self, *args) -> "void" :
         """
         * Abort the Command transaction. Does nothing If there is no Command transaction open.
 
@@ -887,7 +887,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_AbortCommand(self, *args)
 
-    def GetUndoLimit(self, *args):
+    def GetUndoLimit(self, *args) -> "Standard_Integer" :
         """
         * The current limit on the number of undos
 
@@ -896,7 +896,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetUndoLimit(self, *args)
 
-    def SetUndoLimit(self, *args):
+    def SetUndoLimit(self, *args) -> "void" :
         """
         * Set the limit on the number of Undo Delta stored 0 will disable Undo on the document A negative value means no limit. Note that by default Undo is disabled. Enabling it will take effect with the next call to NewCommand. Of course this limit is the same for Redo
 
@@ -907,7 +907,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetUndoLimit(self, *args)
 
-    def ClearUndos(self, *args):
+    def ClearUndos(self, *args) -> "void" :
         """
         * Remove all stored Undos and Redos
 
@@ -916,7 +916,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_ClearUndos(self, *args)
 
-    def ClearRedos(self, *args):
+    def ClearRedos(self, *args) -> "void" :
         """
         * Remove all stored Redos
 
@@ -925,7 +925,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_ClearRedos(self, *args)
 
-    def GetAvailableUndos(self, *args):
+    def GetAvailableUndos(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of undos stored in this document. If this figure is greater than 0, the method Undo can be used.
 
@@ -934,7 +934,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetAvailableUndos(self, *args)
 
-    def Undo(self, *args):
+    def Undo(self, *args) -> "Standard_Boolean" :
         """
         * Will UNDO one step, returns False if no undo was done (Undos == 0). Otherwise, true is returned and one step in the list of undoes is undone.
 
@@ -943,7 +943,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_Undo(self, *args)
 
-    def GetAvailableRedos(self, *args):
+    def GetAvailableRedos(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of redos stored in this document. If this figure is greater than 0, the method Redo can be used.
 
@@ -952,7 +952,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_GetAvailableRedos(self, *args)
 
-    def Redo(self, *args):
+    def Redo(self, *args) -> "Standard_Boolean" :
         """
         * Will REDO one step, returns False if no redo was done (Redos == 0). Otherwise, true is returned, and one step in the list of redoes is done again.
 
@@ -961,21 +961,21 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_Redo(self, *args)
 
-    def GetUndos(self, *args):
+    def GetUndos(self, *args) -> "TDF_DeltaList const &" :
         """
         :rtype: TDF_DeltaList
 
         """
         return _TDocStd.TDocStd_Document_GetUndos(self, *args)
 
-    def GetRedos(self, *args):
+    def GetRedos(self, *args) -> "TDF_DeltaList const &" :
         """
         :rtype: TDF_DeltaList
 
         """
         return _TDocStd.TDocStd_Document_GetRedos(self, *args)
 
-    def RemoveFirstUndo(self, *args):
+    def RemoveFirstUndo(self, *args) -> "void" :
         """
         * Removes the first undo in the list of document undos. It is used in the application when the undo limit is exceed.
 
@@ -984,7 +984,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_RemoveFirstUndo(self, *args)
 
-    def InitDeltaCompaction(self, *args):
+    def InitDeltaCompaction(self, *args) -> "Standard_Boolean" :
         """
         * Initializes the procedure of delta compaction Returns false if there is no delta to compact Marks the last delta as a 'from' delta
 
@@ -993,7 +993,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_InitDeltaCompaction(self, *args)
 
-    def PerformDeltaCompaction(self, *args):
+    def PerformDeltaCompaction(self, *args) -> "Standard_Boolean" :
         """
         * Performs the procedure of delta compaction Makes all deltas starting from 'from' delta till the last one to be one delta.
 
@@ -1002,7 +1002,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_PerformDeltaCompaction(self, *args)
 
-    def UpdateReferences(self, *args):
+    def UpdateReferences(self, *args) -> "void" :
         """
         * Set modifications on labels impacted by external references to the entry. The document becomes invalid and must be recomputed.
 
@@ -1013,7 +1013,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_UpdateReferences(self, *args)
 
-    def Recompute(self, *args):
+    def Recompute(self, *args) -> "void" :
         """
         * Recompute if the document was not valid and propagate the reccorded modification.
 
@@ -1022,7 +1022,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_Recompute(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * This method Update will be called to signal the end of the modified references list. The document should be recomputed and UpdateFromDocuments should be called. Update should returns True in case of success, false otherwise. In case of Failure, additional information can be given in ErrorString. Update the document by propagation ================================== Update the document from internal stored  modifications. If you want to undoing this operation, please call NewCommand before. to change format (advanced programming) ================
 
@@ -1037,14 +1037,14 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_Update(self, *args)
 
-    def StorageFormat(self, *args):
+    def StorageFormat(self, *args) -> "TCollection_ExtendedString" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_Document_StorageFormat(self, *args)
 
-    def ChangeStorageFormat(self, *args):
+    def ChangeStorageFormat(self, *args) -> "void" :
         """
         * methods for the nested transaction mode
 
@@ -1055,7 +1055,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_ChangeStorageFormat(self, *args)
 
-    def SetNestedTransactionMode(self, *args):
+    def SetNestedTransactionMode(self, *args) -> "void" :
         """
         * Sets nested transaction mode if isAllowed == Standard_True
 
@@ -1066,7 +1066,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetNestedTransactionMode(self, *args)
 
-    def IsNestedTransactionMode(self, *args):
+    def IsNestedTransactionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if mode is set
 
@@ -1075,7 +1075,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_IsNestedTransactionMode(self, *args)
 
-    def SetModificationMode(self, *args):
+    def SetModificationMode(self, *args) -> "void" :
         """
         * if theTransactionOnly is True changes is denied outside transactions
 
@@ -1086,7 +1086,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_SetModificationMode(self, *args)
 
-    def ModificationMode(self, *args):
+    def ModificationMode(self, *args) -> "Standard_Boolean" :
         """
         * returns True if changes allowed only inside transactions
 
@@ -1095,7 +1095,7 @@ class TDocStd_Document(object):
         """
         return _TDocStd.TDocStd_Document_ModificationMode(self, *args)
 
-    def BeforeClose(self, *args):
+    def BeforeClose(self, *args) -> "void" :
         """
         * Prepares document for closing
 
@@ -1160,7 +1160,7 @@ TDocStd_Document.GetHandle = new_instancemethod(_TDocStd.TDocStd_Document_GetHan
 TDocStd_Document_swigregister = _TDocStd.TDocStd_Document_swigregister
 TDocStd_Document_swigregister(TDocStd_Document)
 
-def TDocStd_Document_Get(*args):
+def TDocStd_Document_Get(*args) -> "Handle_TDocStd_Document" :
   """
     * Will Abort any execution, clear fields returns the document which contains <L>. raises an exception if the document is not found.
 
@@ -1192,7 +1192,7 @@ Handle_TDocStd_Document._kill_pointed = new_instancemethod(_TDocStd.Handle_TDocS
 Handle_TDocStd_Document_swigregister = _TDocStd.Handle_TDocStd_Document_swigregister
 Handle_TDocStd_Document_swigregister(Handle_TDocStd_Document)
 
-def Handle_TDocStd_Document_DownCast(*args):
+def Handle_TDocStd_Document_DownCast(*args) -> "Handle_TDocStd_Document const" :
   return _TDocStd.Handle_TDocStd_Document_DownCast(*args)
 Handle_TDocStd_Document_DownCast = _TDocStd.Handle_TDocStd_Document_DownCast
 
@@ -1207,7 +1207,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
 
         """
         _TDocStd.TDocStd_LabelIDMapDataMap_swiginit(self,_TDocStd.new_TDocStd_LabelIDMapDataMap(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDocStd_LabelIDMapDataMap &" :
         """
         :param Other:
         :type Other: TDocStd_LabelIDMapDataMap &
@@ -1216,7 +1216,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDocStd_LabelIDMapDataMap &" :
         """
         :param Other:
         :type Other: TDocStd_LabelIDMapDataMap &
@@ -1225,7 +1225,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1234,14 +1234,14 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1252,7 +1252,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1261,7 +1261,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1270,7 +1270,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TDF_IDMap const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1279,7 +1279,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TDF_IDMap &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1288,7 +1288,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1297,7 +1297,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1306,7 +1306,7 @@ class TDocStd_LabelIDMapDataMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _TDocStd.TDocStd_LabelIDMapDataMap_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_LabelIDMapDataMap self)"""
         return _TDocStd.TDocStd_LabelIDMapDataMap__kill_pointed(self)
 
@@ -1336,7 +1336,7 @@ TDocStd_LabelIDMapDataMap_swigregister(TDocStd_LabelIDMapDataMap)
 class TDocStd_Modified(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Add(*args):
+    def Add(*args) -> "Standard_Boolean" :
         """
         :param alabel:
         :type alabel: TDF_Label &
@@ -1346,7 +1346,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_Modified_Add(*args)
 
     Add = staticmethod(Add)
-    def Remove(*args):
+    def Remove(*args) -> "Standard_Boolean" :
         """
         :param alabel:
         :type alabel: TDF_Label &
@@ -1356,7 +1356,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_Modified_Remove(*args)
 
     Remove = staticmethod(Remove)
-    def Contains(*args):
+    def Contains(*args) -> "Standard_Boolean" :
         """
         :param alabel:
         :type alabel: TDF_Label &
@@ -1366,7 +1366,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_Modified_Contains(*args)
 
     Contains = staticmethod(Contains)
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Modified methods ================
 
@@ -1382,7 +1382,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
 
         """
         _TDocStd.TDocStd_Modified_swiginit(self,_TDocStd.new_TDocStd_Modified(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * API class methods =================
 
@@ -1395,7 +1395,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Modified_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * remove all modified labels. becomes empty
 
@@ -1408,7 +1408,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Modified_Clear(self, *args)
 
-    def AddLabel(self, *args):
+    def AddLabel(self, *args) -> "Standard_Boolean" :
         """
         * add <L> as modified
 
@@ -1419,7 +1419,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Modified_AddLabel(self, *args)
 
-    def RemoveLabel(self, *args):
+    def RemoveLabel(self, *args) -> "Standard_Boolean" :
         """
         * remove <L> as modified
 
@@ -1430,7 +1430,7 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Modified_RemoveLabel(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "TDF_LabelMap const &" :
         """
         * if <IsEmpty> raise an exception.
 
@@ -1445,15 +1445,15 @@ class TDocStd_Modified(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Modified_Get(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDocStd_Modified self) -> std::string"""
         return _TDocStd.TDocStd_Modified_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_Modified self)"""
         return _TDocStd.TDocStd_Modified__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_Modified" :
         """GetHandle(TDocStd_Modified self) -> Handle_TDocStd_Modified"""
         return _TDocStd.TDocStd_Modified_GetHandle(self)
 
@@ -1476,7 +1476,7 @@ TDocStd_Modified.GetHandle = new_instancemethod(_TDocStd.TDocStd_Modified_GetHan
 TDocStd_Modified_swigregister = _TDocStd.TDocStd_Modified_swigregister
 TDocStd_Modified_swigregister(TDocStd_Modified)
 
-def TDocStd_Modified_Add(*args):
+def TDocStd_Modified_Add(*args) -> "Standard_Boolean" :
   """
     :param alabel:
     :type alabel: TDF_Label &
@@ -1485,7 +1485,7 @@ def TDocStd_Modified_Add(*args):
     """
   return _TDocStd.TDocStd_Modified_Add(*args)
 
-def TDocStd_Modified_Remove(*args):
+def TDocStd_Modified_Remove(*args) -> "Standard_Boolean" :
   """
     :param alabel:
     :type alabel: TDF_Label &
@@ -1494,7 +1494,7 @@ def TDocStd_Modified_Remove(*args):
     """
   return _TDocStd.TDocStd_Modified_Remove(*args)
 
-def TDocStd_Modified_Contains(*args):
+def TDocStd_Modified_Contains(*args) -> "Standard_Boolean" :
   """
     :param alabel:
     :type alabel: TDF_Label &
@@ -1503,7 +1503,7 @@ def TDocStd_Modified_Contains(*args):
     """
   return _TDocStd.TDocStd_Modified_Contains(*args)
 
-def TDocStd_Modified_GetID(*args):
+def TDocStd_Modified_GetID(*args) -> "Standard_GUID const &" :
   """
     * Modified methods ================
 
@@ -1533,7 +1533,7 @@ Handle_TDocStd_Modified._kill_pointed = new_instancemethod(_TDocStd.Handle_TDocS
 Handle_TDocStd_Modified_swigregister = _TDocStd.Handle_TDocStd_Modified_swigregister
 Handle_TDocStd_Modified_swigregister(Handle_TDocStd_Modified)
 
-def Handle_TDocStd_Modified_DownCast(*args):
+def Handle_TDocStd_Modified_DownCast(*args) -> "Handle_TDocStd_Modified const" :
   return _TDocStd.Handle_TDocStd_Modified_DownCast(*args)
 Handle_TDocStd_Modified_DownCast = _TDocStd.Handle_TDocStd_Modified_DownCast
 
@@ -1548,7 +1548,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
 
         """
         _TDocStd.TDocStd_MultiTransactionManager_swiginit(self,_TDocStd.new_TDocStd_MultiTransactionManager(*args))
-    def SetUndoLimit(self, *args):
+    def SetUndoLimit(self, *args) -> "void" :
         """
         * Sets undo limit for the manager and all documents.
 
@@ -1559,7 +1559,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_SetUndoLimit(self, *args)
 
-    def GetUndoLimit(self, *args):
+    def GetUndoLimit(self, *args) -> "Standard_Integer" :
         """
         * Returns undo limit for the manager.
 
@@ -1568,7 +1568,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_GetUndoLimit(self, *args)
 
-    def Undo(self, *args):
+    def Undo(self, *args) -> "void" :
         """
         * Undoes the current transaction of the manager. It calls the Undo () method of the document being on top of the manager list of undos (list.First()) and moves the list item to the top of the list of manager redos (list.Prepend(item)).
 
@@ -1577,7 +1577,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_Undo(self, *args)
 
-    def Redo(self, *args):
+    def Redo(self, *args) -> "void" :
         """
         * Redoes the current transaction of the application. It calls the Redo () method of the document being on top of the manager list of redos (list.First()) and moves the list item to the top of the list of manager undos (list.Prepend(item)).
 
@@ -1586,7 +1586,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_Redo(self, *args)
 
-    def GetAvailableUndos(self, *args):
+    def GetAvailableUndos(self, *args) -> "TDocStd_SequenceOfApplicationDelta const &" :
         """
         * Returns available manager undos.
 
@@ -1595,7 +1595,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_GetAvailableUndos(self, *args)
 
-    def GetAvailableRedos(self, *args):
+    def GetAvailableRedos(self, *args) -> "TDocStd_SequenceOfApplicationDelta const &" :
         """
         * Returns available manager redos.
 
@@ -1604,7 +1604,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_GetAvailableRedos(self, *args)
 
-    def OpenCommand(self, *args):
+    def OpenCommand(self, *args) -> "void" :
         """
         * Opens transaction in each document and sets the flag that transaction is opened. If there are already opened transactions in the documents, these transactions will be aborted before openning new ones.
 
@@ -1613,7 +1613,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_OpenCommand(self, *args)
 
-    def AbortCommand(self, *args):
+    def AbortCommand(self, *args) -> "void" :
         """
         * Unsets the flag of started manager transaction and aborts transaction in each document.
 
@@ -1622,7 +1622,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_AbortCommand(self, *args)
 
-    def CommitCommand(self, *args):
+    def CommitCommand(self, *args) -> "Standard_Boolean" :
         """
         * Commits transaction in all documents and fills the transaction manager with the documents that have been changed during the transaction. Returns True if new data has been added to myUndos. NOTE: All nested transactions in the documents will be commited.
 
@@ -1637,7 +1637,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_CommitCommand(self, *args)
 
-    def HasOpenCommand(self, *args):
+    def HasOpenCommand(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if a transaction is opened.
 
@@ -1646,7 +1646,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_HasOpenCommand(self, *args)
 
-    def RemoveLastUndo(self, *args):
+    def RemoveLastUndo(self, *args) -> "void" :
         """
         * Removes undo information from the list of undos of the manager and all documents which have been modified during the transaction.
 
@@ -1655,11 +1655,11 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_RemoveLastUndo(self, *args)
 
-    def DumpTransactionToString(self):
+    def DumpTransactionToString(self) -> "std::string" :
         """DumpTransactionToString(TDocStd_MultiTransactionManager self) -> std::string"""
         return _TDocStd.TDocStd_MultiTransactionManager_DumpTransactionToString(self)
 
-    def AddDocument(self, *args):
+    def AddDocument(self, *args) -> "void" :
         """
         * Adds the document to the transaction manager and checks if it has been already added
 
@@ -1670,7 +1670,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_AddDocument(self, *args)
 
-    def RemoveDocument(self, *args):
+    def RemoveDocument(self, *args) -> "void" :
         """
         * Removes the document from the transaction manager.
 
@@ -1681,7 +1681,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_RemoveDocument(self, *args)
 
-    def Documents(self, *args):
+    def Documents(self, *args) -> "TDocStd_SequenceOfDocument const &" :
         """
         * Returns the added documents to the transaction manager.
 
@@ -1690,7 +1690,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_Documents(self, *args)
 
-    def SetNestedTransactionMode(self, *args):
+    def SetNestedTransactionMode(self, *args) -> "void" :
         """
         * Sets nested transaction mode if isAllowed == Standard_True NOTE: field myIsNestedTransactionMode exists only for synchronization between several documents and has no effect on transactions of multitransaction manager.
 
@@ -1701,7 +1701,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_SetNestedTransactionMode(self, *args)
 
-    def IsNestedTransactionMode(self, *args):
+    def IsNestedTransactionMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns Standard_True if NestedTransaction mode is set. Methods for protection of changes outside transactions
 
@@ -1710,7 +1710,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_IsNestedTransactionMode(self, *args)
 
-    def SetModificationMode(self, *args):
+    def SetModificationMode(self, *args) -> "void" :
         """
         * If theTransactionOnly is True, denies all changes outside transactions.
 
@@ -1721,7 +1721,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_SetModificationMode(self, *args)
 
-    def ModificationMode(self, *args):
+    def ModificationMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if changes are allowed only inside transactions.
 
@@ -1730,7 +1730,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_ModificationMode(self, *args)
 
-    def ClearUndos(self, *args):
+    def ClearUndos(self, *args) -> "void" :
         """
         * Clears undos in the manager and in documents.
 
@@ -1739,7 +1739,7 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_ClearUndos(self, *args)
 
-    def ClearRedos(self, *args):
+    def ClearRedos(self, *args) -> "void" :
         """
         * Clears redos in the manager and in documents.
 
@@ -1748,11 +1748,11 @@ class TDocStd_MultiTransactionManager(OCC.MMgt.MMgt_TShared):
         """
         return _TDocStd.TDocStd_MultiTransactionManager_ClearRedos(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_MultiTransactionManager self)"""
         return _TDocStd.TDocStd_MultiTransactionManager__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_MultiTransactionManager" :
         """GetHandle(TDocStd_MultiTransactionManager self) -> Handle_TDocStd_MultiTransactionManager"""
         return _TDocStd.TDocStd_MultiTransactionManager_GetHandle(self)
 
@@ -1811,14 +1811,14 @@ Handle_TDocStd_MultiTransactionManager._kill_pointed = new_instancemethod(_TDocS
 Handle_TDocStd_MultiTransactionManager_swigregister = _TDocStd.Handle_TDocStd_MultiTransactionManager_swigregister
 Handle_TDocStd_MultiTransactionManager_swigregister(Handle_TDocStd_MultiTransactionManager)
 
-def Handle_TDocStd_MultiTransactionManager_DownCast(*args):
+def Handle_TDocStd_MultiTransactionManager_DownCast(*args) -> "Handle_TDocStd_MultiTransactionManager const" :
   return _TDocStd.Handle_TDocStd_MultiTransactionManager_DownCast(*args)
 Handle_TDocStd_MultiTransactionManager_DownCast = _TDocStd.Handle_TDocStd_MultiTransactionManager_DownCast
 
 class TDocStd_Owner(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * class methods =============
 
@@ -1834,7 +1834,7 @@ class TDocStd_Owner(OCC.TDF.TDF_Attribute):
 
         """
         _TDocStd.TDocStd_Owner_swiginit(self,_TDocStd.new_TDocStd_Owner(*args))
-    def SetDocument(self, *args):
+    def SetDocument(self, *args) -> "void" :
         """
         :param indata:
         :type indata: Handle_TDF_Data &
@@ -1849,7 +1849,7 @@ class TDocStd_Owner(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Owner_SetDocument(self, *args)
 
-    def GetDocument(self, *args):
+    def GetDocument(self, *args) -> "Handle_TDocStd_Document" :
         """
         * Owner methods ===============
 
@@ -1862,15 +1862,15 @@ class TDocStd_Owner(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_Owner_GetDocument(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDocStd_Owner self) -> std::string"""
         return _TDocStd.TDocStd_Owner_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_Owner self)"""
         return _TDocStd.TDocStd_Owner__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_Owner" :
         """GetHandle(TDocStd_Owner self) -> Handle_TDocStd_Owner"""
         return _TDocStd.TDocStd_Owner_GetHandle(self)
 
@@ -1890,7 +1890,7 @@ TDocStd_Owner.GetHandle = new_instancemethod(_TDocStd.TDocStd_Owner_GetHandle,No
 TDocStd_Owner_swigregister = _TDocStd.TDocStd_Owner_swigregister
 TDocStd_Owner_swigregister(TDocStd_Owner)
 
-def TDocStd_Owner_GetID(*args):
+def TDocStd_Owner_GetID(*args) -> "Standard_GUID const &" :
   """
     * class methods =============
 
@@ -1920,7 +1920,7 @@ Handle_TDocStd_Owner._kill_pointed = new_instancemethod(_TDocStd.Handle_TDocStd_
 Handle_TDocStd_Owner_swigregister = _TDocStd.Handle_TDocStd_Owner_swigregister
 Handle_TDocStd_Owner_swigregister(Handle_TDocStd_Owner)
 
-def Handle_TDocStd_Owner_DownCast(*args):
+def Handle_TDocStd_Owner_DownCast(*args) -> "Handle_TDocStd_Owner const" :
   return _TDocStd.Handle_TDocStd_Owner_DownCast(*args)
 Handle_TDocStd_Owner_DownCast = _TDocStd.Handle_TDocStd_Owner_DownCast
 
@@ -1935,42 +1935,42 @@ class TDocStd_PathParser(object):
 
         """
         _TDocStd.TDocStd_PathParser_swiginit(self,_TDocStd.new_TDocStd_PathParser(*args))
-    def Parse(self, *args):
+    def Parse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDocStd.TDocStd_PathParser_Parse(self, *args)
 
-    def Trek(self, *args):
+    def Trek(self, *args) -> "TCollection_ExtendedString" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_PathParser_Trek(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_ExtendedString" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_PathParser_Name(self, *args)
 
-    def Extension(self, *args):
+    def Extension(self, *args) -> "TCollection_ExtendedString" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_PathParser_Extension(self, *args)
 
-    def Path(self, *args):
+    def Path(self, *args) -> "TCollection_ExtendedString" :
         """
         :rtype: TCollection_ExtendedString
 
         """
         return _TDocStd.TDocStd_PathParser_Path(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
@@ -2010,18 +2010,18 @@ class TDocStd_SequenceNodeOfSequenceOfApplicationDelta(OCC.TCollection.TCollecti
 
         """
         _TDocStd.TDocStd_SequenceNodeOfSequenceOfApplicationDelta_swiginit(self,_TDocStd.new_TDocStd_SequenceNodeOfSequenceOfApplicationDelta(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDocStd_ApplicationDelta &" :
         """
         :rtype: Handle_TDocStd_ApplicationDelta
 
         """
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfApplicationDelta_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_SequenceNodeOfSequenceOfApplicationDelta self)"""
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfApplicationDelta__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta" :
         """GetHandle(TDocStd_SequenceNodeOfSequenceOfApplicationDelta self) -> Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta"""
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfApplicationDelta_GetHandle(self)
 
@@ -2060,7 +2060,7 @@ Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta._kill_pointed = new_inst
 Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_swigregister = _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_swigregister
 Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_swigregister(Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta)
 
-def Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_DownCast(*args):
+def Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_DownCast(*args) -> "Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta const" :
   return _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_DownCast(*args)
 Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_DownCast = _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfApplicationDelta_DownCast
 
@@ -2079,18 +2079,18 @@ class TDocStd_SequenceNodeOfSequenceOfDocument(OCC.TCollection.TCollection_SeqNo
 
         """
         _TDocStd.TDocStd_SequenceNodeOfSequenceOfDocument_swiginit(self,_TDocStd.new_TDocStd_SequenceNodeOfSequenceOfDocument(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDocStd_Document &" :
         """
         :rtype: Handle_TDocStd_Document
 
         """
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfDocument_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_SequenceNodeOfSequenceOfDocument self)"""
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfDocument__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_SequenceNodeOfSequenceOfDocument" :
         """GetHandle(TDocStd_SequenceNodeOfSequenceOfDocument self) -> Handle_TDocStd_SequenceNodeOfSequenceOfDocument"""
         return _TDocStd.TDocStd_SequenceNodeOfSequenceOfDocument_GetHandle(self)
 
@@ -2129,7 +2129,7 @@ Handle_TDocStd_SequenceNodeOfSequenceOfDocument._kill_pointed = new_instancemeth
 Handle_TDocStd_SequenceNodeOfSequenceOfDocument_swigregister = _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfDocument_swigregister
 Handle_TDocStd_SequenceNodeOfSequenceOfDocument_swigregister(Handle_TDocStd_SequenceNodeOfSequenceOfDocument)
 
-def Handle_TDocStd_SequenceNodeOfSequenceOfDocument_DownCast(*args):
+def Handle_TDocStd_SequenceNodeOfSequenceOfDocument_DownCast(*args) -> "Handle_TDocStd_SequenceNodeOfSequenceOfDocument const" :
   return _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfDocument_DownCast(*args)
 Handle_TDocStd_SequenceNodeOfSequenceOfDocument_DownCast = _TDocStd.Handle_TDocStd_SequenceNodeOfSequenceOfDocument_DownCast
 
@@ -2142,14 +2142,14 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _TDocStd.TDocStd_SequenceOfApplicationDelta_swiginit(self,_TDocStd.new_TDocStd_SequenceOfApplicationDelta(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDocStd_SequenceOfApplicationDelta const &" :
         """
         :param Other:
         :type Other: TDocStd_SequenceOfApplicationDelta &
@@ -2158,7 +2158,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDocStd_SequenceOfApplicationDelta const &" :
         """
         :param Other:
         :type Other: TDocStd_SequenceOfApplicationDelta &
@@ -2167,7 +2167,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDocStd_ApplicationDelta &
@@ -2180,7 +2180,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDocStd_ApplicationDelta &
@@ -2193,7 +2193,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2210,7 +2210,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2227,21 +2227,21 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDocStd_ApplicationDelta const &" :
         """
         :rtype: Handle_TDocStd_ApplicationDelta
 
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDocStd_ApplicationDelta const &" :
         """
         :rtype: Handle_TDocStd_ApplicationDelta
 
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2252,7 +2252,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDocStd_ApplicationDelta const &" :
         """
         :param Index:
         :type Index: int
@@ -2261,7 +2261,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2272,7 +2272,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TDocStd_ApplicationDelta &" :
         """
         :param Index:
         :type Index: int
@@ -2281,7 +2281,7 @@ class TDocStd_SequenceOfApplicationDelta(OCC.TCollection.TCollection_BaseSequenc
         """
         return _TDocStd.TDocStd_SequenceOfApplicationDelta_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2331,14 +2331,14 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TDocStd.TDocStd_SequenceOfDocument_swiginit(self,_TDocStd.new_TDocStd_SequenceOfDocument(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TDocStd_SequenceOfDocument const &" :
         """
         :param Other:
         :type Other: TDocStd_SequenceOfDocument &
@@ -2347,7 +2347,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TDocStd_SequenceOfDocument const &" :
         """
         :param Other:
         :type Other: TDocStd_SequenceOfDocument &
@@ -2356,7 +2356,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDocStd_Document &
@@ -2369,7 +2369,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_TDocStd_Document &
@@ -2382,7 +2382,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2399,7 +2399,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2416,21 +2416,21 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_TDocStd_Document const &" :
         """
         :rtype: Handle_TDocStd_Document
 
         """
         return _TDocStd.TDocStd_SequenceOfDocument_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_TDocStd_Document const &" :
         """
         :rtype: Handle_TDocStd_Document
 
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2441,7 +2441,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TDocStd_Document const &" :
         """
         :param Index:
         :type Index: int
@@ -2450,7 +2450,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2461,7 +2461,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_TDocStd_Document &" :
         """
         :param Index:
         :type Index: int
@@ -2470,7 +2470,7 @@ class TDocStd_SequenceOfDocument(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TDocStd.TDocStd_SequenceOfDocument_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2514,7 +2514,7 @@ TDocStd_SequenceOfDocument_swigregister(TDocStd_SequenceOfDocument)
 class TDocStd_XLink(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Set(*args):
+    def Set(*args) -> "Handle_TDocStd_XLink" :
         """
         * Sets an empty external reference, at the label aLabel.
 
@@ -2534,7 +2534,7 @@ class TDocStd_XLink(OCC.TDF.TDF_Attribute):
 
         """
         _TDocStd.TDocStd_XLink_swiginit(self,_TDocStd.new_TDocStd_XLink(*args))
-    def Update(self, *args):
+    def Update(self, *args) -> "Handle_TDF_Reference" :
         """
         * Updates the data referenced in this external link attribute.
 
@@ -2543,7 +2543,7 @@ class TDocStd_XLink(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_XLink_Update(self, *args)
 
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Returns the GUID for external links.
 
@@ -2553,7 +2553,7 @@ class TDocStd_XLink(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_XLink_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def DocumentEntry(self, *args):
+    def DocumentEntry(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Sets the name aDocEntry for the external document in this external link attribute.
 
@@ -2568,7 +2568,7 @@ class TDocStd_XLink(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_XLink_DocumentEntry(self, *args)
 
-    def LabelEntry(self, *args):
+    def LabelEntry(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Sets the label entry for this external link attribute with the label aLabel. aLabel pilots the importation of data from the document entry.
 
@@ -2589,15 +2589,15 @@ class TDocStd_XLink(OCC.TDF.TDF_Attribute):
         """
         return _TDocStd.TDocStd_XLink_LabelEntry(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDocStd_XLink self) -> std::string"""
         return _TDocStd.TDocStd_XLink_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_XLink self)"""
         return _TDocStd.TDocStd_XLink__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_XLink" :
         """GetHandle(TDocStd_XLink self) -> Handle_TDocStd_XLink"""
         return _TDocStd.TDocStd_XLink_GetHandle(self)
 
@@ -2618,7 +2618,7 @@ TDocStd_XLink.GetHandle = new_instancemethod(_TDocStd.TDocStd_XLink_GetHandle,No
 TDocStd_XLink_swigregister = _TDocStd.TDocStd_XLink_swigregister
 TDocStd_XLink_swigregister(TDocStd_XLink)
 
-def TDocStd_XLink_Set(*args):
+def TDocStd_XLink_Set(*args) -> "Handle_TDocStd_XLink" :
   """
     * Sets an empty external reference, at the label aLabel.
 
@@ -2629,7 +2629,7 @@ def TDocStd_XLink_Set(*args):
     """
   return _TDocStd.TDocStd_XLink_Set(*args)
 
-def TDocStd_XLink_GetID(*args):
+def TDocStd_XLink_GetID(*args) -> "Standard_GUID const &" :
   """
     * Returns the GUID for external links.
 
@@ -2659,7 +2659,7 @@ Handle_TDocStd_XLink._kill_pointed = new_instancemethod(_TDocStd.Handle_TDocStd_
 Handle_TDocStd_XLink_swigregister = _TDocStd.Handle_TDocStd_XLink_swigregister
 Handle_TDocStd_XLink_swigregister(Handle_TDocStd_XLink)
 
-def Handle_TDocStd_XLink_DownCast(*args):
+def Handle_TDocStd_XLink_DownCast(*args) -> "Handle_TDocStd_XLink const" :
   return _TDocStd.Handle_TDocStd_XLink_DownCast(*args)
 Handle_TDocStd_XLink_DownCast = _TDocStd.Handle_TDocStd_XLink_DownCast
 
@@ -2680,7 +2680,7 @@ class TDocStd_XLinkIterator(object):
 
         """
         _TDocStd.TDocStd_XLinkIterator_swiginit(self,_TDocStd.new_TDocStd_XLinkIterator(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Restarts an iteration with <D>.
 
@@ -2691,7 +2691,7 @@ class TDocStd_XLinkIterator(object):
         """
         return _TDocStd.TDocStd_XLinkIterator_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is a current Item in the iteration.
 
@@ -2700,7 +2700,7 @@ class TDocStd_XLinkIterator(object):
         """
         return _TDocStd.TDocStd_XLinkIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Move to the next item; raises if there is no more item.
 
@@ -2709,7 +2709,7 @@ class TDocStd_XLinkIterator(object):
         """
         return _TDocStd.TDocStd_XLinkIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TDocStd_XLinkPtr" :
         """
         * Returns the current item; a null handle if there is none.
 
@@ -2738,7 +2738,7 @@ class TDocStd_XLinkRoot(OCC.TDF.TDF_Attribute):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetID(*args):
+    def GetID(*args) -> "Standard_GUID const &" :
         """
         * Returns the ID: 2a96b61d-ec8b-11d0-bee7-080009dc3333
 
@@ -2748,7 +2748,7 @@ class TDocStd_XLinkRoot(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_XLinkRoot_GetID(*args)
 
     GetID = staticmethod(GetID)
-    def Set(*args):
+    def Set(*args) -> "Handle_TDocStd_XLinkRoot" :
         """
         * Sets an empty XLinkRoot to Root or gets the existing one. Only one attribute per TDF_Data.
 
@@ -2760,7 +2760,7 @@ class TDocStd_XLinkRoot(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_XLinkRoot_Set(*args)
 
     Set = staticmethod(Set)
-    def Insert(*args):
+    def Insert(*args) -> "void" :
         """
         * Inserts <anXLinkPtr> at the beginning of the XLink chain.
 
@@ -2772,7 +2772,7 @@ class TDocStd_XLinkRoot(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_XLinkRoot_Insert(*args)
 
     Insert = staticmethod(Insert)
-    def Remove(*args):
+    def Remove(*args) -> "void" :
         """
         * Removes <anXLinkPtr> from the XLink chain, if it exists.
 
@@ -2784,15 +2784,15 @@ class TDocStd_XLinkRoot(OCC.TDF.TDF_Attribute):
         return _TDocStd.TDocStd_XLinkRoot_Remove(*args)
 
     Remove = staticmethod(Remove)
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(TDocStd_XLinkRoot self) -> std::string"""
         return _TDocStd.TDocStd_XLinkRoot_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TDocStd_XLinkRoot self)"""
         return _TDocStd.TDocStd_XLinkRoot__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TDocStd_XLinkRoot" :
         """GetHandle(TDocStd_XLinkRoot self) -> Handle_TDocStd_XLinkRoot"""
         return _TDocStd.TDocStd_XLinkRoot_GetHandle(self)
 
@@ -2810,7 +2810,7 @@ TDocStd_XLinkRoot.GetHandle = new_instancemethod(_TDocStd.TDocStd_XLinkRoot_GetH
 TDocStd_XLinkRoot_swigregister = _TDocStd.TDocStd_XLinkRoot_swigregister
 TDocStd_XLinkRoot_swigregister(TDocStd_XLinkRoot)
 
-def TDocStd_XLinkRoot_GetID(*args):
+def TDocStd_XLinkRoot_GetID(*args) -> "Standard_GUID const &" :
   """
     * Returns the ID: 2a96b61d-ec8b-11d0-bee7-080009dc3333
 
@@ -2819,7 +2819,7 @@ def TDocStd_XLinkRoot_GetID(*args):
     """
   return _TDocStd.TDocStd_XLinkRoot_GetID(*args)
 
-def TDocStd_XLinkRoot_Set(*args):
+def TDocStd_XLinkRoot_Set(*args) -> "Handle_TDocStd_XLinkRoot" :
   """
     * Sets an empty XLinkRoot to Root or gets the existing one. Only one attribute per TDF_Data.
 
@@ -2830,7 +2830,7 @@ def TDocStd_XLinkRoot_Set(*args):
     """
   return _TDocStd.TDocStd_XLinkRoot_Set(*args)
 
-def TDocStd_XLinkRoot_Insert(*args):
+def TDocStd_XLinkRoot_Insert(*args) -> "void" :
   """
     * Inserts <anXLinkPtr> at the beginning of the XLink chain.
 
@@ -2841,7 +2841,7 @@ def TDocStd_XLinkRoot_Insert(*args):
     """
   return _TDocStd.TDocStd_XLinkRoot_Insert(*args)
 
-def TDocStd_XLinkRoot_Remove(*args):
+def TDocStd_XLinkRoot_Remove(*args) -> "void" :
   """
     * Removes <anXLinkPtr> from the XLink chain, if it exists.
 
@@ -2873,7 +2873,7 @@ Handle_TDocStd_XLinkRoot._kill_pointed = new_instancemethod(_TDocStd.Handle_TDoc
 Handle_TDocStd_XLinkRoot_swigregister = _TDocStd.Handle_TDocStd_XLinkRoot_swigregister
 Handle_TDocStd_XLinkRoot_swigregister(Handle_TDocStd_XLinkRoot)
 
-def Handle_TDocStd_XLinkRoot_DownCast(*args):
+def Handle_TDocStd_XLinkRoot_DownCast(*args) -> "Handle_TDocStd_XLinkRoot const" :
   return _TDocStd.Handle_TDocStd_XLinkRoot_DownCast(*args)
 Handle_TDocStd_XLinkRoot_DownCast = _TDocStd.Handle_TDocStd_XLinkRoot_DownCast
 
@@ -2886,7 +2886,7 @@ class TDocStd_XLinkTool(object):
 
         """
         _TDocStd.TDocStd_XLinkTool_swiginit(self,_TDocStd.new_TDocStd_XLinkTool(*args))
-    def CopyWithLink(self, *args):
+    def CopyWithLink(self, *args) -> "void" :
         """
         * Copies the content of the label <fromsource> to the label <intarget>. The link is registred with an XLink attribute by <intarget> label. if the content of <fromsource> is not self-contained, and/or <intarget> has already an XLink attribute, an exception is raised.
 
@@ -2899,7 +2899,7 @@ class TDocStd_XLinkTool(object):
         """
         return _TDocStd.TDocStd_XLinkTool_CopyWithLink(self, *args)
 
-    def UpdateLink(self, *args):
+    def UpdateLink(self, *args) -> "void" :
         """
         * Update the external reference set at <L>. Example Handle_TDocStd_Document aDoc; if (!OCAFTest::GetDocument(1,aDoc)) return 1; Handle_TDataStd_Reference aRef; TDocStd_XLinkTool xlinktool; if (!OCAFTest::Find(aDoc,2),TDataStd_Reference::GetID(),aRef) return 1; xlinktool.UpdateLink(aRef->Label()); Exceptions Standard_DomainError if <L> has no XLink attribute.
 
@@ -2910,7 +2910,7 @@ class TDocStd_XLinkTool(object):
         """
         return _TDocStd.TDocStd_XLinkTool_UpdateLink(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * Copy the content of <fromsource> under <intarget>. Noone link is registred. noone check is done. Example Handle_TDocStd_Document DOC, XDOC; TDF_Label L, XL; TDocStd_XLinkTool xlinktool; xlinktool.Copy(L,XL); Exceptions: Standard_DomainError if the contents of fromsource are not entirely in the scope of this label, in other words, are not self-contained. !!! ==> Warning: If the document manages shapes use the next way: TDocStd_XLinkTool xlinktool; xlinktool.Copy(L,XL); TopTools_DataMapOfShapeShape M; TNaming::ChangeShapes(target,M);
 
@@ -2923,21 +2923,21 @@ class TDocStd_XLinkTool(object):
         """
         return _TDocStd.TDocStd_XLinkTool_Copy(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TDocStd.TDocStd_XLinkTool_IsDone(self, *args)
 
-    def DataSet(self, *args):
+    def DataSet(self, *args) -> "Handle_TDF_DataSet" :
         """
         :rtype: Handle_TDF_DataSet
 
         """
         return _TDocStd.TDocStd_XLinkTool_DataSet(self, *args)
 
-    def RelocationTable(self, *args):
+    def RelocationTable(self, *args) -> "Handle_TDF_RelocationTable" :
         """
         :rtype: Handle_TDF_RelocationTable
 

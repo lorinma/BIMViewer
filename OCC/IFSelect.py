@@ -144,7 +144,7 @@ IFSelect_RetStop = _IFSelect.IFSelect_RetStop
 class ifselect(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SaveSession(*args):
+    def SaveSession(*args) -> "Standard_Boolean" :
         """
         * Saves the state of a WorkSession from IFSelect, by using a SessionFile from IFSelect. Returns True if Done, False in case of Error on Writing. <file> gives the name of the File to be produced (this avoids to export the class SessionFile).
 
@@ -158,7 +158,7 @@ class ifselect(object):
         return _IFSelect.ifselect_SaveSession(*args)
 
     SaveSession = staticmethod(SaveSession)
-    def RestoreSession(*args):
+    def RestoreSession(*args) -> "Standard_Boolean" :
         """
         * Restore the state of a WorkSession from IFSelect, by using a SessionFile from IFSelect. Returns True if Done, False in case of Error on Writing. <file> gives the name of the File to be used (this avoids to export the class SessionFile).
 
@@ -186,7 +186,7 @@ ifselect._kill_pointed = new_instancemethod(_IFSelect.ifselect__kill_pointed,Non
 ifselect_swigregister = _IFSelect.ifselect_swigregister
 ifselect_swigregister(ifselect)
 
-def ifselect_SaveSession(*args):
+def ifselect_SaveSession(*args) -> "Standard_Boolean" :
   """
     * Saves the state of a WorkSession from IFSelect, by using a SessionFile from IFSelect. Returns True if Done, False in case of Error on Writing. <file> gives the name of the File to be produced (this avoids to export the class SessionFile).
 
@@ -199,7 +199,7 @@ def ifselect_SaveSession(*args):
     """
   return _IFSelect.ifselect_SaveSession(*args)
 
-def ifselect_RestoreSession(*args):
+def ifselect_RestoreSession(*args) -> "Standard_Boolean" :
   """
     * Restore the state of a WorkSession from IFSelect, by using a SessionFile from IFSelect. Returns True if Done, False in case of Error on Writing. <file> gives the name of the File to be used (this avoids to export the class SessionFile).
 
@@ -216,7 +216,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Adding(*args):
+    def Adding(*args) -> "void" :
         """
         * Records, in a Dictionary available for all the Activators, the command title an Activator can process, attached with its number, proper for this Activator <mode> allows to distinguish various execution modes 0: default mode; 1 : for xset
 
@@ -234,7 +234,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Adding(*args)
 
     Adding = staticmethod(Adding)
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Allows a self-definition by an Activator of the Commands it processes, call the class method Adding (mode 0)
 
@@ -247,7 +247,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Activator_Add(self, *args)
 
-    def AddSet(self, *args):
+    def AddSet(self, *args) -> "void" :
         """
         * Same as Add but specifies that this command is candidate for xset (creation of items, xset : named items; mode 1)
 
@@ -260,7 +260,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Activator_AddSet(self, *args)
 
-    def Remove(*args):
+    def Remove(*args) -> "void" :
         """
         * Removes a Command, if it is recorded (else, does nothing)
 
@@ -272,7 +272,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Remove(*args)
 
     Remove = staticmethod(Remove)
-    def SetAlias(*args):
+    def SetAlias(*args) -> "void" :
         """
         * Records, for a configuration named <conf>, that the command <command> may be aliased by another command <alias> To be used by call to Alias (no automatic redirection) The configuration typically refers to a norm
 
@@ -288,7 +288,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_SetAlias(*args)
 
     SetAlias = staticmethod(SetAlias)
-    def SetCurrentAlias(*args):
+    def SetCurrentAlias(*args) -> "void" :
         """
         * Sets <conf> as current configuration for aliases
 
@@ -300,7 +300,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_SetCurrentAlias(*args)
 
     SetCurrentAlias = staticmethod(SetCurrentAlias)
-    def Alias(*args):
+    def Alias(*args) -> "TCollection_AsciiString" :
         """
         * Returns, in the current configuration, what alias has been recorded for <command> The returned string is empty if no alias is recorded
 
@@ -312,7 +312,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Alias(*args)
 
     Alias = staticmethod(Alias)
-    def Select(*args):
+    def Select(*args) -> "Standard_Integer &" :
         """
         * Selects, for a Command given by its title, an actor with its command number. Returns True if found, False else
 
@@ -328,7 +328,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Select(*args)
 
     Select = staticmethod(Select)
-    def Mode(*args):
+    def Mode(*args) -> "Standard_Integer" :
         """
         * Returns mode recorded for a command. -1 if not found
 
@@ -340,7 +340,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Mode(*args)
 
     Mode = staticmethod(Mode)
-    def Commands(*args):
+    def Commands(*args) -> "Handle_TColStd_HSequenceOfAsciiString" :
         """
         * Returns, for a root of command title, the list of possible commands. <mode> : -1 (D) for all commands if <commands> is empty -1 + command : about a Group , >= 0 see Adding By default, it returns the whole list of known commands.
 
@@ -354,7 +354,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_Activator_Commands(*args)
 
     Commands = staticmethod(Commands)
-    def Do(self, *args):
+    def Do(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Tries to execute a Command Line. <number> is the number of the command for this Activator. It Must forecast to record the result of the execution, for need of Undo-Redo Must Returns : 0 for a void command (not to be recorded), 1 if execution OK, -1 if command incorrect, -2 if error on execution
 
@@ -367,7 +367,7 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Activator_Do(self, *args)
 
-    def Help(self, *args):
+    def Help(self, *args) -> "char *" :
         """
         * Sends a short help message for a given command identified by it number for this Activator (must take one line max)
 
@@ -378,21 +378,21 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Activator_Help(self, *args)
 
-    def Group(self, *args):
+    def Group(self, *args) -> "char *" :
         """
         :rtype: char *
 
         """
         return _IFSelect.IFSelect_Activator_Group(self, *args)
 
-    def File(self, *args):
+    def File(self, *args) -> "char *" :
         """
         :rtype: char *
 
         """
         return _IFSelect.IFSelect_Activator_File(self, *args)
 
-    def SetForGroup(self, *args):
+    def SetForGroup(self, *args) -> "void" :
         """
         * Group and SetGroup define a 'Group of commands' which correspond to an Activator. Default is 'XSTEP' Also a file may be attached
 
@@ -405,11 +405,11 @@ class IFSelect_Activator(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Activator_SetForGroup(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Activator self)"""
         return _IFSelect.IFSelect_Activator__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Activator" :
         """GetHandle(IFSelect_Activator self) -> Handle_IFSelect_Activator"""
         return _IFSelect.IFSelect_Activator_GetHandle(self)
 
@@ -433,7 +433,7 @@ IFSelect_Activator.GetHandle = new_instancemethod(_IFSelect.IFSelect_Activator_G
 IFSelect_Activator_swigregister = _IFSelect.IFSelect_Activator_swigregister
 IFSelect_Activator_swigregister(IFSelect_Activator)
 
-def IFSelect_Activator_Adding(*args):
+def IFSelect_Activator_Adding(*args) -> "void" :
   """
     * Records, in a Dictionary available for all the Activators, the command title an Activator can process, attached with its number, proper for this Activator <mode> allows to distinguish various execution modes 0: default mode; 1 : for xset
 
@@ -450,7 +450,7 @@ def IFSelect_Activator_Adding(*args):
     """
   return _IFSelect.IFSelect_Activator_Adding(*args)
 
-def IFSelect_Activator_Remove(*args):
+def IFSelect_Activator_Remove(*args) -> "void" :
   """
     * Removes a Command, if it is recorded (else, does nothing)
 
@@ -461,7 +461,7 @@ def IFSelect_Activator_Remove(*args):
     """
   return _IFSelect.IFSelect_Activator_Remove(*args)
 
-def IFSelect_Activator_SetAlias(*args):
+def IFSelect_Activator_SetAlias(*args) -> "void" :
   """
     * Records, for a configuration named <conf>, that the command <command> may be aliased by another command <alias> To be used by call to Alias (no automatic redirection) The configuration typically refers to a norm
 
@@ -476,7 +476,7 @@ def IFSelect_Activator_SetAlias(*args):
     """
   return _IFSelect.IFSelect_Activator_SetAlias(*args)
 
-def IFSelect_Activator_SetCurrentAlias(*args):
+def IFSelect_Activator_SetCurrentAlias(*args) -> "void" :
   """
     * Sets <conf> as current configuration for aliases
 
@@ -487,7 +487,7 @@ def IFSelect_Activator_SetCurrentAlias(*args):
     """
   return _IFSelect.IFSelect_Activator_SetCurrentAlias(*args)
 
-def IFSelect_Activator_Alias(*args):
+def IFSelect_Activator_Alias(*args) -> "TCollection_AsciiString" :
   """
     * Returns, in the current configuration, what alias has been recorded for <command> The returned string is empty if no alias is recorded
 
@@ -498,7 +498,7 @@ def IFSelect_Activator_Alias(*args):
     """
   return _IFSelect.IFSelect_Activator_Alias(*args)
 
-def IFSelect_Activator_Select(*args):
+def IFSelect_Activator_Select(*args) -> "Standard_Integer &" :
   """
     * Selects, for a Command given by its title, an actor with its command number. Returns True if found, False else
 
@@ -513,7 +513,7 @@ def IFSelect_Activator_Select(*args):
     """
   return _IFSelect.IFSelect_Activator_Select(*args)
 
-def IFSelect_Activator_Mode(*args):
+def IFSelect_Activator_Mode(*args) -> "Standard_Integer" :
   """
     * Returns mode recorded for a command. -1 if not found
 
@@ -524,7 +524,7 @@ def IFSelect_Activator_Mode(*args):
     """
   return _IFSelect.IFSelect_Activator_Mode(*args)
 
-def IFSelect_Activator_Commands(*args):
+def IFSelect_Activator_Commands(*args) -> "Handle_TColStd_HSequenceOfAsciiString" :
   """
     * Returns, for a root of command title, the list of possible commands. <mode> : -1 (D) for all commands if <commands> is empty -1 + command : about a Group , >= 0 see Adding By default, it returns the whole list of known commands.
 
@@ -558,7 +558,7 @@ Handle_IFSelect_Activator._kill_pointed = new_instancemethod(_IFSelect.Handle_IF
 Handle_IFSelect_Activator_swigregister = _IFSelect.Handle_IFSelect_Activator_swigregister
 Handle_IFSelect_Activator_swigregister(Handle_IFSelect_Activator)
 
-def Handle_IFSelect_Activator_DownCast(*args):
+def Handle_IFSelect_Activator_DownCast(*args) -> "Handle_IFSelect_Activator const" :
   return _IFSelect.Handle_IFSelect_Activator_DownCast(*args)
 Handle_IFSelect_Activator_DownCast = _IFSelect.Handle_IFSelect_Activator_DownCast
 
@@ -577,7 +577,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_AppliedModifiers_swiginit(self,_IFSelect.new_IFSelect_AppliedModifiers(*args))
-    def AddModif(self, *args):
+    def AddModif(self, *args) -> "Standard_Boolean" :
         """
         * Records a modifier. By default, it is to apply on all a produced file. Further calls to AddNum will restrict this. Returns True if done, False if too many modifiers are already recorded
 
@@ -588,7 +588,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_AddModif(self, *args)
 
-    def AddNum(self, *args):
+    def AddNum(self, *args) -> "Standard_Boolean" :
         """
         * Adds a number of entity of the output file to be applied on. If a sequence of AddNum is called after AddModif, this Modifier will be applied on the list of designated entities. Else, it will be applied on all the file Returns True if done, False if no modifier has yet been added
 
@@ -599,7 +599,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_AddNum(self, *args)
 
-    def Count(self, *args):
+    def Count(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of recorded modifiers
 
@@ -608,7 +608,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_Count(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Standard_Boolean" :
         """
         * Returns the description for applied modifier n0 <num> : the modifier itself, and the count of entities to be applied on. If no specific list of number has been defined, returns the total count of entities of the file If this count is zero, then the modifier applies to all the file (see below). Else, the numbers are then queried by calls to ItemNum between 1 and <entcount> Returns True if OK, False if <num> is out of range
 
@@ -623,7 +623,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_Item(self, *args)
 
-    def ItemNum(self, *args):
+    def ItemNum(self, *args) -> "Standard_Integer" :
         """
         * Returns a numero of entity to be applied on, given its rank in the list. If no list is defined (i.e. for all the file), returns <nument> itself, to give all the entities of the file Returns 0 if <nument> out of range
 
@@ -634,7 +634,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_ItemNum(self, *args)
 
-    def ItemList(self, *args):
+    def ItemList(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         * Returns the list of entities to be applied on (see Item) as a HSequence (IsForAll produces the complete list of all the entity numbers of the file
 
@@ -643,7 +643,7 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_ItemList(self, *args)
 
-    def IsForAll(self, *args):
+    def IsForAll(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the applied modifier queried by last call to Item is to be applied to all the produced file. Else, <entcount> returned by Item gives the count of entity numbers, each one is queried by ItemNum
 
@@ -652,11 +652,11 @@ class IFSelect_AppliedModifiers(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_AppliedModifiers_IsForAll(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_AppliedModifiers self)"""
         return _IFSelect.IFSelect_AppliedModifiers__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_AppliedModifiers" :
         """GetHandle(IFSelect_AppliedModifiers self) -> Handle_IFSelect_AppliedModifiers"""
         return _IFSelect.IFSelect_AppliedModifiers_GetHandle(self)
 
@@ -701,7 +701,7 @@ Handle_IFSelect_AppliedModifiers._kill_pointed = new_instancemethod(_IFSelect.Ha
 Handle_IFSelect_AppliedModifiers_swigregister = _IFSelect.Handle_IFSelect_AppliedModifiers_swigregister
 Handle_IFSelect_AppliedModifiers_swigregister(Handle_IFSelect_AppliedModifiers)
 
-def Handle_IFSelect_AppliedModifiers_DownCast(*args):
+def Handle_IFSelect_AppliedModifiers_DownCast(*args) -> "Handle_IFSelect_AppliedModifiers const" :
   return _IFSelect.Handle_IFSelect_AppliedModifiers_DownCast(*args)
 Handle_IFSelect_AppliedModifiers_DownCast = _IFSelect.Handle_IFSelect_AppliedModifiers_DownCast
 
@@ -730,7 +730,7 @@ class IFSelect_ContextModif(object):
 
         """
         _IFSelect.IFSelect_ContextModif_swiginit(self,_IFSelect.new_IFSelect_ContextModif(*args))
-    def Select(self, *args):
+    def Select(self, *args) -> "void" :
         """
         * This method requires ContextModif to be applied with a filter. If a ModelModifier is defined with a Selection criterium, the result of this Selection is used as a filter : - if none of its items has been transferred, the modification does not apply at all - else, the Modifier can query for what entities were selected and what are their results - if this method is not called before working, the Modifier has to work on the whole Model
 
@@ -741,7 +741,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Select(self, *args)
 
-    def OriginalGraph(self, *args):
+    def OriginalGraph(self, *args) -> "Interface_Graph const &" :
         """
         * Returns the original Graph (compared to OriginalModel, it gives more query capabilitites)
 
@@ -750,7 +750,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_OriginalGraph(self, *args)
 
-    def OriginalModel(self, *args):
+    def OriginalModel(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns the original model
 
@@ -759,7 +759,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_OriginalModel(self, *args)
 
-    def SetProtocol(self, *args):
+    def SetProtocol(self, *args) -> "void" :
         """
         * Allows to transmit a Protocol as part of a ContextModif
 
@@ -770,7 +770,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_SetProtocol(self, *args)
 
-    def Protocol(self, *args):
+    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
         """
         * Returns the Protocol (Null if not set)
 
@@ -779,7 +779,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Protocol(self, *args)
 
-    def HasFileName(self, *args):
+    def HasFileName(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a non empty file name has been defined
 
@@ -788,7 +788,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_HasFileName(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "char *" :
         """
         * Returns File Name (can be empty)
 
@@ -797,7 +797,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_FileName(self, *args)
 
-    def Control(self, *args):
+    def Control(self, *args) -> "Handle_Interface_CopyControl" :
         """
         * Returns the map for a direct use, if required
 
@@ -806,7 +806,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Control(self, *args)
 
-    def IsForNone(self, *args):
+    def IsForNone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if Select has determined that a Modifier may not be run (filter defined and empty)
 
@@ -815,7 +815,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_IsForNone(self, *args)
 
-    def IsForAll(self, *args):
+    def IsForAll(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if no filter is defined : a Modifier has to work on all entities of the resulting (target) model
 
@@ -824,7 +824,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_IsForAll(self, *args)
 
-    def IsTransferred(self, *args):
+    def IsTransferred(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a starting item has been transferred
 
@@ -835,7 +835,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_IsTransferred(self, *args)
 
-    def IsSelected(self, *args):
+    def IsSelected(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a starting item has been transferred and selected
 
@@ -846,7 +846,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_IsSelected(self, *args)
 
-    def SelectedOriginal(self, *args):
+    def SelectedOriginal(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of original selected items. See also the iteration
 
@@ -855,7 +855,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_SelectedOriginal(self, *args)
 
-    def SelectedResult(self, *args):
+    def SelectedResult(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of resulting counterparts of selected items. See also the iteration
 
@@ -864,7 +864,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_SelectedResult(self, *args)
 
-    def SelectedCount(self, *args):
+    def SelectedCount(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of selected and transferred items
 
@@ -873,7 +873,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_SelectedCount(self, *args)
 
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         * Starts an iteration on selected items. It takes into account IsForAll/IsForNone, by really iterating on all selected items.
 
@@ -882,7 +882,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True until the iteration has finished
 
@@ -891,7 +891,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Advances the iteration
 
@@ -900,7 +900,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Next(self, *args)
 
-    def ValueOriginal(self, *args):
+    def ValueOriginal(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the current selected item in the original model
 
@@ -909,7 +909,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_ValueOriginal(self, *args)
 
-    def ValueResult(self, *args):
+    def ValueResult(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the result counterpart of current selected item (in the target model)
 
@@ -918,7 +918,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_ValueResult(self, *args)
 
-    def TraceModifier(self, *args):
+    def TraceModifier(self, *args) -> "void" :
         """
         * Traces the application of a Modifier. Works with default trace File and Level. Fills the trace if default trace level is at least 1. Traces the Modifier (its Label) and its Selection if there is one (its Label). To be called after Select (because status IsForAll is printed) Worths to trace a global modification. See also Trace below
 
@@ -929,7 +929,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_TraceModifier(self, *args)
 
-    def Trace(self, *args):
+    def Trace(self, *args) -> "void" :
         """
         * Traces the modification of the current entity (see above, ValueOriginal and ValueResult) for default trace level >= 2. To be called on each indivudual entity really modified <mess> is an optionnal additional message
 
@@ -940,7 +940,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_Trace(self, *args)
 
-    def AddCheck(self, *args):
+    def AddCheck(self, *args) -> "void" :
         """
         * Adds a Check to the CheckList. If it is empty, nothing is done If it concerns an Entity from the Original Model (by SetEntity) to which another Check is attached, it is merged to it. Else, it is added or merged as to GlobalCheck.
 
@@ -951,7 +951,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_AddCheck(self, *args)
 
-    def AddWarning(self, *args):
+    def AddWarning(self, *args) -> "void" :
         """
         * Adds a Warning Message for an Entity from the original Model If <start> is not an Entity from the original model (e.g. the model itself) this message is added to Global Check.
 
@@ -966,7 +966,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_AddWarning(self, *args)
 
-    def AddFail(self, *args):
+    def AddFail(self, *args) -> "void" :
         """
         * Adds a Fail Message for an Entity from the original Model If <start> is not an Entity from the original model (e.g. the model itself) this message is added to Global Check.
 
@@ -981,7 +981,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_AddFail(self, *args)
 
-    def CCheck(self, *args):
+    def CCheck(self, *args) -> "Handle_Interface_Check" :
         """
         * Returns a Check given an Entity number (in the original Model) by default a Global Check. Creates it the first time. It can then be acknowledged on the spot, in condition that the caller works by reference ('Interface_Check& check = ...')
 
@@ -998,7 +998,7 @@ class IFSelect_ContextModif(object):
         """
         return _IFSelect.IFSelect_ContextModif_CCheck(self, *args)
 
-    def CheckList(self, *args):
+    def CheckList(self, *args) -> "Interface_CheckIterator" :
         """
         * Returns the complete CheckList
 
@@ -1077,7 +1077,7 @@ class IFSelect_ContextWrite(object):
 
         """
         _IFSelect.IFSelect_ContextWrite_swiginit(self,_IFSelect.new_IFSelect_ContextWrite(*args))
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns the Model
 
@@ -1086,7 +1086,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Model(self, *args)
 
-    def Protocol(self, *args):
+    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
         """
         * Returns the Protocol;
 
@@ -1095,7 +1095,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Protocol(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "char *" :
         """
         * Returns the File Name
 
@@ -1104,7 +1104,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_FileName(self, *args)
 
-    def AppliedModifiers(self, *args):
+    def AppliedModifiers(self, *args) -> "Handle_IFSelect_AppliedModifiers" :
         """
         * Returns the object AppliedModifiers
 
@@ -1113,7 +1113,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_AppliedModifiers(self, *args)
 
-    def Graph(self, *args):
+    def Graph(self, *args) -> "Interface_Graph const &" :
         """
         * Returns the Graph, either given when created, else created the first time it is queried
 
@@ -1122,7 +1122,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Graph(self, *args)
 
-    def NbModifiers(self, *args):
+    def NbModifiers(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of recorded File Modifiers
 
@@ -1131,7 +1131,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_NbModifiers(self, *args)
 
-    def SetModifier(self, *args):
+    def SetModifier(self, *args) -> "Standard_Boolean" :
         """
         * Sets active the File Modifier n0 <numod> Then, it prepares the list of entities to consider, if any Returns False if <numod> out of range
 
@@ -1142,7 +1142,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_SetModifier(self, *args)
 
-    def FileModifier(self, *args):
+    def FileModifier(self, *args) -> "Handle_IFSelect_GeneralModifier" :
         """
         * Returns the currently active File Modifier. Cast to be done Null if not properly set : must be test IsNull after casting
 
@@ -1151,7 +1151,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_FileModifier(self, *args)
 
-    def IsForNone(self, *args):
+    def IsForNone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if no modifier is currently set
 
@@ -1160,7 +1160,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_IsForNone(self, *args)
 
-    def IsForAll(self, *args):
+    def IsForAll(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the current modifier is to be applied to the whole model. Else, a restricted list of selected entities is defined, it can be exploited by the File Modifier
 
@@ -1169,7 +1169,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_IsForAll(self, *args)
 
-    def NbEntities(self, *args):
+    def NbEntities(self, *args) -> "Standard_Integer" :
         """
         * Returns the total count of selected entities
 
@@ -1178,7 +1178,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_NbEntities(self, *args)
 
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         * Starts an iteration on selected items. It takes into account IsForAll/IsForNone, by really iterating on all selected items.
 
@@ -1187,7 +1187,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True until the iteration has finished
 
@@ -1196,7 +1196,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Advances the iteration
 
@@ -1205,7 +1205,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the current selected entity in the model
 
@@ -1214,7 +1214,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_Value(self, *args)
 
-    def AddCheck(self, *args):
+    def AddCheck(self, *args) -> "void" :
         """
         * Adds a Check to the CheckList. If it is empty, nothing is done If it concerns an Entity from the Model (by SetEntity) to which another Check is attached, it is merged to it. Else, it is added or merged as to GlobalCheck.
 
@@ -1225,7 +1225,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_AddCheck(self, *args)
 
-    def AddWarning(self, *args):
+    def AddWarning(self, *args) -> "void" :
         """
         * Adds a Warning Message for an Entity from the Model If <start> is not an Entity from the model (e.g. the model itself) this message is added to Global Check.
 
@@ -1240,7 +1240,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_AddWarning(self, *args)
 
-    def AddFail(self, *args):
+    def AddFail(self, *args) -> "void" :
         """
         * Adds a Fail Message for an Entity from the Model If <start> is not an Entity from the model (e.g. the model itself) this message is added to Global Check.
 
@@ -1255,7 +1255,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_AddFail(self, *args)
 
-    def CCheck(self, *args):
+    def CCheck(self, *args) -> "Handle_Interface_Check" :
         """
         * Returns a Check given an Entity number (in the Model) by default a Global Check. Creates it the first time. It can then be acknowledged on the spot, in condition that the caller works by reference ('Interface_Check& check = ...')
 
@@ -1272,7 +1272,7 @@ class IFSelect_ContextWrite(object):
         """
         return _IFSelect.IFSelect_ContextWrite_CCheck(self, *args)
 
-    def CheckList(self, *args):
+    def CheckList(self, *args) -> "Interface_CheckIterator" :
         """
         * Returns the complete CheckList
 
@@ -1317,7 +1317,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetRootName(self, *args):
+    def SetRootName(self, *args) -> "void" :
         """
         * Sets a Root Name as an HAsciiString To reset it, give a Null Handle (then, a ShareOut will have to define the Default Root Name)
 
@@ -1328,7 +1328,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_SetRootName(self, *args)
 
-    def HasRootName(self, *args):
+    def HasRootName(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a specific Root Name has been set (else, the Default Root Name has to be used)
 
@@ -1337,7 +1337,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_HasRootName(self, *args)
 
-    def RootName(self, *args):
+    def RootName(self, *args) -> "Handle_TCollection_HAsciiString const &" :
         """
         * Returns the Root Name for files produced by this dispatch It is empty if it has not been set or if it has been reset
 
@@ -1346,7 +1346,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_RootName(self, *args)
 
-    def SetFinalSelection(self, *args):
+    def SetFinalSelection(self, *args) -> "void" :
         """
         * Stores (or Changes) the Final Selection for a Dispatch
 
@@ -1357,7 +1357,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_SetFinalSelection(self, *args)
 
-    def FinalSelection(self, *args):
+    def FinalSelection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Final Selection of a Dispatch we 'd like : C++ : return const &
 
@@ -1366,7 +1366,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_FinalSelection(self, *args)
 
-    def Selections(self, *args):
+    def Selections(self, *args) -> "IFSelect_SelectionIterator" :
         """
         * Returns the complete list of source Selections (starting from FinalSelection)
 
@@ -1375,7 +1375,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_Selections(self, *args)
 
-    def CanHaveRemainder(self, *args):
+    def CanHaveRemainder(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Dispatch can have a Remainder, i.e. if its criterium can let entities apart. It is a potential answer, remainder can be empty at run-time even if answer is True. (to attach a RemainderFromDispatch Selection is not allowed if answer is True). Default answer given here is False (can be redefined)
 
@@ -1384,7 +1384,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_CanHaveRemainder(self, *args)
 
-    def LimitedMax(self, *args):
+    def LimitedMax(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Dispatch generates a count of Packets always less than or equal to a maximum value : it can be computed from the total count of Entities to be dispatched : <nbent>. If answer is False, no limited maximum is expected for account If answer is True, expected maximum is given in argument <max> Default answer given here is False (can be redefined)
 
@@ -1397,7 +1397,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_LimitedMax(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a text which defines the way a Dispatch produces packets (which will become files) from its Input
 
@@ -1406,7 +1406,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_Label(self, *args)
 
-    def GetEntities(self, *args):
+    def GetEntities(self, *args) -> "Interface_EntityIterator" :
         """
         * Gets Unique Root Entities from the Final Selection, given an input Graph This the starting step for an Evaluation (Packets - Remainder)
 
@@ -1417,7 +1417,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_GetEntities(self, *args)
 
-    def PacketsCount(self, *args):
+    def PacketsCount(self, *args) -> "Standard_Integer" :
         """
         * Returns True if Count of Packets is actually known, and the value of the count in argument 'count'. Returns False if this count is unknown. Input is given as a Graph. This method is intended to be quick (used for file names) hence if this count is long to compute (that is, as a result of complete evaluation made by method Packets), it is preferable to answer 'unknown' by returning False Default answer if False. Can be redefined.
 
@@ -1430,7 +1430,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_PacketsCount(self, *args)
 
-    def Packets(self, *args):
+    def Packets(self, *args) -> "void" :
         """
         * Returns the list of produced Packets into argument <pack>. Each Packet corresponds to a Part, the Entities listed are the Roots given by the Selection. Input is given as a Graph. Thus, to create a file from a packet, it suffices to take the entities listed in a Part of Packets (that is, a Packet) without worrying about Shared entities This method can raise an Exception if data are not coherent
 
@@ -1443,7 +1443,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_Packets(self, *args)
 
-    def Packeted(self, *args):
+    def Packeted(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of all Input Entities (see GetEntities) which are put in a Packet. That is, Entities listed in GetEntities but not in Remainder (see below). Input is given as a Graph.
 
@@ -1454,7 +1454,7 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_Packeted(self, *args)
 
-    def Remainder(self, *args):
+    def Remainder(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns Remainder which is a set of Entities. Can be empty. Default evaluation is empty (has to be redefined if CanHaveRemainder is redefined to return True).
 
@@ -1465,11 +1465,11 @@ class IFSelect_Dispatch(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Dispatch_Remainder(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Dispatch self)"""
         return _IFSelect.IFSelect_Dispatch__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Dispatch" :
         """GetHandle(IFSelect_Dispatch self) -> Handle_IFSelect_Dispatch"""
         return _IFSelect.IFSelect_Dispatch_GetHandle(self)
 
@@ -1521,7 +1521,7 @@ Handle_IFSelect_Dispatch._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_Dispatch_swigregister = _IFSelect.Handle_IFSelect_Dispatch_swigregister
 Handle_IFSelect_Dispatch_swigregister(Handle_IFSelect_Dispatch)
 
-def Handle_IFSelect_Dispatch_DownCast(*args):
+def Handle_IFSelect_Dispatch_DownCast(*args) -> "Handle_IFSelect_Dispatch const" :
   return _IFSelect.Handle_IFSelect_Dispatch_DownCast(*args)
 Handle_IFSelect_Dispatch_DownCast = _IFSelect.Handle_IFSelect_Dispatch_DownCast
 
@@ -1558,22 +1558,22 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_EditForm_swiginit(self,_IFSelect.new_IFSelect_EditForm(*args))
-    def GetEditKeepStatus(self):
+    def GetEditKeepStatus(self) -> "Standard_Boolean" :
         """GetEditKeepStatus(IFSelect_EditForm self) -> Standard_Boolean"""
         return _IFSelect.IFSelect_EditForm_GetEditKeepStatus(self)
 
-    def SetEditKeepStatus(self, *args):
+    def SetEditKeepStatus(self, *args) -> "void" :
         """SetEditKeepStatus(IFSelect_EditForm self, Standard_Boolean value)"""
         return _IFSelect.IFSelect_EditForm_SetEditKeepStatus(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "char *" :
         """
         :rtype: char *
 
         """
         return _IFSelect.IFSelect_EditForm_Label(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the EditForm is loaded now
 
@@ -1582,14 +1582,14 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_IsLoaded(self, *args)
 
-    def ClearData(self, *args):
+    def ClearData(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_EditForm_ClearData(self, *args)
 
-    def SetData(self, *args):
+    def SetData(self, *args) -> "void" :
         """
         :param ent:
         :type ent: Handle_Standard_Transient &
@@ -1600,7 +1600,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_SetData(self, *args)
 
-    def SetEntity(self, *args):
+    def SetEntity(self, *args) -> "void" :
         """
         :param ent:
         :type ent: Handle_Standard_Transient &
@@ -1609,7 +1609,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_SetEntity(self, *args)
 
-    def SetModel(self, *args):
+    def SetModel(self, *args) -> "void" :
         """
         :param model:
         :type model: Handle_Interface_InterfaceModel &
@@ -1618,28 +1618,28 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_SetModel(self, *args)
 
-    def Entity(self, *args):
+    def Entity(self, *args) -> "Handle_Standard_Transient" :
         """
         :rtype: Handle_Standard_Transient
 
         """
         return _IFSelect.IFSelect_EditForm_Entity(self, *args)
 
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         :rtype: Handle_Interface_InterfaceModel
 
         """
         return _IFSelect.IFSelect_EditForm_Model(self, *args)
 
-    def Editor(self, *args):
+    def Editor(self, *args) -> "Handle_IFSelect_Editor" :
         """
         :rtype: Handle_IFSelect_Editor
 
         """
         return _IFSelect.IFSelect_EditForm_Editor(self, *args)
 
-    def IsComplete(self, *args):
+    def IsComplete(self, *args) -> "Standard_Boolean" :
         """
         * Tells if an EditForm is complete or is an extract from Editor
 
@@ -1648,7 +1648,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_IsComplete(self, *args)
 
-    def NbValues(self, *args):
+    def NbValues(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of values <editable> True : count of editable values, i.e. For a complete EditForm, it is given by the Editor Else, it is the length of the extraction map <editable> False : all the values from the Editor
 
@@ -1659,7 +1659,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_NbValues(self, *args)
 
-    def NumberFromRank(self, *args):
+    def NumberFromRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the Value Number in the Editor from a given Rank in the EditForm For a complete EditForm, both are equal Else, it is given by the extraction map Returns 0 if <rank> exceeds the count of editable values,
 
@@ -1670,7 +1670,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_NumberFromRank(self, *args)
 
-    def RankFromNumber(self, *args):
+    def RankFromNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the Rank in the EditForm from a given Number of Value for the Editor For a complete EditForm, both are equal Else, it is given by the extraction map Returns 0 if <number> is not forecast to be edited, or is out of range
 
@@ -1681,7 +1681,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_RankFromNumber(self, *args)
 
-    def NameNumber(self, *args):
+    def NameNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the Value Number in the Editor for a given Name i.e. the true ValueNumber which can be used in various methods of EditForm If it is not complete, for a recorded (in the Editor) but non-loaded name, returns negative value (- number)
 
@@ -1692,7 +1692,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_NameNumber(self, *args)
 
-    def NameRank(self, *args):
+    def NameRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the Rank of Value in the EditForm for a given Name i.e. if it is not complete, for a recorded (in the Editor) but non-loaded name, returns 0
 
@@ -1703,7 +1703,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_NameRank(self, *args)
 
-    def LoadDefault(self, *args):
+    def LoadDefault(self, *args) -> "void" :
         """
         * For a read-write undoable EditForm, loads original values from defaults stored in the Editor
 
@@ -1712,7 +1712,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadDefault(self, *args)
 
-    def LoadEntity(self, *args):
+    def LoadEntity(self, *args) -> "Standard_Boolean" :
         """
         * Shortcut for LoadData when <model> is not used
 
@@ -1723,7 +1723,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadEntity(self, *args)
 
-    def LoadModel(self, *args):
+    def LoadModel(self, *args) -> "Standard_Boolean" :
         """
         * Shortcut for LoadData when only the model is concerned
 
@@ -1734,7 +1734,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadModel(self, *args)
 
-    def LoadData(self, *args):
+    def LoadData(self, *args) -> "Standard_Boolean" :
         """
         * Loads modifications to data Default uses Editor. Can be redefined Remark that <ent> and/or <model> may be null, according to the kind of Editor. Shortcuts are available for these cases, but they finally call LoadData (hence, just ignore non-used args)
 
@@ -1751,7 +1751,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadData(self, *args)
 
-    def ListEditor(self, *args):
+    def ListEditor(self, *args) -> "Handle_IFSelect_ListEditor" :
         """
         * Returns a ListEditor to edit the parameter <num> of the EditForm, if it is a List The Editor created it (by ListEditor) then loads it (by ListValue) For a single parameter, returns a Null Handle ...
 
@@ -1762,7 +1762,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_ListEditor(self, *args)
 
-    def LoadValue(self, *args):
+    def LoadValue(self, *args) -> "void" :
         """
         * Loads an original value (single). Called by the Editor only
 
@@ -1775,7 +1775,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadValue(self, *args)
 
-    def LoadList(self, *args):
+    def LoadList(self, *args) -> "void" :
         """
         * Loads an original value as a list. Called by the Editor only
 
@@ -1788,7 +1788,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_LoadList(self, *args)
 
-    def OriginalValue(self, *args):
+    def OriginalValue(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * From an edited value, returns its ... value (original one) Null means that this value is not defined <num> is for the EditForm, not the Editor It is for a single parameter. For a list, gives a Null Handle
 
@@ -1799,7 +1799,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_OriginalValue(self, *args)
 
-    def OriginalList(self, *args):
+    def OriginalList(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns an original value, as a list <num> is for the EditForm, not the Editor For a single parameter, gives a Null Handle
 
@@ -1810,7 +1810,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_OriginalList(self, *args)
 
-    def EditedValue(self, *args):
+    def EditedValue(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the Edited (i.e. Modified) Value (string for single) <num> reports to the EditForm If IsModified is False, returns OriginalValue Null with IsModified True : means that this value is not defined or has been removed It is for a single parameter. For a list, gives a Null Handle
 
@@ -1821,7 +1821,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_EditedValue(self, *args)
 
-    def EditedList(self, *args):
+    def EditedList(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the Edited Value as a list If IsModified is False, returns OriginalValue Null with IsModified True : means that this value is not defined or has been removed For a single parameter, gives a Null Handle
 
@@ -1832,7 +1832,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_EditedList(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a Value (of the EditForm) is modified (directly or through touching by Update)
 
@@ -1843,7 +1843,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_IsModified(self, *args)
 
-    def IsTouched(self, *args):
+    def IsTouched(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a Value (of the EditForm) has been touched, i.e. not modified directly but by the modification of another one (by method Update from the Editor)
 
@@ -1854,7 +1854,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_IsTouched(self, *args)
 
-    def Modify(self, *args):
+    def Modify(self, *args) -> "Standard_Boolean" :
         """
         * Gives a new value for the item <num> of the EditForm, if it is a single parameter (for a list, just returns False) Null means to Remove it <enforce> True to overpass Protected or Computed Access Mode Calls the method Update from the Editor, which can touch other parameters (see NbTouched) Returns True if well recorded, False if this value is not allowed Warning : Does not apply immediately : will be applied by the method Apply
 
@@ -1869,7 +1869,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_Modify(self, *args)
 
-    def ModifyList(self, *args):
+    def ModifyList(self, *args) -> "Standard_Boolean" :
         """
         * Changes the value of an item of the EditForm, if it is a List (else, just returns False) The ListEditor contains the edited values of the list If no edition was recorded, just returns False Calls the method Update from the Editor, which can touch other parameters (see NbTouched) Returns True if well recorded, False if this value is not allowed Warning : Does not apply immediately : will be applied by the method Apply
 
@@ -1884,7 +1884,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_ModifyList(self, *args)
 
-    def ModifyListValue(self, *args):
+    def ModifyListValue(self, *args) -> "Standard_Boolean" :
         """
         * As ModifyList but the new value is given as such Creates a ListEditor, Loads it, then calls ModifyList
 
@@ -1899,7 +1899,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_ModifyListValue(self, *args)
 
-    def TouchList(self, *args):
+    def TouchList(self, *args) -> "Standard_Boolean" :
         """
         * Acts as Touch but for a list Does not work (returns False) if <num> is for a single param
 
@@ -1912,7 +1912,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_TouchList(self, *args)
 
-    def ClearEdit(self, *args):
+    def ClearEdit(self, *args) -> "void" :
         """
         * Clears modification status : by default all, or one by its numbers (in the Editor)
 
@@ -1923,7 +1923,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_ClearEdit(self, *args)
 
-    def PrintDefs(self, *args):
+    def PrintDefs(self, *args) -> "void" :
         """
         * Prints Definitions, relative to the Editor
 
@@ -1934,7 +1934,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_PrintDefs(self, *args)
 
-    def PrintValues(self, *args):
+    def PrintValues(self, *args) -> "void" :
         """
         * Prints Values, according to what and alsolist <names> True : prints Long Names; False : prints Short Names <what> < 0 : prints Original Values (+ flag Modified) <what> > 0 : prints Final Values (+flag Modified) <what> = 0 : prints Modified Values (Original + Edited) <alsolist> False (D) : lists are printed only as their count <alsolist> True : lists are printed for all their items
 
@@ -1951,7 +1951,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_PrintValues(self, *args)
 
-    def Apply(self, *args):
+    def Apply(self, *args) -> "Standard_Boolean" :
         """
         * Applies modifications to own data Calls ApplyData then Clears Status according EditKeepStatus
 
@@ -1960,7 +1960,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_Apply(self, *args)
 
-    def Recognize(self, *args):
+    def Recognize(self, *args) -> "Standard_Boolean" :
         """
         * Tells if this EditForm can work with its Editor and its actual Data (Entity and Model) Default uses Editor. Can be redefined
 
@@ -1969,7 +1969,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_Recognize(self, *args)
 
-    def ApplyData(self, *args):
+    def ApplyData(self, *args) -> "Standard_Boolean" :
         """
         * Applies modifications to data Default uses Editor. Can be redefined
 
@@ -1982,7 +1982,7 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_ApplyData(self, *args)
 
-    def Undo(self, *args):
+    def Undo(self, *args) -> "Standard_Boolean" :
         """
         * For an undoable EditForm, Applies ... origibal values ! and clears modified ones Can be run only once
 
@@ -1991,11 +1991,11 @@ class IFSelect_EditForm(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_EditForm_Undo(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_EditForm self)"""
         return _IFSelect.IFSelect_EditForm__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_EditForm" :
         """GetHandle(IFSelect_EditForm self) -> Handle_IFSelect_EditForm"""
         return _IFSelect.IFSelect_EditForm_GetHandle(self)
 
@@ -2074,7 +2074,7 @@ Handle_IFSelect_EditForm._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_EditForm_swigregister = _IFSelect.Handle_IFSelect_EditForm_swigregister
 Handle_IFSelect_EditForm_swigregister(Handle_IFSelect_EditForm)
 
-def Handle_IFSelect_EditForm_DownCast(*args):
+def Handle_IFSelect_EditForm_DownCast(*args) -> "Handle_IFSelect_EditForm const" :
   return _IFSelect.Handle_IFSelect_EditForm_DownCast(*args)
 Handle_IFSelect_EditForm_DownCast = _IFSelect.Handle_IFSelect_EditForm_DownCast
 
@@ -2082,7 +2082,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets a Typed Value for a given ident and short name, with an Edit Mode
 
@@ -2099,7 +2099,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_SetValue(self, *args)
 
-    def SetList(self, *args):
+    def SetList(self, *args) -> "void" :
         """
         * Sets a parameter to be a List max < 0 : not for a list (set when starting) max = 0 : list with no length limit (default for SetList) max > 0 : list limited to <max> items
 
@@ -2112,7 +2112,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_SetList(self, *args)
 
-    def NbValues(self, *args):
+    def NbValues(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Typed Values
 
@@ -2121,7 +2121,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_NbValues(self, *args)
 
-    def TypedValue(self, *args):
+    def TypedValue(self, *args) -> "Handle_Interface_TypedValue" :
         """
         * Returns a Typed Value from its ident
 
@@ -2132,7 +2132,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_TypedValue(self, *args)
 
-    def IsList(self, *args):
+    def IsList(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a parameter is a list
 
@@ -2143,7 +2143,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_IsList(self, *args)
 
-    def MaxList(self, *args):
+    def MaxList(self, *args) -> "Standard_Integer" :
         """
         * Returns max length allowed for a list = 0 means : list with no limit < 0 means : not a list
 
@@ -2154,7 +2154,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_MaxList(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "char *" :
         """
         * Returns the name of a Value (complete or short) from its ident Short Name can be empty
 
@@ -2167,7 +2167,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Name(self, *args)
 
-    def EditMode(self, *args):
+    def EditMode(self, *args) -> "IFSelect_EditValue" :
         """
         * Returns the edit mode of a Value
 
@@ -2178,7 +2178,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_EditMode(self, *args)
 
-    def NameNumber(self, *args):
+    def NameNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the number (ident) of a Value, from its name, short or complete. If not found, returns 0
 
@@ -2189,7 +2189,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_NameNumber(self, *args)
 
-    def PrintNames(self, *args):
+    def PrintNames(self, *args) -> "void" :
         """
         :param S:
         :type S: Handle_Message_Messenger &
@@ -2198,7 +2198,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_PrintNames(self, *args)
 
-    def PrintDefs(self, *args):
+    def PrintDefs(self, *args) -> "void" :
         """
         :param S:
         :type S: Handle_Message_Messenger &
@@ -2209,7 +2209,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_PrintDefs(self, *args)
 
-    def MaxNameLength(self, *args):
+    def MaxNameLength(self, *args) -> "Standard_Integer" :
         """
         * Returns the MaxLength of, according to what : <what> = -1 : length of short names <what> = 0 : length of complete names <what> = 1 : length of values labels
 
@@ -2220,7 +2220,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_MaxNameLength(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the specific label
 
@@ -2229,7 +2229,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Label(self, *args)
 
-    def Form(self, *args):
+    def Form(self, *args) -> "Handle_IFSelect_EditForm" :
         """
         * Builds and Returns an EditForm, empty (no data yet) Can be redefined to return a specific type of EditForm
 
@@ -2242,7 +2242,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Form(self, *args)
 
-    def Recognize(self, *args):
+    def Recognize(self, *args) -> "Standard_Boolean" :
         """
         * Tells if this Editor can work on this EditForm and its content (model, entity ?)
 
@@ -2253,7 +2253,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Recognize(self, *args)
 
-    def StringValue(self, *args):
+    def StringValue(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the value of an EditForm, for a given item (if not a list. for a list, a Null String may be returned)
 
@@ -2266,7 +2266,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_StringValue(self, *args)
 
-    def ListEditor(self, *args):
+    def ListEditor(self, *args) -> "Handle_IFSelect_ListEditor" :
         """
         * Returns a ListEditor for a parameter which is a List Default returns a basic ListEditor for a List, a Null Handle if <num> is not for a List. Can be redefined
 
@@ -2277,7 +2277,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_ListEditor(self, *args)
 
-    def ListValue(self, *args):
+    def ListValue(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the value of an EditForm as a List, for a given item If not a list, a Null Handle should be returned Default returns a Null Handle, because many Editors have no list to edit. To be redefined as required
 
@@ -2290,7 +2290,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_ListValue(self, *args)
 
-    def Load(self, *args):
+    def Load(self, *args) -> "Standard_Boolean" :
         """
         * Loads original values from some data, to an EditForm Remark: <ent> may be Null, this means all <model> is concerned Also <model> may be Null, if no context applies for <ent> And both <ent> and <model> may be Null, for a full static editor
 
@@ -2305,7 +2305,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Load(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "Standard_Boolean" :
         """
         * Updates the EditForm when a parameter is modified I.E. default does nothing, can be redefined, as follows : Returns True when done (even if does nothing), False in case of refuse (for instance, if the new value is not suitable) <num> is the rank of the parameter for the EDITOR itself <enforce> True means that protected parameters can be touched If a parameter commands the value of other ones, when it is modified, it is necessary to touch them by Touch from EditForm
 
@@ -2322,7 +2322,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Update(self, *args)
 
-    def UpdateList(self, *args):
+    def UpdateList(self, *args) -> "Standard_Boolean" :
         """
         * Acts as Update, but when the value is a list
 
@@ -2339,7 +2339,7 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_UpdateList(self, *args)
 
-    def Apply(self, *args):
+    def Apply(self, *args) -> "Standard_Boolean" :
         """
         * Applies modified values of the EditForm with some data Remark: <ent> may be Null, this means all <model> is concerned Also <model> may be Null, if no context applies for <ent> And both <ent> and <model> may be Null, for a full static editor
 
@@ -2354,11 +2354,11 @@ class IFSelect_Editor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Editor_Apply(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Editor self)"""
         return _IFSelect.IFSelect_Editor__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Editor" :
         """GetHandle(IFSelect_Editor self) -> Handle_IFSelect_Editor"""
         return _IFSelect.IFSelect_Editor_GetHandle(self)
 
@@ -2418,14 +2418,14 @@ Handle_IFSelect_Editor._kill_pointed = new_instancemethod(_IFSelect.Handle_IFSel
 Handle_IFSelect_Editor_swigregister = _IFSelect.Handle_IFSelect_Editor_swigregister
 Handle_IFSelect_Editor_swigregister(Handle_IFSelect_Editor)
 
-def Handle_IFSelect_Editor_DownCast(*args):
+def Handle_IFSelect_Editor_DownCast(*args) -> "Handle_IFSelect_Editor const" :
   return _IFSelect.Handle_IFSelect_Editor_DownCast(*args)
 Handle_IFSelect_Editor_DownCast = _IFSelect.Handle_IFSelect_Editor_DownCast
 
 class IFSelect_Functions(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def GiveEntity(*args):
+    def GiveEntity(*args) -> "Handle_Standard_Transient" :
         """
         * Takes the name of an entity, either as argument, or (if <name> is empty) on keybord, and returns the entity name can be a label or a number (in alphanumeric), it is searched by NumberFromLabel from WorkSession. If <name> doesn't match en entity, a Null Handle is returned
 
@@ -2439,7 +2439,7 @@ class IFSelect_Functions(object):
         return _IFSelect.IFSelect_Functions_GiveEntity(*args)
 
     GiveEntity = staticmethod(GiveEntity)
-    def GiveEntityNumber(*args):
+    def GiveEntityNumber(*args) -> "Standard_Integer" :
         """
         * Same as GetEntity, but returns the number in the model of the entity. Returns 0 for null handle
 
@@ -2453,7 +2453,7 @@ class IFSelect_Functions(object):
         return _IFSelect.IFSelect_Functions_GiveEntityNumber(*args)
 
     GiveEntityNumber = staticmethod(GiveEntityNumber)
-    def GiveList(*args):
+    def GiveList(*args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Computes a List of entities from a WorkSession and two idents, first and second, as follows : if <first> is a Number or Label of an entity : this entity if <first> is the name of a Selection in <WS>, and <second> not defined, the standard result of this Selection if <first> is for a Selection and <second> is defined, the standard result of this selection from the list computed with <second> (an entity or a selection) If <second> is erroneous, it is ignored
 
@@ -2469,7 +2469,7 @@ class IFSelect_Functions(object):
         return _IFSelect.IFSelect_Functions_GiveList(*args)
 
     GiveList = staticmethod(GiveList)
-    def GiveDispatch(*args):
+    def GiveDispatch(*args) -> "Handle_IFSelect_Dispatch" :
         """
         * Evaluates and returns a Dispatch, from data of a WorkSession if <mode> is False, searches for exact name of Dispatch in WS Else (D), allows a parameter between brackets : ex.: dispatch_name(parameter) The parameter can be: an integer for DispPerCount or DispPerFiles or the name of a Signature for DispPerSignature Returns Null Handle if not found not well evaluated
 
@@ -2485,7 +2485,7 @@ class IFSelect_Functions(object):
         return _IFSelect.IFSelect_Functions_GiveDispatch(*args)
 
     GiveDispatch = staticmethod(GiveDispatch)
-    def Init(*args):
+    def Init(*args) -> "void" :
         """
         * Defines and loads all basic functions (as ActFunc)
 
@@ -2509,7 +2509,7 @@ IFSelect_Functions._kill_pointed = new_instancemethod(_IFSelect.IFSelect_Functio
 IFSelect_Functions_swigregister = _IFSelect.IFSelect_Functions_swigregister
 IFSelect_Functions_swigregister(IFSelect_Functions)
 
-def IFSelect_Functions_GiveEntity(*args):
+def IFSelect_Functions_GiveEntity(*args) -> "Handle_Standard_Transient" :
   """
     * Takes the name of an entity, either as argument, or (if <name> is empty) on keybord, and returns the entity name can be a label or a number (in alphanumeric), it is searched by NumberFromLabel from WorkSession. If <name> doesn't match en entity, a Null Handle is returned
 
@@ -2522,7 +2522,7 @@ def IFSelect_Functions_GiveEntity(*args):
     """
   return _IFSelect.IFSelect_Functions_GiveEntity(*args)
 
-def IFSelect_Functions_GiveEntityNumber(*args):
+def IFSelect_Functions_GiveEntityNumber(*args) -> "Standard_Integer" :
   """
     * Same as GetEntity, but returns the number in the model of the entity. Returns 0 for null handle
 
@@ -2535,7 +2535,7 @@ def IFSelect_Functions_GiveEntityNumber(*args):
     """
   return _IFSelect.IFSelect_Functions_GiveEntityNumber(*args)
 
-def IFSelect_Functions_GiveList(*args):
+def IFSelect_Functions_GiveList(*args) -> "Handle_TColStd_HSequenceOfTransient" :
   """
     * Computes a List of entities from a WorkSession and two idents, first and second, as follows : if <first> is a Number or Label of an entity : this entity if <first> is the name of a Selection in <WS>, and <second> not defined, the standard result of this Selection if <first> is for a Selection and <second> is defined, the standard result of this selection from the list computed with <second> (an entity or a selection) If <second> is erroneous, it is ignored
 
@@ -2550,7 +2550,7 @@ def IFSelect_Functions_GiveList(*args):
     """
   return _IFSelect.IFSelect_Functions_GiveList(*args)
 
-def IFSelect_Functions_GiveDispatch(*args):
+def IFSelect_Functions_GiveDispatch(*args) -> "Handle_IFSelect_Dispatch" :
   """
     * Evaluates and returns a Dispatch, from data of a WorkSession if <mode> is False, searches for exact name of Dispatch in WS Else (D), allows a parameter between brackets : ex.: dispatch_name(parameter) The parameter can be: an integer for DispPerCount or DispPerFiles or the name of a Signature for DispPerSignature Returns Null Handle if not found not well evaluated
 
@@ -2565,7 +2565,7 @@ def IFSelect_Functions_GiveDispatch(*args):
     """
   return _IFSelect.IFSelect_Functions_GiveDispatch(*args)
 
-def IFSelect_Functions_Init(*args):
+def IFSelect_Functions_Init(*args) -> "void" :
   """
     * Defines and loads all basic functions (as ActFunc)
 
@@ -2578,7 +2578,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MayChangeGraph(self, *args):
+    def MayChangeGraph(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if this modifier may change the graph of dependences (aknowledged at creation time)
 
@@ -2587,7 +2587,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_MayChangeGraph(self, *args)
 
-    def SetDispatch(self, *args):
+    def SetDispatch(self, *args) -> "void" :
         """
         * Attaches to a Dispatch. If <disp> is Null, Resets it (to apply the Modifier on every Dispatch)
 
@@ -2598,7 +2598,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_SetDispatch(self, *args)
 
-    def Dispatch(self, *args):
+    def Dispatch(self, *args) -> "Handle_IFSelect_Dispatch" :
         """
         * Returns the Dispatch to be matched, Null if not set
 
@@ -2607,7 +2607,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_Dispatch(self, *args)
 
-    def Applies(self, *args):
+    def Applies(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Model obtained from the Dispatch <disp> is to be treated (apart from the Selection criterium) If Dispatch(me) is Null, returns True. Else, checks <disp>
 
@@ -2618,7 +2618,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_Applies(self, *args)
 
-    def SetSelection(self, *args):
+    def SetSelection(self, *args) -> "void" :
         """
         * Sets a Selection : a Model is treated if it contains one or more Entities designated by the Selection
 
@@ -2629,7 +2629,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_SetSelection(self, *args)
 
-    def ResetSelection(self, *args):
+    def ResetSelection(self, *args) -> "void" :
         """
         * Resets the Selection : this criterium is not longer active
 
@@ -2638,7 +2638,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_ResetSelection(self, *args)
 
-    def HasSelection(self, *args):
+    def HasSelection(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Selection is set as an additionnal criterium
 
@@ -2647,7 +2647,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_HasSelection(self, *args)
 
-    def Selection(self, *args):
+    def Selection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Selection, or a Null Handle if not set
 
@@ -2656,7 +2656,7 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_Selection(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a short text which defines the operation performed
 
@@ -2665,11 +2665,11 @@ class IFSelect_GeneralModifier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_GeneralModifier_Label(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_GeneralModifier self)"""
         return _IFSelect.IFSelect_GeneralModifier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_GeneralModifier" :
         """GetHandle(IFSelect_GeneralModifier self) -> Handle_IFSelect_GeneralModifier"""
         return _IFSelect.IFSelect_GeneralModifier_GetHandle(self)
 
@@ -2716,7 +2716,7 @@ Handle_IFSelect_GeneralModifier._kill_pointed = new_instancemethod(_IFSelect.Han
 Handle_IFSelect_GeneralModifier_swigregister = _IFSelect.Handle_IFSelect_GeneralModifier_swigregister
 Handle_IFSelect_GeneralModifier_swigregister(Handle_IFSelect_GeneralModifier)
 
-def Handle_IFSelect_GeneralModifier_DownCast(*args):
+def Handle_IFSelect_GeneralModifier_DownCast(*args) -> "Handle_IFSelect_GeneralModifier const" :
   return _IFSelect.Handle_IFSelect_GeneralModifier_DownCast(*args)
 Handle_IFSelect_GeneralModifier_DownCast = _IFSelect.Handle_IFSelect_GeneralModifier_DownCast
 
@@ -2729,28 +2729,28 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_HSeqOfSelection_swiginit(self,_IFSelect.new_IFSelect_HSeqOfSelection(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_IFSelect_Selection &
@@ -2763,7 +2763,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_IFSelect_Selection &
@@ -2776,14 +2776,14 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2800,7 +2800,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2817,7 +2817,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2828,7 +2828,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_IFSelect_HSeqOfSelection" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2837,7 +2837,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2848,7 +2848,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Selection const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2857,7 +2857,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_IFSelect_Selection &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2866,7 +2866,7 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -2881,32 +2881,32 @@ class IFSelect_HSeqOfSelection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "IFSelect_TSeqOfSelection const &" :
         """
         :rtype: IFSelect_TSeqOfSelection
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "IFSelect_TSeqOfSelection &" :
         """
         :rtype: IFSelect_TSeqOfSelection
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_IFSelect_HSeqOfSelection" :
         """
         :rtype: Handle_IFSelect_HSeqOfSelection
 
         """
         return _IFSelect.IFSelect_HSeqOfSelection_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_HSeqOfSelection self)"""
         return _IFSelect.IFSelect_HSeqOfSelection__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_HSeqOfSelection" :
         """GetHandle(IFSelect_HSeqOfSelection self) -> Handle_IFSelect_HSeqOfSelection"""
         return _IFSelect.IFSelect_HSeqOfSelection_GetHandle(self)
 
@@ -2961,7 +2961,7 @@ Handle_IFSelect_HSeqOfSelection._kill_pointed = new_instancemethod(_IFSelect.Han
 Handle_IFSelect_HSeqOfSelection_swigregister = _IFSelect.Handle_IFSelect_HSeqOfSelection_swigregister
 Handle_IFSelect_HSeqOfSelection_swigregister(Handle_IFSelect_HSeqOfSelection)
 
-def Handle_IFSelect_HSeqOfSelection_DownCast(*args):
+def Handle_IFSelect_HSeqOfSelection_DownCast(*args) -> "Handle_IFSelect_HSeqOfSelection const" :
   return _IFSelect.Handle_IFSelect_HSeqOfSelection_DownCast(*args)
 Handle_IFSelect_HSeqOfSelection_DownCast = _IFSelect.Handle_IFSelect_HSeqOfSelection_DownCast
 
@@ -2976,7 +2976,7 @@ class IFSelect_IntParam(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_IntParam_swiginit(self,_IFSelect.new_IFSelect_IntParam(*args))
-    def SetStaticName(self, *args):
+    def SetStaticName(self, *args) -> "void" :
         """
         * Commands this IntParam to be bound to a Static Hence, Value will return the value if this Static if it is set Else, Value works on the locally stored value SetValue also will set the value of the Static This works only for a present static of type integer or enum Else, it is ignored If <statname> is empty, disconnects the IntParam from Static
 
@@ -2987,7 +2987,7 @@ class IFSelect_IntParam(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_IntParam_SetStaticName(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         * Reads Integer Value of the IntParam. If a StaticName is defined and the Static is set, looks in priority the value of the static
 
@@ -2996,7 +2996,7 @@ class IFSelect_IntParam(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_IntParam_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         * Sets a new Integer Value for the IntParam. If a StaticName is defined and the Static is set, also sets the value of the static
 
@@ -3007,11 +3007,11 @@ class IFSelect_IntParam(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_IntParam_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_IntParam self)"""
         return _IFSelect.IFSelect_IntParam__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_IntParam" :
         """GetHandle(IFSelect_IntParam self) -> Handle_IFSelect_IntParam"""
         return _IFSelect.IFSelect_IntParam_GetHandle(self)
 
@@ -3052,7 +3052,7 @@ Handle_IFSelect_IntParam._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_IntParam_swigregister = _IFSelect.Handle_IFSelect_IntParam_swigregister
 Handle_IFSelect_IntParam_swigregister(Handle_IFSelect_IntParam)
 
-def Handle_IFSelect_IntParam_DownCast(*args):
+def Handle_IFSelect_IntParam_DownCast(*args) -> "Handle_IFSelect_IntParam const" :
   return _IFSelect.Handle_IFSelect_IntParam_DownCast(*args)
 Handle_IFSelect_IntParam_DownCast = _IFSelect.Handle_IFSelect_IntParam_DownCast
 
@@ -3075,7 +3075,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_ListEditor_swiginit(self,_IFSelect.new_IFSelect_ListEditor(*args))
-    def LoadModel(self, *args):
+    def LoadModel(self, *args) -> "void" :
         """
         * Loads a Model. It is used to check items of type Entity(Ident)
 
@@ -3086,7 +3086,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_LoadModel(self, *args)
 
-    def LoadValues(self, *args):
+    def LoadValues(self, *args) -> "void" :
         """
         * Loads the original values for the list Remark : If its length is mor then MaxLength, editions remain allowed, except Add
 
@@ -3097,7 +3097,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_LoadValues(self, *args)
 
-    def SetTouched(self, *args):
+    def SetTouched(self, *args) -> "void" :
         """
         * Declares this ListEditor to have been touched (whatever action)
 
@@ -3106,7 +3106,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_SetTouched(self, *args)
 
-    def ClearEdit(self, *args):
+    def ClearEdit(self, *args) -> "void" :
         """
         * Clears all editions already recorded
 
@@ -3115,7 +3115,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_ClearEdit(self, *args)
 
-    def LoadEdited(self, *args):
+    def LoadEdited(self, *args) -> "Standard_Boolean" :
         """
         * Loads a new list to replace the older one, in once ! By default (can be redefined) checks the length of the list and the value of each item according to the def Items are all recorded as Modified If no def has been given at creation time, no check is done Returns True when done, False if checks have failed ... a specialisation may also lock it by returning always False ...
 
@@ -3126,7 +3126,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_LoadEdited(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "Standard_Boolean" :
         """
         * Sets a new value for the item <num> (in edited list) <val> may be a Null Handle, then the value will be cleared but not removed Returns True when done. False if <num> is out of range or if <val> does not satisfy the definition
 
@@ -3139,7 +3139,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_SetValue(self, *args)
 
-    def AddValue(self, *args):
+    def AddValue(self, *args) -> "Standard_Boolean" :
         """
         * Adds a new item. By default appends (at the end of the list) Can insert before a given rank <num>, if positive Returns True when done. False if MaxLength may be overpassed or if <val> does not satisfy the definition
 
@@ -3152,7 +3152,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_AddValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes items from the list By default removes one item. Else, count given by <howmany> Remove from rank <num> included. By default, from the end Returns True when done, False (and does not work) if case of out of range of if <howmany> is greater than current length
 
@@ -3165,7 +3165,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_Remove(self, *args)
 
-    def OriginalValues(self, *args):
+    def OriginalValues(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the value from which the edition started
 
@@ -3174,7 +3174,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_OriginalValues(self, *args)
 
-    def EditedValues(self, *args):
+    def EditedValues(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the result of the edition
 
@@ -3183,7 +3183,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_EditedValues(self, *args)
 
-    def NbValues(self, *args):
+    def NbValues(self, *args) -> "Standard_Integer" :
         """
         * Returns count of values, edited (D) or original
 
@@ -3194,7 +3194,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_NbValues(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns a value given its rank. Edited (D) or Original A Null String means the value is cleared but not removed
 
@@ -3207,7 +3207,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_Value(self, *args)
 
-    def IsChanged(self, *args):
+    def IsChanged(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a value (in edited list) has been changed, i.e. either modified-value, or added
 
@@ -3218,7 +3218,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_IsChanged(self, *args)
 
-    def IsModified(self, *args):
+    def IsModified(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a value (in edited list) has been modified-value (not added)
 
@@ -3229,7 +3229,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_IsModified(self, *args)
 
-    def IsAdded(self, *args):
+    def IsAdded(self, *args) -> "Standard_Boolean" :
         """
         * Tells if a value (in edited list) has been added (new one)
 
@@ -3240,7 +3240,7 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_IsAdded(self, *args)
 
-    def IsTouched(self, *args):
+    def IsTouched(self, *args) -> "Standard_Boolean" :
         """
         * Tells if at least one edition (SetValue-AddValue-Remove) has been recorded
 
@@ -3249,11 +3249,11 @@ class IFSelect_ListEditor(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ListEditor_IsTouched(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ListEditor self)"""
         return _IFSelect.IFSelect_ListEditor__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ListEditor" :
         """GetHandle(IFSelect_ListEditor self) -> Handle_IFSelect_ListEditor"""
         return _IFSelect.IFSelect_ListEditor_GetHandle(self)
 
@@ -3307,7 +3307,7 @@ Handle_IFSelect_ListEditor._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_ListEditor_swigregister = _IFSelect.Handle_IFSelect_ListEditor_swigregister
 Handle_IFSelect_ListEditor_swigregister(Handle_IFSelect_ListEditor)
 
-def Handle_IFSelect_ListEditor_DownCast(*args):
+def Handle_IFSelect_ListEditor_DownCast(*args) -> "Handle_IFSelect_ListEditor const" :
   return _IFSelect.Handle_IFSelect_ListEditor_DownCast(*args)
 Handle_IFSelect_ListEditor_DownCast = _IFSelect.Handle_IFSelect_ListEditor_DownCast
 
@@ -3322,7 +3322,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_ModelCopier_swiginit(self,_IFSelect.new_IFSelect_ModelCopier(*args))
-    def SetShareOut(self, *args):
+    def SetShareOut(self, *args) -> "void" :
         """
         * Sets the ShareOut, which is used to define Modifiers to apply
 
@@ -3333,7 +3333,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SetShareOut(self, *args)
 
-    def ClearResult(self, *args):
+    def ClearResult(self, *args) -> "void" :
         """
         * Clears the list of produced Models
 
@@ -3342,7 +3342,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_ClearResult(self, *args)
 
-    def AddFile(self, *args):
+    def AddFile(self, *args) -> "Standard_Boolean" :
         """
         * Records a new File to be sent, as a couple (Name as AsciiString, Content as InterfaceModel) Returns True if Done, False if <filename> is already attached to another File
 
@@ -3355,7 +3355,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_AddFile(self, *args)
 
-    def NameFile(self, *args):
+    def NameFile(self, *args) -> "Standard_Boolean" :
         """
         * Changes the Name attached to a File which was formerly defined by a call to AddFile Returns True if Done, False else : if <num> out of range or if the new <filename> is already attached to another File Remark : Giving an empty File Name is equivalent to ClearFile
 
@@ -3368,7 +3368,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_NameFile(self, *args)
 
-    def ClearFile(self, *args):
+    def ClearFile(self, *args) -> "Standard_Boolean" :
         """
         * Clears the Name attached to a File which was formerly defined by a call to AddFile. This Clearing can be undone by a call to NameFile (with same <num>) Returns True if Done, False else : if <num> is out of range
 
@@ -3379,7 +3379,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_ClearFile(self, *args)
 
-    def SetAppliedModifiers(self, *args):
+    def SetAppliedModifiers(self, *args) -> "Standard_Boolean" :
         """
         * Sets a list of File Modifiers to be applied on a file
 
@@ -3392,7 +3392,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SetAppliedModifiers(self, *args)
 
-    def ClearAppliedModifiers(self, *args):
+    def ClearAppliedModifiers(self, *args) -> "Standard_Boolean" :
         """
         * Clears the list of File Modifiers to be applied on a file
 
@@ -3403,7 +3403,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_ClearAppliedModifiers(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Interface_CheckIterator" :
         """
         * Performs the Copy Operations, which include the Modifications defined by the list of Modifiers. Memorizes the result, as a list of InterfaceModels with the corresponding FileNames They can then be sent, by the method Send, or queried Copy calls internal method Copying. Returns the produced CheckList
 
@@ -3418,7 +3418,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_Copy(self, *args)
 
-    def SendCopied(self, *args):
+    def SendCopied(self, *args) -> "Interface_CheckIterator" :
         """
         * Sends the formerly defined results (see method Copy) to files, then clears it Remark : A Null File Name cause file to be not produced
 
@@ -3431,7 +3431,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SendCopied(self, *args)
 
-    def Send(self, *args):
+    def Send(self, *args) -> "Interface_CheckIterator" :
         """
         * Performs the Copy Operations (which include the Modifications) and Sends the result on files, without memorizing it. (the memorized result is ignored : neither queried not filled)
 
@@ -3446,7 +3446,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_Send(self, *args)
 
-    def SendAll(self, *args):
+    def SendAll(self, *args) -> "Interface_CheckIterator" :
         """
         * Sends a model (defined in <G>) into one file, without managing remaining data, already sent files, etc. Applies the Model and File Modifiers. Returns True if well done, False else
 
@@ -3463,7 +3463,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SendAll(self, *args)
 
-    def SendSelected(self, *args):
+    def SendSelected(self, *args) -> "Interface_CheckIterator" :
         """
         * Sends a part of a model into one file. Model is gotten from <G>, the part is defined in <iter>. Remaining data are managed and can be later be worked on. Returns True if well done, False else
 
@@ -3482,7 +3482,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SendSelected(self, *args)
 
-    def CopiedRemaining(self, *args):
+    def CopiedRemaining(self, *args) -> "void" :
         """
         * Produces a Model copied from the Remaining List as <newmod> <newmod> is a Null Handle if this list is empty <WL> performs the copy by using <TC> <TC> is assumed to have been defined with the starting model same as defined by <G>.
 
@@ -3499,7 +3499,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_CopiedRemaining(self, *args)
 
-    def SetRemaining(self, *args):
+    def SetRemaining(self, *args) -> "Standard_Boolean" :
         """
         * Updates Graph status for remaining data, for each entity : - Entities just Sent to file or Copied (by CopiedRemaining) have their status set to 1 - the other keep their former status (1 for Send/Copied, 0 for Remaining) These status are computed by Copying/Sending/CopiedRemaining Then, SetRemaining updates graph status, and mustr be called just after one of these method has been called Returns True if done, False if remaining info if not in phase which the Graph (not same counts of items)
 
@@ -3510,7 +3510,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SetRemaining(self, *args)
 
-    def NbFiles(self, *args):
+    def NbFiles(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Files produced, i.e. the count of Models memorized (produced by the mmethod Copy) with their file names
 
@@ -3519,7 +3519,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_NbFiles(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the File Name for a file given its rank It is empty after a call to ClearFile on same <num>
 
@@ -3530,7 +3530,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_FileName(self, *args)
 
-    def FileModel(self, *args):
+    def FileModel(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns the content of a file before sending, under the form of an InterfaceModel, given its rank
 
@@ -3541,7 +3541,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_FileModel(self, *args)
 
-    def AppliedModifiers(self, *args):
+    def AppliedModifiers(self, *args) -> "Handle_IFSelect_AppliedModifiers" :
         """
         * Returns the list of File Modifiers to be applied on a file when it will be sent, as computed by CopiedModel : If it is a null handle, no File Modifier has to be applied.
 
@@ -3552,7 +3552,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_AppliedModifiers(self, *args)
 
-    def BeginSentFiles(self, *args):
+    def BeginSentFiles(self, *args) -> "void" :
         """
         * Begins a sequence of recording the really sent files <sho> : the default file numbering is cleared If <record> is False, clears the list and stops recording If <record> is True, clears the list and commands recording Creation time corresponds to 'stop recording'
 
@@ -3565,7 +3565,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_BeginSentFiles(self, *args)
 
-    def AddSentFile(self, *args):
+    def AddSentFile(self, *args) -> "void" :
         """
         * Adds the name of a just sent file, if BeginSentFiles has commanded recording; else does nothing It is called by methods SendCopied Sending
 
@@ -3576,7 +3576,7 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_AddSentFile(self, *args)
 
-    def SentFiles(self, *args):
+    def SentFiles(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the list of recorded names of sent files. Can be empty (if no file has been sent). Returns a Null Handle if BeginSentFiles has stopped recording.
 
@@ -3585,11 +3585,11 @@ class IFSelect_ModelCopier(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ModelCopier_SentFiles(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ModelCopier self)"""
         return _IFSelect.IFSelect_ModelCopier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ModelCopier" :
         """GetHandle(IFSelect_ModelCopier self) -> Handle_IFSelect_ModelCopier"""
         return _IFSelect.IFSelect_ModelCopier_GetHandle(self)
 
@@ -3648,7 +3648,7 @@ Handle_IFSelect_ModelCopier._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_ModelCopier_swigregister = _IFSelect.Handle_IFSelect_ModelCopier_swigregister
 Handle_IFSelect_ModelCopier_swigregister(Handle_IFSelect_ModelCopier)
 
-def Handle_IFSelect_ModelCopier_DownCast(*args):
+def Handle_IFSelect_ModelCopier_DownCast(*args) -> "Handle_IFSelect_ModelCopier const" :
   return _IFSelect.Handle_IFSelect_ModelCopier_DownCast(*args)
 Handle_IFSelect_ModelCopier_DownCast = _IFSelect.Handle_IFSelect_ModelCopier_DownCast
 
@@ -3665,7 +3665,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_PacketList_swiginit(self,_IFSelect.new_IFSelect_PacketList(*args))
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         * Sets a name to a packet list : this makes easier a general routine to print it. Default is 'Packets'
 
@@ -3676,7 +3676,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_SetName(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "char *" :
         """
         * Returns the recorded name for a packet list
 
@@ -3685,7 +3685,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_Name(self, *args)
 
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns the Model of reference
 
@@ -3694,7 +3694,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_Model(self, *args)
 
-    def AddPacket(self, *args):
+    def AddPacket(self, *args) -> "void" :
         """
         * Declares a new Packet, ready to be filled The entities to be added will be added to this Packet
 
@@ -3703,7 +3703,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_AddPacket(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds an entity from the Model into the current packet for Add
 
@@ -3714,7 +3714,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_Add(self, *args)
 
-    def AddList(self, *args):
+    def AddList(self, *args) -> "void" :
         """
         * Adds an list of entities into the current packet for Add
 
@@ -3725,7 +3725,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_AddList(self, *args)
 
-    def NbPackets(self, *args):
+    def NbPackets(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of non-empty packets
 
@@ -3734,7 +3734,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_NbPackets(self, *args)
 
-    def NbEntities(self, *args):
+    def NbEntities(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of entities in a Packet given its rank, or 0
 
@@ -3745,7 +3745,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_NbEntities(self, *args)
 
-    def Entities(self, *args):
+    def Entities(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the content of a Packet given its rank Null Handle if <numpack> is out of range
 
@@ -3756,7 +3756,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_Entities(self, *args)
 
-    def HighestDuplicationCount(self, *args):
+    def HighestDuplicationCount(self, *args) -> "Standard_Integer" :
         """
         * Returns the highest number of packets which know a same entity For no duplication, should be one
 
@@ -3765,7 +3765,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_HighestDuplicationCount(self, *args)
 
-    def NbDuplicated(self, *args):
+    def NbDuplicated(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of entities duplicated : <count> times, if <andmore> is False, or <count> or more times, if <andmore> is True See Duplicated for more details
 
@@ -3778,7 +3778,7 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_NbDuplicated(self, *args)
 
-    def Duplicated(self, *args):
+    def Duplicated(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns a list of entities duplicated : <count> times, if <andmore> is False, or <count> or more times, if <andmore> is True Hence, count=2 & andmore=True gives all duplicated entities count=1 gives non-duplicated entities (in only one packet) count=0 gives remaining entities (in no packet at all)
 
@@ -3791,11 +3791,11 @@ class IFSelect_PacketList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_PacketList_Duplicated(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_PacketList self)"""
         return _IFSelect.IFSelect_PacketList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_PacketList" :
         """GetHandle(IFSelect_PacketList self) -> Handle_IFSelect_PacketList"""
         return _IFSelect.IFSelect_PacketList_GetHandle(self)
 
@@ -3845,7 +3845,7 @@ Handle_IFSelect_PacketList._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_PacketList_swigregister = _IFSelect.Handle_IFSelect_PacketList_swigregister
 Handle_IFSelect_PacketList_swigregister(Handle_IFSelect_PacketList)
 
-def Handle_IFSelect_PacketList_DownCast(*args):
+def Handle_IFSelect_PacketList_DownCast(*args) -> "Handle_IFSelect_PacketList const" :
   return _IFSelect.Handle_IFSelect_PacketList_DownCast(*args)
 Handle_IFSelect_PacketList_DownCast = _IFSelect.Handle_IFSelect_PacketList_DownCast
 
@@ -3853,7 +3853,7 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def RootResult(self, *args):
+    def RootResult(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of selected entities, computed from Input given as a Graph. Specific to each class of Selection Note that uniqueness of each entity is not required here This method can raise an exception as necessary
 
@@ -3864,7 +3864,7 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Selection_RootResult(self, *args)
 
-    def UniqueResult(self, *args):
+    def UniqueResult(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of selected entities, each of them beeing unique. Default definition works from RootResult. According HasUniqueResult, UniqueResult returns directly RootResult, or build a Unique Result from it with a Graph.
 
@@ -3875,7 +3875,7 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Selection_UniqueResult(self, *args)
 
-    def CompleteResult(self, *args):
+    def CompleteResult(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of entities involved by a Selection, i.e. UniqueResult plus the shared entities (directly or not)
 
@@ -3886,7 +3886,7 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Selection_CompleteResult(self, *args)
 
-    def FillIterator(self, *args):
+    def FillIterator(self, *args) -> "void" :
         """
         * Puts in an Iterator the Selections from which 'me' depends (there can be zero, or one, or a list). Specific to each class of Selection
 
@@ -3897,7 +3897,7 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Selection_FillIterator(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a text which defines the criterium applied by a Selection (can be used to be printed, displayed ...) Specific to each class
 
@@ -3906,11 +3906,11 @@ class IFSelect_Selection(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Selection_Label(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Selection self)"""
         return _IFSelect.IFSelect_Selection__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Selection" :
         """GetHandle(IFSelect_Selection self) -> Handle_IFSelect_Selection"""
         return _IFSelect.IFSelect_Selection_GetHandle(self)
 
@@ -3953,7 +3953,7 @@ Handle_IFSelect_Selection._kill_pointed = new_instancemethod(_IFSelect.Handle_IF
 Handle_IFSelect_Selection_swigregister = _IFSelect.Handle_IFSelect_Selection_swigregister
 Handle_IFSelect_Selection_swigregister(Handle_IFSelect_Selection)
 
-def Handle_IFSelect_Selection_DownCast(*args):
+def Handle_IFSelect_Selection_DownCast(*args) -> "Handle_IFSelect_Selection const" :
   return _IFSelect.Handle_IFSelect_Selection_DownCast(*args)
 Handle_IFSelect_Selection_DownCast = _IFSelect.Handle_IFSelect_Selection_DownCast
 
@@ -3974,7 +3974,7 @@ class IFSelect_SelectionIterator(object):
 
         """
         _IFSelect.IFSelect_SelectionIterator_swiginit(self,_IFSelect.new_IFSelect_SelectionIterator(*args))
-    def AddFromIter(self, *args):
+    def AddFromIter(self, *args) -> "void" :
         """
         * Adds to an iterator the content of another one (each selection is present only once in the result)
 
@@ -3985,7 +3985,7 @@ class IFSelect_SelectionIterator(object):
         """
         return _IFSelect.IFSelect_SelectionIterator_AddFromIter(self, *args)
 
-    def AddItem(self, *args):
+    def AddItem(self, *args) -> "void" :
         """
         * Adds a Selection to an iterator (if not yet noted)
 
@@ -3996,7 +3996,7 @@ class IFSelect_SelectionIterator(object):
         """
         return _IFSelect.IFSelect_SelectionIterator_AddItem(self, *args)
 
-    def AddList(self, *args):
+    def AddList(self, *args) -> "void" :
         """
         * Adds a list of Selections to an iterator (this list comes from the description of a Selection or a Dispatch, etc...)
 
@@ -4007,7 +4007,7 @@ class IFSelect_SelectionIterator(object):
         """
         return _IFSelect.IFSelect_SelectionIterator_AddList(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there are more Selections to get
 
@@ -4016,7 +4016,7 @@ class IFSelect_SelectionIterator(object):
         """
         return _IFSelect.IFSelect_SelectionIterator_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Sets iterator to the next item
 
@@ -4025,7 +4025,7 @@ class IFSelect_SelectionIterator(object):
         """
         return _IFSelect.IFSelect_SelectionIterator_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Selection const &" :
         """
         * Returns the current Selction beeing iterated Error if count of Selection has been passed
 
@@ -4067,18 +4067,18 @@ class IFSelect_SequenceNodeOfSequenceOfAppliedModifiers(OCC.TCollection.TCollect
 
         """
         _IFSelect.IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_swiginit(self,_IFSelect.new_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_AppliedModifiers &" :
         """
         :rtype: Handle_IFSelect_AppliedModifiers
 
         """
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SequenceNodeOfSequenceOfAppliedModifiers self)"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfAppliedModifiers__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers" :
         """GetHandle(IFSelect_SequenceNodeOfSequenceOfAppliedModifiers self) -> Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_GetHandle(self)
 
@@ -4117,7 +4117,7 @@ Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers._kill_pointed = new_ins
 Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_swigregister = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_swigregister
 Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_swigregister(Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers)
 
-def Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_DownCast(*args):
+def Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_DownCast(*args) -> "Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers const" :
   return _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_DownCast(*args)
 Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_DownCast = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfAppliedModifiers_DownCast
 
@@ -4136,18 +4136,18 @@ class IFSelect_SequenceNodeOfSequenceOfGeneralModifier(OCC.TCollection.TCollecti
 
         """
         _IFSelect.IFSelect_SequenceNodeOfSequenceOfGeneralModifier_swiginit(self,_IFSelect.new_IFSelect_SequenceNodeOfSequenceOfGeneralModifier(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_GeneralModifier &" :
         """
         :rtype: Handle_IFSelect_GeneralModifier
 
         """
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfGeneralModifier_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SequenceNodeOfSequenceOfGeneralModifier self)"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfGeneralModifier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier" :
         """GetHandle(IFSelect_SequenceNodeOfSequenceOfGeneralModifier self) -> Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfGeneralModifier_GetHandle(self)
 
@@ -4186,7 +4186,7 @@ Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier._kill_pointed = new_inst
 Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_swigregister = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_swigregister
 Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_swigregister(Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier)
 
-def Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_DownCast(*args):
+def Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_DownCast(*args) -> "Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier const" :
   return _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_DownCast(*args)
 Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_DownCast = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfGeneralModifier_DownCast
 
@@ -4205,18 +4205,18 @@ class IFSelect_SequenceNodeOfSequenceOfInterfaceModel(OCC.TCollection.TCollectio
 
         """
         _IFSelect.IFSelect_SequenceNodeOfSequenceOfInterfaceModel_swiginit(self,_IFSelect.new_IFSelect_SequenceNodeOfSequenceOfInterfaceModel(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Interface_InterfaceModel &" :
         """
         :rtype: Handle_Interface_InterfaceModel
 
         """
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfInterfaceModel_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SequenceNodeOfSequenceOfInterfaceModel self)"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfInterfaceModel__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel" :
         """GetHandle(IFSelect_SequenceNodeOfSequenceOfInterfaceModel self) -> Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel"""
         return _IFSelect.IFSelect_SequenceNodeOfSequenceOfInterfaceModel_GetHandle(self)
 
@@ -4255,7 +4255,7 @@ Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel._kill_pointed = new_insta
 Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_swigregister = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_swigregister
 Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_swigregister(Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel)
 
-def Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_DownCast(*args):
+def Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_DownCast(*args) -> "Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel const" :
   return _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_DownCast(*args)
 Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_DownCast = _IFSelect.Handle_IFSelect_SequenceNodeOfSequenceOfInterfaceModel_DownCast
 
@@ -4274,18 +4274,18 @@ class IFSelect_SequenceNodeOfTSeqOfDispatch(OCC.TCollection.TCollection_SeqNode)
 
         """
         _IFSelect.IFSelect_SequenceNodeOfTSeqOfDispatch_swiginit(self,_IFSelect.new_IFSelect_SequenceNodeOfTSeqOfDispatch(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Dispatch &" :
         """
         :rtype: Handle_IFSelect_Dispatch
 
         """
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfDispatch_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SequenceNodeOfTSeqOfDispatch self)"""
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfDispatch__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SequenceNodeOfTSeqOfDispatch" :
         """GetHandle(IFSelect_SequenceNodeOfTSeqOfDispatch self) -> Handle_IFSelect_SequenceNodeOfTSeqOfDispatch"""
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfDispatch_GetHandle(self)
 
@@ -4324,7 +4324,7 @@ Handle_IFSelect_SequenceNodeOfTSeqOfDispatch._kill_pointed = new_instancemethod(
 Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_swigregister = _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_swigregister
 Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_swigregister(Handle_IFSelect_SequenceNodeOfTSeqOfDispatch)
 
-def Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_DownCast(*args):
+def Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_DownCast(*args) -> "Handle_IFSelect_SequenceNodeOfTSeqOfDispatch const" :
   return _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_DownCast(*args)
 Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_DownCast = _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfDispatch_DownCast
 
@@ -4343,18 +4343,18 @@ class IFSelect_SequenceNodeOfTSeqOfSelection(OCC.TCollection.TCollection_SeqNode
 
         """
         _IFSelect.IFSelect_SequenceNodeOfTSeqOfSelection_swiginit(self,_IFSelect.new_IFSelect_SequenceNodeOfTSeqOfSelection(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Selection &" :
         """
         :rtype: Handle_IFSelect_Selection
 
         """
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfSelection_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SequenceNodeOfTSeqOfSelection self)"""
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfSelection__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SequenceNodeOfTSeqOfSelection" :
         """GetHandle(IFSelect_SequenceNodeOfTSeqOfSelection self) -> Handle_IFSelect_SequenceNodeOfTSeqOfSelection"""
         return _IFSelect.IFSelect_SequenceNodeOfTSeqOfSelection_GetHandle(self)
 
@@ -4393,7 +4393,7 @@ Handle_IFSelect_SequenceNodeOfTSeqOfSelection._kill_pointed = new_instancemethod
 Handle_IFSelect_SequenceNodeOfTSeqOfSelection_swigregister = _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfSelection_swigregister
 Handle_IFSelect_SequenceNodeOfTSeqOfSelection_swigregister(Handle_IFSelect_SequenceNodeOfTSeqOfSelection)
 
-def Handle_IFSelect_SequenceNodeOfTSeqOfSelection_DownCast(*args):
+def Handle_IFSelect_SequenceNodeOfTSeqOfSelection_DownCast(*args) -> "Handle_IFSelect_SequenceNodeOfTSeqOfSelection const" :
   return _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfSelection_DownCast(*args)
 Handle_IFSelect_SequenceNodeOfTSeqOfSelection_DownCast = _IFSelect.Handle_IFSelect_SequenceNodeOfTSeqOfSelection_DownCast
 
@@ -4406,14 +4406,14 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
 
         """
         _IFSelect.IFSelect_SequenceOfAppliedModifiers_swiginit(self,_IFSelect.new_IFSelect_SequenceOfAppliedModifiers(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IFSelect_SequenceOfAppliedModifiers const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfAppliedModifiers &
@@ -4422,7 +4422,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IFSelect_SequenceOfAppliedModifiers const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfAppliedModifiers &
@@ -4431,7 +4431,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_AppliedModifiers &
@@ -4444,7 +4444,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_AppliedModifiers &
@@ -4457,7 +4457,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4474,7 +4474,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4491,21 +4491,21 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_IFSelect_AppliedModifiers const &" :
         """
         :rtype: Handle_IFSelect_AppliedModifiers
 
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_IFSelect_AppliedModifiers const &" :
         """
         :rtype: Handle_IFSelect_AppliedModifiers
 
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4516,7 +4516,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_AppliedModifiers const &" :
         """
         :param Index:
         :type Index: int
@@ -4525,7 +4525,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4536,7 +4536,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_IFSelect_AppliedModifiers &" :
         """
         :param Index:
         :type Index: int
@@ -4545,7 +4545,7 @@ class IFSelect_SequenceOfAppliedModifiers(OCC.TCollection.TCollection_BaseSequen
         """
         return _IFSelect.IFSelect_SequenceOfAppliedModifiers_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4595,14 +4595,14 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
 
         """
         _IFSelect.IFSelect_SequenceOfGeneralModifier_swiginit(self,_IFSelect.new_IFSelect_SequenceOfGeneralModifier(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IFSelect_SequenceOfGeneralModifier const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfGeneralModifier &
@@ -4611,7 +4611,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IFSelect_SequenceOfGeneralModifier const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfGeneralModifier &
@@ -4620,7 +4620,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_GeneralModifier &
@@ -4633,7 +4633,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_GeneralModifier &
@@ -4646,7 +4646,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4663,7 +4663,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4680,21 +4680,21 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_IFSelect_GeneralModifier const &" :
         """
         :rtype: Handle_IFSelect_GeneralModifier
 
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_IFSelect_GeneralModifier const &" :
         """
         :rtype: Handle_IFSelect_GeneralModifier
 
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4705,7 +4705,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_GeneralModifier const &" :
         """
         :param Index:
         :type Index: int
@@ -4714,7 +4714,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4725,7 +4725,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_IFSelect_GeneralModifier &" :
         """
         :param Index:
         :type Index: int
@@ -4734,7 +4734,7 @@ class IFSelect_SequenceOfGeneralModifier(OCC.TCollection.TCollection_BaseSequenc
         """
         return _IFSelect.IFSelect_SequenceOfGeneralModifier_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4784,14 +4784,14 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
 
         """
         _IFSelect.IFSelect_SequenceOfInterfaceModel_swiginit(self,_IFSelect.new_IFSelect_SequenceOfInterfaceModel(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IFSelect_SequenceOfInterfaceModel const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfInterfaceModel &
@@ -4800,7 +4800,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IFSelect_SequenceOfInterfaceModel const &" :
         """
         :param Other:
         :type Other: IFSelect_SequenceOfInterfaceModel &
@@ -4809,7 +4809,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Interface_InterfaceModel &
@@ -4822,7 +4822,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Interface_InterfaceModel &
@@ -4835,7 +4835,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4852,7 +4852,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4869,21 +4869,21 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Interface_InterfaceModel const &" :
         """
         :rtype: Handle_Interface_InterfaceModel
 
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Interface_InterfaceModel const &" :
         """
         :rtype: Handle_Interface_InterfaceModel
 
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4894,7 +4894,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Interface_InterfaceModel const &" :
         """
         :param Index:
         :type Index: int
@@ -4903,7 +4903,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4914,7 +4914,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Interface_InterfaceModel &" :
         """
         :param Index:
         :type Index: int
@@ -4923,7 +4923,7 @@ class IFSelect_SequenceOfInterfaceModel(OCC.TCollection.TCollection_BaseSequence
         """
         return _IFSelect.IFSelect_SequenceOfInterfaceModel_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4968,7 +4968,7 @@ class IFSelect_SessionDumper(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def First(*args):
+    def First(*args) -> "Handle_IFSelect_SessionDumper" :
         """
         * Returns the First item of the Library of Dumper. The Next ones are then obtained by Next on the returned items
 
@@ -4978,7 +4978,7 @@ class IFSelect_SessionDumper(OCC.MMgt.MMgt_TShared):
         return _IFSelect.IFSelect_SessionDumper_First(*args)
 
     First = staticmethod(First)
-    def Next(self, *args):
+    def Next(self, *args) -> "Handle_IFSelect_SessionDumper" :
         """
         * Returns the Next SesionDumper in the Library. Returns a Null Handle at the End.
 
@@ -4987,7 +4987,7 @@ class IFSelect_SessionDumper(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SessionDumper_Next(self, *args)
 
-    def WriteOwn(self, *args):
+    def WriteOwn(self, *args) -> "Standard_Boolean" :
         """
         * Writes the Own Parameters of a given Item, if it forecast to manage its Type. Returns True if it has recognized the Type of the Item (in this case, it is assumed to have written the Own Parameters if there are some), False else : in that case, SessionFile will try another SessionDumper in the Library. WriteOwn can use these methods from SessionFile : SendVoid, SendItem, SendText, and if necessary, WorkSession.
 
@@ -5000,7 +5000,7 @@ class IFSelect_SessionDumper(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SessionDumper_WriteOwn(self, *args)
 
-    def ReadOwn(self, *args):
+    def ReadOwn(self, *args) -> "Standard_Boolean" :
         """
         * Recognizes a Type (given as <type>) then Creates an Item of this Type with the Own Parameter, as required. Returns True if it has recognized the Type (in this case, it is assumed to have created the Item, returned as <item>), False else : in that case, SessionFile will try another SessionDumper in the Library. ReadOwn can use these methods from SessionFile to access Own Parameters : NbOwnParams, IsVoid, IsText, TextValue, ItemValue
 
@@ -5015,11 +5015,11 @@ class IFSelect_SessionDumper(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SessionDumper_ReadOwn(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SessionDumper self)"""
         return _IFSelect.IFSelect_SessionDumper__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SessionDumper" :
         """GetHandle(IFSelect_SessionDumper self) -> Handle_IFSelect_SessionDumper"""
         return _IFSelect.IFSelect_SessionDumper_GetHandle(self)
 
@@ -5039,7 +5039,7 @@ IFSelect_SessionDumper.GetHandle = new_instancemethod(_IFSelect.IFSelect_Session
 IFSelect_SessionDumper_swigregister = _IFSelect.IFSelect_SessionDumper_swigregister
 IFSelect_SessionDumper_swigregister(IFSelect_SessionDumper)
 
-def IFSelect_SessionDumper_First(*args):
+def IFSelect_SessionDumper_First(*args) -> "Handle_IFSelect_SessionDumper" :
   """
     * Returns the First item of the Library of Dumper. The Next ones are then obtained by Next on the returned items
 
@@ -5069,7 +5069,7 @@ Handle_IFSelect_SessionDumper._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SessionDumper_swigregister = _IFSelect.Handle_IFSelect_SessionDumper_swigregister
 Handle_IFSelect_SessionDumper_swigregister(Handle_IFSelect_SessionDumper)
 
-def Handle_IFSelect_SessionDumper_DownCast(*args):
+def Handle_IFSelect_SessionDumper_DownCast(*args) -> "Handle_IFSelect_SessionDumper const" :
   return _IFSelect.Handle_IFSelect_SessionDumper_DownCast(*args)
 Handle_IFSelect_SessionDumper_DownCast = _IFSelect.Handle_IFSelect_SessionDumper_DownCast
 
@@ -5094,7 +5094,7 @@ class IFSelect_SessionFile(object):
 
         """
         _IFSelect.IFSelect_SessionFile_swiginit(self,_IFSelect.new_IFSelect_SessionFile(*args))
-    def ClearLines(self, *args):
+    def ClearLines(self, *args) -> "void" :
         """
         * Clears the lines recorded whatever for writing or for reading
 
@@ -5103,7 +5103,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ClearLines(self, *args)
 
-    def NbLines(self, *args):
+    def NbLines(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of recorded lines
 
@@ -5112,7 +5112,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_NbLines(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns a line given its rank in the list of recorded lines
 
@@ -5123,7 +5123,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_Line(self, *args)
 
-    def AddLine(self, *args):
+    def AddLine(self, *args) -> "void" :
         """
         * Adds a line to the list of recorded lines
 
@@ -5134,7 +5134,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_AddLine(self, *args)
 
-    def RemoveLastLine(self, *args):
+    def RemoveLastLine(self, *args) -> "void" :
         """
         * Removes the last line. Can be called recursively. Does nothing if the list is empty
 
@@ -5143,7 +5143,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_RemoveLastLine(self, *args)
 
-    def WriteFile(self, *args):
+    def WriteFile(self, *args) -> "Standard_Boolean" :
         """
         * Writes the recorded lines to a file named <name> then clears the list of lines. Returns False (with no clearing) if the file could not be created
 
@@ -5154,7 +5154,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WriteFile(self, *args)
 
-    def ReadFile(self, *args):
+    def ReadFile(self, *args) -> "Standard_Boolean" :
         """
         * Reads the recorded lines from a file named <name>, after having cleared the list (stops if RecognizeFile fails) Returns False (with no clearing) if the file could not be read
 
@@ -5165,7 +5165,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ReadFile(self, *args)
 
-    def RecognizeFile(self, *args):
+    def RecognizeFile(self, *args) -> "Standard_Boolean" :
         """
         * Recognizes the header line. returns True if OK, False else
 
@@ -5176,7 +5176,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_RecognizeFile(self, *args)
 
-    def Write(self, *args):
+    def Write(self, *args) -> "Standard_Integer" :
         """
         * Performs a Write Operation from a WorkSession to a File i.e. calls WriteSession then WriteEnd, and WriteFile Returned Value is : 0 for OK, -1 File could not be created,  >0 Error during Write (see WriteSession) IsDone can be called too (will return True for OK)
 
@@ -5187,7 +5187,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_Write(self, *args)
 
-    def Read(self, *args):
+    def Read(self, *args) -> "Standard_Integer" :
         """
         * Performs a Read Operation from a file to a WorkSession i.e. calls ReadFile, then ReadSession and ReadEnd Returned Value is : 0 for OK, -1 File could not be opened,  >0 Error during Read (see WriteSession) IsDone can be called too (will return True for OK)
 
@@ -5198,7 +5198,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_Read(self, *args)
 
-    def WriteSession(self, *args):
+    def WriteSession(self, *args) -> "Standard_Integer" :
         """
         * Prepares the Write operation from a WorkSession (IFSelect) to a File, i.e. fills the list of lines (the file itself remains to be written; or NbLines/Line may be called) Important Remark : this excludes the reading of the last line, which is performed by WriteEnd Returns 0 if OK, status > 0 in case of error
 
@@ -5207,7 +5207,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WriteSession(self, *args)
 
-    def WriteEnd(self, *args):
+    def WriteEnd(self, *args) -> "Standard_Integer" :
         """
         * Writes the trailing line. It is separate from WriteSession, in order to allow to redefine WriteSession without touching WriteEnd (WriteSession defines the body of the file) WriteEnd fills the list of lines. Returns a status of error, 0 if OK, >0 else
 
@@ -5216,7 +5216,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WriteEnd(self, *args)
 
-    def WriteLine(self, *args):
+    def WriteLine(self, *args) -> "void" :
         """
         * Writes a line to the File. If <follow> is given, it is added at the following of the line. A newline must be added for the end.
 
@@ -5229,7 +5229,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WriteLine(self, *args)
 
-    def WriteOwn(self, *args):
+    def WriteOwn(self, *args) -> "Standard_Boolean" :
         """
         * Writes the Parameters own to each type of Item. Uses the Library of SessionDumpers Returns True if Done, False if <item> could not be treated (hence it remains written with no Own Parameter)
 
@@ -5240,7 +5240,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WriteOwn(self, *args)
 
-    def ReadSession(self, *args):
+    def ReadSession(self, *args) -> "Standard_Integer" :
         """
         * Performs a Read Operation from a File to a WorkSession, i.e. reads the list of line (which must have already been loaded, by ReadFile or by calls to AddLine) Important Remark : this excludes the reading of the last line, which is performed by ReadEnd Returns 0 for OK, >0 status for Read Error (not a suitable File, or WorkSession given as Immutable at Creation Time) IsDone can be called too (will return True for OK)
 
@@ -5249,7 +5249,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ReadSession(self, *args)
 
-    def ReadEnd(self, *args):
+    def ReadEnd(self, *args) -> "Standard_Integer" :
         """
         * Reads the end of a file (its last line). Returns 0 if OK, status >0 in case of error (not a suitable end line).
 
@@ -5258,7 +5258,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ReadEnd(self, *args)
 
-    def ReadLine(self, *args):
+    def ReadLine(self, *args) -> "Standard_Boolean" :
         """
         * Reads a Line and splits it into a set of alphanumeric items, which can then be queried by NbParams/ParamValue ...
 
@@ -5267,7 +5267,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ReadLine(self, *args)
 
-    def SplitLine(self, *args):
+    def SplitLine(self, *args) -> "void" :
         """
         * Internal routine which processes a line into words and prepares its exploration
 
@@ -5278,7 +5278,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SplitLine(self, *args)
 
-    def ReadOwn(self, *args):
+    def ReadOwn(self, *args) -> "Standard_Boolean" :
         """
         * Tries to Read an Item, by calling the Library of Dumpers Sets the list of parameters of the line to be read from the first own one
 
@@ -5289,7 +5289,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ReadOwn(self, *args)
 
-    def AddItem(self, *args):
+    def AddItem(self, *args) -> "void" :
         """
         * Adds an Item to the WorkSession, taken as Name the first item of the read Line. If this Name is not a Name but a Number or if this Name is already recorded in the WorkSession, it adds the Item but with no Name. Then the Name is recorded in order to be used by the method ItemValue <active> commands to make <item> active or not in the session
 
@@ -5302,7 +5302,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_AddItem(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the last Read or Write operation has been corectly performed. ELse returns False.
 
@@ -5311,7 +5311,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_IsDone(self, *args)
 
-    def WorkSession(self, *args):
+    def WorkSession(self, *args) -> "Handle_IFSelect_WorkSession" :
         """
         * Returns the WorkSession on which a SessionFile works. Remark that it is returned as Immutable.
 
@@ -5320,7 +5320,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_WorkSession(self, *args)
 
-    def NewItem(self, *args):
+    def NewItem(self, *args) -> "void" :
         """
         * At beginning of writing an Item, writes its basics : - either its name in the session if it has one - or its relative number of item in the file, else (preceeded by a '_') - then, its Dynamic Type (in the sense of cdl : pk_class) This basic description can be followed by the parameters which are used in the definition of the item.
 
@@ -5333,7 +5333,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_NewItem(self, *args)
 
-    def SetOwn(self, *args):
+    def SetOwn(self, *args) -> "void" :
         """
         * Sets Parameters to be sent as Own if <mode> is True (their Name or Number or Void Mark or Text Value is preceeded by a Column sign ':') else they are sent normally Hence, the Own Parameter are clearly identified in the File
 
@@ -5344,7 +5344,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SetOwn(self, *args)
 
-    def SendVoid(self, *args):
+    def SendVoid(self, *args) -> "void" :
         """
         * During a Write action, commands to send a Void Parameter i.e. a Parameter which is present but undefined Its form will be the dollar sign : $
 
@@ -5353,7 +5353,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SendVoid(self, *args)
 
-    def SendItem(self, *args):
+    def SendItem(self, *args) -> "void" :
         """
         * During a Write action, commands to send the identification of a Parameter : if it is Null (undefined) it is send as Void ($) if it is Named in the WorkSession, its Name is sent preceeded by ':', else a relative Ident Number is sent preceeded by '#' (relative to the present Write, i.e. starting at one, without skip, and counted part from Named Items)
 
@@ -5364,7 +5364,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SendItem(self, *args)
 
-    def SendText(self, *args):
+    def SendText(self, *args) -> "void" :
         """
         * During a Write action, commands to send a Text without interpretation. It will be sent as well
 
@@ -5375,7 +5375,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SendText(self, *args)
 
-    def SetLastGeneral(self, *args):
+    def SetLastGeneral(self, *args) -> "void" :
         """
         * Sets the rank of Last General Parameter to a new value. It is followed by the Fist Own Parameter of the item. Used by SessionFile after reading general parameters.
 
@@ -5386,7 +5386,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_SetLastGeneral(self, *args)
 
-    def NbParams(self, *args):
+    def NbParams(self, *args) -> "Standard_Integer" :
         """
         * During a Read operation, SessionFile processes sequencially the Items to read. For each one, it gives access to the list of its Parameters : they were defined by calls to SendVoid/SendParam/SendText during Writing the File. NbParams returns the count of Parameters for the line currently read.
 
@@ -5395,7 +5395,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_NbParams(self, *args)
 
-    def IsVoid(self, *args):
+    def IsVoid(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Parameter, given its rank in the Own List (see NbOwnParams), is Void. Returns also True if <num> is out of range (undefined parameters)
 
@@ -5406,7 +5406,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_IsVoid(self, *args)
 
-    def IsText(self, *args):
+    def IsText(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Parameter, in the Own List (see NbOwnParams) is a Text (between '...'). Else it is an Item (Parameter, Selection, Dispatch ...), which can be Void.
 
@@ -5417,7 +5417,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_IsText(self, *args)
 
-    def ParamValue(self, *args):
+    def ParamValue(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns a Parameter (alphanumeric item of a line) as it has been read
 
@@ -5428,7 +5428,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ParamValue(self, *args)
 
-    def TextValue(self, *args):
+    def TextValue(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the content of a Text Parameter (without the quotes). Returns an empty string if the Parameter is not a Text.
 
@@ -5439,7 +5439,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_TextValue(self, *args)
 
-    def ItemValue(self, *args):
+    def ItemValue(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns a Parameter as an Item. Returns a Null Handle if the Parameter is a Text, or if it is defined as Void
 
@@ -5450,7 +5450,7 @@ class IFSelect_SessionFile(object):
         """
         return _IFSelect.IFSelect_SessionFile_ItemValue(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         * Specific Destructor (closes the File if not yet done)
 
@@ -5517,7 +5517,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_ShareOut_swiginit(self,_IFSelect.new_IFSelect_ShareOut(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Removes in one operation all the Dispatches with their Idents Also clears all informations about Names, and all Results but naming informations which are : - kept if <onlydisp> is True. - cleared if <onlydisp> is False (complete clearing) If <onlydisp> is True, that's all. Else, clears also Modifiers
 
@@ -5528,7 +5528,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_Clear(self, *args)
 
-    def ClearResult(self, *args):
+    def ClearResult(self, *args) -> "void" :
         """
         * Clears all data produced (apart from Dispatches, etc...) if <alsoname> is True, all is cleared. Else, informations about produced Names are kept (to maintain unicity of naming across clearings)
 
@@ -5539,7 +5539,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_ClearResult(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         * Removes an item, which can be, either a Dispatch (removed from the list of Dispatches), or a GeneralModifier (removed from the list of Model Modifiers or from the list of File Modifiers according to its type). Returns True if done, False if has not been found or if it is neither a Dispatch, nor a Modifier.
 
@@ -5550,7 +5550,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_RemoveItem(self, *args)
 
-    def LastRun(self, *args):
+    def LastRun(self, *args) -> "Standard_Integer" :
         """
         * Returns the rank of last run item (ClearResult resets it to 0)
 
@@ -5559,7 +5559,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_LastRun(self, *args)
 
-    def SetLastRun(self, *args):
+    def SetLastRun(self, *args) -> "void" :
         """
         * Records a new alue for the rank of last run item
 
@@ -5570,7 +5570,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_SetLastRun(self, *args)
 
-    def NbDispatches(self, *args):
+    def NbDispatches(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Dispatches
 
@@ -5579,7 +5579,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_NbDispatches(self, *args)
 
-    def DispatchRank(self, *args):
+    def DispatchRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the Rank of a Dispatch, given its Value (Handle). Returns 0 if the Dispatch is unknown in the ShareOut
 
@@ -5590,7 +5590,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_DispatchRank(self, *args)
 
-    def Dispatch(self, *args):
+    def Dispatch(self, *args) -> "Handle_IFSelect_Dispatch const &" :
         """
         * Returns a Dispatch, given its rank in the list
 
@@ -5601,7 +5601,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_Dispatch(self, *args)
 
-    def AddDispatch(self, *args):
+    def AddDispatch(self, *args) -> "void" :
         """
         * Adds a Dispatch to the list
 
@@ -5612,7 +5612,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_AddDispatch(self, *args)
 
-    def RemoveDispatch(self, *args):
+    def RemoveDispatch(self, *args) -> "Standard_Boolean" :
         """
         * Removes a Dispatch, given its rank in the list Returns True if done, False if rank is not between (LastRun + 1) and (NbDispatches)
 
@@ -5623,7 +5623,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_RemoveDispatch(self, *args)
 
-    def AddModifier(self, *args):
+    def AddModifier(self, *args) -> "void" :
         """
         * Sets a Modifier to be applied on all Dispatches to be run If <modifier> is a ModelModifier, adds it to the list of Model Modifiers; else to the list of File Modifiers By default (atnum = 0) at the end of the list, else at <atnum> Each Modifier is used, after each copy of a packet of Entities into a Model : its criteria are checked and if they are OK, the method Perform of this Modifier is run.
 
@@ -5646,7 +5646,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_AddModifier(self, *args)
 
-    def AddModif(self, *args):
+    def AddModif(self, *args) -> "void" :
         """
         * Adds a Modifier to the list of Modifiers : Model Modifiers if <formodel> is True, File Modifiers else (internal).
 
@@ -5661,7 +5661,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_AddModif(self, *args)
 
-    def NbModifiers(self, *args):
+    def NbModifiers(self, *args) -> "Standard_Integer" :
         """
         * Returns count of Modifiers (which apply to complete Models) : Model Modifiers if <formodel> is True, File Modifiers else
 
@@ -5672,7 +5672,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_NbModifiers(self, *args)
 
-    def GeneralModifier(self, *args):
+    def GeneralModifier(self, *args) -> "Handle_IFSelect_GeneralModifier" :
         """
         * Returns a Modifier of the list, given its rank : Model Modifiers if <formodel> is True, File Modifiers else
 
@@ -5685,7 +5685,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_GeneralModifier(self, *args)
 
-    def ModelModifier(self, *args):
+    def ModelModifier(self, *args) -> "Handle_IFSelect_Modifier" :
         """
         * Returns a Modifier of the list of Model Modifiers, duely casted
 
@@ -5696,7 +5696,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_ModelModifier(self, *args)
 
-    def ModifierRank(self, *args):
+    def ModifierRank(self, *args) -> "Standard_Integer" :
         """
         * Gives the rank of a Modifier in the list, 0 if not in the list Model Modifiers if <modifier> is kind of ModelModifer, File Modifiers else
 
@@ -5707,7 +5707,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_ModifierRank(self, *args)
 
-    def RemoveModifier(self, *args):
+    def RemoveModifier(self, *args) -> "Standard_Boolean" :
         """
         * Removes a Modifier, given it rank in the list : Model Modifiers if <formodel> is True, File Modifiers else Returns True if done, False if <num> is out of range
 
@@ -5720,7 +5720,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_RemoveModifier(self, *args)
 
-    def ChangeModifierRank(self, *args):
+    def ChangeModifierRank(self, *args) -> "Standard_Boolean" :
         """
         * Changes the rank of a modifier in the list : Model Modifiers if <formodel> is True, File Modifiers else from <before> to <after> Returns True if done, False else (before or after out of range)
 
@@ -5735,7 +5735,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_ChangeModifierRank(self, *args)
 
-    def SetRootName(self, *args):
+    def SetRootName(self, *args) -> "Standard_Boolean" :
         """
         * Attaches a Root Name to a Dispatch given its rank, as an HAsciiString (standard form). A Null Handle resets this name. Returns True if OK, False if this Name is already attached, for a Dispatch or for Default, or <num> out of range
 
@@ -5748,7 +5748,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_SetRootName(self, *args)
 
-    def HasRootName(self, *args):
+    def HasRootName(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Dispatch of rank <num> has an attached Root Name. False else, or if num is out of range
 
@@ -5759,7 +5759,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_HasRootName(self, *args)
 
-    def RootName(self, *args):
+    def RootName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the Root bound to a Dispatch, given its rank Returns a Null Handle if not defined
 
@@ -5770,7 +5770,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_RootName(self, *args)
 
-    def RootNumber(self, *args):
+    def RootNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns an integer value about a given root name : - positive : it's the rank of the Dispatch which has this name - null : this root name is unknown - negative (-1) : this root name is the default root name
 
@@ -5781,7 +5781,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_RootNumber(self, *args)
 
-    def SetPrefix(self, *args):
+    def SetPrefix(self, *args) -> "void" :
         """
         * Defines or Changes the general Prefix (which is prepended to complete file name generated). If this method is not call, Prefix remains empty
 
@@ -5792,7 +5792,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_SetPrefix(self, *args)
 
-    def SetDefaultRootName(self, *args):
+    def SetDefaultRootName(self, *args) -> "Standard_Boolean" :
         """
         * Defines or Changes the Default Root Name to a new value (which is used for dispatches which have no attached root name). If this method is not called, DefaultRootName remains empty Returns True if OK, False if this Name is already attached, for a Dispatch or for Default
 
@@ -5803,7 +5803,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_SetDefaultRootName(self, *args)
 
-    def SetExtension(self, *args):
+    def SetExtension(self, *args) -> "void" :
         """
         * Defines or Changes the general Extension (which is appended to complete file name generated). If this method is not call, Extension remains empty
 
@@ -5814,7 +5814,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_SetExtension(self, *args)
 
-    def Prefix(self, *args):
+    def Prefix(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the general Prefix. Can be empty.
 
@@ -5823,7 +5823,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_Prefix(self, *args)
 
-    def DefaultRootName(self, *args):
+    def DefaultRootName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the Default Root Name. Can be empty.
 
@@ -5832,7 +5832,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_DefaultRootName(self, *args)
 
-    def Extension(self, *args):
+    def Extension(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the general Extension. Can be empty (not recommanded)
 
@@ -5841,7 +5841,7 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_Extension(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "TCollection_AsciiString" :
         """
         * Computes the complete file name for a Packet of a Dispatch, given Dispatch Number (Rank), Packet Number, and Count of Packets generated by this Dispatch (0 if unknown) File Name is made of following strings, concatenated : General Prefix, Root Name for Dispatch, Packet Suffix, and General Extension. If no Root Name is specified for a Dispatch, DefaultRootName is considered (and pnum is not used, but <thenbdefs> is incremented and used Error if no Root is defined for this <idnum>
 
@@ -5856,11 +5856,11 @@ class IFSelect_ShareOut(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_ShareOut_FileName(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ShareOut self)"""
         return _IFSelect.IFSelect_ShareOut__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ShareOut" :
         """GetHandle(IFSelect_ShareOut self) -> Handle_IFSelect_ShareOut"""
         return _IFSelect.IFSelect_ShareOut_GetHandle(self)
 
@@ -5927,7 +5927,7 @@ Handle_IFSelect_ShareOut._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_ShareOut_swigregister = _IFSelect.Handle_IFSelect_ShareOut_swigregister
 Handle_IFSelect_ShareOut_swigregister(Handle_IFSelect_ShareOut)
 
-def Handle_IFSelect_ShareOut_DownCast(*args):
+def Handle_IFSelect_ShareOut_DownCast(*args) -> "Handle_IFSelect_ShareOut const" :
   return _IFSelect.Handle_IFSelect_ShareOut_DownCast(*args)
 Handle_IFSelect_ShareOut_DownCast = _IFSelect.Handle_IFSelect_ShareOut_DownCast
 
@@ -5970,7 +5970,7 @@ class IFSelect_ShareOutResult(object):
 
         """
         _IFSelect.IFSelect_ShareOutResult_swiginit(self,_IFSelect.new_IFSelect_ShareOutResult(*args))
-    def ShareOut(self, *args):
+    def ShareOut(self, *args) -> "Handle_IFSelect_ShareOut" :
         """
         * Returns the ShareOut used to create the ShareOutResult if creation from a Dispatch, returns a Null Handle
 
@@ -5979,7 +5979,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_ShareOut(self, *args)
 
-    def Graph(self, *args):
+    def Graph(self, *args) -> "Interface_Graph const &" :
         """
         * Returns the Graph used to create theShareOutResult
 
@@ -5988,7 +5988,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Graph(self, *args)
 
-    def Reset(self, *args):
+    def Reset(self, *args) -> "void" :
         """
         * Erases computed data, in order to command a new Evaluation
 
@@ -5997,7 +5997,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Reset(self, *args)
 
-    def Evaluate(self, *args):
+    def Evaluate(self, *args) -> "void" :
         """
         * Evaluates the result of a ShareOut : determines Entities to be forgotten by the ShareOut, Entities to be transferred several times (duplicated), prepares an iteration on the packets to be produced Called the first time anyone question is asked, or after a call to Reset. Works by calling the method Prepare.
 
@@ -6006,7 +6006,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Evaluate(self, *args)
 
-    def Packets(self, *args):
+    def Packets(self, *args) -> "Handle_IFSelect_PacketList" :
         """
         * Returns the list of recorded Packets, under two modes : - <complete> = False, the strict definition of Packets, i.e. for each one, the Root Entities, to be explicitely sent - <complete> = True (Default), the completely evaluated list, i.e. which really gives the destination of each entity : this mode allows to evaluate duplications Remark that to send packets, iteration remains preferable (file names are managed)
 
@@ -6017,7 +6017,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Packets(self, *args)
 
-    def NbPackets(self, *args):
+    def NbPackets(self, *args) -> "Standard_Integer" :
         """
         * Returns the total count of produced non empty packets (in out : calls Evaluate as necessary)
 
@@ -6026,7 +6026,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_NbPackets(self, *args)
 
-    def Prepare(self, *args):
+    def Prepare(self, *args) -> "void" :
         """
         * Prepares the iteration on the packets This method is called by Evaluate, but can be called anytime The iteration consists in taking each Dispatch of the ShareOut beginning by the first one, compute its packets, then iterate on these packets. Once all these packets are iterated, the iteration passes to the next Dispatch, or stops. For a creation from a unique Dispatch, same but with only this Dispatch. Each packet can be listed, or really transferred (producing a derived Model, from which a file can be generated) Prepare sets the iteration to the first Dispatch, first Packet
 
@@ -6035,7 +6035,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Prepare(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if there is more packets in the current Dispatch, else if there is more Dispatch in the ShareOut
 
@@ -6044,7 +6044,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Passes to the next Packet in the current Dispatch, or if there is none, to the next Dispatch in the ShareOut
 
@@ -6053,7 +6053,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Next(self, *args)
 
-    def NextDispatch(self, *args):
+    def NextDispatch(self, *args) -> "void" :
         """
         * Passes to the next Dispatch, regardless about remaining packets
 
@@ -6062,7 +6062,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_NextDispatch(self, *args)
 
-    def Dispatch(self, *args):
+    def Dispatch(self, *args) -> "Handle_IFSelect_Dispatch" :
         """
         * Returns the current Dispatch
 
@@ -6071,7 +6071,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_Dispatch(self, *args)
 
-    def DispatchRank(self, *args):
+    def DispatchRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the Rank of the current Dispatch in the ShareOut Returns Zero if there is none (iteration finished)
 
@@ -6080,7 +6080,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_DispatchRank(self, *args)
 
-    def PacketsInDispatch(self, *args):
+    def PacketsInDispatch(self, *args) -> "void" :
         """
         * Returns Number (rank) of current Packet in current Dispatch, and total count of Packets in current Dispatch, as arguments
 
@@ -6093,7 +6093,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_PacketsInDispatch(self, *args)
 
-    def PacketRoot(self, *args):
+    def PacketRoot(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of Roots of the current Packet (never empty) (i.e. the Entities to be themselves asked for transfer) Error if there is none (iteration finished)
 
@@ -6102,7 +6102,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_PacketRoot(self, *args)
 
-    def PacketContent(self, *args):
+    def PacketContent(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the complete content of the current Packet (i.e. with shared entities, which will also be put in the file)
 
@@ -6111,7 +6111,7 @@ class IFSelect_ShareOutResult(object):
         """
         return _IFSelect.IFSelect_ShareOutResult_PacketContent(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the File Name which corresponds to current Packet (computed by ShareOut) If current Packet has no associated name (see ShareOut), the returned value is Null
 
@@ -6152,7 +6152,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetIntCase(self, *args):
+    def SetIntCase(self, *args) -> "void" :
         """
         * Sets the information data to tell 'integer cases' with possible min and max values To be called when creating
 
@@ -6169,7 +6169,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_SetIntCase(self, *args)
 
-    def IsIntCase(self, *args):
+    def IsIntCase(self, *args) -> "Standard_Boolean" :
         """
         * Tells if this Signature gives integer values and returns values from SetIntCase if True
 
@@ -6186,7 +6186,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_IsIntCase(self, *args)
 
-    def AddCase(self, *args):
+    def AddCase(self, *args) -> "void" :
         """
         * Adds a possible case To be called when creating, IF the list of possible cases for Value is known when starting For instance, for CDL types, rather do not fill this, but for a specific enumeration (such as a status), can be used
 
@@ -6197,7 +6197,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_AddCase(self, *args)
 
-    def CaseList(self, *args):
+    def CaseList(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
         """
         * Returns the predefined list of possible cases, filled by AddCase Null Handle if no predefined list (hence, to be counted) Useful to filter on really possible vase, for instance, or for a help
 
@@ -6206,7 +6206,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_CaseList(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "char *" :
         """
         * Returns an identification of the Signature (a word), given at initialization time Returns the Signature for a Transient object. It is specific of each sub-class of Signature. For a Null Handle, it should provide '' It can work with the model which contains the entity
 
@@ -6215,7 +6215,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_Name(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * The label of a Signature uses its name as follow : 'Signature : <name>'
 
@@ -6224,7 +6224,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_Label(self, *args)
 
-    def Matches(self, *args):
+    def Matches(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the value for <ent> in <model> matches a text, with a criterium <exact>. The default definition calls MatchValue Can be redefined
 
@@ -6241,7 +6241,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         """
         return _IFSelect.IFSelect_Signature_Matches(self, *args)
 
-    def MatchValue(*args):
+    def MatchValue(*args) -> "Standard_Boolean" :
         """
         * Default procedure to tell if a value <val> matches a text with a criterium <exact>. <exact> = True requires equality, else only contained (no reg-exp)
 
@@ -6257,7 +6257,7 @@ class IFSelect_Signature(OCC.Interface.Interface_SignType):
         return _IFSelect.IFSelect_Signature_MatchValue(*args)
 
     MatchValue = staticmethod(MatchValue)
-    def IntValue(*args):
+    def IntValue(*args) -> "char *" :
         """
         * This procedure converts an Integer to a CString It is a convenient way when the value of a signature has the form of a simple integer value The value is to be used immediately (one buffer only, no copy)
 
@@ -6289,7 +6289,7 @@ IFSelect_Signature.GetHandle = new_instancemethod(_IFSelect.IFSelect_Signature_G
 IFSelect_Signature_swigregister = _IFSelect.IFSelect_Signature_swigregister
 IFSelect_Signature_swigregister(IFSelect_Signature)
 
-def IFSelect_Signature_MatchValue(*args):
+def IFSelect_Signature_MatchValue(*args) -> "Standard_Boolean" :
   """
     * Default procedure to tell if a value <val> matches a text with a criterium <exact>. <exact> = True requires equality, else only contained (no reg-exp)
 
@@ -6304,7 +6304,7 @@ def IFSelect_Signature_MatchValue(*args):
     """
   return _IFSelect.IFSelect_Signature_MatchValue(*args)
 
-def IFSelect_Signature_IntValue(*args):
+def IFSelect_Signature_IntValue(*args) -> "char *" :
   """
     * This procedure converts an Integer to a CString It is a convenient way when the value of a signature has the form of a simple integer value The value is to be used immediately (one buffer only, no copy)
 
@@ -6336,7 +6336,7 @@ Handle_IFSelect_Signature._kill_pointed = new_instancemethod(_IFSelect.Handle_IF
 Handle_IFSelect_Signature_swigregister = _IFSelect.Handle_IFSelect_Signature_swigregister
 Handle_IFSelect_Signature_swigregister(Handle_IFSelect_Signature)
 
-def Handle_IFSelect_Signature_DownCast(*args):
+def Handle_IFSelect_Signature_DownCast(*args) -> "Handle_IFSelect_Signature const" :
   return _IFSelect.Handle_IFSelect_Signature_DownCast(*args)
 Handle_IFSelect_Signature_DownCast = _IFSelect.Handle_IFSelect_Signature_DownCast
 
@@ -6353,7 +6353,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_SignatureList_swiginit(self,_IFSelect.new_IFSelect_SignatureList(*args))
-    def SetList(self, *args):
+    def SetList(self, *args) -> "void" :
         """
         * Changes the record-list status. The list is not cleared but its use changes
 
@@ -6364,22 +6364,22 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_SetList(self, *args)
 
-    def GetModeSignOnly(self):
+    def GetModeSignOnly(self) -> "Standard_Boolean" :
         """GetModeSignOnly(IFSelect_SignatureList self) -> Standard_Boolean"""
         return _IFSelect.IFSelect_SignatureList_GetModeSignOnly(self)
 
-    def SetModeSignOnly(self, *args):
+    def SetModeSignOnly(self, *args) -> "void" :
         """SetModeSignOnly(IFSelect_SignatureList self, Standard_Boolean value)"""
         return _IFSelect.IFSelect_SignatureList_SetModeSignOnly(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _IFSelect.IFSelect_SignatureList_Clear(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds an entity with its signature, i.e. : - counts an item more for <sign> - if record-list status is set, records the entity Accepts a null entity (the signature is then for the global model). But if the string is empty, counts a Null item. If SignOnly Mode is set, this work is replaced by just setting LastValue
 
@@ -6392,7 +6392,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_Add(self, *args)
 
-    def LastValue(self, *args):
+    def LastValue(self, *args) -> "char *" :
         """
         * Returns the last value recorded by Add (only if SignMode set) Cleared by Clear or Init
 
@@ -6401,7 +6401,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_LastValue(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Aknowledges the list in once. Name identifies the Signature
 
@@ -6418,7 +6418,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_Init(self, *args)
 
-    def List(self, *args):
+    def List(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the list of signatures, as a sequence of strings (but without their respective counts). It is ordered. By default, for all the signatures. If <root> is given non empty, for the signatures which begin by <root>
 
@@ -6429,7 +6429,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_List(self, *args)
 
-    def HasEntities(self, *args):
+    def HasEntities(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the list of Entities is aknowledged, else the method Entities will always return a Null Handle
 
@@ -6438,7 +6438,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_HasEntities(self, *args)
 
-    def NbNulls(self, *args):
+    def NbNulls(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of null entities
 
@@ -6447,7 +6447,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_NbNulls(self, *args)
 
-    def NbTimes(self, *args):
+    def NbTimes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of times a signature was counted, 0 if it has not been recorded at all
 
@@ -6458,7 +6458,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_NbTimes(self, *args)
 
-    def Entities(self, *args):
+    def Entities(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Returns the list of entities attached to a signature It is empty if <sign> has not been recorded It is a Null Handle if the list of entities is not known
 
@@ -6469,7 +6469,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_Entities(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         * Defines a name for a SignatureList (used to print it)
 
@@ -6480,7 +6480,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_SetName(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "char *" :
         """
         * Returns the recorded Name. Remark : default is '...' (no SetName called)
 
@@ -6489,7 +6489,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_Name(self, *args)
 
-    def PrintCount(self, *args):
+    def PrintCount(self, *args) -> "void" :
         """
         * Prints the counts of items (not the list)
 
@@ -6500,7 +6500,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_PrintCount(self, *args)
 
-    def PrintList(self, *args):
+    def PrintList(self, *args) -> "void" :
         """
         * Prints the lists of items, if they are present (else, prints a message 'no list available') Uses <model> to determine for each entity to be listed, its number, and its specific identifier (by PrintLabel) <mod> gives a mode for printing : - CountByItem : just count (as PrintCount) - ShortByItem : minimum i.e. count plus 5 first entity numbers - ShortByItem(D) complete list of entity numbers (0: 'Global') - EntitiesByItem : list of (entity number/PrintLabel from the model) other modes are ignored
 
@@ -6515,7 +6515,7 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_PrintList(self, *args)
 
-    def PrintSum(self, *args):
+    def PrintSum(self, *args) -> "void" :
         """
         * Prints a summary Item which has the greatest count of entities For items which are numeric values : their count, maximum, minimum values, cumul, average
 
@@ -6526,11 +6526,11 @@ class IFSelect_SignatureList(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_SignatureList_PrintSum(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SignatureList self)"""
         return _IFSelect.IFSelect_SignatureList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SignatureList" :
         """GetHandle(IFSelect_SignatureList self) -> Handle_IFSelect_SignatureList"""
         return _IFSelect.IFSelect_SignatureList_GetHandle(self)
 
@@ -6585,7 +6585,7 @@ Handle_IFSelect_SignatureList._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SignatureList_swigregister = _IFSelect.Handle_IFSelect_SignatureList_swigregister
 Handle_IFSelect_SignatureList_swigregister(Handle_IFSelect_SignatureList)
 
-def Handle_IFSelect_SignatureList_DownCast(*args):
+def Handle_IFSelect_SignatureList_DownCast(*args) -> "Handle_IFSelect_SignatureList const" :
   return _IFSelect.Handle_IFSelect_SignatureList_DownCast(*args)
 Handle_IFSelect_SignatureList_DownCast = _IFSelect.Handle_IFSelect_SignatureList_DownCast
 
@@ -6598,14 +6598,14 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IFSelect.IFSelect_TSeqOfDispatch_swiginit(self,_IFSelect.new_IFSelect_TSeqOfDispatch(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IFSelect_TSeqOfDispatch const &" :
         """
         :param Other:
         :type Other: IFSelect_TSeqOfDispatch &
@@ -6614,7 +6614,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IFSelect_TSeqOfDispatch const &" :
         """
         :param Other:
         :type Other: IFSelect_TSeqOfDispatch &
@@ -6623,7 +6623,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_Dispatch &
@@ -6636,7 +6636,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_Dispatch &
@@ -6649,7 +6649,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6666,7 +6666,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6683,21 +6683,21 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_IFSelect_Dispatch const &" :
         """
         :rtype: Handle_IFSelect_Dispatch
 
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_IFSelect_Dispatch const &" :
         """
         :rtype: Handle_IFSelect_Dispatch
 
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6708,7 +6708,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Dispatch const &" :
         """
         :param Index:
         :type Index: int
@@ -6717,7 +6717,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6728,7 +6728,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_IFSelect_Dispatch &" :
         """
         :param Index:
         :type Index: int
@@ -6737,7 +6737,7 @@ class IFSelect_TSeqOfDispatch(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfDispatch_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6787,14 +6787,14 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IFSelect.IFSelect_TSeqOfSelection_swiginit(self,_IFSelect.new_IFSelect_TSeqOfSelection(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IFSelect_TSeqOfSelection const &" :
         """
         :param Other:
         :type Other: IFSelect_TSeqOfSelection &
@@ -6803,7 +6803,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IFSelect_TSeqOfSelection const &" :
         """
         :param Other:
         :type Other: IFSelect_TSeqOfSelection &
@@ -6812,7 +6812,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_Selection &
@@ -6825,7 +6825,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_IFSelect_Selection &
@@ -6838,7 +6838,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6855,7 +6855,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6872,21 +6872,21 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_IFSelect_Selection const &" :
         """
         :rtype: Handle_IFSelect_Selection
 
         """
         return _IFSelect.IFSelect_TSeqOfSelection_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_IFSelect_Selection const &" :
         """
         :rtype: Handle_IFSelect_Selection
 
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6897,7 +6897,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_IFSelect_Selection const &" :
         """
         :param Index:
         :type Index: int
@@ -6906,7 +6906,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6917,7 +6917,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_IFSelect_Selection &" :
         """
         :param Index:
         :type Index: int
@@ -6926,7 +6926,7 @@ class IFSelect_TSeqOfSelection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IFSelect.IFSelect_TSeqOfSelection_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -6971,7 +6971,7 @@ class IFSelect_Transformer(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         * Performs a Transformation (defined by each sub-class) :  <G> gives the input data (especially the starting model) and can be used for queries (by Selections, etc...)  <protocol> allows to work with General Services as necessary (it applies to input data) If the change corresponds to a conversion to a new protocol, see also the method ChangeProtocol  <checks> stores produced checks messages if any  <newmod> gives the result of the transformation :  - if it is Null (i.e. has not been affected), the transformation has been made on the spot, it is assumed to cause no change to the graph of dependances  - if it equates the starting Model, it has been transformed on the spot (possibiliy some entities were replaced inside it)  - if it is new, it corresponds to a new data set which replaces the starting one <self> is mutable to allow results for ChangeProtocol to be memorized if needed, and to store informations useful for the method Updated Returns True if Done, False if an Error occured : in this case, if a new data set has been produced, the transformation is ignored, else data may be corrupted.
 
@@ -6988,7 +6988,7 @@ class IFSelect_Transformer(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Transformer_Perform(self, *args)
 
-    def ChangeProtocol(self, *args):
+    def ChangeProtocol(self, *args) -> "Standard_Boolean" :
         """
         * This methods allows to declare that the Protocol applied to the new Model has changed. It applies to the last call to Perform. Returns True if the Protocol has changed, False else. The provided default keeps the starting Protocol. This method should be redefined as required by the effect of Perform.
 
@@ -6999,7 +6999,7 @@ class IFSelect_Transformer(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Transformer_ChangeProtocol(self, *args)
 
-    def Updated(self, *args):
+    def Updated(self, *args) -> "Standard_Boolean" :
         """
         * This method allows to know what happened to a starting entity after the last Perform. If <entfrom> (from starting model) has one and only one known item which corresponds in the new produced model, this method must return True and fill the argument <entto>. Else, it returns False.
 
@@ -7012,7 +7012,7 @@ class IFSelect_Transformer(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Transformer_Updated(self, *args)
 
-    def Label(self, *args):
+    def Label(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a text which defines the way a Transformer works (to identify the transformation it performs)
 
@@ -7021,11 +7021,11 @@ class IFSelect_Transformer(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_Transformer_Label(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Transformer self)"""
         return _IFSelect.IFSelect_Transformer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Transformer" :
         """GetHandle(IFSelect_Transformer self) -> Handle_IFSelect_Transformer"""
         return _IFSelect.IFSelect_Transformer_GetHandle(self)
 
@@ -7067,7 +7067,7 @@ Handle_IFSelect_Transformer._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_Transformer_swigregister = _IFSelect.Handle_IFSelect_Transformer_swigregister
 Handle_IFSelect_Transformer_swigregister(Handle_IFSelect_Transformer)
 
-def Handle_IFSelect_Transformer_DownCast(*args):
+def Handle_IFSelect_Transformer_DownCast(*args) -> "Handle_IFSelect_Transformer const" :
   return _IFSelect.Handle_IFSelect_Transformer_DownCast(*args)
 Handle_IFSelect_Transformer_DownCast = _IFSelect.Handle_IFSelect_Transformer_DownCast
 
@@ -7075,7 +7075,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ReadFile(self, *args):
+    def ReadFile(self, *args) -> "Standard_Integer" :
         """
         * Gives the way to Read a File and transfer it to a Model <mod> is the resulting Model, which has to be created by this method. In case of error, <mod> must be returned Null Return value is a status with free values. Simply, 0 is for 'Execution OK' The Protocol can be used to work (e.g. create the Model, read and recognize the Entities)
 
@@ -7090,7 +7090,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_ReadFile(self, *args)
 
-    def WriteFile(self, *args):
+    def WriteFile(self, *args) -> "Standard_Boolean" :
         """
         * Gives the way to Write a File from a Model. <ctx> contains all necessary informations : the model, the protocol, the file name, and the list of File Modifiers to be applied, also with restricted list of selected entities for each one, if required. In return, it brings the produced check-list The WorkLibrary has to query <applied> to get then run the ContextWrite by looping like this (example) : for (numap = 1; numap <= ctx.NbModifiers(); numap ++) {  ctx.SetModifier (numap);  cast ctx.FileModifier() to specific type -> variable filemod  if (!filemod.IsNull()) filemod->Perform (ctx,writer);  filemod then works with ctx. It can, either act on the  model itself (for instance on its header), or iterate  on selected entities (Start/Next/More/Value)  it can call AddFail or AddWarning, as necessary }
 
@@ -7101,7 +7101,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_WriteFile(self, *args)
 
-    def CopyModel(self, *args):
+    def CopyModel(self, *args) -> "Standard_Boolean" :
         """
         * Performs the copy of entities from an original model to a new one. It must also copy headers if any. Returns True when done. The provided default works by copying the individual entities designated in the list, by using the general service class CopyTool. It can be redefined for a norm which, either implements Copy by another way (do not forget to Bind each copied result with its original entity in TC) and returns True, or does not know how to copy and returns False
 
@@ -7118,7 +7118,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_CopyModel(self, *args)
 
-    def DumpEntity(self, *args):
+    def DumpEntity(self, *args) -> "void" :
         """
         * Gives the way of dumping an entity under a form comprehensive for each norm. <model> helps to identify, number ... entities. <level> is to be interpreted for each norm (because of the formats which can be very different)
 
@@ -7149,7 +7149,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_DumpEntity(self, *args)
 
-    def SetDumpLevels(self, *args):
+    def SetDumpLevels(self, *args) -> "void" :
         """
         * Records a default level and a maximum value for level level for DumpEntity can go between 0 and <max> default value will be <def>
 
@@ -7162,7 +7162,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_SetDumpLevels(self, *args)
 
-    def DumpLevels(self, *args):
+    def DumpLevels(self, *args) -> "void" :
         """
         * Returns the recorded default and maximum dump levels If none was recorded, max is returned negative, def as zero
 
@@ -7175,7 +7175,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_DumpLevels(self, *args)
 
-    def SetDumpHelp(self, *args):
+    def SetDumpHelp(self, *args) -> "void" :
         """
         * Records a short line of help for a level (0 - max)
 
@@ -7188,7 +7188,7 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_SetDumpHelp(self, *args)
 
-    def DumpHelp(self, *args):
+    def DumpHelp(self, *args) -> "char *" :
         """
         * Returns the help line recorded for <level>, or an empty string
 
@@ -7199,11 +7199,11 @@ class IFSelect_WorkLibrary(OCC.Standard.Standard_Transient):
         """
         return _IFSelect.IFSelect_WorkLibrary_DumpHelp(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_WorkLibrary self)"""
         return _IFSelect.IFSelect_WorkLibrary__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_WorkLibrary" :
         """GetHandle(IFSelect_WorkLibrary self) -> Handle_IFSelect_WorkLibrary"""
         return _IFSelect.IFSelect_WorkLibrary_GetHandle(self)
 
@@ -7249,7 +7249,7 @@ Handle_IFSelect_WorkLibrary._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_WorkLibrary_swigregister = _IFSelect.Handle_IFSelect_WorkLibrary_swigregister
 Handle_IFSelect_WorkLibrary_swigregister(Handle_IFSelect_WorkLibrary)
 
-def Handle_IFSelect_WorkLibrary_DownCast(*args):
+def Handle_IFSelect_WorkLibrary_DownCast(*args) -> "Handle_IFSelect_WorkLibrary const" :
   return _IFSelect.Handle_IFSelect_WorkLibrary_DownCast(*args)
 Handle_IFSelect_WorkLibrary_DownCast = _IFSelect.Handle_IFSelect_WorkLibrary_DownCast
 
@@ -7264,7 +7264,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
 
         """
         _IFSelect.IFSelect_WorkSession_swiginit(self,_IFSelect.new_IFSelect_WorkSession(*args))
-    def ShareOut(self, *args):
+    def ShareOut(self, *args) -> "Handle_IFSelect_ShareOut const &" :
         """
         * Returns the ShareOut defined at creation time
 
@@ -7273,7 +7273,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ShareOut(self, *args)
 
-    def SetShareOut(self, *args):
+    def SetShareOut(self, *args) -> "void" :
         """
         * Sets a new ShareOut. Fills Items which its content Warning : data from the former ShareOut are lost
 
@@ -7284,7 +7284,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetShareOut(self, *args)
 
-    def SetModeStat(self, *args):
+    def SetModeStat(self, *args) -> "void" :
         """
         * Set value of mode responsible for precence of selections after loading If mode set to true that different selections will be accessible after loading else selections will be not accessible after loading( for economy memory in applicatios)
 
@@ -7295,7 +7295,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetModeStat(self, *args)
 
-    def GetModeStat(self, *args):
+    def GetModeStat(self, *args) -> "Standard_Boolean" :
         """
         * Return value of mode defining of filling selection during loading
 
@@ -7304,7 +7304,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GetModeStat(self, *args)
 
-    def SetLibrary(self, *args):
+    def SetLibrary(self, *args) -> "void" :
         """
         * Sets a WorkLibrary, which will be used to Read and Write Files
 
@@ -7315,7 +7315,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetLibrary(self, *args)
 
-    def WorkLibrary(self, *args):
+    def WorkLibrary(self, *args) -> "Handle_IFSelect_WorkLibrary" :
         """
         * Returns the WorkLibrary. Null Handle if not yet set should be C++ : return const &
 
@@ -7324,7 +7324,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_WorkLibrary(self, *args)
 
-    def SetProtocol(self, *args):
+    def SetProtocol(self, *args) -> "void" :
         """
         * Sets a Protocol, which will be used to determine Graphs, to Read and to Write Files
 
@@ -7335,7 +7335,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetProtocol(self, *args)
 
-    def Protocol(self, *args):
+    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
         """
         * Returns the Protocol. Null Handle if not yet set should be C++ : return const &
 
@@ -7344,7 +7344,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Protocol(self, *args)
 
-    def SetSignType(self, *args):
+    def SetSignType(self, *args) -> "void" :
         """
         * Sets a specific Signature to be the SignType, i.e. the Signature which will determine TypeName from the Model (basic function). It is recorded in the GTool This Signature is also set as 'xst-sign-type' (reserved name)
 
@@ -7355,7 +7355,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetSignType(self, *args)
 
-    def SignType(self, *args):
+    def SignType(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns the current SignType
 
@@ -7364,7 +7364,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SignType(self, *args)
 
-    def HasModel(self, *args):
+    def HasModel(self, *args) -> "Standard_Boolean" :
         """
         * Returns True is a Model has been set
 
@@ -7373,7 +7373,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_HasModel(self, *args)
 
-    def SetModel(self, *args):
+    def SetModel(self, *args) -> "void" :
         """
         * Sets a Model as input : this will be the Model from which the ShareOut will work if <clearpointed> is True (default) all SelectPointed items are cleared, else they must be managed by the caller Remark : SetModel clears the Graph, recomputes it if a Protocol is set and if the Model is not empty, of course
 
@@ -7386,7 +7386,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetModel(self, *args)
 
-    def Model(self, *args):
+    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns the Model of the Work Session (Null Handle if none) should be C++ : return const &
 
@@ -7395,7 +7395,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Model(self, *args)
 
-    def SetLoadedFile(self, *args):
+    def SetLoadedFile(self, *args) -> "void" :
         """
         * Stores the filename used for read for setting the model It is cleared by SetModel and ClearData(1)
 
@@ -7406,7 +7406,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetLoadedFile(self, *args)
 
-    def LoadedFile(self, *args):
+    def LoadedFile(self, *args) -> "char *" :
         """
         * Returns the filename used to load current model empty if unknown
 
@@ -7415,7 +7415,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_LoadedFile(self, *args)
 
-    def ReadFile(self, *args):
+    def ReadFile(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Reads a file with the WorkLibrary (sets Model and LoadedFile) Returns a integer status which can be : RetDone if OK, RetVoid if no Protocol not defined, RetError for file not found, RetFail if fail during read
 
@@ -7426,7 +7426,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ReadFile(self, *args)
 
-    def NbStartingEntities(self, *args):
+    def NbStartingEntities(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Entities stored in the Model, or 0
 
@@ -7435,7 +7435,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NbStartingEntities(self, *args)
 
-    def StartingEntity(self, *args):
+    def StartingEntity(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns an Entity stored in the Model of the WorkSession (Null Handle is no Model or num out of range)
 
@@ -7446,7 +7446,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_StartingEntity(self, *args)
 
-    def StartingNumber(self, *args):
+    def StartingNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the Number of an Entity in the Model (0 if no Model set or <ent> not in the Model)
 
@@ -7457,7 +7457,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_StartingNumber(self, *args)
 
-    def NumberFromLabel(self, *args):
+    def NumberFromLabel(self, *args) -> "Standard_Integer" :
         """
         * From a given label in Model, returns the corresponding number Starts from first entity by Default, may start after a given number : this number may be given negative, its absolute value is then considered. Hence a loop on NumberFromLabel may be programmed (stop test is : returned value positive or null) Returns 0 if not found, < 0 if more than one found (first found in negative). If <val> just gives an integer value, returns it
 
@@ -7470,7 +7470,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NumberFromLabel(self, *args)
 
-    def EntityLabel(self, *args):
+    def EntityLabel(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the label for <ent>, as the Model does If <ent> is not in the Model or if no Model is loaded, a Null Handle is returned
 
@@ -7481,7 +7481,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EntityLabel(self, *args)
 
-    def EntityName(self, *args):
+    def EntityName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the Name of an Entity This Name is computed by the general service Name Returns a Null Handle if fails
 
@@ -7492,7 +7492,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EntityName(self, *args)
 
-    def CategoryNumber(self, *args):
+    def CategoryNumber(self, *args) -> "Standard_Integer" :
         """
         * Returns the Category Number determined for an entity it is computed by the class Category An unknown entity (number 0) gives a value -1
 
@@ -7503,7 +7503,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_CategoryNumber(self, *args)
 
-    def CategoryName(self, *args):
+    def CategoryName(self, *args) -> "char *" :
         """
         * Returns the Category Name determined for an entity it is computed by the class Category Remark : an unknown entity gives an empty string
 
@@ -7514,7 +7514,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_CategoryName(self, *args)
 
-    def ValidityName(self, *args):
+    def ValidityName(self, *args) -> "char *" :
         """
         * Returns the Validity Name determined for an entity it is computed by the class SignValidity Remark : an unknown entity gives an empty string
 
@@ -7525,7 +7525,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ValidityName(self, *args)
 
-    def ClearData(self, *args):
+    def ClearData(self, *args) -> "void" :
         """
         * Clears recorded data (not the items) according mode : 1 : all Data : Model, Graph, CheckList, + ClearData 4 2 : Graph and CheckList (they will then be recomputed later) 3 : CheckList (it will be recomputed by ComputeCheck) 4 : just content of SelectPointed and Counters Plus 0 : does nothing but called by SetModel ClearData is virtual, hence it can be redefined to clear other data of a specialised Work Session
 
@@ -7536,7 +7536,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ClearData(self, *args)
 
-    def ComputeGraph(self, *args):
+    def ComputeGraph(self, *args) -> "Standard_Boolean" :
         """
         * Computes the Graph used for Selections, Displays ... If a HGraph is already set, with same model as given by method Model, does nothing. Else, computes a new Graph. If <enforce> is given True, computes a new Graph anyway. Remark that a call to ClearGraph will cause ComputeGraph to really compute a new Graph Returns True if Graph is OK, False else (i.e. if no Protocol is set, or if Model is absent or empty).
 
@@ -7547,7 +7547,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ComputeGraph(self, *args)
 
-    def HGraph(self, *args):
+    def HGraph(self, *args) -> "Handle_Interface_HGraph" :
         """
         * Returns the Computed Graph as HGraph (Null Handle if not set)
 
@@ -7556,7 +7556,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_HGraph(self, *args)
 
-    def Graph(self, *args):
+    def Graph(self, *args) -> "Interface_Graph const &" :
         """
         * Returns the Computed Graph, for Read only
 
@@ -7565,7 +7565,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Graph(self, *args)
 
-    def Shareds(self, *args):
+    def Shareds(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Returns the list of entities shared by <ent> (can be empty) Returns a null Handle if <ent> is unknown
 
@@ -7576,7 +7576,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Shareds(self, *args)
 
-    def Sharings(self, *args):
+    def Sharings(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Returns the list of entities sharing <ent> (can be empty) Returns a null Handle if <ent> is unknown
 
@@ -7587,7 +7587,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Sharings(self, *args)
 
-    def IsLoaded(self, *args):
+    def IsLoaded(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Model is defined and really loaded (not empty), a Protocol is set and a Graph has been computed. In this case, the WorkSession can start to work
 
@@ -7596,7 +7596,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_IsLoaded(self, *args)
 
-    def ComputeCheck(self, *args):
+    def ComputeCheck(self, *args) -> "Standard_Boolean" :
         """
         * Computes the CheckList for the Model currently loaded It can then be used for displays, querries ... Returns True if OK, False else (i.e. no Protocol set, or Model absent). If <enforce> is False, works only if not already done or if a new Model has been loaded from last call. Remark : computation is enforced by every call to SetModel or RunTransformer
 
@@ -7607,7 +7607,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ComputeCheck(self, *args)
 
-    def ModelCheckList(self, *args):
+    def ModelCheckList(self, *args) -> "Interface_CheckIterator" :
         """
         * Returns the Check List for the Model currently loaded : <complete> = True : complete (syntactic & semantic messages),  computed if not yet done <complete> = False : only syntactic (check file form)
 
@@ -7618,7 +7618,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ModelCheckList(self, *args)
 
-    def CheckOne(self, *args):
+    def CheckOne(self, *args) -> "Interface_CheckIterator" :
         """
         * Returns a Check for a single entity, under the form of a CheckIterator (this gives only one form for the user) if <ent> is Null or equates the current Model, it gives the Global Check, else the Check for the given entity <complete> as for ModelCheckList
 
@@ -7631,7 +7631,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_CheckOne(self, *args)
 
-    def LastRunCheckList(self, *args):
+    def LastRunCheckList(self, *args) -> "Interface_CheckIterator" :
         """
         * Returns the Check List produced by the last execution of either : EvaluateFile(for Split), SendSplit, SendAll, SendSelected, RunTransformer-RunModifier Cleared by SetModel or ClearData(1) The field is protected, hence a specialized WorkSession may fill it
 
@@ -7640,7 +7640,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_LastRunCheckList(self, *args)
 
-    def MaxIdent(self, *args):
+    def MaxIdent(self, *args) -> "Standard_Integer" :
         """
         * Returns the Maximum Value for an Item Identifier. It can be greater to the count of known Items, because some can have been removed
 
@@ -7649,7 +7649,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_MaxIdent(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns an Item, given its Ident. Returns a Null Handle if no Item corresponds to this Ident.
 
@@ -7660,7 +7660,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Item(self, *args)
 
-    def ItemIdent(self, *args):
+    def ItemIdent(self, *args) -> "Standard_Integer" :
         """
         * Returns the Ident attached to an Item in the WorkSession, or Zero if it is unknown
 
@@ -7671,7 +7671,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemIdent(self, *args)
 
-    def NamedItem(self, *args):
+    def NamedItem(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the Item which corresponds to a Variable, given its Name (whatever the type of this Item). Returns a Null Handle if this Name is not recorded
 
@@ -7688,7 +7688,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NamedItem(self, *args)
 
-    def NameIdent(self, *args):
+    def NameIdent(self, *args) -> "Standard_Integer" :
         """
         * Returns the Ident attached to a Name, 0 if name not recorded
 
@@ -7699,7 +7699,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NameIdent(self, *args)
 
-    def HasName(self, *args):
+    def HasName(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if an Item of the WorkSession has an attached Name
 
@@ -7710,7 +7710,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_HasName(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the Name attached to an Item as a Variable of this WorkSession. If <item> is Null or not recorded, returns an empty string.
 
@@ -7721,7 +7721,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Name(self, *args)
 
-    def AddItem(self, *args):
+    def AddItem(self, *args) -> "Standard_Integer" :
         """
         * Adds an Item and returns its attached Ident. Does nothing if <item> is already recorded (and returns its attached Ident) <active> if True commands call to SetActive (see below) Remark : the determined Ident is used if <item> is a Dispatch, to fill the ShareOut
 
@@ -7734,7 +7734,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_AddItem(self, *args)
 
-    def AddNamedItem(self, *args):
+    def AddNamedItem(self, *args) -> "Standard_Integer" :
         """
         * Adds an Item with an attached Name. If the Name is already known in the WorkSession, the older item losts it Returns Ident if Done, 0 else, i.e. if <item> is null If <name> is empty, works as AddItem (i.e. with no name) If <item> is already known but with no attached Name, this method tries to attached a Name to it <active> if True commands call to SetActive (see below)
 
@@ -7749,7 +7749,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_AddNamedItem(self, *args)
 
-    def SetActive(self, *args):
+    def SetActive(self, *args) -> "Standard_Boolean" :
         """
         * Following the type of <item> : - Dispatch : Adds or Removes it in the ShareOut & FileNaming - GeneralModifier : Adds or Removes it for final sending (i.e. in the ModelCopier) Returns True if it did something, False else (state unchanged)
 
@@ -7762,7 +7762,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetActive(self, *args)
 
-    def RemoveNamedItem(self, *args):
+    def RemoveNamedItem(self, *args) -> "Standard_Boolean" :
         """
         * Removes an Item from the Session, given its Name Returns True if Done, False else (Name not recorded) (Applies only on Item which are Named)
 
@@ -7773,7 +7773,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RemoveNamedItem(self, *args)
 
-    def RemoveName(self, *args):
+    def RemoveName(self, *args) -> "Standard_Boolean" :
         """
         * Removes a Name without removing the Item Returns True if Done, False else (Name not recorded)
 
@@ -7784,7 +7784,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RemoveName(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         * Removes an Item given its Ident. Returns False if <id> is attached to no Item in the WorkSession. For a Named Item, also removes its Name.
 
@@ -7795,7 +7795,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RemoveItem(self, *args)
 
-    def ClearItems(self, *args):
+    def ClearItems(self, *args) -> "void" :
         """
         * Clears all the recorded Items : Selections, Dispatches, Modifiers, and Strings & IntParams, with their Idents & Names. Remark that if a Model has been loaded, it is not cleared.
 
@@ -7804,7 +7804,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ClearItems(self, *args)
 
-    def ItemLabel(self, *args):
+    def ItemLabel(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns a Label which illustrates the content of an Item, given its Ident. This Label is : - for a Text Parameter, 'Text:<text value>' - for an Integer Parameter, 'Integer:<integer value>' - for a Selection, a Dispatch or a Modifier, its Label (see these classes) - for any other kind of Variable, its cdl type
 
@@ -7815,7 +7815,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemLabel(self, *args)
 
-    def ItemIdents(self, *args):
+    def ItemIdents(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         * Fills a Sequence with the List of Idents attached to the Items of which Type complies with (IsKind) <type> (alphabetic order) Remark : <type> = TYPE(Standard_Transient) gives all the Idents which are suitable in the WorkSession
 
@@ -7826,7 +7826,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemIdents(self, *args)
 
-    def ItemNames(self, *args):
+    def ItemNames(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Fills a Sequence with the list of the Names attached to Items of which Type complies with (IsKind) <type> (alphabetic order) Remark : <type> = TYPE(Standard_Transient) gives all the Names
 
@@ -7837,7 +7837,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemNames(self, *args)
 
-    def ItemNamesForLabel(self, *args):
+    def ItemNamesForLabel(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Fills a Sequence with the NAMES of the control items, of which the label matches <label> (contain it) : see NextIdentForLabel Search mode is fixed to 'contained' If <label> is empty, returns all Names
 
@@ -7848,7 +7848,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemNamesForLabel(self, *args)
 
-    def NextIdentForLabel(self, *args):
+    def NextIdentForLabel(self, *args) -> "Standard_Integer" :
         """
         * For query by Label with possible iterations Searches the Ident of which Item has a Label which matches a given one, the search starts from an initial Ident. Returns the first found Ident which follows <id>, or ZERO The search must start with <id> = 0, it returns the next Ident which matches. To iterate, call again this method which this returned value as <id>. Once an Ident has been returned, the Item can be obtained by the method Item <mode> precises the required matching mode : - 0 (Default) : <label> must match exactly with the Item Label - 1 : <label> must match the exact beginning (the end is free) - 2 : <label> must be at least once wherever in the Item Label - other values are ignored
 
@@ -7863,7 +7863,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NextIdentForLabel(self, *args)
 
-    def NewParamFromStatic(self, *args):
+    def NewParamFromStatic(self, *args) -> "Handle_Standard_Transient" :
         """
         * Creates a parameter as being bound to a Static If the Static is Integer, this creates an IntParam bound to it by its name. Else this creates a String which is the value of the Static. Returns a null handle if <statname> is unknown as a Static
 
@@ -7876,7 +7876,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NewParamFromStatic(self, *args)
 
-    def IntParam(self, *args):
+    def IntParam(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns an IntParam, given its Ident in the Session Null result if <id> is not suitable for an IntParam (undefined, or defined for another kind of variable)
 
@@ -7887,7 +7887,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_IntParam(self, *args)
 
-    def IntValue(self, *args):
+    def IntValue(self, *args) -> "Standard_Integer" :
         """
         * Returns Integer Value of an IntParam
 
@@ -7898,7 +7898,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_IntValue(self, *args)
 
-    def NewIntParam(self, *args):
+    def NewIntParam(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Creates a new IntParam. A Name can be set (Optional) Returns the created IntParam, or a Null Handle in case of Failure (see AddItem/AddNamedItem)
 
@@ -7909,7 +7909,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NewIntParam(self, *args)
 
-    def SetIntValue(self, *args):
+    def SetIntValue(self, *args) -> "Standard_Boolean" :
         """
         * Changes the Integer Value of an IntParam Returns True if Done, False if <it> is not in the WorkSession
 
@@ -7922,7 +7922,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetIntValue(self, *args)
 
-    def TextParam(self, *args):
+    def TextParam(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns a TextParam, given its Ident in the Session Null result if <id> is not suitable for a TextParam (undefined, or defined for another kind of variable)
 
@@ -7933,7 +7933,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_TextParam(self, *args)
 
-    def TextValue(self, *args):
+    def TextValue(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns Text Value of a TextParam (a String) or an empty string if <it> is not in the WorkSession
 
@@ -7944,7 +7944,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_TextValue(self, *args)
 
-    def NewTextParam(self, *args):
+    def NewTextParam(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Creates a new (empty) TextParam. A Name can be set (Optional) Returns the created TextParam (as an HAsciiString), or a Null Handle in case of Failure (see AddItem/AddNamedItem)
 
@@ -7955,7 +7955,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NewTextParam(self, *args)
 
-    def SetTextValue(self, *args):
+    def SetTextValue(self, *args) -> "Standard_Boolean" :
         """
         * Changes the Text Value of a TextParam (an HAsciiString) Returns True if Done, False if <it> is not in the WorkSession
 
@@ -7968,7 +7968,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetTextValue(self, *args)
 
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns a Signature, given its Ident in the Session Null result if <id> is not suitable for a Signature (undefined, or defined for another kind of variable)
 
@@ -7979,7 +7979,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Signature(self, *args)
 
-    def SignValue(self, *args):
+    def SignValue(self, *args) -> "char *" :
         """
         * Returns the Value computed by a Signature for an Entity Returns an empty string if the entity does not belong to the loaded model
 
@@ -7992,7 +7992,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SignValue(self, *args)
 
-    def Selection(self, *args):
+    def Selection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns a Selection, given its Ident in the Session Null result if <id> is not suitable for a Selection (undefined, or defined for another kind of variable)
 
@@ -8003,7 +8003,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Selection(self, *args)
 
-    def EvalSelection(self, *args):
+    def EvalSelection(self, *args) -> "Interface_EntityIterator" :
         """
         * Evaluates the effect of a Selection applied on the input Model Returned Result remains empty if no input Model has been set
 
@@ -8014,7 +8014,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvalSelection(self, *args)
 
-    def Sources(self, *args):
+    def Sources(self, *args) -> "IFSelect_SelectionIterator" :
         """
         * Returns the Selections which are source of Selection, given its rank in the List of Selections (see SelectionIterator) Returned value is empty if <num> is out of range or if <sel> is not in the WorkSession
 
@@ -8025,7 +8025,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Sources(self, *args)
 
-    def SelectionResult(self, *args):
+    def SelectionResult(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Returns the result of a Selection, computed by EvalSelection (see above) under the form of a HSequence (hence, it can be used by a frontal-engine logic). It can be empty Returns a Null Handle if <sel> is not in the WorkSession
 
@@ -8036,7 +8036,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SelectionResult(self, *args)
 
-    def SelectionResultFromList(self, *args):
+    def SelectionResultFromList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Returns the result of a Selection, by forcing its input with a given list <list> (unless <list> is Null).  RULES : <list> applies only for a SelectDeduct kind Selection : its Input is considered : if it is a SelectDeduct kind  Selection, its Input is considered, etc... until an Input is not a Deduct/Extract : its result is replaced by <list> and all the chain of deductions is applied
 
@@ -8049,7 +8049,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SelectionResultFromList(self, *args)
 
-    def SetItemSelection(self, *args):
+    def SetItemSelection(self, *args) -> "Standard_Boolean" :
         """
         * Sets a Selection as input for an item, according its type : if <item> is a Dispatch : as Final Selection if <item> is a GeneralModifier (i.e. any kind of Modifier) : as Selection used to filter entities to modify <sel> Null causes this Selection to be nullified Returns False if <item> is not of a suitable type, or <item> or <sel> is not in the WorkSession
 
@@ -8062,7 +8062,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetItemSelection(self, *args)
 
-    def ResetItemSelection(self, *args):
+    def ResetItemSelection(self, *args) -> "Standard_Boolean" :
         """
         * Resets input Selection which was set by SetItemSelection Same conditions as for SetItemSelection Returns True if done, False if <item> is not in the WorkSession
 
@@ -8073,7 +8073,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ResetItemSelection(self, *args)
 
-    def ItemSelection(self, *args):
+    def ItemSelection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Selection of a Dispatch or a GeneralModifier. Returns a Null Handle if none is defined or <item> not good type
 
@@ -8084,7 +8084,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ItemSelection(self, *args)
 
-    def SignCounter(self, *args):
+    def SignCounter(self, *args) -> "Handle_IFSelect_SignCounter" :
         """
         * Returns a SignCounter from its ident in the Session Null result if <id> is not suitable for a SignCounter (undefined, or defined for another kind of variable)
 
@@ -8095,7 +8095,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SignCounter(self, *args)
 
-    def ComputeCounter(self, *args):
+    def ComputeCounter(self, *args) -> "Standard_Boolean" :
         """
         * Computes the content of a SignCounter when it is defined with a Selection, then returns True Returns False if the SignCounter is not defined with a Selection, or if its Selection Mode is inhibited <forced> to work around optimisations
 
@@ -8108,7 +8108,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ComputeCounter(self, *args)
 
-    def ComputeCounterFromList(self, *args):
+    def ComputeCounterFromList(self, *args) -> "Standard_Boolean" :
         """
         * Computes the content of a SignCounter from an input list If <list> is Null, uses internal definition of the Counter : a Selection, else the whole Model (recomputation forced) If <clear> is True (D), starts from scratch Else, cumulates computations
 
@@ -8123,7 +8123,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ComputeCounterFromList(self, *args)
 
-    def AppliedDispatches(self, *args):
+    def AppliedDispatches(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         * Returns the ordered list of dispatches stored by the ShareOut
 
@@ -8132,7 +8132,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_AppliedDispatches(self, *args)
 
-    def ClearShareOut(self, *args):
+    def ClearShareOut(self, *args) -> "void" :
         """
         * Clears the list of Dispatches recorded by the ShareOut if <only> disp is True, tha's all. Else, clears also the lists of Modifiers recorded by the ShareOut
 
@@ -8143,7 +8143,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ClearShareOut(self, *args)
 
-    def Dispatch(self, *args):
+    def Dispatch(self, *args) -> "Handle_IFSelect_Dispatch" :
         """
         * Returns a Dispatch, given its Ident in the Session Null result if <id> is not suitable for a Dispatch (undefined, or defined for another kind of variable)
 
@@ -8154,7 +8154,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Dispatch(self, *args)
 
-    def DispatchRank(self, *args):
+    def DispatchRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the rank of a Dispatch in the ShareOut, or 0 if <disp> is not in the ShareOut or not in the WorkSession
 
@@ -8165,7 +8165,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DispatchRank(self, *args)
 
-    def ModelCopier(self, *args):
+    def ModelCopier(self, *args) -> "Handle_IFSelect_ModelCopier" :
         """
         * Gives access to the complete ModelCopier
 
@@ -8174,7 +8174,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ModelCopier(self, *args)
 
-    def SetModelCopier(self, *args):
+    def SetModelCopier(self, *args) -> "void" :
         """
         * Sets a new ModelCopier. Fills Items which its content
 
@@ -8185,7 +8185,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetModelCopier(self, *args)
 
-    def NbFinalModifiers(self, *args):
+    def NbFinalModifiers(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Modifiers applied to final sending Model Modifiers if <formodel> is True, File Modifiers else (i.e. Modifiers which apply once the Models have been filled)
 
@@ -8196,7 +8196,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NbFinalModifiers(self, *args)
 
-    def FinalModifierIdents(self, *args):
+    def FinalModifierIdents(self, *args) -> "Handle_TColStd_HSequenceOfInteger" :
         """
         * Fills a Sequence with a list of Idents, those attached to the Modifiers applied to final sending. Model Modifiers if <formodel> is True, File Modifiers else This list is given in the order in which they will be applied (which takes into account the Changes to Modifier Ranks)
 
@@ -8207,7 +8207,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FinalModifierIdents(self, *args)
 
-    def GeneralModifier(self, *args):
+    def GeneralModifier(self, *args) -> "Handle_IFSelect_GeneralModifier" :
         """
         * Returns a Modifier, given its Ident in the Session Null result if <id> is not suitable for a Modifier (undefined, or defined for another kind of variable)
 
@@ -8218,7 +8218,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GeneralModifier(self, *args)
 
-    def ModelModifier(self, *args):
+    def ModelModifier(self, *args) -> "Handle_IFSelect_Modifier" :
         """
         * Returns a Model Modifier, given its Ident in the Session, i.e. typed as a Modifier (not simply a GeneralModifier) Null result if <id> is not suitable for a Modifier (undefined, or defined for another kind of variable)
 
@@ -8229,7 +8229,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ModelModifier(self, *args)
 
-    def ModifierRank(self, *args):
+    def ModifierRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the Rank of a Modifier given its Ident. Model or File Modifier according its type (ModelModifier or not) Remember that Modifiers are applied sequencially following their Rank : first Model Modifiers then File Modifiers Rank is given by rank of call to AddItem and can be changed by ChangeModifierRank
 
@@ -8240,7 +8240,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ModifierRank(self, *args)
 
-    def ChangeModifierRank(self, *args):
+    def ChangeModifierRank(self, *args) -> "Standard_Boolean" :
         """
         * Changes the Rank of a Modifier in the Session : Model Modifiers if <formodel> is True, File Modifiers else the Modifier n0 <before> is put to n0 <after> Return True if Done, False if <before> or <after> out of range
 
@@ -8255,7 +8255,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ChangeModifierRank(self, *args)
 
-    def ClearFinalModifiers(self, *args):
+    def ClearFinalModifiers(self, *args) -> "void" :
         """
         * Removes all the Modifiers active in the ModelCopier : they become inactive and they are removed from the Session
 
@@ -8264,7 +8264,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ClearFinalModifiers(self, *args)
 
-    def SetAppliedModifier(self, *args):
+    def SetAppliedModifier(self, *args) -> "Standard_Boolean" :
         """
         * Sets a GeneralModifier to be applied to an item : - item = ShareOut : applies for final sending (all dispatches) - item is a Dispatch : applies for this dispatch only Returns True if done, False if <modif> or <item> not in <self>
 
@@ -8277,7 +8277,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetAppliedModifier(self, *args)
 
-    def ResetAppliedModifier(self, *args):
+    def ResetAppliedModifier(self, *args) -> "Standard_Boolean" :
         """
         * Resets a GeneralModifier to be applied Returns True if done, False if <modif> was not applied
 
@@ -8288,7 +8288,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ResetAppliedModifier(self, *args)
 
-    def UsesAppliedModifier(self, *args):
+    def UsesAppliedModifier(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the item on which a GeneralModifier is applied : the ShareOut, or a given Dispatch Returns a Null Handle if <modif> is not applied
 
@@ -8299,7 +8299,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_UsesAppliedModifier(self, *args)
 
-    def Transformer(self, *args):
+    def Transformer(self, *args) -> "Handle_IFSelect_Transformer" :
         """
         * Returns a Transformer, given its Ident in the Session Null result if <id> is not suitable for a Transformer (undefined, or defined for another kind of variable)
 
@@ -8310,7 +8310,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Transformer(self, *args)
 
-    def RunTransformer(self, *args):
+    def RunTransformer(self, *args) -> "Standard_Integer" :
         """
         * Runs a Transformer on starting Model, which can then be edited or replaced by a new one. The Protocol can also be changed. Fills LastRunCheckList Returned status is 0 if nothing done (<transf> or model undefined), positive if OK, negative else : 0 : Nothing done 1 : OK, edition on the spot with no change to the graph of dependances (purely local) 2 : OK, model edited on the spot (graph recomputed, may  have changed), protocol unchanged 3 : OK, new model produced, same protocol 4 : OK, model edited on the spot (graph recomputed), but protocol has changed 5 : OK, new model produced, protocol has changed -1 : Error on the spot (slight changes), data may be corrupted (remark : corruption should not be profound) -2 : Error on edition the spot, data may be corrupted (checking them is recommanded) -3 : Error with a new data set, transformation ignored -4 : OK as 4, but graph of dependances count not be recomputed (the former one is kept) : check the protocol
 
@@ -8321,7 +8321,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RunTransformer(self, *args)
 
-    def RunModifier(self, *args):
+    def RunModifier(self, *args) -> "Standard_Integer" :
         """
         * Runs a Modifier on Starting Model. It can modify entities, or add new ones. But the Model or the Protocol is unchanged. The Modifier is applied on each entity of the Model. See also RunModifierSelected Fills LastRunCheckList <copy> : if True, a new data set is produced which brings the modifications (Model + its Entities) if False, data are modified on the spot It works through a TransformStandard defined with <modif> Returned status as RunTransformer : 0 nothing done, >0 OK, <0 problem, but only between -3 and 3 (protocol unchanged) Remark : <copy> True will give <effect> = 3 or -3
 
@@ -8334,7 +8334,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RunModifier(self, *args)
 
-    def RunModifierSelected(self, *args):
+    def RunModifierSelected(self, *args) -> "Standard_Integer" :
         """
         * Acts as RunModifier, but the Modifier is applied on the list determined by a Selection, rather than on the whole Model If the selection is a null handle, the whole model is taken
 
@@ -8349,7 +8349,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_RunModifierSelected(self, *args)
 
-    def NewTransformStandard(self, *args):
+    def NewTransformStandard(self, *args) -> "Handle_IFSelect_Transformer" :
         """
         * Creates and returns a TransformStandard, empty, with its Copy Option (True = Copy, False = On the Spot) and an optional name. To a TransformStandard, the method SetAppliedModifier applies
 
@@ -8362,7 +8362,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NewTransformStandard(self, *args)
 
-    def SetModelContent(self, *args):
+    def SetModelContent(self, *args) -> "Standard_Boolean" :
         """
         * Defines a new content from the former one If <keep> is True, it is given by entities selected by Selection <sel> (and all shared entities) Else, it is given by all the former content but entities selected by the Selection <sel> (and properly shared ones) Returns True if done. Returns False if the selected list (from <sel>) is empty, hence nothing is done
 
@@ -8375,7 +8375,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetModelContent(self, *args)
 
-    def FilePrefix(self, *args):
+    def FilePrefix(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the defined File Prefix. Null Handle if not defined
 
@@ -8384,7 +8384,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FilePrefix(self, *args)
 
-    def DefaultFileRoot(self, *args):
+    def DefaultFileRoot(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the defined Default File Root. It is used for Dispatches which have no specific root attached. Null Handle if not defined
 
@@ -8393,7 +8393,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DefaultFileRoot(self, *args)
 
-    def FileExtension(self, *args):
+    def FileExtension(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the defined File Extension. Null Handle if not defined
 
@@ -8402,7 +8402,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FileExtension(self, *args)
 
-    def FileRoot(self, *args):
+    def FileRoot(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Returns the File Root defined for a Dispatch. Null if no Root Name is defined for it (hence, no File will be produced)
 
@@ -8413,7 +8413,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FileRoot(self, *args)
 
-    def SetFilePrefix(self, *args):
+    def SetFilePrefix(self, *args) -> "void" :
         """
         * Defines a File Prefix
 
@@ -8424,7 +8424,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetFilePrefix(self, *args)
 
-    def SetDefaultFileRoot(self, *args):
+    def SetDefaultFileRoot(self, *args) -> "Standard_Boolean" :
         """
         * Defines a Default File Root Name. Clears it is <name> = '' Returns True if OK, False if <name> already set for a Dispatch
 
@@ -8435,7 +8435,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetDefaultFileRoot(self, *args)
 
-    def SetFileExtension(self, *args):
+    def SetFileExtension(self, *args) -> "void" :
         """
         * Defines a File Extension
 
@@ -8446,7 +8446,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetFileExtension(self, *args)
 
-    def SetFileRoot(self, *args):
+    def SetFileRoot(self, *args) -> "Standard_Boolean" :
         """
         * Defines a Root for a Dispatch If <name> is empty, clears Root Name This has as effect to inhibit the production of File by <disp> Returns False if <disp> is not in the WorkSession or if a root name is already defined for it
 
@@ -8459,7 +8459,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetFileRoot(self, *args)
 
-    def GiveFileRoot(self, *args):
+    def GiveFileRoot(self, *args) -> "char *" :
         """
         * Extracts File Root Name from a given complete file name (uses OSD_Path)
 
@@ -8470,7 +8470,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveFileRoot(self, *args)
 
-    def GiveFileComplete(self, *args):
+    def GiveFileComplete(self, *args) -> "char *" :
         """
         * Completes a file name as required, with Prefix and Extension (if defined; for a non-defined item, completes nothing)
 
@@ -8481,7 +8481,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveFileComplete(self, *args)
 
-    def ClearFile(self, *args):
+    def ClearFile(self, *args) -> "void" :
         """
         * Erases all stored data from the File Evaluation (i.e. ALL former naming informations are lost)
 
@@ -8490,7 +8490,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ClearFile(self, *args)
 
-    def EvaluateFile(self, *args):
+    def EvaluateFile(self, *args) -> "void" :
         """
         * Performs and stores a File Evaluation. The Results are a List of produced Models and a List of names (Strings), in parallel Fills LastRunCheckList
 
@@ -8499,7 +8499,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvaluateFile(self, *args)
 
-    def NbFiles(self, *args):
+    def NbFiles(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of produced Models
 
@@ -8508,7 +8508,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NbFiles(self, *args)
 
-    def FileModel(self, *args):
+    def FileModel(self, *args) -> "Handle_Interface_InterfaceModel" :
         """
         * Returns a Model, given its rank in the Evaluation List
 
@@ -8519,7 +8519,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FileModel(self, *args)
 
-    def FileName(self, *args):
+    def FileName(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the name of a file corresponding to a produced Model, given its rank in the Evaluation List
 
@@ -8530,7 +8530,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_FileName(self, *args)
 
-    def BeginSentFiles(self, *args):
+    def BeginSentFiles(self, *args) -> "void" :
         """
         * Commands file sending to clear the list of already sent files, commands to record a new one if <record> is True This list is managed by the ModelCopier when SendSplit is called It allows a global exploitation of the set of sent files
 
@@ -8541,7 +8541,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_BeginSentFiles(self, *args)
 
-    def SentFiles(self, *args):
+    def SentFiles(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
         """
         * Returns the list of recorded sent files, or a Null Handle is recording has not been enabled
 
@@ -8550,7 +8550,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SentFiles(self, *args)
 
-    def SendSplit(self, *args):
+    def SendSplit(self, *args) -> "Standard_Boolean" :
         """
         * Performs creation of derived files from the input Model Takes its data (sub-models and names), from result EvaluateFile if active, else by dynamic Evaluation (not stored) After SendSplit, result of EvaluateFile is Cleared Fills LastRunCheckList Works with the WorkLibrary which acts on specific type of Model and can work with File Modifiers (managed by the Model Copier) and a ModelCopier, which can work with Model Modifiers Returns False if, either WorkLibrary has failed on at least one sub-file, or the Work Session is badly conditionned (no Model defined, or FileNaming not in phase with ShareOut)
 
@@ -8559,7 +8559,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SendSplit(self, *args)
 
-    def EvalSplit(self, *args):
+    def EvalSplit(self, *args) -> "Handle_IFSelect_PacketList" :
         """
         * Returns an Evaluation of the whole ShareOut definition : i.e. how the entities of the starting model are forecast to be sent to various files : list of packets according the dispatches, effective lists of roots for each packet (which determine the content of the corresponding file); plus evaluation of which entities are : forgotten (sent into no file), duplicated (sent into more than one file), sent into a given file. See the class PacketList for more details.
 
@@ -8568,7 +8568,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvalSplit(self, *args)
 
-    def SentList(self, *args):
+    def SentList(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the list of Entities sent in files, accourding the count of files each one has been sent (these counts are reset by SetModel or SetRemaining(Forget) ) stored in Graph Status <count> = -1 (default) is for ENtities sent at least once <count> = 0 is for the Remaining List (entities not yet sent) <count> = 1 is for entities sent in one and only one file (the ideal case) Remaining Data are computed on each Sending/Copying output files (see methods EvaluateFile and SendSplit) Graph Status is 0 for Remaining Entity, <count> for Sent into <count> files This status is set to 0 (not yet sent) for all by SetModel and by SetRemaining(mode=Forget,Display)
 
@@ -8579,7 +8579,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SentList(self, *args)
 
-    def MaxSendingCount(self, *args):
+    def MaxSendingCount(self, *args) -> "Standard_Integer" :
         """
         * Returns the greater count of different files in which any of the starting entities could be sent. Before any file output, this count is 0. Ideal count is 1. More than 1 means that duplications occur.
 
@@ -8588,7 +8588,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_MaxSendingCount(self, *args)
 
-    def SetRemaining(self, *args):
+    def SetRemaining(self, *args) -> "Standard_Boolean" :
         """
         * Processes Remaining data (after having sent files), mode : Forget : forget remaining info (i.e. clear all 'Sent' status) Compute : compute and keep remaining (does nothing if :  remaining is empty or if no files has been sent) Display : display entities recorded as remaining Undo : restore former state of data (after Remaining(1) ) Returns True if OK, False else (i.e. mode = 2 and Remaining List is either empty or takes all the entities, or mode = 3 and no former computation of remaining data was done)
 
@@ -8599,7 +8599,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetRemaining(self, *args)
 
-    def SendAll(self, *args):
+    def SendAll(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Sends the starting Model into one file, without splitting, managing remaining data or anything else. <computegraph> true commands the Graph to be recomputed before sending : required when a Model is filled in several steps The Model and File Modifiers recorded to be applied on sending files are. Returns a status of execution : Done if OK, Void if no data available, Error if errors occured (work library is not defined), errors during translation Fail if exception during translation is raised Stop if no disk space or disk, file is write protected Fills LastRunCheckList
 
@@ -8612,7 +8612,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SendAll(self, *args)
 
-    def SendSelected(self, *args):
+    def SendSelected(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Sends a part of the starting Model into one file, without splitting. But remaining data are managed. <computegraph> true commands the Graph to be recomputed before sending : required when a Model is filled in several steps The Model and File Modifiers recorded to be applied on sending files are. Returns a status : Done if OK, Fail if error during send,  Error : WorkLibrary not defined, Void : selection list empty Fills LastRunCheckList
 
@@ -8627,7 +8627,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SendSelected(self, *args)
 
-    def WriteFile(self, *args):
+    def WriteFile(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Writes the current Interface Model globally to a File, and returns a write status which can be : Done OK, Fail file could not be written, Error no norm is selected Remark : It is a simple, one-file writing, other operations are available (such as splitting ...) which calls SendAll
 
@@ -8646,7 +8646,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_WriteFile(self, *args)
 
-    def NbSources(self, *args):
+    def NbSources(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Input Selections known for a Selection, or 0 if <sel> not in the WorkSession. This count is one for a SelectDeduct / SelectExtract kind, two for SelectControl kind, variable for a SelectCombine (Union/Intersection), zero else
 
@@ -8657,7 +8657,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NbSources(self, *args)
 
-    def Source(self, *args):
+    def Source(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the <num>th Input Selection of a Selection (see NbSources). Returns a Null Handle if <sel> is not in the WorkSession or if <num> is out of the range <1-NbSources> To obtain more details, see the method Sources
 
@@ -8670,7 +8670,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_Source(self, *args)
 
-    def IsReversedSelectExtract(self, *args):
+    def IsReversedSelectExtract(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if <sel> a Reversed SelectExtract, False else
 
@@ -8681,7 +8681,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_IsReversedSelectExtract(self, *args)
 
-    def ToggleSelectExtract(self, *args):
+    def ToggleSelectExtract(self, *args) -> "Standard_Boolean" :
         """
         * Toggles the Sense (Direct <-> Reversed) of a SelectExtract Returns True if Done, False if <sel> is not a SelectExtract or is not in the WorkSession
 
@@ -8692,7 +8692,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ToggleSelectExtract(self, *args)
 
-    def SetInputSelection(self, *args):
+    def SetInputSelection(self, *args) -> "Standard_Boolean" :
         """
         * Sets an Input Selection (as <input>) to a SelectExtract or a SelectDeduct (as <sel>). Returns True if Done, False if <sel> is neither a SelectExtract nor a SelectDeduct, or not in the WorkSession
 
@@ -8705,7 +8705,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetInputSelection(self, *args)
 
-    def SetControl(self, *args):
+    def SetControl(self, *args) -> "Standard_Boolean" :
         """
         * Sets an Input Selection, Main if <formain> is True, Second else (as <sc>) to a SelectControl (as <sel>). Returns True if Done, False if <sel> is not a SelectControl, or <sc> or <sel> is not in the WorkSession
 
@@ -8720,7 +8720,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetControl(self, *args)
 
-    def CombineAdd(self, *args):
+    def CombineAdd(self, *args) -> "Standard_Integer" :
         """
         * Adds an input selection to a SelectCombine (Union or Inters.). Returns new count of inputs for this SelectCombine if Done or 0 if <sel> is not kind of SelectCombine, or if <seladd> or <sel> is not in the WorkSession By default, adding is done at the end of the list Else, it is an insertion to rank <atnum> (usefull for Un-ReDo)
 
@@ -8735,7 +8735,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_CombineAdd(self, *args)
 
-    def CombineRemove(self, *args):
+    def CombineRemove(self, *args) -> "Standard_Boolean" :
         """
         * Removes an input selection from a SelectCombine (Union or Intersection). Returns True if done, False if <selcomb> is not kind of SelectCombine or <selrem> is not source of <selcomb>
 
@@ -8748,7 +8748,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_CombineRemove(self, *args)
 
-    def NewSelectPointed(self, *args):
+    def NewSelectPointed(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Creates a new Selection, of type SelectPointed, its content starts with <list>. A name must be given (can be empty)
 
@@ -8761,7 +8761,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_NewSelectPointed(self, *args)
 
-    def SetSelectPointed(self, *args):
+    def SetSelectPointed(self, *args) -> "Standard_Boolean" :
         """
         * Changes the content of a Selection of type SelectPointed According <mode> : 0 set <list> as new content (clear former) 1 : adds <list> to actual content  -1 : removes <list> from actual content Returns True if done, False if <sel> is not a SelectPointed
 
@@ -8776,7 +8776,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetSelectPointed(self, *args)
 
-    def GiveSelection(self, *args):
+    def GiveSelection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns a Selection from a Name : - the name of a Selection : this Selection - the name of a Signature + criteria between (..) : a new Selection from this Signature - an entity or a list of entities : a new SelectPointed Else, returns a Null Handle
 
@@ -8787,7 +8787,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveSelection(self, *args)
 
-    def GiveList(self, *args):
+    def GiveList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Determines a list of entities from an object : <obj> already HSequenceOfTransient : returned itself <obj> Selection : its Result of Evaluation is returned <obj> an entity of the Model : a HSequence which contains it else, an empty HSequence <obj> the Model it self : ALL its content (not only the roots)
 
@@ -8806,7 +8806,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveList(self, *args)
 
-    def GiveListFromList(self, *args):
+    def GiveListFromList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Computes a List of entities from the model as follows <first> beeing a Selection or a combination of Selections, <ent> beeing an entity or a list of entities (as a HSequenceOfTransient) : the standard result of this selection applied to this list if <ent> is Null, the standard definition of the selection is used (which contains a default input selection) if <selname> is erroneous, a null handle is returned REMARK : selname is processed as <first second> of preceeding GiveList
 
@@ -8819,7 +8819,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveListFromList(self, *args)
 
-    def GiveListCombined(self, *args):
+    def GiveListCombined(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
         """
         * Combines two lists and returns the result, according to mode : <mode> < 0 : entities in <l1> AND NOT in <l2> <mode> = 0 : entities in <l1> AND in <l2> <mode> > 0 : entities in <l1> OR in <l2>
 
@@ -8834,7 +8834,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_GiveListCombined(self, *args)
 
-    def QueryCheckList(self, *args):
+    def QueryCheckList(self, *args) -> "void" :
         """
         * Loads data from a check iterator to query status on it
 
@@ -8845,7 +8845,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_QueryCheckList(self, *args)
 
-    def QueryCheckStatus(self, *args):
+    def QueryCheckStatus(self, *args) -> "Standard_Integer" :
         """
         * Determines check status for an entity regarding last call to QueryCheckList : -1 : <ent> unknown in the model, ignored  0 : no check at all, immediate or inherited thru Graph  1 : immediate warning (no fail), no inherited check  2 : immediate fail, no inherited check +10 : idem but some inherited warning (no fail) +20 : idem but some inherited fail
 
@@ -8856,7 +8856,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_QueryCheckStatus(self, *args)
 
-    def QueryParent(self, *args):
+    def QueryParent(self, *args) -> "Standard_Integer" :
         """
         * Determines if <entdad> is parent of <entson> (in the graph), returns : -1 if no; 0 if <entdad> = <entson> 1 if immediate parent, > 1 if parent, gives count of steps
 
@@ -8869,7 +8869,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_QueryParent(self, *args)
 
-    def SetParams(self, *args):
+    def SetParams(self, *args) -> "void" :
         """
         * Sets a list of Parameters, i.e. TypedValue, to be handled through an Editor The two lists are parallel, if <params> is longer than <uses>, surnumeral parameters are for general use EditForms are created to handle these parameters (list, edit) on the basis of a ParamEditor xst-params-edit A use number dispatches the parameter to a given EditForm EditForms are defined as follows Name Use Means xst-params all All Parameters (complete list) xst-params-general 1 Generals xst-params-load 2 LoadFile (no Transfer) xst-params-send 3 SendFile (Write, no Transfer) xst-params-split 4 Split xst-param-read 5 Transfer on Reading xst-param-write 6 Transfer on Writing
 
@@ -8882,7 +8882,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_SetParams(self, *args)
 
-    def TraceStatics(self, *args):
+    def TraceStatics(self, *args) -> "void" :
         """
         * Traces the Statics attached to a given use number If <use> is given positive (normal), the trace is embedded with a header and a trailer If <use> is negative, just values are printed (this allows to make compositions) Remark : use number 5 commands use -2 to be traced Remark : use numbers 4 and 6 command use -3 to be traced
 
@@ -8895,7 +8895,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_TraceStatics(self, *args)
 
-    def DumpShare(self, *args):
+    def DumpShare(self, *args) -> "void" :
         """
         * Dumps contents of the ShareOut (on 'cout')
 
@@ -8904,7 +8904,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DumpShare(self, *args)
 
-    def ListItems(self, *args):
+    def ListItems(self, *args) -> "void" :
         """
         * Lists the Labels of all Items of the WorkSession If <label> is defined, lists labels which contain it
 
@@ -8915,7 +8915,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ListItems(self, *args)
 
-    def ListFinalModifiers(self, *args):
+    def ListFinalModifiers(self, *args) -> "void" :
         """
         * Lists the Modifiers of the session (for each one, displays its Label). Listing is done following Ranks (Modifiers are invoked following their ranks) Model Modifiers if <formodel> is True, File Modifiers else
 
@@ -8926,7 +8926,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ListFinalModifiers(self, *args)
 
-    def DumpSelection(self, *args):
+    def DumpSelection(self, *args) -> "void" :
         """
         * Lists a Selection and its Sources (see SelectionIterator), given its rank in the list
 
@@ -8937,7 +8937,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DumpSelection(self, *args)
 
-    def DumpModel(self, *args):
+    def DumpModel(self, *args) -> "void" :
         """
         * Lists the content of the Input Model (if there is one) According level : 0 -> gives only count of Entities and Roots 1 -> Lists also Roots; 2 -> Lists all Entities (by TraceType) 3 -> Performs a call to CheckList (Fails) and lists the result 4 -> as 3 but all CheckList (Fails + Warnings) 5,6,7 : as 3 but resp. Count,List,Labels by Fail 8,9,10 : as 4 but resp. Count,List,Labels by message
 
@@ -8950,7 +8950,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DumpModel(self, *args)
 
-    def TraceDumpModel(self, *args):
+    def TraceDumpModel(self, *args) -> "void" :
         """
         * Dumps the current Model (as inherited DumpModel), on currently defined Default Trace File (default is standard output)
 
@@ -8961,7 +8961,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_TraceDumpModel(self, *args)
 
-    def DumpEntity(self, *args):
+    def DumpEntity(self, *args) -> "void" :
         """
         * Dumps a starting entity according to the current norm. To do this, it calls DumpEntity from WorkLibrary. <level> is to be interpreted for each norm : see specific classes of WorkLibrary for it. Generally, 0 if for very basic (only type ...), greater values give more and more details.
 
@@ -8976,7 +8976,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_DumpEntity(self, *args)
 
-    def PrintEntityStatus(self, *args):
+    def PrintEntityStatus(self, *args) -> "void" :
         """
         * Prints main informations about an entity : its number, type, validity (and checks if any), category, shareds and sharings.. mutable because it can recompute checks as necessary
 
@@ -8989,7 +8989,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_PrintEntityStatus(self, *args)
 
-    def TraceDumpEntity(self, *args):
+    def TraceDumpEntity(self, *args) -> "void" :
         """
         * Dumps an entity from the current Model as inherited DumpEntity on currently defined Default Trace File (<level> interpreted according to the Norm, see WorkLibrary)
 
@@ -9002,7 +9002,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_TraceDumpEntity(self, *args)
 
-    def PrintCheckList(self, *args):
+    def PrintCheckList(self, *args) -> "void" :
         """
         * Prints a CheckIterator to the current Trace File, controlled with the current Model complete or fails only, according to <failsonly> <mode> defines the mode of printing 0 : sequential, according entities; else with a CheckCounter 1 : according messages, count of entities 2 : id but with list of entities, designated by their numbers 3 : as 2 but with labels of entities
 
@@ -9017,7 +9017,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_PrintCheckList(self, *args)
 
-    def PrintSignatureList(self, *args):
+    def PrintSignatureList(self, *args) -> "void" :
         """
         * Prints a SignatureList to the current Trace File, controlled with the current Model <mode> defines the mode of printing (see SignatureList)
 
@@ -9030,7 +9030,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_PrintSignatureList(self, *args)
 
-    def EvaluateSelection(self, *args):
+    def EvaluateSelection(self, *args) -> "void" :
         """
         * Displays the list of Entities selected by a Selection (i.e. the result of EvalSelection).
 
@@ -9041,7 +9041,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvaluateSelection(self, *args)
 
-    def EvaluateDispatch(self, *args):
+    def EvaluateDispatch(self, *args) -> "void" :
         """
         * Displays the result of applying a Dispatch on the input Model (also shows Remainder if there is) <mode> = 0 (default), displays nothing else <mode> = 1 : displays also duplicated entities (because of this dispatch) <mode> = 2 : displays the entities of the starting Model which are not taken by this dispatch (forgotten entities) <mode> = 3 : displays both duplicated and forgotten entities Remark : EvaluateComplete displays these data evaluated for for all the dispatches, if there are several
 
@@ -9054,7 +9054,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvaluateDispatch(self, *args)
 
-    def EvaluateComplete(self, *args):
+    def EvaluateComplete(self, *args) -> "void" :
         """
         * Displays the effect of applying the ShareOut on the input Model. <mode> = 0 (default) : displays only roots for each packet, <mode> = 1 : displays all entities for each packet, plus duplicated entities <mode> = 2 : same as <mode> = 1, plus displays forgotten entities (which are in no packet at all)
 
@@ -9065,7 +9065,7 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_EvaluateComplete(self, *args)
 
-    def ListEntities(self, *args):
+    def ListEntities(self, *args) -> "void" :
         """
         * Internal method which displays an EntityIterator <mode> 0 gives short display (only entity numbers) 1 gives a more complete trace (1 line per Entity) (can be used each time a trace has to be output from a list) 2 gives a form suitable for givelist : (n1,n2,n3...)
 
@@ -9078,11 +9078,11 @@ class IFSelect_WorkSession(OCC.MMgt.MMgt_TShared):
         """
         return _IFSelect.IFSelect_WorkSession_ListEntities(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_WorkSession self)"""
         return _IFSelect.IFSelect_WorkSession__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_WorkSession" :
         """GetHandle(IFSelect_WorkSession self) -> Handle_IFSelect_WorkSession"""
         return _IFSelect.IFSelect_WorkSession_GetHandle(self)
 
@@ -9278,7 +9278,7 @@ Handle_IFSelect_WorkSession._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_WorkSession_swigregister = _IFSelect.Handle_IFSelect_WorkSession_swigregister
 Handle_IFSelect_WorkSession_swigregister(Handle_IFSelect_WorkSession)
 
-def Handle_IFSelect_WorkSession_DownCast(*args):
+def Handle_IFSelect_WorkSession_DownCast(*args) -> "Handle_IFSelect_WorkSession const" :
   return _IFSelect.Handle_IFSelect_WorkSession_DownCast(*args)
 Handle_IFSelect_WorkSession_DownCast = _IFSelect.Handle_IFSelect_WorkSession_DownCast
 
@@ -9299,7 +9299,7 @@ class IFSelect_Act(IFSelect_Activator):
 
         """
         _IFSelect.IFSelect_Act_swiginit(self,_IFSelect.new_IFSelect_Act(*args))
-    def SetGroup(*args):
+    def SetGroup(*args) -> "void" :
         """
         * Changes the default group name for the following Acts group empty means to come back to default from Activator Also a file name can be precised (to query by getsource)
 
@@ -9313,7 +9313,7 @@ class IFSelect_Act(IFSelect_Activator):
         return _IFSelect.IFSelect_Act_SetGroup(*args)
 
     SetGroup = staticmethod(SetGroup)
-    def AddFunc(*args):
+    def AddFunc(*args) -> "void" :
         """
         * Adds a function with its name and help : creates an Act then records it as normal function
 
@@ -9329,7 +9329,7 @@ class IFSelect_Act(IFSelect_Activator):
         return _IFSelect.IFSelect_Act_AddFunc(*args)
 
     AddFunc = staticmethod(AddFunc)
-    def AddFSet(*args):
+    def AddFSet(*args) -> "void" :
         """
         * Adds a function with its name and help : creates an Act then records it as function for XSET (i.e. to create control item)
 
@@ -9345,11 +9345,11 @@ class IFSelect_Act(IFSelect_Activator):
         return _IFSelect.IFSelect_Act_AddFSet(*args)
 
     AddFSet = staticmethod(AddFSet)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Act self)"""
         return _IFSelect.IFSelect_Act__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Act" :
         """GetHandle(IFSelect_Act self) -> Handle_IFSelect_Act"""
         return _IFSelect.IFSelect_Act_GetHandle(self)
 
@@ -9366,7 +9366,7 @@ IFSelect_Act.GetHandle = new_instancemethod(_IFSelect.IFSelect_Act_GetHandle,Non
 IFSelect_Act_swigregister = _IFSelect.IFSelect_Act_swigregister
 IFSelect_Act_swigregister(IFSelect_Act)
 
-def IFSelect_Act_SetGroup(*args):
+def IFSelect_Act_SetGroup(*args) -> "void" :
   """
     * Changes the default group name for the following Acts group empty means to come back to default from Activator Also a file name can be precised (to query by getsource)
 
@@ -9379,7 +9379,7 @@ def IFSelect_Act_SetGroup(*args):
     """
   return _IFSelect.IFSelect_Act_SetGroup(*args)
 
-def IFSelect_Act_AddFunc(*args):
+def IFSelect_Act_AddFunc(*args) -> "void" :
   """
     * Adds a function with its name and help : creates an Act then records it as normal function
 
@@ -9394,7 +9394,7 @@ def IFSelect_Act_AddFunc(*args):
     """
   return _IFSelect.IFSelect_Act_AddFunc(*args)
 
-def IFSelect_Act_AddFSet(*args):
+def IFSelect_Act_AddFSet(*args) -> "void" :
   """
     * Adds a function with its name and help : creates an Act then records it as function for XSET (i.e. to create control item)
 
@@ -9430,7 +9430,7 @@ Handle_IFSelect_Act._kill_pointed = new_instancemethod(_IFSelect.Handle_IFSelect
 Handle_IFSelect_Act_swigregister = _IFSelect.Handle_IFSelect_Act_swigregister
 Handle_IFSelect_Act_swigregister(Handle_IFSelect_Act)
 
-def Handle_IFSelect_Act_DownCast(*args):
+def Handle_IFSelect_Act_DownCast(*args) -> "Handle_IFSelect_Act const" :
   return _IFSelect.Handle_IFSelect_Act_DownCast(*args)
 Handle_IFSelect_Act_DownCast = _IFSelect.Handle_IFSelect_Act_DownCast
 
@@ -9445,11 +9445,11 @@ class IFSelect_BasicDumper(IFSelect_SessionDumper):
 
         """
         _IFSelect.IFSelect_BasicDumper_swiginit(self,_IFSelect.new_IFSelect_BasicDumper(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_BasicDumper self)"""
         return _IFSelect.IFSelect_BasicDumper__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_BasicDumper" :
         """GetHandle(IFSelect_BasicDumper self) -> Handle_IFSelect_BasicDumper"""
         return _IFSelect.IFSelect_BasicDumper_GetHandle(self)
 
@@ -9487,7 +9487,7 @@ Handle_IFSelect_BasicDumper._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_BasicDumper_swigregister = _IFSelect.Handle_IFSelect_BasicDumper_swigregister
 Handle_IFSelect_BasicDumper_swigregister(Handle_IFSelect_BasicDumper)
 
-def Handle_IFSelect_BasicDumper_DownCast(*args):
+def Handle_IFSelect_BasicDumper_DownCast(*args) -> "Handle_IFSelect_BasicDumper const" :
   return _IFSelect.Handle_IFSelect_BasicDumper_DownCast(*args)
 Handle_IFSelect_BasicDumper_DownCast = _IFSelect.Handle_IFSelect_BasicDumper_DownCast
 
@@ -9504,7 +9504,7 @@ class IFSelect_CheckCounter(IFSelect_SignatureList):
 
         """
         _IFSelect.IFSelect_CheckCounter_swiginit(self,_IFSelect.new_IFSelect_CheckCounter(*args))
-    def SetSignature(self, *args):
+    def SetSignature(self, *args) -> "void" :
         """
         * Sets a specific signature Else, the current SignType (in the model) is used
 
@@ -9515,7 +9515,7 @@ class IFSelect_CheckCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_CheckCounter_SetSignature(self, *args)
 
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_MoniTool_SignText" :
         """
         * Returns the Signature;
 
@@ -9524,7 +9524,7 @@ class IFSelect_CheckCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_CheckCounter_Signature(self, *args)
 
-    def Analyse(self, *args):
+    def Analyse(self, *args) -> "void" :
         """
         * Analyses a CheckIterator according a Model (which detains the entities for which the CheckIterator has messages), i.e. counts messages for entities If <original> is True, does not consider final messages but those before interpretation (such as inserting variables : integers, reals, strings) If <failsonly> is True, only Fails are considered Remark : global messages are recorded with a Null entity
 
@@ -9541,11 +9541,11 @@ class IFSelect_CheckCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_CheckCounter_Analyse(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_CheckCounter self)"""
         return _IFSelect.IFSelect_CheckCounter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_CheckCounter" :
         """GetHandle(IFSelect_CheckCounter self) -> Handle_IFSelect_CheckCounter"""
         return _IFSelect.IFSelect_CheckCounter_GetHandle(self)
 
@@ -9586,7 +9586,7 @@ Handle_IFSelect_CheckCounter._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_CheckCounter_swigregister = _IFSelect.Handle_IFSelect_CheckCounter_swigregister
 Handle_IFSelect_CheckCounter_swigregister(Handle_IFSelect_CheckCounter)
 
-def Handle_IFSelect_CheckCounter_DownCast(*args):
+def Handle_IFSelect_CheckCounter_DownCast(*args) -> "Handle_IFSelect_CheckCounter const" :
   return _IFSelect.Handle_IFSelect_CheckCounter_DownCast(*args)
 Handle_IFSelect_CheckCounter_DownCast = _IFSelect.Handle_IFSelect_CheckCounter_DownCast
 
@@ -9601,11 +9601,11 @@ class IFSelect_DispGlobal(IFSelect_Dispatch):
 
         """
         _IFSelect.IFSelect_DispGlobal_swiginit(self,_IFSelect.new_IFSelect_DispGlobal(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_DispGlobal self)"""
         return _IFSelect.IFSelect_DispGlobal__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_DispGlobal" :
         """GetHandle(IFSelect_DispGlobal self) -> Handle_IFSelect_DispGlobal"""
         return _IFSelect.IFSelect_DispGlobal_GetHandle(self)
 
@@ -9643,7 +9643,7 @@ Handle_IFSelect_DispGlobal._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_DispGlobal_swigregister = _IFSelect.Handle_IFSelect_DispGlobal_swigregister
 Handle_IFSelect_DispGlobal_swigregister(Handle_IFSelect_DispGlobal)
 
-def Handle_IFSelect_DispGlobal_DownCast(*args):
+def Handle_IFSelect_DispGlobal_DownCast(*args) -> "Handle_IFSelect_DispGlobal const" :
   return _IFSelect.Handle_IFSelect_DispGlobal_DownCast(*args)
 Handle_IFSelect_DispGlobal_DownCast = _IFSelect.Handle_IFSelect_DispGlobal_DownCast
 
@@ -9658,7 +9658,7 @@ class IFSelect_DispPerCount(IFSelect_Dispatch):
 
         """
         _IFSelect.IFSelect_DispPerCount_swiginit(self,_IFSelect.new_IFSelect_DispPerCount(*args))
-    def Count(self, *args):
+    def Count(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns the Count Parameter used for splitting
 
@@ -9667,7 +9667,7 @@ class IFSelect_DispPerCount(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerCount_Count(self, *args)
 
-    def SetCount(self, *args):
+    def SetCount(self, *args) -> "void" :
         """
         * Sets a new Parameter for Count
 
@@ -9678,7 +9678,7 @@ class IFSelect_DispPerCount(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerCount_SetCount(self, *args)
 
-    def CountValue(self, *args):
+    def CountValue(self, *args) -> "Standard_Integer" :
         """
         * Returns the effective value of the count parameter (if Count Parameter not Set or value not positive, returns 1)
 
@@ -9687,11 +9687,11 @@ class IFSelect_DispPerCount(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerCount_CountValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_DispPerCount self)"""
         return _IFSelect.IFSelect_DispPerCount__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_DispPerCount" :
         """GetHandle(IFSelect_DispPerCount self) -> Handle_IFSelect_DispPerCount"""
         return _IFSelect.IFSelect_DispPerCount_GetHandle(self)
 
@@ -9732,7 +9732,7 @@ Handle_IFSelect_DispPerCount._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_DispPerCount_swigregister = _IFSelect.Handle_IFSelect_DispPerCount_swigregister
 Handle_IFSelect_DispPerCount_swigregister(Handle_IFSelect_DispPerCount)
 
-def Handle_IFSelect_DispPerCount_DownCast(*args):
+def Handle_IFSelect_DispPerCount_DownCast(*args) -> "Handle_IFSelect_DispPerCount const" :
   return _IFSelect.Handle_IFSelect_DispPerCount_DownCast(*args)
 Handle_IFSelect_DispPerCount_DownCast = _IFSelect.Handle_IFSelect_DispPerCount_DownCast
 
@@ -9747,7 +9747,7 @@ class IFSelect_DispPerFiles(IFSelect_Dispatch):
 
         """
         _IFSelect.IFSelect_DispPerFiles_swiginit(self,_IFSelect.new_IFSelect_DispPerFiles(*args))
-    def Count(self, *args):
+    def Count(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns the Count Parameter used for splitting
 
@@ -9756,7 +9756,7 @@ class IFSelect_DispPerFiles(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerFiles_Count(self, *args)
 
-    def SetCount(self, *args):
+    def SetCount(self, *args) -> "void" :
         """
         * Sets a new Parameter for Count
 
@@ -9767,7 +9767,7 @@ class IFSelect_DispPerFiles(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerFiles_SetCount(self, *args)
 
-    def CountValue(self, *args):
+    def CountValue(self, *args) -> "Standard_Integer" :
         """
         * Returns the effective value of the count parameter (if Count Parameter not Set or value not positive, returns 1)
 
@@ -9776,11 +9776,11 @@ class IFSelect_DispPerFiles(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerFiles_CountValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_DispPerFiles self)"""
         return _IFSelect.IFSelect_DispPerFiles__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_DispPerFiles" :
         """GetHandle(IFSelect_DispPerFiles self) -> Handle_IFSelect_DispPerFiles"""
         return _IFSelect.IFSelect_DispPerFiles_GetHandle(self)
 
@@ -9821,7 +9821,7 @@ Handle_IFSelect_DispPerFiles._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_DispPerFiles_swigregister = _IFSelect.Handle_IFSelect_DispPerFiles_swigregister
 Handle_IFSelect_DispPerFiles_swigregister(Handle_IFSelect_DispPerFiles)
 
-def Handle_IFSelect_DispPerFiles_DownCast(*args):
+def Handle_IFSelect_DispPerFiles_DownCast(*args) -> "Handle_IFSelect_DispPerFiles const" :
   return _IFSelect.Handle_IFSelect_DispPerFiles_DownCast(*args)
 Handle_IFSelect_DispPerFiles_DownCast = _IFSelect.Handle_IFSelect_DispPerFiles_DownCast
 
@@ -9836,11 +9836,11 @@ class IFSelect_DispPerOne(IFSelect_Dispatch):
 
         """
         _IFSelect.IFSelect_DispPerOne_swiginit(self,_IFSelect.new_IFSelect_DispPerOne(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_DispPerOne self)"""
         return _IFSelect.IFSelect_DispPerOne__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_DispPerOne" :
         """GetHandle(IFSelect_DispPerOne self) -> Handle_IFSelect_DispPerOne"""
         return _IFSelect.IFSelect_DispPerOne_GetHandle(self)
 
@@ -9878,7 +9878,7 @@ Handle_IFSelect_DispPerOne._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_DispPerOne_swigregister = _IFSelect.Handle_IFSelect_DispPerOne_swigregister
 Handle_IFSelect_DispPerOne_swigregister(Handle_IFSelect_DispPerOne)
 
-def Handle_IFSelect_DispPerOne_DownCast(*args):
+def Handle_IFSelect_DispPerOne_DownCast(*args) -> "Handle_IFSelect_DispPerOne const" :
   return _IFSelect.Handle_IFSelect_DispPerOne_DownCast(*args)
 Handle_IFSelect_DispPerOne_DownCast = _IFSelect.Handle_IFSelect_DispPerOne_DownCast
 
@@ -9893,7 +9893,7 @@ class IFSelect_DispPerSignature(IFSelect_Dispatch):
 
         """
         _IFSelect.IFSelect_DispPerSignature_swiginit(self,_IFSelect.new_IFSelect_DispPerSignature(*args))
-    def SignCounter(self, *args):
+    def SignCounter(self, *args) -> "Handle_IFSelect_SignCounter" :
         """
         * Returns the SignCounter used for splitting
 
@@ -9902,7 +9902,7 @@ class IFSelect_DispPerSignature(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerSignature_SignCounter(self, *args)
 
-    def SetSignCounter(self, *args):
+    def SetSignCounter(self, *args) -> "void" :
         """
         * Sets a SignCounter for sort Remark : it is set to record lists of entities, not only counts
 
@@ -9913,7 +9913,7 @@ class IFSelect_DispPerSignature(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerSignature_SetSignCounter(self, *args)
 
-    def SignName(self, *args):
+    def SignName(self, *args) -> "char *" :
         """
         * Returns the name of the SignCounter, which caracterises the sorting criterium for this Dispatch
 
@@ -9922,11 +9922,11 @@ class IFSelect_DispPerSignature(IFSelect_Dispatch):
         """
         return _IFSelect.IFSelect_DispPerSignature_SignName(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_DispPerSignature self)"""
         return _IFSelect.IFSelect_DispPerSignature__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_DispPerSignature" :
         """GetHandle(IFSelect_DispPerSignature self) -> Handle_IFSelect_DispPerSignature"""
         return _IFSelect.IFSelect_DispPerSignature_GetHandle(self)
 
@@ -9967,7 +9967,7 @@ Handle_IFSelect_DispPerSignature._kill_pointed = new_instancemethod(_IFSelect.Ha
 Handle_IFSelect_DispPerSignature_swigregister = _IFSelect.Handle_IFSelect_DispPerSignature_swigregister
 Handle_IFSelect_DispPerSignature_swigregister(Handle_IFSelect_DispPerSignature)
 
-def Handle_IFSelect_DispPerSignature_DownCast(*args):
+def Handle_IFSelect_DispPerSignature_DownCast(*args) -> "Handle_IFSelect_DispPerSignature const" :
   return _IFSelect.Handle_IFSelect_DispPerSignature_DownCast(*args)
 Handle_IFSelect_DispPerSignature_DownCast = _IFSelect.Handle_IFSelect_DispPerSignature_DownCast
 
@@ -9975,7 +9975,7 @@ class IFSelect_Modifier(IFSelect_GeneralModifier):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * This deferred method defines the action specific to each class of Modifier. It is called by a ModelCopier, once the Model generated and filled. ModelCopier has already checked the criteria (Dispatch, Model Rank, Selection) before calling it. <ctx> detains informations about original data and selection. The result of copying, on which modifications are to be done, is <target>. <TC> allows to run additional copies as required In case of Error, use methods CCheck from the ContextModif to aknowledge an entity Check or a Global Check with messages
 
@@ -9992,11 +9992,11 @@ class IFSelect_Modifier(IFSelect_GeneralModifier):
         """
         return _IFSelect.IFSelect_Modifier_Perform(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_Modifier self)"""
         return _IFSelect.IFSelect_Modifier__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_Modifier" :
         """GetHandle(IFSelect_Modifier self) -> Handle_IFSelect_Modifier"""
         return _IFSelect.IFSelect_Modifier_GetHandle(self)
 
@@ -10035,7 +10035,7 @@ Handle_IFSelect_Modifier._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_Modifier_swigregister = _IFSelect.Handle_IFSelect_Modifier_swigregister
 Handle_IFSelect_Modifier_swigregister(Handle_IFSelect_Modifier)
 
-def Handle_IFSelect_Modifier_DownCast(*args):
+def Handle_IFSelect_Modifier_DownCast(*args) -> "Handle_IFSelect_Modifier const" :
   return _IFSelect.Handle_IFSelect_Modifier_DownCast(*args)
 Handle_IFSelect_Modifier_DownCast = _IFSelect.Handle_IFSelect_Modifier_DownCast
 
@@ -10054,7 +10054,7 @@ class IFSelect_ParamEditor(IFSelect_Editor):
 
         """
         _IFSelect.IFSelect_ParamEditor_swiginit(self,_IFSelect.new_IFSelect_ParamEditor(*args))
-    def AddValue(self, *args):
+    def AddValue(self, *args) -> "void" :
         """
         * Adds a TypedValue By default, its short name equates its complete name, it can be explicited
 
@@ -10067,7 +10067,7 @@ class IFSelect_ParamEditor(IFSelect_Editor):
         """
         return _IFSelect.IFSelect_ParamEditor_AddValue(self, *args)
 
-    def AddConstantText(self, *args):
+    def AddConstantText(self, *args) -> "void" :
         """
         * Adds a Constant Text, it will be Read Only By default, its long name equates its shortname
 
@@ -10082,7 +10082,7 @@ class IFSelect_ParamEditor(IFSelect_Editor):
         """
         return _IFSelect.IFSelect_ParamEditor_AddConstantText(self, *args)
 
-    def StaticEditor(*args):
+    def StaticEditor(*args) -> "Handle_IFSelect_ParamEditor" :
         """
         * Returns a ParamEditor to work on the Static Parameters of which names are listed in <list> Null Handle if <list> is null or empty
 
@@ -10096,11 +10096,11 @@ class IFSelect_ParamEditor(IFSelect_Editor):
         return _IFSelect.IFSelect_ParamEditor_StaticEditor(*args)
 
     StaticEditor = staticmethod(StaticEditor)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ParamEditor self)"""
         return _IFSelect.IFSelect_ParamEditor__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ParamEditor" :
         """GetHandle(IFSelect_ParamEditor self) -> Handle_IFSelect_ParamEditor"""
         return _IFSelect.IFSelect_ParamEditor_GetHandle(self)
 
@@ -10119,7 +10119,7 @@ IFSelect_ParamEditor.GetHandle = new_instancemethod(_IFSelect.IFSelect_ParamEdit
 IFSelect_ParamEditor_swigregister = _IFSelect.IFSelect_ParamEditor_swigregister
 IFSelect_ParamEditor_swigregister(IFSelect_ParamEditor)
 
-def IFSelect_ParamEditor_StaticEditor(*args):
+def IFSelect_ParamEditor_StaticEditor(*args) -> "Handle_IFSelect_ParamEditor" :
   """
     * Returns a ParamEditor to work on the Static Parameters of which names are listed in <list> Null Handle if <list> is null or empty
 
@@ -10153,7 +10153,7 @@ Handle_IFSelect_ParamEditor._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_ParamEditor_swigregister = _IFSelect.Handle_IFSelect_ParamEditor_swigregister
 Handle_IFSelect_ParamEditor_swigregister(Handle_IFSelect_ParamEditor)
 
-def Handle_IFSelect_ParamEditor_DownCast(*args):
+def Handle_IFSelect_ParamEditor_DownCast(*args) -> "Handle_IFSelect_ParamEditor const" :
   return _IFSelect.Handle_IFSelect_ParamEditor_DownCast(*args)
 Handle_IFSelect_ParamEditor_DownCast = _IFSelect.Handle_IFSelect_ParamEditor_DownCast
 
@@ -10161,11 +10161,11 @@ class IFSelect_SelectBase(IFSelect_Selection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectBase self)"""
         return _IFSelect.IFSelect_SelectBase__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectBase" :
         """GetHandle(IFSelect_SelectBase self) -> Handle_IFSelect_SelectBase"""
         return _IFSelect.IFSelect_SelectBase_GetHandle(self)
 
@@ -10203,7 +10203,7 @@ Handle_IFSelect_SelectBase._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_SelectBase_swigregister = _IFSelect.Handle_IFSelect_SelectBase_swigregister
 Handle_IFSelect_SelectBase_swigregister(Handle_IFSelect_SelectBase)
 
-def Handle_IFSelect_SelectBase_DownCast(*args):
+def Handle_IFSelect_SelectBase_DownCast(*args) -> "Handle_IFSelect_SelectBase const" :
   return _IFSelect.Handle_IFSelect_SelectBase_DownCast(*args)
 Handle_IFSelect_SelectBase_DownCast = _IFSelect.Handle_IFSelect_SelectBase_DownCast
 
@@ -10211,7 +10211,7 @@ class IFSelect_SelectCombine(IFSelect_Selection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbInputs(self, *args):
+    def NbInputs(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Input Selections
 
@@ -10220,7 +10220,7 @@ class IFSelect_SelectCombine(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectCombine_NbInputs(self, *args)
 
-    def Input(self, *args):
+    def Input(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns an Input Selection, given its rank in the list
 
@@ -10231,7 +10231,7 @@ class IFSelect_SelectCombine(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectCombine_Input(self, *args)
 
-    def InputRank(self, *args):
+    def InputRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the rank of an input Selection, 0 if not in the list. Most generally, its value is meaningless, except for testing the presence of an input Selection : - == 0 if <sel> is not an input for <self> - > 0 if <sel> is an input for <self>
 
@@ -10242,7 +10242,7 @@ class IFSelect_SelectCombine(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectCombine_InputRank(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds a Selection to the filling list By default, adds it to the end of the list A Positive rank less then NbInputs gives an insertion rank (InsertBefore : the new <atnum>th item of the list is <sel>)
 
@@ -10255,7 +10255,7 @@ class IFSelect_SelectCombine(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectCombine_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes an input Selection. Returns True if Done, False, if <sel> is not an input for <self>
 
@@ -10272,11 +10272,11 @@ class IFSelect_SelectCombine(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectCombine_Remove(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectCombine self)"""
         return _IFSelect.IFSelect_SelectCombine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectCombine" :
         """GetHandle(IFSelect_SelectCombine self) -> Handle_IFSelect_SelectCombine"""
         return _IFSelect.IFSelect_SelectCombine_GetHandle(self)
 
@@ -10319,7 +10319,7 @@ Handle_IFSelect_SelectCombine._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectCombine_swigregister = _IFSelect.Handle_IFSelect_SelectCombine_swigregister
 Handle_IFSelect_SelectCombine_swigregister(Handle_IFSelect_SelectCombine)
 
-def Handle_IFSelect_SelectCombine_DownCast(*args):
+def Handle_IFSelect_SelectCombine_DownCast(*args) -> "Handle_IFSelect_SelectCombine const" :
   return _IFSelect.Handle_IFSelect_SelectCombine_DownCast(*args)
 Handle_IFSelect_SelectCombine_DownCast = _IFSelect.Handle_IFSelect_SelectCombine_DownCast
 
@@ -10327,7 +10327,7 @@ class IFSelect_SelectControl(IFSelect_Selection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MainInput(self, *args):
+    def MainInput(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Main Input Selection
 
@@ -10336,7 +10336,7 @@ class IFSelect_SelectControl(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectControl_MainInput(self, *args)
 
-    def HasSecondInput(self, *args):
+    def HasSecondInput(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Control Input is defined Thus, Result can be computed differently if there is a Control Input or if there is none
 
@@ -10345,7 +10345,7 @@ class IFSelect_SelectControl(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectControl_HasSecondInput(self, *args)
 
-    def SecondInput(self, *args):
+    def SecondInput(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Control Input Selection, or a Null Handle
 
@@ -10354,7 +10354,7 @@ class IFSelect_SelectControl(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectControl_SecondInput(self, *args)
 
-    def SetMainInput(self, *args):
+    def SetMainInput(self, *args) -> "void" :
         """
         * Sets a Selection to be the Main Input
 
@@ -10365,7 +10365,7 @@ class IFSelect_SelectControl(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectControl_SetMainInput(self, *args)
 
-    def SetSecondInput(self, *args):
+    def SetSecondInput(self, *args) -> "void" :
         """
         * Sets a Selection to be the Control Input
 
@@ -10376,11 +10376,11 @@ class IFSelect_SelectControl(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectControl_SetSecondInput(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectControl self)"""
         return _IFSelect.IFSelect_SelectControl__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectControl" :
         """GetHandle(IFSelect_SelectControl self) -> Handle_IFSelect_SelectControl"""
         return _IFSelect.IFSelect_SelectControl_GetHandle(self)
 
@@ -10423,7 +10423,7 @@ Handle_IFSelect_SelectControl._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectControl_swigregister = _IFSelect.Handle_IFSelect_SelectControl_swigregister
 Handle_IFSelect_SelectControl_swigregister(Handle_IFSelect_SelectControl)
 
-def Handle_IFSelect_SelectControl_DownCast(*args):
+def Handle_IFSelect_SelectControl_DownCast(*args) -> "Handle_IFSelect_SelectControl const" :
   return _IFSelect.Handle_IFSelect_SelectControl_DownCast(*args)
 Handle_IFSelect_SelectControl_DownCast = _IFSelect.Handle_IFSelect_SelectControl_DownCast
 
@@ -10431,7 +10431,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetInput(self, *args):
+    def SetInput(self, *args) -> "void" :
         """
         * Defines or Changes the Input Selection
 
@@ -10442,7 +10442,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_SetInput(self, *args)
 
-    def Input(self, *args):
+    def Input(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Input Selection
 
@@ -10451,7 +10451,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_Input(self, *args)
 
-    def HasInput(self, *args):
+    def HasInput(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the Input Selection is defined, False else
 
@@ -10460,7 +10460,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_HasInput(self, *args)
 
-    def HasAlternate(self, *args):
+    def HasAlternate(self, *args) -> "Standard_Boolean" :
         """
         * Tells if an Alternate List has been set, i.e. : the Alternate Definition is present and set
 
@@ -10469,7 +10469,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_HasAlternate(self, *args)
 
-    def Alternate(self, *args):
+    def Alternate(self, *args) -> "Handle_IFSelect_SelectPointed &" :
         """
         * Returns the Alternate Definition It is returned modifiable, hence an already defined SelectPointed can be used But if it was not yet defined, it is created the first time It is exploited by InputResult
 
@@ -10478,7 +10478,7 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_Alternate(self, *args)
 
-    def InputResult(self, *args):
+    def InputResult(self, *args) -> "Interface_EntityIterator" :
         """
         * Returns the Result determined by Input Selection, as Unique if Input Selection is not defined, returns an empty list. If Alternate is set, InputResult takes its definition instead of calling the Input Selection, then clears it
 
@@ -10489,11 +10489,11 @@ class IFSelect_SelectDeduct(IFSelect_Selection):
         """
         return _IFSelect.IFSelect_SelectDeduct_InputResult(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectDeduct self)"""
         return _IFSelect.IFSelect_SelectDeduct__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectDeduct" :
         """GetHandle(IFSelect_SelectDeduct self) -> Handle_IFSelect_SelectDeduct"""
         return _IFSelect.IFSelect_SelectDeduct_GetHandle(self)
 
@@ -10537,7 +10537,7 @@ Handle_IFSelect_SelectDeduct._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SelectDeduct_swigregister = _IFSelect.Handle_IFSelect_SelectDeduct_swigregister
 Handle_IFSelect_SelectDeduct_swigregister(Handle_IFSelect_SelectDeduct)
 
-def Handle_IFSelect_SelectDeduct_DownCast(*args):
+def Handle_IFSelect_SelectDeduct_DownCast(*args) -> "Handle_IFSelect_SelectDeduct const" :
   return _IFSelect.Handle_IFSelect_SelectDeduct_DownCast(*args)
 Handle_IFSelect_SelectDeduct_DownCast = _IFSelect.Handle_IFSelect_SelectDeduct_DownCast
 
@@ -10554,7 +10554,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
 
         """
         _IFSelect.IFSelect_SessionPilot_swiginit(self,_IFSelect.new_IFSelect_SessionPilot(*args))
-    def Session(self, *args):
+    def Session(self, *args) -> "Handle_IFSelect_WorkSession" :
         """
         * Returns the WorkSession which is worked on
 
@@ -10563,7 +10563,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Session(self, *args)
 
-    def Library(self, *args):
+    def Library(self, *args) -> "Handle_IFSelect_WorkLibrary" :
         """
         * Returns the WorKlibrary (Null if not set). WorkLibrary is used to Read and Write Files, according to the Norm
 
@@ -10572,7 +10572,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Library(self, *args)
 
-    def RecordMode(self, *args):
+    def RecordMode(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Record Mode for Commands. Default is False.
 
@@ -10581,7 +10581,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_RecordMode(self, *args)
 
-    def SetSession(self, *args):
+    def SetSession(self, *args) -> "void" :
         """
         * Sets a WorkSession to be worked on
 
@@ -10592,7 +10592,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_SetSession(self, *args)
 
-    def SetLibrary(self, *args):
+    def SetLibrary(self, *args) -> "void" :
         """
         * Sets a WorkLibrary
 
@@ -10603,7 +10603,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_SetLibrary(self, *args)
 
-    def SetRecordMode(self, *args):
+    def SetRecordMode(self, *args) -> "void" :
         """
         * Changes the RecordMode.
 
@@ -10614,7 +10614,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_SetRecordMode(self, *args)
 
-    def SetCommandLine(self, *args):
+    def SetCommandLine(self, *args) -> "void" :
         """
         * Sets the value of the Command Line to be interpreted Also prepares the interpretation (splitting by blanks)
 
@@ -10625,7 +10625,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_SetCommandLine(self, *args)
 
-    def CommandLine(self, *args):
+    def CommandLine(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns the Command Line to be interpreted
 
@@ -10634,7 +10634,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_CommandLine(self, *args)
 
-    def CommandPart(self, *args):
+    def CommandPart(self, *args) -> "char *" :
         """
         * Returns the part of the command line which begins at argument <numarg> between 0 and NbWords-1 (by default, all the line) Empty string if out of range
 
@@ -10645,7 +10645,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_CommandPart(self, *args)
 
-    def NbWords(self, *args):
+    def NbWords(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of words of the Command Line, separated by blanks : 0 if empty, one if a command without args, else it gives the count of args minus one. Warning : limited to 10 (command title + 9 args)
 
@@ -10654,7 +10654,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_NbWords(self, *args)
 
-    def Word(self, *args):
+    def Word(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns a word given its rank in the Command Line. Begins at 0 which is the Command Title, 1 is the 1st arg., etc...
 
@@ -10665,7 +10665,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Word(self, *args)
 
-    def Arg(self, *args):
+    def Arg(self, *args) -> "char *" :
         """
         * Returns a word given its rank, as a CString. As for Word, begins at 0 (the command name), etc...
 
@@ -10676,7 +10676,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Arg(self, *args)
 
-    def RemoveWord(self, *args):
+    def RemoveWord(self, *args) -> "Standard_Boolean" :
         """
         * Removes a word given its rank. Returns True if Done, False if <num> is out of range
 
@@ -10687,7 +10687,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_RemoveWord(self, *args)
 
-    def NbCommands(self, *args):
+    def NbCommands(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of recorded Commands
 
@@ -10696,7 +10696,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_NbCommands(self, *args)
 
-    def Command(self, *args):
+    def Command(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns a recorded Command, given its rank (from 1)
 
@@ -10707,7 +10707,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Command(self, *args)
 
-    def RecordItem(self, *args):
+    def RecordItem(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Allows to associate a Transient Value with the last execution as a partial result Returns RetDone if item is not Null, RetFail if item is Null Remark : it is nullified for each Perform
 
@@ -10718,7 +10718,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_RecordItem(self, *args)
 
-    def RecordedItem(self, *args):
+    def RecordedItem(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns the Transient Object which was recorded with the current Line Command. If none was, returns a Null Handle
 
@@ -10727,7 +10727,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_RecordedItem(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the recorded informations (commands, objects)
 
@@ -10736,7 +10736,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Clear(self, *args)
 
-    def ReadScript(self, *args):
+    def ReadScript(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Reads commands from a Script File, named <file>. By default (file = ''), reads from standard input with a prompt Else (reading from a file), the read commands are displayed onto standard output. Allows nested reads. Reading is stopped either by command x or exit, or by reaching end of file Return Value follows the rules of Do : RetEnd for normal end, RetFail if script could not be opened
 
@@ -10747,7 +10747,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_ReadScript(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Executes the Command, itself (for built-in commands, which have priority) or by using the list of Activators. The value returned is : RetVoid if nothing done (void command) RetDone if execution OK, RetEnd if END OF SESSION, RetError if command unknown or incorrect, RetFail if error on execution If execution is OK and RecordMode is set, this Command Line is recorded to the list (see below).
 
@@ -10756,7 +10756,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Perform(self, *args)
 
-    def ExecuteAlias(self, *args):
+    def ExecuteAlias(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Executes the Commands, except that the command name (word 0) is aliased. The rest of the command line is unchanged If <alias> is empty, Executes with no change Error status is returned if the alias is unknown as command
 
@@ -10767,7 +10767,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_ExecuteAlias(self, *args)
 
-    def Execute(self, *args):
+    def Execute(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Sets the Command then tries to execute it. Return value : same as for Perform
 
@@ -10778,7 +10778,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Execute(self, *args)
 
-    def ExecuteCounter(self, *args):
+    def ExecuteCounter(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Executes a Counter in a general way If <numword> is greater than count of command words, it counts all the model. Else it considers the word <numword> as the identifier of a Selection <mode> gives the mode of printing results, default is CountByItem
 
@@ -10793,7 +10793,7 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_ExecuteCounter(self, *args)
 
-    def Number(self, *args):
+    def Number(self, *args) -> "Standard_Integer" :
         """
         * Interprets a string value as an entity number : if it gives an integer, returns its value else, considers it as ENtityLabel (preferably case sensitive) in case of failure, returns 0
 
@@ -10804,11 +10804,11 @@ class IFSelect_SessionPilot(IFSelect_Activator):
         """
         return _IFSelect.IFSelect_SessionPilot_Number(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SessionPilot self)"""
         return _IFSelect.IFSelect_SessionPilot__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SessionPilot" :
         """GetHandle(IFSelect_SessionPilot self) -> Handle_IFSelect_SessionPilot"""
         return _IFSelect.IFSelect_SessionPilot_GetHandle(self)
 
@@ -10870,7 +10870,7 @@ Handle_IFSelect_SessionPilot._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SessionPilot_swigregister = _IFSelect.Handle_IFSelect_SessionPilot_swigregister
 Handle_IFSelect_SessionPilot_swigregister(Handle_IFSelect_SessionPilot)
 
-def Handle_IFSelect_SessionPilot_DownCast(*args):
+def Handle_IFSelect_SessionPilot_DownCast(*args) -> "Handle_IFSelect_SessionPilot const" :
   return _IFSelect.Handle_IFSelect_SessionPilot_DownCast(*args)
 Handle_IFSelect_SessionPilot_DownCast = _IFSelect.Handle_IFSelect_SessionPilot_DownCast
 
@@ -10919,7 +10919,7 @@ Handle_IFSelect_SignCategory._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SignCategory_swigregister = _IFSelect.Handle_IFSelect_SignCategory_swigregister
 Handle_IFSelect_SignCategory_swigregister(Handle_IFSelect_SignCategory)
 
-def Handle_IFSelect_SignCategory_DownCast(*args):
+def Handle_IFSelect_SignCategory_DownCast(*args) -> "Handle_IFSelect_SignCategory const" :
   return _IFSelect.Handle_IFSelect_SignCategory_DownCast(*args)
 Handle_IFSelect_SignCategory_DownCast = _IFSelect.Handle_IFSelect_SignCategory_DownCast
 
@@ -10948,7 +10948,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
 
         """
         _IFSelect.IFSelect_SignCounter_swiginit(self,_IFSelect.new_IFSelect_SignCounter(*args))
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns the Signature used to count entities. It can be null.
 
@@ -10957,7 +10957,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_Signature(self, *args)
 
-    def SetMap(self, *args):
+    def SetMap(self, *args) -> "void" :
         """
         * Changes the control status. The map is not cleared, simply its use changes
 
@@ -10968,7 +10968,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_SetMap(self, *args)
 
-    def AddEntity(self, *args):
+    def AddEntity(self, *args) -> "Standard_Boolean" :
         """
         * Adds an entity by considering its signature, which is given by call to method AddSign Returns True if added, False if already in the map (and map control status set)
 
@@ -10981,7 +10981,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddEntity(self, *args)
 
-    def AddSign(self, *args):
+    def AddSign(self, *args) -> "void" :
         """
         * Adds an entity (already filtered by Map) with its signature. This signature can be computed with the containing model. Its value is provided by the object Signature given at start, if no Signature is defined, it does nothing. Can be redefined (in this case, see also Sign)
 
@@ -10994,7 +10994,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddSign(self, *args)
 
-    def AddList(self, *args):
+    def AddList(self, *args) -> "void" :
         """
         * Adds a list of entities by adding each of the items
 
@@ -11007,7 +11007,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddList(self, *args)
 
-    def AddWithGraph(self, *args):
+    def AddWithGraph(self, *args) -> "void" :
         """
         * Adds a list of entities in the context given by the graph Default just call basic AddList Can be redefined to get a signature computed with the graph
 
@@ -11020,7 +11020,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddWithGraph(self, *args)
 
-    def AddModel(self, *args):
+    def AddModel(self, *args) -> "void" :
         """
         * Adds all the entities contained in a Model
 
@@ -11031,7 +11031,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddModel(self, *args)
 
-    def AddFromSelection(self, *args):
+    def AddFromSelection(self, *args) -> "void" :
         """
         * Adds the result determined by a Selection from a Graph Remark : does not impact at all data from SetSelection & Co
 
@@ -11044,7 +11044,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_AddFromSelection(self, *args)
 
-    def SetSelection(self, *args):
+    def SetSelection(self, *args) -> "void" :
         """
         * Sets a Selection as input : this causes content to be cleared then the Selection to be ready to compute (but not immediatly)
 
@@ -11055,7 +11055,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_SetSelection(self, *args)
 
-    def Selection(self, *args):
+    def Selection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the selection, or a null Handle
 
@@ -11064,7 +11064,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_Selection(self, *args)
 
-    def SetSelMode(self, *args):
+    def SetSelMode(self, *args) -> "void" :
         """
         * Changes the mode of working with the selection : -1 just clears optimisation data and nothing else 0 clears it 1 inhibits it for computing (but no clearing) 2 sets it active for computing Default at creation is 0, after SetSelection (not null) is 2
 
@@ -11075,7 +11075,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_SetSelMode(self, *args)
 
-    def SelMode(self, *args):
+    def SelMode(self, *args) -> "Standard_Integer" :
         """
         * Returns the mode of working with the selection
 
@@ -11084,7 +11084,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_SelMode(self, *args)
 
-    def ComputeSelected(self, *args):
+    def ComputeSelected(self, *args) -> "Standard_Boolean" :
         """
         * Computes from the selection result, if selection is active (mode 2). If selection is not defined (mode 0) or is inhibited (mode 1) does nothing. Returns True if computation is done (or optimised), False else This method is called by ComputeCounter from WorkSession If <forced> is True, recomputes systematically Else (D), if the counter was not cleared and if the former computed result started from the same total size of Graph and same count of selected entities : computation is not redone unless <forced> is given as True
 
@@ -11097,7 +11097,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_ComputeSelected(self, *args)
 
-    def Sign(self, *args):
+    def Sign(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         * Determines and returns the value of the signature for an entity as an HAsciiString. This method works exactly as AddSign, which is optimized Can be redefined, accorded with AddSign
 
@@ -11110,7 +11110,7 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_Sign(self, *args)
 
-    def ComputedSign(self, *args):
+    def ComputedSign(self, *args) -> "char *" :
         """
         * Applies AddWithGraph on one entity, and returns the Signature Value which has been recorded To do this, Add is called with SignOnly Mode True during the call, the returned value is LastValue
 
@@ -11123,11 +11123,11 @@ class IFSelect_SignCounter(IFSelect_SignatureList):
         """
         return _IFSelect.IFSelect_SignCounter_ComputedSign(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SignCounter self)"""
         return _IFSelect.IFSelect_SignCounter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SignCounter" :
         """GetHandle(IFSelect_SignCounter self) -> Handle_IFSelect_SignCounter"""
         return _IFSelect.IFSelect_SignCounter_GetHandle(self)
 
@@ -11180,7 +11180,7 @@ Handle_IFSelect_SignCounter._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_SignCounter_swigregister = _IFSelect.Handle_IFSelect_SignCounter_swigregister
 Handle_IFSelect_SignCounter_swigregister(Handle_IFSelect_SignCounter)
 
-def Handle_IFSelect_SignCounter_DownCast(*args):
+def Handle_IFSelect_SignCounter_DownCast(*args) -> "Handle_IFSelect_SignCounter const" :
   return _IFSelect.Handle_IFSelect_SignCounter_DownCast(*args)
 Handle_IFSelect_SignCounter_DownCast = _IFSelect.Handle_IFSelect_SignCounter_DownCast
 
@@ -11197,7 +11197,7 @@ class IFSelect_SignMultiple(IFSelect_Signature):
 
         """
         _IFSelect.IFSelect_SignMultiple_swiginit(self,_IFSelect.new_IFSelect_SignMultiple(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "void" :
         """
         * Adds a Signature. Width, if given, gives the tabulation If <maxi> is True, it is a forced tabulation (overlength is replaced by a final dot) If <maxi> is False, just 3 blanks follow an overlength
 
@@ -11247,7 +11247,7 @@ Handle_IFSelect_SignMultiple._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SignMultiple_swigregister = _IFSelect.Handle_IFSelect_SignMultiple_swigregister
 Handle_IFSelect_SignMultiple_swigregister(Handle_IFSelect_SignMultiple)
 
-def Handle_IFSelect_SignMultiple_DownCast(*args):
+def Handle_IFSelect_SignMultiple_DownCast(*args) -> "Handle_IFSelect_SignMultiple const" :
   return _IFSelect.Handle_IFSelect_SignMultiple_DownCast(*args)
 Handle_IFSelect_SignMultiple_DownCast = _IFSelect.Handle_IFSelect_SignMultiple_DownCast
 
@@ -11298,7 +11298,7 @@ Handle_IFSelect_SignType._kill_pointed = new_instancemethod(_IFSelect.Handle_IFS
 Handle_IFSelect_SignType_swigregister = _IFSelect.Handle_IFSelect_SignType_swigregister
 Handle_IFSelect_SignType_swigregister(Handle_IFSelect_SignType)
 
-def Handle_IFSelect_SignType_DownCast(*args):
+def Handle_IFSelect_SignType_DownCast(*args) -> "Handle_IFSelect_SignType const" :
   return _IFSelect.Handle_IFSelect_SignType_DownCast(*args)
 Handle_IFSelect_SignType_DownCast = _IFSelect.Handle_IFSelect_SignType_DownCast
 
@@ -11313,7 +11313,7 @@ class IFSelect_SignValidity(IFSelect_Signature):
 
         """
         _IFSelect.IFSelect_SignValidity_swiginit(self,_IFSelect.new_IFSelect_SignValidity(*args))
-    def CVal(*args):
+    def CVal(*args) -> "char *" :
         """
         * Returns the Signature for a Transient object, as a validity deducted from data (reports) stored in the model. Class method, can be called by any one
 
@@ -11340,7 +11340,7 @@ IFSelect_SignValidity.GetHandle = new_instancemethod(_IFSelect.IFSelect_SignVali
 IFSelect_SignValidity_swigregister = _IFSelect.IFSelect_SignValidity_swigregister
 IFSelect_SignValidity_swigregister(IFSelect_SignValidity)
 
-def IFSelect_SignValidity_CVal(*args):
+def IFSelect_SignValidity_CVal(*args) -> "char *" :
   """
     * Returns the Signature for a Transient object, as a validity deducted from data (reports) stored in the model. Class method, can be called by any one
 
@@ -11374,7 +11374,7 @@ Handle_IFSelect_SignValidity._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SignValidity_swigregister = _IFSelect.Handle_IFSelect_SignValidity_swigregister
 Handle_IFSelect_SignValidity_swigregister(Handle_IFSelect_SignValidity)
 
-def Handle_IFSelect_SignValidity_DownCast(*args):
+def Handle_IFSelect_SignValidity_DownCast(*args) -> "Handle_IFSelect_SignValidity const" :
   return _IFSelect.Handle_IFSelect_SignValidity_DownCast(*args)
 Handle_IFSelect_SignValidity_DownCast = _IFSelect.Handle_IFSelect_SignValidity_DownCast
 
@@ -11389,7 +11389,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
 
         """
         _IFSelect.IFSelect_TransformStandard_swiginit(self,_IFSelect.new_IFSelect_TransformStandard(*args))
-    def SetCopyOption(self, *args):
+    def SetCopyOption(self, *args) -> "void" :
         """
         * Sets the Copy option to a new value : - True for StandardCopy - False for OnTheSpot
 
@@ -11400,7 +11400,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_SetCopyOption(self, *args)
 
-    def CopyOption(self, *args):
+    def CopyOption(self, *args) -> "Standard_Boolean" :
         """
         * Returns the Copy option
 
@@ -11409,7 +11409,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_CopyOption(self, *args)
 
-    def SetSelection(self, *args):
+    def SetSelection(self, *args) -> "void" :
         """
         * Sets a Selection (or unsets if Null) This Selection then defines the list of entities on which the Modifiers will be applied If it is set, it has priority on Selections of Modifiers Else, for each Modifier its Selection is evaluated By default, all the Model is taken
 
@@ -11420,7 +11420,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_SetSelection(self, *args)
 
-    def Selection(self, *args):
+    def Selection(self, *args) -> "Handle_IFSelect_Selection" :
         """
         * Returns the Selection, Null by default
 
@@ -11429,7 +11429,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_Selection(self, *args)
 
-    def NbModifiers(self, *args):
+    def NbModifiers(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of recorded Modifiers
 
@@ -11438,7 +11438,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_NbModifiers(self, *args)
 
-    def Modifier(self, *args):
+    def Modifier(self, *args) -> "Handle_IFSelect_Modifier" :
         """
         * Returns a Modifier given its rank in the list
 
@@ -11449,7 +11449,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_Modifier(self, *args)
 
-    def ModifierRank(self, *args):
+    def ModifierRank(self, *args) -> "Standard_Integer" :
         """
         * Returns the rank of a Modifier in the list, 0 if unknown
 
@@ -11460,7 +11460,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_ModifierRank(self, *args)
 
-    def AddModifier(self, *args):
+    def AddModifier(self, *args) -> "Standard_Boolean" :
         """
         * Adds a Modifier to the list : - <atnum> = 0 (default) : at the end of the list - <atnum> > 0 : at rank <atnum> Returns True if done, False if <atnum> is out of range
 
@@ -11473,7 +11473,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_AddModifier(self, *args)
 
-    def RemoveModifier(self, *args):
+    def RemoveModifier(self, *args) -> "Standard_Boolean" :
         """
         * Removes a Modifier from the list Returns True if done, False if <modif> not in the list
 
@@ -11490,7 +11490,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_RemoveModifier(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "void" :
         """
         * This the first operation. It calls StandardCopy or OnTheSpot according the option
 
@@ -11505,7 +11505,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_Copy(self, *args)
 
-    def StandardCopy(self, *args):
+    def StandardCopy(self, *args) -> "void" :
         """
         * This is the standard action of Copy : its takes into account only the remaining entities (noted by Graph Status positive) and their proper dependances of course. Produces a new model.
 
@@ -11520,7 +11520,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_StandardCopy(self, *args)
 
-    def OnTheSpot(self, *args):
+    def OnTheSpot(self, *args) -> "void" :
         """
         * This is the OnTheSpot action : each entity is bound with ... itself. The produced model is the same as the starting one.
 
@@ -11535,7 +11535,7 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_OnTheSpot(self, *args)
 
-    def ApplyModifiers(self, *args):
+    def ApplyModifiers(self, *args) -> "Standard_Boolean" :
         """
         * Applies the modifiers sequencially. For each one, prepares required data (if a Selection is associated as a filter). For the option OnTheSpot, it determines if the graph may be changed and updates <newmod> if required If a Modifier causes an error (check 'HasFailed'), ApplyModifier stops : the following Modifiers are ignored
 
@@ -11554,11 +11554,11 @@ class IFSelect_TransformStandard(IFSelect_Transformer):
         """
         return _IFSelect.IFSelect_TransformStandard_ApplyModifiers(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_TransformStandard self)"""
         return _IFSelect.IFSelect_TransformStandard__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_TransformStandard" :
         """GetHandle(IFSelect_TransformStandard self) -> Handle_IFSelect_TransformStandard"""
         return _IFSelect.IFSelect_TransformStandard_GetHandle(self)
 
@@ -11609,7 +11609,7 @@ Handle_IFSelect_TransformStandard._kill_pointed = new_instancemethod(_IFSelect.H
 Handle_IFSelect_TransformStandard_swigregister = _IFSelect.Handle_IFSelect_TransformStandard_swigregister
 Handle_IFSelect_TransformStandard_swigregister(Handle_IFSelect_TransformStandard)
 
-def Handle_IFSelect_TransformStandard_DownCast(*args):
+def Handle_IFSelect_TransformStandard_DownCast(*args) -> "Handle_IFSelect_TransformStandard const" :
   return _IFSelect.Handle_IFSelect_TransformStandard_DownCast(*args)
 Handle_IFSelect_TransformStandard_DownCast = _IFSelect.Handle_IFSelect_TransformStandard_DownCast
 
@@ -11628,7 +11628,7 @@ class IFSelect_GraphCounter(IFSelect_SignCounter):
 
         """
         _IFSelect.IFSelect_GraphCounter_swiginit(self,_IFSelect.new_IFSelect_GraphCounter(*args))
-    def Applied(self, *args):
+    def Applied(self, *args) -> "Handle_IFSelect_SelectDeduct" :
         """
         * Returns the applied selection
 
@@ -11637,7 +11637,7 @@ class IFSelect_GraphCounter(IFSelect_SignCounter):
         """
         return _IFSelect.IFSelect_GraphCounter_Applied(self, *args)
 
-    def SetApplied(self, *args):
+    def SetApplied(self, *args) -> "void" :
         """
         * Sets a new applied selection
 
@@ -11648,11 +11648,11 @@ class IFSelect_GraphCounter(IFSelect_SignCounter):
         """
         return _IFSelect.IFSelect_GraphCounter_SetApplied(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_GraphCounter self)"""
         return _IFSelect.IFSelect_GraphCounter__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_GraphCounter" :
         """GetHandle(IFSelect_GraphCounter self) -> Handle_IFSelect_GraphCounter"""
         return _IFSelect.IFSelect_GraphCounter_GetHandle(self)
 
@@ -11692,7 +11692,7 @@ Handle_IFSelect_GraphCounter._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_GraphCounter_swigregister = _IFSelect.Handle_IFSelect_GraphCounter_swigregister
 Handle_IFSelect_GraphCounter_swigregister(Handle_IFSelect_GraphCounter)
 
-def Handle_IFSelect_GraphCounter_DownCast(*args):
+def Handle_IFSelect_GraphCounter_DownCast(*args) -> "Handle_IFSelect_GraphCounter const" :
   return _IFSelect.Handle_IFSelect_GraphCounter_DownCast(*args)
 Handle_IFSelect_GraphCounter_DownCast = _IFSelect.Handle_IFSelect_GraphCounter_DownCast
 
@@ -11709,7 +11709,7 @@ class IFSelect_ModifEditForm(IFSelect_Modifier):
 
         """
         _IFSelect.IFSelect_ModifEditForm_swiginit(self,_IFSelect.new_IFSelect_ModifEditForm(*args))
-    def EditForm(self, *args):
+    def EditForm(self, *args) -> "Handle_IFSelect_EditForm" :
         """
         * Returns the EditForm
 
@@ -11718,11 +11718,11 @@ class IFSelect_ModifEditForm(IFSelect_Modifier):
         """
         return _IFSelect.IFSelect_ModifEditForm_EditForm(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ModifEditForm self)"""
         return _IFSelect.IFSelect_ModifEditForm__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ModifEditForm" :
         """GetHandle(IFSelect_ModifEditForm self) -> Handle_IFSelect_ModifEditForm"""
         return _IFSelect.IFSelect_ModifEditForm_GetHandle(self)
 
@@ -11761,7 +11761,7 @@ Handle_IFSelect_ModifEditForm._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_ModifEditForm_swigregister = _IFSelect.Handle_IFSelect_ModifEditForm_swigregister
 Handle_IFSelect_ModifEditForm_swigregister(Handle_IFSelect_ModifEditForm)
 
-def Handle_IFSelect_ModifEditForm_DownCast(*args):
+def Handle_IFSelect_ModifEditForm_DownCast(*args) -> "Handle_IFSelect_ModifEditForm const" :
   return _IFSelect.Handle_IFSelect_ModifEditForm_DownCast(*args)
 Handle_IFSelect_ModifEditForm_DownCast = _IFSelect.Handle_IFSelect_ModifEditForm_DownCast
 
@@ -11778,11 +11778,11 @@ class IFSelect_ModifReorder(IFSelect_Modifier):
 
         """
         _IFSelect.IFSelect_ModifReorder_swiginit(self,_IFSelect.new_IFSelect_ModifReorder(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_ModifReorder self)"""
         return _IFSelect.IFSelect_ModifReorder__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_ModifReorder" :
         """GetHandle(IFSelect_ModifReorder self) -> Handle_IFSelect_ModifReorder"""
         return _IFSelect.IFSelect_ModifReorder_GetHandle(self)
 
@@ -11820,7 +11820,7 @@ Handle_IFSelect_ModifReorder._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_ModifReorder_swigregister = _IFSelect.Handle_IFSelect_ModifReorder_swigregister
 Handle_IFSelect_ModifReorder_swigregister(Handle_IFSelect_ModifReorder)
 
-def Handle_IFSelect_ModifReorder_DownCast(*args):
+def Handle_IFSelect_ModifReorder_DownCast(*args) -> "Handle_IFSelect_ModifReorder const" :
   return _IFSelect.Handle_IFSelect_ModifReorder_DownCast(*args)
 Handle_IFSelect_ModifReorder_DownCast = _IFSelect.Handle_IFSelect_ModifReorder_DownCast
 
@@ -11828,7 +11828,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def KeepInputEntity(self, *args):
+    def KeepInputEntity(self, *args) -> "void" :
         """
         * Keeps Input Entity, as having required type. It works by keeping in <iter>, only suitable Entities (SelectType can be used). Called by RootResult (which waits for ONE ENTITY MAX)
 
@@ -11839,7 +11839,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_KeepInputEntity(self, *args)
 
-    def NbItems(self, *args):
+    def NbItems(self, *args) -> "Standard_Integer" :
         """
         * Returns count of Items in the list in the Entity <ent> If <ent> has not required type, returned value must be Zero
 
@@ -11850,7 +11850,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_NbItems(self, *args)
 
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         * Sets a Range for numbers, with a lower and a upper limits
 
@@ -11863,7 +11863,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_SetRange(self, *args)
 
-    def SetOne(self, *args):
+    def SetOne(self, *args) -> "void" :
         """
         * Sets a unique number (only one Entity will be sorted as True)
 
@@ -11874,7 +11874,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_SetOne(self, *args)
 
-    def SetFrom(self, *args):
+    def SetFrom(self, *args) -> "void" :
         """
         * Sets a Lower limit but no upper limit
 
@@ -11885,7 +11885,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_SetFrom(self, *args)
 
-    def SetUntil(self, *args):
+    def SetUntil(self, *args) -> "void" :
         """
         * Sets an Upper limit but no lower limit (equivalent to lower 1)
 
@@ -11896,7 +11896,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_SetUntil(self, *args)
 
-    def HasLower(self, *args):
+    def HasLower(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Lower limit is defined
 
@@ -11905,7 +11905,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_HasLower(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns Lower limit (if there is; else, value is senseless)
 
@@ -11914,7 +11914,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_Lower(self, *args)
 
-    def LowerValue(self, *args):
+    def LowerValue(self, *args) -> "Standard_Integer" :
         """
         * Returns Integer Value of Lower Limit (0 if none)
 
@@ -11923,7 +11923,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_LowerValue(self, *args)
 
-    def HasUpper(self, *args):
+    def HasUpper(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Lower limit is defined
 
@@ -11932,7 +11932,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_HasUpper(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns Upper limit (if there is; else, value is senseless)
 
@@ -11941,7 +11941,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_Upper(self, *args)
 
-    def UpperValue(self, *args):
+    def UpperValue(self, *args) -> "Standard_Integer" :
         """
         * Returns Integer Value of Upper Limit (0 if none)
 
@@ -11950,7 +11950,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_UpperValue(self, *args)
 
-    def FillResult(self, *args):
+    def FillResult(self, *args) -> "void" :
         """
         * Puts into <res>, the sub-entities of the list, from n1 to n2 included. Remark that adequation with Entity's type and length of list has already been made at this stage Called by RootResult
 
@@ -11967,7 +11967,7 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_FillResult(self, *args)
 
-    def ListLabel(self, *args):
+    def ListLabel(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns the specific label for the list, which is included as a part of Label
 
@@ -11976,11 +11976,11 @@ class IFSelect_SelectAnyList(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectAnyList_ListLabel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectAnyList self)"""
         return _IFSelect.IFSelect_SelectAnyList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectAnyList" :
         """GetHandle(IFSelect_SelectAnyList self) -> Handle_IFSelect_SelectAnyList"""
         return _IFSelect.IFSelect_SelectAnyList_GetHandle(self)
 
@@ -12032,7 +12032,7 @@ Handle_IFSelect_SelectAnyList._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectAnyList_swigregister = _IFSelect.Handle_IFSelect_SelectAnyList_swigregister
 Handle_IFSelect_SelectAnyList_swigregister(Handle_IFSelect_SelectAnyList)
 
-def Handle_IFSelect_SelectAnyList_DownCast(*args):
+def Handle_IFSelect_SelectAnyList_DownCast(*args) -> "Handle_IFSelect_SelectAnyList const" :
   return _IFSelect.Handle_IFSelect_SelectAnyList_DownCast(*args)
 Handle_IFSelect_SelectAnyList_DownCast = _IFSelect.Handle_IFSelect_SelectAnyList_DownCast
 
@@ -12047,11 +12047,11 @@ class IFSelect_SelectDiff(IFSelect_SelectControl):
 
         """
         _IFSelect.IFSelect_SelectDiff_swiginit(self,_IFSelect.new_IFSelect_SelectDiff(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectDiff self)"""
         return _IFSelect.IFSelect_SelectDiff__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectDiff" :
         """GetHandle(IFSelect_SelectDiff self) -> Handle_IFSelect_SelectDiff"""
         return _IFSelect.IFSelect_SelectDiff_GetHandle(self)
 
@@ -12089,7 +12089,7 @@ Handle_IFSelect_SelectDiff._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_SelectDiff_swigregister = _IFSelect.Handle_IFSelect_SelectDiff_swigregister
 Handle_IFSelect_SelectDiff_swigregister(Handle_IFSelect_SelectDiff)
 
-def Handle_IFSelect_SelectDiff_DownCast(*args):
+def Handle_IFSelect_SelectDiff_DownCast(*args) -> "Handle_IFSelect_SelectDiff const" :
   return _IFSelect.Handle_IFSelect_SelectDiff_DownCast(*args)
 Handle_IFSelect_SelectDiff_DownCast = _IFSelect.Handle_IFSelect_SelectDiff_DownCast
 
@@ -12104,7 +12104,7 @@ class IFSelect_SelectEntityNumber(IFSelect_SelectBase):
 
         """
         _IFSelect.IFSelect_SelectEntityNumber_swiginit(self,_IFSelect.new_IFSelect_SelectEntityNumber(*args))
-    def SetNumber(self, *args):
+    def SetNumber(self, *args) -> "void" :
         """
         * Sets Entity Number to be taken (initially, none is set : 0)
 
@@ -12115,7 +12115,7 @@ class IFSelect_SelectEntityNumber(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectEntityNumber_SetNumber(self, *args)
 
-    def Number(self, *args):
+    def Number(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns specified Number (as a Parameter)
 
@@ -12124,11 +12124,11 @@ class IFSelect_SelectEntityNumber(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectEntityNumber_Number(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectEntityNumber self)"""
         return _IFSelect.IFSelect_SelectEntityNumber__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectEntityNumber" :
         """GetHandle(IFSelect_SelectEntityNumber self) -> Handle_IFSelect_SelectEntityNumber"""
         return _IFSelect.IFSelect_SelectEntityNumber_GetHandle(self)
 
@@ -12168,7 +12168,7 @@ Handle_IFSelect_SelectEntityNumber._kill_pointed = new_instancemethod(_IFSelect.
 Handle_IFSelect_SelectEntityNumber_swigregister = _IFSelect.Handle_IFSelect_SelectEntityNumber_swigregister
 Handle_IFSelect_SelectEntityNumber_swigregister(Handle_IFSelect_SelectEntityNumber)
 
-def Handle_IFSelect_SelectEntityNumber_DownCast(*args):
+def Handle_IFSelect_SelectEntityNumber_DownCast(*args) -> "Handle_IFSelect_SelectEntityNumber const" :
   return _IFSelect.Handle_IFSelect_SelectEntityNumber_DownCast(*args)
 Handle_IFSelect_SelectEntityNumber_DownCast = _IFSelect.Handle_IFSelect_SelectEntityNumber_DownCast
 
@@ -12176,7 +12176,7 @@ class IFSelect_SelectExplore(IFSelect_SelectDeduct):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Level(self, *args):
+    def Level(self, *args) -> "Standard_Integer" :
         """
         * Returns the required exploring level
 
@@ -12185,7 +12185,7 @@ class IFSelect_SelectExplore(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExplore_Level(self, *args)
 
-    def Explore(self, *args):
+    def Explore(self, *args) -> "Standard_Boolean" :
         """
         * Analyses and, if required, Explores an entity, as follows : The explored list starts as empty, it has to be filled by this method. If it returns False, <ent> is rejected for result (this is to  be used only as safety) If it returns True and <explored> remains empty, <ent> is taken itself for result, not explored If it returns True and <explored> is not empty, the content of this list is considered : If maximum level is attained, it is taken for result Else (or no max), each of its entity will be itself explored
 
@@ -12202,7 +12202,7 @@ class IFSelect_SelectExplore(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExplore_Explore(self, *args)
 
-    def ExploreLabel(self, *args):
+    def ExploreLabel(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a text defining the way of exploration
 
@@ -12211,11 +12211,11 @@ class IFSelect_SelectExplore(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExplore_ExploreLabel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectExplore self)"""
         return _IFSelect.IFSelect_SelectExplore__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectExplore" :
         """GetHandle(IFSelect_SelectExplore self) -> Handle_IFSelect_SelectExplore"""
         return _IFSelect.IFSelect_SelectExplore_GetHandle(self)
 
@@ -12256,7 +12256,7 @@ Handle_IFSelect_SelectExplore._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectExplore_swigregister = _IFSelect.Handle_IFSelect_SelectExplore_swigregister
 Handle_IFSelect_SelectExplore_swigregister(Handle_IFSelect_SelectExplore)
 
-def Handle_IFSelect_SelectExplore_DownCast(*args):
+def Handle_IFSelect_SelectExplore_DownCast(*args) -> "Handle_IFSelect_SelectExplore const" :
   return _IFSelect.Handle_IFSelect_SelectExplore_DownCast(*args)
 Handle_IFSelect_SelectExplore_DownCast = _IFSelect.Handle_IFSelect_SelectExplore_DownCast
 
@@ -12264,7 +12264,7 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDirect(self, *args):
+    def IsDirect(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if Sort criterium is Direct, False if Reverse
 
@@ -12273,7 +12273,7 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExtract_IsDirect(self, *args)
 
-    def SetDirect(self, *args):
+    def SetDirect(self, *args) -> "void" :
         """
         * Sets Sort criterium sense to a new value (True : Direct , False : Reverse)
 
@@ -12284,7 +12284,7 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExtract_SetDirect(self, *args)
 
-    def Sort(self, *args):
+    def Sort(self, *args) -> "Standard_Boolean" :
         """
         * Returns True for an Entity if it satisfies the Sort criterium It receives : - <rank>, the rank of the Entity in the Iteration, - <ent> , the Entity itself, and - <model>, the Starting Model Hence, the Entity to check is 'model->Value(num)' (but an InterfaceModel allows other checks) This method is specific to each class of SelectExtract
 
@@ -12299,7 +12299,7 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExtract_Sort(self, *args)
 
-    def SortInGraph(self, *args):
+    def SortInGraph(self, *args) -> "Standard_Boolean" :
         """
         * Works as Sort but works on the Graph Default directly calls Sort, but it can be redefined If SortInGraph is redefined, Sort should be defined even if not called (to avoid deferred methods in a final class)
 
@@ -12314,7 +12314,7 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExtract_SortInGraph(self, *args)
 
-    def ExtractLabel(self, *args):
+    def ExtractLabel(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns a text defining the criterium for extraction
 
@@ -12323,11 +12323,11 @@ class IFSelect_SelectExtract(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectExtract_ExtractLabel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectExtract self)"""
         return _IFSelect.IFSelect_SelectExtract__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectExtract" :
         """GetHandle(IFSelect_SelectExtract self) -> Handle_IFSelect_SelectExtract"""
         return _IFSelect.IFSelect_SelectExtract_GetHandle(self)
 
@@ -12370,7 +12370,7 @@ Handle_IFSelect_SelectExtract._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectExtract_swigregister = _IFSelect.Handle_IFSelect_SelectExtract_swigregister
 Handle_IFSelect_SelectExtract_swigregister(Handle_IFSelect_SelectExtract)
 
-def Handle_IFSelect_SelectExtract_DownCast(*args):
+def Handle_IFSelect_SelectExtract_DownCast(*args) -> "Handle_IFSelect_SelectExtract const" :
   return _IFSelect.Handle_IFSelect_SelectExtract_DownCast(*args)
 Handle_IFSelect_SelectExtract_DownCast = _IFSelect.Handle_IFSelect_SelectExtract_DownCast
 
@@ -12385,11 +12385,11 @@ class IFSelect_SelectIntersection(IFSelect_SelectCombine):
 
         """
         _IFSelect.IFSelect_SelectIntersection_swiginit(self,_IFSelect.new_IFSelect_SelectIntersection(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectIntersection self)"""
         return _IFSelect.IFSelect_SelectIntersection__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectIntersection" :
         """GetHandle(IFSelect_SelectIntersection self) -> Handle_IFSelect_SelectIntersection"""
         return _IFSelect.IFSelect_SelectIntersection_GetHandle(self)
 
@@ -12427,7 +12427,7 @@ Handle_IFSelect_SelectIntersection._kill_pointed = new_instancemethod(_IFSelect.
 Handle_IFSelect_SelectIntersection_swigregister = _IFSelect.Handle_IFSelect_SelectIntersection_swigregister
 Handle_IFSelect_SelectIntersection_swigregister(Handle_IFSelect_SelectIntersection)
 
-def Handle_IFSelect_SelectIntersection_DownCast(*args):
+def Handle_IFSelect_SelectIntersection_DownCast(*args) -> "Handle_IFSelect_SelectIntersection const" :
   return _IFSelect.Handle_IFSelect_SelectIntersection_DownCast(*args)
 Handle_IFSelect_SelectIntersection_DownCast = _IFSelect.Handle_IFSelect_SelectIntersection_DownCast
 
@@ -12442,11 +12442,11 @@ class IFSelect_SelectModelEntities(IFSelect_SelectBase):
 
         """
         _IFSelect.IFSelect_SelectModelEntities_swiginit(self,_IFSelect.new_IFSelect_SelectModelEntities(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectModelEntities self)"""
         return _IFSelect.IFSelect_SelectModelEntities__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectModelEntities" :
         """GetHandle(IFSelect_SelectModelEntities self) -> Handle_IFSelect_SelectModelEntities"""
         return _IFSelect.IFSelect_SelectModelEntities_GetHandle(self)
 
@@ -12484,7 +12484,7 @@ Handle_IFSelect_SelectModelEntities._kill_pointed = new_instancemethod(_IFSelect
 Handle_IFSelect_SelectModelEntities_swigregister = _IFSelect.Handle_IFSelect_SelectModelEntities_swigregister
 Handle_IFSelect_SelectModelEntities_swigregister(Handle_IFSelect_SelectModelEntities)
 
-def Handle_IFSelect_SelectModelEntities_DownCast(*args):
+def Handle_IFSelect_SelectModelEntities_DownCast(*args) -> "Handle_IFSelect_SelectModelEntities const" :
   return _IFSelect.Handle_IFSelect_SelectModelEntities_DownCast(*args)
 Handle_IFSelect_SelectModelEntities_DownCast = _IFSelect.Handle_IFSelect_SelectModelEntities_DownCast
 
@@ -12499,11 +12499,11 @@ class IFSelect_SelectModelRoots(IFSelect_SelectBase):
 
         """
         _IFSelect.IFSelect_SelectModelRoots_swiginit(self,_IFSelect.new_IFSelect_SelectModelRoots(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectModelRoots self)"""
         return _IFSelect.IFSelect_SelectModelRoots__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectModelRoots" :
         """GetHandle(IFSelect_SelectModelRoots self) -> Handle_IFSelect_SelectModelRoots"""
         return _IFSelect.IFSelect_SelectModelRoots_GetHandle(self)
 
@@ -12541,7 +12541,7 @@ Handle_IFSelect_SelectModelRoots._kill_pointed = new_instancemethod(_IFSelect.Ha
 Handle_IFSelect_SelectModelRoots_swigregister = _IFSelect.Handle_IFSelect_SelectModelRoots_swigregister
 Handle_IFSelect_SelectModelRoots_swigregister(Handle_IFSelect_SelectModelRoots)
 
-def Handle_IFSelect_SelectModelRoots_DownCast(*args):
+def Handle_IFSelect_SelectModelRoots_DownCast(*args) -> "Handle_IFSelect_SelectModelRoots const" :
   return _IFSelect.Handle_IFSelect_SelectModelRoots_DownCast(*args)
 Handle_IFSelect_SelectModelRoots_DownCast = _IFSelect.Handle_IFSelect_SelectModelRoots_DownCast
 
@@ -12556,7 +12556,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
 
         """
         _IFSelect.IFSelect_SelectPointed_swiginit(self,_IFSelect.new_IFSelect_SelectPointed(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clears the list of selected items Also says the list is unset All Add* methods and SetList say the list is set
 
@@ -12565,7 +12565,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Clear(self, *args)
 
-    def IsSet(self, *args):
+    def IsSet(self, *args) -> "Standard_Boolean" :
         """
         * Tells if the list has been set. Even if empty
 
@@ -12574,7 +12574,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_IsSet(self, *args)
 
-    def SetEntity(self, *args):
+    def SetEntity(self, *args) -> "void" :
         """
         * As SetList but with only one entity If <ent> is Null, the list is said as being set but is empty
 
@@ -12585,7 +12585,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_SetEntity(self, *args)
 
-    def SetList(self, *args):
+    def SetList(self, *args) -> "void" :
         """
         * Sets a given list to define the list of selected items <list> can be empty or null : in this case, the list is said as being set, but it is empty To use it as an alternate input, one shot : - SetList or SetEntity to define the input list - RootResult to get it - then Clear to drop it
 
@@ -12596,7 +12596,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_SetList(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         * Adds an item. Returns True if Done, False if <item> is already in the selected list
 
@@ -12607,7 +12607,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Add(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "Standard_Boolean" :
         """
         * Removes an item. Returns True if Done, False if <item> was not in the selected list
 
@@ -12618,7 +12618,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Remove(self, *args)
 
-    def Toggle(self, *args):
+    def Toggle(self, *args) -> "Standard_Boolean" :
         """
         * Toggles status of an item : adds it if not pointed or removes it if already pointed. Returns the new status (Pointed or not)
 
@@ -12629,7 +12629,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Toggle(self, *args)
 
-    def AddList(self, *args):
+    def AddList(self, *args) -> "Standard_Boolean" :
         """
         * Adds all the items defined in a list. Returns True if at least one item has been added, False else
 
@@ -12640,7 +12640,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_AddList(self, *args)
 
-    def RemoveList(self, *args):
+    def RemoveList(self, *args) -> "Standard_Boolean" :
         """
         * Removes all the items defined in a list. Returns True if at least one item has been removed, False else
 
@@ -12651,7 +12651,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_RemoveList(self, *args)
 
-    def ToggleList(self, *args):
+    def ToggleList(self, *args) -> "Standard_Boolean" :
         """
         * Toggles status of all the items defined in a list : adds it if not pointed or removes it if already pointed.
 
@@ -12662,7 +12662,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_ToggleList(self, *args)
 
-    def Rank(self, *args):
+    def Rank(self, *args) -> "Standard_Integer" :
         """
         * Returns the rank of an item in the selected list, or 0.
 
@@ -12673,7 +12673,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Rank(self, *args)
 
-    def NbItems(self, *args):
+    def NbItems(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of selected items
 
@@ -12682,7 +12682,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_NbItems(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns an item given its rank, or a Null Handle
 
@@ -12693,7 +12693,7 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Item(self, *args)
 
-    def Update(self, *args):
+    def Update(self, *args) -> "void" :
         """
         * Rebuilds the selected list. Any selected entity which has a bound result is replaced by this result, else it is removed.
 
@@ -12710,11 +12710,11 @@ class IFSelect_SelectPointed(IFSelect_SelectBase):
         """
         return _IFSelect.IFSelect_SelectPointed_Update(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectPointed self)"""
         return _IFSelect.IFSelect_SelectPointed__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectPointed" :
         """GetHandle(IFSelect_SelectPointed self) -> Handle_IFSelect_SelectPointed"""
         return _IFSelect.IFSelect_SelectPointed_GetHandle(self)
 
@@ -12766,7 +12766,7 @@ Handle_IFSelect_SelectPointed._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectPointed_swigregister = _IFSelect.Handle_IFSelect_SelectPointed_swigregister
 Handle_IFSelect_SelectPointed_swigregister(Handle_IFSelect_SelectPointed)
 
-def Handle_IFSelect_SelectPointed_DownCast(*args):
+def Handle_IFSelect_SelectPointed_DownCast(*args) -> "Handle_IFSelect_SelectPointed const" :
   return _IFSelect.Handle_IFSelect_SelectPointed_DownCast(*args)
 Handle_IFSelect_SelectPointed_DownCast = _IFSelect.Handle_IFSelect_SelectPointed_DownCast
 
@@ -12781,11 +12781,11 @@ class IFSelect_SelectShared(IFSelect_SelectDeduct):
 
         """
         _IFSelect.IFSelect_SelectShared_swiginit(self,_IFSelect.new_IFSelect_SelectShared(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectShared self)"""
         return _IFSelect.IFSelect_SelectShared__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectShared" :
         """GetHandle(IFSelect_SelectShared self) -> Handle_IFSelect_SelectShared"""
         return _IFSelect.IFSelect_SelectShared_GetHandle(self)
 
@@ -12823,7 +12823,7 @@ Handle_IFSelect_SelectShared._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SelectShared_swigregister = _IFSelect.Handle_IFSelect_SelectShared_swigregister
 Handle_IFSelect_SelectShared_swigregister(Handle_IFSelect_SelectShared)
 
-def Handle_IFSelect_SelectShared_DownCast(*args):
+def Handle_IFSelect_SelectShared_DownCast(*args) -> "Handle_IFSelect_SelectShared const" :
   return _IFSelect.Handle_IFSelect_SelectShared_DownCast(*args)
 Handle_IFSelect_SelectShared_DownCast = _IFSelect.Handle_IFSelect_SelectShared_DownCast
 
@@ -12838,11 +12838,11 @@ class IFSelect_SelectSharing(IFSelect_SelectDeduct):
 
         """
         _IFSelect.IFSelect_SelectSharing_swiginit(self,_IFSelect.new_IFSelect_SelectSharing(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSharing self)"""
         return _IFSelect.IFSelect_SelectSharing__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSharing" :
         """GetHandle(IFSelect_SelectSharing self) -> Handle_IFSelect_SelectSharing"""
         return _IFSelect.IFSelect_SelectSharing_GetHandle(self)
 
@@ -12880,7 +12880,7 @@ Handle_IFSelect_SelectSharing._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectSharing_swigregister = _IFSelect.Handle_IFSelect_SelectSharing_swigregister
 Handle_IFSelect_SelectSharing_swigregister(Handle_IFSelect_SelectSharing)
 
-def Handle_IFSelect_SelectSharing_DownCast(*args):
+def Handle_IFSelect_SelectSharing_DownCast(*args) -> "Handle_IFSelect_SelectSharing const" :
   return _IFSelect.Handle_IFSelect_SelectSharing_DownCast(*args)
 Handle_IFSelect_SelectSharing_DownCast = _IFSelect.Handle_IFSelect_SelectSharing_DownCast
 
@@ -12895,7 +12895,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
 
         """
         _IFSelect.IFSelect_SelectSuite_swiginit(self,_IFSelect.new_IFSelect_SelectSuite(*args))
-    def AddInput(self, *args):
+    def AddInput(self, *args) -> "Standard_Boolean" :
         """
         * Adds an input selection. I.E. : If <item> is a SelectDeduct, adds it as Previous, not as Input Else, sets it as Input Returns True when done Returns False and refuses to work if Input is already defined
 
@@ -12906,7 +12906,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_AddInput(self, *args)
 
-    def AddPrevious(self, *args):
+    def AddPrevious(self, *args) -> "void" :
         """
         * Adds a new first item (prepends to the list). The Input is not touched If <item> is null, does nothing
 
@@ -12917,7 +12917,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_AddPrevious(self, *args)
 
-    def AddNext(self, *args):
+    def AddNext(self, *args) -> "void" :
         """
         * Adds a new last item (prepends to the list) If <item> is null, does nothing
 
@@ -12928,7 +12928,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_AddNext(self, *args)
 
-    def NbItems(self, *args):
+    def NbItems(self, *args) -> "Standard_Integer" :
         """
         * Returns the count of Items
 
@@ -12937,7 +12937,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_NbItems(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_IFSelect_SelectDeduct" :
         """
         * Returns an item from its rank in the list (the Input is always apart)
 
@@ -12948,7 +12948,7 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_Item(self, *args)
 
-    def SetLabel(self, *args):
+    def SetLabel(self, *args) -> "void" :
         """
         * Sets a value for the Label
 
@@ -12959,11 +12959,11 @@ class IFSelect_SelectSuite(IFSelect_SelectDeduct):
         """
         return _IFSelect.IFSelect_SelectSuite_SetLabel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSuite self)"""
         return _IFSelect.IFSelect_SelectSuite__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSuite" :
         """GetHandle(IFSelect_SelectSuite self) -> Handle_IFSelect_SelectSuite"""
         return _IFSelect.IFSelect_SelectSuite_GetHandle(self)
 
@@ -13007,7 +13007,7 @@ Handle_IFSelect_SelectSuite._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_SelectSuite_swigregister = _IFSelect.Handle_IFSelect_SelectSuite_swigregister
 Handle_IFSelect_SelectSuite_swigregister(Handle_IFSelect_SelectSuite)
 
-def Handle_IFSelect_SelectSuite_DownCast(*args):
+def Handle_IFSelect_SelectSuite_DownCast(*args) -> "Handle_IFSelect_SelectSuite const" :
   return _IFSelect.Handle_IFSelect_SelectSuite_DownCast(*args)
 Handle_IFSelect_SelectSuite_DownCast = _IFSelect.Handle_IFSelect_SelectSuite_DownCast
 
@@ -13022,11 +13022,11 @@ class IFSelect_SelectUnion(IFSelect_SelectCombine):
 
         """
         _IFSelect.IFSelect_SelectUnion_swiginit(self,_IFSelect.new_IFSelect_SelectUnion(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectUnion self)"""
         return _IFSelect.IFSelect_SelectUnion__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectUnion" :
         """GetHandle(IFSelect_SelectUnion self) -> Handle_IFSelect_SelectUnion"""
         return _IFSelect.IFSelect_SelectUnion_GetHandle(self)
 
@@ -13064,7 +13064,7 @@ Handle_IFSelect_SelectUnion._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_SelectUnion_swigregister = _IFSelect.Handle_IFSelect_SelectUnion_swigregister
 Handle_IFSelect_SelectUnion_swigregister(Handle_IFSelect_SelectUnion)
 
-def Handle_IFSelect_SelectUnion_DownCast(*args):
+def Handle_IFSelect_SelectUnion_DownCast(*args) -> "Handle_IFSelect_SelectUnion const" :
   return _IFSelect.Handle_IFSelect_SelectUnion_DownCast(*args)
 Handle_IFSelect_SelectUnion_DownCast = _IFSelect.Handle_IFSelect_SelectUnion_DownCast
 
@@ -13113,7 +13113,7 @@ Handle_IFSelect_SignAncestor._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SignAncestor_swigregister = _IFSelect.Handle_IFSelect_SignAncestor_swigregister
 Handle_IFSelect_SignAncestor_swigregister(Handle_IFSelect_SignAncestor)
 
-def Handle_IFSelect_SignAncestor_DownCast(*args):
+def Handle_IFSelect_SignAncestor_DownCast(*args) -> "Handle_IFSelect_SignAncestor const" :
   return _IFSelect.Handle_IFSelect_SignAncestor_DownCast(*args)
 Handle_IFSelect_SignAncestor_DownCast = _IFSelect.Handle_IFSelect_SignAncestor_DownCast
 
@@ -13121,7 +13121,7 @@ class IFSelect_SelectAnyType(IFSelect_SelectExtract):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def TypeForMatch(self, *args):
+    def TypeForMatch(self, *args) -> "Handle_Standard_Type" :
         """
         * Returns the Type which has to be matched for select
 
@@ -13130,11 +13130,11 @@ class IFSelect_SelectAnyType(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectAnyType_TypeForMatch(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectAnyType self)"""
         return _IFSelect.IFSelect_SelectAnyType__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectAnyType" :
         """GetHandle(IFSelect_SelectAnyType self) -> Handle_IFSelect_SelectAnyType"""
         return _IFSelect.IFSelect_SelectAnyType_GetHandle(self)
 
@@ -13173,7 +13173,7 @@ Handle_IFSelect_SelectAnyType._kill_pointed = new_instancemethod(_IFSelect.Handl
 Handle_IFSelect_SelectAnyType_swigregister = _IFSelect.Handle_IFSelect_SelectAnyType_swigregister
 Handle_IFSelect_SelectAnyType_swigregister(Handle_IFSelect_SelectAnyType)
 
-def Handle_IFSelect_SelectAnyType_DownCast(*args):
+def Handle_IFSelect_SelectAnyType_DownCast(*args) -> "Handle_IFSelect_SelectAnyType const" :
   return _IFSelect.Handle_IFSelect_SelectAnyType_DownCast(*args)
 Handle_IFSelect_SelectAnyType_DownCast = _IFSelect.Handle_IFSelect_SelectAnyType_DownCast
 
@@ -13188,11 +13188,11 @@ class IFSelect_SelectErrorEntities(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectErrorEntities_swiginit(self,_IFSelect.new_IFSelect_SelectErrorEntities(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectErrorEntities self)"""
         return _IFSelect.IFSelect_SelectErrorEntities__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectErrorEntities" :
         """GetHandle(IFSelect_SelectErrorEntities self) -> Handle_IFSelect_SelectErrorEntities"""
         return _IFSelect.IFSelect_SelectErrorEntities_GetHandle(self)
 
@@ -13230,7 +13230,7 @@ Handle_IFSelect_SelectErrorEntities._kill_pointed = new_instancemethod(_IFSelect
 Handle_IFSelect_SelectErrorEntities_swigregister = _IFSelect.Handle_IFSelect_SelectErrorEntities_swigregister
 Handle_IFSelect_SelectErrorEntities_swigregister(Handle_IFSelect_SelectErrorEntities)
 
-def Handle_IFSelect_SelectErrorEntities_DownCast(*args):
+def Handle_IFSelect_SelectErrorEntities_DownCast(*args) -> "Handle_IFSelect_SelectErrorEntities const" :
   return _IFSelect.Handle_IFSelect_SelectErrorEntities_DownCast(*args)
 Handle_IFSelect_SelectErrorEntities_DownCast = _IFSelect.Handle_IFSelect_SelectErrorEntities_DownCast
 
@@ -13247,7 +13247,7 @@ class IFSelect_SelectFlag(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectFlag_swiginit(self,_IFSelect.new_IFSelect_SelectFlag(*args))
-    def FlagName(self, *args):
+    def FlagName(self, *args) -> "char *" :
         """
         * Returns the name of the flag
 
@@ -13256,11 +13256,11 @@ class IFSelect_SelectFlag(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectFlag_FlagName(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectFlag self)"""
         return _IFSelect.IFSelect_SelectFlag__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectFlag" :
         """GetHandle(IFSelect_SelectFlag self) -> Handle_IFSelect_SelectFlag"""
         return _IFSelect.IFSelect_SelectFlag_GetHandle(self)
 
@@ -13299,7 +13299,7 @@ Handle_IFSelect_SelectFlag._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_SelectFlag_swigregister = _IFSelect.Handle_IFSelect_SelectFlag_swigregister
 Handle_IFSelect_SelectFlag_swigregister(Handle_IFSelect_SelectFlag)
 
-def Handle_IFSelect_SelectFlag_DownCast(*args):
+def Handle_IFSelect_SelectFlag_DownCast(*args) -> "Handle_IFSelect_SelectFlag const" :
   return _IFSelect.Handle_IFSelect_SelectFlag_DownCast(*args)
 Handle_IFSelect_SelectFlag_DownCast = _IFSelect.Handle_IFSelect_SelectFlag_DownCast
 
@@ -13307,7 +13307,7 @@ class IFSelect_SelectInList(IFSelect_SelectAnyList):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ListedEntity(self, *args):
+    def ListedEntity(self, *args) -> "Handle_Standard_Transient" :
         """
         * Returns an Entity, given its rank in the list
 
@@ -13320,11 +13320,11 @@ class IFSelect_SelectInList(IFSelect_SelectAnyList):
         """
         return _IFSelect.IFSelect_SelectInList_ListedEntity(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectInList self)"""
         return _IFSelect.IFSelect_SelectInList__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectInList" :
         """GetHandle(IFSelect_SelectInList self) -> Handle_IFSelect_SelectInList"""
         return _IFSelect.IFSelect_SelectInList_GetHandle(self)
 
@@ -13363,7 +13363,7 @@ Handle_IFSelect_SelectInList._kill_pointed = new_instancemethod(_IFSelect.Handle
 Handle_IFSelect_SelectInList_swigregister = _IFSelect.Handle_IFSelect_SelectInList_swigregister
 Handle_IFSelect_SelectInList_swigregister(Handle_IFSelect_SelectInList)
 
-def Handle_IFSelect_SelectInList_DownCast(*args):
+def Handle_IFSelect_SelectInList_DownCast(*args) -> "Handle_IFSelect_SelectInList const" :
   return _IFSelect.Handle_IFSelect_SelectInList_DownCast(*args)
 Handle_IFSelect_SelectInList_DownCast = _IFSelect.Handle_IFSelect_SelectInList_DownCast
 
@@ -13378,7 +13378,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectRange_swiginit(self,_IFSelect.new_IFSelect_SelectRange(*args))
-    def SetRange(self, *args):
+    def SetRange(self, *args) -> "void" :
         """
         * Sets a Range for numbers, with a lower and a upper limits Error if rankto is lower then rankfrom
 
@@ -13391,7 +13391,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_SetRange(self, *args)
 
-    def SetOne(self, *args):
+    def SetOne(self, *args) -> "void" :
         """
         * Sets a unique number (only one Entity will be sorted as True)
 
@@ -13402,7 +13402,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_SetOne(self, *args)
 
-    def SetFrom(self, *args):
+    def SetFrom(self, *args) -> "void" :
         """
         * Sets a Lower limit but no upper limit
 
@@ -13413,7 +13413,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_SetFrom(self, *args)
 
-    def SetUntil(self, *args):
+    def SetUntil(self, *args) -> "void" :
         """
         * Sets an Upper limit but no lower limit (equivalent to lower 1)
 
@@ -13424,7 +13424,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_SetUntil(self, *args)
 
-    def HasLower(self, *args):
+    def HasLower(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Lower limit is defined
 
@@ -13433,7 +13433,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_HasLower(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns Lower limit (if there is; else, value is senseless)
 
@@ -13442,7 +13442,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_Lower(self, *args)
 
-    def LowerValue(self, *args):
+    def LowerValue(self, *args) -> "Standard_Integer" :
         """
         * Returns Value of Lower Limit (0 if none is defined)
 
@@ -13451,7 +13451,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_LowerValue(self, *args)
 
-    def HasUpper(self, *args):
+    def HasUpper(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if a Lower limit is defined
 
@@ -13460,7 +13460,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_HasUpper(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Handle_IFSelect_IntParam" :
         """
         * Returns Upper limit (if there is; else, value is senseless)
 
@@ -13469,7 +13469,7 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_Upper(self, *args)
 
-    def UpperValue(self, *args):
+    def UpperValue(self, *args) -> "Standard_Integer" :
         """
         * Returns Value of Upper Limit (0 if none is defined)
 
@@ -13478,11 +13478,11 @@ class IFSelect_SelectRange(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectRange_UpperValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectRange self)"""
         return _IFSelect.IFSelect_SelectRange__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectRange" :
         """GetHandle(IFSelect_SelectRange self) -> Handle_IFSelect_SelectRange"""
         return _IFSelect.IFSelect_SelectRange_GetHandle(self)
 
@@ -13530,7 +13530,7 @@ Handle_IFSelect_SelectRange._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_SelectRange_swigregister = _IFSelect.Handle_IFSelect_SelectRange_swigregister
 Handle_IFSelect_SelectRange_swigregister(Handle_IFSelect_SelectRange)
 
-def Handle_IFSelect_SelectRange_DownCast(*args):
+def Handle_IFSelect_SelectRange_DownCast(*args) -> "Handle_IFSelect_SelectRange const" :
   return _IFSelect.Handle_IFSelect_SelectRange_DownCast(*args)
 Handle_IFSelect_SelectRange_DownCast = _IFSelect.Handle_IFSelect_SelectRange_DownCast
 
@@ -13545,11 +13545,11 @@ class IFSelect_SelectRootComps(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectRootComps_swiginit(self,_IFSelect.new_IFSelect_SelectRootComps(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectRootComps self)"""
         return _IFSelect.IFSelect_SelectRootComps__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectRootComps" :
         """GetHandle(IFSelect_SelectRootComps self) -> Handle_IFSelect_SelectRootComps"""
         return _IFSelect.IFSelect_SelectRootComps_GetHandle(self)
 
@@ -13587,7 +13587,7 @@ Handle_IFSelect_SelectRootComps._kill_pointed = new_instancemethod(_IFSelect.Han
 Handle_IFSelect_SelectRootComps_swigregister = _IFSelect.Handle_IFSelect_SelectRootComps_swigregister
 Handle_IFSelect_SelectRootComps_swigregister(Handle_IFSelect_SelectRootComps)
 
-def Handle_IFSelect_SelectRootComps_DownCast(*args):
+def Handle_IFSelect_SelectRootComps_DownCast(*args) -> "Handle_IFSelect_SelectRootComps const" :
   return _IFSelect.Handle_IFSelect_SelectRootComps_DownCast(*args)
 Handle_IFSelect_SelectRootComps_DownCast = _IFSelect.Handle_IFSelect_SelectRootComps_DownCast
 
@@ -13602,11 +13602,11 @@ class IFSelect_SelectRoots(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectRoots_swiginit(self,_IFSelect.new_IFSelect_SelectRoots(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectRoots self)"""
         return _IFSelect.IFSelect_SelectRoots__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectRoots" :
         """GetHandle(IFSelect_SelectRoots self) -> Handle_IFSelect_SelectRoots"""
         return _IFSelect.IFSelect_SelectRoots_GetHandle(self)
 
@@ -13644,7 +13644,7 @@ Handle_IFSelect_SelectRoots._kill_pointed = new_instancemethod(_IFSelect.Handle_
 Handle_IFSelect_SelectRoots_swigregister = _IFSelect.Handle_IFSelect_SelectRoots_swigregister
 Handle_IFSelect_SelectRoots_swigregister(Handle_IFSelect_SelectRoots)
 
-def Handle_IFSelect_SelectRoots_DownCast(*args):
+def Handle_IFSelect_SelectRoots_DownCast(*args) -> "Handle_IFSelect_SelectRoots const" :
   return _IFSelect.Handle_IFSelect_SelectRoots_DownCast(*args)
 Handle_IFSelect_SelectRoots_DownCast = _IFSelect.Handle_IFSelect_SelectRoots_DownCast
 
@@ -13663,7 +13663,7 @@ class IFSelect_SelectSent(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectSent_swiginit(self,_IFSelect.new_IFSelect_SelectSent(*args))
-    def SentCount(self, *args):
+    def SentCount(self, *args) -> "Standard_Integer" :
         """
         * Returns the queried count of sending
 
@@ -13672,7 +13672,7 @@ class IFSelect_SelectSent(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSent_SentCount(self, *args)
 
-    def AtLeast(self, *args):
+    def AtLeast(self, *args) -> "Standard_Boolean" :
         """
         * Returns the <atleast> status, True for sending at least the sending count, False for sending exactly the sending count Remark : if SentCount is 0, AtLeast is ignored
 
@@ -13681,11 +13681,11 @@ class IFSelect_SelectSent(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSent_AtLeast(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSent self)"""
         return _IFSelect.IFSelect_SelectSent__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSent" :
         """GetHandle(IFSelect_SelectSent self) -> Handle_IFSelect_SelectSent"""
         return _IFSelect.IFSelect_SelectSent_GetHandle(self)
 
@@ -13725,7 +13725,7 @@ Handle_IFSelect_SelectSent._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_SelectSent_swigregister = _IFSelect.Handle_IFSelect_SelectSent_swigregister
 Handle_IFSelect_SelectSent_swigregister(Handle_IFSelect_SelectSent)
 
-def Handle_IFSelect_SelectSent_DownCast(*args):
+def Handle_IFSelect_SelectSent_DownCast(*args) -> "Handle_IFSelect_SelectSent const" :
   return _IFSelect.Handle_IFSelect_SelectSent_DownCast(*args)
 Handle_IFSelect_SelectSent_DownCast = _IFSelect.Handle_IFSelect_SelectSent_DownCast
 
@@ -13766,7 +13766,7 @@ class IFSelect_SelectSignature(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectSignature_swiginit(self,_IFSelect.new_IFSelect_SelectSignature(*args))
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns the used Signature, then it is possible to access it, modify it as required. Can be null, hence see Counter
 
@@ -13775,7 +13775,7 @@ class IFSelect_SelectSignature(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSignature_Signature(self, *args)
 
-    def Counter(self, *args):
+    def Counter(self, *args) -> "Handle_IFSelect_SignCounter" :
         """
         * Returns the used SignCounter. Can be used as alternative for Signature
 
@@ -13784,7 +13784,7 @@ class IFSelect_SelectSignature(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSignature_Counter(self, *args)
 
-    def SignatureText(self, *args):
+    def SignatureText(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns Text used to Sort Entity on its Signature or SignCounter
 
@@ -13793,7 +13793,7 @@ class IFSelect_SelectSignature(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSignature_SignatureText(self, *args)
 
-    def IsExact(self, *args):
+    def IsExact(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if match must be exact
 
@@ -13802,11 +13802,11 @@ class IFSelect_SelectSignature(IFSelect_SelectExtract):
         """
         return _IFSelect.IFSelect_SelectSignature_IsExact(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSignature self)"""
         return _IFSelect.IFSelect_SelectSignature__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSignature" :
         """GetHandle(IFSelect_SelectSignature self) -> Handle_IFSelect_SelectSignature"""
         return _IFSelect.IFSelect_SelectSignature_GetHandle(self)
 
@@ -13848,7 +13848,7 @@ Handle_IFSelect_SelectSignature._kill_pointed = new_instancemethod(_IFSelect.Han
 Handle_IFSelect_SelectSignature_swigregister = _IFSelect.Handle_IFSelect_SelectSignature_swigregister
 Handle_IFSelect_SelectSignature_swigregister(Handle_IFSelect_SelectSignature)
 
-def Handle_IFSelect_SelectSignature_DownCast(*args):
+def Handle_IFSelect_SelectSignature_DownCast(*args) -> "Handle_IFSelect_SelectSignature const" :
   return _IFSelect.Handle_IFSelect_SelectSignature_DownCast(*args)
 Handle_IFSelect_SelectSignature_DownCast = _IFSelect.Handle_IFSelect_SelectSignature_DownCast
 
@@ -13871,7 +13871,7 @@ class IFSelect_SelectSignedShared(IFSelect_SelectExplore):
 
         """
         _IFSelect.IFSelect_SelectSignedShared_swiginit(self,_IFSelect.new_IFSelect_SelectSignedShared(*args))
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns the used Signature, then it is possible to access it, modify it as required
 
@@ -13880,7 +13880,7 @@ class IFSelect_SelectSignedShared(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedShared_Signature(self, *args)
 
-    def SignatureText(self, *args):
+    def SignatureText(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns Text used to Sort Entity on its Signature
 
@@ -13889,7 +13889,7 @@ class IFSelect_SelectSignedShared(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedShared_SignatureText(self, *args)
 
-    def IsExact(self, *args):
+    def IsExact(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if match must be exact
 
@@ -13898,11 +13898,11 @@ class IFSelect_SelectSignedShared(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedShared_IsExact(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSignedShared self)"""
         return _IFSelect.IFSelect_SelectSignedShared__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSignedShared" :
         """GetHandle(IFSelect_SelectSignedShared self) -> Handle_IFSelect_SelectSignedShared"""
         return _IFSelect.IFSelect_SelectSignedShared_GetHandle(self)
 
@@ -13943,7 +13943,7 @@ Handle_IFSelect_SelectSignedShared._kill_pointed = new_instancemethod(_IFSelect.
 Handle_IFSelect_SelectSignedShared_swigregister = _IFSelect.Handle_IFSelect_SelectSignedShared_swigregister
 Handle_IFSelect_SelectSignedShared_swigregister(Handle_IFSelect_SelectSignedShared)
 
-def Handle_IFSelect_SelectSignedShared_DownCast(*args):
+def Handle_IFSelect_SelectSignedShared_DownCast(*args) -> "Handle_IFSelect_SelectSignedShared const" :
   return _IFSelect.Handle_IFSelect_SelectSignedShared_DownCast(*args)
 Handle_IFSelect_SelectSignedShared_DownCast = _IFSelect.Handle_IFSelect_SelectSignedShared_DownCast
 
@@ -13966,7 +13966,7 @@ class IFSelect_SelectSignedSharing(IFSelect_SelectExplore):
 
         """
         _IFSelect.IFSelect_SelectSignedSharing_swiginit(self,_IFSelect.new_IFSelect_SelectSignedSharing(*args))
-    def Signature(self, *args):
+    def Signature(self, *args) -> "Handle_IFSelect_Signature" :
         """
         * Returns the used Signature, then it is possible to access it, modify it as required
 
@@ -13975,7 +13975,7 @@ class IFSelect_SelectSignedSharing(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedSharing_Signature(self, *args)
 
-    def SignatureText(self, *args):
+    def SignatureText(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns Text used to Sort Entity on its Signature
 
@@ -13984,7 +13984,7 @@ class IFSelect_SelectSignedSharing(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedSharing_SignatureText(self, *args)
 
-    def IsExact(self, *args):
+    def IsExact(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if match must be exact
 
@@ -13993,11 +13993,11 @@ class IFSelect_SelectSignedSharing(IFSelect_SelectExplore):
         """
         return _IFSelect.IFSelect_SelectSignedSharing_IsExact(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectSignedSharing self)"""
         return _IFSelect.IFSelect_SelectSignedSharing__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectSignedSharing" :
         """GetHandle(IFSelect_SelectSignedSharing self) -> Handle_IFSelect_SelectSignedSharing"""
         return _IFSelect.IFSelect_SelectSignedSharing_GetHandle(self)
 
@@ -14038,7 +14038,7 @@ Handle_IFSelect_SelectSignedSharing._kill_pointed = new_instancemethod(_IFSelect
 Handle_IFSelect_SelectSignedSharing_swigregister = _IFSelect.Handle_IFSelect_SelectSignedSharing_swigregister
 Handle_IFSelect_SelectSignedSharing_swigregister(Handle_IFSelect_SelectSignedSharing)
 
-def Handle_IFSelect_SelectSignedSharing_DownCast(*args):
+def Handle_IFSelect_SelectSignedSharing_DownCast(*args) -> "Handle_IFSelect_SelectSignedSharing const" :
   return _IFSelect.Handle_IFSelect_SelectSignedSharing_DownCast(*args)
 Handle_IFSelect_SelectSignedSharing_DownCast = _IFSelect.Handle_IFSelect_SelectSignedSharing_DownCast
 
@@ -14053,11 +14053,11 @@ class IFSelect_SelectUnknownEntities(IFSelect_SelectExtract):
 
         """
         _IFSelect.IFSelect_SelectUnknownEntities_swiginit(self,_IFSelect.new_IFSelect_SelectUnknownEntities(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectUnknownEntities self)"""
         return _IFSelect.IFSelect_SelectUnknownEntities__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectUnknownEntities" :
         """GetHandle(IFSelect_SelectUnknownEntities self) -> Handle_IFSelect_SelectUnknownEntities"""
         return _IFSelect.IFSelect_SelectUnknownEntities_GetHandle(self)
 
@@ -14095,7 +14095,7 @@ Handle_IFSelect_SelectUnknownEntities._kill_pointed = new_instancemethod(_IFSele
 Handle_IFSelect_SelectUnknownEntities_swigregister = _IFSelect.Handle_IFSelect_SelectUnknownEntities_swigregister
 Handle_IFSelect_SelectUnknownEntities_swigregister(Handle_IFSelect_SelectUnknownEntities)
 
-def Handle_IFSelect_SelectUnknownEntities_DownCast(*args):
+def Handle_IFSelect_SelectUnknownEntities_DownCast(*args) -> "Handle_IFSelect_SelectUnknownEntities const" :
   return _IFSelect.Handle_IFSelect_SelectUnknownEntities_DownCast(*args)
 Handle_IFSelect_SelectUnknownEntities_DownCast = _IFSelect.Handle_IFSelect_SelectUnknownEntities_DownCast
 
@@ -14110,11 +14110,11 @@ class IFSelect_SelectIncorrectEntities(IFSelect_SelectFlag):
 
         """
         _IFSelect.IFSelect_SelectIncorrectEntities_swiginit(self,_IFSelect.new_IFSelect_SelectIncorrectEntities(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectIncorrectEntities self)"""
         return _IFSelect.IFSelect_SelectIncorrectEntities__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectIncorrectEntities" :
         """GetHandle(IFSelect_SelectIncorrectEntities self) -> Handle_IFSelect_SelectIncorrectEntities"""
         return _IFSelect.IFSelect_SelectIncorrectEntities_GetHandle(self)
 
@@ -14152,7 +14152,7 @@ Handle_IFSelect_SelectIncorrectEntities._kill_pointed = new_instancemethod(_IFSe
 Handle_IFSelect_SelectIncorrectEntities_swigregister = _IFSelect.Handle_IFSelect_SelectIncorrectEntities_swigregister
 Handle_IFSelect_SelectIncorrectEntities_swigregister(Handle_IFSelect_SelectIncorrectEntities)
 
-def Handle_IFSelect_SelectIncorrectEntities_DownCast(*args):
+def Handle_IFSelect_SelectIncorrectEntities_DownCast(*args) -> "Handle_IFSelect_SelectIncorrectEntities const" :
   return _IFSelect.Handle_IFSelect_SelectIncorrectEntities_DownCast(*args)
 Handle_IFSelect_SelectIncorrectEntities_DownCast = _IFSelect.Handle_IFSelect_SelectIncorrectEntities_DownCast
 
@@ -14173,7 +14173,7 @@ class IFSelect_SelectType(IFSelect_SelectAnyType):
 
         """
         _IFSelect.IFSelect_SelectType_swiginit(self,_IFSelect.new_IFSelect_SelectType(*args))
-    def SetType(self, *args):
+    def SetType(self, *args) -> "void" :
         """
         * Sets a TYpe for filter
 
@@ -14184,11 +14184,11 @@ class IFSelect_SelectType(IFSelect_SelectAnyType):
         """
         return _IFSelect.IFSelect_SelectType_SetType(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IFSelect_SelectType self)"""
         return _IFSelect.IFSelect_SelectType__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IFSelect_SelectType" :
         """GetHandle(IFSelect_SelectType self) -> Handle_IFSelect_SelectType"""
         return _IFSelect.IFSelect_SelectType_GetHandle(self)
 
@@ -14227,7 +14227,7 @@ Handle_IFSelect_SelectType._kill_pointed = new_instancemethod(_IFSelect.Handle_I
 Handle_IFSelect_SelectType_swigregister = _IFSelect.Handle_IFSelect_SelectType_swigregister
 Handle_IFSelect_SelectType_swigregister(Handle_IFSelect_SelectType)
 
-def Handle_IFSelect_SelectType_DownCast(*args):
+def Handle_IFSelect_SelectType_DownCast(*args) -> "Handle_IFSelect_SelectType const" :
   return _IFSelect.Handle_IFSelect_SelectType_DownCast(*args)
 Handle_IFSelect_SelectType_DownCast = _IFSelect.Handle_IFSelect_SelectType_DownCast
 

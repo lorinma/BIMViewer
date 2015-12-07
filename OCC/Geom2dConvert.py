@@ -121,7 +121,7 @@ import OCC.TColGeom2d
 class geom2dconvert(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SplitBSplineCurve(*args):
+    def SplitBSplineCurve(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * -- Convert a curve to BSpline by Approximation This method computes the arc of B-spline curve between the two knots FromK1 and ToK2. If C is periodic the arc has the same orientation as C if SameOrientation = Standard_True. If C is not periodic SameOrientation is not used for the computation and C is oriented from the knot fromK1 to the knot toK2. We just keep the local definition of C between the knots FromK1 and ToK2. The returned B-spline curve has its first and last knots with a multiplicity equal to degree + 1, where degree is the polynomial degree of C. The indexes of the knots FromK1 and ToK2 doesn't include the repetition of multiple knots in their definition. Raised if FromK1 or ToK2 are out of the bounds [FirstUKnotIndex, LastUKnotIndex] Raised if FromK1 = ToK2
 
@@ -153,7 +153,7 @@ class geom2dconvert(object):
         return _Geom2dConvert.geom2dconvert_SplitBSplineCurve(*args)
 
     SplitBSplineCurve = staticmethod(SplitBSplineCurve)
-    def CurveToBSplineCurve(*args):
+    def CurveToBSplineCurve(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * This function converts a non infinite curve from Geom into a B-spline curve. C must be an ellipse or a circle or a trimmed conic or a trimmed line or a Bezier curve or a trimmed Bezier curve or a BSpline curve or a trimmed BSpline curve or an Offset curve or a trimmed Offset curve. The returned B-spline is not periodic except if C is a Circle or an Ellipse. ParameterisationType applies only if the curve is a Circle or an ellipse : TgtThetaOver2, TgtThetaOver2_1, TgtThetaOver2_2, TgtThetaOver2_3, TgtThetaOver2_4, Purpose: this is the classical rational parameterisation  2  1 - t cos(theta) = ------  2  1 + t 2t sin(theta) = ------  2 1 + t t = tan (theta/2) with TgtThetaOver2 the routine will compute the number of spans using the rule num_spans = [ (ULast - UFirst) / 1.2 ] + 1 with TgtThetaOver2_N, N spans will be forced: an error will be raized if (ULast - UFirst) >= PI and N = 1, ULast - UFirst >= 2 PI and N = 2 QuasiAngular, here t is a rational function that approximates theta ----> tan(theta/2). Neverthless the composing with above function yields exact functions whose square sum up to 1 RationalC1 ; t is replaced by a polynomial function of u so as to grant C1 contiuity across knots. Exceptions Standard_DomainError if the curve C is infinite. Standard_ConstructionError: - if C is a complete circle or ellipse, and if Parameterisation is not equal to Convert_TgtThetaOver2 or to Convert_RationalC1, or - if C is a trimmed circle or ellipse and if Parameterisation is equal to Convert_TgtThetaOver2_1 and if U2 - U1 > 0.9999 * Pi where U1 and U2 are respectively the first and the last parameters of the trimmed curve (this method of parameterization cannot be used to convert a half-circle or a half-ellipse, for example), or - if C is a trimmed circle or ellipse and Parameterisation is equal to Convert_TgtThetaOver2_2 and U2 - U1 > 1.9999 * Pi where U1 and U2 are respectively the first and the last parameters of the trimmed curve (this method of parameterization cannot be used to convert a quasi-complete circle or ellipse).
 
@@ -167,7 +167,7 @@ class geom2dconvert(object):
         return _Geom2dConvert.geom2dconvert_CurveToBSplineCurve(*args)
 
     CurveToBSplineCurve = staticmethod(CurveToBSplineCurve)
-    def ConcatG1(*args):
+    def ConcatG1(*args) -> "void" :
         """
         * This Method concatenates G1 the ArrayOfCurves as far as it is possible. ArrayOfCurves[0..N-1] ArrayOfToler contains the biggest tolerance of the two  points shared by two consecutives curves.  Its dimension: [0..N-2] ClosedTolerance indicates if the ArrayOfCurves is closed.  In this case ClosedTolerance contains the biggest tolerance  of the two points which are at the closure.  Otherwise its value is 0.0
 
@@ -187,7 +187,7 @@ class geom2dconvert(object):
         return _Geom2dConvert.geom2dconvert_ConcatG1(*args)
 
     ConcatG1 = staticmethod(ConcatG1)
-    def ConcatC1(*args):
+    def ConcatC1(*args) -> "void" :
         """
         * This Method concatenates C1 the ArrayOfCurves as far as it is possible. ArrayOfCurves[0..N-1] ArrayOfToler contains the biggest tolerance of the two  points shared by two consecutives curves.  Its dimension: [0..N-2] ClosedTolerance indicates if the ArrayOfCurves is closed.  In this case ClosedTolerance contains the biggest tolerance  of the two points which are at the closure.  Otherwise its value is 0.0
 
@@ -227,7 +227,7 @@ class geom2dconvert(object):
         return _Geom2dConvert.geom2dconvert_ConcatC1(*args)
 
     ConcatC1 = staticmethod(ConcatC1)
-    def C0BSplineToC1BSplineCurve(*args):
+    def C0BSplineToC1BSplineCurve(*args) -> "void" :
         """
         * This Method reduces as far as it is possible the multiplicities of the knots of the BSpline BS.(keeping the geometry). It returns a new BSpline which could still be C0. tolerance is a geometrical tolerance
 
@@ -241,7 +241,7 @@ class geom2dconvert(object):
         return _Geom2dConvert.geom2dconvert_C0BSplineToC1BSplineCurve(*args)
 
     C0BSplineToC1BSplineCurve = staticmethod(C0BSplineToC1BSplineCurve)
-    def C0BSplineToArrayOfC1BSplineCurve(*args):
+    def C0BSplineToArrayOfC1BSplineCurve(*args) -> "void" :
         """
         * //!This Method reduces as far as it is possible the multiplicities of the knots of the BSpline BS.(keeping the geometry). It returns an array of BSpline C1. Tolerance is a geometrical tolerance
 
@@ -283,7 +283,7 @@ geom2dconvert._kill_pointed = new_instancemethod(_Geom2dConvert.geom2dconvert__k
 geom2dconvert_swigregister = _Geom2dConvert.geom2dconvert_swigregister
 geom2dconvert_swigregister(geom2dconvert)
 
-def geom2dconvert_SplitBSplineCurve(*args):
+def geom2dconvert_SplitBSplineCurve(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     * -- Convert a curve to BSpline by Approximation This method computes the arc of B-spline curve between the two knots FromK1 and ToK2. If C is periodic the arc has the same orientation as C if SameOrientation = Standard_True. If C is not periodic SameOrientation is not used for the computation and C is oriented from the knot fromK1 to the knot toK2. We just keep the local definition of C between the knots FromK1 and ToK2. The returned B-spline curve has its first and last knots with a multiplicity equal to degree + 1, where degree is the polynomial degree of C. The indexes of the knots FromK1 and ToK2 doesn't include the repetition of multiple knots in their definition. Raised if FromK1 or ToK2 are out of the bounds [FirstUKnotIndex, LastUKnotIndex] Raised if FromK1 = ToK2
 
@@ -314,7 +314,7 @@ def geom2dconvert_SplitBSplineCurve(*args):
     """
   return _Geom2dConvert.geom2dconvert_SplitBSplineCurve(*args)
 
-def geom2dconvert_CurveToBSplineCurve(*args):
+def geom2dconvert_CurveToBSplineCurve(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     * This function converts a non infinite curve from Geom into a B-spline curve. C must be an ellipse or a circle or a trimmed conic or a trimmed line or a Bezier curve or a trimmed Bezier curve or a BSpline curve or a trimmed BSpline curve or an Offset curve or a trimmed Offset curve. The returned B-spline is not periodic except if C is a Circle or an Ellipse. ParameterisationType applies only if the curve is a Circle or an ellipse : TgtThetaOver2, TgtThetaOver2_1, TgtThetaOver2_2, TgtThetaOver2_3, TgtThetaOver2_4, Purpose: this is the classical rational parameterisation  2  1 - t cos(theta) = ------  2  1 + t 2t sin(theta) = ------  2 1 + t t = tan (theta/2) with TgtThetaOver2 the routine will compute the number of spans using the rule num_spans = [ (ULast - UFirst) / 1.2 ] + 1 with TgtThetaOver2_N, N spans will be forced: an error will be raized if (ULast - UFirst) >= PI and N = 1, ULast - UFirst >= 2 PI and N = 2 QuasiAngular, here t is a rational function that approximates theta ----> tan(theta/2). Neverthless the composing with above function yields exact functions whose square sum up to 1 RationalC1 ; t is replaced by a polynomial function of u so as to grant C1 contiuity across knots. Exceptions Standard_DomainError if the curve C is infinite. Standard_ConstructionError: - if C is a complete circle or ellipse, and if Parameterisation is not equal to Convert_TgtThetaOver2 or to Convert_RationalC1, or - if C is a trimmed circle or ellipse and if Parameterisation is equal to Convert_TgtThetaOver2_1 and if U2 - U1 > 0.9999 * Pi where U1 and U2 are respectively the first and the last parameters of the trimmed curve (this method of parameterization cannot be used to convert a half-circle or a half-ellipse, for example), or - if C is a trimmed circle or ellipse and Parameterisation is equal to Convert_TgtThetaOver2_2 and U2 - U1 > 1.9999 * Pi where U1 and U2 are respectively the first and the last parameters of the trimmed curve (this method of parameterization cannot be used to convert a quasi-complete circle or ellipse).
 
@@ -327,7 +327,7 @@ def geom2dconvert_CurveToBSplineCurve(*args):
     """
   return _Geom2dConvert.geom2dconvert_CurveToBSplineCurve(*args)
 
-def geom2dconvert_ConcatG1(*args):
+def geom2dconvert_ConcatG1(*args) -> "void" :
   """
     * This Method concatenates G1 the ArrayOfCurves as far as it is possible. ArrayOfCurves[0..N-1] ArrayOfToler contains the biggest tolerance of the two  points shared by two consecutives curves.  Its dimension: [0..N-2] ClosedTolerance indicates if the ArrayOfCurves is closed.  In this case ClosedTolerance contains the biggest tolerance  of the two points which are at the closure.  Otherwise its value is 0.0
 
@@ -346,7 +346,7 @@ def geom2dconvert_ConcatG1(*args):
     """
   return _Geom2dConvert.geom2dconvert_ConcatG1(*args)
 
-def geom2dconvert_ConcatC1(*args):
+def geom2dconvert_ConcatC1(*args) -> "void" :
   """
     * This Method concatenates C1 the ArrayOfCurves as far as it is possible. ArrayOfCurves[0..N-1] ArrayOfToler contains the biggest tolerance of the two  points shared by two consecutives curves.  Its dimension: [0..N-2] ClosedTolerance indicates if the ArrayOfCurves is closed.  In this case ClosedTolerance contains the biggest tolerance  of the two points which are at the closure.  Otherwise its value is 0.0
 
@@ -385,7 +385,7 @@ def geom2dconvert_ConcatC1(*args):
     """
   return _Geom2dConvert.geom2dconvert_ConcatC1(*args)
 
-def geom2dconvert_C0BSplineToC1BSplineCurve(*args):
+def geom2dconvert_C0BSplineToC1BSplineCurve(*args) -> "void" :
   """
     * This Method reduces as far as it is possible the multiplicities of the knots of the BSpline BS.(keeping the geometry). It returns a new BSpline which could still be C0. tolerance is a geometrical tolerance
 
@@ -398,7 +398,7 @@ def geom2dconvert_C0BSplineToC1BSplineCurve(*args):
     """
   return _Geom2dConvert.geom2dconvert_C0BSplineToC1BSplineCurve(*args)
 
-def geom2dconvert_C0BSplineToArrayOfC1BSplineCurve(*args):
+def geom2dconvert_C0BSplineToArrayOfC1BSplineCurve(*args) -> "void" :
   """
     * //!This Method reduces as far as it is possible the multiplicities of the knots of the BSpline BS.(keeping the geometry). It returns an array of BSpline C1. Tolerance is a geometrical tolerance
 
@@ -446,7 +446,7 @@ class Geom2dConvert_ApproxCurve(object):
 
         """
         _Geom2dConvert.Geom2dConvert_ApproxCurve_swiginit(self,_Geom2dConvert.new_Geom2dConvert_ApproxCurve(*args))
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         * Returns the 2D BSpline curve resulting from the approximation algorithm.
 
@@ -455,7 +455,7 @@ class Geom2dConvert_ApproxCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_ApproxCurve_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the approximation has been done with within requiered tolerance
 
@@ -464,7 +464,7 @@ class Geom2dConvert_ApproxCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_ApproxCurve_IsDone(self, *args)
 
-    def HasResult(self, *args):
+    def HasResult(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the approximation did come out with a result that is not NECESSARELY within the required tolerance
 
@@ -473,7 +473,7 @@ class Geom2dConvert_ApproxCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_ApproxCurve_HasResult(self, *args)
 
-    def MaxError(self, *args):
+    def MaxError(self, *args) -> "Standard_Real" :
         """
         * Returns the greatest distance between a point on the source conic and the BSpline curve resulting from the approximation. (>0 when an approximation has been done, 0 if no approximation)
 
@@ -482,11 +482,11 @@ class Geom2dConvert_ApproxCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_ApproxCurve_MaxError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Geom2dConvert_ApproxCurve self) -> std::string"""
         return _Geom2dConvert.Geom2dConvert_ApproxCurve_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dConvert_ApproxCurve self)"""
         return _Geom2dConvert.Geom2dConvert_ApproxCurve__kill_pointed(self)
 
@@ -522,7 +522,7 @@ class Geom2dConvert_BSplineCurveKnotSplitting(object):
 
         """
         _Geom2dConvert.Geom2dConvert_BSplineCurveKnotSplitting_swiginit(self,_Geom2dConvert.new_Geom2dConvert_BSplineCurveKnotSplitting(*args))
-    def NbSplits(self, *args):
+    def NbSplits(self, *args) -> "Standard_Integer" :
         """
         * //!Returns the number of points at which the analysed BSpline curve should be split, in order to obtain arcs with the continuity required by this framework. All these points correspond to knot values. Note that the first and last points of the curve, which bound the first and last arcs, are counted among these splitting points.
 
@@ -531,7 +531,7 @@ class Geom2dConvert_BSplineCurveKnotSplitting(object):
         """
         return _Geom2dConvert.Geom2dConvert_BSplineCurveKnotSplitting_NbSplits(self, *args)
 
-    def Splitting(self, *args):
+    def Splitting(self, *args) -> "void" :
         """
         * Loads the SplitValues table with the split knots values computed in this framework. Each value in the table is an index in the knots table of the BSpline curve analysed by this algorithm. The values in SplitValues are given in ascending order and comprise the indices of the knots which give the first and last points of the curve. Use two consecutive values from the table as arguments of the global function SplitBSplineCurve (provided by the package Geom2dConvert) to split the curve. Exceptions Standard_DimensionError if the array SplitValues was not created with the following bounds: - 1, and - the number of split points computed in this framework (as given by the function NbSplits).
 
@@ -542,7 +542,7 @@ class Geom2dConvert_BSplineCurveKnotSplitting(object):
         """
         return _Geom2dConvert.Geom2dConvert_BSplineCurveKnotSplitting_Splitting(self, *args)
 
-    def SplitValue(self, *args):
+    def SplitValue(self, *args) -> "Standard_Integer" :
         """
         * //!Returns the split knot of index Index to the split knots table computed in this framework. The returned value is an index in the knots table of the BSpline curve analysed by this algorithm. Notes: - If Index is equal to 1, the corresponding knot gives the first point of the curve. - If Index is equal to the number of split knots computed in this framework, the corresponding point is the last point of the curve. Exceptions Standard_RangeError if Index is less than 1 or greater than the number of split knots computed in this framework.
 
@@ -593,7 +593,7 @@ class Geom2dConvert_BSplineCurveToBezierCurve(object):
 
         """
         _Geom2dConvert.Geom2dConvert_BSplineCurveToBezierCurve_swiginit(self,_Geom2dConvert.new_Geom2dConvert_BSplineCurveToBezierCurve(*args))
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_Geom2d_BezierCurve" :
         """
         * //!Constructs and returns the Bezier curve of index Index to the table of adjacent Bezier arcs computed by this algorithm. This Bezier curve has the same orientation as the BSpline curve analyzed in this framework. Exceptions Standard_OutOfRange if Index is less than 1 or greater than the number of adjacent Bezier arcs computed by this algorithm.
 
@@ -604,7 +604,7 @@ class Geom2dConvert_BSplineCurveToBezierCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_BSplineCurveToBezierCurve_Arc(self, *args)
 
-    def Arcs(self, *args):
+    def Arcs(self, *args) -> "void" :
         """
         * //!Constructs all the Bezier curves whose data is computed by this algorithm and loads these curves into the Curves table. The Bezier curves have the same orientation as the BSpline curve analyzed in this framework. Exceptions Standard_DimensionError if the Curves array was not created with the following bounds: - 1 , and - the number of adjacent Bezier arcs computed by this algorithm (as given by the function NbArcs).
 
@@ -615,7 +615,7 @@ class Geom2dConvert_BSplineCurveToBezierCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_BSplineCurveToBezierCurve_Arcs(self, *args)
 
-    def Knots(self, *args):
+    def Knots(self, *args) -> "void" :
         """
         * This methode returns the bspline's knots associated to the converted arcs Raises DimensionError if the length of Curves is not equal to NbArcs + 1
 
@@ -626,7 +626,7 @@ class Geom2dConvert_BSplineCurveToBezierCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_BSplineCurveToBezierCurve_Knots(self, *args)
 
-    def NbArcs(self, *args):
+    def NbArcs(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of BezierCurve arcs. If at the creation time you have decomposed the basis curve between the parametric values UFirst, ULast the number of BezierCurve arcs depends on the number of knots included inside the interval [UFirst, ULast]. If you have decomposed the whole basis B-spline curve the number of BezierCurve arcs NbArcs is equal to the number of knots less one.
 
@@ -672,7 +672,7 @@ class Geom2dConvert_CompCurveToBSplineCurve(object):
 
         """
         _Geom2dConvert.Geom2dConvert_CompCurveToBSplineCurve_swiginit(self,_Geom2dConvert.new_Geom2dConvert_CompCurveToBSplineCurve(*args))
-    def Add(self, *args):
+    def Add(self, *args) -> "Standard_Boolean" :
         """
         * Append a curve in the BSpline Return False if the curve is not G0 with the BSplineCurve. Tolerance is used to check continuity and decrease Multiplicty at the common Knot After is usefull if BasisCurve is a closed curve .
 
@@ -687,14 +687,14 @@ class Geom2dConvert_CompCurveToBSplineCurve(object):
         """
         return _Geom2dConvert.Geom2dConvert_CompCurveToBSplineCurve_Add(self, *args)
 
-    def BSplineCurve(self, *args):
+    def BSplineCurve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _Geom2dConvert.Geom2dConvert_CompCurveToBSplineCurve_BSplineCurve(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * Clear result curve
 

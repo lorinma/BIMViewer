@@ -139,7 +139,7 @@ class BRepIntCurveSurface_Inter(object):
 
         """
         _BRepIntCurveSurface.BRepIntCurveSurface_Inter_swiginit(self,_BRepIntCurveSurface.new_BRepIntCurveSurface_Inter(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Load the Shape, the curve and initialize the tolerance used for the classification.
 
@@ -164,7 +164,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Init(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * returns True if there is a current face.
 
@@ -173,7 +173,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Sets the explorer to the next face.
 
@@ -182,7 +182,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Next(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "IntCurveSurface_IntersectionPoint" :
         """
         * returns the current Intersection point.
 
@@ -191,7 +191,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Point(self, *args)
 
-    def Pnt(self, *args):
+    def Pnt(self, *args) -> "gp_Pnt const" :
         """
         * returns the current geometric Point
 
@@ -200,7 +200,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Pnt(self, *args)
 
-    def U(self, *args):
+    def U(self, *args) -> "Standard_Real" :
         """
         * returns the U parameter of the current point on the current face.
 
@@ -209,7 +209,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_U(self, *args)
 
-    def V(self, *args):
+    def V(self, *args) -> "Standard_Real" :
         """
         * returns the V parameter of the current point on the current face.
 
@@ -218,7 +218,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_V(self, *args)
 
-    def W(self, *args):
+    def W(self, *args) -> "Standard_Real" :
         """
         * returns the parameter of the current point on the curve.
 
@@ -227,7 +227,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_W(self, *args)
 
-    def State(self, *args):
+    def State(self, *args) -> "TopAbs_State" :
         """
         * returns the current state (IN or ON)
 
@@ -236,7 +236,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_State(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
         """
         * returns the transition of the line on the surface (IN or OUT or UNKNOWN)
 
@@ -245,7 +245,7 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Transition(self, *args)
 
-    def Face(self, *args):
+    def Face(self, *args) -> "TopoDS_Face const" :
         """
         * returns the current face.
 

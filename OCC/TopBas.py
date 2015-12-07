@@ -125,7 +125,7 @@ class TopBas_ListIteratorOfListOfTestInterference(object):
 
         """
         _TopBas.TopBas_ListIteratorOfListOfTestInterference_swiginit(self,_TopBas.new_TopBas_ListIteratorOfListOfTestInterference(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param L:
         :type L: TopBas_ListOfTestInterference &
@@ -134,21 +134,21 @@ class TopBas_ListIteratorOfListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListIteratorOfListOfTestInterference_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopBas.TopBas_ListIteratorOfListOfTestInterference_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopBas.TopBas_ListIteratorOfListOfTestInterference_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopBas_TestInterference &" :
         """
         :rtype: TopBas_TestInterference
 
@@ -184,18 +184,18 @@ class TopBas_ListNodeOfListOfTestInterference(OCC.TCollection.TCollection_MapNod
 
         """
         _TopBas.TopBas_ListNodeOfListOfTestInterference_swiginit(self,_TopBas.new_TopBas_ListNodeOfListOfTestInterference(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "TopBas_TestInterference &" :
         """
         :rtype: TopBas_TestInterference
 
         """
         return _TopBas.TopBas_ListNodeOfListOfTestInterference_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopBas_ListNodeOfListOfTestInterference self)"""
         return _TopBas.TopBas_ListNodeOfListOfTestInterference__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TopBas_ListNodeOfListOfTestInterference" :
         """GetHandle(TopBas_ListNodeOfListOfTestInterference self) -> Handle_TopBas_ListNodeOfListOfTestInterference"""
         return _TopBas.TopBas_ListNodeOfListOfTestInterference_GetHandle(self)
 
@@ -234,7 +234,7 @@ Handle_TopBas_ListNodeOfListOfTestInterference._kill_pointed = new_instancemetho
 Handle_TopBas_ListNodeOfListOfTestInterference_swigregister = _TopBas.Handle_TopBas_ListNodeOfListOfTestInterference_swigregister
 Handle_TopBas_ListNodeOfListOfTestInterference_swigregister(Handle_TopBas_ListNodeOfListOfTestInterference)
 
-def Handle_TopBas_ListNodeOfListOfTestInterference_DownCast(*args):
+def Handle_TopBas_ListNodeOfListOfTestInterference_DownCast(*args) -> "Handle_TopBas_ListNodeOfListOfTestInterference const" :
   return _TopBas.Handle_TopBas_ListNodeOfListOfTestInterference_DownCast(*args)
 Handle_TopBas_ListNodeOfListOfTestInterference_DownCast = _TopBas.Handle_TopBas_ListNodeOfListOfTestInterference_DownCast
 
@@ -247,7 +247,7 @@ class TopBas_ListOfTestInterference(object):
 
         """
         _TopBas.TopBas_ListOfTestInterference_swiginit(self,_TopBas.new_TopBas_ListOfTestInterference(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopBas_ListOfTestInterference &
@@ -256,7 +256,7 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Other:
         :type Other: TopBas_ListOfTestInterference &
@@ -265,28 +265,28 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_Set(self, *args)
 
-    def Extent(self, *args):
+    def Extent(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TopBas.TopBas_ListOfTestInterference_Extent(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopBas.TopBas_ListOfTestInterference_Clear(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TopBas.TopBas_ListOfTestInterference_IsEmpty(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param I:
         :type I: TopBas_TestInterference &
@@ -305,7 +305,7 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_Prepend(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param I:
         :type I: TopBas_TestInterference &
@@ -324,28 +324,28 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_Append(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "TopBas_TestInterference &" :
         """
         :rtype: TopBas_TestInterference
 
         """
         return _TopBas.TopBas_ListOfTestInterference_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "TopBas_TestInterference &" :
         """
         :rtype: TopBas_TestInterference
 
         """
         return _TopBas.TopBas_ListOfTestInterference_Last(self, *args)
 
-    def RemoveFirst(self, *args):
+    def RemoveFirst(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TopBas.TopBas_ListOfTestInterference_RemoveFirst(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param It:
         :type It: TopBas_ListIteratorOfListOfTestInterference &
@@ -354,7 +354,7 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_Remove(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param I:
         :type I: TopBas_TestInterference &
@@ -371,7 +371,7 @@ class TopBas_ListOfTestInterference(object):
         """
         return _TopBas.TopBas_ListOfTestInterference_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param I:
         :type I: TopBas_TestInterference &
@@ -434,7 +434,7 @@ class TopBas_TestInterference(object):
 
         """
         _TopBas.TopBas_TestInterference_swiginit(self,_TopBas.new_TopBas_TestInterference(*args))
-    def Intersection(self, *args):
+    def Intersection(self, *args) -> "Standard_Real const &" :
         """
         :param I:
         :type I: float &
@@ -445,15 +445,15 @@ class TopBas_TestInterference(object):
         """
         return _TopBas.TopBas_TestInterference_Intersection(self, *args)
 
-    def GetChangeIntersection(self):
+    def GetChangeIntersection(self) -> "Standard_Real" :
         """GetChangeIntersection(TopBas_TestInterference self) -> Standard_Real"""
         return _TopBas.TopBas_TestInterference_GetChangeIntersection(self)
 
-    def SetChangeIntersection(self, *args):
+    def SetChangeIntersection(self, *args) -> "void" :
         """SetChangeIntersection(TopBas_TestInterference self, Standard_Real value)"""
         return _TopBas.TopBas_TestInterference_SetChangeIntersection(self, *args)
 
-    def Boundary(self, *args):
+    def Boundary(self, *args) -> "Standard_Integer const &" :
         """
         :param B:
         :type B: int &
@@ -464,15 +464,15 @@ class TopBas_TestInterference(object):
         """
         return _TopBas.TopBas_TestInterference_Boundary(self, *args)
 
-    def GetChangeBoundary(self):
+    def GetChangeBoundary(self) -> "Standard_Integer" :
         """GetChangeBoundary(TopBas_TestInterference self) -> Standard_Integer"""
         return _TopBas.TopBas_TestInterference_GetChangeBoundary(self)
 
-    def SetChangeBoundary(self, *args):
+    def SetChangeBoundary(self, *args) -> "void" :
         """SetChangeBoundary(TopBas_TestInterference self, Standard_Integer value)"""
         return _TopBas.TopBas_TestInterference_SetChangeBoundary(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "TopAbs_Orientation" :
         """
         :param O:
         :type O: TopAbs_Orientation
@@ -483,7 +483,7 @@ class TopBas_TestInterference(object):
         """
         return _TopBas.TopBas_TestInterference_Orientation(self, *args)
 
-    def Transition(self, *args):
+    def Transition(self, *args) -> "TopAbs_Orientation" :
         """
         :param Tr:
         :type Tr: TopAbs_Orientation
@@ -494,7 +494,7 @@ class TopBas_TestInterference(object):
         """
         return _TopBas.TopBas_TestInterference_Transition(self, *args)
 
-    def BoundaryTransition(self, *args):
+    def BoundaryTransition(self, *args) -> "TopAbs_Orientation" :
         """
         :param BTr:
         :type BTr: TopAbs_Orientation
@@ -505,7 +505,7 @@ class TopBas_TestInterference(object):
         """
         return _TopBas.TopBas_TestInterference_BoundaryTransition(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TopBas_TestInterference self)"""
         return _TopBas.TopBas_TestInterference__kill_pointed(self)
 

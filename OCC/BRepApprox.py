@@ -141,7 +141,7 @@ class BRepApprox_Approx(object):
 
         """
         _BRepApprox.BRepApprox_Approx_swiginit(self,_BRepApprox.new_BRepApprox_Approx(*args))
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         :param Tol3d:
         :type Tol3d: float
@@ -182,35 +182,35 @@ class BRepApprox_Approx(object):
         """
         return _BRepApprox.BRepApprox_Approx_SetParameters(self, *args)
 
-    def TolReached3d(self, *args):
+    def TolReached3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_Approx_TolReached3d(self, *args)
 
-    def TolReached2d(self, *args):
+    def TolReached2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_Approx_TolReached2d(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_Approx_IsDone(self, *args)
 
-    def NbMultiCurves(self, *args):
+    def NbMultiCurves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_Approx_NbMultiCurves(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -258,14 +258,14 @@ class BRepApprox_ApproxLine(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepApprox.BRepApprox_ApproxLine_swiginit(self,_BRepApprox.new_BRepApprox_ApproxLine(*args))
-    def NbPnts(self, *args):
+    def NbPnts(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_ApproxLine_NbPnts(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "IntSurf_PntOn2S" :
         """
         :param Index:
         :type Index: int
@@ -274,11 +274,11 @@ class BRepApprox_ApproxLine(OCC.MMgt.MMgt_TShared):
         """
         return _BRepApprox.BRepApprox_ApproxLine_Point(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepApprox_ApproxLine self)"""
         return _BRepApprox.BRepApprox_ApproxLine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepApprox_ApproxLine" :
         """GetHandle(BRepApprox_ApproxLine self) -> Handle_BRepApprox_ApproxLine"""
         return _BRepApprox.BRepApprox_ApproxLine_GetHandle(self)
 
@@ -318,7 +318,7 @@ Handle_BRepApprox_ApproxLine._kill_pointed = new_instancemethod(_BRepApprox.Hand
 Handle_BRepApprox_ApproxLine_swigregister = _BRepApprox.Handle_BRepApprox_ApproxLine_swigregister
 Handle_BRepApprox_ApproxLine_swigregister(Handle_BRepApprox_ApproxLine)
 
-def Handle_BRepApprox_ApproxLine_DownCast(*args):
+def Handle_BRepApprox_ApproxLine_DownCast(*args) -> "Handle_BRepApprox_ApproxLine const" :
   return _BRepApprox.Handle_BRepApprox_ApproxLine_DownCast(*args)
 Handle_BRepApprox_ApproxLine_DownCast = _BRepApprox.Handle_BRepApprox_ApproxLine_DownCast
 
@@ -343,7 +343,7 @@ class BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox(object
 
         """
         _BRepApprox.BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def IsSolutionReached(self, *args):
+    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -390,14 +390,14 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NbVariables(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -408,7 +408,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -419,7 +419,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Gradient(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -432,21 +432,21 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args):
+    def NewParameters(self, *args) -> "math_Vector const &" :
         """
         :rtype: math_Vector
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NewParameters(self, *args)
 
-    def CurveValue(self, *args):
+    def CurveValue(self, *args) -> "AppParCurves_MultiBSpCurve" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_CurveValue(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param IPoint:
         :type IPoint: int
@@ -457,42 +457,42 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self, *args)
 
-    def FunctionMatrix(self, *args):
+    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
 
-    def DerivativeFunctionMatrix(self, *args):
+    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
 
-    def Index(self, *args):
+    def Index(self, *args) -> "math_IntegerVector const &" :
         """
         :rtype: math_IntegerVector
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Index(self, *args)
 
-    def FirstConstraint(self, *args):
+    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -503,7 +503,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args):
+    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -514,7 +514,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_LastConstraint(self, *args)
 
-    def SetFirstLambda(self, *args):
+    def SetFirstLambda(self, *args) -> "void" :
         """
         :param l1:
         :type l1: float
@@ -523,7 +523,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_SetFirstLambda(self, *args)
 
-    def SetLastLambda(self, *args):
+    def SetLastLambda(self, *args) -> "void" :
         """
         :param l2:
         :type l2: float
@@ -635,7 +635,7 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
 
         """
         _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -680,42 +680,42 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_IsDone(self, *args)
 
-    def BezierValue(self, *args):
+    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BezierValue(self, *args)
 
-    def BSplineValue(self, *args):
+    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BSplineValue(self, *args)
 
-    def FunctionMatrix(self, *args):
+    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
 
-    def DerivativeFunctionMatrix(self, *args):
+    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
 
-    def ErrorGradient(self, *args):
+    def ErrorGradient(self, *args) -> "void" :
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -730,14 +730,14 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Distance(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -750,35 +750,35 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
 
-    def FirstLambda(self, *args):
+    def FirstLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FirstLambda(self, *args)
 
-    def LastLambda(self, *args):
+    def LastLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_LastLambda(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Points(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Poles(self, *args)
 
-    def KIndex(self, *args):
+    def KIndex(self, *args) -> "math_IntegerVector const &" :
         """
         :rtype: math_IntegerVector
 
@@ -832,7 +832,7 @@ class BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox(object)
 
         """
         _BRepApprox.BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsSolutionReached(self, *args):
+    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -875,7 +875,7 @@ class BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsSolutionReached(self, *args):
+    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -956,21 +956,21 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiBSpCurve" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -979,21 +979,21 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1045,21 +1045,21 @@ class BRepApprox_MyGradientOfTheComputeLineBezierOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -1068,21 +1068,21 @@ class BRepApprox_MyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1134,21 +1134,21 @@ class BRepApprox_MyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int
@@ -1157,21 +1157,21 @@ class BRepApprox_MyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError2d(self, *args)
 
-    def AverageError(self, *args):
+    def AverageError(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1217,14 +1217,14 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NbVariables(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1235,7 +1235,7 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Value(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1246,7 +1246,7 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Gradient(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1259,21 +1259,21 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args):
+    def NewParameters(self, *args) -> "math_Vector const &" :
         """
         :rtype: math_Vector
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NewParameters(self, *args)
 
-    def CurveValue(self, *args):
+    def CurveValue(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_CurveValue(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param IPoint:
         :type IPoint: int
@@ -1284,21 +1284,21 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self, *args)
 
-    def FirstConstraint(self, *args):
+    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -1309,7 +1309,7 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args):
+    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -1364,14 +1364,14 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NbVariables(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1382,7 +1382,7 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Gradient(self, *args):
+    def Gradient(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1393,7 +1393,7 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Gradient(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -1406,21 +1406,21 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args):
+    def NewParameters(self, *args) -> "math_Vector const &" :
         """
         :rtype: math_Vector
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NewParameters(self, *args)
 
-    def CurveValue(self, *args):
+    def CurveValue(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_CurveValue(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "Standard_Real" :
         """
         :param IPoint:
         :type IPoint: int
@@ -1431,21 +1431,21 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args):
+    def MaxError3d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError3d(self, *args)
 
-    def MaxError2d(self, *args):
+    def MaxError2d(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError2d(self, *args)
 
-    def FirstConstraint(self, *args):
+    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -1456,7 +1456,7 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args):
+    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
@@ -1565,7 +1565,7 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
 
         """
         _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -1610,42 +1610,42 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
 
-    def BezierValue(self, *args):
+    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BezierValue(self, *args)
 
-    def BSplineValue(self, *args):
+    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BSplineValue(self, *args)
 
-    def FunctionMatrix(self, *args):
+    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FunctionMatrix(self, *args)
 
-    def DerivativeFunctionMatrix(self, *args):
+    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_DerivativeFunctionMatrix(self, *args)
 
-    def ErrorGradient(self, *args):
+    def ErrorGradient(self, *args) -> "void" :
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -1660,14 +1660,14 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Distance(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -1680,35 +1680,35 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
 
-    def FirstLambda(self, *args):
+    def FirstLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FirstLambda(self, *args)
 
-    def LastLambda(self, *args):
+    def LastLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_LastLambda(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Points(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Poles(self, *args)
 
-    def KIndex(self, *args):
+    def KIndex(self, *args) -> "math_IntegerVector const &" :
         """
         :rtype: math_IntegerVector
 
@@ -1816,7 +1816,7 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -1861,42 +1861,42 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
 
-    def BezierValue(self, *args):
+    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
         """
         :rtype: AppParCurves_MultiCurve
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BezierValue(self, *args)
 
-    def BSplineValue(self, *args):
+    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BSplineValue(self, *args)
 
-    def FunctionMatrix(self, *args):
+    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
 
-    def DerivativeFunctionMatrix(self, *args):
+    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
 
-    def ErrorGradient(self, *args):
+    def ErrorGradient(self, *args) -> "void" :
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -1911,14 +1911,14 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Distance(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param F:
         :type F: float &
@@ -1931,35 +1931,35 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
 
-    def FirstLambda(self, *args):
+    def FirstLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FirstLambda(self, *args)
 
-    def LastLambda(self, *args):
+    def LastLambda(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_LastLambda(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Points(self, *args)
 
-    def Poles(self, *args):
+    def Poles(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Poles(self, *args)
 
-    def KIndex(self, *args):
+    def KIndex(self, *args) -> "math_IntegerVector const &" :
         """
         :rtype: math_IntegerVector
 
@@ -2017,28 +2017,28 @@ class BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(object)
 
         """
         _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
 
-    def ConstraintMatrix(self, *args):
+    def ConstraintMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_ConstraintMatrix(self, *args)
 
-    def Duale(self, *args):
+    def Duale(self, *args) -> "math_Vector const &" :
         """
         :rtype: math_Vector
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_Duale(self, *args)
 
-    def ConstraintDerivative(self, *args):
+    def ConstraintDerivative(self, *args) -> "math_Matrix const &" :
         """
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
@@ -2053,7 +2053,7 @@ class BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(object)
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_ConstraintDerivative(self, *args)
 
-    def InverseMatrix(self, *args):
+    def InverseMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
@@ -2102,28 +2102,28 @@ class BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
 
-    def ConstraintMatrix(self, *args):
+    def ConstraintMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_ConstraintMatrix(self, *args)
 
-    def Duale(self, *args):
+    def Duale(self, *args) -> "math_Vector const &" :
         """
         :rtype: math_Vector
 
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_Duale(self, *args)
 
-    def ConstraintDerivative(self, *args):
+    def ConstraintDerivative(self, *args) -> "math_Matrix const &" :
         """
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
@@ -2138,7 +2138,7 @@ class BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_ConstraintDerivative(self, *args)
 
-    def InverseMatrix(self, *args):
+    def InverseMatrix(self, *args) -> "math_Matrix const &" :
         """
         :rtype: math_Matrix
 
@@ -2165,7 +2165,7 @@ BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_swigregister(BRe
 class BRepApprox_SurfaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstUParameter(*args):
+    def FirstUParameter(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2175,7 +2175,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_FirstUParameter(*args)
 
     FirstUParameter = staticmethod(FirstUParameter)
-    def FirstVParameter(*args):
+    def FirstVParameter(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2185,7 +2185,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_FirstVParameter(*args)
 
     FirstVParameter = staticmethod(FirstVParameter)
-    def LastUParameter(*args):
+    def LastUParameter(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2195,7 +2195,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_LastUParameter(*args)
 
     LastUParameter = staticmethod(LastUParameter)
-    def LastVParameter(*args):
+    def LastVParameter(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2205,7 +2205,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_LastVParameter(*args)
 
     LastVParameter = staticmethod(LastVParameter)
-    def NbUIntervals(*args):
+    def NbUIntervals(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2217,7 +2217,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbUIntervals(*args)
 
     NbUIntervals = staticmethod(NbUIntervals)
-    def NbVIntervals(*args):
+    def NbVIntervals(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2229,7 +2229,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbVIntervals(*args)
 
     NbVIntervals = staticmethod(NbVIntervals)
-    def UIntervals(*args):
+    def UIntervals(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2243,7 +2243,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UIntervals(*args)
 
     UIntervals = staticmethod(UIntervals)
-    def VIntervals(*args):
+    def VIntervals(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2257,7 +2257,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VIntervals(*args)
 
     VIntervals = staticmethod(VIntervals)
-    def UTrim(*args):
+    def UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2273,7 +2273,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UTrim(*args)
 
     UTrim = staticmethod(UTrim)
-    def VTrim(*args):
+    def VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2289,7 +2289,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VTrim(*args)
 
     VTrim = staticmethod(VTrim)
-    def IsUClosed(*args):
+    def IsUClosed(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2299,7 +2299,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsUClosed(*args)
 
     IsUClosed = staticmethod(IsUClosed)
-    def IsVClosed(*args):
+    def IsVClosed(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2309,7 +2309,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsVClosed(*args)
 
     IsVClosed = staticmethod(IsVClosed)
-    def IsUPeriodic(*args):
+    def IsUPeriodic(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2319,7 +2319,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsUPeriodic(*args)
 
     IsUPeriodic = staticmethod(IsUPeriodic)
-    def UPeriod(*args):
+    def UPeriod(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2329,7 +2329,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UPeriod(*args)
 
     UPeriod = staticmethod(UPeriod)
-    def IsVPeriodic(*args):
+    def IsVPeriodic(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2339,7 +2339,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsVPeriodic(*args)
 
     IsVPeriodic = staticmethod(IsVPeriodic)
-    def VPeriod(*args):
+    def VPeriod(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2349,7 +2349,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VPeriod(*args)
 
     VPeriod = staticmethod(VPeriod)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2363,7 +2363,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2379,7 +2379,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2399,7 +2399,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2425,7 +2425,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2459,7 +2459,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2477,7 +2477,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_DN(*args)
 
     DN = staticmethod(DN)
-    def UResolution(*args):
+    def UResolution(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2489,7 +2489,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UResolution(*args)
 
     UResolution = staticmethod(UResolution)
-    def VResolution(*args):
+    def VResolution(*args) -> "Standard_Real" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2501,7 +2501,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VResolution(*args)
 
     VResolution = staticmethod(VResolution)
-    def GetType(*args):
+    def GetType(*args) -> "GeomAbs_SurfaceType" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2511,7 +2511,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Plane(*args):
+    def Plane(*args) -> "gp_Pln" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2521,7 +2521,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def Cylinder(*args):
+    def Cylinder(*args) -> "gp_Cylinder" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2531,7 +2531,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Cylinder(*args)
 
     Cylinder = staticmethod(Cylinder)
-    def Cone(*args):
+    def Cone(*args) -> "gp_Cone" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2541,7 +2541,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Cone(*args)
 
     Cone = staticmethod(Cone)
-    def Torus(*args):
+    def Torus(*args) -> "gp_Torus" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2551,7 +2551,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Torus(*args)
 
     Torus = staticmethod(Torus)
-    def Sphere(*args):
+    def Sphere(*args) -> "gp_Sphere" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2561,7 +2561,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Sphere(*args)
 
     Sphere = staticmethod(Sphere)
-    def Bezier(*args):
+    def Bezier(*args) -> "Handle_Geom_BezierSurface" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2571,7 +2571,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args):
+    def BSpline(*args) -> "Handle_Geom_BSplineSurface" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2581,7 +2581,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def AxeOfRevolution(*args):
+    def AxeOfRevolution(*args) -> "gp_Ax1" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2591,7 +2591,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_AxeOfRevolution(*args)
 
     AxeOfRevolution = staticmethod(AxeOfRevolution)
-    def Direction(*args):
+    def Direction(*args) -> "gp_Dir" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2601,7 +2601,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Direction(*args)
 
     Direction = staticmethod(Direction)
-    def BasisCurve(*args):
+    def BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2611,7 +2611,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_BasisCurve(*args)
 
     BasisCurve = staticmethod(BasisCurve)
-    def NbSamplesU(*args):
+    def NbSamplesU(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2629,7 +2629,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args):
+    def NbSamplesV(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2661,7 +2661,7 @@ BRepApprox_SurfaceTool._kill_pointed = new_instancemethod(_BRepApprox.BRepApprox
 BRepApprox_SurfaceTool_swigregister = _BRepApprox.BRepApprox_SurfaceTool_swigregister
 BRepApprox_SurfaceTool_swigregister(BRepApprox_SurfaceTool)
 
-def BRepApprox_SurfaceTool_FirstUParameter(*args):
+def BRepApprox_SurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2670,7 +2670,7 @@ def BRepApprox_SurfaceTool_FirstUParameter(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_FirstUParameter(*args)
 
-def BRepApprox_SurfaceTool_FirstVParameter(*args):
+def BRepApprox_SurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2679,7 +2679,7 @@ def BRepApprox_SurfaceTool_FirstVParameter(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_FirstVParameter(*args)
 
-def BRepApprox_SurfaceTool_LastUParameter(*args):
+def BRepApprox_SurfaceTool_LastUParameter(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2688,7 +2688,7 @@ def BRepApprox_SurfaceTool_LastUParameter(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_LastUParameter(*args)
 
-def BRepApprox_SurfaceTool_LastVParameter(*args):
+def BRepApprox_SurfaceTool_LastVParameter(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2697,7 +2697,7 @@ def BRepApprox_SurfaceTool_LastVParameter(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_LastVParameter(*args)
 
-def BRepApprox_SurfaceTool_NbUIntervals(*args):
+def BRepApprox_SurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2708,7 +2708,7 @@ def BRepApprox_SurfaceTool_NbUIntervals(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbUIntervals(*args)
 
-def BRepApprox_SurfaceTool_NbVIntervals(*args):
+def BRepApprox_SurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2719,7 +2719,7 @@ def BRepApprox_SurfaceTool_NbVIntervals(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbVIntervals(*args)
 
-def BRepApprox_SurfaceTool_UIntervals(*args):
+def BRepApprox_SurfaceTool_UIntervals(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2732,7 +2732,7 @@ def BRepApprox_SurfaceTool_UIntervals(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UIntervals(*args)
 
-def BRepApprox_SurfaceTool_VIntervals(*args):
+def BRepApprox_SurfaceTool_VIntervals(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2745,7 +2745,7 @@ def BRepApprox_SurfaceTool_VIntervals(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VIntervals(*args)
 
-def BRepApprox_SurfaceTool_UTrim(*args):
+def BRepApprox_SurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2760,7 +2760,7 @@ def BRepApprox_SurfaceTool_UTrim(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UTrim(*args)
 
-def BRepApprox_SurfaceTool_VTrim(*args):
+def BRepApprox_SurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2775,7 +2775,7 @@ def BRepApprox_SurfaceTool_VTrim(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VTrim(*args)
 
-def BRepApprox_SurfaceTool_IsUClosed(*args):
+def BRepApprox_SurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2784,7 +2784,7 @@ def BRepApprox_SurfaceTool_IsUClosed(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsUClosed(*args)
 
-def BRepApprox_SurfaceTool_IsVClosed(*args):
+def BRepApprox_SurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2793,7 +2793,7 @@ def BRepApprox_SurfaceTool_IsVClosed(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsVClosed(*args)
 
-def BRepApprox_SurfaceTool_IsUPeriodic(*args):
+def BRepApprox_SurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2802,7 +2802,7 @@ def BRepApprox_SurfaceTool_IsUPeriodic(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsUPeriodic(*args)
 
-def BRepApprox_SurfaceTool_UPeriod(*args):
+def BRepApprox_SurfaceTool_UPeriod(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2811,7 +2811,7 @@ def BRepApprox_SurfaceTool_UPeriod(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UPeriod(*args)
 
-def BRepApprox_SurfaceTool_IsVPeriodic(*args):
+def BRepApprox_SurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2820,7 +2820,7 @@ def BRepApprox_SurfaceTool_IsVPeriodic(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsVPeriodic(*args)
 
-def BRepApprox_SurfaceTool_VPeriod(*args):
+def BRepApprox_SurfaceTool_VPeriod(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2829,7 +2829,7 @@ def BRepApprox_SurfaceTool_VPeriod(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VPeriod(*args)
 
-def BRepApprox_SurfaceTool_Value(*args):
+def BRepApprox_SurfaceTool_Value(*args) -> "gp_Pnt" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2842,7 +2842,7 @@ def BRepApprox_SurfaceTool_Value(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Value(*args)
 
-def BRepApprox_SurfaceTool_D0(*args):
+def BRepApprox_SurfaceTool_D0(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2857,7 +2857,7 @@ def BRepApprox_SurfaceTool_D0(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D0(*args)
 
-def BRepApprox_SurfaceTool_D1(*args):
+def BRepApprox_SurfaceTool_D1(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2876,7 +2876,7 @@ def BRepApprox_SurfaceTool_D1(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D1(*args)
 
-def BRepApprox_SurfaceTool_D2(*args):
+def BRepApprox_SurfaceTool_D2(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2901,7 +2901,7 @@ def BRepApprox_SurfaceTool_D2(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D2(*args)
 
-def BRepApprox_SurfaceTool_D3(*args):
+def BRepApprox_SurfaceTool_D3(*args) -> "void" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2934,7 +2934,7 @@ def BRepApprox_SurfaceTool_D3(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D3(*args)
 
-def BRepApprox_SurfaceTool_DN(*args):
+def BRepApprox_SurfaceTool_DN(*args) -> "gp_Vec" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2951,7 +2951,7 @@ def BRepApprox_SurfaceTool_DN(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_DN(*args)
 
-def BRepApprox_SurfaceTool_UResolution(*args):
+def BRepApprox_SurfaceTool_UResolution(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2962,7 +2962,7 @@ def BRepApprox_SurfaceTool_UResolution(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UResolution(*args)
 
-def BRepApprox_SurfaceTool_VResolution(*args):
+def BRepApprox_SurfaceTool_VResolution(*args) -> "Standard_Real" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2973,7 +2973,7 @@ def BRepApprox_SurfaceTool_VResolution(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VResolution(*args)
 
-def BRepApprox_SurfaceTool_GetType(*args):
+def BRepApprox_SurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2982,7 +2982,7 @@ def BRepApprox_SurfaceTool_GetType(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_GetType(*args)
 
-def BRepApprox_SurfaceTool_Plane(*args):
+def BRepApprox_SurfaceTool_Plane(*args) -> "gp_Pln" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2991,7 +2991,7 @@ def BRepApprox_SurfaceTool_Plane(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Plane(*args)
 
-def BRepApprox_SurfaceTool_Cylinder(*args):
+def BRepApprox_SurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3000,7 +3000,7 @@ def BRepApprox_SurfaceTool_Cylinder(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Cylinder(*args)
 
-def BRepApprox_SurfaceTool_Cone(*args):
+def BRepApprox_SurfaceTool_Cone(*args) -> "gp_Cone" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3009,7 +3009,7 @@ def BRepApprox_SurfaceTool_Cone(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Cone(*args)
 
-def BRepApprox_SurfaceTool_Torus(*args):
+def BRepApprox_SurfaceTool_Torus(*args) -> "gp_Torus" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3018,7 +3018,7 @@ def BRepApprox_SurfaceTool_Torus(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Torus(*args)
 
-def BRepApprox_SurfaceTool_Sphere(*args):
+def BRepApprox_SurfaceTool_Sphere(*args) -> "gp_Sphere" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3027,7 +3027,7 @@ def BRepApprox_SurfaceTool_Sphere(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Sphere(*args)
 
-def BRepApprox_SurfaceTool_Bezier(*args):
+def BRepApprox_SurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3036,7 +3036,7 @@ def BRepApprox_SurfaceTool_Bezier(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Bezier(*args)
 
-def BRepApprox_SurfaceTool_BSpline(*args):
+def BRepApprox_SurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3045,7 +3045,7 @@ def BRepApprox_SurfaceTool_BSpline(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_BSpline(*args)
 
-def BRepApprox_SurfaceTool_AxeOfRevolution(*args):
+def BRepApprox_SurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3054,7 +3054,7 @@ def BRepApprox_SurfaceTool_AxeOfRevolution(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_AxeOfRevolution(*args)
 
-def BRepApprox_SurfaceTool_Direction(*args):
+def BRepApprox_SurfaceTool_Direction(*args) -> "gp_Dir" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3063,7 +3063,7 @@ def BRepApprox_SurfaceTool_Direction(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Direction(*args)
 
-def BRepApprox_SurfaceTool_BasisCurve(*args):
+def BRepApprox_SurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3072,7 +3072,7 @@ def BRepApprox_SurfaceTool_BasisCurve(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_BasisCurve(*args)
 
-def BRepApprox_SurfaceTool_NbSamplesU(*args):
+def BRepApprox_SurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3089,7 +3089,7 @@ def BRepApprox_SurfaceTool_NbSamplesU(*args):
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbSamplesU(*args)
 
-def BRepApprox_SurfaceTool_NbSamplesV(*args):
+def BRepApprox_SurfaceTool_NbSamplesV(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3189,7 +3189,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheComputeLineBezierOfApprox(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param degreemin: default value is 4
         :type degreemin: int
@@ -3212,7 +3212,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3221,7 +3221,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Perform(self, *args)
 
-    def SetDegrees(self, *args):
+    def SetDegrees(self, *args) -> "void" :
         """
         :param degreemin:
         :type degreemin: int
@@ -3232,7 +3232,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args):
+    def SetTolerances(self, *args) -> "void" :
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -3243,7 +3243,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args):
+    def SetConstraints(self, *args) -> "void" :
         """
         :param firstC:
         :type firstC: AppParCurves_Constraint
@@ -3254,21 +3254,21 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args):
+    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsAllApproximated(self, *args)
 
-    def IsToleranceReached(self, *args):
+    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsToleranceReached(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3281,14 +3281,14 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Error(self, *args)
 
-    def NbMultiCurves(self, *args):
+    def NbMultiCurves(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_NbMultiCurves(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
         """
         :param Index: default value is 1
         :type Index: int
@@ -3297,7 +3297,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AppParCurves_MultiCurve &" :
         """
         :param Index: default value is 1
         :type Index: int
@@ -3306,14 +3306,14 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_ChangeValue(self, *args)
 
-    def SplineValue(self, *args):
+    def SplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SplineValue(self, *args)
 
-    def Parametrization(self, *args):
+    def Parametrization(self, *args) -> "void" :
         """
         :param partype:
         :type partype: Approx_ParametrizationType &
@@ -3322,7 +3322,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Parametrization(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :param Index: default value is 1
         :type Index: int
@@ -3440,7 +3440,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheComputeLineOfApprox(*args))
-    def Interpol(self, *args):
+    def Interpol(self, *args) -> "void" :
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3449,7 +3449,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Interpol(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param degreemin: default value is 4
         :type degreemin: int
@@ -3472,7 +3472,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3481,7 +3481,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Perform(self, *args)
 
-    def SetParameters(self, *args):
+    def SetParameters(self, *args) -> "void" :
         """
         :param ThePar:
         :type ThePar: math_Vector &
@@ -3490,7 +3490,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetParameters(self, *args)
 
-    def SetKnots(self, *args):
+    def SetKnots(self, *args) -> "void" :
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -3499,7 +3499,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetKnots(self, *args)
 
-    def SetKnotsAndMultiplicities(self, *args):
+    def SetKnotsAndMultiplicities(self, *args) -> "void" :
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -3510,7 +3510,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetKnotsAndMultiplicities(self, *args)
 
-    def SetDegrees(self, *args):
+    def SetDegrees(self, *args) -> "void" :
         """
         :param degreemin:
         :type degreemin: int
@@ -3521,7 +3521,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args):
+    def SetTolerances(self, *args) -> "void" :
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -3532,7 +3532,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetTolerances(self, *args)
 
-    def SetContinuity(self, *args):
+    def SetContinuity(self, *args) -> "void" :
         """
         :param C:
         :type C: int
@@ -3541,7 +3541,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetContinuity(self, *args)
 
-    def SetConstraints(self, *args):
+    def SetConstraints(self, *args) -> "void" :
         """
         :param firstC:
         :type firstC: AppParCurves_Constraint
@@ -3552,21 +3552,21 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args):
+    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsAllApproximated(self, *args)
 
-    def IsToleranceReached(self, *args):
+    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsToleranceReached(self, *args)
 
-    def Error(self, *args):
+    def Error(self, *args) -> "void" :
         """
         :param tol3d:
         :type tol3d: float &
@@ -3577,21 +3577,21 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Error(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "AppParCurves_MultiBSpCurve &" :
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_ChangeValue(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
@@ -3641,21 +3641,21 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(*args))
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -3666,7 +3666,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -3677,7 +3677,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -3690,7 +3690,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Values(self, *args)
 
-    def ComputeParameters(self, *args):
+    def ComputeParameters(self, *args) -> "void" :
         """
         :param ChoixIso:
         :type ChoixIso: IntImp_ConstIsoparametric
@@ -3709,21 +3709,21 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_ComputeParameters(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Root(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         :rtype: gp_Pnt
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :param UVap:
         :type UVap: math_Vector &
@@ -3736,35 +3736,35 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_IsTangent(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "gp_Dir" :
         """
         :rtype: gp_Dir
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self, *args)
 
-    def DirectionOnS1(self, *args):
+    def DirectionOnS1(self, *args) -> "gp_Dir2d" :
         """
         :rtype: gp_Dir2d
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self, *args)
 
-    def DirectionOnS2(self, *args):
+    def DirectionOnS2(self, *args) -> "gp_Dir2d" :
         """
         :rtype: gp_Dir2d
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self, *args)
 
-    def AuxillarSurface1(self, *args):
+    def AuxillarSurface1(self, *args) -> "BRepAdaptor_Surface const &" :
         """
         :rtype: BRepAdaptor_Surface
 
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_AuxillarSurface1(self, *args)
 
-    def AuxillarSurface2(self, *args):
+    def AuxillarSurface2(self, *args) -> "BRepAdaptor_Surface const &" :
         """
         :rtype: BRepAdaptor_Surface
 
@@ -3855,7 +3855,7 @@ class BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "IntImp_ConstIsoparametric" :
         """
         :param Param:
         :type Param: TColStd_Array1OfReal &
@@ -3874,56 +3874,56 @@ class BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsDone(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsEmpty(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "IntSurf_PntOn2S const &" :
         """
         :rtype: IntSurf_PntOn2S
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsTangent(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "gp_Dir const" :
         """
         :rtype: gp_Dir
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self, *args)
 
-    def DirectionOnS1(self, *args):
+    def DirectionOnS1(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self, *args)
 
-    def DirectionOnS2(self, *args):
+    def DirectionOnS2(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self, *args)
 
-    def Function(self, *args):
+    def Function(self, *args) -> "BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox &" :
         """
         :rtype: BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox
 
@@ -4044,42 +4044,42 @@ class BRepApprox_TheMultiLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheMultiLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheMultiLineOfApprox(*args))
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_FirstPoint(self, *args)
 
-    def LastPoint(self, *args):
+    def LastPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_LastPoint(self, *args)
 
-    def NbP2d(self, *args):
+    def NbP2d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP2d(self, *args)
 
-    def NbP3d(self, *args):
+    def NbP3d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP3d(self, *args)
 
-    def WhatStatus(self, *args):
+    def WhatStatus(self, *args) -> "Approx_Status" :
         """
         :rtype: Approx_Status
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_WhatStatus(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "void" :
         """
         :param MPointIndex:
         :type MPointIndex: int
@@ -4104,7 +4104,7 @@ class BRepApprox_TheMultiLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_Value(self, *args)
 
-    def Tangency(self, *args):
+    def Tangency(self, *args) -> "Standard_Boolean" :
         """
         :param MPointIndex:
         :type MPointIndex: int
@@ -4129,7 +4129,7 @@ class BRepApprox_TheMultiLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_Tangency(self, *args)
 
-    def MakeMLBetween(self, *args):
+    def MakeMLBetween(self, *args) -> "BRepApprox_TheMultiLineOfApprox" :
         """
         :param Low:
         :type Low: int
@@ -4165,7 +4165,7 @@ BRepApprox_TheMultiLineOfApprox_swigregister(BRepApprox_TheMultiLineOfApprox)
 class BRepApprox_TheMultiLineToolOfApprox(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstPoint(*args):
+    def FirstPoint(*args) -> "Standard_Integer" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4175,7 +4175,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args)
 
     FirstPoint = staticmethod(FirstPoint)
-    def LastPoint(*args):
+    def LastPoint(*args) -> "Standard_Integer" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4185,7 +4185,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args)
 
     LastPoint = staticmethod(LastPoint)
-    def NbP2d(*args):
+    def NbP2d(*args) -> "Standard_Integer" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4195,7 +4195,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args):
+    def NbP3d(*args) -> "Standard_Integer" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4205,7 +4205,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args):
+    def Value(*args) -> "void" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4237,7 +4237,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Value(*args)
 
     Value = staticmethod(Value)
-    def Tangency(*args):
+    def Tangency(*args) -> "Standard_Boolean" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4269,7 +4269,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Tangency(*args)
 
     Tangency = staticmethod(Tangency)
-    def Curvature(*args):
+    def Curvature(*args) -> "Standard_Boolean" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4301,7 +4301,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Curvature(*args)
 
     Curvature = staticmethod(Curvature)
-    def MakeMLBetween(*args):
+    def MakeMLBetween(*args) -> "BRepApprox_TheMultiLineOfApprox" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4317,7 +4317,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args)
 
     MakeMLBetween = staticmethod(MakeMLBetween)
-    def WhatStatus(*args):
+    def WhatStatus(*args) -> "Approx_Status" :
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4345,7 +4345,7 @@ BRepApprox_TheMultiLineToolOfApprox._kill_pointed = new_instancemethod(_BRepAppr
 BRepApprox_TheMultiLineToolOfApprox_swigregister = _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_swigregister
 BRepApprox_TheMultiLineToolOfApprox_swigregister(BRepApprox_TheMultiLineToolOfApprox)
 
-def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args):
+def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args) -> "Standard_Integer" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4354,7 +4354,7 @@ def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args):
+def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args) -> "Standard_Integer" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4363,7 +4363,7 @@ def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args):
+def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args) -> "Standard_Integer" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4372,7 +4372,7 @@ def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args):
+def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args) -> "Standard_Integer" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4381,7 +4381,7 @@ def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Value(*args):
+def BRepApprox_TheMultiLineToolOfApprox_Value(*args) -> "void" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4412,7 +4412,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Value(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Value(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args):
+def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args) -> "Standard_Boolean" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4443,7 +4443,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Tangency(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args):
+def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args) -> "Standard_Boolean" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4474,7 +4474,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Curvature(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args):
+def BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args) -> "BRepApprox_TheMultiLineOfApprox" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4489,7 +4489,7 @@ def BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args):
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_WhatStatus(*args):
+def BRepApprox_TheMultiLineToolOfApprox_WhatStatus(*args) -> "Approx_Status" :
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4546,7 +4546,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(*args))
-    def SetImplicitSurface(self, *args):
+    def SetImplicitSurface(self, *args) -> "void" :
         """
         :param IS:
         :type IS: IntSurf_Quadric &
@@ -4555,7 +4555,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_SetImplicitSurface(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param PS:
         :type PS: BRepAdaptor_Surface &
@@ -4568,21 +4568,21 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Set(self, *args)
 
-    def NbVariables(self, *args):
+    def NbVariables(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbVariables(self, *args)
 
-    def NbEquations(self, *args):
+    def NbEquations(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbEquations(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4593,7 +4593,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Value(self, *args)
 
-    def Derivatives(self, *args):
+    def Derivatives(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4604,7 +4604,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Derivatives(self, *args)
 
-    def Values(self, *args):
+    def Values(self, *args) -> "Standard_Boolean" :
         """
         :param X:
         :type X: math_Vector &
@@ -4617,56 +4617,56 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Values(self, *args)
 
-    def Root(self, *args):
+    def Root(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Root(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Tolerance(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Point(self, *args)
 
-    def IsTangent(self, *args):
+    def IsTangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_IsTangent(self, *args)
 
-    def Direction3d(self, *args):
+    def Direction3d(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction3d(self, *args)
 
-    def Direction2d(self, *args):
+    def Direction2d(self, *args) -> "gp_Dir2d const" :
         """
         :rtype: gp_Dir2d
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction2d(self, *args)
 
-    def PSurface(self, *args):
+    def PSurface(self, *args) -> "BRepAdaptor_Surface const &" :
         """
         :rtype: BRepAdaptor_Surface
 
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_PSurface(self, *args)
 
-    def ISurface(self, *args):
+    def ISurface(self, *args) -> "IntSurf_Quadric const &" :
         """
         :rtype: IntSurf_Quadric
 

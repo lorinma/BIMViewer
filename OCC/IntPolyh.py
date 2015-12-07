@@ -137,35 +137,35 @@ class IntPolyh_Couple(object):
 
         """
         _IntPolyh.IntPolyh_Couple_swiginit(self,_IntPolyh.new_IntPolyh_Couple(*args))
-    def FirstValue(self, *args):
+    def FirstValue(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Couple_FirstValue(self, *args)
 
-    def SecondValue(self, *args):
+    def SecondValue(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Couple_SecondValue(self, *args)
 
-    def AnalyseFlagValue(self, *args):
+    def AnalyseFlagValue(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Couple_AnalyseFlagValue(self, *args)
 
-    def AngleValue(self, *args):
+    def AngleValue(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Couple_AngleValue(self, *args)
 
-    def SetCoupleValue(self, *args):
+    def SetCoupleValue(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -176,7 +176,7 @@ class IntPolyh_Couple(object):
         """
         return _IntPolyh.IntPolyh_Couple_SetCoupleValue(self, *args)
 
-    def SetAnalyseFlag(self, *args):
+    def SetAnalyseFlag(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -185,7 +185,7 @@ class IntPolyh_Couple(object):
         """
         return _IntPolyh.IntPolyh_Couple_SetAnalyseFlag(self, *args)
 
-    def SetAngleValue(self, *args):
+    def SetAngleValue(self, *args) -> "void" :
         """
         :param ang:
         :type ang: float
@@ -194,7 +194,7 @@ class IntPolyh_Couple(object):
         """
         return _IntPolyh.IntPolyh_Couple_SetAngleValue(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -242,42 +242,42 @@ class IntPolyh_Edge(object):
 
         """
         _IntPolyh.IntPolyh_Edge_swiginit(self,_IntPolyh.new_IntPolyh_Edge(*args))
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Edge_FirstPoint(self, *args)
 
-    def SecondPoint(self, *args):
+    def SecondPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Edge_SecondPoint(self, *args)
 
-    def FirstTriangle(self, *args):
+    def FirstTriangle(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Edge_FirstTriangle(self, *args)
 
-    def SecondTriangle(self, *args):
+    def SecondTriangle(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Edge_SecondTriangle(self, *args)
 
-    def AnalysisFlag(self, *args):
+    def AnalysisFlag(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Edge_AnalysisFlag(self, *args)
 
-    def SetFirstPoint(self, *args):
+    def SetFirstPoint(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -286,7 +286,7 @@ class IntPolyh_Edge(object):
         """
         return _IntPolyh.IntPolyh_Edge_SetFirstPoint(self, *args)
 
-    def SetSecondPoint(self, *args):
+    def SetSecondPoint(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -295,7 +295,7 @@ class IntPolyh_Edge(object):
         """
         return _IntPolyh.IntPolyh_Edge_SetSecondPoint(self, *args)
 
-    def SetFirstTriangle(self, *args):
+    def SetFirstTriangle(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -304,7 +304,7 @@ class IntPolyh_Edge(object):
         """
         return _IntPolyh.IntPolyh_Edge_SetFirstTriangle(self, *args)
 
-    def SetSecondTriangle(self, *args):
+    def SetSecondTriangle(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -313,7 +313,7 @@ class IntPolyh_Edge(object):
         """
         return _IntPolyh.IntPolyh_Edge_SetSecondTriangle(self, *args)
 
-    def SetAnalysisFlag(self, *args):
+    def SetAnalysisFlag(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -322,7 +322,7 @@ class IntPolyh_Edge(object):
         """
         return _IntPolyh.IntPolyh_Edge_SetAnalysisFlag(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -401,7 +401,7 @@ class IntPolyh_Intersection(object):
 
         """
         _IntPolyh.IntPolyh_Intersection_swiginit(self,_IntPolyh.new_IntPolyh_Intersection(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Compute the intersection.
 
@@ -422,21 +422,21 @@ class IntPolyh_Intersection(object):
         """
         return _IntPolyh.IntPolyh_Intersection_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _IntPolyh.IntPolyh_Intersection_IsDone(self, *args)
 
-    def NbSectionLines(self, *args):
+    def NbSectionLines(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Intersection_NbSectionLines(self, *args)
 
-    def NbPointsInLine(self, *args):
+    def NbPointsInLine(self, *args) -> "Standard_Integer" :
         """
         :param IndexLine:
         :type IndexLine: int
@@ -445,7 +445,7 @@ class IntPolyh_Intersection(object):
         """
         return _IntPolyh.IntPolyh_Intersection_NbPointsInLine(self, *args)
 
-    def GetLinePoint(self, *args):
+    def GetLinePoint(self, *args) -> "void" :
         """
         :param IndexLine:
         :type IndexLine: int
@@ -472,14 +472,14 @@ class IntPolyh_Intersection(object):
         """
         return _IntPolyh.IntPolyh_Intersection_GetLinePoint(self, *args)
 
-    def NbTangentZones(self, *args):
+    def NbTangentZones(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Intersection_NbTangentZones(self, *args)
 
-    def NbPointsInTangentZone(self, *args):
+    def NbPointsInTangentZone(self, *args) -> "Standard_Integer" :
         """
         :param IndexLine:
         :type IndexLine: int
@@ -488,7 +488,7 @@ class IntPolyh_Intersection(object):
         """
         return _IntPolyh.IntPolyh_Intersection_NbPointsInTangentZone(self, *args)
 
-    def GetTangentZonePoint(self, *args):
+    def GetTangentZonePoint(self, *args) -> "void" :
         """
         :param IndexLine:
         :type IndexLine: int
@@ -554,49 +554,49 @@ class IntPolyh_Point(object):
 
         """
         _IntPolyh.IntPolyh_Point_swiginit(self,_IntPolyh.new_IntPolyh_Point(*args))
-    def X(self, *args):
+    def X(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_X(self, *args)
 
-    def Y(self, *args):
+    def Y(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_Y(self, *args)
 
-    def Z(self, *args):
+    def Z(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_Z(self, *args)
 
-    def U(self, *args):
+    def U(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_U(self, *args)
 
-    def V(self, *args):
+    def V(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_V(self, *args)
 
-    def PartOfCommon(self, *args):
+    def PartOfCommon(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Point_PartOfCommon(self, *args)
 
-    def Equal(self, *args):
+    def Equal(self, *args) -> "void" :
         """
         :param Pt:
         :type Pt: IntPolyh_Point &
@@ -605,7 +605,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Equal(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Pt:
         :type Pt: IntPolyh_Point &
@@ -628,7 +628,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Set(self, *args)
 
-    def SetX(self, *args):
+    def SetX(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -637,7 +637,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetX(self, *args)
 
-    def SetY(self, *args):
+    def SetY(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -646,7 +646,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetY(self, *args)
 
-    def SetZ(self, *args):
+    def SetZ(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -655,7 +655,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetZ(self, *args)
 
-    def SetU(self, *args):
+    def SetU(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -664,7 +664,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetU(self, *args)
 
-    def SetV(self, *args):
+    def SetV(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -673,7 +673,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetV(self, *args)
 
-    def SetPartOfCommon(self, *args):
+    def SetPartOfCommon(self, *args) -> "void" :
         """
         :param ii:
         :type ii: int
@@ -682,7 +682,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetPartOfCommon(self, *args)
 
-    def Middle(self, *args):
+    def Middle(self, *args) -> "void" :
         """
         :param MySurface:
         :type MySurface: Handle_Adaptor3d_HSurface &
@@ -695,7 +695,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Middle(self, *args)
 
-    def Add(self, *args):
+    def Add(self, *args) -> "IntPolyh_Point" :
         """
         :param P1:
         :type P1: IntPolyh_Point &
@@ -704,7 +704,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Add(self, *args)
 
-    def __add__(self, *args):
+    def __add__(self, *args) -> "IntPolyh_Point" :
         """
         :param P1:
         :type P1: IntPolyh_Point &
@@ -713,7 +713,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point___add__(self, *args)
 
-    def Sub(self, *args):
+    def Sub(self, *args) -> "IntPolyh_Point" :
         """
         :param P1:
         :type P1: IntPolyh_Point &
@@ -722,7 +722,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Sub(self, *args)
 
-    def __sub__(self, *args):
+    def __sub__(self, *args) -> "IntPolyh_Point" :
         """
         :param P1:
         :type P1: IntPolyh_Point &
@@ -731,7 +731,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point___sub__(self, *args)
 
-    def Divide(self, *args):
+    def Divide(self, *args) -> "IntPolyh_Point" :
         """
         :param rr:
         :type rr: float
@@ -740,7 +740,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Divide(self, *args)
 
-    def __div__(self, *args):
+    def __div__(self, *args) -> "IntPolyh_Point" :
         """
         :param rr:
         :type rr: float
@@ -749,7 +749,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point___div__(self, *args)
 
-    def Multiplication(self, *args):
+    def Multiplication(self, *args) -> "IntPolyh_Point" :
         """
         :param rr:
         :type rr: float
@@ -758,7 +758,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Multiplication(self, *args)
 
-    def __mul__(self, *args):
+    def __mul__(self, *args) -> "IntPolyh_Point" :
         """
         :param rr:
         :type rr: float
@@ -767,14 +767,14 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point___mul__(self, *args)
 
-    def SquareModulus(self, *args):
+    def SquareModulus(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Point_SquareModulus(self, *args)
 
-    def SquareDistance(self, *args):
+    def SquareDistance(self, *args) -> "Standard_Real" :
         """
         :param P2:
         :type P2: IntPolyh_Point &
@@ -783,7 +783,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SquareDistance(self, *args)
 
-    def Dot(self, *args):
+    def Dot(self, *args) -> "Standard_Real" :
         """
         :param P2:
         :type P2: IntPolyh_Point &
@@ -792,7 +792,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Dot(self, *args)
 
-    def Cross(self, *args):
+    def Cross(self, *args) -> "void" :
         """
         :param P1:
         :type P1: IntPolyh_Point &
@@ -803,7 +803,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Cross(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -814,7 +814,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_Dump(self, *args)
 
-    def SetDegenerated(self, *args):
+    def SetDegenerated(self, *args) -> "void" :
         """
         :param theFlag:
         :type theFlag: bool
@@ -823,7 +823,7 @@ class IntPolyh_Point(object):
         """
         return _IntPolyh.IntPolyh_Point_SetDegenerated(self, *args)
 
-    def Degenerated(self, *args):
+    def Degenerated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -885,7 +885,7 @@ class IntPolyh_SectionLine(object):
 
         """
         _IntPolyh.IntPolyh_SectionLine_swiginit(self,_IntPolyh.new_IntPolyh_SectionLine(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param nn:
         :type nn: int
@@ -894,7 +894,7 @@ class IntPolyh_SectionLine(object):
         """
         return _IntPolyh.IntPolyh_SectionLine_Init(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntPolyh_StartPoint const &" :
         """
         :param nn:
         :type nn: int
@@ -903,7 +903,7 @@ class IntPolyh_SectionLine(object):
         """
         return _IntPolyh.IntPolyh_SectionLine_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntPolyh_StartPoint &" :
         """
         :param nn:
         :type nn: int
@@ -912,7 +912,7 @@ class IntPolyh_SectionLine(object):
         """
         return _IntPolyh.IntPolyh_SectionLine_ChangeValue(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "IntPolyh_SectionLine &" :
         """
         :param Other:
         :type Other: IntPolyh_SectionLine &
@@ -921,7 +921,7 @@ class IntPolyh_SectionLine(object):
         """
         return _IntPolyh.IntPolyh_SectionLine_Copy(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntPolyh_SectionLine &" :
         """
         :param Other:
         :type Other: IntPolyh_SectionLine &
@@ -930,42 +930,42 @@ class IntPolyh_SectionLine(object):
         """
         return _IntPolyh.IntPolyh_SectionLine_Set(self, *args)
 
-    def GetN(self, *args):
+    def GetN(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_SectionLine_GetN(self, *args)
 
-    def NbStartPoints(self, *args):
+    def NbStartPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_SectionLine_NbStartPoints(self, *args)
 
-    def IncrementNbStartPoints(self, *args):
+    def IncrementNbStartPoints(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntPolyh.IntPolyh_SectionLine_IncrementNbStartPoints(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntPolyh.IntPolyh_SectionLine_Destroy(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntPolyh.IntPolyh_SectionLine_Dump(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param SP:
         :type SP: IntPolyh_StartPoint &
@@ -1006,14 +1006,14 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _IntPolyh.IntPolyh_SeqOfStartPoints_swiginit(self,_IntPolyh.new_IntPolyh_SeqOfStartPoints(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "IntPolyh_SeqOfStartPoints const &" :
         """
         :param Other:
         :type Other: IntPolyh_SeqOfStartPoints &
@@ -1022,7 +1022,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "IntPolyh_SeqOfStartPoints const &" :
         """
         :param Other:
         :type Other: IntPolyh_SeqOfStartPoints &
@@ -1031,7 +1031,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: IntPolyh_StartPoint &
@@ -1044,7 +1044,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: IntPolyh_StartPoint &
@@ -1057,7 +1057,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1074,7 +1074,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1091,21 +1091,21 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "IntPolyh_StartPoint const &" :
         """
         :rtype: IntPolyh_StartPoint
 
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "IntPolyh_StartPoint const &" :
         """
         :rtype: IntPolyh_StartPoint
 
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1116,7 +1116,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "IntPolyh_StartPoint const &" :
         """
         :param Index:
         :type Index: int
@@ -1125,7 +1125,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1136,7 +1136,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "IntPolyh_StartPoint &" :
         """
         :param Index:
         :type Index: int
@@ -1145,7 +1145,7 @@ class IntPolyh_SeqOfStartPoints(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntPolyh.IntPolyh_SeqOfStartPoints_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1201,18 +1201,18 @@ class IntPolyh_SequenceNodeOfSeqOfStartPoints(OCC.TCollection.TCollection_SeqNod
 
         """
         _IntPolyh.IntPolyh_SequenceNodeOfSeqOfStartPoints_swiginit(self,_IntPolyh.new_IntPolyh_SequenceNodeOfSeqOfStartPoints(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "IntPolyh_StartPoint &" :
         """
         :rtype: IntPolyh_StartPoint
 
         """
         return _IntPolyh.IntPolyh_SequenceNodeOfSeqOfStartPoints_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(IntPolyh_SequenceNodeOfSeqOfStartPoints self)"""
         return _IntPolyh.IntPolyh_SequenceNodeOfSeqOfStartPoints__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints" :
         """GetHandle(IntPolyh_SequenceNodeOfSeqOfStartPoints self) -> Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints"""
         return _IntPolyh.IntPolyh_SequenceNodeOfSeqOfStartPoints_GetHandle(self)
 
@@ -1251,7 +1251,7 @@ Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints._kill_pointed = new_instancemetho
 Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_swigregister = _IntPolyh.Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_swigregister
 Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_swigregister(Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints)
 
-def Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_DownCast(*args):
+def Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_DownCast(*args) -> "Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints const" :
   return _IntPolyh.Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_DownCast(*args)
 Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_DownCast = _IntPolyh.Handle_IntPolyh_SequenceNodeOfSeqOfStartPoints_DownCast
 
@@ -1294,112 +1294,112 @@ class IntPolyh_StartPoint(object):
 
         """
         _IntPolyh.IntPolyh_StartPoint_swiginit(self,_IntPolyh.new_IntPolyh_StartPoint(*args))
-    def X(self, *args):
+    def X(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_X(self, *args)
 
-    def Y(self, *args):
+    def Y(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_Y(self, *args)
 
-    def Z(self, *args):
+    def Z(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_Z(self, *args)
 
-    def U1(self, *args):
+    def U1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_U1(self, *args)
 
-    def V1(self, *args):
+    def V1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_V1(self, *args)
 
-    def U2(self, *args):
+    def U2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_U2(self, *args)
 
-    def V2(self, *args):
+    def V2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_V2(self, *args)
 
-    def T1(self, *args):
+    def T1(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_StartPoint_T1(self, *args)
 
-    def E1(self, *args):
+    def E1(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_StartPoint_E1(self, *args)
 
-    def Lambda1(self, *args):
+    def Lambda1(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_Lambda1(self, *args)
 
-    def T2(self, *args):
+    def T2(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_StartPoint_T2(self, *args)
 
-    def E2(self, *args):
+    def E2(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_StartPoint_E2(self, *args)
 
-    def Lambda2(self, *args):
+    def Lambda2(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_Lambda2(self, *args)
 
-    def GetAngle(self, *args):
+    def GetAngle(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_StartPoint_GetAngle(self, *args)
 
-    def ChainList(self, *args):
+    def ChainList(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_StartPoint_ChainList(self, *args)
 
-    def GetEdgePoints(self, *args):
+    def GetEdgePoints(self, *args) -> "Standard_Integer" :
         """
         :param Triangle:
         :type Triangle: IntPolyh_Triangle &
@@ -1414,7 +1414,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_GetEdgePoints(self, *args)
 
-    def Equal(self, *args):
+    def Equal(self, *args) -> "void" :
         """
         :param StPt:
         :type StPt: IntPolyh_StartPoint &
@@ -1423,7 +1423,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_Equal(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param StPt:
         :type StPt: IntPolyh_StartPoint &
@@ -1432,7 +1432,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_Set(self, *args)
 
-    def SetXYZ(self, *args):
+    def SetXYZ(self, *args) -> "void" :
         """
         :param XX:
         :type XX: float
@@ -1445,7 +1445,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetXYZ(self, *args)
 
-    def SetUV1(self, *args):
+    def SetUV1(self, *args) -> "void" :
         """
         :param UU1:
         :type UU1: float
@@ -1456,7 +1456,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetUV1(self, *args)
 
-    def SetUV2(self, *args):
+    def SetUV2(self, *args) -> "void" :
         """
         :param UU2:
         :type UU2: float
@@ -1467,7 +1467,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetUV2(self, *args)
 
-    def SetEdge1(self, *args):
+    def SetEdge1(self, *args) -> "void" :
         """
         :param IE1:
         :type IE1: int
@@ -1476,7 +1476,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetEdge1(self, *args)
 
-    def SetLambda1(self, *args):
+    def SetLambda1(self, *args) -> "void" :
         """
         :param LAM1:
         :type LAM1: float
@@ -1485,7 +1485,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetLambda1(self, *args)
 
-    def SetEdge2(self, *args):
+    def SetEdge2(self, *args) -> "void" :
         """
         :param IE2:
         :type IE2: int
@@ -1494,7 +1494,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetEdge2(self, *args)
 
-    def SetLambda2(self, *args):
+    def SetLambda2(self, *args) -> "void" :
         """
         :param LAM2:
         :type LAM2: float
@@ -1503,7 +1503,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetLambda2(self, *args)
 
-    def SetCoupleValue(self, *args):
+    def SetCoupleValue(self, *args) -> "void" :
         """
         :param IT1:
         :type IT1: int
@@ -1514,7 +1514,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetCoupleValue(self, *args)
 
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         :param ang:
         :type ang: float
@@ -1523,7 +1523,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetAngle(self, *args)
 
-    def SetChainList(self, *args):
+    def SetChainList(self, *args) -> "void" :
         """
         :param ChList:
         :type ChList: int
@@ -1532,7 +1532,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_SetChainList(self, *args)
 
-    def CheckSameSP(self, *args):
+    def CheckSameSP(self, *args) -> "Standard_Integer" :
         """
         :param SP:
         :type SP: IntPolyh_StartPoint &
@@ -1541,7 +1541,7 @@ class IntPolyh_StartPoint(object):
         """
         return _IntPolyh.IntPolyh_StartPoint_CheckSameSP(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :rtype: None
 
@@ -1611,91 +1611,91 @@ class IntPolyh_Triangle(object):
 
         """
         _IntPolyh.IntPolyh_Triangle_swiginit(self,_IntPolyh.new_IntPolyh_Triangle(*args))
-    def FirstPoint(self, *args):
+    def FirstPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_FirstPoint(self, *args)
 
-    def SecondPoint(self, *args):
+    def SecondPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_SecondPoint(self, *args)
 
-    def ThirdPoint(self, *args):
+    def ThirdPoint(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_ThirdPoint(self, *args)
 
-    def FirstEdge(self, *args):
+    def FirstEdge(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_FirstEdge(self, *args)
 
-    def FirstEdgeOrientation(self, *args):
+    def FirstEdgeOrientation(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_FirstEdgeOrientation(self, *args)
 
-    def SecondEdge(self, *args):
+    def SecondEdge(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_SecondEdge(self, *args)
 
-    def SecondEdgeOrientation(self, *args):
+    def SecondEdgeOrientation(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_SecondEdgeOrientation(self, *args)
 
-    def ThirdEdge(self, *args):
+    def ThirdEdge(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_ThirdEdge(self, *args)
 
-    def ThirdEdgeOrientation(self, *args):
+    def ThirdEdgeOrientation(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_ThirdEdgeOrientation(self, *args)
 
-    def GetFleche(self, *args):
+    def GetFleche(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _IntPolyh.IntPolyh_Triangle_GetFleche(self, *args)
 
-    def IndiceIntersectionPossible(self, *args):
+    def IndiceIntersectionPossible(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_IndiceIntersectionPossible(self, *args)
 
-    def IndiceIntersection(self, *args):
+    def IndiceIntersection(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _IntPolyh.IntPolyh_Triangle_IndiceIntersection(self, *args)
 
-    def SetFirstPoint(self, *args):
+    def SetFirstPoint(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1704,7 +1704,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetFirstPoint(self, *args)
 
-    def SetSecondPoint(self, *args):
+    def SetSecondPoint(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1713,7 +1713,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetSecondPoint(self, *args)
 
-    def SetThirdPoint(self, *args):
+    def SetThirdPoint(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1722,7 +1722,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetThirdPoint(self, *args)
 
-    def SetFirstEdge(self, *args):
+    def SetFirstEdge(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1733,7 +1733,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetFirstEdge(self, *args)
 
-    def SetSecondEdge(self, *args):
+    def SetSecondEdge(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1744,7 +1744,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetSecondEdge(self, *args)
 
-    def SetThirdEdge(self, *args):
+    def SetThirdEdge(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1755,7 +1755,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetThirdEdge(self, *args)
 
-    def SetFleche(self, *args):
+    def SetFleche(self, *args) -> "void" :
         """
         :param v:
         :type v: float
@@ -1764,7 +1764,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetFleche(self, *args)
 
-    def SetIndiceIntersectionPossible(self, *args):
+    def SetIndiceIntersectionPossible(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1773,7 +1773,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetIndiceIntersectionPossible(self, *args)
 
-    def SetIndiceIntersection(self, *args):
+    def SetIndiceIntersection(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1782,7 +1782,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetIndiceIntersection(self, *args)
 
-    def GetEdgeNumber(self, *args):
+    def GetEdgeNumber(self, *args) -> "Standard_Integer" :
         """
         :param v:
         :type v: int
@@ -1791,7 +1791,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_GetEdgeNumber(self, *args)
 
-    def SetEdge(self, *args):
+    def SetEdge(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1802,7 +1802,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetEdge(self, *args)
 
-    def GetEdgeOrientation(self, *args):
+    def GetEdgeOrientation(self, *args) -> "Standard_Integer" :
         """
         :param v:
         :type v: int
@@ -1811,7 +1811,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_GetEdgeOrientation(self, *args)
 
-    def SetEdgeOrientation(self, *args):
+    def SetEdgeOrientation(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1822,7 +1822,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetEdgeOrientation(self, *args)
 
-    def TriangleDeflection(self, *args):
+    def TriangleDeflection(self, *args) -> "void" :
         """
         :param MaSurface:
         :type MaSurface: Handle_Adaptor3d_HSurface &
@@ -1833,7 +1833,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_TriangleDeflection(self, *args)
 
-    def CheckCommonEdge(self, *args):
+    def CheckCommonEdge(self, *args) -> "Standard_Integer" :
         """
         :param PE1:
         :type PE1: int
@@ -1850,7 +1850,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_CheckCommonEdge(self, *args)
 
-    def GetNextTriangle2(self, *args):
+    def GetNextTriangle2(self, *args) -> "Standard_Integer" :
         """
         :param NumTri:
         :type NumTri: int
@@ -1863,7 +1863,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_GetNextTriangle2(self, *args)
 
-    def MiddleRefinement(self, *args):
+    def MiddleRefinement(self, *args) -> "void" :
         """
         :param TriangleNumber:
         :type TriangleNumber: int
@@ -1880,7 +1880,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_MiddleRefinement(self, *args)
 
-    def MultipleMiddleRefinement(self, *args):
+    def MultipleMiddleRefinement(self, *args) -> "void" :
         """
         :param NombreAffinages:
         :type NombreAffinages: int
@@ -1899,7 +1899,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_MultipleMiddleRefinement(self, *args)
 
-    def CompareBoxTriangle(self, *args):
+    def CompareBoxTriangle(self, *args) -> "Standard_Integer" :
         """
         :param b:
         :type b: Bnd_Box &
@@ -1910,7 +1910,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_CompareBoxTriangle(self, *args)
 
-    def MultipleMiddleRefinement2(self, *args):
+    def MultipleMiddleRefinement2(self, *args) -> "void" :
         """
         :param RefineCriterion:
         :type RefineCriterion: float
@@ -1931,7 +1931,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_MultipleMiddleRefinement2(self, *args)
 
-    def LinkEdges2Triangle(self, *args):
+    def LinkEdges2Triangle(self, *args) -> "void" :
         """
         :param TEdges:
         :type TEdges: IntPolyh_ArrayOfEdges &
@@ -1946,7 +1946,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_LinkEdges2Triangle(self, *args)
 
-    def SetEdgeandOrientation(self, *args):
+    def SetEdgeandOrientation(self, *args) -> "void" :
         """
         :param Edge:
         :type Edge: int
@@ -1957,7 +1957,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_SetEdgeandOrientation(self, *args)
 
-    def Dump(self, *args):
+    def Dump(self, *args) -> "void" :
         """
         :param v:
         :type v: int
@@ -1966,7 +1966,7 @@ class IntPolyh_Triangle(object):
         """
         return _IntPolyh.IntPolyh_Triangle_Dump(self, *args)
 
-    def DumpFleche(self, *args):
+    def DumpFleche(self, *args) -> "void" :
         """
         :param v:
         :type v: int

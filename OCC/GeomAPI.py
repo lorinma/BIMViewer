@@ -129,7 +129,7 @@ import OCC.AppParCurves
 class geomapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def To2d(*args):
+    def To2d(*args) -> "Handle_Geom2d_Curve" :
         """
         * To intersect a curve and a surface. This function builds (in the parametric space of the plane P) a 2D curve equivalent to the 3D curve C. The 3D curve C is considered to be located in the plane P. Warning The 3D curve C must be of one of the following types: - a line - a circle - an ellipse - a hyperbola - a parabola - a Bezier curve - a BSpline curve Exceptions Standard_NoSuchObject if C is not a defined type curve.
 
@@ -143,7 +143,7 @@ class geomapi(object):
         return _GeomAPI.geomapi_To2d(*args)
 
     To2d = staticmethod(To2d)
-    def To3d(*args):
+    def To3d(*args) -> "Handle_Geom_Curve" :
         """
         * Builds a 3D curve equivalent to the 2D curve C described in the parametric space defined by the local coordinate system of plane P. The resulting 3D curve is of the same nature as that of the curve C.
 
@@ -171,7 +171,7 @@ geomapi._kill_pointed = new_instancemethod(_GeomAPI.geomapi__kill_pointed,None,g
 geomapi_swigregister = _GeomAPI.geomapi_swigregister
 geomapi_swigregister(geomapi)
 
-def geomapi_To2d(*args):
+def geomapi_To2d(*args) -> "Handle_Geom2d_Curve" :
   """
     * To intersect a curve and a surface. This function builds (in the parametric space of the plane P) a 2D curve equivalent to the 3D curve C. The 3D curve C is considered to be located in the plane P. Warning The 3D curve C must be of one of the following types: - a line - a circle - an ellipse - a hyperbola - a parabola - a Bezier curve - a BSpline curve Exceptions Standard_NoSuchObject if C is not a defined type curve.
 
@@ -184,7 +184,7 @@ def geomapi_To2d(*args):
     """
   return _GeomAPI.geomapi_To2d(*args)
 
-def geomapi_To3d(*args):
+def geomapi_To3d(*args) -> "Handle_Geom_Curve" :
   """
     * Builds a 3D curve equivalent to the 2D curve C described in the parametric space defined by the local coordinate system of plane P. The resulting 3D curve is of the same nature as that of the curve C.
 
@@ -232,7 +232,7 @@ class GeomAPI_ExtremaCurveCurve(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaCurveCurve_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaCurveCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm with the given arguments and computes the extrema between the curves C1 and C2
 
@@ -261,7 +261,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Init(self, *args)
 
-    def NbExtrema(self, *args):
+    def NbExtrema(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
@@ -270,7 +270,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_NbExtrema(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -285,7 +285,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Points(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -300,7 +300,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Parameters(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -311,7 +311,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Distance(self, *args)
 
-    def NearestPoints(self, *args):
+    def NearestPoints(self, *args) -> "void" :
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -324,7 +324,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args):
+    def LowerDistanceParameters(self, *args) -> "void" :
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -337,7 +337,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistanceParameters(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -346,7 +346,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtCC const &" :
         """
         * return the algorithmic object from Extrema
 
@@ -355,7 +355,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Extrema(self, *args)
 
-    def TotalNearestPoints(self, *args):
+    def TotalNearestPoints(self, *args) -> "Standard_Boolean" :
         """
         * set in <P1> and <P2> the couple solution points such a the distance [P1,P2] is the minimum. taking in account extremity points of curves.
 
@@ -368,7 +368,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalNearestPoints(self, *args)
 
-    def TotalLowerDistanceParameters(self, *args):
+    def TotalLowerDistanceParameters(self, *args) -> "Standard_Boolean" :
         """
         * set in <U1> and <U2> the parameters of the couple solution points which represents the total nearest solution.
 
@@ -381,7 +381,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalLowerDistanceParameters(self, *args)
 
-    def TotalLowerDistance(self, *args):
+    def TotalLowerDistance(self, *args) -> "Quantity_Length" :
         """
         * return the distance of the total nearest couple solution point. if <myExtCC> is not done
 
@@ -453,7 +453,7 @@ class GeomAPI_ExtremaCurveSurface(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaCurveSurface_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaCurveSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Computes the extrema distances between the curve <C> and the surface <S>.
 
@@ -486,7 +486,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Init(self, *args)
 
-    def NbExtrema(self, *args):
+    def NbExtrema(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
@@ -495,7 +495,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_NbExtrema(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * Returns the points P1 on the curve and P2 on the surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -510,7 +510,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Points(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters W of the point on the curve, and (U,V) of the point on the surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -527,7 +527,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Parameters(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -538,7 +538,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Distance(self, *args)
 
-    def NearestPoints(self, *args):
+    def NearestPoints(self, *args) -> "void" :
         """
         * Returns the points PC on the curve and PS on the surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -551,7 +551,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args):
+    def LowerDistanceParameters(self, *args) -> "void" :
         """
         * Returns the parameters W of the point on the curve and (U,V) of the point on the surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -566,7 +566,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistanceParameters(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -575,7 +575,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtCS const &" :
         """
         * Missing detailed docstringic object from Extrema
 
@@ -648,7 +648,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaSurfaceSurface_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaSurfaceSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Initializes this algorithm with the given arguments and computes the extrema distances between the surfaces <S1> and <S2>
 
@@ -685,7 +685,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Init(self, *args)
 
-    def NbExtrema(self, *args):
+    def NbExtrema(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
@@ -694,7 +694,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_NbExtrema(self, *args)
 
-    def Points(self, *args):
+    def Points(self, *args) -> "void" :
         """
         * Returns the points P1 on the first surface and P2 on the second surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -709,7 +709,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Points(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters (U1,V1) of the point on the first surface, and (U2,V2) of the point on the second surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -728,7 +728,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Parameters(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
@@ -739,7 +739,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Distance(self, *args)
 
-    def NearestPoints(self, *args):
+    def NearestPoints(self, *args) -> "void" :
         """
         * Returns the points P1 on the first surface and P2 on the second surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -752,7 +752,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args):
+    def LowerDistanceParameters(self, *args) -> "void" :
         """
         * Returns the parameters (U1,V1) of the point on the first surface and (U2,V2) of the point on the second surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -769,7 +769,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistanceParameters(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -778,7 +778,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtSS const &" :
         """
         * return the algorithmic object from Extrema
 
@@ -827,7 +827,7 @@ class GeomAPI_IntCS(object):
 
         """
         _GeomAPI.GeomAPI_IntCS_swiginit(self,_GeomAPI.new_GeomAPI_IntCS(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * This function Initializes an algorithm with the curve C and the surface S and computes the intersections between C and S. Warning Use function IsDone to verify that the intersections are computed successfully.
 
@@ -840,7 +840,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the intersections are successfully computed.
 
@@ -849,7 +849,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of Intersection Points if IsDone returns True. else NotDone is raised.
 
@@ -858,7 +858,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt const" :
         """
         * Returns the Intersection Point of range <Index>in case of cross intersection.  Raises NotDone if the computation has failed or if the computation has not been done raises OutOfRange if Index is not in the range <1..NbPoints>
 
@@ -869,7 +869,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_Point(self, *args)
 
-    def NbSegments(self, *args):
+    def NbSegments(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of computed intersection segments in case of tangential intersection. Exceptions StdFail_NotDone if the intersection algorithm fails or is not initialized.
 
@@ -878,7 +878,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_NbSegments(self, *args)
 
-    def Segment(self, *args):
+    def Segment(self, *args) -> "Handle_Geom_Curve" :
         """
         * Returns the computed intersection segment of index Index in case of tangential intersection. Intersection segment is a portion of the initial curve tangent to surface. Exceptions StdFail_NotDone if intersection algorithm fails or is not initialized. Standard_OutOfRange if Index is not in the range [ 1,NbSegments ], where NbSegments is the number of computed intersection segments.
 
@@ -889,7 +889,7 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_Segment(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns parameter W on the curve and (parameters U,V) on the surface of the computed intersection point of index Index in case of cross intersection. Exceptions StdFail_NotDone if intersection algorithm fails or is not initialized. Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of computed intersection points.
 
@@ -960,7 +960,7 @@ class GeomAPI_IntSS(object):
 
         """
         _GeomAPI.GeomAPI_IntSS_swiginit(self,_GeomAPI.new_GeomAPI_IntSS(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Initializes an algorithm with the given arguments and computes the intersection curves between the two surfaces S1 and S2. Parameter Tol defines the precision of curves computation. For most cases the value 1.0e-7 is recommended to use. Warning Use function IsDone to verify that the intersections are successfully computed.
 
@@ -975,7 +975,7 @@ class GeomAPI_IntSS(object):
         """
         return _GeomAPI.GeomAPI_IntSS_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the intersection was successful.
 
@@ -984,7 +984,7 @@ class GeomAPI_IntSS(object):
         """
         return _GeomAPI.GeomAPI_IntSS_IsDone(self, *args)
 
-    def NbLines(self, *args):
+    def NbLines(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of computed intersection curves. Exceptions StdFail_NotDone if the computation fails.
 
@@ -993,7 +993,7 @@ class GeomAPI_IntSS(object):
         """
         return _GeomAPI.GeomAPI_IntSS_NbLines(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_Geom_Curve const &" :
         """
         * Returns the computed intersection curve of index Index. Exceptions StdFail_NotDone if the computation fails. Standard_OutOfRange if Index is out of range [1, NbLines] where NbLines is the number of computed intersection curves.
 
@@ -1049,7 +1049,7 @@ class GeomAPI_Interpolate(object):
 
         """
         _GeomAPI.GeomAPI_Interpolate_swiginit(self,_GeomAPI.new_GeomAPI_Interpolate(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         * Assigns this constrained BSpline curve to be tangential to vectors InitialTangent and FinalTangent at its first and last points respectively (i.e. the first and last points of the table of points through which the curve passes, as defined at the time of initialization).
 
@@ -1074,7 +1074,7 @@ class GeomAPI_Interpolate(object):
         """
         return _GeomAPI.GeomAPI_Interpolate_Load(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Computes the constrained BSpline curve. Use the function IsDone to verify that the computation is successful, and then the function Curve to obtain the result.
 
@@ -1083,7 +1083,7 @@ class GeomAPI_Interpolate(object):
         """
         return _GeomAPI.GeomAPI_Interpolate_Perform(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom_BSplineCurve const &" :
         """
         * Returns the computed BSpline curve. Raises StdFail_NotDone if the interpolation fails.
 
@@ -1092,7 +1092,7 @@ class GeomAPI_Interpolate(object):
         """
         return _GeomAPI.GeomAPI_Interpolate_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the constrained BSpline curve is successfully constructed. Note: in this case, the result is given by the function Curve.
 
@@ -1192,7 +1192,7 @@ class GeomAPI_PointsToBSpline(object):
 
         """
         _GeomAPI.GeomAPI_PointsToBSpline_swiginit(self,_GeomAPI.new_GeomAPI_PointsToBSpline(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
 
@@ -1261,7 +1261,7 @@ class GeomAPI_PointsToBSpline(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSpline_Init(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom_BSplineCurve const &" :
         """
         * Returns the computed BSpline curve. Raises StdFail_NotDone if the curve is not built.
 
@@ -1270,7 +1270,7 @@ class GeomAPI_PointsToBSpline(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSpline_Curve(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -1373,7 +1373,7 @@ class GeomAPI_PointsToBSplineSurface(object):
 
         """
         _GeomAPI.GeomAPI_PointsToBSplineSurface_swiginit(self,_GeomAPI.new_GeomAPI_PointsToBSplineSurface(*args))
-    def Interpolate(self, *args):
+    def Interpolate(self, *args) -> "void" :
         """
         * Interpolates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be 3. 2- his continuity will be C2.
 
@@ -1406,7 +1406,7 @@ class GeomAPI_PointsToBSplineSurface(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSplineSurface_Interpolate(self, *args)
 
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
 
@@ -1481,7 +1481,7 @@ class GeomAPI_PointsToBSplineSurface(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSplineSurface_Init(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "Handle_Geom_BSplineSurface const &" :
         """
         * Returns the approximate BSpline Surface
 
@@ -1490,7 +1490,7 @@ class GeomAPI_PointsToBSplineSurface(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSplineSurface_Surface(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -1544,7 +1544,7 @@ class GeomAPI_ProjectPointOnCurve(object):
 
         """
         _GeomAPI.GeomAPI_ProjectPointOnCurve_swiginit(self,_GeomAPI.new_GeomAPI_ProjectPointOnCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Init the projection of a point <P> on a curve <Curve>
 
@@ -1579,7 +1579,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the projection of a point on the current curve.
 
@@ -1590,7 +1590,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Perform(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of computed orthogonal projection points. Note: if this algorithm fails, NbPoints returns 0.
 
@@ -1599,7 +1599,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1610,7 +1610,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Point(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "void" :
         """
         * Returns the parameter on the curve of the point, which is the orthogonal projection. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1629,7 +1629,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Parameter(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1640,7 +1640,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Distance(self, *args)
 
-    def NearestPoint(self, *args):
+    def NearestPoint(self, *args) -> "gp_Pnt" :
         """
         * Returns the nearest orthogonal projection of the point on the curve. Exceptions: StdFail_NotDone if this algorithm fails.
 
@@ -1649,7 +1649,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_NearestPoint(self, *args)
 
-    def LowerDistanceParameter(self, *args):
+    def LowerDistanceParameter(self, *args) -> "Quantity_Parameter" :
         """
         * Returns the parameter on the curve of the nearest orthogonal projection of the point. Exceptions: StdFail_NotDone if this algorithm fails.
 
@@ -1658,7 +1658,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistanceParameter(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its nearest orthogonal projection on the curve. Exceptions: StdFail_NotDone if this algorithm fails.
 
@@ -1667,7 +1667,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtPC const &" :
         """
         * return the algorithmic object from Extrema
 
@@ -1767,7 +1767,7 @@ class GeomAPI_ProjectPointOnSurf(object):
 
         """
         _GeomAPI.GeomAPI_ProjectPointOnSurf_swiginit(self,_GeomAPI.new_GeomAPI_ProjectPointOnSurf(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -1858,7 +1858,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Init(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the projection of a point on the current surface.
 
@@ -1869,14 +1869,14 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Perform(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_IsDone(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of computed orthogonal projection points. Note: if projection fails, NbPoints returns 0.
 
@@ -1885,7 +1885,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "gp_Pnt" :
         """
         * Returns the orthogonal projection on the surface. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1896,7 +1896,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Point(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         * Returns the parameters (U,V) on the surface of the orthogonal projection. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1911,7 +1911,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Parameters(self, *args)
 
-    def Distance(self, *args):
+    def Distance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its orthogonal projection on the surface. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
@@ -1922,7 +1922,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Distance(self, *args)
 
-    def NearestPoint(self, *args):
+    def NearestPoint(self, *args) -> "gp_Pnt" :
         """
         * Returns the nearest orthogonal projection of the point on the surface. Exceptions StdFail_NotDone if projection fails.
 
@@ -1931,7 +1931,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_NearestPoint(self, *args)
 
-    def LowerDistanceParameters(self, *args):
+    def LowerDistanceParameters(self, *args) -> "void" :
         """
         * Returns the parameters (U,V) on the surface of the nearest computed orthogonal projection of the point. Exceptions StdFail_NotDone if projection fails.
 
@@ -1944,7 +1944,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistanceParameters(self, *args)
 
-    def LowerDistance(self, *args):
+    def LowerDistance(self, *args) -> "Quantity_Length" :
         """
         * Computes the distance between the point and its nearest orthogonal projection on the surface. Exceptions StdFail_NotDone if projection fails.
 
@@ -1953,7 +1953,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistance(self, *args)
 
-    def Extrema(self, *args):
+    def Extrema(self, *args) -> "Extrema_ExtPS const &" :
         """
         * return the algorithmic object from Extrema
 

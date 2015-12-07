@@ -116,7 +116,7 @@ import OCC.MMgt
 class intimppargen(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DetermineTransition(*args):
+    def DetermineTransition(*args) -> "Standard_Boolean" :
         """
         * Template class for an implicit curve. Template class for a tool on a parameterised curve. Math function, instantiated inside the Intersector. Tool used by the package IntCurve and IntImpParGen
 
@@ -160,7 +160,7 @@ class intimppargen(object):
         return _IntImpParGen.intimppargen_DetermineTransition(*args)
 
     DetermineTransition = staticmethod(DetermineTransition)
-    def DeterminePosition(*args):
+    def DeterminePosition(*args) -> "void" :
         """
         :param Pos1:
         :type Pos1: IntRes2d_Position &
@@ -176,7 +176,7 @@ class intimppargen(object):
         return _IntImpParGen.intimppargen_DeterminePosition(*args)
 
     DeterminePosition = staticmethod(DeterminePosition)
-    def NormalizeOnDomain(*args):
+    def NormalizeOnDomain(*args) -> "Standard_Real &" :
         """
         :param Par1:
         :type Par1: float &
@@ -202,7 +202,7 @@ intimppargen._kill_pointed = new_instancemethod(_IntImpParGen.intimppargen__kill
 intimppargen_swigregister = _IntImpParGen.intimppargen_swigregister
 intimppargen_swigregister(intimppargen)
 
-def intimppargen_DetermineTransition(*args):
+def intimppargen_DetermineTransition(*args) -> "Standard_Boolean" :
   """
     * Template class for an implicit curve. Template class for a tool on a parameterised curve. Math function, instantiated inside the Intersector. Tool used by the package IntCurve and IntImpParGen
 
@@ -245,7 +245,7 @@ def intimppargen_DetermineTransition(*args):
     """
   return _IntImpParGen.intimppargen_DetermineTransition(*args)
 
-def intimppargen_DeterminePosition(*args):
+def intimppargen_DeterminePosition(*args) -> "void" :
   """
     :param Pos1:
     :type Pos1: IntRes2d_Position &
@@ -260,7 +260,7 @@ def intimppargen_DeterminePosition(*args):
     """
   return _IntImpParGen.intimppargen_DeterminePosition(*args)
 
-def intimppargen_NormalizeOnDomain(*args):
+def intimppargen_NormalizeOnDomain(*args) -> "Standard_Real &" :
   """
     :param Par1:
     :type Par1: float &

@@ -118,21 +118,21 @@ class AppBlend_Approx(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args):
+    def Delete(self, *args) -> "void" :
         """
         :rtype: void
 
         """
         return _AppBlend.AppBlend_Approx_Delete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _AppBlend.AppBlend_Approx_IsDone(self, *args)
 
-    def SurfShape(self, *args):
+    def SurfShape(self, *args) -> "void" :
         """
         :param UDegree:
         :type UDegree: int &
@@ -151,7 +151,7 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_SurfShape(self, *args)
 
-    def Surface(self, *args):
+    def Surface(self, *args) -> "void" :
         """
         :param TPoles:
         :type TPoles: TColgp_Array2OfPnt
@@ -170,70 +170,70 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_Surface(self, *args)
 
-    def UDegree(self, *args):
+    def UDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AppBlend.AppBlend_Approx_UDegree(self, *args)
 
-    def VDegree(self, *args):
+    def VDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AppBlend.AppBlend_Approx_VDegree(self, *args)
 
-    def SurfPoles(self, *args):
+    def SurfPoles(self, *args) -> "TColgp_Array2OfPnt const &" :
         """
         :rtype: TColgp_Array2OfPnt
 
         """
         return _AppBlend.AppBlend_Approx_SurfPoles(self, *args)
 
-    def SurfWeights(self, *args):
+    def SurfWeights(self, *args) -> "TColStd_Array2OfReal const &" :
         """
         :rtype: TColStd_Array2OfReal
 
         """
         return _AppBlend.AppBlend_Approx_SurfWeights(self, *args)
 
-    def SurfUKnots(self, *args):
+    def SurfUKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _AppBlend.AppBlend_Approx_SurfUKnots(self, *args)
 
-    def SurfVKnots(self, *args):
+    def SurfVKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _AppBlend.AppBlend_Approx_SurfVKnots(self, *args)
 
-    def SurfUMults(self, *args):
+    def SurfUMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _AppBlend.AppBlend_Approx_SurfUMults(self, *args)
 
-    def SurfVMults(self, *args):
+    def SurfVMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _AppBlend.AppBlend_Approx_SurfVMults(self, *args)
 
-    def NbCurves2d(self, *args):
+    def NbCurves2d(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AppBlend.AppBlend_Approx_NbCurves2d(self, *args)
 
-    def Curves2dShape(self, *args):
+    def Curves2dShape(self, *args) -> "void" :
         """
         :param Degree:
         :type Degree: int &
@@ -246,7 +246,7 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_Curves2dShape(self, *args)
 
-    def Curve2d(self, *args):
+    def Curve2d(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -261,14 +261,14 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_Curve2d(self, *args)
 
-    def Curves2dDegree(self, *args):
+    def Curves2dDegree(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _AppBlend.AppBlend_Approx_Curves2dDegree(self, *args)
 
-    def Curve2dPoles(self, *args):
+    def Curve2dPoles(self, *args) -> "TColgp_Array1OfPnt2d const &" :
         """
         :param Index:
         :type Index: int
@@ -277,21 +277,21 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_Curve2dPoles(self, *args)
 
-    def Curves2dKnots(self, *args):
+    def Curves2dKnots(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         :rtype: TColStd_Array1OfReal
 
         """
         return _AppBlend.AppBlend_Approx_Curves2dKnots(self, *args)
 
-    def Curves2dMults(self, *args):
+    def Curves2dMults(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         :rtype: TColStd_Array1OfInteger
 
         """
         return _AppBlend.AppBlend_Approx_Curves2dMults(self, *args)
 
-    def TolReached(self, *args):
+    def TolReached(self, *args) -> "void" :
         """
         :param Tol3d:
         :type Tol3d: float &
@@ -302,7 +302,7 @@ class AppBlend_Approx(object):
         """
         return _AppBlend.AppBlend_Approx_TolReached(self, *args)
 
-    def TolCurveOnSurf(self, *args):
+    def TolCurveOnSurf(self, *args) -> "Standard_Real" :
         """
         :param Index:
         :type Index: int

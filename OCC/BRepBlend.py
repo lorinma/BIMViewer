@@ -133,7 +133,7 @@ class BRepBlend_AppFuncRoot(OCC.Approx.Approx_SweepFunction):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Point(self, *args):
+    def Point(self, *args) -> "void" :
         """
         :param Func:
         :type Func: Blend_AppFunction &
@@ -148,7 +148,7 @@ class BRepBlend_AppFuncRoot(OCC.Approx.Approx_SweepFunction):
         """
         return _BRepBlend.BRepBlend_AppFuncRoot_Point(self, *args)
 
-    def Vec(self, *args):
+    def Vec(self, *args) -> "void" :
         """
         :param Sol:
         :type Sol: math_Vector &
@@ -159,11 +159,11 @@ class BRepBlend_AppFuncRoot(OCC.Approx.Approx_SweepFunction):
         """
         return _BRepBlend.BRepBlend_AppFuncRoot_Vec(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_AppFuncRoot self)"""
         return _BRepBlend.BRepBlend_AppFuncRoot__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_AppFuncRoot" :
         """GetHandle(BRepBlend_AppFuncRoot self) -> Handle_BRepBlend_AppFuncRoot"""
         return _BRepBlend.BRepBlend_AppFuncRoot_GetHandle(self)
 
@@ -203,7 +203,7 @@ Handle_BRepBlend_AppFuncRoot._kill_pointed = new_instancemethod(_BRepBlend.Handl
 Handle_BRepBlend_AppFuncRoot_swigregister = _BRepBlend.Handle_BRepBlend_AppFuncRoot_swigregister
 Handle_BRepBlend_AppFuncRoot_swigregister(Handle_BRepBlend_AppFuncRoot)
 
-def Handle_BRepBlend_AppFuncRoot_DownCast(*args):
+def Handle_BRepBlend_AppFuncRoot_DownCast(*args) -> "Handle_BRepBlend_AppFuncRoot const" :
   return _BRepBlend.Handle_BRepBlend_AppFuncRoot_DownCast(*args)
 Handle_BRepBlend_AppFuncRoot_DownCast = _BRepBlend.Handle_BRepBlend_AppFuncRoot_DownCast
 
@@ -230,7 +230,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
 
         """
         _BRepBlend.BRepBlend_AppSurf_swiginit(self,_BRepBlend.new_BRepBlend_AppSurf(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param Degmin:
         :type Degmin: int
@@ -249,7 +249,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_Init(self, *args)
 
-    def SetParType(self, *args):
+    def SetParType(self, *args) -> "void" :
         """
         :param ParType:
         :type ParType: Approx_ParametrizationType
@@ -258,7 +258,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_SetParType(self, *args)
 
-    def SetContinuity(self, *args):
+    def SetContinuity(self, *args) -> "void" :
         """
         :param C:
         :type C: GeomAbs_Shape
@@ -267,7 +267,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_SetContinuity(self, *args)
 
-    def SetCriteriumWeight(self, *args):
+    def SetCriteriumWeight(self, *args) -> "void" :
         """
         :param W1:
         :type W1: float
@@ -280,21 +280,21 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_SetCriteriumWeight(self, *args)
 
-    def ParType(self, *args):
+    def ParType(self, *args) -> "Approx_ParametrizationType" :
         """
         :rtype: Approx_ParametrizationType
 
         """
         return _BRepBlend.BRepBlend_AppSurf_ParType(self, *args)
 
-    def Continuity(self, *args):
+    def Continuity(self, *args) -> "GeomAbs_Shape" :
         """
         :rtype: GeomAbs_Shape
 
         """
         return _BRepBlend.BRepBlend_AppSurf_Continuity(self, *args)
 
-    def CriteriumWeight(self, *args):
+    def CriteriumWeight(self, *args) -> "void" :
         """
         :param W1:
         :type W1: float &
@@ -307,7 +307,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_CriteriumWeight(self, *args)
 
-    def PerformSmoothing(self, *args):
+    def PerformSmoothing(self, *args) -> "void" :
         """
         :param Lin:
         :type Lin: Handle_BRepBlend_Line &
@@ -318,7 +318,7 @@ class BRepBlend_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurf_PerformSmoothing(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Lin:
         :type Lin: Handle_BRepBlend_Line &
@@ -389,7 +389,7 @@ class BRepBlend_AppSurface(OCC.AppBlend.AppBlend_Approx):
 
         """
         _BRepBlend.BRepBlend_AppSurface_swiginit(self,_BRepBlend.new_BRepBlend_AppSurface(*args))
-    def MaxErrorOnSurf(self, *args):
+    def MaxErrorOnSurf(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error in the suface approximation.
 
@@ -398,7 +398,7 @@ class BRepBlend_AppSurface(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurface_MaxErrorOnSurf(self, *args)
 
-    def Max2dError(self, *args):
+    def Max2dError(self, *args) -> "Standard_Real" :
         """
         * returns the maximum error in the <Index> 2d curve approximation.
 
@@ -409,11 +409,11 @@ class BRepBlend_AppSurface(OCC.AppBlend.AppBlend_Approx):
         """
         return _BRepBlend.BRepBlend_AppSurface_Max2dError(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(BRepBlend_AppSurface self) -> std::string"""
         return _BRepBlend.BRepBlend_AppSurface_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_AppSurface self)"""
         return _BRepBlend.BRepBlend_AppSurface__kill_pointed(self)
 
@@ -435,7 +435,7 @@ BRepBlend_AppSurface_swigregister(BRepBlend_AppSurface)
 class BRepBlend_BlendTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Project(*args):
+    def Project(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Projects the point P on the arc C. If the methods returns Standard_True, the projection is successful, and Paramproj is the parameter on the arc of the projected point, Dist is the distance between P and the curve.. If the method returns Standard_False, Param proj and Dist are not significant.
 
@@ -455,7 +455,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_Project(*args)
 
     Project = staticmethod(Project)
-    def Inters(*args):
+    def Inters(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param P1:
         :type P1: gp_Pnt2d
@@ -475,7 +475,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_Inters(*args)
 
     Inters = staticmethod(Inters)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real" :
         """
         * Returns the parameter of the vertex V on the edge A.
 
@@ -489,7 +489,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def Tolerance(*args):
+    def Tolerance(*args) -> "Standard_Real" :
         """
         * Returns the parametric tolerance on the arc A used to consider that the vertex and another point meet, i-e if Abs(Parameter(Vertex)-Parameter(OtherPnt))<= Tolerance, the points are 'merged'.
 
@@ -503,7 +503,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_Tolerance(*args)
 
     Tolerance = staticmethod(Tolerance)
-    def SingularOnUMin(*args):
+    def SingularOnUMin(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -513,7 +513,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_SingularOnUMin(*args)
 
     SingularOnUMin = staticmethod(SingularOnUMin)
-    def SingularOnUMax(*args):
+    def SingularOnUMax(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -523,7 +523,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_SingularOnUMax(*args)
 
     SingularOnUMax = staticmethod(SingularOnUMax)
-    def SingularOnVMin(*args):
+    def SingularOnVMin(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -533,7 +533,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_SingularOnVMin(*args)
 
     SingularOnVMin = staticmethod(SingularOnVMin)
-    def SingularOnVMax(*args):
+    def SingularOnVMax(*args) -> "Standard_Boolean" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -543,7 +543,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_SingularOnVMax(*args)
 
     SingularOnVMax = staticmethod(SingularOnVMax)
-    def NbSamplesU(*args):
+    def NbSamplesU(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -557,7 +557,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args):
+    def NbSamplesV(*args) -> "Standard_Integer" :
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -571,7 +571,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_NbSamplesV(*args)
 
     NbSamplesV = staticmethod(NbSamplesV)
-    def Bounds(*args):
+    def Bounds(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Returns the parametric limits on the arc C. These limits must be finite : they are either the real limits of the arc, for a finite arc, or a bounding box for an infinite arc.
 
@@ -587,7 +587,7 @@ class BRepBlend_BlendTool(object):
         return _BRepBlend.BRepBlend_BlendTool_Bounds(*args)
 
     Bounds = staticmethod(Bounds)
-    def CurveOnSurf(*args):
+    def CurveOnSurf(*args) -> "Handle_Adaptor2d_HCurve2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -613,7 +613,7 @@ BRepBlend_BlendTool._kill_pointed = new_instancemethod(_BRepBlend.BRepBlend_Blen
 BRepBlend_BlendTool_swigregister = _BRepBlend.BRepBlend_BlendTool_swigregister
 BRepBlend_BlendTool_swigregister(BRepBlend_BlendTool)
 
-def BRepBlend_BlendTool_Project(*args):
+def BRepBlend_BlendTool_Project(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Projects the point P on the arc C. If the methods returns Standard_True, the projection is successful, and Paramproj is the parameter on the arc of the projected point, Dist is the distance between P and the curve.. If the method returns Standard_False, Param proj and Dist are not significant.
 
@@ -632,7 +632,7 @@ def BRepBlend_BlendTool_Project(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_Project(*args)
 
-def BRepBlend_BlendTool_Inters(*args):
+def BRepBlend_BlendTool_Inters(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param P1:
     :type P1: gp_Pnt2d
@@ -651,7 +651,7 @@ def BRepBlend_BlendTool_Inters(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_Inters(*args)
 
-def BRepBlend_BlendTool_Parameter(*args):
+def BRepBlend_BlendTool_Parameter(*args) -> "Standard_Real" :
   """
     * Returns the parameter of the vertex V on the edge A.
 
@@ -664,7 +664,7 @@ def BRepBlend_BlendTool_Parameter(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_Parameter(*args)
 
-def BRepBlend_BlendTool_Tolerance(*args):
+def BRepBlend_BlendTool_Tolerance(*args) -> "Standard_Real" :
   """
     * Returns the parametric tolerance on the arc A used to consider that the vertex and another point meet, i-e if Abs(Parameter(Vertex)-Parameter(OtherPnt))<= Tolerance, the points are 'merged'.
 
@@ -677,7 +677,7 @@ def BRepBlend_BlendTool_Tolerance(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_Tolerance(*args)
 
-def BRepBlend_BlendTool_SingularOnUMin(*args):
+def BRepBlend_BlendTool_SingularOnUMin(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -686,7 +686,7 @@ def BRepBlend_BlendTool_SingularOnUMin(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_SingularOnUMin(*args)
 
-def BRepBlend_BlendTool_SingularOnUMax(*args):
+def BRepBlend_BlendTool_SingularOnUMax(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -695,7 +695,7 @@ def BRepBlend_BlendTool_SingularOnUMax(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_SingularOnUMax(*args)
 
-def BRepBlend_BlendTool_SingularOnVMin(*args):
+def BRepBlend_BlendTool_SingularOnVMin(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -704,7 +704,7 @@ def BRepBlend_BlendTool_SingularOnVMin(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_SingularOnVMin(*args)
 
-def BRepBlend_BlendTool_SingularOnVMax(*args):
+def BRepBlend_BlendTool_SingularOnVMax(*args) -> "Standard_Boolean" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -713,7 +713,7 @@ def BRepBlend_BlendTool_SingularOnVMax(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_SingularOnVMax(*args)
 
-def BRepBlend_BlendTool_NbSamplesU(*args):
+def BRepBlend_BlendTool_NbSamplesU(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -726,7 +726,7 @@ def BRepBlend_BlendTool_NbSamplesU(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_NbSamplesU(*args)
 
-def BRepBlend_BlendTool_NbSamplesV(*args):
+def BRepBlend_BlendTool_NbSamplesV(*args) -> "Standard_Integer" :
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -739,7 +739,7 @@ def BRepBlend_BlendTool_NbSamplesV(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_NbSamplesV(*args)
 
-def BRepBlend_BlendTool_Bounds(*args):
+def BRepBlend_BlendTool_Bounds(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Returns the parametric limits on the arc C. These limits must be finite : they are either the real limits of the arc, for a finite arc, or a bounding box for an infinite arc.
 
@@ -754,7 +754,7 @@ def BRepBlend_BlendTool_Bounds(*args):
     """
   return _BRepBlend.BRepBlend_BlendTool_Bounds(*args)
 
-def BRepBlend_BlendTool_CurveOnSurf(*args):
+def BRepBlend_BlendTool_CurveOnSurf(*args) -> "Handle_Adaptor2d_HCurve2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -780,7 +780,7 @@ class BRepBlend_CSWalking(object):
 
         """
         _BRepBlend.BRepBlend_CSWalking_swiginit(self,_BRepBlend.new_BRepBlend_CSWalking(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param F:
         :type F: Blend_CSFunction &
@@ -805,7 +805,7 @@ class BRepBlend_CSWalking(object):
         """
         return _BRepBlend.BRepBlend_CSWalking_Perform(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: Blend_CSFunction &
@@ -816,14 +816,14 @@ class BRepBlend_CSWalking(object):
         """
         return _BRepBlend.BRepBlend_CSWalking_Complete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_CSWalking_IsDone(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
@@ -859,7 +859,7 @@ class BRepBlend_CurvPointRadInv(OCC.Blend.Blend_CurvPointFuncInv):
 
         """
         _BRepBlend.BRepBlend_CurvPointRadInv_swiginit(self,_BRepBlend.new_BRepBlend_CurvPointRadInv(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Choix:
         :type Choix: int
@@ -932,7 +932,7 @@ class BRepBlend_Extremity(object):
 
         """
         _BRepBlend.BRepBlend_Extremity_swiginit(self,_BRepBlend.new_BRepBlend_Extremity(*args))
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param P:
         :type P: gp_Pnt
@@ -973,14 +973,14 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "gp_Pnt const" :
         """
         :rtype: gp_Pnt
 
         """
         return _BRepBlend.BRepBlend_Extremity_Value(self, *args)
 
-    def SetTangent(self, *args):
+    def SetTangent(self, *args) -> "void" :
         """
         :param Tangent:
         :type Tangent: gp_Vec
@@ -989,28 +989,28 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_SetTangent(self, *args)
 
-    def HasTangent(self, *args):
+    def HasTangent(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_Extremity_HasTangent(self, *args)
 
-    def Tangent(self, *args):
+    def Tangent(self, *args) -> "gp_Vec const" :
         """
         :rtype: gp_Vec
 
         """
         return _BRepBlend.BRepBlend_Extremity_Tangent(self, *args)
 
-    def Tolerance(self, *args):
+    def Tolerance(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepBlend.BRepBlend_Extremity_Tolerance(self, *args)
 
-    def SetVertex(self, *args):
+    def SetVertex(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Adaptor3d_HVertex &
@@ -1019,7 +1019,7 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_SetVertex(self, *args)
 
-    def AddArc(self, *args):
+    def AddArc(self, *args) -> "void" :
         """
         :param A:
         :type A: Handle_Adaptor2d_HCurve2d &
@@ -1034,7 +1034,7 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_AddArc(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "void" :
         """
         :param U:
         :type U: float &
@@ -1045,28 +1045,28 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_Parameters(self, *args)
 
-    def IsVertex(self, *args):
+    def IsVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_Extremity_IsVertex(self, *args)
 
-    def Vertex(self, *args):
+    def Vertex(self, *args) -> "Handle_Adaptor3d_HVertex const &" :
         """
         :rtype: Handle_Adaptor3d_HVertex
 
         """
         return _BRepBlend.BRepBlend_Extremity_Vertex(self, *args)
 
-    def NbPointOnRst(self, *args):
+    def NbPointOnRst(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepBlend.BRepBlend_Extremity_NbPointOnRst(self, *args)
 
-    def PointOnRst(self, *args):
+    def PointOnRst(self, *args) -> "BRepBlend_PointOnRst const &" :
         """
         :param Index:
         :type Index: int
@@ -1075,14 +1075,14 @@ class BRepBlend_Extremity(object):
         """
         return _BRepBlend.BRepBlend_Extremity_PointOnRst(self, *args)
 
-    def Parameter(self, *args):
+    def Parameter(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
         """
         return _BRepBlend.BRepBlend_Extremity_Parameter(self, *args)
 
-    def ParameterOnGuide(self, *args):
+    def ParameterOnGuide(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -1119,7 +1119,7 @@ BRepBlend_Extremity_swigregister(BRepBlend_Extremity)
 class BRepBlend_HCurve2dTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1129,7 +1129,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1139,7 +1139,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args):
+    def Continuity(*args) -> "GeomAbs_Shape" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1149,7 +1149,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args):
+    def NbIntervals(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1161,7 +1161,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args):
+    def Intervals(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1175,7 +1175,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1185,7 +1185,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args):
+    def IsPeriodic(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1195,7 +1195,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args):
+    def Period(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1205,7 +1205,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1217,7 +1217,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1231,7 +1231,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1247,7 +1247,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1265,7 +1265,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1285,7 +1285,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1299,7 +1299,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args):
+    def Resolution(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1311,7 +1311,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args):
+    def GetType(*args) -> "GeomAbs_CurveType" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1321,7 +1321,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args):
+    def Line(*args) -> "gp_Lin2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1331,7 +1331,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args):
+    def Circle(*args) -> "gp_Circ2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1341,7 +1341,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args):
+    def Ellipse(*args) -> "gp_Elips2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1351,7 +1351,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args):
+    def Hyperbola(*args) -> "gp_Hypr2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1361,7 +1361,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args):
+    def Parabola(*args) -> "gp_Parab2d" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1371,7 +1371,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args):
+    def Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1381,7 +1381,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args):
+    def BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1391,7 +1391,7 @@ class BRepBlend_HCurve2dTool(object):
         return _BRepBlend.BRepBlend_HCurve2dTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def NbSamples(*args):
+    def NbSamples(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -1419,7 +1419,7 @@ BRepBlend_HCurve2dTool._kill_pointed = new_instancemethod(_BRepBlend.BRepBlend_H
 BRepBlend_HCurve2dTool_swigregister = _BRepBlend.BRepBlend_HCurve2dTool_swigregister
 BRepBlend_HCurve2dTool_swigregister(BRepBlend_HCurve2dTool)
 
-def BRepBlend_HCurve2dTool_FirstParameter(*args):
+def BRepBlend_HCurve2dTool_FirstParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1428,7 +1428,7 @@ def BRepBlend_HCurve2dTool_FirstParameter(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_FirstParameter(*args)
 
-def BRepBlend_HCurve2dTool_LastParameter(*args):
+def BRepBlend_HCurve2dTool_LastParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1437,7 +1437,7 @@ def BRepBlend_HCurve2dTool_LastParameter(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_LastParameter(*args)
 
-def BRepBlend_HCurve2dTool_Continuity(*args):
+def BRepBlend_HCurve2dTool_Continuity(*args) -> "GeomAbs_Shape" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1446,7 +1446,7 @@ def BRepBlend_HCurve2dTool_Continuity(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Continuity(*args)
 
-def BRepBlend_HCurve2dTool_NbIntervals(*args):
+def BRepBlend_HCurve2dTool_NbIntervals(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1457,7 +1457,7 @@ def BRepBlend_HCurve2dTool_NbIntervals(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_NbIntervals(*args)
 
-def BRepBlend_HCurve2dTool_Intervals(*args):
+def BRepBlend_HCurve2dTool_Intervals(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1470,7 +1470,7 @@ def BRepBlend_HCurve2dTool_Intervals(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Intervals(*args)
 
-def BRepBlend_HCurve2dTool_IsClosed(*args):
+def BRepBlend_HCurve2dTool_IsClosed(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1479,7 +1479,7 @@ def BRepBlend_HCurve2dTool_IsClosed(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_IsClosed(*args)
 
-def BRepBlend_HCurve2dTool_IsPeriodic(*args):
+def BRepBlend_HCurve2dTool_IsPeriodic(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1488,7 +1488,7 @@ def BRepBlend_HCurve2dTool_IsPeriodic(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_IsPeriodic(*args)
 
-def BRepBlend_HCurve2dTool_Period(*args):
+def BRepBlend_HCurve2dTool_Period(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1497,7 +1497,7 @@ def BRepBlend_HCurve2dTool_Period(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Period(*args)
 
-def BRepBlend_HCurve2dTool_Value(*args):
+def BRepBlend_HCurve2dTool_Value(*args) -> "gp_Pnt2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1508,7 +1508,7 @@ def BRepBlend_HCurve2dTool_Value(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Value(*args)
 
-def BRepBlend_HCurve2dTool_D0(*args):
+def BRepBlend_HCurve2dTool_D0(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1521,7 +1521,7 @@ def BRepBlend_HCurve2dTool_D0(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_D0(*args)
 
-def BRepBlend_HCurve2dTool_D1(*args):
+def BRepBlend_HCurve2dTool_D1(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1536,7 +1536,7 @@ def BRepBlend_HCurve2dTool_D1(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_D1(*args)
 
-def BRepBlend_HCurve2dTool_D2(*args):
+def BRepBlend_HCurve2dTool_D2(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1553,7 +1553,7 @@ def BRepBlend_HCurve2dTool_D2(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_D2(*args)
 
-def BRepBlend_HCurve2dTool_D3(*args):
+def BRepBlend_HCurve2dTool_D3(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1572,7 +1572,7 @@ def BRepBlend_HCurve2dTool_D3(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_D3(*args)
 
-def BRepBlend_HCurve2dTool_DN(*args):
+def BRepBlend_HCurve2dTool_DN(*args) -> "gp_Vec2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1585,7 +1585,7 @@ def BRepBlend_HCurve2dTool_DN(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_DN(*args)
 
-def BRepBlend_HCurve2dTool_Resolution(*args):
+def BRepBlend_HCurve2dTool_Resolution(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1596,7 +1596,7 @@ def BRepBlend_HCurve2dTool_Resolution(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Resolution(*args)
 
-def BRepBlend_HCurve2dTool_GetType(*args):
+def BRepBlend_HCurve2dTool_GetType(*args) -> "GeomAbs_CurveType" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1605,7 +1605,7 @@ def BRepBlend_HCurve2dTool_GetType(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_GetType(*args)
 
-def BRepBlend_HCurve2dTool_Line(*args):
+def BRepBlend_HCurve2dTool_Line(*args) -> "gp_Lin2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1614,7 +1614,7 @@ def BRepBlend_HCurve2dTool_Line(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Line(*args)
 
-def BRepBlend_HCurve2dTool_Circle(*args):
+def BRepBlend_HCurve2dTool_Circle(*args) -> "gp_Circ2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1623,7 +1623,7 @@ def BRepBlend_HCurve2dTool_Circle(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Circle(*args)
 
-def BRepBlend_HCurve2dTool_Ellipse(*args):
+def BRepBlend_HCurve2dTool_Ellipse(*args) -> "gp_Elips2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1632,7 +1632,7 @@ def BRepBlend_HCurve2dTool_Ellipse(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Ellipse(*args)
 
-def BRepBlend_HCurve2dTool_Hyperbola(*args):
+def BRepBlend_HCurve2dTool_Hyperbola(*args) -> "gp_Hypr2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1641,7 +1641,7 @@ def BRepBlend_HCurve2dTool_Hyperbola(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Hyperbola(*args)
 
-def BRepBlend_HCurve2dTool_Parabola(*args):
+def BRepBlend_HCurve2dTool_Parabola(*args) -> "gp_Parab2d" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1650,7 +1650,7 @@ def BRepBlend_HCurve2dTool_Parabola(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Parabola(*args)
 
-def BRepBlend_HCurve2dTool_Bezier(*args):
+def BRepBlend_HCurve2dTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1659,7 +1659,7 @@ def BRepBlend_HCurve2dTool_Bezier(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_Bezier(*args)
 
-def BRepBlend_HCurve2dTool_BSpline(*args):
+def BRepBlend_HCurve2dTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1668,7 +1668,7 @@ def BRepBlend_HCurve2dTool_BSpline(*args):
     """
   return _BRepBlend.BRepBlend_HCurve2dTool_BSpline(*args)
 
-def BRepBlend_HCurve2dTool_NbSamples(*args):
+def BRepBlend_HCurve2dTool_NbSamples(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor2d_HCurve2d &
@@ -1684,7 +1684,7 @@ def BRepBlend_HCurve2dTool_NbSamples(*args):
 class BRepBlend_HCurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def FirstParameter(*args):
+    def FirstParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1694,7 +1694,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args):
+    def LastParameter(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1704,7 +1704,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args):
+    def Continuity(*args) -> "GeomAbs_Shape" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1714,7 +1714,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args):
+    def NbIntervals(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1726,7 +1726,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args):
+    def Intervals(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1740,7 +1740,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args):
+    def IsClosed(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1750,7 +1750,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args):
+    def IsPeriodic(*args) -> "Standard_Boolean" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1760,7 +1760,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args):
+    def Period(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1770,7 +1770,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1782,7 +1782,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args):
+    def D0(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1796,7 +1796,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1812,7 +1812,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1830,7 +1830,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1850,7 +1850,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1864,7 +1864,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args):
+    def Resolution(*args) -> "Standard_Real" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1876,7 +1876,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args):
+    def GetType(*args) -> "GeomAbs_CurveType" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1886,7 +1886,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args):
+    def Line(*args) -> "gp_Lin" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1896,7 +1896,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args):
+    def Circle(*args) -> "gp_Circ" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1906,7 +1906,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args):
+    def Ellipse(*args) -> "gp_Elips" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1916,7 +1916,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args):
+    def Hyperbola(*args) -> "gp_Hypr" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1926,7 +1926,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args):
+    def Parabola(*args) -> "gp_Parab" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1936,7 +1936,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args):
+    def Bezier(*args) -> "Handle_Geom_BezierCurve" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1946,7 +1946,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args):
+    def BSpline(*args) -> "Handle_Geom_BSplineCurve" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1956,7 +1956,7 @@ class BRepBlend_HCurveTool(object):
         return _BRepBlend.BRepBlend_HCurveTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def NbSamples(*args):
+    def NbSamples(*args) -> "Standard_Integer" :
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1984,7 +1984,7 @@ BRepBlend_HCurveTool._kill_pointed = new_instancemethod(_BRepBlend.BRepBlend_HCu
 BRepBlend_HCurveTool_swigregister = _BRepBlend.BRepBlend_HCurveTool_swigregister
 BRepBlend_HCurveTool_swigregister(BRepBlend_HCurveTool)
 
-def BRepBlend_HCurveTool_FirstParameter(*args):
+def BRepBlend_HCurveTool_FirstParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1993,7 +1993,7 @@ def BRepBlend_HCurveTool_FirstParameter(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_FirstParameter(*args)
 
-def BRepBlend_HCurveTool_LastParameter(*args):
+def BRepBlend_HCurveTool_LastParameter(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2002,7 +2002,7 @@ def BRepBlend_HCurveTool_LastParameter(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_LastParameter(*args)
 
-def BRepBlend_HCurveTool_Continuity(*args):
+def BRepBlend_HCurveTool_Continuity(*args) -> "GeomAbs_Shape" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2011,7 +2011,7 @@ def BRepBlend_HCurveTool_Continuity(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Continuity(*args)
 
-def BRepBlend_HCurveTool_NbIntervals(*args):
+def BRepBlend_HCurveTool_NbIntervals(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2022,7 +2022,7 @@ def BRepBlend_HCurveTool_NbIntervals(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_NbIntervals(*args)
 
-def BRepBlend_HCurveTool_Intervals(*args):
+def BRepBlend_HCurveTool_Intervals(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2035,7 +2035,7 @@ def BRepBlend_HCurveTool_Intervals(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Intervals(*args)
 
-def BRepBlend_HCurveTool_IsClosed(*args):
+def BRepBlend_HCurveTool_IsClosed(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2044,7 +2044,7 @@ def BRepBlend_HCurveTool_IsClosed(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_IsClosed(*args)
 
-def BRepBlend_HCurveTool_IsPeriodic(*args):
+def BRepBlend_HCurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2053,7 +2053,7 @@ def BRepBlend_HCurveTool_IsPeriodic(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_IsPeriodic(*args)
 
-def BRepBlend_HCurveTool_Period(*args):
+def BRepBlend_HCurveTool_Period(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2062,7 +2062,7 @@ def BRepBlend_HCurveTool_Period(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Period(*args)
 
-def BRepBlend_HCurveTool_Value(*args):
+def BRepBlend_HCurveTool_Value(*args) -> "gp_Pnt" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2073,7 +2073,7 @@ def BRepBlend_HCurveTool_Value(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Value(*args)
 
-def BRepBlend_HCurveTool_D0(*args):
+def BRepBlend_HCurveTool_D0(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2086,7 +2086,7 @@ def BRepBlend_HCurveTool_D0(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_D0(*args)
 
-def BRepBlend_HCurveTool_D1(*args):
+def BRepBlend_HCurveTool_D1(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2101,7 +2101,7 @@ def BRepBlend_HCurveTool_D1(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_D1(*args)
 
-def BRepBlend_HCurveTool_D2(*args):
+def BRepBlend_HCurveTool_D2(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2118,7 +2118,7 @@ def BRepBlend_HCurveTool_D2(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_D2(*args)
 
-def BRepBlend_HCurveTool_D3(*args):
+def BRepBlend_HCurveTool_D3(*args) -> "void" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2137,7 +2137,7 @@ def BRepBlend_HCurveTool_D3(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_D3(*args)
 
-def BRepBlend_HCurveTool_DN(*args):
+def BRepBlend_HCurveTool_DN(*args) -> "gp_Vec" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2150,7 +2150,7 @@ def BRepBlend_HCurveTool_DN(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_DN(*args)
 
-def BRepBlend_HCurveTool_Resolution(*args):
+def BRepBlend_HCurveTool_Resolution(*args) -> "Standard_Real" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2161,7 +2161,7 @@ def BRepBlend_HCurveTool_Resolution(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Resolution(*args)
 
-def BRepBlend_HCurveTool_GetType(*args):
+def BRepBlend_HCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2170,7 +2170,7 @@ def BRepBlend_HCurveTool_GetType(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_GetType(*args)
 
-def BRepBlend_HCurveTool_Line(*args):
+def BRepBlend_HCurveTool_Line(*args) -> "gp_Lin" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2179,7 +2179,7 @@ def BRepBlend_HCurveTool_Line(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Line(*args)
 
-def BRepBlend_HCurveTool_Circle(*args):
+def BRepBlend_HCurveTool_Circle(*args) -> "gp_Circ" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2188,7 +2188,7 @@ def BRepBlend_HCurveTool_Circle(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Circle(*args)
 
-def BRepBlend_HCurveTool_Ellipse(*args):
+def BRepBlend_HCurveTool_Ellipse(*args) -> "gp_Elips" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2197,7 +2197,7 @@ def BRepBlend_HCurveTool_Ellipse(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Ellipse(*args)
 
-def BRepBlend_HCurveTool_Hyperbola(*args):
+def BRepBlend_HCurveTool_Hyperbola(*args) -> "gp_Hypr" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2206,7 +2206,7 @@ def BRepBlend_HCurveTool_Hyperbola(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Hyperbola(*args)
 
-def BRepBlend_HCurveTool_Parabola(*args):
+def BRepBlend_HCurveTool_Parabola(*args) -> "gp_Parab" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2215,7 +2215,7 @@ def BRepBlend_HCurveTool_Parabola(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Parabola(*args)
 
-def BRepBlend_HCurveTool_Bezier(*args):
+def BRepBlend_HCurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2224,7 +2224,7 @@ def BRepBlend_HCurveTool_Bezier(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_Bezier(*args)
 
-def BRepBlend_HCurveTool_BSpline(*args):
+def BRepBlend_HCurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2233,7 +2233,7 @@ def BRepBlend_HCurveTool_BSpline(*args):
     """
   return _BRepBlend.BRepBlend_HCurveTool_BSpline(*args)
 
-def BRepBlend_HCurveTool_NbSamples(*args):
+def BRepBlend_HCurveTool_NbSamples(*args) -> "Standard_Integer" :
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -2255,14 +2255,14 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepBlend.BRepBlend_Line_swiginit(self,_BRepBlend.new_BRepBlend_Line(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepBlend.BRepBlend_Line_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param P:
         :type P: Blend_Point &
@@ -2271,7 +2271,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param P:
         :type P: Blend_Point &
@@ -2280,7 +2280,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2291,7 +2291,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_InsertBefore(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param FromIndex:
         :type FromIndex: int
@@ -2302,7 +2302,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_Remove(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param TranS1:
         :type TranS1: IntSurf_TypeTrans
@@ -2317,7 +2317,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_Set(self, *args)
 
-    def SetStartPoints(self, *args):
+    def SetStartPoints(self, *args) -> "void" :
         """
         :param StartPt1:
         :type StartPt1: BRepBlend_Extremity &
@@ -2328,7 +2328,7 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_SetStartPoints(self, *args)
 
-    def SetEndPoints(self, *args):
+    def SetEndPoints(self, *args) -> "void" :
         """
         :param EndPt1:
         :type EndPt1: BRepBlend_Extremity &
@@ -2339,14 +2339,14 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_SetEndPoints(self, *args)
 
-    def NbPoints(self, *args):
+    def NbPoints(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _BRepBlend.BRepBlend_Line_NbPoints(self, *args)
 
-    def Point(self, *args):
+    def Point(self, *args) -> "Blend_Point const &" :
         """
         :param Index:
         :type Index: int
@@ -2355,60 +2355,60 @@ class BRepBlend_Line(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBlend.BRepBlend_Line_Point(self, *args)
 
-    def TransitionOnS1(self, *args):
+    def TransitionOnS1(self, *args) -> "IntSurf_TypeTrans" :
         """
         :rtype: IntSurf_TypeTrans
 
         """
         return _BRepBlend.BRepBlend_Line_TransitionOnS1(self, *args)
 
-    def TransitionOnS2(self, *args):
+    def TransitionOnS2(self, *args) -> "IntSurf_TypeTrans" :
         """
         :rtype: IntSurf_TypeTrans
 
         """
         return _BRepBlend.BRepBlend_Line_TransitionOnS2(self, *args)
 
-    def StartPointOnFirst(self, *args):
+    def StartPointOnFirst(self, *args) -> "BRepBlend_Extremity const &" :
         """
         :rtype: BRepBlend_Extremity
 
         """
         return _BRepBlend.BRepBlend_Line_StartPointOnFirst(self, *args)
 
-    def StartPointOnSecond(self, *args):
+    def StartPointOnSecond(self, *args) -> "BRepBlend_Extremity const &" :
         """
         :rtype: BRepBlend_Extremity
 
         """
         return _BRepBlend.BRepBlend_Line_StartPointOnSecond(self, *args)
 
-    def EndPointOnFirst(self, *args):
+    def EndPointOnFirst(self, *args) -> "BRepBlend_Extremity const &" :
         """
         :rtype: BRepBlend_Extremity
 
         """
         return _BRepBlend.BRepBlend_Line_EndPointOnFirst(self, *args)
 
-    def EndPointOnSecond(self, *args):
+    def EndPointOnSecond(self, *args) -> "BRepBlend_Extremity const &" :
         """
         :rtype: BRepBlend_Extremity
 
         """
         return _BRepBlend.BRepBlend_Line_EndPointOnSecond(self, *args)
 
-    def TransitionOnS(self, *args):
+    def TransitionOnS(self, *args) -> "IntSurf_TypeTrans" :
         """
         :rtype: IntSurf_TypeTrans
 
         """
         return _BRepBlend.BRepBlend_Line_TransitionOnS(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_Line self)"""
         return _BRepBlend.BRepBlend_Line__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_Line" :
         """GetHandle(BRepBlend_Line self) -> Handle_BRepBlend_Line"""
         return _BRepBlend.BRepBlend_Line_GetHandle(self)
 
@@ -2463,7 +2463,7 @@ Handle_BRepBlend_Line._kill_pointed = new_instancemethod(_BRepBlend.Handle_BRepB
 Handle_BRepBlend_Line_swigregister = _BRepBlend.Handle_BRepBlend_Line_swigregister
 Handle_BRepBlend_Line_swigregister(Handle_BRepBlend_Line)
 
-def Handle_BRepBlend_Line_DownCast(*args):
+def Handle_BRepBlend_Line_DownCast(*args) -> "Handle_BRepBlend_Line const" :
   return _BRepBlend.Handle_BRepBlend_Line_DownCast(*args)
 Handle_BRepBlend_Line_DownCast = _BRepBlend.Handle_BRepBlend_Line_DownCast
 
@@ -2486,7 +2486,7 @@ class BRepBlend_PointOnRst(object):
 
         """
         _BRepBlend.BRepBlend_PointOnRst_swiginit(self,_BRepBlend.new_BRepBlend_PointOnRst(*args))
-    def SetArc(self, *args):
+    def SetArc(self, *args) -> "void" :
         """
         :param A:
         :type A: Handle_Adaptor2d_HCurve2d &
@@ -2501,28 +2501,28 @@ class BRepBlend_PointOnRst(object):
         """
         return _BRepBlend.BRepBlend_PointOnRst_SetArc(self, *args)
 
-    def Arc(self, *args):
+    def Arc(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
         return _BRepBlend.BRepBlend_PointOnRst_Arc(self, *args)
 
-    def TransitionOnLine(self, *args):
+    def TransitionOnLine(self, *args) -> "IntSurf_Transition const &" :
         """
         :rtype: IntSurf_Transition
 
         """
         return _BRepBlend.BRepBlend_PointOnRst_TransitionOnLine(self, *args)
 
-    def TransitionOnArc(self, *args):
+    def TransitionOnArc(self, *args) -> "IntSurf_Transition const &" :
         """
         :rtype: IntSurf_Transition
 
         """
         return _BRepBlend.BRepBlend_PointOnRst_TransitionOnArc(self, *args)
 
-    def ParameterOnArc(self, *args):
+    def ParameterOnArc(self, *args) -> "Standard_Real" :
         """
         :rtype: float
 
@@ -2565,7 +2565,7 @@ class BRepBlend_RstRstConstRad(OCC.Blend.Blend_RstRstFunction):
 
         """
         _BRepBlend.BRepBlend_RstRstConstRad_swiginit(self,_BRepBlend.new_BRepBlend_RstRstConstRad(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param SurfRef1:
         :type SurfRef1: Handle_Adaptor3d_HSurface &
@@ -2604,7 +2604,7 @@ class BRepBlend_RstRstConstRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstConstRad_Set(self, *args)
 
-    def CenterCircleRst1Rst2(self, *args):
+    def CenterCircleRst1Rst2(self, *args) -> "Standard_Boolean" :
         """
         * Give the center of circle define by PtRst1, PtRst2 and radius ray.
 
@@ -2623,7 +2623,7 @@ class BRepBlend_RstRstConstRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstConstRad_CenterCircleRst1Rst2(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         :param Tolerance:
         :type Tolerance: math_Vector &
@@ -2648,7 +2648,7 @@ class BRepBlend_RstRstConstRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstConstRad_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -2756,7 +2756,7 @@ class BRepBlend_RstRstEvolRad(OCC.Blend.Blend_RstRstFunction):
 
         """
         _BRepBlend.BRepBlend_RstRstEvolRad_swiginit(self,_BRepBlend.new_BRepBlend_RstRstEvolRad(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param SurfRef1:
         :type SurfRef1: Handle_Adaptor3d_HSurface &
@@ -2793,7 +2793,7 @@ class BRepBlend_RstRstEvolRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstEvolRad_Set(self, *args)
 
-    def CenterCircleRst1Rst2(self, *args):
+    def CenterCircleRst1Rst2(self, *args) -> "Standard_Boolean" :
         """
         * Gives the center of circle defined by PtRst1, PtRst2 and radius ray.
 
@@ -2812,7 +2812,7 @@ class BRepBlend_RstRstEvolRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstEvolRad_CenterCircleRst1Rst2(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         :param Tolerance:
         :type Tolerance: math_Vector &
@@ -2837,7 +2837,7 @@ class BRepBlend_RstRstEvolRad(OCC.Blend.Blend_RstRstFunction):
         """
         return _BRepBlend.BRepBlend_RstRstEvolRad_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "Standard_Boolean" :
         """
         :param Param:
         :type Param: float
@@ -2945,7 +2945,7 @@ class BRepBlend_RstRstLineBuilder(object):
 
         """
         _BRepBlend.BRepBlend_RstRstLineBuilder_swiginit(self,_BRepBlend.new_BRepBlend_RstRstLineBuilder(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Func:
         :type Func: Blend_RstRstFunction &
@@ -2978,7 +2978,7 @@ class BRepBlend_RstRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Perform(self, *args)
 
-    def PerformFirstSection(self, *args):
+    def PerformFirstSection(self, *args) -> "Standard_Boolean" :
         """
         :param Func:
         :type Func: Blend_RstRstFunction &
@@ -3017,7 +3017,7 @@ class BRepBlend_RstRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_PerformFirstSection(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param Func:
         :type Func: Blend_RstRstFunction &
@@ -3036,42 +3036,42 @@ class BRepBlend_RstRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Complete(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_IsDone(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Line(self, *args)
 
-    def Decroch1Start(self, *args):
+    def Decroch1Start(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Decroch1Start(self, *args)
 
-    def Decroch1End(self, *args):
+    def Decroch1End(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Decroch1End(self, *args)
 
-    def Decroch2Start(self, *args):
+    def Decroch2Start(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_RstRstLineBuilder_Decroch2Start(self, *args)
 
-    def Decroch2End(self, *args):
+    def Decroch2End(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -3114,18 +3114,18 @@ class BRepBlend_SequenceNodeOfSequenceOfLine(OCC.TCollection.TCollection_SeqNode
 
         """
         _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfLine_swiginit(self,_BRepBlend.new_BRepBlend_SequenceNodeOfSequenceOfLine(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRepBlend_Line &" :
         """
         :rtype: Handle_BRepBlend_Line
 
         """
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfLine_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_SequenceNodeOfSequenceOfLine self)"""
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfLine__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_SequenceNodeOfSequenceOfLine" :
         """GetHandle(BRepBlend_SequenceNodeOfSequenceOfLine self) -> Handle_BRepBlend_SequenceNodeOfSequenceOfLine"""
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfLine_GetHandle(self)
 
@@ -3164,7 +3164,7 @@ Handle_BRepBlend_SequenceNodeOfSequenceOfLine._kill_pointed = new_instancemethod
 Handle_BRepBlend_SequenceNodeOfSequenceOfLine_swigregister = _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfLine_swigregister
 Handle_BRepBlend_SequenceNodeOfSequenceOfLine_swigregister(Handle_BRepBlend_SequenceNodeOfSequenceOfLine)
 
-def Handle_BRepBlend_SequenceNodeOfSequenceOfLine_DownCast(*args):
+def Handle_BRepBlend_SequenceNodeOfSequenceOfLine_DownCast(*args) -> "Handle_BRepBlend_SequenceNodeOfSequenceOfLine const" :
   return _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfLine_DownCast(*args)
 Handle_BRepBlend_SequenceNodeOfSequenceOfLine_DownCast = _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfLine_DownCast
 
@@ -3183,18 +3183,18 @@ class BRepBlend_SequenceNodeOfSequenceOfPointOnRst(OCC.TCollection.TCollection_S
 
         """
         _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfPointOnRst_swiginit(self,_BRepBlend.new_BRepBlend_SequenceNodeOfSequenceOfPointOnRst(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepBlend_PointOnRst &" :
         """
         :rtype: BRepBlend_PointOnRst
 
         """
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfPointOnRst_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_SequenceNodeOfSequenceOfPointOnRst self)"""
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfPointOnRst__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst" :
         """GetHandle(BRepBlend_SequenceNodeOfSequenceOfPointOnRst self) -> Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst"""
         return _BRepBlend.BRepBlend_SequenceNodeOfSequenceOfPointOnRst_GetHandle(self)
 
@@ -3233,7 +3233,7 @@ Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst._kill_pointed = new_instance
 Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_swigregister = _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_swigregister
 Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_swigregister(Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst)
 
-def Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_DownCast(*args):
+def Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_DownCast(*args) -> "Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst const" :
   return _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_DownCast(*args)
 Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_DownCast = _BRepBlend.Handle_BRepBlend_SequenceNodeOfSequenceOfPointOnRst_DownCast
 
@@ -3246,14 +3246,14 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _BRepBlend.BRepBlend_SequenceOfLine_swiginit(self,_BRepBlend.new_BRepBlend_SequenceOfLine(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepBlend_SequenceOfLine const &" :
         """
         :param Other:
         :type Other: BRepBlend_SequenceOfLine &
@@ -3262,7 +3262,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepBlend_SequenceOfLine const &" :
         """
         :param Other:
         :type Other: BRepBlend_SequenceOfLine &
@@ -3271,7 +3271,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_BRepBlend_Line &
@@ -3284,7 +3284,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_BRepBlend_Line &
@@ -3297,7 +3297,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3314,7 +3314,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3331,21 +3331,21 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3356,7 +3356,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :param Index:
         :type Index: int
@@ -3365,7 +3365,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3376,7 +3376,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_BRepBlend_Line &" :
         """
         :param Index:
         :type Index: int
@@ -3385,7 +3385,7 @@ class BRepBlend_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfLine_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3435,14 +3435,14 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _BRepBlend.BRepBlend_SequenceOfPointOnRst_swiginit(self,_BRepBlend.new_BRepBlend_SequenceOfPointOnRst(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "BRepBlend_SequenceOfPointOnRst const &" :
         """
         :param Other:
         :type Other: BRepBlend_SequenceOfPointOnRst &
@@ -3451,7 +3451,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "BRepBlend_SequenceOfPointOnRst const &" :
         """
         :param Other:
         :type Other: BRepBlend_SequenceOfPointOnRst &
@@ -3460,7 +3460,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: BRepBlend_PointOnRst &
@@ -3473,7 +3473,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: BRepBlend_PointOnRst &
@@ -3486,7 +3486,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3503,7 +3503,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3520,21 +3520,21 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "BRepBlend_PointOnRst const &" :
         """
         :rtype: BRepBlend_PointOnRst
 
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "BRepBlend_PointOnRst const &" :
         """
         :rtype: BRepBlend_PointOnRst
 
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3545,7 +3545,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "BRepBlend_PointOnRst const &" :
         """
         :param Index:
         :type Index: int
@@ -3554,7 +3554,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3565,7 +3565,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "BRepBlend_PointOnRst &" :
         """
         :param Index:
         :type Index: int
@@ -3574,7 +3574,7 @@ class BRepBlend_SequenceOfPointOnRst(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepBlend.BRepBlend_SequenceOfPointOnRst_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -3630,7 +3630,7 @@ class BRepBlend_SurfCurvConstRadInv(OCC.Blend.Blend_SurfCurvFuncInv):
 
         """
         _BRepBlend.BRepBlend_SurfCurvConstRadInv_swiginit(self,_BRepBlend.new_BRepBlend_SurfCurvConstRadInv(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param R:
         :type R: float
@@ -3677,7 +3677,7 @@ class BRepBlend_SurfCurvEvolRadInv(OCC.Blend.Blend_SurfCurvFuncInv):
 
         """
         _BRepBlend.BRepBlend_SurfCurvEvolRadInv_swiginit(self,_BRepBlend.new_BRepBlend_SurfCurvEvolRadInv(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Choix:
         :type Choix: int
@@ -3718,7 +3718,7 @@ class BRepBlend_SurfPointConstRadInv(OCC.Blend.Blend_SurfPointFuncInv):
 
         """
         _BRepBlend.BRepBlend_SurfPointConstRadInv_swiginit(self,_BRepBlend.new_BRepBlend_SurfPointConstRadInv(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param R:
         :type R: float
@@ -3763,7 +3763,7 @@ class BRepBlend_SurfPointEvolRadInv(OCC.Blend.Blend_SurfPointFuncInv):
 
         """
         _BRepBlend.BRepBlend_SurfPointEvolRadInv_swiginit(self,_BRepBlend.new_BRepBlend_SurfPointEvolRadInv(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param Choix:
         :type Choix: int
@@ -3808,7 +3808,7 @@ class BRepBlend_SurfRstConstRad(OCC.Blend.Blend_SurfRstFunction):
 
         """
         _BRepBlend.BRepBlend_SurfRstConstRad_swiginit(self,_BRepBlend.new_BRepBlend_SurfRstConstRad(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param SurfRef:
         :type SurfRef: Handle_Adaptor3d_HSurface &
@@ -3843,7 +3843,7 @@ class BRepBlend_SurfRstConstRad(OCC.Blend.Blend_SurfRstFunction):
         """
         return _BRepBlend.BRepBlend_SurfRstConstRad_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         :param Tolerance:
         :type Tolerance: math_Vector &
@@ -3868,7 +3868,7 @@ class BRepBlend_SurfRstConstRad(OCC.Blend.Blend_SurfRstFunction):
         """
         return _BRepBlend.BRepBlend_SurfRstConstRad_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "void" :
         """
         :param Param:
         :type Param: float
@@ -3975,7 +3975,7 @@ class BRepBlend_SurfRstEvolRad(OCC.Blend.Blend_SurfRstFunction):
 
         """
         _BRepBlend.BRepBlend_SurfRstEvolRad_swiginit(self,_BRepBlend.new_BRepBlend_SurfRstEvolRad(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param SurfRef:
         :type SurfRef: Handle_Adaptor3d_HSurface &
@@ -4008,7 +4008,7 @@ class BRepBlend_SurfRstEvolRad(OCC.Blend.Blend_SurfRstFunction):
         """
         return _BRepBlend.BRepBlend_SurfRstEvolRad_Set(self, *args)
 
-    def GetTolerance(self, *args):
+    def GetTolerance(self, *args) -> "void" :
         """
         :param Tolerance:
         :type Tolerance: math_Vector &
@@ -4033,7 +4033,7 @@ class BRepBlend_SurfRstEvolRad(OCC.Blend.Blend_SurfRstFunction):
         """
         return _BRepBlend.BRepBlend_SurfRstEvolRad_GetTolerance(self, *args)
 
-    def Section(self, *args):
+    def Section(self, *args) -> "void" :
         """
         :param Param:
         :type Param: float
@@ -4140,7 +4140,7 @@ class BRepBlend_SurfRstLineBuilder(object):
 
         """
         _BRepBlend.BRepBlend_SurfRstLineBuilder_swiginit(self,_BRepBlend.new_BRepBlend_SurfRstLineBuilder(*args))
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param Func:
         :type Func: Blend_SurfRstFunction &
@@ -4171,7 +4171,7 @@ class BRepBlend_SurfRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_Perform(self, *args)
 
-    def PerformFirstSection(self, *args):
+    def PerformFirstSection(self, *args) -> "Standard_Boolean" :
         """
         :param Func:
         :type Func: Blend_SurfRstFunction &
@@ -4206,7 +4206,7 @@ class BRepBlend_SurfRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_PerformFirstSection(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param Func:
         :type Func: Blend_SurfRstFunction &
@@ -4223,7 +4223,7 @@ class BRepBlend_SurfRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_Complete(self, *args)
 
-    def ArcToRecadre(self, *args):
+    def ArcToRecadre(self, *args) -> "Standard_Integer" :
         """
         :param Sol:
         :type Sol: math_Vector &
@@ -4240,28 +4240,28 @@ class BRepBlend_SurfRstLineBuilder(object):
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_ArcToRecadre(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_IsDone(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_Line(self, *args)
 
-    def DecrochStart(self, *args):
+    def DecrochStart(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_SurfRstLineBuilder_DecrochStart(self, *args)
 
-    def DecrochEnd(self, *args):
+    def DecrochEnd(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -4305,7 +4305,7 @@ class BRepBlend_Walking(object):
 
         """
         _BRepBlend.BRepBlend_Walking_swiginit(self,_BRepBlend.new_BRepBlend_Walking(*args))
-    def SetDomainsToRecadre(self, *args):
+    def SetDomainsToRecadre(self, *args) -> "void" :
         """
         :param RecDomain1:
         :type RecDomain1: Handle_Adaptor3d_TopolTool &
@@ -4316,7 +4316,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_SetDomainsToRecadre(self, *args)
 
-    def AddSingularPoint(self, *args):
+    def AddSingularPoint(self, *args) -> "void" :
         """
         :param P:
         :type P: Blend_Point &
@@ -4325,7 +4325,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_AddSingularPoint(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :param F:
         :type F: Blend_Function &
@@ -4352,7 +4352,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_Perform(self, *args)
 
-    def PerformFirstSection(self, *args):
+    def PerformFirstSection(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: Blend_Function &
@@ -4397,7 +4397,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_PerformFirstSection(self, *args)
 
-    def Continu(self, *args):
+    def Continu(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: Blend_Function &
@@ -4420,7 +4420,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_Continu(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param F:
         :type F: Blend_Function &
@@ -4433,7 +4433,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_Complete(self, *args)
 
-    def ClassificationOnS1(self, *args):
+    def ClassificationOnS1(self, *args) -> "void" :
         """
         :param C:
         :type C: bool
@@ -4442,7 +4442,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_ClassificationOnS1(self, *args)
 
-    def ClassificationOnS2(self, *args):
+    def ClassificationOnS2(self, *args) -> "void" :
         """
         :param C:
         :type C: bool
@@ -4451,7 +4451,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_ClassificationOnS2(self, *args)
 
-    def Check2d(self, *args):
+    def Check2d(self, *args) -> "void" :
         """
         :param C:
         :type C: bool
@@ -4460,7 +4460,7 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_Check2d(self, *args)
 
-    def Check(self, *args):
+    def Check(self, *args) -> "void" :
         """
         :param C:
         :type C: bool
@@ -4469,28 +4469,28 @@ class BRepBlend_Walking(object):
         """
         return _BRepBlend.BRepBlend_Walking_Check(self, *args)
 
-    def TwistOnS1(self, *args):
+    def TwistOnS1(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_Walking_TwistOnS1(self, *args)
 
-    def TwistOnS2(self, *args):
+    def TwistOnS2(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_Walking_TwistOnS2(self, *args)
 
-    def IsDone(self, *args):
+    def IsDone(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepBlend.BRepBlend_Walking_IsDone(self, *args)
 
-    def Line(self, *args):
+    def Line(self, *args) -> "Handle_BRepBlend_Line const &" :
         """
         :rtype: Handle_BRepBlend_Line
 
@@ -4540,11 +4540,11 @@ class BRepBlend_AppFunc(BRepBlend_AppFuncRoot):
 
         """
         _BRepBlend.BRepBlend_AppFunc_swiginit(self,_BRepBlend.new_BRepBlend_AppFunc(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_AppFunc self)"""
         return _BRepBlend.BRepBlend_AppFunc__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_AppFunc" :
         """GetHandle(BRepBlend_AppFunc self) -> Handle_BRepBlend_AppFunc"""
         return _BRepBlend.BRepBlend_AppFunc_GetHandle(self)
 
@@ -4582,7 +4582,7 @@ Handle_BRepBlend_AppFunc._kill_pointed = new_instancemethod(_BRepBlend.Handle_BR
 Handle_BRepBlend_AppFunc_swigregister = _BRepBlend.Handle_BRepBlend_AppFunc_swigregister
 Handle_BRepBlend_AppFunc_swigregister(Handle_BRepBlend_AppFunc)
 
-def Handle_BRepBlend_AppFunc_DownCast(*args):
+def Handle_BRepBlend_AppFunc_DownCast(*args) -> "Handle_BRepBlend_AppFunc const" :
   return _BRepBlend.Handle_BRepBlend_AppFunc_DownCast(*args)
 Handle_BRepBlend_AppFunc_DownCast = _BRepBlend.Handle_BRepBlend_AppFunc_DownCast
 
@@ -4603,11 +4603,11 @@ class BRepBlend_AppFuncRst(BRepBlend_AppFuncRoot):
 
         """
         _BRepBlend.BRepBlend_AppFuncRst_swiginit(self,_BRepBlend.new_BRepBlend_AppFuncRst(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_AppFuncRst self)"""
         return _BRepBlend.BRepBlend_AppFuncRst__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_AppFuncRst" :
         """GetHandle(BRepBlend_AppFuncRst self) -> Handle_BRepBlend_AppFuncRst"""
         return _BRepBlend.BRepBlend_AppFuncRst_GetHandle(self)
 
@@ -4645,7 +4645,7 @@ Handle_BRepBlend_AppFuncRst._kill_pointed = new_instancemethod(_BRepBlend.Handle
 Handle_BRepBlend_AppFuncRst_swigregister = _BRepBlend.Handle_BRepBlend_AppFuncRst_swigregister
 Handle_BRepBlend_AppFuncRst_swigregister(Handle_BRepBlend_AppFuncRst)
 
-def Handle_BRepBlend_AppFuncRst_DownCast(*args):
+def Handle_BRepBlend_AppFuncRst_DownCast(*args) -> "Handle_BRepBlend_AppFuncRst const" :
   return _BRepBlend.Handle_BRepBlend_AppFuncRst_DownCast(*args)
 Handle_BRepBlend_AppFuncRst_DownCast = _BRepBlend.Handle_BRepBlend_AppFuncRst_DownCast
 
@@ -4666,11 +4666,11 @@ class BRepBlend_AppFuncRstRst(BRepBlend_AppFuncRoot):
 
         """
         _BRepBlend.BRepBlend_AppFuncRstRst_swiginit(self,_BRepBlend.new_BRepBlend_AppFuncRstRst(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BRepBlend_AppFuncRstRst self)"""
         return _BRepBlend.BRepBlend_AppFuncRstRst__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BRepBlend_AppFuncRstRst" :
         """GetHandle(BRepBlend_AppFuncRstRst self) -> Handle_BRepBlend_AppFuncRstRst"""
         return _BRepBlend.BRepBlend_AppFuncRstRst_GetHandle(self)
 
@@ -4708,7 +4708,7 @@ Handle_BRepBlend_AppFuncRstRst._kill_pointed = new_instancemethod(_BRepBlend.Han
 Handle_BRepBlend_AppFuncRstRst_swigregister = _BRepBlend.Handle_BRepBlend_AppFuncRstRst_swigregister
 Handle_BRepBlend_AppFuncRstRst_swigregister(Handle_BRepBlend_AppFuncRstRst)
 
-def Handle_BRepBlend_AppFuncRstRst_DownCast(*args):
+def Handle_BRepBlend_AppFuncRstRst_DownCast(*args) -> "Handle_BRepBlend_AppFuncRstRst const" :
   return _BRepBlend.Handle_BRepBlend_AppFuncRstRst_DownCast(*args)
 Handle_BRepBlend_AppFuncRstRst_DownCast = _BRepBlend.Handle_BRepBlend_AppFuncRstRst_DownCast
 

@@ -119,7 +119,7 @@ import OCC.TShort
 class poly(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Catenate(*args):
+    def Catenate(*args) -> "Handle_Poly_Triangulation" :
         """
         * Computes and stores the link from nodes to triangles and from triangles to neighbouring triangles. This tool is obsolete, replaced by Poly_CoherentTriangulation Algorithm to make minimal loops in a graph Join several triangulations to one new triangulation object. The new triangulation is just a mechanical sum of input triangulations, without node sharing. UV coordinates are dropped in the result.
 
@@ -131,7 +131,7 @@ class poly(object):
         return _Poly.poly_Catenate(*args)
 
     Catenate = staticmethod(Catenate)
-    def Write(*args):
+    def Write(*args) -> "void" :
         """
         * Writes the content of the triangulation <T> on the stream <OS>. If <Compact> is true this is a 'save' format intended to be read back with the Read method. If compact is False it is a 'Dump' format intended to be informative.
 
@@ -167,7 +167,7 @@ class poly(object):
         return _Poly.poly_Write(*args)
 
     Write = staticmethod(Write)
-    def Dump(*args):
+    def Dump(*args) -> "void" :
         """
         * Dumps the triangulation. This is a call to the previous method with Comapct set to False.
 
@@ -197,19 +197,19 @@ class poly(object):
         return _Poly.poly_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def ReadTriangulationFromString(self, *args):
+    def ReadTriangulationFromString(self, *args) -> "void" :
         """ReadTriangulationFromString(poly self, std::string src)"""
         return _Poly.poly_ReadTriangulationFromString(self, *args)
 
-    def ReadPolygon3DFromString(self, *args):
+    def ReadPolygon3DFromString(self, *args) -> "void" :
         """ReadPolygon3DFromString(poly self, std::string src)"""
         return _Poly.poly_ReadPolygon3DFromString(self, *args)
 
-    def ReadPolygon2DFromString(self, *args):
+    def ReadPolygon2DFromString(self, *args) -> "void" :
         """ReadPolygon2DFromString(poly self, std::string src)"""
         return _Poly.poly_ReadPolygon2DFromString(self, *args)
 
-    def ComputeNormals(*args):
+    def ComputeNormals(*args) -> "void" :
         """
         * Compute node normals for face triangulation as mean normal of surrounding triangles
 
@@ -221,7 +221,7 @@ class poly(object):
         return _Poly.poly_ComputeNormals(*args)
 
     ComputeNormals = staticmethod(ComputeNormals)
-    def PointOnTriangle(*args):
+    def PointOnTriangle(*args) -> "Standard_Real" :
         """
         * Computes parameters of the point P on triangle defined by points P1, P2, and P3, in 2d. The parameters U and V are defined so that P = P1 + U * (P2 - P1) + V * (P3 - P1), with U >= 0, V >= 0, U + V <= 1. If P is located outside of triangle, or triangle is degenerated, the returned parameters correspond to closest point, and returned value is square of the distance from original point to triangle (0 if point is inside).
 
@@ -241,7 +241,7 @@ class poly(object):
         return _Poly.poly_PointOnTriangle(*args)
 
     PointOnTriangle = staticmethod(PointOnTriangle)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(poly self)"""
         return _Poly.poly__kill_pointed(self)
 
@@ -263,7 +263,7 @@ poly._kill_pointed = new_instancemethod(_Poly.poly__kill_pointed,None,poly)
 poly_swigregister = _Poly.poly_swigregister
 poly_swigregister(poly)
 
-def poly_Catenate(*args):
+def poly_Catenate(*args) -> "Handle_Poly_Triangulation" :
   """
     * Computes and stores the link from nodes to triangles and from triangles to neighbouring triangles. This tool is obsolete, replaced by Poly_CoherentTriangulation Algorithm to make minimal loops in a graph Join several triangulations to one new triangulation object. The new triangulation is just a mechanical sum of input triangulations, without node sharing. UV coordinates are dropped in the result.
 
@@ -274,7 +274,7 @@ def poly_Catenate(*args):
     """
   return _Poly.poly_Catenate(*args)
 
-def poly_Write(*args):
+def poly_Write(*args) -> "void" :
   """
     * Writes the content of the triangulation <T> on the stream <OS>. If <Compact> is true this is a 'save' format intended to be read back with the Read method. If compact is False it is a 'Dump' format intended to be informative.
 
@@ -309,7 +309,7 @@ def poly_Write(*args):
     """
   return _Poly.poly_Write(*args)
 
-def poly_Dump(*args):
+def poly_Dump(*args) -> "void" :
   """
     * Dumps the triangulation. This is a call to the previous method with Comapct set to False.
 
@@ -338,7 +338,7 @@ def poly_Dump(*args):
     """
   return _Poly.poly_Dump(*args)
 
-def poly_ComputeNormals(*args):
+def poly_ComputeNormals(*args) -> "void" :
   """
     * Compute node normals for face triangulation as mean normal of surrounding triangles
 
@@ -349,7 +349,7 @@ def poly_ComputeNormals(*args):
     """
   return _Poly.poly_ComputeNormals(*args)
 
-def poly_PointOnTriangle(*args):
+def poly_PointOnTriangle(*args) -> "Standard_Real" :
   """
     * Computes parameters of the point P on triangle defined by points P1, P2, and P3, in 2d. The parameters U and V are defined so that P = P1 + U * (P2 - P1) + V * (P3 - P1), with U >= 0, V >= 0, U + V <= 1. If P is located outside of triangle, or triangle is degenerated, the returned parameters correspond to closest point, and returned value is square of the distance from original point to triangle (0 if point is inside).
 
@@ -389,7 +389,7 @@ class Poly_Array1OfTriangle(object):
 
         """
         _Poly.Poly_Array1OfTriangle_swiginit(self,_Poly.new_Poly_Array1OfTriangle(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Poly_Triangle &
@@ -398,21 +398,21 @@ class Poly_Array1OfTriangle(object):
         """
         return _Poly.Poly_Array1OfTriangle_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Poly.Poly_Array1OfTriangle_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Poly.Poly_Array1OfTriangle_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "Poly_Array1OfTriangle const &" :
         """
         :param Other:
         :type Other: Poly_Array1OfTriangle &
@@ -421,7 +421,7 @@ class Poly_Array1OfTriangle(object):
         """
         return _Poly.Poly_Array1OfTriangle_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "Poly_Array1OfTriangle const &" :
         """
         :param Other:
         :type Other: Poly_Array1OfTriangle &
@@ -430,28 +430,28 @@ class Poly_Array1OfTriangle(object):
         """
         return _Poly.Poly_Array1OfTriangle_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_Array1OfTriangle_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_Array1OfTriangle_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_Array1OfTriangle_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -462,7 +462,7 @@ class Poly_Array1OfTriangle(object):
         """
         return _Poly.Poly_Array1OfTriangle_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Poly_Triangle const &" :
         """
         :param Index:
         :type Index: int
@@ -471,7 +471,7 @@ class Poly_Array1OfTriangle(object):
         """
         return _Poly.Poly_Array1OfTriangle_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Poly_Triangle &" :
         """
         :param Index:
         :type Index: int
@@ -530,7 +530,7 @@ class Poly_CoherentLink(object):
 
         """
         _Poly.Poly_CoherentLink_swiginit(self,_Poly.new_Poly_CoherentLink(*args))
-    def Node(self, *args):
+    def Node(self, *args) -> "Standard_Integer" :
         """
         * /** * Return the node index in the current triangulation. * @param ind * 0 or 1 making distinction of the two nodes that constitute the Link. * Node(0) always returns a smaller number than Node(1). */
 
@@ -541,7 +541,7 @@ class Poly_CoherentLink(object):
         """
         return _Poly.Poly_CoherentLink_Node(self, *args)
 
-    def OppositeNode(self, *args):
+    def OppositeNode(self, *args) -> "Standard_Integer" :
         """
         * /** * Return the opposite node (belonging to the left or right incident triangle) * index in the current triangulation. * @param ind * 0 or 1 making distinction of the two involved triangles: 0 on the left, * 1 on the right side of the Link. */
 
@@ -552,7 +552,7 @@ class Poly_CoherentLink(object):
         """
         return _Poly.Poly_CoherentLink_OppositeNode(self, *args)
 
-    def GetAttribute(self, *args):
+    def GetAttribute(self, *args) -> "Standard_Address" :
         """
         * /** * Query the attribute of the Link. */
 
@@ -561,7 +561,7 @@ class Poly_CoherentLink(object):
         """
         return _Poly.Poly_CoherentLink_GetAttribute(self, *args)
 
-    def SetAttribute(self, *args):
+    def SetAttribute(self, *args) -> "void" :
         """
         * /** * Set the attribute of the Link. */
 
@@ -572,7 +572,7 @@ class Poly_CoherentLink(object):
         """
         return _Poly.Poly_CoherentLink_SetAttribute(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * /** * Query the status of the link - if it is an invalid one. * An invalid link has Node members equal to -1. */
 
@@ -581,7 +581,7 @@ class Poly_CoherentLink(object):
         """
         return _Poly.Poly_CoherentLink_IsEmpty(self, *args)
 
-    def Nullify(self, *args):
+    def Nullify(self, *args) -> "void" :
         """
         * /** * Invalidate this Link. */
 
@@ -625,7 +625,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
 
         """
         _Poly.Poly_CoherentNode_swiginit(self,_Poly.new_Poly_CoherentNode(*args))
-    def SetUV(self, *args):
+    def SetUV(self, *args) -> "void" :
         """
         * /** * Set the UV coordinates of the Node. */
 
@@ -638,7 +638,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_SetUV(self, *args)
 
-    def GetU(self, *args):
+    def GetU(self, *args) -> "Standard_Real" :
         """
         * /** * Get U coordinate of the Node. */
 
@@ -647,7 +647,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_GetU(self, *args)
 
-    def GetV(self, *args):
+    def GetV(self, *args) -> "Standard_Real" :
         """
         * /** * Get V coordinate of the Node. */
 
@@ -656,7 +656,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_GetV(self, *args)
 
-    def SetNormal(self, *args):
+    def SetNormal(self, *args) -> "void" :
         """
         * /** * Define the normal vector in the Node. */
 
@@ -667,7 +667,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_SetNormal(self, *args)
 
-    def HasNormal(self, *args):
+    def HasNormal(self, *args) -> "Standard_Boolean" :
         """
         * /** * Query if the Node contains a normal vector. */
 
@@ -676,7 +676,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_HasNormal(self, *args)
 
-    def GetNormal(self, *args):
+    def GetNormal(self, *args) -> "gp_XYZ" :
         """
         * /** * Get the stored normal in the node. */
 
@@ -685,7 +685,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_GetNormal(self, *args)
 
-    def SetIndex(self, *args):
+    def SetIndex(self, *args) -> "void" :
         """
         * /** * Set the value of node Index. */
 
@@ -696,7 +696,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_SetIndex(self, *args)
 
-    def GetIndex(self, *args):
+    def GetIndex(self, *args) -> "Standard_Integer" :
         """
         * /** * Get the value of node Index. */
 
@@ -705,7 +705,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_GetIndex(self, *args)
 
-    def IsFreeNode(self, *args):
+    def IsFreeNode(self, *args) -> "Standard_Boolean" :
         """
         * /** * Check if this is a free node, i.e., a node without a single * incident triangle. */
 
@@ -714,7 +714,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_IsFreeNode(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         * /** * Reset the Node to void. */
 
@@ -725,7 +725,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_Clear(self, *args)
 
-    def AddTriangle(self, *args):
+    def AddTriangle(self, *args) -> "void" :
         """
         * /** * Connect a triangle to this Node. */
 
@@ -738,7 +738,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_AddTriangle(self, *args)
 
-    def RemoveTriangle(self, *args):
+    def RemoveTriangle(self, *args) -> "Standard_Boolean" :
         """
         * /** * Disconnect a triangle from this Node. */
 
@@ -751,7 +751,7 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_RemoveTriangle(self, *args)
 
-    def TriangleIterator(self, *args):
+    def TriangleIterator(self, *args) -> "Poly_CoherentTriPtr::Iterator" :
         """
         * /** * Create an iterator of incident triangles. */
 
@@ -760,11 +760,11 @@ class Poly_CoherentNode(OCC.gp.gp_XYZ):
         """
         return _Poly.Poly_CoherentNode_TriangleIterator(self, *args)
 
-    def DumpToString(self):
+    def DumpToString(self) -> "std::string" :
         """DumpToString(Poly_CoherentNode self) -> std::string"""
         return _Poly.Poly_CoherentNode_DumpToString(self)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_CoherentNode self)"""
         return _Poly.Poly_CoherentNode__kill_pointed(self)
 
@@ -815,7 +815,7 @@ class Poly_CoherentTriangle(object):
 
         """
         _Poly.Poly_CoherentTriangle_swiginit(self,_Poly.new_Poly_CoherentTriangle(*args))
-    def Node(self, *args):
+    def Node(self, *args) -> "Standard_Integer" :
         """
         * /** * Query the node index in the position given by the parameter 'ind' */
 
@@ -826,7 +826,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_Node(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         * /** * Query if this is a valid triangle. */
 
@@ -835,7 +835,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_IsEmpty(self, *args)
 
-    def SetConnection(self, *args):
+    def SetConnection(self, *args) -> "Standard_Boolean" :
         """
         * /** * Create connection with another triangle theTri. * This method creates both connections: in this triangle and in theTri. You * do not need to call the same method on triangle theTr. * @param iConn * Can be 0, 1 or 2 - index of the node that is opposite to the connection * (shared link). * @param theTr * Triangle that is connected on the given link. * returns * True if successful, False if the connection is rejected * due to improper topology. */
 
@@ -854,7 +854,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_SetConnection(self, *args)
 
-    def RemoveConnection(self, *args):
+    def RemoveConnection(self, *args) -> "Standard_Boolean" :
         """
         * /** * Remove the connection with the given index. * @param iConn * Can be 0, 1 or 2 - index of the node that is opposite to the connection * (shared link). */
 
@@ -871,7 +871,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_RemoveConnection(self, *args)
 
-    def NConnections(self, *args):
+    def NConnections(self, *args) -> "Standard_Integer" :
         """
         * /** * Query the number of connected triangles. */
 
@@ -880,7 +880,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_NConnections(self, *args)
 
-    def GetConnectedNode(self, *args):
+    def GetConnectedNode(self, *args) -> "Standard_Integer" :
         """
         * /** * Query the connected node on the given side. * Returns -1 if there is no connection on the specified side. */
 
@@ -891,7 +891,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_GetConnectedNode(self, *args)
 
-    def GetConnectedTri(self, *args):
+    def GetConnectedTri(self, *args) -> "Poly_CoherentTriangle const *" :
         """
         * /** * Query the connected triangle on the given side. * Returns NULL if there is no connection on the specified side. */
 
@@ -902,7 +902,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_GetConnectedTri(self, *args)
 
-    def GetLink(self, *args):
+    def GetLink(self, *args) -> "Poly_CoherentLink const *" :
         """
         * /** * Query the Link associate with the given side of the Triangle. * May return NULL if there are no links in the triangulation. */
 
@@ -913,7 +913,7 @@ class Poly_CoherentTriangle(object):
         """
         return _Poly.Poly_CoherentTriangle_GetLink(self, *args)
 
-    def FindConnection(self, *args):
+    def FindConnection(self, *args) -> "Standard_Integer" :
         """
         * /** * Retuns the index of the connection with the given triangle, or -1 if not * found. */
 
@@ -958,7 +958,7 @@ class Poly_Connect(object):
 
         """
         _Poly.Poly_Connect_swiginit(self,_Poly.new_Poly_Connect(*args))
-    def Triangulation(self, *args):
+    def Triangulation(self, *args) -> "Handle_Poly_Triangulation" :
         """
         * Returns the triangulation analyzed by this tool.
 
@@ -967,7 +967,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Triangulation(self, *args)
 
-    def Triangle(self, *args):
+    def Triangle(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of a triangle containing the node at index N in the nodes table specific to the triangulation analyzed by this tool
 
@@ -978,7 +978,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Triangle(self, *args)
 
-    def Triangles(self, *args):
+    def Triangles(self, *args) -> "void" :
         """
         * Returns in t1, t2 and t3, the indices of the 3 triangles adjacent to the triangle at index T in the triangles table specific to the triangulation analyzed by this tool. Warning Null indices are returned when there are fewer than 3 adjacent triangles.
 
@@ -995,7 +995,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Triangles(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "void" :
         """
         * Returns, in n1, n2 and n3, the indices of the 3 nodes adjacent to the triangle referenced at index T in the triangles table specific to the triangulation analyzed by this tool. Warning Null indices are returned when there are fewer than 3 adjacent nodes.
 
@@ -1012,7 +1012,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Nodes(self, *args)
 
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         * Initializes an iterator to search for all the triangles containing the node referenced at index N in the nodes table, for the triangulation analyzed by this tool. The iterator is managed by the following functions: - More, which checks if there are still elements in the iterator - Next, which positions the iterator on the next element - Value, which returns the current element. The use of such an iterator provides direct access to the triangles around a particular node, i.e. it avoids iterating on all the component triangles of a triangulation. Example Poly_Connect C(Tr); for (C.Initialize(n1);C.More();C.Next()) { t = C.Value(); }
 
@@ -1023,7 +1023,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Initialize(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is another element in the iterator defined with the function Initialize (i.e. if there is another triangle containing the given node).
 
@@ -1032,7 +1032,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         * Advances the iterator defined with the function Initialize to access the next triangle. Note: There is no action if the iterator is empty (i.e. if the function More returns false).-
 
@@ -1041,7 +1041,7 @@ class Poly_Connect(object):
         """
         return _Poly.Poly_Connect_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         * Returns the index of the current triangle to which the iterator, defined with the function Initialize, points. This is an index in the triangles table specific to the triangulation analyzed by this tool
 
@@ -1091,7 +1091,7 @@ class Poly_HArray1OfTriangle(OCC.MMgt.MMgt_TShared):
 
         """
         _Poly.Poly_HArray1OfTriangle_swiginit(self,_Poly.new_Poly_HArray1OfTriangle(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Poly_Triangle &
@@ -1100,28 +1100,28 @@ class Poly_HArray1OfTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_HArray1OfTriangle_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_HArray1OfTriangle_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_HArray1OfTriangle_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Poly.Poly_HArray1OfTriangle_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1132,7 +1132,7 @@ class Poly_HArray1OfTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_HArray1OfTriangle_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Poly_Triangle const &" :
         """
         :param Index:
         :type Index: int
@@ -1141,7 +1141,7 @@ class Poly_HArray1OfTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_HArray1OfTriangle_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Poly_Triangle &" :
         """
         :param Index:
         :type Index: int
@@ -1150,25 +1150,25 @@ class Poly_HArray1OfTriangle(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_HArray1OfTriangle_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "Poly_Array1OfTriangle const &" :
         """
         :rtype: Poly_Array1OfTriangle
 
         """
         return _Poly.Poly_HArray1OfTriangle_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "Poly_Array1OfTriangle &" :
         """
         :rtype: Poly_Array1OfTriangle
 
         """
         return _Poly.Poly_HArray1OfTriangle_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_HArray1OfTriangle self)"""
         return _Poly.Poly_HArray1OfTriangle__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Poly_HArray1OfTriangle" :
         """GetHandle(Poly_HArray1OfTriangle self) -> Handle_Poly_HArray1OfTriangle"""
         return _Poly.Poly_HArray1OfTriangle_GetHandle(self)
 
@@ -1215,7 +1215,7 @@ Handle_Poly_HArray1OfTriangle._kill_pointed = new_instancemethod(_Poly.Handle_Po
 Handle_Poly_HArray1OfTriangle_swigregister = _Poly.Handle_Poly_HArray1OfTriangle_swigregister
 Handle_Poly_HArray1OfTriangle_swigregister(Handle_Poly_HArray1OfTriangle)
 
-def Handle_Poly_HArray1OfTriangle_DownCast(*args):
+def Handle_Poly_HArray1OfTriangle_DownCast(*args) -> "Handle_Poly_HArray1OfTriangle const" :
   return _Poly.Handle_Poly_HArray1OfTriangle_DownCast(*args)
 Handle_Poly_HArray1OfTriangle_DownCast = _Poly.Handle_Poly_HArray1OfTriangle_DownCast
 
@@ -1232,7 +1232,7 @@ class Poly_Polygon2D(OCC.MMgt.MMgt_TShared):
 
         """
         _Poly.Poly_Polygon2D_swiginit(self,_Poly.new_Poly_Polygon2D(*args))
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "void" :
         """
         * Returns the deflection of this polygon. Deflection is used in cases where the polygon is an approximate representation of a curve. Deflection represents the maximum distance permitted between any point on the curve and the corresponding point on the polygon. By default the deflection value is equal to 0. An algorithm using this 2D polygon with a deflection value equal to 0 considers that it is working with a true polygon and not with an approximate representation of a curve. The Deflection function is used to modify the deflection value of this polygon. The deflection value can be used by any algorithm working with 2D polygons. For example: - An algorithm may use a unique deflection value for all its polygons. In this case it is not necessary to use the Deflection function. - Or an algorithm may want to attach a different deflection to each polygon. In this case, the Deflection function is used to set a value on each polygon, and later to fetch the value.
 
@@ -1247,7 +1247,7 @@ class Poly_Polygon2D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon2D_Deflection(self, *args)
 
-    def NbNodes(self, *args):
+    def NbNodes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of nodes in this polygon. Note: If the polygon is closed, the point of closure is repeated at the end of its table of nodes. Thus, on a closed triangle, the function NbNodes returns 4.
 
@@ -1256,7 +1256,7 @@ class Poly_Polygon2D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon2D_NbNodes(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "TColgp_Array1OfPnt2d const &" :
         """
         * Returns the table of nodes for this polygon.
 
@@ -1265,11 +1265,11 @@ class Poly_Polygon2D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon2D_Nodes(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_Polygon2D self)"""
         return _Poly.Poly_Polygon2D__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Poly_Polygon2D" :
         """GetHandle(Poly_Polygon2D self) -> Handle_Poly_Polygon2D"""
         return _Poly.Poly_Polygon2D_GetHandle(self)
 
@@ -1310,7 +1310,7 @@ Handle_Poly_Polygon2D._kill_pointed = new_instancemethod(_Poly.Handle_Poly_Polyg
 Handle_Poly_Polygon2D_swigregister = _Poly.Handle_Poly_Polygon2D_swigregister
 Handle_Poly_Polygon2D_swigregister(Handle_Poly_Polygon2D)
 
-def Handle_Poly_Polygon2D_DownCast(*args):
+def Handle_Poly_Polygon2D_DownCast(*args) -> "Handle_Poly_Polygon2D const" :
   return _Poly.Handle_Poly_Polygon2D_DownCast(*args)
 Handle_Poly_Polygon2D_DownCast = _Poly.Handle_Poly_Polygon2D_DownCast
 
@@ -1335,7 +1335,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
 
         """
         _Poly.Poly_Polygon3D_swiginit(self,_Poly.new_Poly_Polygon3D(*args))
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "void" :
         """
         * Returns the deflection of this polygon
 
@@ -1350,7 +1350,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_Deflection(self, *args)
 
-    def NbNodes(self, *args):
+    def NbNodes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of nodes in this polygon. Note: If the polygon is closed, the point of closure is repeated at the end of its table of nodes. Thus, on a closed triangle the function NbNodes returns 4.
 
@@ -1359,7 +1359,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_NbNodes(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "TColgp_Array1OfPnt const &" :
         """
         * Returns the table of nodes for this polygon.
 
@@ -1368,7 +1368,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_Nodes(self, *args)
 
-    def HasParameters(self, *args):
+    def HasParameters(self, *args) -> "Standard_Boolean" :
         """
         * Returns the table of the parameters associated with each node in this polygon. HasParameters function checks if parameters are associated with the nodes of this polygon.
 
@@ -1377,7 +1377,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_HasParameters(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "TColStd_Array1OfReal const &" :
         """
         * Returns true if parameters are associated with the nodes in this polygon.
 
@@ -1386,7 +1386,7 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_Parameters(self, *args)
 
-    def ChangeParameters(self, *args):
+    def ChangeParameters(self, *args) -> "TColStd_Array1OfReal &" :
         """
         * Returns the table of the parameters associated with each node in this polygon. ChangeParameters function returnes the array as shared. Therefore if the table is selected by reference you can, by simply modifying it, directly modify the data structure of this polygon.
 
@@ -1395,11 +1395,11 @@ class Poly_Polygon3D(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Polygon3D_ChangeParameters(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_Polygon3D self)"""
         return _Poly.Poly_Polygon3D__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Poly_Polygon3D" :
         """GetHandle(Poly_Polygon3D self) -> Handle_Poly_Polygon3D"""
         return _Poly.Poly_Polygon3D_GetHandle(self)
 
@@ -1443,7 +1443,7 @@ Handle_Poly_Polygon3D._kill_pointed = new_instancemethod(_Poly.Handle_Poly_Polyg
 Handle_Poly_Polygon3D_swigregister = _Poly.Handle_Poly_Polygon3D_swigregister
 Handle_Poly_Polygon3D_swigregister(Handle_Poly_Polygon3D)
 
-def Handle_Poly_Polygon3D_DownCast(*args):
+def Handle_Poly_Polygon3D_DownCast(*args) -> "Handle_Poly_Polygon3D const" :
   return _Poly.Handle_Poly_Polygon3D_DownCast(*args)
 Handle_Poly_Polygon3D_DownCast = _Poly.Handle_Poly_Polygon3D_DownCast
 
@@ -1468,7 +1468,7 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
 
         """
         _Poly.Poly_PolygonOnTriangulation_swiginit(self,_Poly.new_Poly_PolygonOnTriangulation(*args))
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "void" :
         """
         * Returns the deflection of this polygon
 
@@ -1483,7 +1483,7 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_PolygonOnTriangulation_Deflection(self, *args)
 
-    def NbNodes(self, *args):
+    def NbNodes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of nodes for this polygon. Note: If the polygon is closed, the point of closure is repeated at the end of its table of nodes. Thus, on a closed triangle, the function NbNodes returns 4.
 
@@ -1492,7 +1492,7 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_PolygonOnTriangulation_NbNodes(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "TColStd_Array1OfInteger const &" :
         """
         * Returns the table of nodes for this polygon. A node value is an index in the table of nodes specific to an existing triangulation of a shape.
 
@@ -1501,7 +1501,7 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_PolygonOnTriangulation_Nodes(self, *args)
 
-    def HasParameters(self, *args):
+    def HasParameters(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if parameters are associated with the nodes in this polygon.
 
@@ -1510,7 +1510,7 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_PolygonOnTriangulation_HasParameters(self, *args)
 
-    def Parameters(self, *args):
+    def Parameters(self, *args) -> "Handle_TColStd_HArray1OfReal" :
         """
         * Returns the table of the parameters associated with each node in this polygon. Warning Use the function HasParameters to check if parameters are associated with the nodes in this polygon.
 
@@ -1519,11 +1519,11 @@ class Poly_PolygonOnTriangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_PolygonOnTriangulation_Parameters(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_PolygonOnTriangulation self)"""
         return _Poly.Poly_PolygonOnTriangulation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Poly_PolygonOnTriangulation" :
         """GetHandle(Poly_PolygonOnTriangulation self) -> Handle_Poly_PolygonOnTriangulation"""
         return _Poly.Poly_PolygonOnTriangulation_GetHandle(self)
 
@@ -1566,7 +1566,7 @@ Handle_Poly_PolygonOnTriangulation._kill_pointed = new_instancemethod(_Poly.Hand
 Handle_Poly_PolygonOnTriangulation_swigregister = _Poly.Handle_Poly_PolygonOnTriangulation_swigregister
 Handle_Poly_PolygonOnTriangulation_swigregister(Handle_Poly_PolygonOnTriangulation)
 
-def Handle_Poly_PolygonOnTriangulation_DownCast(*args):
+def Handle_Poly_PolygonOnTriangulation_DownCast(*args) -> "Handle_Poly_PolygonOnTriangulation const" :
   return _Poly.Handle_Poly_PolygonOnTriangulation_DownCast(*args)
 Handle_Poly_PolygonOnTriangulation_DownCast = _Poly.Handle_Poly_PolygonOnTriangulation_DownCast
 
@@ -1591,7 +1591,7 @@ class Poly_Triangle(object):
 
         """
         _Poly.Poly_Triangle_swiginit(self,_Poly.new_Poly_Triangle(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         * Sets the value of the three nodes of this triangle to N1, N2 and N3 respectively.
 
@@ -1614,7 +1614,7 @@ class Poly_Triangle(object):
         """
         return _Poly.Poly_Triangle_Set(self, *args)
 
-    def Get(self, *args):
+    def Get(self, *args) -> "void" :
         """
         * Returns the node indices of this triangle in N1, N2 and N3.
 
@@ -1629,7 +1629,7 @@ class Poly_Triangle(object):
         """
         return _Poly.Poly_Triangle_Get(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Standard_Integer" :
         """
         * Get the node of given Index. Raises OutOfRange from Standard if Index is not in 1,2,3
 
@@ -1640,7 +1640,7 @@ class Poly_Triangle(object):
         """
         return _Poly.Poly_Triangle_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Standard_Integer &" :
         """
         * Get the node of given Index. Raises OutOfRange if Index is not in 1,2,3
 
@@ -1702,7 +1702,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
 
         """
         _Poly.Poly_Triangulation_swiginit(self,_Poly.new_Poly_Triangulation(*args))
-    def Deflection(self, *args):
+    def Deflection(self, *args) -> "void" :
         """
         * Returns the deflection of this triangulation.
 
@@ -1717,7 +1717,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_Deflection(self, *args)
 
-    def RemoveUVNodes(self, *args):
+    def RemoveUVNodes(self, *args) -> "void" :
         """
         * Deallocates the UV nodes.
 
@@ -1726,7 +1726,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_RemoveUVNodes(self, *args)
 
-    def NbNodes(self, *args):
+    def NbNodes(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of nodes for this triangulation. Null if the nodes are not yet defined.
 
@@ -1735,7 +1735,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_NbNodes(self, *args)
 
-    def NbTriangles(self, *args):
+    def NbTriangles(self, *args) -> "Standard_Integer" :
         """
         * Returns the number of triangles for this triangulation. Null if the Triangles are not yet defined.
 
@@ -1744,7 +1744,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_NbTriangles(self, *args)
 
-    def HasUVNodes(self, *args):
+    def HasUVNodes(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if 2D nodes are associated with 3D nodes for this triangulation.
 
@@ -1753,7 +1753,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_HasUVNodes(self, *args)
 
-    def Nodes(self, *args):
+    def Nodes(self, *args) -> "TColgp_Array1OfPnt const &" :
         """
         * Returns the table of 3D nodes (3D points) for this triangulation.
 
@@ -1762,7 +1762,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_Nodes(self, *args)
 
-    def ChangeNodes(self, *args):
+    def ChangeNodes(self, *args) -> "TColgp_Array1OfPnt &" :
         """
         * Returns the table of 3D nodes (3D points) for this triangulation. The returned array is shared. Therefore if the table is selected by reference, you can, by simply modifying it, directly modify the data structure of this triangulation.
 
@@ -1771,7 +1771,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_ChangeNodes(self, *args)
 
-    def UVNodes(self, *args):
+    def UVNodes(self, *args) -> "TColgp_Array1OfPnt2d const &" :
         """
         * Returns the table of 2D nodes (2D points) associated with each 3D node of this triangulation. The function HasUVNodes checks if 2D nodes are associated with the 3D nodes of this triangulation. Const reference on the 2d nodes values.
 
@@ -1780,7 +1780,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_UVNodes(self, *args)
 
-    def ChangeUVNodes(self, *args):
+    def ChangeUVNodes(self, *args) -> "TColgp_Array1OfPnt2d &" :
         """
         * Returns the table of 2D nodes (2D points) associated with each 3D node of this triangulation. Function ChangeUVNodes shares the returned array. Therefore if the table is selected by reference, you can, by simply modifying it, directly modify the data structure of this triangulation.
 
@@ -1789,7 +1789,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_ChangeUVNodes(self, *args)
 
-    def Triangles(self, *args):
+    def Triangles(self, *args) -> "Poly_Array1OfTriangle const &" :
         """
         * Returns the table of triangles for this triangulation.
 
@@ -1798,7 +1798,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_Triangles(self, *args)
 
-    def ChangeTriangles(self, *args):
+    def ChangeTriangles(self, *args) -> "Poly_Array1OfTriangle &" :
         """
         * Returns the table of triangles for this triangulation. Function ChangeUVNodes shares the returned array. Therefore if the table is selected by reference, you can, by simply modifying it, directly modify the data structure of this triangulation.
 
@@ -1807,7 +1807,7 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_ChangeTriangles(self, *args)
 
-    def SetNormals(self, *args):
+    def SetNormals(self, *args) -> "void" :
         """
         * Sets the table of node normals. raises exception if length of theNormals != 3*NbNodes
 
@@ -1818,32 +1818,32 @@ class Poly_Triangulation(OCC.MMgt.MMgt_TShared):
         """
         return _Poly.Poly_Triangulation_SetNormals(self, *args)
 
-    def Normals(self, *args):
+    def Normals(self, *args) -> "TShort_Array1OfShortReal const &" :
         """
         :rtype: TShort_Array1OfShortReal
 
         """
         return _Poly.Poly_Triangulation_Normals(self, *args)
 
-    def ChangeNormals(self, *args):
+    def ChangeNormals(self, *args) -> "TShort_Array1OfShortReal &" :
         """
         :rtype: TShort_Array1OfShortReal
 
         """
         return _Poly.Poly_Triangulation_ChangeNormals(self, *args)
 
-    def HasNormals(self, *args):
+    def HasNormals(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Poly.Poly_Triangulation_HasNormals(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Poly_Triangulation self)"""
         return _Poly.Poly_Triangulation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Poly_Triangulation" :
         """GetHandle(Poly_Triangulation self) -> Handle_Poly_Triangulation"""
         return _Poly.Poly_Triangulation_GetHandle(self)
 
@@ -1896,7 +1896,7 @@ Handle_Poly_Triangulation._kill_pointed = new_instancemethod(_Poly.Handle_Poly_T
 Handle_Poly_Triangulation_swigregister = _Poly.Handle_Poly_Triangulation_swigregister
 Handle_Poly_Triangulation_swigregister(Handle_Poly_Triangulation)
 
-def Handle_Poly_Triangulation_DownCast(*args):
+def Handle_Poly_Triangulation_DownCast(*args) -> "Handle_Poly_Triangulation const" :
   return _Poly.Handle_Poly_Triangulation_DownCast(*args)
 Handle_Poly_Triangulation_DownCast = _Poly.Handle_Poly_Triangulation_DownCast
 

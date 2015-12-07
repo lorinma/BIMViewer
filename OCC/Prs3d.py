@@ -150,7 +150,7 @@ Prs3d_TOLP_Segment = _Prs3d.Prs3d_TOLP_Segment
 class prs3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MatchSegment(*args):
+    def MatchSegment(*args) -> "Standard_Real &" :
         """
         * draws an arrow at a given location, with respect to a given direction.
 
@@ -188,7 +188,7 @@ prs3d._kill_pointed = new_instancemethod(_Prs3d.prs3d__kill_pointed,None,prs3d)
 prs3d_swigregister = _Prs3d.prs3d_swigregister
 prs3d_swigregister(prs3d)
 
-def prs3d_MatchSegment(*args):
+def prs3d_MatchSegment(*args) -> "Standard_Real &" :
   """
     * draws an arrow at a given location, with respect to a given direction.
 
@@ -215,11 +215,11 @@ class Prs3d_BasicAspect(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_BasicAspect self)"""
         return _Prs3d.Prs3d_BasicAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_BasicAspect" :
         """GetHandle(Prs3d_BasicAspect self) -> Handle_Prs3d_BasicAspect"""
         return _Prs3d.Prs3d_BasicAspect_GetHandle(self)
 
@@ -257,7 +257,7 @@ Handle_Prs3d_BasicAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_
 Handle_Prs3d_BasicAspect_swigregister = _Prs3d.Handle_Prs3d_BasicAspect_swigregister
 Handle_Prs3d_BasicAspect_swigregister(Handle_Prs3d_BasicAspect)
 
-def Handle_Prs3d_BasicAspect_DownCast(*args):
+def Handle_Prs3d_BasicAspect_DownCast(*args) -> "Handle_Prs3d_BasicAspect const" :
   return _Prs3d.Handle_Prs3d_BasicAspect_DownCast(*args)
 Handle_Prs3d_BasicAspect_DownCast = _Prs3d.Handle_Prs3d_BasicAspect_DownCast
 
@@ -276,7 +276,7 @@ class Prs3d_DimensionUnits(object):
 
         """
         _Prs3d.Prs3d_DimensionUnits_swiginit(self,_Prs3d.new_Prs3d_DimensionUnits(*args))
-    def SetAngleUnits(self, *args):
+    def SetAngleUnits(self, *args) -> "void" :
         """
         * Sets angle units
 
@@ -287,7 +287,7 @@ class Prs3d_DimensionUnits(object):
         """
         return _Prs3d.Prs3d_DimensionUnits_SetAngleUnits(self, *args)
 
-    def GetAngleUnits(self, *args):
+    def GetAngleUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * returns angle units
 
@@ -296,7 +296,7 @@ class Prs3d_DimensionUnits(object):
         """
         return _Prs3d.Prs3d_DimensionUnits_GetAngleUnits(self, *args)
 
-    def SetLengthUnits(self, *args):
+    def SetLengthUnits(self, *args) -> "void" :
         """
         * Sets length units
 
@@ -307,7 +307,7 @@ class Prs3d_DimensionUnits(object):
         """
         return _Prs3d.Prs3d_DimensionUnits_SetLengthUnits(self, *args)
 
-    def GetLengthUnits(self, *args):
+    def GetLengthUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * returns length units
 
@@ -341,7 +341,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
 
         """
         _Prs3d.Prs3d_Drawer_swiginit(self,_Prs3d.new_Prs3d_Drawer(*args))
-    def SetTypeOfDeflection(self, *args):
+    def SetTypeOfDeflection(self, *args) -> "void" :
         """
         * Sets the type of chordal deflection. This indicates whether the deflection value is absolute or relative to the size of the object.
 
@@ -352,7 +352,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetTypeOfDeflection(self, *args)
 
-    def TypeOfDeflection(self, *args):
+    def TypeOfDeflection(self, *args) -> "Aspect_TypeOfDeflection" :
         """
         * Returns the type of chordal deflection. This indicates whether the deflection value is absolute or relative to the size of the object.
 
@@ -361,7 +361,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_TypeOfDeflection(self, *args)
 
-    def SetMaximalChordialDeviation(self, *args):
+    def SetMaximalChordialDeviation(self, *args) -> "void" :
         """
         * Defines the maximal chordial deviation when drawing any curve; Even if the type of deviation is set to TOD_Relative, this value is used by:  Prs3d_DeflectionCurve Prs3d_WFDeflectionSurface Prs3d_WFDeflectionRestrictedFace
 
@@ -372,7 +372,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetMaximalChordialDeviation(self, *args)
 
-    def MaximalChordialDeviation(self, *args):
+    def MaximalChordialDeviation(self, *args) -> "Quantity_Length" :
         """
         * returns the maximal chordial deviation. Default value is 0.1
 
@@ -381,7 +381,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_MaximalChordialDeviation(self, *args)
 
-    def SetDeviationCoefficient(self, *args):
+    def SetDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the deviation coefficient aCoefficient.
 
@@ -392,7 +392,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDeviationCoefficient(self, *args)
 
-    def DeviationCoefficient(self, *args):
+    def DeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * Returns the deviation coefficient.
 
@@ -401,7 +401,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DeviationCoefficient(self, *args)
 
-    def SetHLRDeviationCoefficient(self, *args):
+    def SetHLRDeviationCoefficient(self, *args) -> "void" :
         """
         * Sets the deviation coefficient aCoefficient for removal of hidden lines created by different viewpoints in different presentations. The Default value is 0.02.
 
@@ -412,7 +412,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetHLRDeviationCoefficient(self, *args)
 
-    def HLRDeviationCoefficient(self, *args):
+    def HLRDeviationCoefficient(self, *args) -> "Standard_Real" :
         """
         * Returns the real number value of the hidden line removal deviation coefficient.
 
@@ -421,7 +421,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_HLRDeviationCoefficient(self, *args)
 
-    def SetHLRAngle(self, *args):
+    def SetHLRAngle(self, *args) -> "void" :
         """
         * Sets anAngle, the angle of maximum chordal deviation for removal of hidden lines created by different viewpoints in different presentations. The default value is 20*PI/180.
 
@@ -432,7 +432,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetHLRAngle(self, *args)
 
-    def HLRAngle(self, *args):
+    def HLRAngle(self, *args) -> "Standard_Real" :
         """
         * Returns the real number value of the deviation angle in hidden line removal views. The default value is 20*PI/180.
 
@@ -441,7 +441,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_HLRAngle(self, *args)
 
-    def SetDeviationAngle(self, *args):
+    def SetDeviationAngle(self, *args) -> "void" :
         """
         * Sets deviation angle
 
@@ -452,7 +452,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDeviationAngle(self, *args)
 
-    def DeviationAngle(self, *args):
+    def DeviationAngle(self, *args) -> "Standard_Real" :
         """
         * Returns the value for deviation angle.
 
@@ -461,7 +461,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DeviationAngle(self, *args)
 
-    def SetDiscretisation(self, *args):
+    def SetDiscretisation(self, *args) -> "void" :
         """
         * Sets the discretisation parameter d.
 
@@ -472,7 +472,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDiscretisation(self, *args)
 
-    def Discretisation(self, *args):
+    def Discretisation(self, *args) -> "Standard_Integer" :
         """
         * Returns the discretisation setting.
 
@@ -481,7 +481,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_Discretisation(self, *args)
 
-    def SetMaximalParameterValue(self, *args):
+    def SetMaximalParameterValue(self, *args) -> "void" :
         """
         * defines the maximum value allowed for the first and last parameters of an infinite curve. Default value: 500.
 
@@ -492,7 +492,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetMaximalParameterValue(self, *args)
 
-    def MaximalParameterValue(self, *args):
+    def MaximalParameterValue(self, *args) -> "Standard_Real" :
         """
         * Sets the maximum value allowed for the first and last parameters of an infinite curve. By default, this value is 500000.
 
@@ -501,7 +501,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_MaximalParameterValue(self, *args)
 
-    def SetIsoOnPlane(self, *args):
+    def SetIsoOnPlane(self, *args) -> "void" :
         """
         * Sets IsoOnPlane on or off by setting the parameter OnOff to true or false.
 
@@ -512,7 +512,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetIsoOnPlane(self, *args)
 
-    def IsoOnPlane(self, *args):
+    def IsoOnPlane(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the drawing of isos on planes is enabled.
 
@@ -521,7 +521,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_IsoOnPlane(self, *args)
 
-    def SetTypeOfHLR(self, *args):
+    def SetTypeOfHLR(self, *args) -> "void" :
         """
         * Sets the type of HLR algorithm used by drawer's interactive objects
 
@@ -532,7 +532,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetTypeOfHLR(self, *args)
 
-    def TypeOfHLR(self, *args):
+    def TypeOfHLR(self, *args) -> "Prs3d_TypeOfHLR" :
         """
         * Gets the myTypeOfHLR value
 
@@ -541,7 +541,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_TypeOfHLR(self, *args)
 
-    def UIsoAspect(self, *args):
+    def UIsoAspect(self, *args) -> "Handle_Prs3d_IsoAspect" :
         """
         * Defines the attributes which are used when drawing an U isoparametric curve of a face. Defines the number of U isoparametric curves to be drawn for a single face. The LineAspect for U isoparametric lines can be edited (methods SetColor, SetTypeOfLine, SetWidth, SetNumber) The default values are: COLOR : Quantity_NOC_GRAY75 TYPE OF LINE: Aspect_TOL_SOLID WIDTH : 0.5 These attributes are used by the following algorithms: Prs3d_WFDeflectionSurface Prs3d_WFDeflectionRestrictedFace
 
@@ -550,7 +550,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_UIsoAspect(self, *args)
 
-    def SetUIsoAspect(self, *args):
+    def SetUIsoAspect(self, *args) -> "void" :
         """
         :param anAspect:
         :type anAspect: Handle_Prs3d_IsoAspect &
@@ -559,7 +559,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetUIsoAspect(self, *args)
 
-    def VIsoAspect(self, *args):
+    def VIsoAspect(self, *args) -> "Handle_Prs3d_IsoAspect" :
         """
         * Defines the attributes which are used when drawing an V isoparametric curve of a face. Defines the number of V isoparametric curves to be drawn for a single face. The LineAspect for V isoparametric lines can be edited (methods SetColor, SetTypeOfLine, SetWidth, SetNumber) The default values are: COLOR : Quantity_NOC_GRAY82 TYPE OF LINE: Aspect_TOL_SOLID WIDTH : 0.5 These attributes are used by the following algorithms: Prs3d_WFDeflectionSurface Prs3d_WFDeflectionRestrictedFace
 
@@ -568,7 +568,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_VIsoAspect(self, *args)
 
-    def SetVIsoAspect(self, *args):
+    def SetVIsoAspect(self, *args) -> "void" :
         """
         * Sets the appearance of V isoparameters - anAspect.
 
@@ -579,7 +579,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetVIsoAspect(self, *args)
 
-    def FreeBoundaryAspect(self, *args):
+    def FreeBoundaryAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Stores the values for presentation of free boundaries, in other words, boundaries which are not shared. The LineAspect for the free boundaries can be edited. The default values are: Color: Quantity_NOC_GREEN Type of line: Aspect_TOL_SOLID Width: 1. These attributes are used by the algorithm Prs3d_WFShape
 
@@ -588,7 +588,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_FreeBoundaryAspect(self, *args)
 
-    def SetFreeBoundaryAspect(self, *args):
+    def SetFreeBoundaryAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for the display of free boundaries.
 
@@ -599,7 +599,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetFreeBoundaryAspect(self, *args)
 
-    def SetFreeBoundaryDraw(self, *args):
+    def SetFreeBoundaryDraw(self, *args) -> "void" :
         """
         * Sets free boundary drawing on or off by setting the parameter OnOff to true or false.
 
@@ -610,7 +610,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetFreeBoundaryDraw(self, *args)
 
-    def FreeBoundaryDraw(self, *args):
+    def FreeBoundaryDraw(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the drawing of the shared boundaries is disabled. True is the default setting.
 
@@ -619,7 +619,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_FreeBoundaryDraw(self, *args)
 
-    def WireAspect(self, *args):
+    def WireAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns wire aspect settings. The LineAspect for the wire can be edited. The default values are: Color: Quantity_NOC_RED Type of line: Aspect_TOL_SOLID Width: 1. These attributes are used by the algorithm Prs3d_WFShape
 
@@ -628,7 +628,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_WireAspect(self, *args)
 
-    def SetWireAspect(self, *args):
+    def SetWireAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display of wires.
 
@@ -639,7 +639,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetWireAspect(self, *args)
 
-    def SetWireDraw(self, *args):
+    def SetWireDraw(self, *args) -> "void" :
         """
         * Sets WireDraw on or off by setting the parameter OnOff to true or false.
 
@@ -650,7 +650,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetWireDraw(self, *args)
 
-    def WireDraw(self, *args):
+    def WireDraw(self, *args) -> "Standard_Boolean" :
         """
         * returns True if the drawing of the wire is enabled.
 
@@ -659,7 +659,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_WireDraw(self, *args)
 
-    def UnFreeBoundaryAspect(self, *args):
+    def UnFreeBoundaryAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns settings for shared boundary line aspects. The LineAspect for the unfree boundaries can be edited. The default values are: Color: Quantity_NOC_YELLOW Type of line: Aspect_TOL_SOLID Width: 1. These attributes are used by the algorithm Prs3d_WFShape
 
@@ -668,7 +668,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_UnFreeBoundaryAspect(self, *args)
 
-    def SetUnFreeBoundaryAspect(self, *args):
+    def SetUnFreeBoundaryAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for the display of shared boundaries.
 
@@ -679,7 +679,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetUnFreeBoundaryAspect(self, *args)
 
-    def SetUnFreeBoundaryDraw(self, *args):
+    def SetUnFreeBoundaryDraw(self, *args) -> "void" :
         """
         * Sets FreeBoundaryDraw on or off by setting the parameter OnOff to true or false. By default the unfree boundaries are drawn.
 
@@ -690,7 +690,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetUnFreeBoundaryDraw(self, *args)
 
-    def UnFreeBoundaryDraw(self, *args):
+    def UnFreeBoundaryDraw(self, *args) -> "Standard_Boolean" :
         """
         * Returns True if the drawing of the shared boundaries is enabled. True is the default setting.
 
@@ -699,7 +699,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_UnFreeBoundaryDraw(self, *args)
 
-    def LineAspect(self, *args):
+    def LineAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns settings for line aspects. These settings can be edited. The default values are: Color: Quantity_NOC_YELLOW Type of line: Aspect_TOL_SOLID Width: 1. These attributes are used by the following algorithms: Prs3d_Curve Prs3d_Line Prs3d_HLRShape
 
@@ -708,7 +708,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_LineAspect(self, *args)
 
-    def SetLineAspect(self, *args):
+    def SetLineAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display attributes of lines.
 
@@ -719,7 +719,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetLineAspect(self, *args)
 
-    def TextAspect(self, *args):
+    def TextAspect(self, *args) -> "Handle_Prs3d_TextAspect" :
         """
         * Returns settings for text aspect. These settings can be edited. The default value is: - Color: Quantity_NOC_YELLOW
 
@@ -728,7 +728,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_TextAspect(self, *args)
 
-    def SetTextAspect(self, *args):
+    def SetTextAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display attributes of text.
 
@@ -739,7 +739,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetTextAspect(self, *args)
 
-    def SetLineArrowDraw(self, *args):
+    def SetLineArrowDraw(self, *args) -> "void" :
         """
         * enables the drawing of an arrow at the end of each line. By default the arrows are not drawn.
 
@@ -750,7 +750,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetLineArrowDraw(self, *args)
 
-    def LineArrowDraw(self, *args):
+    def LineArrowDraw(self, *args) -> "Standard_Boolean" :
         """
         * Sets LineArrowDraw on or off by setting the parameter OnOff to true or false.
 
@@ -759,7 +759,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_LineArrowDraw(self, *args)
 
-    def ArrowAspect(self, *args):
+    def ArrowAspect(self, *args) -> "Handle_Prs3d_ArrowAspect" :
         """
         * Returns the attributes for display of arrows.
 
@@ -768,7 +768,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_ArrowAspect(self, *args)
 
-    def SetArrowAspect(self, *args):
+    def SetArrowAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display attributes of arrows.
 
@@ -779,7 +779,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetArrowAspect(self, *args)
 
-    def PointAspect(self, *args):
+    def PointAspect(self, *args) -> "Handle_Prs3d_PointAspect" :
         """
         * Returns the point aspect setting. The default values are Color: Quantity_NOC_YELLOW Type of marker: Aspect_TOM_PLUS Scale: 1. These attributes are used by the algorithms Prs3d_Point.
 
@@ -788,7 +788,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_PointAspect(self, *args)
 
-    def SetPointAspect(self, *args):
+    def SetPointAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display attributes of points
 
@@ -799,7 +799,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetPointAspect(self, *args)
 
-    def ShadingAspect(self, *args):
+    def ShadingAspect(self, *args) -> "Handle_Prs3d_ShadingAspect" :
         """
         * Returns settings for shading aspects. These settings can be edited. The default values are: - Color: Quantity_NOC_YELLOW - Material: Graphic3d_NOM_BRASS Shading aspect is obtained through decomposition of 3d faces into triangles, each side of each triangle being a chord of the corresponding curved edge in the face. Reflection of light in each projector perspective is then calculated for each of the resultant triangular planes.
 
@@ -808,7 +808,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_ShadingAspect(self, *args)
 
-    def SetShadingAspect(self, *args):
+    def SetShadingAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for display attributes of shading.
 
@@ -819,7 +819,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetShadingAspect(self, *args)
 
-    def SetShadingAspectGlobal(self, *args):
+    def SetShadingAspectGlobal(self, *args) -> "void" :
         """
         * indicates that the ShadingAspect will be apply to the whole presentation. This allows to modify the aspect without recomputing the content of the presentation.
 
@@ -830,14 +830,14 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetShadingAspectGlobal(self, *args)
 
-    def ShadingAspectGlobal(self, *args):
+    def ShadingAspectGlobal(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_Drawer_ShadingAspectGlobal(self, *args)
 
-    def DrawHiddenLine(self, *args):
+    def DrawHiddenLine(self, *args) -> "Standard_Boolean" :
         """
         * returns Standard_True if the hidden lines are to be drawn. By default the hidden lines are not drawn.
 
@@ -846,7 +846,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DrawHiddenLine(self, *args)
 
-    def EnableDrawHiddenLine(self, *args):
+    def EnableDrawHiddenLine(self, *args) -> "void" :
         """
         * Enables the DrawHiddenLine function.
 
@@ -855,7 +855,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_EnableDrawHiddenLine(self, *args)
 
-    def DisableDrawHiddenLine(self, *args):
+    def DisableDrawHiddenLine(self, *args) -> "void" :
         """
         * Disables the DrawHiddenLine function.
 
@@ -864,7 +864,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DisableDrawHiddenLine(self, *args)
 
-    def HiddenLineAspect(self, *args):
+    def HiddenLineAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns settings for hidden line aspects. These settings can be edited. The default values are: Color: Quantity_NOC_YELLOW Type of line: Aspect_TOL_DASH Width: 1.
 
@@ -873,7 +873,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_HiddenLineAspect(self, *args)
 
-    def SetHiddenLineAspect(self, *args):
+    def SetHiddenLineAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for the display of hidden lines in hidden line removal mode.
 
@@ -884,7 +884,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetHiddenLineAspect(self, *args)
 
-    def SeenLineAspect(self, *args):
+    def SeenLineAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns settings for seen line aspects. These settings can be edited. The default values are: Color: Quantity_NOC_YELLOW Type of line: Aspect_TOL_SOLID Width: 1.
 
@@ -893,7 +893,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SeenLineAspect(self, *args)
 
-    def SetSeenLineAspect(self, *args):
+    def SetSeenLineAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for the display of seen lines in hidden line removal mode.
 
@@ -904,7 +904,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetSeenLineAspect(self, *args)
 
-    def PlaneAspect(self, *args):
+    def PlaneAspect(self, *args) -> "Handle_Prs3d_PlaneAspect" :
         """
         * Returns settings for the appearance of planes.
 
@@ -913,7 +913,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_PlaneAspect(self, *args)
 
-    def SetPlaneAspect(self, *args):
+    def SetPlaneAspect(self, *args) -> "void" :
         """
         * Sets the parameter anAspect for the display of planes.
 
@@ -924,7 +924,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetPlaneAspect(self, *args)
 
-    def VectorAspect(self, *args):
+    def VectorAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns settings for the appearance of vectors. These settings can be edited. The default values are: Color: Quantity_NOC_SKYBLUE Type of line: Aspect_TOL_SOLID Width: 1.
 
@@ -933,7 +933,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_VectorAspect(self, *args)
 
-    def SetVectorAspect(self, *args):
+    def SetVectorAspect(self, *args) -> "void" :
         """
         * Sets the modality anAspect for the display of vectors.
 
@@ -944,7 +944,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetVectorAspect(self, *args)
 
-    def DatumAspect(self, *args):
+    def DatumAspect(self, *args) -> "Handle_Prs3d_DatumAspect" :
         """
         * Returns settings for the appearance of datums. These settings can be edited. The default values for the three axes are: Color: Quantity_NOC_PEACHPUFF Type of line: Aspect_TOL_SOLID Width: 1.
 
@@ -953,7 +953,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DatumAspect(self, *args)
 
-    def SetDatumAspect(self, *args):
+    def SetDatumAspect(self, *args) -> "void" :
         """
         * Sets the modality anAspect for the display of datums.
 
@@ -964,7 +964,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDatumAspect(self, *args)
 
-    def DimensionAspect(self, *args):
+    def DimensionAspect(self, *args) -> "Handle_Prs3d_DimensionAspect" :
         """
         * Returns settings for the appearance of dimensions.
 
@@ -973,7 +973,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DimensionAspect(self, *args)
 
-    def SetDimensionAspect(self, *args):
+    def SetDimensionAspect(self, *args) -> "void" :
         """
         * Sets the settings for the appearance of dimensions.
 
@@ -984,7 +984,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDimensionAspect(self, *args)
 
-    def SetDimLengthModelUnits(self, *args):
+    def SetDimLengthModelUnits(self, *args) -> "void" :
         """
         * Sets dimension length model units for computing of dimension presentation.
 
@@ -995,7 +995,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDimLengthModelUnits(self, *args)
 
-    def SetDimAngleModelUnits(self, *args):
+    def SetDimAngleModelUnits(self, *args) -> "void" :
         """
         * Sets dimension angle model units for computing of dimension presentation.
 
@@ -1006,7 +1006,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDimAngleModelUnits(self, *args)
 
-    def DimLengthModelUnits(self, *args):
+    def DimLengthModelUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns length model units for the dimension presentation.
 
@@ -1015,7 +1015,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DimLengthModelUnits(self, *args)
 
-    def DimAngleModelUnits(self, *args):
+    def DimAngleModelUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns angle model units for the dimension presentation.
 
@@ -1024,7 +1024,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DimAngleModelUnits(self, *args)
 
-    def SetDimLengthDisplayUnits(self, *args):
+    def SetDimLengthDisplayUnits(self, *args) -> "void" :
         """
         * Sets length units in which value for dimension presentation is displayed.
 
@@ -1035,7 +1035,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDimLengthDisplayUnits(self, *args)
 
-    def SetDimAngleDisplayUnits(self, *args):
+    def SetDimAngleDisplayUnits(self, *args) -> "void" :
         """
         * Sets angle units in which value for dimension presentation is displayed.
 
@@ -1046,7 +1046,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetDimAngleDisplayUnits(self, *args)
 
-    def DimLengthDisplayUnits(self, *args):
+    def DimLengthDisplayUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns length units in which dimension presentation is displayed.
 
@@ -1055,7 +1055,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DimLengthDisplayUnits(self, *args)
 
-    def DimAngleDisplayUnits(self, *args):
+    def DimAngleDisplayUnits(self, *args) -> "TCollection_AsciiString const &" :
         """
         * Returns angle units in which dimension presentation is displayed.
 
@@ -1064,7 +1064,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_DimAngleDisplayUnits(self, *args)
 
-    def SectionAspect(self, *args):
+    def SectionAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * The LineAspect for the wire can be edited. The default values are: Color: Quantity_NOC_ORANGE Type of line: Aspect_TOL_SOLID Width: 1. These attributes are used by the algorithm Prs3d_WFShape.
 
@@ -1073,7 +1073,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SectionAspect(self, *args)
 
-    def SetSectionAspect(self, *args):
+    def SetSectionAspect(self, *args) -> "void" :
         """
         * Sets the parameter theAspect for display attributes of sections.
 
@@ -1084,7 +1084,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetSectionAspect(self, *args)
 
-    def SetFaceBoundaryDraw(self, *args):
+    def SetFaceBoundaryDraw(self, *args) -> "void" :
         """
         * Enables or disables face boundary drawing for shading presentations. theIsEnabled is a boolean flag indicating whether the face boundaries should be drawn or not.
 
@@ -1095,7 +1095,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetFaceBoundaryDraw(self, *args)
 
-    def IsFaceBoundaryDraw(self, *args):
+    def IsFaceBoundaryDraw(self, *args) -> "Standard_Boolean" :
         """
         * Checks whether the face boundary drawing is enabled or not.
 
@@ -1104,7 +1104,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_IsFaceBoundaryDraw(self, *args)
 
-    def SetFaceBoundaryAspect(self, *args):
+    def SetFaceBoundaryAspect(self, *args) -> "void" :
         """
         * Sets line aspect for face boundaries. theAspect is the line aspect that determines the look of the face boundaries.
 
@@ -1115,7 +1115,7 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_SetFaceBoundaryAspect(self, *args)
 
-    def FaceBoundaryAspect(self, *args):
+    def FaceBoundaryAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns line aspect of face boundaries.
 
@@ -1124,11 +1124,11 @@ class Prs3d_Drawer(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Drawer_FaceBoundaryAspect(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_Drawer self)"""
         return _Prs3d.Prs3d_Drawer__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_Drawer" :
         """GetHandle(Prs3d_Drawer self) -> Handle_Prs3d_Drawer"""
         return _Prs3d.Prs3d_Drawer_GetHandle(self)
 
@@ -1245,7 +1245,7 @@ Handle_Prs3d_Drawer._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_Drawe
 Handle_Prs3d_Drawer_swigregister = _Prs3d.Handle_Prs3d_Drawer_swigregister
 Handle_Prs3d_Drawer_swigregister(Handle_Prs3d_Drawer)
 
-def Handle_Prs3d_Drawer_DownCast(*args):
+def Handle_Prs3d_Drawer_DownCast(*args) -> "Handle_Prs3d_Drawer const" :
   return _Prs3d.Handle_Prs3d_Drawer_DownCast(*args)
 Handle_Prs3d_Drawer_DownCast = _Prs3d.Handle_Prs3d_Drawer_DownCast
 
@@ -1272,7 +1272,7 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
 
         """
         _Prs3d.Prs3d_PlaneSet_swiginit(self,_Prs3d.new_Prs3d_PlaneSet(*args))
-    def SetDirection(self, *args):
+    def SetDirection(self, *args) -> "void" :
         """
         :param X:
         :type X: float
@@ -1285,7 +1285,7 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_PlaneSet_SetDirection(self, *args)
 
-    def SetLocation(self, *args):
+    def SetLocation(self, *args) -> "void" :
         """
         :param X:
         :type X: Quantity_Length
@@ -1298,7 +1298,7 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_PlaneSet_SetLocation(self, *args)
 
-    def SetOffset(self, *args):
+    def SetOffset(self, *args) -> "void" :
         """
         :param anOffset:
         :type anOffset: Quantity_Length
@@ -1307,21 +1307,21 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_PlaneSet_SetOffset(self, *args)
 
-    def Plane(self, *args):
+    def Plane(self, *args) -> "gp_Pln" :
         """
         :rtype: gp_Pln
 
         """
         return _Prs3d.Prs3d_PlaneSet_Plane(self, *args)
 
-    def Offset(self, *args):
+    def Offset(self, *args) -> "Quantity_Length" :
         """
         :rtype: Quantity_Length
 
         """
         return _Prs3d.Prs3d_PlaneSet_Offset(self, *args)
 
-    def Location(self, *args):
+    def Location(self, *args) -> "void" :
         """
         :param X:
         :type X: Quantity_Length &
@@ -1334,7 +1334,7 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_PlaneSet_Location(self, *args)
 
-    def Direction(self, *args):
+    def Direction(self, *args) -> "void" :
         """
         :param X:
         :type X: Quantity_Length &
@@ -1347,11 +1347,11 @@ class Prs3d_PlaneSet(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_PlaneSet_Direction(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_PlaneSet self)"""
         return _Prs3d.Prs3d_PlaneSet__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_PlaneSet" :
         """GetHandle(Prs3d_PlaneSet self) -> Handle_Prs3d_PlaneSet"""
         return _Prs3d.Prs3d_PlaneSet_GetHandle(self)
 
@@ -1396,7 +1396,7 @@ Handle_Prs3d_PlaneSet._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_Pla
 Handle_Prs3d_PlaneSet_swigregister = _Prs3d.Handle_Prs3d_PlaneSet_swigregister
 Handle_Prs3d_PlaneSet_swigregister(Handle_Prs3d_PlaneSet)
 
-def Handle_Prs3d_PlaneSet_DownCast(*args):
+def Handle_Prs3d_PlaneSet_DownCast(*args) -> "Handle_Prs3d_PlaneSet const" :
   return _Prs3d.Handle_Prs3d_PlaneSet_DownCast(*args)
 Handle_Prs3d_PlaneSet_DownCast = _Prs3d.Handle_Prs3d_PlaneSet_DownCast
 
@@ -1415,7 +1415,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
 
         """
         _Prs3d.Prs3d_Presentation_swiginit(self,_Prs3d.new_Prs3d_Presentation(*args))
-    def Compute(self, *args):
+    def Compute(self, *args) -> "void" :
         """
         :param aProjector:
         :type aProjector: Handle_Graphic3d_DataStructureManager &
@@ -1450,7 +1450,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Compute(self, *args)
 
-    def Highlight(self, *args):
+    def Highlight(self, *args) -> "void" :
         """
         * displays the whole content of the presentation in white.
 
@@ -1459,7 +1459,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Highlight(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "void" :
         """
         * displays the whole content of the presentation in the specified color.
 
@@ -1470,14 +1470,14 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Color(self, *args)
 
-    def BoundBox(self, *args):
+    def BoundBox(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_Presentation_BoundBox(self, *args)
 
-    def SetShadingAspect(self, *args):
+    def SetShadingAspect(self, *args) -> "void" :
         """
         :param aShadingAspect:
         :type aShadingAspect: Handle_Prs3d_ShadingAspect &
@@ -1486,14 +1486,14 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_SetShadingAspect(self, *args)
 
-    def IsPickable(self, *args):
+    def IsPickable(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_Presentation_IsPickable(self, *args)
 
-    def Transform(self, *args):
+    def Transform(self, *args) -> "void" :
         """
         :param aTransformation:
         :type aTransformation: Handle_Geom_Transformation &
@@ -1502,7 +1502,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Transform(self, *args)
 
-    def Place(self, *args):
+    def Place(self, *args) -> "void" :
         """
         :param X:
         :type X: Quantity_Length
@@ -1515,7 +1515,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Place(self, *args)
 
-    def Multiply(self, *args):
+    def Multiply(self, *args) -> "void" :
         """
         :param aTransformation:
         :type aTransformation: Handle_Geom_Transformation &
@@ -1524,7 +1524,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Multiply(self, *args)
 
-    def Move(self, *args):
+    def Move(self, *args) -> "void" :
         """
         :param X:
         :type X: Quantity_Length
@@ -1537,14 +1537,14 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Move(self, *args)
 
-    def Transformation(self, *args):
+    def Transformation(self, *args) -> "Handle_Geom_Transformation" :
         """
         :rtype: Handle_Geom_Transformation
 
         """
         return _Prs3d.Prs3d_Presentation_Transformation(self, *args)
 
-    def Connect(self, *args):
+    def Connect(self, *args) -> "void" :
         """
         :param aPresentation:
         :type aPresentation: Handle_Prs3d_Presentation &
@@ -1553,7 +1553,7 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Connect(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param aPresentation:
         :type aPresentation: Handle_Prs3d_Presentation &
@@ -1562,32 +1562,32 @@ class Prs3d_Presentation(OCC.Graphic3d.Graphic3d_Structure):
         """
         return _Prs3d.Prs3d_Presentation_Remove(self, *args)
 
-    def RemoveAll(self, *args):
+    def RemoveAll(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_Presentation_RemoveAll(self, *args)
 
-    def SetPickable(self, *args):
+    def SetPickable(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_Presentation_SetPickable(self, *args)
 
-    def SetUnPickable(self, *args):
+    def SetUnPickable(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_Presentation_SetUnPickable(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_Presentation self)"""
         return _Prs3d.Prs3d_Presentation__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_Presentation" :
         """GetHandle(Prs3d_Presentation self) -> Handle_Prs3d_Presentation"""
         return _Prs3d.Prs3d_Presentation_GetHandle(self)
 
@@ -1641,7 +1641,7 @@ Handle_Prs3d_Presentation._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d
 Handle_Prs3d_Presentation_swigregister = _Prs3d.Handle_Prs3d_Presentation_swigregister
 Handle_Prs3d_Presentation_swigregister(Handle_Prs3d_Presentation)
 
-def Handle_Prs3d_Presentation_DownCast(*args):
+def Handle_Prs3d_Presentation_DownCast(*args) -> "Handle_Prs3d_Presentation const" :
   return _Prs3d.Handle_Prs3d_Presentation_DownCast(*args)
 Handle_Prs3d_Presentation_DownCast = _Prs3d.Handle_Prs3d_Presentation_DownCast
 
@@ -1682,7 +1682,7 @@ class Prs3d_Projector(OCC.MMgt.MMgt_TShared):
 
         """
         _Prs3d.Prs3d_Projector_swiginit(self,_Prs3d.new_Prs3d_Projector(*args))
-    def Projector(self, *args):
+    def Projector(self, *args) -> "HLRAlgo_Projector" :
         """
         * Returns a projector object for use in a hidden line removal algorithm.
 
@@ -1691,11 +1691,11 @@ class Prs3d_Projector(OCC.MMgt.MMgt_TShared):
         """
         return _Prs3d.Prs3d_Projector_Projector(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_Projector self)"""
         return _Prs3d.Prs3d_Projector__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_Projector" :
         """GetHandle(Prs3d_Projector self) -> Handle_Prs3d_Projector"""
         return _Prs3d.Prs3d_Projector_GetHandle(self)
 
@@ -1734,14 +1734,14 @@ Handle_Prs3d_Projector._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_Pr
 Handle_Prs3d_Projector_swigregister = _Prs3d.Handle_Prs3d_Projector_swigregister
 Handle_Prs3d_Projector_swigregister(Handle_Prs3d_Projector)
 
-def Handle_Prs3d_Projector_DownCast(*args):
+def Handle_Prs3d_Projector_DownCast(*args) -> "Handle_Prs3d_Projector const" :
   return _Prs3d.Handle_Prs3d_Projector_DownCast(*args)
 Handle_Prs3d_Projector_DownCast = _Prs3d.Handle_Prs3d_Projector_DownCast
 
 class Prs3d_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CurrentGroup(*args):
+    def CurrentGroup(*args) -> "Handle_Graphic3d_Group" :
         """
         * Returns the current group of primititves inside graphic objects in the display. A group also contains the attributes whose ranges are limited to the primitives in it.
 
@@ -1753,7 +1753,7 @@ class Prs3d_Root(object):
         return _Prs3d.Prs3d_Root_CurrentGroup(*args)
 
     CurrentGroup = staticmethod(CurrentGroup)
-    def NewGroup(*args):
+    def NewGroup(*args) -> "Handle_Graphic3d_Group" :
         """
         * Returns the new group of primitives inside graphic objects in the display. A group also contains the attributes whose ranges are limited to the primitives in it.
 
@@ -1779,7 +1779,7 @@ Prs3d_Root._kill_pointed = new_instancemethod(_Prs3d.Prs3d_Root__kill_pointed,No
 Prs3d_Root_swigregister = _Prs3d.Prs3d_Root_swigregister
 Prs3d_Root_swigregister(Prs3d_Root)
 
-def Prs3d_Root_CurrentGroup(*args):
+def Prs3d_Root_CurrentGroup(*args) -> "Handle_Graphic3d_Group" :
   """
     * Returns the current group of primititves inside graphic objects in the display. A group also contains the attributes whose ranges are limited to the primitives in it.
 
@@ -1790,7 +1790,7 @@ def Prs3d_Root_CurrentGroup(*args):
     """
   return _Prs3d.Prs3d_Root_CurrentGroup(*args)
 
-def Prs3d_Root_NewGroup(*args):
+def Prs3d_Root_NewGroup(*args) -> "Handle_Graphic3d_Group" :
   """
     * Returns the new group of primitives inside graphic objects in the display. A group also contains the attributes whose ranges are limited to the primitives in it.
 
@@ -1812,133 +1812,133 @@ class Prs3d_ShapeTool(object):
 
         """
         _Prs3d.Prs3d_ShapeTool_swiginit(self,_Prs3d.new_Prs3d_ShapeTool(*args))
-    def InitFace(self, *args):
+    def InitFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_InitFace(self, *args)
 
-    def MoreFace(self, *args):
+    def MoreFace(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_MoreFace(self, *args)
 
-    def NextFace(self, *args):
+    def NextFace(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_NextFace(self, *args)
 
-    def GetFace(self, *args):
+    def GetFace(self, *args) -> "TopoDS_Face const" :
         """
         :rtype: TopoDS_Face
 
         """
         return _Prs3d.Prs3d_ShapeTool_GetFace(self, *args)
 
-    def FaceBound(self, *args):
+    def FaceBound(self, *args) -> "Bnd_Box" :
         """
         :rtype: Bnd_Box
 
         """
         return _Prs3d.Prs3d_ShapeTool_FaceBound(self, *args)
 
-    def IsPlanarFace(self, *args):
+    def IsPlanarFace(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_IsPlanarFace(self, *args)
 
-    def InitCurve(self, *args):
+    def InitCurve(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_InitCurve(self, *args)
 
-    def MoreCurve(self, *args):
+    def MoreCurve(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_MoreCurve(self, *args)
 
-    def NextCurve(self, *args):
+    def NextCurve(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_NextCurve(self, *args)
 
-    def GetCurve(self, *args):
+    def GetCurve(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _Prs3d.Prs3d_ShapeTool_GetCurve(self, *args)
 
-    def CurveBound(self, *args):
+    def CurveBound(self, *args) -> "Bnd_Box" :
         """
         :rtype: Bnd_Box
 
         """
         return _Prs3d.Prs3d_ShapeTool_CurveBound(self, *args)
 
-    def Neighbours(self, *args):
+    def Neighbours(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _Prs3d.Prs3d_ShapeTool_Neighbours(self, *args)
 
-    def FacesOfEdge(self, *args):
+    def FacesOfEdge(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _Prs3d.Prs3d_ShapeTool_FacesOfEdge(self, *args)
 
-    def InitVertex(self, *args):
+    def InitVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_InitVertex(self, *args)
 
-    def MoreVertex(self, *args):
+    def MoreVertex(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_MoreVertex(self, *args)
 
-    def NextVertex(self, *args):
+    def NextVertex(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _Prs3d.Prs3d_ShapeTool_NextVertex(self, *args)
 
-    def GetVertex(self, *args):
+    def GetVertex(self, *args) -> "TopoDS_Vertex const" :
         """
         :rtype: TopoDS_Vertex
 
         """
         return _Prs3d.Prs3d_ShapeTool_GetVertex(self, *args)
 
-    def HasSurface(self, *args):
+    def HasSurface(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_HasSurface(self, *args)
 
-    def CurrentTriangulation(self, *args):
+    def CurrentTriangulation(self, *args) -> "Handle_Poly_Triangulation" :
         """
         :param l:
         :type l: TopLoc_Location &
@@ -1947,14 +1947,14 @@ class Prs3d_ShapeTool(object):
         """
         return _Prs3d.Prs3d_ShapeTool_CurrentTriangulation(self, *args)
 
-    def HasCurve(self, *args):
+    def HasCurve(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_ShapeTool_HasCurve(self, *args)
 
-    def PolygonOnTriangulation(self, *args):
+    def PolygonOnTriangulation(self, *args) -> "void" :
         """
         :param Indices:
         :type Indices: Handle_Poly_PolygonOnTriangulation &
@@ -1967,7 +1967,7 @@ class Prs3d_ShapeTool(object):
         """
         return _Prs3d.Prs3d_ShapeTool_PolygonOnTriangulation(self, *args)
 
-    def Polygon3D(self, *args):
+    def Polygon3D(self, *args) -> "Handle_Poly_Polygon3D" :
         """
         :param l:
         :type l: TopLoc_Location &
@@ -2013,7 +2013,7 @@ Prs3d_ShapeTool_swigregister(Prs3d_ShapeTool)
 class Prs3d_Arrow(Prs3d_Root):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Draw(*args):
+    def Draw(*args) -> "void" :
         """
         * Defines the representation of the arrow defined by the location point aLocation, the direction aDirection and the length aLength. The angle anAngle defines the angle of opening of the arrow head. The presentation object aPresentation stores the information defined in this framework.
 
@@ -2033,7 +2033,7 @@ class Prs3d_Arrow(Prs3d_Root):
         return _Prs3d.Prs3d_Arrow_Draw(*args)
 
     Draw = staticmethod(Draw)
-    def Fill(*args):
+    def Fill(*args) -> "void" :
         """
         * Defines the representation of the arrow defined by the location point aLocation, the direction vector aDirection and the length aLength. The angle anAngle defines the angle of opening of the arrow head, and the drawer aDrawer specifies the display attributes which arrows will have. With this syntax, no presentation object is created.
 
@@ -2067,7 +2067,7 @@ Prs3d_Arrow._kill_pointed = new_instancemethod(_Prs3d.Prs3d_Arrow__kill_pointed,
 Prs3d_Arrow_swigregister = _Prs3d.Prs3d_Arrow_swigregister
 Prs3d_Arrow_swigregister(Prs3d_Arrow)
 
-def Prs3d_Arrow_Draw(*args):
+def Prs3d_Arrow_Draw(*args) -> "void" :
   """
     * Defines the representation of the arrow defined by the location point aLocation, the direction aDirection and the length aLength. The angle anAngle defines the angle of opening of the arrow head. The presentation object aPresentation stores the information defined in this framework.
 
@@ -2086,7 +2086,7 @@ def Prs3d_Arrow_Draw(*args):
     """
   return _Prs3d.Prs3d_Arrow_Draw(*args)
 
-def Prs3d_Arrow_Fill(*args):
+def Prs3d_Arrow_Fill(*args) -> "void" :
   """
     * Defines the representation of the arrow defined by the location point aLocation, the direction vector aDirection and the length aLength. The angle anAngle defines the angle of opening of the arrow head, and the drawer aDrawer specifies the display attributes which arrows will have. With this syntax, no presentation object is created.
 
@@ -2124,7 +2124,7 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_ArrowAspect_swiginit(self,_Prs3d.new_Prs3d_ArrowAspect(*args))
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         * defines the angle of the arrows.
 
@@ -2135,7 +2135,7 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ArrowAspect_SetAngle(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * returns the current value of the angle used when drawing an arrow.
 
@@ -2144,7 +2144,7 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ArrowAspect_Angle(self, *args)
 
-    def SetLength(self, *args):
+    def SetLength(self, *args) -> "void" :
         """
         * defines the length of the arrows.
 
@@ -2155,7 +2155,7 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ArrowAspect_SetLength(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Quantity_Length" :
         """
         * returns the current value of the length used when drawing an arrow.
 
@@ -2164,7 +2164,7 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ArrowAspect_Length(self, *args)
 
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -2177,18 +2177,18 @@ class Prs3d_ArrowAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ArrowAspect_SetColor(self, *args)
 
-    def aspect(self, *args):
+    def aspect(self, *args) -> "Handle_Graphic3d_AspectLine3d" :
         """
         :rtype: Handle_Graphic3d_AspectLine3d
 
         """
         return _Prs3d.Prs3d_ArrowAspect_aspect(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_ArrowAspect self)"""
         return _Prs3d.Prs3d_ArrowAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_ArrowAspect" :
         """GetHandle(Prs3d_ArrowAspect self) -> Handle_Prs3d_ArrowAspect"""
         return _Prs3d.Prs3d_ArrowAspect_GetHandle(self)
 
@@ -2232,7 +2232,7 @@ Handle_Prs3d_ArrowAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_
 Handle_Prs3d_ArrowAspect_swigregister = _Prs3d.Handle_Prs3d_ArrowAspect_swigregister
 Handle_Prs3d_ArrowAspect_swigregister(Handle_Prs3d_ArrowAspect)
 
-def Handle_Prs3d_ArrowAspect_DownCast(*args):
+def Handle_Prs3d_ArrowAspect_DownCast(*args) -> "Handle_Prs3d_ArrowAspect const" :
   return _Prs3d.Handle_Prs3d_ArrowAspect_DownCast(*args)
 Handle_Prs3d_ArrowAspect_DownCast = _Prs3d.Handle_Prs3d_ArrowAspect_DownCast
 
@@ -2247,7 +2247,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_DatumAspect_swiginit(self,_Prs3d.new_Prs3d_DatumAspect(*args))
-    def FirstAxisAspect(self, *args):
+    def FirstAxisAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the attributes for display of the first axis.
 
@@ -2256,7 +2256,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_FirstAxisAspect(self, *args)
 
-    def SecondAxisAspect(self, *args):
+    def SecondAxisAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the attributes for display of the second axis.
 
@@ -2265,7 +2265,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_SecondAxisAspect(self, *args)
 
-    def ThirdAxisAspect(self, *args):
+    def ThirdAxisAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the attributes for display of the third axis.
 
@@ -2274,7 +2274,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_ThirdAxisAspect(self, *args)
 
-    def SetDrawFirstAndSecondAxis(self, *args):
+    def SetDrawFirstAndSecondAxis(self, *args) -> "void" :
         """
         * Sets the DrawFirstAndSecondAxis attributes to active.
 
@@ -2285,7 +2285,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_SetDrawFirstAndSecondAxis(self, *args)
 
-    def DrawFirstAndSecondAxis(self, *args):
+    def DrawFirstAndSecondAxis(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the first and second axes can be drawn.
 
@@ -2294,7 +2294,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_DrawFirstAndSecondAxis(self, *args)
 
-    def SetDrawThirdAxis(self, *args):
+    def SetDrawThirdAxis(self, *args) -> "void" :
         """
         * Sets the DrawThirdAxis attributes to active.
 
@@ -2305,7 +2305,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_SetDrawThirdAxis(self, *args)
 
-    def DrawThirdAxis(self, *args):
+    def DrawThirdAxis(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the third axis can be drawn.
 
@@ -2314,7 +2314,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_DrawThirdAxis(self, *args)
 
-    def SetAxisLength(self, *args):
+    def SetAxisLength(self, *args) -> "void" :
         """
         * Sets the lengths L1, L2 and L3 of the three axes.
 
@@ -2329,7 +2329,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_SetAxisLength(self, *args)
 
-    def FirstAxisLength(self, *args):
+    def FirstAxisLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the displayed first axis.
 
@@ -2338,7 +2338,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_FirstAxisLength(self, *args)
 
-    def SecondAxisLength(self, *args):
+    def SecondAxisLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the displayed second axis.
 
@@ -2347,7 +2347,7 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_SecondAxisLength(self, *args)
 
-    def ThirdAxisLength(self, *args):
+    def ThirdAxisLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the displayed third axis.
 
@@ -2356,11 +2356,11 @@ class Prs3d_DatumAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DatumAspect_ThirdAxisLength(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_DatumAspect self)"""
         return _Prs3d.Prs3d_DatumAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_DatumAspect" :
         """GetHandle(Prs3d_DatumAspect self) -> Handle_Prs3d_DatumAspect"""
         return _Prs3d.Prs3d_DatumAspect_GetHandle(self)
 
@@ -2409,7 +2409,7 @@ Handle_Prs3d_DatumAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_
 Handle_Prs3d_DatumAspect_swigregister = _Prs3d.Handle_Prs3d_DatumAspect_swigregister
 Handle_Prs3d_DatumAspect_swigregister(Handle_Prs3d_DatumAspect)
 
-def Handle_Prs3d_DatumAspect_DownCast(*args):
+def Handle_Prs3d_DatumAspect_DownCast(*args) -> "Handle_Prs3d_DatumAspect const" :
   return _Prs3d.Handle_Prs3d_DatumAspect_DownCast(*args)
 Handle_Prs3d_DatumAspect_DownCast = _Prs3d.Handle_Prs3d_DatumAspect_DownCast
 
@@ -2424,7 +2424,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_DimensionAspect_swiginit(self,_Prs3d.new_Prs3d_DimensionAspect(*args))
-    def LineAspect(self, *args):
+    def LineAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the settings for the display of lines used in presentation of dimensions.
 
@@ -2433,7 +2433,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_LineAspect(self, *args)
 
-    def SetLineAspect(self, *args):
+    def SetLineAspect(self, *args) -> "void" :
         """
         * Sets the display attributes of lines used in presentation of dimensions.
 
@@ -2444,7 +2444,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetLineAspect(self, *args)
 
-    def TextAspect(self, *args):
+    def TextAspect(self, *args) -> "Handle_Prs3d_TextAspect" :
         """
         * Returns the settings for the display of text used in presentation of dimensions.
 
@@ -2453,7 +2453,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_TextAspect(self, *args)
 
-    def SetTextAspect(self, *args):
+    def SetTextAspect(self, *args) -> "void" :
         """
         * Sets the display attributes of text used in presentation of dimensions.
 
@@ -2464,7 +2464,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetTextAspect(self, *args)
 
-    def IsText3d(self, *args):
+    def IsText3d(self, *args) -> "Standard_Boolean" :
         """
         * Check if text for dimension label is 3d.
 
@@ -2473,7 +2473,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_IsText3d(self, *args)
 
-    def MakeText3d(self, *args):
+    def MakeText3d(self, *args) -> "void" :
         """
         * Sets type of text.
 
@@ -2484,7 +2484,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_MakeText3d(self, *args)
 
-    def IsTextShaded(self, *args):
+    def IsTextShaded(self, *args) -> "Standard_Boolean" :
         """
         * Check if 3d text for dimension label is shaded.
 
@@ -2493,7 +2493,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_IsTextShaded(self, *args)
 
-    def MakeTextShaded(self, *args):
+    def MakeTextShaded(self, *args) -> "void" :
         """
         * Turns on/off text shading for 3d text.
 
@@ -2504,7 +2504,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_MakeTextShaded(self, *args)
 
-    def IsArrows3d(self, *args):
+    def IsArrows3d(self, *args) -> "Standard_Boolean" :
         """
         * Gets type of arrows.
 
@@ -2513,7 +2513,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_IsArrows3d(self, *args)
 
-    def MakeArrows3d(self, *args):
+    def MakeArrows3d(self, *args) -> "void" :
         """
         * Sets type of arrows.
 
@@ -2524,7 +2524,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_MakeArrows3d(self, *args)
 
-    def IsUnitsDisplayed(self, *args):
+    def IsUnitsDisplayed(self, *args) -> "Standard_Boolean" :
         """
         * Shows if Units are to be displayed along with dimension value.
 
@@ -2533,7 +2533,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_IsUnitsDisplayed(self, *args)
 
-    def MakeUnitsDisplayed(self, *args):
+    def MakeUnitsDisplayed(self, *args) -> "void" :
         """
         * Specifies whether the units string should be displayed along with value label or not.
 
@@ -2544,7 +2544,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_MakeUnitsDisplayed(self, *args)
 
-    def SetArrowOrientation(self, *args):
+    def SetArrowOrientation(self, *args) -> "void" :
         """
         * Sets orientation of arrows (external or internal). By default orientation is chosen automatically according to situation and text label size.
 
@@ -2555,7 +2555,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetArrowOrientation(self, *args)
 
-    def ArrowOrientation(self, *args):
+    def ArrowOrientation(self, *args) -> "Prs3d_DimensionArrowOrientation" :
         """
         * Gets orientation of arrows (external or internal).
 
@@ -2564,7 +2564,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_ArrowOrientation(self, *args)
 
-    def SetTextVerticalPosition(self, *args):
+    def SetTextVerticalPosition(self, *args) -> "void" :
         """
         * Sets vertical text alignment for text label.
 
@@ -2575,7 +2575,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetTextVerticalPosition(self, *args)
 
-    def TextVerticalPosition(self, *args):
+    def TextVerticalPosition(self, *args) -> "Prs3d_DimensionTextVerticalPosition" :
         """
         * Gets vertical text alignment for text label.
 
@@ -2584,7 +2584,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_TextVerticalPosition(self, *args)
 
-    def SetTextHorizontalPosition(self, *args):
+    def SetTextHorizontalPosition(self, *args) -> "void" :
         """
         * Sets horizontal text alignment for text label.
 
@@ -2595,7 +2595,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetTextHorizontalPosition(self, *args)
 
-    def TextHorizontalPosition(self, *args):
+    def TextHorizontalPosition(self, *args) -> "Prs3d_DimensionTextHorizontalPosition" :
         """
         * Gets horizontal text alignment for text label.
 
@@ -2604,7 +2604,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_TextHorizontalPosition(self, *args)
 
-    def ArrowAspect(self, *args):
+    def ArrowAspect(self, *args) -> "Handle_Prs3d_ArrowAspect" :
         """
         * Returns the settings for displaying arrows.
 
@@ -2613,7 +2613,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_ArrowAspect(self, *args)
 
-    def SetArrowAspect(self, *args):
+    def SetArrowAspect(self, *args) -> "void" :
         """
         * Sets the display attributes of arrows used in presentation of dimensions.
 
@@ -2624,7 +2624,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetArrowAspect(self, *args)
 
-    def SetCommonColor(self, *args):
+    def SetCommonColor(self, *args) -> "void" :
         """
         * Sets the same color for all parts of dimension: lines, arrows and text.
 
@@ -2635,7 +2635,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetCommonColor(self, *args)
 
-    def SetExtensionSize(self, *args):
+    def SetExtensionSize(self, *args) -> "void" :
         """
         * Sets extension size.
 
@@ -2646,7 +2646,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetExtensionSize(self, *args)
 
-    def ExtensionSize(self, *args):
+    def ExtensionSize(self, *args) -> "Standard_Real" :
         """
         * Returns extension size.
 
@@ -2655,7 +2655,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_ExtensionSize(self, *args)
 
-    def SetArrowTailSize(self, *args):
+    def SetArrowTailSize(self, *args) -> "void" :
         """
         * Set size for arrow tail (extension without text).
 
@@ -2666,7 +2666,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetArrowTailSize(self, *args)
 
-    def ArrowTailSize(self, *args):
+    def ArrowTailSize(self, *args) -> "Standard_Real" :
         """
         * Returns arrow tail size.
 
@@ -2675,7 +2675,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_ArrowTailSize(self, *args)
 
-    def SetValueStringFormat(self, *args):
+    def SetValueStringFormat(self, *args) -> "void" :
         """
         * Sets 'sprintf'-syntax format for formatting dimension value labels.
 
@@ -2686,7 +2686,7 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_SetValueStringFormat(self, *args)
 
-    def ValueStringFormat(self, *args):
+    def ValueStringFormat(self, *args) -> "TCollection_AsciiString" :
         """
         * Returns format.
 
@@ -2695,11 +2695,11 @@ class Prs3d_DimensionAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_DimensionAspect_ValueStringFormat(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_DimensionAspect self)"""
         return _Prs3d.Prs3d_DimensionAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_DimensionAspect" :
         """GetHandle(Prs3d_DimensionAspect self) -> Handle_Prs3d_DimensionAspect"""
         return _Prs3d.Prs3d_DimensionAspect_GetHandle(self)
 
@@ -2764,7 +2764,7 @@ Handle_Prs3d_DimensionAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Pr
 Handle_Prs3d_DimensionAspect_swigregister = _Prs3d.Handle_Prs3d_DimensionAspect_swigregister
 Handle_Prs3d_DimensionAspect_swigregister(Handle_Prs3d_DimensionAspect)
 
-def Handle_Prs3d_DimensionAspect_DownCast(*args):
+def Handle_Prs3d_DimensionAspect_DownCast(*args) -> "Handle_Prs3d_DimensionAspect const" :
   return _Prs3d.Handle_Prs3d_DimensionAspect_DownCast(*args)
 Handle_Prs3d_DimensionAspect_DownCast = _Prs3d.Handle_Prs3d_DimensionAspect_DownCast
 
@@ -2793,7 +2793,7 @@ class Prs3d_LineAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_LineAspect_swiginit(self,_Prs3d.new_Prs3d_LineAspect(*args))
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -2808,7 +2808,7 @@ class Prs3d_LineAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_LineAspect_SetColor(self, *args)
 
-    def SetTypeOfLine(self, *args):
+    def SetTypeOfLine(self, *args) -> "void" :
         """
         * Sets the type of line defined at the time of construction. This could, for example, be solid, dotted or made up of dashes. Default value: Aspect_TOL_SOLID
 
@@ -2819,7 +2819,7 @@ class Prs3d_LineAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_LineAspect_SetTypeOfLine(self, *args)
 
-    def SetWidth(self, *args):
+    def SetWidth(self, *args) -> "void" :
         """
         * Sets the line width defined at the time of construction. Default value: 1.
 
@@ -2830,7 +2830,7 @@ class Prs3d_LineAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_LineAspect_SetWidth(self, *args)
 
-    def aspect(self, *args):
+    def aspect(self, *args) -> "Handle_Graphic3d_AspectLine3d" :
         """
         * Returns the line aspect. This is defined as the set of color, type and thickness attributes.
 
@@ -2839,11 +2839,11 @@ class Prs3d_LineAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_LineAspect_aspect(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_LineAspect self)"""
         return _Prs3d.Prs3d_LineAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_LineAspect" :
         """GetHandle(Prs3d_LineAspect self) -> Handle_Prs3d_LineAspect"""
         return _Prs3d.Prs3d_LineAspect_GetHandle(self)
 
@@ -2885,7 +2885,7 @@ Handle_Prs3d_LineAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_L
 Handle_Prs3d_LineAspect_swigregister = _Prs3d.Handle_Prs3d_LineAspect_swigregister
 Handle_Prs3d_LineAspect_swigregister(Handle_Prs3d_LineAspect)
 
-def Handle_Prs3d_LineAspect_DownCast(*args):
+def Handle_Prs3d_LineAspect_DownCast(*args) -> "Handle_Prs3d_LineAspect const" :
   return _Prs3d.Handle_Prs3d_LineAspect_DownCast(*args)
 Handle_Prs3d_LineAspect_DownCast = _Prs3d.Handle_Prs3d_LineAspect_DownCast
 
@@ -2900,7 +2900,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_PlaneAspect_swiginit(self,_Prs3d.new_Prs3d_PlaneAspect(*args))
-    def EdgesAspect(self, *args):
+    def EdgesAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the attributes of displayed edges involved in the presentation of planes.
 
@@ -2909,7 +2909,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_EdgesAspect(self, *args)
 
-    def IsoAspect(self, *args):
+    def IsoAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the attributes of displayed isoparameters involved in the presentation of planes.
 
@@ -2918,7 +2918,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_IsoAspect(self, *args)
 
-    def ArrowAspect(self, *args):
+    def ArrowAspect(self, *args) -> "Handle_Prs3d_LineAspect" :
         """
         * Returns the settings for displaying an arrow.
 
@@ -2927,7 +2927,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_ArrowAspect(self, *args)
 
-    def SetArrowsLength(self, *args):
+    def SetArrowsLength(self, *args) -> "void" :
         """
         :param L:
         :type L: Quantity_Length
@@ -2936,7 +2936,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetArrowsLength(self, *args)
 
-    def ArrowsLength(self, *args):
+    def ArrowsLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the arrow shaft used in the display of arrows.
 
@@ -2945,7 +2945,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_ArrowsLength(self, *args)
 
-    def SetArrowsSize(self, *args):
+    def SetArrowsSize(self, *args) -> "void" :
         """
         * Sets the angle of the arrowhead used in the display of planes.
 
@@ -2956,7 +2956,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetArrowsSize(self, *args)
 
-    def ArrowsSize(self, *args):
+    def ArrowsSize(self, *args) -> "Quantity_Length" :
         """
         * Returns the size of arrows used in the display of planes.
 
@@ -2965,7 +2965,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_ArrowsSize(self, *args)
 
-    def SetArrowsAngle(self, *args):
+    def SetArrowsAngle(self, *args) -> "void" :
         """
         * Sets the angle of the arrowhead used in the display of arrows involved in the presentation of planes.
 
@@ -2976,7 +2976,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetArrowsAngle(self, *args)
 
-    def ArrowsAngle(self, *args):
+    def ArrowsAngle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * Returns the angle of the arrowhead used in the display of arrows involved in the presentation of planes.
 
@@ -2985,7 +2985,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_ArrowsAngle(self, *args)
 
-    def SetDisplayCenterArrow(self, *args):
+    def SetDisplayCenterArrow(self, *args) -> "void" :
         """
         * Sets the display attributes defined in DisplayCenterArrow to active.
 
@@ -2996,7 +2996,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetDisplayCenterArrow(self, *args)
 
-    def DisplayCenterArrow(self, *args):
+    def DisplayCenterArrow(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the display of center arrows is allowed.
 
@@ -3005,7 +3005,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_DisplayCenterArrow(self, *args)
 
-    def SetDisplayEdgesArrows(self, *args):
+    def SetDisplayEdgesArrows(self, *args) -> "void" :
         """
         * Sets the display attributes defined in DisplayEdgesArrows to active.
 
@@ -3016,7 +3016,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetDisplayEdgesArrows(self, *args)
 
-    def DisplayEdgesArrows(self, *args):
+    def DisplayEdgesArrows(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the display of edge arrows is allowed.
 
@@ -3025,7 +3025,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_DisplayEdgesArrows(self, *args)
 
-    def SetDisplayEdges(self, *args):
+    def SetDisplayEdges(self, *args) -> "void" :
         """
         :param draw:
         :type draw: bool
@@ -3034,14 +3034,14 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetDisplayEdges(self, *args)
 
-    def DisplayEdges(self, *args):
+    def DisplayEdges(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _Prs3d.Prs3d_PlaneAspect_DisplayEdges(self, *args)
 
-    def SetDisplayIso(self, *args):
+    def SetDisplayIso(self, *args) -> "void" :
         """
         * Sets the display attributes defined in DisplayIso to active.
 
@@ -3052,7 +3052,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetDisplayIso(self, *args)
 
-    def DisplayIso(self, *args):
+    def DisplayIso(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the display of isoparameters is allowed.
 
@@ -3061,7 +3061,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_DisplayIso(self, *args)
 
-    def SetPlaneLength(self, *args):
+    def SetPlaneLength(self, *args) -> "void" :
         """
         :param LX:
         :type LX: Quantity_Length
@@ -3072,7 +3072,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetPlaneLength(self, *args)
 
-    def PlaneXLength(self, *args):
+    def PlaneXLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the x axis used in the display of planes.
 
@@ -3081,7 +3081,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_PlaneXLength(self, *args)
 
-    def PlaneYLength(self, *args):
+    def PlaneYLength(self, *args) -> "Quantity_Length" :
         """
         * Returns the length of the y axis used in the display of planes.
 
@@ -3090,7 +3090,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_PlaneYLength(self, *args)
 
-    def SetIsoDistance(self, *args):
+    def SetIsoDistance(self, *args) -> "void" :
         """
         * Sets the distance L between isoparameters used in the display of planes.
 
@@ -3101,7 +3101,7 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_SetIsoDistance(self, *args)
 
-    def IsoDistance(self, *args):
+    def IsoDistance(self, *args) -> "Quantity_Length" :
         """
         * Returns the distance between isoparameters used in the display of planes.
 
@@ -3110,11 +3110,11 @@ class Prs3d_PlaneAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PlaneAspect_IsoDistance(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_PlaneAspect self)"""
         return _Prs3d.Prs3d_PlaneAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_PlaneAspect" :
         """GetHandle(Prs3d_PlaneAspect self) -> Handle_Prs3d_PlaneAspect"""
         return _Prs3d.Prs3d_PlaneAspect_GetHandle(self)
 
@@ -3174,7 +3174,7 @@ Handle_Prs3d_PlaneAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_
 Handle_Prs3d_PlaneAspect_swigregister = _Prs3d.Handle_Prs3d_PlaneAspect_swigregister
 Handle_Prs3d_PlaneAspect_swigregister(Handle_Prs3d_PlaneAspect)
 
-def Handle_Prs3d_PlaneAspect_DownCast(*args):
+def Handle_Prs3d_PlaneAspect_DownCast(*args) -> "Handle_Prs3d_PlaneAspect const" :
   return _Prs3d.Handle_Prs3d_PlaneAspect_DownCast(*args)
 Handle_Prs3d_PlaneAspect_DownCast = _Prs3d.Handle_Prs3d_PlaneAspect_DownCast
 
@@ -3213,7 +3213,7 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_PointAspect_swiginit(self,_Prs3d.new_Prs3d_PointAspect(*args))
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -3228,7 +3228,7 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PointAspect_SetColor(self, *args)
 
-    def SetTypeOfMarker(self, *args):
+    def SetTypeOfMarker(self, *args) -> "void" :
         """
         * defines the type of representation to be used when drawing a point. Default value: Aspect_TOM_PLUS
 
@@ -3239,7 +3239,7 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PointAspect_SetTypeOfMarker(self, *args)
 
-    def SetScale(self, *args):
+    def SetScale(self, *args) -> "void" :
         """
         * defines the size of the marker used when drawing a point. Default value: 1.
 
@@ -3250,14 +3250,14 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PointAspect_SetScale(self, *args)
 
-    def aspect(self, *args):
+    def aspect(self, *args) -> "Handle_Graphic3d_AspectMarker3d" :
         """
         :rtype: Handle_Graphic3d_AspectMarker3d
 
         """
         return _Prs3d.Prs3d_PointAspect_aspect(self, *args)
 
-    def GetTextureSize(self, *args):
+    def GetTextureSize(self, *args) -> "void" :
         """
         * Returns marker's texture size.
 
@@ -3270,7 +3270,7 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PointAspect_GetTextureSize(self, *args)
 
-    def GetTexture(self, *args):
+    def GetTexture(self, *args) -> "Graphic3d_MarkerImage_Handle const &" :
         """
         * Returns marker's texture.
 
@@ -3279,11 +3279,11 @@ class Prs3d_PointAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_PointAspect_GetTexture(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_PointAspect self)"""
         return _Prs3d.Prs3d_PointAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_PointAspect" :
         """GetHandle(Prs3d_PointAspect self) -> Handle_Prs3d_PointAspect"""
         return _Prs3d.Prs3d_PointAspect_GetHandle(self)
 
@@ -3327,7 +3327,7 @@ Handle_Prs3d_PointAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_
 Handle_Prs3d_PointAspect_swigregister = _Prs3d.Handle_Prs3d_PointAspect_swigregister
 Handle_Prs3d_PointAspect_swigregister(Handle_Prs3d_PointAspect)
 
-def Handle_Prs3d_PointAspect_DownCast(*args):
+def Handle_Prs3d_PointAspect_DownCast(*args) -> "Handle_Prs3d_PointAspect const" :
   return _Prs3d.Handle_Prs3d_PointAspect_DownCast(*args)
 Handle_Prs3d_PointAspect_DownCast = _Prs3d.Handle_Prs3d_PointAspect_DownCast
 
@@ -3342,7 +3342,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_ShadingAspect_swiginit(self,_Prs3d.new_Prs3d_ShadingAspect(*args))
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         * Change the polygons interior color and material ambient color.
 
@@ -3363,7 +3363,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_SetColor(self, *args)
 
-    def SetMaterial(self, *args):
+    def SetMaterial(self, *args) -> "void" :
         """
         * Change the polygons material aspect.
 
@@ -3382,7 +3382,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_SetMaterial(self, *args)
 
-    def SetTransparency(self, *args):
+    def SetTransparency(self, *args) -> "void" :
         """
         * Change the polygons transparency value. Warning : aValue must be in the range 0,1. 0 is the default (NO transparent)
 
@@ -3395,7 +3395,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_SetTransparency(self, *args)
 
-    def SetAspect(self, *args):
+    def SetAspect(self, *args) -> "void" :
         """
         * Change the polygons aspect properties.
 
@@ -3406,7 +3406,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_SetAspect(self, *args)
 
-    def Color(self, *args):
+    def Color(self, *args) -> "Quantity_Color" :
         """
         * Returns the polygons color.
 
@@ -3417,7 +3417,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_Color(self, *args)
 
-    def Material(self, *args):
+    def Material(self, *args) -> "Graphic3d_MaterialAspect" :
         """
         * Returns the polygons material aspect.
 
@@ -3428,7 +3428,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_Material(self, *args)
 
-    def Transparency(self, *args):
+    def Transparency(self, *args) -> "Standard_Real" :
         """
         * Returns the polygons transparency value.
 
@@ -3439,7 +3439,7 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_Transparency(self, *args)
 
-    def aspect(self, *args):
+    def aspect(self, *args) -> "Handle_Graphic3d_AspectFillArea3d" :
         """
         * Returns the polygons aspect properties.
 
@@ -3448,11 +3448,11 @@ class Prs3d_ShadingAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_ShadingAspect_aspect(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_ShadingAspect self)"""
         return _Prs3d.Prs3d_ShadingAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_ShadingAspect" :
         """GetHandle(Prs3d_ShadingAspect self) -> Handle_Prs3d_ShadingAspect"""
         return _Prs3d.Prs3d_ShadingAspect_GetHandle(self)
 
@@ -3498,14 +3498,14 @@ Handle_Prs3d_ShadingAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3
 Handle_Prs3d_ShadingAspect_swigregister = _Prs3d.Handle_Prs3d_ShadingAspect_swigregister
 Handle_Prs3d_ShadingAspect_swigregister(Handle_Prs3d_ShadingAspect)
 
-def Handle_Prs3d_ShadingAspect_DownCast(*args):
+def Handle_Prs3d_ShadingAspect_DownCast(*args) -> "Handle_Prs3d_ShadingAspect const" :
   return _Prs3d.Handle_Prs3d_ShadingAspect_DownCast(*args)
 Handle_Prs3d_ShadingAspect_DownCast = _Prs3d.Handle_Prs3d_ShadingAspect_DownCast
 
 class Prs3d_Text(Prs3d_Root):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Draw(*args):
+    def Draw(*args) -> "void" :
         """
         * Defines the display of the text aText at the point AttachmentPoint. The drawer aDrawer specifies the display attributes which texts will have. The presentation object aPresentation stores the information defined in this framework. static void Draw (const Handle_Prs3d_Presentation& aPresentation, const Handle_Prs3d_TextAspect& anAspect, const TCollection_ExtendedString& aText, const gp_Pnt& AttachmentPoint);
 
@@ -3549,7 +3549,7 @@ Prs3d_Text._kill_pointed = new_instancemethod(_Prs3d.Prs3d_Text__kill_pointed,No
 Prs3d_Text_swigregister = _Prs3d.Prs3d_Text_swigregister
 Prs3d_Text_swigregister(Prs3d_Text)
 
-def Prs3d_Text_Draw(*args):
+def Prs3d_Text_Draw(*args) -> "void" :
   """
     * Defines the display of the text aText at the point AttachmentPoint. The drawer aDrawer specifies the display attributes which texts will have. The presentation object aPresentation stores the information defined in this framework. static void Draw (const Handle_Prs3d_Presentation& aPresentation, const Handle_Prs3d_TextAspect& anAspect, const TCollection_ExtendedString& aText, const gp_Pnt& AttachmentPoint);
 
@@ -3589,7 +3589,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
 
         """
         _Prs3d.Prs3d_TextAspect_swiginit(self,_Prs3d.new_Prs3d_TextAspect(*args))
-    def SetColor(self, *args):
+    def SetColor(self, *args) -> "void" :
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -3604,7 +3604,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetColor(self, *args)
 
-    def SetFont(self, *args):
+    def SetFont(self, *args) -> "void" :
         """
         * Sets the font used in text display.
 
@@ -3615,7 +3615,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetFont(self, *args)
 
-    def SetHeightWidthRatio(self, *args):
+    def SetHeightWidthRatio(self, *args) -> "void" :
         """
         * Returns the height-width ratio, also known as the expansion factor.
 
@@ -3626,7 +3626,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetHeightWidthRatio(self, *args)
 
-    def SetSpace(self, *args):
+    def SetSpace(self, *args) -> "void" :
         """
         * Sets the length of the box which text will occupy.
 
@@ -3637,7 +3637,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetSpace(self, *args)
 
-    def SetHeight(self, *args):
+    def SetHeight(self, *args) -> "void" :
         """
         * Sets the height of the text.
 
@@ -3648,7 +3648,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetHeight(self, *args)
 
-    def SetAngle(self, *args):
+    def SetAngle(self, *args) -> "void" :
         """
         * Sets the angle
 
@@ -3659,7 +3659,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetAngle(self, *args)
 
-    def Height(self, *args):
+    def Height(self, *args) -> "Standard_Real" :
         """
         * Returns the height of the text box.
 
@@ -3668,7 +3668,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_Height(self, *args)
 
-    def Angle(self, *args):
+    def Angle(self, *args) -> "Quantity_PlaneAngle" :
         """
         * Returns the angle
 
@@ -3677,7 +3677,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_Angle(self, *args)
 
-    def SetHorizontalJustification(self, *args):
+    def SetHorizontalJustification(self, *args) -> "void" :
         """
         * Sets horizontal alignment of text.
 
@@ -3688,7 +3688,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetHorizontalJustification(self, *args)
 
-    def SetVerticalJustification(self, *args):
+    def SetVerticalJustification(self, *args) -> "void" :
         """
         * Sets the vertical alignment of text.
 
@@ -3699,7 +3699,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetVerticalJustification(self, *args)
 
-    def SetOrientation(self, *args):
+    def SetOrientation(self, *args) -> "void" :
         """
         * Sets the orientation of text.
 
@@ -3710,7 +3710,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_SetOrientation(self, *args)
 
-    def HorizontalJustification(self, *args):
+    def HorizontalJustification(self, *args) -> "Graphic3d_HorizontalTextAlignment" :
         """
         * Returns the horizontal alignment of the text. The range of values includes: - left - center - right, and - normal (justified).
 
@@ -3719,7 +3719,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_HorizontalJustification(self, *args)
 
-    def VerticalJustification(self, *args):
+    def VerticalJustification(self, *args) -> "Graphic3d_VerticalTextAlignment" :
         """
         * Returns the vertical alignment of the text. The range of values includes: - normal - top - cap - half - base - bottom
 
@@ -3728,7 +3728,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_VerticalJustification(self, *args)
 
-    def Orientation(self, *args):
+    def Orientation(self, *args) -> "Graphic3d_TextPath" :
         """
         * Returns the orientation of the text. Text can be displayed in the following directions: - up - down - left, or - right
 
@@ -3737,7 +3737,7 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_Orientation(self, *args)
 
-    def aspect(self, *args):
+    def aspect(self, *args) -> "Handle_Graphic3d_AspectText3d" :
         """
         * Returns the purely textual attributes used in the display of text. These include: - color - font - height/width ratio, that is, the expansion factor, and - space between characters.
 
@@ -3746,11 +3746,11 @@ class Prs3d_TextAspect(Prs3d_BasicAspect):
         """
         return _Prs3d.Prs3d_TextAspect_aspect(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_TextAspect self)"""
         return _Prs3d.Prs3d_TextAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_TextAspect" :
         """GetHandle(Prs3d_TextAspect self) -> Handle_Prs3d_TextAspect"""
         return _Prs3d.Prs3d_TextAspect_GetHandle(self)
 
@@ -3803,7 +3803,7 @@ Handle_Prs3d_TextAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_T
 Handle_Prs3d_TextAspect_swigregister = _Prs3d.Handle_Prs3d_TextAspect_swigregister
 Handle_Prs3d_TextAspect_swigregister(Handle_Prs3d_TextAspect)
 
-def Handle_Prs3d_TextAspect_DownCast(*args):
+def Handle_Prs3d_TextAspect_DownCast(*args) -> "Handle_Prs3d_TextAspect const" :
   return _Prs3d.Handle_Prs3d_TextAspect_DownCast(*args)
 Handle_Prs3d_TextAspect_DownCast = _Prs3d.Handle_Prs3d_TextAspect_DownCast
 
@@ -3836,7 +3836,7 @@ class Prs3d_IsoAspect(Prs3d_LineAspect):
 
         """
         _Prs3d.Prs3d_IsoAspect_swiginit(self,_Prs3d.new_Prs3d_IsoAspect(*args))
-    def SetNumber(self, *args):
+    def SetNumber(self, *args) -> "void" :
         """
         * defines the number of U or V isoparametric curves  to be drawn for a single face. Default value: 10
 
@@ -3847,7 +3847,7 @@ class Prs3d_IsoAspect(Prs3d_LineAspect):
         """
         return _Prs3d.Prs3d_IsoAspect_SetNumber(self, *args)
 
-    def Number(self, *args):
+    def Number(self, *args) -> "Standard_Integer" :
         """
         * returns the number of U or V isoparametric curves drawn for a single face.
 
@@ -3856,11 +3856,11 @@ class Prs3d_IsoAspect(Prs3d_LineAspect):
         """
         return _Prs3d.Prs3d_IsoAspect_Number(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Prs3d_IsoAspect self)"""
         return _Prs3d.Prs3d_IsoAspect__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Prs3d_IsoAspect" :
         """GetHandle(Prs3d_IsoAspect self) -> Handle_Prs3d_IsoAspect"""
         return _Prs3d.Prs3d_IsoAspect_GetHandle(self)
 
@@ -3900,7 +3900,7 @@ Handle_Prs3d_IsoAspect._kill_pointed = new_instancemethod(_Prs3d.Handle_Prs3d_Is
 Handle_Prs3d_IsoAspect_swigregister = _Prs3d.Handle_Prs3d_IsoAspect_swigregister
 Handle_Prs3d_IsoAspect_swigregister(Handle_Prs3d_IsoAspect)
 
-def Handle_Prs3d_IsoAspect_DownCast(*args):
+def Handle_Prs3d_IsoAspect_DownCast(*args) -> "Handle_Prs3d_IsoAspect const" :
   return _Prs3d.Handle_Prs3d_IsoAspect_DownCast(*args)
 Handle_Prs3d_IsoAspect_DownCast = _Prs3d.Handle_Prs3d_IsoAspect_DownCast
 

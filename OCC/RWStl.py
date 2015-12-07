@@ -120,7 +120,7 @@ import OCC.TColStd
 class rwstl(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def WriteBinary(*args):
+    def WriteBinary(*args) -> "Standard_Boolean" :
         """
         * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
 
@@ -136,7 +136,7 @@ class rwstl(object):
         return _RWStl.rwstl_WriteBinary(*args)
 
     WriteBinary = staticmethod(WriteBinary)
-    def WriteAscii(*args):
+    def WriteAscii(*args) -> "Standard_Boolean" :
         """
         * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
 
@@ -152,7 +152,7 @@ class rwstl(object):
         return _RWStl.rwstl_WriteAscii(*args)
 
     WriteAscii = staticmethod(WriteAscii)
-    def ReadFile(*args):
+    def ReadFile(*args) -> "Handle_StlMesh_Mesh" :
         """
         * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
 
@@ -166,7 +166,7 @@ class rwstl(object):
         return _RWStl.rwstl_ReadFile(*args)
 
     ReadFile = staticmethod(ReadFile)
-    def ReadBinary(*args):
+    def ReadBinary(*args) -> "Handle_StlMesh_Mesh" :
         """
         * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
 
@@ -180,7 +180,7 @@ class rwstl(object):
         return _RWStl.rwstl_ReadBinary(*args)
 
     ReadBinary = staticmethod(ReadBinary)
-    def ReadAscii(*args):
+    def ReadAscii(*args) -> "Handle_StlMesh_Mesh" :
         """
         * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
 
@@ -208,7 +208,7 @@ rwstl._kill_pointed = new_instancemethod(_RWStl.rwstl__kill_pointed,None,rwstl)
 rwstl_swigregister = _RWStl.rwstl_swigregister
 rwstl_swigregister(rwstl)
 
-def rwstl_WriteBinary(*args):
+def rwstl_WriteBinary(*args) -> "Standard_Boolean" :
   """
     * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
 
@@ -223,7 +223,7 @@ def rwstl_WriteBinary(*args):
     """
   return _RWStl.rwstl_WriteBinary(*args)
 
-def rwstl_WriteAscii(*args):
+def rwstl_WriteAscii(*args) -> "Standard_Boolean" :
   """
     * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
 
@@ -238,7 +238,7 @@ def rwstl_WriteAscii(*args):
     """
   return _RWStl.rwstl_WriteAscii(*args)
 
-def rwstl_ReadFile(*args):
+def rwstl_ReadFile(*args) -> "Handle_StlMesh_Mesh" :
   """
     * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
 
@@ -251,7 +251,7 @@ def rwstl_ReadFile(*args):
     """
   return _RWStl.rwstl_ReadFile(*args)
 
-def rwstl_ReadBinary(*args):
+def rwstl_ReadBinary(*args) -> "Handle_StlMesh_Mesh" :
   """
     * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
 
@@ -264,7 +264,7 @@ def rwstl_ReadBinary(*args):
     """
   return _RWStl.rwstl_ReadBinary(*args)
 
-def rwstl_ReadAscii(*args):
+def rwstl_ReadAscii(*args) -> "Handle_StlMesh_Mesh" :
   """
     * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
 

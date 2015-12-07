@@ -120,7 +120,7 @@ import OCC.TColgp
 class stltransfer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def BuildIncrementalMesh(*args):
+    def BuildIncrementalMesh(*args) -> "void" :
         """
         :param Shape:
         :type Shape: TopoDS_Shape &
@@ -150,7 +150,7 @@ stltransfer._kill_pointed = new_instancemethod(_StlTransfer.stltransfer__kill_po
 stltransfer_swigregister = _StlTransfer.stltransfer_swigregister
 stltransfer_swigregister(stltransfer)
 
-def stltransfer_BuildIncrementalMesh(*args):
+def stltransfer_BuildIncrementalMesh(*args) -> "void" :
   """
     :param Shape:
     :type Shape: TopoDS_Shape &

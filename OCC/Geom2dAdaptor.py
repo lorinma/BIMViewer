@@ -120,7 +120,7 @@ import OCC.TColgp
 class geom2dadaptor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MakeCurve(*args):
+    def MakeCurve(*args) -> "Handle_Geom2d_Curve" :
         """
         * Inherited from GHCurve. Provides a curve handled by reference. Creates a 2d curve from a HCurve2d. This cannot process the OtherCurves.
 
@@ -146,7 +146,7 @@ geom2dadaptor._kill_pointed = new_instancemethod(_Geom2dAdaptor.geom2dadaptor__k
 geom2dadaptor_swigregister = _Geom2dAdaptor.geom2dadaptor_swigregister
 geom2dadaptor_swigregister(geom2dadaptor)
 
-def geom2dadaptor_MakeCurve(*args):
+def geom2dadaptor_MakeCurve(*args) -> "Handle_Geom2d_Curve" :
   """
     * Inherited from GHCurve. Provides a curve handled by reference. Creates a 2d curve from a HCurve2d. This cannot process the OtherCurves.
 
@@ -180,7 +180,7 @@ class Geom2dAdaptor_Curve(OCC.Adaptor2d.Adaptor2d_Curve2d):
 
         """
         _Geom2dAdaptor.Geom2dAdaptor_Curve_swiginit(self,_Geom2dAdaptor.new_Geom2dAdaptor_Curve(*args))
-    def Load(self, *args):
+    def Load(self, *args) -> "void" :
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -199,7 +199,7 @@ class Geom2dAdaptor_Curve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _Geom2dAdaptor.Geom2dAdaptor_Curve_Load(self, *args)
 
-    def Curve(self, *args):
+    def Curve(self, *args) -> "Handle_Geom2d_Curve const &" :
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -233,7 +233,7 @@ class Geom2dAdaptor_GHCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
 
         """
         _Geom2dAdaptor.Geom2dAdaptor_GHCurve_swiginit(self,_Geom2dAdaptor.new_Geom2dAdaptor_GHCurve(*args))
-    def Set(self, *args):
+    def Set(self, *args) -> "void" :
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -242,18 +242,18 @@ class Geom2dAdaptor_GHCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
         """
         return _Geom2dAdaptor.Geom2dAdaptor_GHCurve_Set(self, *args)
 
-    def ChangeCurve2d(self, *args):
+    def ChangeCurve2d(self, *args) -> "Geom2dAdaptor_Curve &" :
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _Geom2dAdaptor.Geom2dAdaptor_GHCurve_ChangeCurve2d(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dAdaptor_GHCurve self)"""
         return _Geom2dAdaptor.Geom2dAdaptor_GHCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Geom2dAdaptor_GHCurve" :
         """GetHandle(Geom2dAdaptor_GHCurve self) -> Handle_Geom2dAdaptor_GHCurve"""
         return _Geom2dAdaptor.Geom2dAdaptor_GHCurve_GetHandle(self)
 
@@ -293,7 +293,7 @@ Handle_Geom2dAdaptor_GHCurve._kill_pointed = new_instancemethod(_Geom2dAdaptor.H
 Handle_Geom2dAdaptor_GHCurve_swigregister = _Geom2dAdaptor.Handle_Geom2dAdaptor_GHCurve_swigregister
 Handle_Geom2dAdaptor_GHCurve_swigregister(Handle_Geom2dAdaptor_GHCurve)
 
-def Handle_Geom2dAdaptor_GHCurve_DownCast(*args):
+def Handle_Geom2dAdaptor_GHCurve_DownCast(*args) -> "Handle_Geom2dAdaptor_GHCurve const" :
   return _Geom2dAdaptor.Handle_Geom2dAdaptor_GHCurve_DownCast(*args)
 Handle_Geom2dAdaptor_GHCurve_DownCast = _Geom2dAdaptor.Handle_Geom2dAdaptor_GHCurve_DownCast
 
@@ -324,11 +324,11 @@ class Geom2dAdaptor_HCurve(Geom2dAdaptor_GHCurve):
 
         """
         _Geom2dAdaptor.Geom2dAdaptor_HCurve_swiginit(self,_Geom2dAdaptor.new_Geom2dAdaptor_HCurve(*args))
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(Geom2dAdaptor_HCurve self)"""
         return _Geom2dAdaptor.Geom2dAdaptor_HCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_Geom2dAdaptor_HCurve" :
         """GetHandle(Geom2dAdaptor_HCurve self) -> Handle_Geom2dAdaptor_HCurve"""
         return _Geom2dAdaptor.Geom2dAdaptor_HCurve_GetHandle(self)
 
@@ -366,7 +366,7 @@ Handle_Geom2dAdaptor_HCurve._kill_pointed = new_instancemethod(_Geom2dAdaptor.Ha
 Handle_Geom2dAdaptor_HCurve_swigregister = _Geom2dAdaptor.Handle_Geom2dAdaptor_HCurve_swigregister
 Handle_Geom2dAdaptor_HCurve_swigregister(Handle_Geom2dAdaptor_HCurve)
 
-def Handle_Geom2dAdaptor_HCurve_DownCast(*args):
+def Handle_Geom2dAdaptor_HCurve_DownCast(*args) -> "Handle_Geom2dAdaptor_HCurve const" :
   return _Geom2dAdaptor.Handle_Geom2dAdaptor_HCurve_DownCast(*args)
 Handle_Geom2dAdaptor_HCurve_DownCast = _Geom2dAdaptor.Handle_Geom2dAdaptor_HCurve_DownCast
 

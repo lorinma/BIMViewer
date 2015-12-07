@@ -133,7 +133,7 @@ import OCC.Geom2d
 class brepalgoapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def DumpOper(*args):
+    def DumpOper(*args) -> "void" :
         """
         * Check shapes on validity for boolean operation. Dump arguments and result of boolean operation in the file specified by path.
 
@@ -169,7 +169,7 @@ brepalgoapi._kill_pointed = new_instancemethod(_BRepAlgoAPI.brepalgoapi__kill_po
 brepalgoapi_swigregister = _BRepAlgoAPI.brepalgoapi_swigregister
 brepalgoapi_swigregister(brepalgoapi)
 
-def brepalgoapi_DumpOper(*args):
+def brepalgoapi_DumpOper(*args) -> "void" :
   """
     * Check shapes on validity for boolean operation. Dump arguments and result of boolean operation in the file specified by path.
 
@@ -194,7 +194,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetOperation(self, *args):
+    def SetOperation(self, *args) -> "void" :
         """
         * Sets the type of Boolean operation to perform It can be BOPAlgo_SECTION  BOPAlgo_COMMON  BOPAlgo_FUSE  BOPAlgo_CUT  BOPAlgo_CUT21
 
@@ -205,7 +205,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_SetOperation(self, *args)
 
-    def Shape1(self, *args):
+    def Shape1(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the first shape involved in this Boolean operation.
 
@@ -214,7 +214,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape1(self, *args)
 
-    def Shape2(self, *args):
+    def Shape2(self, *args) -> "TopoDS_Shape const" :
         """
         * Returns the second shape involved in this Boolean operation.
 
@@ -223,7 +223,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape2(self, *args)
 
-    def Operation(self, *args):
+    def Operation(self, *args) -> "BOPAlgo_Operation" :
         """
         * Returns the type of Boolean Operation that has been performed.
 
@@ -232,7 +232,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Operation(self, *args)
 
-    def FuseEdges(self, *args):
+    def FuseEdges(self, *args) -> "Standard_Boolean" :
         """
         * Returns the flag of edge refining
 
@@ -241,7 +241,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_FuseEdges(self, *args)
 
-    def RefineEdges(self, *args):
+    def RefineEdges(self, *args) -> "void" :
         """
         * Fuse C1 edges
 
@@ -250,14 +250,14 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_RefineEdges(self, *args)
 
-    def BuilderCanWork(self, *args):
+    def BuilderCanWork(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_BuilderCanWork(self, *args)
 
-    def ErrorStatus(self, *args):
+    def ErrorStatus(self, *args) -> "Standard_Integer" :
         """
         * Returns the error status of operation. 0 - Ok 1 - The Object is created but Nothing is Done 2 - Null source shapes is not allowed 3 - Check types of the arguments 4 - Can not allocate memory for the DSFiller 5 - The Builder can not work with such types of arguments 6 - Unknown operation is not allowed 7 - Can not allocate memory for the Builder > 100 - See the Builder's ErrorStatus
 
@@ -266,7 +266,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_ErrorStatus(self, *args)
 
-    def HasModified(self, *args):
+    def HasModified(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is at least one modified shape.  For use in BRepNaming.
 
@@ -275,7 +275,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasModified(self, *args)
 
-    def HasGenerated(self, *args):
+    def HasGenerated(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is at least one generated shape.  For use in BRepNaming.
 
@@ -284,7 +284,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasGenerated(self, *args)
 
-    def HasDeleted(self, *args):
+    def HasDeleted(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if there is at least one deleted shape.  For use in BRepNaming.
 
@@ -293,14 +293,14 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasDeleted(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Destroy(self, *args)
 
-    def SectionEdges(self, *args):
+    def SectionEdges(self, *args) -> "TopTools_ListOfShape const &" :
         """
         * Returns a list of section edges. The edges represent the result of intersection between arguments of Boolean Operation. They are computed during operation execution.
 
@@ -369,7 +369,7 @@ class BRepAlgoAPI_Check(object):
 
         """
         _BRepAlgoAPI.BRepAlgoAPI_Check_swiginit(self,_BRepAlgoAPI.new_BRepAlgoAPI_Check(*args))
-    def SetData(self, *args):
+    def SetData(self, *args) -> "void" :
         """
         * Sets data for check by Init method. The method provides alternative way for checking single shape.
 
@@ -398,7 +398,7 @@ class BRepAlgoAPI_Check(object):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Check_SetData(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         * Performs the check.
 
@@ -407,7 +407,7 @@ class BRepAlgoAPI_Check(object):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Check_Perform(self, *args)
 
-    def IsValid(self, *args):
+    def IsValid(self, *args) -> "Standard_Boolean" :
         """
         * Shows whether shape(s) valid or not.
 
@@ -416,7 +416,7 @@ class BRepAlgoAPI_Check(object):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Check_IsValid(self, *args)
 
-    def Result(self, *args):
+    def Result(self, *args) -> "BOPAlgo_ListOfCheckResult const &" :
         """
         * Returns faulty shapes.
 
@@ -619,7 +619,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
 
         """
         _BRepAlgoAPI.BRepAlgoAPI_Section_swiginit(self,_BRepAlgoAPI.new_BRepAlgoAPI_Section(*args))
-    def Init1(self, *args):
+    def Init1(self, *args) -> "void" :
         """
         * initialize first part
 
@@ -642,7 +642,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Init1(self, *args)
 
-    def Init2(self, *args):
+    def Init2(self, *args) -> "void" :
         """
         * initialize second part
 
@@ -665,7 +665,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Init2(self, *args)
 
-    def Approximation(self, *args):
+    def Approximation(self, *args) -> "void" :
         """
         * Defines an option for computation of further intersections. This computation will be performed by the function Build in this framework. By default, the underlying 3D geometry attached to each elementary edge of the result of a computed intersection is: - analytic where possible, provided the corresponding geometry corresponds to a type of analytic curve defined in the Geom package; for example the intersection of a cylindrical shape with a plane gives an ellipse or a circle; - or elsewhere, given as a succession of points grouped together in a BSpline curve of degree 1. If Approx equals true, when further computations are performed in this framework with the function Build, these edges will have an attached 3D geometry which is a BSpline approximation of the computed set of points. Note that as a result, approximations will be computed on edges built only on new intersection lines.
 
@@ -676,7 +676,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Approximation(self, *args)
 
-    def ComputePCurveOn1(self, *args):
+    def ComputePCurveOn1(self, *args) -> "void" :
         """
         * Indicates if the Pcurve must be (or not) performed on first part.
 
@@ -687,7 +687,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_ComputePCurveOn1(self, *args)
 
-    def ComputePCurveOn2(self, *args):
+    def ComputePCurveOn2(self, *args) -> "void" :
         """
         * Define options for the computation of further intersections, which will be performed by the function Build in this framework. By default, no parametric 2D curve (pcurve) is defined for the elementary edges of the result. If ComputePCurve1 equals true, further computations performed in this framework with the function Build will attach an additional pcurve in the parametric space of the first shape to the constructed edges. If ComputePCurve2 equals true, the additional pcurve will be attached to the constructed edges in the parametric space of the second shape. These two functions may be used together.
 
@@ -698,7 +698,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_ComputePCurveOn2(self, *args)
 
-    def HasAncestorFaceOn1(self, *args):
+    def HasAncestorFaceOn1(self, *args) -> "Standard_Boolean" :
         """
         * get the face of the first part giving section edge <E>. Returns True on the 3 following conditions : 1/ <E> is an edge returned by the Shape() method. 2/ First part of section performed is a shape. 3/ <E> is built on a intersection curve (i.e <E> 	 is not the result of common edges) When False, F remains untouched.
 
@@ -711,7 +711,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_HasAncestorFaceOn1(self, *args)
 
-    def HasAncestorFaceOn2(self, *args):
+    def HasAncestorFaceOn2(self, *args) -> "Standard_Boolean" :
         """
         * Identifies the ancestor faces of the intersection edge E resulting from the last computation performed in this framework, that is, the faces of the two original shapes on which the edge E lies: - HasAncestorFaceOn1 gives the ancestor face in the first shape, and - HasAncestorFaceOn2 gives the ancestor face in the second shape. These functions return true if an ancestor face F is found, or false if not. An ancestor face is identifiable for the edge E if the following conditions are satisfied: - the first part on which this algorithm performed its last computation is a shape, that is, it was not given as a surface or a plane at the time of construction of this algorithm or at a later time by the Init1 function, - E is one of the elementary edges built by the last computation of this section algorithm. To use these functions properly, you have to test the returned Boolean value before using the ancestor face: F is significant only if the returned Boolean value equals true.
 

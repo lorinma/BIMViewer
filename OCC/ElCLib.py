@@ -113,7 +113,7 @@ import OCC.gp
 class elclib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def InPeriod(*args):
+    def InPeriod(*args) -> "Standard_Real" :
         """
         * Return a value in the range <UFirst, ULast> by adding or removing the period <ULast - UFirst> to <U>.
 
@@ -129,7 +129,7 @@ class elclib(object):
         return _ElCLib.elclib_InPeriod(*args)
 
     InPeriod = staticmethod(InPeriod)
-    def AdjustPeriodic(*args):
+    def AdjustPeriodic(*args) -> "Standard_Real &, Standard_Real &" :
         """
         * Adjust U1 and U2 in the parametric range UFirst Ulast of a periodic curve, where ULast - UFirst is its period. To do this, this function: - sets U1 in the range [ UFirst, ULast ] by adding/removing the period to/from the value U1, then - sets U2 in the range [ U1, U1 + period ] by adding/removing the period to/from the value U2. Precision is used to test the equalities.
 
@@ -149,7 +149,7 @@ class elclib(object):
         return _ElCLib.elclib_AdjustPeriodic(*args)
 
     AdjustPeriodic = staticmethod(AdjustPeriodic)
-    def Value(*args):
+    def Value(*args) -> "gp_Pnt2d" :
         """
         * For elementary curves (lines, circles and conics) from the gp package, computes the point of parameter U. The result is either: - a gp_Pnt point for a curve in 3D space, or - a gp_Pnt2d point for a curve in 2D space.
 
@@ -217,7 +217,7 @@ class elclib(object):
         return _ElCLib.elclib_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args):
+    def D1(*args) -> "void" :
         """
         * For elementary curves (lines, circles and conics) from the gp package, computes: - the point P of parameter U, and - the first derivative vector V1 at this point. The results P and V1 are either: - a gp_Pnt point and a gp_Vec vector, for a curve in 3D space, or - a gp_Pnt2d point and a gp_Vec2d vector, for a curve in 2D space.
 
@@ -325,7 +325,7 @@ class elclib(object):
         return _ElCLib.elclib_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args):
+    def D2(*args) -> "void" :
         """
         * For elementary curves (circles and conics) from the gp package, computes: - the point P of parameter U, and - the first and second derivative vectors V1 and V2 at this point. The results, P, V1 and V2, are either: - a gp_Pnt point and two gp_Vec vectors, for a curve in 3D space, or - a gp_Pnt2d point and two gp_Vec2d vectors, for a curve in 2D space.
 
@@ -429,7 +429,7 @@ class elclib(object):
         return _ElCLib.elclib_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args):
+    def D3(*args) -> "void" :
         """
         * For elementary curves (circles, ellipses and hyperbolae) from the gp package, computes: - the point P of parameter U, and - the first, second and third derivative vectors V1, V2 and V3 at this point. The results, P, V1, V2 and V3, are either: - a gp_Pnt point and three gp_Vec vectors, for a curve in 3D space, or - a gp_Pnt2d point and three gp_Vec2d vectors, for a curve in 2D space.
 
@@ -523,7 +523,7 @@ class elclib(object):
         return _ElCLib.elclib_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args):
+    def DN(*args) -> "gp_Vec2d" :
         """
         * For elementary curves (lines, circles and conics) from the gp package, computes the vector corresponding to the Nth derivative at the point of parameter U. The result is either: - a gp_Vec vector for a curve in 3D space, or - a gp_Vec2d vector for a curve in 2D space. In the following functions N is the order of derivation and should be greater than 0
 
@@ -611,7 +611,7 @@ class elclib(object):
         return _ElCLib.elclib_DN(*args)
 
     DN = staticmethod(DN)
-    def LineValue(*args):
+    def LineValue(*args) -> "gp_Pnt2d" :
         """
         * Curve evaluation The following basis functions compute the derivatives on elementary curves defined by their geometric characteristics. These functions can be called without constructing a conic from package gp. They are called by the previous functions. Example : A circle is defined by its position and its radius.
 
@@ -631,7 +631,7 @@ class elclib(object):
         return _ElCLib.elclib_LineValue(*args)
 
     LineValue = staticmethod(LineValue)
-    def CircleValue(*args):
+    def CircleValue(*args) -> "gp_Pnt2d" :
         """
         :param U:
         :type U: float
@@ -653,7 +653,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleValue(*args)
 
     CircleValue = staticmethod(CircleValue)
-    def EllipseValue(*args):
+    def EllipseValue(*args) -> "gp_Pnt2d" :
         """
         :param U:
         :type U: float
@@ -679,7 +679,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseValue(*args)
 
     EllipseValue = staticmethod(EllipseValue)
-    def HyperbolaValue(*args):
+    def HyperbolaValue(*args) -> "gp_Pnt2d" :
         """
         :param U:
         :type U: float
@@ -705,7 +705,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaValue(*args)
 
     HyperbolaValue = staticmethod(HyperbolaValue)
-    def ParabolaValue(*args):
+    def ParabolaValue(*args) -> "gp_Pnt2d" :
         """
         :param U:
         :type U: float
@@ -727,7 +727,7 @@ class elclib(object):
         return _ElCLib.elclib_ParabolaValue(*args)
 
     ParabolaValue = staticmethod(ParabolaValue)
-    def LineD1(*args):
+    def LineD1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -753,7 +753,7 @@ class elclib(object):
         return _ElCLib.elclib_LineD1(*args)
 
     LineD1 = staticmethod(LineD1)
-    def CircleD1(*args):
+    def CircleD1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -783,7 +783,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleD1(*args)
 
     CircleD1 = staticmethod(CircleD1)
-    def EllipseD1(*args):
+    def EllipseD1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -817,7 +817,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseD1(*args)
 
     EllipseD1 = staticmethod(EllipseD1)
-    def HyperbolaD1(*args):
+    def HyperbolaD1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -851,7 +851,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaD1(*args)
 
     HyperbolaD1 = staticmethod(HyperbolaD1)
-    def ParabolaD1(*args):
+    def ParabolaD1(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -881,7 +881,7 @@ class elclib(object):
         return _ElCLib.elclib_ParabolaD1(*args)
 
     ParabolaD1 = staticmethod(ParabolaD1)
-    def CircleD2(*args):
+    def CircleD2(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -915,7 +915,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleD2(*args)
 
     CircleD2 = staticmethod(CircleD2)
-    def EllipseD2(*args):
+    def EllipseD2(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -953,7 +953,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseD2(*args)
 
     EllipseD2 = staticmethod(EllipseD2)
-    def HyperbolaD2(*args):
+    def HyperbolaD2(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -991,7 +991,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaD2(*args)
 
     HyperbolaD2 = staticmethod(HyperbolaD2)
-    def ParabolaD2(*args):
+    def ParabolaD2(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1025,7 +1025,7 @@ class elclib(object):
         return _ElCLib.elclib_ParabolaD2(*args)
 
     ParabolaD2 = staticmethod(ParabolaD2)
-    def CircleD3(*args):
+    def CircleD3(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1063,7 +1063,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleD3(*args)
 
     CircleD3 = staticmethod(CircleD3)
-    def EllipseD3(*args):
+    def EllipseD3(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1105,7 +1105,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseD3(*args)
 
     EllipseD3 = staticmethod(EllipseD3)
-    def HyperbolaD3(*args):
+    def HyperbolaD3(*args) -> "void" :
         """
         :param U:
         :type U: float
@@ -1149,7 +1149,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaD3(*args)
 
     HyperbolaD3 = staticmethod(HyperbolaD3)
-    def LineDN(*args):
+    def LineDN(*args) -> "gp_Vec2d" :
         """
         * In the following functions N is the order of derivation and should be greater than 0
 
@@ -1173,7 +1173,7 @@ class elclib(object):
         return _ElCLib.elclib_LineDN(*args)
 
     LineDN = staticmethod(LineDN)
-    def CircleDN(*args):
+    def CircleDN(*args) -> "gp_Vec2d" :
         """
         :param U:
         :type U: float
@@ -1199,7 +1199,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleDN(*args)
 
     CircleDN = staticmethod(CircleDN)
-    def EllipseDN(*args):
+    def EllipseDN(*args) -> "gp_Vec2d" :
         """
         :param U:
         :type U: float
@@ -1229,7 +1229,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseDN(*args)
 
     EllipseDN = staticmethod(EllipseDN)
-    def HyperbolaDN(*args):
+    def HyperbolaDN(*args) -> "gp_Vec2d" :
         """
         :param U:
         :type U: float
@@ -1259,7 +1259,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaDN(*args)
 
     HyperbolaDN = staticmethod(HyperbolaDN)
-    def ParabolaDN(*args):
+    def ParabolaDN(*args) -> "gp_Vec2d" :
         """
         :param U:
         :type U: float
@@ -1287,7 +1287,7 @@ class elclib(object):
         return _ElCLib.elclib_ParabolaDN(*args)
 
     ParabolaDN = staticmethod(ParabolaDN)
-    def Parameter(*args):
+    def Parameter(*args) -> "Standard_Real" :
         """
         * Computes the parameter value of the point P on the given curve. Note: In its local coordinate system, the parametric equation of the curve is given by the following: - for the line L: P(U) = Po + U*Vo where Po is the origin and Vo the unit vector of its positioning axis. - for the circle C: X(U) = Radius*Cos(U), Y(U) = Radius*Sin(U) - for the ellipse E: X(U) = MajorRadius*Cos(U). Y(U) = MinorRadius*Sin(U) - for the hyperbola H: X(U) = MajorRadius*Ch(U), Y(U) = MinorRadius*Sh(U) - for the parabola Prb: X(U) = U**2 / (2*p) Y(U) = U where p is the distance between the focus and the directrix. Warning The point P must be on the curve. These functions are not protected, however, and if point P is not on the curve, an exception may be raised.
 
@@ -1365,7 +1365,7 @@ class elclib(object):
         return _ElCLib.elclib_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def LineParameter(*args):
+    def LineParameter(*args) -> "Standard_Real" :
         """
         :param Pos:
         :type Pos: gp_Ax1
@@ -1385,7 +1385,7 @@ class elclib(object):
         return _ElCLib.elclib_LineParameter(*args)
 
     LineParameter = staticmethod(LineParameter)
-    def CircleParameter(*args):
+    def CircleParameter(*args) -> "Standard_Real" :
         """
         :param Pos:
         :type Pos: gp_Ax2
@@ -1405,7 +1405,7 @@ class elclib(object):
         return _ElCLib.elclib_CircleParameter(*args)
 
     CircleParameter = staticmethod(CircleParameter)
-    def EllipseParameter(*args):
+    def EllipseParameter(*args) -> "Standard_Real" :
         """
         :param Pos:
         :type Pos: gp_Ax2
@@ -1433,7 +1433,7 @@ class elclib(object):
         return _ElCLib.elclib_EllipseParameter(*args)
 
     EllipseParameter = staticmethod(EllipseParameter)
-    def HyperbolaParameter(*args):
+    def HyperbolaParameter(*args) -> "Standard_Real" :
         """
         :param Pos:
         :type Pos: gp_Ax2
@@ -1461,7 +1461,7 @@ class elclib(object):
         return _ElCLib.elclib_HyperbolaParameter(*args)
 
     HyperbolaParameter = staticmethod(HyperbolaParameter)
-    def ParabolaParameter(*args):
+    def ParabolaParameter(*args) -> "Standard_Real" :
         """
         :param Pos:
         :type Pos: gp_Ax2
@@ -1481,7 +1481,7 @@ class elclib(object):
         return _ElCLib.elclib_ParabolaParameter(*args)
 
     ParabolaParameter = staticmethod(ParabolaParameter)
-    def To3d(*args):
+    def To3d(*args) -> "gp_Parab" :
         """
         :param Pos:
         :type Pos: gp_Ax2
@@ -1563,7 +1563,7 @@ elclib._kill_pointed = new_instancemethod(_ElCLib.elclib__kill_pointed,None,elcl
 elclib_swigregister = _ElCLib.elclib_swigregister
 elclib_swigregister(elclib)
 
-def elclib_InPeriod(*args):
+def elclib_InPeriod(*args) -> "Standard_Real" :
   """
     * Return a value in the range <UFirst, ULast> by adding or removing the period <ULast - UFirst> to <U>.
 
@@ -1578,7 +1578,7 @@ def elclib_InPeriod(*args):
     """
   return _ElCLib.elclib_InPeriod(*args)
 
-def elclib_AdjustPeriodic(*args):
+def elclib_AdjustPeriodic(*args) -> "Standard_Real &, Standard_Real &" :
   """
     * Adjust U1 and U2 in the parametric range UFirst Ulast of a periodic curve, where ULast - UFirst is its period. To do this, this function: - sets U1 in the range [ UFirst, ULast ] by adding/removing the period to/from the value U1, then - sets U2 in the range [ U1, U1 + period ] by adding/removing the period to/from the value U2. Precision is used to test the equalities.
 
@@ -1597,7 +1597,7 @@ def elclib_AdjustPeriodic(*args):
     """
   return _ElCLib.elclib_AdjustPeriodic(*args)
 
-def elclib_Value(*args):
+def elclib_Value(*args) -> "gp_Pnt2d" :
   """
     * For elementary curves (lines, circles and conics) from the gp package, computes the point of parameter U. The result is either: - a gp_Pnt point for a curve in 3D space, or - a gp_Pnt2d point for a curve in 2D space.
 
@@ -1664,7 +1664,7 @@ def elclib_Value(*args):
     """
   return _ElCLib.elclib_Value(*args)
 
-def elclib_D1(*args):
+def elclib_D1(*args) -> "void" :
   """
     * For elementary curves (lines, circles and conics) from the gp package, computes: - the point P of parameter U, and - the first derivative vector V1 at this point. The results P and V1 are either: - a gp_Pnt point and a gp_Vec vector, for a curve in 3D space, or - a gp_Pnt2d point and a gp_Vec2d vector, for a curve in 2D space.
 
@@ -1771,7 +1771,7 @@ def elclib_D1(*args):
     """
   return _ElCLib.elclib_D1(*args)
 
-def elclib_D2(*args):
+def elclib_D2(*args) -> "void" :
   """
     * For elementary curves (circles and conics) from the gp package, computes: - the point P of parameter U, and - the first and second derivative vectors V1 and V2 at this point. The results, P, V1 and V2, are either: - a gp_Pnt point and two gp_Vec vectors, for a curve in 3D space, or - a gp_Pnt2d point and two gp_Vec2d vectors, for a curve in 2D space.
 
@@ -1874,7 +1874,7 @@ def elclib_D2(*args):
     """
   return _ElCLib.elclib_D2(*args)
 
-def elclib_D3(*args):
+def elclib_D3(*args) -> "void" :
   """
     * For elementary curves (circles, ellipses and hyperbolae) from the gp package, computes: - the point P of parameter U, and - the first, second and third derivative vectors V1, V2 and V3 at this point. The results, P, V1, V2 and V3, are either: - a gp_Pnt point and three gp_Vec vectors, for a curve in 3D space, or - a gp_Pnt2d point and three gp_Vec2d vectors, for a curve in 2D space.
 
@@ -1967,7 +1967,7 @@ def elclib_D3(*args):
     """
   return _ElCLib.elclib_D3(*args)
 
-def elclib_DN(*args):
+def elclib_DN(*args) -> "gp_Vec2d" :
   """
     * For elementary curves (lines, circles and conics) from the gp package, computes the vector corresponding to the Nth derivative at the point of parameter U. The result is either: - a gp_Vec vector for a curve in 3D space, or - a gp_Vec2d vector for a curve in 2D space. In the following functions N is the order of derivation and should be greater than 0
 
@@ -2054,7 +2054,7 @@ def elclib_DN(*args):
     """
   return _ElCLib.elclib_DN(*args)
 
-def elclib_LineValue(*args):
+def elclib_LineValue(*args) -> "gp_Pnt2d" :
   """
     * Curve evaluation The following basis functions compute the derivatives on elementary curves defined by their geometric characteristics. These functions can be called without constructing a conic from package gp. They are called by the previous functions. Example : A circle is defined by its position and its radius.
 
@@ -2073,7 +2073,7 @@ def elclib_LineValue(*args):
     """
   return _ElCLib.elclib_LineValue(*args)
 
-def elclib_CircleValue(*args):
+def elclib_CircleValue(*args) -> "gp_Pnt2d" :
   """
     :param U:
     :type U: float
@@ -2094,7 +2094,7 @@ def elclib_CircleValue(*args):
     """
   return _ElCLib.elclib_CircleValue(*args)
 
-def elclib_EllipseValue(*args):
+def elclib_EllipseValue(*args) -> "gp_Pnt2d" :
   """
     :param U:
     :type U: float
@@ -2119,7 +2119,7 @@ def elclib_EllipseValue(*args):
     """
   return _ElCLib.elclib_EllipseValue(*args)
 
-def elclib_HyperbolaValue(*args):
+def elclib_HyperbolaValue(*args) -> "gp_Pnt2d" :
   """
     :param U:
     :type U: float
@@ -2144,7 +2144,7 @@ def elclib_HyperbolaValue(*args):
     """
   return _ElCLib.elclib_HyperbolaValue(*args)
 
-def elclib_ParabolaValue(*args):
+def elclib_ParabolaValue(*args) -> "gp_Pnt2d" :
   """
     :param U:
     :type U: float
@@ -2165,7 +2165,7 @@ def elclib_ParabolaValue(*args):
     """
   return _ElCLib.elclib_ParabolaValue(*args)
 
-def elclib_LineD1(*args):
+def elclib_LineD1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2190,7 +2190,7 @@ def elclib_LineD1(*args):
     """
   return _ElCLib.elclib_LineD1(*args)
 
-def elclib_CircleD1(*args):
+def elclib_CircleD1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2219,7 +2219,7 @@ def elclib_CircleD1(*args):
     """
   return _ElCLib.elclib_CircleD1(*args)
 
-def elclib_EllipseD1(*args):
+def elclib_EllipseD1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2252,7 +2252,7 @@ def elclib_EllipseD1(*args):
     """
   return _ElCLib.elclib_EllipseD1(*args)
 
-def elclib_HyperbolaD1(*args):
+def elclib_HyperbolaD1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2285,7 +2285,7 @@ def elclib_HyperbolaD1(*args):
     """
   return _ElCLib.elclib_HyperbolaD1(*args)
 
-def elclib_ParabolaD1(*args):
+def elclib_ParabolaD1(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2314,7 +2314,7 @@ def elclib_ParabolaD1(*args):
     """
   return _ElCLib.elclib_ParabolaD1(*args)
 
-def elclib_CircleD2(*args):
+def elclib_CircleD2(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2347,7 +2347,7 @@ def elclib_CircleD2(*args):
     """
   return _ElCLib.elclib_CircleD2(*args)
 
-def elclib_EllipseD2(*args):
+def elclib_EllipseD2(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2384,7 +2384,7 @@ def elclib_EllipseD2(*args):
     """
   return _ElCLib.elclib_EllipseD2(*args)
 
-def elclib_HyperbolaD2(*args):
+def elclib_HyperbolaD2(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2421,7 +2421,7 @@ def elclib_HyperbolaD2(*args):
     """
   return _ElCLib.elclib_HyperbolaD2(*args)
 
-def elclib_ParabolaD2(*args):
+def elclib_ParabolaD2(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2454,7 +2454,7 @@ def elclib_ParabolaD2(*args):
     """
   return _ElCLib.elclib_ParabolaD2(*args)
 
-def elclib_CircleD3(*args):
+def elclib_CircleD3(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2491,7 +2491,7 @@ def elclib_CircleD3(*args):
     """
   return _ElCLib.elclib_CircleD3(*args)
 
-def elclib_EllipseD3(*args):
+def elclib_EllipseD3(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2532,7 +2532,7 @@ def elclib_EllipseD3(*args):
     """
   return _ElCLib.elclib_EllipseD3(*args)
 
-def elclib_HyperbolaD3(*args):
+def elclib_HyperbolaD3(*args) -> "void" :
   """
     :param U:
     :type U: float
@@ -2575,7 +2575,7 @@ def elclib_HyperbolaD3(*args):
     """
   return _ElCLib.elclib_HyperbolaD3(*args)
 
-def elclib_LineDN(*args):
+def elclib_LineDN(*args) -> "gp_Vec2d" :
   """
     * In the following functions N is the order of derivation and should be greater than 0
 
@@ -2598,7 +2598,7 @@ def elclib_LineDN(*args):
     """
   return _ElCLib.elclib_LineDN(*args)
 
-def elclib_CircleDN(*args):
+def elclib_CircleDN(*args) -> "gp_Vec2d" :
   """
     :param U:
     :type U: float
@@ -2623,7 +2623,7 @@ def elclib_CircleDN(*args):
     """
   return _ElCLib.elclib_CircleDN(*args)
 
-def elclib_EllipseDN(*args):
+def elclib_EllipseDN(*args) -> "gp_Vec2d" :
   """
     :param U:
     :type U: float
@@ -2652,7 +2652,7 @@ def elclib_EllipseDN(*args):
     """
   return _ElCLib.elclib_EllipseDN(*args)
 
-def elclib_HyperbolaDN(*args):
+def elclib_HyperbolaDN(*args) -> "gp_Vec2d" :
   """
     :param U:
     :type U: float
@@ -2681,7 +2681,7 @@ def elclib_HyperbolaDN(*args):
     """
   return _ElCLib.elclib_HyperbolaDN(*args)
 
-def elclib_ParabolaDN(*args):
+def elclib_ParabolaDN(*args) -> "gp_Vec2d" :
   """
     :param U:
     :type U: float
@@ -2708,7 +2708,7 @@ def elclib_ParabolaDN(*args):
     """
   return _ElCLib.elclib_ParabolaDN(*args)
 
-def elclib_Parameter(*args):
+def elclib_Parameter(*args) -> "Standard_Real" :
   """
     * Computes the parameter value of the point P on the given curve. Note: In its local coordinate system, the parametric equation of the curve is given by the following: - for the line L: P(U) = Po + U*Vo where Po is the origin and Vo the unit vector of its positioning axis. - for the circle C: X(U) = Radius*Cos(U), Y(U) = Radius*Sin(U) - for the ellipse E: X(U) = MajorRadius*Cos(U). Y(U) = MinorRadius*Sin(U) - for the hyperbola H: X(U) = MajorRadius*Ch(U), Y(U) = MinorRadius*Sh(U) - for the parabola Prb: X(U) = U**2 / (2*p) Y(U) = U where p is the distance between the focus and the directrix. Warning The point P must be on the curve. These functions are not protected, however, and if point P is not on the curve, an exception may be raised.
 
@@ -2785,7 +2785,7 @@ def elclib_Parameter(*args):
     """
   return _ElCLib.elclib_Parameter(*args)
 
-def elclib_LineParameter(*args):
+def elclib_LineParameter(*args) -> "Standard_Real" :
   """
     :param Pos:
     :type Pos: gp_Ax1
@@ -2804,7 +2804,7 @@ def elclib_LineParameter(*args):
     """
   return _ElCLib.elclib_LineParameter(*args)
 
-def elclib_CircleParameter(*args):
+def elclib_CircleParameter(*args) -> "Standard_Real" :
   """
     :param Pos:
     :type Pos: gp_Ax2
@@ -2823,7 +2823,7 @@ def elclib_CircleParameter(*args):
     """
   return _ElCLib.elclib_CircleParameter(*args)
 
-def elclib_EllipseParameter(*args):
+def elclib_EllipseParameter(*args) -> "Standard_Real" :
   """
     :param Pos:
     :type Pos: gp_Ax2
@@ -2850,7 +2850,7 @@ def elclib_EllipseParameter(*args):
     """
   return _ElCLib.elclib_EllipseParameter(*args)
 
-def elclib_HyperbolaParameter(*args):
+def elclib_HyperbolaParameter(*args) -> "Standard_Real" :
   """
     :param Pos:
     :type Pos: gp_Ax2
@@ -2877,7 +2877,7 @@ def elclib_HyperbolaParameter(*args):
     """
   return _ElCLib.elclib_HyperbolaParameter(*args)
 
-def elclib_ParabolaParameter(*args):
+def elclib_ParabolaParameter(*args) -> "Standard_Real" :
   """
     :param Pos:
     :type Pos: gp_Ax2
@@ -2896,7 +2896,7 @@ def elclib_ParabolaParameter(*args):
     """
   return _ElCLib.elclib_ParabolaParameter(*args)
 
-def elclib_To3d(*args):
+def elclib_To3d(*args) -> "gp_Parab" :
   """
     :param Pos:
     :type Pos: gp_Ax2

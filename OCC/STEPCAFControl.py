@@ -137,7 +137,7 @@ class STEPCAFControl_ActorWrite(OCC.STEPControl.STEPControl_ActorWrite):
 
         """
         _STEPCAFControl.STEPCAFControl_ActorWrite_swiginit(self,_STEPCAFControl.new_STEPCAFControl_ActorWrite(*args))
-    def SetStdMode(self, *args):
+    def SetStdMode(self, *args) -> "void" :
         """
         * Set standard mode of work In standard mode Actor (default) behaves exactly as its ancestor, also map is cleared
 
@@ -148,7 +148,7 @@ class STEPCAFControl_ActorWrite(OCC.STEPControl.STEPControl_ActorWrite):
         """
         return _STEPCAFControl.STEPCAFControl_ActorWrite_SetStdMode(self, *args)
 
-    def ClearMap(self, *args):
+    def ClearMap(self, *args) -> "void" :
         """
         * Clears map of shapes registered as assemblies
 
@@ -157,7 +157,7 @@ class STEPCAFControl_ActorWrite(OCC.STEPControl.STEPControl_ActorWrite):
         """
         return _STEPCAFControl.STEPCAFControl_ActorWrite_ClearMap(self, *args)
 
-    def RegisterAssembly(self, *args):
+    def RegisterAssembly(self, *args) -> "void" :
         """
         * Registers shape to be written as assembly The shape should be TopoDS_Compound (else does nothing)
 
@@ -205,7 +205,7 @@ Handle_STEPCAFControl_ActorWrite._kill_pointed = new_instancemethod(_STEPCAFCont
 Handle_STEPCAFControl_ActorWrite_swigregister = _STEPCAFControl.Handle_STEPCAFControl_ActorWrite_swigregister
 Handle_STEPCAFControl_ActorWrite_swigregister(Handle_STEPCAFControl_ActorWrite)
 
-def Handle_STEPCAFControl_ActorWrite_DownCast(*args):
+def Handle_STEPCAFControl_ActorWrite_DownCast(*args) -> "Handle_STEPCAFControl_ActorWrite const" :
   return _STEPCAFControl.Handle_STEPCAFControl_ActorWrite_DownCast(*args)
 Handle_STEPCAFControl_ActorWrite_DownCast = _STEPCAFControl.Handle_STEPCAFControl_ActorWrite_DownCast
 
@@ -220,7 +220,7 @@ class STEPCAFControl_Controller(OCC.STEPControl.STEPControl_Controller):
 
         """
         _STEPCAFControl.STEPCAFControl_Controller_swiginit(self,_STEPCAFControl.new_STEPCAFControl_Controller(*args))
-    def Init(*args):
+    def Init(*args) -> "Standard_Boolean" :
         """
         * Standard Initialisation. It creates a Controller for STEP-XCAF and records it to various names, available to select it later Returns True when done, False if could not be done
 
@@ -230,11 +230,11 @@ class STEPCAFControl_Controller(OCC.STEPControl.STEPControl_Controller):
         return _STEPCAFControl.STEPCAFControl_Controller_Init(*args)
 
     Init = staticmethod(Init)
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_Controller self)"""
         return _STEPCAFControl.STEPCAFControl_Controller__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_Controller" :
         """GetHandle(STEPCAFControl_Controller self) -> Handle_STEPCAFControl_Controller"""
         return _STEPCAFControl.STEPCAFControl_Controller_GetHandle(self)
 
@@ -251,7 +251,7 @@ STEPCAFControl_Controller.GetHandle = new_instancemethod(_STEPCAFControl.STEPCAF
 STEPCAFControl_Controller_swigregister = _STEPCAFControl.STEPCAFControl_Controller_swigregister
 STEPCAFControl_Controller_swigregister(STEPCAFControl_Controller)
 
-def STEPCAFControl_Controller_Init(*args):
+def STEPCAFControl_Controller_Init(*args) -> "Standard_Boolean" :
   """
     * Standard Initialisation. It creates a Controller for STEP-XCAF and records it to various names, available to select it later Returns True when done, False if could not be done
 
@@ -281,7 +281,7 @@ Handle_STEPCAFControl_Controller._kill_pointed = new_instancemethod(_STEPCAFCont
 Handle_STEPCAFControl_Controller_swigregister = _STEPCAFControl.Handle_STEPCAFControl_Controller_swigregister
 Handle_STEPCAFControl_Controller_swigregister(Handle_STEPCAFControl_Controller)
 
-def Handle_STEPCAFControl_Controller_DownCast(*args):
+def Handle_STEPCAFControl_Controller_DownCast(*args) -> "Handle_STEPCAFControl_Controller const" :
   return _STEPCAFControl.Handle_STEPCAFControl_Controller_DownCast(*args)
 Handle_STEPCAFControl_Controller_DownCast = _STEPCAFControl.Handle_STEPCAFControl_Controller_DownCast
 
@@ -298,7 +298,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile(OCC.TCollection.T
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfLabelExternFile &
@@ -307,14 +307,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile(OCC.TCollection.T
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
@@ -349,7 +349,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape(OCC.TCollection.TColle
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfLabelShape &
@@ -358,14 +358,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape(OCC.TCollection.TColle
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label const &" :
         """
         :rtype: TDF_Label
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfLabelShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
@@ -400,7 +400,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile(OCC.TCollection.TCol
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfPDExternFile &
@@ -409,14 +409,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile(OCC.TCollection.TCol
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_StepBasic_ProductDefinition const &" :
         """
         :rtype: Handle_StepBasic_ProductDefinition
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfPDExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
@@ -451,7 +451,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile(OCC.TCollection.TCo
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfSDRExternFile &
@@ -460,14 +460,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile(OCC.TCollection.TCo
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation const &" :
         """
         :rtype: Handle_StepShape_ShapeDefinitionRepresentation
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfSDRExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
@@ -502,7 +502,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfShapePD(OCC.TCollection.TCollecti
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapePD_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfShapePD(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfShapePD &
@@ -511,14 +511,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfShapePD(OCC.TCollection.TCollecti
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapePD_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapePD_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StepBasic_ProductDefinition const &" :
         """
         :rtype: Handle_StepBasic_ProductDefinition
 
@@ -553,7 +553,7 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR(OCC.TCollection.TCollect
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR(*args))
-    def Initialize(self, *args):
+    def Initialize(self, *args) -> "void" :
         """
         :param aMap:
         :type aMap: STEPCAFControl_DataMapOfShapeSDR &
@@ -562,14 +562,14 @@ class STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR(OCC.TCollection.TCollect
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR_Initialize(self, *args)
 
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape const" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapIteratorOfDataMapOfShapeSDR_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation const &" :
         """
         :rtype: Handle_StepShape_ShapeDefinitionRepresentation
 
@@ -606,25 +606,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile(OCC.TCollection.TColl
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_GetHandle(self)
 
@@ -664,7 +664,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile._kill_pointed = new_
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelExternFile_DownCast
 
@@ -683,25 +683,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfLabelShape(OCC.TCollection.TCollectio
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TDF_Label &" :
         """
         :rtype: TDF_Label
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfLabelShape self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelShape__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfLabelShape self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_GetHandle(self)
 
@@ -741,7 +741,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape._kill_pointed = new_insta
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfLabelShape_DownCast
 
@@ -760,25 +760,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile(OCC.TCollection.TCollect
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_StepBasic_ProductDefinition &" :
         """
         :rtype: Handle_StepBasic_ProductDefinition
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_GetHandle(self)
 
@@ -818,7 +818,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile._kill_pointed = new_ins
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfPDExternFile_DownCast
 
@@ -837,25 +837,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile(OCC.TCollection.TCollec
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation &" :
         """
         :rtype: Handle_StepShape_ShapeDefinitionRepresentation
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_GetHandle(self)
 
@@ -895,7 +895,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile._kill_pointed = new_in
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfSDRExternFile_DownCast
 
@@ -914,25 +914,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfShapePD(OCC.TCollection.TCollection_M
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapePD_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfShapePD(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapePD_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StepBasic_ProductDefinition &" :
         """
         :rtype: Handle_StepBasic_ProductDefinition
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapePD_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfShapePD self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapePD__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfShapePD self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapePD_GetHandle(self)
 
@@ -972,7 +972,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD._kill_pointed = new_instance
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapePD_DownCast
 
@@ -991,25 +991,25 @@ class STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR(OCC.TCollection.TCollection_
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR(*args))
-    def Key(self, *args):
+    def Key(self, *args) -> "TopoDS_Shape" :
         """
         :rtype: TopoDS_Shape
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_Key(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation &" :
         """
         :rtype: Handle_StepShape_ShapeDefinitionRepresentation
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR" :
         """GetHandle(STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR self) -> Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR"""
         return _STEPCAFControl.STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_GetHandle(self)
 
@@ -1049,7 +1049,7 @@ Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR._kill_pointed = new_instanc
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_swigregister
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_swigregister(Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR)
 
-def Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_DownCast(*args):
+def Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_DownCast(*args) -> "Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_DownCast(*args)
 Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DataMapNodeOfDataMapOfShapeSDR_DownCast
 
@@ -1064,7 +1064,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfLabelExternFile(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfLabelExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfLabelExternFile &
@@ -1073,7 +1073,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfLabelExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfLabelExternFile &
@@ -1082,7 +1082,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1091,14 +1091,14 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1109,7 +1109,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1118,7 +1118,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1127,7 +1127,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1136,7 +1136,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1145,7 +1145,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1154,7 +1154,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1163,7 +1163,7 @@ class STEPCAFControl_DataMapOfLabelExternFile(OCC.TCollection.TCollection_BasicM
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfLabelExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelExternFile__kill_pointed(self)
 
@@ -1201,7 +1201,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfLabelShape(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfLabelShape &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfLabelShape &
@@ -1210,7 +1210,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfLabelShape &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfLabelShape &
@@ -1219,7 +1219,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1228,14 +1228,14 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1246,7 +1246,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1255,7 +1255,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1264,7 +1264,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "TopoDS_Shape const" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1273,7 +1273,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "TopoDS_Shape" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1282,7 +1282,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1291,7 +1291,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TDF_Label &
@@ -1300,7 +1300,7 @@ class STEPCAFControl_DataMapOfLabelShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfLabelShape self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfLabelShape__kill_pointed(self)
 
@@ -1338,7 +1338,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfPDExternFile(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfPDExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfPDExternFile &
@@ -1347,7 +1347,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfPDExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfPDExternFile &
@@ -1356,7 +1356,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1365,14 +1365,14 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1383,7 +1383,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1392,7 +1392,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1401,7 +1401,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1410,7 +1410,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1419,7 +1419,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1428,7 +1428,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_StepBasic_ProductDefinition &
@@ -1437,7 +1437,7 @@ class STEPCAFControl_DataMapOfPDExternFile(OCC.TCollection.TCollection_BasicMap)
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfPDExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfPDExternFile__kill_pointed(self)
 
@@ -1475,7 +1475,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfSDRExternFile(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfSDRExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfSDRExternFile &
@@ -1484,7 +1484,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfSDRExternFile &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfSDRExternFile &
@@ -1493,7 +1493,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1502,14 +1502,14 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1520,7 +1520,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1529,7 +1529,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1538,7 +1538,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1547,7 +1547,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1556,7 +1556,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1565,7 +1565,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: Handle_StepShape_ShapeDefinitionRepresentation &
@@ -1574,7 +1574,7 @@ class STEPCAFControl_DataMapOfSDRExternFile(OCC.TCollection.TCollection_BasicMap
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfSDRExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfSDRExternFile__kill_pointed(self)
 
@@ -1612,7 +1612,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfShapePD(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfShapePD &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfShapePD &
@@ -1621,7 +1621,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfShapePD &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfShapePD &
@@ -1630,7 +1630,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1639,14 +1639,14 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1657,7 +1657,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1666,7 +1666,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1675,7 +1675,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_StepBasic_ProductDefinition const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1684,7 +1684,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_StepBasic_ProductDefinition &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1693,7 +1693,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1702,7 +1702,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1711,7 +1711,7 @@ class STEPCAFControl_DataMapOfShapePD(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfShapePD self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapePD__kill_pointed(self)
 
@@ -1749,7 +1749,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
 
         """
         _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DataMapOfShapeSDR(*args))
-    def Assign(self, *args):
+    def Assign(self, *args) -> "STEPCAFControl_DataMapOfShapeSDR &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfShapeSDR &
@@ -1758,7 +1758,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "STEPCAFControl_DataMapOfShapeSDR &" :
         """
         :param Other:
         :type Other: STEPCAFControl_DataMapOfShapeSDR &
@@ -1767,7 +1767,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Set(self, *args)
 
-    def ReSize(self, *args):
+    def ReSize(self, *args) -> "void" :
         """
         :param NbBuckets:
         :type NbBuckets: int
@@ -1776,14 +1776,14 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_ReSize(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Clear(self, *args)
 
-    def Bind(self, *args):
+    def Bind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1794,7 +1794,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Bind(self, *args)
 
-    def IsBound(self, *args):
+    def IsBound(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1803,7 +1803,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_IsBound(self, *args)
 
-    def UnBind(self, *args):
+    def UnBind(self, *args) -> "Standard_Boolean" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1812,7 +1812,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_UnBind(self, *args)
 
-    def Find(self, *args):
+    def Find(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation const &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1821,7 +1821,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Find(self, *args)
 
-    def ChangeFind(self, *args):
+    def ChangeFind(self, *args) -> "Handle_StepShape_ShapeDefinitionRepresentation &" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1830,7 +1830,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_ChangeFind(self, *args)
 
-    def Find1(self, *args):
+    def Find1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1839,7 +1839,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_Find1(self, *args)
 
-    def ChangeFind1(self, *args):
+    def ChangeFind1(self, *args) -> "Standard_Address" :
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1848,7 +1848,7 @@ class STEPCAFControl_DataMapOfShapeSDR(OCC.TCollection.TCollection_BasicMap):
         """
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR_ChangeFind1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DataMapOfShapeSDR self)"""
         return _STEPCAFControl.STEPCAFControl_DataMapOfShapeSDR__kill_pointed(self)
 
@@ -1884,7 +1884,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
 
         """
         _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_DictionaryOfExternFile(*args))
-    def HasItem(self, *args):
+    def HasItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -1901,7 +1901,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_HasItem(self, *args)
 
-    def Item(self, *args):
+    def Item(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :param name:
         :type name: char *
@@ -1918,7 +1918,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_Item(self, *args)
 
-    def GetItem(self, *args):
+    def GetItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -1939,7 +1939,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_GetItem(self, *args)
 
-    def SetItem(self, *args):
+    def SetItem(self, *args) -> "void" :
         """
         :param name:
         :type name: char *
@@ -1960,7 +1960,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_SetItem(self, *args)
 
-    def NewItem(self, *args):
+    def NewItem(self, *args) -> "Handle_STEPCAFControl_ExternFile &" :
         """
         :param name:
         :type name: char *
@@ -1981,7 +1981,7 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_NewItem(self, *args)
 
-    def RemoveItem(self, *args):
+    def RemoveItem(self, *args) -> "Standard_Boolean" :
         """
         :param name:
         :type name: char *
@@ -2002,35 +2002,35 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_RemoveItem(self, *args)
 
-    def Clean(self, *args):
+    def Clean(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_Clean(self, *args)
 
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_IsEmpty(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_Clear(self, *args)
 
-    def Copy(self, *args):
+    def Copy(self, *args) -> "Handle_STEPCAFControl_DictionaryOfExternFile" :
         """
         :rtype: Handle_STEPCAFControl_DictionaryOfExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_Copy(self, *args)
 
-    def Complete(self, *args):
+    def Complete(self, *args) -> "Standard_Boolean" :
         """
         :param acell:
         :type acell: Handle_STEPCAFControl_DictionaryOfExternFile &
@@ -2039,11 +2039,11 @@ class STEPCAFControl_DictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_Complete(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_DictionaryOfExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_DictionaryOfExternFile" :
         """GetHandle(STEPCAFControl_DictionaryOfExternFile self) -> Handle_STEPCAFControl_DictionaryOfExternFile"""
         return _STEPCAFControl.STEPCAFControl_DictionaryOfExternFile_GetHandle(self)
 
@@ -2092,7 +2092,7 @@ Handle_STEPCAFControl_DictionaryOfExternFile._kill_pointed = new_instancemethod(
 Handle_STEPCAFControl_DictionaryOfExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_DictionaryOfExternFile_swigregister
 Handle_STEPCAFControl_DictionaryOfExternFile_swigregister(Handle_STEPCAFControl_DictionaryOfExternFile)
 
-def Handle_STEPCAFControl_DictionaryOfExternFile_DownCast(*args):
+def Handle_STEPCAFControl_DictionaryOfExternFile_DownCast(*args) -> "Handle_STEPCAFControl_DictionaryOfExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_DictionaryOfExternFile_DownCast(*args)
 Handle_STEPCAFControl_DictionaryOfExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_DictionaryOfExternFile_DownCast
 
@@ -2107,7 +2107,7 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
 
         """
         _STEPCAFControl.STEPCAFControl_ExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_ExternFile(*args))
-    def SetWS(self, *args):
+    def SetWS(self, *args) -> "void" :
         """
         :param WS:
         :type WS: Handle_XSControl_WorkSession &
@@ -2116,14 +2116,14 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetWS(self, *args)
 
-    def GetWS(self, *args):
+    def GetWS(self, *args) -> "Handle_XSControl_WorkSession" :
         """
         :rtype: Handle_XSControl_WorkSession
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetWS(self, *args)
 
-    def SetLoadStatus(self, *args):
+    def SetLoadStatus(self, *args) -> "void" :
         """
         :param stat:
         :type stat: IFSelect_ReturnStatus
@@ -2132,14 +2132,14 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetLoadStatus(self, *args)
 
-    def GetLoadStatus(self, *args):
+    def GetLoadStatus(self, *args) -> "IFSelect_ReturnStatus" :
         """
         :rtype: IFSelect_ReturnStatus
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetLoadStatus(self, *args)
 
-    def SetTransferStatus(self, *args):
+    def SetTransferStatus(self, *args) -> "void" :
         """
         :param isok:
         :type isok: bool
@@ -2148,14 +2148,14 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetTransferStatus(self, *args)
 
-    def GetTransferStatus(self, *args):
+    def GetTransferStatus(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetTransferStatus(self, *args)
 
-    def SetWriteStatus(self, *args):
+    def SetWriteStatus(self, *args) -> "void" :
         """
         :param stat:
         :type stat: IFSelect_ReturnStatus
@@ -2164,14 +2164,14 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetWriteStatus(self, *args)
 
-    def GetWriteStatus(self, *args):
+    def GetWriteStatus(self, *args) -> "IFSelect_ReturnStatus" :
         """
         :rtype: IFSelect_ReturnStatus
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetWriteStatus(self, *args)
 
-    def SetName(self, *args):
+    def SetName(self, *args) -> "void" :
         """
         :param name:
         :type name: Handle_TCollection_HAsciiString &
@@ -2180,14 +2180,14 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetName(self, *args)
 
-    def GetName(self, *args):
+    def GetName(self, *args) -> "Handle_TCollection_HAsciiString" :
         """
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetName(self, *args)
 
-    def SetLabel(self, *args):
+    def SetLabel(self, *args) -> "void" :
         """
         :param L:
         :type L: TDF_Label &
@@ -2196,18 +2196,18 @@ class STEPCAFControl_ExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_SetLabel(self, *args)
 
-    def GetLabel(self, *args):
+    def GetLabel(self, *args) -> "TDF_Label" :
         """
         :rtype: TDF_Label
 
         """
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetLabel(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_ExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_ExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_ExternFile" :
         """GetHandle(STEPCAFControl_ExternFile self) -> Handle_STEPCAFControl_ExternFile"""
         return _STEPCAFControl.STEPCAFControl_ExternFile_GetHandle(self)
 
@@ -2257,7 +2257,7 @@ Handle_STEPCAFControl_ExternFile._kill_pointed = new_instancemethod(_STEPCAFCont
 Handle_STEPCAFControl_ExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_ExternFile_swigregister
 Handle_STEPCAFControl_ExternFile_swigregister(Handle_STEPCAFControl_ExternFile)
 
-def Handle_STEPCAFControl_ExternFile_DownCast(*args):
+def Handle_STEPCAFControl_ExternFile_DownCast(*args) -> "Handle_STEPCAFControl_ExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_ExternFile_DownCast(*args)
 Handle_STEPCAFControl_ExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_ExternFile_DownCast
 
@@ -2284,35 +2284,35 @@ class STEPCAFControl_IteratorOfDictionaryOfExternFile(object):
 
         """
         _STEPCAFControl.STEPCAFControl_IteratorOfDictionaryOfExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_IteratorOfDictionaryOfExternFile(*args))
-    def Start(self, *args):
+    def Start(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_IteratorOfDictionaryOfExternFile_Start(self, *args)
 
-    def More(self, *args):
+    def More(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_IteratorOfDictionaryOfExternFile_More(self, *args)
 
-    def Next(self, *args):
+    def Next(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _STEPCAFControl.STEPCAFControl_IteratorOfDictionaryOfExternFile_Next(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_ExternFile const &" :
         """
         :rtype: Handle_STEPCAFControl_ExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_IteratorOfDictionaryOfExternFile_Value(self, *args)
 
-    def Name(self, *args):
+    def Name(self, *args) -> "TCollection_AsciiString" :
         """
         :rtype: TCollection_AsciiString
 
@@ -2355,7 +2355,7 @@ class STEPCAFControl_Reader(object):
 
         """
         _STEPCAFControl.STEPCAFControl_Reader_swiginit(self,_STEPCAFControl.new_STEPCAFControl_Reader(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Clears the internal data structures and attaches to a new session Clears the session if it was not yet set for STEP
 
@@ -2368,7 +2368,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_Init(self, *args)
 
-    def ReadFile(self, *args):
+    def ReadFile(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Loads a file and returns the read status Provided for use like single-file reader
 
@@ -2379,7 +2379,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_ReadFile(self, *args)
 
-    def NbRootsForTransfer(self, *args):
+    def NbRootsForTransfer(self, *args) -> "Standard_Integer" :
         """
         * Returns number of roots recognized for transfer Shortcut for Reader().NbRootsForTransfer()
 
@@ -2388,7 +2388,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_NbRootsForTransfer(self, *args)
 
-    def TransferOneRoot(self, *args):
+    def TransferOneRoot(self, *args) -> "Standard_Boolean" :
         """
         * Translates currently loaded STEP file into the document Returns True if succeeded, and False in case of fail Provided for use like single-file reader
 
@@ -2401,7 +2401,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_TransferOneRoot(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Standard_Boolean" :
         """
         * Translates currently loaded STEP file into the document Returns True if succeeded, and False in case of fail Provided for use like single-file reader
 
@@ -2412,7 +2412,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_Transfer(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         :param filename:
         :type filename: TCollection_AsciiString &
@@ -2431,7 +2431,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_Perform(self, *args)
 
-    def ExternFiles(self, *args):
+    def ExternFiles(self, *args) -> "Handle_STEPCAFControl_DictionaryOfExternFile const &" :
         """
         * Returns data on external files Returns Null handle if no external files are read
 
@@ -2440,7 +2440,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_ExternFiles(self, *args)
 
-    def ExternFile(self, *args):
+    def ExternFile(self, *args) -> "Standard_Boolean" :
         """
         * Returns data on external file by its name Returns False if no external file with given name is read
 
@@ -2453,7 +2453,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_ExternFile(self, *args)
 
-    def ChangeReader(self, *args):
+    def ChangeReader(self, *args) -> "STEPControl_Reader &" :
         """
         * Returns basic reader
 
@@ -2462,7 +2462,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_ChangeReader(self, *args)
 
-    def Reader(self, *args):
+    def Reader(self, *args) -> "STEPControl_Reader const &" :
         """
         * Returns basic reader as const
 
@@ -2471,7 +2471,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_Reader(self, *args)
 
-    def FindInstance(*args):
+    def FindInstance(*args) -> "TDF_Label" :
         """
         * Returns label of instance of an assembly component corresponding to a given NAUO
 
@@ -2491,7 +2491,7 @@ class STEPCAFControl_Reader(object):
         return _STEPCAFControl.STEPCAFControl_Reader_FindInstance(*args)
 
     FindInstance = staticmethod(FindInstance)
-    def SetColorMode(self, *args):
+    def SetColorMode(self, *args) -> "void" :
         """
         * Set ColorMode for indicate read Colors or not.
 
@@ -2502,14 +2502,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetColorMode(self, *args)
 
-    def GetColorMode(self, *args):
+    def GetColorMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetColorMode(self, *args)
 
-    def SetNameMode(self, *args):
+    def SetNameMode(self, *args) -> "void" :
         """
         * Set NameMode for indicate read Name or not.
 
@@ -2520,14 +2520,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetNameMode(self, *args)
 
-    def GetNameMode(self, *args):
+    def GetNameMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetNameMode(self, *args)
 
-    def SetLayerMode(self, *args):
+    def SetLayerMode(self, *args) -> "void" :
         """
         * Set LayerMode for indicate read Layers or not.
 
@@ -2538,14 +2538,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetLayerMode(self, *args)
 
-    def GetLayerMode(self, *args):
+    def GetLayerMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetLayerMode(self, *args)
 
-    def SetPropsMode(self, *args):
+    def SetPropsMode(self, *args) -> "void" :
         """
         * PropsMode for indicate read Validation properties or not.
 
@@ -2556,14 +2556,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetPropsMode(self, *args)
 
-    def GetPropsMode(self, *args):
+    def GetPropsMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetPropsMode(self, *args)
 
-    def SetSHUOMode(self, *args):
+    def SetSHUOMode(self, *args) -> "void" :
         """
         * Set SHUO mode for indicate write SHUO or not.
 
@@ -2574,14 +2574,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetSHUOMode(self, *args)
 
-    def GetSHUOMode(self, *args):
+    def GetSHUOMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetSHUOMode(self, *args)
 
-    def SetGDTMode(self, *args):
+    def SetGDTMode(self, *args) -> "void" :
         """
         * Set GDT mode for indicate write GDT or not.
 
@@ -2592,14 +2592,14 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetGDTMode(self, *args)
 
-    def GetGDTMode(self, *args):
+    def GetGDTMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Reader_GetGDTMode(self, *args)
 
-    def SetMatMode(self, *args):
+    def SetMatMode(self, *args) -> "void" :
         """
         * Set Material mode
 
@@ -2610,7 +2610,7 @@ class STEPCAFControl_Reader(object):
         """
         return _STEPCAFControl.STEPCAFControl_Reader_SetMatMode(self, *args)
 
-    def GetMatMode(self, *args):
+    def GetMatMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
@@ -2653,7 +2653,7 @@ STEPCAFControl_Reader._kill_pointed = new_instancemethod(_STEPCAFControl.STEPCAF
 STEPCAFControl_Reader_swigregister = _STEPCAFControl.STEPCAFControl_Reader_swigregister
 STEPCAFControl_Reader_swigregister(STEPCAFControl_Reader)
 
-def STEPCAFControl_Reader_FindInstance(*args):
+def STEPCAFControl_Reader_FindInstance(*args) -> "TDF_Label" :
   """
     * Returns label of instance of an assembly component corresponding to a given NAUO
 
@@ -2685,21 +2685,21 @@ class STEPCAFControl_StackItemOfDictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
 
         """
         _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile_swiginit(self,_STEPCAFControl.new_STEPCAFControl_StackItemOfDictionaryOfExternFile(*args))
-    def Previous(self, *args):
+    def Previous(self, *args) -> "Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile" :
         """
         :rtype: Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile_Previous(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_STEPCAFControl_DictionaryOfExternFile" :
         """
         :rtype: Handle_STEPCAFControl_DictionaryOfExternFile
 
         """
         return _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param cval:
         :type cval: Handle_STEPCAFControl_DictionaryOfExternFile &
@@ -2708,11 +2708,11 @@ class STEPCAFControl_StackItemOfDictionaryOfExternFile(OCC.MMgt.MMgt_TShared):
         """
         return _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile_SetValue(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(STEPCAFControl_StackItemOfDictionaryOfExternFile self)"""
         return _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile" :
         """GetHandle(STEPCAFControl_StackItemOfDictionaryOfExternFile self) -> Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile"""
         return _STEPCAFControl.STEPCAFControl_StackItemOfDictionaryOfExternFile_GetHandle(self)
 
@@ -2753,7 +2753,7 @@ Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile._kill_pointed = new_inst
 Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_swigregister = _STEPCAFControl.Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_swigregister
 Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_swigregister(Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile)
 
-def Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_DownCast(*args):
+def Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_DownCast(*args) -> "Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile const" :
   return _STEPCAFControl.Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_DownCast(*args)
 Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_DownCast = _STEPCAFControl.Handle_STEPCAFControl_StackItemOfDictionaryOfExternFile_DownCast
 
@@ -2776,7 +2776,7 @@ class STEPCAFControl_Writer(object):
 
         """
         _STEPCAFControl.STEPCAFControl_Writer_swiginit(self,_STEPCAFControl.new_STEPCAFControl_Writer(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         * Clears the internal data structures and attaches to a new session Clears the session if it was not yet set for STEP
 
@@ -2789,7 +2789,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_Init(self, *args)
 
-    def Write(self, *args):
+    def Write(self, *args) -> "IFSelect_ReturnStatus" :
         """
         * Writes all the produced models into file In case of multimodel with extern references, filename will be a name of root file, all other files have names of corresponding parts Provided for use like single-file writer
 
@@ -2800,7 +2800,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_Write(self, *args)
 
-    def Transfer(self, *args):
+    def Transfer(self, *args) -> "Standard_Boolean" :
         """
         :param doc:
         :type doc: Handle_TDocStd_Document &
@@ -2823,7 +2823,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_Transfer(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "Standard_Boolean" :
         """
         :param doc:
         :type doc: Handle_TDocStd_Document &
@@ -2842,7 +2842,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_Perform(self, *args)
 
-    def ExternFiles(self, *args):
+    def ExternFiles(self, *args) -> "Handle_STEPCAFControl_DictionaryOfExternFile const &" :
         """
         * Returns data on external files Returns Null handle if no external files are read
 
@@ -2851,7 +2851,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_ExternFiles(self, *args)
 
-    def ExternFile(self, *args):
+    def ExternFile(self, *args) -> "Standard_Boolean" :
         """
         * Returns data on external file by its original label Returns False if no external file with given name is read
 
@@ -2872,7 +2872,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_ExternFile(self, *args)
 
-    def ChangeWriter(self, *args):
+    def ChangeWriter(self, *args) -> "STEPControl_Writer &" :
         """
         * Returns basic reader for root file
 
@@ -2881,7 +2881,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_ChangeWriter(self, *args)
 
-    def Writer(self, *args):
+    def Writer(self, *args) -> "STEPControl_Writer const &" :
         """
         * Returns basic reader as const
 
@@ -2890,7 +2890,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_Writer(self, *args)
 
-    def SetColorMode(self, *args):
+    def SetColorMode(self, *args) -> "void" :
         """
         * Set ColorMode for indicate write Colors or not.
 
@@ -2901,14 +2901,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetColorMode(self, *args)
 
-    def GetColorMode(self, *args):
+    def GetColorMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetColorMode(self, *args)
 
-    def SetNameMode(self, *args):
+    def SetNameMode(self, *args) -> "void" :
         """
         * Set NameMode for indicate write Name or not.
 
@@ -2919,14 +2919,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetNameMode(self, *args)
 
-    def GetNameMode(self, *args):
+    def GetNameMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetNameMode(self, *args)
 
-    def SetLayerMode(self, *args):
+    def SetLayerMode(self, *args) -> "void" :
         """
         * Set LayerMode for indicate write Layers or not.
 
@@ -2937,14 +2937,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetLayerMode(self, *args)
 
-    def GetLayerMode(self, *args):
+    def GetLayerMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetLayerMode(self, *args)
 
-    def SetPropsMode(self, *args):
+    def SetPropsMode(self, *args) -> "void" :
         """
         * PropsMode for indicate write Validation properties or not.
 
@@ -2955,14 +2955,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetPropsMode(self, *args)
 
-    def GetPropsMode(self, *args):
+    def GetPropsMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetPropsMode(self, *args)
 
-    def SetSHUOMode(self, *args):
+    def SetSHUOMode(self, *args) -> "void" :
         """
         * Set SHUO mode for indicate write SHUO or not.
 
@@ -2973,14 +2973,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetSHUOMode(self, *args)
 
-    def GetSHUOMode(self, *args):
+    def GetSHUOMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetSHUOMode(self, *args)
 
-    def SetDimTolMode(self, *args):
+    def SetDimTolMode(self, *args) -> "void" :
         """
         * Set dimtolmode for indicate write D&GTs or not.
 
@@ -2991,14 +2991,14 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetDimTolMode(self, *args)
 
-    def GetDimTolMode(self, *args):
+    def GetDimTolMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _STEPCAFControl.STEPCAFControl_Writer_GetDimTolMode(self, *args)
 
-    def SetMaterialMode(self, *args):
+    def SetMaterialMode(self, *args) -> "void" :
         """
         * Set dimtolmode for indicate write D&GTs or not.
 
@@ -3009,7 +3009,7 @@ class STEPCAFControl_Writer(object):
         """
         return _STEPCAFControl.STEPCAFControl_Writer_SetMaterialMode(self, *args)
 
-    def GetMaterialMode(self, *args):
+    def GetMaterialMode(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 

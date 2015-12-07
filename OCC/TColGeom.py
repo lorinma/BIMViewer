@@ -137,7 +137,7 @@ class TColGeom_Array1OfBSplineCurve(object):
 
         """
         _TColGeom.TColGeom_Array1OfBSplineCurve_swiginit(self,_TColGeom.new_TColGeom_Array1OfBSplineCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BSplineCurve &
@@ -146,21 +146,21 @@ class TColGeom_Array1OfBSplineCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfBSplineCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBSplineCurve &
@@ -169,7 +169,7 @@ class TColGeom_Array1OfBSplineCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfBSplineCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBSplineCurve &
@@ -178,28 +178,28 @@ class TColGeom_Array1OfBSplineCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -210,7 +210,7 @@ class TColGeom_Array1OfBSplineCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BSplineCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -219,7 +219,7 @@ class TColGeom_Array1OfBSplineCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBSplineCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BSplineCurve &" :
         """
         :param Index:
         :type Index: int
@@ -272,7 +272,7 @@ class TColGeom_Array1OfBezierCurve(object):
 
         """
         _TColGeom.TColGeom_Array1OfBezierCurve_swiginit(self,_TColGeom.new_TColGeom_Array1OfBezierCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BezierCurve &
@@ -281,21 +281,21 @@ class TColGeom_Array1OfBezierCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfBezierCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBezierCurve &
@@ -304,7 +304,7 @@ class TColGeom_Array1OfBezierCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfBezierCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBezierCurve &
@@ -313,28 +313,28 @@ class TColGeom_Array1OfBezierCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -345,7 +345,7 @@ class TColGeom_Array1OfBezierCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BezierCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -354,7 +354,7 @@ class TColGeom_Array1OfBezierCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBezierCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BezierCurve &" :
         """
         :param Index:
         :type Index: int
@@ -407,7 +407,7 @@ class TColGeom_Array1OfBoundedCurve(object):
 
         """
         _TColGeom.TColGeom_Array1OfBoundedCurve_swiginit(self,_TColGeom.new_TColGeom_Array1OfBoundedCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedCurve &
@@ -416,21 +416,21 @@ class TColGeom_Array1OfBoundedCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfBoundedCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBoundedCurve &
@@ -439,7 +439,7 @@ class TColGeom_Array1OfBoundedCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfBoundedCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBoundedCurve &
@@ -448,28 +448,28 @@ class TColGeom_Array1OfBoundedCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -480,7 +480,7 @@ class TColGeom_Array1OfBoundedCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -489,7 +489,7 @@ class TColGeom_Array1OfBoundedCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedCurve &" :
         """
         :param Index:
         :type Index: int
@@ -542,7 +542,7 @@ class TColGeom_Array1OfBoundedSurface(object):
 
         """
         _TColGeom.TColGeom_Array1OfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_Array1OfBoundedSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedSurface &
@@ -551,21 +551,21 @@ class TColGeom_Array1OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBoundedSurface &
@@ -574,7 +574,7 @@ class TColGeom_Array1OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfBoundedSurface &
@@ -583,28 +583,28 @@ class TColGeom_Array1OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -615,7 +615,7 @@ class TColGeom_Array1OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -624,7 +624,7 @@ class TColGeom_Array1OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfBoundedSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param Index:
         :type Index: int
@@ -677,7 +677,7 @@ class TColGeom_Array1OfCurve(object):
 
         """
         _TColGeom.TColGeom_Array1OfCurve_swiginit(self,_TColGeom.new_TColGeom_Array1OfCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Curve &
@@ -686,21 +686,21 @@ class TColGeom_Array1OfCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfCurve_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfCurve_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfCurve_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfCurve &
@@ -709,7 +709,7 @@ class TColGeom_Array1OfCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfCurve &
@@ -718,28 +718,28 @@ class TColGeom_Array1OfCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfCurve_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -750,7 +750,7 @@ class TColGeom_Array1OfCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :param Index:
         :type Index: int
@@ -759,7 +759,7 @@ class TColGeom_Array1OfCurve(object):
         """
         return _TColGeom.TColGeom_Array1OfCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Curve &" :
         """
         :param Index:
         :type Index: int
@@ -812,7 +812,7 @@ class TColGeom_Array1OfSurface(object):
 
         """
         _TColGeom.TColGeom_Array1OfSurface_swiginit(self,_TColGeom.new_TColGeom_Array1OfSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Surface &
@@ -821,21 +821,21 @@ class TColGeom_Array1OfSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array1OfSurface_Destroy(self, *args)
 
-    def IsAllocated(self, *args):
+    def IsAllocated(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_Array1OfSurface_IsAllocated(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array1OfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfSurface &
@@ -844,7 +844,7 @@ class TColGeom_Array1OfSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array1OfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array1OfSurface &
@@ -853,28 +853,28 @@ class TColGeom_Array1OfSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfSurface_Set(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array1OfSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -885,7 +885,7 @@ class TColGeom_Array1OfSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param Index:
         :type Index: int
@@ -894,7 +894,7 @@ class TColGeom_Array1OfSurface(object):
         """
         return _TColGeom.TColGeom_Array1OfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param Index:
         :type Index: int
@@ -955,7 +955,7 @@ class TColGeom_Array2OfBSplineSurface(object):
 
         """
         _TColGeom.TColGeom_Array2OfBSplineSurface_swiginit(self,_TColGeom.new_TColGeom_Array2OfBSplineSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BSplineSurface &
@@ -964,14 +964,14 @@ class TColGeom_Array2OfBSplineSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array2OfBSplineSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBSplineSurface &
@@ -980,7 +980,7 @@ class TColGeom_Array2OfBSplineSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array2OfBSplineSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBSplineSurface &
@@ -989,49 +989,49 @@ class TColGeom_Array2OfBSplineSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1044,7 +1044,7 @@ class TColGeom_Array2OfBSplineSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BSplineSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -1055,7 +1055,7 @@ class TColGeom_Array2OfBSplineSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBSplineSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BSplineSurface &" :
         """
         :param Row:
         :type Row: int
@@ -1120,7 +1120,7 @@ class TColGeom_Array2OfBezierSurface(object):
 
         """
         _TColGeom.TColGeom_Array2OfBezierSurface_swiginit(self,_TColGeom.new_TColGeom_Array2OfBezierSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BezierSurface &
@@ -1129,14 +1129,14 @@ class TColGeom_Array2OfBezierSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array2OfBezierSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBezierSurface &
@@ -1145,7 +1145,7 @@ class TColGeom_Array2OfBezierSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array2OfBezierSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBezierSurface &
@@ -1154,49 +1154,49 @@ class TColGeom_Array2OfBezierSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1209,7 +1209,7 @@ class TColGeom_Array2OfBezierSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BezierSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -1220,7 +1220,7 @@ class TColGeom_Array2OfBezierSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBezierSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BezierSurface &" :
         """
         :param Row:
         :type Row: int
@@ -1285,7 +1285,7 @@ class TColGeom_Array2OfBoundedSurface(object):
 
         """
         _TColGeom.TColGeom_Array2OfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_Array2OfBoundedSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedSurface &
@@ -1294,14 +1294,14 @@ class TColGeom_Array2OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array2OfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBoundedSurface &
@@ -1310,7 +1310,7 @@ class TColGeom_Array2OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array2OfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfBoundedSurface &
@@ -1319,49 +1319,49 @@ class TColGeom_Array2OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1374,7 +1374,7 @@ class TColGeom_Array2OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -1385,7 +1385,7 @@ class TColGeom_Array2OfBoundedSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfBoundedSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param Row:
         :type Row: int
@@ -1450,7 +1450,7 @@ class TColGeom_Array2OfSurface(object):
 
         """
         _TColGeom.TColGeom_Array2OfSurface_swiginit(self,_TColGeom.new_TColGeom_Array2OfSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Surface &
@@ -1459,14 +1459,14 @@ class TColGeom_Array2OfSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfSurface_Init(self, *args)
 
-    def Destroy(self, *args):
+    def Destroy(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_Destroy(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_Array2OfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfSurface &
@@ -1475,7 +1475,7 @@ class TColGeom_Array2OfSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_Array2OfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_Array2OfSurface &
@@ -1484,49 +1484,49 @@ class TColGeom_Array2OfSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfSurface_Set(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_Array2OfSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -1539,7 +1539,7 @@ class TColGeom_Array2OfSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param Row:
         :type Row: int
@@ -1550,7 +1550,7 @@ class TColGeom_Array2OfSurface(object):
         """
         return _TColGeom.TColGeom_Array2OfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param Row:
         :type Row: int
@@ -1607,7 +1607,7 @@ class TColGeom_HArray1OfBSplineCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfBSplineCurve_swiginit(self,_TColGeom.new_TColGeom_HArray1OfBSplineCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BSplineCurve &
@@ -1616,28 +1616,28 @@ class TColGeom_HArray1OfBSplineCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1648,7 +1648,7 @@ class TColGeom_HArray1OfBSplineCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BSplineCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -1657,7 +1657,7 @@ class TColGeom_HArray1OfBSplineCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BSplineCurve &" :
         """
         :param Index:
         :type Index: int
@@ -1666,25 +1666,25 @@ class TColGeom_HArray1OfBSplineCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfBSplineCurve const &" :
         """
         :rtype: TColGeom_Array1OfBSplineCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfBSplineCurve &" :
         """
         :rtype: TColGeom_Array1OfBSplineCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfBSplineCurve self)"""
         return _TColGeom.TColGeom_HArray1OfBSplineCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfBSplineCurve" :
         """GetHandle(TColGeom_HArray1OfBSplineCurve self) -> Handle_TColGeom_HArray1OfBSplineCurve"""
         return _TColGeom.TColGeom_HArray1OfBSplineCurve_GetHandle(self)
 
@@ -1731,7 +1731,7 @@ Handle_TColGeom_HArray1OfBSplineCurve._kill_pointed = new_instancemethod(_TColGe
 Handle_TColGeom_HArray1OfBSplineCurve_swigregister = _TColGeom.Handle_TColGeom_HArray1OfBSplineCurve_swigregister
 Handle_TColGeom_HArray1OfBSplineCurve_swigregister(Handle_TColGeom_HArray1OfBSplineCurve)
 
-def Handle_TColGeom_HArray1OfBSplineCurve_DownCast(*args):
+def Handle_TColGeom_HArray1OfBSplineCurve_DownCast(*args) -> "Handle_TColGeom_HArray1OfBSplineCurve const" :
   return _TColGeom.Handle_TColGeom_HArray1OfBSplineCurve_DownCast(*args)
 Handle_TColGeom_HArray1OfBSplineCurve_DownCast = _TColGeom.Handle_TColGeom_HArray1OfBSplineCurve_DownCast
 
@@ -1756,7 +1756,7 @@ class TColGeom_HArray1OfBezierCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfBezierCurve_swiginit(self,_TColGeom.new_TColGeom_HArray1OfBezierCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BezierCurve &
@@ -1765,28 +1765,28 @@ class TColGeom_HArray1OfBezierCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1797,7 +1797,7 @@ class TColGeom_HArray1OfBezierCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BezierCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -1806,7 +1806,7 @@ class TColGeom_HArray1OfBezierCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BezierCurve &" :
         """
         :param Index:
         :type Index: int
@@ -1815,25 +1815,25 @@ class TColGeom_HArray1OfBezierCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfBezierCurve const &" :
         """
         :rtype: TColGeom_Array1OfBezierCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfBezierCurve &" :
         """
         :rtype: TColGeom_Array1OfBezierCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBezierCurve_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfBezierCurve self)"""
         return _TColGeom.TColGeom_HArray1OfBezierCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfBezierCurve" :
         """GetHandle(TColGeom_HArray1OfBezierCurve self) -> Handle_TColGeom_HArray1OfBezierCurve"""
         return _TColGeom.TColGeom_HArray1OfBezierCurve_GetHandle(self)
 
@@ -1880,7 +1880,7 @@ Handle_TColGeom_HArray1OfBezierCurve._kill_pointed = new_instancemethod(_TColGeo
 Handle_TColGeom_HArray1OfBezierCurve_swigregister = _TColGeom.Handle_TColGeom_HArray1OfBezierCurve_swigregister
 Handle_TColGeom_HArray1OfBezierCurve_swigregister(Handle_TColGeom_HArray1OfBezierCurve)
 
-def Handle_TColGeom_HArray1OfBezierCurve_DownCast(*args):
+def Handle_TColGeom_HArray1OfBezierCurve_DownCast(*args) -> "Handle_TColGeom_HArray1OfBezierCurve const" :
   return _TColGeom.Handle_TColGeom_HArray1OfBezierCurve_DownCast(*args)
 Handle_TColGeom_HArray1OfBezierCurve_DownCast = _TColGeom.Handle_TColGeom_HArray1OfBezierCurve_DownCast
 
@@ -1905,7 +1905,7 @@ class TColGeom_HArray1OfBoundedCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfBoundedCurve_swiginit(self,_TColGeom.new_TColGeom_HArray1OfBoundedCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedCurve &
@@ -1914,28 +1914,28 @@ class TColGeom_HArray1OfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -1946,7 +1946,7 @@ class TColGeom_HArray1OfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -1955,7 +1955,7 @@ class TColGeom_HArray1OfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedCurve &" :
         """
         :param Index:
         :type Index: int
@@ -1964,25 +1964,25 @@ class TColGeom_HArray1OfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfBoundedCurve const &" :
         """
         :rtype: TColGeom_Array1OfBoundedCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfBoundedCurve &" :
         """
         :rtype: TColGeom_Array1OfBoundedCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfBoundedCurve self)"""
         return _TColGeom.TColGeom_HArray1OfBoundedCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfBoundedCurve" :
         """GetHandle(TColGeom_HArray1OfBoundedCurve self) -> Handle_TColGeom_HArray1OfBoundedCurve"""
         return _TColGeom.TColGeom_HArray1OfBoundedCurve_GetHandle(self)
 
@@ -2029,7 +2029,7 @@ Handle_TColGeom_HArray1OfBoundedCurve._kill_pointed = new_instancemethod(_TColGe
 Handle_TColGeom_HArray1OfBoundedCurve_swigregister = _TColGeom.Handle_TColGeom_HArray1OfBoundedCurve_swigregister
 Handle_TColGeom_HArray1OfBoundedCurve_swigregister(Handle_TColGeom_HArray1OfBoundedCurve)
 
-def Handle_TColGeom_HArray1OfBoundedCurve_DownCast(*args):
+def Handle_TColGeom_HArray1OfBoundedCurve_DownCast(*args) -> "Handle_TColGeom_HArray1OfBoundedCurve const" :
   return _TColGeom.Handle_TColGeom_HArray1OfBoundedCurve_DownCast(*args)
 Handle_TColGeom_HArray1OfBoundedCurve_DownCast = _TColGeom.Handle_TColGeom_HArray1OfBoundedCurve_DownCast
 
@@ -2054,7 +2054,7 @@ class TColGeom_HArray1OfBoundedSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_HArray1OfBoundedSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedSurface &
@@ -2063,28 +2063,28 @@ class TColGeom_HArray1OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2095,7 +2095,7 @@ class TColGeom_HArray1OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -2104,7 +2104,7 @@ class TColGeom_HArray1OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param Index:
         :type Index: int
@@ -2113,25 +2113,25 @@ class TColGeom_HArray1OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfBoundedSurface const &" :
         """
         :rtype: TColGeom_Array1OfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfBoundedSurface &" :
         """
         :rtype: TColGeom_Array1OfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfBoundedSurface self)"""
         return _TColGeom.TColGeom_HArray1OfBoundedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfBoundedSurface" :
         """GetHandle(TColGeom_HArray1OfBoundedSurface self) -> Handle_TColGeom_HArray1OfBoundedSurface"""
         return _TColGeom.TColGeom_HArray1OfBoundedSurface_GetHandle(self)
 
@@ -2178,7 +2178,7 @@ Handle_TColGeom_HArray1OfBoundedSurface._kill_pointed = new_instancemethod(_TCol
 Handle_TColGeom_HArray1OfBoundedSurface_swigregister = _TColGeom.Handle_TColGeom_HArray1OfBoundedSurface_swigregister
 Handle_TColGeom_HArray1OfBoundedSurface_swigregister(Handle_TColGeom_HArray1OfBoundedSurface)
 
-def Handle_TColGeom_HArray1OfBoundedSurface_DownCast(*args):
+def Handle_TColGeom_HArray1OfBoundedSurface_DownCast(*args) -> "Handle_TColGeom_HArray1OfBoundedSurface const" :
   return _TColGeom.Handle_TColGeom_HArray1OfBoundedSurface_DownCast(*args)
 Handle_TColGeom_HArray1OfBoundedSurface_DownCast = _TColGeom.Handle_TColGeom_HArray1OfBoundedSurface_DownCast
 
@@ -2203,7 +2203,7 @@ class TColGeom_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfCurve_swiginit(self,_TColGeom.new_TColGeom_HArray1OfCurve(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Curve &
@@ -2212,28 +2212,28 @@ class TColGeom_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2244,7 +2244,7 @@ class TColGeom_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :param Index:
         :type Index: int
@@ -2253,7 +2253,7 @@ class TColGeom_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Curve &" :
         """
         :param Index:
         :type Index: int
@@ -2262,25 +2262,25 @@ class TColGeom_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfCurve_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfCurve const &" :
         """
         :rtype: TColGeom_Array1OfCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfCurve_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfCurve &" :
         """
         :rtype: TColGeom_Array1OfCurve
 
         """
         return _TColGeom.TColGeom_HArray1OfCurve_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfCurve self)"""
         return _TColGeom.TColGeom_HArray1OfCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfCurve" :
         """GetHandle(TColGeom_HArray1OfCurve self) -> Handle_TColGeom_HArray1OfCurve"""
         return _TColGeom.TColGeom_HArray1OfCurve_GetHandle(self)
 
@@ -2327,7 +2327,7 @@ Handle_TColGeom_HArray1OfCurve._kill_pointed = new_instancemethod(_TColGeom.Hand
 Handle_TColGeom_HArray1OfCurve_swigregister = _TColGeom.Handle_TColGeom_HArray1OfCurve_swigregister
 Handle_TColGeom_HArray1OfCurve_swigregister(Handle_TColGeom_HArray1OfCurve)
 
-def Handle_TColGeom_HArray1OfCurve_DownCast(*args):
+def Handle_TColGeom_HArray1OfCurve_DownCast(*args) -> "Handle_TColGeom_HArray1OfCurve const" :
   return _TColGeom.Handle_TColGeom_HArray1OfCurve_DownCast(*args)
 Handle_TColGeom_HArray1OfCurve_DownCast = _TColGeom.Handle_TColGeom_HArray1OfCurve_DownCast
 
@@ -2352,7 +2352,7 @@ class TColGeom_HArray1OfSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray1OfSurface_swiginit(self,_TColGeom.new_TColGeom_HArray1OfSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Surface &
@@ -2361,28 +2361,28 @@ class TColGeom_HArray1OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Init(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Length(self, *args)
 
-    def Lower(self, *args):
+    def Lower(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Lower(self, *args)
 
-    def Upper(self, *args):
+    def Upper(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Upper(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -2393,7 +2393,7 @@ class TColGeom_HArray1OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param Index:
         :type Index: int
@@ -2402,7 +2402,7 @@ class TColGeom_HArray1OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param Index:
         :type Index: int
@@ -2411,25 +2411,25 @@ class TColGeom_HArray1OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray1OfSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args):
+    def Array1(self, *args) -> "TColGeom_Array1OfSurface const &" :
         """
         :rtype: TColGeom_Array1OfSurface
 
         """
         return _TColGeom.TColGeom_HArray1OfSurface_Array1(self, *args)
 
-    def ChangeArray1(self, *args):
+    def ChangeArray1(self, *args) -> "TColGeom_Array1OfSurface &" :
         """
         :rtype: TColGeom_Array1OfSurface
 
         """
         return _TColGeom.TColGeom_HArray1OfSurface_ChangeArray1(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray1OfSurface self)"""
         return _TColGeom.TColGeom_HArray1OfSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray1OfSurface" :
         """GetHandle(TColGeom_HArray1OfSurface self) -> Handle_TColGeom_HArray1OfSurface"""
         return _TColGeom.TColGeom_HArray1OfSurface_GetHandle(self)
 
@@ -2476,7 +2476,7 @@ Handle_TColGeom_HArray1OfSurface._kill_pointed = new_instancemethod(_TColGeom.Ha
 Handle_TColGeom_HArray1OfSurface_swigregister = _TColGeom.Handle_TColGeom_HArray1OfSurface_swigregister
 Handle_TColGeom_HArray1OfSurface_swigregister(Handle_TColGeom_HArray1OfSurface)
 
-def Handle_TColGeom_HArray1OfSurface_DownCast(*args):
+def Handle_TColGeom_HArray1OfSurface_DownCast(*args) -> "Handle_TColGeom_HArray1OfSurface const" :
   return _TColGeom.Handle_TColGeom_HArray1OfSurface_DownCast(*args)
 Handle_TColGeom_HArray1OfSurface_DownCast = _TColGeom.Handle_TColGeom_HArray1OfSurface_DownCast
 
@@ -2509,7 +2509,7 @@ class TColGeom_HArray2OfBSplineSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray2OfBSplineSurface_swiginit(self,_TColGeom.new_TColGeom_HArray2OfBSplineSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BSplineSurface &
@@ -2518,49 +2518,49 @@ class TColGeom_HArray2OfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -2573,7 +2573,7 @@ class TColGeom_HArray2OfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BSplineSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -2584,7 +2584,7 @@ class TColGeom_HArray2OfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BSplineSurface &" :
         """
         :param Row:
         :type Row: int
@@ -2595,25 +2595,25 @@ class TColGeom_HArray2OfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColGeom_Array2OfBSplineSurface const &" :
         """
         :rtype: TColGeom_Array2OfBSplineSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColGeom_Array2OfBSplineSurface &" :
         """
         :rtype: TColGeom_Array2OfBSplineSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray2OfBSplineSurface self)"""
         return _TColGeom.TColGeom_HArray2OfBSplineSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray2OfBSplineSurface" :
         """GetHandle(TColGeom_HArray2OfBSplineSurface self) -> Handle_TColGeom_HArray2OfBSplineSurface"""
         return _TColGeom.TColGeom_HArray2OfBSplineSurface_GetHandle(self)
 
@@ -2663,7 +2663,7 @@ Handle_TColGeom_HArray2OfBSplineSurface._kill_pointed = new_instancemethod(_TCol
 Handle_TColGeom_HArray2OfBSplineSurface_swigregister = _TColGeom.Handle_TColGeom_HArray2OfBSplineSurface_swigregister
 Handle_TColGeom_HArray2OfBSplineSurface_swigregister(Handle_TColGeom_HArray2OfBSplineSurface)
 
-def Handle_TColGeom_HArray2OfBSplineSurface_DownCast(*args):
+def Handle_TColGeom_HArray2OfBSplineSurface_DownCast(*args) -> "Handle_TColGeom_HArray2OfBSplineSurface const" :
   return _TColGeom.Handle_TColGeom_HArray2OfBSplineSurface_DownCast(*args)
 Handle_TColGeom_HArray2OfBSplineSurface_DownCast = _TColGeom.Handle_TColGeom_HArray2OfBSplineSurface_DownCast
 
@@ -2696,7 +2696,7 @@ class TColGeom_HArray2OfBezierSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray2OfBezierSurface_swiginit(self,_TColGeom.new_TColGeom_HArray2OfBezierSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BezierSurface &
@@ -2705,49 +2705,49 @@ class TColGeom_HArray2OfBezierSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -2760,7 +2760,7 @@ class TColGeom_HArray2OfBezierSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BezierSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -2771,7 +2771,7 @@ class TColGeom_HArray2OfBezierSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BezierSurface &" :
         """
         :param Row:
         :type Row: int
@@ -2782,25 +2782,25 @@ class TColGeom_HArray2OfBezierSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColGeom_Array2OfBezierSurface const &" :
         """
         :rtype: TColGeom_Array2OfBezierSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColGeom_Array2OfBezierSurface &" :
         """
         :rtype: TColGeom_Array2OfBezierSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBezierSurface_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray2OfBezierSurface self)"""
         return _TColGeom.TColGeom_HArray2OfBezierSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray2OfBezierSurface" :
         """GetHandle(TColGeom_HArray2OfBezierSurface self) -> Handle_TColGeom_HArray2OfBezierSurface"""
         return _TColGeom.TColGeom_HArray2OfBezierSurface_GetHandle(self)
 
@@ -2850,7 +2850,7 @@ Handle_TColGeom_HArray2OfBezierSurface._kill_pointed = new_instancemethod(_TColG
 Handle_TColGeom_HArray2OfBezierSurface_swigregister = _TColGeom.Handle_TColGeom_HArray2OfBezierSurface_swigregister
 Handle_TColGeom_HArray2OfBezierSurface_swigregister(Handle_TColGeom_HArray2OfBezierSurface)
 
-def Handle_TColGeom_HArray2OfBezierSurface_DownCast(*args):
+def Handle_TColGeom_HArray2OfBezierSurface_DownCast(*args) -> "Handle_TColGeom_HArray2OfBezierSurface const" :
   return _TColGeom.Handle_TColGeom_HArray2OfBezierSurface_DownCast(*args)
 Handle_TColGeom_HArray2OfBezierSurface_DownCast = _TColGeom.Handle_TColGeom_HArray2OfBezierSurface_DownCast
 
@@ -2883,7 +2883,7 @@ class TColGeom_HArray2OfBoundedSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray2OfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_HArray2OfBoundedSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_BoundedSurface &
@@ -2892,49 +2892,49 @@ class TColGeom_HArray2OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -2947,7 +2947,7 @@ class TColGeom_HArray2OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param Row:
         :type Row: int
@@ -2958,7 +2958,7 @@ class TColGeom_HArray2OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param Row:
         :type Row: int
@@ -2969,25 +2969,25 @@ class TColGeom_HArray2OfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColGeom_Array2OfBoundedSurface const &" :
         """
         :rtype: TColGeom_Array2OfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColGeom_Array2OfBoundedSurface &" :
         """
         :rtype: TColGeom_Array2OfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray2OfBoundedSurface self)"""
         return _TColGeom.TColGeom_HArray2OfBoundedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray2OfBoundedSurface" :
         """GetHandle(TColGeom_HArray2OfBoundedSurface self) -> Handle_TColGeom_HArray2OfBoundedSurface"""
         return _TColGeom.TColGeom_HArray2OfBoundedSurface_GetHandle(self)
 
@@ -3037,7 +3037,7 @@ Handle_TColGeom_HArray2OfBoundedSurface._kill_pointed = new_instancemethod(_TCol
 Handle_TColGeom_HArray2OfBoundedSurface_swigregister = _TColGeom.Handle_TColGeom_HArray2OfBoundedSurface_swigregister
 Handle_TColGeom_HArray2OfBoundedSurface_swigregister(Handle_TColGeom_HArray2OfBoundedSurface)
 
-def Handle_TColGeom_HArray2OfBoundedSurface_DownCast(*args):
+def Handle_TColGeom_HArray2OfBoundedSurface_DownCast(*args) -> "Handle_TColGeom_HArray2OfBoundedSurface const" :
   return _TColGeom.Handle_TColGeom_HArray2OfBoundedSurface_DownCast(*args)
 Handle_TColGeom_HArray2OfBoundedSurface_DownCast = _TColGeom.Handle_TColGeom_HArray2OfBoundedSurface_DownCast
 
@@ -3070,7 +3070,7 @@ class TColGeom_HArray2OfSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HArray2OfSurface_swiginit(self,_TColGeom.new_TColGeom_HArray2OfSurface(*args))
-    def Init(self, *args):
+    def Init(self, *args) -> "void" :
         """
         :param V:
         :type V: Handle_Geom_Surface &
@@ -3079,49 +3079,49 @@ class TColGeom_HArray2OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfSurface_Init(self, *args)
 
-    def ColLength(self, *args):
+    def ColLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_ColLength(self, *args)
 
-    def RowLength(self, *args):
+    def RowLength(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_RowLength(self, *args)
 
-    def LowerCol(self, *args):
+    def LowerCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_LowerCol(self, *args)
 
-    def LowerRow(self, *args):
+    def LowerRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_LowerRow(self, *args)
 
-    def UpperCol(self, *args):
+    def UpperCol(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_UpperCol(self, *args)
 
-    def UpperRow(self, *args):
+    def UpperRow(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_UpperRow(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Row:
         :type Row: int
@@ -3134,7 +3134,7 @@ class TColGeom_HArray2OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param Row:
         :type Row: int
@@ -3145,7 +3145,7 @@ class TColGeom_HArray2OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param Row:
         :type Row: int
@@ -3156,25 +3156,25 @@ class TColGeom_HArray2OfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HArray2OfSurface_ChangeValue(self, *args)
 
-    def Array2(self, *args):
+    def Array2(self, *args) -> "TColGeom_Array2OfSurface const &" :
         """
         :rtype: TColGeom_Array2OfSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_Array2(self, *args)
 
-    def ChangeArray2(self, *args):
+    def ChangeArray2(self, *args) -> "TColGeom_Array2OfSurface &" :
         """
         :rtype: TColGeom_Array2OfSurface
 
         """
         return _TColGeom.TColGeom_HArray2OfSurface_ChangeArray2(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HArray2OfSurface self)"""
         return _TColGeom.TColGeom_HArray2OfSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HArray2OfSurface" :
         """GetHandle(TColGeom_HArray2OfSurface self) -> Handle_TColGeom_HArray2OfSurface"""
         return _TColGeom.TColGeom_HArray2OfSurface_GetHandle(self)
 
@@ -3224,7 +3224,7 @@ Handle_TColGeom_HArray2OfSurface._kill_pointed = new_instancemethod(_TColGeom.Ha
 Handle_TColGeom_HArray2OfSurface_swigregister = _TColGeom.Handle_TColGeom_HArray2OfSurface_swigregister
 Handle_TColGeom_HArray2OfSurface_swigregister(Handle_TColGeom_HArray2OfSurface)
 
-def Handle_TColGeom_HArray2OfSurface_DownCast(*args):
+def Handle_TColGeom_HArray2OfSurface_DownCast(*args) -> "Handle_TColGeom_HArray2OfSurface const" :
   return _TColGeom.Handle_TColGeom_HArray2OfSurface_DownCast(*args)
 Handle_TColGeom_HArray2OfSurface_DownCast = _TColGeom.Handle_TColGeom_HArray2OfSurface_DownCast
 
@@ -3237,28 +3237,28 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HSequenceOfBoundedCurve_swiginit(self,_TColGeom.new_TColGeom_HSequenceOfBoundedCurve(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_BoundedCurve &
@@ -3271,7 +3271,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_BoundedCurve &
@@ -3284,14 +3284,14 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3308,7 +3308,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3325,7 +3325,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3336,7 +3336,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColGeom_HSequenceOfBoundedCurve" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3345,7 +3345,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3356,7 +3356,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3365,7 +3365,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedCurve &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3374,7 +3374,7 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3389,32 +3389,32 @@ class TColGeom_HSequenceOfBoundedCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColGeom_SequenceOfBoundedCurve const &" :
         """
         :rtype: TColGeom_SequenceOfBoundedCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColGeom_SequenceOfBoundedCurve &" :
         """
         :rtype: TColGeom_SequenceOfBoundedCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColGeom_HSequenceOfBoundedCurve" :
         """
         :rtype: Handle_TColGeom_HSequenceOfBoundedCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HSequenceOfBoundedCurve self)"""
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HSequenceOfBoundedCurve" :
         """GetHandle(TColGeom_HSequenceOfBoundedCurve self) -> Handle_TColGeom_HSequenceOfBoundedCurve"""
         return _TColGeom.TColGeom_HSequenceOfBoundedCurve_GetHandle(self)
 
@@ -3469,7 +3469,7 @@ Handle_TColGeom_HSequenceOfBoundedCurve._kill_pointed = new_instancemethod(_TCol
 Handle_TColGeom_HSequenceOfBoundedCurve_swigregister = _TColGeom.Handle_TColGeom_HSequenceOfBoundedCurve_swigregister
 Handle_TColGeom_HSequenceOfBoundedCurve_swigregister(Handle_TColGeom_HSequenceOfBoundedCurve)
 
-def Handle_TColGeom_HSequenceOfBoundedCurve_DownCast(*args):
+def Handle_TColGeom_HSequenceOfBoundedCurve_DownCast(*args) -> "Handle_TColGeom_HSequenceOfBoundedCurve const" :
   return _TColGeom.Handle_TColGeom_HSequenceOfBoundedCurve_DownCast(*args)
 Handle_TColGeom_HSequenceOfBoundedCurve_DownCast = _TColGeom.Handle_TColGeom_HSequenceOfBoundedCurve_DownCast
 
@@ -3482,28 +3482,28 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HSequenceOfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_HSequenceOfBoundedSurface(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_BoundedSurface &
@@ -3516,7 +3516,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_BoundedSurface &
@@ -3529,14 +3529,14 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3553,7 +3553,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3570,7 +3570,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3581,7 +3581,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColGeom_HSequenceOfBoundedSurface" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3590,7 +3590,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3601,7 +3601,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3610,7 +3610,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3619,7 +3619,7 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3634,32 +3634,32 @@ class TColGeom_HSequenceOfBoundedSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColGeom_SequenceOfBoundedSurface const &" :
         """
         :rtype: TColGeom_SequenceOfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColGeom_SequenceOfBoundedSurface &" :
         """
         :rtype: TColGeom_SequenceOfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColGeom_HSequenceOfBoundedSurface" :
         """
         :rtype: Handle_TColGeom_HSequenceOfBoundedSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HSequenceOfBoundedSurface self)"""
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HSequenceOfBoundedSurface" :
         """GetHandle(TColGeom_HSequenceOfBoundedSurface self) -> Handle_TColGeom_HSequenceOfBoundedSurface"""
         return _TColGeom.TColGeom_HSequenceOfBoundedSurface_GetHandle(self)
 
@@ -3714,7 +3714,7 @@ Handle_TColGeom_HSequenceOfBoundedSurface._kill_pointed = new_instancemethod(_TC
 Handle_TColGeom_HSequenceOfBoundedSurface_swigregister = _TColGeom.Handle_TColGeom_HSequenceOfBoundedSurface_swigregister
 Handle_TColGeom_HSequenceOfBoundedSurface_swigregister(Handle_TColGeom_HSequenceOfBoundedSurface)
 
-def Handle_TColGeom_HSequenceOfBoundedSurface_DownCast(*args):
+def Handle_TColGeom_HSequenceOfBoundedSurface_DownCast(*args) -> "Handle_TColGeom_HSequenceOfBoundedSurface const" :
   return _TColGeom.Handle_TColGeom_HSequenceOfBoundedSurface_DownCast(*args)
 Handle_TColGeom_HSequenceOfBoundedSurface_DownCast = _TColGeom.Handle_TColGeom_HSequenceOfBoundedSurface_DownCast
 
@@ -3727,28 +3727,28 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HSequenceOfCurve_swiginit(self,_TColGeom.new_TColGeom_HSequenceOfCurve(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_Curve &
@@ -3761,7 +3761,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_Curve &
@@ -3774,14 +3774,14 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3798,7 +3798,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3815,7 +3815,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3826,7 +3826,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColGeom_HSequenceOfCurve" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3835,7 +3835,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3846,7 +3846,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3855,7 +3855,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Curve &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3864,7 +3864,7 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -3879,32 +3879,32 @@ class TColGeom_HSequenceOfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColGeom_SequenceOfCurve const &" :
         """
         :rtype: TColGeom_SequenceOfCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColGeom_SequenceOfCurve &" :
         """
         :rtype: TColGeom_SequenceOfCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColGeom_HSequenceOfCurve" :
         """
         :rtype: Handle_TColGeom_HSequenceOfCurve
 
         """
         return _TColGeom.TColGeom_HSequenceOfCurve_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HSequenceOfCurve self)"""
         return _TColGeom.TColGeom_HSequenceOfCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HSequenceOfCurve" :
         """GetHandle(TColGeom_HSequenceOfCurve self) -> Handle_TColGeom_HSequenceOfCurve"""
         return _TColGeom.TColGeom_HSequenceOfCurve_GetHandle(self)
 
@@ -3959,7 +3959,7 @@ Handle_TColGeom_HSequenceOfCurve._kill_pointed = new_instancemethod(_TColGeom.Ha
 Handle_TColGeom_HSequenceOfCurve_swigregister = _TColGeom.Handle_TColGeom_HSequenceOfCurve_swigregister
 Handle_TColGeom_HSequenceOfCurve_swigregister(Handle_TColGeom_HSequenceOfCurve)
 
-def Handle_TColGeom_HSequenceOfCurve_DownCast(*args):
+def Handle_TColGeom_HSequenceOfCurve_DownCast(*args) -> "Handle_TColGeom_HSequenceOfCurve const" :
   return _TColGeom.Handle_TColGeom_HSequenceOfCurve_DownCast(*args)
 Handle_TColGeom_HSequenceOfCurve_DownCast = _TColGeom.Handle_TColGeom_HSequenceOfCurve_DownCast
 
@@ -3972,28 +3972,28 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
 
         """
         _TColGeom.TColGeom_HSequenceOfSurface_swiginit(self,_TColGeom.new_TColGeom_HSequenceOfSurface(*args))
-    def IsEmpty(self, *args):
+    def IsEmpty(self, *args) -> "Standard_Boolean" :
         """
         :rtype: bool
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_IsEmpty(self, *args)
 
-    def Length(self, *args):
+    def Length(self, *args) -> "Standard_Integer" :
         """
         :rtype: int
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Length(self, *args)
 
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Clear(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_Surface &
@@ -4006,7 +4006,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param anItem:
         :type anItem: Handle_Geom_Surface &
@@ -4019,14 +4019,14 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Prepend(self, *args)
 
-    def Reverse(self, *args):
+    def Reverse(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Reverse(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4043,7 +4043,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4060,7 +4060,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_InsertAfter(self, *args)
 
-    def Exchange(self, *args):
+    def Exchange(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4071,7 +4071,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Exchange(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "Handle_TColGeom_HSequenceOfSurface" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4080,7 +4080,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Split(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4091,7 +4091,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_SetValue(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4100,7 +4100,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4109,7 +4109,7 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param anIndex:
         :type anIndex: int
@@ -4124,32 +4124,32 @@ class TColGeom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Remove(self, *args)
 
-    def Sequence(self, *args):
+    def Sequence(self, *args) -> "TColGeom_SequenceOfSurface const &" :
         """
         :rtype: TColGeom_SequenceOfSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_Sequence(self, *args)
 
-    def ChangeSequence(self, *args):
+    def ChangeSequence(self, *args) -> "TColGeom_SequenceOfSurface &" :
         """
         :rtype: TColGeom_SequenceOfSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_ChangeSequence(self, *args)
 
-    def ShallowCopy(self, *args):
+    def ShallowCopy(self, *args) -> "Handle_TColGeom_HSequenceOfSurface" :
         """
         :rtype: Handle_TColGeom_HSequenceOfSurface
 
         """
         return _TColGeom.TColGeom_HSequenceOfSurface_ShallowCopy(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_HSequenceOfSurface self)"""
         return _TColGeom.TColGeom_HSequenceOfSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_HSequenceOfSurface" :
         """GetHandle(TColGeom_HSequenceOfSurface self) -> Handle_TColGeom_HSequenceOfSurface"""
         return _TColGeom.TColGeom_HSequenceOfSurface_GetHandle(self)
 
@@ -4204,7 +4204,7 @@ Handle_TColGeom_HSequenceOfSurface._kill_pointed = new_instancemethod(_TColGeom.
 Handle_TColGeom_HSequenceOfSurface_swigregister = _TColGeom.Handle_TColGeom_HSequenceOfSurface_swigregister
 Handle_TColGeom_HSequenceOfSurface_swigregister(Handle_TColGeom_HSequenceOfSurface)
 
-def Handle_TColGeom_HSequenceOfSurface_DownCast(*args):
+def Handle_TColGeom_HSequenceOfSurface_DownCast(*args) -> "Handle_TColGeom_HSequenceOfSurface const" :
   return _TColGeom.Handle_TColGeom_HSequenceOfSurface_DownCast(*args)
 Handle_TColGeom_HSequenceOfSurface_DownCast = _TColGeom.Handle_TColGeom_HSequenceOfSurface_DownCast
 
@@ -4223,18 +4223,18 @@ class TColGeom_SequenceNodeOfSequenceOfBoundedCurve(OCC.TCollection.TCollection_
 
         """
         _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedCurve_swiginit(self,_TColGeom.new_TColGeom_SequenceNodeOfSequenceOfBoundedCurve(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedCurve &" :
         """
         :rtype: Handle_Geom_BoundedCurve
 
         """
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedCurve_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_SequenceNodeOfSequenceOfBoundedCurve self)"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve" :
         """GetHandle(TColGeom_SequenceNodeOfSequenceOfBoundedCurve self) -> Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedCurve_GetHandle(self)
 
@@ -4273,7 +4273,7 @@ Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve._kill_pointed = new_instanc
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_swigregister = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_swigregister
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_swigregister(Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve)
 
-def Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_DownCast(*args):
+def Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_DownCast(*args) -> "Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve const" :
   return _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_DownCast(*args)
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_DownCast = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedCurve_DownCast
 
@@ -4292,18 +4292,18 @@ class TColGeom_SequenceNodeOfSequenceOfBoundedSurface(OCC.TCollection.TCollectio
 
         """
         _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_SequenceNodeOfSequenceOfBoundedSurface(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :rtype: Handle_Geom_BoundedSurface
 
         """
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedSurface_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_SequenceNodeOfSequenceOfBoundedSurface self)"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface" :
         """GetHandle(TColGeom_SequenceNodeOfSequenceOfBoundedSurface self) -> Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfBoundedSurface_GetHandle(self)
 
@@ -4342,7 +4342,7 @@ Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface._kill_pointed = new_insta
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_swigregister = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_swigregister
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_swigregister(Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface)
 
-def Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_DownCast(*args):
+def Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_DownCast(*args) -> "Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface const" :
   return _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_DownCast(*args)
 Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_DownCast = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfBoundedSurface_DownCast
 
@@ -4361,18 +4361,18 @@ class TColGeom_SequenceNodeOfSequenceOfCurve(OCC.TCollection.TCollection_SeqNode
 
         """
         _TColGeom.TColGeom_SequenceNodeOfSequenceOfCurve_swiginit(self,_TColGeom.new_TColGeom_SequenceNodeOfSequenceOfCurve(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Curve &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfCurve_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_SequenceNodeOfSequenceOfCurve self)"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfCurve__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_SequenceNodeOfSequenceOfCurve" :
         """GetHandle(TColGeom_SequenceNodeOfSequenceOfCurve self) -> Handle_TColGeom_SequenceNodeOfSequenceOfCurve"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfCurve_GetHandle(self)
 
@@ -4411,7 +4411,7 @@ Handle_TColGeom_SequenceNodeOfSequenceOfCurve._kill_pointed = new_instancemethod
 Handle_TColGeom_SequenceNodeOfSequenceOfCurve_swigregister = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfCurve_swigregister
 Handle_TColGeom_SequenceNodeOfSequenceOfCurve_swigregister(Handle_TColGeom_SequenceNodeOfSequenceOfCurve)
 
-def Handle_TColGeom_SequenceNodeOfSequenceOfCurve_DownCast(*args):
+def Handle_TColGeom_SequenceNodeOfSequenceOfCurve_DownCast(*args) -> "Handle_TColGeom_SequenceNodeOfSequenceOfCurve const" :
   return _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfCurve_DownCast(*args)
 Handle_TColGeom_SequenceNodeOfSequenceOfCurve_DownCast = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfCurve_DownCast
 
@@ -4430,18 +4430,18 @@ class TColGeom_SequenceNodeOfSequenceOfSurface(OCC.TCollection.TCollection_SeqNo
 
         """
         _TColGeom.TColGeom_SequenceNodeOfSequenceOfSurface_swiginit(self,_TColGeom.new_TColGeom_SequenceNodeOfSequenceOfSurface(*args))
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfSurface_Value(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(TColGeom_SequenceNodeOfSequenceOfSurface self)"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfSurface__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_TColGeom_SequenceNodeOfSequenceOfSurface" :
         """GetHandle(TColGeom_SequenceNodeOfSequenceOfSurface self) -> Handle_TColGeom_SequenceNodeOfSequenceOfSurface"""
         return _TColGeom.TColGeom_SequenceNodeOfSequenceOfSurface_GetHandle(self)
 
@@ -4480,7 +4480,7 @@ Handle_TColGeom_SequenceNodeOfSequenceOfSurface._kill_pointed = new_instancemeth
 Handle_TColGeom_SequenceNodeOfSequenceOfSurface_swigregister = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfSurface_swigregister
 Handle_TColGeom_SequenceNodeOfSequenceOfSurface_swigregister(Handle_TColGeom_SequenceNodeOfSequenceOfSurface)
 
-def Handle_TColGeom_SequenceNodeOfSequenceOfSurface_DownCast(*args):
+def Handle_TColGeom_SequenceNodeOfSequenceOfSurface_DownCast(*args) -> "Handle_TColGeom_SequenceNodeOfSequenceOfSurface const" :
   return _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfSurface_DownCast(*args)
 Handle_TColGeom_SequenceNodeOfSequenceOfSurface_DownCast = _TColGeom.Handle_TColGeom_SequenceNodeOfSequenceOfSurface_DownCast
 
@@ -4493,14 +4493,14 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColGeom.TColGeom_SequenceOfBoundedCurve_swiginit(self,_TColGeom.new_TColGeom_SequenceOfBoundedCurve(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_SequenceOfBoundedCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfBoundedCurve &
@@ -4509,7 +4509,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_SequenceOfBoundedCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfBoundedCurve &
@@ -4518,7 +4518,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_BoundedCurve &
@@ -4531,7 +4531,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_BoundedCurve &
@@ -4544,7 +4544,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4561,7 +4561,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4578,21 +4578,21 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :rtype: Handle_Geom_BoundedCurve
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :rtype: Handle_Geom_BoundedCurve
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4603,7 +4603,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedCurve const &" :
         """
         :param Index:
         :type Index: int
@@ -4612,7 +4612,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4623,7 +4623,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedCurve &" :
         """
         :param Index:
         :type Index: int
@@ -4632,7 +4632,7 @@ class TColGeom_SequenceOfBoundedCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfBoundedCurve_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4682,14 +4682,14 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
 
         """
         _TColGeom.TColGeom_SequenceOfBoundedSurface_swiginit(self,_TColGeom.new_TColGeom_SequenceOfBoundedSurface(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_SequenceOfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfBoundedSurface &
@@ -4698,7 +4698,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_SequenceOfBoundedSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfBoundedSurface &
@@ -4707,7 +4707,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_BoundedSurface &
@@ -4720,7 +4720,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_BoundedSurface &
@@ -4733,7 +4733,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4750,7 +4750,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4767,21 +4767,21 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :rtype: Handle_Geom_BoundedSurface
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :rtype: Handle_Geom_BoundedSurface
 
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4792,7 +4792,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_BoundedSurface const &" :
         """
         :param Index:
         :type Index: int
@@ -4801,7 +4801,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4812,7 +4812,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_BoundedSurface &" :
         """
         :param Index:
         :type Index: int
@@ -4821,7 +4821,7 @@ class TColGeom_SequenceOfBoundedSurface(OCC.TCollection.TCollection_BaseSequence
         """
         return _TColGeom.TColGeom_SequenceOfBoundedSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4871,14 +4871,14 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColGeom.TColGeom_SequenceOfCurve_swiginit(self,_TColGeom.new_TColGeom_SequenceOfCurve(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_SequenceOfCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfCurve &
@@ -4887,7 +4887,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_SequenceOfCurve const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfCurve &
@@ -4896,7 +4896,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_Curve &
@@ -4909,7 +4909,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_Curve &
@@ -4922,7 +4922,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4939,7 +4939,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4956,21 +4956,21 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _TColGeom.TColGeom_SequenceOfCurve_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :rtype: Handle_Geom_Curve
 
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -4981,7 +4981,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Curve const &" :
         """
         :param Index:
         :type Index: int
@@ -4990,7 +4990,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5001,7 +5001,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Curve &" :
         """
         :param Index:
         :type Index: int
@@ -5010,7 +5010,7 @@ class TColGeom_SequenceOfCurve(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfCurve_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5060,14 +5060,14 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
 
         """
         _TColGeom.TColGeom_SequenceOfSurface_swiginit(self,_TColGeom.new_TColGeom_SequenceOfSurface(*args))
-    def Clear(self, *args):
+    def Clear(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Clear(self, *args)
 
-    def Assign(self, *args):
+    def Assign(self, *args) -> "TColGeom_SequenceOfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfSurface &
@@ -5076,7 +5076,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Assign(self, *args)
 
-    def Set(self, *args):
+    def Set(self, *args) -> "TColGeom_SequenceOfSurface const &" :
         """
         :param Other:
         :type Other: TColGeom_SequenceOfSurface &
@@ -5085,7 +5085,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Set(self, *args)
 
-    def Append(self, *args):
+    def Append(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_Surface &
@@ -5098,7 +5098,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Append(self, *args)
 
-    def Prepend(self, *args):
+    def Prepend(self, *args) -> "void" :
         """
         :param T:
         :type T: Handle_Geom_Surface &
@@ -5111,7 +5111,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Prepend(self, *args)
 
-    def InsertBefore(self, *args):
+    def InsertBefore(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5128,7 +5128,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args):
+    def InsertAfter(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5145,21 +5145,21 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_InsertAfter(self, *args)
 
-    def First(self, *args):
+    def First(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _TColGeom.TColGeom_SequenceOfSurface_First(self, *args)
 
-    def Last(self, *args):
+    def Last(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :rtype: Handle_Geom_Surface
 
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Last(self, *args)
 
-    def Split(self, *args):
+    def Split(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5170,7 +5170,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Split(self, *args)
 
-    def Value(self, *args):
+    def Value(self, *args) -> "Handle_Geom_Surface const &" :
         """
         :param Index:
         :type Index: int
@@ -5179,7 +5179,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_Value(self, *args)
 
-    def SetValue(self, *args):
+    def SetValue(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int
@@ -5190,7 +5190,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_SetValue(self, *args)
 
-    def ChangeValue(self, *args):
+    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
         """
         :param Index:
         :type Index: int
@@ -5199,7 +5199,7 @@ class TColGeom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColGeom.TColGeom_SequenceOfSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args):
+    def Remove(self, *args) -> "void" :
         """
         :param Index:
         :type Index: int

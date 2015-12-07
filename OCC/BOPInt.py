@@ -158,7 +158,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
 
         """
         _BOPInt.BOPInt_Context_swiginit(self,_BOPInt.new_BOPInt_Context(*args))
-    def FClass2d(self, *args):
+    def FClass2d(self, *args) -> "IntTools_FClass2d &" :
         """
         * Returns a reference to point classifier for given face
 
@@ -169,7 +169,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_FClass2d(self, *args)
 
-    def ProjPS(self, *args):
+    def ProjPS(self, *args) -> "GeomAPI_ProjectPointOnSurf &" :
         """
         * Returns a reference to point projector for given face
 
@@ -180,7 +180,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ProjPS(self, *args)
 
-    def ProjPC(self, *args):
+    def ProjPC(self, *args) -> "GeomAPI_ProjectPointOnCurve &" :
         """
         * Returns a reference to point projector for given edge
 
@@ -191,7 +191,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ProjPC(self, *args)
 
-    def ProjPT(self, *args):
+    def ProjPT(self, *args) -> "GeomAPI_ProjectPointOnCurve &" :
         """
         * Returns a reference to point projector for given curve
 
@@ -202,7 +202,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ProjPT(self, *args)
 
-    def SurfaceData(self, *args):
+    def SurfaceData(self, *args) -> "IntTools_SurfaceRangeLocalizeData &" :
         """
         * Returns a reference to surface localization data for given face
 
@@ -213,7 +213,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_SurfaceData(self, *args)
 
-    def SolidClassifier(self, *args):
+    def SolidClassifier(self, *args) -> "BRepClass3d_SolidClassifier &" :
         """
         * Returns a reference to solid classifier for given solid
 
@@ -224,7 +224,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_SolidClassifier(self, *args)
 
-    def Hatcher(self, *args):
+    def Hatcher(self, *args) -> "Geom2dHatch_Hatcher &" :
         """
         * Returns a reference to 2D hatcher for given face
 
@@ -235,7 +235,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_Hatcher(self, *args)
 
-    def ComputePE(self, *args):
+    def ComputePE(self, *args) -> "Standard_Integer" :
         """
         * Computes parameter of the Point theP on the edge aE. Returns zero if the distance between point and edge is less than sum of tolerance value of edge and theTopP, otherwise and for following conditions returns negative value 1. the edge is degenerated (-1) 2. the edge does not contain 3d curve and pcurves (-2) 3. projection algorithm failed (-3)
 
@@ -252,7 +252,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ComputePE(self, *args)
 
-    def ComputeVE(self, *args):
+    def ComputeVE(self, *args) -> "Standard_Integer" :
         """
         * Computes parameter of the vertex aV on the edge aE. Returns zero if the distance between vertex and edge is less than sum of tolerances, otherwise and for following conditions returns negative value 1. the edge is degenerated (-1) 2. the edge does not contain 3d curve and pcurves (-2) 3. projection algorithm failed (-3) Computes parameter aT of the vertex aV on the edge aE. Returns zero if the distance between vertex and edge is less than sum of tolerances, otherwise and for following conditions returns negative value 1. the edge is degenerated (-1) 2. the edge does not contain 3d curve and pcurves (-2) 3. projection algorithm failed (-3) Output parameters bToUpdateVertex - the flag that indicates whether the vertex tolerance should be modified or not aDist - the value of the distance between the vertex and the edge
 
@@ -267,7 +267,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ComputeVE(self, *args)
 
-    def ComputeVF(self, *args):
+    def ComputeVF(self, *args) -> "Standard_Integer" :
         """
         * Computes UV parameters of the vertex aV on face aF Returns zero if the distance between vertex and face is less than or equal the sum of tolerances and the projection point lays inside boundaries of the face. For following conditions returns negative value 1. projection algorithm failed (-1) 2. distance is more than sum of tolerances (-2) 3. projection point out or on the boundaries of face (-3)
 
@@ -284,7 +284,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ComputeVF(self, *args)
 
-    def StatePointFace(self, *args):
+    def StatePointFace(self, *args) -> "TopAbs_State" :
         """
         * Returns the state of the point aP2D relative to face aF
 
@@ -297,7 +297,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_StatePointFace(self, *args)
 
-    def IsPointInFace(self, *args):
+    def IsPointInFace(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the point aP2D is inside the boundaries of the face aF, otherwise returns false
 
@@ -310,7 +310,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsPointInFace(self, *args)
 
-    def IsPointInOnFace(self, *args):
+    def IsPointInOnFace(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the point aP2D is inside or on the boundaries of aF
 
@@ -323,7 +323,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsPointInOnFace(self, *args)
 
-    def IsValidPointForFace(self, *args):
+    def IsValidPointForFace(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if the distance between point aP3D and face aF is less or equal to tolerance aTol and projection point is inside or on the boundaries of the face aF
 
@@ -338,7 +338,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsValidPointForFace(self, *args)
 
-    def IsValidPointForFaces(self, *args):
+    def IsValidPointForFaces(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if IsValidPointForFace returns true for both face aF1 and aF2
 
@@ -355,7 +355,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsValidPointForFaces(self, *args)
 
-    def IsValidBlockForFace(self, *args):
+    def IsValidBlockForFace(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if IsValidPointForFace returns true for some 3d point that lay on the curve aIC bounded by parameters aT1 and aT2
 
@@ -374,7 +374,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsValidBlockForFace(self, *args)
 
-    def IsValidBlockForFaces(self, *args):
+    def IsValidBlockForFaces(self, *args) -> "Standard_Boolean" :
         """
         * Returns true if IsValidBlockForFace returns true for both faces aF1 and aF2
 
@@ -395,7 +395,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsValidBlockForFaces(self, *args)
 
-    def IsVertexOnLine(self, *args):
+    def IsVertexOnLine(self, *args) -> "Standard_Boolean" :
         """
         * Computes parameter of the vertex aV on the curve aIC. Returns true if the distance between vertex and curve is less than sum of tolerance of aV and aTolC, otherwise or if projection algorithm failed returns false (in this case aT isn't significant)
 
@@ -426,7 +426,7 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_IsVertexOnLine(self, *args)
 
-    def ProjectPointOnEdge(self, *args):
+    def ProjectPointOnEdge(self, *args) -> "Standard_Boolean" :
         """
         * Computes parameter of the point aP on the edge aE. Returns false if projection algorithm failed other wiese returns true.
 
@@ -441,11 +441,11 @@ class BOPInt_Context(OCC.MMgt.MMgt_TShared):
         """
         return _BOPInt.BOPInt_Context_ProjectPointOnEdge(self, *args)
 
-    def _kill_pointed(self):
+    def _kill_pointed(self) -> "void" :
         """_kill_pointed(BOPInt_Context self)"""
         return _BOPInt.BOPInt_Context__kill_pointed(self)
 
-    def GetHandle(self):
+    def GetHandle(self) -> "Handle_BOPInt_Context" :
         """GetHandle(BOPInt_Context self) -> Handle_BOPInt_Context"""
         return _BOPInt.BOPInt_Context_GetHandle(self)
 
@@ -502,7 +502,7 @@ Handle_BOPInt_Context._kill_pointed = new_instancemethod(_BOPInt.Handle_BOPInt_C
 Handle_BOPInt_Context_swigregister = _BOPInt.Handle_BOPInt_Context_swigregister
 Handle_BOPInt_Context_swigregister(Handle_BOPInt_Context)
 
-def Handle_BOPInt_Context_DownCast(*args):
+def Handle_BOPInt_Context_DownCast(*args) -> "Handle_BOPInt_Context const" :
   return _BOPInt.Handle_BOPInt_Context_DownCast(*args)
 Handle_BOPInt_Context_DownCast = _BOPInt.Handle_BOPInt_Context_DownCast
 
@@ -515,7 +515,7 @@ class BOPInt_ShrunkRange(object):
 
         """
         _BOPInt.BOPInt_ShrunkRange_swiginit(self,_BOPInt.new_BOPInt_ShrunkRange(*args))
-    def SetData(self, *args):
+    def SetData(self, *args) -> "void" :
         """
         :param aE:
         :type aE: TopoDS_Edge &
@@ -532,7 +532,7 @@ class BOPInt_ShrunkRange(object):
         """
         return _BOPInt.BOPInt_ShrunkRange_SetData(self, *args)
 
-    def SetContext(self, *args):
+    def SetContext(self, *args) -> "void" :
         """
         :param aCtx:
         :type aCtx: Handle_BOPInt_Context &
@@ -541,14 +541,14 @@ class BOPInt_ShrunkRange(object):
         """
         return _BOPInt.BOPInt_ShrunkRange_SetContext(self, *args)
 
-    def Context(self, *args):
+    def Context(self, *args) -> "Handle_BOPInt_Context const &" :
         """
         :rtype: Handle_BOPInt_Context
 
         """
         return _BOPInt.BOPInt_ShrunkRange_Context(self, *args)
 
-    def SetShrunkRange(self, *args):
+    def SetShrunkRange(self, *args) -> "void" :
         """
         :param aT1:
         :type aT1: float
@@ -559,7 +559,7 @@ class BOPInt_ShrunkRange(object):
         """
         return _BOPInt.BOPInt_ShrunkRange_SetShrunkRange(self, *args)
 
-    def ShrunkRange(self, *args):
+    def ShrunkRange(self, *args) -> "void" :
         """
         :param aT1:
         :type aT1: float &
@@ -570,28 +570,28 @@ class BOPInt_ShrunkRange(object):
         """
         return _BOPInt.BOPInt_ShrunkRange_ShrunkRange(self, *args)
 
-    def BndBox(self, *args):
+    def BndBox(self, *args) -> "Bnd_Box const &" :
         """
         :rtype: Bnd_Box
 
         """
         return _BOPInt.BOPInt_ShrunkRange_BndBox(self, *args)
 
-    def Edge(self, *args):
+    def Edge(self, *args) -> "TopoDS_Edge const" :
         """
         :rtype: TopoDS_Edge
 
         """
         return _BOPInt.BOPInt_ShrunkRange_Edge(self, *args)
 
-    def Perform(self, *args):
+    def Perform(self, *args) -> "void" :
         """
         :rtype: None
 
         """
         return _BOPInt.BOPInt_ShrunkRange_Perform(self, *args)
 
-    def ErrorStatus(self, *args):
+    def ErrorStatus(self, *args) -> "Standard_Integer" :
         """
         * Returns code of computing shrunk range completion 0 - means successful completion 1 - nothing has been done 2 - initial range is out of edge's range 3 - first boundary of initial range is more than last boundary 4 - projection of first vertex failed 5 - projection of second vertex failed 6 - shrunk range can not be computed shrunk range is setted to initial range
 
@@ -624,7 +624,7 @@ BOPInt_ShrunkRange_swigregister(BOPInt_ShrunkRange)
 class BOPInt_Tools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def CheckCurve(*args):
+    def CheckCurve(*args) -> "Standard_Boolean" :
         """
         :param theC:
         :type theC: Handle_Geom_Curve &
@@ -638,7 +638,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_CheckCurve(*args)
 
     CheckCurve = staticmethod(CheckCurve)
-    def IsOnPave(*args):
+    def IsOnPave(*args) -> "Standard_Boolean" :
         """
         :param theT:
         :type theT: float
@@ -652,7 +652,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_IsOnPave(*args)
 
     IsOnPave = staticmethod(IsOnPave)
-    def VertexParameters(*args):
+    def VertexParameters(*args) -> "Standard_Real &, Standard_Real &" :
         """
         :param theCP:
         :type theCP: IntTools_CommonPrt &
@@ -666,7 +666,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_VertexParameters(*args)
 
     VertexParameters = staticmethod(VertexParameters)
-    def VertexParameter(*args):
+    def VertexParameter(*args) -> "Standard_Real &" :
         """
         :param theCP:
         :type theCP: IntTools_CommonPrt &
@@ -678,7 +678,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_VertexParameter(*args)
 
     VertexParameter = staticmethod(VertexParameter)
-    def IsOnPave1(*args):
+    def IsOnPave1(*args) -> "Standard_Boolean" :
         """
         :param theT:
         :type theT: float
@@ -692,7 +692,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_IsOnPave1(*args)
 
     IsOnPave1 = staticmethod(IsOnPave1)
-    def IsInRange(*args):
+    def IsInRange(*args) -> "Standard_Boolean" :
         """
         * Checks if the range <theR> interfere with the range <theRRef>
 
@@ -708,7 +708,7 @@ class BOPInt_Tools(object):
         return _BOPInt.BOPInt_Tools_IsInRange(*args)
 
     IsInRange = staticmethod(IsInRange)
-    def SegPln(*args):
+    def SegPln(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
         """
         :param theLin:
         :type theLin: gp_Lin
@@ -752,7 +752,7 @@ BOPInt_Tools._kill_pointed = new_instancemethod(_BOPInt.BOPInt_Tools__kill_point
 BOPInt_Tools_swigregister = _BOPInt.BOPInt_Tools_swigregister
 BOPInt_Tools_swigregister(BOPInt_Tools)
 
-def BOPInt_Tools_CheckCurve(*args):
+def BOPInt_Tools_CheckCurve(*args) -> "Standard_Boolean" :
   """
     :param theC:
     :type theC: Handle_Geom_Curve &
@@ -765,7 +765,7 @@ def BOPInt_Tools_CheckCurve(*args):
     """
   return _BOPInt.BOPInt_Tools_CheckCurve(*args)
 
-def BOPInt_Tools_IsOnPave(*args):
+def BOPInt_Tools_IsOnPave(*args) -> "Standard_Boolean" :
   """
     :param theT:
     :type theT: float
@@ -778,7 +778,7 @@ def BOPInt_Tools_IsOnPave(*args):
     """
   return _BOPInt.BOPInt_Tools_IsOnPave(*args)
 
-def BOPInt_Tools_VertexParameters(*args):
+def BOPInt_Tools_VertexParameters(*args) -> "Standard_Real &, Standard_Real &" :
   """
     :param theCP:
     :type theCP: IntTools_CommonPrt &
@@ -791,7 +791,7 @@ def BOPInt_Tools_VertexParameters(*args):
     """
   return _BOPInt.BOPInt_Tools_VertexParameters(*args)
 
-def BOPInt_Tools_VertexParameter(*args):
+def BOPInt_Tools_VertexParameter(*args) -> "Standard_Real &" :
   """
     :param theCP:
     :type theCP: IntTools_CommonPrt &
@@ -802,7 +802,7 @@ def BOPInt_Tools_VertexParameter(*args):
     """
   return _BOPInt.BOPInt_Tools_VertexParameter(*args)
 
-def BOPInt_Tools_IsOnPave1(*args):
+def BOPInt_Tools_IsOnPave1(*args) -> "Standard_Boolean" :
   """
     :param theT:
     :type theT: float
@@ -815,7 +815,7 @@ def BOPInt_Tools_IsOnPave1(*args):
     """
   return _BOPInt.BOPInt_Tools_IsOnPave1(*args)
 
-def BOPInt_Tools_IsInRange(*args):
+def BOPInt_Tools_IsInRange(*args) -> "Standard_Boolean" :
   """
     * Checks if the range <theR> interfere with the range <theRRef>
 
@@ -830,7 +830,7 @@ def BOPInt_Tools_IsInRange(*args):
     """
   return _BOPInt.BOPInt_Tools_IsInRange(*args)
 
-def BOPInt_Tools_SegPln(*args):
+def BOPInt_Tools_SegPln(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
   """
     :param theLin:
     :type theLin: gp_Lin
